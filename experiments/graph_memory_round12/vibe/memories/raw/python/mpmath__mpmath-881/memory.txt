@@ -1,0 +1,23 @@
+[1] (from history issue mpmath__mpmath-847)
+Observed command: sed -n '1431,1610p' /usr/local/lib/python3.10/site-packages/mpmath/libmp/libmpf.py
+Output excerpt:
+<returncode>0</returncode>
+<output>
+def read_format_spec(format_spec):
+    '''
+    Reads the format spec into a dictionary.
+    This is more or less copied from the CPython implementation for regular
+    floats.
+    '''
+
+[2] (from history issue mpmath__mpmath-711)
+Observed command: cat /usr/local/lib/python3.10/site-packages/mpmath/ctx_mp.py | head -200
+Output excerpt:
+<returncode>0</returncode>
+<output>
+"""
+This module defines the mpf, mpc classes, and standard functions for
+operating with them.
+"""
+
+import functools

@@ -1,0 +1,35 @@
+HEAD is now at 99e3b46 Merge pull request #879 from skirpichev/pin-setuptools
+============================= test session starts ==============================
+collected 12 items
+
+mpmath/tests/test_format.py ............                                 [100%]
+
+==================================== PASSES ====================================
+============================= slowest 20 durations =============================
+62.31s call     mpmath/tests/test_format.py::test_mpc_complexes
+60.12s call     mpmath/tests/test_format.py::test_mpf_floats_bulk
+12.19s call     mpmath/tests/test_format.py::test_hexadecimal_with_libc_bulk
+11.87s call     mpmath/tests/test_format.py::test_binary_with_gmpy2_bulk
+10.49s call     mpmath/tests/test_format.py::test_hexadecimal_bulk
+
+(15 durations < 0.005s hidden.  Use -vv to show these durations.)
+=========================== short test summary info ============================
+PASSED mpmath/tests/test_format.py::test_mpf_fmt_cpython
+PASSED mpmath/tests/test_format.py::test_mpf_floats_bulk
+PASSED mpmath/tests/test_format.py::test_mpc_complexes
+PASSED mpmath/tests/test_format.py::test_mpc_fmt
+PASSED mpmath/tests/test_format.py::test_mpf_fmt
+PASSED mpmath/tests/test_format.py::test_issue_858
+PASSED mpmath/tests/test_format.py::test_errors
+PASSED mpmath/tests/test_format.py::test_hexadecimal_bulk
+PASSED mpmath/tests/test_format.py::test_hexadecimal_with_libc_bulk
+PASSED mpmath/tests/test_format.py::test_binary_with_gmpy2_bulk
+PASSED mpmath/tests/test_format.py::test_binary_fmt
+PASSED mpmath/tests/test_format.py::test_hexadecimal_fmt
+======================== 12 passed in 159.58s (0:02:39) ========================
+Checking patch mpmath/libmp/libmpf.py...
+Applied patch to 'mpmath/libmp/libmpf.py' cleanly.
+Applied patch mpmath/libmp/libmpf.py cleanly.
+Checking patch mpmath/tests/test_format.py...
+Applied patch to 'mpmath/tests/test_format.py' cleanly.
+Applied patch mpmath/tests/test_format.py cleanly.

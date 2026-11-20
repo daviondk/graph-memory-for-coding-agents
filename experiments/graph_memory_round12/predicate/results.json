@@ -1,0 +1,61 @@
+{
+  "actual_flips": 48,
+  "controlled": 1040,
+  "delta_bytes": 11436,
+  "delta_git_calls": 104,
+  "distinct_pairs": 64,
+  "finite": {
+    "flips": 1112,
+    "old_negative": 4475,
+    "states": 25,
+    "transitions": 625
+  },
+  "guard_checks": [
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "methods": {
+    "delta": {
+      "fn": 0,
+      "fp": 0,
+      "triggered": 48
+    },
+    "full": {
+      "fn": 0,
+      "fp": 0,
+      "triggered": 48
+    },
+    "native_pickaxe": {
+      "fn": 0,
+      "fp": 0,
+      "triggered": 48
+    },
+    "path_guard": {
+      "fn": 0,
+      "fp": 648,
+      "triggered": 696
+    },
+    "rename_skipped": {
+      "fn": 16,
+      "fp": 0,
+      "triggered": 32
+    },
+    "unchanged": {
+      "fn": 48,
+      "fp": 0,
+      "triggered": 0
+    }
+  },
+  "real_git_transitions": 64,
+  "timings_s": {
+    "delta_once": 6.977610365000146,
+    "match_materialized": 0.010900500000730062,
+    "pickaxe_queries": 79.58994908399904,
+    "whole_grep_queries": 54.765392899999256
+  }
+}

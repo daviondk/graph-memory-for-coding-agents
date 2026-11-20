@@ -1,0 +1,691 @@
+{
+  "checks": {
+    "changes": {
+      "direct": 2,
+      "extras": 6,
+      "python": 19,
+      "summary": 1
+    },
+    "current_pkg_info_bytes": 414025,
+    "current_pyproject_bytes": 76928,
+    "n": 124,
+    "native_hits": 124,
+    "transitions": 31,
+    "unique_projects": 12,
+    "wave_n": {
+      "2023": 10,
+      "2024": 11,
+      "2025": 10
+    }
+  },
+  "cost": {
+    "none": {
+      "current_static": {
+        "wheel_archive_bytes": 0,
+        "wheel_metadata_bytes": 0
+      },
+      "none": {
+        "wheel_archive_bytes": 0,
+        "wheel_metadata_bytes": 0
+      },
+      "pkg_info": {
+        "wheel_archive_bytes": 0,
+        "wheel_metadata_bytes": 0
+      },
+      "previous": {
+        "wheel_archive_bytes": 0,
+        "wheel_metadata_bytes": 0
+      },
+      "same_file": {
+        "wheel_archive_bytes": 0,
+        "wheel_metadata_bytes": 0
+      },
+      "static_else_previous": {
+        "wheel_archive_bytes": 0,
+        "wheel_metadata_bytes": 0
+      },
+      "typed": {
+        "wheel_archive_bytes": 0,
+        "wheel_metadata_bytes": 0
+      }
+    },
+    "third": {
+      "current_static": {
+        "wheel_archive_bytes": 12827265,
+        "wheel_metadata_bytes": 81818
+      },
+      "none": {
+        "wheel_archive_bytes": 409361,
+        "wheel_metadata_bytes": 79693
+      },
+      "pkg_info": {
+        "wheel_archive_bytes": 409361,
+        "wheel_metadata_bytes": 79693
+      },
+      "previous": {
+        "wheel_archive_bytes": 409361,
+        "wheel_metadata_bytes": 79693
+      },
+      "same_file": {
+        "wheel_archive_bytes": 409361,
+        "wheel_metadata_bytes": 79693
+      },
+      "static_else_previous": {
+        "wheel_archive_bytes": 409361,
+        "wheel_metadata_bytes": 79693
+      },
+      "typed": {
+        "wheel_archive_bytes": 10707261,
+        "wheel_metadata_bytes": 44172
+      }
+    }
+  },
+  "scores": {
+    "all_wheels": {
+      "correct": 124,
+      "opens": 31
+    },
+    "none": {
+      "current_static": {
+        "abstained": 50,
+        "conditional": 1.0,
+        "correct": 74,
+        "coverage": 0.5967741935483871,
+        "current_fields": 0,
+        "fraction_correct": 0.5967741935483871,
+        "n": 124,
+        "opens": [],
+        "stale_wrong": 0,
+        "wrong": 0
+      },
+      "none": {
+        "abstained": 124,
+        "conditional": null,
+        "correct": 0,
+        "coverage": 0.0,
+        "current_fields": 0,
+        "fraction_correct": 0.0,
+        "n": 124,
+        "opens": [],
+        "stale_wrong": 0,
+        "wrong": 0
+      },
+      "pkg_info": {
+        "abstained": 0,
+        "conditional": 1.0,
+        "correct": 124,
+        "coverage": 1.0,
+        "current_fields": 0,
+        "fraction_correct": 1.0,
+        "n": 124,
+        "opens": [],
+        "stale_wrong": 0,
+        "wrong": 0
+      },
+      "previous": {
+        "abstained": 0,
+        "conditional": 0.7741935483870968,
+        "correct": 96,
+        "coverage": 1.0,
+        "current_fields": 0,
+        "fraction_correct": 0.7741935483870968,
+        "n": 124,
+        "opens": [],
+        "stale_wrong": 28,
+        "wrong": 28
+      },
+      "same_file": {
+        "abstained": 120,
+        "conditional": 0.75,
+        "correct": 3,
+        "coverage": 0.03225806451612903,
+        "current_fields": 0,
+        "fraction_correct": 0.024193548387096774,
+        "n": 124,
+        "opens": [],
+        "stale_wrong": 1,
+        "wrong": 1
+      },
+      "static_else_previous": {
+        "abstained": 0,
+        "conditional": 0.9435483870967742,
+        "correct": 117,
+        "coverage": 1.0,
+        "current_fields": 0,
+        "fraction_correct": 0.9435483870967742,
+        "n": 124,
+        "opens": [],
+        "stale_wrong": 7,
+        "wrong": 7
+      },
+      "typed": {
+        "abstained": 78,
+        "conditional": 1.0,
+        "correct": 46,
+        "coverage": 0.3709677419354839,
+        "current_fields": 0,
+        "fraction_correct": 0.3709677419354839,
+        "n": 124,
+        "opens": [],
+        "stale_wrong": 0,
+        "wrong": 0
+      }
+    },
+    "third": {
+      "current_static": {
+        "abstained": 20,
+        "conditional": 1.0,
+        "correct": 104,
+        "coverage": 0.8387096774193549,
+        "current_fields": 36,
+        "fraction_correct": 0.8387096774193549,
+        "n": 124,
+        "opens": [
+          "Babel/2025",
+          "click/2024",
+          "more-itertools/2025",
+          "networkx/2023",
+          "pluggy/2023",
+          "pluggy/2024",
+          "pyparsing/2025",
+          "python-dateutil/2024",
+          "wcwidth/2023"
+        ],
+        "stale_wrong": 0,
+        "wrong": 0
+      },
+      "none": {
+        "abstained": 88,
+        "conditional": 1.0,
+        "correct": 36,
+        "coverage": 0.2903225806451613,
+        "current_fields": 36,
+        "fraction_correct": 0.2903225806451613,
+        "n": 124,
+        "opens": [
+          "attrs/2024",
+          "iniconfig/2023",
+          "iniconfig/2025",
+          "more-itertools/2025",
+          "packaging/2024",
+          "packaging/2025",
+          "pluggy/2023",
+          "pyparsing/2024",
+          "wcwidth/2023"
+        ],
+        "stale_wrong": 0,
+        "wrong": 0
+      },
+      "pkg_info": {
+        "abstained": 0,
+        "conditional": 1.0,
+        "correct": 124,
+        "coverage": 1.0,
+        "current_fields": 36,
+        "fraction_correct": 1.0,
+        "n": 124,
+        "opens": [
+          "attrs/2024",
+          "iniconfig/2023",
+          "iniconfig/2025",
+          "more-itertools/2025",
+          "packaging/2024",
+          "packaging/2025",
+          "pluggy/2023",
+          "pyparsing/2024",
+          "wcwidth/2023"
+        ],
+        "stale_wrong": 0,
+        "wrong": 0
+      },
+      "previous": {
+        "abstained": 0,
+        "conditional": 0.8306451612903226,
+        "correct": 103,
+        "coverage": 1.0,
+        "current_fields": 36,
+        "fraction_correct": 0.8306451612903226,
+        "n": 124,
+        "opens": [
+          "attrs/2024",
+          "iniconfig/2023",
+          "iniconfig/2025",
+          "more-itertools/2025",
+          "packaging/2024",
+          "packaging/2025",
+          "pluggy/2023",
+          "pyparsing/2024",
+          "wcwidth/2023"
+        ],
+        "stale_wrong": 21,
+        "wrong": 21
+      },
+      "same_file": {
+        "abstained": 84,
+        "conditional": 0.975,
+        "correct": 39,
+        "coverage": 0.3225806451612903,
+        "current_fields": 36,
+        "fraction_correct": 0.31451612903225806,
+        "n": 124,
+        "opens": [
+          "attrs/2024",
+          "iniconfig/2023",
+          "iniconfig/2025",
+          "more-itertools/2025",
+          "packaging/2024",
+          "packaging/2025",
+          "pluggy/2023",
+          "pyparsing/2024",
+          "wcwidth/2023"
+        ],
+        "stale_wrong": 1,
+        "wrong": 1
+      },
+      "static_else_previous": {
+        "abstained": 0,
+        "conditional": 0.9516129032258065,
+        "correct": 118,
+        "coverage": 1.0,
+        "current_fields": 36,
+        "fraction_correct": 0.9516129032258065,
+        "n": 124,
+        "opens": [
+          "attrs/2024",
+          "iniconfig/2023",
+          "iniconfig/2025",
+          "more-itertools/2025",
+          "packaging/2024",
+          "packaging/2025",
+          "pluggy/2023",
+          "pyparsing/2024",
+          "wcwidth/2023"
+        ],
+        "stale_wrong": 6,
+        "wrong": 6
+      },
+      "typed": {
+        "abstained": 42,
+        "conditional": 1.0,
+        "correct": 82,
+        "coverage": 0.6612903225806451,
+        "current_fields": 36,
+        "fraction_correct": 0.6612903225806451,
+        "n": 124,
+        "opens": [
+          "Babel/2025",
+          "click/2024",
+          "click/2025",
+          "iniconfig/2023",
+          "pluggy/2023",
+          "pluggy/2024",
+          "pluggy/2025",
+          "python-dateutil/2024",
+          "wcwidth/2023"
+        ],
+        "stale_wrong": 0,
+        "wrong": 0
+      }
+    }
+  },
+  "typed_minus": {
+    "none": {
+      "current_static": {
+        "by_project": {
+          "Babel": [
+            0,
+            12
+          ],
+          "attrs": [
+            -4,
+            12
+          ],
+          "click": [
+            -4,
+            8
+          ],
+          "iniconfig": [
+            -4,
+            8
+          ],
+          "more-itertools": [
+            0,
+            12
+          ],
+          "networkx": [
+            -4,
+            12
+          ],
+          "packaging": [
+            -4,
+            12
+          ],
+          "pluggy": [
+            -4,
+            12
+          ],
+          "pyparsing": [
+            0,
+            12
+          ],
+          "python-dateutil": [
+            0,
+            4
+          ],
+          "tqdm": [
+            -4,
+            12
+          ],
+          "wcwidth": [
+            0,
+            8
+          ]
+        },
+        "ci95": [
+          -0.3333333333333333,
+          -0.12
+        ],
+        "delta": -0.22580645161290322,
+        "paired_gain": 0,
+        "paired_loss": 28
+      },
+      "previous": {
+        "by_project": {
+          "Babel": [
+            -8,
+            12
+          ],
+          "attrs": [
+            1,
+            12
+          ],
+          "click": [
+            -7,
+            8
+          ],
+          "iniconfig": [
+            -1,
+            8
+          ],
+          "more-itertools": [
+            0,
+            12
+          ],
+          "networkx": [
+            -5,
+            12
+          ],
+          "packaging": [
+            -1,
+            12
+          ],
+          "pluggy": [
+            -9,
+            12
+          ],
+          "pyparsing": [
+            -2,
+            12
+          ],
+          "python-dateutil": [
+            -4,
+            4
+          ],
+          "tqdm": [
+            -6,
+            12
+          ],
+          "wcwidth": [
+            -8,
+            8
+          ]
+        },
+        "ci95": [
+          -0.6120689655172413,
+          -0.21666666666666667
+        ],
+        "delta": -0.4032258064516129,
+        "paired_gain": 12,
+        "paired_loss": 62
+      },
+      "same_file": {
+        "by_project": {
+          "Babel": [
+            0,
+            12
+          ],
+          "attrs": [
+            8,
+            12
+          ],
+          "click": [
+            0,
+            8
+          ],
+          "iniconfig": [
+            4,
+            8
+          ],
+          "more-itertools": [
+            9,
+            12
+          ],
+          "networkx": [
+            4,
+            12
+          ],
+          "packaging": [
+            8,
+            12
+          ],
+          "pluggy": [
+            0,
+            12
+          ],
+          "pyparsing": [
+            9,
+            12
+          ],
+          "python-dateutil": [
+            0,
+            4
+          ],
+          "tqdm": [
+            1,
+            12
+          ],
+          "wcwidth": [
+            0,
+            8
+          ]
+        },
+        "ci95": [
+          0.15833333333333333,
+          0.525
+        ],
+        "delta": 0.3467741935483871,
+        "paired_gain": 46,
+        "paired_loss": 3
+      }
+    },
+    "third": {
+      "current_static": {
+        "by_project": {
+          "Babel": [
+            0,
+            12
+          ],
+          "attrs": [
+            -4,
+            12
+          ],
+          "click": [
+            0,
+            8
+          ],
+          "iniconfig": [
+            0,
+            8
+          ],
+          "more-itertools": [
+            -1,
+            12
+          ],
+          "networkx": [
+            -8,
+            12
+          ],
+          "packaging": [
+            -4,
+            12
+          ],
+          "pluggy": [
+            0,
+            12
+          ],
+          "pyparsing": [
+            -1,
+            12
+          ],
+          "python-dateutil": [
+            0,
+            4
+          ],
+          "tqdm": [
+            -4,
+            12
+          ],
+          "wcwidth": [
+            0,
+            8
+          ]
+        },
+        "ci95": [
+          -0.3088235294117647,
+          -0.056451612903225805
+        ],
+        "delta": -0.1774193548387097,
+        "paired_gain": 0,
+        "paired_loss": 22
+      },
+      "previous": {
+        "by_project": {
+          "Babel": [
+            -4,
+            12
+          ],
+          "attrs": [
+            0,
+            12
+          ],
+          "click": [
+            1,
+            8
+          ],
+          "iniconfig": [
+            0,
+            8
+          ],
+          "more-itertools": [
+            -1,
+            12
+          ],
+          "networkx": [
+            -5,
+            12
+          ],
+          "packaging": [
+            -2,
+            12
+          ],
+          "pluggy": [
+            2,
+            12
+          ],
+          "pyparsing": [
+            -2,
+            12
+          ],
+          "python-dateutil": [
+            0,
+            4
+          ],
+          "tqdm": [
+            -6,
+            12
+          ],
+          "wcwidth": [
+            -4,
+            8
+          ]
+        },
+        "ci95": [
+          -0.296875,
+          -0.04
+        ],
+        "delta": -0.1693548387096774,
+        "paired_gain": 11,
+        "paired_loss": 32
+      },
+      "same_file": {
+        "by_project": {
+          "Babel": [
+            4,
+            12
+          ],
+          "attrs": [
+            4,
+            12
+          ],
+          "click": [
+            8,
+            8
+          ],
+          "iniconfig": [
+            0,
+            8
+          ],
+          "more-itertools": [
+            5,
+            12
+          ],
+          "networkx": [
+            4,
+            12
+          ],
+          "packaging": [
+            0,
+            12
+          ],
+          "pluggy": [
+            8,
+            12
+          ],
+          "pyparsing": [
+            5,
+            12
+          ],
+          "python-dateutil": [
+            4,
+            4
+          ],
+          "tqdm": [
+            1,
+            12
+          ],
+          "wcwidth": [
+            0,
+            8
+          ]
+        },
+        "ci95": [
+          0.19827586206896552,
+          0.5161290322580645
+        ],
+        "delta": 0.3467741935483871,
+        "paired_gain": 48,
+        "paired_loss": 5
+      }
+    }
+  }
+}

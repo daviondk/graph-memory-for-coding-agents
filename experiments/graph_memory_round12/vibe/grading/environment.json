@@ -1,0 +1,35 @@
+{
+  "images": [
+    {
+      "instance": "adamchainz__flake8-comprehensions-553",
+      "image": "docker.io/swerebenchv2/adamchainz-flake8-comprehensions:553-226a7e0",
+      "local_id": "sha256:253df96a4abdbc1fd000e5b786f58c790e172ca523b32721732827f795472d81",
+      "repo_digests": [
+        "swerebenchv2/adamchainz-flake8-comprehensions@sha256:3d5dff0f161e776a327984dfcba40e99066e58dd9df98bcc28f1a56c525aa1c5"
+      ],
+      "architecture": "amd64",
+      "os": "linux"
+    },
+    {
+      "instance": "mpmath__mpmath-881",
+      "image": "docker.io/swerebenchv2/mpmath-mpmath:881-99e3b46",
+      "local_id": "sha256:7b524ebc7d67916d406de84168e8c4648df46a934c53876fbf2d1cbc5359208b",
+      "repo_digests": [
+        "swerebenchv2/mpmath-mpmath@sha256:0894668fa120071b0be0c3b99e6a4413a1d542e42349bd3101e8248850ee0fc9"
+      ],
+      "architecture": "amd64",
+      "os": "linux"
+    }
+  ],
+  "docker": "28.3.3",
+  "wsl": "CodexX20MSR",
+  "network": "none",
+  "cpu_per_container": 0.5,
+  "workers": 1,
+  "source_ledger": {
+    "paper": "https://arxiv.org/abs/2609.23570",
+    "dataset": "https://huggingface.co/datasets/Tongyi-ConvAI/VibeMemBench/tree/11164976b4f920cdb0d0cd570ca572e49acea1e8",
+    "release": "https://github.com/AlibabaResearch/DAMO-ConvAI/tree/7152cf96809b45343ccc1caf7115a7d3fa43f956/VibeMemBench",
+    "agent": "https://github.com/SWE-agent/mini-swe-agent/tree/bc85a45654e6348dcc6e4c5a40ad146ed0bb144d"
+  }
+}

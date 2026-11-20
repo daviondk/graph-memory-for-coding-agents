@@ -1,0 +1,64 @@
+{
+ "arms": {
+  "full": {
+   "n": 96,
+   "reps": 3,
+   "per_query_median_ms": 26.46755,
+   "sum_of_within_query_median_ms": 2377.2341499999998,
+   "query_minmax_ms": [
+    25.1961,
+    38.8005
+   ],
+   "sum_median_diff_ms": 0.0,
+   "sum_median_search_ms": 2376.3959,
+   "diff_bytes": 0,
+   "incorrect": 3
+  },
+  "scope": {
+   "n": 96,
+   "reps": 3,
+   "per_query_median_ms": 51.06805,
+   "sum_of_within_query_median_ms": 3622.0087,
+   "query_minmax_ms": [
+    24.0242,
+    65.6452
+   ],
+   "sum_median_diff_ms": 2255.95005,
+   "sum_median_search_ms": 1361.10455,
+   "diff_bytes": 2284,
+   "incorrect": 3
+  },
+  "exact": {
+   "n": 96,
+   "reps": 3,
+   "per_query_median_ms": 26.1462,
+   "sum_of_within_query_median_ms": 2662.4334,
+   "query_minmax_ms": [
+    24.7052,
+    68.4059
+   ],
+   "sum_median_diff_ms": 2311.42125,
+   "sum_median_search_ms": 351.46855,
+   "diff_bytes": 144654,
+   "incorrect": 3
+  },
+  "pickaxe": {
+   "n": 96,
+   "reps": 3,
+   "per_query_median_ms": 25.966749999999998,
+   "sum_of_within_query_median_ms": 2651.4277,
+   "query_minmax_ms": [
+    24.5187,
+    64.391
+   ],
+   "sum_median_diff_ms": 2299.3642,
+   "sum_median_search_ms": 350.02945,
+   "diff_bytes": 617,
+   "incorrect": 3
+  }
+ },
+ "unit": "one requested lookup after a real update",
+ "order_seed": 214605,
+ "cache": "offline complete Git objects, warm OS cache, one process per git invocation, serial shuffled order, no flush",
+ "version": "git version 2.49.0.windows.1"
+}

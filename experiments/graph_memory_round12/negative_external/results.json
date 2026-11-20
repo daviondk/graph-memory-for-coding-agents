@@ -1,0 +1,616 @@
+{
+ "groups": {
+  "primary": {
+   "n": 96,
+   "tasks": 62,
+   "repos": 14,
+   "changed": 14,
+   "changed_tasks": 9,
+   "repeat_later_in_trace": 3,
+   "arms": {
+    "scope": {
+     "wake": 55,
+     "stale": 0,
+     "extra": 41,
+     "stdout": 2813
+    },
+    "exact": {
+     "wake": 14,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 172585
+    },
+    "pickaxe": {
+     "wake": 14,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 955
+    }
+   }
+  },
+  "other_ancestor": {
+   "n": 21,
+   "tasks": 15,
+   "repos": 6,
+   "changed": 6,
+   "changed_tasks": 6,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 10,
+     "stale": 0,
+     "extra": 4,
+     "stdout": 518
+    },
+    "exact": {
+     "wake": 6,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 27296
+    },
+    "pickaxe": {
+     "wake": 6,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 225
+    }
+   }
+  },
+  "primary_rename_task": {
+   "n": 1,
+   "tasks": 1,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 1,
+     "stdout": 19
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 736
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  }
+ },
+ "scope_kinds": {
+  "file": 76,
+  "directory": 20
+ },
+ "full_key_bytes": 13904,
+ "old_mismatch": 29,
+ "supports": {
+  "tracked_file_lines": 122,
+  "no_prior_root_witness": 21,
+  "directory_names": 4
+ },
+ "primary_examples": [
+  {
+   "iid": "alteryx__woodwork-1363",
+   "query": "from_disk",
+   "scope": ".",
+   "repo": "alteryx/woodwork"
+  },
+  {
+   "iid": "alteryx__woodwork-632",
+   "query": "value_counts",
+   "scope": "woodwork/tests/accessor",
+   "repo": "alteryx/woodwork"
+  },
+  {
+   "iid": "alteryx__woodwork-988",
+   "query": "extra_stats",
+   "scope": "woodwork/statistics_utils.py",
+   "repo": "alteryx/woodwork"
+  },
+  {
+   "iid": "cs-si__eodag-795",
+   "query": "queryable",
+   "scope": "tests",
+   "repo": "CS-SI/eodag"
+  },
+  {
+   "iid": "cs-si__eodag-795",
+   "query": "queryables",
+   "scope": "tests",
+   "repo": "CS-SI/eodag"
+  },
+  {
+   "iid": "neurodatawithoutborders__pynwb-987",
+   "query": "Subject",
+   "scope": "src/pynwb/io",
+   "repo": "NeurodataWithoutBorders/pynwb"
+  },
+  {
+   "iid": "pennylaneai__pennylane-1319",
+   "query": "CPhase",
+   "scope": "pennylane/ops/qubit.py",
+   "repo": "PennyLaneAI/pennylane"
+  },
+  {
+   "iid": "pennylaneai__pennylane-1319",
+   "query": "CPhase",
+   "scope": "pennylane",
+   "repo": "PennyLaneAI/pennylane"
+  },
+  {
+   "iid": "pennylaneai__pennylane-1319",
+   "query": "CPhase",
+   "scope": "pennylane/devices/default_qubit.py",
+   "repo": "PennyLaneAI/pennylane"
+  },
+  {
+   "iid": "pyccel__pyccel-1902",
+   "query": "popitem",
+   "scope": ".",
+   "repo": "pyccel/pyccel"
+  },
+  {
+   "iid": "sdv-dev__rdt-758",
+   "query": "_validate_sdtype",
+   "scope": "rdt/transformers/base.py",
+   "repo": "sdv-dev/RDT"
+  },
+  {
+   "iid": "sdv-dev__rdt-758",
+   "query": "_update_multi_column",
+   "scope": "tests",
+   "repo": "sdv-dev/RDT"
+  },
+  {
+   "iid": "sdv-dev__rdt-933",
+   "query": "LogitScaler",
+   "scope": ".",
+   "repo": "sdv-dev/RDT"
+  },
+  {
+   "iid": "sdv-dev__rdt-933",
+   "query": "logit",
+   "scope": ".",
+   "repo": "sdv-dev/RDT"
+  }
+ ],
+ "single_by_argument": {
+  "file_argument": {
+   "n": 76,
+   "full": 2148.9012,
+   "scope": 3097.5663,
+   "exact": 2208.9101,
+   "pickaxe": 2207.9774
+  },
+  "other": {
+   "n": 20,
+   "full": 622.8066,
+   "scope": 1118.6315,
+   "exact": 908.2476,
+   "pickaxe": 896.5458
+  }
+ },
+ "hybrid_estimated_ms": 3045.4469999999997,
+ "per_repo_primary": {
+  "CS-SI/eodag": {
+   "n": 15,
+   "tasks": 9,
+   "repos": 1,
+   "changed": 2,
+   "changed_tasks": 1,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 6,
+     "stale": 0,
+     "extra": 4,
+     "stdout": 159
+    },
+    "exact": {
+     "wake": 2,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 8924
+    },
+    "pickaxe": {
+     "wake": 2,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 64
+    }
+   }
+  },
+  "NeurodataWithoutBorders/pynwb": {
+   "n": 13,
+   "tasks": 9,
+   "repos": 1,
+   "changed": 1,
+   "changed_tasks": 1,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 5,
+     "stale": 0,
+     "extra": 4,
+     "stdout": 130
+    },
+    "exact": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 6902
+    },
+    "pickaxe": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 21
+    }
+   }
+  },
+  "PennyLaneAI/pennylane": {
+   "n": 15,
+   "tasks": 8,
+   "repos": 1,
+   "changed": 3,
+   "changed_tasks": 1,
+   "repeat_later_in_trace": 2,
+   "arms": {
+    "scope": {
+     "wake": 10,
+     "stale": 0,
+     "extra": 7,
+     "stdout": 462
+    },
+    "exact": {
+     "wake": 3,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 12927
+    },
+    "pickaxe": {
+     "wake": 3,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 237
+    }
+   }
+  },
+  "Qiskit/qiskit-terra": {
+   "n": 7,
+   "tasks": 6,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 4,
+     "stale": 0,
+     "extra": 4,
+     "stdout": 135
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 11029
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  },
+  "alteryx/woodwork": {
+   "n": 11,
+   "tasks": 6,
+   "repos": 1,
+   "changed": 3,
+   "changed_tasks": 3,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 10,
+     "stale": 0,
+     "extra": 7,
+     "stdout": 543
+    },
+    "exact": {
+     "wake": 3,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 33659
+    },
+    "pickaxe": {
+     "wake": 3,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 142
+    }
+   }
+  },
+  "bashtage/arch": {
+   "n": 1,
+   "tasks": 1,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 1,
+     "stdout": 24
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 526
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  },
+  "fatiando/harmonica": {
+   "n": 4,
+   "tasks": 1,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 3,
+     "stale": 0,
+     "extra": 3,
+     "stdout": 152
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 3130
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  },
+  "hdmf-dev/hdmf": {
+   "n": 1,
+   "tasks": 1,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 1,
+     "stdout": 29
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 1450
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  },
+  "mpmath/mpmath": {
+   "n": 1,
+   "tasks": 1,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 1,
+     "stdout": 154
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 7107
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  },
+  "pandas-dev/pandas": {
+   "n": 2,
+   "tasks": 2,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 1,
+     "stdout": 24
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 358
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  },
+  "pybamm-team/PyBaMM": {
+   "n": 7,
+   "tasks": 6,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 1,
+     "stdout": 19
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 736
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  },
+  "pyccel/pyccel": {
+   "n": 14,
+   "tasks": 9,
+   "repos": 1,
+   "changed": 1,
+   "changed_tasks": 1,
+   "repeat_later_in_trace": 1,
+   "arms": {
+    "scope": {
+     "wake": 7,
+     "stale": 0,
+     "extra": 6,
+     "stdout": 320
+    },
+    "exact": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 28902
+    },
+    "pickaxe": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 104
+    }
+   }
+  },
+  "sdv-dev/RDT": {
+   "n": 4,
+   "tasks": 2,
+   "repos": 1,
+   "changed": 4,
+   "changed_tasks": 2,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 4,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 649
+    },
+    "exact": {
+     "wake": 4,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 56322
+    },
+    "pickaxe": {
+     "wake": 4,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 387
+    }
+   }
+  },
+  "xgcm/xgcm": {
+   "n": 1,
+   "tasks": 1,
+   "repos": 1,
+   "changed": 0,
+   "changed_tasks": 0,
+   "repeat_later_in_trace": 0,
+   "arms": {
+    "scope": {
+     "wake": 1,
+     "stale": 0,
+     "extra": 1,
+     "stdout": 13
+    },
+    "exact": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 613
+    },
+    "pickaxe": {
+     "wake": 0,
+     "stale": 0,
+     "extra": 0,
+     "stdout": 0
+    }
+   }
+  }
+ },
+ "batch_verified_comparisons": 1386,
+ "union_verified_comparisons": 1155,
+ "leave_one_repo_out": {
+  "exact": [
+   29.206221549929133,
+   33.35590488684533
+  ],
+  "union": [
+   29.129422387650205,
+   33.45587314382538
+  ],
+  "exact_verify": [
+   15.694671383944115,
+   20.916919568099413
+  ],
+  "union_verify": [
+   15.52410767771758,
+   20.588090315685527
+  ]
+ }
+}

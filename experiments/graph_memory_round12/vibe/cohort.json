@@ -1,0 +1,24 @@
+{
+  "targets": [
+    {
+      "instance_id": "adamchainz__flake8-comprehensions-553",
+      "repo": "adamchainz/flake8-comprehensions",
+      "language": "python",
+      "image_name": "docker.io/swerebenchv2/adamchainz-flake8-comprehensions:553-226a7e0",
+      "base_commit": "226a7e0e58b231d8ae47080a4459172b9a29b708"
+    },
+    {
+      "instance_id": "mpmath__mpmath-881",
+      "repo": "mpmath/mpmath",
+      "language": "python",
+      "image_name": "docker.io/swerebenchv2/mpmath-mpmath:881-99e3b46",
+      "base_commit": "99e3b464afb883e5088d56d34909a11765da9c8e"
+    }
+  ],
+  "solver": "Qwen3.8-27B-UD-Q4_K_M",
+  "seed": 0,
+  "temperature": 0.5,
+  "steps": 24,
+  "per_card": 192,
+  "top_k": 2
+}

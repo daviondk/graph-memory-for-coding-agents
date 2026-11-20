@@ -1,0 +1,91 @@
+CMD: D:\CodexResearch\x20-official-vibe\solver-runtime\agent-venv\Scripts\python.exe -m minisweagent.run.utilities.mini_extra swebench-single --subset D:\CodexResearch\x20-bench-workspace\work\graph_memory_round12\vibe\subset --split test -i mpmath__mpmath-881 -m openai/qwen38-27b-ud-q4km -o D:\CodexResearch\x20-bench-workspace\work\graph_memory_round12\vibe\episodes\python\mpmath__mpmath-881\base\seed0\mpmath__mpmath-881.traj.json -y --exit-immediately --agent-class default -c D:\CodexResearch\x20-official-vibe\VibeMemBench\mini-swe-agent\src\minisweagent\config\benchmarks\swebench.yaml -c model.model_kwargs.api_base=http://127.0.0.1:18951/replicate/0/v1 -c model.model_kwargs.api_key=local -c model.model_kwargs.temperature=0.5 -c agent.cost_limit=3.0 -c agent.step_limit=24 -c environment.pull_timeout=300
+
+minisweagent: INFO: Loading dataset from                                       
+D:\CodexResearch\x20-bench-workspace\work\graph_memory_round12\vibe\subset,    
+split test...                                                                  
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 2 examples [00:00, 190.59 examples/s]
+minisweagent: INFO: Building agent config from specs:                          
+['D:\\CodexResearch\\x20-official-vibe\\VibeMemBench\\mini-swe-agent\\src\\mini
+sweagent\\config\\benchmarks\\swebench.yaml',                                  
+'model.model_kwargs.api_base=http://127.0.0.1:18951/replicate/0/v1',           
+'model.model_kwargs.api_key=local', 'model.model_kwargs.temperature=0.5',      
+'agent.cost_limit=3.0', 'agent.step_limit=24', 'environment.pull_timeout=300'] 
+minisweagent.environment: DEBUG: Starting container with command:              
+'D:\CodexResearch\x20-official-vibe\solver-runtime\agent-venv\Scripts\vibe-loca
+l-docker.exe' run -d --name minisweagent-6e2d0545 -w /testbed --rm             
+docker.io/swerebenchv2/mpmath-mpmath:881-99e3b46 sleep 2h                      
+minisweagent.environment: INFO: Started container minisweagent-6e2d0545 with ID
+a67ecd728a1f4f6787de5cf69a57bdea052b429ae8047af4865c10c2e56f9c1b               
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+The system cannot find the path specified.

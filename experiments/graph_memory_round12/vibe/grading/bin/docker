@@ -1,0 +1,13 @@
+#!/usr/bin/python3
+"""Only an unnetworked vendor test container may run from this evaluator."""
+import os, pathlib, sys
+args=sys.argv[1:]
+if not args or args[0]!="run" or "--network" not in args:
+    sys.exit("R12 restricted grading launcher expected docker run")
+idx=args.index("--network")
+if args[idx+1]!="host":sys.exit("unexpected upstream network mode")
+args[idx+1]="none"
+args[1:1]=["--pull=never","--cpus=0.5","--label","x20.r12=grading"]
+audit=pathlib.Path(os.environ["R12_LAUNCH_LOG"])
+with audit.open("a",encoding="utf8") as out:out.write("docker run --network none --cpus=0.5 --pull=never\n")
+os.execv("/usr/bin/docker",["docker",*args])
