@@ -1,0 +1,67 @@
+{
+  "logical": 144,
+  "physical": 114,
+  "requests_verified": 114,
+  "matched_placebos": 36,
+  "isolated_verified": 58,
+  "physical_usage": {
+    "prompt_tokens": 68210,
+    "completion_tokens": 825,
+    "total_tokens": 69035
+  },
+  "seconds": 94.21645260002697,
+  "panels": {
+    "fix|testmemory_compat": {
+      "tasks": 10,
+      "found": {
+        "baseline_graph": 10,
+        "shuffled": 9,
+        "baseline": 10,
+        "off": 10,
+        "privileged": 10,
+        "graph": 10
+      },
+      "different_choice_graph_off": 0,
+      "ceiling": 10
+    },
+    "fix|testmemory_holdout": {
+      "tasks": 8,
+      "found": {
+        "baseline_graph": 8,
+        "shuffled": 8,
+        "baseline": 8,
+        "off": 8,
+        "privileged": 8,
+        "graph": 8
+      },
+      "different_choice_graph_off": 0,
+      "ceiling": 8
+    },
+    "revert|testmemory_compat": {
+      "tasks": 10,
+      "found": {
+        "baseline_graph": 6,
+        "shuffled": 7,
+        "baseline": 3,
+        "off": 8,
+        "privileged": 10,
+        "graph": 8
+      },
+      "different_choice_graph_off": 2,
+      "ceiling": 10
+    },
+    "revert|testmemory_holdout": {
+      "tasks": 8,
+      "found": {
+        "baseline_graph": 4,
+        "shuffled": 5,
+        "baseline": 1,
+        "off": 6,
+        "privileged": 8,
+        "graph": 6
+      },
+      "different_choice_graph_off": 2,
+      "ceiling": 8
+    }
+  }
+}

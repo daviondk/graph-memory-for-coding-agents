@@ -1,0 +1,2973 @@
+[
+  {
+    "id": "tabulate_A_B",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "import:wcwidth"
+    ],
+    "past_result_sha": "35a64bbf480018974cb38b04855204d13479e6a269cacf1498530c002fa2a946",
+    "past_contract": false,
+    "past_seconds": 0.09404390002600849,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 57,
+        "gzip_bytes": 62
+      },
+      "negative_keys": {
+        "bytes": 91,
+        "gzip_bytes": 90
+      },
+      "directory": {
+        "bytes": 62,
+        "gzip_bytes": 62
+      }
+    }
+  },
+  {
+    "id": "tabulate_A_B",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "import:wcwidth"
+    ],
+    "past_result_sha": "c74d900024e9373fdff71f5782f9605d76be587ebf3feb65e25cee22af51af6a",
+    "past_contract": true,
+    "past_seconds": 0.09775600000284612,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 57,
+        "gzip_bytes": 62
+      },
+      "negative_keys": {
+        "bytes": 91,
+        "gzip_bytes": 90
+      },
+      "directory": {
+        "bytes": 62,
+        "gzip_bytes": 62
+      }
+    }
+  },
+  {
+    "id": "tabulate_A_B",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.3200002033263445e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "tabulate_B_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "vendor/wcwidth/__init__.py",
+      "vendor/wcwidth/_clip.py",
+      "vendor/wcwidth/_constants.py",
+      "vendor/wcwidth/_wcswidth.py",
+      "vendor/wcwidth/_wcwidth.py",
+      "vendor/wcwidth/_wcwidth_c.pyd",
+      "vendor/wcwidth/_width.py",
+      "vendor/wcwidth/align.py",
+      "vendor/wcwidth/bisearch.py",
+      "vendor/wcwidth/control_codes.py",
+      "vendor/wcwidth/escape_sequences.py",
+      "vendor/wcwidth/grapheme.py",
+      "vendor/wcwidth/hyperlink.py",
+      "vendor/wcwidth/sgr_state.py",
+      "vendor/wcwidth/table_ambiguous.py",
+      "vendor/wcwidth/table_grapheme.py",
+      "vendor/wcwidth/table_grapheme_overrides/__init__.py",
+      "vendor/wcwidth/table_grapheme_overrides/_registry.py",
+      "vendor/wcwidth/table_mc.py",
+      "vendor/wcwidth/table_overrides.py",
+      "vendor/wcwidth/table_term_programs.py",
+      "vendor/wcwidth/table_vs15.py",
+      "vendor/wcwidth/table_vs16.py",
+      "vendor/wcwidth/table_wide.py",
+      "vendor/wcwidth/table_zero.py",
+      "vendor/wcwidth/text_sizing.py",
+      "vendor/wcwidth/textwrap.py",
+      "vendor/wcwidth/unicode_versions.py",
+      "vendor/wcwidth/wcwidth.py"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "315a1f07ca1847eed55f4eaa966ea71c23fccc9e3c077af2b8455361a0700aa1",
+    "past_contract": true,
+    "past_seconds": 0.15030339994700626,
+    "memory": {
+      "positive": {
+        "bytes": 985,
+        "gzip_bytes": 249
+      },
+      "neg_only": {
+        "bytes": 40,
+        "gzip_bytes": 53
+      },
+      "negative_keys": {
+        "bytes": 1028,
+        "gzip_bytes": 272
+      },
+      "directory": {
+        "bytes": 1016,
+        "gzip_bytes": 260
+      }
+    }
+  },
+  {
+    "id": "tabulate_B_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "vendor/wcwidth/__init__.py",
+      "vendor/wcwidth/_clip.py",
+      "vendor/wcwidth/_constants.py",
+      "vendor/wcwidth/_wcswidth.py",
+      "vendor/wcwidth/_wcwidth.py",
+      "vendor/wcwidth/_wcwidth_c.pyd",
+      "vendor/wcwidth/_width.py",
+      "vendor/wcwidth/align.py",
+      "vendor/wcwidth/bisearch.py",
+      "vendor/wcwidth/control_codes.py",
+      "vendor/wcwidth/escape_sequences.py",
+      "vendor/wcwidth/grapheme.py",
+      "vendor/wcwidth/hyperlink.py",
+      "vendor/wcwidth/sgr_state.py",
+      "vendor/wcwidth/table_ambiguous.py",
+      "vendor/wcwidth/table_grapheme.py",
+      "vendor/wcwidth/table_grapheme_overrides/__init__.py",
+      "vendor/wcwidth/table_grapheme_overrides/_registry.py",
+      "vendor/wcwidth/table_mc.py",
+      "vendor/wcwidth/table_overrides.py",
+      "vendor/wcwidth/table_term_programs.py",
+      "vendor/wcwidth/table_vs15.py",
+      "vendor/wcwidth/table_vs16.py",
+      "vendor/wcwidth/table_wide.py",
+      "vendor/wcwidth/table_zero.py",
+      "vendor/wcwidth/text_sizing.py",
+      "vendor/wcwidth/textwrap.py",
+      "vendor/wcwidth/unicode_versions.py",
+      "vendor/wcwidth/wcwidth.py"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "c74d900024e9373fdff71f5782f9605d76be587ebf3feb65e25cee22af51af6a",
+    "past_contract": true,
+    "past_seconds": 0.14411550003569573,
+    "memory": {
+      "positive": {
+        "bytes": 985,
+        "gzip_bytes": 249
+      },
+      "neg_only": {
+        "bytes": 40,
+        "gzip_bytes": 53
+      },
+      "negative_keys": {
+        "bytes": 1028,
+        "gzip_bytes": 272
+      },
+      "directory": {
+        "bytes": 1016,
+        "gzip_bytes": 260
+      }
+    }
+  },
+  {
+    "id": "tabulate_B_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.0899984519928694e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "tabulate_A_P",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "35a64bbf480018974cb38b04855204d13479e6a269cacf1498530c002fa2a946",
+    "past_contract": false,
+    "past_seconds": 0.09404390002600849,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 57,
+        "gzip_bytes": 62
+      },
+      "negative_keys": {
+        "bytes": 91,
+        "gzip_bytes": 90
+      },
+      "directory": {
+        "bytes": 62,
+        "gzip_bytes": 62
+      }
+    }
+  },
+  {
+    "id": "tabulate_A_P",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "c74d900024e9373fdff71f5782f9605d76be587ebf3feb65e25cee22af51af6a",
+    "past_contract": true,
+    "past_seconds": 0.09775600000284612,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 57,
+        "gzip_bytes": 62
+      },
+      "negative_keys": {
+        "bytes": 91,
+        "gzip_bytes": 90
+      },
+      "directory": {
+        "bytes": 62,
+        "gzip_bytes": 62
+      }
+    }
+  },
+  {
+    "id": "tabulate_A_P",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.3200002033263445e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "tabulate_P_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "35a64bbf480018974cb38b04855204d13479e6a269cacf1498530c002fa2a946",
+    "past_contract": false,
+    "past_seconds": 0.09052289999090135,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 57,
+        "gzip_bytes": 62
+      },
+      "negative_keys": {
+        "bytes": 91,
+        "gzip_bytes": 90
+      },
+      "directory": {
+        "bytes": 62,
+        "gzip_bytes": 62
+      }
+    }
+  },
+  {
+    "id": "tabulate_P_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "c74d900024e9373fdff71f5782f9605d76be587ebf3feb65e25cee22af51af6a",
+    "past_contract": true,
+    "past_seconds": 0.09169049997581169,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 57,
+        "gzip_bytes": 62
+      },
+      "negative_keys": {
+        "bytes": 91,
+        "gzip_bytes": 90
+      },
+      "directory": {
+        "bytes": 62,
+        "gzip_bytes": 62
+      }
+    }
+  },
+  {
+    "id": "tabulate_P_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.220005262643099e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_A_B",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "import:linkify_it"
+    ],
+    "past_result_sha": "50bf8183fbe1558e00220de4f4b295da2de7de49af8dbb50b19674d03df7a069",
+    "past_contract": false,
+    "past_seconds": 0.09766209998633713,
+    "memory": {
+      "positive": {
+        "bytes": 2800,
+        "gzip_bytes": 462
+      },
+      "neg_only": {
+        "bytes": 34,
+        "gzip_bytes": 48
+      },
+      "negative_keys": {
+        "bytes": 2837,
+        "gzip_bytes": 486
+      },
+      "directory": {
+        "bytes": 2813,
+        "gzip_bytes": 472
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_A_B",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "import:linkify_it"
+    ],
+    "past_result_sha": "2cafe8db32fa0530ce4d084260eedd3853bf1319b34431e669fb45435bfe1e25",
+    "past_contract": true,
+    "past_seconds": 0.104664699989371,
+    "memory": {
+      "positive": {
+        "bytes": 2800,
+        "gzip_bytes": 462
+      },
+      "neg_only": {
+        "bytes": 34,
+        "gzip_bytes": 48
+      },
+      "negative_keys": {
+        "bytes": 2837,
+        "gzip_bytes": 486
+      },
+      "directory": {
+        "bytes": 2813,
+        "gzip_bytes": 472
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_A_B",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.1599989850074053e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_B_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "vendor/linkify_it/__init__.py",
+      "vendor/linkify_it/_ucre_data.py",
+      "vendor/linkify_it/main.py",
+      "vendor/linkify_it/ucre.py"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "e429136f5257eb9b8705d4a075c62406406b7cebac38ce75285e88c37c336f80",
+    "past_contract": true,
+    "past_seconds": 0.12293860001955181,
+    "memory": {
+      "positive": {
+        "bytes": 2922,
+        "gzip_bytes": 486
+      },
+      "neg_only": {
+        "bytes": 14,
+        "gzip_bytes": 34
+      },
+      "negative_keys": {
+        "bytes": 2939,
+        "gzip_bytes": 500
+      },
+      "directory": {
+        "bytes": 2935,
+        "gzip_bytes": 494
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_B_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "vendor/linkify_it/__init__.py",
+      "vendor/linkify_it/_ucre_data.py",
+      "vendor/linkify_it/main.py",
+      "vendor/linkify_it/ucre.py"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "2cafe8db32fa0530ce4d084260eedd3853bf1319b34431e669fb45435bfe1e25",
+    "past_contract": true,
+    "past_seconds": 0.10978559998329729,
+    "memory": {
+      "positive": {
+        "bytes": 2922,
+        "gzip_bytes": 486
+      },
+      "neg_only": {
+        "bytes": 14,
+        "gzip_bytes": 34
+      },
+      "negative_keys": {
+        "bytes": 2939,
+        "gzip_bytes": 500
+      },
+      "directory": {
+        "bytes": 2935,
+        "gzip_bytes": 494
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_B_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.1199986804276705e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_A_P",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "50bf8183fbe1558e00220de4f4b295da2de7de49af8dbb50b19674d03df7a069",
+    "past_contract": false,
+    "past_seconds": 0.09766209998633713,
+    "memory": {
+      "positive": {
+        "bytes": 2800,
+        "gzip_bytes": 462
+      },
+      "neg_only": {
+        "bytes": 34,
+        "gzip_bytes": 48
+      },
+      "negative_keys": {
+        "bytes": 2837,
+        "gzip_bytes": 486
+      },
+      "directory": {
+        "bytes": 2813,
+        "gzip_bytes": 472
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_A_P",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "2cafe8db32fa0530ce4d084260eedd3853bf1319b34431e669fb45435bfe1e25",
+    "past_contract": true,
+    "past_seconds": 0.104664699989371,
+    "memory": {
+      "positive": {
+        "bytes": 2800,
+        "gzip_bytes": 462
+      },
+      "neg_only": {
+        "bytes": 34,
+        "gzip_bytes": 48
+      },
+      "negative_keys": {
+        "bytes": 2837,
+        "gzip_bytes": 486
+      },
+      "directory": {
+        "bytes": 2813,
+        "gzip_bytes": 472
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_A_P",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.1599989850074053e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_P_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "50bf8183fbe1558e00220de4f4b295da2de7de49af8dbb50b19674d03df7a069",
+    "past_contract": false,
+    "past_seconds": 0.10420349997002631,
+    "memory": {
+      "positive": {
+        "bytes": 2800,
+        "gzip_bytes": 462
+      },
+      "neg_only": {
+        "bytes": 34,
+        "gzip_bytes": 48
+      },
+      "negative_keys": {
+        "bytes": 2837,
+        "gzip_bytes": 486
+      },
+      "directory": {
+        "bytes": 2813,
+        "gzip_bytes": 472
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_P_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "2cafe8db32fa0530ce4d084260eedd3853bf1319b34431e669fb45435bfe1e25",
+    "past_contract": true,
+    "past_seconds": 0.10255110001889989,
+    "memory": {
+      "positive": {
+        "bytes": 2800,
+        "gzip_bytes": 462
+      },
+      "neg_only": {
+        "bytes": 34,
+        "gzip_bytes": 48
+      },
+      "negative_keys": {
+        "bytes": 2837,
+        "gzip_bytes": 486
+      },
+      "directory": {
+        "bytes": 2813,
+        "gzip_bytes": 472
+      }
+    }
+  },
+  {
+    "id": "markdown-it-py_P_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.1499989088624716e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "networkx_A_B",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "import:pydot"
+    ],
+    "past_result_sha": "6bf5060a855a1b7e312cb8cfe25b6abc0caef3e01d75ff844ecdf6cb2febf282",
+    "past_contract": false,
+    "past_seconds": 0.5025465000071563,
+    "memory": {
+      "positive": {
+        "bytes": 13568,
+        "gzip_bytes": 1955
+      },
+      "neg_only": {
+        "bytes": 29,
+        "gzip_bytes": 42
+      },
+      "negative_keys": {
+        "bytes": 13600,
+        "gzip_bytes": 1977
+      },
+      "directory": {
+        "bytes": 13581,
+        "gzip_bytes": 1965
+      }
+    }
+  },
+  {
+    "id": "networkx_A_B",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "past_contract": true,
+    "past_seconds": 0.4995628999895416,
+    "memory": {
+      "positive": {
+        "bytes": 13568,
+        "gzip_bytes": 1955
+      },
+      "neg_only": {
+        "bytes": 14,
+        "gzip_bytes": 34
+      },
+      "negative_keys": {
+        "bytes": 13585,
+        "gzip_bytes": 1971
+      },
+      "directory": {
+        "bytes": 13581,
+        "gzip_bytes": 1965
+      }
+    }
+  },
+  {
+    "id": "networkx_A_B",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.300000051036477e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "networkx_B_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "vendor/pydot/__init__.py",
+      "vendor/pydot/_vendor/__init__.py",
+      "vendor/pydot/_vendor/tempfile.py",
+      "vendor/pydot/classes.py",
+      "vendor/pydot/core.py",
+      "vendor/pydot/exceptions.py"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "4a872e5fe695a9ffab832c1e54971c6c045d66476a0370cb628573cef2ea80e2",
+    "past_contract": true,
+    "past_seconds": 0.5365982000366785,
+    "memory": {
+      "positive": {
+        "bytes": 13743,
+        "gzip_bytes": 1988
+      },
+      "neg_only": {
+        "bytes": 29,
+        "gzip_bytes": 42
+      },
+      "negative_keys": {
+        "bytes": 13775,
+        "gzip_bytes": 2010
+      },
+      "directory": {
+        "bytes": 13756,
+        "gzip_bytes": 1999
+      }
+    }
+  },
+  {
+    "id": "networkx_B_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "past_contract": true,
+    "past_seconds": 0.5142343000043184,
+    "memory": {
+      "positive": {
+        "bytes": 13568,
+        "gzip_bytes": 1955
+      },
+      "neg_only": {
+        "bytes": 14,
+        "gzip_bytes": 34
+      },
+      "negative_keys": {
+        "bytes": 13585,
+        "gzip_bytes": 1971
+      },
+      "directory": {
+        "bytes": 13581,
+        "gzip_bytes": 1965
+      }
+    }
+  },
+  {
+    "id": "networkx_B_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 3.3299962524324656e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "networkx_A_P",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "6bf5060a855a1b7e312cb8cfe25b6abc0caef3e01d75ff844ecdf6cb2febf282",
+    "past_contract": false,
+    "past_seconds": 0.5025465000071563,
+    "memory": {
+      "positive": {
+        "bytes": 13568,
+        "gzip_bytes": 1955
+      },
+      "neg_only": {
+        "bytes": 29,
+        "gzip_bytes": 42
+      },
+      "negative_keys": {
+        "bytes": 13600,
+        "gzip_bytes": 1977
+      },
+      "directory": {
+        "bytes": 13581,
+        "gzip_bytes": 1965
+      }
+    }
+  },
+  {
+    "id": "networkx_A_P",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "past_contract": true,
+    "past_seconds": 0.4995628999895416,
+    "memory": {
+      "positive": {
+        "bytes": 13568,
+        "gzip_bytes": 1955
+      },
+      "neg_only": {
+        "bytes": 14,
+        "gzip_bytes": 34
+      },
+      "negative_keys": {
+        "bytes": 13585,
+        "gzip_bytes": 1971
+      },
+      "directory": {
+        "bytes": 13581,
+        "gzip_bytes": 1965
+      }
+    }
+  },
+  {
+    "id": "networkx_A_P",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.300000051036477e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "networkx_P_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "6bf5060a855a1b7e312cb8cfe25b6abc0caef3e01d75ff844ecdf6cb2febf282",
+    "past_contract": false,
+    "past_seconds": 0.5101325999712572,
+    "memory": {
+      "positive": {
+        "bytes": 13568,
+        "gzip_bytes": 1955
+      },
+      "neg_only": {
+        "bytes": 29,
+        "gzip_bytes": 42
+      },
+      "negative_keys": {
+        "bytes": 13600,
+        "gzip_bytes": 1977
+      },
+      "directory": {
+        "bytes": 13581,
+        "gzip_bytes": 1965
+      }
+    }
+  },
+  {
+    "id": "networkx_P_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "4e07408562bedb8b60ce05c1decfe3ad16b72230967de01f640b7e4729b49fce",
+    "past_contract": true,
+    "past_seconds": 0.509098999958951,
+    "memory": {
+      "positive": {
+        "bytes": 13568,
+        "gzip_bytes": 1955
+      },
+      "neg_only": {
+        "bytes": 14,
+        "gzip_bytes": 34
+      },
+      "negative_keys": {
+        "bytes": 13585,
+        "gzip_bytes": 1971
+      },
+      "directory": {
+        "bytes": 13581,
+        "gzip_bytes": 1965
+      }
+    }
+  },
+  {
+    "id": "networkx_P_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.3800006601959467e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "fsspec_A_B",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "import:lz4"
+    ],
+    "past_result_sha": "89e84af62b365c4214833d87639f546bb51007d6223efeb92e69a185a4886440",
+    "past_contract": false,
+    "past_seconds": 0.18196100002387539,
+    "memory": {
+      "positive": {
+        "bytes": 387,
+        "gzip_bytes": 139
+      },
+      "neg_only": {
+        "bytes": 114,
+        "gzip_bytes": 81
+      },
+      "negative_keys": {
+        "bytes": 504,
+        "gzip_bytes": 190
+      },
+      "directory": {
+        "bytes": 400,
+        "gzip_bytes": 147
+      }
+    }
+  },
+  {
+    "id": "fsspec_A_B",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "import:lz4"
+    ],
+    "past_result_sha": "f55b2dfcf351be54d79b46ba822cce5286c2a46134b3d7d464a8b9c49b575c6d",
+    "past_contract": true,
+    "past_seconds": 0.18069910001941025,
+    "memory": {
+      "positive": {
+        "bytes": 387,
+        "gzip_bytes": 139
+      },
+      "neg_only": {
+        "bytes": 114,
+        "gzip_bytes": 81
+      },
+      "negative_keys": {
+        "bytes": 504,
+        "gzip_bytes": 190
+      },
+      "directory": {
+        "bytes": 400,
+        "gzip_bytes": 147
+      }
+    }
+  },
+  {
+    "id": "fsspec_A_B",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.9199989512562752e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "fsspec_B_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "vendor/lz4/__init__.py",
+      "vendor/lz4/_version.cp311-win_amd64.pyd",
+      "vendor/lz4/frame/__init__.py",
+      "vendor/lz4/frame/_frame.cp311-win_amd64.pyd",
+      "vendor/lz4/version.py"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "c6e56fa6b214c2fffd48a208af16a5743ea21c836245cab3b651974e0e19954f",
+    "past_contract": true,
+    "past_seconds": 0.18252820003544912,
+    "memory": {
+      "positive": {
+        "bytes": 555,
+        "gzip_bytes": 183
+      },
+      "neg_only": {
+        "bytes": 122,
+        "gzip_bytes": 91
+      },
+      "negative_keys": {
+        "bytes": 680,
+        "gzip_bytes": 234
+      },
+      "directory": {
+        "bytes": 568,
+        "gzip_bytes": 190
+      }
+    }
+  },
+  {
+    "id": "fsspec_B_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "vendor/lz4/__init__.py",
+      "vendor/lz4/_version.cp311-win_amd64.pyd",
+      "vendor/lz4/frame/__init__.py",
+      "vendor/lz4/frame/_frame.cp311-win_amd64.pyd",
+      "vendor/lz4/version.py"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "f55b2dfcf351be54d79b46ba822cce5286c2a46134b3d7d464a8b9c49b575c6d",
+    "past_contract": true,
+    "past_seconds": 0.18613270000787452,
+    "memory": {
+      "positive": {
+        "bytes": 555,
+        "gzip_bytes": 183
+      },
+      "neg_only": {
+        "bytes": 122,
+        "gzip_bytes": 91
+      },
+      "negative_keys": {
+        "bytes": 680,
+        "gzip_bytes": 234
+      },
+      "directory": {
+        "bytes": 568,
+        "gzip_bytes": 190
+      }
+    }
+  },
+  {
+    "id": "fsspec_B_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 3.320001997053623e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "fsspec_A_P",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "89e84af62b365c4214833d87639f546bb51007d6223efeb92e69a185a4886440",
+    "past_contract": false,
+    "past_seconds": 0.18196100002387539,
+    "memory": {
+      "positive": {
+        "bytes": 387,
+        "gzip_bytes": 139
+      },
+      "neg_only": {
+        "bytes": 114,
+        "gzip_bytes": 81
+      },
+      "negative_keys": {
+        "bytes": 504,
+        "gzip_bytes": 190
+      },
+      "directory": {
+        "bytes": 400,
+        "gzip_bytes": 147
+      }
+    }
+  },
+  {
+    "id": "fsspec_A_P",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "f55b2dfcf351be54d79b46ba822cce5286c2a46134b3d7d464a8b9c49b575c6d",
+    "past_contract": true,
+    "past_seconds": 0.18069910001941025,
+    "memory": {
+      "positive": {
+        "bytes": 387,
+        "gzip_bytes": 139
+      },
+      "neg_only": {
+        "bytes": 114,
+        "gzip_bytes": 81
+      },
+      "negative_keys": {
+        "bytes": 504,
+        "gzip_bytes": 190
+      },
+      "directory": {
+        "bytes": 400,
+        "gzip_bytes": 147
+      }
+    }
+  },
+  {
+    "id": "fsspec_A_P",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 2.9199989512562752e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "fsspec_P_A",
+    "case": "feature",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "89e84af62b365c4214833d87639f546bb51007d6223efeb92e69a185a4886440",
+    "past_contract": false,
+    "past_seconds": 0.16796739998972043,
+    "memory": {
+      "positive": {
+        "bytes": 387,
+        "gzip_bytes": 139
+      },
+      "neg_only": {
+        "bytes": 114,
+        "gzip_bytes": 81
+      },
+      "negative_keys": {
+        "bytes": 504,
+        "gzip_bytes": 190
+      },
+      "directory": {
+        "bytes": 400,
+        "gzip_bytes": 147
+      }
+    }
+  },
+  {
+    "id": "fsspec_P_A",
+    "case": "normal",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "f55b2dfcf351be54d79b46ba822cce5286c2a46134b3d7d464a8b9c49b575c6d",
+    "past_contract": true,
+    "past_seconds": 0.16671039996435866,
+    "memory": {
+      "positive": {
+        "bytes": 387,
+        "gzip_bytes": 139
+      },
+      "neg_only": {
+        "bytes": 114,
+        "gzip_bytes": 81
+      },
+      "negative_keys": {
+        "bytes": 504,
+        "gzip_bytes": 190
+      },
+      "directory": {
+        "bytes": 400,
+        "gzip_bytes": 147
+      }
+    }
+  },
+  {
+    "id": "fsspec_P_A",
+    "case": "stdlib",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "624b60c58c9d8bfb6ff1886c2fd605d2adeb6ea4da576068201b6c6958ce93f4",
+    "past_contract": true,
+    "past_seconds": 3.0199997127056122e-05,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      },
+      "directory": {
+        "bytes": 7,
+        "gzip_bytes": 27
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.1_2022.2",
+    "case": "Europe/Kyiv",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "path:zones/europe/kyiv"
+    ],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.030337100033648312,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 42,
+        "gzip_bytes": 62
+      },
+      "negative_keys": {
+        "bytes": 47,
+        "gzip_bytes": 67
+      },
+      "directory": {
+        "bytes": 30,
+        "gzip_bytes": 50
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.1_2022.2",
+    "case": "America/Ciudad_Juarez",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.05439470004057512,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 52,
+        "gzip_bytes": 72
+      },
+      "negative_keys": {
+        "bytes": 57,
+        "gzip_bytes": 77
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.1_2022.2",
+    "case": "America/Coyhaique",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.03203549998579547,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 48,
+        "gzip_bytes": 68
+      },
+      "negative_keys": {
+        "bytes": 53,
+        "gzip_bytes": 73
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.1_2022.2",
+    "case": "UTC",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "past_contract": true,
+    "past_seconds": 0.00985109998146072,
+    "memory": {
+      "positive": {
+        "bytes": 13,
+        "gzip_bytes": 33
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      },
+      "directory": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.1_2022.2",
+    "case": "Europe/London",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "ba6216351037e7de3d4e0b3808da1f1b19a18cb581ef5c6a83cd3215e13e1447",
+    "past_contract": true,
+    "past_seconds": 0.00969709997298196,
+    "memory": {
+      "positive": {
+        "bytes": 23,
+        "gzip_bytes": 43
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      },
+      "directory": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.1_2022.2",
+    "case": "America/New_York",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "990e894dca40176e49bacf4fe7df2119670041d8c5428457b911bee600ea9205",
+    "past_contract": true,
+    "past_seconds": 0.009788099967408925,
+    "memory": {
+      "positive": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.2_2022.1",
+    "case": "Europe/Kyiv",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "zones/europe/kyiv"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "0e0bb38a073cec2e55d16ae52d5c67e58ad5e1ed09d041e6553b60917927afb7",
+    "past_contract": true,
+    "past_seconds": 0.009796899976208806,
+    "memory": {
+      "positive": {
+        "bytes": 21,
+        "gzip_bytes": 41
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "directory": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.2_2022.1",
+    "case": "America/Ciudad_Juarez",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.0290215999702923,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 52,
+        "gzip_bytes": 72
+      },
+      "negative_keys": {
+        "bytes": 57,
+        "gzip_bytes": 77
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.2_2022.1",
+    "case": "America/Coyhaique",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.032130800012964755,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 48,
+        "gzip_bytes": 68
+      },
+      "negative_keys": {
+        "bytes": 53,
+        "gzip_bytes": 73
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.2_2022.1",
+    "case": "UTC",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "past_contract": true,
+    "past_seconds": 0.009670900006312877,
+    "memory": {
+      "positive": {
+        "bytes": 13,
+        "gzip_bytes": 33
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      },
+      "directory": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.2_2022.1",
+    "case": "Europe/London",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "ba6216351037e7de3d4e0b3808da1f1b19a18cb581ef5c6a83cd3215e13e1447",
+    "past_contract": true,
+    "past_seconds": 0.00922279997030273,
+    "memory": {
+      "positive": {
+        "bytes": 23,
+        "gzip_bytes": 43
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      },
+      "directory": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.2_2022.1",
+    "case": "America/New_York",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "990e894dca40176e49bacf4fe7df2119670041d8c5428457b911bee600ea9205",
+    "past_contract": true,
+    "past_seconds": 0.009790899988729507,
+    "memory": {
+      "positive": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.6_2022.7",
+    "case": "Europe/Kyiv",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "0e0bb38a073cec2e55d16ae52d5c67e58ad5e1ed09d041e6553b60917927afb7",
+    "past_contract": true,
+    "past_seconds": 0.009838600002694875,
+    "memory": {
+      "positive": {
+        "bytes": 21,
+        "gzip_bytes": 41
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "directory": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.6_2022.7",
+    "case": "America/Ciudad_Juarez",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "path:zones/america/ciudad_juarez"
+    ],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.030738500005099922,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 52,
+        "gzip_bytes": 72
+      },
+      "negative_keys": {
+        "bytes": 57,
+        "gzip_bytes": 77
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.6_2022.7",
+    "case": "America/Coyhaique",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.03144699998665601,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 48,
+        "gzip_bytes": 68
+      },
+      "negative_keys": {
+        "bytes": 53,
+        "gzip_bytes": 73
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.6_2022.7",
+    "case": "UTC",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "past_contract": true,
+    "past_seconds": 0.010120999999344349,
+    "memory": {
+      "positive": {
+        "bytes": 13,
+        "gzip_bytes": 33
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      },
+      "directory": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.6_2022.7",
+    "case": "Europe/London",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "ba6216351037e7de3d4e0b3808da1f1b19a18cb581ef5c6a83cd3215e13e1447",
+    "past_contract": true,
+    "past_seconds": 0.010539899987634271,
+    "memory": {
+      "positive": {
+        "bytes": 23,
+        "gzip_bytes": 43
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      },
+      "directory": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.6_2022.7",
+    "case": "America/New_York",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "990e894dca40176e49bacf4fe7df2119670041d8c5428457b911bee600ea9205",
+    "past_contract": true,
+    "past_seconds": 0.008506500045768917,
+    "memory": {
+      "positive": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.7_2022.6",
+    "case": "Europe/Kyiv",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "0e0bb38a073cec2e55d16ae52d5c67e58ad5e1ed09d041e6553b60917927afb7",
+    "past_contract": true,
+    "past_seconds": 0.009847900015302002,
+    "memory": {
+      "positive": {
+        "bytes": 21,
+        "gzip_bytes": 41
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "directory": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.7_2022.6",
+    "case": "America/Ciudad_Juarez",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "zones/america/ciudad_juarez"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "83ad225c54a9f510e955e6681f7a966399f630d10827770de5cdce1b6ce478cb",
+    "past_contract": true,
+    "past_seconds": 0.00880359997972846,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 36,
+        "gzip_bytes": 56
+      },
+      "directory": {
+        "bytes": 36,
+        "gzip_bytes": 56
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.7_2022.6",
+    "case": "America/Coyhaique",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.030365000013262033,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 48,
+        "gzip_bytes": 68
+      },
+      "negative_keys": {
+        "bytes": 53,
+        "gzip_bytes": 73
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.7_2022.6",
+    "case": "UTC",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "past_contract": true,
+    "past_seconds": 0.010901300003752112,
+    "memory": {
+      "positive": {
+        "bytes": 13,
+        "gzip_bytes": 33
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      },
+      "directory": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.7_2022.6",
+    "case": "Europe/London",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "ba6216351037e7de3d4e0b3808da1f1b19a18cb581ef5c6a83cd3215e13e1447",
+    "past_contract": true,
+    "past_seconds": 0.009616700001060963,
+    "memory": {
+      "positive": {
+        "bytes": 23,
+        "gzip_bytes": 43
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      },
+      "directory": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      }
+    }
+  },
+  {
+    "id": "tzdata_2022.7_2022.6",
+    "case": "America/New_York",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "990e894dca40176e49bacf4fe7df2119670041d8c5428457b911bee600ea9205",
+    "past_contract": true,
+    "past_seconds": 0.009926499973516911,
+    "memory": {
+      "positive": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.1_2025.2",
+    "case": "Europe/Kyiv",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "0e0bb38a073cec2e55d16ae52d5c67e58ad5e1ed09d041e6553b60917927afb7",
+    "past_contract": true,
+    "past_seconds": 0.010108500020578504,
+    "memory": {
+      "positive": {
+        "bytes": 21,
+        "gzip_bytes": 41
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "directory": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.1_2025.2",
+    "case": "America/Ciudad_Juarez",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "83ad225c54a9f510e955e6681f7a966399f630d10827770de5cdce1b6ce478cb",
+    "past_contract": true,
+    "past_seconds": 0.011230300005991012,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 36,
+        "gzip_bytes": 56
+      },
+      "directory": {
+        "bytes": 36,
+        "gzip_bytes": 56
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.1_2025.2",
+    "case": "America/Coyhaique",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [
+      "path:zones/america/coyhaique"
+    ],
+    "past_result_sha": "1ba71ee4a9bf57175dfb132fb5776ea20a2d63c29c2080a8f2f418a70d956efb",
+    "past_contract": false,
+    "past_seconds": 0.03307240002322942,
+    "memory": {
+      "positive": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "neg_only": {
+        "bytes": 48,
+        "gzip_bytes": 68
+      },
+      "negative_keys": {
+        "bytes": 53,
+        "gzip_bytes": 73
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.1_2025.2",
+    "case": "UTC",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "past_contract": true,
+    "past_seconds": 0.008860900008585304,
+    "memory": {
+      "positive": {
+        "bytes": 13,
+        "gzip_bytes": 33
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      },
+      "directory": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.1_2025.2",
+    "case": "Europe/London",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "ba6216351037e7de3d4e0b3808da1f1b19a18cb581ef5c6a83cd3215e13e1447",
+    "past_contract": true,
+    "past_seconds": 0.009714099986013025,
+    "memory": {
+      "positive": {
+        "bytes": 23,
+        "gzip_bytes": 43
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      },
+      "directory": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.1_2025.2",
+    "case": "America/New_York",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "990e894dca40176e49bacf4fe7df2119670041d8c5428457b911bee600ea9205",
+    "past_contract": true,
+    "past_seconds": 0.01009549997979775,
+    "memory": {
+      "positive": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.2_2025.1",
+    "case": "Europe/Kyiv",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "0e0bb38a073cec2e55d16ae52d5c67e58ad5e1ed09d041e6553b60917927afb7",
+    "past_contract": true,
+    "past_seconds": 0.008615800004918128,
+    "memory": {
+      "positive": {
+        "bytes": 21,
+        "gzip_bytes": 41
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "directory": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.2_2025.1",
+    "case": "America/Ciudad_Juarez",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "83ad225c54a9f510e955e6681f7a966399f630d10827770de5cdce1b6ce478cb",
+    "past_contract": true,
+    "past_seconds": 0.009690299979411066,
+    "memory": {
+      "positive": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 36,
+        "gzip_bytes": 56
+      },
+      "directory": {
+        "bytes": 36,
+        "gzip_bytes": 56
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.2_2025.1",
+    "case": "America/Coyhaique",
+    "decision": {
+      "keep": false,
+      "positive": true,
+      "directory": true,
+      "negative_keys": true,
+      "always": true
+    },
+    "positive_hit": [
+      "zones/america/coyhaique"
+    ],
+    "negative_hit": [],
+    "past_result_sha": "da1bace093cfe532bb5d9029138be4cbad18f2e89ab4e501ca13540c7231c6d4",
+    "past_contract": true,
+    "past_seconds": 0.00913260004017502,
+    "memory": {
+      "positive": {
+        "bytes": 27,
+        "gzip_bytes": 47
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 32,
+        "gzip_bytes": 52
+      },
+      "directory": {
+        "bytes": 32,
+        "gzip_bytes": 52
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.2_2025.1",
+    "case": "UTC",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "3d5812abc84c11768aa73a732c85d75dbed439188f5bb3239e9b762ea31d9862",
+    "past_contract": true,
+    "past_seconds": 0.009374399960506707,
+    "memory": {
+      "positive": {
+        "bytes": 13,
+        "gzip_bytes": 33
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      },
+      "directory": {
+        "bytes": 18,
+        "gzip_bytes": 38
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.2_2025.1",
+    "case": "Europe/London",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "ba6216351037e7de3d4e0b3808da1f1b19a18cb581ef5c6a83cd3215e13e1447",
+    "past_contract": true,
+    "past_seconds": 0.008800099953077734,
+    "memory": {
+      "positive": {
+        "bytes": 23,
+        "gzip_bytes": 43
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      },
+      "directory": {
+        "bytes": 28,
+        "gzip_bytes": 48
+      }
+    }
+  },
+  {
+    "id": "tzdata_2025.2_2025.1",
+    "case": "America/New_York",
+    "decision": {
+      "keep": false,
+      "positive": false,
+      "directory": false,
+      "negative_keys": false,
+      "always": true
+    },
+    "positive_hit": [],
+    "negative_hit": [],
+    "past_result_sha": "990e894dca40176e49bacf4fe7df2119670041d8c5428457b911bee600ea9205",
+    "past_contract": true,
+    "past_seconds": 0.00989709998248145,
+    "memory": {
+      "positive": {
+        "bytes": 26,
+        "gzip_bytes": 46
+      },
+      "neg_only": {
+        "bytes": 2,
+        "gzip_bytes": 22
+      },
+      "negative_keys": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      },
+      "directory": {
+        "bytes": 31,
+        "gzip_bytes": 51
+      }
+    }
+  }
+]

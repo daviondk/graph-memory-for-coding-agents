@@ -1,0 +1,524 @@
+[
+  {
+    "task": "sympy__sympy-21596",
+    "direction": "revert",
+    "node": "sympy/sets/tests/test_fancysets.py::test_Integers_eval_imageset",
+    "observed": "passed",
+    "wall": 4.938620300032198,
+    "log": "ccf0bfb610257f10.log",
+    "sha256": "9c991957e767916f9033e62aad045995dc28556b2218efd61c8bae049b52a02b"
+  },
+  {
+    "task": "sympy__sympy-21596",
+    "direction": "revert",
+    "node": "sympy/sets/tests/test_fancysets.py::test_imageset_intersect_real",
+    "observed": "failed",
+    "wall": 2.2932888000505045,
+    "log": "732c8ce5df08d84c.log",
+    "sha256": "ef2795a5cc2427e26bdf2549447c2c8fb2e8a39d3fd2e26d03bbbf7136fc8d4e"
+  },
+  {
+    "task": "sympy__sympy-21596",
+    "direction": "fix",
+    "node": "sympy/sets/tests/test_fancysets.py::test_imageset_intersect_real",
+    "observed": "passed",
+    "wall": 2.6143398999702185,
+    "log": "f087d1471232d82d.log",
+    "sha256": "a65061b20cbaa56ecba0d687d4ee487cc0a7efa11d102848cb20687660c65dc0"
+  },
+  {
+    "task": "sympy__sympy-19040",
+    "direction": "revert",
+    "node": "sympy/polys/tests/test_polytools.py::test_issue_5786",
+    "observed": "failed",
+    "wall": 6.048016100015957,
+    "log": "555eb09b8a298257.log",
+    "sha256": "a811455134a53f9bf6629ca7911d1f70257c4b53adc3022f907abc88cfe0ea2d"
+  },
+  {
+    "task": "sympy__sympy-19040",
+    "direction": "revert",
+    "node": "sympy/polys/tests/test_polytools.py::test_norm",
+    "observed": "passed",
+    "wall": 3.43435659998795,
+    "log": "33d2506e631d52cc.log",
+    "sha256": "515b048e9844f4e730ab66343698f4ba2190f1da941967ab66c03c425bdc2655"
+  },
+  {
+    "task": "sympy__sympy-19040",
+    "direction": "fix",
+    "node": "sympy/polys/tests/test_polytools.py::test_issue_5786",
+    "observed": "passed",
+    "wall": 3.572595000034198,
+    "log": "78b89f2295c4e160.log",
+    "sha256": "515b048e9844f4e730ab66343698f4ba2190f1da941967ab66c03c425bdc2655"
+  },
+  {
+    "task": "sympy__sympy-23534",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_symbol.py::test_symbols",
+    "observed": "failed",
+    "wall": 4.271885900001507,
+    "log": "6483719cfd6b6fcf.log",
+    "sha256": "968602d347f158edd553b1a5b1f3a96bb5e18d893974ea6e08df1ee02b08181a"
+  },
+  {
+    "task": "sympy__sympy-23534",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_symbol.py::test_uniquely_named_symbol_and_Symbol",
+    "observed": "passed",
+    "wall": 1.860738500021398,
+    "log": "f4da6fdf8788e395.log",
+    "sha256": "db4ce22a81508ccb886f409bf6d5791df57d3810dd37302d8c4c62e5f45a28a3"
+  },
+  {
+    "task": "sympy__sympy-23534",
+    "direction": "fix",
+    "node": "sympy/core/tests/test_symbol.py::test_symbols",
+    "observed": "passed",
+    "wall": 1.6769504999974743,
+    "log": "e9ce94f28617f056.log",
+    "sha256": "5bda4f8fc0165420e8b84a348679234f7bc8cc5532843d7e34d3e0c30ff83f12"
+  },
+  {
+    "task": "sympy__sympy-20590",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_basic.py::test_as_dummy",
+    "observed": "passed",
+    "wall": 4.09612780000316,
+    "log": "79428d745f6f4bbc.log",
+    "sha256": "b41c3520191f06969154aad435cc6fb683bd3e3bc072fbfa27ea0b63fa8b8fe2"
+  },
+  {
+    "task": "sympy__sympy-20590",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_basic.py::test_immutable",
+    "observed": "failed",
+    "wall": 1.8041191000374965,
+    "log": "8bab1cfcba02bf0f.log",
+    "sha256": "f80b477724cf399b10446b3203584ee0870ffd7fbe77b9b1fb554c1d451c2ff3"
+  },
+  {
+    "task": "sympy__sympy-20590",
+    "direction": "fix",
+    "node": "sympy/core/tests/test_basic.py::test_immutable",
+    "observed": "passed",
+    "wall": 1.7237110999994911,
+    "log": "47829db8a981cd14.log",
+    "sha256": "844d1426454230a1f3892850b65d1ab8e9fa138813b838b4c362e7e81804c246"
+  },
+  {
+    "task": "sympy__sympy-18698",
+    "direction": "revert",
+    "node": "sympy/polys/tests/test_polytools.py::test_Poly_mul",
+    "observed": "passed",
+    "wall": 5.284904300002381,
+    "log": "c27df2be572d06b3.log",
+    "sha256": "309bcb8a1cc12739d080561434a5abd6a10e36329763d149ad7cb302784ff44f"
+  },
+  {
+    "task": "sympy__sympy-18698",
+    "direction": "revert",
+    "node": "sympy/polys/tests/test_polytools.py::test_factor_terms",
+    "observed": "failed",
+    "wall": 3.464988399995491,
+    "log": "1d9882e27529ea3a.log",
+    "sha256": "ab643ac818fb6653cf8657c68880a3864fc1f53a238fa5e235c7f52be3ade9b0"
+  },
+  {
+    "task": "sympy__sympy-18698",
+    "direction": "revert",
+    "node": "sympy/polys/tests/test_polytools.py::test_sqf_norm",
+    "observed": "passed",
+    "wall": 3.5332128000445664,
+    "log": "603eb77cdc2b47e3.log",
+    "sha256": "23c036f407d6135cb3e7e828730dcc34fb27313e00ae93a08915067960d21fbc"
+  },
+  {
+    "task": "sympy__sympy-18698",
+    "direction": "fix",
+    "node": "sympy/polys/tests/test_polytools.py::test_factor_terms",
+    "observed": "passed",
+    "wall": 4.036467799975071,
+    "log": "04655d23017d626a.log",
+    "sha256": "7c1ef6e73e865812fc020c05d059afe5a40cbaa23ace0c44b817782d9bdd5bf1"
+  },
+  {
+    "task": "sympy__sympy-19783",
+    "direction": "revert",
+    "node": "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+    "observed": "failed",
+    "wall": 4.450235199998133,
+    "log": "5f6955eabddd2651.log",
+    "sha256": "700d1beb41cf873e06c6b7efb363302c5083d2e4b76271cae8ef92d491db89a2"
+  },
+  {
+    "task": "sympy__sympy-19783",
+    "direction": "revert",
+    "node": "sympy/physics/quantum/tests/test_operator.py::test_operator_dagger",
+    "observed": "passed",
+    "wall": 1.9872815000126138,
+    "log": "68b427ad5062e363.log",
+    "sha256": "572429b91464a53c8580b6048dd8bdf2cec766ddf96e8a82bd26debb65a06b97"
+  },
+  {
+    "task": "sympy__sympy-19783",
+    "direction": "fix",
+    "node": "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+    "observed": "passed",
+    "wall": 2.004045200010296,
+    "log": "3ace9d764c7d8f1d.log",
+    "sha256": "f24c5265bd1824abb390203e2d863548684f9bbe488adedcccae5f0a6c6e6cd3"
+  },
+  {
+    "task": "sympy__sympy-21379",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_arit.py::test_Mod",
+    "observed": "failed",
+    "wall": 5.3572647999972105,
+    "log": "77e6634f2dfce0b4.log",
+    "sha256": "6a8ef755198ae75fb5b4d0a92d21ad18d75aa2098bc26803e34c89c82217c87a"
+  },
+  {
+    "task": "sympy__sympy-21379",
+    "direction": "fix",
+    "node": "sympy/core/tests/test_arit.py::test_Mod",
+    "observed": "passed",
+    "wall": 3.5458436000044458,
+    "log": "0ad18edbd637e974.log",
+    "sha256": "7b66dad19a8eee35bedf24d902ddee60be4c3fc04264757cf13e3786bdf2dde1"
+  },
+  {
+    "task": "sympy__sympy-20801",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_numbers.py::test_bool_eq",
+    "observed": "passed",
+    "wall": 5.0693573000025935,
+    "log": "b8e93a5ea57aea20.log",
+    "sha256": "26d43ea009bb9d1e14c6d4356eb22b61b0b1dc82223413b1fa089b236d7503ec"
+  },
+  {
+    "task": "sympy__sympy-20801",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_numbers.py::test_zero_not_false",
+    "observed": "failed",
+    "wall": 2.6377546000294387,
+    "log": "73ddc3785cd170dd.log",
+    "sha256": "021647c08b91ec5574f55ac9176f5e97af9994b83e5afebea5884fd81bd75e29"
+  },
+  {
+    "task": "sympy__sympy-20801",
+    "direction": "fix",
+    "node": "sympy/core/tests/test_numbers.py::test_zero_not_false",
+    "observed": "passed",
+    "wall": 2.5662605999968946,
+    "log": "0cf932afc6dc6dd5.log",
+    "sha256": "469330ab2e6a7872bb8236bbfc236dcf03265011575c99d946cdc35418ee207c"
+  },
+  {
+    "task": "sympy__sympy-19954",
+    "direction": "revert",
+    "node": "sympy/combinatorics/tests/test_perm_groups.py::test_PermutationGroup",
+    "observed": "passed",
+    "wall": 3.98738659999799,
+    "log": "d3321494eca02c67.log",
+    "sha256": "7e1dd912d2a89fc14bd80b2e935ef4493bb2967a232f1b62d0babb2540db98dd"
+  },
+  {
+    "task": "sympy__sympy-19954",
+    "direction": "revert",
+    "node": "sympy/combinatorics/tests/test_perm_groups.py::test_eq",
+    "observed": "passed",
+    "wall": 1.8262217000010423,
+    "log": "622c2653c90d6616.log",
+    "sha256": "b1cbeade9b552579fc419b517ab7cf6eaed4dc43dafb5a4ece3e12ebce6840c0"
+  },
+  {
+    "task": "sympy__sympy-19954",
+    "direction": "revert",
+    "node": "sympy/combinatorics/tests/test_perm_groups.py::test_is_alt_sym",
+    "observed": "passed",
+    "wall": 1.9096664999960922,
+    "log": "fdf5edc678ec0fc2.log",
+    "sha256": "df3c4b3540c7e8bec3c0ae81a25b76a6685922317c9b3151c9f72bbf115b49a3"
+  },
+  {
+    "task": "sympy__sympy-19954",
+    "direction": "revert",
+    "node": "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup",
+    "observed": "failed",
+    "wall": 2.256698699959088,
+    "log": "893391808e90dae4.log",
+    "sha256": "96fa0ed34a8841284f01635c42ad88788ce81583a21d09a3553ac4e93eaeee1e"
+  },
+  {
+    "task": "sympy__sympy-19954",
+    "direction": "fix",
+    "node": "sympy/combinatorics/tests/test_perm_groups.py::test_eq",
+    "observed": "passed",
+    "wall": 1.8880078999791294,
+    "log": "5cdf2b40f5fcc5df.log",
+    "sha256": "fdf3322ce9599e1870a9290acd3a9d751bec90a5fe7e7adc80180e6d1882b6eb"
+  },
+  {
+    "task": "sympy__sympy-19954",
+    "direction": "fix",
+    "node": "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup",
+    "observed": "passed",
+    "wall": 2.28031890001148,
+    "log": "8257c17e7e7b5747.log",
+    "sha256": "ec0b08c135cce3825612587f4ba7ea44d66b23d6b916c578b83f872ae417b4f1"
+  },
+  {
+    "task": "sympy__sympy-18189",
+    "direction": "revert",
+    "node": "sympy/solvers/tests/test_diophantine.py::test_diopcoverage",
+    "observed": "passed",
+    "wall": 4.3196654000203125,
+    "log": "1b5c854dd48dbab1.log",
+    "sha256": "091c1e2e2296b446153885c39643fbe8bf0ff996cf681e125feeddcdd462bef0"
+  },
+  {
+    "task": "sympy__sympy-18189",
+    "direction": "revert",
+    "node": "sympy/solvers/tests/test_diophantine.py::test_diophantine",
+    "observed": "failed",
+    "wall": 2.3965171000454575,
+    "log": "42883c61b1c479ce.log",
+    "sha256": "324a4b0a48d382e9b7d59309ff83fdba9f5c8257a6fc3b245f8d04e7de4f2ea0"
+  },
+  {
+    "task": "sympy__sympy-18189",
+    "direction": "revert",
+    "node": "sympy/solvers/tests/test_diophantine.py::test_prime_as_sum_of_two_squares",
+    "observed": "passed",
+    "wall": 1.9868392000207677,
+    "log": "5629cbcc184e5753.log",
+    "sha256": "90844cecedbf812b6d408cab141cc2db90801f092a89cab23bc5dcaad507eec5"
+  },
+  {
+    "task": "sympy__sympy-18189",
+    "direction": "fix",
+    "node": "sympy/solvers/tests/test_diophantine.py::test_diophantine",
+    "observed": "passed",
+    "wall": 2.3586871000006795,
+    "log": "1591284308c0d46f.log",
+    "sha256": "3c3dffb7f85117effea41c0d9d43c26996218e442e4df7d71d1c0f81e4a4f5d5"
+  },
+  {
+    "task": "sympy__sympy-22914",
+    "direction": "revert",
+    "node": "sympy/printing/tests/test_pycode.py::test_NumPyPrinter",
+    "observed": "passed",
+    "wall": 4.400231499981601,
+    "log": "591fc11b83f17130.log",
+    "sha256": "7148718990d7ea797310a566f73839afc086a66a233d8b87a51420dbd3998814"
+  },
+  {
+    "task": "sympy__sympy-22914",
+    "direction": "revert",
+    "node": "sympy/printing/tests/test_pycode.py::test_PythonCodePrinter",
+    "observed": "failed",
+    "wall": 1.79126999998698,
+    "log": "31d44cbba06758de.log",
+    "sha256": "0076bd554ff51d38dea9dafd0da2800fef36d99083d865f3b544e2005bcbbd22"
+  },
+  {
+    "task": "sympy__sympy-22914",
+    "direction": "revert",
+    "node": "sympy/printing/tests/test_pycode.py::test_pycode_reserved_words",
+    "observed": "passed",
+    "wall": 1.7834979000035673,
+    "log": "14996c199df61dd4.log",
+    "sha256": "a627885f4b9efaac136d48977c38ccc0cf413d2b07f0c2dca5d54f69518b7604"
+  },
+  {
+    "task": "sympy__sympy-22914",
+    "direction": "fix",
+    "node": "sympy/printing/tests/test_pycode.py::test_PythonCodePrinter",
+    "observed": "passed",
+    "wall": 1.718614700017497,
+    "log": "e918a6e78cfb2138.log",
+    "sha256": "a627885f4b9efaac136d48977c38ccc0cf413d2b07f0c2dca5d54f69518b7604"
+  },
+  {
+    "task": "sympy__sympy-24443",
+    "direction": "revert",
+    "node": "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism",
+    "observed": "failed",
+    "wall": 4.237175600021146,
+    "log": "96efa242b33c26f7.log",
+    "sha256": "ad6e9630b079210a66ee5a15db382356a7830ed6443b756fe47de6d085d5f8cb"
+  },
+  {
+    "task": "sympy__sympy-24443",
+    "direction": "fix",
+    "node": "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism",
+    "observed": "passed",
+    "wall": 1.846513699973002,
+    "log": "3a9fbf6b25b1c8bc.log",
+    "sha256": "420148db9e0b69209165e34674193ac580cc29b79b121aeba98eef98d79c0cbe"
+  },
+  {
+    "task": "sympy__sympy-20916",
+    "direction": "revert",
+    "node": "sympy/printing/tests/test_conventions.py::test_requires_partial",
+    "observed": "passed",
+    "wall": 3.8693351999972947,
+    "log": "83671af0df0d2bd4.log",
+    "sha256": "e86680bf3b98a95ff10d35942a9bb473264e7e3af72e6b215c558dfbb612074b"
+  },
+  {
+    "task": "sympy__sympy-20916",
+    "direction": "revert",
+    "node": "sympy/printing/tests/test_conventions.py::test_super_sub",
+    "observed": "failed",
+    "wall": 1.7018426000140607,
+    "log": "cf7b1f7810f1b57c.log",
+    "sha256": "4d770c4c26f8d90064c5c36ecb1a594edbebd4fdbd27300e6208da14d94c0883"
+  },
+  {
+    "task": "sympy__sympy-20916",
+    "direction": "fix",
+    "node": "sympy/printing/tests/test_conventions.py::test_super_sub",
+    "observed": "passed",
+    "wall": 1.7089984000194818,
+    "log": "6c375933ae5c25e7.log",
+    "sha256": "8c686831138393cde642a6838c457d91e8601fbf79b527c991836acb24b3e748"
+  },
+  {
+    "task": "sympy__sympy-24539",
+    "direction": "revert",
+    "node": "sympy/polys/tests/test_rings.py::test_PolyElement_as_expr",
+    "observed": "failed",
+    "wall": 4.512952599965502,
+    "log": "67ae9d85496be135.log",
+    "sha256": "38955ac80778533997ea4b4f03075737932550add7f88a4a76502d2d8c17b4f4"
+  },
+  {
+    "task": "sympy__sympy-24539",
+    "direction": "fix",
+    "node": "sympy/polys/tests/test_rings.py::test_PolyElement_as_expr",
+    "observed": "passed",
+    "wall": 2.168926200014539,
+    "log": "8073a73d890ed40d.log",
+    "sha256": "0d6a4684845b8d1b21909bea624950117e07c547c3a171b9997fde669f7578c7"
+  },
+  {
+    "task": "sympy__sympy-16792",
+    "direction": "revert",
+    "node": "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg",
+    "observed": "failed",
+    "wall": 4.00166700000409,
+    "log": "cce212607d0f1a78.log",
+    "sha256": "0df221d03d6e47f1bade152bc1f50ea106c1947861a07244d5b10677e66e4d23"
+  },
+  {
+    "task": "sympy__sympy-16792",
+    "direction": "fix",
+    "node": "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg",
+    "observed": "passed",
+    "wall": 1.7705360000254586,
+    "log": "1f1377998ee687ed.log",
+    "sha256": "e17563eb9c1712be115434e01effb0a67cc25aa7772fbd8047147ad5fd158c57"
+  },
+  {
+    "task": "sympy__sympy-24661",
+    "direction": "revert",
+    "node": "sympy/parsing/tests/test_sympy_parser.py::test_convert_equals_signs",
+    "observed": "passed",
+    "wall": 4.142980900011025,
+    "log": "0e7ca44e7155d084.log",
+    "sha256": "d821f20c04a12f9d1bd510aef0cb4b1ab9c00a29682deb7187f6986b6fb8ecfe"
+  },
+  {
+    "task": "sympy__sympy-24661",
+    "direction": "revert",
+    "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+    "observed": "failed",
+    "wall": 1.5717272000038065,
+    "log": "9a7603af0dd93f33.log",
+    "sha256": "1d541e748ea418a7fdbfcb3e08d6a14d7121101af5857540ac43bb12331055b6"
+  },
+  {
+    "task": "sympy__sympy-24661",
+    "direction": "revert",
+    "node": "sympy/parsing/tests/test_sympy_parser.py::test_parsing_definitions",
+    "observed": "passed",
+    "wall": 1.6330087999813259,
+    "log": "0d3ac860ec7bd0a1.log",
+    "sha256": "d124f9696ed40502b4b30c0104e7d254a7e35a3d854991f72025ba67c7e5c805"
+  },
+  {
+    "task": "sympy__sympy-24661",
+    "direction": "fix",
+    "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+    "observed": "passed",
+    "wall": 1.6577791000017896,
+    "log": "1cfc1f7037611148.log",
+    "sha256": "d124f9696ed40502b4b30c0104e7d254a7e35a3d854991f72025ba67c7e5c805"
+  },
+  {
+    "task": "sympy__sympy-19637",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_sympify.py::test_S_sympify",
+    "observed": "passed",
+    "wall": 3.9297531000338495,
+    "log": "c89a49b042671e08.log",
+    "sha256": "c67d6ab96f88fc3082f4dd84f74a14d8062163059219a1dbace93c43c2e7823c"
+  },
+  {
+    "task": "sympy__sympy-19637",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_sympify.py::test_kernS",
+    "observed": "failed",
+    "wall": 1.9812767000403255,
+    "log": "d8c5abc2a4591f97.log",
+    "sha256": "55faed20f80d6baa917962025f89e4d4582c9e5902753c5131ab2fdd1d518927"
+  },
+  {
+    "task": "sympy__sympy-19637",
+    "direction": "fix",
+    "node": "sympy/core/tests/test_sympify.py::test_kernS",
+    "observed": "passed",
+    "wall": 2.00163120002253,
+    "log": "8ecf1d14ef594684.log",
+    "sha256": "58126b21f705ce19df51ac2e341bd78f9ceeea6e323d555abe4720e22df97fac"
+  },
+  {
+    "task": "sympy__sympy-18211",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_relational.py::test_Not",
+    "observed": "passed",
+    "wall": 4.0225127000012435,
+    "log": "e2c9af48ac9af40a.log",
+    "sha256": "e10e977d5acbd1581d987af0dff6066ef3d5f0676985bed981e927d6cc965a01"
+  },
+  {
+    "task": "sympy__sympy-18211",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_relational.py::test_imaginary_compare_raises_TypeError",
+    "observed": "passed",
+    "wall": 2.0344304000027478,
+    "log": "785326526617f86c.log",
+    "sha256": "ad7ad2e35ced5f5d1b1a8901b57bf30d557d3d888f7f05b9894f860668c05737"
+  },
+  {
+    "task": "sympy__sympy-18211",
+    "direction": "revert",
+    "node": "sympy/core/tests/test_relational.py::test_issue_18188",
+    "observed": "failed",
+    "wall": 2.344072000007145,
+    "log": "843ba47a0be0ab10.log",
+    "sha256": "6190dcfb7c78e290cfd2d4d9f952e67c9c758fbc776355c7afa431bdc468a70e"
+  },
+  {
+    "task": "sympy__sympy-18211",
+    "direction": "fix",
+    "node": "sympy/core/tests/test_relational.py::test_issue_18188",
+    "observed": "passed",
+    "wall": 2.178524999995716,
+    "log": "ae7a0896641e6ea6.log",
+    "sha256": "ec0b08c135cce3825612587f4ba7ea44d66b23d6b916c578b83f872ae417b4f1"
+  }
+]

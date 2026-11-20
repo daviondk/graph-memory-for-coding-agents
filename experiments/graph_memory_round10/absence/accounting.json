@@ -1,0 +1,356 @@
+{
+  "storage": {
+    "libraries": {
+      "unique_prior_states_ops": 36,
+      "bytes": {
+        "positive": {
+          "min": 2,
+          "median": 387.0,
+          "max": 13743,
+          "sum": 103403
+        },
+        "directory": {
+          "min": 7,
+          "median": 400.0,
+          "max": 13756,
+          "sum": 103883
+        },
+        "negative_keys": {
+          "min": 7,
+          "median": 504.0,
+          "max": 13775,
+          "sum": 104836
+        },
+        "neg_only": {
+          "min": 2,
+          "median": 29.0,
+          "max": 122,
+          "sum": 1325
+        },
+        "marginal_exact_minus_positive": {
+          "min": 5,
+          "median": 32.0,
+          "max": 125,
+          "sum": 1433
+        }
+      },
+      "gzip_bytes": {
+        "positive": {
+          "min": 22,
+          "median": 139.0,
+          "max": 1988,
+          "sum": 16471
+        },
+        "directory": {
+          "min": 27,
+          "median": 147.0,
+          "max": 1999,
+          "sum": 16760
+        },
+        "negative_keys": {
+          "min": 27,
+          "median": 190.0,
+          "max": 2010,
+          "sum": 17277
+        },
+        "neg_only": {
+          "min": 22,
+          "median": 42.0,
+          "max": 91,
+          "sum": 1612
+        },
+        "marginal_exact_minus_positive": {
+          "min": 5,
+          "median": 22.0,
+          "max": 51,
+          "sum": 806
+        }
+      }
+    },
+    "tzdata": {
+      "unique_prior_states_ops": 36,
+      "bytes": {
+        "positive": {
+          "min": 2,
+          "median": 21.0,
+          "max": 31,
+          "sum": 615
+        },
+        "directory": {
+          "min": 18,
+          "median": 30.5,
+          "max": 36,
+          "sum": 1010
+        },
+        "negative_keys": {
+          "min": 18,
+          "median": 31.0,
+          "max": 57,
+          "sum": 1215
+        },
+        "neg_only": {
+          "min": 2,
+          "median": 2.0,
+          "max": 52,
+          "sum": 492
+        },
+        "marginal_exact_minus_positive": {
+          "min": 5,
+          "median": 5.0,
+          "max": 55,
+          "sum": 600
+        }
+      },
+      "gzip_bytes": {
+        "positive": {
+          "min": 22,
+          "median": 41.0,
+          "max": 51,
+          "sum": 1335
+        },
+        "directory": {
+          "min": 38,
+          "median": 50.5,
+          "max": 56,
+          "sum": 1730
+        },
+        "negative_keys": {
+          "min": 38,
+          "median": 51.0,
+          "max": 77,
+          "sum": 1935
+        },
+        "neg_only": {
+          "min": 22,
+          "median": 22.0,
+          "max": 72,
+          "sum": 1212
+        },
+        "marginal_exact_minus_positive": {
+          "min": 5,
+          "median": 5.0,
+          "max": 55,
+          "sum": 600
+        }
+      }
+    },
+    "all": {
+      "unique_prior_states_ops": 72,
+      "bytes": {
+        "positive": {
+          "min": 2,
+          "median": 23.0,
+          "max": 13743,
+          "sum": 104018
+        },
+        "directory": {
+          "min": 7,
+          "median": 31.0,
+          "max": 13756,
+          "sum": 104893
+        },
+        "negative_keys": {
+          "min": 7,
+          "median": 34.0,
+          "max": 13775,
+          "sum": 106051
+        },
+        "neg_only": {
+          "min": 2,
+          "median": 2.0,
+          "max": 122,
+          "sum": 1817
+        },
+        "marginal_exact_minus_positive": {
+          "min": 5,
+          "median": 5.0,
+          "max": 125,
+          "sum": 2033
+        }
+      },
+      "gzip_bytes": {
+        "positive": {
+          "min": 22,
+          "median": 43.0,
+          "max": 1988,
+          "sum": 17806
+        },
+        "directory": {
+          "min": 27,
+          "median": 51.0,
+          "max": 1999,
+          "sum": 18490
+        },
+        "negative_keys": {
+          "min": 27,
+          "median": 54.0,
+          "max": 2010,
+          "sum": 19212
+        },
+        "neg_only": {
+          "min": 22,
+          "median": 22.0,
+          "max": 91,
+          "sum": 2824
+        },
+        "marginal_exact_minus_positive": {
+          "min": 5,
+          "median": 5.0,
+          "max": 55,
+          "sum": 1406
+        }
+      }
+    }
+  },
+  "plugin_db_bytes_per_suite": {
+    "build": {
+      "min": 53248,
+      "median": 53248.0,
+      "max": 126976,
+      "sum": 1544192
+    },
+    "select": {
+      "min": 53248,
+      "median": 53248.0,
+      "max": 126976,
+      "sum": 1548288
+    }
+  },
+  "negative_keys_false_positives": [
+    {
+      "id": "tabulate_A_B",
+      "case": "normal",
+      "positive": [],
+      "negative": [
+        "import:wcwidth"
+      ]
+    },
+    {
+      "id": "tabulate_B_A",
+      "case": "normal",
+      "positive": [
+        "vendor/wcwidth/__init__.py",
+        "vendor/wcwidth/_clip.py",
+        "vendor/wcwidth/_constants.py",
+        "vendor/wcwidth/_wcswidth.py",
+        "vendor/wcwidth/_wcwidth.py",
+        "vendor/wcwidth/_wcwidth_c.pyd",
+        "vendor/wcwidth/_width.py",
+        "vendor/wcwidth/align.py",
+        "vendor/wcwidth/bisearch.py",
+        "vendor/wcwidth/control_codes.py",
+        "vendor/wcwidth/escape_sequences.py",
+        "vendor/wcwidth/grapheme.py",
+        "vendor/wcwidth/hyperlink.py",
+        "vendor/wcwidth/sgr_state.py",
+        "vendor/wcwidth/table_ambiguous.py",
+        "vendor/wcwidth/table_grapheme.py",
+        "vendor/wcwidth/table_grapheme_overrides/__init__.py",
+        "vendor/wcwidth/table_grapheme_overrides/_registry.py",
+        "vendor/wcwidth/table_mc.py",
+        "vendor/wcwidth/table_overrides.py",
+        "vendor/wcwidth/table_term_programs.py",
+        "vendor/wcwidth/table_vs15.py",
+        "vendor/wcwidth/table_vs16.py",
+        "vendor/wcwidth/table_wide.py",
+        "vendor/wcwidth/table_zero.py",
+        "vendor/wcwidth/text_sizing.py",
+        "vendor/wcwidth/textwrap.py",
+        "vendor/wcwidth/unicode_versions.py",
+        "vendor/wcwidth/wcwidth.py"
+      ],
+      "negative": []
+    },
+    {
+      "id": "markdown-it-py_A_B",
+      "case": "normal",
+      "positive": [],
+      "negative": [
+        "import:linkify_it"
+      ]
+    },
+    {
+      "id": "markdown-it-py_B_A",
+      "case": "normal",
+      "positive": [
+        "vendor/linkify_it/__init__.py",
+        "vendor/linkify_it/_ucre_data.py",
+        "vendor/linkify_it/main.py",
+        "vendor/linkify_it/ucre.py"
+      ],
+      "negative": []
+    },
+    {
+      "id": "fsspec_A_B",
+      "case": "normal",
+      "positive": [],
+      "negative": [
+        "import:lz4"
+      ]
+    },
+    {
+      "id": "fsspec_B_A",
+      "case": "normal",
+      "positive": [
+        "vendor/lz4/__init__.py",
+        "vendor/lz4/_version.cp311-win_amd64.pyd",
+        "vendor/lz4/frame/__init__.py",
+        "vendor/lz4/frame/_frame.cp311-win_amd64.pyd",
+        "vendor/lz4/version.py"
+      ],
+      "negative": []
+    }
+  ],
+  "testmon_stale": [
+    {
+      "id": "tzdata_2022.2_2022.1",
+      "case": "Europe/Kyiv"
+    },
+    {
+      "id": "tzdata_2022.7_2022.6",
+      "case": "America/Ciudad_Juarez"
+    },
+    {
+      "id": "tzdata_2025.2_2025.1",
+      "case": "America/Coyhaique"
+    }
+  ],
+  "original_upstream_pytest": {
+    "('tabulate', 'A')": {
+      "skipped": 1
+    },
+    "('tabulate', 'B')": {
+      "passed": 1
+    },
+    "('tabulate', 'P')": {
+      "skipped": 1
+    },
+    "('markdown-it-py', 'A')": {
+      "skipped": 31
+    },
+    "('markdown-it-py', 'B')": {
+      "passed": 31
+    },
+    "('markdown-it-py', 'P')": {
+      "skipped": 31
+    },
+    "('networkx', 'A')": {
+      "skipped": 1
+    },
+    "('networkx', 'B')": {
+      "passed": 4
+    },
+    "('networkx', 'P')": {
+      "skipped": 1
+    },
+    "('fsspec', 'A')": {
+      "skipped": 1
+    },
+    "('fsspec', 'B')": {
+      "passed": 1
+    },
+    "('fsspec', 'P')": {
+      "skipped": 1
+    }
+  }
+}

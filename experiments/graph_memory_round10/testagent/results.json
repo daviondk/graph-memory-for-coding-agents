@@ -1,0 +1,153 @@
+{
+  "fix": {
+    "arms": {
+      "baseline": {
+        "n": 18,
+        "changed_found": 18,
+        "stale_left": 1,
+        "invalid": 0,
+        "prompt": 0,
+        "generated": 0
+      },
+      "baseline_graph": {
+        "n": 18,
+        "changed_found": 18,
+        "stale_left": 1,
+        "invalid": 0,
+        "prompt": 0,
+        "generated": 0
+      },
+      "graph": {
+        "n": 18,
+        "changed_found": 18,
+        "stale_left": 1,
+        "invalid": 0,
+        "prompt": 10850,
+        "generated": 130
+      },
+      "off": {
+        "n": 18,
+        "changed_found": 18,
+        "stale_left": 1,
+        "invalid": 0,
+        "prompt": 10641,
+        "generated": 130
+      },
+      "privileged": {
+        "n": 18,
+        "changed_found": 18,
+        "stale_left": 1,
+        "invalid": 0,
+        "prompt": 10850,
+        "generated": 130
+      },
+      "shuffled": {
+        "n": 18,
+        "changed_found": 17,
+        "stale_left": 2,
+        "invalid": 0,
+        "prompt": 10850,
+        "generated": 130
+      }
+    },
+    "graph_against": {
+      "shuffled": {
+        "wins": 1,
+        "losses": 0,
+        "ties": 17,
+        "mcnemar_p": 1
+      },
+      "off": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 18,
+        "mcnemar_p": 1
+      },
+      "baseline_graph": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 18,
+        "mcnemar_p": 1
+      }
+    },
+    "available_changes": 19
+  },
+  "revert": {
+    "arms": {
+      "baseline": {
+        "n": 18,
+        "changed_found": 4,
+        "stale_left": 15,
+        "invalid": 0,
+        "prompt": 0,
+        "generated": 0
+      },
+      "baseline_graph": {
+        "n": 18,
+        "changed_found": 10,
+        "stale_left": 9,
+        "invalid": 0,
+        "prompt": 0,
+        "generated": 0
+      },
+      "graph": {
+        "n": 18,
+        "changed_found": 14,
+        "stale_left": 5,
+        "invalid": 0,
+        "prompt": 10869,
+        "generated": 131
+      },
+      "off": {
+        "n": 18,
+        "changed_found": 14,
+        "stale_left": 5,
+        "invalid": 0,
+        "prompt": 10660,
+        "generated": 130
+      },
+      "privileged": {
+        "n": 18,
+        "changed_found": 18,
+        "stale_left": 1,
+        "invalid": 0,
+        "prompt": 10869,
+        "generated": 130
+      },
+      "shuffled": {
+        "n": 18,
+        "changed_found": 12,
+        "stale_left": 7,
+        "invalid": 0,
+        "prompt": 10869,
+        "generated": 130
+      }
+    },
+    "graph_against": {
+      "shuffled": {
+        "wins": 3,
+        "losses": 1,
+        "ties": 14,
+        "mcnemar_p": 0.625
+      },
+      "off": {
+        "wins": 2,
+        "losses": 2,
+        "ties": 14,
+        "mcnemar_p": 1
+      },
+      "baseline_graph": {
+        "wins": 5,
+        "losses": 1,
+        "ties": 12,
+        "mcnemar_p": 0.21875
+      }
+    },
+    "available_changes": 19
+  },
+  "verification": {
+    "unique_actual_reruns": 58,
+    "isolated_mismatches": [],
+    "unique_gpu_requests": 114
+  }
+}

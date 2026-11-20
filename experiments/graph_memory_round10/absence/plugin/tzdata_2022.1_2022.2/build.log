@@ -1,0 +1,22 @@
+FFF...                                                                   [100%]
+================================== FAILURES ===================================
+__________________________________ test_op_0 __________________________________
+test_application.py:6: in test_op_0
+    assert passed('tzdata','Europe/Kyiv',v)
+E   AssertionError: assert False
+E    +  where False = passed('tzdata', 'Europe/Kyiv', {'unavailable': 'zone'})
+__________________________________ test_op_1 __________________________________
+test_application.py:10: in test_op_1
+    assert passed('tzdata','America/Ciudad_Juarez',v)
+E   AssertionError: assert False
+E    +  where False = passed('tzdata', 'America/Ciudad_Juarez', {'unavailable': 'zone'})
+__________________________________ test_op_2 __________________________________
+test_application.py:14: in test_op_2
+    assert passed('tzdata','America/Coyhaique',v)
+E   AssertionError: assert False
+E    +  where False = passed('tzdata', 'America/Coyhaique', {'unavailable': 'zone'})
+=========================== short test summary info ===========================
+FAILED test_application.py::test_op_0 - AssertionError: assert False
+FAILED test_application.py::test_op_1 - AssertionError: assert False
+FAILED test_application.py::test_op_2 - AssertionError: assert False
+3 failed, 3 passed in 0.19s

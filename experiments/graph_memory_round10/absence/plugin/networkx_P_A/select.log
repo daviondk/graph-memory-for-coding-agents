@@ -1,0 +1,10 @@
+F..                                                                      [100%]
+================================== FAILURES ===================================
+__________________________________ test_op_0 __________________________________
+test_application.py:6: in test_op_0
+    assert passed('networkx','feature',v)
+E   AssertionError: assert False
+E    +  where False = passed('networkx', 'feature', {'unavailable': 'pydot'})
+=========================== short test summary info ===========================
+FAILED test_application.py::test_op_0 - AssertionError: assert False
+1 failed, 2 passed in 2.19s

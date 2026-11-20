@@ -1,0 +1,56 @@
+sympy__sympy-16792 fix
+sympy__sympy-16792 revert
+sympy__sympy-18189 fix
+sympy__sympy-18189 revert
+sympy__sympy-18211 fix
+sympy__sympy-18211 revert
+sympy__sympy-19783 fix
+sympy__sympy-19783 revert
+sympy__sympy-19954 fix
+sympy__sympy-19954 revert
+sympy__sympy-20590 fix
+sympy__sympy-20590 revert
+sympy__sympy-20916 fix
+sympy__sympy-20916 revert
+sympy__sympy-21379 fix
+sympy__sympy-21379 revert
+sympy__sympy-24443 fix
+sympy__sympy-24443 revert
+sympy__sympy-24661 fix
+sympy__sympy-24661 revert
+sympy__sympy-18698 fix
+sympy__sympy-18698 revert
+sympy__sympy-19040 fix
+sympy__sympy-19040 revert
+sympy__sympy-19637 fix
+sympy__sympy-19637 revert
+sympy__sympy-20801 fix
+sympy__sympy-20801 revert
+sympy__sympy-21596 fix
+sympy__sympy-21596 revert
+sympy__sympy-22914 fix
+sympy__sympy-22914 revert
+sympy__sympy-23534 fix
+sympy__sympy-23534 revert
+sympy__sympy-24539 fix
+sympy__sympy-24539 revert
+Traceback (most recent call last):
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round10\multiset\build.py", line 64, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round10\multiset\build.py", line 63, in main
+    put(ROOT/'state_seal.json',{'local':locks(locked),'upstream':{str(R9/'budget'/'sketch.py'):sha(R9/'budget'/'sketch.py')}})
+                                        ^^^^^^^^^^^^^
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round10\multiset\common.py", line 17, in locks
+    return {p.relative_to(ROOT).as_posix():sha(p) for p in files}
+                                           ^^^^^^
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round10\multiset\common.py", line 15, in sha
+    def sha(path):return hashlib.sha256(path.read_bytes()).hexdigest()
+                                        ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Admin\AppData\Roaming\uv\python\cpython-3.12-windows-x86_64-none\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round10\\multiset\\query.py'
