@@ -1,4 +1,4 @@
-# Independent benchmark evidence, 16 November 2026
+# Independent benchmark evidence
 
 ## LongMemEval-S
 

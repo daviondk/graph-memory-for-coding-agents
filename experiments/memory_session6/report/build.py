@@ -48,7 +48,7 @@ hdr.add_run("Исследование рабочей памяти агента  
 footer = sec.footer.paragraphs[0]
 footer.style = "Running"
 footer.paragraph_format.tab_stops.add_tab_stop(Cm(WIDTH), WD_TAB_ALIGNMENT.RIGHT)
-footer.add_run("18 ноября 2026 года\t")
+footer.add_run("\t")
 field = OxmlElement("w:fldSimple")
 field.set(qn("w:instr"), "PAGE")
 footer._p.append(field)

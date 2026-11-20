@@ -36,7 +36,7 @@ sty('Table text','Calibri',10.2,ink,after=0,spacing=1.03);sty('Table small','Cal
 for key in ['Title','Subtitle']:
     if key in doc.styles:
         for b in doc.styles[key]._element.xpath('.//w:pBdr'):b.getparent().remove(b)
-hdr=sec.header.paragraphs[0];hdr.style='Running';hdr.alignment=WD_ALIGN_PARAGRAPH.RIGHT;hdr.add_run('Рабочая память кодового агента   /   Ноябрь 2026')
+hdr=sec.header.paragraphs[0];hdr.style='Running';hdr.alignment=WD_ALIGN_PARAGRAPH.RIGHT;hdr.add_run('Рабочая память кодового агента')
 ft=sec.footer.paragraphs[0];ft.style='Running';ft.paragraph_format.tab_stops.add_tab_stop(Cm(17.15),WD_TAB_ALIGNMENT.RIGHT);ft.add_run('Память языковых агентов\t')
 num=OxmlElement('w:fldSimple');num.set(qn('w:instr'),'PAGE');ft._p.append(num)
 doc.core_properties.title='Эксперименты с памятью языковых агентов';doc.core_properties.author='Исследовательский отчёт'

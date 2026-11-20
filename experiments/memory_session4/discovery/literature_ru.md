@@ -1,6 +1,6 @@
 # Целевой обзор рабочей памяти агента и три гипотезы
 
-Проверка выполнена 17 ноября 2026 года. Это целевой обзор подходов к записи, чтению и удалению сведений во время исполнения. Поиск включал точные названия CompactionBench, APEC, CoReMem, Continual-SWE, REM, SWE-ContextBench и запросы об action-conditioned memory, workflow memory, invalidation и expectation-grounded agent memory. Использованы исходные статьи, авторские страницы, GitHub API и Hugging Face API. Полная систематическая полнота по области этим поиском не установлена.
+Это целевой обзор подходов к записи, чтению и удалению сведений во время исполнения. Поиск включал точные названия CompactionBench, APEC, CoReMem, Continual-SWE, REM, SWE-ContextBench и запросы об action-conditioned memory, workflow memory, invalidation и expectation-grounded agent memory. Использованы исходные статьи, авторские страницы, GitHub API и Hugging Face API. Полная систематическая полнота по области этим поиском не установлена.
 
 ## Ближайшие оригинальные работы
 

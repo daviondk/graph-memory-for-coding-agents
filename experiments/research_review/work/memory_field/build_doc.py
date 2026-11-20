@@ -87,7 +87,7 @@ def footer(s):
     p.paragraph_format.tab_stops.add_tab_stop(Cm(16.85),WD_TAB_ALIGNMENT.RIGHT)
     p.add_run('Память языковых агентов');p.add_run('\t');field(p,'PAGE')
 footer(sec)
-p=sec.header.paragraphs[0];p.style='Running text';p.alignment=WD_ALIGN_PARAGRAPH.RIGHT;p.add_run('Обзор исследований   /   16 ноября 2026')
+p=sec.header.paragraphs[0];p.style='Running text';p.alignment=WD_ALIGN_PARAGRAPH.RIGHT;p.add_run('Обзор исследований')
 cp=doc.core_properties;cp.title='Как устроена память языковых агентов';cp.subject='Карта литературы и восемь направлений для выбора исследовательской темы';cp.author='Исследовательский обзор'
 def heading(title): return para(title,'Heading 1')
 def add_sources(page):
@@ -139,7 +139,7 @@ def matrix():
     para('В вариантах 1 и 4 правильное действие легко вычислить программно. Варианты 2, 6 и 7 лучше подходят для исследования зависимости от источника, права на пересмотр и цены уточнения. Им потребуется отдельно проверить качество размеченных историй.')
     return t
 
-p=para('Карта литературы   /   ноябрь 2026','Eyebrow');p.paragraph_format.space_before=Pt(16)
+p=para('Карта литературы','Eyebrow');p.paragraph_format.space_before=Pt(16)
 p=para('Как устроена память\nязыковых агентов','Title')
 para('Архитектуры, способы оценки и восемь направлений для выбора темы исследования','Cover intro')
 para('Контекст, который агент получил в прошлой задаче, может изменить его следующее действие. Чтобы понять пользу памяти, нужно выяснить, что было записано, какая часть дошла до исполнителя и улучшился ли результат при тех же затратах. Обзор прослеживает этот путь в диалогах, программировании, работе групп агентов и задачах роботов.')
@@ -149,7 +149,7 @@ def start_for(fragment):
 for lab,part in [('Устройство памяти и разбор фотографий','I '),('Семейства архитектур и примеры применения','II '),('Типы статей, бенчмарки и расхождения результатов','III '),('Восемь проверяемых направлений','IV '),('Сравнение тем и протокол первого опыта','V ')]:
     n=start_for(part);p=doc.add_paragraph(style='Navigation');p.add_run(str(n).zfill(2)+'     ').bold=True;link(p,'p'+str(n),lab,internal=True)
 bstart=2+len(pages);p=doc.add_paragraph(style='Navigation');p.add_run(str(bstart).zfill(2)+'     ').bold=True;link(p,'p'+str(bstart),'Библиографический указатель',internal=True)
-p=para('Материалы и публикации проверены по состоянию на 16 ноября 2026 года.','Running text');p.paragraph_format.space_before=Pt(14)
+p=para('Сведения для обзора проверены по первоисточникам.','Running text');p.paragraph_format.space_before=Pt(14)
 for i,(group,page) in enumerate(pages,2):
     p=pbreak(group)
     t=matrix() if page.get('type')=='matrix' else ordinary(page)

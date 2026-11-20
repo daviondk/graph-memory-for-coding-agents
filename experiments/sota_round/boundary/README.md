@@ -1,4 +1,4 @@
-# Boundary experiments, 16 Nov 2026
+# Boundary experiments
 Protocol, scripts, model hashes and immutable predictions are bundled. Original data https://huggingface.co/datasets/xiaowu0162/longmemeval-cleaned/resolve/98d7416c24c778c2fee6e6f3006e7a073259d48f/longmemeval_s_cleaned.json . Papr relative to archive: comparators/papr_ranks.jsonl (source commit 3543e066f4a5f065f4e3d473f5a37a644d6a8881). Compare SHA-256 against dretr/results.json. Python 3.12, torch 2.6.0+cu124, transformers 4.46.3 for MiniLM. The cleaned dataset and model weights are external.
 From archive root, replacing DATA, MODEL_DIR, BLIND_JSONL with local paths:
     python boundary/download.py MODEL_DIR
