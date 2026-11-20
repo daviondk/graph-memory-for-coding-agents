@@ -1,0 +1,221 @@
+{
+  "totals": {
+    "n": 2023,
+    "lost": 17,
+    "fast": {
+      "one": 635,
+      "short3": 706,
+      "diverse": 722,
+      "historical": 721
+    },
+    "reads": {
+      "fixed": 2253,
+      "sorted": 2203,
+      "adaptive": 2203,
+      "union": 2203
+    },
+    "more_paths": 54,
+    "union_wins": 0,
+    "union_losses": 0,
+    "history_wins": 16,
+    "history_losses": 1
+  },
+  "per_repo": {
+    "psf__requests": {
+      "n": 384,
+      "lost": 0,
+      "fast": {
+        "one": 102,
+        "short3": 116,
+        "diverse": 116,
+        "historical": 116
+      },
+      "read": {
+        "fixed": 457,
+        "sorted": 445,
+        "adaptive": 445,
+        "union": 445
+      },
+      "more_paths": 10,
+      "union_wins": 0,
+      "union_losses": 0,
+      "read_dist": {
+        "0": 384
+      },
+      "history_wins": 0,
+      "history_losses": 0
+    },
+    "urllib3__urllib3": {
+      "n": 384,
+      "lost": 0,
+      "fast": {
+        "one": 139,
+        "short3": 171,
+        "diverse": 180,
+        "historical": 180
+      },
+      "read": {
+        "fixed": 238,
+        "sorted": 225,
+        "adaptive": 225,
+        "union": 225
+      },
+      "more_paths": 2,
+      "union_wins": 0,
+      "union_losses": 0,
+      "read_dist": {
+        "0": 384
+      },
+      "history_wins": 9,
+      "history_losses": 0
+    },
+    "pypa__packaging": {
+      "n": 384,
+      "lost": 0,
+      "fast": {
+        "one": 60,
+        "short3": 66,
+        "diverse": 68,
+        "historical": 68
+      },
+      "read": {
+        "fixed": 455,
+        "sorted": 446,
+        "adaptive": 446,
+        "union": 446
+      },
+      "more_paths": 18,
+      "union_wins": 0,
+      "union_losses": 0,
+      "read_dist": {
+        "0": 384
+      },
+      "history_wins": 2,
+      "history_losses": 0
+    },
+    "pytest-dev__pluggy": {
+      "n": 61,
+      "lost": 0,
+      "fast": {
+        "one": 26,
+        "short3": 26,
+        "diverse": 26,
+        "historical": 26
+      },
+      "read": {
+        "fixed": 39,
+        "sorted": 39,
+        "adaptive": 39,
+        "union": 39
+      },
+      "more_paths": 0,
+      "union_wins": 0,
+      "union_losses": 0,
+      "read_dist": {
+        "0": 61
+      },
+      "history_wins": 0,
+      "history_losses": 0
+    },
+    "tox-dev__tox": {
+      "n": 384,
+      "lost": 6,
+      "fast": {
+        "one": 203,
+        "short3": 209,
+        "diverse": 210,
+        "historical": 210
+      },
+      "read": {
+        "fixed": 611,
+        "sorted": 602,
+        "adaptive": 602,
+        "union": 602
+      },
+      "more_paths": 12,
+      "union_wins": 0,
+      "union_losses": 0,
+      "read_dist": {
+        "0": 384
+      },
+      "history_wins": 1,
+      "history_losses": 0
+    },
+    "django__asgiref": {
+      "n": 42,
+      "lost": 0,
+      "fast": {
+        "one": 4,
+        "short3": 4,
+        "diverse": 4,
+        "historical": 4
+      },
+      "read": {
+        "fixed": 48,
+        "sorted": 48,
+        "adaptive": 48,
+        "union": 48
+      },
+      "more_paths": 0,
+      "union_wins": 0,
+      "union_losses": 0,
+      "read_dist": {
+        "0": 42
+      },
+      "history_wins": 0,
+      "history_losses": 0
+    },
+    "encode__httpx": {
+      "n": 384,
+      "lost": 11,
+      "fast": {
+        "one": 101,
+        "short3": 114,
+        "diverse": 118,
+        "historical": 117
+      },
+      "read": {
+        "fixed": 405,
+        "sorted": 398,
+        "adaptive": 398,
+        "union": 398
+      },
+      "more_paths": 12,
+      "union_wins": 0,
+      "union_losses": 0,
+      "read_dist": {
+        "0": 384
+      },
+      "history_wins": 4,
+      "history_losses": 1
+    }
+  },
+  "transfer_effect": {
+    "mean": 0.005580357142857143,
+    "ci": [
+      0.0011160714285714285,
+      0.011904761904761904
+    ]
+  },
+  "reading_effect": {
+    "mean": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "adaptive_effect": {
+    "mean": 0.0,
+    "ci": [
+      0.0,
+      0.0
+    ]
+  },
+  "simple_sorting": {
+    "mean": -0.018601190476190476,
+    "ci": [
+      -0.027529761904761904,
+      -0.009300595238095238
+    ]
+  }
+}

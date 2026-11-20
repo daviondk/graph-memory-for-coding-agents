@@ -1,0 +1,198 @@
+[
+  {
+    "project": "packaging",
+    "version": "20.9",
+    "wheel_sha256": "67714da7f7bc052e064859c05c595155bd1ee9f69f76557e21f051443c20947a",
+    "inputs": [
+      {
+        "text": "1.0"
+      },
+      {
+        "text": "v2.3"
+      },
+      {
+        "text": "vendor-nightly"
+      }
+    ],
+    "results": [
+      "Version",
+      "Version",
+      "LegacyVersion"
+    ],
+    "module_origin_within_wheel": "packaging\\version.py",
+    "stderr": "",
+    "started_utc": "2026-11-16T14:43:44.394284+00:00",
+    "ended_utc": "2026-11-16T14:43:44.498616+00:00",
+    "returncode": 0
+  },
+  {
+    "project": "packaging",
+    "version": "22.0",
+    "wheel_sha256": "957e2148ba0e1a3b282772e791ef1d8083648bc131c8ab0c1feba110ce1146c3",
+    "inputs": [
+      {
+        "text": "1.0"
+      },
+      {
+        "text": "v2.3"
+      },
+      {
+        "text": "vendor-nightly"
+      }
+    ],
+    "results": [
+      "Version",
+      "Version",
+      "InvalidVersion"
+    ],
+    "module_origin_within_wheel": "packaging\\version.py",
+    "stderr": "",
+    "started_utc": "2026-11-16T14:43:44.498953+00:00",
+    "ended_utc": "2026-11-16T14:43:44.592435+00:00",
+    "returncode": 0
+  },
+  {
+    "project": "PyJWT",
+    "version": "1.7.0",
+    "wheel_sha256": "00414bfef802aaecd8cc0d5258b6cb87bd8f553c2986c2c5f29b19dd5633aeb7",
+    "inputs": [
+      {
+        "label": "a",
+        "algorithms": "HS256"
+      },
+      {
+        "label": "b",
+        "algorithms": "HS384"
+      },
+      {
+        "label": "c",
+        "algorithms": "omit"
+      }
+    ],
+    "results": [
+      "OK",
+      "InvalidAlgorithmError",
+      "OK"
+    ],
+    "module_origin_within_wheel": "jwt\\__init__.py",
+    "stderr": "",
+    "started_utc": "2026-11-16T14:43:44.592768+00:00",
+    "ended_utc": "2026-11-16T14:43:44.712236+00:00",
+    "returncode": 0
+  },
+  {
+    "project": "PyJWT",
+    "version": "2.0.0",
+    "wheel_sha256": "5c2ff2eb27d7e342dfc3cafcc16412781f06db2690fbef81922b0172598f085b",
+    "inputs": [
+      {
+        "label": "a",
+        "algorithms": "HS256"
+      },
+      {
+        "label": "b",
+        "algorithms": "HS384"
+      },
+      {
+        "label": "c",
+        "algorithms": "omit"
+      }
+    ],
+    "results": [
+      "OK",
+      "InvalidAlgorithmError",
+      "DecodeError"
+    ],
+    "module_origin_within_wheel": "jwt\\__init__.py",
+    "stderr": "",
+    "started_utc": "2026-11-16T14:43:44.712572+00:00",
+    "ended_utc": "2026-11-16T14:43:44.878234+00:00",
+    "returncode": 0
+  },
+  {
+    "project": "more-itertools",
+    "version": "8.4.0",
+    "wheel_sha256": "b78134b2063dd214000685165d81c154522c3ee0a1c0d4d113c80361c234c5a2",
+    "inputs": [
+      {
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "n": 2,
+        "strict": "omit"
+      },
+      {
+        "values": [
+          1,
+          2
+        ],
+        "n": 2,
+        "strict": "omit"
+      },
+      {
+        "values": [
+          2,
+          3,
+          5
+        ],
+        "n": 2,
+        "strict": true
+      }
+    ],
+    "results": [
+      "OK",
+      "OK",
+      "TypeError"
+    ],
+    "module_origin_within_wheel": "more_itertools\\__init__.py",
+    "stderr": "",
+    "started_utc": "2026-11-16T14:43:44.878585+00:00",
+    "ended_utc": "2026-11-16T14:43:44.973431+00:00",
+    "returncode": 0
+  },
+  {
+    "project": "more-itertools",
+    "version": "8.6.0",
+    "wheel_sha256": "8e1a2a43b2f2727425f2b5839587ae37093f19153dc26c0927d1048ff6557330",
+    "inputs": [
+      {
+        "values": [
+          1,
+          2,
+          3
+        ],
+        "n": 2,
+        "strict": "omit"
+      },
+      {
+        "values": [
+          1,
+          2
+        ],
+        "n": 2,
+        "strict": "omit"
+      },
+      {
+        "values": [
+          2,
+          3,
+          5
+        ],
+        "n": 2,
+        "strict": true
+      }
+    ],
+    "results": [
+      "OK",
+      "OK",
+      "ValueError"
+    ],
+    "module_origin_within_wheel": "more_itertools\\__init__.py",
+    "stderr": "",
+    "started_utc": "2026-11-16T14:43:44.973793+00:00",
+    "ended_utc": "2026-11-16T14:43:45.098902+00:00",
+    "returncode": 0
+  }
+]

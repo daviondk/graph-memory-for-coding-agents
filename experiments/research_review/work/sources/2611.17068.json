@@ -1,0 +1,19 @@
+{
+  "id": "2611.17068",
+  "title": "Discovering Effective Agent Memory Designs through Program Evolution",
+  "authors": [
+    "Ding, Xinheng",
+    "Cheshmi, Seyyed Saeid",
+    "Zhang, Ziyang",
+    "Chen, Tairan",
+    "Xie, Wenya",
+    "Hou, Yu",
+    "Zhang, Rui",
+    "Liu, Zirui"
+  ],
+  "date": "2026/11/12",
+  "url": "https://arxiv.org/abs/2611.17068",
+  "abstract": "Program evolution provides a promising approach to discover agent memory designs and study the choices underlying their effectiveness. We introduce MAPE, a framework that evolves whole memory programs from minimal seeds through a standardized lifecycle interface and an iterative diagnosis-proposal loop. Experiments on LoCoMo and LongMemEval yield an absolute accuracy gain of up to 12% over manually designed baselines at 35% of the serving cost, with further evaluations supporting transfer across serving backbones and benchmarks. Empirical analyses and ablations identify and validate two recurring design patterns: retaining raw conversations as retrievable evidence preserves details omitted from extracted memories, while composing retrieved evidence according to query intent helps the answering model use it effectively. Transplanting the composition module into five existing memory systems improves accuracy across all five. Beyond these patterns, the search objective shapes where computation goes: optimizing serving cost alongside accuracy shifts computation from LLM-based memory construction to selective processing at query time while retaining competitive accuracy. Together, these findings offer empirical lessons for agent memory design. Code is available at this https URL .",
+  "status": "24 pages, 8 figures, 10 tables",
+  "versions": "Submission history From: Xinheng Ding [ view email ] [v1] Thu, 12 Nov 2026 16:42:04 UTC (2,080 KB)"
+}

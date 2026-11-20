@@ -1,0 +1,156 @@
+{
+  "population": 470,
+  "methods": {
+    "parent": {
+      "all": 460,
+      "any": 470,
+      "ndcg": 0.9872238552870534,
+      "win": 0,
+      "loss": 0,
+      "ties": 470,
+      "delta_pp": 0.0,
+      "interval_pp": [
+        0.0,
+        0.0
+      ],
+      "p_exact": 1.0
+    },
+    "flat_ce": {
+      "all": 425,
+      "any": 463,
+      "ndcg": 0.9367408292197088,
+      "win": 1,
+      "loss": 36,
+      "ties": 433,
+      "delta_pp": -7.446808510638298,
+      "interval_pp": [
+        -10.0,
+        -5.106382978723404
+      ],
+      "p_exact": 5.529727786779404e-10
+    },
+    "within_grade": {
+      "all": 456,
+      "any": 470,
+      "ndcg": 0.9856763535566722,
+      "win": 1,
+      "loss": 5,
+      "ties": 464,
+      "delta_pp": -0.851063829787234,
+      "interval_pp": [
+        -1.9148936170212765,
+        0.0
+      ],
+      "p_exact": 0.21875
+    },
+    "swap_all": {
+      "all": 460,
+      "any": 470,
+      "ndcg": 0.9872238552870534,
+      "win": 0,
+      "loss": 0,
+      "ties": 470,
+      "delta_pp": 0.0,
+      "interval_pp": [
+        0.0,
+        0.0
+      ],
+      "p_exact": 1.0
+    },
+    "swap_submitted": {
+      "all": 460,
+      "any": 470,
+      "ndcg": 0.9872238552870534,
+      "win": 0,
+      "loss": 0,
+      "ties": 470,
+      "delta_pp": 0.0,
+      "interval_pp": [
+        0.0,
+        0.0
+      ],
+      "p_exact": 1.0
+    },
+    "verified": {
+      "all": 460,
+      "any": 470,
+      "ndcg": 0.9872238552870534,
+      "win": 0,
+      "loss": 0,
+      "ties": 470,
+      "delta_pp": 0.0,
+      "interval_pp": [
+        0.0,
+        0.0
+      ],
+      "p_exact": 1.0
+    }
+  },
+  "top20_slot_feasible": 464,
+  "top20_all": 467,
+  "disposition_500": {
+    "not_requested": 500
+  },
+  "pred_sha256": "727fa34f92c74e3e9ebb704ba52f1c46b10ff9c29fbdd3ef935e749606be86d6",
+  "per_type": {
+    "knowledge-update": {
+      "parent": 72,
+      "flat_ce": 71,
+      "within_grade": 72,
+      "swap_all": 72,
+      "swap_submitted": 72,
+      "verified": 72,
+      "n": 72
+    },
+    "multi-session": {
+      "parent": 120,
+      "flat_ce": 101,
+      "within_grade": 118,
+      "swap_all": 120,
+      "swap_submitted": 120,
+      "verified": 120,
+      "n": 121
+    },
+    "single-session-assistant": {
+      "parent": 56,
+      "flat_ce": 56,
+      "within_grade": 56,
+      "swap_all": 56,
+      "swap_submitted": 56,
+      "verified": 56,
+      "n": 56
+    },
+    "single-session-preference": {
+      "parent": 30,
+      "flat_ce": 28,
+      "within_grade": 30,
+      "swap_all": 30,
+      "swap_submitted": 30,
+      "verified": 30,
+      "n": 30
+    },
+    "single-session-user": {
+      "parent": 64,
+      "flat_ce": 64,
+      "within_grade": 64,
+      "swap_all": 64,
+      "swap_submitted": 64,
+      "verified": 64,
+      "n": 64
+    },
+    "temporal-reasoning": {
+      "parent": 118,
+      "flat_ce": 105,
+      "within_grade": 116,
+      "swap_all": 118,
+      "swap_submitted": 118,
+      "verified": 118,
+      "n": 127
+    }
+  },
+  "usage": {
+    "input_tokens": 0,
+    "cached_input_tokens": 0,
+    "output_tokens": 0
+  }
+}

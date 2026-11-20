@@ -1,0 +1,340 @@
+{
+  "edit": {
+    "n": 206,
+    "tasks": 87,
+    "methods": {
+      "address": {
+        "full": 121,
+        "line_fraction": 0.6060388034295802,
+        "wrong_returned_lines": 2,
+        "present_returned_lines": 1786
+      },
+      "base": {
+        "full": 73,
+        "line_fraction": 0.3692640692640693,
+        "wrong_returned_lines": 2,
+        "present_returned_lines": 1055
+      },
+      "lru_address": {
+        "full": 119,
+        "line_fraction": 0.5968155024587064,
+        "wrong_returned_lines": 2,
+        "present_returned_lines": 1764
+      },
+      "exact": {
+        "full": 34,
+        "line_fraction": 0.18911086726620707,
+        "wrong_returned_lines": 0,
+        "present_returned_lines": 600
+      },
+      "direct": {
+        "full": 113,
+        "line_fraction": 0.5698361516666152,
+        "wrong_returned_lines": 85,
+        "present_returned_lines": 1739
+      },
+      "source_oracle": {
+        "full": 113,
+        "line_fraction": 0.5698361516666152,
+        "wrong_returned_lines": 85,
+        "present_returned_lines": 1739
+      }
+    },
+    "pairs": {
+      "address-direct": {
+        "wins": 9,
+        "losses": 1,
+        "ties": 196,
+        "delta": 0.038834951456310676,
+        "ci": [
+          0.009900990099009901,
+          0.07035175879396985
+        ],
+        "p": 0.03515625
+      },
+      "address-exact": {
+        "wins": 87,
+        "losses": 0,
+        "ties": 119,
+        "delta": 0.4223300970873786,
+        "ci": [
+          0.35467980295566504,
+          0.49222797927461137
+        ],
+        "p": 8.673617379884035e-19
+      },
+      "direct-exact": {
+        "wins": 79,
+        "losses": 0,
+        "ties": 127,
+        "delta": 0.38349514563106796,
+        "ci": [
+          0.3150667808219178,
+          0.45263157894736844
+        ],
+        "p": 1.3877787807814457e-17
+      },
+      "address-source_oracle": {
+        "wins": 9,
+        "losses": 1,
+        "ties": 196,
+        "delta": 0.038834951456310676,
+        "ci": [
+          0.009900990099009901,
+          0.07035175879396985
+        ],
+        "p": 0.03515625
+      },
+      "direct-source_oracle": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 206,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      }
+    },
+    "reads": {
+      "exact": {
+        "status": {
+          "NO_HISTORY": 10,
+          "COMPLETE": 81,
+          "EMPTY": 111,
+          "PARTIAL": 4
+        },
+        "mean_delivered_bytes": 3437.3058252427186,
+        "pages": 165
+      },
+      "direct": {
+        "status": {
+          "NO_HISTORY": 10,
+          "COMPLETE": 133,
+          "NO_OVERLAP": 63
+        },
+        "mean_delivered_bytes": 6592.888349514563,
+        "pages": 133
+      }
+    },
+    "repos": {
+      "django/django": {
+        "address": 36,
+        "base": 19,
+        "lru_address": 35,
+        "exact": 6,
+        "direct": 32,
+        "source_oracle": 32,
+        "queries": 72
+      },
+      "matplotlib/matplotlib": {
+        "address": 8,
+        "base": 4,
+        "lru_address": 7,
+        "exact": 3,
+        "direct": 8,
+        "source_oracle": 8,
+        "queries": 13
+      },
+      "scikit-learn/scikit-learn": {
+        "address": 6,
+        "base": 3,
+        "lru_address": 6,
+        "exact": 2,
+        "direct": 7,
+        "source_oracle": 7,
+        "queries": 10
+      },
+      "sphinx-doc/sphinx": {
+        "address": 27,
+        "base": 20,
+        "lru_address": 27,
+        "exact": 9,
+        "direct": 26,
+        "source_oracle": 26,
+        "queries": 43
+      },
+      "sympy/sympy": {
+        "address": 44,
+        "base": 27,
+        "lru_address": 44,
+        "exact": 14,
+        "direct": 40,
+        "source_oracle": 40,
+        "queries": 68
+      }
+    }
+  },
+  "control": {
+    "n": 72,
+    "tasks": 72,
+    "methods": {
+      "address": {
+        "full": 72,
+        "line_fraction": 1.0,
+        "wrong_returned_lines": 0,
+        "present_returned_lines": 216
+      },
+      "base": {
+        "full": 64,
+        "line_fraction": 0.8888888888888888,
+        "wrong_returned_lines": 0,
+        "present_returned_lines": 192
+      },
+      "lru_address": {
+        "full": 72,
+        "line_fraction": 1.0,
+        "wrong_returned_lines": 0,
+        "present_returned_lines": 216
+      },
+      "exact": {
+        "full": 66,
+        "line_fraction": 0.9166666666666666,
+        "wrong_returned_lines": 0,
+        "present_returned_lines": 198
+      },
+      "direct": {
+        "full": 72,
+        "line_fraction": 1.0,
+        "wrong_returned_lines": 0,
+        "present_returned_lines": 216
+      },
+      "source_oracle": {
+        "full": 72,
+        "line_fraction": 1.0,
+        "wrong_returned_lines": 0,
+        "present_returned_lines": 216
+      }
+    },
+    "pairs": {
+      "address-direct": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 72,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "address-exact": {
+        "wins": 6,
+        "losses": 0,
+        "ties": 66,
+        "delta": 0.08333333333333333,
+        "ci": [
+          0.027777777777777776,
+          0.1527777777777778
+        ],
+        "p": 0.03125
+      },
+      "direct-exact": {
+        "wins": 6,
+        "losses": 0,
+        "ties": 66,
+        "delta": 0.08333333333333333,
+        "ci": [
+          0.027777777777777776,
+          0.1527777777777778
+        ],
+        "p": 0.03125
+      },
+      "address-source_oracle": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 72,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "direct-source_oracle": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 72,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      }
+    },
+    "reads": {
+      "exact": {
+        "status": {
+          "COMPLETE": 64,
+          "PARTIAL": 8
+        },
+        "mean_delivered_bytes": 6108.486111111111,
+        "pages": 78
+      },
+      "direct": {
+        "status": {
+          "COMPLETE": 72
+        },
+        "mean_delivered_bytes": 9065.583333333334,
+        "pages": 72
+      }
+    },
+    "repos": {
+      "django/django": {
+        "address": 30,
+        "base": 27,
+        "lru_address": 30,
+        "exact": 28,
+        "direct": 30,
+        "source_oracle": 30,
+        "queries": 30
+      },
+      "matplotlib/matplotlib": {
+        "address": 5,
+        "base": 5,
+        "lru_address": 5,
+        "exact": 5,
+        "direct": 5,
+        "source_oracle": 5,
+        "queries": 5
+      },
+      "scikit-learn/scikit-learn": {
+        "address": 3,
+        "base": 3,
+        "lru_address": 3,
+        "exact": 3,
+        "direct": 3,
+        "source_oracle": 3,
+        "queries": 3
+      },
+      "sphinx-doc/sphinx": {
+        "address": 13,
+        "base": 11,
+        "lru_address": 13,
+        "exact": 11,
+        "direct": 13,
+        "source_oracle": 13,
+        "queries": 13
+      },
+      "sympy/sympy": {
+        "address": 21,
+        "base": 18,
+        "lru_address": 21,
+        "exact": 19,
+        "direct": 21,
+        "source_oracle": 21,
+        "queries": 21
+      }
+    }
+  },
+  "cost": {
+    "tasks_processed": 92,
+    "groups": 545,
+    "pages": 545,
+    "total_bytes": 100042135,
+    "median_bytes": 1027851.0,
+    "mean_bytes": 1087414.5108695652
+  }
+}

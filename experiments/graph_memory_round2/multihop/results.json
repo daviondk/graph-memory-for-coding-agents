@@ -1,0 +1,513 @@
+{
+  "cal": {
+    "n": 2000,
+    "totals": {
+      "bm": {
+        "hits": 775,
+        "recall": 0.6685,
+        "different_from_beam": 1222
+      },
+      "point": {
+        "hits": 1162,
+        "recall": 0.7805,
+        "different_from_beam": 828
+      },
+      "beam": {
+        "hits": 1951,
+        "recall": 0.98675,
+        "different_from_beam": 0
+      },
+      "flat": {
+        "hits": 1219,
+        "recall": 0.792,
+        "different_from_beam": 774
+      },
+      "graph": {
+        "hits": 1686,
+        "recall": 0.90975,
+        "different_from_beam": 310
+      },
+      "origin": {
+        "hits": 1691,
+        "recall": 0.912,
+        "different_from_beam": 300
+      },
+      "shuffle": {
+        "hits": 1682,
+        "recall": 0.90925,
+        "different_from_beam": 313
+      },
+      "beam_graph": {
+        "hits": 1951,
+        "recall": 0.98675,
+        "different_from_beam": 0
+      },
+      "beam_origin": {
+        "hits": 1951,
+        "recall": 0.98675,
+        "different_from_beam": 0
+      }
+    },
+    "contrasts": {
+      "origin-graph": {
+        "delta": 0.0025,
+        "wins": 38,
+        "losses": 33,
+        "ties": 1929,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          -0.005502751375687844,
+          0.011
+        ],
+        "exact_mcnemar_descriptive": 0.6353076420876663
+      },
+      "origin-flat": {
+        "delta": 0.236,
+        "wins": 553,
+        "losses": 81,
+        "ties": 1366,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          0.2132857045112439,
+          0.2583875813720581
+        ],
+        "exact_mcnemar_descriptive": 2.527449199850317e-87
+      },
+      "origin-shuffle": {
+        "delta": 0.0045,
+        "wins": 41,
+        "losses": 32,
+        "ties": 1927,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          -0.00399400898652022,
+          0.013
+        ],
+        "exact_mcnemar_descriptive": 0.34918183817058834
+      },
+      "graph-flat": {
+        "delta": 0.2335,
+        "wins": 557,
+        "losses": 90,
+        "ties": 1353,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          0.21042084168336672,
+          0.25587235801228075
+        ],
+        "exact_mcnemar_descriptive": 3.968331056339329e-83
+      },
+      "flat-point": {
+        "delta": 0.0285,
+        "wins": 193,
+        "losses": 136,
+        "ties": 1671,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          0.010521042084168337,
+          0.04597758620689654
+        ],
+        "exact_mcnemar_descriptive": 0.001973964970892148
+      },
+      "beam_origin-beam": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 2000,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "beam_graph-beam": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 2000,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "beam_origin-beam_graph": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 2000,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "origin-beam": {
+        "delta": -0.13,
+        "wins": 9,
+        "losses": 269,
+        "ties": 1722,
+        "clusters": 1985,
+        "cluster_percentile_95": [
+          -0.14529196521465032,
+          -0.11482775836245632
+        ],
+        "exact_mcnemar_descriptive": 1.0213494417528006e-67
+      }
+    }
+  },
+  "test": {
+    "n": 5405,
+    "totals": {
+      "bm": {
+        "hits": 2106,
+        "recall": 0.6742830712303423,
+        "different_from_beam": 3301
+      },
+      "point": {
+        "hits": 3190,
+        "recall": 0.7853839037927844,
+        "different_from_beam": 2196
+      },
+      "beam": {
+        "hits": 5253,
+        "recall": 0.985013876040703,
+        "different_from_beam": 0
+      },
+      "flat": {
+        "hits": 3345,
+        "recall": 0.7928769657724329,
+        "different_from_beam": 2043
+      },
+      "graph": {
+        "hits": 4542,
+        "recall": 0.9100832562442183,
+        "different_from_beam": 864
+      },
+      "origin": {
+        "hits": 4537,
+        "recall": 0.9090656799259944,
+        "different_from_beam": 874
+      },
+      "shuffle": {
+        "hits": 4540,
+        "recall": 0.9091581868640148,
+        "different_from_beam": 863
+      },
+      "beam_graph": {
+        "hits": 5253,
+        "recall": 0.985013876040703,
+        "different_from_beam": 0
+      },
+      "beam_origin": {
+        "hits": 5253,
+        "recall": 0.985013876040703,
+        "different_from_beam": 0
+      }
+    },
+    "contrasts": {
+      "origin-graph": {
+        "delta": -0.0009250693802035153,
+        "wins": 83,
+        "losses": 88,
+        "ties": 5234,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          -0.005731215253505827,
+          0.00370166436392962
+        ],
+        "exact_mcnemar_descriptive": 0.7597940341218291
+      },
+      "origin-flat": {
+        "delta": 0.22053654024051803,
+        "wins": 1447,
+        "losses": 255,
+        "ties": 3703,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          0.2065779748706578,
+          0.23427099065495086
+        ],
+        "exact_mcnemar_descriptive": 4.922746306374663e-202
+      },
+      "origin-shuffle": {
+        "delta": -0.0005550416281221092,
+        "wins": 93,
+        "losses": 96,
+        "ties": 5216,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          -0.005540191787578526,
+          0.004437049362174155
+        ],
+        "exact_mcnemar_descriptive": 0.8843829672609315
+      },
+      "graph-flat": {
+        "delta": 0.22146160962072156,
+        "wins": 1449,
+        "losses": 252,
+        "ties": 3704,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          0.20776315766916245,
+          0.23506661264892817
+        ],
+        "exact_mcnemar_descriptive": 4.505265904435444e-204
+      },
+      "flat-point": {
+        "delta": 0.028677150786308975,
+        "wins": 580,
+        "losses": 425,
+        "ties": 4400,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          0.017367769523945763,
+          0.04023750302125212
+        ],
+        "exact_mcnemar_descriptive": 1.133285677568621e-06
+      },
+      "beam_origin-beam": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 5405,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "beam_graph-beam": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 5405,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "beam_origin-beam_graph": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 5405,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "origin-beam": {
+        "delta": -0.1324699352451434,
+        "wins": 49,
+        "losses": 765,
+        "ties": 4591,
+        "clusters": 5302,
+        "cluster_percentile_95": [
+          -0.14235597637421143,
+          -0.12272864335739554
+        ],
+        "exact_mcnemar_descriptive": 3.072494721671772e-166
+      }
+    }
+  },
+  "all": {
+    "n": 7405,
+    "totals": {
+      "bm": {
+        "hits": 2881,
+        "recall": 0.6727211343686699,
+        "different_from_beam": 4523
+      },
+      "point": {
+        "hits": 4352,
+        "recall": 0.7840648210668467,
+        "different_from_beam": 3024
+      },
+      "beam": {
+        "hits": 7204,
+        "recall": 0.9854827819041189,
+        "different_from_beam": 0
+      },
+      "flat": {
+        "hits": 4564,
+        "recall": 0.7926401080351114,
+        "different_from_beam": 2817
+      },
+      "graph": {
+        "hits": 6228,
+        "recall": 0.9099932478055368,
+        "different_from_beam": 1174
+      },
+      "origin": {
+        "hits": 6228,
+        "recall": 0.9098582039162728,
+        "different_from_beam": 1174
+      },
+      "shuffle": {
+        "hits": 6222,
+        "recall": 0.9091829844699527,
+        "different_from_beam": 1176
+      },
+      "beam_graph": {
+        "hits": 7204,
+        "recall": 0.9854827819041189,
+        "different_from_beam": 0
+      },
+      "beam_origin": {
+        "hits": 7204,
+        "recall": 0.9854827819041189,
+        "different_from_beam": 0
+      }
+    },
+    "contrasts": {
+      "origin-graph": {
+        "delta": 0.0,
+        "wins": 121,
+        "losses": 121,
+        "ties": 7163,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          -0.004060680112565199,
+          0.00417846070899043
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "origin-flat": {
+        "delta": 0.22471303173531398,
+        "wins": 2000,
+        "losses": 336,
+        "ties": 5069,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          0.21288616596789944,
+          0.23650422085107728
+        ],
+        "exact_mcnemar_descriptive": 2.4470635570703477e-287
+      },
+      "origin-shuffle": {
+        "delta": 0.0008102633355840649,
+        "wins": 134,
+        "losses": 128,
+        "ties": 7143,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          -0.0035031579335157094,
+          0.005123382513334552
+        ],
+        "exact_mcnemar_descriptive": 0.7574648332157565
+      },
+      "graph-flat": {
+        "delta": 0.22471303173531398,
+        "wins": 2006,
+        "losses": 342,
+        "ties": 5057,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          0.21295769302453668,
+          0.23637672889756015
+        ],
+        "exact_mcnemar_descriptive": 1.6519353939376972e-285
+      },
+      "flat-point": {
+        "delta": 0.028629304523970292,
+        "wins": 773,
+        "losses": 561,
+        "ties": 6071,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          0.01903341309763649,
+          0.0383110751382706
+        ],
+        "exact_mcnemar_descriptive": 7.088301117138186e-09
+      },
+      "beam_origin-beam": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 7405,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "beam_graph-beam": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 7405,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "beam_origin-beam_graph": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "ties": 7405,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          0.0,
+          0.0
+        ],
+        "exact_mcnemar_descriptive": 1.0
+      },
+      "origin-beam": {
+        "delta": -0.13180283592167455,
+        "wins": 58,
+        "losses": 1034,
+        "ties": 6313,
+        "clusters": 7205,
+        "cluster_percentile_95": [
+          -0.14002976055744273,
+          -0.12371200619581135
+        ],
+        "exact_mcnemar_descriptive": 5.9947961424002966e-232
+      }
+    }
+  },
+  "test_bridge": {
+    "n": 4351,
+    "totals": {
+      "bm": 1669,
+      "point": 2187,
+      "beam": 4202,
+      "flat": 2337,
+      "graph": 3557,
+      "origin": 3555,
+      "shuffle": 3553,
+      "beam_graph": 4202,
+      "beam_origin": 4202
+    }
+  },
+  "test_comparison": {
+    "n": 1054,
+    "totals": {
+      "bm": 437,
+      "point": 1003,
+      "beam": 1051,
+      "flat": 1008,
+      "graph": 985,
+      "origin": 982,
+      "shuffle": 987,
+      "beam_graph": 1051,
+      "beam_origin": 1051
+    }
+  },
+  "truth_counts": {
+    "2": 7405
+  }
+}

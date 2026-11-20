@@ -1,0 +1,225 @@
+{
+ "n": 99,
+ "repo_count": 12,
+ "outcomes": {
+  "never": {
+   "n": 99,
+   "full": 0,
+   "prompt": 282864,
+   "output": 198,
+   "any": 74,
+   "first": 74,
+   "last": 72
+  },
+  "always": {
+   "n": 99,
+   "full": 99,
+   "prompt": 336189,
+   "output": 198,
+   "any": 75,
+   "first": 75,
+   "last": 73
+  },
+  "gate": {
+   "n": 99,
+   "full": 84,
+   "prompt": 327916,
+   "output": 198,
+   "any": 75,
+   "first": 75,
+   "last": 73
+  },
+  "random": {
+   "n": 99,
+   "full": 84,
+   "prompt": 327931,
+   "output": 198,
+   "any": 76,
+   "first": 76,
+   "last": 74
+  }
+ },
+ "full_vs_short": {
+  "wins": 2,
+  "losses": 1,
+  "changed_choice_same_grade": 1,
+  "delta_accuracy": 0.010101010101010102,
+  "nrepo": 12,
+  "p_exact_paired_descriptive": 1,
+  "delta_accuracy_cluster_ci95": [
+   0.0,
+   0.04081632653061224
+  ],
+  "delta_prompt_per_query": 538.6363636363636,
+  "delta_prompt_per_query_cluster_ci95": [
+   512.1846153846154,
+   583.775
+  ]
+ },
+ "gate_vs": {
+  "never": {
+   "wins": 2,
+   "losses": 1,
+   "changed_choice_same_grade": 1,
+   "delta_accuracy": 0.010101010101010102,
+   "nrepo": 12,
+   "p_exact_paired_descriptive": 1,
+   "delta_accuracy_cluster_ci95": [
+    0.0,
+    0.04081632653061224
+   ],
+   "delta_prompt_per_query": 455.07070707070704,
+   "delta_prompt_per_query_cluster_ci95": [
+    390.7792207792208,
+    539.9230769230769
+   ]
+  },
+  "always": {
+   "wins": 0,
+   "losses": 0,
+   "changed_choice_same_grade": 0,
+   "delta_accuracy": 0.0,
+   "nrepo": 12,
+   "p_exact_paired_descriptive": 1,
+   "delta_accuracy_cluster_ci95": [
+    0.0,
+    0.0
+   ],
+   "delta_prompt_per_query": -83.56565656565657,
+   "delta_prompt_per_query_cluster_ci95": [
+    -150.36190476190475,
+    -32.72549019607843
+   ]
+  },
+  "random": {
+   "wins": 0,
+   "losses": 1,
+   "changed_choice_same_grade": 0,
+   "delta_accuracy": -0.010101010101010102,
+   "nrepo": 12,
+   "p_exact_paired_descriptive": 1,
+   "delta_accuracy_cluster_ci95": [
+    -0.02142857142857143,
+    0.0
+   ],
+   "delta_prompt_per_query": -0.15151515151515152,
+   "delta_prompt_per_query_cluster_ci95": [
+    -80.55118110236221,
+    57.60769230769231
+   ]
+  }
+ },
+ "uniform": {
+  "random_size": 84,
+  "probabilities": {
+   "73": 0.01874414245548266,
+   "74": 0.2251528540188334,
+   "75": 0.6449770161110367,
+   "76": 0.11112598741464721
+  },
+  "expected_hits": 74.84848484848486,
+  "central95_hits": [
+   74,
+   76
+  ],
+  "probability_random_ge_gate": 0.7561030035256839,
+  "expected_prompt_tokens": 328109.45454545453,
+  "central95_prompt_tokens_mc": [
+   327538,
+   328649
+  ],
+  "token_draws": 20000,
+  "comparison": "Random equal-k assignment on these 99 potential response pairs"
+ },
+ "oracle_between_two_outputs": 76,
+ "cohorts": {
+  "0": {
+   "never": {
+    "n": 15,
+    "full": 0,
+    "prompt": 37827,
+    "output": 30,
+    "any": 13,
+    "first": 13,
+    "last": 13
+   },
+   "always": {
+    "n": 15,
+    "full": 15,
+    "prompt": 46100,
+    "output": 30,
+    "any": 13,
+    "first": 13,
+    "last": 13
+   },
+   "gate": {
+    "n": 15,
+    "full": 0,
+    "prompt": 37827,
+    "output": 30,
+    "any": 13,
+    "first": 13,
+    "last": 13
+   },
+   "random": {
+    "n": 15,
+    "full": 13,
+    "prompt": 44917,
+    "output": 30,
+    "any": 13,
+    "first": 13,
+    "last": 13
+   }
+  },
+  "1": {
+   "never": {
+    "n": 84,
+    "full": 0,
+    "prompt": 245037,
+    "output": 168,
+    "any": 61,
+    "first": 61,
+    "last": 59
+   },
+   "always": {
+    "n": 84,
+    "full": 84,
+    "prompt": 290089,
+    "output": 168,
+    "any": 62,
+    "first": 62,
+    "last": 60
+   },
+   "gate": {
+    "n": 84,
+    "full": 84,
+    "prompt": 290089,
+    "output": 168,
+    "any": 62,
+    "first": 62,
+    "last": 60
+   },
+   "random": {
+    "n": 84,
+    "full": 71,
+    "prompt": 283014,
+    "output": 168,
+    "any": 63,
+    "first": 63,
+    "last": 61
+   }
+  }
+ },
+ "empirically_nondominated": [
+  "never",
+  "gate",
+  "random"
+ ],
+ "outcomes_sha": {
+  "qwen_calls.jsonl": "9db6893dd394b77221bad808d6e2f2e5940db6ff4795b34d14841da9447f1a0f",
+  "matched_reader\\calls.jsonl": "5595d52215c6882c9f889afe4d39b6a6e7510284bfad7e8adfaa61f099412d40",
+  "per_query.csv": "b2719b0dc661951a50adc7c00c380319f9b973bca6a3fe6947a03cdbc268a598",
+  "evaluation_library.csv": "36b912b1c7b3821568961d9a0b5b525dfeedc99bed098b7e583cdcf3b9c523ad",
+  "evaluation_relations.csv": "bd244bfe06147f1190ba42434a79954ba18d6e629434ca0620847b8de394473b"
+ }
+}

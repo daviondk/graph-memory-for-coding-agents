@@ -1,0 +1,120 @@
+{
+  "assertions": "design hashes, disjoint IDs, each ranker permutes the identical slate of <=5 paths, independent gold membership and MRR for all labels and arms, aggregate hits",
+  "n_rows": 2583,
+  "rank_change_vs_native": {
+    "loc_loro/native/order": 0,
+    "loc_loro/native/first": 0,
+    "loc_loro/flat/order": 117,
+    "loc_loro/flat/first": 0,
+    "loc_loro/decl/order": 128,
+    "loc_loro/decl/first": 0,
+    "loc_loro/graph/order": 131,
+    "loc_loro/graph/first": 0,
+    "loc_loro/placebo/order": 137,
+    "loc_loro/placebo/first": 0,
+    "loc_time/native/order": 0,
+    "loc_time/native/first": 0,
+    "loc_time/flat/order": 118,
+    "loc_time/flat/first": 0,
+    "loc_time/decl/order": 119,
+    "loc_time/decl/first": 0,
+    "loc_time/graph/order": 125,
+    "loc_time/graph/first": 0,
+    "loc_time/placebo/order": 117,
+    "loc_time/placebo/first": 0,
+    "river_zero/native/order": 0,
+    "river_zero/native/first": 0,
+    "river_zero/flat/order": 296,
+    "river_zero/flat/first": 0,
+    "river_zero/decl/order": 310,
+    "river_zero/decl/first": 0,
+    "river_zero/graph/order": 313,
+    "river_zero/graph/first": 0,
+    "river_zero/placebo/order": 314,
+    "river_zero/placebo/first": 0,
+    "river_zero_time/native/order": 0,
+    "river_zero_time/native/first": 0,
+    "river_zero_time/flat/order": 299,
+    "river_zero_time/flat/first": 0,
+    "river_zero_time/decl/order": 316,
+    "river_zero_time/decl/first": 0,
+    "river_zero_time/graph/order": 316,
+    "river_zero_time/graph/first": 0,
+    "river_zero_time/placebo/order": 320,
+    "river_zero_time/placebo/first": 0,
+    "river_loro/native/order": 0,
+    "river_loro/native/first": 0,
+    "river_loro/flat/order": 379,
+    "river_loro/flat/first": 123,
+    "river_loro/decl/order": 384,
+    "river_loro/decl/first": 147,
+    "river_loro/graph/order": 381,
+    "river_loro/graph/first": 145,
+    "river_loro/placebo/order": 379,
+    "river_loro/placebo/first": 140,
+    "river_time/native/order": 0,
+    "river_time/native/first": 0,
+    "river_time/flat/order": 357,
+    "river_time/flat/first": 126,
+    "river_time/decl/order": 365,
+    "river_time/decl/first": 161,
+    "river_time/graph/order": 362,
+    "river_time/graph/first": 148,
+    "river_time/placebo/order": 359,
+    "river_time/placebo/first": 141,
+    "river_loro_single/native/order": 0,
+    "river_loro_single/native/first": 0,
+    "river_loro_single/flat/order": 376,
+    "river_loro_single/flat/first": 123,
+    "river_loro_single/decl/order": 382,
+    "river_loro_single/decl/first": 151,
+    "river_loro_single/graph/order": 379,
+    "river_loro_single/graph/first": 146,
+    "river_loro_single/placebo/order": 376,
+    "river_loro_single/placebo/first": 134
+  },
+  "source": {
+    "total_paths": 3068,
+    "parsed": 3024,
+    "with_blob": 3024,
+    "filtered_by_source": {
+      "loc": 0,
+      "river": 0
+    }
+  },
+  "examples": {
+    "win": {
+      "id": "astropy__astropy-13579",
+      "native": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+      "decl": "astropy/wcs/wcs.py",
+      "graph": "astropy/wcs/wcsapi/wrappers/sliced_wcs.py",
+      "gold": [
+        "astropy/wcs/wcsapi/wrappers/sliced_wcs.py"
+      ],
+      "name_and_file": [
+        [
+          "SlicedLowLevelWCS",
+          "astropy/visualization/wcsaxes/wcsapi.py"
+        ]
+      ]
+    },
+    "loss": {
+      "id": "matplotlib__matplotlib-25775",
+      "native": "lib/matplotlib/patches.py",
+      "decl": "lib/matplotlib/text.py",
+      "graph": "lib/matplotlib/patches.py",
+      "gold": [
+        "lib/matplotlib/backends/backend_agg.py",
+        "lib/matplotlib/backends/backend_cairo.py",
+        "lib/matplotlib/text.py"
+      ],
+      "name_and_file": [
+        [
+          "set_antialiased",
+          "lib/matplotlib/collections.py"
+        ]
+      ]
+    }
+  },
+  "examples_selection": "first by SHA-256(instance_id) for each direction graph vs declaration-local with an issue-shaped identifier declared by graph's first file and observed in a different candidate; descriptive evidence only"
+}

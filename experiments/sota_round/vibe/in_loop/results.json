@@ -1,0 +1,61 @@
+{
+  "design": "2 purposively chosen targets x 2 paired seeds x 2 methods",
+  "solver": "openai/qwen38-27b-ud-q4km",
+  "unrun": [],
+  "by_method": {
+    "path_trigger": {
+      "episodes": 4,
+      "resolved": 1,
+      "submitted": 4,
+      "nonempty_patches": 4,
+      "tests_executed": 4,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          0,
+          0
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          1,
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 63,
+        "calls_with_usage": 63,
+        "calls_accounted": 63,
+        "input_tokens": 471629,
+        "output_tokens": 7352,
+        "duration_s": 622.6
+      }
+    },
+    "fixed_third": {
+      "episodes": 4,
+      "resolved": 2,
+      "submitted": 3,
+      "nonempty_patches": 3,
+      "tests_executed": 3,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          1,
+          1
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0,
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 63,
+        "calls_with_usage": 63,
+        "calls_accounted": 63,
+        "input_tokens": 485567,
+        "output_tokens": 7511,
+        "duration_s": 641.2
+      }
+    }
+  },
+  "interrupted": [],
+  "interruption_reason": "Every cell runs sequentially.",
+  "graded_attempts": 8,
+  "evidence_sha256": "43e18caeaa13463d4163ba194bb8e0bbe5b41258e4adf334381a82cb68f8324b"
+}

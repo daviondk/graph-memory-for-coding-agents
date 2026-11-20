@@ -1,0 +1,16 @@
+{
+  "id": "2611.03390",
+  "title": "Progressive Multi-Scale Super-Resolution via Cascaded Bicubic Anchors and Inter-Scale Mutual Refinement",
+  "authors": [
+    "Lin, Chun-An",
+    "Chang, Yu-Chia",
+    "Fan, Chi-Mao",
+    "Ouyang, Yen-Chieh",
+    "Liu, Tsung-Jung"
+  ],
+  "date": "2026/11/02",
+  "url": "https://arxiv.org/abs/2611.03390",
+  "abstract": "Super-resolution networks are trained for one magnification factor, so several output resolutions require several models. We propose PMS-SR, a progressive single-input multiple-output network that produces x2, x4, and x8 results in one forward pass, with a Transformer backbone on the low-resolution grid. In Stage 1, each scale is predicted as a residual over the detached bicubic upsampling of the previous scale's prediction. With Dirac and zero initialization, training starts exactly from the bicubic cascade, and each head adds only the band the previous scale lacks. In Stage 2, inter-scale mutual refinement couples the scales in both directions through space-to-depth feedback, deformable alignment, and per-pixel fusion, so x8 features refine the x2 output. Trained on DF2K, the 7.95M-parameter model achieves a higher PSNR than every compared multi-scale method at x4 and x8 on all five standard benchmarks. At x8, it outperforms the x8-specific DRN-L on all of them, leads all compared methods on Urban100, and is within 0.13 dB of the best result elsewhere. Against three single-scale SwinIR-M models, PMS-SR uses 22% of the parameters, runs 2.9x faster on BSD100 inputs, and its outputs agree 6.7-12.4 dB more closely. Code and pretrained models will be released at this https URL upon acceptance.",
+  "status": "14 pages, 7 figures, 7 tables. Submitted to an IEEE journal. Code and pretrained models will be released at this https URL upon acceptance",
+  "versions": "Submission history From: Chun-An Lin [ view email ] [v1] Mon, 2 Nov 2026 16:28:38 UTC (7,175 KB)"
+}

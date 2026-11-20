@@ -1,0 +1,3 @@
+# Windows UTF-8 runtime restart
+
+The first process lacked PYTHONUTF8=1. While applying an original race mutation in the fourth case, the upstream runtime attempted to write Unicode with the default legacy code page and raised UnicodeEncodeError. The parent experiment and the related renderer use UTF-8 mode. Before any new trial grading, move the first nine trial receipts into recovery_default_encoding/trials, retain every content-addressed native call, and regenerate all forty cases under PYTHONUTF8=1. Only identical native request payloads are reused. Compare initial and regenerated nine full trajectories after the prediction lock and classify any unreferenced native receipts separately. No change to actor policy, prompts, grading or original sibling files.

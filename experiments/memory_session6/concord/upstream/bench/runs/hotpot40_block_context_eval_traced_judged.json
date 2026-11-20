@@ -1,0 +1,463 @@
+{
+  "judge_model": "glm-5.2",
+  "max_workers": 8,
+  "summary": {
+    "all": {
+      "count": 40,
+      "llm_judge_acc": 1.0,
+      "exact_match_acc": 0.0,
+      "avg_token_f1": 0.15985327942911706
+    },
+    "hotpotqa": {
+      "count": 40,
+      "llm_judge_acc": 1.0,
+      "exact_match_acc": 0.0,
+      "avg_token_f1": 0.15985327942911706
+    },
+    "sweqa": {
+      "count": 0
+    }
+  },
+  "tasks": [
+    {
+      "id": "hotpotqa-01",
+      "benchmark": "hotpotqa",
+      "question": "Who has released more solo albums, Nick Carter or Brady Seals?",
+      "gold_answer": "Brady Seals",
+      "final_answer": "Brady Seals has released more solo albums. Brady Seals released three solo studio albums between 1994 and 2002, plus a fourth solo album, \"Play Time\", in 2009 — four solo albums in total. Nick Carter has released three solo albums (\"Now or Never\", \"I'm Taking Off\", and \"All American\") as of 2015.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies Brady Seals as the person who has released more solo albums, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.07547169811320754
+    },
+    {
+      "id": "hotpotqa-02",
+      "benchmark": "hotpotqa",
+      "question": "Suzanne Simone Baptiste Louverture is the wife of the leader of which revolution?",
+      "gold_answer": "the Haitian Revolution",
+      "final_answer": "Suzanne Simone Baptiste Louverture was the wife of Toussaint Louverture, the best-known leader of the Haitian Revolution.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the Haitian Revolution as the revolution led by Toussaint Louverture, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.25
+    },
+    {
+      "id": "hotpotqa-03",
+      "benchmark": "hotpotqa",
+      "question": "What star of \"Attack of the Gryphon\" was also a voice artist in Johnny Bravo?  ",
+      "gold_answer": "Larry Richard Drake",
+      "final_answer": "Larry Drake. He starred in \"Attack of the Gryphon\" (the 2007 television film also known as \"Gryphon\") and was a voice artist in \"Johnny Bravo,\" providing the voice of Pops.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction 'Larry Drake' is semantically equivalent to the gold answer 'Larry Richard Drake', referring to the same person.",
+      "exact_match": false,
+      "token_f1": 0.13793103448275862
+    },
+    {
+      "id": "hotpotqa-04",
+      "benchmark": "hotpotqa",
+      "question": "Both José Aponte de la Torre Airport and Boulder City Municipal Airport are classified as what type of airport?",
+      "gold_answer": "public use airport",
+      "final_answer": "Both José Aponte de la Torre Airport and Boulder City Municipal Airport are classified as \"public use airports.\" José Aponte de la Torre Airport is described as \"a public use airport owned by Puerto Rico Ports Authority\" (corpus/original/doc_06.json), and Boulder City Municipal Airport is described as \"a public use airport located one nautical mile (2 km) southwest of the central business district of Boulder City, in Clark County, Nevada, United States\" (corpus/original/doc_01.json).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly states that both airports are classified as 'public use airports,' matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.08333333333333333
+    },
+    {
+      "id": "hotpotqa-05",
+      "benchmark": "hotpotqa",
+      "question": "The Black Star identified closely with this American magazine magnate who was called what?",
+      "gold_answer": "the most influential private citizen in the America of his day\"",
+      "final_answer": "The Black Star (the Black Star Publishing Company, a photographic agency) was closely identified with Henry Luce's magazines \"Life\" and \"Time.\" Henry Robinson Luce was an American magazine magnate who was called \"the most influential private citizen in the America of his day.\"",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies that Henry Luce was called \"the most influential private citizen in the America of his day,\" matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.391304347826087
+    },
+    {
+      "id": "hotpotqa-06",
+      "benchmark": "hotpotqa",
+      "question": "In between Berghuis v. Thompkins and Mississippi University for Women v. Hogan which one was a  case decided 5-4 by the Supreme Court of the United States?",
+      "gold_answer": "Mississippi University for Women",
+      "final_answer": "Mississippi University for Women v. Hogan was the case decided 5-4 by the Supreme Court of the United States. According to corpus/original/doc_09.json, \"Mississippi University for Women v. Hogan, 458 U.S. 718 (1982) was a case decided 5-4 by the Supreme Court of the United States.\"",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies 'Mississippi University for Women v. Hogan' as the case decided 5-4 by the Supreme Court, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.18604651162790695
+    },
+    {
+      "id": "hotpotqa-07",
+      "benchmark": "hotpotqa",
+      "question": "which film came out first, African Cats or Fun and Fancy Free ?",
+      "gold_answer": "Fun and Fancy Free",
+      "final_answer": "Fun and Fancy Free came out first. It was released on September 27, 1947, whereas African Cats was released theatrically on Earth Day, April 22, 2011.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies Fun and Fancy Free as the film that came out first, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.2666666666666667
+    },
+    {
+      "id": "hotpotqa-08",
+      "benchmark": "hotpotqa",
+      "question": "Who was the lead character designer on \"Pepper Ann\", and the creator of Cartoon Network's 13th \"Cartoon Cartoons\"?",
+      "gold_answer": "Thomas Warburton",
+      "final_answer": "Thomas \"Tom\" Warburton (a.k.a. Mr. Warburton). He served as the lead character designer on \"Pepper Ann\" (per corpus/original/doc_09.json, line 4) and created \"Codename: Kids Next Door,\" which was the 13th of Cartoon Network's \"Cartoon Cartoons\" (per corpus/original/doc_06.json, line 1).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction provides 'Thomas \"Tom\" Warburton', which is an equivalent form of the gold answer 'Thomas Warburton', and accurately answers both parts of the question.",
+      "exact_match": false,
+      "token_f1": 0.10256410256410257
+    },
+    {
+      "id": "hotpotqa-09",
+      "benchmark": "hotpotqa",
+      "question": "What is the top speed of the faster roller coaster, between The Riddler's Revenge and Green Lantern ?",
+      "gold_answer": "65 mph",
+      "final_answer": "The Riddler's Revenge is the faster roller coaster, with a top speed of 65 mph (Green Lantern has a top speed of 63 mph).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction states the faster roller coaster has a top speed of 65 mph, which matches the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.18181818181818182
+    },
+    {
+      "id": "hotpotqa-10",
+      "benchmark": "hotpotqa",
+      "question": "The Collective for Living Cinema of Lower Manhattan featured work from what filmmaker also known as Denis Kaufman?",
+      "gold_answer": "Dziga Vertov",
+      "final_answer": "The Collective for Living Cinema in Lower Manhattan featured work by Dziga Vertov, who was also known as Denis Kaufman (born David Abelevich Kaufman). Doc_02 lists Dziga Vertov among the filmmakers whose work the Collective regularly presented, and doc_07 confirms that Dziga Vertov \"was also known as Denis Kaufman.\"",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the filmmaker as Dziga Vertov, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.08333333333333333
+    },
+    {
+      "id": "hotpotqa-11",
+      "benchmark": "hotpotqa",
+      "question": "Who was the defense counsel of a German woman who underwent Catholic exorcism rites during the year before her death?",
+      "gold_answer": "Erich Schmidt-Leichner",
+      "final_answer": "The defense counsel was Erich Schmidt-Leichner. In 1978, he served as defense counsel in the \"Klingenberg Case\" involving Anneliese Michel, the German woman who underwent Catholic exorcism rites during the year before her death (1975–1976). In the case, Michel's parents (a married couple) were accused of negligent homicide for failing to call a doctor during the exorcism of their daughter.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies Erich Schmidt-Leichner as the defense counsel, matching the gold answer exactly.",
+      "exact_match": false,
+      "token_f1": 0.07407407407407407
+    },
+    {
+      "id": "hotpotqa-12",
+      "benchmark": "hotpotqa",
+      "question": "What company did Rex Maughan aquire?",
+      "gold_answer": "Aloe Vera of America",
+      "final_answer": "Rex Maughan acquired the company \"Aloe Vera of America\" (by the 1990s).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction contains the same core answer, 'Aloe Vera of America', matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.5714285714285715
+    },
+    {
+      "id": "hotpotqa-13",
+      "benchmark": "hotpotqa",
+      "question": "Which war was HMS Clonmel in where over nine million combatants died?",
+      "gold_answer": "World War I",
+      "final_answer": "HMS Clonmel was a Hunt class minesweeper of the Royal Navy from World War I. World War I was the war in which over nine million combatants died.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies World War I as the war in which HMS Clonmel served and in which over nine million combatants died.",
+      "exact_match": false,
+      "token_f1": 0.21428571428571425
+    },
+    {
+      "id": "hotpotqa-14",
+      "benchmark": "hotpotqa",
+      "question": "What mine was operated by Royal Oak Mines at at earlier date, Kemess Mine or Colomac Mine?",
+      "gold_answer": "The Colomac Mine",
+      "final_answer": "The Colomac Mine was operated by Royal Oak Mines at an earlier date. Royal Oak Mines reopened the Colomac Mine in 1994, whereas it did not operate the Kemess Mine until 1998–1999 (before selling it to Northgate Minerals).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction explicitly identifies the Colomac Mine as the mine operated by Royal Oak Mines at an earlier date, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.1111111111111111
+    },
+    {
+      "id": "hotpotqa-15",
+      "benchmark": "hotpotqa",
+      "question": "Pulsed Pressure Cavitation Technique was developed at a natioal laboratory sponsored by what U.S. department?",
+      "gold_answer": "U.S. Department of Energy",
+      "final_answer": "The Pulsed Pressure Cavitation Technique (PPCT) was developed at Oak Ridge National Laboratory (ORNL), which is sponsored by the U.S. Department of Energy (DOE).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the U.S. Department of Energy as the sponsoring department.",
+      "exact_match": false,
+      "token_f1": 0.3076923076923077
+    },
+    {
+      "id": "hotpotqa-16",
+      "benchmark": "hotpotqa",
+      "question": "What is the name of the Minahasa journalist and novelist who was active in the colonies incorporated into the Dutch government in 1800?",
+      "gold_answer": "Frederick D. J. Pangemanann",
+      "final_answer": "Frederick D. J. Pangemanann (also Pangemanan; 1870–1910) was a Minahasa journalist and novelist active in the Dutch East Indies (now Indonesia). The Dutch East Indies were the colonies incorporated into the Dutch government in 1800 following the dissolution of the Dutch East India Company (VOC).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the Minahasa journalist and novelist as Frederick D. J. Pangemanann.",
+      "exact_match": false,
+      "token_f1": 0.1904761904761905
+    },
+    {
+      "id": "hotpotqa-17",
+      "benchmark": "hotpotqa",
+      "question": "What was the budget of the prequel to Beyond Skyline?",
+      "gold_answer": "$10–20 million",
+      "final_answer": "The prequel to Beyond Skyline is the 2010 film \"Skyline.\" Its budget was $10–20 million.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the prequel to Beyond Skyline as the 2010 film Skyline and states its budget as $10–20 million, matching the gold answer exactly.",
+      "exact_match": false,
+      "token_f1": 0.2666666666666667
+    },
+    {
+      "id": "hotpotqa-18",
+      "benchmark": "hotpotqa",
+      "question": "Who bestowed Kaganoi Shigemochi with a blade made by the person that founded the Muramasa school?",
+      "gold_answer": "Hideyoshi",
+      "final_answer": "Toyotomi Hideyoshi bestowed on Kaganoi Shigemochi a blade made by Muramasa Sengo (the swordsmith who founded the Muramasa school), doing so in 1598 (corpus/original/doc_05.json).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction identifies Toyotomi Hideyoshi as the person who bestowed the blade, which matches the gold answer 'Hideyoshi'.",
+      "exact_match": false,
+      "token_f1": 0.0909090909090909
+    },
+    {
+      "id": "hotpotqa-19",
+      "benchmark": "hotpotqa",
+      "question": "In addition to Richard Strauss, Luigi Nono, Krzysztof Penderecki, Joaquín Rodrigo, and the German composer whose known for \"Das Marienleben\", what other composers have been represented by ESZ since the 1950s?",
+      "gold_answer": "Igor Stravinsky, Carl Orff",
+      "final_answer": "Since the 1950s, ESZ has been the Italian agent of Schott Music, representing composers such as Igor Stravinsky, Carl Orff, Paul Hindemith, Richard Strauss, Luigi Nono, Krzysztof Penderecki, and Joaquín Rodrigo. The German composer known for \"Das Marienleben\" is Paul Hindemith. So, in addition to Richard Strauss, Luigi Nono, Krzysztof Penderecki, Joaquín Rodrigo, and Paul Hindemith, the other composers represented by ESZ since the 1950s are **Igor Stravinsky and Carl Orff**.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies Igor Stravinsky and Carl Orff as the other composers represented by ESZ since the 1950s, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.1142857142857143
+    },
+    {
+      "id": "hotpotqa-20",
+      "benchmark": "hotpotqa",
+      "question": "What American indie rock group first had Jesse Sandoval as the drummer and now has Jon Sortland on drums?",
+      "gold_answer": "The Shins",
+      "final_answer": "The Shins. Jesse Sandoval is the former drummer of the American indie rock group The Shins, and Jon Sortland is currently the drummer for The Shins.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies The Shins as the American indie rock group, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.09523809523809523
+    },
+    {
+      "id": "hotpotqa-21",
+      "benchmark": "hotpotqa",
+      "question": "Which bird-themed team did the baseball player, who frequented the Red Cedar Inn and was also known as Dizzy Dean, play for?",
+      "gold_answer": "St. Louis Cardinals",
+      "final_answer": "Dizzy Dean, the baseball player who frequented the Red Cedar Inn, played for the St. Louis Cardinals — a bird-themed team (the cardinal is a bird). According to his biography, he \"played in Major League Baseball as a pitcher for the St. Louis Cardinals, Chicago Cubs and the St. Louis Browns.\" Among these, the Cardinals are the bird-themed team.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the St. Louis Cardinals as the bird-themed team Dizzy Dean played for, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.11764705882352941
+    },
+    {
+      "id": "hotpotqa-22",
+      "benchmark": "hotpotqa",
+      "question": "Which feature film was released earlier, One Magic Christmas or Muppet Treasure Island?",
+      "gold_answer": "One Magic Christmas",
+      "final_answer": "One Magic Christmas was released earlier. According to the documents, One Magic Christmas is a 1985 film (corpus/original/doc_01.json), while Muppet Treasure Island is a 1996 film (corpus/original/doc_04.json). Therefore, One Magic Christmas (1985) predates Muppet Treasure Island (1996).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies 'One Magic Christmas' as the film released earlier, matching the gold answer, and provides supporting release year information that is consistent with the answer.",
+      "exact_match": false,
+      "token_f1": 0.1621621621621622
+    },
+    {
+      "id": "hotpotqa-23",
+      "benchmark": "hotpotqa",
+      "question": "How old was William DuVall when Black Gives Way to Blue was certified gold by the RIAA?",
+      "gold_answer": "William Bradley DuVall (born September 6, 1967)",
+      "final_answer": "William DuVall was 42 years old when Black Gives Way to Blue was certified gold by the RIAA on May 26, 2010. DuVall was born September 6, 1967, so he had turned 42 the previous September and had not yet turned 43 when the certification occurred in May 2010.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The model prediction correctly identifies William DuVall's birthdate as September 6, 1967 (matching the gold answer) and accurately calculates his age as 42 at the time of the album's gold certification in May 2010.",
+      "exact_match": false,
+      "token_f1": 0.22641509433962262
+    },
+    {
+      "id": "hotpotqa-24",
+      "benchmark": "hotpotqa",
+      "question": "What career led Brandon James Routh to move to the city where Brian Ralston lives?",
+      "gold_answer": "an acting career",
+      "final_answer": "Brandon James Routh moved to Los Angeles, the city where Brian Ralston lives, to pursue an acting career.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction states that Brandon James Routh moved to pursue an acting career, which matches the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.2222222222222222
+    },
+    {
+      "id": "hotpotqa-25",
+      "benchmark": "hotpotqa",
+      "question": "WrestleMania XXX took place at the home venue of which National Football League team?",
+      "gold_answer": "New Orleans Saints",
+      "final_answer": "WrestleMania XXX took place at the Mercedes-Benz Superdome in New Orleans, Louisiana, which is the home venue of the New Orleans Saints of the National Football League (NFL).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction explicitly states that the home venue is the Mercedes-Benz Superdome and correctly identifies the NFL team as the New Orleans Saints.",
+      "exact_match": false,
+      "token_f1": 0.2222222222222222
+    },
+    {
+      "id": "hotpotqa-26",
+      "benchmark": "hotpotqa",
+      "question": "Chancellor Otto von Bismark and Reichstadt agreement were also part of what League?",
+      "gold_answer": "League of the Three Emperors",
+      "final_answer": "Both Chancellor Otto von Bismarck and the Reichstadt agreement were part of the League of the Three Emperors (the \"Dreikaiserbund\"), an alliance between the German Empire, the Russian Empire, and Austria-Hungary. The Reichstadt agreement was made in July 1876 between Austria-Hungary and Russia, who were then in alliance with each other and Germany in the League of the Three Emperors.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the League of the Three Emperors as the league associated with Chancellor Otto von Bismarck and the Reichstadt agreement.",
+      "exact_match": false,
+      "token_f1": 0.14814814814814814
+    },
+    {
+      "id": "hotpotqa-27",
+      "benchmark": "hotpotqa",
+      "question": "What color clothing do people of the Netherlands wear during Oranjegekte or to celebrate the national holiday Koningsdag? ",
+      "gold_answer": "orange",
+      "final_answer": "During Oranjegekte or to celebrate the national holiday Koningsdag, people in the Netherlands wear orange clothing, such as T-shirts, caps, and scarfs. Orange is the traditional color of the Dutch royal family, the House of Orange-Nassau.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly states that people in the Netherlands wear orange clothing during Oranjegekte or Koningsdag, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.0625
+    },
+    {
+      "id": "hotpotqa-28",
+      "benchmark": "hotpotqa",
+      "question": "Which number in the Final Fantasy series was created by Hiroyuki Ito and allows the player control of the artificial intelligence of the characters in battle?",
+      "gold_answer": "Final Fantasy XII",
+      "final_answer": "Final Fantasy XII (the twelfth title in the series). According to doc_08.json, Hiroyuki Ito is \"the director of 'Final Fantasy VI' (1994), 'Final Fantasy IX' (2000) and 'Final Fantasy XII' (2006).\" And doc_09.json confirms that Final Fantasy XII \"is the twelfth title in the mainline 'Final Fantasy' series\" and \"introduced several innovations to the series: ... a customizable 'gambit' system which lets the player control the artificial intelligence (AI) of characters in battle.\"",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies Final Fantasy XII as the game created by Hiroyuki Ito that allows player control of character AI in battle through the gambit system.",
+      "exact_match": false,
+      "token_f1": 0.0909090909090909
+    },
+    {
+      "id": "hotpotqa-29",
+      "benchmark": "hotpotqa",
+      "question": "Gemma Rovira Ortega translated into Spanish the 2007 and 2008 best selling book in Spain as well as which series by Patrick Rothfuss?",
+      "gold_answer": "The Kingkiller Chronicle series",
+      "final_answer": "Gemma Rovira Ortega translated into Spanish \"The Boy in the Striped Pyjamas\" by John Boyne (the best selling book in Spain in both 2007 and 2008) as well as The Kingkiller Chronicle series by Patrick Rothfuss.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction explicitly states Gemma Rovira Ortega translated The Kingkiller Chronicle series by Patrick Rothfuss, which matches the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.17142857142857143
+    },
+    {
+      "id": "hotpotqa-30",
+      "benchmark": "hotpotqa",
+      "question": "Conrad Anker located the body of a mountaineer who took part it the first three British expeditions to which mountain?",
+      "gold_answer": "Mount Everest",
+      "final_answer": "Mount Everest. The mountaineer whose body Conrad Anker located in 1999 was George Mallory, an English mountaineer who \"took part in the first three British expeditions to Mount Everest, in the early 1920s\" (corpus/original/doc_01.json). Anker found Mallory's body on the North Face of Everest at 8,155 m during the 1999 Mallory and Irvine Research Expedition (corpus/original/doc_02.json).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the mountain as Mount Everest, which matches the gold answer exactly.",
+      "exact_match": false,
+      "token_f1": 0.07692307692307693
+    },
+    {
+      "id": "hotpotqa-31",
+      "benchmark": "hotpotqa",
+      "question": "Which Karakoram mountain is higher: Distaghil Sar or The Crown",
+      "gold_answer": "Distaghil Sar",
+      "final_answer": "Distaghil Sar is higher. Distaghil Sar has an elevation of 7,885 m (25,869 ft), while The Crown has a summit elevation of 7,295 m. Both are mountains in the Karakoram range.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies Distaghil Sar as the higher mountain and provides supporting elevation figures that align with the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.13793103448275862
+    },
+    {
+      "id": "hotpotqa-32",
+      "benchmark": "hotpotqa",
+      "question": "When was the German actress born who is best known for her role as the Borg Seven of Nine and who has role in  \"Body of Proof\" as Dr. Kate Murphy?",
+      "gold_answer": "February 22, 1968",
+      "final_answer": "The actress is Jeri Lynn Ryan (born Jeri Lynn Zimmermann), born on February 22, 1968. She is best known for her role as the Borg Seven of Nine and played Dr. Kate Murphy in \"Body of Proof.\"",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction contains the exact birth date 'February 22, 1968' as specified in the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.15789473684210528
+    },
+    {
+      "id": "hotpotqa-33",
+      "benchmark": "hotpotqa",
+      "question": "Young Sheldon, the tv series that follows the character Sheldon Cooper at the age of 9, is a spin-off from what prequel?",
+      "gold_answer": "\"The Big Bang Theory\"",
+      "final_answer": "\"Young Sheldon\" is a spin-off from \"The Big Bang Theory.\" According to the source, Sheldon Cooper is a fictional character in the CBS television series \"The Big Bang Theory\" and \"Young Sheldon,\" with \"Young Sheldon\" focusing on the childhood of the character, set in 1989 when 9-year-old Sheldon starts high school. (corpus/original/doc_08.json, lines 2 and 4)",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies \"The Big Bang Theory\" as the series from which \"Young Sheldon\" is spun off.",
+      "exact_match": false,
+      "token_f1": 0.11764705882352941
+    },
+    {
+      "id": "hotpotqa-34",
+      "benchmark": "hotpotqa",
+      "question": "Are both Upper Crust Pizzeria and Eatza Pizza restaurants?",
+      "gold_answer": "yes",
+      "final_answer": "Yes. Both are restaurants: Upper Crust Pizzeria is a Boston-based chain of pizzeria restaurants (doc_09.json), and Eatza Pizza was a buffet-style restaurant chain founded in Arizona in 1997 (doc_03.json).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction affirms that both are restaurants, matching the gold answer 'yes'.",
+      "exact_match": false,
+      "token_f1": 0.07142857142857142
+    },
+    {
+      "id": "hotpotqa-35",
+      "benchmark": "hotpotqa",
+      "question": "Which game showed has reruns on Teletoon in Canada and was shown between midnight and 6:00 on Cartoon Network Too?",
+      "gold_answer": "Skatoony",
+      "final_answer": "Skatoony — an American/British/Canadian/Arabic children's animated game show whose reruns were still occasionally shown on Teletoon in Canada (doc_06.json), and which aired on Cartoon Network Too during overnight hours between midnight and 06:00 (doc_02.json).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the show as 'Skatoony' and matches the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.05882352941176471
+    },
+    {
+      "id": "hotpotqa-36",
+      "benchmark": "hotpotqa",
+      "question": "A pakistani photogropher was the personal photographer of a Pakistani politician who served as Prime Minister of Pakistan from 1973 to 1977,and who also served in what political office prior to that?",
+      "gold_answer": "President of Pakistan",
+      "final_answer": "According to the documents, Zulfikar Ali Bhutto — the Pakistani politician for whom the Pakistani photographer Syed Zaigham Hussain Zaidi served as personal photographer (doc_04) — served as Prime Minister of Pakistan from 1973 to 1977, and prior to that he served as the fourth President of Pakistan from 1971 to 1973 (doc_10).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies that the political office served prior to Prime Minister was President of Pakistan.",
+      "exact_match": false,
+      "token_f1": 0.11538461538461538
+    },
+    {
+      "id": "hotpotqa-37",
+      "benchmark": "hotpotqa",
+      "question": "The Duke Steps Out stars an actress who was ranked tenth on a list of greatest female Hollywood stars in what year?",
+      "gold_answer": "1999",
+      "final_answer": "The Duke Steps Out stars Joan Crawford, who was ranked tenth on the American Film Institute's list of the greatest female stars of Classic Hollywood Cinema in 1999.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies 1999 as the year when Joan Crawford was ranked tenth on the AFI's list of greatest female stars.",
+      "exact_match": false,
+      "token_f1": 0.07692307692307693
+    },
+    {
+      "id": "hotpotqa-38",
+      "benchmark": "hotpotqa",
+      "question": "Which famous mine was in service first, the Salmita Mine or the Kanichee Mine?",
+      "gold_answer": "Kanichee Mine",
+      "final_answer": "The Kanichee Mine was in service first. According to the documents, the Kanichee Mine zone \"has been explored and mined discontinuously from as early as 1910,\" whereas the Salmita Mine \"entered production in 1983\" (with its deposit first discovered in 1945). Thus, the Kanichee Mine predates the Salmita Mine by decades.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the Kanichee Mine as being in service first, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.0851063829787234
+    },
+    {
+      "id": "hotpotqa-39",
+      "benchmark": "hotpotqa",
+      "question": "What American horror film directed by Sidney J. Furie was based off an alleged haunting which occurred in 1974 at Culver City, California?",
+      "gold_answer": "The Entity",
+      "final_answer": "The Entity is a 1982 American horror film directed by Sidney J. Furie, written by Frank De Felitta. It was based on the Doris Bither case (the \"Entity hauntings\"), an alleged haunting that occurred in 1974 at Culver City, California.",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies the film as 'The Entity' and provides accurate supporting details matching the question.",
+      "exact_match": false,
+      "token_f1": 0.05555555555555556
+    },
+    {
+      "id": "hotpotqa-40",
+      "benchmark": "hotpotqa",
+      "question": "My Secret Hotel is a television series starring a South Korean DJ who rose to fame as the lead actress in what?",
+      "gold_answer": "Queen In-hyun's Man",
+      "final_answer": "Yoo In-na, a South Korean actress and DJ who stars in My Secret Hotel, rose to fame as the lead actress in \"Queen In-hyun's Man\" (2012).",
+      "llm_judge_correct": true,
+      "llm_judge_reason": "The prediction correctly identifies 'Queen In-hyun's Man' as the work in which Yoo In-na rose to fame as the lead actress, matching the gold answer.",
+      "exact_match": false,
+      "token_f1": 0.2222222222222222
+    }
+  ]
+}

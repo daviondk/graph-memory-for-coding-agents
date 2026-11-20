@@ -1,0 +1,23 @@
+[project]
+name = "block-context-bench"
+version = "0.1.0"
+description = "Block Context HotpotQA bench harness"
+requires-python = ">=3.11"
+dependencies = [
+    "openai>=1.40",
+    "datasets>=2.20",
+    "python-dotenv>=1.0",
+    "block-context",
+]
+
+[tool.uv.sources]
+block-context = { path = "..", editable = true }
+
+[dependency-groups]
+dev = [
+    "pytest>=8.2",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]

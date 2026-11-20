@@ -1,0 +1,2 @@
+def find_Average_Of_Cube(n):
+    raise NotImplementedError

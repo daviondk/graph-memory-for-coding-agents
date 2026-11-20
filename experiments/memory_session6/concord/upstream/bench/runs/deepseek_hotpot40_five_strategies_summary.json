@@ -1,0 +1,59 @@
+{
+  "model": "DeepSeek-V4-Pro",
+  "strategies": [
+    {
+      "strategy": "oracle",
+      "success": 40,
+      "count": 40,
+      "success_rate": 1.0,
+      "avg_steps": 4.58,
+      "total_steps": 183,
+      "total_tokens": 410820,
+      "still_stuck": []
+    },
+    {
+      "strategy": "naive",
+      "success": 24,
+      "count": 40,
+      "success_rate": 0.6,
+      "avg_steps": 5.6,
+      "total_steps": 224,
+      "total_tokens": 562851,
+      "still_stuck": [
+        "hotpotqa-17"
+      ]
+    },
+    {
+      "strategy": "diff",
+      "success": 38,
+      "count": 40,
+      "success_rate": 0.95,
+      "avg_steps": 8.2,
+      "total_steps": 328,
+      "total_tokens": 903032,
+      "still_stuck": [
+        "hotpotqa-08"
+      ]
+    },
+    {
+      "strategy": "alert",
+      "success": 31,
+      "count": 40,
+      "success_rate": 0.775,
+      "avg_steps": 5.83,
+      "total_steps": 233,
+      "total_tokens": 621379,
+      "still_stuck": []
+    },
+    {
+      "strategy": "block_context",
+      "success": 40,
+      "count": 40,
+      "success_rate": 1.0,
+      "avg_steps": 5.38,
+      "total_steps": 215,
+      "total_tokens": 524862,
+      "still_stuck": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "2602.21611",
+  "title": "Structurally Aligned Subtask-Level Memory for Software Engineering Agents",
+  "authors": [
+    "Shen, Kangning",
+    "Zhang, Jingyuan",
+    "Sun, Chenxi",
+    "Zeng, Wencong",
+    "Yue, Yang"
+  ],
+  "date": "2026/02/25",
+  "url": "https://arxiv.org/abs/2602.21611",
+  "abstract": "Large Language Models (LLMs) have demonstrated significant potential as autonomous software engineering (SWE) agents. Recent work has further explored augmenting these agents with memory mechanisms to support long-horizon reasoning. However, these approaches typically operate at a coarse instance granularity, treating the entire problem-solving episode as the atomic unit of storage and retrieval. We empirically demonstrate that instance-level memory suffers from a fundamental granularity mismatch, resulting in misguided retrieval when tasks with similar surface descriptions require distinct reasoning logic at specific stages. To address this, we propose Structurally Aligned Subtask-Level Memory, a method that aligns memory storage, retrieval, and updating with the agent's functional decomposition. Extensive experiments on SWE-bench Verified demonstrate that our method consistently outperforms both vanilla agents and strong instance-level memory baselines across diverse backbones, improving mean Pass@1 over the vanilla agent by +4.7 pp on average (e.g., +6.8 pp on Gemini 2.5 Pro). Performance gains grow with more interaction steps, showing that leveraging past experience benefits long-horizon reasoning in complex software engineering tasks.",
+  "status": "",
+  "versions": "Submission history From: Kangning Shen [ view email ] [v1] Wed, 25 Feb 2026 06:13:25 UTC (2,805 KB)"
+}

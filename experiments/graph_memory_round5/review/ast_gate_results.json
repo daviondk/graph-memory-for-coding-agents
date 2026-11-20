@@ -1,0 +1,230 @@
+{
+  "A": {
+    "n": 128,
+    "switched": 21,
+    "methods": {
+      "local": {
+        "em_count": 14,
+        "em_percent": 10.9375,
+        "es": 53.7890625,
+        "id_f1": 0.39739197689565336,
+        "prompt_tokens": 402.84375,
+        "evidence_tokens": 100.9765625
+      },
+      "edge": {
+        "em_count": 16,
+        "em_percent": 12.5,
+        "es": 54.78125,
+        "id_f1": 0.4131656100285164,
+        "prompt_tokens": 412.6328125,
+        "evidence_tokens": 110.7734375
+      },
+      "ast_gate": {
+        "em_count": 15,
+        "em_percent": 11.71875,
+        "es": 54.1953125,
+        "id_f1": 0.40567445345708214,
+        "prompt_tokens": 407.234375,
+        "evidence_tokens": 105.3984375
+      }
+    },
+    "gate_vs": {
+      "local": {
+        "wins": 1,
+        "losses": 0,
+        "delta_em_pp": 0.78125,
+        "p_mcnemar_twosided": 1.0
+      },
+      "edge": {
+        "wins": 0,
+        "losses": 1,
+        "delta_em_pp": -0.78125,
+        "p_mcnemar_twosided": 1.0
+      }
+    },
+    "random_matched": {
+      "observed_improvement_count": 1,
+      "p_one_sided_random_policy_ge": 0.4823529411764706,
+      "p_exact_fraction": "41/85",
+      "expected_random_improvement_count": 0.5529411764705883,
+      "counts_by_stratum": {
+        "java_cff_test_easy": [
+          5,
+          19
+        ],
+        "java_cff_test_hard": [
+          6,
+          17
+        ],
+        "java_cfr_test_easy": [
+          6,
+          23
+        ],
+        "java_cfr_test_hard": [
+          4,
+          20
+        ]
+      },
+      "distribution": {
+        "0": "44/85",
+        "1": "7/17",
+        "2": "6/85"
+      }
+    },
+    "exploratory_roles": {
+      "no_edge": {
+        "n": 49,
+        "wins": 0,
+        "losses": 0,
+        "es_change": 0
+      },
+      "case_only": {
+        "n": 12,
+        "wins": 0,
+        "losses": 0,
+        "es_change": 8
+      },
+      "type_or_declaration": {
+        "n": 32,
+        "wins": 0,
+        "losses": 0,
+        "es_change": 77
+      },
+      "field_direct_receiver": {
+        "n": 12,
+        "wins": 1,
+        "losses": 0,
+        "es_change": -10
+      },
+      "new_object_type": {
+        "n": 3,
+        "wins": 0,
+        "losses": 0,
+        "es_change": 0
+      },
+      "method_direct_receiver": {
+        "n": 18,
+        "wins": 1,
+        "losses": 0,
+        "es_change": 52
+      },
+      "other_identifier": {
+        "n": 1,
+        "wins": false,
+        "losses": false,
+        "es_change": 0
+      },
+      "literal_or_comment": {
+        "n": 1,
+        "wins": false,
+        "losses": false,
+        "es_change": 0
+      }
+    }
+  },
+  "B": {
+    "n": 64,
+    "switched": 11,
+    "methods": {
+      "local": {
+        "em_count": 8,
+        "em_percent": 12.5,
+        "es": 58.40625,
+        "id_f1": 0.4215918460237362,
+        "prompt_tokens": 418.203125,
+        "evidence_tokens": 91.671875
+      },
+      "edge": {
+        "em_count": 8,
+        "em_percent": 12.5,
+        "es": 57.5625,
+        "id_f1": 0.40923284487163164,
+        "prompt_tokens": 440.921875,
+        "evidence_tokens": 114.484375
+      },
+      "ast_gate": {
+        "em_count": 8,
+        "em_percent": 12.5,
+        "es": 57.40625,
+        "id_f1": 0.41373199753888773,
+        "prompt_tokens": 420.375,
+        "evidence_tokens": 93.875
+      }
+    },
+    "gate_vs": {
+      "local": {
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "p_mcnemar_twosided": 1.0
+      },
+      "edge": {
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "p_mcnemar_twosided": 1.0
+      }
+    },
+    "random_matched": {
+      "observed_improvement_count": 0,
+      "p_one_sided_random_policy_ge": 1.0,
+      "p_exact_fraction": "1",
+      "expected_random_improvement_count": 0.0,
+      "counts_by_stratum": {
+        "java_cff_test_easy": [
+          4,
+          16
+        ],
+        "java_cff_test_hard": [
+          0,
+          16
+        ],
+        "java_cfr_test_easy": [
+          3,
+          16
+        ],
+        "java_cfr_test_hard": [
+          4,
+          16
+        ]
+      },
+      "distribution": {
+        "0": "1"
+      }
+    },
+    "exploratory_roles": {
+      "type_or_declaration": {
+        "n": 31,
+        "wins": 0,
+        "losses": 0,
+        "es_change": 5
+      },
+      "case_only": {
+        "n": 16,
+        "wins": 0,
+        "losses": 0,
+        "es_change": 1
+      },
+      "method_direct_receiver": {
+        "n": 9,
+        "wins": 0,
+        "losses": 0,
+        "es_change": -58
+      },
+      "field_direct_receiver": {
+        "n": 6,
+        "wins": 0,
+        "losses": 0,
+        "es_change": 4
+      },
+      "new_object_type": {
+        "n": 2,
+        "wins": 0,
+        "losses": 0,
+        "es_change": -6
+      }
+    }
+  },
+  "utc": "2026-11-18T21:06:54.966511+00:00",
+  "script_sha256": "0caecf2acd926e315cf3321a6a7d154a7a6ab8da2557166406f6db62e1ad2795"
+}

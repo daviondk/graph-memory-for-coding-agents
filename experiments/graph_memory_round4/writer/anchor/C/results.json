@@ -1,0 +1,79 @@
+{
+ "n": 831,
+ "issues": 204,
+ "audit": {
+  "accepted": 833,
+  "forward_agrees": 461,
+  "cannot_invert": 2
+ },
+ "full": {
+  "flat_original": 461,
+  "flat_anchor": 467,
+  "cap_original": 406,
+  "cap_anchor": 412
+ },
+ "contrasts": {
+  "flat": {
+   "delta": 0.007220216606498195,
+   "net": 6,
+   "wins": 6,
+   "losses": 0,
+   "mean_issue": 0.0032936154259683667,
+   "mean_repo": 0.004032258064516129,
+   "ci_issues_within_repos": [
+    0.0011723329425556857,
+    0.015186915887850467
+   ],
+   "ci_repos": [
+    0.0,
+    0.008064516129032258
+   ],
+   "per_repo": {
+    "django/django": [
+     6,
+     744
+    ],
+    "sympy/sympy": [
+     0,
+     87
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cap": {
+   "delta": 0.007220216606498195,
+   "net": 6,
+   "wins": 9,
+   "losses": 3,
+   "mean_issue": 0.004550528447587272,
+   "mean_repo": 0.004032258064516129,
+   "ci_issues_within_repos": [
+    -0.0012594458438287153,
+    0.01699070404860973
+   ],
+   "ci_repos": [
+    0.0,
+    0.008064516129032258
+   ],
+   "per_repo": {
+    "django/django": [
+     6,
+     744
+    ],
+    "sympy/sympy": [
+     0,
+     87
+    ]
+   },
+   "signflip_repo": 1.0
+  }
+ },
+ "validation": {
+  "cap": {
+   "n": 69,
+   "equal": 69,
+   "conflicts": 0,
+   "issues": 7
+  }
+ }
+}

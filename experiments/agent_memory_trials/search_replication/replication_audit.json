@@ -1,0 +1,100 @@
+{
+  "identical_prompt_pairs": 36,
+  "distinct_replicate_thread_ids": 36,
+  "statuses": {
+    "ok": 36
+  },
+  "costs": {
+    "summary": {
+      "attempts": 12,
+      "sum_model_seconds": 55.849199999999996,
+      "input_tokens": 194488,
+      "cached_input_tokens": 67584,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 108,
+      "reasoning_output_tokens": 0
+    },
+    "raw": {
+      "attempts": 12,
+      "sum_model_seconds": 60.885799999999996,
+      "input_tokens": 198111,
+      "cached_input_tokens": 55936,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 108,
+      "reasoning_output_tokens": 0
+    },
+    "structured": {
+      "attempts": 12,
+      "sum_model_seconds": 60.5998,
+      "input_tokens": 202729,
+      "cached_input_tokens": 127488,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 108,
+      "reasoning_output_tokens": 0
+    },
+    "all": {
+      "attempts": 36,
+      "sum_model_seconds": 177.3348,
+      "input_tokens": 595328,
+      "cached_input_tokens": 251008,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 324,
+      "reasoning_output_tokens": 0
+    }
+  },
+  "neutral_probe": {
+    "seconds": 4.8228,
+    "usage": {
+      "input_tokens": 15241,
+      "cached_input_tokens": 0,
+      "cache_write_input_tokens": 0,
+      "output_tokens": 9,
+      "reasoning_output_tokens": 0
+    }
+  },
+  "elapsed_experiment_s": 90.417617,
+  "started_utc": "2026-11-16T14:41:27.768648+00:00",
+  "ended_utc": "2026-11-16T14:42:58.186265+00:00",
+  "paired_study_counts": {
+    "primary": {
+      "summary": {
+        "pass": 3,
+        "unresolved": 3,
+        "unique_pass": 3,
+        "ambiguous_pass": 0
+      },
+      "raw": {
+        "pass": 8,
+        "unresolved": 12,
+        "unique_pass": 8,
+        "ambiguous_pass": 0
+      },
+      "structured": {
+        "pass": 8,
+        "unresolved": 12,
+        "unique_pass": 8,
+        "ambiguous_pass": 0
+      }
+    },
+    "replication": {
+      "summary": {
+        "pass": 4,
+        "unresolved": 6,
+        "unique_pass": 4,
+        "ambiguous_pass": 0
+      },
+      "raw": {
+        "pass": 3,
+        "unresolved": 5,
+        "unique_pass": 3,
+        "ambiguous_pass": 0
+      },
+      "structured": {
+        "pass": 4,
+        "unresolved": 6,
+        "unique_pass": 4,
+        "ambiguous_pass": 0
+      }
+    }
+  }
+}

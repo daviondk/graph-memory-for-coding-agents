@@ -1,0 +1,19 @@
+
+
+Action log from the previous session:
+Explicit file arguments in successful inspection commands
+- none recorded
+Test commands actually issued (status of outer shell)
+- t8.0 shell exit 0: python -m pytest test_requests.py -q 2>&1 | grep -E "^(FAILED|ERROR|[0-9]+ (failed|passed))" | tail -20
+- t9.0 shell exit 0: python -m pytest test_requests.py::RequestsTestCase::test_session_pickling -q 2>&1 | grep -B5 "Error\|error" | head -30
+- t10.0 shell exit 0: python -m pytest test_requests.py::RequestsTestCase::test_session_pickling -q 2>&1 | grep -E "^E |TypeError|requests\.e" | head -10
+- t11.0 shell exit 0: python -m pytest test_requests.py -q 2>&1 | grep FAILED | grep -v "requests.exceptio\|requests.e\. [omitted] est_session_pickling --collect-only -q 2>&1 | head
+- t12.0 shell exit 0: python -m pytest test_requests.py -q 2>&1 | grep FAILED | grep -v "requests.exceptio\|requests.e\.\|ConnectionError\|reques\.\|reque\."
+- t13.0 shell exit 0: python -m pytest test_requests.py::RequestsTestCase::test_conflicting_post_params -q 2>&1 | grep -E "^E |def test" | head
+Most recent nonzero shell commands
+- t23.0 shell exit 1: grep -rn "LocationParseError" /testbed/requests --include=*.py | grep -v packages
+- t24.0 shell exit 1: grep -n "def parse_url" -A 40 /testbed/requests/utils.py
+Files in saved working-tree patch
+- none recorded
+Repeated normalized shell commands
+- none recorded

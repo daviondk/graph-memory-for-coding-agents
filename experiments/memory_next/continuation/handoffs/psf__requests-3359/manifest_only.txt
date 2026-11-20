@@ -1,0 +1,22 @@
+
+
+Action log from the previous session:
+Explicit file arguments in successful inspection commands
+- requests/models.py
+- requests/utils.py
+- tests/conftest.py
+- tests/test_requests.py
+Test commands actually issued (status of outer shell)
+- t11.0 shell exit 0: cd /testbed && python -m pytest tests/test_requests.py -k "decode_unicode or chunk_size" -x -q 2>&1 | tail -20
+- t19.0 shell exit 0: cd /testbed && python -m pytest tests/test_requests.py -q 2>&1 | tail -5
+- t20.0 shell exit 0: cd /testbed && python -m pytest tests/test_requests.py -q 2>&1 | grep -E "^(FAILED|ERROR)" | head -20
+- t22.0 shell exit 0: cd /testbed && python -m pytest tests/test_requests.py -q 2>&1 | grep -B5 "ERROR at setup" | head -20
+- t24.0 shell exit 0: cd /testbed && python -m pytest tests/test_requests.py::TestTimeout -q 2>&1 | grep -A 15 "test_connect_timeout" | head -30
+Most recent nonzero shell commands
+- t1.0 shell exit 1: ls /testbed && head -50 /testbed/requests/models.py | grep -n "iter_content"
+- t5.0 shell exit 1: grep -n "def encoding" -A 25 /testbed/requests/models.py
+- t12.0 shell exit 1: cd /testbed && grep -rn "decode_unicode\|iter_content" tests/test_utils.py tests/test_structures.py tests/test_lowlevel.py 2>/dev/null
+Files in saved working-tree patch
+- none recorded
+Repeated normalized shell commands
+- none recorded

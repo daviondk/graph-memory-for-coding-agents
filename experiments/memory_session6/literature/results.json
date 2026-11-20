@@ -1,0 +1,431 @@
+{
+  "repo": "thenexuslab/stalebench-release",
+  "commit": "724fccc1ec4caec10b937d7e63159b4f8da7e6e5",
+  "hashes": {
+    "results/stalebench_reader_results.json": "c8ca7acc5ebf47a1b1c556f595dd59b2d087b6510e3eec055027abebec15eb1f",
+    "release/queries_anchored_test.jsonl": "3f61ba055a1e6a813b49a07fe2e86747a341bb9c75a6b90240235c47aa5ce093",
+    "release/sub_anchored_test_cosine.jsonl": "01e689ffc3bec66a280886f2dc745808bced4bfa7a92dee4f55f311c2b600f1c",
+    "release/sub_anchored_test_time_rerank.jsonl": "c14c96d939a7c2fa290f15863538a0236255434837ccf28af0be4f0c78ddfd13",
+    "release/statements_anchored_test.jsonl": "426af840f15252b1bccd892edacc2df24c2ef3002a3f812d2ed5091c1a97dcc4",
+    "release/key_anchored_test.jsonl": "d4225af55c30dcae833779c7608040bef38febff70d0ac4ed1dccee51365d028"
+  },
+  "n": 468,
+  "trigger": 240,
+  "results": {
+    "qwen2.5:14b": {
+      "overall": {
+        "n": 468,
+        "shown": 240,
+        "never": 261,
+        "always": 449,
+        "selected": 309,
+        "uniform_expected_correct": 357.4102564102564,
+        "difference_vs_uniform_pp": -10.34407188253342,
+        "shown_transitions": {
+          "improved": 50,
+          "worsened": 2,
+          "stable": 188
+        },
+        "hidden_transitions": {
+          "improved": 142,
+          "worsened": 2,
+          "stable": 84
+        }
+      },
+      "relations": {
+        "P102": {
+          "n": 55,
+          "shown": 33,
+          "never": 35,
+          "always": 54,
+          "selected": 41,
+          "uniform_expected_correct": 46.4,
+          "difference_vs_uniform_pp": -9.818181818181817,
+          "shown_transitions": {
+            "improved": 6,
+            "worsened": 0,
+            "stable": 27
+          },
+          "hidden_transitions": {
+            "improved": 13,
+            "worsened": 0,
+            "stable": 9
+          }
+        },
+        "P108": {
+          "n": 82,
+          "shown": 39,
+          "never": 33,
+          "always": 81,
+          "selected": 44,
+          "uniform_expected_correct": 55.829268292682926,
+          "difference_vs_uniform_pp": -14.42593694229625,
+          "shown_transitions": {
+            "improved": 11,
+            "worsened": 0,
+            "stable": 28
+          },
+          "hidden_transitions": {
+            "improved": 37,
+            "worsened": 0,
+            "stable": 6
+          }
+        },
+        "P127": {
+          "n": 18,
+          "shown": 12,
+          "never": 14,
+          "always": 18,
+          "selected": 16,
+          "uniform_expected_correct": 16.666666666666668,
+          "difference_vs_uniform_pp": -3.7037037037037104,
+          "shown_transitions": {
+            "improved": 2,
+            "worsened": 0,
+            "stable": 10
+          },
+          "hidden_transitions": {
+            "improved": 2,
+            "worsened": 0,
+            "stable": 4
+          }
+        },
+        "P286": {
+          "n": 105,
+          "shown": 50,
+          "never": 50,
+          "always": 97,
+          "selected": 63,
+          "uniform_expected_correct": 72.38095238095238,
+          "difference_vs_uniform_pp": -8.93424036281179,
+          "shown_transitions": {
+            "improved": 13,
+            "worsened": 0,
+            "stable": 37
+          },
+          "hidden_transitions": {
+            "improved": 35,
+            "worsened": 1,
+            "stable": 19
+          }
+        },
+        "P39": {
+          "n": 87,
+          "shown": 42,
+          "never": 57,
+          "always": 82,
+          "selected": 62,
+          "uniform_expected_correct": 69.06896551724138,
+          "difference_vs_uniform_pp": -8.125247720967105,
+          "shown_transitions": {
+            "improved": 7,
+            "worsened": 2,
+            "stable": 33
+          },
+          "hidden_transitions": {
+            "improved": 21,
+            "worsened": 1,
+            "stable": 23
+          }
+        },
+        "P488": {
+          "n": 36,
+          "shown": 18,
+          "never": 18,
+          "always": 35,
+          "selected": 23,
+          "uniform_expected_correct": 26.5,
+          "difference_vs_uniform_pp": -9.722222222222221,
+          "shown_transitions": {
+            "improved": 5,
+            "worsened": 0,
+            "stable": 13
+          },
+          "hidden_transitions": {
+            "improved": 12,
+            "worsened": 0,
+            "stable": 6
+          }
+        },
+        "P54": {
+          "n": 53,
+          "shown": 29,
+          "never": 33,
+          "always": 50,
+          "selected": 37,
+          "uniform_expected_correct": 42.301886792452834,
+          "difference_vs_uniform_pp": -10.003559985760063,
+          "shown_transitions": {
+            "improved": 4,
+            "worsened": 0,
+            "stable": 25
+          },
+          "hidden_transitions": {
+            "improved": 13,
+            "worsened": 0,
+            "stable": 11
+          }
+        },
+        "P6": {
+          "n": 21,
+          "shown": 13,
+          "never": 13,
+          "always": 21,
+          "selected": 15,
+          "uniform_expected_correct": 17.952380952380953,
+          "difference_vs_uniform_pp": -14.058956916099774,
+          "shown_transitions": {
+            "improved": 2,
+            "worsened": 0,
+            "stable": 11
+          },
+          "hidden_transitions": {
+            "improved": 6,
+            "worsened": 0,
+            "stable": 2
+          }
+        },
+        "P69": {
+          "n": 11,
+          "shown": 4,
+          "never": 8,
+          "always": 11,
+          "selected": 8,
+          "uniform_expected_correct": 9.09090909090909,
+          "difference_vs_uniform_pp": -9.917355371900818,
+          "shown_transitions": {
+            "improved": 0,
+            "worsened": 0,
+            "stable": 4
+          },
+          "hidden_transitions": {
+            "improved": 3,
+            "worsened": 0,
+            "stable": 4
+          }
+        }
+      },
+      "secondary_subject_bootstrap": {
+        "unit": "Wikidata subject",
+        "clusters": 467,
+        "draws": 5000,
+        "seed": 20261118,
+        "percentile_interval_pp": [
+          -12.450233764336328,
+          -8.200090015957375
+        ]
+      },
+      "relation_macro_vs_within_relation_uniform_pp": -9.856600560438173
+    },
+    "glm-4.6": {
+      "overall": {
+        "n": 468,
+        "shown": 240,
+        "never": 286,
+        "always": 448,
+        "selected": 391,
+        "uniform_expected_correct": 369.0769230769231,
+        "difference_vs_uniform_pp": 4.684418145956604,
+        "shown_transitions": {
+          "improved": 105,
+          "worsened": 0,
+          "stable": 135
+        },
+        "hidden_transitions": {
+          "improved": 58,
+          "worsened": 1,
+          "stable": 169
+        }
+      },
+      "relations": {
+        "P102": {
+          "n": 55,
+          "shown": 33,
+          "never": 27,
+          "always": 53,
+          "selected": 50,
+          "uniform_expected_correct": 42.6,
+          "difference_vs_uniform_pp": 13.454545454545453,
+          "shown_transitions": {
+            "improved": 23,
+            "worsened": 0,
+            "stable": 10
+          },
+          "hidden_transitions": {
+            "improved": 3,
+            "worsened": 0,
+            "stable": 19
+          }
+        },
+        "P108": {
+          "n": 82,
+          "shown": 39,
+          "never": 35,
+          "always": 80,
+          "selected": 63,
+          "uniform_expected_correct": 56.40243902439025,
+          "difference_vs_uniform_pp": 8.045806067816772,
+          "shown_transitions": {
+            "improved": 28,
+            "worsened": 0,
+            "stable": 11
+          },
+          "hidden_transitions": {
+            "improved": 17,
+            "worsened": 0,
+            "stable": 26
+          }
+        },
+        "P127": {
+          "n": 18,
+          "shown": 12,
+          "never": 15,
+          "always": 18,
+          "selected": 17,
+          "uniform_expected_correct": 17.0,
+          "difference_vs_uniform_pp": 0.0,
+          "shown_transitions": {
+            "improved": 2,
+            "worsened": 0,
+            "stable": 10
+          },
+          "hidden_transitions": {
+            "improved": 1,
+            "worsened": 0,
+            "stable": 5
+          }
+        },
+        "P286": {
+          "n": 105,
+          "shown": 50,
+          "never": 59,
+          "always": 97,
+          "selected": 78,
+          "uniform_expected_correct": 77.0952380952381,
+          "difference_vs_uniform_pp": 0.861678004535141,
+          "shown_transitions": {
+            "improved": 19,
+            "worsened": 0,
+            "stable": 31
+          },
+          "hidden_transitions": {
+            "improved": 19,
+            "worsened": 0,
+            "stable": 36
+          }
+        },
+        "P39": {
+          "n": 87,
+          "shown": 42,
+          "never": 63,
+          "always": 83,
+          "selected": 74,
+          "uniform_expected_correct": 72.65517241379311,
+          "difference_vs_uniform_pp": 1.5457788347205628,
+          "shown_transitions": {
+            "improved": 11,
+            "worsened": 0,
+            "stable": 31
+          },
+          "hidden_transitions": {
+            "improved": 9,
+            "worsened": 0,
+            "stable": 36
+          }
+        },
+        "P488": {
+          "n": 36,
+          "shown": 18,
+          "never": 24,
+          "always": 35,
+          "selected": 34,
+          "uniform_expected_correct": 29.5,
+          "difference_vs_uniform_pp": 12.5,
+          "shown_transitions": {
+            "improved": 10,
+            "worsened": 0,
+            "stable": 8
+          },
+          "hidden_transitions": {
+            "improved": 1,
+            "worsened": 0,
+            "stable": 17
+          }
+        },
+        "P54": {
+          "n": 53,
+          "shown": 29,
+          "never": 39,
+          "always": 50,
+          "selected": 50,
+          "uniform_expected_correct": 45.0188679245283,
+          "difference_vs_uniform_pp": 9.398362406550374,
+          "shown_transitions": {
+            "improved": 11,
+            "worsened": 0,
+            "stable": 18
+          },
+          "hidden_transitions": {
+            "improved": 1,
+            "worsened": 1,
+            "stable": 22
+          }
+        },
+        "P6": {
+          "n": 21,
+          "shown": 13,
+          "never": 16,
+          "always": 21,
+          "selected": 17,
+          "uniform_expected_correct": 19.095238095238095,
+          "difference_vs_uniform_pp": -9.977324263038547,
+          "shown_transitions": {
+            "improved": 1,
+            "worsened": 0,
+            "stable": 12
+          },
+          "hidden_transitions": {
+            "improved": 4,
+            "worsened": 0,
+            "stable": 4
+          }
+        },
+        "P69": {
+          "n": 11,
+          "shown": 4,
+          "never": 8,
+          "always": 11,
+          "selected": 8,
+          "uniform_expected_correct": 9.09090909090909,
+          "difference_vs_uniform_pp": -9.917355371900818,
+          "shown_transitions": {
+            "improved": 0,
+            "worsened": 0,
+            "stable": 4
+          },
+          "hidden_transitions": {
+            "improved": 3,
+            "worsened": 0,
+            "stable": 4
+          }
+        }
+      },
+      "secondary_subject_bootstrap": {
+        "unit": "Wikidata subject",
+        "clusters": 467,
+        "draws": 5000,
+        "seed": 20261118,
+        "percentile_interval_pp": [
+          2.5641025641025643,
+          6.7366992374672705
+        ]
+      },
+      "relation_macro_vs_within_relation_uniform_pp": 2.879054570358771
+    }
+  },
+  "gains_both": 82,
+  "extra_ascii_bytes_gate": 8400,
+  "extra_ascii_bytes_always": 16380,
+  "gains_exactly_one": 191,
+  "gains_neither": 195
+}

@@ -1,0 +1,20 @@
+{
+  "id": "2607.01916",
+  "title": "ContextSniper: AntTrail's Token-Efficient Code Memory for Repository-Level Program Repair",
+  "authors": [
+    "Luk, Chiwang",
+    "Najafi, Matin Mohammad",
+    "Jia, Zhifeng",
+    "Yang, Wei",
+    "Li, Xiuchang",
+    "Zhu, Jinwei",
+    "Ren, Yang",
+    "Chen, Lei",
+    "Cong, Gao"
+  ],
+  "date": "2026/07/02",
+  "url": "https://arxiv.org/abs/2607.01916",
+  "abstract": "Large language model agents can repair real repository issues, but they often spend large context budgets on whole-file reads, broad searches, and long terminal outputs where useful evidence is mixed with irrelevant code and logs. This paper presents ContextSniper, AntTrail's code-repair module for precision evidence selection in repository-level program repair, as part of AntTrail's broader agent-memory engine. AntTrail is available at this https URL . ContextSniper indexes code and action memory at three levels of abstraction, retrieves candidates with a hybrid ranker, filters long tool output through an intention-aware context gate, and returns compact evidence packets while keeping full source recoverable on demand. In matched 50-task-per-condition comparisons, ContextSniper reduces total token use by 51.5% and logged cost by 36.4% for OpenClaw on SWE-bench Lite, and reduces total token use by 40.0% and average interaction rounds by 28.1% for OpenCode on SWE-bench Pro. Submitted-resolution rates differ by one task out of 50 in each host-agent setting. In a separate five-task comparison, ContextSniper outperforms existing memory- and retrieval-augmented generation (RAG)-style integrations in token efficiency. These results suggest that ContextSniper can substantially reduce token and interaction overhead for repository-level repair agents without a measurable loss in repair quality. The evaluation harness is available at this https URL .",
+  "status": "",
+  "versions": "Submission history From: Chi Wang Luk [ view email ] [v1] Thu, 2 Jul 2026 09:15:28 UTC (4,491 KB) [v2] Mon, 6 Jul 2026 10:11:27 UTC (4,492 KB) [v3] Thu, 9 Jul 2026 01:58:28 UTC (4,492 KB) [v4] Mon, 10 Aug 2026 03:42:56 UTC (5,078 KB) [v5] Wed, 19 Aug 2026 02:03:13 UTC (4,490 KB) [v6] Mon, 14 Sep 2026 16:01:22 UTC (4,492 KB)"
+}

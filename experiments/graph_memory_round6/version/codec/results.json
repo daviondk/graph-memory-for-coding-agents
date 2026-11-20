@@ -1,0 +1,490 @@
+{
+ "pooled": {
+  "n": 645,
+  "cost": {
+   "standard": {
+    "bytes": 20386211,
+    "lines": 2052967,
+    "steps": 9646,
+    "cpu_ns": 33359375000,
+    "overflow": 411,
+    "evicted_pages": 1967,
+    "as_json": 9646,
+    "max_bytes": 4096
+   },
+   "edges": {
+    "bytes": 20133931,
+    "lines": 2078921,
+    "steps": 9646,
+    "cpu_ns": 31781250000,
+    "overflow": 402,
+    "evicted_pages": 1895,
+    "as_edges": 9646,
+    "max_bytes": 4096
+   },
+   "adaptive": {
+    "bytes": 19980520,
+    "lines": 2091667,
+    "steps": 9646,
+    "cpu_ns": 86890625000,
+    "overflow": 400,
+    "evicted_pages": 1874,
+    "as_binary": 8893,
+    "max_bytes": 4096,
+    "as_edges": 753
+   }
+  },
+  "same_state_bytes": {
+   "json": 20386211,
+   "edges": 19898981,
+   "binary": 19649785,
+   "best": 19639427
+  },
+  "cases": {
+   "standard": {
+    "full": 413,
+    "correct": 6159,
+    "wrong": 5,
+    "missing": 2351
+   },
+   "edges": {
+    "full": 413,
+    "correct": 6161,
+    "wrong": 5,
+    "missing": 2349
+   },
+   "adaptive": {
+    "full": 413,
+    "correct": 6161,
+    "wrong": 5,
+    "missing": 2349
+   },
+   "graph": {
+    "full": 416,
+    "correct": 6200,
+    "wrong": 5,
+    "missing": 2310
+   }
+  },
+  "comparisons": {
+   "adaptive-standard": {
+    "net": 0,
+    "denominator": 645,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 239,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-edges": {
+    "net": 0,
+    "denominator": 645,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 239,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "edges-standard": {
+    "net": 0,
+    "denominator": 645,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 239,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-graph": {
+    "net": -3,
+    "denominator": 645,
+    "rate": -0.004651162790697674,
+    "ci": [
+     -0.012862254117671425,
+     0.003110541028957911
+    ],
+    "n_tasks": 239,
+    "nonzero_tasks": 7,
+    "wins": 3,
+    "losses": 6
+   }
+  }
+ },
+ "probe": {
+  "n": 253,
+  "cost": {
+   "standard": {
+    "bytes": 5161364,
+    "lines": 495826,
+    "steps": 3386,
+    "cpu_ns": 10093750000,
+    "overflow": 65,
+    "evicted_pages": 448,
+    "as_json": 3386,
+    "max_bytes": 4096
+   },
+   "edges": {
+    "bytes": 5050495,
+    "lines": 498314,
+    "steps": 3386,
+    "cpu_ns": 10125000000,
+    "overflow": 64,
+    "evicted_pages": 436,
+    "as_edges": 3386,
+    "max_bytes": 4096
+   },
+   "adaptive": {
+    "bytes": 4987813,
+    "lines": 499274,
+    "steps": 3386,
+    "cpu_ns": 27609375000,
+    "overflow": 66,
+    "evicted_pages": 432,
+    "as_binary": 3120,
+    "max_bytes": 4096,
+    "as_edges": 266
+   }
+  },
+  "same_state_bytes": {
+   "json": 5161364,
+   "edges": 5026182,
+   "binary": 4953894,
+   "best": 4951874
+  },
+  "cases": {
+   "standard": {
+    "full": 172,
+    "correct": 2691,
+    "wrong": 1,
+    "missing": 870
+   },
+   "edges": {
+    "full": 172,
+    "correct": 2693,
+    "wrong": 1,
+    "missing": 868
+   },
+   "adaptive": {
+    "full": 172,
+    "correct": 2693,
+    "wrong": 1,
+    "missing": 868
+   },
+   "graph": {
+    "full": 173,
+    "correct": 2705,
+    "wrong": 1,
+    "missing": 856
+   }
+  },
+  "comparisons": {
+   "adaptive-standard": {
+    "net": 0,
+    "denominator": 253,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 104,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-edges": {
+    "net": 0,
+    "denominator": 253,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 104,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "edges-standard": {
+    "net": 0,
+    "denominator": 253,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 104,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-graph": {
+    "net": -1,
+    "denominator": 253,
+    "rate": -0.003952569169960474,
+    "ci": [
+     -0.018518518518518517,
+     0.008547008547008548
+    ],
+    "n_tasks": 104,
+    "nonzero_tasks": 3,
+    "wins": 2,
+    "losses": 3
+   }
+  }
+ },
+ "transfer": {
+  "n": 206,
+  "cost": {
+   "standard": {
+    "bytes": 5439046,
+    "lines": 551818,
+    "steps": 3428,
+    "cpu_ns": 9484375000,
+    "overflow": 40,
+    "evicted_pages": 163,
+    "as_json": 3428,
+    "max_bytes": 4096
+   },
+   "edges": {
+    "bytes": 5337546,
+    "lines": 554764,
+    "steps": 3428,
+    "cpu_ns": 8609375000,
+    "overflow": 31,
+    "evicted_pages": 145,
+    "as_edges": 3428,
+    "max_bytes": 4093
+   },
+   "adaptive": {
+    "bytes": 5275020,
+    "lines": 556091,
+    "steps": 3428,
+    "cpu_ns": 24406250000,
+    "overflow": 32,
+    "evicted_pages": 139,
+    "as_binary": 3147,
+    "max_bytes": 4096,
+    "as_edges": 281
+   }
+  },
+  "same_state_bytes": {
+   "json": 5439046,
+   "edges": 5316630,
+   "binary": 5248732,
+   "best": 5243945
+  },
+  "cases": {
+   "standard": {
+    "full": 119,
+    "correct": 1762,
+    "wrong": 2,
+    "missing": 959
+   },
+   "edges": {
+    "full": 119,
+    "correct": 1762,
+    "wrong": 2,
+    "missing": 959
+   },
+   "adaptive": {
+    "full": 119,
+    "correct": 1762,
+    "wrong": 2,
+    "missing": 959
+   },
+   "graph": {
+    "full": 121,
+    "correct": 1784,
+    "wrong": 2,
+    "missing": 937
+   }
+  },
+  "comparisons": {
+   "adaptive-standard": {
+    "net": 0,
+    "denominator": 206,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 87,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-edges": {
+    "net": 0,
+    "denominator": 206,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 87,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "edges-standard": {
+    "net": 0,
+    "denominator": 206,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 87,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-graph": {
+    "net": -2,
+    "denominator": 206,
+    "rate": -0.009708737864077669,
+    "ci": [
+     -0.02512562814070352,
+     0.0
+    ],
+    "n_tasks": 87,
+    "nonzero_tasks": 2,
+    "wins": 0,
+    "losses": 2
+   }
+  }
+ },
+ "external": {
+  "n": 186,
+  "cost": {
+   "standard": {
+    "bytes": 9785801,
+    "lines": 1005323,
+    "steps": 2832,
+    "cpu_ns": 13781250000,
+    "overflow": 306,
+    "evicted_pages": 1356,
+    "as_json": 2832,
+    "max_bytes": 4096
+   },
+   "edges": {
+    "bytes": 9745890,
+    "lines": 1025843,
+    "steps": 2832,
+    "cpu_ns": 13046875000,
+    "overflow": 307,
+    "evicted_pages": 1314,
+    "as_edges": 2832,
+    "max_bytes": 4096
+   },
+   "adaptive": {
+    "bytes": 9717687,
+    "lines": 1036302,
+    "steps": 2832,
+    "cpu_ns": 34875000000,
+    "overflow": 302,
+    "evicted_pages": 1303,
+    "as_binary": 2626,
+    "max_bytes": 4096,
+    "as_edges": 206
+   }
+  },
+  "same_state_bytes": {
+   "json": 9785801,
+   "edges": 9556169,
+   "binary": 9447159,
+   "best": 9443608
+  },
+  "cases": {
+   "standard": {
+    "full": 122,
+    "correct": 1706,
+    "wrong": 2,
+    "missing": 522
+   },
+   "edges": {
+    "full": 122,
+    "correct": 1706,
+    "wrong": 2,
+    "missing": 522
+   },
+   "adaptive": {
+    "full": 122,
+    "correct": 1706,
+    "wrong": 2,
+    "missing": 522
+   },
+   "graph": {
+    "full": 122,
+    "correct": 1711,
+    "wrong": 2,
+    "missing": 517
+   }
+  },
+  "comparisons": {
+   "adaptive-standard": {
+    "net": 0,
+    "denominator": 186,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 48,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-edges": {
+    "net": 0,
+    "denominator": 186,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 48,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "edges-standard": {
+    "net": 0,
+    "denominator": 186,
+    "rate": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "n_tasks": 48,
+    "nonzero_tasks": 0,
+    "wins": 0,
+    "losses": 0
+   },
+   "adaptive-graph": {
+    "net": 0,
+    "denominator": 186,
+    "rate": 0.0,
+    "ci": [
+     -0.015544041450777202,
+     0.01562704515706803
+    ],
+    "n_tasks": 48,
+    "nonzero_tasks": 2,
+    "wins": 1,
+    "losses": 1
+   }
+  }
+ }
+}

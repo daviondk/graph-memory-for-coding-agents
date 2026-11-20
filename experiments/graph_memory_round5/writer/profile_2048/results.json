@@ -1,0 +1,259 @@
+{
+ "arms": [
+  "legacy",
+  "generic",
+  "edges"
+ ],
+ "model": "zstd15",
+ "counts": {
+  "legacy": 103,
+  "generic": 103,
+  "edges": 103
+ },
+ "metrics_full_coverage_first": {
+  "legacy": [
+   0.40711462450592883,
+   0.4225462718653366,
+   0.43873517786561267
+  ],
+  "generic": [
+   0.40711462450592883,
+   0.4243145264940031,
+   0.4426877470355731
+  ],
+  "edges": [
+   0.40711462450592883,
+   0.42629081107898337,
+   0.44664031620553357
+  ]
+ },
+ "unique_scored_tasks": 104,
+ "repo_tasks": {
+  "astropy/astropy": 12,
+  "django/django": 15,
+  "matplotlib/matplotlib": 16,
+  "sphinx-doc/sphinx": 16,
+  "sympy/sympy": 16,
+  "pydata/xarray": 12,
+  "scikit-learn/scikit-learn": 16,
+  "pytest-dev/pytest": 9
+ },
+ "repo_tasks_scored": {
+  "astropy/astropy": 12,
+  "django/django": 14,
+  "matplotlib/matplotlib": 14,
+  "sphinx-doc/sphinx": 15,
+  "sympy/sympy": 14,
+  "pydata/xarray": 11,
+  "scikit-learn/scikit-learn": 15,
+  "pytest-dev/pytest": 9
+ },
+ "cost": {
+  "legacy": {
+   "steps": 3386,
+   "cpu_ns": 2265625000,
+   "mean_bytes_total": 2899675,
+   "max_bytes": 2048,
+   "overfull_before_fit": 167,
+   "cuts": 778,
+   "resident_lines_sum": 58359,
+   "same_state_bytes_sum": 712155
+  },
+  "generic": {
+   "steps": 3386,
+   "cpu_ns": 15703125000,
+   "mean_bytes_total": 2850807,
+   "max_bytes": 2048,
+   "overfull_before_fit": 157,
+   "cuts": 778,
+   "resident_lines_sum": 60932,
+   "same_state_bytes_sum": 678014
+  },
+  "edges": {
+   "steps": 3386,
+   "cpu_ns": 15468750000,
+   "mean_bytes_total": 2825741,
+   "max_bytes": 2048,
+   "overfull_before_fit": 161,
+   "cuts": 778,
+   "resident_lines_sum": 62116,
+   "same_state_bytes_sum": 664585
+  }
+ },
+ "funnel": {
+  "cuts": 778,
+  "attempts": 314,
+  "confirmed": 253,
+  "evaluable": 253
+ },
+ "contrasts": {
+  "edges-generic": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 0,
+   "losses": 0,
+   "mean_issue": 0.0,
+   "mean_repo": 0.0,
+   "ci_issues_within_repos": [
+    0.0,
+    0.0
+   ],
+   "ci_repos": [
+    0.0,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     46
+    ],
+    "django/django": [
+     0,
+     48
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     27
+    ],
+    "pydata/xarray": [
+     0,
+     14
+    ],
+    "pytest-dev/pytest": [
+     0,
+     11
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     27
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     45
+    ],
+    "sympy/sympy": [
+     0,
+     35
+    ]
+   },
+   "signflip_repo": 1.0,
+   "ci_unstratified_issues": [
+    0.0,
+    0.0
+   ],
+   "exact_signflip_task": 1.0
+  },
+  "generic-legacy": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 0,
+   "losses": 0,
+   "mean_issue": 0.0,
+   "mean_repo": 0.0,
+   "ci_issues_within_repos": [
+    0.0,
+    0.0
+   ],
+   "ci_repos": [
+    0.0,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     46
+    ],
+    "django/django": [
+     0,
+     48
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     27
+    ],
+    "pydata/xarray": [
+     0,
+     14
+    ],
+    "pytest-dev/pytest": [
+     0,
+     11
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     27
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     45
+    ],
+    "sympy/sympy": [
+     0,
+     35
+    ]
+   },
+   "signflip_repo": 1.0,
+   "ci_unstratified_issues": [
+    0.0,
+    0.0
+   ],
+   "exact_signflip_task": 1.0
+  },
+  "edges-legacy": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 0,
+   "losses": 0,
+   "mean_issue": 0.0,
+   "mean_repo": 0.0,
+   "ci_issues_within_repos": [
+    0.0,
+    0.0
+   ],
+   "ci_repos": [
+    0.0,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     46
+    ],
+    "django/django": [
+     0,
+     48
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     27
+    ],
+    "pydata/xarray": [
+     0,
+     14
+    ],
+    "pytest-dev/pytest": [
+     0,
+     11
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     27
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     45
+    ],
+    "sympy/sympy": [
+     0,
+     35
+    ]
+   },
+   "signflip_repo": 1.0,
+   "ci_unstratified_issues": [
+    0.0,
+    0.0
+   ],
+   "exact_signflip_task": 1.0
+  }
+ }
+}

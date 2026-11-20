@@ -1,0 +1,868 @@
+{
+ "n_commands": 20,
+ "n_pipeline": 21,
+ "verified": 20,
+ "zero_outer_n": 20,
+ "zero_outer_nonzero_native": 18,
+ "original_zero_visible_failure": 11,
+ "instrumented_zero_visible_failure": 11,
+ "original_untouched_same_outer": 20,
+ "instrumented_untouched_same_outer": 20,
+ "original_untouched_same_regex": 20,
+ "untouched_instrumented_same_regex": 20,
+ "native_counts": {
+  "1": 17,
+  "0": 3,
+  "4": 1
+ },
+ "native_executing_tests_only": {
+  "1": 17,
+  "4": 1,
+  "0": 2
+ },
+ "collect_only_rc": {
+  "0": 1
+ },
+ "grep_no_match": 0,
+ "grep_error": 0,
+ "sigpipe_compatible": 5,
+ "pytest_sigpipe_compatible": 0,
+ "timeouts": 0,
+ "historical_regex_vs_native_replay_and_new_regex": {
+  "old_regex": {
+   "tp": 11,
+   "fp": 0,
+   "tn": 2,
+   "fn": 7
+  },
+  "untouched_regex": {
+   "tp": 11,
+   "fp": 0,
+   "tn": 2,
+   "fn": 7
+  },
+  "hooked_regex": {
+   "tp": 11,
+   "fp": 0,
+   "tn": 2,
+   "fn": 7
+  }
+ },
+ "within_zero_outer": {
+  "old_regex": {
+   "tp": 11,
+   "fp": 0,
+   "tn": 2,
+   "fn": 7
+  },
+  "untouched_regex": {
+   "tp": 11,
+   "fp": 0,
+   "tn": 2,
+   "fn": 7
+  },
+  "hooked_regex": {
+   "tp": 11,
+   "fp": 0,
+   "tn": 2,
+   "fn": 7
+  }
+ },
+ "count_outer_by_native": {
+  "0|True": 18,
+  "0|False": 2
+ },
+ "source_cases": {
+  "psf__requests-2344": 13,
+  "psf__requests-3359": 6,
+  "psf__requests-3481": 1
+ },
+ "commands": [
+  {
+   "command": 1,
+   "issue": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 7,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 2,
+   "issue": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 8,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 3,
+   "issue": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 9,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 4,
+   "issue": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 10,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 5,
+   "issue": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 11,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1,
+    0
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 6,
+   "issue": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 12,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 7,
+   "issue": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 13,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 8,
+   "issue": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 4,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    4
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 9,
+   "issue": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 5,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 10,
+   "issue": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 20,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 11,
+   "issue": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 21,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 12,
+   "issue": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 22,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 13,
+   "issue": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 23,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 14,
+   "issue": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 11,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    0
+   ],
+   "pytest_any_nonzero": false,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 15,
+   "issue": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 19,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 16,
+   "issue": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 20,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  },
+  {
+   "command": 17,
+   "issue": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 22,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 18,
+   "issue": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 24,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 19,
+   "issue": "psf__requests-3359",
+   "arm": "eager",
+   "turn": 15,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    0
+   ],
+   "pytest_any_nonzero": false,
+   "old_regex": false,
+   "untouched_regex": false,
+   "hooked_regex": false
+  },
+  {
+   "command": 20,
+   "issue": "psf__requests-3481",
+   "arm": "on_demand",
+   "turn": 9,
+   "original_outer": 0,
+   "untouched_outer": 0,
+   "hooked_outer": 0,
+   "verified": true,
+   "unverified_reasons": [],
+   "pytest_rcs": [
+    1
+   ],
+   "pytest_any_nonzero": true,
+   "old_regex": true,
+   "untouched_regex": true,
+   "hooked_regex": true
+  }
+ ],
+ "pipelines": [
+  {
+   "command": 1,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    1,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 2,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "tail"
+   ],
+   "codes": [
+    1,
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 3,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    141,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 1,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 4,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 5,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "grep"
+   ],
+   "codes": [
+    1,
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 5,
+   "pipeline": 2,
+   "native": 0,
+   "collect_only": true,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "head"
+   ],
+   "codes": [
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 6,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "grep"
+   ],
+   "codes": [
+    1,
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 7,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 8,
+   "pipeline": 1,
+   "native": 4,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    4,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 9,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    1,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 10,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    1,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 11,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    141,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 1,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 12,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    141,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 1,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 13,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 14,
+   "pipeline": 1,
+   "native": 0,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 15,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    1,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 16,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    141,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 1,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 17,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    141,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 1,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 18,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "grep",
+    "head"
+   ],
+   "codes": [
+    1,
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 19,
+   "pipeline": 1,
+   "native": 0,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    0,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  },
+  {
+   "command": 20,
+   "pipeline": 1,
+   "native": 1,
+   "collect_only": false,
+   "outer": 0,
+   "stages": [
+    "pytest",
+    "tail"
+   ],
+   "codes": [
+    1,
+    0
+   ],
+   "grep_no_match": 0,
+   "grep_error": 0,
+   "sigpipe_compatible": 0,
+   "direct_diagnostic": false
+  }
+ ]
+}

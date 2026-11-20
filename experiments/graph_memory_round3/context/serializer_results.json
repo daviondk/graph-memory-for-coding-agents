@@ -1,0 +1,809 @@
+{
+ "cuts": 4051,
+ "results": {
+  "shared": {
+   "n": 2135,
+   "projects": 26,
+   "instances": 612,
+   "reachable": 0,
+   "unique": 1586,
+   "exact_target_within_budget": 0,
+   "arms": {
+    "r2f": {
+     "hits": 428,
+     "line_recall": 0.268747230777718,
+     "starts": 534,
+     "line_precision": 0.16968772361462417,
+     "mean_tokens": 315.87306791569085,
+     "mean_blocks": 2.9887587822014052,
+     "complete_per_1000_tokens": 0.63464854853801
+    },
+    "typed": {
+     "hits": 444,
+     "line_recall": 0.2766441816175202,
+     "starts": 564,
+     "line_precision": 0.1668043492747066,
+     "mean_tokens": 309.8768149882904,
+     "mean_blocks": 1.2861826697892271,
+     "complete_per_1000_tokens": 0.6711135496918773
+    }
+   },
+   "typed_minus": {
+    "r2f": {
+     "delta": [
+      0.007494145199063232,
+      0.007896950839802214,
+      0.01405152224824356,
+      -0.0028833743399175344
+     ],
+     "ci": [
+      [
+       0.0037265265575804783,
+       0.006203155072542817,
+       0.008130081300813009,
+       -0.004279944145065241
+      ],
+      [
+       0.012730069640267027,
+       0.010043148513470811,
+       0.021466969199360905,
+       -0.0016390401937757988
+      ]
+     ],
+     "wins": [
+      16,
+      272,
+      30,
+      173
+     ],
+     "losses": [
+      0,
+      0,
+      0,
+      406
+     ],
+     "macro": [
+      0.01085812644002719,
+      0.008156576603140505,
+      0.019685209227817118,
+      -0.0028547799348761613
+     ],
+     "macro_ci": [
+      [
+       0.0030895862235543396,
+       0.006276235951207662,
+       0.010046640772473019,
+       -0.004050016979697875
+      ],
+      [
+       0.02132458633853471,
+       0.010133887528707362,
+       0.03139522357723971,
+       -0.0016525359462490554
+      ]
+     ],
+     "per_project": {
+      "Knio__dominate": [
+       41,
+       1,
+       0.4491631830597854
+      ],
+      "Mimino666__langdetect": [
+       172,
+       0,
+       2.9362598246266973
+      ],
+      "borntyping__python-colorlog": [
+       2,
+       0,
+       0.0
+      ],
+      "buriy__python-readability": [
+       57,
+       3,
+       0.9470589274238672
+      ],
+      "cookiecutter__cookiecutter": [
+       134,
+       2,
+       0.46124960828996353
+      ],
+      "datamade__usaddress": [
+       8,
+       0,
+       0.16697908673140882
+      ],
+      "getnikola__nikola": [
+       162,
+       1,
+       1.4206851904286721
+      ],
+      "graphql-python__graphene": [
+       164,
+       3,
+       1.4327867322753822
+      ],
+      "gruns__furl": [
+       115,
+       0,
+       0.6131162692110584
+      ],
+      "gruns__icecream": [
+       29,
+       0,
+       0.23590131321569824
+      ],
+      "kennethreitz__records": [
+       24,
+       1,
+       0.25823412698412695
+      ],
+      "kurtmckee__feedparser": [
+       192,
+       1,
+       1.8444734347734772
+      ],
+      "lepture__mistune": [
+       297,
+       1,
+       1.8651223006082471
+      ],
+      "madzak__python-json-logger": [
+       32,
+       0,
+       0.09090909090909093
+      ],
+      "marshmallow-code__apispec": [
+       91,
+       0,
+       0.3494100041065933
+      ],
+      "martinblech__xmltodict": [
+       62,
+       0,
+       0.4406966650425154
+      ],
+      "mewwts__addict": [
+       8,
+       0,
+       0.11692307692307685
+      ],
+      "pdfminer__pdfminer": [
+       220,
+       1,
+       1.0749294259849267
+      ],
+      "pudo__dataset": [
+       62,
+       0,
+       0.48317967861339967
+      ],
+      "pwaller__pyfiglet": [
+       18,
+       2,
+       0.22357778809391704
+      ],
+      "pyparsing__pyparsing": [
+       48,
+       0,
+       0.021739130434782594
+      ],
+      "pytest-dev__iniconfig": [
+       21,
+       0,
+       0.169181695497485
+      ],
+      "sloria__environs": [
+       72,
+       0,
+       0.7330138744012527
+      ],
+      "termcolor__termcolor": [
+       16,
+       0,
+       0.0625
+      ],
+      "vi3k6i5__flashtext": [
+       24,
+       0,
+       0.08307057432681839
+      ],
+      "weaveworks__grafanalib": [
+       64,
+       0,
+       0.37982904101548165
+      ]
+     }
+    },
+    "typed": {
+     "delta": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "ci": [
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     ],
+     "wins": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "macro": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "macro_ci": [
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     ],
+     "per_project": {
+      "Knio__dominate": [
+       41,
+       0,
+       0.0
+      ],
+      "Mimino666__langdetect": [
+       172,
+       0,
+       0.0
+      ],
+      "borntyping__python-colorlog": [
+       2,
+       0,
+       0.0
+      ],
+      "buriy__python-readability": [
+       57,
+       0,
+       0.0
+      ],
+      "cookiecutter__cookiecutter": [
+       134,
+       0,
+       0.0
+      ],
+      "datamade__usaddress": [
+       8,
+       0,
+       0.0
+      ],
+      "getnikola__nikola": [
+       162,
+       0,
+       0.0
+      ],
+      "graphql-python__graphene": [
+       164,
+       0,
+       0.0
+      ],
+      "gruns__furl": [
+       115,
+       0,
+       0.0
+      ],
+      "gruns__icecream": [
+       29,
+       0,
+       0.0
+      ],
+      "kennethreitz__records": [
+       24,
+       0,
+       0.0
+      ],
+      "kurtmckee__feedparser": [
+       192,
+       0,
+       0.0
+      ],
+      "lepture__mistune": [
+       297,
+       0,
+       0.0
+      ],
+      "madzak__python-json-logger": [
+       32,
+       0,
+       0.0
+      ],
+      "marshmallow-code__apispec": [
+       91,
+       0,
+       0.0
+      ],
+      "martinblech__xmltodict": [
+       62,
+       0,
+       0.0
+      ],
+      "mewwts__addict": [
+       8,
+       0,
+       0.0
+      ],
+      "pdfminer__pdfminer": [
+       220,
+       0,
+       0.0
+      ],
+      "pudo__dataset": [
+       62,
+       0,
+       0.0
+      ],
+      "pwaller__pyfiglet": [
+       18,
+       0,
+       0.0
+      ],
+      "pyparsing__pyparsing": [
+       48,
+       0,
+       0.0
+      ],
+      "pytest-dev__iniconfig": [
+       21,
+       0,
+       0.0
+      ],
+      "sloria__environs": [
+       72,
+       0,
+       0.0
+      ],
+      "termcolor__termcolor": [
+       16,
+       0,
+       0.0
+      ],
+      "vi3k6i5__flashtext": [
+       24,
+       0,
+       0.0
+      ],
+      "weaveworks__grafanalib": [
+       64,
+       0,
+       0.0
+      ]
+     }
+    }
+   }
+  },
+  "body": {
+   "n": 2135,
+   "projects": 26,
+   "instances": 612,
+   "reachable": 0,
+   "unique": 1586,
+   "exact_target_within_budget": 0,
+   "arms": {
+    "r2f": {
+     "hits": 428,
+     "line_recall": 0.268747230777718,
+     "starts": 534,
+     "line_precision": 0.16968772361462417,
+     "mean_tokens": 280.1480093676815,
+     "mean_blocks": 2.9887587822014052,
+     "complete_per_1000_tokens": 0.7155802553350855
+    },
+    "typed": {
+     "hits": 428,
+     "line_recall": 0.2687685209629426,
+     "starts": 534,
+     "line_precision": 0.1694891991818458,
+     "mean_tokens": 280.1480093676815,
+     "mean_blocks": 1.2861826697892271,
+     "complete_per_1000_tokens": 0.7155802553350855
+    }
+   },
+   "typed_minus": {
+    "r2f": {
+     "delta": [
+      0.0,
+      2.129018522461146e-05,
+      0.0,
+      -0.00019852443277836382
+     ],
+     "ci": [
+      [
+       0.0,
+       0.0,
+       0.0,
+       -0.00033141696089540015
+      ],
+      [
+       0.0,
+       7.978009949414983e-05,
+       0.0,
+       -7.884298990692508e-05
+      ]
+     ],
+     "wins": [
+      0,
+      1,
+      0,
+      1
+     ],
+     "losses": [
+      0,
+      0,
+      0,
+      31
+     ],
+     "macro": [
+      0.0,
+      5.463286713286715e-05,
+      0.0,
+      -0.00014426558366145492
+     ],
+     "macro_ci": [
+      [
+       0.0,
+       0.0,
+       0.0,
+       -0.00031768120929996153
+      ],
+      [
+       0.0,
+       0.00016389860139860146,
+       0.0,
+       -1.3286562629574184e-05
+      ]
+     ],
+     "per_project": {
+      "Knio__dominate": [
+       41,
+       0,
+       0.0
+      ],
+      "Mimino666__langdetect": [
+       172,
+       0,
+       0.0
+      ],
+      "borntyping__python-colorlog": [
+       2,
+       0,
+       0.0
+      ],
+      "buriy__python-readability": [
+       57,
+       0,
+       0.0
+      ],
+      "cookiecutter__cookiecutter": [
+       134,
+       0,
+       0.0
+      ],
+      "datamade__usaddress": [
+       8,
+       0,
+       0.0
+      ],
+      "getnikola__nikola": [
+       162,
+       0,
+       0.0
+      ],
+      "graphql-python__graphene": [
+       164,
+       0,
+       0.0
+      ],
+      "gruns__furl": [
+       115,
+       0,
+       0.0
+      ],
+      "gruns__icecream": [
+       29,
+       0,
+       0.0
+      ],
+      "kennethreitz__records": [
+       24,
+       0,
+       0.0
+      ],
+      "kurtmckee__feedparser": [
+       192,
+       0,
+       0.0
+      ],
+      "lepture__mistune": [
+       297,
+       0,
+       0.0
+      ],
+      "madzak__python-json-logger": [
+       32,
+       0,
+       0.04545454545454547
+      ],
+      "marshmallow-code__apispec": [
+       91,
+       0,
+       0.0
+      ],
+      "martinblech__xmltodict": [
+       62,
+       0,
+       0.0
+      ],
+      "mewwts__addict": [
+       8,
+       0,
+       0.0
+      ],
+      "pdfminer__pdfminer": [
+       220,
+       0,
+       0.0
+      ],
+      "pudo__dataset": [
+       62,
+       0,
+       0.0
+      ],
+      "pwaller__pyfiglet": [
+       18,
+       0,
+       0.0
+      ],
+      "pyparsing__pyparsing": [
+       48,
+       0,
+       0.0
+      ],
+      "pytest-dev__iniconfig": [
+       21,
+       0,
+       0.0
+      ],
+      "sloria__environs": [
+       72,
+       0,
+       0.0
+      ],
+      "termcolor__termcolor": [
+       16,
+       0,
+       0.0
+      ],
+      "vi3k6i5__flashtext": [
+       24,
+       0,
+       0.0
+      ],
+      "weaveworks__grafanalib": [
+       64,
+       0,
+       0.0
+      ]
+     }
+    },
+    "typed": {
+     "delta": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "ci": [
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     ],
+     "wins": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "losses": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "macro": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+     ],
+     "macro_ci": [
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ],
+      [
+       0.0,
+       0.0,
+       0.0,
+       0.0
+      ]
+     ],
+     "per_project": {
+      "Knio__dominate": [
+       41,
+       0,
+       0.0
+      ],
+      "Mimino666__langdetect": [
+       172,
+       0,
+       0.0
+      ],
+      "borntyping__python-colorlog": [
+       2,
+       0,
+       0.0
+      ],
+      "buriy__python-readability": [
+       57,
+       0,
+       0.0
+      ],
+      "cookiecutter__cookiecutter": [
+       134,
+       0,
+       0.0
+      ],
+      "datamade__usaddress": [
+       8,
+       0,
+       0.0
+      ],
+      "getnikola__nikola": [
+       162,
+       0,
+       0.0
+      ],
+      "graphql-python__graphene": [
+       164,
+       0,
+       0.0
+      ],
+      "gruns__furl": [
+       115,
+       0,
+       0.0
+      ],
+      "gruns__icecream": [
+       29,
+       0,
+       0.0
+      ],
+      "kennethreitz__records": [
+       24,
+       0,
+       0.0
+      ],
+      "kurtmckee__feedparser": [
+       192,
+       0,
+       0.0
+      ],
+      "lepture__mistune": [
+       297,
+       0,
+       0.0
+      ],
+      "madzak__python-json-logger": [
+       32,
+       0,
+       0.0
+      ],
+      "marshmallow-code__apispec": [
+       91,
+       0,
+       0.0
+      ],
+      "martinblech__xmltodict": [
+       62,
+       0,
+       0.0
+      ],
+      "mewwts__addict": [
+       8,
+       0,
+       0.0
+      ],
+      "pdfminer__pdfminer": [
+       220,
+       0,
+       0.0
+      ],
+      "pudo__dataset": [
+       62,
+       0,
+       0.0
+      ],
+      "pwaller__pyfiglet": [
+       18,
+       0,
+       0.0
+      ],
+      "pyparsing__pyparsing": [
+       48,
+       0,
+       0.0
+      ],
+      "pytest-dev__iniconfig": [
+       21,
+       0,
+       0.0
+      ],
+      "sloria__environs": [
+       72,
+       0,
+       0.0
+      ],
+      "termcolor__termcolor": [
+       16,
+       0,
+       0.0
+      ],
+      "vi3k6i5__flashtext": [
+       24,
+       0,
+       0.0
+      ],
+      "weaveworks__grafanalib": [
+       64,
+       0,
+       0.0
+      ]
+     }
+    }
+   }
+  }
+ }
+}

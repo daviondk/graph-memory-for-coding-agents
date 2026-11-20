@@ -1,0 +1,43 @@
+{
+  "timestamp": "2026-11-16T15:37:07.189639+00:00",
+  "selection_rule": "Purposeful cheap two-repository Python pilot by public ID only. Chose these small utilities; no access to their task descriptions, target labels, model answers or execution outcomes before locking.",
+  "dataset_revision": "11164976b4f920cdb0d0cd570ca572e49acea1e8",
+  "harness_revision": "7152cf96809b45343ccc1caf7115a7d3fa43f956",
+  "agent_revision": "bc85a45654e6348dcc6e4c5a40ad146ed0bb144d",
+  "parquet_sha256": "22238743ca143276e3ff4616f569b3921c42945bfee1a6aa8fa376a02feebb98",
+  "targets": [
+    {
+      "language": "python",
+      "repo": "brazilian-utils/brutils-python",
+      "instance_id": "brazilian-utils__brutils-python-125",
+      "image_name": "docker.io/swerebenchv2/brazilian-utils-brutils-python:125-9046eed",
+      "base_commit": "9046eed21cc73b66b35d73fcbc42c9afe6ec6dd9"
+    },
+    {
+      "language": "python",
+      "repo": "s-knibbs/dataclasses-jsonschema",
+      "instance_id": "s-knibbs__dataclasses-jsonschema-64",
+      "image_name": "docker.io/swerebenchv2/s-knibbs-dataclasses-jsonschema:64-dad240e",
+      "base_commit": "dad240edc81fc6138d26f3248539d876a777f45d"
+    }
+  ],
+  "conditions": [
+    "base",
+    "distractor",
+    "bm25_raw",
+    "action_receipt"
+  ],
+  "solver": "Qwen/Qwen3-8B local, native bash tool protocol",
+  "planned_seeds": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "step_limit": 10,
+  "max_new_tokens_per_call": 512,
+  "question_unit": "target, correlated seed replicates",
+  "primary_metric": "first unmodified official checker resolution: all FAIL_TO_PASS and PASS_TO_PASS",
+  "fallback": "If registration unavailable show exclusion reason and no score; if one of these images accessible retain frozen ID(s). No substitution by outcome.",
+  "conditions_amendment": "2026-11-16T15:38Z raw comparator requested by principal, prior to retrieval, image access or any outcomes. Frozen across both targets."
+}

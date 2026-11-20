@@ -1,0 +1,603 @@
+{
+  "utc": "2026-11-16T20:12:47.350346+00:00",
+  "cohorts": {
+    "lite": {
+      "n": 99,
+      "repos": 12,
+      "available": 99,
+      "methods": {
+        "lex_absent": {
+          "match1": 61,
+          "hit5": 83,
+          "mrr": 0.719386410959265,
+          "macro_recall5": 0.8232323232323232
+        },
+        "hyb_absent": {
+          "match1": 63,
+          "hit5": 81,
+          "mrr": 0.7256619991331235,
+          "macro_recall5": 0.803030303030303
+        },
+        "lex_real": {
+          "match1": 64,
+          "hit5": 84,
+          "mrr": 0.7453874848643429,
+          "macro_recall5": 0.8333333333333334
+        },
+        "hyb_real": {
+          "match1": 65,
+          "hit5": 85,
+          "mrr": 0.7449085391356398,
+          "macro_recall5": 0.8434343434343434
+        },
+        "lex_shuffle": {
+          "match1": 54,
+          "hit5": 84,
+          "mrr": 0.6753337954496842,
+          "macro_recall5": 0.8333333333333334
+        },
+        "hyb_shuffle": {
+          "match1": 61,
+          "hit5": 82,
+          "mrr": 0.714967825246423,
+          "macro_recall5": 0.8131313131313131
+        }
+      },
+      "paired": {
+        "hyb_real-hyb_absent": {
+          "match1": {
+            "delta": 0.020202020202020204,
+            "repo_ci95": [
+              -0.03225806451612903,
+              0.0547945205479452
+            ],
+            "wins": 3,
+            "losses": 1,
+            "mcnemar_exact_p": 0.625
+          },
+          "hit5": {
+            "delta": 0.04040404040404041,
+            "repo_ci95": [
+              0.0,
+              0.08333333333333333
+            ],
+            "wins": 4,
+            "losses": 0,
+            "mcnemar_exact_p": 0.125,
+            "holm_pair_p": 0.25
+          },
+          "rr": {
+            "delta": 0.01924654000251645,
+            "repo_ci95": [
+              -0.01547754142104845,
+              0.045053552834165074
+            ]
+          },
+          "recall5": {
+            "delta": 0.04040404040404041,
+            "repo_ci95": [
+              0.0,
+              0.08333333333333333
+            ]
+          }
+        },
+        "hyb_real-hyb_shuffle": {
+          "match1": {
+            "delta": 0.04040404040404041,
+            "repo_ci95": [
+              -0.03125,
+              0.13
+            ],
+            "wins": 5,
+            "losses": 1,
+            "mcnemar_exact_p": 0.21875
+          },
+          "hit5": {
+            "delta": 0.030303030303030304,
+            "repo_ci95": [
+              0.0,
+              0.05357142857142857
+            ],
+            "wins": 3,
+            "losses": 0,
+            "mcnemar_exact_p": 0.25,
+            "holm_pair_p": 0.25
+          },
+          "rr": {
+            "delta": 0.029940713889216868,
+            "repo_ci95": [
+              -0.018414625608105816,
+              0.07249337777506791
+            ]
+          },
+          "recall5": {
+            "delta": 0.030303030303030304,
+            "repo_ci95": [
+              0.0,
+              0.05357142857142857
+            ]
+          }
+        },
+        "lex_real-lex_absent": {
+          "match1": {
+            "delta": 0.030303030303030304,
+            "repo_ci95": [
+              0.0,
+              0.0449438202247191
+            ],
+            "wins": 4,
+            "losses": 1,
+            "mcnemar_exact_p": 0.375
+          },
+          "hit5": {
+            "delta": 0.010101010101010102,
+            "repo_ci95": [
+              0.0,
+              0.02127659574468085
+            ],
+            "wins": 1,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 0.026001073905077905,
+            "repo_ci95": [
+              0.004401087353091599,
+              0.039513315166287546
+            ]
+          },
+          "recall5": {
+            "delta": 0.010101010101010102,
+            "repo_ci95": [
+              0.0,
+              0.02127659574468085
+            ]
+          }
+        },
+        "lex_real-lex_shuffle": {
+          "match1": {
+            "delta": 0.10101010101010101,
+            "repo_ci95": [
+              0.049019607843137254,
+              0.22058823529411764
+            ],
+            "wins": 11,
+            "losses": 1,
+            "mcnemar_exact_p": 0.00634765625
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              -0.02654867256637168,
+              0.02097902097902098
+            ],
+            "wins": 1,
+            "losses": 1,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 0.07005368941465875,
+            "repo_ci95": [
+              0.040776490746789074,
+              0.12679000402547388
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              -0.02654867256637168,
+              0.02097902097902098
+            ]
+          }
+        }
+      },
+      "hit5_interaction": {
+        "delta": 0.030303030303030304,
+        "repo_ci95": [
+          0.0,
+          0.07692307692307693
+        ]
+      }
+    },
+    "extension": {
+      "n": 258,
+      "repos": 39,
+      "available": 13,
+      "methods": {
+        "lex_absent": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.044635166728189984,
+          "macro_recall5": 0.046511627906976744
+        },
+        "hyb_absent": {
+          "match1": 10,
+          "hit5": 12,
+          "mrr": 0.04173236105636579,
+          "macro_recall5": 0.046511627906976744
+        },
+        "lex_real": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.04461978589885567,
+          "macro_recall5": 0.046511627906976744
+        },
+        "hyb_real": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.04462981687450848,
+          "macro_recall5": 0.046511627906976744
+        },
+        "lex_shuffle": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.04461444308445532,
+          "macro_recall5": 0.046511627906976744
+        },
+        "hyb_shuffle": {
+          "match1": 7,
+          "hit5": 12,
+          "mrr": 0.03623108157991879,
+          "macro_recall5": 0.046511627906976744
+        }
+      },
+      "paired": {
+        "hyb_real-hyb_absent": {
+          "match1": {
+            "delta": 0.003875968992248062,
+            "repo_ci95": [
+              0.0,
+              0.00964630225080386
+            ],
+            "wins": 1,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 0.0028974558181426957,
+            "repo_ci95": [
+              -2.641289160413414e-05,
+              0.007234726688102894
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "hyb_real-hyb_shuffle": {
+          "match1": {
+            "delta": 0.015503875968992248,
+            "repo_ci95": [
+              0.0,
+              0.03858520900321544
+            ],
+            "wins": 4,
+            "losses": 0,
+            "mcnemar_exact_p": 0.125
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 0.008398735294589692,
+            "repo_ci95": [
+              0.0,
+              0.020900338186441922
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "lex_real-lex_absent": {
+          "match1": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": -1.5380829334317707e-05,
+            "repo_ci95": [
+              -4.596433167861739e-05,
+              0.0
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "lex_real-lex_shuffle": {
+          "match1": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 5.342814400341938e-06,
+            "repo_ci95": [
+              0.0,
+              1.5966557319940773e-05
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "hit5_interaction": {
+        "delta": 0.0,
+        "repo_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "extension_available": {
+      "n": 13,
+      "repos": 2,
+      "available": 13,
+      "methods": {
+        "lex_absent": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.8858363858363858,
+          "macro_recall5": 0.9230769230769231
+        },
+        "hyb_absent": {
+          "match1": 10,
+          "hit5": 12,
+          "mrr": 0.8282268578878749,
+          "macro_recall5": 0.9230769230769231
+        },
+        "lex_real": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.8855311355311356,
+          "macro_recall5": 0.9230769230769231
+        },
+        "hyb_real": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.8857302118171683,
+          "macro_recall5": 0.9230769230769231
+        },
+        "lex_shuffle": {
+          "match1": 11,
+          "hit5": 12,
+          "mrr": 0.8854251012145749,
+          "macro_recall5": 0.9230769230769231
+        },
+        "hyb_shuffle": {
+          "match1": 7,
+          "hit5": 12,
+          "mrr": 0.719047619047619,
+          "macro_recall5": 0.9230769230769231
+        }
+      },
+      "paired": {
+        "hyb_real-hyb_absent": {
+          "match1": {
+            "delta": 0.07692307692307693,
+            "repo_ci95": [
+              0.0,
+              0.1111111111111111
+            ],
+            "wins": 1,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 0.0575033539292935,
+            "repo_ci95": [
+              -0.0006140997297961188,
+              0.08333333333333333
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "hyb_real-hyb_shuffle": {
+          "match1": {
+            "delta": 0.3076923076923077,
+            "repo_ci95": [
+              0.0,
+              0.4444444444444444
+            ],
+            "wins": 4,
+            "losses": 0,
+            "mcnemar_exact_p": 0.125
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 0.16668259276954933,
+            "repo_ci95": [
+              5.1759834368530176e-05,
+              0.24074074074074078
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "lex_real-lex_absent": {
+          "match1": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": -0.00030525030525030525,
+            "repo_ci95": [
+              -0.000992063492063492,
+              0.0
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        },
+        "lex_real-lex_shuffle": {
+          "match1": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "hit5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ],
+            "wins": 0,
+            "losses": 0,
+            "mcnemar_exact_p": 1
+          },
+          "rr": {
+            "delta": 0.00010603431656063232,
+            "repo_ci95": [
+              0.0,
+              0.00034461152882205503
+            ]
+          },
+          "recall5": {
+            "delta": 0.0,
+            "repo_ci95": [
+              0.0,
+              0.0
+            ]
+          }
+        }
+      },
+      "hit5_interaction": {
+        "delta": 0.0,
+        "repo_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "primary": "lite/hyb_real-hyb_absent and lite/hyb_real-hyb_shuffle on hit5",
+  "blind_predictions_sha256": "52049e0f07e285bf4642777f64cf6c7168eb898285eb74d158b9e3a453378539",
+  "score_script_sha256": "ab3ec19cee224d7edb9fffa53f0c825ddb1a75d98d086c657147a524f0aef81f",
+  "label_source_sha256": {
+    "evaluation_library.csv": "36b912b1c7b3821568961d9a0b5b525dfeedc99bed098b7e583cdcf3b9c523ad",
+    "evaluation_relations.csv": "bd244bfe06147f1190ba42434a79954ba18d6e629434ca0620847b8de394473b",
+    "per_query.csv": "b2719b0dc661951a50adc7c00c380319f9b973bca6a3fe6947a03cdbc268a598"
+  }
+}

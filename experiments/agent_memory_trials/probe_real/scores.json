@@ -1,0 +1,776 @@
+[
+  {
+    "case": "R514B59FC",
+    "arm": "fresh",
+    "id": "Q01",
+    "project": "packaging",
+    "version": "21.3",
+    "latest_historical_policy": false,
+    "tests": [
+      {
+        "text": "branch-Z"
+      },
+      {
+        "text": "3.1.post2"
+      },
+      {
+        "text": "urgent patch"
+      },
+      {
+        "text": "v4.9"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "text": "1.0-final"
+      },
+      "result": "LegacyVersion"
+    },
+    "probe_valid": true,
+    "exact_replay": false,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "LegacyVersion",
+      "Version",
+      "LegacyVersion",
+      "Version"
+    ],
+    "expected": [
+      "LegacyVersion",
+      "Version",
+      "LegacyVersion",
+      "Version"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "RB4F94698",
+    "arm": "archive",
+    "id": "Q02",
+    "project": "PyJWT",
+    "version": "1.7.1",
+    "latest_historical_policy": false,
+    "tests": [
+      {
+        "label": "dawn",
+        "algorithms": "omit"
+      },
+      {
+        "label": "fog",
+        "algorithms": "HS256"
+      },
+      {
+        "label": "haze",
+        "algorithms": "HS384"
+      },
+      {
+        "label": "sun",
+        "algorithms": "omit"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "label": "c",
+        "algorithms": "omit"
+      },
+      "result": "OK"
+    },
+    "probe_valid": true,
+    "exact_replay": true,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "OK",
+      "OK",
+      "InvalidAlgorithmError",
+      "OK"
+    ],
+    "expected": [
+      "OK",
+      "OK",
+      "InvalidAlgorithmError",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "RDF48EFF9",
+    "arm": "archive",
+    "id": "Q03",
+    "project": "more-itertools",
+    "version": "8.5.0",
+    "latest_historical_policy": false,
+    "tests": [
+      {
+        "values": [
+          4,
+          7,
+          9,
+          11
+        ],
+        "n": 2,
+        "strict": true
+      },
+      {
+        "values": [
+          8,
+          2,
+          5
+        ],
+        "n": 2,
+        "strict": true
+      },
+      {
+        "values": [
+          1,
+          5,
+          9
+        ],
+        "n": 2,
+        "strict": false
+      },
+      {
+        "values": [
+          3,
+          9,
+          14
+        ],
+        "n": 2,
+        "strict": "omit"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "values": [
+          2,
+          3,
+          5
+        ],
+        "n": 2,
+        "strict": true
+      },
+      "result": "TypeError"
+    },
+    "probe_valid": true,
+    "exact_replay": true,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "TypeError",
+      "TypeError",
+      "TypeError",
+      "OK"
+    ],
+    "expected": [
+      "TypeError",
+      "TypeError",
+      "TypeError",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "RB4F94698",
+    "arm": "fresh",
+    "id": "Q04",
+    "project": "PyJWT",
+    "version": "1.7.1",
+    "latest_historical_policy": false,
+    "tests": [
+      {
+        "label": "dawn",
+        "algorithms": "omit"
+      },
+      {
+        "label": "fog",
+        "algorithms": "HS256"
+      },
+      {
+        "label": "haze",
+        "algorithms": "HS384"
+      },
+      {
+        "label": "sun",
+        "algorithms": "omit"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "label": "diagnostic",
+        "algorithms": "omit"
+      },
+      "result": "OK"
+    },
+    "probe_valid": true,
+    "exact_replay": false,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "OK",
+      "OK",
+      "InvalidAlgorithmError",
+      "OK"
+    ],
+    "expected": [
+      "OK",
+      "OK",
+      "InvalidAlgorithmError",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "R14D3FD3D",
+    "arm": "archive",
+    "id": "Q05",
+    "project": "more-itertools",
+    "version": "8.7.0",
+    "latest_historical_policy": true,
+    "tests": [
+      {
+        "values": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "n": 3,
+        "strict": true
+      },
+      {
+        "values": [
+          3,
+          6,
+          9
+        ],
+        "n": 3,
+        "strict": "omit"
+      },
+      {
+        "values": [
+          7,
+          7,
+          7
+        ],
+        "n": 3,
+        "strict": true
+      },
+      {
+        "values": [],
+        "n": 5,
+        "strict": false
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "values": [
+          2,
+          3,
+          5,
+          7
+        ],
+        "n": 2,
+        "strict": true
+      },
+      "result": "OK"
+    },
+    "probe_valid": true,
+    "exact_replay": false,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "ValueError",
+      "OK",
+      "OK",
+      "OK"
+    ],
+    "expected": [
+      "ValueError",
+      "OK",
+      "OK",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "RDC0A4B5B",
+    "arm": "fresh",
+    "id": "Q06",
+    "project": "PyJWT",
+    "version": "2.0.1",
+    "latest_historical_policy": true,
+    "tests": [
+      {
+        "label": "auger",
+        "algorithms": "HS384"
+      },
+      {
+        "label": "lathe",
+        "algorithms": "omit"
+      },
+      {
+        "label": "saw",
+        "algorithms": "omit"
+      },
+      {
+        "label": "clamp",
+        "algorithms": "HS256"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "label": "test",
+        "algorithms": "omit"
+      },
+      "result": "DecodeError"
+    },
+    "probe_valid": true,
+    "exact_replay": false,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "InvalidAlgorithmError",
+      "DecodeError",
+      "DecodeError",
+      "OK"
+    ],
+    "expected": [
+      "InvalidAlgorithmError",
+      "DecodeError",
+      "DecodeError",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "R06A5ABF8",
+    "arm": "archive",
+    "id": "Q07",
+    "project": "packaging",
+    "version": "23.0",
+    "latest_historical_policy": true,
+    "tests": [
+      {
+        "text": "2026.8rc1"
+      },
+      {
+        "text": "upstream-latest"
+      },
+      {
+        "text": "1.5+dev.2"
+      },
+      {
+        "text": "Blue_Build"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "text": "vendor-nightly"
+      },
+      "result": "InvalidVersion"
+    },
+    "probe_valid": true,
+    "exact_replay": true,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "Version",
+      "InvalidVersion",
+      "Version",
+      "InvalidVersion"
+    ],
+    "expected": [
+      "Version",
+      "InvalidVersion",
+      "Version",
+      "InvalidVersion"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "R14D3FD3D",
+    "arm": "fresh",
+    "id": "Q08",
+    "project": "more-itertools",
+    "version": "8.7.0",
+    "latest_historical_policy": true,
+    "tests": [
+      {
+        "values": [
+          2,
+          4,
+          6,
+          8
+        ],
+        "n": 3,
+        "strict": true
+      },
+      {
+        "values": [
+          3,
+          6,
+          9
+        ],
+        "n": 3,
+        "strict": "omit"
+      },
+      {
+        "values": [
+          7,
+          7,
+          7
+        ],
+        "n": 3,
+        "strict": true
+      },
+      {
+        "values": [],
+        "n": 5,
+        "strict": false
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "values": [
+          0,
+          1,
+          2
+        ],
+        "n": 2,
+        "strict": true
+      },
+      "result": "ValueError"
+    },
+    "probe_valid": true,
+    "exact_replay": false,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "ValueError",
+      "OK",
+      "OK",
+      "OK"
+    ],
+    "expected": [
+      "ValueError",
+      "OK",
+      "OK",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "RDC0A4B5B",
+    "arm": "archive",
+    "id": "Q09",
+    "project": "PyJWT",
+    "version": "2.0.1",
+    "latest_historical_policy": true,
+    "tests": [
+      {
+        "label": "auger",
+        "algorithms": "HS384"
+      },
+      {
+        "label": "lathe",
+        "algorithms": "omit"
+      },
+      {
+        "label": "saw",
+        "algorithms": "omit"
+      },
+      {
+        "label": "clamp",
+        "algorithms": "HS256"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "label": "c",
+        "algorithms": "omit"
+      },
+      "result": "DecodeError"
+    },
+    "probe_valid": true,
+    "exact_replay": true,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "InvalidAlgorithmError",
+      "DecodeError",
+      "DecodeError",
+      "OK"
+    ],
+    "expected": [
+      "InvalidAlgorithmError",
+      "DecodeError",
+      "DecodeError",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "R514B59FC",
+    "arm": "archive",
+    "id": "Q10",
+    "project": "packaging",
+    "version": "21.3",
+    "latest_historical_policy": false,
+    "tests": [
+      {
+        "text": "branch-Z"
+      },
+      {
+        "text": "3.1.post2"
+      },
+      {
+        "text": "urgent patch"
+      },
+      {
+        "text": "v4.9"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "text": "vendor-nightly"
+      },
+      "result": "LegacyVersion"
+    },
+    "probe_valid": true,
+    "exact_replay": true,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "LegacyVersion",
+      "Version",
+      "LegacyVersion",
+      "Version"
+    ],
+    "expected": [
+      "LegacyVersion",
+      "Version",
+      "LegacyVersion",
+      "Version"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "R06A5ABF8",
+    "arm": "fresh",
+    "id": "Q11",
+    "project": "packaging",
+    "version": "23.0",
+    "latest_historical_policy": true,
+    "tests": [
+      {
+        "text": "2026.8rc1"
+      },
+      {
+        "text": "upstream-latest"
+      },
+      {
+        "text": "1.5+dev.2"
+      },
+      {
+        "text": "Blue_Build"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "text": "1.0_1"
+      },
+      "result": "InvalidVersion"
+    },
+    "probe_valid": true,
+    "exact_replay": false,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "Version",
+      "InvalidVersion",
+      "Version",
+      "InvalidVersion"
+    ],
+    "expected": [
+      "Version",
+      "InvalidVersion",
+      "Version",
+      "InvalidVersion"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  },
+  {
+    "case": "RDF48EFF9",
+    "arm": "fresh",
+    "id": "Q12",
+    "project": "more-itertools",
+    "version": "8.5.0",
+    "latest_historical_policy": false,
+    "tests": [
+      {
+        "values": [
+          4,
+          7,
+          9,
+          11
+        ],
+        "n": 2,
+        "strict": true
+      },
+      {
+        "values": [
+          8,
+          2,
+          5
+        ],
+        "n": 2,
+        "strict": true
+      },
+      {
+        "values": [
+          1,
+          5,
+          9
+        ],
+        "n": 2,
+        "strict": false
+      },
+      {
+        "values": [
+          3,
+          9,
+          14
+        ],
+        "n": 2,
+        "strict": "omit"
+      }
+    ],
+    "probe_observation": {
+      "input": {
+        "values": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "n": 3,
+        "strict": true
+      },
+      "result": "TypeError"
+    },
+    "probe_valid": true,
+    "exact_replay": false,
+    "probe_overlaps_test_input": false,
+    "discriminating_probe": true,
+    "decision_transport": "ok",
+    "decision_valid": true,
+    "predictions": [
+      "TypeError",
+      "TypeError",
+      "TypeError",
+      "OK"
+    ],
+    "expected": [
+      "TypeError",
+      "TypeError",
+      "TypeError",
+      "OK"
+    ],
+    "correct_bits": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true
+  }
+]

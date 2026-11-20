@@ -1,0 +1,84 @@
+[
+  {
+    "suite": "packets/verify.py",
+    "args": [],
+    "seconds": 13.14,
+    "output": "PASS {'tasks': 1013, 'cuts': 6770, 'intents': 3534, 'accepted': 3405} {'tasks': 1298, 'cuts': 8475, 'intents': 4365, 'accepted': 4190} disjoint sets [1350, 1013, 1298] repos [51, 16, 51] native tokenizer verification False\r\n"
+  },
+  {
+    "suite": "packets/all_costs.py",
+    "args": [],
+    "seconds": 0.38,
+    "output": "PASS\r\nA 256 joint {'sum_tokens': 1567749, 'mean': 231.57296898079764} control reset_tail {'sum_tokens': 1546546, 'mean': 228.4410635155096}\r\nA 512 joint {'sum_tokens': 3203420, 'mean': 473.178729689808} control rebased_tail {'sum_tokens': 3212138, 'mean': 474.4664697193501}\r\nA 1024 joint {'sum_tokens': 6307322, 'mean': 931.6576070901034} control rebased_tail {'sum_tokens': 6319429, 'mean': 933.4459379615953}\r\nB 256 joint {'sum_tokens': 1954433, 'mean': 230.61156342182892} control reset_tail {'sum_tokens': 1929102, 'mean': 227.62265486725664}\r\nB 512 joint {'sum_tokens': 4007495, 'mean': 472.8607669616519} control rebased_tail {'sum_tokens': 4018351, 'mean': 474.1417109144543}\r\nB 1024 joint {'sum_tokens': 7904591, 'mean': 932.6951032448378} control rebased_tail {'sum_tokens': 7919078, 'mean': 934.4044837758112}\r\n"
+  },
+  {
+    "suite": "packets/live_score.py",
+    "args": [
+      "--verify"
+    ],
+    "seconds": 1.38,
+    "output": "PASS 64 actions, source hashes, prediction linkage and paired metrics\r\n"
+  },
+  {
+    "suite": "packets/live_audit.py",
+    "args": [],
+    "seconds": 1.12,
+    "output": "PASS {'distinct_native_requests': 64, 'matched_source_snapshot_count': 32, 'back_end_request': {'cache_prompt': False, 'chat_template_kwargs': {'enable_thinking': False}, 'max_tokens': 320, 'min_p': 0, 'model': 'qwen38-27b-ud-q4km', 'repeat_penalty': 1, 'seed': 17112026, 'stream': False, 'temperature': 0, 'top_k': 20, 'top_p': 0.95}, 'usage': {'joint': {'requests': 32, 'sums': {'prompt_tokens': 29899, 'completion_tokens': 4551, 'total_tokens': 34450, 'memory_tokens': 15331, 'wall_seconds': 147.38265824317932}, 'means': {'prompt_tokens': 934.34375, 'completion_tokens': 142.21875, 'total_tokens': 1076.5625, 'memory_tokens': 479.09375, 'wall_seconds': 4.605708070099354}, 'finish': {'stop': 28, 'length': 4}}, 'rebased_tail': {'requests': 32, 'sums': {'prompt_tokens': 29981, 'completion_tokens': 4462, 'total_tokens': 34443, 'memory_tokens': 15413, 'wall_seconds': 145.30394196510315}, 'means': {'prompt_tokens': 936.90625, 'completion_tokens': 139.4375, 'total_tokens': 1076.34375, 'memory_tokens': 481.65625, 'wall_seconds': 4.540748186409473}, 'finish': {'stop': 31, 'length': 1}}}, 'reader_input_sha256': '02f070653e9c727cd783b36d42e23f5d9691a41441f13cad9b815e8b88fe076b'}\r\n"
+  },
+  {
+    "suite": "packets/allocation_audit.py",
+    "args": [],
+    "seconds": 3.44,
+    "output": "PASS {'selected_instances': [1350, 1014, 1300, 650], 'repos': [51, 16, 51, 51], 'distinct_c_prefixes': 4277, 'all_eligible_intents': 2214, 'all_intent_hits': {'fixed256': 223, 'fixed512': 569, 'fixed1024': 1024, 'scheduled': 445, 'demand': 441, 'value': 565}, 'all_intent_value_minus_fixed512': {'units': 51, 'n': 2214, 'wins': 0, 'losses': 4, 'difference': -0.0018066847335140017, 'ci95': [-0.003972983710766786, 0.0]}, 'audited_choice_timings': 108, 'median_cpu_ms': {'fixed_ms': 4.302350000000001, 'all_three_ms': 5.7549}, 'tokens_verified': False}\r\n"
+  },
+  {
+    "suite": "live/verify_final.py",
+    "args": [],
+    "seconds": 6.93,
+    "output": "{\r\n \"passed\": true,\r\n \"cohorts\": {\r\n  \"primary\": {\r\n   \"tasks\": 48,\r\n   \"actual\": {\r\n    \"prompt_tokens\": 134964,\r\n    \"completion_tokens\": 12771,\r\n    \"requests\": 344\r\n   },\r\n   \"shared_prefix\": {\r\n    \"requests\": 48,\r\n    \"tokens\": 15639\r\n   },\r\n   \"logical\": {\r\n    \"calls\": 345,\r\n    \"decisions\": 240\r\n   },\r\n   \"scores\": 336\r\n  },\r\n  \"transfer\": {\r\n   \"tasks\": 63,\r\n   \"actual\": {\r\n    \"prompt_tokens\": 191216,\r\n    \"completion_tokens\": 16873,\r\n    \"requests\": 484\r\n   },\r\n   \"shared_prefix\": {\r\n    \"requests\": 63,\r\n    \"tokens\": 21195\r\n   },\r\n   \"logical\": {\r\n    \"calls\": 474,\r\n    \"decisions\": 315\r\n   },\r\n   \"scores\": 441\r\n  }\r\n },\r\n \"reexecuted\": false,\r\n \"tokens_recounted\": false\r\n}\r\ncorrected scores verified: 336 records, 161 distinct programs, 48 original/canonical pairs\r\ncorrected scores verified: 441 records, 246 distinct programs, 63 original/canonical pairs\r\n{\"verified\": true, \"outcomes\": 777, \"distinct_physical_files_by_task\": 407, \"reexecuted\": false, \"timeout_disagreements\": [], \"repeat_results\": {}}\r\nsecond timing pass verified: 407 distinct programs, 1 timing-dependent results\r\nall final audits passed\r\n"
+  },
+  {
+    "suite": "diagnosis/verify.py",
+    "args": [],
+    "seconds": 14.0,
+    "output": "PASS 2582 original and 2811 transfer decisions; current-outcome metrics, calibration, packet costs and locked checksums\r\n"
+  },
+  {
+    "suite": "literature/policy/verify.py",
+    "args": [],
+    "seconds": 4.93,
+    "output": "{'passed': True, 'released_blobs': 7, 'recomputed_files': ['choices_0.0.json.gz', 'choices_0.1.json.gz', 'choices_0.25.json.gz', 'history_0.0.json', 'history_0.1.json', 'history_0.25.json', 'results.json', 'source_check.json', 'transfer_results.json', 'transfer_rows.json.gz']}\r\n"
+  },
+  {
+    "suite": "serbench/grade.py",
+    "args": [
+      "--verify"
+    ],
+    "seconds": 1.64,
+    "output": "PASS official grade 2500 predictions on 500 states and 500 held-out submissions validated; cluster intervals reproduced\r\n"
+  },
+  {
+    "suite": "serbench/trace_grade.py",
+    "args": [
+      "--verify"
+    ],
+    "seconds": 2.03,
+    "output": "PASS 3500 history grades; emitted tokens and contrasts\r\n"
+  },
+  {
+    "suite": "serbench/dense_grade.py",
+    "args": [
+      "--verify"
+    ],
+    "seconds": 2.71,
+    "output": "PASS dense vectors → rankings → official scores\r\n"
+  },
+  {
+    "suite": "serbench/fixed_grade.py",
+    "args": [
+      "--verify"
+    ],
+    "seconds": 1.71,
+    "output": "PASS 2500 fixed-query dense decisions, wrong memory and CIs\r\n"
+  }
+]

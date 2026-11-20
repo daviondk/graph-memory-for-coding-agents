@@ -1,0 +1,124 @@
+{
+ "issues": 75,
+ "repositories": 11,
+ "policies": {
+  "raw_trace": {
+   "solved": 674,
+   "n": 1530,
+   "known": 1470,
+   "formats": {
+    "raw_trace": 1530
+   }
+  },
+  "structured_notes": {
+   "solved": 646,
+   "n": 1530,
+   "known": 1471,
+   "formats": {
+    "structured_notes": 1530
+   }
+  },
+  "summary_notes": {
+   "solved": 649,
+   "n": 1530,
+   "known": 1477,
+   "formats": {
+    "summary_notes": 1530
+   }
+  },
+  "repo_only": {
+   "solved": 591,
+   "n": 1530,
+   "known": 1464,
+   "formats": {
+    "repo_only": 1530
+   }
+  },
+  "constant": {
+   "solved": 674,
+   "n": 1530,
+   "known": 1470,
+   "formats": {
+    "raw_trace": 1530
+   }
+  },
+  "recipient": {
+   "solved": 683,
+   "n": 1530,
+   "known": 1472,
+   "formats": {
+    "raw_trace": 1020,
+    "summary_notes": 510
+   }
+  },
+  "candidate": {
+   "solved": 669,
+   "n": 1530,
+   "known": 1471,
+   "formats": {
+    "raw_trace": 886,
+    "summary_notes": 431,
+    "structured_notes": 176,
+    "repo_only": 37
+   }
+  }
+ },
+ "comparisons": {
+  "raw_trace": {
+   "n": 1530,
+   "wins": 29,
+   "losses": 34,
+   "delta_pp": -0.32679738562091504,
+   "repo_conditional_ci95_pp": [
+    -1.55902004454343,
+    0.6734006734006734
+   ],
+   "known_both": 1464,
+   "known_net": -7,
+   "mean_delta_tokens": -156960.9835418038,
+   "token_pairs": 1519
+  },
+  "structured_notes": {
+   "n": 1530,
+   "wins": 84,
+   "losses": 61,
+   "delta_pp": 1.5032679738562091,
+   "repo_conditional_ci95_pp": [
+    0.06535947712418301,
+    2.9411764705882355
+   ],
+   "known_both": 1465,
+   "known_net": 23,
+   "mean_delta_tokens": -31881.16743572841,
+   "token_pairs": 1517
+  },
+  "constant": {
+   "n": 1530,
+   "wins": 29,
+   "losses": 34,
+   "delta_pp": -0.32679738562091504,
+   "repo_conditional_ci95_pp": [
+    -1.55902004454343,
+    0.6734006734006734
+   ],
+   "known_both": 1464,
+   "known_net": -7,
+   "mean_delta_tokens": -156960.9835418038,
+   "token_pairs": 1519
+  },
+  "recipient": {
+   "n": 1530,
+   "wins": 17,
+   "losses": 31,
+   "delta_pp": -0.9150326797385621,
+   "repo_conditional_ci95_pp": [
+    -1.8982536066818527,
+    -0.22259321090706732
+   ],
+   "known_both": 1468,
+   "known_net": -14,
+   "mean_delta_tokens": -5713.950690335306,
+   "token_pairs": 1521
+  }
+ }
+}

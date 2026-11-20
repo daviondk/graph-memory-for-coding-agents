@@ -1,0 +1,107 @@
+{
+ "metrics": {
+  "flat": {
+   "n": 16,
+   "valid": 16,
+   "valid_pass": 4,
+   "applied": 11,
+   "any_gold_line": 4,
+   "covered_lines": 17,
+   "macro_coverage": 0.2236842105263158,
+   "mean_tokens": 1772.125,
+   "observed_regressions": 2,
+   "missing_p2p": 2,
+   "base_p2p": 166
+  },
+  "graph": {
+   "n": 16,
+   "valid": 16,
+   "valid_pass": 3,
+   "applied": 10,
+   "any_gold_line": 4,
+   "covered_lines": 21,
+   "macro_coverage": 0.2368421052631579,
+   "mean_tokens": 1772.375,
+   "observed_regressions": 0,
+   "missing_p2p": 0,
+   "base_p2p": 166
+  },
+  "shuffled": {
+   "n": 16,
+   "valid": 16,
+   "valid_pass": 3,
+   "applied": 12,
+   "any_gold_line": 4,
+   "covered_lines": 17,
+   "macro_coverage": 0.2236842105263158,
+   "mean_tokens": 1771.5,
+   "observed_regressions": 2,
+   "missing_p2p": 2,
+   "base_p2p": 166
+  }
+ },
+ "pairs": {
+  "flat_passed": {
+   "wins": 0,
+   "losses": 1,
+   "p": 1,
+   "n": 16
+  },
+  "flat_hit": {
+   "wins": 0,
+   "losses": 0,
+   "p": 1,
+   "n": 16
+  },
+  "flat_applied": {
+   "wins": 0,
+   "losses": 1,
+   "p": 1,
+   "n": 16
+  },
+  "shuffled_passed": {
+   "wins": 0,
+   "losses": 0,
+   "p": 1,
+   "n": 16
+  },
+  "shuffled_hit": {
+   "wins": 0,
+   "losses": 0,
+   "p": 1,
+   "n": 16
+  },
+  "shuffled_applied": {
+   "wins": 0,
+   "losses": 2,
+   "p": 0.5,
+   "n": 16
+  }
+ },
+ "n_gold_lines": 42,
+ "n_visible": 38,
+ "visible_tasks": 14,
+ "with_calls": 46,
+ "test_tasks": [
+  "sympy__sympy-23950",
+  "sympy__sympy-20154",
+  "sympy__sympy-20428",
+  "sympy__sympy-22714",
+  "sympy__sympy-23262",
+  "sympy__sympy-16450",
+  "sympy__sympy-17139",
+  "sympy__sympy-16766",
+  "sympy__sympy-24066",
+  "sympy__sympy-17630",
+  "sympy__sympy-16886",
+  "sympy__sympy-19346",
+  "sympy__sympy-22080",
+  "sympy__sympy-18763",
+  "sympy__sympy-23824",
+  "sympy__sympy-21847"
+ ],
+ "total_tokens": {
+  "prompt_tokens": 101398,
+  "completion_tokens": 11429
+ }
+}

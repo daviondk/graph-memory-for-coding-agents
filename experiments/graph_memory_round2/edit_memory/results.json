@@ -1,0 +1,2297 @@
+{
+ "metrics": [
+  "hit@1",
+  "hit@3",
+  "full_span@3"
+ ],
+ "cases": {
+  "n": 4320,
+  "projects": 23,
+  "instances": 1272,
+  "candidate_contains_start": 2873,
+  "sums": {
+   "recent": [
+    413,
+    962,
+    761
+   ],
+   "base": [
+    826,
+    1515,
+    545
+   ],
+   "flat": [
+    841,
+    1526,
+    573
+   ],
+   "address": [
+    834,
+    1533,
+    567
+   ],
+   "full": [
+    836,
+    1532,
+    569
+   ],
+   "placebo": [
+    843,
+    1523,
+    569
+   ]
+  },
+  "full_minus": {
+   "recent": {
+    "delta": [
+     0.09791666666666667,
+     0.13194444444444445,
+     -0.044444444444444446
+    ],
+    "wins": [
+     624,
+     759,
+     137
+    ],
+    "losses": [
+     201,
+     189,
+     329
+    ],
+    "ci": [
+     [
+      0.07286470003449678,
+      0.11304426073099863,
+      -0.053606864744018136
+     ],
+     [
+      0.12049550866964297,
+      0.1503734373893802,
+      -0.03476820414177985
+     ]
+    ],
+    "repo_macro": [
+     0.09596566490658687,
+     0.13156013387083437,
+     -0.04053570745173605
+    ],
+    "repo_positive": [
+     21,
+     22,
+     0
+    ],
+    "repo_negative": [
+     2,
+     0,
+     21
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      203,
+      22,
+      30,
+      -14
+     ],
+     "adrienverge__yamllint": [
+      279,
+      38,
+      54,
+      -4
+     ],
+     "alecthomas__voluptuous": [
+      146,
+      13,
+      20,
+      -7
+     ],
+     "amueller__word_cloud": [
+      102,
+      -4,
+      9,
+      -3
+     ],
+     "cknd__stackprinter": [
+      36,
+      1,
+      0,
+      -1
+     ],
+     "dbader__schedule": [
+      103,
+      8,
+      4,
+      -9
+     ],
+     "facelessuser__soupsieve": [
+      193,
+      39,
+      39,
+      -13
+     ],
+     "hukkin__tomli": [
+      82,
+      -3,
+      6,
+      -2
+     ],
+     "jd__tenacity": [
+      145,
+      4,
+      8,
+      0
+     ],
+     "jsvine__pdfplumber": [
+      175,
+      23,
+      32,
+      -10
+     ],
+     "mahmoud__boltons": [
+      87,
+      10,
+      17,
+      -6
+     ],
+     "modin-project__modin": [
+      107,
+      15,
+      18,
+      -1
+     ],
+     "msiemens__tinydb": [
+      23,
+      6,
+      6,
+      0
+     ],
+     "pallets__click": [
+      189,
+      10,
+      23,
+      -9
+     ],
+     "pandas-dev__pandas": [
+      220,
+      3,
+      18,
+      -5
+     ],
+     "pydantic__pydantic": [
+      368,
+      55,
+      43,
+      -11
+     ],
+     "pylint-dev__astroid": [
+      462,
+      52,
+      62,
+      -32
+     ],
+     "python-jsonschema__jsonschema": [
+      173,
+      28,
+      27,
+      -10
+     ],
+     "pyutils__line_profiler": [
+      171,
+      2,
+      8,
+      -3
+     ],
+     "rubik__radon": [
+      98,
+      19,
+      24,
+      -2
+     ],
+     "sqlfluff__sqlfluff": [
+      442,
+      24,
+      49,
+      -20
+     ],
+     "sunpy__sunpy": [
+      316,
+      40,
+      52,
+      -17
+     ],
+     "un33k__python-slugify": [
+      200,
+      18,
+      21,
+      -13
+     ]
+    }
+   },
+   "base": {
+    "delta": [
+     0.0023148148148148147,
+     0.003935185185185185,
+     0.005555555555555556
+    ],
+    "wins": [
+     115,
+     108,
+     72
+    ],
+    "losses": [
+     105,
+     91,
+     48
+    ],
+    "ci": [
+     [
+      -0.005390908271472478,
+      -0.002484327712453825,
+      0.0018025327007561776
+     ],
+     [
+      0.010209407291551792,
+      0.0104628488715159,
+      0.00962310094129678
+     ]
+    ],
+    "repo_macro": [
+     0.0008943904124703022,
+     0.001890138857553964,
+     0.00559660637931532
+    ],
+    "repo_positive": [
+     11,
+     10,
+     13
+    ],
+    "repo_negative": [
+     9,
+     10,
+     3
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      203,
+      1,
+      8,
+      4
+     ],
+     "adrienverge__yamllint": [
+      279,
+      -7,
+      7,
+      3
+     ],
+     "alecthomas__voluptuous": [
+      146,
+      2,
+      0,
+      0
+     ],
+     "amueller__word_cloud": [
+      102,
+      -2,
+      1,
+      4
+     ],
+     "cknd__stackprinter": [
+      36,
+      0,
+      -1,
+      1
+     ],
+     "dbader__schedule": [
+      103,
+      -4,
+      -1,
+      1
+     ],
+     "facelessuser__soupsieve": [
+      193,
+      1,
+      -2,
+      1
+     ],
+     "hukkin__tomli": [
+      82,
+      0,
+      3,
+      0
+     ],
+     "jd__tenacity": [
+      145,
+      -2,
+      -3,
+      -1
+     ],
+     "jsvine__pdfplumber": [
+      175,
+      -3,
+      -1,
+      0
+     ],
+     "mahmoud__boltons": [
+      87,
+      1,
+      2,
+      2
+     ],
+     "modin-project__modin": [
+      107,
+      3,
+      3,
+      3
+     ],
+     "msiemens__tinydb": [
+      23,
+      0,
+      -1,
+      -1
+     ],
+     "pallets__click": [
+      189,
+      -1,
+      -2,
+      2
+     ],
+     "pandas-dev__pandas": [
+      220,
+      2,
+      1,
+      0
+     ],
+     "pydantic__pydantic": [
+      368,
+      -1,
+      -2,
+      0
+     ],
+     "pylint-dev__astroid": [
+      462,
+      2,
+      4,
+      1
+     ],
+     "python-jsonschema__jsonschema": [
+      173,
+      11,
+      2,
+      -3
+     ],
+     "pyutils__line_profiler": [
+      171,
+      3,
+      -1,
+      1
+     ],
+     "rubik__radon": [
+      98,
+      -3,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      442,
+      3,
+      4,
+      5
+     ],
+     "sunpy__sunpy": [
+      316,
+      6,
+      -4,
+      1
+     ],
+     "un33k__python-slugify": [
+      200,
+      -2,
+      0,
+      0
+     ]
+    }
+   },
+   "flat": {
+    "delta": [
+     -0.0011574074074074073,
+     0.001388888888888889,
+     -0.000925925925925926
+    ],
+    "wins": [
+     22,
+     30,
+     12
+    ],
+    "losses": [
+     27,
+     24,
+     16
+    ],
+    "ci": [
+     [
+      -0.004264476136836035,
+      -0.0019672453853104427,
+      -0.002732888615922384
+     ],
+     [
+      0.0027863111647951563,
+      0.005186245136072587,
+      0.0008033755162147005
+     ]
+    ],
+    "repo_macro": [
+     0.0005494277109986571,
+     0.002316488934995018,
+     -0.0004127582114858438
+    ],
+    "repo_positive": [
+     6,
+     9,
+     4
+    ],
+    "repo_negative": [
+     7,
+     8,
+     6
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      203,
+      -1,
+      3,
+      0
+     ],
+     "adrienverge__yamllint": [
+      279,
+      -1,
+      -2,
+      -1
+     ],
+     "alecthomas__voluptuous": [
+      146,
+      0,
+      2,
+      0
+     ],
+     "amueller__word_cloud": [
+      102,
+      0,
+      -1,
+      0
+     ],
+     "cknd__stackprinter": [
+      36,
+      0,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      103,
+      -2,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      193,
+      0,
+      -3,
+      -2
+     ],
+     "hukkin__tomli": [
+      82,
+      1,
+      1,
+      0
+     ],
+     "jd__tenacity": [
+      145,
+      0,
+      -1,
+      -1
+     ],
+     "jsvine__pdfplumber": [
+      175,
+      0,
+      -1,
+      0
+     ],
+     "mahmoud__boltons": [
+      87,
+      0,
+      1,
+      1
+     ],
+     "modin-project__modin": [
+      107,
+      2,
+      2,
+      1
+     ],
+     "msiemens__tinydb": [
+      23,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      189,
+      1,
+      0,
+      0
+     ],
+     "pandas-dev__pandas": [
+      220,
+      -1,
+      1,
+      0
+     ],
+     "pydantic__pydantic": [
+      368,
+      0,
+      1,
+      1
+     ],
+     "pylint-dev__astroid": [
+      462,
+      -3,
+      0,
+      1
+     ],
+     "python-jsonschema__jsonschema": [
+      173,
+      4,
+      2,
+      -1
+     ],
+     "pyutils__line_profiler": [
+      171,
+      1,
+      -1,
+      0
+     ],
+     "rubik__radon": [
+      98,
+      0,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      442,
+      -4,
+      -1,
+      -1
+     ],
+     "sunpy__sunpy": [
+      316,
+      -3,
+      -1,
+      -2
+     ],
+     "un33k__python-slugify": [
+      200,
+      1,
+      4,
+      0
+     ]
+    }
+   },
+   "address": {
+    "delta": [
+     0.000462962962962963,
+     -0.0002314814814814815,
+     0.000462962962962963
+    ],
+    "wins": [
+     5,
+     6,
+     4
+    ],
+    "losses": [
+     3,
+     7,
+     2
+    ],
+    "ci": [
+     [
+      -0.0005866249511145874,
+      -0.0013771090116563361,
+      -0.0004479283314669653
+     ],
+     [
+      0.001696620177985683,
+      0.0009627766484567513,
+      0.0013449899125756557
+     ]
+    ],
+    "repo_macro": [
+     0.0017248760988453741,
+     0.00018616791964555399,
+     0.0003108510396262217
+    ],
+    "repo_positive": [
+     4,
+     2,
+     3
+    ],
+    "repo_negative": [
+     2,
+     2,
+     1
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      203,
+      -1,
+      1,
+      0
+     ],
+     "adrienverge__yamllint": [
+      279,
+      0,
+      0,
+      1
+     ],
+     "alecthomas__voluptuous": [
+      146,
+      0,
+      1,
+      0
+     ],
+     "amueller__word_cloud": [
+      102,
+      0,
+      0,
+      0
+     ],
+     "cknd__stackprinter": [
+      36,
+      1,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      103,
+      0,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      193,
+      0,
+      0,
+      0
+     ],
+     "hukkin__tomli": [
+      82,
+      0,
+      0,
+      0
+     ],
+     "jd__tenacity": [
+      145,
+      0,
+      0,
+      0
+     ],
+     "jsvine__pdfplumber": [
+      175,
+      1,
+      0,
+      0
+     ],
+     "mahmoud__boltons": [
+      87,
+      0,
+      0,
+      0
+     ],
+     "modin-project__modin": [
+      107,
+      0,
+      0,
+      0
+     ],
+     "msiemens__tinydb": [
+      23,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      189,
+      0,
+      0,
+      0
+     ],
+     "pandas-dev__pandas": [
+      220,
+      0,
+      0,
+      0
+     ],
+     "pydantic__pydantic": [
+      368,
+      0,
+      0,
+      1
+     ],
+     "pylint-dev__astroid": [
+      462,
+      0,
+      -2,
+      0
+     ],
+     "python-jsonschema__jsonschema": [
+      173,
+      0,
+      0,
+      0
+     ],
+     "pyutils__line_profiler": [
+      171,
+      0,
+      0,
+      1
+     ],
+     "rubik__radon": [
+      98,
+      1,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      442,
+      -1,
+      0,
+      0
+     ],
+     "sunpy__sunpy": [
+      316,
+      1,
+      -1,
+      0
+     ],
+     "un33k__python-slugify": [
+      200,
+      0,
+      0,
+      -1
+     ]
+    }
+   },
+   "full": {
+    "delta": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "wins": [
+     0,
+     0,
+     0
+    ],
+    "losses": [
+     0,
+     0,
+     0
+    ],
+    "ci": [
+     [
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0
+     ]
+    ],
+    "repo_macro": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "repo_positive": [
+     0,
+     0,
+     0
+    ],
+    "repo_negative": [
+     0,
+     0,
+     0
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      203,
+      0,
+      0,
+      0
+     ],
+     "adrienverge__yamllint": [
+      279,
+      0,
+      0,
+      0
+     ],
+     "alecthomas__voluptuous": [
+      146,
+      0,
+      0,
+      0
+     ],
+     "amueller__word_cloud": [
+      102,
+      0,
+      0,
+      0
+     ],
+     "cknd__stackprinter": [
+      36,
+      0,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      103,
+      0,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      193,
+      0,
+      0,
+      0
+     ],
+     "hukkin__tomli": [
+      82,
+      0,
+      0,
+      0
+     ],
+     "jd__tenacity": [
+      145,
+      0,
+      0,
+      0
+     ],
+     "jsvine__pdfplumber": [
+      175,
+      0,
+      0,
+      0
+     ],
+     "mahmoud__boltons": [
+      87,
+      0,
+      0,
+      0
+     ],
+     "modin-project__modin": [
+      107,
+      0,
+      0,
+      0
+     ],
+     "msiemens__tinydb": [
+      23,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      189,
+      0,
+      0,
+      0
+     ],
+     "pandas-dev__pandas": [
+      220,
+      0,
+      0,
+      0
+     ],
+     "pydantic__pydantic": [
+      368,
+      0,
+      0,
+      0
+     ],
+     "pylint-dev__astroid": [
+      462,
+      0,
+      0,
+      0
+     ],
+     "python-jsonschema__jsonschema": [
+      173,
+      0,
+      0,
+      0
+     ],
+     "pyutils__line_profiler": [
+      171,
+      0,
+      0,
+      0
+     ],
+     "rubik__radon": [
+      98,
+      0,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      442,
+      0,
+      0,
+      0
+     ],
+     "sunpy__sunpy": [
+      316,
+      0,
+      0,
+      0
+     ],
+     "un33k__python-slugify": [
+      200,
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "placebo": {
+    "delta": [
+     -0.0016203703703703703,
+     0.0020833333333333333,
+     0.0
+    ],
+    "wins": [
+     24,
+     30,
+     13
+    ],
+    "losses": [
+     31,
+     21,
+     13
+    ],
+    "ci": [
+     [
+      -0.004635806041248079,
+      -0.00141867843780654,
+      -0.0023585032107437515
+     ],
+     [
+      0.002042262121496531,
+      0.006005338078291815,
+      0.0023834120662062784
+     ]
+    ],
+    "repo_macro": [
+     -0.00036828943068873896,
+     0.002675378702771088,
+     0.0004002567013896063
+    ],
+    "repo_positive": [
+     5,
+     10,
+     7
+    ],
+    "repo_negative": [
+     8,
+     8,
+     6
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      203,
+      -1,
+      3,
+      1
+     ],
+     "adrienverge__yamllint": [
+      279,
+      -2,
+      -1,
+      0
+     ],
+     "alecthomas__voluptuous": [
+      146,
+      0,
+      2,
+      0
+     ],
+     "amueller__word_cloud": [
+      102,
+      0,
+      -1,
+      0
+     ],
+     "cknd__stackprinter": [
+      36,
+      0,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      103,
+      -3,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      193,
+      -1,
+      -2,
+      -2
+     ],
+     "hukkin__tomli": [
+      82,
+      1,
+      1,
+      0
+     ],
+     "jd__tenacity": [
+      145,
+      0,
+      -1,
+      -1
+     ],
+     "jsvine__pdfplumber": [
+      175,
+      0,
+      -1,
+      0
+     ],
+     "mahmoud__boltons": [
+      87,
+      0,
+      1,
+      1
+     ],
+     "modin-project__modin": [
+      107,
+      2,
+      2,
+      1
+     ],
+     "msiemens__tinydb": [
+      23,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      189,
+      0,
+      0,
+      2
+     ],
+     "pandas-dev__pandas": [
+      220,
+      -2,
+      1,
+      0
+     ],
+     "pydantic__pydantic": [
+      368,
+      -1,
+      3,
+      2
+     ],
+     "pylint-dev__astroid": [
+      462,
+      -3,
+      1,
+      1
+     ],
+     "python-jsonschema__jsonschema": [
+      173,
+      4,
+      2,
+      -1
+     ],
+     "pyutils__line_profiler": [
+      171,
+      1,
+      -2,
+      -1
+     ],
+     "rubik__radon": [
+      98,
+      0,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      442,
+      -3,
+      -2,
+      -2
+     ],
+     "sunpy__sunpy": [
+      316,
+      1,
+      -1,
+      -2
+     ],
+     "un33k__python-slugify": [
+      200,
+      0,
+      4,
+      1
+     ]
+    }
+   }
+  }
+ },
+ "after_edits": {
+  "n": 3062,
+  "projects": 23,
+  "instances": 926,
+  "candidate_contains_start": 2173,
+  "sums": {
+   "recent": [
+    326,
+    770,
+    606
+   ],
+   "base": [
+    651,
+    1161,
+    404
+   ],
+   "flat": [
+    663,
+    1180,
+    442
+   ],
+   "address": [
+    656,
+    1183,
+    439
+   ],
+   "full": [
+    658,
+    1182,
+    440
+   ],
+   "placebo": [
+    666,
+    1178,
+    439
+   ]
+  },
+  "full_minus": {
+   "recent": {
+    "delta": [
+     0.10842586544741999,
+     0.13455258001306336,
+     -0.05421293272370999
+    ],
+    "wins": [
+     490,
+     551,
+     93
+    ],
+    "losses": [
+     158,
+     139,
+     259
+    ],
+    "ci": [
+     [
+      0.07936962324132729,
+      0.11129205191043778,
+      -0.0675606093784847
+     ],
+     [
+      0.13358906794849543,
+      0.15738561499468706,
+      -0.039229078671748914
+     ]
+    ],
+    "repo_macro": [
+     0.11522479542636656,
+     0.12749149029955575,
+     -0.047027044799918295
+    ],
+    "repo_positive": [
+     20,
+     22,
+     1
+    ],
+    "repo_negative": [
+     2,
+     0,
+     20
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      147,
+      20,
+      21,
+      -17
+     ],
+     "adrienverge__yamllint": [
+      225,
+      34,
+      49,
+      0
+     ],
+     "alecthomas__voluptuous": [
+      96,
+      7,
+      9,
+      -8
+     ],
+     "amueller__word_cloud": [
+      73,
+      -8,
+      3,
+      -3
+     ],
+     "cknd__stackprinter": [
+      20,
+      1,
+      1,
+      -1
+     ],
+     "dbader__schedule": [
+      68,
+      5,
+      5,
+      -5
+     ],
+     "facelessuser__soupsieve": [
+      149,
+      32,
+      34,
+      -7
+     ],
+     "hukkin__tomli": [
+      60,
+      0,
+      7,
+      2
+     ],
+     "jd__tenacity": [
+      91,
+      -1,
+      0,
+      -3
+     ],
+     "jsvine__pdfplumber": [
+      141,
+      19,
+      27,
+      -10
+     ],
+     "mahmoud__boltons": [
+      60,
+      5,
+      9,
+      -4
+     ],
+     "modin-project__modin": [
+      76,
+      12,
+      8,
+      -1
+     ],
+     "msiemens__tinydb": [
+      7,
+      4,
+      1,
+      0
+     ],
+     "pallets__click": [
+      129,
+      9,
+      16,
+      -6
+     ],
+     "pandas-dev__pandas": [
+      132,
+      6,
+      11,
+      -3
+     ],
+     "pydantic__pydantic": [
+      245,
+      39,
+      31,
+      -10
+     ],
+     "pylint-dev__astroid": [
+      354,
+      43,
+      51,
+      -29
+     ],
+     "python-jsonschema__jsonschema": [
+      116,
+      22,
+      19,
+      -6
+     ],
+     "pyutils__line_profiler": [
+      114,
+      2,
+      8,
+      -3
+     ],
+     "rubik__radon": [
+      66,
+      13,
+      19,
+      -1
+     ],
+     "sqlfluff__sqlfluff": [
+      330,
+      18,
+      31,
+      -20
+     ],
+     "sunpy__sunpy": [
+      227,
+      33,
+      33,
+      -18
+     ],
+     "un33k__python-slugify": [
+      136,
+      17,
+      19,
+      -13
+     ]
+    }
+   },
+   "base": {
+    "delta": [
+     0.0022860875244937948,
+     0.006858262573481384,
+     0.011757021554539516
+    ],
+    "wins": [
+     110,
+     98,
+     70
+    ],
+    "losses": [
+     103,
+     77,
+     34
+    ],
+    "ci": [
+     [
+      -0.008648329009288705,
+      -0.0019133263937759011,
+      0.007096354022901191
+     ],
+     [
+      0.013707175276347575,
+      0.015611583840990593,
+      0.017308801027805156
+     ]
+    ],
+    "repo_macro": [
+     0.0006699761190707987,
+     0.0018778313178261163,
+     0.009399836452137265
+    ],
+    "repo_positive": [
+     11,
+     10,
+     16
+    ],
+    "repo_negative": [
+     9,
+     9,
+     2
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      147,
+      1,
+      6,
+      3
+     ],
+     "adrienverge__yamllint": [
+      225,
+      -7,
+      8,
+      5
+     ],
+     "alecthomas__voluptuous": [
+      96,
+      2,
+      -1,
+      0
+     ],
+     "amueller__word_cloud": [
+      73,
+      -2,
+      1,
+      4
+     ],
+     "cknd__stackprinter": [
+      20,
+      0,
+      0,
+      1
+     ],
+     "dbader__schedule": [
+      68,
+      -4,
+      0,
+      2
+     ],
+     "facelessuser__soupsieve": [
+      149,
+      1,
+      -1,
+      2
+     ],
+     "hukkin__tomli": [
+      60,
+      0,
+      5,
+      2
+     ],
+     "jd__tenacity": [
+      91,
+      -2,
+      -3,
+      -1
+     ],
+     "jsvine__pdfplumber": [
+      141,
+      -4,
+      -1,
+      0
+     ],
+     "mahmoud__boltons": [
+      60,
+      1,
+      2,
+      2
+     ],
+     "modin-project__modin": [
+      76,
+      2,
+      1,
+      3
+     ],
+     "msiemens__tinydb": [
+      7,
+      0,
+      -1,
+      -1
+     ],
+     "pallets__click": [
+      129,
+      -1,
+      -1,
+      3
+     ],
+     "pandas-dev__pandas": [
+      132,
+      2,
+      2,
+      2
+     ],
+     "pydantic__pydantic": [
+      245,
+      -2,
+      -2,
+      1
+     ],
+     "pylint-dev__astroid": [
+      354,
+      2,
+      5,
+      1
+     ],
+     "python-jsonschema__jsonschema": [
+      116,
+      11,
+      3,
+      0
+     ],
+     "pyutils__line_profiler": [
+      114,
+      4,
+      0,
+      1
+     ],
+     "rubik__radon": [
+      66,
+      -3,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      330,
+      3,
+      3,
+      5
+     ],
+     "sunpy__sunpy": [
+      227,
+      5,
+      -4,
+      1
+     ],
+     "un33k__python-slugify": [
+      136,
+      -2,
+      -1,
+      0
+     ]
+    }
+   },
+   "flat": {
+    "delta": [
+     -0.0016329196603527107,
+     0.0006531678641410843,
+     -0.0006531678641410843
+    ],
+    "wins": [
+     21,
+     25,
+     11
+    ],
+    "losses": [
+     26,
+     23,
+     13
+    ],
+    "ci": [
+     [
+      -0.005954385164673409,
+      -0.003696943167225527,
+      -0.0030600165072387805
+     ],
+     [
+      0.0038955979742890533,
+      0.00585439543917205,
+      0.0016764670237573362
+     ]
+    ],
+    "repo_macro": [
+     0.0006482488520231576,
+     0.002451559766866103,
+     0.00021814801379384046
+    ],
+    "repo_positive": [
+     6,
+     8,
+     4
+    ],
+    "repo_negative": [
+     7,
+     8,
+     4
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      147,
+      -1,
+      2,
+      0
+     ],
+     "adrienverge__yamllint": [
+      225,
+      -1,
+      -2,
+      0
+     ],
+     "alecthomas__voluptuous": [
+      96,
+      0,
+      2,
+      0
+     ],
+     "amueller__word_cloud": [
+      73,
+      0,
+      -1,
+      0
+     ],
+     "cknd__stackprinter": [
+      20,
+      0,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      68,
+      -2,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      149,
+      0,
+      -3,
+      -2
+     ],
+     "hukkin__tomli": [
+      60,
+      1,
+      1,
+      0
+     ],
+     "jd__tenacity": [
+      91,
+      0,
+      -1,
+      -1
+     ],
+     "jsvine__pdfplumber": [
+      141,
+      0,
+      -1,
+      0
+     ],
+     "mahmoud__boltons": [
+      60,
+      0,
+      1,
+      1
+     ],
+     "modin-project__modin": [
+      76,
+      1,
+      1,
+      1
+     ],
+     "msiemens__tinydb": [
+      7,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      129,
+      1,
+      0,
+      0
+     ],
+     "pandas-dev__pandas": [
+      132,
+      -1,
+      1,
+      0
+     ],
+     "pydantic__pydantic": [
+      245,
+      0,
+      0,
+      0
+     ],
+     "pylint-dev__astroid": [
+      354,
+      -3,
+      0,
+      1
+     ],
+     "python-jsonschema__jsonschema": [
+      116,
+      4,
+      3,
+      1
+     ],
+     "pyutils__line_profiler": [
+      114,
+      2,
+      -1,
+      0
+     ],
+     "rubik__radon": [
+      66,
+      0,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      330,
+      -4,
+      -2,
+      -1
+     ],
+     "sunpy__sunpy": [
+      227,
+      -3,
+      -1,
+      -2
+     ],
+     "un33k__python-slugify": [
+      136,
+      1,
+      3,
+      0
+     ]
+    }
+   },
+   "address": {
+    "delta": [
+     0.0006531678641410843,
+     -0.00032658393207054214,
+     0.00032658393207054214
+    ],
+    "wins": [
+     5,
+     6,
+     3
+    ],
+    "losses": [
+     3,
+     7,
+     2
+    ],
+    "ci": [
+     [
+      -0.0008244023083264633,
+      -0.0019078053131712763,
+      -0.0007974720415628074
+     ],
+     [
+      0.00241256949653888,
+      0.0013779562903218317,
+      0.0013643497946150115
+     ]
+    ],
+    "repo_macro": [
+     0.0029050424329543204,
+     0.00031149495205936564,
+     5.100590961022096e-05
+    ],
+    "repo_positive": [
+     4,
+     2,
+     2
+    ],
+    "repo_negative": [
+     2,
+     2,
+     1
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      147,
+      -1,
+      1,
+      0
+     ],
+     "adrienverge__yamllint": [
+      225,
+      0,
+      0,
+      1
+     ],
+     "alecthomas__voluptuous": [
+      96,
+      0,
+      1,
+      0
+     ],
+     "amueller__word_cloud": [
+      73,
+      0,
+      0,
+      0
+     ],
+     "cknd__stackprinter": [
+      20,
+      1,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      68,
+      0,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      149,
+      0,
+      0,
+      0
+     ],
+     "hukkin__tomli": [
+      60,
+      0,
+      0,
+      0
+     ],
+     "jd__tenacity": [
+      91,
+      0,
+      0,
+      0
+     ],
+     "jsvine__pdfplumber": [
+      141,
+      1,
+      0,
+      0
+     ],
+     "mahmoud__boltons": [
+      60,
+      0,
+      0,
+      0
+     ],
+     "modin-project__modin": [
+      76,
+      0,
+      0,
+      0
+     ],
+     "msiemens__tinydb": [
+      7,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      129,
+      0,
+      0,
+      0
+     ],
+     "pandas-dev__pandas": [
+      132,
+      0,
+      0,
+      0
+     ],
+     "pydantic__pydantic": [
+      245,
+      0,
+      0,
+      1
+     ],
+     "pylint-dev__astroid": [
+      354,
+      0,
+      -2,
+      0
+     ],
+     "python-jsonschema__jsonschema": [
+      116,
+      0,
+      0,
+      0
+     ],
+     "pyutils__line_profiler": [
+      114,
+      0,
+      0,
+      0
+     ],
+     "rubik__radon": [
+      66,
+      1,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      330,
+      -1,
+      0,
+      0
+     ],
+     "sunpy__sunpy": [
+      227,
+      1,
+      -1,
+      0
+     ],
+     "un33k__python-slugify": [
+      136,
+      0,
+      0,
+      -1
+     ]
+    }
+   },
+   "full": {
+    "delta": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "wins": [
+     0,
+     0,
+     0
+    ],
+    "losses": [
+     0,
+     0,
+     0
+    ],
+    "ci": [
+     [
+      0.0,
+      0.0,
+      0.0
+     ],
+     [
+      0.0,
+      0.0,
+      0.0
+     ]
+    ],
+    "repo_macro": [
+     0.0,
+     0.0,
+     0.0
+    ],
+    "repo_positive": [
+     0,
+     0,
+     0
+    ],
+    "repo_negative": [
+     0,
+     0,
+     0
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      147,
+      0,
+      0,
+      0
+     ],
+     "adrienverge__yamllint": [
+      225,
+      0,
+      0,
+      0
+     ],
+     "alecthomas__voluptuous": [
+      96,
+      0,
+      0,
+      0
+     ],
+     "amueller__word_cloud": [
+      73,
+      0,
+      0,
+      0
+     ],
+     "cknd__stackprinter": [
+      20,
+      0,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      68,
+      0,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      149,
+      0,
+      0,
+      0
+     ],
+     "hukkin__tomli": [
+      60,
+      0,
+      0,
+      0
+     ],
+     "jd__tenacity": [
+      91,
+      0,
+      0,
+      0
+     ],
+     "jsvine__pdfplumber": [
+      141,
+      0,
+      0,
+      0
+     ],
+     "mahmoud__boltons": [
+      60,
+      0,
+      0,
+      0
+     ],
+     "modin-project__modin": [
+      76,
+      0,
+      0,
+      0
+     ],
+     "msiemens__tinydb": [
+      7,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      129,
+      0,
+      0,
+      0
+     ],
+     "pandas-dev__pandas": [
+      132,
+      0,
+      0,
+      0
+     ],
+     "pydantic__pydantic": [
+      245,
+      0,
+      0,
+      0
+     ],
+     "pylint-dev__astroid": [
+      354,
+      0,
+      0,
+      0
+     ],
+     "python-jsonschema__jsonschema": [
+      116,
+      0,
+      0,
+      0
+     ],
+     "pyutils__line_profiler": [
+      114,
+      0,
+      0,
+      0
+     ],
+     "rubik__radon": [
+      66,
+      0,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      330,
+      0,
+      0,
+      0
+     ],
+     "sunpy__sunpy": [
+      227,
+      0,
+      0,
+      0
+     ],
+     "un33k__python-slugify": [
+      136,
+      0,
+      0,
+      0
+     ]
+    }
+   },
+   "placebo": {
+    "delta": [
+     -0.002612671456564337,
+     0.0013063357282821686,
+     0.00032658393207054214
+    ],
+    "wins": [
+     22,
+     24,
+     11
+    ],
+    "losses": [
+     30,
+     20,
+     10
+    ],
+    "ci": [
+     [
+      -0.0067486134707612985,
+      -0.003284767001625697,
+      -0.0028530783544117155
+     ],
+     [
+      0.0025354282829100523,
+      0.006329352722493281,
+      0.0035738829097718425
+     ]
+    ],
+    "repo_macro": [
+     -0.0009333965184987667,
+     0.002605430373835772,
+     0.0010694811176244522
+    ],
+    "repo_positive": [
+     4,
+     10,
+     8
+    ],
+    "repo_negative": [
+     8,
+     8,
+     5
+    ],
+    "projects": {
+     "PyCQA__flake8": [
+      147,
+      -1,
+      1,
+      0
+     ],
+     "adrienverge__yamllint": [
+      225,
+      -2,
+      -1,
+      1
+     ],
+     "alecthomas__voluptuous": [
+      96,
+      0,
+      2,
+      0
+     ],
+     "amueller__word_cloud": [
+      73,
+      0,
+      -1,
+      0
+     ],
+     "cknd__stackprinter": [
+      20,
+      0,
+      0,
+      0
+     ],
+     "dbader__schedule": [
+      68,
+      -3,
+      0,
+      0
+     ],
+     "facelessuser__soupsieve": [
+      149,
+      -1,
+      -2,
+      -2
+     ],
+     "hukkin__tomli": [
+      60,
+      1,
+      1,
+      0
+     ],
+     "jd__tenacity": [
+      91,
+      0,
+      -1,
+      -1
+     ],
+     "jsvine__pdfplumber": [
+      141,
+      0,
+      -1,
+      0
+     ],
+     "mahmoud__boltons": [
+      60,
+      0,
+      1,
+      1
+     ],
+     "modin-project__modin": [
+      76,
+      1,
+      1,
+      1
+     ],
+     "msiemens__tinydb": [
+      7,
+      0,
+      0,
+      0
+     ],
+     "pallets__click": [
+      129,
+      0,
+      0,
+      2
+     ],
+     "pandas-dev__pandas": [
+      132,
+      -2,
+      1,
+      0
+     ],
+     "pydantic__pydantic": [
+      245,
+      -1,
+      2,
+      1
+     ],
+     "pylint-dev__astroid": [
+      354,
+      -3,
+      1,
+      1
+     ],
+     "python-jsonschema__jsonschema": [
+      116,
+      4,
+      3,
+      1
+     ],
+     "pyutils__line_profiler": [
+      114,
+      2,
+      -2,
+      -1
+     ],
+     "rubik__radon": [
+      66,
+      0,
+      0,
+      0
+     ],
+     "sqlfluff__sqlfluff": [
+      330,
+      -3,
+      -3,
+      -2
+     ],
+     "sunpy__sunpy": [
+      227,
+      0,
+      -1,
+      -2
+     ],
+     "un33k__python-slugify": [
+      136,
+      0,
+      3,
+      1
+     ]
+    }
+   }
+  }
+ },
+ "cuts": 9049,
+ "seen_instances": 1320
+}

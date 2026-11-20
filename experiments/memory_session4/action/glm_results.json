@@ -1,0 +1,144 @@
+{
+  "builds": {
+    "glm": {
+      "brier": 0.2215650032847495,
+      "hours": 1068.1586111111112,
+      "recovered": 2799,
+      "selected": 4097
+    },
+    "glm vs repo_status": {
+      "brier": {
+        "difference": -0.014658023264942614,
+        "macro_project_difference": -0.01952492819356792,
+        "project_boot95": [
+          -0.017002817842520973,
+          -0.012332825580158168
+        ],
+        "projects": 9930
+      },
+      "rescues_per_opportunity": {
+        "difference": -0.004002733574148199,
+        "macro_project_difference": 0.023977765148713432,
+        "project_boot95": [
+          -0.012303387050082023,
+          0.003964321110009911
+        ],
+        "projects": 9930
+      }
+    },
+    "recent8 vs glm": {
+      "brier": {
+        "difference": 0.004537705399011658,
+        "macro_project_difference": 0.005581758210480883,
+        "project_boot95": [
+          0.0034230458538798978,
+          0.005660217061878208
+        ],
+        "projects": 9930
+      },
+      "rescues_per_opportunity": {
+        "difference": -0.004051547398223177,
+        "macro_project_difference": 0.009507981391388849,
+        "project_boot95": [
+          -0.011840992387933465,
+          0.003031055900621118
+        ],
+        "projects": 9930
+      }
+    }
+  },
+  "jobs": {
+    "glm": {
+      "brier": 0.25467252904596865,
+      "hours": 31.486666666666668,
+      "recovered": 124,
+      "selected": 196
+    },
+    "glm vs repo_status": {
+      "brier": {
+        "difference": 0.013628772519170463,
+        "macro_project_difference": 0.009310921883011107,
+        "project_boot95": [
+          6.39496837804994e-05,
+          0.028055000015663682
+        ],
+        "projects": 508
+      },
+      "rescues_per_opportunity": {
+        "difference": -0.007150153217568948,
+        "macro_project_difference": -0.005994699032186194,
+        "project_boot95": [
+          -0.06162464985994398,
+          0.04153354632587859
+        ],
+        "projects": 508
+      }
+    },
+    "glm_type": {
+      "brier": 0.23511367602056082,
+      "hours": 34.18361111111111,
+      "recovered": 125,
+      "selected": 196
+    },
+    "glm_type vs glm": {
+      "brier": {
+        "difference": -0.019558853025407833,
+        "macro_project_difference": -0.010404866014365886,
+        "project_boot95": [
+          -0.03020401271825956,
+          -0.007970246879415985
+        ],
+        "projects": 508
+      },
+      "rescues_per_opportunity": {
+        "difference": 0.0010214504596527069,
+        "macro_project_difference": 0.006929704439119023,
+        "project_boot95": [
+          -0.02185792349726776,
+          0.0224390243902439
+        ],
+        "projects": 508
+      }
+    },
+    "recent8 vs glm": {
+      "brier": {
+        "difference": 0.00035363641851795537,
+        "macro_project_difference": 0.0009478378534527594,
+        "project_boot95": [
+          -0.009426707709834468,
+          0.011302524837824497
+        ],
+        "projects": 508
+      },
+      "rescues_per_opportunity": {
+        "difference": -0.007150153217568948,
+        "macro_project_difference": -0.007227119707862604,
+        "project_boot95": [
+          -0.0288153681963714,
+          0.012935323383084577
+        ],
+        "projects": 508
+      }
+    },
+    "typed vs glm_type": {
+      "brier": {
+        "difference": -0.013665916649079611,
+        "macro_project_difference": -0.011919564871641078,
+        "project_boot95": [
+          -0.02975746354597372,
+          0.0004260803386364085
+        ],
+        "projects": 508
+      },
+      "rescues_per_opportunity": {
+        "difference": 0.020429009193054137,
+        "macro_project_difference": -0.005612987235291241,
+        "project_boot95": [
+          -0.022172949002217297,
+          0.06796116504854369
+        ],
+        "projects": 508
+      }
+    }
+  }
+}

@@ -1,0 +1,1694 @@
+[
+  {
+    "id": "P01",
+    "block": 3,
+    "arm": "discriminating",
+    "case": "T80796472",
+    "family": "slug",
+    "observed_utc": "2026-11-16T14:37:32.195161+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "A.b_c+d",
+      "output": "ab-c-d"
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 1,
+    "target_mode": 1,
+    "heldout": [
+      "Yo_",
+      "ABC",
+      "a..b",
+      "9+4"
+    ],
+    "expected": [
+      "yo-",
+      "abc",
+      "ab",
+      "9-4"
+    ],
+    "submitted": [
+      "yo-",
+      "abc",
+      "ab",
+      "9-4"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.050558+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P01",
+    "block": 3,
+    "arm": "discriminating",
+    "case": "T1BD7E61B",
+    "family": "bucket",
+    "observed_utc": "2026-11-16T14:37:32.195184+00:00",
+    "status": "executed",
+    "observation": {
+      "input": 110,
+      "output": 11
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 2,
+    "target_mode": 0,
+    "heldout": [
+      109,
+      -12,
+      40,
+      23
+    ],
+    "expected": [
+      10,
+      -2,
+      4,
+      2
+    ],
+    "submitted": [
+      10,
+      0,
+      4,
+      2
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.050580+00:00",
+    "correct": [
+      true,
+      false,
+      true,
+      true
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P01",
+    "block": 3,
+    "arm": "discriminating",
+    "case": "T63C70CA6",
+    "family": "dates",
+    "observed_utc": "2026-11-16T14:37:32.195333+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "2024/02/14",
+      "output": null
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "2026.06.17",
+      "20201002",
+      "2028/02/29",
+      "2020-03-21"
+    ],
+    "expected": [
+      null,
+      null,
+      null,
+      "2020-03-21"
+    ],
+    "submitted": [
+      null,
+      null,
+      null,
+      "2020-03-21"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.050671+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P02",
+    "block": 1,
+    "arm": "fresh",
+    "case": "T7B592BB3",
+    "family": "length",
+    "observed_utc": "2026-11-16T14:37:32.201024+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "\r\n\ud83d\ude00\u0301\u0301\u0301",
+      "output": 6
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "y\u0302",
+      "ab\ud83d\ude0acd",
+      "Hi",
+      "\r\nQ"
+    ],
+    "expected": [
+      2,
+      5,
+      2,
+      3
+    ],
+    "submitted": [
+      2,
+      5,
+      2,
+      3
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.057709+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P02",
+    "block": 1,
+    "arm": "fresh",
+    "case": "T05AA9B77",
+    "family": "decimal",
+    "observed_utc": "2026-11-16T14:37:32.201115+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "+7",
+      "output": null
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 1,
+    "target_mode": 0,
+    "heldout": [
+      "2_9",
+      "91",
+      "86 ",
+      "+004"
+    ],
+    "expected": [
+      null,
+      91,
+      null,
+      null
+    ],
+    "submitted": [
+      null,
+      91,
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.057795+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P02",
+    "block": 1,
+    "arm": "fresh",
+    "case": "T89E8E2D0",
+    "family": "suffix",
+    "observed_utc": "2026-11-16T14:37:32.201125+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "a.tar.GZ",
+      "output": "gz"
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 2,
+    "heldout": [
+      "q.PDF",
+      "out.jar",
+      "src.tar.gz",
+      ".profile"
+    ],
+    "expected": [
+      "pdf",
+      "jar",
+      "gz",
+      "profile"
+    ],
+    "submitted": [
+      "pdf",
+      "jar",
+      "gz",
+      ""
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.057806+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P03",
+    "block": 3,
+    "arm": "ordinary",
+    "case": "T80796472",
+    "family": "slug",
+    "observed_utc": "2026-11-16T14:37:32.206931+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "A._+7",
+      "output": "a--7"
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 1,
+    "target_mode": 1,
+    "heldout": [
+      "Yo_",
+      "ABC",
+      "a..b",
+      "9+4"
+    ],
+    "expected": [
+      "yo-",
+      "abc",
+      "ab",
+      "9-4"
+    ],
+    "submitted": [
+      "yo-",
+      "abc",
+      "ab",
+      "9-4"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.063726+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P03",
+    "block": 3,
+    "arm": "ordinary",
+    "case": "T1BD7E61B",
+    "family": "bucket",
+    "observed_utc": "2026-11-16T14:37:32.206944+00:00",
+    "status": "executed",
+    "observation": {
+      "input": 110,
+      "output": 11
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 2,
+    "target_mode": 0,
+    "heldout": [
+      109,
+      -12,
+      40,
+      23
+    ],
+    "expected": [
+      10,
+      -2,
+      4,
+      2
+    ],
+    "submitted": [
+      10,
+      -2,
+      4,
+      2
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.063742+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P03",
+    "block": 3,
+    "arm": "ordinary",
+    "case": "T63C70CA6",
+    "family": "dates",
+    "observed_utc": "2026-11-16T14:37:32.206958+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "2024/01/02",
+      "output": null
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "2026.06.17",
+      "20201002",
+      "2028/02/29",
+      "2020-03-21"
+    ],
+    "expected": [
+      null,
+      null,
+      null,
+      "2020-03-21"
+    ],
+    "submitted": [
+      null,
+      null,
+      null,
+      "2020-03-21"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.063763+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P04",
+    "block": 1,
+    "arm": "ordinary",
+    "case": "T7B592BB3",
+    "family": "length",
+    "observed_utc": "2026-11-16T14:37:32.212161+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "\r\n\ud83d\ude00\u0300\u0301\u0302",
+      "output": 6
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "y\u0302",
+      "ab\ud83d\ude0acd",
+      "Hi",
+      "\r\nQ"
+    ],
+    "expected": [
+      2,
+      5,
+      2,
+      3
+    ],
+    "submitted": [
+      2,
+      5,
+      2,
+      3
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.069735+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P04",
+    "block": 1,
+    "arm": "ordinary",
+    "case": "T05AA9B77",
+    "family": "decimal",
+    "observed_utc": "2026-11-16T14:37:32.212178+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "+123",
+      "output": null
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 1,
+    "target_mode": 0,
+    "heldout": [
+      "2_9",
+      "91",
+      "86 ",
+      "+004"
+    ],
+    "expected": [
+      null,
+      91,
+      null,
+      null
+    ],
+    "submitted": [
+      null,
+      91,
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.069758+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P04",
+    "block": 1,
+    "arm": "ordinary",
+    "case": "T89E8E2D0",
+    "family": "suffix",
+    "observed_utc": "2026-11-16T14:37:32.212186+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "archive.tar.GZ",
+      "output": "gz"
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 2,
+    "heldout": [
+      "q.PDF",
+      "out.jar",
+      "src.tar.gz",
+      ".profile"
+    ],
+    "expected": [
+      "pdf",
+      "jar",
+      "gz",
+      "profile"
+    ],
+    "submitted": [
+      "pdf",
+      "jar",
+      "gz",
+      ""
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.069769+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P05",
+    "block": 2,
+    "arm": "discriminating",
+    "case": "T84710545",
+    "family": "length",
+    "observed_utc": "2026-11-16T14:37:32.218474+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "\r\n\ud83d\ude00\ud83d\ude00\u0300\u0301\u0302",
+      "output": 4
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 3,
+    "heldout": [
+      "Q\ud83d\udc0d",
+      "ab\r\nc",
+      "XYZ",
+      "e\u0301tt"
+    ],
+    "expected": [
+      2,
+      5,
+      3,
+      3
+    ],
+    "submitted": [
+      2,
+      5,
+      3,
+      3
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.075283+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P05",
+    "block": 2,
+    "arm": "discriminating",
+    "case": "T81ECAEA3",
+    "family": "decimal",
+    "observed_utc": "2026-11-16T14:37:32.218500+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "+17",
+      "output": 17
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": true,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 1,
+    "target_mode": 1,
+    "heldout": [
+      "+41",
+      "77",
+      "7_5_1",
+      " 42"
+    ],
+    "expected": [
+      41,
+      77,
+      null,
+      null
+    ],
+    "submitted": [
+      41,
+      77,
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.075308+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P05",
+    "block": 2,
+    "arm": "discriminating",
+    "case": "TC142BCAE",
+    "family": "suffix",
+    "observed_utc": "2026-11-16T14:37:32.218508+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "archive.tar.GZ",
+      "output": "gz"
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "README",
+      "bin.DLL",
+      ".trace",
+      "cache.tar.gz"
+    ],
+    "expected": [
+      "",
+      "dll",
+      "",
+      "gz"
+    ],
+    "submitted": [
+      "",
+      "dll",
+      "",
+      "gz"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.075317+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P06",
+    "block": 3,
+    "arm": "fresh",
+    "case": "T80796472",
+    "family": "slug",
+    "observed_utc": "2026-11-16T14:37:32.224482+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "A._+9",
+      "output": "a--9"
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 1,
+    "target_mode": 1,
+    "heldout": [
+      "Yo_",
+      "ABC",
+      "a..b",
+      "9+4"
+    ],
+    "expected": [
+      "yo-",
+      "abc",
+      "ab",
+      "9-4"
+    ],
+    "submitted": [
+      "yo-",
+      "abc",
+      "ab",
+      "9-4"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.081678+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P06",
+    "block": 3,
+    "arm": "fresh",
+    "case": "T1BD7E61B",
+    "family": "bucket",
+    "observed_utc": "2026-11-16T14:37:32.224498+00:00",
+    "status": "executed",
+    "observation": {
+      "input": 110,
+      "output": 11
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 2,
+    "target_mode": 0,
+    "heldout": [
+      109,
+      -12,
+      40,
+      23
+    ],
+    "expected": [
+      10,
+      -2,
+      4,
+      2
+    ],
+    "submitted": [
+      10,
+      -2,
+      4,
+      2
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.081712+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P06",
+    "block": 3,
+    "arm": "fresh",
+    "case": "T63C70CA6",
+    "family": "dates",
+    "observed_utc": "2026-11-16T14:37:32.224512+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "2024/02/29",
+      "output": null
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "2026.06.17",
+      "20201002",
+      "2028/02/29",
+      "2020-03-21"
+    ],
+    "expected": [
+      null,
+      null,
+      null,
+      "2020-03-21"
+    ],
+    "submitted": [
+      null,
+      null,
+      null,
+      "2020-03-21"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.081737+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P07",
+    "block": 1,
+    "arm": "discriminating",
+    "case": "T7B592BB3",
+    "family": "length",
+    "observed_utc": "2026-11-16T14:37:32.229969+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "\r\n\ud83d\ude00\u0301\u0301",
+      "output": 5
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "y\u0302",
+      "ab\ud83d\ude0acd",
+      "Hi",
+      "\r\nQ"
+    ],
+    "expected": [
+      2,
+      5,
+      2,
+      3
+    ],
+    "submitted": [
+      2,
+      5,
+      2,
+      3
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.087850+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P07",
+    "block": 1,
+    "arm": "discriminating",
+    "case": "T05AA9B77",
+    "family": "decimal",
+    "observed_utc": "2026-11-16T14:37:32.229990+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "1_2",
+      "output": null
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 1,
+    "target_mode": 0,
+    "heldout": [
+      "2_9",
+      "91",
+      "86 ",
+      "+004"
+    ],
+    "expected": [
+      null,
+      91,
+      null,
+      null
+    ],
+    "submitted": [
+      null,
+      91,
+      null,
+      4
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.087873+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P07",
+    "block": 1,
+    "arm": "discriminating",
+    "case": "T89E8E2D0",
+    "family": "suffix",
+    "observed_utc": "2026-11-16T14:37:32.230000+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "x.tar.GZ",
+      "output": "gz"
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 2,
+    "heldout": [
+      "q.PDF",
+      "out.jar",
+      "src.tar.gz",
+      ".profile"
+    ],
+    "expected": [
+      "pdf",
+      "jar",
+      "gz",
+      "profile"
+    ],
+    "submitted": [
+      "pdf",
+      "jar",
+      "gz",
+      ""
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.087882+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P08",
+    "block": 2,
+    "arm": "fresh",
+    "case": "T84710545",
+    "family": "length",
+    "observed_utc": "2026-11-16T14:37:32.235530+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "\r\n\ud83d\ude00a\u0301\u0302",
+      "output": 4
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 3,
+    "heldout": [
+      "Q\ud83d\udc0d",
+      "ab\r\nc",
+      "XYZ",
+      "e\u0301tt"
+    ],
+    "expected": [
+      2,
+      5,
+      3,
+      3
+    ],
+    "submitted": [
+      2,
+      5,
+      3,
+      3
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.093631+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P08",
+    "block": 2,
+    "arm": "fresh",
+    "case": "T81ECAEA3",
+    "family": "decimal",
+    "observed_utc": "2026-11-16T14:37:32.235561+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "+1",
+      "output": 1
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 1,
+    "target_mode": 1,
+    "heldout": [
+      "+41",
+      "77",
+      "7_5_1",
+      " 42"
+    ],
+    "expected": [
+      41,
+      77,
+      null,
+      null
+    ],
+    "submitted": [
+      41,
+      77,
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.093653+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P08",
+    "block": 2,
+    "arm": "fresh",
+    "case": "TC142BCAE",
+    "family": "suffix",
+    "observed_utc": "2026-11-16T14:37:32.235568+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "a.tar.GZ",
+      "output": "gz"
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "README",
+      "bin.DLL",
+      ".trace",
+      "cache.tar.gz"
+    ],
+    "expected": [
+      "",
+      "dll",
+      "",
+      "gz"
+    ],
+    "submitted": [
+      "",
+      "dll",
+      "",
+      "gz"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.093662+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P09",
+    "block": 4,
+    "arm": "ordinary",
+    "case": "T2FE9C8C5",
+    "family": "dates",
+    "observed_utc": "2026-11-16T14:37:32.241148+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "2024/01/02",
+      "output": null
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 3,
+    "heldout": [
+      "2021.04.01",
+      "2030-02-17",
+      "2017/10/04",
+      "20190611"
+    ],
+    "expected": [
+      null,
+      "2030-02-17",
+      null,
+      "2019-06-11"
+    ],
+    "submitted": [
+      null,
+      "2030-02-17",
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.099742+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P09",
+    "block": 4,
+    "arm": "ordinary",
+    "case": "TB4F86046",
+    "family": "bucket",
+    "observed_utc": "2026-11-16T14:37:32.241165+00:00",
+    "status": "executed",
+    "observation": {
+      "input": 110,
+      "output": 11
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 2,
+    "target_mode": 2,
+    "heldout": [
+      57,
+      128,
+      70,
+      -5
+    ],
+    "expected": [
+      5,
+      12,
+      7,
+      0
+    ],
+    "submitted": [
+      5,
+      12,
+      7,
+      -1
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.099756+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P09",
+    "block": 4,
+    "arm": "ordinary",
+    "case": "T6F7E7FF6",
+    "family": "slug",
+    "observed_utc": "2026-11-16T14:37:32.241181+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "._+",
+      "output": "---"
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 1,
+    "target_mode": 0,
+    "heldout": [
+      "a!b",
+      "Ab.Z",
+      "P_0",
+      "Z++"
+    ],
+    "expected": [
+      "a-b",
+      "ab-z",
+      "p-0",
+      "z--"
+    ],
+    "submitted": [
+      "a-b",
+      "ab-z",
+      "p-0",
+      "z--"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.099770+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P10",
+    "block": 4,
+    "arm": "discriminating",
+    "case": "T2FE9C8C5",
+    "family": "dates",
+    "observed_utc": "2026-11-16T14:37:32.247171+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "2024/02/14",
+      "output": null
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 3,
+    "heldout": [
+      "2021.04.01",
+      "2030-02-17",
+      "2017/10/04",
+      "20190611"
+    ],
+    "expected": [
+      null,
+      "2030-02-17",
+      null,
+      "2019-06-11"
+    ],
+    "submitted": [
+      null,
+      "2030-02-17",
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.105513+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P10",
+    "block": 4,
+    "arm": "discriminating",
+    "case": "TB4F86046",
+    "family": "bucket",
+    "observed_utc": "2026-11-16T14:37:32.247187+00:00",
+    "status": "executed",
+    "observation": {
+      "input": 110,
+      "output": 11
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 2,
+    "target_mode": 2,
+    "heldout": [
+      57,
+      128,
+      70,
+      -5
+    ],
+    "expected": [
+      5,
+      12,
+      7,
+      0
+    ],
+    "submitted": [
+      5,
+      12,
+      7,
+      0
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.105526+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P10",
+    "block": 4,
+    "arm": "discriminating",
+    "case": "T6F7E7FF6",
+    "family": "slug",
+    "observed_utc": "2026-11-16T14:37:32.247202+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "A._+",
+      "output": "a---"
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 1,
+    "target_mode": 0,
+    "heldout": [
+      "a!b",
+      "Ab.Z",
+      "P_0",
+      "Z++"
+    ],
+    "expected": [
+      "a-b",
+      "ab-z",
+      "p-0",
+      "z--"
+    ],
+    "submitted": [
+      "a-b",
+      "ab-z",
+      "p-0",
+      "z--"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.105544+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P11",
+    "block": 2,
+    "arm": "ordinary",
+    "case": "T84710545",
+    "family": "length",
+    "observed_utc": "2026-11-16T14:37:32.252969+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "a\r\n\ud83d\ude00\u0300\u0301",
+      "output": 4
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 3,
+    "heldout": [
+      "Q\ud83d\udc0d",
+      "ab\r\nc",
+      "XYZ",
+      "e\u0301tt"
+    ],
+    "expected": [
+      2,
+      5,
+      3,
+      3
+    ],
+    "submitted": [
+      2,
+      5,
+      3,
+      3
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.111745+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P11",
+    "block": 2,
+    "arm": "ordinary",
+    "case": "T81ECAEA3",
+    "family": "decimal",
+    "observed_utc": "2026-11-16T14:37:32.252989+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "+123",
+      "output": 123
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 1,
+    "target_mode": 1,
+    "heldout": [
+      "+41",
+      "77",
+      "7_5_1",
+      " 42"
+    ],
+    "expected": [
+      41,
+      77,
+      null,
+      null
+    ],
+    "submitted": [
+      41,
+      77,
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.111767+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P11",
+    "block": 2,
+    "arm": "ordinary",
+    "case": "TC142BCAE",
+    "family": "suffix",
+    "observed_utc": "2026-11-16T14:37:32.252997+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "archive.tar.GZ",
+      "output": "gz"
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 0,
+    "target_mode": 0,
+    "heldout": [
+      "README",
+      "bin.DLL",
+      ".trace",
+      "cache.tar.gz"
+    ],
+    "expected": [
+      "",
+      "dll",
+      "",
+      "gz"
+    ],
+    "submitted": [
+      "",
+      "dll",
+      "",
+      "gz"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.111777+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  },
+  {
+    "id": "P12",
+    "block": 4,
+    "arm": "fresh",
+    "case": "T2FE9C8C5",
+    "family": "dates",
+    "observed_utc": "2026-11-16T14:37:32.258374+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "2026/11/16",
+      "output": null
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 0,
+    "target_mode": 3,
+    "heldout": [
+      "2021.04.01",
+      "2030-02-17",
+      "2017/10/04",
+      "20190611"
+    ],
+    "expected": [
+      null,
+      "2030-02-17",
+      null,
+      "2019-06-11"
+    ],
+    "submitted": [
+      null,
+      "2030-02-17",
+      null,
+      null
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.117700+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P12",
+    "block": 4,
+    "arm": "fresh",
+    "case": "TB4F86046",
+    "family": "bucket",
+    "observed_utc": "2026-11-16T14:37:32.258389+00:00",
+    "status": "executed",
+    "observation": {
+      "input": 110,
+      "output": 11
+    },
+    "separates_historical_alternatives": false,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": true,
+    "source_mode": 2,
+    "target_mode": 2,
+    "heldout": [
+      57,
+      128,
+      70,
+      -5
+    ],
+    "expected": [
+      5,
+      12,
+      7,
+      0
+    ],
+    "submitted": [
+      5,
+      12,
+      7,
+      -1
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.117719+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      false
+    ],
+    "perfect": false,
+    "n_correct": 3
+  },
+  {
+    "id": "P12",
+    "block": 4,
+    "arm": "fresh",
+    "case": "T6F7E7FF6",
+    "family": "slug",
+    "observed_utc": "2026-11-16T14:37:32.258403+00:00",
+    "status": "executed",
+    "observation": {
+      "input": "A._+B",
+      "output": "a---b"
+    },
+    "separates_historical_alternatives": true,
+    "replayed_archived_discriminator": false,
+    "overlaps_heldout": false,
+    "stable": false,
+    "source_mode": 1,
+    "target_mode": 0,
+    "heldout": [
+      "a!b",
+      "Ab.Z",
+      "P_0",
+      "Z++"
+    ],
+    "expected": [
+      "a-b",
+      "ab-z",
+      "p-0",
+      "z--"
+    ],
+    "submitted": [
+      "a-b",
+      "ab-z",
+      "p-0",
+      "z--"
+    ],
+    "decision_status": "ok",
+    "scored_utc": "2026-11-16T14:39:02.117739+00:00",
+    "correct": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "perfect": true,
+    "n_correct": 4
+  }
+]

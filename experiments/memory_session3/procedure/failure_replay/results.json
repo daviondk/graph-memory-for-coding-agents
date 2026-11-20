@@ -1,0 +1,901 @@
+{
+ "den": {
+  "all_calls": 53380,
+  "known_single": 48862,
+  "known_readonly": 15746,
+  "observed_nonzero": 4995,
+  "visible_nonzero": 4846
+ },
+ "den_by_model": {
+  "claude": {
+   "all_calls": 15448,
+   "known_single": 13115,
+   "known_readonly": 3344,
+   "observed_nonzero": 1444,
+   "visible_nonzero": 1437
+  },
+  "codex": {
+   "all_calls": 18418,
+   "known_single": 16674,
+   "observed_nonzero": 2012,
+   "visible_nonzero": 1988,
+   "known_readonly": 4953
+  },
+  "gemini": {
+   "all_calls": 19514,
+   "known_single": 19073,
+   "known_readonly": 7449,
+   "observed_nonzero": 1539,
+   "visible_nonzero": 1421
+  }
+ },
+ "unique_issues": 500,
+ "methods": {
+  "adjacent": {
+   "adjacent": {
+    "warnings": 13,
+    "scored": 13,
+    "issues": 10,
+    "sessions": 10,
+    "unique_commands": 10,
+    "again": 9,
+    "same_rc": 9,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 4
+   },
+   "all": {
+    "warnings": 13,
+    "scored": 13,
+    "issues": 10,
+    "sessions": 10,
+    "unique_commands": 10,
+    "again": 9,
+    "same_rc": 9,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 4,
+    "repeat_fail_ci95": [
+     0.4166666666666667,
+     0.9166666666666666
+    ],
+    "joint_ci95": [
+     0.4166666666666667,
+     0.9166666666666666
+    ]
+   },
+   "change_since": {
+    "warnings": 0,
+    "scored": 0,
+    "issues": 0,
+    "sessions": 0,
+    "unique_commands": 0,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 0
+   },
+   "model_claude": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "model_codex": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "model_gemini": {
+    "warnings": 10,
+    "scored": 10,
+    "issues": 7,
+    "sessions": 7,
+    "unique_commands": 7,
+    "again": 7,
+    "same_rc": 7,
+    "same_output": 7,
+    "same_pair": 7,
+    "successful": 3
+   },
+   "pure": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "pure_adjacent": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "pure_gemini": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "write_since": {
+    "warnings": 0,
+    "scored": 0,
+    "issues": 0,
+    "sessions": 0,
+    "unique_commands": 0,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 0
+   }
+  },
+  "guard1": {
+   "adjacent": {
+    "warnings": 13,
+    "scored": 13,
+    "issues": 10,
+    "sessions": 10,
+    "unique_commands": 10,
+    "again": 9,
+    "same_rc": 9,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 4
+   },
+   "all": {
+    "warnings": 14,
+    "scored": 14,
+    "issues": 11,
+    "sessions": 11,
+    "unique_commands": 11,
+    "again": 10,
+    "same_rc": 10,
+    "same_output": 10,
+    "same_pair": 10,
+    "successful": 4,
+    "repeat_fail_ci95": [
+     0.46153846153846156,
+     0.9230769230769231
+    ],
+    "joint_ci95": [
+     0.46153846153846156,
+     0.9230769230769231
+    ]
+   },
+   "change_since": {
+    "warnings": 0,
+    "scored": 0,
+    "issues": 0,
+    "sessions": 0,
+    "unique_commands": 0,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 0
+   },
+   "model_claude": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "model_codex": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "model_gemini": {
+    "warnings": 11,
+    "scored": 11,
+    "issues": 8,
+    "sessions": 8,
+    "unique_commands": 8,
+    "again": 8,
+    "same_rc": 8,
+    "same_output": 8,
+    "same_pair": 8,
+    "successful": 3
+   },
+   "pure": {
+    "warnings": 3,
+    "scored": 3,
+    "issues": 3,
+    "sessions": 3,
+    "unique_commands": 3,
+    "again": 2,
+    "same_rc": 2,
+    "same_output": 2,
+    "same_pair": 2,
+    "successful": 1
+   },
+   "pure_adjacent": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "pure_gemini": {
+    "warnings": 3,
+    "scored": 3,
+    "issues": 3,
+    "sessions": 3,
+    "unique_commands": 3,
+    "again": 2,
+    "same_rc": 2,
+    "same_output": 2,
+    "same_pair": 2,
+    "successful": 1
+   },
+   "pure_readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "write_since": {
+    "warnings": 0,
+    "scored": 0,
+    "issues": 0,
+    "sessions": 0,
+    "unique_commands": 0,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 0
+   }
+  },
+  "guard8": {
+   "adjacent": {
+    "warnings": 13,
+    "scored": 13,
+    "issues": 10,
+    "sessions": 10,
+    "unique_commands": 10,
+    "again": 9,
+    "same_rc": 9,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 4
+   },
+   "all": {
+    "warnings": 14,
+    "scored": 14,
+    "issues": 11,
+    "sessions": 11,
+    "unique_commands": 11,
+    "again": 10,
+    "same_rc": 10,
+    "same_output": 10,
+    "same_pair": 10,
+    "successful": 4,
+    "repeat_fail_ci95": [
+     0.46153846153846156,
+     0.9230769230769231
+    ],
+    "joint_ci95": [
+     0.46153846153846156,
+     0.9230769230769231
+    ]
+   },
+   "change_since": {
+    "warnings": 0,
+    "scored": 0,
+    "issues": 0,
+    "sessions": 0,
+    "unique_commands": 0,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 0
+   },
+   "model_claude": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "model_codex": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "model_gemini": {
+    "warnings": 11,
+    "scored": 11,
+    "issues": 8,
+    "sessions": 8,
+    "unique_commands": 8,
+    "again": 8,
+    "same_rc": 8,
+    "same_output": 8,
+    "same_pair": 8,
+    "successful": 3
+   },
+   "pure": {
+    "warnings": 3,
+    "scored": 3,
+    "issues": 3,
+    "sessions": 3,
+    "unique_commands": 3,
+    "again": 2,
+    "same_rc": 2,
+    "same_output": 2,
+    "same_pair": 2,
+    "successful": 1
+   },
+   "pure_adjacent": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "pure_gemini": {
+    "warnings": 3,
+    "scored": 3,
+    "issues": 3,
+    "sessions": 3,
+    "unique_commands": 3,
+    "again": 2,
+    "same_rc": 2,
+    "same_output": 2,
+    "same_pair": 2,
+    "successful": 1
+   },
+   "pure_readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "write_since": {
+    "warnings": 0,
+    "scored": 0,
+    "issues": 0,
+    "sessions": 0,
+    "unique_commands": 0,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 0
+   }
+  },
+  "stale8": {
+   "adjacent": {
+    "warnings": 13,
+    "scored": 13,
+    "issues": 10,
+    "sessions": 10,
+    "unique_commands": 10,
+    "again": 9,
+    "same_rc": 9,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 4
+   },
+   "all": {
+    "warnings": 915,
+    "scored": 915,
+    "issues": 359,
+    "sessions": 553,
+    "unique_commands": 606,
+    "again": 453,
+    "same_rc": 422,
+    "same_output": 37,
+    "same_pair": 37,
+    "successful": 462,
+    "repeat_fail_ci95": [
+     0.4581861012956419,
+     0.5318930041152263
+    ],
+    "joint_ci95": [
+     0.023333333333333334,
+     0.05982905982905983
+    ]
+   },
+   "change_since": {
+    "warnings": 5,
+    "scored": 5,
+    "issues": 5,
+    "sessions": 5,
+    "unique_commands": 5,
+    "again": 3,
+    "same_rc": 3,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 2
+   },
+   "model_claude": {
+    "warnings": 290,
+    "scored": 290,
+    "issues": 182,
+    "sessions": 182,
+    "unique_commands": 189,
+    "again": 154,
+    "same_rc": 142,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 136
+   },
+   "model_codex": {
+    "warnings": 356,
+    "scored": 356,
+    "issues": 213,
+    "sessions": 213,
+    "unique_commands": 234,
+    "again": 196,
+    "same_rc": 179,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 160
+   },
+   "model_gemini": {
+    "warnings": 269,
+    "scored": 269,
+    "issues": 158,
+    "sessions": 158,
+    "unique_commands": 183,
+    "again": 103,
+    "same_rc": 101,
+    "same_output": 19,
+    "same_pair": 19,
+    "successful": 166
+   },
+   "opaque": {
+    "warnings": 901,
+    "scored": 901,
+    "issues": 357,
+    "sessions": 548,
+    "unique_commands": 601,
+    "again": 443,
+    "same_rc": 412,
+    "same_output": 27,
+    "same_pair": 27,
+    "successful": 458
+   },
+   "opaque_no_proven_write": {
+    "warnings": 891,
+    "scored": 891,
+    "issues": 357,
+    "sessions": 543,
+    "unique_commands": 596,
+    "again": 436,
+    "same_rc": 405,
+    "same_output": 27,
+    "same_pair": 27,
+    "successful": 455
+   },
+   "pure": {
+    "warnings": 12,
+    "scored": 12,
+    "issues": 9,
+    "sessions": 9,
+    "unique_commands": 10,
+    "again": 4,
+    "same_rc": 4,
+    "same_output": 4,
+    "same_pair": 4,
+    "successful": 8
+   },
+   "pure_adjacent": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "pure_claude": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "pure_codex": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 1
+   },
+   "pure_gemini": {
+    "warnings": 10,
+    "scored": 10,
+    "issues": 7,
+    "sessions": 7,
+    "unique_commands": 8,
+    "again": 3,
+    "same_rc": 3,
+    "same_output": 3,
+    "same_pair": 3,
+    "successful": 7
+   },
+   "pure_opaque": {
+    "warnings": 9,
+    "scored": 9,
+    "issues": 7,
+    "sessions": 7,
+    "unique_commands": 8,
+    "again": 2,
+    "same_rc": 2,
+    "same_output": 2,
+    "same_pair": 2,
+    "successful": 7
+   },
+   "pure_readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "write_since": {
+    "warnings": 10,
+    "scored": 10,
+    "issues": 8,
+    "sessions": 9,
+    "unique_commands": 9,
+    "again": 7,
+    "same_rc": 7,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 3
+   }
+  },
+  "history": {
+   "adjacent": {
+    "warnings": 13,
+    "scored": 13,
+    "issues": 10,
+    "sessions": 10,
+    "unique_commands": 10,
+    "again": 9,
+    "same_rc": 9,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 4
+   },
+   "all": {
+    "warnings": 919,
+    "scored": 919,
+    "issues": 361,
+    "sessions": 555,
+    "unique_commands": 609,
+    "again": 454,
+    "same_rc": 423,
+    "same_output": 37,
+    "same_pair": 37,
+    "successful": 465,
+    "repeat_fail_ci95": [
+     0.45622119815668205,
+     0.5295983086680761
+    ],
+    "joint_ci95": [
+     0.023784901758014478,
+     0.0592841163310962
+    ]
+   },
+   "change_since": {
+    "warnings": 5,
+    "scored": 5,
+    "issues": 5,
+    "sessions": 5,
+    "unique_commands": 5,
+    "again": 3,
+    "same_rc": 3,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 2
+   },
+   "model_claude": {
+    "warnings": 290,
+    "scored": 290,
+    "issues": 182,
+    "sessions": 182,
+    "unique_commands": 189,
+    "again": 154,
+    "same_rc": 142,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 136
+   },
+   "model_codex": {
+    "warnings": 356,
+    "scored": 356,
+    "issues": 213,
+    "sessions": 213,
+    "unique_commands": 234,
+    "again": 196,
+    "same_rc": 179,
+    "same_output": 9,
+    "same_pair": 9,
+    "successful": 160
+   },
+   "model_gemini": {
+    "warnings": 273,
+    "scored": 273,
+    "issues": 160,
+    "sessions": 160,
+    "unique_commands": 186,
+    "again": 104,
+    "same_rc": 102,
+    "same_output": 19,
+    "same_pair": 19,
+    "successful": 169
+   },
+   "opaque": {
+    "warnings": 905,
+    "scored": 905,
+    "issues": 359,
+    "sessions": 550,
+    "unique_commands": 604,
+    "again": 444,
+    "same_rc": 413,
+    "same_output": 27,
+    "same_pair": 27,
+    "successful": 461
+   },
+   "opaque_no_proven_write": {
+    "warnings": 895,
+    "scored": 895,
+    "issues": 359,
+    "sessions": 545,
+    "unique_commands": 599,
+    "again": 437,
+    "same_rc": 406,
+    "same_output": 27,
+    "same_pair": 27,
+    "successful": 458
+   },
+   "pure": {
+    "warnings": 12,
+    "scored": 12,
+    "issues": 9,
+    "sessions": 9,
+    "unique_commands": 10,
+    "again": 4,
+    "same_rc": 4,
+    "same_output": 4,
+    "same_pair": 4,
+    "successful": 8
+   },
+   "pure_adjacent": {
+    "warnings": 2,
+    "scored": 2,
+    "issues": 2,
+    "sessions": 2,
+    "unique_commands": 2,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 1
+   },
+   "pure_claude": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "pure_codex": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 0,
+    "same_rc": 0,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 1
+   },
+   "pure_gemini": {
+    "warnings": 10,
+    "scored": 10,
+    "issues": 7,
+    "sessions": 7,
+    "unique_commands": 8,
+    "again": 3,
+    "same_rc": 3,
+    "same_output": 3,
+    "same_pair": 3,
+    "successful": 7
+   },
+   "pure_opaque": {
+    "warnings": 9,
+    "scored": 9,
+    "issues": 7,
+    "sessions": 7,
+    "unique_commands": 8,
+    "again": 2,
+    "same_rc": 2,
+    "same_output": 2,
+    "same_pair": 2,
+    "successful": 7
+   },
+   "pure_readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "readonly": {
+    "warnings": 1,
+    "scored": 1,
+    "issues": 1,
+    "sessions": 1,
+    "unique_commands": 1,
+    "again": 1,
+    "same_rc": 1,
+    "same_output": 1,
+    "same_pair": 1,
+    "successful": 0
+   },
+   "write_since": {
+    "warnings": 10,
+    "scored": 10,
+    "issues": 8,
+    "sessions": 9,
+    "unique_commands": 9,
+    "again": 7,
+    "same_rc": 7,
+    "same_output": 0,
+    "same_pair": 0,
+    "successful": 3
+   }
+  }
+ }
+}

@@ -1,0 +1,44 @@
+{
+  "assumptions": "Independent paired questions; a two-sided exact conditional sign test at 0.05. Hypothetical win/loss probabilities; no adjustment for clustered repositories, missing judgments or multiple comparisons.",
+  "scenarios": [
+    {
+      "win_probability": 0.1,
+      "loss_probability": 0.05,
+      "power": {
+        "40": 0.04563994789816678,
+        "100": 0.17831742517997567,
+        "200": 0.3733274607061215,
+        "400": 0.7027133246298776,
+        "800": 0.9508870645758334,
+        "1600": 0.9993636217975534
+      },
+      "first_n_reaching_80_percent": 498
+    },
+    {
+      "win_probability": 0.15,
+      "loss_probability": 0.1,
+      "power": {
+        "40": 0.04914684530317984,
+        "100": 0.11919687185703937,
+        "200": 0.24974485084794484,
+        "400": 0.4789656681673341,
+        "800": 0.7917382853390922,
+        "1600": 0.9779578597771944
+      },
+      "first_n_reaching_80_percent": 817
+    },
+    {
+      "win_probability": 0.12,
+      "loss_probability": 0.02,
+      "power": {
+        "40": 0.19989306332326823,
+        "100": 0.7337745486941106,
+        "200": 0.9736358670139151,
+        "400": 0.9999142615697793,
+        "800": 0.9999999997668199,
+        "1600": 0.9999999999999564
+      },
+      "first_n_reaching_80_percent": 114
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+ "checked": {
+  "primary_A": {
+   "rows": 639,
+   "methods": [
+    "lru",
+    "point",
+    "typed",
+    "mixed",
+    "dict_lru",
+    "dict_mixed",
+    "dict_center",
+    "dict_neighbor",
+    "cal_pages",
+    "cal_center",
+    "cal_neighbor",
+    "plain_neighbor"
+   ]
+  },
+  "ablation_A": {
+   "rows": 639,
+   "methods": [
+    "cal_add",
+    "cal_first",
+    "cal_pages"
+   ]
+  },
+  "primary_B": {
+   "rows": 535,
+   "methods": [
+    "lru",
+    "point",
+    "typed",
+    "mixed",
+    "dict_lru",
+    "dict_mixed",
+    "dict_center",
+    "dict_neighbor",
+    "cal_pages",
+    "cal_center",
+    "cal_neighbor",
+    "plain_neighbor"
+   ]
+  },
+  "ablation_B": {
+   "rows": 535,
+   "methods": [
+    "cal_add",
+    "cal_first",
+    "cal_pages"
+   ]
+  },
+  "primary_C": {
+   "rows": 833,
+   "methods": [
+    "lru",
+    "point",
+    "typed",
+    "mixed",
+    "dict_lru",
+    "dict_mixed",
+    "dict_center",
+    "cal_pages",
+    "cal_center",
+    "cal_neighbor"
+   ]
+  },
+  "ablation_C": {
+   "rows": 833,
+   "methods": [
+    "cal_add",
+    "cal_first",
+    "cal_pages"
+   ]
+  },
+  "anchor_A": {
+   "rows": 637,
+   "methods": [
+    "flat_original",
+    "flat_anchor",
+    "cap_original",
+    "cap_anchor"
+   ]
+  },
+  "anchor_B": {
+   "rows": 534,
+   "methods": [
+    "flat_original",
+    "flat_anchor",
+    "cap_original",
+    "cap_anchor"
+   ]
+  },
+  "anchor_C": {
+   "rows": 831,
+   "methods": [
+    "flat_original",
+    "flat_anchor",
+    "cap_original",
+    "cap_anchor"
+   ]
+  },
+  "Kimi_writer": {
+   "rows": 218,
+   "methods": [
+    "lru",
+    "point",
+    "typed",
+    "mixed",
+    "dict_lru",
+    "dict_mixed",
+    "cal_pages",
+    "cal_neighbor"
+   ]
+  },
+  "Kimi_anchor": {
+   "rows": 218,
+   "methods": [
+    "flat_original",
+    "flat_anchor",
+    "cap_original",
+    "cap_anchor"
+   ]
+  },
+  "factorial_C": {
+   "rows": 831,
+   "methods": [
+    "cal_original",
+    "cal_anchor",
+    "cap_original",
+    "cap_anchor"
+   ]
+  },
+  "factorial_Kimi": {
+   "rows": 218,
+   "methods": [
+    "cal_original",
+    "cal_anchor",
+    "cap_original",
+    "cap_anchor"
+   ]
+  }
+ },
+ "disjoint_primary": true,
+ "shared_issues_other_agent": 101,
+ "scoring_locks": 3
+}

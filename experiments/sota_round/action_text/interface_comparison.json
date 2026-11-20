@@ -1,0 +1,73 @@
+{
+  "n_tasks": 34,
+  "cell_pairs": 102,
+  "unchanged_payload_fields": [
+    "issue",
+    "existing_files",
+    "memory"
+  ],
+  "assignment_sha256": "f5357c28135e74f104ad0513385135b6db4e1b85141a9505de491a237d4b99df",
+  "plain_minus_json_by_arm": {
+    "raw": {
+      "n": 34,
+      "wins": 5,
+      "losses": 0,
+      "ties": 29,
+      "delta": 0.14705882352941177,
+      "paired_percentile_ci95": [
+        0.029411764705882353,
+        0.2647058823529412
+      ],
+      "exact_two_sided_mcnemar": 0.0625,
+      "fixed": [
+        "ts-append-only",
+        "ts-mig-name",
+        "ts-natural-order",
+        "ts-schema-additive",
+        "ts-semver-pin"
+      ],
+      "harmed": []
+    },
+    "receipt": {
+      "n": 34,
+      "wins": 4,
+      "losses": 1,
+      "ties": 29,
+      "delta": 0.08823529411764706,
+      "paired_percentile_ci95": [
+        -0.029411764705882353,
+        0.20588235294117646
+      ],
+      "exact_two_sided_mcnemar": 0.375,
+      "fixed": [
+        "ts-append-only",
+        "ts-natural-order",
+        "ts-schema-additive",
+        "ts-semver-pin"
+      ],
+      "harmed": [
+        "ts-ignore-gen"
+      ]
+    },
+    "empty": {
+      "n": 34,
+      "wins": 3,
+      "losses": 1,
+      "ties": 30,
+      "delta": 0.058823529411764705,
+      "paired_percentile_ci95": [
+        -0.058823529411764705,
+        0.17647058823529413
+      ],
+      "exact_two_sided_mcnemar": 0.625,
+      "fixed": [
+        "ts-append-only",
+        "ts-natural-order",
+        "ts-semver-pin"
+      ],
+      "harmed": [
+        "ts-ignore-gen"
+      ]
+    }
+  }
+}

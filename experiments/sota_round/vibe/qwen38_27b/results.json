@@ -1,0 +1,154 @@
+{
+  "design": "2 purposively chosen targets x 2 paired seeds x 5 methods",
+  "solver": "openai/qwen38-27b-ud-q4km",
+  "unrun": [],
+  "by_method": {
+    "base": {
+      "episodes": 4,
+      "resolved": 3,
+      "submitted": 4,
+      "nonempty_patches": 4,
+      "tests_executed": 4,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          1,
+          1
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          1,
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 62,
+        "calls_with_usage": 62,
+        "calls_accounted": 62,
+        "input_tokens": 469126,
+        "output_tokens": 7604,
+        "duration_s": 711.6
+      }
+    },
+    "distractor": {
+      "episodes": 4,
+      "resolved": 2,
+      "submitted": 4,
+      "nonempty_patches": 4,
+      "tests_executed": 4,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          1,
+          1
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0,
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 68,
+        "calls_with_usage": 68,
+        "calls_accounted": 68,
+        "input_tokens": 577113,
+        "output_tokens": 7796,
+        "duration_s": 787.4
+      }
+    },
+    "raw_bm25": {
+      "episodes": 4,
+      "resolved": 2,
+      "submitted": 4,
+      "nonempty_patches": 4,
+      "tests_executed": 4,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          1,
+          1
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0,
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 61,
+        "calls_with_usage": 61,
+        "calls_accounted": 61,
+        "input_tokens": 435667,
+        "output_tokens": 7263,
+        "duration_s": 599.2
+      }
+    },
+    "action_receipt": {
+      "episodes": 4,
+      "resolved": 3,
+      "submitted": 4,
+      "nonempty_patches": 4,
+      "tests_executed": 4,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          1,
+          1
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          1,
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 70,
+        "calls_with_usage": 70,
+        "calls_accounted": 70,
+        "input_tokens": 516345,
+        "output_tokens": 9237,
+        "duration_s": 772.7
+      }
+    },
+    "prior_files": {
+      "episodes": 4,
+      "resolved": 2,
+      "submitted": 4,
+      "nonempty_patches": 4,
+      "tests_executed": 4,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          1,
+          1
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0,
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 52,
+        "calls_with_usage": 52,
+        "calls_accounted": 52,
+        "input_tokens": 362702,
+        "output_tokens": 6899,
+        "duration_s": 561.3
+      }
+    }
+  },
+  "interrupted": [
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "prior_files",
+      "seed": 0,
+      "agent_calls": 22,
+      "calls_with_usage": 22,
+      "input_tokens": 217256,
+      "output_tokens": 2692,
+      "exit_status": "",
+      "trajectory_sha256": "7641241b26514128385e92ed1cf16546ac895fb5c417c67f88c73e9abdde8796"
+    }
+  ],
+  "interruption_reason": "0x133 DPC_WATCHDOG_VIOLATION parameter 1, WER event 1001. Responsible component undetermined.",
+  "graded_attempts": 20,
+  "evidence_sha256": "e28ae445deadf2bfbe9e9016c1760df23d058639fca2ee83ed4163eb0afe0e78",
+  "incomplete_attempt_native_cost": {
+    "seen_interrupted_native_calls": 22,
+    "input_tokens": 217256,
+    "output_tokens": 2692,
+    "partial_trajectory_sha256": "7641241b26514128385e92ed1cf16546ac895fb5c417c67f88c73e9abdde8796"
+  }
+}

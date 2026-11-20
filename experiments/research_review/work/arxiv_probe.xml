@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/LI21d/FKExMG7mEgvtBqt8rs8mg</id>
+  <title>arXiv Query: search_query=ti:"coding agents" AND all:memory&amp;id_list=&amp;start=0&amp;max_results=2</title>
+  <updated>2026-11-16T13:12:37Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=ti:%22coding+agents%22+AND+all:memory&amp;start=0&amp;max_results=2&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>2</opensearch:itemsPerPage>
+  <opensearch:totalResults>58</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2604.14004v1</id>
+    <title>Memory Transfer Learning: How Memories are Transferred Across Domains in Coding Agents</title>
+    <updated>2026-04-15T15:50:29Z</updated>
+    <link href="https://arxiv.org/abs/2604.14004v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.14004v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Memory-based self-evolution has emerged as a promising paradigm for coding agents. However, existing approaches typically restrict memory utilization to homogeneous task domains, failing to leverage the shared infrastructural foundations, such as runtime environments and programming languages, that exist across diverse real-world coding problems. To address this limitation, we investigate \textbf{Memory Transfer Learning} (MTL) by harnessing a unified memory pool from heterogeneous domains. We evaluate performance across 6 coding benchmarks using four memory representations, ranging from concrete traces to abstract insights. Our experiments demonstrate that cross-domain memory improves average performance by 3.7\%, primarily by transferring meta-knowledge, such as validation routines, rather than task-specific code. Importantly, we find that abstraction dictates transferability; high-level insights generalize well, whereas low-level traces often induce negative transfer due to excessive specificity. Furthermore, we show that transfer effectiveness scales with the size of the memory pool, and memory can be transferred even between different models. Our work establishes empirical design principles for expanding memory utilization beyond single-domain silos. Project page: https://memorytransfer.github.io/</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-15T15:50:29Z</published>
+    <arxiv:comment>Preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Kangsan Kim</name>
+    </author>
+    <author>
+      <name>Minki Kang</name>
+    </author>
+    <author>
+      <name>Taeil Kim</name>
+    </author>
+    <author>
+      <name>Yanlai Yang</name>
+    </author>
+    <author>
+      <name>Mengye Ren</name>
+    </author>
+    <author>
+      <name>Sung Ju Hwang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2610.27524v1</id>
+    <title>MemDev-Bench: Does Memory Help Code Agents?Benchmarking Memory Systems over Real Repository Histories</title>
+    <updated>2026-10-20T02:39:26Z</updated>
+    <link href="https://arxiv.org/abs/2610.27524v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2610.27524v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Code agents increasingly work on evolving real repositories, and memory systems aim to help them reuse earlier experience. However, such experience is diverse and evolving, so it remains unclear how memory systems organize it and thereby affect code agents. Existing benchmarks cannot answer this reliably because they lack either temporally valid histories or control over prior-task relevance. In this paper, we present MemDev-Bench to evaluate how memory systems affect code agents over diverse repository histories. It pairs each task with relevance-annotated earlier tasks from the same repository to build histories with controlled relevance. We also build an automated pipeline that reliably makes these earlier tasks executable and verifiable, producing 4,869 historical tasks for 555 base tasks. Based on MemDev-Bench, our systematic evaluation of memory systems across diverse development scenarios yields three main findings. (1) Memory mainly improves fine-grained localization and editing, increasing functional correctness. (2) Memory also causes failures on otherwise solvable tasks even with related history, and unrelated history tends to increase such failures. These failures mainly stem from agents reusing memory without reassessing its applicability. (3) Compared with using memory systems, directly providing agents with raw historical trajectories substantially reduces their steps. Further analysis suggests that agents save these steps by reusing process information that compressed memories tend to omit. These results suggest that future memory systems should preserve process information and reassess memory applicability against current task context.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-10-20T02:39:26Z</published>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Guorui Chen</name>
+    </author>
+    <author>
+      <name>Tao Liu</name>
+    </author>
+    <author>
+      <name>Zhenzhen Huang</name>
+    </author>
+    <author>
+      <name>Yidan Zhang</name>
+    </author>
+    <author>
+      <name>Liyu Jiang</name>
+    </author>
+    <author>
+      <name>Shuoyuan Wang</name>
+    </author>
+    <author>
+      <name>Hanchen Sun</name>
+    </author>
+    <author>
+      <name>Xu He</name>
+    </author>
+    <author>
+      <name>Dong Li</name>
+    </author>
+    <author>
+      <name>Yihan Hu</name>
+    </author>
+    <author>
+      <name>Jianye Hao</name>
+    </author>
+    <author>
+      <name>Lei Feng</name>
+    </author>
+  </entry>
+</feed>

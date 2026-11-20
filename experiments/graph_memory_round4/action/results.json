@@ -1,0 +1,3707 @@
+{
+ "panels": {
+  "A": {
+   "queries": 1711,
+   "projects": [
+    "astropy/astropy",
+    "django/django",
+    "matplotlib/matplotlib",
+    "mwaskom/seaborn",
+    "pallets/flask",
+    "psf/requests",
+    "pydata/xarray",
+    "pylint-dev/pylint",
+    "pytest-dev/pytest",
+    "scikit-learn/scikit-learn",
+    "sphinx-doc/sphinx",
+    "sympy/sympy"
+   ],
+   "issues": 164,
+   "lines": 123317,
+   "methods": {
+    "lru": {
+     "methods": {
+      "full": {
+       "queries": 1711,
+       "bytes": 1652738,
+       "mean": 965.948568088837,
+       "median": 533.0,
+       "p95": 4429.5,
+       "request_bytes": 58956,
+       "reply_bytes": 1593782,
+       "blocks_offered": 0,
+       "blocks_confirmed": 0,
+       "output_rows_reused": 0,
+       "entire_response_within": {
+        "512": 821,
+        "1024": 1322,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "whole": {
+       "queries": 1711,
+       "bytes": 1595007,
+       "mean": 932.2074810052601,
+       "median": 517.0,
+       "p95": 4429.5,
+       "request_bytes": 65817,
+       "reply_bytes": 1529190,
+       "blocks_offered": 344,
+       "blocks_confirmed": 204,
+       "output_rows_reused": 3563,
+       "entire_response_within": {
+        "512": 850,
+        "1024": 1326,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "pages": {
+       "queries": 1711,
+       "bytes": 1557361,
+       "mean": 910.2051431911163,
+       "median": 475.0,
+       "p95": 4429.5,
+       "request_bytes": 84668,
+       "reply_bytes": 1472693,
+       "blocks_offered": 1291,
+       "blocks_confirmed": 1132,
+       "output_rows_reused": 7509,
+       "entire_response_within": {
+        "512": 897,
+        "1024": 1338,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "runs": {
+       "queries": 1711,
+       "bytes": 1565051,
+       "mean": 914.6995908825248,
+       "median": 493.0,
+       "p95": 4429.5,
+       "request_bytes": 72119,
+       "reply_bytes": 1492932,
+       "blocks_offered": 660,
+       "blocks_confirmed": 506,
+       "output_rows_reused": 6089,
+       "entire_response_within": {
+        "512": 883,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "lean_runs": {
+       "queries": 1711,
+       "bytes": 1564612,
+       "mean": 914.4430157802454,
+       "median": 493.0,
+       "p95": 4429.5,
+       "request_bytes": 71583,
+       "reply_bytes": 1493029,
+       "blocks_offered": 633,
+       "blocks_confirmed": 484,
+       "output_rows_reused": 6068,
+       "entire_response_within": {
+        "512": 883,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "joint": {
+       "queries": 1711,
+       "bytes": 1564882,
+       "mean": 914.6008182349503,
+       "median": 493.0,
+       "p95": 4429.5,
+       "request_bytes": 71816,
+       "reply_bytes": 1493066,
+       "blocks_offered": 643,
+       "blocks_confirmed": 489,
+       "output_rows_reused": 6082,
+       "entire_response_within": {
+        "512": 883,
+        "1024": 1340,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "epoch": {
+       "queries": 1711,
+       "bytes": 1563751,
+       "mean": 913.9398012857978,
+       "median": 490.0,
+       "p95": 4429.5,
+       "request_bytes": 74721,
+       "reply_bytes": 1489030,
+       "blocks_offered": 789,
+       "blocks_confirmed": 627,
+       "output_rows_reused": 6319,
+       "entire_response_within": {
+        "512": 887,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "static_flat": {
+       "queries": 1711,
+       "bytes": 1557361,
+       "mean": 910.2051431911163,
+       "median": 475.0,
+       "p95": 4429.5,
+       "request_bytes": 84668,
+       "reply_bytes": 1472693,
+       "blocks_offered": 1291,
+       "blocks_confirmed": 1132,
+       "output_rows_reused": 7509,
+       "entire_response_within": {
+        "512": 897,
+        "1024": 1338,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "adapt_flat": {
+       "queries": 1711,
+       "bytes": 1556399,
+       "mean": 909.6428988895383,
+       "median": 475.0,
+       "p95": 4429.5,
+       "request_bytes": 83127,
+       "reply_bytes": 1473272,
+       "blocks_offered": 1213,
+       "blocks_confirmed": 1060,
+       "output_rows_reused": 7460,
+       "entire_response_within": {
+        "512": 898,
+        "1024": 1338,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "adapt_joint": {
+       "queries": 1711,
+       "bytes": 1556281,
+       "mean": 909.5739333722969,
+       "median": 475.0,
+       "p95": 4429.5,
+       "request_bytes": 82882,
+       "reply_bytes": 1473399,
+       "blocks_offered": 1199,
+       "blocks_confirmed": 1044,
+       "output_rows_reused": 7454,
+       "entire_response_within": {
+        "512": 898,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      }
+     },
+     "contrasts": {
+      "adapt_joint-full": {
+       "saved_bytes": 96457,
+       "percent_saved": 5.836194242523618,
+       "bytes_per_query": 56.37463471654004,
+       "ci_bytes": [
+        45.88065936320368,
+        66.62285815490253
+       ],
+       "equal_issue_bytes": 59.926719866424804,
+       "equal_project_bytes": 60.99061707920606,
+       "faster": 490,
+       "slower": 129,
+       "tied": 1092,
+       "two_sided_project_randomization": 0.00048828125,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         9636
+        ],
+        "django/django": [
+         147,
+         9661
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         9757
+        ],
+        "mwaskom/seaborn": [
+         15,
+         1198
+        ],
+        "pallets/flask": [
+         3,
+         313
+        ],
+        "psf/requests": [
+         90,
+         4541
+        ],
+        "pydata/xarray": [
+         193,
+         7585
+        ],
+        "pylint-dev/pylint": [
+         119,
+         2843
+        ],
+        "pytest-dev/pytest": [
+         187,
+         10971
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         7283
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         16574
+        ],
+        "sympy/sympy": [
+         230,
+         16095
+        ]
+       }
+      },
+      "adapt_joint-static_flat": {
+       "saved_bytes": 1080,
+       "percent_saved": 0.06934808307129818,
+       "bytes_per_query": 0.6312098188194039,
+       "ci_bytes": [
+        0.015421167046682907,
+        1.1082830847350045
+       ],
+       "equal_issue_bytes": 0.6057351448995585,
+       "equal_project_bytes": 0.48158265197431144,
+       "faster": 63,
+       "slower": 9,
+       "tied": 1639,
+       "two_sided_project_randomization": 0.076171875,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         93
+        ],
+        "django/django": [
+         147,
+         -267
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         216
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         95
+        ],
+        "pydata/xarray": [
+         193,
+         193
+        ],
+        "pylint-dev/pylint": [
+         119,
+         39
+        ],
+        "pytest-dev/pytest": [
+         187,
+         244
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         35
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         358
+        ],
+        "sympy/sympy": [
+         230,
+         74
+        ]
+       }
+      },
+      "adapt_joint-adapt_flat": {
+       "saved_bytes": 118,
+       "percent_saved": 0.007581603432024821,
+       "bytes_per_query": 0.06896551724137931,
+       "ci_bytes": [
+        -0.1251199525953799,
+        0.19633998229634003
+       ],
+       "equal_issue_bytes": 0.06657101232346906,
+       "equal_project_bytes": 0.06981118525502568,
+       "faster": 15,
+       "slower": 2,
+       "tied": 1694,
+       "two_sided_project_randomization": 0.50390625,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         35
+        ],
+        "django/django": [
+         147,
+         24
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         55
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         0
+        ],
+        "pydata/xarray": [
+         193,
+         19
+        ],
+        "pylint-dev/pylint": [
+         119,
+         18
+        ],
+        "pytest-dev/pytest": [
+         187,
+         18
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         18
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         54
+        ],
+        "sympy/sympy": [
+         230,
+         -123
+        ]
+       }
+      },
+      "adapt_joint-runs": {
+       "saved_bytes": 8770,
+       "percent_saved": 0.5603651254815338,
+       "bytes_per_query": 5.125657510227937,
+       "ci_bytes": [
+        3.1269129807572473,
+        7.901960278512025
+       ],
+       "equal_issue_bytes": 8.13508322056659,
+       "equal_project_bytes": 16.38954523516117,
+       "faster": 123,
+       "slower": 261,
+       "tied": 1327,
+       "two_sided_project_randomization": 0.00048828125,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         737
+        ],
+        "django/django": [
+         147,
+         555
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         359
+        ],
+        "mwaskom/seaborn": [
+         15,
+         484
+        ],
+        "pallets/flask": [
+         3,
+         333
+        ],
+        "psf/requests": [
+         90,
+         902
+        ],
+        "pydata/xarray": [
+         193,
+         1490
+        ],
+        "pylint-dev/pylint": [
+         119,
+         1539
+        ],
+        "pytest-dev/pytest": [
+         187,
+         1393
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         318
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         68
+        ],
+        "sympy/sympy": [
+         230,
+         592
+        ]
+       }
+      },
+      "joint-runs": {
+       "saved_bytes": 169,
+       "percent_saved": 0.010798370148960002,
+       "bytes_per_query": 0.09877264757451783,
+       "ci_bytes": [
+        -0.05520099102964526,
+        0.2061863846878434
+       ],
+       "equal_issue_bytes": 0.08742664603654599,
+       "equal_project_bytes": 0.09094891570952635,
+       "faster": 15,
+       "slower": 2,
+       "tied": 1694,
+       "two_sided_project_randomization": 0.1953125,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         35
+        ],
+        "django/django": [
+         147,
+         37
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         55
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         0
+        ],
+        "pydata/xarray": [
+         193,
+         19
+        ],
+        "pylint-dev/pylint": [
+         119,
+         18
+        ],
+        "pytest-dev/pytest": [
+         187,
+         18
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         18
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         54
+        ],
+        "sympy/sympy": [
+         230,
+         -85
+        ]
+       }
+      },
+      "epoch-runs": {
+       "saved_bytes": 1300,
+       "percent_saved": 0.08306438576123078,
+       "bytes_per_query": 0.7597895967270601,
+       "ci_bytes": [
+        -0.4781922877846791,
+        2.2830748031368113
+       ],
+       "equal_issue_bytes": 0.8044692074707126,
+       "equal_project_bytes": 0.8683468255962324,
+       "faster": 20,
+       "slower": 82,
+       "tied": 1609,
+       "two_sided_project_randomization": 0.318359375,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         -103
+        ],
+        "django/django": [
+         147,
+         126
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         283
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         695
+        ],
+        "pydata/xarray": [
+         193,
+         763
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -113
+        ],
+        "pytest-dev/pytest": [
+         187,
+         357
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         -101
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         -367
+        ],
+        "sympy/sympy": [
+         230,
+         -240
+        ]
+       }
+      },
+      "adapt_flat-static_flat": {
+       "saved_bytes": 962,
+       "percent_saved": 0.06177116288387856,
+       "bytes_per_query": 0.5622443015780245,
+       "ci_bytes": [
+        -0.0595618892739539,
+        0.9921179926212264
+       ],
+       "equal_issue_bytes": 0.5391641325760894,
+       "equal_project_bytes": 0.4117714667192857,
+       "faster": 57,
+       "slower": 7,
+       "tied": 1647,
+       "two_sided_project_randomization": 0.099609375,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         58
+        ],
+        "django/django": [
+         147,
+         -291
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         161
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         95
+        ],
+        "pydata/xarray": [
+         193,
+         174
+        ],
+        "pylint-dev/pylint": [
+         119,
+         21
+        ],
+        "pytest-dev/pytest": [
+         187,
+         226
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         17
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         304
+        ],
+        "sympy/sympy": [
+         230,
+         197
+        ]
+       }
+      }
+     }
+    },
+    "point": {
+     "methods": {
+      "full": {
+       "queries": 1711,
+       "bytes": 1652738,
+       "mean": 965.948568088837,
+       "median": 533.0,
+       "p95": 4429.5,
+       "request_bytes": 58956,
+       "reply_bytes": 1593782,
+       "blocks_offered": 0,
+       "blocks_confirmed": 0,
+       "output_rows_reused": 0,
+       "entire_response_within": {
+        "512": 821,
+        "1024": 1322,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "whole": {
+       "queries": 1711,
+       "bytes": 1610990,
+       "mean": 941.5488018702513,
+       "median": 524.0,
+       "p95": 4429.5,
+       "request_bytes": 64512,
+       "reply_bytes": 1546478,
+       "blocks_offered": 279,
+       "blocks_confirmed": 152,
+       "output_rows_reused": 2591,
+       "entire_response_within": {
+        "512": 841,
+        "1024": 1326,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "pages": {
+       "queries": 1711,
+       "bytes": 1566533,
+       "mean": 915.5657510227937,
+       "median": 479.0,
+       "p95": 4429.5,
+       "request_bytes": 84261,
+       "reply_bytes": 1482272,
+       "blocks_offered": 1272,
+       "blocks_confirmed": 1094,
+       "output_rows_reused": 6986,
+       "entire_response_within": {
+        "512": 896,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "runs": {
+       "queries": 1711,
+       "bytes": 1572784,
+       "mean": 919.2191700759789,
+       "median": 490.0,
+       "p95": 4429.5,
+       "request_bytes": 73821,
+       "reply_bytes": 1498963,
+       "blocks_offered": 746,
+       "blocks_confirmed": 571,
+       "output_rows_reused": 5841,
+       "entire_response_within": {
+        "512": 887,
+        "1024": 1340,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "lean_runs": {
+       "queries": 1711,
+       "bytes": 1572229,
+       "mean": 918.8947983635301,
+       "median": 490.0,
+       "p95": 4429.5,
+       "request_bytes": 73147,
+       "reply_bytes": 1499082,
+       "blocks_offered": 712,
+       "blocks_confirmed": 545,
+       "output_rows_reused": 5815,
+       "entire_response_within": {
+        "512": 887,
+        "1024": 1340,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "joint": {
+       "queries": 1711,
+       "bytes": 1574162,
+       "mean": 920.0245470485096,
+       "median": 493.0,
+       "p95": 4429.5,
+       "request_bytes": 72698,
+       "reply_bytes": 1501464,
+       "blocks_offered": 683,
+       "blocks_confirmed": 509,
+       "output_rows_reused": 5661,
+       "entire_response_within": {
+        "512": 884,
+        "1024": 1341,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "epoch": {
+       "queries": 1711,
+       "bytes": 1572696,
+       "mean": 919.1677381648159,
+       "median": 491.0,
+       "p95": 4429.5,
+       "request_bytes": 75166,
+       "reply_bytes": 1497530,
+       "blocks_offered": 808,
+       "blocks_confirmed": 629,
+       "output_rows_reused": 5886,
+       "entire_response_within": {
+        "512": 888,
+        "1024": 1340,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "static_flat": {
+       "queries": 1711,
+       "bytes": 1566533,
+       "mean": 915.5657510227937,
+       "median": 479.0,
+       "p95": 4429.5,
+       "request_bytes": 84261,
+       "reply_bytes": 1482272,
+       "blocks_offered": 1272,
+       "blocks_confirmed": 1094,
+       "output_rows_reused": 6986,
+       "entire_response_within": {
+        "512": 896,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "adapt_flat": {
+       "queries": 1711,
+       "bytes": 1565698,
+       "mean": 915.0777323202806,
+       "median": 479.0,
+       "p95": 4429.5,
+       "request_bytes": 82132,
+       "reply_bytes": 1483566,
+       "blocks_offered": 1164,
+       "blocks_confirmed": 995,
+       "output_rows_reused": 6884,
+       "entire_response_within": {
+        "512": 896,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "adapt_joint": {
+       "queries": 1711,
+       "bytes": 1567146,
+       "mean": 915.9240210403273,
+       "median": 483.0,
+       "p95": 4429.5,
+       "request_bytes": 81310,
+       "reply_bytes": 1485836,
+       "blocks_offered": 1117,
+       "blocks_confirmed": 944,
+       "output_rows_reused": 6726,
+       "entire_response_within": {
+        "512": 893,
+        "1024": 1340,
+        "2048": 1541,
+        "4096": 1606
+       }
+      }
+     },
+     "contrasts": {
+      "adapt_joint-full": {
+       "saved_bytes": 85592,
+       "percent_saved": 5.178800269613212,
+       "bytes_per_query": 50.024547048509646,
+       "ci_bytes": [
+        42.12407884456262,
+        57.02666363440468
+       ],
+       "equal_issue_bytes": 56.12172362649552,
+       "equal_project_bytes": 54.15850259319732,
+       "faster": 493,
+       "slower": 164,
+       "tied": 1054,
+       "two_sided_project_randomization": 0.00048828125,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         8869
+        ],
+        "django/django": [
+         147,
+         9468
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         8289
+        ],
+        "mwaskom/seaborn": [
+         15,
+         934
+        ],
+        "pallets/flask": [
+         3,
+         313
+        ],
+        "psf/requests": [
+         90,
+         2608
+        ],
+        "pydata/xarray": [
+         193,
+         8803
+        ],
+        "pylint-dev/pylint": [
+         119,
+         3209
+        ],
+        "pytest-dev/pytest": [
+         187,
+         10215
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         6641
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         12032
+        ],
+        "sympy/sympy": [
+         230,
+         14211
+        ]
+       }
+      },
+      "adapt_joint-static_flat": {
+       "saved_bytes": -613,
+       "percent_saved": -0.03913099819793135,
+       "bytes_per_query": -0.3582700175336061,
+       "ci_bytes": [
+        -1.333388654194327,
+        0.45773675047130935
+       ],
+       "equal_issue_bytes": -0.4935768072991422,
+       "equal_project_bytes": -0.8567729116980184,
+       "faster": 90,
+       "slower": 26,
+       "tied": 1595,
+       "two_sided_project_randomization": 0.46875,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         168
+        ],
+        "django/django": [
+         147,
+         -426
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         94
+        ],
+        "mwaskom/seaborn": [
+         15,
+         -105
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         90
+        ],
+        "pydata/xarray": [
+         193,
+         286
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -90
+        ],
+        "pytest-dev/pytest": [
+         187,
+         -521
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         -108
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         -82
+        ],
+        "sympy/sympy": [
+         230,
+         81
+        ]
+       }
+      },
+      "adapt_joint-adapt_flat": {
+       "saved_bytes": -1448,
+       "percent_saved": -0.09248271378005209,
+       "bytes_per_query": -0.8462887200467563,
+       "ci_bytes": [
+        -1.5006897285561251,
+        -0.33360309420698037
+       ],
+       "equal_issue_bytes": -1.0249688716265564,
+       "equal_project_bytes": -1.2589264089649606,
+       "faster": 37,
+       "slower": 18,
+       "tied": 1656,
+       "two_sided_project_randomization": 0.009765625,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         53
+        ],
+        "django/django": [
+         147,
+         -197
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         -106
+        ],
+        "mwaskom/seaborn": [
+         15,
+         -105
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         -43
+        ],
+        "pydata/xarray": [
+         193,
+         55
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -131
+        ],
+        "pytest-dev/pytest": [
+         187,
+         -526
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         -178
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         -180
+        ],
+        "sympy/sympy": [
+         230,
+         -90
+        ]
+       }
+      },
+      "adapt_joint-runs": {
+       "saved_bytes": 5638,
+       "percent_saved": 0.35847261925350205,
+       "bytes_per_query": 3.2951490356516655,
+       "ci_bytes": [
+        0.7734031450842821,
+        6.22091506923174
+       ],
+       "equal_issue_bytes": 6.800375637865655,
+       "equal_project_bytes": 12.401787297906521,
+       "faster": 137,
+       "slower": 230,
+       "tied": 1344,
+       "two_sided_project_randomization": 0.033203125,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         1883
+        ],
+        "django/django": [
+         147,
+         433
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         -562
+        ],
+        "mwaskom/seaborn": [
+         15,
+         117
+        ],
+        "pallets/flask": [
+         3,
+         333
+        ],
+        "psf/requests": [
+         90,
+         -298
+        ],
+        "pydata/xarray": [
+         193,
+         1182
+        ],
+        "pylint-dev/pylint": [
+         119,
+         285
+        ],
+        "pytest-dev/pytest": [
+         187,
+         1376
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         204
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         269
+        ],
+        "sympy/sympy": [
+         230,
+         416
+        ]
+       }
+      },
+      "joint-runs": {
+       "saved_bytes": -1378,
+       "percent_saved": -0.08761533688033449,
+       "bytes_per_query": -0.8053769725306839,
+       "ci_bytes": [
+        -1.4824392671597584,
+        -0.27703399959910224
+       ],
+       "equal_issue_bytes": -0.9585572356501597,
+       "equal_project_bytes": -1.2919326274096408,
+       "faster": 40,
+       "slower": 19,
+       "tied": 1652,
+       "two_sided_project_randomization": 0.013671875,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         89
+        ],
+        "django/django": [
+         147,
+         -184
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         -86
+        ],
+        "mwaskom/seaborn": [
+         15,
+         -105
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         -200
+        ],
+        "pydata/xarray": [
+         193,
+         55
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -111
+        ],
+        "pytest-dev/pytest": [
+         187,
+         -495
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         -126
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         -180
+        ],
+        "sympy/sympy": [
+         230,
+         -35
+        ]
+       }
+      },
+      "epoch-runs": {
+       "saved_bytes": 88,
+       "percent_saved": 0.005595173908178109,
+       "bytes_per_query": 0.05143191116306254,
+       "ci_bytes": [
+        -0.9162510656436488,
+        1.0831337883815628
+       ],
+       "equal_issue_bytes": 0.009439573658619823,
+       "equal_project_bytes": -0.5054544437305724,
+       "faster": 40,
+       "slower": 73,
+       "tied": 1598,
+       "two_sided_project_randomization": 0.9228515625,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         13
+        ],
+        "django/django": [
+         147,
+         -115
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         -306
+        ],
+        "mwaskom/seaborn": [
+         15,
+         -105
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         150
+        ],
+        "pydata/xarray": [
+         193,
+         527
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -209
+        ],
+        "pytest-dev/pytest": [
+         187,
+         103
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         -257
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         441
+        ],
+        "sympy/sympy": [
+         230,
+         -154
+        ]
+       }
+      },
+      "adapt_flat-static_flat": {
+       "saved_bytes": 835,
+       "percent_saved": 0.05330242005754108,
+       "bytes_per_query": 0.4880187025131502,
+       "ci_bytes": [
+        -0.001405936033310838,
+        0.8462679820334397
+       ],
+       "equal_issue_bytes": 0.5313920643274137,
+       "equal_project_bytes": 0.402153497266942,
+       "faster": 72,
+       "slower": 11,
+       "tied": 1628,
+       "two_sided_project_randomization": 0.07421875,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         115
+        ],
+        "django/django": [
+         147,
+         -229
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         200
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         133
+        ],
+        "pydata/xarray": [
+         193,
+         231
+        ],
+        "pylint-dev/pylint": [
+         119,
+         41
+        ],
+        "pytest-dev/pytest": [
+         187,
+         5
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         70
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         98
+        ],
+        "sympy/sympy": [
+         230,
+         171
+        ]
+       }
+      }
+     }
+    },
+    "typed": {
+     "methods": {
+      "full": {
+       "queries": 1711,
+       "bytes": 1652738,
+       "mean": 965.948568088837,
+       "median": 533.0,
+       "p95": 4429.5,
+       "request_bytes": 58956,
+       "reply_bytes": 1593782,
+       "blocks_offered": 0,
+       "blocks_confirmed": 0,
+       "output_rows_reused": 0,
+       "entire_response_within": {
+        "512": 821,
+        "1024": 1322,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "whole": {
+       "queries": 1711,
+       "bytes": 1601174,
+       "mean": 935.8118059614261,
+       "median": 518.0,
+       "p95": 4429.5,
+       "request_bytes": 65556,
+       "reply_bytes": 1535618,
+       "blocks_offered": 331,
+       "blocks_confirmed": 180,
+       "output_rows_reused": 3194,
+       "entire_response_within": {
+        "512": 849,
+        "1024": 1327,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "pages": {
+       "queries": 1711,
+       "bytes": 1558486,
+       "mean": 910.8626534190532,
+       "median": 473.0,
+       "p95": 4429.5,
+       "request_bytes": 85108,
+       "reply_bytes": 1473378,
+       "blocks_offered": 1314,
+       "blocks_confirmed": 1130,
+       "output_rows_reused": 7514,
+       "entire_response_within": {
+        "512": 900,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "runs": {
+       "queries": 1711,
+       "bytes": 1566710,
+       "mean": 915.6691992986557,
+       "median": 489.0,
+       "p95": 4429.5,
+       "request_bytes": 72679,
+       "reply_bytes": 1494031,
+       "blocks_offered": 688,
+       "blocks_confirmed": 509,
+       "output_rows_reused": 6096,
+       "entire_response_within": {
+        "512": 886,
+        "1024": 1341,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "lean_runs": {
+       "queries": 1711,
+       "bytes": 1566222,
+       "mean": 915.3839859731152,
+       "median": 489.0,
+       "p95": 4429.5,
+       "request_bytes": 72083,
+       "reply_bytes": 1494139,
+       "blocks_offered": 658,
+       "blocks_confirmed": 485,
+       "output_rows_reused": 6073,
+       "entire_response_within": {
+        "512": 886,
+        "1024": 1341,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "joint": {
+       "queries": 1711,
+       "bytes": 1567404,
+       "mean": 916.0748100526008,
+       "median": 491.0,
+       "p95": 4429.5,
+       "request_bytes": 72322,
+       "reply_bytes": 1495082,
+       "blocks_offered": 668,
+       "blocks_confirmed": 489,
+       "output_rows_reused": 6021,
+       "entire_response_within": {
+        "512": 885,
+        "1024": 1342,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "epoch": {
+       "queries": 1711,
+       "bytes": 1565831,
+       "mean": 915.155464640561,
+       "median": 486.0,
+       "p95": 4429.5,
+       "request_bytes": 74926,
+       "reply_bytes": 1490905,
+       "blocks_offered": 799,
+       "blocks_confirmed": 615,
+       "output_rows_reused": 6266,
+       "entire_response_within": {
+        "512": 889,
+        "1024": 1341,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "static_flat": {
+       "queries": 1711,
+       "bytes": 1558486,
+       "mean": 910.8626534190532,
+       "median": 473.0,
+       "p95": 4429.5,
+       "request_bytes": 85108,
+       "reply_bytes": 1473378,
+       "blocks_offered": 1314,
+       "blocks_confirmed": 1130,
+       "output_rows_reused": 7514,
+       "entire_response_within": {
+        "512": 900,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "adapt_flat": {
+       "queries": 1711,
+       "bytes": 1557414,
+       "mean": 910.2361192285214,
+       "median": 472.0,
+       "p95": 4429.5,
+       "request_bytes": 83133,
+       "reply_bytes": 1474281,
+       "blocks_offered": 1214,
+       "blocks_confirmed": 1037,
+       "output_rows_reused": 7446,
+       "entire_response_within": {
+        "512": 901,
+        "1024": 1339,
+        "2048": 1541,
+        "4096": 1606
+       }
+      },
+      "adapt_joint": {
+       "queries": 1711,
+       "bytes": 1557747,
+       "mean": 910.4307422559906,
+       "median": 472.0,
+       "p95": 4429.5,
+       "request_bytes": 82871,
+       "reply_bytes": 1474876,
+       "blocks_offered": 1199,
+       "blocks_confirmed": 1020,
+       "output_rows_reused": 7414,
+       "entire_response_within": {
+        "512": 901,
+        "1024": 1340,
+        "2048": 1541,
+        "4096": 1606
+       }
+      }
+     },
+     "contrasts": {
+      "adapt_joint-full": {
+       "saved_bytes": 94991,
+       "percent_saved": 5.747492948065574,
+       "bytes_per_query": 55.51782583284629,
+       "ci_bytes": [
+        45.776065647329865,
+        64.68007266256085
+       ],
+       "equal_issue_bytes": 62.00980508094221,
+       "equal_project_bytes": 60.506306621338176,
+       "faster": 496,
+       "slower": 145,
+       "tied": 1070,
+       "two_sided_project_randomization": 0.00048828125,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         10695
+        ],
+        "django/django": [
+         147,
+         10968
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         8379
+        ],
+        "mwaskom/seaborn": [
+         15,
+         1198
+        ],
+        "pallets/flask": [
+         3,
+         313
+        ],
+        "psf/requests": [
+         90,
+         3585
+        ],
+        "pydata/xarray": [
+         193,
+         8611
+        ],
+        "pylint-dev/pylint": [
+         119,
+         3389
+        ],
+        "pytest-dev/pytest": [
+         187,
+         11008
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         7289
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         14122
+        ],
+        "sympy/sympy": [
+         230,
+         15434
+        ]
+       }
+      },
+      "adapt_joint-static_flat": {
+       "saved_bytes": 739,
+       "percent_saved": 0.0474178144686574,
+       "bytes_per_query": 0.4319111630625365,
+       "ci_bytes": [
+        -0.4948612640096844,
+        1.2785976197076803
+       ],
+       "equal_issue_bytes": 0.2613447971274712,
+       "equal_project_bytes": 0.2509177109455249,
+       "faster": 68,
+       "slower": 13,
+       "tied": 1630,
+       "two_sided_project_randomization": 0.3984375,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         122
+        ],
+        "django/django": [
+         147,
+         -209
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         234
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         95
+        ],
+        "pydata/xarray": [
+         193,
+         193
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -277
+        ],
+        "pytest-dev/pytest": [
+         187,
+         -265
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         91
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         571
+        ],
+        "sympy/sympy": [
+         230,
+         184
+        ]
+       }
+      },
+      "adapt_joint-adapt_flat": {
+       "saved_bytes": -333,
+       "percent_saved": -0.021381597956612694,
+       "bytes_per_query": -0.1946230274693162,
+       "ci_bytes": [
+        -0.754062701873385,
+        0.17115237816277223
+       ],
+       "equal_issue_bytes": -0.319826076360205,
+       "equal_project_bytes": -0.23108877828870325,
+       "faster": 14,
+       "slower": 4,
+       "tied": 1693,
+       "two_sided_project_randomization": 0.50390625,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         35
+        ],
+        "django/django": [
+         147,
+         6
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         54
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         0
+        ],
+        "pydata/xarray": [
+         193,
+         19
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -338
+        ],
+        "pytest-dev/pytest": [
+         187,
+         -194
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         36
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         56
+        ],
+        "sympy/sympy": [
+         230,
+         -7
+        ]
+       }
+      },
+      "adapt_joint-runs": {
+       "saved_bytes": 8963,
+       "percent_saved": 0.5720905591972988,
+       "bytes_per_query": 5.238457042665108,
+       "ci_bytes": [
+        2.5138127024602865,
+        7.989690189962914
+       ],
+       "equal_issue_bytes": 8.983927835389782,
+       "equal_project_bytes": 15.751337996673213,
+       "faster": 134,
+       "slower": 250,
+       "tied": 1327,
+       "two_sided_project_randomization": 0.00634765625,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         1460
+        ],
+        "django/django": [
+         147,
+         875
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         -448
+        ],
+        "mwaskom/seaborn": [
+         15,
+         484
+        ],
+        "pallets/flask": [
+         3,
+         333
+        ],
+        "psf/requests": [
+         90,
+         -444
+        ],
+        "pydata/xarray": [
+         193,
+         1051
+        ],
+        "pylint-dev/pylint": [
+         119,
+         499
+        ],
+        "pytest-dev/pytest": [
+         187,
+         1970
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         786
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         1383
+        ],
+        "sympy/sympy": [
+         230,
+         1014
+        ]
+       }
+      },
+      "joint-runs": {
+       "saved_bytes": -694,
+       "percent_saved": -0.04429664711401599,
+       "bytes_per_query": -0.40561075394506135,
+       "ci_bytes": [
+        -1.236735435986911,
+        0.14916364191101417
+       ],
+       "equal_issue_bytes": -0.47325906053330696,
+       "equal_project_bytes": -0.5852369109717281,
+       "faster": 14,
+       "slower": 5,
+       "tied": 1692,
+       "two_sided_project_randomization": 0.265625,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         35
+        ],
+        "django/django": [
+         147,
+         19
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         54
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         -413
+        ],
+        "pydata/xarray": [
+         193,
+         19
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -318
+        ],
+        "pytest-dev/pytest": [
+         187,
+         -194
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         36
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         56
+        ],
+        "sympy/sympy": [
+         230,
+         12
+        ]
+       }
+      },
+      "epoch-runs": {
+       "saved_bytes": 879,
+       "percent_saved": 0.05610483114296839,
+       "bytes_per_query": 0.5137346580946814,
+       "ci_bytes": [
+        -0.5172604477082446,
+        1.3820294338289487
+       ],
+       "equal_issue_bytes": 0.4591902604309635,
+       "equal_project_bytes": 0.294173632262197,
+       "faster": 23,
+       "slower": 69,
+       "tied": 1619,
+       "two_sided_project_randomization": 0.341796875,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         -43
+        ],
+        "django/django": [
+         147,
+         -37
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         319
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         134
+        ],
+        "pydata/xarray": [
+         193,
+         491
+        ],
+        "pylint-dev/pylint": [
+         119,
+         -412
+        ],
+        "pytest-dev/pytest": [
+         187,
+         270
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         -99
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         383
+        ],
+        "sympy/sympy": [
+         230,
+         -127
+        ]
+       }
+      },
+      "adapt_flat-static_flat": {
+       "saved_bytes": 1072,
+       "percent_saved": 0.06878470515615796,
+       "bytes_per_query": 0.6265341905318527,
+       "ci_bytes": [
+        0.003886592866699474,
+        1.235650678729307
+       ],
+       "equal_issue_bytes": 0.5811708734876763,
+       "equal_project_bytes": 0.4820064892342282,
+       "faster": 64,
+       "slower": 10,
+       "tied": 1637,
+       "two_sided_project_randomization": 0.09765625,
+       "per_project": {
+        "astropy/astropy": [
+         153,
+         87
+        ],
+        "django/django": [
+         147,
+         -215
+        ],
+        "matplotlib/matplotlib": [
+         234,
+         180
+        ],
+        "mwaskom/seaborn": [
+         15,
+         0
+        ],
+        "pallets/flask": [
+         3,
+         0
+        ],
+        "psf/requests": [
+         90,
+         95
+        ],
+        "pydata/xarray": [
+         193,
+         174
+        ],
+        "pylint-dev/pylint": [
+         119,
+         61
+        ],
+        "pytest-dev/pytest": [
+         187,
+         -71
+        ],
+        "scikit-learn/scikit-learn": [
+         142,
+         55
+        ],
+        "sphinx-doc/sphinx": [
+         198,
+         515
+        ],
+        "sympy/sympy": [
+         230,
+         191
+        ]
+       }
+      }
+     }
+    }
+   },
+   "selected": {
+    "lru": {
+     "static_flat": {
+      "pages": 1711
+     },
+     "adapt_flat": {
+      "pages": 1186,
+      "lean_runs": 525
+     },
+     "adapt_joint": {
+      "pages": 1186,
+      "lean_runs": 209,
+      "joint": 316
+     }
+    },
+    "point": {
+     "static_flat": {
+      "pages": 1711
+     },
+     "adapt_flat": {
+      "pages": 1105,
+      "lean_runs": 606
+     },
+     "adapt_joint": {
+      "pages": 1105,
+      "lean_runs": 251,
+      "joint": 355
+     }
+    },
+    "typed": {
+     "static_flat": {
+      "pages": 1711
+     },
+     "adapt_flat": {
+      "pages": 1163,
+      "lean_runs": 548
+     },
+     "adapt_joint": {
+      "pages": 1163,
+      "lean_runs": 230,
+      "joint": 318
+     }
+    }
+   },
+   "writer_comparison": {
+    "typed-lru": {
+     "saved_bytes": -1466,
+     "per_query": -0.8568088836937463,
+     "ci": [
+      -4.960632834629856,
+      3.340253477475613
+     ],
+     "better": 87,
+     "worse": 103
+    },
+    "typed-point": {
+     "saved_bytes": 9399,
+     "per_query": 5.4932787843366455,
+     "ci": [
+      2.786482791805755,
+      8.435120271231998
+     ],
+     "better": 96,
+     "worse": 60
+    },
+    "point-lru": {
+     "saved_bytes": -10865,
+     "per_query": -6.350087668030391,
+     "ci": [
+      -11.891081749012434,
+      -1.2790180373402253
+     ],
+     "better": 94,
+     "worse": 140
+    }
+   }
+  },
+  "B": {
+   "queries": 1381,
+   "projects": [
+    "astropy/astropy",
+    "django/django",
+    "matplotlib/matplotlib",
+    "pydata/xarray",
+    "pytest-dev/pytest",
+    "scikit-learn/scikit-learn",
+    "sphinx-doc/sphinx",
+    "sympy/sympy"
+   ],
+   "issues": 129,
+   "lines": 93937,
+   "methods": {
+    "lru": {
+     "methods": {
+      "full": {
+       "queries": 1381,
+       "bytes": 1284519,
+       "mean": 930.1368573497466,
+       "median": 538.0,
+       "p95": 4417.0,
+       "request_bytes": 49769,
+       "reply_bytes": 1234750,
+       "blocks_offered": 0,
+       "blocks_confirmed": 0,
+       "output_rows_reused": 0,
+       "entire_response_within": {
+        "512": 677,
+        "1024": 1098,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "whole": {
+       "queries": 1381,
+       "bytes": 1236748,
+       "mean": 895.5452570601013,
+       "median": 503.0,
+       "p95": 4417.0,
+       "request_bytes": 55828,
+       "reply_bytes": 1180920,
+       "blocks_offered": 304,
+       "blocks_confirmed": 170,
+       "output_rows_reused": 3148,
+       "entire_response_within": {
+        "512": 697,
+        "1024": 1103,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "pages": {
+       "queries": 1381,
+       "bytes": 1203742,
+       "mean": 871.6451846488052,
+       "median": 462.0,
+       "p95": 4384.0,
+       "request_bytes": 71788,
+       "reply_bytes": 1131954,
+       "blocks_offered": 1108,
+       "blocks_confirmed": 945,
+       "output_rows_reused": 6491,
+       "entire_response_within": {
+        "512": 742,
+        "1024": 1110,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "runs": {
+       "queries": 1381,
+       "bytes": 1216096,
+       "mean": 880.5908761766835,
+       "median": 481.0,
+       "p95": 4384.0,
+       "request_bytes": 60193,
+       "reply_bytes": 1155903,
+       "blocks_offered": 523,
+       "blocks_confirmed": 382,
+       "output_rows_reused": 4915,
+       "entire_response_within": {
+        "512": 722,
+        "1024": 1108,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "lean_runs": {
+       "queries": 1381,
+       "bytes": 1215793,
+       "mean": 880.3714699493121,
+       "median": 481.0,
+       "p95": 4384.0,
+       "request_bytes": 59813,
+       "reply_bytes": 1155980,
+       "blocks_offered": 504,
+       "blocks_confirmed": 365,
+       "output_rows_reused": 4900,
+       "entire_response_within": {
+        "512": 722,
+        "1024": 1108,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "joint": {
+       "queries": 1381,
+       "bytes": 1216177,
+       "mean": 880.6495293265749,
+       "median": 485.0,
+       "p95": 4384.0,
+       "request_bytes": 60068,
+       "reply_bytes": 1156109,
+       "blocks_offered": 516,
+       "blocks_confirmed": 375,
+       "output_rows_reused": 4900,
+       "entire_response_within": {
+        "512": 721,
+        "1024": 1108,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "epoch": {
+       "queries": 1381,
+       "bytes": 1212236,
+       "mean": 877.7958001448226,
+       "median": 476.0,
+       "p95": 4384.0,
+       "request_bytes": 62340,
+       "reply_bytes": 1149896,
+       "blocks_offered": 630,
+       "blocks_confirmed": 488,
+       "output_rows_reused": 5267,
+       "entire_response_within": {
+        "512": 726,
+        "1024": 1109,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "static_flat": {
+       "queries": 1381,
+       "bytes": 1203742,
+       "mean": 871.6451846488052,
+       "median": 462.0,
+       "p95": 4384.0,
+       "request_bytes": 71788,
+       "reply_bytes": 1131954,
+       "blocks_offered": 1108,
+       "blocks_confirmed": 945,
+       "output_rows_reused": 6491,
+       "entire_response_within": {
+        "512": 742,
+        "1024": 1110,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "adapt_flat": {
+       "queries": 1381,
+       "bytes": 1202526,
+       "mean": 870.7646632874729,
+       "median": 462.0,
+       "p95": 4384.0,
+       "request_bytes": 69631,
+       "reply_bytes": 1132895,
+       "blocks_offered": 998,
+       "blocks_confirmed": 856,
+       "output_rows_reused": 6425,
+       "entire_response_within": {
+        "512": 742,
+        "1024": 1111,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "adapt_joint": {
+       "queries": 1381,
+       "bytes": 1202607,
+       "mean": 870.8233164373643,
+       "median": 462.0,
+       "p95": 4384.0,
+       "request_bytes": 69506,
+       "reply_bytes": 1133101,
+       "blocks_offered": 991,
+       "blocks_confirmed": 849,
+       "output_rows_reused": 6410,
+       "entire_response_within": {
+        "512": 741,
+        "1024": 1111,
+        "2048": 1258,
+        "4096": 1300
+       }
+      }
+     },
+     "contrasts": {
+      "adapt_joint-full": {
+       "saved_bytes": 81912,
+       "percent_saved": 6.3768616890836185,
+       "bytes_per_query": 59.31354091238233,
+       "ci_bytes": [
+        45.90682746274515,
+        76.88685036619444
+       ],
+       "equal_issue_bytes": 69.18801084924537,
+       "equal_project_bytes": 70.64145586442609,
+       "faster": 388,
+       "slower": 106,
+       "tied": 887,
+       "two_sided_project_randomization": 0.0078125,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         3107
+        ],
+        "django/django": [
+         326,
+         24298
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         8237
+        ],
+        "pydata/xarray": [
+         41,
+         1851
+        ],
+        "pytest-dev/pytest": [
+         14,
+         1408
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         12103
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         12680
+        ],
+        "sympy/sympy": [
+         336,
+         18228
+        ]
+       }
+      },
+      "adapt_joint-static_flat": {
+       "saved_bytes": 1135,
+       "percent_saved": 0.09428930784171359,
+       "bytes_per_query": 0.8218682114409848,
+       "ci_bytes": [
+        -0.018913111811597293,
+        1.8214285714285714
+       ],
+       "equal_issue_bytes": 0.8836421965966929,
+       "equal_project_bytes": 1.4099338820197667,
+       "faster": 53,
+       "slower": 8,
+       "tied": 1320,
+       "two_sided_project_randomization": 0.140625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         98
+        ],
+        "django/django": [
+         326,
+         687
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         117
+        ],
+        "pydata/xarray": [
+         41,
+         39
+        ],
+        "pytest-dev/pytest": [
+         14,
+         38
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         222
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -230
+        ],
+        "sympy/sympy": [
+         336,
+         164
+        ]
+       }
+      },
+      "adapt_joint-adapt_flat": {
+       "saved_bytes": -81,
+       "percent_saved": -0.006735821096591674,
+       "bytes_per_query": -0.05865314989138305,
+       "ci_bytes": [
+        -0.3454057679409792,
+        0.20080726538849647
+       ],
+       "equal_issue_bytes": 0.019009521916498674,
+       "equal_project_bytes": 0.06928617859354089,
+       "faster": 6,
+       "slower": 1,
+       "tied": 1374,
+       "two_sided_project_randomization": 1.0,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         18
+        ],
+        "django/django": [
+         326,
+         18
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         19
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         0
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         54
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -190
+        ],
+        "sympy/sympy": [
+         336,
+         0
+        ]
+       }
+      },
+      "adapt_joint-runs": {
+       "saved_bytes": 13489,
+       "percent_saved": 1.1092051943267636,
+       "bytes_per_query": 9.767559739319333,
+       "ci_bytes": [
+        5.102331606217617,
+        14.422809457579973
+       ],
+       "equal_issue_bytes": 13.47476198158968,
+       "equal_project_bytes": 11.451834458637073,
+       "faster": 109,
+       "slower": 188,
+       "tied": 1084,
+       "two_sided_project_randomization": 0.015625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         677
+        ],
+        "django/django": [
+         326,
+         5787
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         814
+        ],
+        "pydata/xarray": [
+         41,
+         -127
+        ],
+        "pytest-dev/pytest": [
+         14,
+         391
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         379
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         3003
+        ],
+        "sympy/sympy": [
+         336,
+         2565
+        ]
+       }
+      },
+      "joint-runs": {
+       "saved_bytes": -81,
+       "percent_saved": -0.006660658369076125,
+       "bytes_per_query": -0.05865314989138305,
+       "ci_bytes": [
+        -0.3454057679409792,
+        0.20080726538849647
+       ],
+       "equal_issue_bytes": 0.019009521916498674,
+       "equal_project_bytes": 0.06928617859354089,
+       "faster": 6,
+       "slower": 1,
+       "tied": 1374,
+       "two_sided_project_randomization": 1.0,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         18
+        ],
+        "django/django": [
+         326,
+         18
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         19
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         0
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         54
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -190
+        ],
+        "sympy/sympy": [
+         336,
+         0
+        ]
+       }
+      },
+      "epoch-runs": {
+       "saved_bytes": 3860,
+       "percent_saved": 0.31740915190905983,
+       "bytes_per_query": 2.79507603186097,
+       "ci_bytes": [
+        2.09126526458616,
+        3.8368715083798883
+       ],
+       "equal_issue_bytes": 2.1310054375361376,
+       "equal_project_bytes": 5.197876686520811,
+       "faster": 26,
+       "slower": 56,
+       "tied": 1299,
+       "two_sided_project_randomization": 0.03125,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -21
+        ],
+        "django/django": [
+         326,
+         1017
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         395
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         407
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         350
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         845
+        ],
+        "sympy/sympy": [
+         336,
+         867
+        ]
+       }
+      },
+      "adapt_flat-static_flat": {
+       "saved_bytes": 1216,
+       "percent_saved": 0.1010183245246905,
+       "bytes_per_query": 0.8805213613323678,
+       "ci_bytes": [
+        0.2796207278167969,
+        1.6909072403636465
+       ],
+       "equal_issue_bytes": 0.8646326746801943,
+       "equal_project_bytes": 1.3406477034262259,
+       "faster": 51,
+       "slower": 8,
+       "tied": 1322,
+       "two_sided_project_randomization": 0.03125,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         80
+        ],
+        "django/django": [
+         326,
+         669
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         98
+        ],
+        "pydata/xarray": [
+         41,
+         39
+        ],
+        "pytest-dev/pytest": [
+         14,
+         38
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         168
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -40
+        ],
+        "sympy/sympy": [
+         336,
+         164
+        ]
+       }
+      }
+     }
+    },
+    "point": {
+     "methods": {
+      "full": {
+       "queries": 1381,
+       "bytes": 1284519,
+       "mean": 930.1368573497466,
+       "median": 538.0,
+       "p95": 4417.0,
+       "request_bytes": 49769,
+       "reply_bytes": 1234750,
+       "blocks_offered": 0,
+       "blocks_confirmed": 0,
+       "output_rows_reused": 0,
+       "entire_response_within": {
+        "512": 677,
+        "1024": 1098,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "whole": {
+       "queries": 1381,
+       "bytes": 1252062,
+       "mean": 906.6343229543809,
+       "median": 513.0,
+       "p95": 4417.0,
+       "request_bytes": 54706,
+       "reply_bytes": 1197356,
+       "blocks_offered": 248,
+       "blocks_confirmed": 139,
+       "output_rows_reused": 2080,
+       "entire_response_within": {
+        "512": 689,
+        "1024": 1099,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "pages": {
+       "queries": 1381,
+       "bytes": 1215413,
+       "mean": 880.0963070238957,
+       "median": 475.0,
+       "p95": 4384.0,
+       "request_bytes": 70782,
+       "reply_bytes": 1144631,
+       "blocks_offered": 1057,
+       "blocks_confirmed": 880,
+       "output_rows_reused": 5758,
+       "entire_response_within": {
+        "512": 725,
+        "1024": 1110,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "runs": {
+       "queries": 1381,
+       "bytes": 1221279,
+       "mean": 884.3439536567705,
+       "median": 481.0,
+       "p95": 4384.0,
+       "request_bytes": 61605,
+       "reply_bytes": 1159674,
+       "blocks_offered": 594,
+       "blocks_confirmed": 439,
+       "output_rows_reused": 4756,
+       "entire_response_within": {
+        "512": 721,
+        "1024": 1110,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "lean_runs": {
+       "queries": 1381,
+       "bytes": 1220878,
+       "mean": 884.05358435916,
+       "median": 481.0,
+       "p95": 4384.0,
+       "request_bytes": 61125,
+       "reply_bytes": 1159753,
+       "blocks_offered": 570,
+       "blocks_confirmed": 421,
+       "output_rows_reused": 4740,
+       "entire_response_within": {
+        "512": 722,
+        "1024": 1110,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "joint": {
+       "queries": 1381,
+       "bytes": 1226398,
+       "mean": 888.0506879073135,
+       "median": 490.0,
+       "p95": 4417.0,
+       "request_bytes": 60657,
+       "reply_bytes": 1165741,
+       "blocks_offered": 541,
+       "blocks_confirmed": 386,
+       "output_rows_reused": 4308,
+       "entire_response_within": {
+        "512": 714,
+        "1024": 1107,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "epoch": {
+       "queries": 1381,
+       "bytes": 1221871,
+       "mean": 884.7726285300507,
+       "median": 481.0,
+       "p95": 4417.0,
+       "request_bytes": 62778,
+       "reply_bytes": 1159093,
+       "blocks_offered": 648,
+       "blocks_confirmed": 492,
+       "output_rows_reused": 4716,
+       "entire_response_within": {
+        "512": 719,
+        "1024": 1108,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "static_flat": {
+       "queries": 1381,
+       "bytes": 1215413,
+       "mean": 880.0963070238957,
+       "median": 475.0,
+       "p95": 4384.0,
+       "request_bytes": 70782,
+       "reply_bytes": 1144631,
+       "blocks_offered": 1057,
+       "blocks_confirmed": 880,
+       "output_rows_reused": 5758,
+       "entire_response_within": {
+        "512": 725,
+        "1024": 1110,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "adapt_flat": {
+       "queries": 1381,
+       "bytes": 1214074,
+       "mean": 879.1267197682838,
+       "median": 475.0,
+       "p95": 4384.0,
+       "request_bytes": 68201,
+       "reply_bytes": 1145873,
+       "blocks_offered": 926,
+       "blocks_confirmed": 773,
+       "output_rows_reused": 5670,
+       "entire_response_within": {
+        "512": 729,
+        "1024": 1112,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "adapt_joint": {
+       "queries": 1381,
+       "bytes": 1217286,
+       "mean": 881.4525706010138,
+       "median": 477.0,
+       "p95": 4384.0,
+       "request_bytes": 67473,
+       "reply_bytes": 1149813,
+       "blocks_offered": 885,
+       "blocks_confirmed": 729,
+       "output_rows_reused": 5404,
+       "entire_response_within": {
+        "512": 721,
+        "1024": 1110,
+        "2048": 1258,
+        "4096": 1300
+       }
+      }
+     },
+     "contrasts": {
+      "adapt_joint-full": {
+       "saved_bytes": 67233,
+       "percent_saved": 5.234099300983481,
+       "bytes_per_query": 48.6842867487328,
+       "ci_bytes": [
+        36.63293789253315,
+        66.37115530303029
+       ],
+       "equal_issue_bytes": 56.70107902394972,
+       "equal_project_bytes": 60.86767464504351,
+       "faster": 378,
+       "slower": 140,
+       "tied": 863,
+       "two_sided_project_randomization": 0.0078125,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         2359
+        ],
+        "django/django": [
+         326,
+         18202
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         6104
+        ],
+        "pydata/xarray": [
+         41,
+         1777
+        ],
+        "pytest-dev/pytest": [
+         14,
+         1408
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         11459
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         9770
+        ],
+        "sympy/sympy": [
+         336,
+         16154
+        ]
+       }
+      },
+      "adapt_joint-static_flat": {
+       "saved_bytes": -1873,
+       "percent_saved": -0.15410399592566476,
+       "bytes_per_query": -1.3562635771180305,
+       "ci_bytes": [
+        -2.2692778951571313,
+        -0.09394914129685882
+       ],
+       "equal_issue_bytes": -2.3921909927084886,
+       "equal_project_bytes": -1.294719479304069,
+       "faster": 62,
+       "slower": 35,
+       "tied": 1284,
+       "two_sided_project_randomization": 0.1484375,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -279
+        ],
+        "django/django": [
+         326,
+         -842
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         -224
+        ],
+        "pydata/xarray": [
+         41,
+         39
+        ],
+        "pytest-dev/pytest": [
+         14,
+         38
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         282
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -319
+        ],
+        "sympy/sympy": [
+         336,
+         -568
+        ]
+       }
+      },
+      "adapt_joint-adapt_flat": {
+       "saved_bytes": -3212,
+       "percent_saved": -0.26456377453104174,
+       "bytes_per_query": -2.325850832729906,
+       "ci_bytes": [
+        -3.7135161606268365,
+        -0.8666407355021221
+       ],
+       "equal_issue_bytes": -3.4213433423734743,
+       "equal_project_bytes": -2.036227308135413,
+       "faster": 19,
+       "slower": 25,
+       "tied": 1337,
+       "two_sided_project_randomization": 0.0625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -193
+        ],
+        "django/django": [
+         326,
+         -1582
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         -322
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         0
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         72
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -370
+        ],
+        "sympy/sympy": [
+         336,
+         -817
+        ]
+       }
+      },
+      "adapt_joint-runs": {
+       "saved_bytes": 3993,
+       "percent_saved": 0.32695231802069796,
+       "bytes_per_query": 2.891383055756698,
+       "ci_bytes": [
+        -0.7099216767187926,
+        6.5
+       ],
+       "equal_issue_bytes": 2.6266477237841426,
+       "equal_project_bytes": 3.548460117209901,
+       "faster": 97,
+       "slower": 184,
+       "tied": 1100,
+       "two_sided_project_randomization": 0.265625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -260
+        ],
+        "django/django": [
+         326,
+         122
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         -415
+        ],
+        "pydata/xarray": [
+         41,
+         -201
+        ],
+        "pytest-dev/pytest": [
+         14,
+         391
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         303
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         2810
+        ],
+        "sympy/sympy": [
+         336,
+         1243
+        ]
+       }
+      },
+      "joint-runs": {
+       "saved_bytes": -5119,
+       "percent_saved": -0.41915074278686526,
+       "bytes_per_query": -3.706734250543085,
+       "ci_bytes": [
+        -5.927580935790766,
+        -0.693079329132942
+       ],
+       "equal_issue_bytes": -7.119017760978124,
+       "equal_project_bytes": -2.71364252355546,
+       "faster": 20,
+       "slower": 27,
+       "tied": 1334,
+       "two_sided_project_randomization": 0.0625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -193
+        ],
+        "django/django": [
+         326,
+         -2209
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         -322
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         0
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         126
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -312
+        ],
+        "sympy/sympy": [
+         336,
+         -2209
+        ]
+       }
+      },
+      "epoch-runs": {
+       "saved_bytes": -592,
+       "percent_saved": -0.04847377216835792,
+       "bytes_per_query": -0.42867487328023174,
+       "ci_bytes": [
+        -2.891333821746193,
+        2.823830409356725
+       ],
+       "equal_issue_bytes": -4.382222386178402,
+       "equal_project_bytes": 2.5926533754300634,
+       "faster": 35,
+       "slower": 68,
+       "tied": 1278,
+       "two_sided_project_randomization": 0.765625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -232
+        ],
+        "django/django": [
+         326,
+         -453
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         -280
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         407
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         400
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         1056
+        ],
+        "sympy/sympy": [
+         336,
+         -1490
+        ]
+       }
+      },
+      "adapt_flat-static_flat": {
+       "saved_bytes": 1339,
+       "percent_saved": 0.11016831315774966,
+       "bytes_per_query": 0.9695872556118754,
+       "ci_bytes": [
+        0.28265264775744026,
+        1.7341274630684447
+       ],
+       "equal_issue_bytes": 1.0291523496649855,
+       "equal_project_bytes": 0.7415078288313437,
+       "faster": 64,
+       "slower": 11,
+       "tied": 1306,
+       "two_sided_project_randomization": 0.046875,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -86
+        ],
+        "django/django": [
+         326,
+         740
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         98
+        ],
+        "pydata/xarray": [
+         41,
+         39
+        ],
+        "pytest-dev/pytest": [
+         14,
+         38
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         210
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         51
+        ],
+        "sympy/sympy": [
+         336,
+         249
+        ]
+       }
+      }
+     }
+    },
+    "typed": {
+     "methods": {
+      "full": {
+       "queries": 1381,
+       "bytes": 1284519,
+       "mean": 930.1368573497466,
+       "median": 538.0,
+       "p95": 4417.0,
+       "request_bytes": 49769,
+       "reply_bytes": 1234750,
+       "blocks_offered": 0,
+       "blocks_confirmed": 0,
+       "output_rows_reused": 0,
+       "entire_response_within": {
+        "512": 677,
+        "1024": 1098,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "whole": {
+       "queries": 1381,
+       "bytes": 1243301,
+       "mean": 900.2903692976105,
+       "median": 504.0,
+       "p95": 4417.0,
+       "request_bytes": 55454,
+       "reply_bytes": 1187847,
+       "blocks_offered": 285,
+       "blocks_confirmed": 158,
+       "output_rows_reused": 2698,
+       "entire_response_within": {
+        "512": 694,
+        "1024": 1102,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "pages": {
+       "queries": 1381,
+       "bytes": 1209119,
+       "mean": 875.5387400434468,
+       "median": 466.0,
+       "p95": 4384.0,
+       "request_bytes": 71224,
+       "reply_bytes": 1137895,
+       "blocks_offered": 1079,
+       "blocks_confirmed": 906,
+       "output_rows_reused": 6117,
+       "entire_response_within": {
+        "512": 732,
+        "1024": 1109,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "runs": {
+       "queries": 1381,
+       "bytes": 1220195,
+       "mean": 883.5590152063722,
+       "median": 487.0,
+       "p95": 4384.0,
+       "request_bytes": 60496,
+       "reply_bytes": 1159699,
+       "blocks_offered": 538,
+       "blocks_confirmed": 387,
+       "output_rows_reused": 4725,
+       "entire_response_within": {
+        "512": 717,
+        "1024": 1108,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "lean_runs": {
+       "queries": 1381,
+       "bytes": 1219834,
+       "mean": 883.2976104272267,
+       "median": 487.0,
+       "p95": 4384.0,
+       "request_bytes": 60058,
+       "reply_bytes": 1159776,
+       "blocks_offered": 516,
+       "blocks_confirmed": 370,
+       "output_rows_reused": 4710,
+       "entire_response_within": {
+        "512": 717,
+        "1024": 1108,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "joint": {
+       "queries": 1381,
+       "bytes": 1222579,
+       "mean": 885.285300506879,
+       "median": 489.0,
+       "p95": 4417.0,
+       "request_bytes": 60208,
+       "reply_bytes": 1162371,
+       "blocks_offered": 522,
+       "blocks_confirmed": 371,
+       "output_rows_reused": 4493,
+       "entire_response_within": {
+        "512": 716,
+        "1024": 1107,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "epoch": {
+       "queries": 1381,
+       "bytes": 1218138,
+       "mean": 882.0695148443157,
+       "median": 481.0,
+       "p95": 4417.0,
+       "request_bytes": 62471,
+       "reply_bytes": 1155667,
+       "blocks_offered": 636,
+       "blocks_confirmed": 484,
+       "output_rows_reused": 4870,
+       "entire_response_within": {
+        "512": 719,
+        "1024": 1108,
+        "2048": 1258,
+        "4096": 1299
+       }
+      },
+      "static_flat": {
+       "queries": 1381,
+       "bytes": 1209119,
+       "mean": 875.5387400434468,
+       "median": 466.0,
+       "p95": 4384.0,
+       "request_bytes": 71224,
+       "reply_bytes": 1137895,
+       "blocks_offered": 1079,
+       "blocks_confirmed": 906,
+       "output_rows_reused": 6117,
+       "entire_response_within": {
+        "512": 732,
+        "1024": 1109,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "adapt_flat": {
+       "queries": 1381,
+       "bytes": 1208360,
+       "mean": 874.9891383055757,
+       "median": 466.0,
+       "p95": 4384.0,
+       "request_bytes": 68704,
+       "reply_bytes": 1139656,
+       "blocks_offered": 951,
+       "blocks_confirmed": 801,
+       "output_rows_reused": 6004,
+       "entire_response_within": {
+        "512": 733,
+        "1024": 1109,
+        "2048": 1258,
+        "4096": 1300
+       }
+      },
+      "adapt_joint": {
+       "queries": 1381,
+       "bytes": 1210282,
+       "mean": 876.3808834178132,
+       "median": 466.0,
+       "p95": 4417.0,
+       "request_bytes": 68452,
+       "reply_bytes": 1141830,
+       "blocks_offered": 937,
+       "blocks_confirmed": 787,
+       "output_rows_reused": 5822,
+       "entire_response_within": {
+        "512": 732,
+        "1024": 1109,
+        "2048": 1258,
+        "4096": 1299
+       }
+      }
+     },
+     "contrasts": {
+      "adapt_joint-full": {
+       "saved_bytes": 74237,
+       "percent_saved": 5.779361768880024,
+       "bytes_per_query": 53.75597393193338,
+       "ci_bytes": [
+        40.48933782267115,
+        71.14255541185442
+       ],
+       "equal_issue_bytes": 60.81012490568508,
+       "equal_project_bytes": 63.94841932100498,
+       "faster": 386,
+       "slower": 112,
+       "tied": 883,
+       "two_sided_project_randomization": 0.0078125,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         2379
+        ],
+        "django/django": [
+         326,
+         23183
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         7313
+        ],
+        "pydata/xarray": [
+         41,
+         1851
+        ],
+        "pytest-dev/pytest": [
+         14,
+         1408
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         11191
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         11325
+        ],
+        "sympy/sympy": [
+         336,
+         15587
+        ]
+       }
+      },
+      "adapt_joint-static_flat": {
+       "saved_bytes": -1163,
+       "percent_saved": -0.09618573523367013,
+       "bytes_per_query": -0.8421433743664012,
+       "ci_bytes": [
+        -3.6231292517006803,
+        1.2666267225883763
+       ],
+       "equal_issue_bytes": -2.6527399461124,
+       "equal_project_bytes": -1.0924023498380429,
+       "faster": 54,
+       "slower": 15,
+       "tied": 1312,
+       "two_sided_project_randomization": 0.78125,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -305
+        ],
+        "django/django": [
+         326,
+         580
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         135
+        ],
+        "pydata/xarray": [
+         41,
+         39
+        ],
+        "pytest-dev/pytest": [
+         14,
+         38
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         202
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -40
+        ],
+        "sympy/sympy": [
+         336,
+         -1812
+        ]
+       }
+      },
+      "adapt_joint-adapt_flat": {
+       "saved_bytes": -1922,
+       "percent_saved": -0.1590585587076699,
+       "bytes_per_query": -1.391745112237509,
+       "ci_bytes": [
+        -3.512724372559111,
+        0.11949252292446673
+       ],
+       "equal_issue_bytes": -2.524994520856354,
+       "equal_project_bytes": -2.422130059678091,
+       "faster": 9,
+       "slower": 5,
+       "tied": 1367,
+       "two_sided_project_randomization": 0.34375,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -426
+        ],
+        "django/django": [
+         326,
+         36
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         37
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         0
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         54
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -85
+        ],
+        "sympy/sympy": [
+         336,
+         -1538
+        ]
+       }
+      },
+      "adapt_joint-runs": {
+       "saved_bytes": 9913,
+       "percent_saved": 0.8124111310077488,
+       "bytes_per_query": 7.178131788559015,
+       "ci_bytes": [
+        1.815405958850932,
+        11.502766833666893
+       ],
+       "equal_issue_bytes": 8.41784688976191,
+       "equal_project_bytes": 5.396634298691798,
+       "faster": 114,
+       "slower": 184,
+       "tied": 1083,
+       "two_sided_project_randomization": 0.0703125,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -493
+        ],
+        "django/django": [
+         326,
+         4713
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         416
+        ],
+        "pydata/xarray": [
+         41,
+         -127
+        ],
+        "pytest-dev/pytest": [
+         14,
+         391
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         574
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         3243
+        ],
+        "sympy/sympy": [
+         336,
+         1196
+        ]
+       }
+      },
+      "joint-runs": {
+       "saved_bytes": -2384,
+       "percent_saved": -0.19537860751765088,
+       "bytes_per_query": -1.726285300506879,
+       "ci_bytes": [
+        -3.6450540315876974,
+        -0.18741238629915108
+       ],
+       "equal_issue_bytes": -3.7187929704687575,
+       "equal_project_bytes": -2.5992772989418946,
+       "faster": 9,
+       "slower": 6,
+       "tied": 1366,
+       "two_sided_project_randomization": 0.15625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -426
+        ],
+        "django/django": [
+         326,
+         -426
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         37
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         0
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         54
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         -85
+        ],
+        "sympy/sympy": [
+         336,
+         -1538
+        ]
+       }
+      },
+      "epoch-runs": {
+       "saved_bytes": 2057,
+       "percent_saved": 0.16857961227508717,
+       "bytes_per_query": 1.4895003620564808,
+       "ci_bytes": [
+        -1.3328025477707006,
+        4.089909730227336
+       ],
+       "equal_issue_bytes": -0.8013740194455228,
+       "equal_project_bytes": 2.621645380077077,
+       "faster": 26,
+       "slower": 59,
+       "tied": 1296,
+       "two_sided_project_randomization": 0.390625,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         -465
+        ],
+        "django/django": [
+         326,
+         1558
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         -160
+        ],
+        "pydata/xarray": [
+         41,
+         0
+        ],
+        "pytest-dev/pytest": [
+         14,
+         407
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         331
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         1034
+        ],
+        "sympy/sympy": [
+         336,
+         -648
+        ]
+       }
+      },
+      "adapt_flat-static_flat": {
+       "saved_bytes": 759,
+       "percent_saved": 0.06277297768044336,
+       "bytes_per_query": 0.5496017378711079,
+       "ci_bytes": [
+        -0.23517520215633422,
+        1.504010337598496
+       ],
+       "equal_issue_bytes": -0.1277454252560451,
+       "equal_project_bytes": 1.3297277098400484,
+       "faster": 55,
+       "slower": 10,
+       "tied": 1316,
+       "two_sided_project_randomization": 0.3046875,
+       "per_project": {
+        "astropy/astropy": [
+         28,
+         121
+        ],
+        "django/django": [
+         326,
+         544
+        ],
+        "matplotlib/matplotlib": [
+         230,
+         98
+        ],
+        "pydata/xarray": [
+         41,
+         39
+        ],
+        "pytest-dev/pytest": [
+         14,
+         38
+        ],
+        "scikit-learn/scikit-learn": [
+         122,
+         148
+        ],
+        "sphinx-doc/sphinx": [
+         284,
+         45
+        ],
+        "sympy/sympy": [
+         336,
+         -274
+        ]
+       }
+      }
+     }
+    }
+   },
+   "selected": {
+    "lru": {
+     "static_flat": {
+      "pages": 1381
+     },
+     "adapt_flat": {
+      "lean_runs": 408,
+      "pages": 973
+     },
+     "adapt_joint": {
+      "joint": 220,
+      "pages": 973,
+      "lean_runs": 188
+     }
+    },
+    "point": {
+     "static_flat": {
+      "pages": 1381
+     },
+     "adapt_flat": {
+      "lean_runs": 464,
+      "pages": 917
+     },
+     "adapt_joint": {
+      "joint": 255,
+      "pages": 917,
+      "lean_runs": 209
+     }
+    },
+    "typed": {
+     "static_flat": {
+      "pages": 1381
+     },
+     "adapt_flat": {
+      "lean_runs": 419,
+      "pages": 962
+     },
+     "adapt_joint": {
+      "joint": 227,
+      "pages": 962,
+      "lean_runs": 192
+     }
+    }
+   },
+   "writer_comparison": {
+    "typed-lru": {
+     "saved_bytes": -7675,
+     "per_query": -5.55756698044895,
+     "ci": [
+      -7.793924466338259,
+      -3.90819209039548
+     ],
+     "better": 48,
+     "worse": 62
+    },
+    "typed-point": {
+     "saved_bytes": 7004,
+     "per_query": 5.071687183200579,
+     "ci": [
+      -0.5456612930722184,
+      10.743350593905111
+     ],
+     "better": 83,
+     "worse": 43
+    },
+    "point-lru": {
+     "saved_bytes": -14679,
+     "per_query": -10.629254163649529,
+     "ci": [
+      -15.22505800464037,
+      -6.6351457840819545
+     ],
+     "better": 51,
+     "worse": 109
+    }
+   }
+  }
+ },
+ "python": "3.14.4",
+ "brotli": "1.2.0",
+ "exact_checks": 64932
+}

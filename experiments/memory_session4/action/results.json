@@ -1,0 +1,804 @@
+{
+  "builds": {
+    "all_retry_runtime_hours": 3791.221666666667,
+    "diagnosis_bytes": null,
+    "diagnosis_reads": null,
+    "heldout": 20486,
+    "n_projects": 9930,
+    "paired": {
+      "context_all vs repo_status": {
+        "additional_recoveries": 1092,
+        "delta_brier": {
+          "difference": -0.010457113905356705,
+          "macro_project_difference": -0.013965726432166745,
+          "project_boot95": [
+            -0.012543976488674601,
+            -0.00836346542079778
+          ],
+          "projects": 9930
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": -0.007810211851996486,
+          "macro_project_difference": 0.026548735436875665,
+          "project_boot95": [
+            -0.016077481840193704,
+            0.0005893620156180934
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 1252
+      },
+      "explore_recent8 vs recent8": {
+        "additional_recoveries": 424,
+        "delta_rescues_per_opportunity": {
+          "difference": -0.005613589768622474,
+          "macro_project_difference": -0.006637195771254283,
+          "project_boot95": [
+            -0.009474373834601623,
+            -0.0018315018315018315
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 539
+      },
+      "recent8 vs global_context": {
+        "additional_recoveries": 827,
+        "delta_brier": {
+          "difference": -0.007734912625538713,
+          "macro_project_difference": -0.004064196885454549,
+          "project_boot95": [
+            -0.00897513149019261,
+            -0.006558657826131351
+          ],
+          "projects": 9930
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.006589866250122035,
+          "macro_project_difference": 0.0043744823848074835,
+          "project_boot95": [
+            -0.0018883864234955027,
+            0.015151515151515152
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 692
+      },
+      "recent8 vs last_repo": {
+        "additional_recoveries": 1613,
+        "delta_brier": {
+          "difference": -0.08365254443927485,
+          "macro_project_difference": -0.05568166302468954,
+          "project_boot95": [
+            -0.09020292413778891,
+            -0.0776492457151798
+          ],
+          "projects": 9930
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.006248169481597188,
+          "macro_project_difference": -0.0009249166636338555,
+          "project_boot95": [
+            -0.0037767728469910054,
+            0.01642720541362232
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 1485
+      },
+      "recent8 vs repo_status": {
+        "additional_recoveries": 1228,
+        "delta_brier": {
+          "difference": -0.010120317865930957,
+          "macro_project_difference": -0.013943169983087034,
+          "project_boot95": [
+            -0.012216676990064568,
+            -0.007971268622332352
+          ],
+          "projects": 9930
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": -0.008054280972371375,
+          "macro_project_difference": 0.03348574654010228,
+          "project_boot95": [
+            -0.017834206106115996,
+            0.0012862372613040467
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 1393
+      },
+      "repo vs global": {
+        "additional_recoveries": 2232,
+        "delta_brier": {
+          "difference": -0.016179938455606856,
+          "macro_project_difference": -0.007226744580810657,
+          "project_boot95": [
+            -0.01822488400174298,
+            -0.014280027549968174
+          ],
+          "projects": 9930
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.04173581958410622,
+          "macro_project_difference": -0.022557877451132913,
+          "project_boot95": [
+            0.028930319964393453,
+            0.055134161372902245
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 1377
+      },
+      "repo_status vs status": {
+        "additional_recoveries": 2259,
+        "delta_brier": {
+          "difference": -0.014586935399803318,
+          "macro_project_difference": -0.00654359169986937,
+          "project_boot95": [
+            -0.016406480338007737,
+            -0.01286030688277666
+          ],
+          "projects": 9930
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.04393244166748023,
+          "macro_project_difference": -0.019934049234856355,
+          "project_boot95": [
+            0.03152641201759154,
+            0.05661286437003132
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 1359
+      },
+      "teacher_recent8 vs recent8": {
+        "additional_recoveries": 482,
+        "delta_rescues_per_opportunity": {
+          "difference": 0.003124084740798594,
+          "macro_project_difference": -0.01164100215334816,
+          "project_boot95": [
+            -0.0012408179471907882,
+            0.007904752610520153
+          ],
+          "projects": 9930
+        },
+        "lost_recoveries": 418
+      }
+    },
+    "prior_seen_projects": 2631,
+    "rates": {
+      "context_all": {
+        "actual_retry_runtime_hours": 1066.1016666666667,
+        "brier": 0.2257659126443354,
+        "ppv": 0.6641444959726629,
+        "recall": 0.27280930419089633,
+        "recovered": 2721,
+        "selected": 4097,
+        "threshold_recoveries": 7261,
+        "threshold_retries": 12246
+      },
+      "explore_recent8": {
+        "actual_retry_runtime_hours": 998.8141666666667,
+        "ppv": 0.6348547717842323,
+        "recall": 0.2607780228594345,
+        "recovered": 2601,
+        "selected": 4097
+      },
+      "global": {
+        "actual_retry_runtime_hours": 761.4758333333333,
+        "brier": 0.2509499505582382,
+        "ppv": 0.48498901635342934,
+        "recall": 0.19921796671345499,
+        "recovered": 1987,
+        "selected": 4097,
+        "threshold_recoveries": 9974,
+        "threshold_retries": 20486
+      },
+      "global_context": {
+        "actual_retry_runtime_hours": 1068.0936111111112,
+        "brier": 0.2338376213092999,
+        "ppv": 0.6299731510861606,
+        "recall": 0.2587728093041909,
+        "recovered": 2581,
+        "selected": 4097,
+        "threshold_recoveries": 7178,
+        "threshold_retries": 12533
+      },
+      "last_repo": {
+        "actual_retry_runtime_hours": 923.8516666666667,
+        "brier": 0.30975525312303603,
+        "ppv": 0.6316817183304857,
+        "recall": 0.25947463404852616,
+        "recovered": 2588,
+        "selected": 4097,
+        "threshold_recoveries": 7834,
+        "threshold_retries": 14899
+      },
+      "last_status": {
+        "brier": 0.4868690813238309,
+        "threshold_recoveries": 0,
+        "threshold_retries": 0
+      },
+      "random": {
+        "actual_retry_runtime_hours": 761.4758333333333,
+        "brier": 0.25,
+        "ppv": 0.48498901635342934,
+        "recall": 0.19921796671345499,
+        "recovered": 1987,
+        "selected": 4097,
+        "threshold_recoveries": 9974,
+        "threshold_retries": 20486
+      },
+      "recent1": {
+        "brier": 0.22894255783132628,
+        "threshold_recoveries": 7101,
+        "threshold_retries": 12132
+      },
+      "recent32": {
+        "brier": 0.22574823398068883,
+        "threshold_recoveries": 7262,
+        "threshold_retries": 12245
+      },
+      "recent8": {
+        "actual_retry_runtime_hours": 1022.9430555555556,
+        "brier": 0.22610270868376114,
+        "ppv": 0.662924090798145,
+        "recall": 0.27230800080208545,
+        "recovered": 2716,
+        "selected": 4097,
+        "threshold_recoveries": 7259,
+        "threshold_retries": 12256
+      },
+      "repo": {
+        "actual_retry_runtime_hours": 1159.6538888888888,
+        "brier": 0.23477001210263138,
+        "ppv": 0.693678301195997,
+        "recall": 0.28494084620012033,
+        "recovered": 2842,
+        "selected": 4097,
+        "threshold_recoveries": 8646,
+        "threshold_retries": 16325
+      },
+      "repo_status": {
+        "actual_retry_runtime_hours": 1164.8083333333334,
+        "brier": 0.23622302654969213,
+        "ppv": 0.7031974615572371,
+        "recall": 0.2888510126328454,
+        "recovered": 2881,
+        "selected": 4097,
+        "threshold_recoveries": 8090,
+        "threshold_retries": 15218
+      },
+      "status": {
+        "actual_retry_runtime_hours": 779.4552777777777,
+        "brier": 0.25080996194949545,
+        "ppv": 0.4835245301440078,
+        "recall": 0.1986164026468819,
+        "recovered": 1981,
+        "selected": 4097,
+        "threshold_recoveries": 8640,
+        "threshold_retries": 17729
+      },
+      "teacher_recent8": {
+        "actual_retry_runtime_hours": 1055.641111111111,
+        "ppv": 0.6785452770319746,
+        "recall": 0.27872468417886503,
+        "recovered": 2780,
+        "selected": 4097
+      }
+    },
+    "reason_support": null,
+    "recovered": 9974,
+    "strata": {
+      "new_project": {
+        "n": 11207,
+        "recovered": 4287,
+        "repo_status_brier": 0.24566739593295242,
+        "target_brier": 0.22459092440736542
+      },
+      "no_matching_receipt": {
+        "n": 10895,
+        "recovered": 4519,
+        "repo_status_brier": 0.25118371229459097,
+        "target_brier": 0.23518437385948596
+      },
+      "one_or_more": {
+        "n": 9591,
+        "recovered": 5455,
+        "repo_status_brier": 0.21922827405353185,
+        "target_brier": 0.2157862930764708
+      },
+      "project_in_warmup": {
+        "n": 9279,
+        "recovered": 5687,
+        "repo_status_brier": 0.2248162965488086,
+        "target_brier": 0.22792861302534614
+      }
+    },
+    "test_start": "2019-10-27T06:14:49+00:00",
+    "time_from": "2019-08-30T06:13:16+00:00",
+    "time_to": "2019-12-19T16:57:06+00:00",
+    "total": 40971,
+    "train": 20485
+  },
+  "jobs": {
+    "all_retry_runtime_hours": 134.28416666666666,
+    "diagnosis_bytes": {
+      "always": 6511,
+      "sparse": 6440,
+      "uncertain": 6334
+    },
+    "diagnosis_reads": {
+      "always": 979,
+      "sparse": 971,
+      "uncertain": 939
+    },
+    "heldout": 979,
+    "n_projects": 508,
+    "paired": {
+      "context_all vs repo_status": {
+        "additional_recoveries": 75,
+        "delta_brier": {
+          "difference": 0.0138722040355449,
+          "macro_project_difference": 0.010246084526147196,
+          "project_boot95": [
+            -0.0034536766201204434,
+            0.03405444652679486
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": -0.014300306435137897,
+          "macro_project_difference": -0.013221818740048798,
+          "project_boot95": [
+            -0.06489361702127659,
+            0.02971311475409836
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 89
+      },
+      "explore_typed vs typed": {
+        "additional_recoveries": 19,
+        "delta_rescues_per_opportunity": {
+          "difference": -0.0010214504596527069,
+          "macro_project_difference": 0.0010373703287089114,
+          "project_boot95": [
+            -0.015337423312883436,
+            0.014242115971515769
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 20
+      },
+      "recent8 vs last_repo": {
+        "additional_recoveries": 89,
+        "delta_brier": {
+          "difference": -0.025475504926146197,
+          "macro_project_difference": -0.004492803378803771,
+          "project_boot95": [
+            -0.0557874835113698,
+            0.004079985055729906
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": -0.014300306435137897,
+          "macro_project_difference": -0.01918279236834526,
+          "project_boot95": [
+            -0.06769825918762089,
+            0.036889332003988036
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 103
+      },
+      "repo vs global": {
+        "additional_recoveries": 51,
+        "delta_brier": {
+          "difference": -0.005364078531283359,
+          "macro_project_difference": -0.003654854805519571,
+          "project_boot95": [
+            -0.011585609616080326,
+            0.001221444558086401
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.006128702757916241,
+          "macro_project_difference": -0.004056082663580095,
+          "project_boot95": [
+            -0.02330293819655522,
+            0.03741152679474216
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 45
+      },
+      "repo_status vs status": {
+        "additional_recoveries": 42,
+        "delta_brier": {
+          "difference": -0.005003141062771915,
+          "macro_project_difference": -0.0026206780237378806,
+          "project_boot95": [
+            -0.011397234148153787,
+            0.0015794082371403308
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.0040858018386108275,
+          "macro_project_difference": 0.0013889876907679031,
+          "project_boot95": [
+            -0.02702702702702703,
+            0.03829787234042553
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 38
+      },
+      "teacher_typed vs typed": {
+        "additional_recoveries": 20,
+        "delta_rescues_per_opportunity": {
+          "difference": 0.010214504596527068,
+          "macro_project_difference": 0.004806430446194225,
+          "project_boot95": [
+            -0.002997002997002997,
+            0.02478448275862069
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 10
+      },
+      "typed vs global_context": {
+        "additional_recoveries": 97,
+        "delta_brier": {
+          "difference": -0.036618977869003665,
+          "macro_project_difference": -0.02489127780806507,
+          "project_boot95": [
+            -0.058866771775511625,
+            -0.017054734698841355
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.024514811031664963,
+          "macro_project_difference": 0.003842963922987887,
+          "project_boot95": [
+            -0.02268041237113402,
+            0.07818532818532818
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 73
+      },
+      "typed vs global_type": {
+        "additional_recoveries": 16,
+        "delta_brier": {
+          "difference": -0.0016224646289457788,
+          "macro_project_difference": -0.006434408070788645,
+          "project_boot95": [
+            -0.012502362840002995,
+            0.009383900345238897
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": -0.011235955056179775,
+          "macro_project_difference": -0.01653971242725094,
+          "project_boot95": [
+            -0.03206412825651302,
+            0.01160541586073501
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 27
+      },
+      "typed vs repo_status": {
+        "additional_recoveries": 75,
+        "delta_brier": {
+          "difference": -0.019595997155316982,
+          "macro_project_difference": -0.013013509002995857,
+          "project_boot95": [
+            -0.029967721491808815,
+            -0.008381618301066929
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.014300306435137897,
+          "macro_project_difference": -0.004677981828358412,
+          "project_boot95": [
+            -0.01847826086956522,
+            0.0457516339869281
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 61
+      },
+      "typed_if_sparse vs typed": {
+        "additional_recoveries": 0,
+        "delta_brier": {
+          "difference": -0.00014737814897257121,
+          "macro_project_difference": -1.2348785334144748e-05,
+          "project_boot95": [
+            -0.0004494803982683714,
+            0.0
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.0,
+          "macro_project_difference": 0.0,
+          "project_boot95": [
+            0.0,
+            0.0
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 0
+      },
+      "typed_if_uncertain vs repo_status": {
+        "additional_recoveries": 77,
+        "delta_brier": {
+          "difference": -0.019696576681435436,
+          "macro_project_difference": -0.012956450744700811,
+          "project_boot95": [
+            -0.030115972587605448,
+            -0.008469081717210098
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.014300306435137897,
+          "macro_project_difference": -0.0052029162115605114,
+          "project_boot95": [
+            -0.019473081328751432,
+            0.0465587044534413
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 63
+      },
+      "typed_if_uncertain vs typed": {
+        "additional_recoveries": 2,
+        "delta_brier": {
+          "difference": -0.00010057952611845528,
+          "macro_project_difference": 5.705825829504596e-05,
+          "project_boot95": [
+            -0.0005595623236816647,
+            0.0003306436747148608
+          ],
+          "projects": 508
+        },
+        "delta_rescues_per_opportunity": {
+          "difference": 0.0,
+          "macro_project_difference": -0.0005249343832020996,
+          "project_boot95": [
+            -0.006109979633401222,
+            0.006091370558375634
+          ],
+          "projects": 508
+        },
+        "lost_recoveries": 2
+      }
+    },
+    "prior_seen_projects": 61,
+    "rates": {
+      "context_all": {
+        "actual_retry_runtime_hours": 26.226111111111113,
+        "brier": 0.2549159605623431,
+        "ppv": 0.5969387755102041,
+        "recall": 0.20172413793103447,
+        "recovered": 117,
+        "selected": 196,
+        "threshold_recoveries": 327,
+        "threshold_retries": 507
+      },
+      "explore_typed": {
+        "actual_retry_runtime_hours": 37.075833333333335,
+        "ppv": 0.7346938775510204,
+        "recall": 0.2482758620689655,
+        "recovered": 144,
+        "selected": 196
+      },
+      "global": {
+        "actual_retry_runtime_hours": 27.044722222222223,
+        "brier": 0.24723975067958728,
+        "ppv": 0.6479591836734694,
+        "recall": 0.2189655172413793,
+        "recovered": 127,
+        "selected": 196,
+        "threshold_recoveries": 538,
+        "threshold_retries": 909
+      },
+      "global_context": {
+        "actual_retry_runtime_hours": 28.649722222222223,
+        "brier": 0.2580667372404849,
+        "ppv": 0.6173469387755102,
+        "recall": 0.20862068965517241,
+        "recovered": 121,
+        "selected": 196,
+        "threshold_recoveries": 322,
+        "threshold_retries": 500
+      },
+      "global_type": {
+        "actual_retry_runtime_hours": 37.96222222222222,
+        "brier": 0.223070224000427,
+        "ppv": 0.7959183673469388,
+        "recall": 0.2689655172413793,
+        "recovered": 156,
+        "selected": 196,
+        "threshold_recoveries": 302,
+        "threshold_retries": 393
+      },
+      "last_repo": {
+        "actual_retry_runtime_hours": 34.67638888888889,
+        "brier": 0.2805016703906328,
+        "ppv": 0.6683673469387755,
+        "recall": 0.22586206896551725,
+        "recovered": 131,
+        "selected": 196,
+        "threshold_recoveries": 486,
+        "threshold_retries": 789
+      },
+      "last_status": {
+        "brier": 0.59244126659857,
+        "threshold_recoveries": 0,
+        "threshold_retries": 0
+      },
+      "random": {
+        "actual_retry_runtime_hours": 27.044722222222223,
+        "brier": 0.25,
+        "ppv": 0.6479591836734694,
+        "recall": 0.2189655172413793,
+        "recovered": 127,
+        "selected": 196,
+        "threshold_recoveries": 580,
+        "threshold_retries": 979
+      },
+      "recent1": {
+        "brier": 0.25660417680942893,
+        "threshold_recoveries": 327,
+        "threshold_retries": 511
+      },
+      "recent32": {
+        "brier": 0.2549159605623431,
+        "threshold_recoveries": 327,
+        "threshold_retries": 507
+      },
+      "recent8": {
+        "actual_retry_runtime_hours": 26.226111111111113,
+        "brier": 0.25502616546448664,
+        "ppv": 0.5969387755102041,
+        "recall": 0.20172413793103447,
+        "recovered": 117,
+        "selected": 196,
+        "threshold_recoveries": 327,
+        "threshold_retries": 507
+      },
+      "repo": {
+        "actual_retry_runtime_hours": 31.414722222222224,
+        "brier": 0.24187567214830394,
+        "ppv": 0.6785714285714286,
+        "recall": 0.2293103448275862,
+        "recovered": 133,
+        "selected": 196,
+        "threshold_recoveries": 497,
+        "threshold_retries": 798
+      },
+      "repo_status": {
+        "actual_retry_runtime_hours": 32.18361111111111,
+        "brier": 0.2410437565267982,
+        "ppv": 0.6683673469387755,
+        "recall": 0.22586206896551725,
+        "recovered": 131,
+        "selected": 196,
+        "threshold_recoveries": 455,
+        "threshold_retries": 735
+      },
+      "status": {
+        "actual_retry_runtime_hours": 32.721944444444446,
+        "brier": 0.24604689758957013,
+        "ppv": 0.6479591836734694,
+        "recall": 0.2189655172413793,
+        "recovered": 127,
+        "selected": 196,
+        "threshold_recoveries": 482,
+        "threshold_retries": 807
+      },
+      "teacher_typed": {
+        "actual_retry_runtime_hours": 36.94138888888889,
+        "ppv": 0.7908163265306123,
+        "recall": 0.2672413793103448,
+        "recovered": 155,
+        "selected": 196
+      },
+      "typed": {
+        "actual_retry_runtime_hours": 36.58444444444444,
+        "brier": 0.22144775937148123,
+        "ppv": 0.7397959183673469,
+        "recall": 0.25,
+        "recovered": 145,
+        "selected": 196,
+        "threshold_recoveries": 478,
+        "threshold_retries": 758
+      },
+      "typed_if_sparse": {
+        "actual_retry_runtime_hours": 36.58444444444444,
+        "brier": 0.22130038122250864,
+        "ppv": 0.7397959183673469,
+        "recall": 0.25,
+        "recovered": 145,
+        "selected": 196,
+        "threshold_recoveries": 478,
+        "threshold_retries": 758
+      },
+      "typed_if_uncertain": {
+        "actual_retry_runtime_hours": 37.17194444444444,
+        "brier": 0.22134717984536278,
+        "ppv": 0.7397959183673469,
+        "recall": 0.25,
+        "recovered": 145,
+        "selected": 196,
+        "threshold_recoveries": 478,
+        "threshold_retries": 758
+      }
+    },
+    "reason_support": {
+      "bash": 1,
+      "compilation": 3,
+      "compilation error": 1,
+      "compilation/test": 2,
+      "connection": 176,
+      "connection/credential": 1,
+      "connection/library": 9,
+      "connection/missing library": 1,
+      "credential": 12,
+      "credential/dependency": 1,
+      "credential/test/timeout": 1,
+      "credential/timeout": 1,
+      "dependency": 2,
+      "library": 31,
+      "missing library": 12,
+      "missing library/test": 2,
+      "missing library/timeout": 2,
+      "none": 551,
+      "test": 94,
+      "test/timeout": 1,
+      "timeout": 75
+    },
+    "recovered": 580,
+    "strata": {
+      "new_project": {
+        "n": 808,
+        "recovered": 461,
+        "repo_status_brier": 0.2451221507846008,
+        "target_brier": 0.22615223483466376
+      },
+      "no_matching_receipt": {
+        "n": 786,
+        "recovered": 471,
+        "repo_status_brier": 0.24314465758344106,
+        "target_brier": 0.22050316200032394
+      },
+      "one_or_more": {
+        "n": 193,
+        "recovered": 109,
+        "repo_status_brier": 0.23248775533238744,
+        "target_brier": 0.2252946688726709
+      },
+      "project_in_warmup": {
+        "n": 171,
+        "recovered": 119,
+        "repo_status_brier": 0.2217727474022103,
+        "target_brier": 0.19921842501913323
+      }
+    },
+    "test_start": "2019-10-09T13:52:16+00:00",
+    "time_from": "2019-10-08T18:14:09+00:00",
+    "time_to": "2019-10-09T23:39:31+00:00",
+    "total": 1957,
+    "train": 978
+  }
+}

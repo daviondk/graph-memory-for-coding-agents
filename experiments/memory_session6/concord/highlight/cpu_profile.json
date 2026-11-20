@@ -1,0 +1,1402 @@
+{
+ "notes": "Single CPU pass on the 197 stock prompts while the actor/judge server was in use. perf_counter covers only in-process render or additional selection/formatting, excluding transport and simulation. Not an attribution of overall model time.",
+ "stock_render": {
+  "n": 197,
+  "mean_us": 13.2502538071066,
+  "median_us": 11.5,
+  "p95_us": 28.5
+ },
+ "additional_selection_and_format": {
+  "n": 197,
+  "mean_us": 77.44822335025381,
+  "median_us": 14.8,
+  "p95_us": 310.3
+ },
+ "on_event": {
+  "n": 41,
+  "mean_us": 310.70243902439023,
+  "median_us": 255.0,
+  "p95_us": 737.3
+ },
+ "rows": [
+  {
+   "id": "hotpotqa-33",
+   "request": 1,
+   "original_us": 5.7,
+   "incremental_us": 6.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-33",
+   "request": 2,
+   "original_us": 11.6,
+   "incremental_us": 17.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-33",
+   "request": 3,
+   "original_us": 19.6,
+   "incremental_us": 14.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-33",
+   "request": 4,
+   "original_us": 20.2,
+   "incremental_us": 14.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-33",
+   "request": 5,
+   "original_us": 14.1,
+   "incremental_us": 13.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-33",
+   "request": 6,
+   "original_us": 16.8,
+   "incremental_us": 28.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-29",
+   "request": 1,
+   "original_us": 3.8,
+   "incremental_us": 4.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-29",
+   "request": 2,
+   "original_us": 6.4,
+   "incremental_us": 7.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-29",
+   "request": 3,
+   "original_us": 10.0,
+   "incremental_us": 154.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-29",
+   "request": 4,
+   "original_us": 6.7,
+   "incremental_us": 8.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-01",
+   "request": 1,
+   "original_us": 4.4,
+   "incremental_us": 5.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-01",
+   "request": 2,
+   "original_us": 8.2,
+   "incremental_us": 5.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-01",
+   "request": 3,
+   "original_us": 9.6,
+   "incremental_us": 12.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-01",
+   "request": 4,
+   "original_us": 22.7,
+   "incremental_us": 304.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-01",
+   "request": 5,
+   "original_us": 22.7,
+   "incremental_us": 17.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-08",
+   "request": 1,
+   "original_us": 4.5,
+   "incremental_us": 4.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-08",
+   "request": 2,
+   "original_us": 12.5,
+   "incremental_us": 14.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-08",
+   "request": 3,
+   "original_us": 20.5,
+   "incremental_us": 41.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-08",
+   "request": 4,
+   "original_us": 31.1,
+   "incremental_us": 737.3,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-08",
+   "request": 5,
+   "original_us": 31.3,
+   "incremental_us": 44.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-08",
+   "request": 6,
+   "original_us": 31.3,
+   "incremental_us": 41.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-21",
+   "request": 1,
+   "original_us": 4.7,
+   "incremental_us": 4.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-21",
+   "request": 2,
+   "original_us": 11.7,
+   "incremental_us": 28.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-21",
+   "request": 3,
+   "original_us": 14.1,
+   "incremental_us": 30.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-21",
+   "request": 4,
+   "original_us": 26.1,
+   "incremental_us": 272.3,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-21",
+   "request": 5,
+   "original_us": 30.7,
+   "incremental_us": 36.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-21",
+   "request": 6,
+   "original_us": 28.5,
+   "incremental_us": 39.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-24",
+   "request": 1,
+   "original_us": 3.9,
+   "incremental_us": 4.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-24",
+   "request": 2,
+   "original_us": 7.8,
+   "incremental_us": 8.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-24",
+   "request": 3,
+   "original_us": 12.4,
+   "incremental_us": 13.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-24",
+   "request": 4,
+   "original_us": 10.4,
+   "incremental_us": 184.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-38",
+   "request": 1,
+   "original_us": 3.9,
+   "incremental_us": 4.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-38",
+   "request": 2,
+   "original_us": 7.7,
+   "incremental_us": 8.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-38",
+   "request": 3,
+   "original_us": 12.0,
+   "incremental_us": 20.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-38",
+   "request": 4,
+   "original_us": 19.9,
+   "incremental_us": 13.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-38",
+   "request": 5,
+   "original_us": 23.8,
+   "incremental_us": 22.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-38",
+   "request": 6,
+   "original_us": 22.7,
+   "incremental_us": 21.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-15",
+   "request": 1,
+   "original_us": 5.4,
+   "incremental_us": 4.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-15",
+   "request": 2,
+   "original_us": 7.6,
+   "incremental_us": 7.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-15",
+   "request": 3,
+   "original_us": 9.4,
+   "incremental_us": 101.7,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-15",
+   "request": 4,
+   "original_us": 10.7,
+   "incremental_us": 16.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-15",
+   "request": 5,
+   "original_us": 15.1,
+   "incremental_us": 358.8,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-15",
+   "request": 6,
+   "original_us": 11.0,
+   "incremental_us": 16.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-02",
+   "request": 1,
+   "original_us": 4.2,
+   "incremental_us": 5.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-02",
+   "request": 2,
+   "original_us": 6.1,
+   "incremental_us": 6.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-02",
+   "request": 3,
+   "original_us": 12.5,
+   "incremental_us": 136.1,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-02",
+   "request": 4,
+   "original_us": 14.5,
+   "incremental_us": 34.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-02",
+   "request": 5,
+   "original_us": 15.4,
+   "incremental_us": 267.9,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-04",
+   "request": 1,
+   "original_us": 4.8,
+   "incremental_us": 4.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-04",
+   "request": 2,
+   "original_us": 9.4,
+   "incremental_us": 13.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-04",
+   "request": 3,
+   "original_us": 11.5,
+   "incremental_us": 310.3,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-04",
+   "request": 4,
+   "original_us": 13.9,
+   "incremental_us": 176.0,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-17",
+   "request": 1,
+   "original_us": 4.2,
+   "incremental_us": 5.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-17",
+   "request": 2,
+   "original_us": 6.5,
+   "incremental_us": 7.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-17",
+   "request": 3,
+   "original_us": 8.8,
+   "incremental_us": 10.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-17",
+   "request": 4,
+   "original_us": 12.3,
+   "incremental_us": 22.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-17",
+   "request": 5,
+   "original_us": 20.8,
+   "incremental_us": 198.2,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-17",
+   "request": 6,
+   "original_us": 22.9,
+   "incremental_us": 24.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-30",
+   "request": 1,
+   "original_us": 5.3,
+   "incremental_us": 6.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-30",
+   "request": 2,
+   "original_us": 12.4,
+   "incremental_us": 35.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-30",
+   "request": 3,
+   "original_us": 12.8,
+   "incremental_us": 30.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-30",
+   "request": 4,
+   "original_us": 32.5,
+   "incremental_us": 38.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-30",
+   "request": 5,
+   "original_us": 15.8,
+   "incremental_us": 144.5,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-19",
+   "request": 1,
+   "original_us": 4.3,
+   "incremental_us": 5.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-19",
+   "request": 2,
+   "original_us": 9.3,
+   "incremental_us": 29.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-19",
+   "request": 3,
+   "original_us": 22.8,
+   "incremental_us": 1280.5,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-19",
+   "request": 4,
+   "original_us": 19.4,
+   "incremental_us": 29.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-27",
+   "request": 1,
+   "original_us": 4.3,
+   "incremental_us": 4.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-27",
+   "request": 2,
+   "original_us": 9.4,
+   "incremental_us": 12.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-27",
+   "request": 3,
+   "original_us": 13.0,
+   "incremental_us": 252.9,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-27",
+   "request": 4,
+   "original_us": 11.6,
+   "incremental_us": 14.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-34",
+   "request": 1,
+   "original_us": 4.1,
+   "incremental_us": 4.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-34",
+   "request": 2,
+   "original_us": 8.7,
+   "incremental_us": 8.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-34",
+   "request": 3,
+   "original_us": 12.0,
+   "incremental_us": 12.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-34",
+   "request": 4,
+   "original_us": 16.3,
+   "incremental_us": 10.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-34",
+   "request": 5,
+   "original_us": 16.8,
+   "incremental_us": 11.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-03",
+   "request": 1,
+   "original_us": 4.5,
+   "incremental_us": 4.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-03",
+   "request": 2,
+   "original_us": 8.8,
+   "incremental_us": 8.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-03",
+   "request": 3,
+   "original_us": 14.6,
+   "incremental_us": 153.2,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-03",
+   "request": 4,
+   "original_us": 20.1,
+   "incremental_us": 334.8,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-03",
+   "request": 5,
+   "original_us": 20.2,
+   "incremental_us": 39.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-16",
+   "request": 1,
+   "original_us": 3.8,
+   "incremental_us": 4.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-16",
+   "request": 2,
+   "original_us": 10.4,
+   "incremental_us": 10.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-16",
+   "request": 3,
+   "original_us": 12.5,
+   "incremental_us": 99.8,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-16",
+   "request": 4,
+   "original_us": 7.8,
+   "incremental_us": 9.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-14",
+   "request": 1,
+   "original_us": 4.3,
+   "incremental_us": 4.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-14",
+   "request": 2,
+   "original_us": 9.9,
+   "incremental_us": 28.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-14",
+   "request": 3,
+   "original_us": 12.1,
+   "incremental_us": 562.4,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-07",
+   "request": 1,
+   "original_us": 4.1,
+   "incremental_us": 5.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-07",
+   "request": 2,
+   "original_us": 10.5,
+   "incremental_us": 12.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-07",
+   "request": 3,
+   "original_us": 17.4,
+   "incremental_us": 179.0,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-07",
+   "request": 4,
+   "original_us": 27.9,
+   "incremental_us": 477.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-07",
+   "request": 5,
+   "original_us": 16.4,
+   "incremental_us": 24.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-11",
+   "request": 1,
+   "original_us": 3.7,
+   "incremental_us": 4.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-11",
+   "request": 2,
+   "original_us": 14.2,
+   "incremental_us": 45.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-11",
+   "request": 3,
+   "original_us": 18.1,
+   "incremental_us": 256.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-11",
+   "request": 4,
+   "original_us": 14.5,
+   "incremental_us": 32.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-28",
+   "request": 1,
+   "original_us": 5.1,
+   "incremental_us": 4.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-28",
+   "request": 2,
+   "original_us": 8.0,
+   "incremental_us": 11.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-28",
+   "request": 3,
+   "original_us": 18.0,
+   "incremental_us": 255.0,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-28",
+   "request": 4,
+   "original_us": 13.5,
+   "incremental_us": 308.8,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-22",
+   "request": 1,
+   "original_us": 4.2,
+   "incremental_us": 4.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-22",
+   "request": 2,
+   "original_us": 9.7,
+   "incremental_us": 12.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-22",
+   "request": 3,
+   "original_us": 15.9,
+   "incremental_us": 192.2,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-22",
+   "request": 4,
+   "original_us": 13.3,
+   "incremental_us": 243.2,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-20",
+   "request": 1,
+   "original_us": 4.6,
+   "incremental_us": 5.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-20",
+   "request": 2,
+   "original_us": 11.1,
+   "incremental_us": 12.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-20",
+   "request": 3,
+   "original_us": 14.6,
+   "incremental_us": 197.0,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-20",
+   "request": 4,
+   "original_us": 13.1,
+   "incremental_us": 165.2,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-37",
+   "request": 1,
+   "original_us": 3.8,
+   "incremental_us": 5.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-37",
+   "request": 2,
+   "original_us": 7.6,
+   "incremental_us": 8.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-37",
+   "request": 3,
+   "original_us": 9.8,
+   "incremental_us": 14.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-37",
+   "request": 4,
+   "original_us": 17.5,
+   "incremental_us": 272.3,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-37",
+   "request": 5,
+   "original_us": 24.9,
+   "incremental_us": 34.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-37",
+   "request": 6,
+   "original_us": 23.1,
+   "incremental_us": 34.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-09",
+   "request": 1,
+   "original_us": 3.9,
+   "incremental_us": 4.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-09",
+   "request": 2,
+   "original_us": 10.1,
+   "incremental_us": 11.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-09",
+   "request": 3,
+   "original_us": 21.6,
+   "incremental_us": 298.8,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-09",
+   "request": 4,
+   "original_us": 33.0,
+   "incremental_us": 628.7,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-09",
+   "request": 5,
+   "original_us": 25.1,
+   "incremental_us": 37.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-12",
+   "request": 1,
+   "original_us": 4.0,
+   "incremental_us": 5.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-12",
+   "request": 2,
+   "original_us": 6.5,
+   "incremental_us": 8.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-12",
+   "request": 3,
+   "original_us": 10.3,
+   "incremental_us": 219.9,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-12",
+   "request": 4,
+   "original_us": 7.8,
+   "incremental_us": 9.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 1,
+   "original_us": 3.9,
+   "incremental_us": 4.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 2,
+   "original_us": 7.8,
+   "incremental_us": 8.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 3,
+   "original_us": 11.2,
+   "incremental_us": 10.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 4,
+   "original_us": 8.8,
+   "incremental_us": 9.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 5,
+   "original_us": 12.4,
+   "incremental_us": 17.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 6,
+   "original_us": 27.3,
+   "incremental_us": 19.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 7,
+   "original_us": 25.5,
+   "incremental_us": 20.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 8,
+   "original_us": 22.5,
+   "incremental_us": 19.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 9,
+   "original_us": 23.2,
+   "incremental_us": 20.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 10,
+   "original_us": 32.2,
+   "incremental_us": 23.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 11,
+   "original_us": 29.1,
+   "incremental_us": 24.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-36",
+   "request": 12,
+   "original_us": 26.7,
+   "incremental_us": 24.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-13",
+   "request": 1,
+   "original_us": 3.8,
+   "incremental_us": 4.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-13",
+   "request": 2,
+   "original_us": 7.2,
+   "incremental_us": 8.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-13",
+   "request": 3,
+   "original_us": 11.5,
+   "incremental_us": 152.7,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-13",
+   "request": 4,
+   "original_us": 6.9,
+   "incremental_us": 8.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-10",
+   "request": 1,
+   "original_us": 4.0,
+   "incremental_us": 4.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-10",
+   "request": 2,
+   "original_us": 6.4,
+   "incremental_us": 4.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-10",
+   "request": 3,
+   "original_us": 10.5,
+   "incremental_us": 11.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-10",
+   "request": 4,
+   "original_us": 11.3,
+   "incremental_us": 192.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-10",
+   "request": 5,
+   "original_us": 17.2,
+   "incremental_us": 257.2,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-10",
+   "request": 6,
+   "original_us": 10.0,
+   "incremental_us": 14.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-39",
+   "request": 1,
+   "original_us": 4.2,
+   "incremental_us": 4.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-39",
+   "request": 2,
+   "original_us": 12.3,
+   "incremental_us": 31.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-39",
+   "request": 3,
+   "original_us": 18.5,
+   "incremental_us": 227.0,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-39",
+   "request": 4,
+   "original_us": 31.0,
+   "incremental_us": 35.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-35",
+   "request": 1,
+   "original_us": 4.1,
+   "incremental_us": 4.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-35",
+   "request": 2,
+   "original_us": 6.9,
+   "incremental_us": 7.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-35",
+   "request": 3,
+   "original_us": 21.7,
+   "incremental_us": 9.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-35",
+   "request": 4,
+   "original_us": 21.9,
+   "incremental_us": 32.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-35",
+   "request": 5,
+   "original_us": 28.1,
+   "incremental_us": 34.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-35",
+   "request": 6,
+   "original_us": 25.2,
+   "incremental_us": 36.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-35",
+   "request": 7,
+   "original_us": 31.0,
+   "incremental_us": 37.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-26",
+   "request": 1,
+   "original_us": 4.6,
+   "incremental_us": 5.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-26",
+   "request": 2,
+   "original_us": 9.4,
+   "incremental_us": 13.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-26",
+   "request": 3,
+   "original_us": 12.4,
+   "incremental_us": 549.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-26",
+   "request": 4,
+   "original_us": 11.4,
+   "incremental_us": 16.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-40",
+   "request": 1,
+   "original_us": 4.2,
+   "incremental_us": 4.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-40",
+   "request": 2,
+   "original_us": 8.2,
+   "incremental_us": 11.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-40",
+   "request": 3,
+   "original_us": 10.3,
+   "incremental_us": 16.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-40",
+   "request": 4,
+   "original_us": 21.1,
+   "incremental_us": 16.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-40",
+   "request": 5,
+   "original_us": 19.2,
+   "incremental_us": 22.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-40",
+   "request": 6,
+   "original_us": 20.7,
+   "incremental_us": 22.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-18",
+   "request": 1,
+   "original_us": 7.3,
+   "incremental_us": 8.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-18",
+   "request": 2,
+   "original_us": 9.2,
+   "incremental_us": 9.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-18",
+   "request": 3,
+   "original_us": 25.0,
+   "incremental_us": 11.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-18",
+   "request": 4,
+   "original_us": 13.9,
+   "incremental_us": 8.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-25",
+   "request": 1,
+   "original_us": 4.3,
+   "incremental_us": 4.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-25",
+   "request": 2,
+   "original_us": 7.9,
+   "incremental_us": 8.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-25",
+   "request": 3,
+   "original_us": 10.3,
+   "incremental_us": 13.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-25",
+   "request": 4,
+   "original_us": 10.6,
+   "incremental_us": 265.0,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-06",
+   "request": 1,
+   "original_us": 4.1,
+   "incremental_us": 4.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-06",
+   "request": 2,
+   "original_us": 9.0,
+   "incremental_us": 8.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-06",
+   "request": 3,
+   "original_us": 10.4,
+   "incremental_us": 111.7,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-06",
+   "request": 4,
+   "original_us": 11.5,
+   "incremental_us": 184.9,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-23",
+   "request": 1,
+   "original_us": 4.2,
+   "incremental_us": 4.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-23",
+   "request": 2,
+   "original_us": 10.8,
+   "incremental_us": 15.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-23",
+   "request": 3,
+   "original_us": 11.2,
+   "incremental_us": 341.4,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-23",
+   "request": 4,
+   "original_us": 14.8,
+   "incremental_us": 18.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-32",
+   "request": 1,
+   "original_us": 4.6,
+   "incremental_us": 5.1,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-32",
+   "request": 2,
+   "original_us": 7.9,
+   "incremental_us": 8.0,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-32",
+   "request": 3,
+   "original_us": 18.1,
+   "incremental_us": 8.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-32",
+   "request": 4,
+   "original_us": 15.2,
+   "incremental_us": 7.8,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-32",
+   "request": 5,
+   "original_us": 17.9,
+   "incremental_us": 9.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-05",
+   "request": 1,
+   "original_us": 4.5,
+   "incremental_us": 5.3,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-05",
+   "request": 2,
+   "original_us": 11.5,
+   "incremental_us": 25.4,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-05",
+   "request": 3,
+   "original_us": 19.8,
+   "incremental_us": 33.9,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-05",
+   "request": 4,
+   "original_us": 25.8,
+   "incremental_us": 843.6,
+   "event": true
+  },
+  {
+   "id": "hotpotqa-05",
+   "request": 5,
+   "original_us": 24.2,
+   "incremental_us": 74.6,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-31",
+   "request": 1,
+   "original_us": 4.5,
+   "incremental_us": 5.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-31",
+   "request": 2,
+   "original_us": 8.5,
+   "incremental_us": 10.5,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-31",
+   "request": 3,
+   "original_us": 14.4,
+   "incremental_us": 12.2,
+   "event": false
+  },
+  {
+   "id": "hotpotqa-31",
+   "request": 4,
+   "original_us": 15.4,
+   "incremental_us": 12.0,
+   "event": false
+  }
+ ]
+}

@@ -1,0 +1,1433 @@
+{
+ "A": {
+  "issues": 164,
+  "repos": 12,
+  "views": 1711,
+  "output_lines": 123317,
+  "views_with_resident_rows": 643,
+  "optim_reply": 534,
+  "rereads": 17,
+  "extra_bytes_reread": 3279,
+  "injected_stale_detected": 534,
+  "methods": {
+   "full": {
+    "bytes": 1652738,
+    "mean": 965.948568088837,
+    "median": 533.0,
+    "p95": 4429.5,
+    "request": 58956,
+    "reply": 1593782,
+    "round_trips": 1711,
+    "within": {
+     "512": 821,
+     "1024": 1322,
+     "2048": 1541,
+     "4096": 1606
+    }
+   },
+   "pages": {
+    "bytes": 1557361,
+    "mean": 910.2051431911163,
+    "median": 475.0,
+    "p95": 4429.5,
+    "request": 84668,
+    "reply": 1472693,
+    "round_trips": 1711,
+    "within": {
+     "512": 897,
+     "1024": 1338,
+     "2048": 1541,
+     "4096": 1606
+    }
+   },
+   "adapt_flat": {
+    "bytes": 1556399,
+    "mean": 909.6428988895383,
+    "median": 475.0,
+    "p95": 4429.5,
+    "request": 83127,
+    "reply": 1473272,
+    "round_trips": 1711,
+    "within": {
+     "512": 898,
+     "1024": 1338,
+     "2048": 1541,
+     "4096": 1606
+    }
+   },
+   "adapt_joint": {
+    "bytes": 1556281,
+    "mean": 909.5739333722969,
+    "median": 475.0,
+    "p95": 4429.5,
+    "request": 82882,
+    "reply": 1473399,
+    "round_trips": 1711,
+    "within": {
+     "512": 898,
+     "1024": 1339,
+     "2048": 1541,
+     "4096": 1606
+    }
+   },
+   "rolling256": {
+    "bytes": 1593163,
+    "mean": 931.1297486849795,
+    "median": 499.0,
+    "p95": 4429.5,
+    "request": 94075,
+    "reply": 1499088,
+    "round_trips": 1711,
+    "within": {
+     "512": 878,
+     "1024": 1333,
+     "2048": 1541,
+     "4096": 1606
+    }
+   },
+   "optim": {
+    "bytes": 1529046,
+    "mean": 893.656341320865,
+    "median": 472.0,
+    "p95": 4429.5,
+    "request": 61178,
+    "reply": 1467868,
+    "round_trips": 1728,
+    "within": {
+     "512": 903,
+     "1024": 1339,
+     "2048": 1541,
+     "4096": 1606
+    }
+   }
+  },
+  "optim_minus": {
+   "full": {
+    "saved": 123692,
+    "saved_percent": 7.484065834996231,
+    "saved_per_view": 72.29222676797194,
+    "ci": [
+     60.09334382489888,
+     83.9952891263433
+    ],
+    "equal_project": 80.89583086129163,
+    "equal_issue": 78.3616265209726,
+    "wins": 507,
+    "losses": 131,
+    "ties": 1073,
+    "per_project": {
+     "astropy/astropy": [
+      153,
+      11972
+     ],
+     "django/django": [
+      147,
+      11861
+     ],
+     "matplotlib/matplotlib": [
+      234,
+      12827
+     ],
+     "mwaskom/seaborn": [
+      15,
+      1776
+     ],
+     "pallets/flask": [
+      3,
+      454
+     ],
+     "psf/requests": [
+      90,
+      6030
+     ],
+     "pydata/xarray": [
+      193,
+      10305
+     ],
+     "pylint-dev/pylint": [
+      119,
+      3770
+     ],
+     "pytest-dev/pytest": [
+      187,
+      14539
+     ],
+     "scikit-learn/scikit-learn": [
+      142,
+      9479
+     ],
+     "sphinx-doc/sphinx": [
+      198,
+      19672
+     ],
+     "sympy/sympy": [
+      230,
+      21007
+     ]
+    },
+    "p_exact_two_sided": 0.00048828125,
+    "break_even_extra_bytes_per_RTT": 7276.0
+   },
+   "pages": {
+    "saved": 28315,
+    "saved_percent": 1.8181397890405628,
+    "saved_per_view": 16.548801870251314,
+    "ci": [
+     14.296304455482973,
+     18.767707061734427
+    ],
+    "equal_project": 20.386796434059878,
+    "equal_issue": 19.040641799447368,
+    "wins": 552,
+    "losses": 86,
+    "ties": 1073,
+    "per_project": {
+     "astropy/astropy": [
+      153,
+      2429
+     ],
+     "django/django": [
+      147,
+      1933
+     ],
+     "matplotlib/matplotlib": [
+      234,
+      3286
+     ],
+     "mwaskom/seaborn": [
+      15,
+      578
+     ],
+     "pallets/flask": [
+      3,
+      141
+     ],
+     "psf/requests": [
+      90,
+      1584
+     ],
+     "pydata/xarray": [
+      193,
+      2913
+     ],
+     "pylint-dev/pylint": [
+      119,
+      966
+     ],
+     "pytest-dev/pytest": [
+      187,
+      3812
+     ],
+     "scikit-learn/scikit-learn": [
+      142,
+      2231
+     ],
+     "sphinx-doc/sphinx": [
+      198,
+      3456
+     ],
+     "sympy/sympy": [
+      230,
+      4986
+     ]
+    },
+    "p_exact_two_sided": 0.00048828125,
+    "break_even_extra_bytes_per_RTT": 1665.5882352941176
+   },
+   "adapt_flat": {
+    "saved": 27353,
+    "saved_percent": 1.7574542260692791,
+    "saved_per_view": 15.986557568673291,
+    "ci": [
+     13.978554747402328,
+     18.06516574663982
+    ],
+    "equal_project": 19.975024967340598,
+    "equal_issue": 18.50147766687128,
+    "wins": 514,
+    "losses": 124,
+    "ties": 1073,
+    "per_project": {
+     "astropy/astropy": [
+      153,
+      2371
+     ],
+     "django/django": [
+      147,
+      2224
+     ],
+     "matplotlib/matplotlib": [
+      234,
+      3125
+     ],
+     "mwaskom/seaborn": [
+      15,
+      578
+     ],
+     "pallets/flask": [
+      3,
+      141
+     ],
+     "psf/requests": [
+      90,
+      1489
+     ],
+     "pydata/xarray": [
+      193,
+      2739
+     ],
+     "pylint-dev/pylint": [
+      119,
+      945
+     ],
+     "pytest-dev/pytest": [
+      187,
+      3586
+     ],
+     "scikit-learn/scikit-learn": [
+      142,
+      2214
+     ],
+     "sphinx-doc/sphinx": [
+      198,
+      3152
+     ],
+     "sympy/sympy": [
+      230,
+      4789
+     ]
+    },
+    "p_exact_two_sided": 0.00048828125,
+    "break_even_extra_bytes_per_RTT": 1609.0
+   },
+   "adapt_joint": {
+    "saved": 27235,
+    "saved_percent": 1.7500053010992231,
+    "saved_per_view": 15.917592051431912,
+    "ci": [
+     13.817598432022713,
+     18.13771568578512
+    ],
+    "equal_project": 19.90521378208557,
+    "equal_issue": 18.43490665454781,
+    "wins": 506,
+    "losses": 132,
+    "ties": 1073,
+    "per_project": {
+     "astropy/astropy": [
+      153,
+      2336
+     ],
+     "django/django": [
+      147,
+      2200
+     ],
+     "matplotlib/matplotlib": [
+      234,
+      3070
+     ],
+     "mwaskom/seaborn": [
+      15,
+      578
+     ],
+     "pallets/flask": [
+      3,
+      141
+     ],
+     "psf/requests": [
+      90,
+      1489
+     ],
+     "pydata/xarray": [
+      193,
+      2720
+     ],
+     "pylint-dev/pylint": [
+      119,
+      927
+     ],
+     "pytest-dev/pytest": [
+      187,
+      3568
+     ],
+     "scikit-learn/scikit-learn": [
+      142,
+      2196
+     ],
+     "sphinx-doc/sphinx": [
+      198,
+      3098
+     ],
+     "sympy/sympy": [
+      230,
+      4912
+     ]
+    },
+    "p_exact_two_sided": 0.00048828125,
+    "break_even_extra_bytes_per_RTT": 1602.0588235294117
+   },
+   "rolling256": {
+    "saved": 64117,
+    "saved_percent": 4.024509733153481,
+    "saved_per_view": 37.47340736411455,
+    "ci": [
+     33.020782902364246,
+     41.808496631016574
+    ],
+    "equal_project": 46.71897260345568,
+    "equal_issue": 41.33434764702278,
+    "wins": 626,
+    "losses": 17,
+    "ties": 1068,
+    "per_project": {
+     "astropy/astropy": [
+      153,
+      6161
+     ],
+     "django/django": [
+      147,
+      4680
+     ],
+     "matplotlib/matplotlib": [
+      234,
+      6970
+     ],
+     "mwaskom/seaborn": [
+      15,
+      1227
+     ],
+     "pallets/flask": [
+      3,
+      338
+     ],
+     "psf/requests": [
+      90,
+      3655
+     ],
+     "pydata/xarray": [
+      193,
+      5911
+     ],
+     "pylint-dev/pylint": [
+      119,
+      2886
+     ],
+     "pytest-dev/pytest": [
+      187,
+      8298
+     ],
+     "scikit-learn/scikit-learn": [
+      142,
+      5177
+     ],
+     "sphinx-doc/sphinx": [
+      198,
+      8749
+     ],
+     "sympy/sympy": [
+      230,
+      10065
+     ]
+    },
+    "p_exact_two_sided": 0.00048828125,
+    "break_even_extra_bytes_per_RTT": 3771.5882352941176
+   },
+   "optim": {
+    "saved": 0,
+    "saved_percent": 0.0,
+    "saved_per_view": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "equal_project": 0.0,
+    "equal_issue": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "ties": 1711,
+    "per_project": {
+     "astropy/astropy": [
+      153,
+      0
+     ],
+     "django/django": [
+      147,
+      0
+     ],
+     "matplotlib/matplotlib": [
+      234,
+      0
+     ],
+     "mwaskom/seaborn": [
+      15,
+      0
+     ],
+     "pallets/flask": [
+      3,
+      0
+     ],
+     "psf/requests": [
+      90,
+      0
+     ],
+     "pydata/xarray": [
+      193,
+      0
+     ],
+     "pylint-dev/pylint": [
+      119,
+      0
+     ],
+     "pytest-dev/pytest": [
+      187,
+      0
+     ],
+     "scikit-learn/scikit-learn": [
+      142,
+      0
+     ],
+     "sphinx-doc/sphinx": [
+      198,
+      0
+     ],
+     "sympy/sympy": [
+      230,
+      0
+     ]
+    },
+    "p_exact_two_sided": 1.0,
+    "break_even_extra_bytes_per_RTT": 0.0
+   }
+  }
+ },
+ "B": {
+  "issues": 129,
+  "repos": 8,
+  "views": 1381,
+  "output_lines": 93937,
+  "views_with_resident_rows": 516,
+  "optim_reply": 425,
+  "rereads": 4,
+  "extra_bytes_reread": 1958,
+  "injected_stale_detected": 425,
+  "methods": {
+   "full": {
+    "bytes": 1284519,
+    "mean": 930.1368573497466,
+    "median": 538.0,
+    "p95": 4417.0,
+    "request": 49769,
+    "reply": 1234750,
+    "round_trips": 1381,
+    "within": {
+     "512": 677,
+     "1024": 1098,
+     "2048": 1258,
+     "4096": 1299
+    }
+   },
+   "pages": {
+    "bytes": 1203742,
+    "mean": 871.6451846488052,
+    "median": 462.0,
+    "p95": 4384.0,
+    "request": 71788,
+    "reply": 1131954,
+    "round_trips": 1381,
+    "within": {
+     "512": 742,
+     "1024": 1110,
+     "2048": 1258,
+     "4096": 1300
+    }
+   },
+   "adapt_flat": {
+    "bytes": 1202526,
+    "mean": 870.7646632874729,
+    "median": 462.0,
+    "p95": 4384.0,
+    "request": 69631,
+    "reply": 1132895,
+    "round_trips": 1381,
+    "within": {
+     "512": 742,
+     "1024": 1111,
+     "2048": 1258,
+     "4096": 1300
+    }
+   },
+   "adapt_joint": {
+    "bytes": 1202607,
+    "mean": 870.8233164373643,
+    "median": 462.0,
+    "p95": 4384.0,
+    "request": 69506,
+    "reply": 1133101,
+    "round_trips": 1381,
+    "within": {
+     "512": 741,
+     "1024": 1111,
+     "2048": 1258,
+     "4096": 1300
+    }
+   },
+   "rolling256": {
+    "bytes": 1233363,
+    "mean": 893.0941346850109,
+    "median": 481.0,
+    "p95": 4384.0,
+    "request": 79616,
+    "reply": 1153747,
+    "round_trips": 1381,
+    "within": {
+     "512": 722,
+     "1024": 1108,
+     "2048": 1258,
+     "4096": 1300
+    }
+   },
+   "optim": {
+    "bytes": 1177498,
+    "mean": 852.6415640839971,
+    "median": 459.0,
+    "p95": 4384.0,
+    "request": 51415,
+    "reply": 1126083,
+    "round_trips": 1385,
+    "within": {
+     "512": 744,
+     "1024": 1110,
+     "2048": 1258,
+     "4096": 1300
+    }
+   }
+  },
+  "optim_minus": {
+   "full": {
+    "saved": 107021,
+    "saved_percent": 8.331601167440887,
+    "saved_per_view": 77.49529326574945,
+    "ci": [
+     61.05293440736479,
+     98.47153928995841
+    ],
+    "equal_project": 93.16559843786989,
+    "equal_issue": 90.28900451640499,
+    "wins": 414,
+    "losses": 101,
+    "ties": 866,
+    "per_project": {
+     "astropy/astropy": [
+      28,
+      3563
+     ],
+     "django/django": [
+      326,
+      31730
+     ],
+     "matplotlib/matplotlib": [
+      230,
+      10965
+     ],
+     "pydata/xarray": [
+      41,
+      2239
+     ],
+     "pytest-dev/pytest": [
+      14,
+      2287
+     ],
+     "scikit-learn/scikit-learn": [
+      122,
+      15011
+     ],
+     "sphinx-doc/sphinx": [
+      284,
+      17186
+     ],
+     "sympy/sympy": [
+      336,
+      24040
+     ]
+    },
+    "p_exact_two_sided": 0.0078125,
+    "break_even_extra_bytes_per_RTT": 26755.25
+   },
+   "pages": {
+    "saved": 26244,
+    "saved_percent": 2.180201405284521,
+    "saved_per_view": 19.00362056480811,
+    "ci": [
+     15.08098228663446,
+     23.7927154440472
+    ],
+    "equal_project": 23.934076455463565,
+    "equal_issue": 21.984635863756303,
+    "wins": 456,
+    "losses": 57,
+    "ties": 868,
+    "per_project": {
+     "astropy/astropy": [
+      28,
+      554
+     ],
+     "django/django": [
+      326,
+      8119
+     ],
+     "matplotlib/matplotlib": [
+      230,
+      2845
+     ],
+     "pydata/xarray": [
+      41,
+      427
+     ],
+     "pytest-dev/pytest": [
+      14,
+      917
+     ],
+     "scikit-learn/scikit-learn": [
+      122,
+      3130
+     ],
+     "sphinx-doc/sphinx": [
+      284,
+      4276
+     ],
+     "sympy/sympy": [
+      336,
+      5976
+     ]
+    },
+    "p_exact_two_sided": 0.0078125,
+    "break_even_extra_bytes_per_RTT": 6561.0
+   },
+   "adapt_flat": {
+    "saved": 25028,
+    "saved_percent": 2.0812855605616845,
+    "saved_per_view": 18.123099203475743,
+    "ci": [
+     14.63952502120441,
+     22.145940391408384
+    ],
+    "equal_project": 22.593428752037337,
+    "equal_issue": 21.120003189076108,
+    "wins": 429,
+    "losses": 84,
+    "ties": 868,
+    "per_project": {
+     "astropy/astropy": [
+      28,
+      474
+     ],
+     "django/django": [
+      326,
+      7450
+     ],
+     "matplotlib/matplotlib": [
+      230,
+      2747
+     ],
+     "pydata/xarray": [
+      41,
+      388
+     ],
+     "pytest-dev/pytest": [
+      14,
+      879
+     ],
+     "scikit-learn/scikit-learn": [
+      122,
+      2962
+     ],
+     "sphinx-doc/sphinx": [
+      284,
+      4316
+     ],
+     "sympy/sympy": [
+      336,
+      5812
+     ]
+    },
+    "p_exact_two_sided": 0.0078125,
+    "break_even_extra_bytes_per_RTT": 6257.0
+   },
+   "adapt_joint": {
+    "saved": 25109,
+    "saved_percent": 2.0878807457465323,
+    "saved_per_view": 18.181752353367127,
+    "ci": [
+     14.765122489673836,
+     22.166666666666668
+    ],
+    "equal_project": 22.524142573443797,
+    "equal_issue": 21.100993667159614,
+    "wins": 423,
+    "losses": 89,
+    "ties": 869,
+    "per_project": {
+     "astropy/astropy": [
+      28,
+      456
+     ],
+     "django/django": [
+      326,
+      7432
+     ],
+     "matplotlib/matplotlib": [
+      230,
+      2728
+     ],
+     "pydata/xarray": [
+      41,
+      388
+     ],
+     "pytest-dev/pytest": [
+      14,
+      879
+     ],
+     "scikit-learn/scikit-learn": [
+      122,
+      2908
+     ],
+     "sphinx-doc/sphinx": [
+      284,
+      4506
+     ],
+     "sympy/sympy": [
+      336,
+      5812
+     ]
+    },
+    "p_exact_two_sided": 0.0078125,
+    "break_even_extra_bytes_per_RTT": 6277.25
+   },
+   "rolling256": {
+    "saved": 55865,
+    "saved_percent": 4.529485642102123,
+    "saved_per_view": 40.45257060101376,
+    "ci": [
+     34.25075617367602,
+     48.770080819384965
+    ],
+    "equal_project": 46.732213043734234,
+    "equal_issue": 44.108486502633106,
+    "wins": 509,
+    "losses": 7,
+    "ties": 865,
+    "per_project": {
+     "astropy/astropy": [
+      28,
+      1577
+     ],
+     "django/django": [
+      326,
+      16950
+     ],
+     "matplotlib/matplotlib": [
+      230,
+      6997
+     ],
+     "pydata/xarray": [
+      41,
+      1138
+     ],
+     "pytest-dev/pytest": [
+      14,
+      1218
+     ],
+     "scikit-learn/scikit-learn": [
+      122,
+      6058
+     ],
+     "sphinx-doc/sphinx": [
+      284,
+      10001
+     ],
+     "sympy/sympy": [
+      336,
+      11926
+     ]
+    },
+    "p_exact_two_sided": 0.0078125,
+    "break_even_extra_bytes_per_RTT": 13966.25
+   },
+   "optim": {
+    "saved": 0,
+    "saved_percent": 0.0,
+    "saved_per_view": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "equal_project": 0.0,
+    "equal_issue": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "ties": 1381,
+    "per_project": {
+     "astropy/astropy": [
+      28,
+      0
+     ],
+     "django/django": [
+      326,
+      0
+     ],
+     "matplotlib/matplotlib": [
+      230,
+      0
+     ],
+     "pydata/xarray": [
+      41,
+      0
+     ],
+     "pytest-dev/pytest": [
+      14,
+      0
+     ],
+     "scikit-learn/scikit-learn": [
+      122,
+      0
+     ],
+     "sphinx-doc/sphinx": [
+      284,
+      0
+     ],
+     "sympy/sympy": [
+      336,
+      0
+     ]
+    },
+    "p_exact_two_sided": 1.0,
+    "break_even_extra_bytes_per_RTT": 0.0
+   }
+  }
+ },
+ "C": {
+  "issues": 282,
+  "repos": 13,
+  "views": 1503,
+  "output_lines": 112753,
+  "views_with_resident_rows": 409,
+  "optim_reply": 298,
+  "rereads": 3,
+  "extra_bytes_reread": 1319,
+  "injected_stale_detected": 298,
+  "methods": {
+   "full": {
+    "bytes": 1384866,
+    "mean": 921.4011976047905,
+    "median": 549.0,
+    "p95": 3080.0999999999976,
+    "request": 41637,
+    "reply": 1343229,
+    "round_trips": 1503,
+    "within": {
+     "512": 698,
+     "1024": 1106,
+     "2048": 1320,
+     "4096": 1478
+    }
+   },
+   "pages": {
+    "bytes": 1320077,
+    "mean": 878.2947438456421,
+    "median": 513.0,
+    "p95": 3080.0999999999976,
+    "request": 57844,
+    "reply": 1262233,
+    "round_trips": 1503,
+    "within": {
+     "512": 751,
+     "1024": 1110,
+     "2048": 1320,
+     "4096": 1478
+    }
+   },
+   "adapt_flat": {
+    "bytes": 1319344,
+    "mean": 877.8070525615436,
+    "median": 509.0,
+    "p95": 3080.0999999999976,
+    "request": 56757,
+    "reply": 1262587,
+    "round_trips": 1503,
+    "within": {
+     "512": 753,
+     "1024": 1110,
+     "2048": 1320,
+     "4096": 1478
+    }
+   },
+   "adapt_joint": {
+    "bytes": 1319235,
+    "mean": 877.7345309381237,
+    "median": 509.0,
+    "p95": 3080.0999999999976,
+    "request": 56650,
+    "reply": 1262585,
+    "round_trips": 1503,
+    "within": {
+     "512": 753,
+     "1024": 1110,
+     "2048": 1320,
+     "4096": 1478
+    }
+   },
+   "rolling256": {
+    "bytes": 1337670,
+    "mean": 890.0,
+    "median": 515.0,
+    "p95": 3080.0999999999976,
+    "request": 63910,
+    "reply": 1273760,
+    "round_trips": 1503,
+    "within": {
+     "512": 747,
+     "1024": 1107,
+     "2048": 1320,
+     "4096": 1478
+    }
+   },
+   "optim": {
+    "bytes": 1305585,
+    "mean": 868.6526946107784,
+    "median": 509.0,
+    "p95": 3080.0999999999976,
+    "request": 42844,
+    "reply": 1262741,
+    "round_trips": 1506,
+    "within": {
+     "512": 754,
+     "1024": 1109,
+     "2048": 1320,
+     "4096": 1478
+    }
+   }
+  },
+  "optim_minus": {
+   "full": {
+    "saved": 79281,
+    "saved_percent": 5.724813808700625,
+    "saved_per_view": 52.74850299401198,
+    "ci": [
+     33.421152156949475,
+     72.88608061864953
+    ],
+    "equal_project": 45.14990913656353,
+    "equal_issue": 30.871402812274635,
+    "wins": 287,
+    "losses": 118,
+    "ties": 1098,
+    "per_project": {
+     "Cog-Creators/Red-DiscordBot": [
+      111,
+      6662
+     ],
+     "alanjds/drf-nested-routers": [
+      38,
+      808
+     ],
+     "benoitc/gunicorn": [
+      177,
+      5402
+     ],
+     "bottlepy/bottle": [
+      263,
+      28036
+     ],
+     "cool-RR/PySnooper": [
+      80,
+      2968
+     ],
+     "django/channels": [
+      64,
+      4399
+     ],
+     "django/daphne": [
+      84,
+      1875
+     ],
+     "encode/starlette": [
+      113,
+      4161
+     ],
+     "getmoto/moto": [
+      138,
+      7418
+     ],
+     "pallets/flask": [
+      100,
+      2460
+     ],
+     "scrapy/scrapy": [
+      82,
+      4045
+     ],
+     "tornadoweb/tornado": [
+      151,
+      10190
+     ],
+     "tweepy/tweepy": [
+      102,
+      857
+     ]
+    },
+    "p_exact_two_sided": 0.000244140625,
+    "break_even_extra_bytes_per_RTT": 26427.0
+   },
+   "pages": {
+    "saved": 14492,
+    "saved_percent": 1.0978147486851146,
+    "saved_per_view": 9.642049234863606,
+    "ci": [
+     5.564487465715781,
+     13.878855240769479
+    ],
+    "equal_project": 8.320032276141408,
+    "equal_issue": 5.357073072636811,
+    "wins": 342,
+    "losses": 64,
+    "ties": 1097,
+    "per_project": {
+     "Cog-Creators/Red-DiscordBot": [
+      111,
+      958
+     ],
+     "alanjds/drf-nested-routers": [
+      38,
+      370
+     ],
+     "benoitc/gunicorn": [
+      177,
+      687
+     ],
+     "bottlepy/bottle": [
+      263,
+      5519
+     ],
+     "cool-RR/PySnooper": [
+      80,
+      899
+     ],
+     "django/channels": [
+      64,
+      408
+     ],
+     "django/daphne": [
+      84,
+      427
+     ],
+     "encode/starlette": [
+      113,
+      646
+     ],
+     "getmoto/moto": [
+      138,
+      1356
+     ],
+     "pallets/flask": [
+      100,
+      372
+     ],
+     "scrapy/scrapy": [
+      82,
+      661
+     ],
+     "tornadoweb/tornado": [
+      151,
+      2060
+     ],
+     "tweepy/tweepy": [
+      102,
+      129
+     ]
+    },
+    "p_exact_two_sided": 0.000244140625,
+    "break_even_extra_bytes_per_RTT": 4830.666666666667
+   },
+   "adapt_flat": {
+    "saved": 13759,
+    "saved_percent": 1.0428667580252005,
+    "saved_per_view": 9.154357950765137,
+    "ci": [
+     5.212057431357708,
+     13.317715461873927
+    ],
+    "equal_project": 7.900147487821835,
+    "equal_issue": 5.021619937595925,
+    "wins": 324,
+    "losses": 82,
+    "ties": 1097,
+    "per_project": {
+     "Cog-Creators/Red-DiscordBot": [
+      111,
+      953
+     ],
+     "alanjds/drf-nested-routers": [
+      38,
+      370
+     ],
+     "benoitc/gunicorn": [
+      177,
+      676
+     ],
+     "bottlepy/bottle": [
+      263,
+      5337
+     ],
+     "cool-RR/PySnooper": [
+      80,
+      831
+     ],
+     "django/channels": [
+      64,
+      408
+     ],
+     "django/daphne": [
+      84,
+      369
+     ],
+     "encode/starlette": [
+      113,
+      635
+     ],
+     "getmoto/moto": [
+      138,
+      1110
+     ],
+     "pallets/flask": [
+      100,
+      372
+     ],
+     "scrapy/scrapy": [
+      82,
+      661
+     ],
+     "tornadoweb/tornado": [
+      151,
+      1981
+     ],
+     "tweepy/tweepy": [
+      102,
+      56
+     ]
+    },
+    "p_exact_two_sided": 0.000244140625,
+    "break_even_extra_bytes_per_RTT": 4586.333333333333
+   },
+   "adapt_joint": {
+    "saved": 13650,
+    "saved_percent": 1.0346905593014133,
+    "saved_per_view": 9.081836327345309,
+    "ci": [
+     5.1766267198021865,
+     13.191850464482512
+    ],
+    "equal_project": 7.851941567884485,
+    "equal_issue": 4.987253358548494,
+    "wins": 320,
+    "losses": 86,
+    "ties": 1097,
+    "per_project": {
+     "Cog-Creators/Red-DiscordBot": [
+      111,
+      953
+     ],
+     "alanjds/drf-nested-routers": [
+      38,
+      370
+     ],
+     "benoitc/gunicorn": [
+      177,
+      676
+     ],
+     "bottlepy/bottle": [
+      263,
+      5281
+     ],
+     "cool-RR/PySnooper": [
+      80,
+      831
+     ],
+     "django/channels": [
+      64,
+      408
+     ],
+     "django/daphne": [
+      84,
+      369
+     ],
+     "encode/starlette": [
+      113,
+      635
+     ],
+     "getmoto/moto": [
+      138,
+      1091
+     ],
+     "pallets/flask": [
+      100,
+      372
+     ],
+     "scrapy/scrapy": [
+      82,
+      661
+     ],
+     "tornadoweb/tornado": [
+      151,
+      1963
+     ],
+     "tweepy/tweepy": [
+      102,
+      40
+     ]
+    },
+    "p_exact_two_sided": 0.000244140625,
+    "break_even_extra_bytes_per_RTT": 4550.0
+   },
+   "rolling256": {
+    "saved": 32085,
+    "saved_percent": 2.398573639238377,
+    "saved_per_view": 21.347305389221557,
+    "ci": [
+     12.506335055631546,
+     31.532894302802355
+    ],
+    "equal_project": 17.2708662214339,
+    "equal_issue": 11.432639012878735,
+    "wins": 405,
+    "losses": 3,
+    "ties": 1095,
+    "per_project": {
+     "Cog-Creators/Red-DiscordBot": [
+      111,
+      1654
+     ],
+     "alanjds/drf-nested-routers": [
+      38,
+      356
+     ],
+     "benoitc/gunicorn": [
+      177,
+      2109
+     ],
+     "bottlepy/bottle": [
+      263,
+      13215
+     ],
+     "cool-RR/PySnooper": [
+      80,
+      1761
+     ],
+     "django/channels": [
+      64,
+      1057
+     ],
+     "django/daphne": [
+      84,
+      567
+     ],
+     "encode/starlette": [
+      113,
+      1411
+     ],
+     "getmoto/moto": [
+      138,
+      2985
+     ],
+     "pallets/flask": [
+      100,
+      1589
+     ],
+     "scrapy/scrapy": [
+      82,
+      925
+     ],
+     "tornadoweb/tornado": [
+      151,
+      3823
+     ],
+     "tweepy/tweepy": [
+      102,
+      633
+     ]
+    },
+    "p_exact_two_sided": 0.000244140625,
+    "break_even_extra_bytes_per_RTT": 10695.0
+   },
+   "optim": {
+    "saved": 0,
+    "saved_percent": 0.0,
+    "saved_per_view": 0.0,
+    "ci": [
+     0.0,
+     0.0
+    ],
+    "equal_project": 0.0,
+    "equal_issue": 0.0,
+    "wins": 0,
+    "losses": 0,
+    "ties": 1503,
+    "per_project": {
+     "Cog-Creators/Red-DiscordBot": [
+      111,
+      0
+     ],
+     "alanjds/drf-nested-routers": [
+      38,
+      0
+     ],
+     "benoitc/gunicorn": [
+      177,
+      0
+     ],
+     "bottlepy/bottle": [
+      263,
+      0
+     ],
+     "cool-RR/PySnooper": [
+      80,
+      0
+     ],
+     "django/channels": [
+      64,
+      0
+     ],
+     "django/daphne": [
+      84,
+      0
+     ],
+     "encode/starlette": [
+      113,
+      0
+     ],
+     "getmoto/moto": [
+      138,
+      0
+     ],
+     "pallets/flask": [
+      100,
+      0
+     ],
+     "scrapy/scrapy": [
+      82,
+      0
+     ],
+     "tornadoweb/tornado": [
+      151,
+      0
+     ],
+     "tweepy/tweepy": [
+      102,
+      0
+     ]
+    },
+    "p_exact_two_sided": 1.0,
+    "break_even_extra_bytes_per_RTT": 0.0
+   }
+  }
+ }
+}

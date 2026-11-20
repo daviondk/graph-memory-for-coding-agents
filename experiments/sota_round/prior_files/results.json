@@ -1,0 +1,109 @@
+{
+  "n": 111,
+  "repositories": 90,
+  "eligible": 110,
+  "prior_oracle": 91,
+  "total_applicable_files": 173,
+  "matched_historical_gold": 130,
+  "per_method": {
+    "candidate": {
+      "success": 52,
+      "returned": 111,
+      "mean_slots": 1.6126126126126126,
+      "micro_recall": 0.35260115606936415,
+      "macro_recall_all": 0.3665165165165165
+    },
+    "single": {
+      "success": 50,
+      "returned": 111,
+      "mean_slots": 1.6396396396396395,
+      "micro_recall": 0.3352601156069364,
+      "macro_recall_all": 0.34984984984984985
+    },
+    "freq": {
+      "success": 45,
+      "returned": 111,
+      "mean_slots": 1.5585585585585586,
+      "micro_recall": 0.28901734104046245,
+      "macro_recall_all": 0.31906906906906907
+    },
+    "action_receipt": {
+      "success": 43,
+      "returned": 110,
+      "mean_slots": 1.5585585585585586,
+      "micro_recall": 0.27167630057803466,
+      "macro_recall_all": 0.29084084084084083
+    },
+    "raw_bm25": {
+      "success": 18,
+      "returned": 81,
+      "mean_slots": 1.3153153153153154,
+      "micro_recall": 0.10404624277456648,
+      "macro_recall_all": 0.13663663663663664
+    },
+    "echo_capped": {
+      "success": 18,
+      "returned": 76,
+      "mean_slots": 1.0990990990990992,
+      "micro_recall": 0.10404624277456648,
+      "macro_recall_all": 0.1276276276276276
+    }
+  },
+  "pairing": {
+    "single": {
+      "wins": 6,
+      "losses": 4,
+      "ties": 101,
+      "delta_pp": 1.8018018018018018,
+      "cluster_interval_pp": [
+        -4.424778761061947,
+        7.826086956521739
+      ],
+      "p_exact_question": 0.75390625
+    },
+    "freq": {
+      "wins": 19,
+      "losses": 12,
+      "ties": 80,
+      "delta_pp": 6.306306306306307,
+      "cluster_interval_pp": [
+        -4.237288135593221,
+        16.822429906542055
+      ],
+      "p_exact_question": 0.28104151505976915
+    },
+    "action_receipt": {
+      "wins": 20,
+      "losses": 11,
+      "ties": 80,
+      "delta_pp": 8.108108108108109,
+      "cluster_interval_pp": [
+        -2.4390243902439024,
+        18.367346938775512
+      ],
+      "p_exact_question": 0.14961278438568115
+    },
+    "raw_bm25": {
+      "wins": 45,
+      "losses": 11,
+      "ties": 55,
+      "delta_pp": 30.63063063063063,
+      "cluster_interval_pp": [
+        17.431192660550458,
+        43.63636363636363
+      ],
+      "p_exact_question": 5.37831811014966e-06
+    },
+    "echo_capped": {
+      "wins": 41,
+      "losses": 7,
+      "ties": 63,
+      "delta_pp": 30.63063063063063,
+      "cluster_interval_pp": [
+        19.53125,
+        41.904761904761905
+      ],
+      "p_exact_question": 6.240408438884515e-07
+    }
+  }
+}

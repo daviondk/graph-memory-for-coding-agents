@@ -1,0 +1,17 @@
+{
+  "id": "2506.10484",
+  "title": "EXPEREPAIR: Dual-Memory Enhanced LLM-based Repository-Level Program Repair",
+  "authors": [
+    "Mu, Fangwen",
+    "Wang, Junjie",
+    "Shi, Lin",
+    "Wang, Song",
+    "Li, Shoubin",
+    "Wang, Qing"
+  ],
+  "date": "2025/06/12",
+  "url": "https://arxiv.org/abs/2506.10484",
+  "abstract": "Automatically repairing software issues remains a fundamental challenge at the intersection of software engineering and AI. Although recent advances in Large Language Models (LLMs) have demonstrated potential for repository-level repair tasks, current methods exhibit two notable limitations: (1) they often address issues in isolation, neglecting to incorporate insights from previously resolved issues, and (2) they rely on static, rigid prompting strategies that constrain their ability to generalize across diverse and evolving contexts. We propose ExpeRepair, a novel LLM-based program repair framework inspired by the dual-memory systems of human cognition, where episodic and semantic memory synergistically support learning and decision-making. Unlike existing methods, ExpeRepair continuously learns from historical repair experiences via dual-channel knowledge accumulation, enabling it to adaptively reuse past knowledge during inference. Specifically, ExpeRepair organizes prior repair knowledge into two complementary memories: an episodic memory that stores concrete repair demonstrations, and a semantic memory that encodes abstract, reflective insights. At inference time, ExpeRepair activates both memory systems by retrieving relevant demonstrations from episodic memory and recalling high-level repair insights from semantic memory. It further enhances adaptability through dynamic prompt composition, integrating both memory types to replace static prompts with context-aware, experience-driven prompts. We evaluate ExpeRepair on two benchmarks: SWE-Bench Lite and SWE-Bench Verified. Experimental results show that ExpeRepair achieves pass@1 scores of 60.3% and 74.6% on the two benchmarks, respectively, achieving the best performance among the evaluated open-source methods. We have open-sourced ExpeRepair at this https URL .",
+  "status": "Accepted by FSE 2026",
+  "versions": "Submission history From: Fangwen Mu [ view email ] [v1] Thu, 12 Jun 2025 08:39:27 UTC (824 KB) [v2] Fri, 8 May 2026 02:51:21 UTC (1,230 KB)"
+}

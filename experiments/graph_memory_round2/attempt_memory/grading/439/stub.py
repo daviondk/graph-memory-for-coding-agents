@@ -1,0 +1,2 @@
+def multiple_to_single(L):
+    raise NotImplementedError

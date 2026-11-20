@@ -1,0 +1,36 @@
+{
+  "stage": {
+    "train": {
+      "n": 6000,
+      "pairs": 267473,
+      "nodes": 59589,
+      "edges": 30931,
+      "witnesses": 37418,
+      "reverse_order_exact": 24
+    },
+    "dev": {
+      "n": 7405,
+      "pairs": 331063,
+      "nodes": 73700,
+      "edges": 36180,
+      "witnesses": 44042,
+      "reverse_order_exact": 26
+    }
+  },
+  "exact_question_duplicates_removed": 0,
+  "cpu_seconds_wall": 25.790039999992587,
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "numpy": "2.2.6",
+  "sklearn": "1.7.2",
+  "input_sha256": {
+    "beam-README.md": "76cf8401a328c66208c00c43969507e91b16a11bef1df1f3ca5b600828914635",
+    "beam.json": "07e4d1c3bb75f9be87f26910d1cb4d350092e104e9ea085df6708176055d7e4c",
+    "dev.parquet": "c20b638ca82b21d04fe12e14ff417ad05153d4d215a65de54497fca4e972f7c6",
+    "train-half.parquet": "76d3bb3048a7cc73c1958107c0c5872a00d7e7d00c105b81e92f6769e7822e68"
+  },
+  "code_sha256": {
+    "features.py": "c0b3250bb253c3aac9239fa974c13998418b6b11524e4285d8bc94a9fbcde52c",
+    "pipeline.py": "f852d055547386e34823bf133a1bd3a4872d2e21e57ba9bcf8d966d440926f5e"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "id": "2605.27787",
+  "title": "Long Live the Librarian! A Persistent Search Sub-Agent for Energy-Efficient Multi-Agent Software Engineering Systems",
+  "authors": [
+    "Cho, Seunghyuk",
+    "Choi, Sunghyun",
+    "Heo, Jaeseung",
+    "Choi, Youngbin",
+    "Moon, Saemi",
+    "Park, MoonJeong",
+    "Kim, Dongwoo"
+  ],
+  "date": "2026/05/27",
+  "url": "https://arxiv.org/abs/2605.27787",
+  "abstract": "Multi-agent systems (MAS) have substantially advanced autonomous software engineering (SWE), but their growing inference energy demands raise sustainability concerns. In this paper, we demonstrate that this cost is concentrated in an overlooked source: redundant output tokens generated across agents. Two empirical findings ground this claim. First, our per-token energy attribution for MAS reveals a sharp asymmetry: an output token consumes 30 to 1,000 times more energy than an input or cached token. Second, MAS inflate per-episode output because agents repeatedly re-explore overlapping repository regions. To address this inefficiency, we propose Librarian, a persistent search sub-agent that tracks repository-search history and suppresses redundant exploration actions across agents. By returning short references to file regions instead of full file excerpts, Librarian further reduces output-token volume. On SWE-Bench Verified and SWE-Bench-Live, Librarian reduces per-episode GPU energy consumption of existing multi-agent SWE systems by 11 to 30% while preserving task performance. Our code is available at this https URL .",
+  "status": "2026 EMNLP Main Conference",
+  "versions": "Submission history From: Seunghyuk Cho [ view email ] [v1] Wed, 27 May 2026 00:10:24 UTC (742 KB) [v2] Mon, 31 Aug 2026 13:47:03 UTC (733 KB)"
+}

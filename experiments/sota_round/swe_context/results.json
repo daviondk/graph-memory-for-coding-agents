@@ -1,0 +1,409 @@
+{
+  "unique_source_issue_ids": 300,
+  "source_records": 300,
+  "groups": {
+    "lite": {
+      "n": 99,
+      "repos": 12,
+      "multigold": 3,
+      "available": 99,
+      "scores": {
+        "bm25_flat_1": 59,
+        "bm25_flat_3": 78,
+        "bm25_flat_5": 86,
+        "bm25_flat_10": 93,
+        "bm25_symptom_1": 54,
+        "bm25_symptom_3": 72,
+        "bm25_symptom_5": 75,
+        "bm25_symptom_10": 86,
+        "bm25_outcome_1": 63,
+        "bm25_outcome_3": 81,
+        "bm25_outcome_5": 86,
+        "bm25_outcome_10": 91,
+        "dense_flat_1": 51,
+        "dense_flat_3": 68,
+        "dense_flat_5": 73,
+        "dense_flat_10": 81,
+        "sparse_fields_1": 64,
+        "sparse_fields_3": 79,
+        "sparse_fields_5": 84,
+        "sparse_fields_10": 90,
+        "fusion_1": 65,
+        "fusion_3": 78,
+        "fusion_5": 85,
+        "fusion_10": 90,
+        "minilm_1": 40,
+        "minilm_3": 73,
+        "minilm_5": 85,
+        "minilm_10": 90,
+        "minilm6_1": 55,
+        "minilm6_3": 75,
+        "minilm6_5": 85,
+        "minilm6_10": 90,
+        "recall_keyword_1": 53,
+        "recall_keyword_3": 68,
+        "recall_keyword_5": 77,
+        "recall_keyword_10": 86,
+        "recall_hybrid_1": 58,
+        "recall_hybrid_3": 76,
+        "recall_hybrid_5": 79,
+        "recall_hybrid_10": 92,
+        "qwen_1": 75
+      }
+    },
+    "extension": {
+      "n": 258,
+      "repos": 39,
+      "multigold": 0,
+      "available": 13,
+      "scores": {
+        "bm25_flat_1": 12,
+        "bm25_flat_3": 12,
+        "bm25_flat_5": 12,
+        "bm25_flat_10": 12,
+        "bm25_symptom_1": 11,
+        "bm25_symptom_3": 11,
+        "bm25_symptom_5": 11,
+        "bm25_symptom_10": 12,
+        "bm25_outcome_1": 12,
+        "bm25_outcome_3": 12,
+        "bm25_outcome_5": 12,
+        "bm25_outcome_10": 12,
+        "dense_flat_1": 7,
+        "dense_flat_3": 7,
+        "dense_flat_5": 11,
+        "dense_flat_10": 12,
+        "sparse_fields_1": 11,
+        "sparse_fields_3": 12,
+        "sparse_fields_5": 12,
+        "sparse_fields_10": 12,
+        "fusion_1": 11,
+        "fusion_3": 12,
+        "fusion_5": 12,
+        "fusion_10": 12,
+        "minilm_1": 9,
+        "minilm_3": 12,
+        "minilm_5": 12,
+        "minilm_10": 12,
+        "minilm6_1": 11,
+        "minilm6_3": 12,
+        "minilm6_5": 12,
+        "minilm6_10": 12
+      }
+    },
+    "extension_available": {
+      "n": 13,
+      "repos": 2,
+      "multigold": 0,
+      "available": 13,
+      "scores": {
+        "bm25_flat_1": 12,
+        "bm25_flat_3": 12,
+        "bm25_flat_5": 12,
+        "bm25_flat_10": 12,
+        "bm25_symptom_1": 11,
+        "bm25_symptom_3": 11,
+        "bm25_symptom_5": 11,
+        "bm25_symptom_10": 12,
+        "bm25_outcome_1": 12,
+        "bm25_outcome_3": 12,
+        "bm25_outcome_5": 12,
+        "bm25_outcome_10": 12,
+        "dense_flat_1": 7,
+        "dense_flat_3": 7,
+        "dense_flat_5": 11,
+        "dense_flat_10": 12,
+        "sparse_fields_1": 11,
+        "sparse_fields_3": 12,
+        "sparse_fields_5": 12,
+        "sparse_fields_10": 12,
+        "fusion_1": 11,
+        "fusion_3": 12,
+        "fusion_5": 12,
+        "fusion_10": 12,
+        "minilm_1": 9,
+        "minilm_3": 12,
+        "minilm_5": 12,
+        "minilm_10": 12,
+        "minilm6_1": 11,
+        "minilm6_3": 12,
+        "minilm6_5": 12,
+        "minilm6_10": 12
+      }
+    }
+  },
+  "pairwise": {
+    "lite": {
+      "bm25_flat": {
+        "wins": 18,
+        "losses": 2,
+        "delta": 0.16161616161616163,
+        "repo_ci95": [
+          0.1079136690647482,
+          0.32142857142857145
+        ],
+        "mcnemar_p": 0.0004024505615234375,
+        "nrepo": 12
+      },
+      "bm25_symptom": {
+        "wins": 22,
+        "losses": 1,
+        "delta": 0.21212121212121213,
+        "repo_ci95": [
+          0.16923076923076924,
+          0.3170731707317073
+        ],
+        "mcnemar_p": 5.7220458984375e-06,
+        "nrepo": 12
+      },
+      "bm25_outcome": {
+        "wins": 15,
+        "losses": 3,
+        "delta": 0.12121212121212122,
+        "repo_ci95": [
+          0.07042253521126761,
+          0.23214285714285715
+        ],
+        "mcnemar_p": 0.007537841796875,
+        "nrepo": 12
+      },
+      "sparse_fields": {
+        "wins": 12,
+        "losses": 1,
+        "delta": 0.1111111111111111,
+        "repo_ci95": [
+          0.08064516129032258,
+          0.2
+        ],
+        "mcnemar_p": 0.00341796875,
+        "nrepo": 12
+      },
+      "dense_flat": {
+        "wins": 25,
+        "losses": 1,
+        "delta": 0.24242424242424243,
+        "repo_ci95": [
+          0.18666666666666668,
+          0.3137254901960784
+        ],
+        "mcnemar_p": 8.046627044677734e-07,
+        "nrepo": 12
+      },
+      "minilm": {
+        "wins": 37,
+        "losses": 2,
+        "delta": 0.35353535353535354,
+        "repo_ci95": [
+          0.28125,
+          0.5
+        ],
+        "mcnemar_p": 2.841261448338628e-09,
+        "nrepo": 12
+      },
+      "fusion": {
+        "wins": 11,
+        "losses": 1,
+        "delta": 0.10101010101010101,
+        "repo_ci95": [
+          0.056818181818181816,
+          0.2127659574468085
+        ],
+        "mcnemar_p": 0.00634765625,
+        "nrepo": 12
+      },
+      "recall_keyword": {
+        "wins": 23,
+        "losses": 1,
+        "delta": 0.2222222222222222,
+        "repo_ci95": [
+          0.16326530612244897,
+          0.2982456140350877
+        ],
+        "mcnemar_p": 2.9802322387695312e-06,
+        "nrepo": 12
+      },
+      "recall_hybrid": {
+        "wins": 21,
+        "losses": 4,
+        "delta": 0.1717171717171717,
+        "repo_ci95": [
+          0.1165644171779141,
+          0.30612244897959184
+        ],
+        "mcnemar_p": 0.0009105205535888672,
+        "nrepo": 12
+      }
+    },
+    "extension": {
+      "bm25_flat": {
+        "wins": 0,
+        "losses": 1,
+        "delta": -0.003875968992248062,
+        "repo_ci95": [
+          -0.009584664536741214,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 39
+      },
+      "bm25_symptom": {
+        "wins": 0,
+        "losses": 0,
+        "delta": 0,
+        "repo_ci95": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 39
+      },
+      "bm25_outcome": {
+        "wins": 0,
+        "losses": 1,
+        "delta": -0.003875968992248062,
+        "repo_ci95": [
+          -0.009584664536741214,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 39
+      },
+      "sparse_fields": {
+        "wins": 0,
+        "losses": 0,
+        "delta": 0,
+        "repo_ci95": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 39
+      },
+      "dense_flat": {
+        "wins": 4,
+        "losses": 0,
+        "delta": 0.015503875968992248,
+        "repo_ci95": [
+          0.0,
+          0.038338658146964855
+        ],
+        "mcnemar_p": 0.125,
+        "nrepo": 39
+      },
+      "minilm": {
+        "wins": 3,
+        "losses": 1,
+        "delta": 0.007751937984496124,
+        "repo_ci95": [
+          0.0,
+          0.019169329073482427
+        ],
+        "mcnemar_p": 0.625,
+        "nrepo": 39
+      }
+    },
+    "extension_available": {
+      "bm25_flat": {
+        "wins": 0,
+        "losses": 1,
+        "delta": -0.07692307692307693,
+        "repo_ci95": [
+          -0.1111111111111111,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 2
+      },
+      "bm25_symptom": {
+        "wins": 0,
+        "losses": 0,
+        "delta": 0,
+        "repo_ci95": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 2
+      },
+      "bm25_outcome": {
+        "wins": 0,
+        "losses": 1,
+        "delta": -0.07692307692307693,
+        "repo_ci95": [
+          -0.1111111111111111,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 2
+      },
+      "sparse_fields": {
+        "wins": 0,
+        "losses": 0,
+        "delta": 0,
+        "repo_ci95": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_p": 1,
+        "nrepo": 2
+      },
+      "dense_flat": {
+        "wins": 4,
+        "losses": 0,
+        "delta": 0.3076923076923077,
+        "repo_ci95": [
+          0.0,
+          0.4444444444444444
+        ],
+        "mcnemar_p": 0.125,
+        "nrepo": 2
+      },
+      "minilm": {
+        "wins": 3,
+        "losses": 1,
+        "delta": 0.15384615384615385,
+        "repo_ci95": [
+          0.0,
+          0.2222222222222222
+        ],
+        "mcnemar_p": 0.625,
+        "nrepo": 2
+      }
+    }
+  },
+  "author_controls": [
+    "recall_keyword",
+    "recall_hybrid"
+  ],
+  "external_prediction_hashes": {
+    "recall_keyword": "bb6f4cf5bb3137343005c303a78381f5f7f15ff9151165ad91148fc305bb42b3",
+    "recall_hybrid": "58b7f6051a0893ddeaf90b19610222bb6ad761eb5ab41d98abedf1b7e94727c9"
+  },
+  "official": {
+    "paper": "REM",
+    "lite_match_at_one": 68,
+    "lite_n": 99,
+    "matched_outputs_available": false,
+    "possible_exact_p_range_given_only_marginals": [
+      0.015625,
+      0.41875418826901556
+    ],
+    "our_possible_hit_count_after_excluding_eight_unknown_missing_targets": [
+      67,
+      75
+    ]
+  },
+  "llm_cost": {
+    "calls": 99,
+    "fallback": 0,
+    "input": 336189,
+    "output": 198,
+    "seconds": 259.604220867157
+  },
+  "storage": {
+    "input_raw_bytes": 126379059,
+    "record_text_bytes": 819196,
+    "json_file_bytes": 847135,
+    "avg_words": 326.31333333333333
+  }
+}

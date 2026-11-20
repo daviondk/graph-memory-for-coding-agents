@@ -1,0 +1,25 @@
+{
+  "conditions": {
+    "adp": "Action",
+    "memory": "Digest",
+    "no_memory": "None",
+    "raw": "Trace"
+  },
+  "evaluated_runs": 380,
+  "evaluated_targets": 95,
+  "evaluation_summaries": {
+    "adp": "/mnt/data/shashwat/SWEContextBench/qwen36_adp_95_keepimg.json",
+    "memory": "/mnt/data/shashwat/SWEContextBench/qwen36_memory_95_keepimg.json",
+    "no_memory": "/mnt/data/shashwat/SWEContextBench/qwen36_no_memory_95_keepimg.json",
+    "raw": "/mnt/data/shashwat/SWEContextBench/qwen36_raw_95_keepimg.json"
+  },
+  "excluded_target": "django__django-28147",
+  "exclusion_reason": "sandbox image did not contain the expected manifest base commit",
+  "model_name": "openhands-qwen3.6-35b-a3b-65k-ollama-contextbench-memory-repr",
+  "prediction_sources": {
+    "adp": "/mnt/data/shashwat/openhands-adp-memory/data/contextbench_phase2/execution_full_qwen36_65k_fix1/predictions/full_adp_predictions.jsonl",
+    "memory": "/mnt/data/shashwat/openhands-adp-memory/data/contextbench_phase2/execution_full_qwen36_65k_fix1/predictions/full_memory_predictions.jsonl",
+    "no_memory": "/mnt/data/shashwat/openhands-adp-memory/data/contextbench_phase2/execution_full_qwen36_65k_fix1/predictions/full_no_memory_predictions.jsonl",
+    "raw": "/mnt/data/shashwat/openhands-adp-memory/data/contextbench_phase2/execution_full_qwen36_65k_fix1/predictions/full_raw_predictions.jsonl"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "2508.21433",
+  "title": "The Complexity Trap: Simple Observation Masking Is as Efficient as LLM Summarization for Agent Context Management",
+  "authors": [
+    "Lindenbauer, Tobias",
+    "Slinko, Igor",
+    "Felder, Ludwig",
+    "Bogomolov, Egor",
+    "Zharov, Yaroslav"
+  ],
+  "date": "2025/08/29",
+  "url": "https://arxiv.org/abs/2508.21433",
+  "abstract": "Large Language Model (LLM)-based agents solve complex tasks through iterative reasoning, exploration, and tool-use, a process that can result in long, expensive context histories. While state-of-the-art Software Engineering (SE) agents like OpenHands or Cursor use LLM-based summarization to tackle this issue, it is unclear whether the increased complexity offers tangible performance benefits compared to simply omitting older observations. We present a systematic comparison of these approaches within SWE-agent on SWE-bench Verified across five diverse model configurations. Moreover, we show initial evidence of our findings generalizing to the OpenHands agent scaffold. We find that a simple environment observation masking strategy halves cost relative to the raw agent while matching, and sometimes slightly exceeding, the solve rate of LLM summarization. Additionally, we introduce a novel hybrid approach that further reduces costs by 7% and 11% compared to just observation masking or LLM summarization, respectively. Our findings raise concerns regarding the trend towards pure LLM summarization and provide initial evidence of untapped cost reductions by pushing the efficiency-effectiveness frontier. We release code and data for reproducibility.",
+  "status": "v3: DL4C camera-ready version to be presented at the 4th DL4C workshop co-located with NeurIPS '25; added OpenHands generality probe, added hybrid context management strategy",
+  "versions": "Submission history From: Tobias Lindenbauer [ view email ] [v1] Fri, 29 Aug 2025 09:02:35 UTC (934 KB) [v2] Fri, 5 Sep 2025 06:16:59 UTC (907 KB) [v3] Mon, 27 Oct 2025 15:08:54 UTC (1,153 KB)"
+}

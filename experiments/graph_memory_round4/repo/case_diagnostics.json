@@ -1,0 +1,80 @@
+{
+ "loss": {
+  "panel": "java_cfr_test_easy",
+  "id": 279,
+  "repo": "paukiatwee/budgetapp",
+  "pool": 5,
+  "gold": 1,
+  "query_terms": [
+   "access",
+   "budget",
+   "check",
+   "denied",
+   "equals",
+   "exception",
+   "id",
+   "objects",
+   "user"
+  ],
+  "owner": {
+   "candidate": 1,
+   "declares": "accessdeniedexception",
+   "incoming_edges": 0,
+   "incoming_sources": 0,
+   "outdegree": 0,
+   "strongest_trace_source": null,
+   "strongest_trace_overlap": [],
+   "strongest_trace_similarity": 0
+  },
+  "graph": {
+   "candidate": 0,
+   "declares": "budget",
+   "incoming_edges": 3,
+   "incoming_sources": 1,
+   "outdegree": 1,
+   "strongest_trace_source": "appconfiguration",
+   "strongest_trace_overlap": [],
+   "strongest_trace_similarity": 0.0
+  }
+ },
+ "rescue": {
+  "panel": "java_cfr_test_hard",
+  "id": 3012,
+  "repo": "killjoy1221/TabbyChat-2",
+  "pool": 11,
+  "gold": 1,
+  "query_terms": [
+   "box",
+   "channel",
+   "chat",
+   "gui",
+   "location",
+   "modal",
+   "textured"
+  ],
+  "owner": {
+   "candidate": 2,
+   "declares": "channelstatus",
+   "incoming_edges": 4,
+   "incoming_sources": 3,
+   "outdegree": 1,
+   "strongest_trace_source": "guinewchattc",
+   "strongest_trace_overlap": [
+    "channel"
+   ],
+   "strongest_trace_similarity": 0.154
+  },
+  "graph": {
+   "candidate": 1,
+   "declares": "channel",
+   "incoming_edges": 7,
+   "incoming_sources": 2,
+   "outdegree": 1,
+   "strongest_trace_source": "channelstatus",
+   "strongest_trace_overlap": [
+    "channel"
+   ],
+   "strongest_trace_similarity": 0.218
+  }
+ }
+}

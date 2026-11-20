@@ -1,0 +1,1392 @@
+{
+ "corpora": {
+  "train": {
+   "tasks": 1350,
+   "repositories": [
+    "HIPS__autograd",
+    "PyCQA__flake8",
+    "adrienverge__yamllint",
+    "agronholm__exceptiongroup",
+    "agronholm__typeguard",
+    "andialbrecht__sqlparse",
+    "arrow-py__arrow",
+    "chardet__chardet",
+    "cknd__stackprinter",
+    "dask__dask",
+    "davidhalter__parso",
+    "dbader__schedule",
+    "django-money__django-money",
+    "erikrose__parsimonious",
+    "facebookresearch__fvcore",
+    "facebookresearch__hydra",
+    "facelessuser__soupsieve",
+    "gawel__pyquery",
+    "google__textfsm",
+    "gweis__isodate",
+    "hukkin__tomli",
+    "jaraco__inflect",
+    "jawah__charset_normalizer",
+    "jd__tenacity",
+    "joke2k__faker",
+    "jsvine__pdfplumber",
+    "kayak__pypika",
+    "life4__textdistance",
+    "lincolnloop__python-qrcode",
+    "luozhouyang__python-string-similarity",
+    "mahmoud__boltons",
+    "marshmallow-code__marshmallow",
+    "matthewwithanm__python-markdownify",
+    "msiemens__tinydb",
+    "pallets__click",
+    "pandas-dev__pandas",
+    "prettytable__prettytable",
+    "pydantic__pydantic",
+    "pydata__patsy",
+    "pygments__pygments",
+    "pylint-dev__astroid",
+    "python-jsonschema__jsonschema",
+    "python-openxml__python-docx",
+    "pyutils__line_profiler",
+    "rsalmei__alive-progress",
+    "seatgeek__thefuzz",
+    "seperman__deepdiff",
+    "spulec__freezegun",
+    "sunpy__sunpy",
+    "tkrajina__gpxpy",
+    "tox-dev__pipdeptree"
+   ],
+   "events": 40961,
+   "models": {
+    "claude-3-7-sonnet-20250219": 1098,
+    "claude-3-5-sonnet-20241022": 250,
+    "gpt-4o-2024-08-06": 2
+   },
+   "formats": {
+    "native": 341,
+    "tagged": 1009
+   }
+  },
+  "test": {
+   "tasks": 1013,
+   "repositories": [
+    "Suor__funcy",
+    "alecthomas__voluptuous",
+    "amueller__word_cloud",
+    "keleshev__schema",
+    "mahmoud__glom",
+    "mido__mido",
+    "modin-project__modin",
+    "mozillazg__python-pinyin",
+    "python__mypy",
+    "r1chardj0n3s__parse",
+    "rubik__radon",
+    "rustedpy__result",
+    "scanny__python-pptx",
+    "sqlfluff__sqlfluff",
+    "tobymao__sqlglot",
+    "un33k__python-slugify"
+   ],
+   "events": 29676,
+   "models": {
+    "claude-3-7-sonnet-20250219": 837,
+    "claude-3-5-sonnet-20241022": 172,
+    "gpt-4o-2024-08-06": 4
+   },
+   "formats": {
+    "native": 232,
+    "tagged": 781
+   }
+  }
+ },
+ "test_tasks_with_accepted": 986,
+ "new_train_test_repo_overlap": [],
+ "results": {
+  "256": {
+   "n": 3405,
+   "metrics": {
+    "reset_tail": {
+     "hit": 375,
+     "average_tokens": 233.78883994126284
+    },
+    "rebased_tail": {
+     "hit": 346,
+     "average_tokens": 237.54654919236418
+    },
+    "rebased_center": {
+     "hit": 348,
+     "average_tokens": 238.86490455212922
+    },
+    "latest_contiguous": {
+     "hit": 329,
+     "average_tokens": 197.72129221732746
+    },
+    "first_page": {
+     "hit": 272,
+     "average_tokens": 235.27518355359766
+    },
+    "marginal": {
+     "hit": 279,
+     "average_tokens": 235.74096916299558
+    },
+    "joint": {
+     "hit": 338,
+     "average_tokens": 236.62613803230542
+    }
+   },
+   "all_intents": {
+    "reset_tail": {
+     "hit": 392,
+     "average_tokens": 233.8494623655914
+    },
+    "rebased_tail": {
+     "hit": 365,
+     "average_tokens": 237.6168647425014
+    },
+    "rebased_center": {
+     "hit": 365,
+     "average_tokens": 238.92642897566498
+    },
+    "latest_contiguous": {
+     "hit": 345,
+     "average_tokens": 197.73655913978496
+    },
+    "first_page": {
+     "hit": 279,
+     "average_tokens": 235.36757215619696
+    },
+    "marginal": {
+     "hit": 291,
+     "average_tokens": 235.8058856819468
+    },
+    "joint": {
+     "hit": 352,
+     "average_tokens": 236.669779286927
+    }
+   },
+   "paired_joint_minus": {
+    "reset_tail": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 126,
+      "losses": 163,
+      "difference": -0.010866372980910427,
+      "ci95": [
+       -0.02224521469218831,
+       0.0029553010712966383
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 126,
+      "losses": 163,
+      "difference": -0.010866372980910427,
+      "ci95": [
+       -0.02148106274731487,
+       0.0
+      ]
+     }
+    },
+    "rebased_tail": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 124,
+      "losses": 132,
+      "difference": -0.0023494860499265785,
+      "ci95": [
+       -0.012356199403493822,
+       0.011619190404797601
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 124,
+      "losses": 132,
+      "difference": -0.0023494860499265785,
+      "ci95": [
+       -0.011871113623516111,
+       0.007394262052647146
+      ]
+     }
+    },
+    "rebased_center": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 114,
+      "losses": 124,
+      "difference": -0.002936857562408223,
+      "ci95": [
+       -0.012184754888070274,
+       0.007058159232072276
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 114,
+      "losses": 124,
+      "difference": -0.002936857562408223,
+      "ci95": [
+       -0.011660978384527872,
+       0.006003430531732418
+      ]
+     }
+    },
+    "latest_contiguous": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 124,
+      "losses": 115,
+      "difference": 0.0026431718061674008,
+      "ci95": [
+       -0.006136475208640157,
+       0.01373283395755306
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 124,
+      "losses": 115,
+      "difference": 0.0026431718061674008,
+      "ci95": [
+       -0.006293077614623914,
+       0.011865915158706615
+      ]
+     }
+    },
+    "first_page": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 113,
+      "losses": 47,
+      "difference": 0.019383259911894272,
+      "ci95": [
+       0.012283894449499545,
+       0.025998492840994723
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 113,
+      "losses": 47,
+      "difference": 0.019383259911894272,
+      "ci95": [
+       0.012135922330097087,
+       0.026977872082449228
+      ]
+     }
+    },
+    "marginal": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 94,
+      "losses": 35,
+      "difference": 0.017327459618208516,
+      "ci95": [
+       0.006766917293233083,
+       0.023514211886304908
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 94,
+      "losses": 35,
+      "difference": 0.017327459618208516,
+      "ci95": [
+       0.011117612638970159,
+       0.024171888988361683
+      ]
+     }
+    }
+   },
+   "by_repository": {
+    "Suor__funcy": {
+     "n": 198,
+     "hits": {
+      "reset_tail": 19,
+      "rebased_tail": 12,
+      "rebased_center": 15,
+      "latest_contiguous": 16,
+      "first_page": 12,
+      "marginal": 10,
+      "joint": 18
+     }
+    },
+    "alecthomas__voluptuous": {
+     "n": 146,
+     "hits": {
+      "reset_tail": 19,
+      "rebased_tail": 19,
+      "rebased_center": 19,
+      "latest_contiguous": 18,
+      "first_page": 13,
+      "marginal": 14,
+      "joint": 15
+     }
+    },
+    "amueller__word_cloud": {
+     "n": 102,
+     "hits": {
+      "reset_tail": 16,
+      "rebased_tail": 13,
+      "rebased_center": 13,
+      "latest_contiguous": 13,
+      "first_page": 4,
+      "marginal": 7,
+      "joint": 8
+     }
+    },
+    "keleshev__schema": {
+     "n": 50,
+     "hits": {
+      "reset_tail": 11,
+      "rebased_tail": 10,
+      "rebased_center": 12,
+      "latest_contiguous": 11,
+      "first_page": 8,
+      "marginal": 8,
+      "joint": 10
+     }
+    },
+    "mahmoud__glom": {
+     "n": 300,
+     "hits": {
+      "reset_tail": 27,
+      "rebased_tail": 27,
+      "rebased_center": 26,
+      "latest_contiguous": 26,
+      "first_page": 25,
+      "marginal": 29,
+      "joint": 31
+     }
+    },
+    "mido__mido": {
+     "n": 201,
+     "hits": {
+      "reset_tail": 24,
+      "rebased_tail": 25,
+      "rebased_center": 26,
+      "latest_contiguous": 24,
+      "first_page": 23,
+      "marginal": 25,
+      "joint": 30
+     }
+    },
+    "modin-project__modin": {
+     "n": 107,
+     "hits": {
+      "reset_tail": 7,
+      "rebased_tail": 5,
+      "rebased_center": 5,
+      "latest_contiguous": 4,
+      "first_page": 6,
+      "marginal": 6,
+      "joint": 4
+     }
+    },
+    "mozillazg__python-pinyin": {
+     "n": 127,
+     "hits": {
+      "reset_tail": 9,
+      "rebased_tail": 10,
+      "rebased_center": 7,
+      "latest_contiguous": 6,
+      "first_page": 5,
+      "marginal": 8,
+      "joint": 8
+     }
+    },
+    "python__mypy": {
+     "n": 45,
+     "hits": {
+      "reset_tail": 10,
+      "rebased_tail": 10,
+      "rebased_center": 10,
+      "latest_contiguous": 9,
+      "first_page": 7,
+      "marginal": 7,
+      "joint": 9
+     }
+    },
+    "r1chardj0n3s__parse": {
+     "n": 86,
+     "hits": {
+      "reset_tail": 9,
+      "rebased_tail": 11,
+      "rebased_center": 10,
+      "latest_contiguous": 10,
+      "first_page": 5,
+      "marginal": 9,
+      "joint": 10
+     }
+    },
+    "rubik__radon": {
+     "n": 98,
+     "hits": {
+      "reset_tail": 5,
+      "rebased_tail": 5,
+      "rebased_center": 6,
+      "latest_contiguous": 6,
+      "first_page": 6,
+      "marginal": 8,
+      "joint": 7
+     }
+    },
+    "rustedpy__result": {
+     "n": 84,
+     "hits": {
+      "reset_tail": 9,
+      "rebased_tail": 8,
+      "rebased_center": 10,
+      "latest_contiguous": 8,
+      "first_page": 17,
+      "marginal": 17,
+      "joint": 12
+     }
+    },
+    "scanny__python-pptx": {
+     "n": 317,
+     "hits": {
+      "reset_tail": 29,
+      "rebased_tail": 25,
+      "rebased_center": 27,
+      "latest_contiguous": 24,
+      "first_page": 27,
+      "marginal": 25,
+      "joint": 33
+     }
+    },
+    "sqlfluff__sqlfluff": {
+     "n": 442,
+     "hits": {
+      "reset_tail": 47,
+      "rebased_tail": 46,
+      "rebased_center": 43,
+      "latest_contiguous": 43,
+      "first_page": 32,
+      "marginal": 25,
+      "joint": 37
+     }
+    },
+    "tobymao__sqlglot": {
+     "n": 902,
+     "hits": {
+      "reset_tail": 97,
+      "rebased_tail": 92,
+      "rebased_center": 86,
+      "latest_contiguous": 84,
+      "first_page": 62,
+      "marginal": 57,
+      "joint": 80
+     }
+    },
+    "un33k__python-slugify": {
+     "n": 200,
+     "hits": {
+      "reset_tail": 37,
+      "rebased_tail": 28,
+      "rebased_center": 33,
+      "latest_contiguous": 27,
+      "first_page": 20,
+      "marginal": 24,
+      "joint": 26
+     }
+    }
+   },
+   "by_format": {
+    "native": {
+     "n": 717,
+     "hits": {
+      "reset_tail": 73,
+      "rebased_tail": 63,
+      "rebased_center": 73,
+      "latest_contiguous": 67,
+      "first_page": 50,
+      "marginal": 51,
+      "joint": 64
+     }
+    },
+    "tagged": {
+     "n": 2688,
+     "hits": {
+      "reset_tail": 302,
+      "rebased_tail": 283,
+      "rebased_center": 275,
+      "latest_contiguous": 262,
+      "first_page": 222,
+      "marginal": 228,
+      "joint": 274
+     }
+    }
+   }
+  },
+  "512": {
+   "n": 3405,
+   "metrics": {
+    "reset_tail": {
+     "hit": 783,
+     "average_tokens": 474.79530102790017
+    },
+    "rebased_tail": {
+     "hit": 796,
+     "average_tokens": 487.6202643171806
+    },
+    "rebased_center": {
+     "hit": 790,
+     "average_tokens": 488.73362701908957
+    },
+    "latest_contiguous": {
+     "hit": 732,
+     "average_tokens": 385.60381791483115
+    },
+    "first_page": {
+     "hit": 658,
+     "average_tokens": 484.5700440528634
+    },
+    "marginal": {
+     "hit": 754,
+     "average_tokens": 485.49397944199706
+    },
+    "joint": {
+     "hit": 852,
+     "average_tokens": 486.41908957415563
+    }
+   },
+   "all_intents": {
+    "reset_tail": {
+     "hit": 806,
+     "average_tokens": 474.7724957555178
+    },
+    "rebased_tail": {
+     "hit": 820,
+     "average_tokens": 487.71222410865875
+    },
+    "rebased_center": {
+     "hit": 814,
+     "average_tokens": 488.84493491794
+    },
+    "latest_contiguous": {
+     "hit": 755,
+     "average_tokens": 385.48585172608944
+    },
+    "first_page": {
+     "hit": 682,
+     "average_tokens": 484.7504244482173
+    },
+    "marginal": {
+     "hit": 781,
+     "average_tokens": 485.684493491794
+    },
+    "joint": {
+     "hit": 879,
+     "average_tokens": 486.5274476513865
+    }
+   },
+   "paired_joint_minus": {
+    "reset_tail": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 279,
+      "losses": 210,
+      "difference": 0.02026431718061674,
+      "ci95": [
+       0.004041311180960934,
+       0.039139527935464595
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 279,
+      "losses": 210,
+      "difference": 0.02026431718061674,
+      "ci95": [
+       0.0068827071981646115,
+       0.0340512223515716
+      ]
+     }
+    },
+    "rebased_tail": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 249,
+      "losses": 193,
+      "difference": 0.01644640234948605,
+      "ci95": [
+       0.005496281926931782,
+       0.033657442034405384
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 249,
+      "losses": 193,
+      "difference": 0.01644640234948605,
+      "ci95": [
+       0.003602521765235665,
+       0.028877642155403394
+      ]
+     }
+    },
+    "rebased_center": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 227,
+      "losses": 165,
+      "difference": 0.018208516886930984,
+      "ci95": [
+       0.005017246785826278,
+       0.033286451007969994
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 227,
+      "losses": 165,
+      "difference": 0.018208516886930984,
+      "ci95": [
+       0.006310958118187034,
+       0.029756537421100092
+      ]
+     }
+    },
+    "latest_contiguous": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 271,
+      "losses": 151,
+      "difference": 0.03524229074889868,
+      "ci95": [
+       0.01964542405366555,
+       0.05650994575045208
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 271,
+      "losses": 151,
+      "difference": 0.03524229074889868,
+      "ci95": [
+       0.023269513991163476,
+       0.04711246200607903
+      ]
+     }
+    },
+    "first_page": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 288,
+      "losses": 94,
+      "difference": 0.05697503671071953,
+      "ci95": [
+       0.042395954881369116,
+       0.06988013261922979
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 288,
+      "losses": 94,
+      "difference": 0.05697503671071953,
+      "ci95": [
+       0.04510155316606929,
+       0.06867196367763904
+      ]
+     }
+    },
+    "marginal": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 150,
+      "losses": 52,
+      "difference": 0.028781204111600588,
+      "ci95": [
+       0.02039329934450109,
+       0.039616346955796494
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 150,
+      "losses": 52,
+      "difference": 0.028781204111600588,
+      "ci95": [
+       0.020370370370370372,
+       0.03738046942915097
+      ]
+     }
+    }
+   },
+   "by_repository": {
+    "Suor__funcy": {
+     "n": 198,
+     "hits": {
+      "reset_tail": 54,
+      "rebased_tail": 52,
+      "rebased_center": 53,
+      "latest_contiguous": 52,
+      "first_page": 43,
+      "marginal": 49,
+      "joint": 65
+     }
+    },
+    "alecthomas__voluptuous": {
+     "n": 146,
+     "hits": {
+      "reset_tail": 41,
+      "rebased_tail": 42,
+      "rebased_center": 41,
+      "latest_contiguous": 33,
+      "first_page": 36,
+      "marginal": 38,
+      "joint": 40
+     }
+    },
+    "amueller__word_cloud": {
+     "n": 102,
+     "hits": {
+      "reset_tail": 24,
+      "rebased_tail": 24,
+      "rebased_center": 23,
+      "latest_contiguous": 24,
+      "first_page": 19,
+      "marginal": 19,
+      "joint": 21
+     }
+    },
+    "keleshev__schema": {
+     "n": 50,
+     "hits": {
+      "reset_tail": 17,
+      "rebased_tail": 18,
+      "rebased_center": 20,
+      "latest_contiguous": 20,
+      "first_page": 16,
+      "marginal": 18,
+      "joint": 19
+     }
+    },
+    "mahmoud__glom": {
+     "n": 300,
+     "hits": {
+      "reset_tail": 59,
+      "rebased_tail": 65,
+      "rebased_center": 62,
+      "latest_contiguous": 53,
+      "first_page": 53,
+      "marginal": 56,
+      "joint": 68
+     }
+    },
+    "mido__mido": {
+     "n": 201,
+     "hits": {
+      "reset_tail": 48,
+      "rebased_tail": 56,
+      "rebased_center": 55,
+      "latest_contiguous": 49,
+      "first_page": 47,
+      "marginal": 54,
+      "joint": 65
+     }
+    },
+    "modin-project__modin": {
+     "n": 107,
+     "hits": {
+      "reset_tail": 22,
+      "rebased_tail": 21,
+      "rebased_center": 21,
+      "latest_contiguous": 20,
+      "first_page": 14,
+      "marginal": 19,
+      "joint": 21
+     }
+    },
+    "mozillazg__python-pinyin": {
+     "n": 127,
+     "hits": {
+      "reset_tail": 23,
+      "rebased_tail": 21,
+      "rebased_center": 18,
+      "latest_contiguous": 16,
+      "first_page": 16,
+      "marginal": 23,
+      "joint": 26
+     }
+    },
+    "python__mypy": {
+     "n": 45,
+     "hits": {
+      "reset_tail": 17,
+      "rebased_tail": 17,
+      "rebased_center": 16,
+      "latest_contiguous": 11,
+      "first_page": 14,
+      "marginal": 13,
+      "joint": 15
+     }
+    },
+    "r1chardj0n3s__parse": {
+     "n": 86,
+     "hits": {
+      "reset_tail": 21,
+      "rebased_tail": 23,
+      "rebased_center": 23,
+      "latest_contiguous": 21,
+      "first_page": 17,
+      "marginal": 16,
+      "joint": 22
+     }
+    },
+    "rubik__radon": {
+     "n": 98,
+     "hits": {
+      "reset_tail": 17,
+      "rebased_tail": 17,
+      "rebased_center": 19,
+      "latest_contiguous": 19,
+      "first_page": 20,
+      "marginal": 24,
+      "joint": 25
+     }
+    },
+    "rustedpy__result": {
+     "n": 84,
+     "hits": {
+      "reset_tail": 14,
+      "rebased_tail": 15,
+      "rebased_center": 20,
+      "latest_contiguous": 14,
+      "first_page": 25,
+      "marginal": 29,
+      "joint": 27
+     }
+    },
+    "scanny__python-pptx": {
+     "n": 317,
+     "hits": {
+      "reset_tail": 63,
+      "rebased_tail": 60,
+      "rebased_center": 55,
+      "latest_contiguous": 49,
+      "first_page": 63,
+      "marginal": 64,
+      "joint": 68
+     }
+    },
+    "sqlfluff__sqlfluff": {
+     "n": 442,
+     "hits": {
+      "reset_tail": 81,
+      "rebased_tail": 85,
+      "rebased_center": 93,
+      "latest_contiguous": 90,
+      "first_page": 67,
+      "marginal": 74,
+      "joint": 87
+     }
+    },
+    "tobymao__sqlglot": {
+     "n": 902,
+     "hits": {
+      "reset_tail": 196,
+      "rebased_tail": 206,
+      "rebased_center": 196,
+      "latest_contiguous": 189,
+      "first_page": 150,
+      "marginal": 187,
+      "joint": 209
+     }
+    },
+    "un33k__python-slugify": {
+     "n": 200,
+     "hits": {
+      "reset_tail": 86,
+      "rebased_tail": 74,
+      "rebased_center": 75,
+      "latest_contiguous": 72,
+      "first_page": 58,
+      "marginal": 71,
+      "joint": 74
+     }
+    }
+   },
+   "by_format": {
+    "native": {
+     "n": 717,
+     "hits": {
+      "reset_tail": 149,
+      "rebased_tail": 158,
+      "rebased_center": 161,
+      "latest_contiguous": 149,
+      "first_page": 129,
+      "marginal": 142,
+      "joint": 165
+     }
+    },
+    "tagged": {
+     "n": 2688,
+     "hits": {
+      "reset_tail": 634,
+      "rebased_tail": 638,
+      "rebased_center": 629,
+      "latest_contiguous": 583,
+      "first_page": 529,
+      "marginal": 612,
+      "joint": 687
+     }
+    }
+   }
+  },
+  "1024": {
+   "n": 3405,
+   "metrics": {
+    "reset_tail": {
+     "hit": 1219,
+     "average_tokens": 916.8334801762114
+    },
+    "rebased_tail": {
+     "hit": 1380,
+     "average_tokens": 970.5306901615272
+    },
+    "rebased_center": {
+     "hit": 1362,
+     "average_tokens": 971.9920704845815
+    },
+    "latest_contiguous": {
+     "hit": 1046,
+     "average_tokens": 640.9850220264317
+    },
+    "first_page": {
+     "hit": 1283,
+     "average_tokens": 966.2910425844346
+    },
+    "marginal": {
+     "hit": 1377,
+     "average_tokens": 967.5794419970631
+    },
+    "joint": {
+     "hit": 1472,
+     "average_tokens": 968.6375917767988
+    }
+   },
+   "all_intents": {
+    "reset_tail": {
+     "hit": 1252,
+     "average_tokens": 916.9530277306169
+    },
+    "rebased_tail": {
+     "hit": 1418,
+     "average_tokens": 970.850311262026
+    },
+    "rebased_center": {
+     "hit": 1399,
+     "average_tokens": 972.3005093378608
+    },
+    "latest_contiguous": {
+     "hit": 1073,
+     "average_tokens": 639.703169213356
+    },
+    "first_page": {
+     "hit": 1316,
+     "average_tokens": 966.54272778721
+    },
+    "marginal": {
+     "hit": 1417,
+     "average_tokens": 967.8494623655914
+    },
+    "joint": {
+     "hit": 1511,
+     "average_tokens": 968.9408602150538
+    }
+   },
+   "paired_joint_minus": {
+    "reset_tail": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 451,
+      "losses": 198,
+      "difference": 0.07430249632892805,
+      "ci95": [
+       0.05262036642522369,
+       0.0921803127874885
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 451,
+      "losses": 198,
+      "difference": 0.07430249632892805,
+      "ci95": [
+       0.058629973078073584,
+       0.09106578569376617
+      ]
+     }
+    },
+    "rebased_tail": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 313,
+      "losses": 221,
+      "difference": 0.027019089574155653,
+      "ci95": [
+       0.013611352447147408,
+       0.03906899418121363
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 313,
+      "losses": 221,
+      "difference": 0.027019089574155653,
+      "ci95": [
+       0.013714967203339297,
+       0.0408040804080408
+      ]
+     }
+    },
+    "rebased_center": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 292,
+      "losses": 182,
+      "difference": 0.032305433186490456,
+      "ci95": [
+       0.015781922525107604,
+       0.04459148446490219
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 292,
+      "losses": 182,
+      "difference": 0.032305433186490456,
+      "ci95": [
+       0.01952339936836061,
+       0.0452991452991453
+      ]
+     }
+    },
+    "latest_contiguous": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 538,
+      "losses": 112,
+      "difference": 0.12511013215859032,
+      "ci95": [
+       0.09578425294482332,
+       0.146689497716895
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 538,
+      "losses": 112,
+      "difference": 0.12511013215859032,
+      "ci95": [
+       0.11009174311926606,
+       0.14060216311020168
+      ]
+     }
+    },
+    "first_page": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 292,
+      "losses": 103,
+      "difference": 0.055506607929515416,
+      "ci95": [
+       0.03767660910518053,
+       0.07238883143743537
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 292,
+      "losses": 103,
+      "difference": 0.055506607929515416,
+      "ci95": [
+       0.043647234678624816,
+       0.06746712407089765
+      ]
+     }
+    },
+    "marginal": {
+     "repo": {
+      "units": 16,
+      "n": 3405,
+      "wins": 159,
+      "losses": 64,
+      "difference": 0.027900146842878122,
+      "ci95": [
+       0.015503875968992248,
+       0.037037037037037035
+      ]
+     },
+     "id": {
+      "units": 986,
+      "n": 3405,
+      "wins": 159,
+      "losses": 64,
+      "difference": 0.027900146842878122,
+      "ci95": [
+       0.019011406844106463,
+       0.03709380748007358
+      ]
+     }
+    }
+   },
+   "by_repository": {
+    "Suor__funcy": {
+     "n": 198,
+     "hits": {
+      "reset_tail": 80,
+      "rebased_tail": 95,
+      "rebased_center": 93,
+      "latest_contiguous": 83,
+      "first_page": 80,
+      "marginal": 92,
+      "joint": 103
+     }
+    },
+    "alecthomas__voluptuous": {
+     "n": 146,
+     "hits": {
+      "reset_tail": 61,
+      "rebased_tail": 69,
+      "rebased_center": 69,
+      "latest_contiguous": 44,
+      "first_page": 66,
+      "marginal": 72,
+      "joint": 74
+     }
+    },
+    "amueller__word_cloud": {
+     "n": 102,
+     "hits": {
+      "reset_tail": 40,
+      "rebased_tail": 41,
+      "rebased_center": 41,
+      "latest_contiguous": 34,
+      "first_page": 43,
+      "marginal": 43,
+      "joint": 47
+     }
+    },
+    "keleshev__schema": {
+     "n": 50,
+     "hits": {
+      "reset_tail": 24,
+      "rebased_tail": 30,
+      "rebased_center": 32,
+      "latest_contiguous": 26,
+      "first_page": 27,
+      "marginal": 28,
+      "joint": 29
+     }
+    },
+    "mahmoud__glom": {
+     "n": 300,
+     "hits": {
+      "reset_tail": 98,
+      "rebased_tail": 119,
+      "rebased_center": 114,
+      "latest_contiguous": 85,
+      "first_page": 91,
+      "marginal": 110,
+      "joint": 123
+     }
+    },
+    "mido__mido": {
+     "n": 201,
+     "hits": {
+      "reset_tail": 74,
+      "rebased_tail": 88,
+      "rebased_center": 89,
+      "latest_contiguous": 69,
+      "first_page": 86,
+      "marginal": 90,
+      "joint": 95
+     }
+    },
+    "modin-project__modin": {
+     "n": 107,
+     "hits": {
+      "reset_tail": 33,
+      "rebased_tail": 38,
+      "rebased_center": 37,
+      "latest_contiguous": 32,
+      "first_page": 28,
+      "marginal": 34,
+      "joint": 34
+     }
+    },
+    "mozillazg__python-pinyin": {
+     "n": 127,
+     "hits": {
+      "reset_tail": 43,
+      "rebased_tail": 43,
+      "rebased_center": 39,
+      "latest_contiguous": 33,
+      "first_page": 36,
+      "marginal": 43,
+      "joint": 50
+     }
+    },
+    "python__mypy": {
+     "n": 45,
+     "hits": {
+      "reset_tail": 18,
+      "rebased_tail": 18,
+      "rebased_center": 17,
+      "latest_contiguous": 13,
+      "first_page": 19,
+      "marginal": 17,
+      "joint": 19
+     }
+    },
+    "r1chardj0n3s__parse": {
+     "n": 86,
+     "hits": {
+      "reset_tail": 25,
+      "rebased_tail": 37,
+      "rebased_center": 34,
+      "latest_contiguous": 26,
+      "first_page": 31,
+      "marginal": 36,
+      "joint": 38
+     }
+    },
+    "rubik__radon": {
+     "n": 98,
+     "hits": {
+      "reset_tail": 32,
+      "rebased_tail": 32,
+      "rebased_center": 34,
+      "latest_contiguous": 25,
+      "first_page": 34,
+      "marginal": 33,
+      "joint": 38
+     }
+    },
+    "rustedpy__result": {
+     "n": 84,
+     "hits": {
+      "reset_tail": 20,
+      "rebased_tail": 23,
+      "rebased_center": 31,
+      "latest_contiguous": 21,
+      "first_page": 35,
+      "marginal": 37,
+      "joint": 33
+     }
+    },
+    "scanny__python-pptx": {
+     "n": 317,
+     "hits": {
+      "reset_tail": 104,
+      "rebased_tail": 104,
+      "rebased_center": 99,
+      "latest_contiguous": 65,
+      "first_page": 106,
+      "marginal": 113,
+      "joint": 118
+     }
+    },
+    "sqlfluff__sqlfluff": {
+     "n": 442,
+     "hits": {
+      "reset_tail": 144,
+      "rebased_tail": 150,
+      "rebased_center": 153,
+      "latest_contiguous": 128,
+      "first_page": 137,
+      "marginal": 144,
+      "joint": 151
+     }
+    },
+    "tobymao__sqlglot": {
+     "n": 902,
+     "hits": {
+      "reset_tail": 326,
+      "rebased_tail": 376,
+      "rebased_center": 366,
+      "latest_contiguous": 270,
+      "first_page": 351,
+      "marginal": 370,
+      "joint": 406
+     }
+    },
+    "un33k__python-slugify": {
+     "n": 200,
+     "hits": {
+      "reset_tail": 97,
+      "rebased_tail": 117,
+      "rebased_center": 114,
+      "latest_contiguous": 92,
+      "first_page": 113,
+      "marginal": 115,
+      "joint": 114
+     }
+    }
+   },
+   "by_format": {
+    "native": {
+     "n": 717,
+     "hits": {
+      "reset_tail": 230,
+      "rebased_tail": 268,
+      "rebased_center": 261,
+      "latest_contiguous": 212,
+      "first_page": 257,
+      "marginal": 276,
+      "joint": 291
+     }
+    },
+    "tagged": {
+     "n": 2688,
+     "hits": {
+      "reset_tail": 989,
+      "rebased_tail": 1112,
+      "rebased_center": 1101,
+      "latest_contiguous": 834,
+      "first_page": 1026,
+      "marginal": 1101,
+      "joint": 1181
+     }
+    }
+   }
+  }
+ }
+}

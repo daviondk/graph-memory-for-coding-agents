@@ -1,0 +1,2063 @@
+{
+ "prediction_cuts": 4091,
+ "token_checks": 49092,
+ "instances_streamed": 567,
+ "budget": {
+  "256": {
+   "n": 1907,
+   "repos": 17,
+   "instances": 558,
+   "hits": {
+    "recent": 191,
+    "pointwise": 141,
+    "global": 189,
+    "history": 189,
+    "typed": 207,
+    "placebo": 146
+   },
+   "upper_bound": 613,
+   "costs": {
+    "recent": {
+     "mean_pages": 2.4871525957000524,
+     "mean_charged": 234.48557944415313,
+     "mean_joint": 234.2695332983744,
+     "max_charged": 256,
+     "max_joint": 256,
+     "empty": 3
+    },
+    "pointwise": {
+     "mean_pages": 2.5149449396958574,
+     "mean_charged": 236.0655479811222,
+     "mean_joint": 235.85474567383324,
+     "max_charged": 256,
+     "max_joint": 256,
+     "empty": 3
+    },
+    "global": {
+     "mean_pages": 2.5883586785527006,
+     "mean_charged": 235.1137912952281,
+     "mean_joint": 234.87624541164132,
+     "max_charged": 256,
+     "max_joint": 256,
+     "empty": 3
+    },
+    "history": {
+     "mean_pages": 2.5867855270057682,
+     "mean_charged": 235.1767173571054,
+     "mean_joint": 234.93969585736758,
+     "max_charged": 256,
+     "max_joint": 256,
+     "empty": 3
+    },
+    "typed": {
+     "mean_pages": 2.6533822758259045,
+     "mean_charged": 233.10173046670164,
+     "mean_joint": 232.84425799685368,
+     "max_charged": 256,
+     "max_joint": 256,
+     "empty": 3
+    },
+    "placebo": {
+     "mean_pages": 2.5925537493445203,
+     "mean_charged": 236.25065547981123,
+     "mean_joint": 236.0256948085999,
+     "max_charged": 256,
+     "max_joint": 256,
+     "empty": 3
+    }
+   },
+   "typed_minus": {
+    "recent": {
+     "delta": 0.008390141583639224,
+     "wins": 71,
+     "losses": 55,
+     "ci": [
+      -0.008163329402112604,
+      0.020791116238119904
+     ],
+     "repo_macro": 0.004326206566266429,
+     "by_repo": {
+      "PyCQA__flake8": [
+       4,
+       143
+      ],
+      "adrienverge__yamllint": [
+       4,
+       267
+      ],
+      "cknd__stackprinter": [
+       -2,
+       56
+      ],
+      "dbader__schedule": [
+       -2,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       2,
+       19
+      ],
+      "jd__tenacity": [
+       4,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -1,
+       114
+      ],
+      "mahmoud__boltons": [
+       -1,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       2,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -7,
+       148
+      ],
+      "pydantic__pydantic": [
+       6,
+       218
+      ],
+      "pylint-dev__astroid": [
+       4,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       3,
+       88
+      ],
+      "pyutils__line_profiler": [
+       -5,
+       64
+      ],
+      "sunpy__sunpy": [
+       5,
+       139
+      ]
+     }
+    },
+    "pointwise": {
+     "delta": 0.0346093340325118,
+     "wins": 95,
+     "losses": 29,
+     "ci": [
+      0.023034115977247884,
+      0.046478348427615696
+     ],
+     "repo_macro": 0.04181318222606018,
+     "by_repo": {
+      "PyCQA__flake8": [
+       6,
+       143
+      ],
+      "adrienverge__yamllint": [
+       8,
+       267
+      ],
+      "cknd__stackprinter": [
+       3,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       4,
+       76
+      ],
+      "hukkin__tomli": [
+       7,
+       19
+      ],
+      "jd__tenacity": [
+       -1,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       4,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       -2,
+       24
+      ],
+      "pallets__click": [
+       4,
+       101
+      ],
+      "pandas-dev__pandas": [
+       4,
+       148
+      ],
+      "pydantic__pydantic": [
+       4,
+       218
+      ],
+      "pylint-dev__astroid": [
+       15,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       4,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       6,
+       139
+      ]
+     }
+    },
+    "global": {
+     "delta": 0.009438909281594127,
+     "wins": 52,
+     "losses": 34,
+     "ci": [
+      -0.0008156606851549756,
+      0.018287447540185516
+     ],
+     "repo_macro": 0.00013299857170733932,
+     "by_repo": {
+      "PyCQA__flake8": [
+       1,
+       143
+      ],
+      "adrienverge__yamllint": [
+       4,
+       267
+      ],
+      "cknd__stackprinter": [
+       3,
+       56
+      ],
+      "dbader__schedule": [
+       -1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       1,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -2,
+       114
+      ],
+      "mahmoud__boltons": [
+       -1,
+       58
+      ],
+      "msiemens__tinydb": [
+       -3,
+       24
+      ],
+      "pallets__click": [
+       4,
+       101
+      ],
+      "pandas-dev__pandas": [
+       2,
+       148
+      ],
+      "pydantic__pydantic": [
+       -1,
+       218
+      ],
+      "pylint-dev__astroid": [
+       5,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       6,
+       139
+      ]
+     }
+    },
+    "history": {
+     "delta": 0.009438909281594127,
+     "wins": 52,
+     "losses": 34,
+     "ci": [
+      -0.001869304906542056,
+      0.018553951490239102
+     ],
+     "repo_macro": -0.0008787976181457423,
+     "by_repo": {
+      "PyCQA__flake8": [
+       2,
+       143
+      ],
+      "adrienverge__yamllint": [
+       4,
+       267
+      ],
+      "cknd__stackprinter": [
+       3,
+       56
+      ],
+      "dbader__schedule": [
+       -1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       1,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       -1,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -2,
+       114
+      ],
+      "mahmoud__boltons": [
+       -1,
+       58
+      ],
+      "msiemens__tinydb": [
+       -3,
+       24
+      ],
+      "pallets__click": [
+       3,
+       101
+      ],
+      "pandas-dev__pandas": [
+       3,
+       148
+      ],
+      "pydantic__pydantic": [
+       -1,
+       218
+      ],
+      "pylint-dev__astroid": [
+       6,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       -1,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       6,
+       139
+      ]
+     }
+    },
+    "typed": {
+     "delta": 0.0,
+     "wins": 0,
+     "losses": 0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "repo_macro": 0.0,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       0,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       0,
+       148
+      ],
+      "pydantic__pydantic": [
+       0,
+       218
+      ],
+      "pylint-dev__astroid": [
+       0,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       0,
+       139
+      ]
+     }
+    },
+    "placebo": {
+     "delta": 0.03198741478762454,
+     "wins": 105,
+     "losses": 44,
+     "ci": [
+      0.020720060123017962,
+      0.04242118547084921
+     ],
+     "repo_macro": 0.040170965453143304,
+     "by_repo": {
+      "PyCQA__flake8": [
+       6,
+       143
+      ],
+      "adrienverge__yamllint": [
+       9,
+       267
+      ],
+      "cknd__stackprinter": [
+       2,
+       56
+      ],
+      "dbader__schedule": [
+       2,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       2,
+       76
+      ],
+      "hukkin__tomli": [
+       5,
+       19
+      ],
+      "jd__tenacity": [
+       2,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -1,
+       114
+      ],
+      "mahmoud__boltons": [
+       -1,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       6,
+       101
+      ],
+      "pandas-dev__pandas": [
+       6,
+       148
+      ],
+      "pydantic__pydantic": [
+       4,
+       218
+      ],
+      "pylint-dev__astroid": [
+       12,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       7,
+       139
+      ]
+     }
+    }
+   },
+   "vs_no_token_cap": {
+    "recent": {
+     "delta": -0.0702674357629785,
+     "wins": 4,
+     "losses": 138,
+     "ci": [
+      -0.08638083228247162,
+      -0.05268485449235008
+     ],
+     "repo_macro": -0.06600678523368742,
+     "by_repo": {
+      "PyCQA__flake8": [
+       -7,
+       143
+      ],
+      "adrienverge__yamllint": [
+       -19,
+       267
+      ],
+      "cknd__stackprinter": [
+       -2,
+       56
+      ],
+      "dbader__schedule": [
+       -1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       -1,
+       76
+      ],
+      "hukkin__tomli": [
+       -1,
+       19
+      ],
+      "jd__tenacity": [
+       -2,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -6,
+       114
+      ],
+      "mahmoud__boltons": [
+       -10,
+       58
+      ],
+      "msiemens__tinydb": [
+       -2,
+       24
+      ],
+      "pallets__click": [
+       -7,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -10,
+       148
+      ],
+      "pydantic__pydantic": [
+       -26,
+       218
+      ],
+      "pylint-dev__astroid": [
+       -24,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       -8,
+       88
+      ],
+      "pyutils__line_profiler": [
+       -5,
+       64
+      ],
+      "sunpy__sunpy": [
+       -3,
+       139
+      ]
+     }
+    },
+    "pointwise": {
+     "delta": -0.04981646565285789,
+     "wins": 13,
+     "losses": 108,
+     "ci": [
+      -0.06983697447348254,
+      -0.03545708544069815
+     ],
+     "repo_macro": -0.06072870158099006,
+     "by_repo": {
+      "PyCQA__flake8": [
+       -3,
+       143
+      ],
+      "adrienverge__yamllint": [
+       -10,
+       267
+      ],
+      "cknd__stackprinter": [
+       -2,
+       56
+      ],
+      "dbader__schedule": [
+       -2,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       -3,
+       76
+      ],
+      "hukkin__tomli": [
+       -4,
+       19
+      ],
+      "jd__tenacity": [
+       -2,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -6,
+       114
+      ],
+      "mahmoud__boltons": [
+       -4,
+       58
+      ],
+      "msiemens__tinydb": [
+       -3,
+       24
+      ],
+      "pallets__click": [
+       -3,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -9,
+       148
+      ],
+      "pydantic__pydantic": [
+       -24,
+       218
+      ],
+      "pylint-dev__astroid": [
+       -8,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       -7,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       -5,
+       139
+      ]
+     }
+    },
+    "global": {
+     "delta": -0.06607236497115888,
+     "wins": 43,
+     "losses": 169,
+     "ci": [
+      -0.07862256893293454,
+      -0.05401208525304475
+     ],
+     "repo_macro": -0.06404856715112409,
+     "by_repo": {
+      "PyCQA__flake8": [
+       -5,
+       143
+      ],
+      "adrienverge__yamllint": [
+       -19,
+       267
+      ],
+      "cknd__stackprinter": [
+       -3,
+       56
+      ],
+      "dbader__schedule": [
+       -1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       -2,
+       76
+      ],
+      "hukkin__tomli": [
+       -1,
+       19
+      ],
+      "jd__tenacity": [
+       -3,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -8,
+       114
+      ],
+      "mahmoud__boltons": [
+       -9,
+       58
+      ],
+      "msiemens__tinydb": [
+       -1,
+       24
+      ],
+      "pallets__click": [
+       -13,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -11,
+       148
+      ],
+      "pydantic__pydantic": [
+       -16,
+       218
+      ],
+      "pylint-dev__astroid": [
+       -17,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       -8,
+       88
+      ],
+      "pyutils__line_profiler": [
+       -2,
+       64
+      ],
+      "sunpy__sunpy": [
+       -7,
+       139
+      ]
+     }
+    },
+    "history": {
+     "delta": -0.06974305191400104,
+     "wins": 40,
+     "losses": 173,
+     "ci": [
+      -0.08359463880291522,
+      -0.05331088664421998
+     ],
+     "repo_macro": -0.05887189262485551,
+     "by_repo": {
+      "PyCQA__flake8": [
+       -5,
+       143
+      ],
+      "adrienverge__yamllint": [
+       -23,
+       267
+      ],
+      "cknd__stackprinter": [
+       -3,
+       56
+      ],
+      "dbader__schedule": [
+       -1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       -1,
+       76
+      ],
+      "hukkin__tomli": [
+       1,
+       19
+      ],
+      "jd__tenacity": [
+       -3,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -8,
+       114
+      ],
+      "mahmoud__boltons": [
+       -10,
+       58
+      ],
+      "msiemens__tinydb": [
+       -1,
+       24
+      ],
+      "pallets__click": [
+       -12,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -13,
+       148
+      ],
+      "pydantic__pydantic": [
+       -20,
+       218
+      ],
+      "pylint-dev__astroid": [
+       -20,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       -7,
+       88
+      ],
+      "pyutils__line_profiler": [
+       -1,
+       64
+      ],
+      "sunpy__sunpy": [
+       -6,
+       139
+      ]
+     }
+    },
+    "typed": {
+     "delta": -0.07813319349764027,
+     "wins": 34,
+     "losses": 183,
+     "ci": [
+      -0.09504210085040125,
+      -0.060412418585181184
+     ],
+     "repo_macro": -0.07124886880855835,
+     "by_repo": {
+      "PyCQA__flake8": [
+       -3,
+       143
+      ],
+      "adrienverge__yamllint": [
+       -22,
+       267
+      ],
+      "cknd__stackprinter": [
+       -2,
+       56
+      ],
+      "dbader__schedule": [
+       -1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       -3,
+       76
+      ],
+      "hukkin__tomli": [
+       2,
+       19
+      ],
+      "jd__tenacity": [
+       -3,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -10,
+       114
+      ],
+      "mahmoud__boltons": [
+       -10,
+       58
+      ],
+      "msiemens__tinydb": [
+       -4,
+       24
+      ],
+      "pallets__click": [
+       -8,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -17,
+       148
+      ],
+      "pydantic__pydantic": [
+       -25,
+       218
+      ],
+      "pylint-dev__astroid": [
+       -20,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       -10,
+       88
+      ],
+      "pyutils__line_profiler": [
+       -6,
+       64
+      ],
+      "sunpy__sunpy": [
+       -7,
+       139
+      ]
+     }
+    },
+    "placebo": {
+     "delta": -0.062401678028316726,
+     "wins": 21,
+     "losses": 140,
+     "ci": [
+      -0.07634775760224356,
+      -0.0472048447204969
+     ],
+     "repo_macro": -0.06598784428558373,
+     "by_repo": {
+      "PyCQA__flake8": [
+       -4,
+       143
+      ],
+      "adrienverge__yamllint": [
+       -23,
+       267
+      ],
+      "cknd__stackprinter": [
+       -1,
+       56
+      ],
+      "dbader__schedule": [
+       -2,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       -2,
+       19
+      ],
+      "jd__tenacity": [
+       -4,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -6,
+       114
+      ],
+      "mahmoud__boltons": [
+       -5,
+       58
+      ],
+      "msiemens__tinydb": [
+       -4,
+       24
+      ],
+      "pallets__click": [
+       -8,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -9,
+       148
+      ],
+      "pydantic__pydantic": [
+       -21,
+       218
+      ],
+      "pylint-dev__astroid": [
+       -15,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       -8,
+       88
+      ],
+      "pyutils__line_profiler": [
+       -3,
+       64
+      ],
+      "sunpy__sunpy": [
+       -4,
+       139
+      ]
+     }
+    }
+   }
+  },
+  "512": {
+   "n": 1907,
+   "repos": 17,
+   "instances": 558,
+   "hits": {
+    "recent": 321,
+    "pointwise": 233,
+    "global": 313,
+    "history": 316,
+    "typed": 351,
+    "placebo": 262
+   },
+   "upper_bound": 914,
+   "costs": {
+    "recent": {
+     "mean_pages": 2.983744100681699,
+     "mean_charged": 337.50288411116935,
+     "mean_joint": 337.209229155742,
+     "max_charged": 512,
+     "max_joint": 512,
+     "empty": 2
+    },
+    "pointwise": {
+     "mean_pages": 2.9842684845306766,
+     "mean_charged": 336.2302045097011,
+     "mean_joint": 335.96643943366547,
+     "max_charged": 511,
+     "max_joint": 511,
+     "empty": 2
+    },
+    "global": {
+     "mean_pages": 2.9853172522286315,
+     "mean_charged": 339.54798112218145,
+     "mean_joint": 339.25642370214996,
+     "max_charged": 511,
+     "max_joint": 511,
+     "empty": 2
+    },
+    "history": {
+     "mean_pages": 2.9853172522286315,
+     "mean_charged": 339.23597273203984,
+     "mean_joint": 338.9417933927635,
+     "max_charged": 511,
+     "max_joint": 511,
+     "empty": 2
+    },
+    "typed": {
+     "mean_pages": 2.985841636077609,
+     "mean_charged": 331.4142632406922,
+     "mean_joint": 331.12060828526484,
+     "max_charged": 511,
+     "max_joint": 511,
+     "empty": 2
+    },
+    "placebo": {
+     "mean_pages": 2.9853172522286315,
+     "mean_charged": 339.8521237545884,
+     "mean_joint": 339.57105401153643,
+     "max_charged": 510,
+     "max_joint": 510,
+     "empty": 2
+    }
+   },
+   "typed_minus": {
+    "recent": {
+     "delta": 0.015731515469323543,
+     "wins": 103,
+     "losses": 73,
+     "ci": [
+      0.0016237775717162276,
+      0.029589190457901246
+     ],
+     "repo_macro": 0.009699564740171874,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       7,
+       267
+      ],
+      "cknd__stackprinter": [
+       -2,
+       56
+      ],
+      "dbader__schedule": [
+       -1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       2,
+       76
+      ],
+      "hukkin__tomli": [
+       -1,
+       19
+      ],
+      "jd__tenacity": [
+       5,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       1,
+       114
+      ],
+      "mahmoud__boltons": [
+       -2,
+       58
+      ],
+      "msiemens__tinydb": [
+       2,
+       24
+      ],
+      "pallets__click": [
+       3,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -1,
+       148
+      ],
+      "pydantic__pydantic": [
+       6,
+       218
+      ],
+      "pylint-dev__astroid": [
+       1,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       5,
+       88
+      ],
+      "pyutils__line_profiler": [
+       -4,
+       64
+      ],
+      "sunpy__sunpy": [
+       9,
+       139
+      ]
+     }
+    },
+    "pointwise": {
+     "delta": 0.06187729417933928,
+     "wins": 159,
+     "losses": 41,
+     "ci": [
+      0.04318160354216749,
+      0.07661504844832924
+     ],
+     "repo_macro": 0.05349706810250635,
+     "by_repo": {
+      "PyCQA__flake8": [
+       6,
+       143
+      ],
+      "adrienverge__yamllint": [
+       20,
+       267
+      ],
+      "cknd__stackprinter": [
+       3,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       4,
+       76
+      ],
+      "hukkin__tomli": [
+       1,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       8,
+       114
+      ],
+      "mahmoud__boltons": [
+       6,
+       58
+      ],
+      "msiemens__tinydb": [
+       -1,
+       24
+      ],
+      "pallets__click": [
+       9,
+       101
+      ],
+      "pandas-dev__pandas": [
+       11,
+       148
+      ],
+      "pydantic__pydantic": [
+       3,
+       218
+      ],
+      "pylint-dev__astroid": [
+       27,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       7,
+       88
+      ],
+      "pyutils__line_profiler": [
+       6,
+       64
+      ],
+      "sunpy__sunpy": [
+       8,
+       139
+      ]
+     }
+    },
+    "global": {
+     "delta": 0.019926586261143155,
+     "wins": 86,
+     "losses": 48,
+     "ci": [
+      0.007384935342679269,
+      0.030364372469635626
+     ],
+     "repo_macro": 0.008236270158157498,
+     "by_repo": {
+      "PyCQA__flake8": [
+       -1,
+       143
+      ],
+      "adrienverge__yamllint": [
+       7,
+       267
+      ],
+      "cknd__stackprinter": [
+       2,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       2,
+       76
+      ],
+      "hukkin__tomli": [
+       -3,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -1,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       -1,
+       101
+      ],
+      "pandas-dev__pandas": [
+       9,
+       148
+      ],
+      "pydantic__pydantic": [
+       4,
+       218
+      ],
+      "pylint-dev__astroid": [
+       8,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       2,
+       88
+      ],
+      "pyutils__line_profiler": [
+       4,
+       64
+      ],
+      "sunpy__sunpy": [
+       6,
+       139
+      ]
+     }
+    },
+    "history": {
+     "delta": 0.018353434714210803,
+     "wins": 84,
+     "losses": 49,
+     "ci": [
+      0.007390158109788595,
+      0.02968980131654092
+     ],
+     "repo_macro": 0.01348047930946777,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       3,
+       267
+      ],
+      "cknd__stackprinter": [
+       2,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       3,
+       76
+      ],
+      "hukkin__tomli": [
+       -1,
+       19
+      ],
+      "jd__tenacity": [
+       -1,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -1,
+       114
+      ],
+      "mahmoud__boltons": [
+       -1,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       -1,
+       101
+      ],
+      "pandas-dev__pandas": [
+       8,
+       148
+      ],
+      "pydantic__pydantic": [
+       4,
+       218
+      ],
+      "pylint-dev__astroid": [
+       6,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       2,
+       88
+      ],
+      "pyutils__line_profiler": [
+       5,
+       64
+      ],
+      "sunpy__sunpy": [
+       7,
+       139
+      ]
+     }
+    },
+    "typed": {
+     "delta": 0.0,
+     "wins": 0,
+     "losses": 0,
+     "ci": [
+      0.0,
+      0.0
+     ],
+     "repo_macro": 0.0,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       0,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       0,
+       148
+      ],
+      "pydantic__pydantic": [
+       0,
+       218
+      ],
+      "pylint-dev__astroid": [
+       0,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       0,
+       139
+      ]
+     }
+    },
+    "placebo": {
+     "delta": 0.046670162558993186,
+     "wins": 149,
+     "losses": 60,
+     "ci": [
+      0.0333019206301941,
+      0.06146938728880336
+     ],
+     "repo_macro": 0.04651198759590195,
+     "by_repo": {
+      "PyCQA__flake8": [
+       5,
+       143
+      ],
+      "adrienverge__yamllint": [
+       8,
+       267
+      ],
+      "cknd__stackprinter": [
+       3,
+       56
+      ],
+      "dbader__schedule": [
+       2,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       5,
+       76
+      ],
+      "hukkin__tomli": [
+       1,
+       19
+      ],
+      "jd__tenacity": [
+       1,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       1,
+       114
+      ],
+      "mahmoud__boltons": [
+       4,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       6,
+       101
+      ],
+      "pandas-dev__pandas": [
+       15,
+       148
+      ],
+      "pydantic__pydantic": [
+       5,
+       218
+      ],
+      "pylint-dev__astroid": [
+       17,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       2,
+       88
+      ],
+      "pyutils__line_profiler": [
+       3,
+       64
+      ],
+      "sunpy__sunpy": [
+       11,
+       139
+      ]
+     }
+    }
+   },
+   "vs_no_token_cap": {
+    "recent": {
+     "delta": -0.002097535395909806,
+     "wins": 2,
+     "losses": 6,
+     "ci": [
+      -0.007593464874539253,
+      0.002247216271926279
+     ],
+     "repo_macro": -2.321722963704448e-05,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       1,
+       114
+      ],
+      "mahmoud__boltons": [
+       1,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       0,
+       148
+      ],
+      "pydantic__pydantic": [
+       -5,
+       218
+      ],
+      "pylint-dev__astroid": [
+       -1,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       0,
+       139
+      ]
+     }
+    },
+    "pointwise": {
+     "delta": -0.0015731515469323545,
+     "wins": 0,
+     "losses": 3,
+     "ci": [
+      -0.0039043488755426963,
+      0.0
+     ],
+     "repo_macro": -0.0010556612794804063,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -1,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       0,
+       148
+      ],
+      "pydantic__pydantic": [
+       -2,
+       218
+      ],
+      "pylint-dev__astroid": [
+       0,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       0,
+       139
+      ]
+     }
+    },
+    "global": {
+     "delta": -0.001048767697954903,
+     "wins": 1,
+     "losses": 3,
+     "ci": [
+      -0.003486345148169669,
+      0.0
+     ],
+     "repo_macro": -0.000794912559618442,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       0,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -2,
+       148
+      ],
+      "pydantic__pydantic": [
+       0,
+       218
+      ],
+      "pylint-dev__astroid": [
+       0,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       0,
+       139
+      ]
+     }
+    },
+    "history": {
+     "delta": -0.003146303093864709,
+     "wins": 1,
+     "losses": 7,
+     "ci": [
+      -0.007580076072497126,
+      0.0
+     ],
+     "repo_macro": -0.0018742433745132074,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       0,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -2,
+       148
+      ],
+      "pydantic__pydantic": [
+       -4,
+       218
+      ],
+      "pylint-dev__astroid": [
+       0,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       0,
+       139
+      ]
+     }
+    },
+    "typed": {
+     "delta": -0.0026219192448872575,
+     "wins": 1,
+     "losses": 6,
+     "ci": [
+      -0.006981760153858105,
+      0.0008878540260290398
+     ],
+     "repo_macro": 0.00010805736939744365,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       1,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       -1,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -1,
+       148
+      ],
+      "pydantic__pydantic": [
+       -4,
+       218
+      ],
+      "pylint-dev__astroid": [
+       0,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       0,
+       139
+      ]
+     }
+    },
+    "placebo": {
+     "delta": -0.0015731515469323545,
+     "wins": 1,
+     "losses": 4,
+     "ci": [
+      -0.004255432442843224,
+      0.0007925194054145575
+     ],
+     "repo_macro": -0.0009719402503865536,
+     "by_repo": {
+      "PyCQA__flake8": [
+       0,
+       143
+      ],
+      "adrienverge__yamllint": [
+       0,
+       267
+      ],
+      "cknd__stackprinter": [
+       0,
+       56
+      ],
+      "dbader__schedule": [
+       0,
+       28
+      ],
+      "facelessuser__soupsieve": [
+       0,
+       76
+      ],
+      "hukkin__tomli": [
+       0,
+       19
+      ],
+      "jd__tenacity": [
+       0,
+       76
+      ],
+      "jsvine__pdfplumber": [
+       1,
+       114
+      ],
+      "mahmoud__boltons": [
+       0,
+       58
+      ],
+      "msiemens__tinydb": [
+       0,
+       24
+      ],
+      "pallets__click": [
+       0,
+       101
+      ],
+      "pandas-dev__pandas": [
+       -2,
+       148
+      ],
+      "pydantic__pydantic": [
+       -1,
+       218
+      ],
+      "pylint-dev__astroid": [
+       0,
+       288
+      ],
+      "python-jsonschema__jsonschema": [
+       0,
+       88
+      ],
+      "pyutils__line_profiler": [
+       0,
+       64
+      ],
+      "sunpy__sunpy": [
+       -1,
+       139
+      ]
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "ast_change": {
+  "n": 32,
+  "success": {
+   "joint": 20,
+   "rebased_tail": 17
+  },
+  "wins": 5,
+  "losses": 2,
+  "difference": 0.09375,
+  "repo_clusters": 12,
+  "ci95": [
+   0.0,
+   0.21428571428571427
+  ]
+ },
+ "unique": {
+  "n": 32,
+  "success": {
+   "joint": 23,
+   "rebased_tail": 22
+  },
+  "wins": 3,
+  "losses": 2,
+  "difference": 0.03125,
+  "repo_clusters": 12,
+  "ci95": [
+   -0.10714285714285714,
+   0.16216216216216217
+  ]
+ },
+ "has_action": {
+  "n": 32,
+  "success": {
+   "joint": 26,
+   "rebased_tail": 24
+  },
+  "wins": 2,
+  "losses": 0,
+  "difference": 0.0625,
+  "repo_clusters": 12,
+  "ci95": [
+   0.0,
+   0.13793103448275862
+  ]
+ },
+ "exact_reference_repair": {
+  "n": 25,
+  "success": {
+   "joint": 0,
+   "rebased_tail": 0
+  },
+  "wins": 0,
+  "losses": 0,
+  "difference": 0.0,
+  "repo_clusters": 12,
+  "ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ "exact_history": {
+  "n": 9,
+  "success": {
+   "joint": 0,
+   "rebased_tail": 0
+  },
+  "wins": 0,
+  "losses": 0,
+  "difference": 0.0,
+  "repo_clusters": 6,
+  "ci95": [
+   0.0,
+   0.0
+  ]
+ },
+ "failures": {
+  "joint": {
+   "success": 20,
+   "malformed_json": 5,
+   "same_ast": 2,
+   "old_absent": 3,
+   "parse_failed": 1,
+   "no_valid_edit": 1
+  },
+  "rebased_tail": {
+   "success": 17,
+   "same_ast": 4,
+   "malformed_json": 7,
+   "no_valid_edit": 1,
+   "old_absent": 2,
+   "parse_failed": 1
+  }
+ },
+ "changes_to_pre_correct": {
+  "joint": 2,
+  "rebased_tail": 3
+ },
+ "identical_messages_pairs": 0
+}

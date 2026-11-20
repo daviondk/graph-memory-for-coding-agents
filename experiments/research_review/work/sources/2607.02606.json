@@ -1,0 +1,26 @@
+{
+  "id": "2607.02606",
+  "title": "ChainSWE: Benchmarking Coding Agents on Multi-Bug Software Maintenance",
+  "authors": [
+    "Jin, Qirui",
+    "Tung, Lingching",
+    "Li, Kenan",
+    "Shi, Qiyang",
+    "She, Yushi",
+    "Jia, Huanzhong",
+    "Zhao, Harrison",
+    "Xia, Kejing",
+    "Du, Zhenbang",
+    "Pei, Jiaxin",
+    "Zhang, Zhenyu",
+    "Qi, Zhen",
+    "Duan, Yuyan",
+    "Lee, Wenke",
+    "Jin, Zijian"
+  ],
+  "date": "2026/07/01",
+  "url": "https://arxiv.org/abs/2607.02606",
+  "abstract": "Language model (LM) agents are increasingly deployed to maintain codebases over extended periods, fixing streams of related defects while carrying context from one fix to the next. Yet existing software engineering (SWE) benchmarks evaluate models one bug at a time: the repository is reset, the codebase is re-read, and a single self-contained issue is graded in isolation. This setting collapses a continuous maintenance workflow into a series of independent sessions, ignoring the cumulative dependencies that make real-world bug fixing challenging. To bridge this gap, we introduce ChainSWE, the first benchmark for evaluating agents on sequential, dependent bug fixes within a shared codebase. We collect chronological chains of 304 issues across 54 Python projects, mined from six SWE-bench-family datasets. Our evaluation across a range of agents and models reveals a consistent performance drop by up to 70% as the chain length increases.",
+  "status": "",
+  "versions": "Submission history From: Qirui Jin [ view email ] [v1] Wed, 1 Jul 2026 13:32:15 UTC (1,446 KB) [v2] Tue, 1 Sep 2026 01:46:25 UTC (1,447 KB)"
+}

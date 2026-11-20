@@ -1,0 +1,563 @@
+{
+ "metrics": {
+  "pooled": {
+   "tiny/literal": {
+    "n": 12710,
+    "attempted": 11,
+    "correct": 11,
+    "stale": 0,
+    "correct_bytes": 10105
+   },
+   "tiny/exact": {
+    "n": 12710,
+    "attempted": 12,
+    "correct": 12,
+    "stale": 0,
+    "correct_bytes": 10715
+   },
+   "tiny/contained": {
+    "n": 12710,
+    "attempted": 252,
+    "correct": 252,
+    "stale": 0,
+    "correct_bytes": 177673
+   },
+   "tiny/range": {
+    "n": 12710,
+    "attempted": 257,
+    "correct": 257,
+    "stale": 0,
+    "correct_bytes": 184519
+   },
+   "tiny/coarse": {
+    "n": 12710,
+    "attempted": 257,
+    "correct": 257,
+    "stale": 0,
+    "correct_bytes": 184519
+   },
+   "tiny/optimistic": {
+    "n": 12710,
+    "attempted": 1351,
+    "correct": 758,
+    "stale": 593,
+    "correct_bytes": 650320
+   },
+   "main/literal": {
+    "n": 12710,
+    "attempted": 13,
+    "correct": 13,
+    "stale": 0,
+    "correct_bytes": 10953
+   },
+   "main/exact": {
+    "n": 12710,
+    "attempted": 14,
+    "correct": 14,
+    "stale": 0,
+    "correct_bytes": 11563
+   },
+   "main/contained": {
+    "n": 12710,
+    "attempted": 280,
+    "correct": 280,
+    "stale": 0,
+    "correct_bytes": 204072
+   },
+   "main/range": {
+    "n": 12710,
+    "attempted": 294,
+    "correct": 294,
+    "stale": 0,
+    "correct_bytes": 230854
+   },
+   "main/coarse": {
+    "n": 12710,
+    "attempted": 294,
+    "correct": 294,
+    "stale": 0,
+    "correct_bytes": 230854
+   },
+   "main/optimistic": {
+    "n": 12710,
+    "attempted": 2165,
+    "correct": 1299,
+    "stale": 866,
+    "correct_bytes": 1280123
+   },
+   "large/literal": {
+    "n": 12710,
+    "attempted": 13,
+    "correct": 13,
+    "stale": 0,
+    "correct_bytes": 10953
+   },
+   "large/exact": {
+    "n": 12710,
+    "attempted": 14,
+    "correct": 14,
+    "stale": 0,
+    "correct_bytes": 11563
+   },
+   "large/contained": {
+    "n": 12710,
+    "attempted": 280,
+    "correct": 280,
+    "stale": 0,
+    "correct_bytes": 204072
+   },
+   "large/range": {
+    "n": 12710,
+    "attempted": 294,
+    "correct": 294,
+    "stale": 0,
+    "correct_bytes": 230854
+   },
+   "large/coarse": {
+    "n": 12710,
+    "attempted": 294,
+    "correct": 294,
+    "stale": 0,
+    "correct_bytes": 230854
+   },
+   "large/optimistic": {
+    "n": 12710,
+    "attempted": 2248,
+    "correct": 1351,
+    "stale": 897,
+    "correct_bytes": 1349885
+   }
+  },
+  "claude": {
+   "tiny/literal": {
+    "n": 3329,
+    "attempted": 1,
+    "correct": 1,
+    "stale": 0,
+    "correct_bytes": 1752
+   },
+   "tiny/exact": {
+    "n": 3329,
+    "attempted": 1,
+    "correct": 1,
+    "stale": 0,
+    "correct_bytes": 1752
+   },
+   "tiny/contained": {
+    "n": 3329,
+    "attempted": 84,
+    "correct": 84,
+    "stale": 0,
+    "correct_bytes": 48646
+   },
+   "tiny/range": {
+    "n": 3329,
+    "attempted": 85,
+    "correct": 85,
+    "stale": 0,
+    "correct_bytes": 51018
+   },
+   "tiny/coarse": {
+    "n": 3329,
+    "attempted": 85,
+    "correct": 85,
+    "stale": 0,
+    "correct_bytes": 51018
+   },
+   "tiny/optimistic": {
+    "n": 3329,
+    "attempted": 548,
+    "correct": 271,
+    "stale": 277,
+    "correct_bytes": 190756
+   },
+   "main/literal": {
+    "n": 3329,
+    "attempted": 1,
+    "correct": 1,
+    "stale": 0,
+    "correct_bytes": 1752
+   },
+   "main/exact": {
+    "n": 3329,
+    "attempted": 1,
+    "correct": 1,
+    "stale": 0,
+    "correct_bytes": 1752
+   },
+   "main/contained": {
+    "n": 3329,
+    "attempted": 88,
+    "correct": 88,
+    "stale": 0,
+    "correct_bytes": 56407
+   },
+   "main/range": {
+    "n": 3329,
+    "attempted": 91,
+    "correct": 91,
+    "stale": 0,
+    "correct_bytes": 64518
+   },
+   "main/coarse": {
+    "n": 3329,
+    "attempted": 91,
+    "correct": 91,
+    "stale": 0,
+    "correct_bytes": 64518
+   },
+   "main/optimistic": {
+    "n": 3329,
+    "attempted": 713,
+    "correct": 382,
+    "stale": 331,
+    "correct_bytes": 300148
+   },
+   "large/literal": {
+    "n": 3329,
+    "attempted": 1,
+    "correct": 1,
+    "stale": 0,
+    "correct_bytes": 1752
+   },
+   "large/exact": {
+    "n": 3329,
+    "attempted": 1,
+    "correct": 1,
+    "stale": 0,
+    "correct_bytes": 1752
+   },
+   "large/contained": {
+    "n": 3329,
+    "attempted": 88,
+    "correct": 88,
+    "stale": 0,
+    "correct_bytes": 56407
+   },
+   "large/range": {
+    "n": 3329,
+    "attempted": 91,
+    "correct": 91,
+    "stale": 0,
+    "correct_bytes": 64518
+   },
+   "large/coarse": {
+    "n": 3329,
+    "attempted": 91,
+    "correct": 91,
+    "stale": 0,
+    "correct_bytes": 64518
+   },
+   "large/optimistic": {
+    "n": 3329,
+    "attempted": 719,
+    "correct": 387,
+    "stale": 332,
+    "correct_bytes": 308886
+   }
+  },
+  "codex": {
+   "tiny/literal": {
+    "n": 4236,
+    "attempted": 0,
+    "correct": 0,
+    "stale": 0,
+    "correct_bytes": 0
+   },
+   "tiny/exact": {
+    "n": 4236,
+    "attempted": 0,
+    "correct": 0,
+    "stale": 0,
+    "correct_bytes": 0
+   },
+   "tiny/contained": {
+    "n": 4236,
+    "attempted": 20,
+    "correct": 20,
+    "stale": 0,
+    "correct_bytes": 28957
+   },
+   "tiny/range": {
+    "n": 4236,
+    "attempted": 20,
+    "correct": 20,
+    "stale": 0,
+    "correct_bytes": 28957
+   },
+   "tiny/coarse": {
+    "n": 4236,
+    "attempted": 20,
+    "correct": 20,
+    "stale": 0,
+    "correct_bytes": 28957
+   },
+   "tiny/optimistic": {
+    "n": 4236,
+    "attempted": 334,
+    "correct": 46,
+    "stale": 288,
+    "correct_bytes": 75481
+   },
+   "main/literal": {
+    "n": 4236,
+    "attempted": 0,
+    "correct": 0,
+    "stale": 0,
+    "correct_bytes": 0
+   },
+   "main/exact": {
+    "n": 4236,
+    "attempted": 0,
+    "correct": 0,
+    "stale": 0,
+    "correct_bytes": 0
+   },
+   "main/contained": {
+    "n": 4236,
+    "attempted": 22,
+    "correct": 22,
+    "stale": 0,
+    "correct_bytes": 31652
+   },
+   "main/range": {
+    "n": 4236,
+    "attempted": 25,
+    "correct": 25,
+    "stale": 0,
+    "correct_bytes": 38840
+   },
+   "main/coarse": {
+    "n": 4236,
+    "attempted": 25,
+    "correct": 25,
+    "stale": 0,
+    "correct_bytes": 38840
+   },
+   "main/optimistic": {
+    "n": 4236,
+    "attempted": 572,
+    "correct": 91,
+    "stale": 481,
+    "correct_bytes": 171453
+   },
+   "large/literal": {
+    "n": 4236,
+    "attempted": 0,
+    "correct": 0,
+    "stale": 0,
+    "correct_bytes": 0
+   },
+   "large/exact": {
+    "n": 4236,
+    "attempted": 0,
+    "correct": 0,
+    "stale": 0,
+    "correct_bytes": 0
+   },
+   "large/contained": {
+    "n": 4236,
+    "attempted": 22,
+    "correct": 22,
+    "stale": 0,
+    "correct_bytes": 31652
+   },
+   "large/range": {
+    "n": 4236,
+    "attempted": 25,
+    "correct": 25,
+    "stale": 0,
+    "correct_bytes": 38840
+   },
+   "large/coarse": {
+    "n": 4236,
+    "attempted": 25,
+    "correct": 25,
+    "stale": 0,
+    "correct_bytes": 38840
+   },
+   "large/optimistic": {
+    "n": 4236,
+    "attempted": 601,
+    "correct": 96,
+    "stale": 505,
+    "correct_bytes": 186222
+   }
+  },
+  "gemini": {
+   "tiny/literal": {
+    "n": 5145,
+    "attempted": 10,
+    "correct": 10,
+    "stale": 0,
+    "correct_bytes": 8353
+   },
+   "tiny/exact": {
+    "n": 5145,
+    "attempted": 11,
+    "correct": 11,
+    "stale": 0,
+    "correct_bytes": 8963
+   },
+   "tiny/contained": {
+    "n": 5145,
+    "attempted": 148,
+    "correct": 148,
+    "stale": 0,
+    "correct_bytes": 100070
+   },
+   "tiny/range": {
+    "n": 5145,
+    "attempted": 152,
+    "correct": 152,
+    "stale": 0,
+    "correct_bytes": 104544
+   },
+   "tiny/coarse": {
+    "n": 5145,
+    "attempted": 152,
+    "correct": 152,
+    "stale": 0,
+    "correct_bytes": 104544
+   },
+   "tiny/optimistic": {
+    "n": 5145,
+    "attempted": 469,
+    "correct": 441,
+    "stale": 28,
+    "correct_bytes": 384083
+   },
+   "main/literal": {
+    "n": 5145,
+    "attempted": 12,
+    "correct": 12,
+    "stale": 0,
+    "correct_bytes": 9201
+   },
+   "main/exact": {
+    "n": 5145,
+    "attempted": 13,
+    "correct": 13,
+    "stale": 0,
+    "correct_bytes": 9811
+   },
+   "main/contained": {
+    "n": 5145,
+    "attempted": 170,
+    "correct": 170,
+    "stale": 0,
+    "correct_bytes": 116013
+   },
+   "main/range": {
+    "n": 5145,
+    "attempted": 178,
+    "correct": 178,
+    "stale": 0,
+    "correct_bytes": 127496
+   },
+   "main/coarse": {
+    "n": 5145,
+    "attempted": 178,
+    "correct": 178,
+    "stale": 0,
+    "correct_bytes": 127496
+   },
+   "main/optimistic": {
+    "n": 5145,
+    "attempted": 880,
+    "correct": 826,
+    "stale": 54,
+    "correct_bytes": 808522
+   },
+   "large/literal": {
+    "n": 5145,
+    "attempted": 12,
+    "correct": 12,
+    "stale": 0,
+    "correct_bytes": 9201
+   },
+   "large/exact": {
+    "n": 5145,
+    "attempted": 13,
+    "correct": 13,
+    "stale": 0,
+    "correct_bytes": 9811
+   },
+   "large/contained": {
+    "n": 5145,
+    "attempted": 170,
+    "correct": 170,
+    "stale": 0,
+    "correct_bytes": 116013
+   },
+   "large/range": {
+    "n": 5145,
+    "attempted": 178,
+    "correct": 178,
+    "stale": 0,
+    "correct_bytes": 127496
+   },
+   "large/coarse": {
+    "n": 5145,
+    "attempted": 178,
+    "correct": 178,
+    "stale": 0,
+    "correct_bytes": 127496
+   },
+   "large/optimistic": {
+    "n": 5145,
+    "attempted": 928,
+    "correct": 868,
+    "stale": 60,
+    "correct_bytes": 854777
+   }
+  }
+ },
+ "paired": {
+  "pooled": {
+   "unique_issues": 500,
+   "issues_improved": 191,
+   "issues_worse": 0,
+   "additional_correct": 280,
+   "delta_pp": 2.2029897718332023,
+   "issue_cluster_CI95_pp": [
+    1.9218500797448166,
+    2.499379293221882
+   ]
+  },
+  "claude": {
+   "unique_issues": 500,
+   "issues_improved": 82,
+   "issues_worse": 0,
+   "additional_correct": 90,
+   "delta_pp": 2.7035145689396214,
+   "issue_cluster_CI95_pp": [
+    2.1604938271604937,
+    3.3023404937479963
+   ]
+  },
+  "codex": {
+   "unique_issues": 500,
+   "issues_improved": 23,
+   "issues_worse": 0,
+   "additional_correct": 25,
+   "delta_pp": 0.5901794145420207,
+   "issue_cluster_CI95_pp": [
+    0.35680304471931495,
+    0.8627251966505963
+   ]
+  },
+  "gemini": {
+   "unique_issues": 441,
+   "issues_improved": 118,
+   "issues_worse": 0,
+   "additional_correct": 165,
+   "delta_pp": 3.206997084548105,
+   "issue_cluster_CI95_pp": [
+    2.6735910752067706,
+    3.7673879443585783
+   ]
+  }
+ },
+ "unscored": {}
+}

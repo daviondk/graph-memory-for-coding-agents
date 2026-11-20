@@ -1,0 +1,4 @@
+def order_by_points(nums):
+    def digits_sum(n):
+        return sum(int(i) for i in str(abs(n)))
+    return sorted(nums, key=digits_sum)

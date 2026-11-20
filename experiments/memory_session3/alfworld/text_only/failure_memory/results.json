@@ -1,0 +1,400 @@
+{
+ "valid_seen": {
+  "arms": {
+   "baseline": {
+    "active_steps": 0,
+    "mean_capped_steps": 13.521428571428572,
+    "peak_negative_entries": 0,
+    "rejected": 520,
+    "repeat_rejected": 507,
+    "steps": 1893,
+    "unconfirmed": 520,
+    "wins": 127
+   },
+   "one_step": {
+    "active_steps": 63,
+    "mean_capped_steps": 11.457142857142857,
+    "peak_negative_entries": 1,
+    "rejected": 64,
+    "repeat_rejected": 48,
+    "steps": 1604,
+    "unconfirmed": 64,
+    "wins": 137
+   },
+   "pose_set": {
+    "active_steps": 52,
+    "mean_capped_steps": 11.457142857142857,
+    "peak_negative_entries": 3,
+    "rejected": 25,
+    "repeat_rejected": 3,
+    "steps": 1604,
+    "unconfirmed": 25,
+    "wins": 137
+   }
+  },
+  "contrasts": {
+   "one_step-baseline": {
+    "cost": {
+     "delta": -2.0642857142857145,
+     "floorplan_boot95": [
+      -3.640625,
+      -0.8043478260869565
+     ],
+     "negative": 10,
+     "positive": 0,
+     "task_boot95": [
+      -3.5,
+      -0.8785714285714286
+     ],
+     "ties": 130
+    },
+    "discordant_sign_p": 0.001953125,
+    "identical_actions": 127,
+    "success": {
+     "delta": 0.07142857142857142,
+     "floorplan_boot95": [
+      0.02877697841726619,
+      0.12403100775193798
+     ],
+     "negative": 0,
+     "positive": 10,
+     "task_boot95": [
+      0.02857142857142857,
+      0.12142857142857143
+     ],
+     "ties": 130
+    }
+   },
+   "pose_set-baseline": {
+    "cost": {
+     "delta": -2.0642857142857145,
+     "floorplan_boot95": [
+      -3.640625,
+      -0.8043478260869565
+     ],
+     "negative": 10,
+     "positive": 0,
+     "task_boot95": [
+      -3.5,
+      -0.8785714285714286
+     ],
+     "ties": 130
+    },
+    "discordant_sign_p": 0.001953125,
+    "identical_actions": 127,
+    "success": {
+     "delta": 0.07142857142857142,
+     "floorplan_boot95": [
+      0.02877697841726619,
+      0.12403100775193798
+     ],
+     "negative": 0,
+     "positive": 10,
+     "task_boot95": [
+      0.02857142857142857,
+      0.12142857142857143
+     ],
+     "ties": 130
+    }
+   },
+   "pose_set-one_step": {
+    "cost": {
+     "delta": 0.0,
+     "floorplan_boot95": [
+      0.0,
+      0.0
+     ],
+     "negative": 0,
+     "positive": 0,
+     "task_boot95": [
+      0.0,
+      0.0
+     ],
+     "ties": 140
+    },
+    "discordant_sign_p": 1,
+    "identical_actions": 139,
+    "success": {
+     "delta": 0.0,
+     "floorplan_boot95": [
+      0.0,
+      0.0
+     ],
+     "negative": 0,
+     "positive": 0,
+     "task_boot95": [
+      0.0,
+      0.0
+     ],
+     "ties": 140
+    }
+   }
+  },
+  "families": {
+   "look_at_obj_in_light": {
+    "baseline": 11,
+    "n": 13,
+    "one_step": 13,
+    "pose_set": 13
+   },
+   "pick_and_place_simple": {
+    "baseline": 30,
+    "n": 35,
+    "one_step": 35,
+    "pose_set": 35
+   },
+   "pick_clean_then_place_in_recep": {
+    "baseline": 25,
+    "n": 27,
+    "one_step": 26,
+    "pose_set": 26
+   },
+   "pick_cool_then_place_in_recep": {
+    "baseline": 24,
+    "n": 25,
+    "one_step": 24,
+    "pose_set": 24
+   },
+   "pick_heat_then_place_in_recep": {
+    "baseline": 15,
+    "n": 16,
+    "one_step": 16,
+    "pose_set": 16
+   },
+   "pick_two_obj_and_place": {
+    "baseline": 22,
+    "n": 24,
+    "one_step": 23,
+    "pose_set": 23
+   }
+  },
+  "floorplans": 76,
+  "horizon": {
+   "10": {
+    "baseline": 91,
+    "one_step": 92,
+    "pose_set": 92
+   },
+   "20": {
+    "baseline": 117,
+    "one_step": 122,
+    "pose_set": 122
+   },
+   "30": {
+    "baseline": 123,
+    "one_step": 132,
+    "pose_set": 132
+   },
+   "40": {
+    "baseline": 127,
+    "one_step": 136,
+    "pose_set": 136
+   },
+   "50": {
+    "baseline": 127,
+    "one_step": 137,
+    "pose_set": 137
+   }
+  },
+  "n": 140
+ },
+ "valid_unseen": {
+  "arms": {
+   "baseline": {
+    "active_steps": 0,
+    "mean_capped_steps": 12.895522388059701,
+    "peak_negative_entries": 0,
+    "rejected": 451,
+    "repeat_rejected": 441,
+    "steps": 1728,
+    "unconfirmed": 451,
+    "wins": 124
+   },
+   "one_step": {
+    "active_steps": 14,
+    "mean_capped_steps": 11.126865671641792,
+    "peak_negative_entries": 1,
+    "rejected": 14,
+    "repeat_rejected": 3,
+    "steps": 1491,
+    "unconfirmed": 14,
+    "wins": 134
+   },
+   "pose_set": {
+    "active_steps": 14,
+    "mean_capped_steps": 11.126865671641792,
+    "peak_negative_entries": 1,
+    "rejected": 14,
+    "repeat_rejected": 3,
+    "steps": 1491,
+    "unconfirmed": 14,
+    "wins": 134
+   }
+  },
+  "contrasts": {
+   "one_step-baseline": {
+    "cost": {
+     "delta": -1.7686567164179106,
+     "floorplan_boot95": [
+      -6.2368421052631575,
+      0.0
+     ],
+     "negative": 10,
+     "positive": 0,
+     "task_boot95": [
+      -3.0223880597014925,
+      -0.7164179104477612
+     ],
+     "ties": 124
+    },
+    "discordant_sign_p": 0.001953125,
+    "identical_actions": 124,
+    "success": {
+     "delta": 0.07462686567164178,
+     "floorplan_boot95": [
+      0.0,
+      0.2631578947368421
+     ],
+     "negative": 0,
+     "positive": 10,
+     "task_boot95": [
+      0.029850746268656716,
+      0.11940298507462686
+     ],
+     "ties": 124
+    }
+   },
+   "pose_set-baseline": {
+    "cost": {
+     "delta": -1.7686567164179106,
+     "floorplan_boot95": [
+      -6.2368421052631575,
+      0.0
+     ],
+     "negative": 10,
+     "positive": 0,
+     "task_boot95": [
+      -3.0223880597014925,
+      -0.7164179104477612
+     ],
+     "ties": 124
+    },
+    "discordant_sign_p": 0.001953125,
+    "identical_actions": 124,
+    "success": {
+     "delta": 0.07462686567164178,
+     "floorplan_boot95": [
+      0.0,
+      0.2631578947368421
+     ],
+     "negative": 0,
+     "positive": 10,
+     "task_boot95": [
+      0.029850746268656716,
+      0.11940298507462686
+     ],
+     "ties": 124
+    }
+   },
+   "pose_set-one_step": {
+    "cost": {
+     "delta": 0.0,
+     "floorplan_boot95": [
+      0.0,
+      0.0
+     ],
+     "negative": 0,
+     "positive": 0,
+     "task_boot95": [
+      0.0,
+      0.0
+     ],
+     "ties": 134
+    },
+    "discordant_sign_p": 1,
+    "identical_actions": 134,
+    "success": {
+     "delta": 0.0,
+     "floorplan_boot95": [
+      0.0,
+      0.0
+     ],
+     "negative": 0,
+     "positive": 0,
+     "task_boot95": [
+      0.0,
+      0.0
+     ],
+     "ties": 134
+    }
+   }
+  },
+  "families": {
+   "look_at_obj_in_light": {
+    "baseline": 15,
+    "n": 18,
+    "one_step": 18,
+    "pose_set": 18
+   },
+   "pick_and_place_simple": {
+    "baseline": 21,
+    "n": 24,
+    "one_step": 24,
+    "pose_set": 24
+   },
+   "pick_clean_then_place_in_recep": {
+    "baseline": 31,
+    "n": 31,
+    "one_step": 31,
+    "pose_set": 31
+   },
+   "pick_cool_then_place_in_recep": {
+    "baseline": 21,
+    "n": 21,
+    "one_step": 21,
+    "pose_set": 21
+   },
+   "pick_heat_then_place_in_recep": {
+    "baseline": 23,
+    "n": 23,
+    "one_step": 23,
+    "pose_set": 23
+   },
+   "pick_two_obj_and_place": {
+    "baseline": 13,
+    "n": 17,
+    "one_step": 17,
+    "pose_set": 17
+   }
+  },
+  "floorplans": 4,
+  "horizon": {
+   "10": {
+    "baseline": 90,
+    "one_step": 90,
+    "pose_set": 90
+   },
+   "20": {
+    "baseline": 119,
+    "one_step": 122,
+    "pose_set": 122
+   },
+   "30": {
+    "baseline": 123,
+    "one_step": 130,
+    "pose_set": 130
+   },
+   "40": {
+    "baseline": 124,
+    "one_step": 133,
+    "pose_set": 133
+   },
+   "50": {
+    "baseline": 124,
+    "one_step": 134,
+    "pose_set": 134
+   }
+  },
+  "n": 134
+ }
+}

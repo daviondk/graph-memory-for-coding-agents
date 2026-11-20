@@ -1,0 +1,294 @@
+{
+  "n_tasks": 34,
+  "n_assigned": 102,
+  "all_cells_included": true,
+  "arms": {
+    "raw": {
+      "n": 34,
+      "successes": 0,
+      "response_counts": {
+        "valid": 34
+      },
+      "builder_counts": {
+        "nonzero": 29,
+        "ok": 5
+      },
+      "checker_counts": {
+        "ok": 34
+      },
+      "infrastructure": 0,
+      "at_output_limit": 0,
+      "echoed_placeholder": 26,
+      "syntax_errors": 28,
+      "crashed_but_passed": [],
+      "input_tokens": {
+        "total": 34196,
+        "mean": 1005.7647058823529,
+        "median": 966.5,
+        "min": 581,
+        "max": 1578
+      },
+      "output_tokens": {
+        "total": 1220,
+        "mean": 35.88235294117647,
+        "median": 9.0,
+        "min": 9,
+        "max": 224
+      },
+      "memory_words": {
+        "total": 9989,
+        "mean": 293.79411764705884,
+        "median": 300.0,
+        "min": 223,
+        "max": 300
+      },
+      "builder_seconds": {
+        "total": 1.3719,
+        "mean": 0.04035,
+        "median": 0.035949999999999996,
+        "min": 0.035,
+        "max": 0.0697
+      },
+      "checker_seconds": {
+        "total": 6.5188,
+        "mean": 0.19172941176470587,
+        "median": 0.2176,
+        "min": 0.0673,
+        "max": 0.2688
+      }
+    },
+    "receipt": {
+      "n": 34,
+      "successes": 1,
+      "response_counts": {
+        "valid": 34
+      },
+      "builder_counts": {
+        "nonzero": 26,
+        "ok": 8
+      },
+      "checker_counts": {
+        "ok": 34
+      },
+      "infrastructure": 0,
+      "at_output_limit": 0,
+      "echoed_placeholder": 23,
+      "syntax_errors": 25,
+      "crashed_but_passed": [],
+      "input_tokens": {
+        "total": 28667,
+        "mean": 843.1470588235294,
+        "median": 753.5,
+        "min": 586,
+        "max": 1468
+      },
+      "output_tokens": {
+        "total": 2470,
+        "mean": 72.6470588235294,
+        "median": 9.0,
+        "min": 9,
+        "max": 499
+      },
+      "memory_words": {
+        "total": 8140,
+        "mean": 239.41176470588235,
+        "median": 237.0,
+        "min": 136,
+        "max": 300
+      },
+      "builder_seconds": {
+        "total": 6.4761999999999995,
+        "mean": 0.1904764705882353,
+        "median": 0.03585,
+        "min": 0.0348,
+        "max": 5.0835
+      },
+      "checker_seconds": {
+        "total": 6.4124,
+        "mean": 0.1886,
+        "median": 0.168,
+        "min": 0.1172,
+        "max": 0.2683
+      }
+    },
+    "empty": {
+      "n": 34,
+      "successes": 1,
+      "response_counts": {
+        "valid": 33,
+        "invalid_json": 1
+      },
+      "builder_counts": {
+        "nonzero": 17,
+        "ok": 16,
+        "not_run": 1
+      },
+      "checker_counts": {
+        "ok": 34
+      },
+      "infrastructure": 0,
+      "at_output_limit": 0,
+      "echoed_placeholder": 8,
+      "syntax_errors": 13,
+      "crashed_but_passed": [],
+      "input_tokens": {
+        "total": 16121,
+        "mean": 474.1470588235294,
+        "median": 399.0,
+        "min": 272,
+        "max": 1037
+      },
+      "output_tokens": {
+        "total": 4193,
+        "mean": 123.32352941176471,
+        "median": 110.0,
+        "min": 9,
+        "max": 448
+      },
+      "memory_words": {
+        "total": 0,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "builder_seconds": {
+        "total": 1.5919,
+        "mean": 0.04823939393939394,
+        "median": 0.0361,
+        "min": 0.0348,
+        "max": 0.1179
+      },
+      "checker_seconds": {
+        "total": 6.6268,
+        "mean": 0.19490588235294118,
+        "median": 0.19385,
+        "min": 0.1179,
+        "max": 0.2695
+      }
+    }
+  },
+  "paired": {
+    "receipt_minus_raw": {
+      "n": 34,
+      "wins": 1,
+      "losses": 0,
+      "ties": 33,
+      "delta": 0.029411764705882353,
+      "paired_percentile_ci95": [
+        0.0,
+        0.08823529411764706
+      ],
+      "exact_two_sided_mcnemar": 1.0,
+      "fixed": [
+        "ts-ignore-gen"
+      ],
+      "harmed": []
+    },
+    "receipt_minus_empty": {
+      "n": 34,
+      "wins": 0,
+      "losses": 0,
+      "ties": 34,
+      "delta": 0.0,
+      "paired_percentile_ci95": [
+        0.0,
+        0.0
+      ],
+      "exact_two_sided_mcnemar": 1.0,
+      "fixed": [],
+      "harmed": []
+    },
+    "raw_minus_empty": {
+      "n": 34,
+      "wins": 0,
+      "losses": 1,
+      "ties": 33,
+      "delta": -0.029411764705882353,
+      "paired_percentile_ci95": [
+        -0.08823529411764706,
+        0.0
+      ],
+      "exact_two_sided_mcnemar": 1.0,
+      "fixed": [],
+      "harmed": [
+        "ts-ignore-gen"
+      ]
+    }
+  },
+  "sensitivity_without_bool": {
+    "n": 33,
+    "wins": 1,
+    "losses": 0,
+    "ties": 32,
+    "delta": 0.030303030303030304,
+    "paired_percentile_ci95": [
+      0.0,
+      0.09090909090909091
+    ],
+    "exact_two_sided_mcnemar": 1.0,
+    "fixed": [
+      "ts-ignore-gen"
+    ],
+    "harmed": []
+  },
+  "strata": {
+    "excluding_ts_bool_env": {
+      "n": 33,
+      "raw": 0,
+      "receipt": 1,
+      "empty": 1
+    },
+    "ts": {
+      "n": 30,
+      "raw": 0,
+      "receipt": 1,
+      "empty": 1
+    },
+    "xs": {
+      "n": 3,
+      "raw": 0,
+      "receipt": 0,
+      "empty": 0
+    },
+    "fa": {
+      "n": 1,
+      "raw": 0,
+      "receipt": 0,
+      "empty": 0
+    },
+    "all_precursors_fetched_True": {
+      "n": 16,
+      "raw": 0,
+      "receipt": 0,
+      "empty": 0
+    },
+    "all_precursors_fetched_False": {
+      "n": 18,
+      "raw": 0,
+      "receipt": 1,
+      "empty": 1
+    }
+  },
+  "canaries": {
+    "informed": 34,
+    "naive_failed": 34,
+    "noop_failed": 34,
+    "isolation_pass": true
+  },
+  "whole_batch_generation_seconds": {
+    "total": 237.34399999957532,
+    "mean": 13.961411764680902,
+    "median": 12.343000000342727,
+    "min": 6.42200000025332,
+    "max": 28.82799999974668
+  },
+  "prompt_cost": {
+    "raw_tokens": 34196,
+    "receipt_tokens": 28667,
+    "empty_tokens": 16121,
+    "fewer_tokens": 5529,
+    "relative_to_full_raw": 0.16168557726049831,
+    "relative_to_raw_increment": 0.3058921161825726
+  }
+}

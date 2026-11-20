@@ -1,0 +1,351 @@
+{
+  "edit": {
+    "n": 186,
+    "metrics": {
+      "graph": {
+        "full": 122,
+        "wrong": 2,
+        "correct": 1711,
+        "returned": 1713,
+        "compact_bytes": 93504
+      },
+      "lru": {
+        "full": 122,
+        "wrong": 2,
+        "correct": 1706,
+        "returned": 1708,
+        "compact_bytes": 93330
+      },
+      "multiple": {
+        "full": 121,
+        "wrong": 113,
+        "correct": 1628,
+        "returned": 1741,
+        "compact_bytes": 94647
+      },
+      "exact": {
+        "full": 38,
+        "wrong": 0,
+        "correct": 656,
+        "returned": 656,
+        "compact_bytes": 50551
+      },
+      "direct": {
+        "full": 118,
+        "wrong": 134,
+        "correct": 1590,
+        "returned": 1724,
+        "compact_bytes": 94078
+      },
+      "hybrid": {
+        "full": 129,
+        "wrong": 4,
+        "correct": 1741,
+        "returned": 1745,
+        "compact_bytes": 94761
+      },
+      "lru_hybrid": {
+        "full": 129,
+        "wrong": 4,
+        "correct": 1741,
+        "returned": 1745,
+        "compact_bytes": 94761
+      },
+      "sym_archive": {
+        "full": 129,
+        "wrong": 2,
+        "correct": 1742,
+        "returned": 1744,
+        "compact_bytes": 94629
+      },
+      "sym_hybrid": {
+        "full": 129,
+        "wrong": 2,
+        "correct": 1742,
+        "returned": 1744,
+        "compact_bytes": 94629
+      },
+      "sym_lru_hybrid": {
+        "full": 129,
+        "wrong": 2,
+        "correct": 1742,
+        "returned": 1744,
+        "compact_bytes": 94629
+      },
+      "uncapped_map": {
+        "full": 129,
+        "wrong": 2,
+        "correct": 1742,
+        "returned": 1744,
+        "compact_bytes": 94629
+      }
+    },
+    "pairs": {
+      "sym_archive-multiple": {
+        "wins": 8,
+        "losses": 0,
+        "ties": 178,
+        "delta": 0.043010752688172046,
+        "ci": [
+          0.016042780748663103,
+          0.07526881720430108
+        ],
+        "p": 0.015625
+      },
+      "sym_hybrid-sym_archive": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 186,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_hybrid-hybrid": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 186,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_hybrid-sym_lru_hybrid": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 186,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_archive-uncapped_map": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 186,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_hybrid-graph": {
+        "wins": 7,
+        "losses": 0,
+        "ties": 179,
+        "delta": 0.03763440860215054,
+        "ci": [
+          0.0111731843575419,
+          0.06976744186046512
+        ],
+        "p": 0.03125
+      }
+    },
+    "cost": {
+      "sym_archive": {
+        "bytes": 2315441,
+        "calls": 141,
+        "pages": 141
+      },
+      "sym_hybrid": {
+        "bytes": 403150,
+        "calls": 11,
+        "pages": 11
+      },
+      "sym_lru_hybrid": {
+        "bytes": 430993,
+        "calls": 11,
+        "pages": 11
+      }
+    }
+  },
+  "control": {
+    "n": 46,
+    "metrics": {
+      "graph": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "lru": {
+        "full": 42,
+        "wrong": 0,
+        "correct": 126,
+        "returned": 126,
+        "compact_bytes": 8327
+      },
+      "multiple": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "exact": {
+        "full": 35,
+        "wrong": 0,
+        "correct": 105,
+        "returned": 105,
+        "compact_bytes": 7269
+      },
+      "direct": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "hybrid": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "lru_hybrid": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "sym_archive": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "sym_hybrid": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "sym_lru_hybrid": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      },
+      "uncapped_map": {
+        "full": 46,
+        "wrong": 0,
+        "correct": 138,
+        "returned": 138,
+        "compact_bytes": 8616
+      }
+    },
+    "pairs": {
+      "sym_archive-multiple": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 46,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_hybrid-sym_archive": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 46,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_hybrid-hybrid": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 46,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_hybrid-sym_lru_hybrid": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 46,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_archive-uncapped_map": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 46,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      },
+      "sym_hybrid-graph": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 46,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      }
+    },
+    "cost": {
+      "sym_archive": {
+        "bytes": 718108,
+        "calls": 46,
+        "pages": 46
+      },
+      "sym_hybrid": {
+        "bytes": 8616,
+        "calls": 0,
+        "pages": 0
+      },
+      "sym_lru_hybrid": {
+        "bytes": 82031,
+        "calls": 4,
+        "pages": 4
+      }
+    }
+  },
+  "write": {
+    "symmetric": {
+      "reads_recorded": 690,
+      "changes_recorded": 194,
+      "pages_written": 884,
+      "projected_rows_written": 73596,
+      "resets": 447,
+      "disk_bytes": 76412807
+    },
+    "original": {
+      "observed_groups": 690,
+      "pages": 690,
+      "bytes_on_disk": 65847837
+    }
+  }
+}

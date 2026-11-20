@@ -1,0 +1,122 @@
+{
+ "archive": {
+  "rows": 36000,
+  "repos": 349,
+  "unique_stim": 34954,
+  "invalid": 0,
+  "means": {
+   "java_cff_test_easy": [
+    12000,
+    6.805083333333333,
+    0.1533467261904814,
+    0.4600401785714477,
+    0.7667336309523503
+   ],
+   "java_cff_test_hard": [
+    12000,
+    25.483833333333333,
+    0.05624610840534146,
+    0.1687383252160228,
+    0.2812305420267015
+   ],
+   "java_cfr_test_easy": [
+    6000,
+    6.776833333333333,
+    0.15401772486772153,
+    0.4620531746031652,
+    0.770088624338638
+   ],
+   "java_cfr_test_hard": [
+    6000,
+    24.794166666666666,
+    0.05626843788238066,
+    0.16880531364714166,
+    0.2813421894119122
+   ]
+  }
+ },
+ "hf": {
+  "rows": 24000,
+  "repos": 731,
+  "unique_stim": 22749,
+  "invalid": 0,
+  "means": {
+   "java_cff_test_easy": [
+    8000,
+    6.591625,
+    0.15827445436508128,
+    0.4748233630952343,
+    0.79137227182537
+   ],
+   "java_cff_test_hard": [
+    8000,
+    17.771125,
+    0.06956083539902304,
+    0.20868250619706913,
+    0.3478041769951196
+   ],
+   "java_cfr_test_easy": [
+    4000,
+    6.6055,
+    0.1579696428571423,
+    0.47390892857140693,
+    0.7898482142857377
+   ],
+   "java_cfr_test_hard": [
+    4000,
+    17.97275,
+    0.0700467705898413,
+    0.21014031176952142,
+    0.35023385294921483
+   ]
+  }
+ },
+ "train": {
+  "rows": 5000,
+  "repos": 1977,
+  "unique_stim": 4981,
+  "invalid": 0,
+  "means": {
+   "java_cff_train_hard": [
+    2500,
+    17.274,
+    0.06933413282694488,
+    0.20800239848083485,
+    0.3466706641347267
+   ],
+   "java_cfr_train_hard": [
+    2500,
+    16.3904,
+    0.07160308457666648,
+    0.21480925372999896,
+    0.3580154228833338
+   ]
+  }
+ },
+ "archive_vs_hf": {
+  "common_project_ids": 0,
+  "common_unique_stimuli": 0,
+  "common_unique_code": 0,
+  "rows_of_a_with_project_in_b": 0,
+  "rows_of_a_with_stim_in_b": 0,
+  "rows_of_a_with_code_in_b": 0
+ },
+ "archive_vs_train": {
+  "common_project_ids": 0,
+  "common_unique_stimuli": 0,
+  "common_unique_code": 0,
+  "rows_of_a_with_project_in_b": 0,
+  "rows_of_a_with_stim_in_b": 0,
+  "rows_of_a_with_code_in_b": 0
+ },
+ "sha_archives": {
+  "archive_cross_file_first.gz": "0fe97778370d053c90675386d9e488f6fb150ed823f1fed3270601b9ff4952d6",
+  "archive_cross_file_random.gz": "dc421e8fc29a6c789919aed5d4c940313e9f6fad5cb05fb48af11ce2f2155908"
+ },
+ "sha_converted": {
+  "java_cff_test_easy_0000.parquet": "7e133a9d21952b7f08993d5710f90892e7247978ae57b31628dba10dde35beef",
+  "java_cff_test_hard_0000.parquet": "eaeff6c26ddb3d7fa3230dc4ad72dc317b6847a53a967e735c90ea00612627b8",
+  "java_cfr_test_easy_0000.parquet": "2387930d8a35ebda556364304dc6625805e2dcdc77880d00fddaebd4cdcf2e38",
+  "java_cfr_test_hard_0000.parquet": "ef4e09371cb315c49002624d757fb49c64b295fbbc9489fab8d9d70c487d00bc"
+ }
+}

@@ -1,0 +1,59 @@
+{
+  "status": "passed",
+  "checks": "independent enumeration of possible three-page sets vs implementation, prefix invariance on one stream per shard, held-out project and instance separation across all selection manifests and compact-s4 bucket, all method/content hashes, independent exact contiguous target reconstruction and eligibility for every cut, oracle, paired win/loss, count and characters by arm",
+  "synthetic_objective_instances": 72,
+  "synthetic_by_slate_size": {
+    "0": 6,
+    "1": 6,
+    "2": 6,
+    "3": 6,
+    "4": 6,
+    "5": 6,
+    "8": 6,
+    "12": 6,
+    "16": 6,
+    "25": 6,
+    "36": 6,
+    "48": 6
+  },
+  "real_objective_and_prefix_examples": 8,
+  "previous_project_count": 44,
+  "heldout_project_count": 23,
+  "new_selected": 567,
+  "included_projects": 17,
+  "all_cuts": 4091,
+  "eval_cuts": 1907,
+  "evaluated_instances": 558,
+  "ceiling": 917,
+  "first_failed_but_later_accepted_excluded_cuts": 41,
+  "hits": {
+    "recent": 325,
+    "pointwise": 236,
+    "global": 315,
+    "history": 322,
+    "typed": 356,
+    "placebo": 265
+  },
+  "posthoc_first_accepted_sensitivity": {
+    "different_windows": 41,
+    "additional_oracle": 25,
+    "additional_hits": {
+      "recent": 10,
+      "pointwise": 2,
+      "global": 4,
+      "history": 5,
+      "typed": 6,
+      "placebo": 4
+    },
+    "all_eligible": 1948,
+    "hits": {
+      "recent": 335,
+      "pointwise": 238,
+      "global": 319,
+      "history": 327,
+      "typed": 362,
+      "placebo": 269
+    }
+  },
+  "interpretation": "Window is eligible exactly when its first attempted nonempty str_replace with a valid path is accepted. A failed first attempt suppresses the window even if another succeeds inside it. Comparison concerns offline replay and first-attempt policy. Uncalibrated pointwise start weights and estimated widths make this exact optimization of a surrogate; probabilistic optimality requires a calibrated joint distribution."
+}

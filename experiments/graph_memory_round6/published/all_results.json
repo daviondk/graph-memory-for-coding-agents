@@ -1,0 +1,1041 @@
+{
+  "kimi": {
+    "edit": {
+      "n": 206,
+      "tasks": 87,
+      "lines": 2723,
+      "metrics": {
+        "graph": {
+          "full": 121,
+          "wrong": 2,
+          "returned": 1786,
+          "correct": 1784,
+          "compact_bytes": 88908
+        },
+        "lru": {
+          "full": 119,
+          "wrong": 2,
+          "returned": 1764,
+          "correct": 1762,
+          "compact_bytes": 88195
+        },
+        "multiple": {
+          "full": 115,
+          "wrong": 73,
+          "returned": 1781,
+          "correct": 1708,
+          "compact_bytes": 88784
+        },
+        "exact": {
+          "full": 34,
+          "wrong": 0,
+          "returned": 600,
+          "correct": 600,
+          "compact_bytes": 45252
+        },
+        "direct": {
+          "full": 113,
+          "wrong": 85,
+          "returned": 1739,
+          "correct": 1654,
+          "compact_bytes": 87574
+        },
+        "hybrid": {
+          "full": 122,
+          "wrong": 22,
+          "returned": 1799,
+          "correct": 1777,
+          "compact_bytes": 89610
+        },
+        "lru_hybrid": {
+          "full": 122,
+          "wrong": 22,
+          "returned": 1799,
+          "correct": 1777,
+          "compact_bytes": 89610
+        }
+      },
+      "cost": {
+        "multiple": {
+          "calls": 148,
+          "pages": 148,
+          "bytes": 1461053
+        },
+        "hybrid": {
+          "calls": 13,
+          "pages": 13,
+          "bytes": 210333
+        },
+        "lru_hybrid": {
+          "calls": 15,
+          "pages": 15,
+          "bytes": 244236
+        }
+      },
+      "by_repo": {
+        "django/django": {
+          "graph": 36,
+          "lru": 35,
+          "multiple": 33,
+          "exact": 6,
+          "direct": 32,
+          "hybrid": 36,
+          "lru_hybrid": 36,
+          "n": 72
+        },
+        "matplotlib/matplotlib": {
+          "graph": 8,
+          "lru": 7,
+          "multiple": 8,
+          "exact": 3,
+          "direct": 8,
+          "hybrid": 8,
+          "lru_hybrid": 8,
+          "n": 13
+        },
+        "scikit-learn/scikit-learn": {
+          "graph": 6,
+          "lru": 6,
+          "multiple": 7,
+          "exact": 2,
+          "direct": 7,
+          "hybrid": 7,
+          "lru_hybrid": 7,
+          "n": 10
+        },
+        "sphinx-doc/sphinx": {
+          "graph": 27,
+          "lru": 27,
+          "multiple": 26,
+          "exact": 9,
+          "direct": 26,
+          "hybrid": 27,
+          "lru_hybrid": 27,
+          "n": 43
+        },
+        "sympy/sympy": {
+          "graph": 44,
+          "lru": 44,
+          "multiple": 41,
+          "exact": 14,
+          "direct": 40,
+          "hybrid": 44,
+          "lru_hybrid": 44,
+          "n": 68
+        }
+      },
+      "leave_one_repo_out": {
+        "django/django": 0.029850746268656716,
+        "matplotlib/matplotlib": 0.03626943005181347,
+        "scikit-learn/scikit-learn": 0.03571428571428571,
+        "sphinx-doc/sphinx": 0.03680981595092025,
+        "sympy/sympy": 0.028985507246376812
+      },
+      "routes": {
+        "hybrid": {
+          "cold": 83,
+          "hot": 123
+        },
+        "lru_hybrid": {
+          "cold": 85,
+          "hot": 121
+        }
+      },
+      "pairs": {
+        "hybrid-multiple": {
+          "wins": 7,
+          "losses": 0,
+          "ties": 199,
+          "delta": 0.03398058252427184,
+          "ci": [
+            0.01015100240988566,
+            0.06190476190476191
+          ],
+          "p": 0.03125
+        },
+        "hybrid-graph": {
+          "wins": 1,
+          "losses": 0,
+          "ties": 205,
+          "delta": 0.0048543689320388345,
+          "ci": [
+            0.0,
+            0.015957446808510637
+          ],
+          "p": 1.0
+        },
+        "hybrid-lru_hybrid": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 206,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "lru_hybrid-multiple": {
+          "wins": 7,
+          "losses": 0,
+          "ties": 199,
+          "delta": 0.03398058252427184,
+          "ci": [
+            0.01015100240988566,
+            0.06190476190476191
+          ],
+          "p": 0.03125
+        },
+        "lru_hybrid-lru": {
+          "wins": 3,
+          "losses": 0,
+          "ties": 203,
+          "delta": 0.014563106796116505,
+          "ci": [
+            0.0,
+            0.033149825875206144
+          ],
+          "p": 0.25
+        },
+        "graph-multiple": {
+          "wins": 7,
+          "losses": 1,
+          "ties": 198,
+          "delta": 0.02912621359223301,
+          "ci": [
+            0.0,
+            0.05855855855855856
+          ],
+          "p": 0.109375
+        }
+      },
+      "repo_clusters_hybrid_minus_multiple": {
+        "wins": 7,
+        "losses": 0,
+        "ties": 199,
+        "delta": 0.03398058252427184,
+        "ci": [
+          0.011235955056179775,
+          0.04152249134948097
+        ],
+        "p": 0.25
+      }
+    },
+    "control": {
+      "n": 72,
+      "tasks": 72,
+      "lines": 216,
+      "metrics": {
+        "graph": {
+          "full": 72,
+          "wrong": 0,
+          "returned": 216,
+          "correct": 216,
+          "compact_bytes": 13679
+        },
+        "lru": {
+          "full": 72,
+          "wrong": 0,
+          "returned": 216,
+          "correct": 216,
+          "compact_bytes": 13679
+        },
+        "multiple": {
+          "full": 72,
+          "wrong": 0,
+          "returned": 216,
+          "correct": 216,
+          "compact_bytes": 13679
+        },
+        "exact": {
+          "full": 66,
+          "wrong": 0,
+          "returned": 198,
+          "correct": 198,
+          "compact_bytes": 13148
+        },
+        "direct": {
+          "full": 72,
+          "wrong": 0,
+          "returned": 216,
+          "correct": 216,
+          "compact_bytes": 13679
+        },
+        "hybrid": {
+          "full": 72,
+          "wrong": 0,
+          "returned": 216,
+          "correct": 216,
+          "compact_bytes": 13679
+        },
+        "lru_hybrid": {
+          "full": 72,
+          "wrong": 0,
+          "returned": 216,
+          "correct": 216,
+          "compact_bytes": 13679
+        }
+      },
+      "cost": {
+        "multiple": {
+          "calls": 72,
+          "pages": 72,
+          "bytes": 652722
+        },
+        "hybrid": {
+          "calls": 0,
+          "pages": 0,
+          "bytes": 13679
+        },
+        "lru_hybrid": {
+          "calls": 0,
+          "pages": 0,
+          "bytes": 13679
+        }
+      },
+      "by_repo": {
+        "django/django": {
+          "graph": 30,
+          "lru": 30,
+          "multiple": 30,
+          "exact": 28,
+          "direct": 30,
+          "hybrid": 30,
+          "lru_hybrid": 30,
+          "n": 30
+        },
+        "matplotlib/matplotlib": {
+          "graph": 5,
+          "lru": 5,
+          "multiple": 5,
+          "exact": 5,
+          "direct": 5,
+          "hybrid": 5,
+          "lru_hybrid": 5,
+          "n": 5
+        },
+        "scikit-learn/scikit-learn": {
+          "graph": 3,
+          "lru": 3,
+          "multiple": 3,
+          "exact": 3,
+          "direct": 3,
+          "hybrid": 3,
+          "lru_hybrid": 3,
+          "n": 3
+        },
+        "sphinx-doc/sphinx": {
+          "graph": 13,
+          "lru": 13,
+          "multiple": 13,
+          "exact": 11,
+          "direct": 13,
+          "hybrid": 13,
+          "lru_hybrid": 13,
+          "n": 13
+        },
+        "sympy/sympy": {
+          "graph": 21,
+          "lru": 21,
+          "multiple": 21,
+          "exact": 19,
+          "direct": 21,
+          "hybrid": 21,
+          "lru_hybrid": 21,
+          "n": 21
+        }
+      },
+      "leave_one_repo_out": {
+        "django/django": 0.0,
+        "matplotlib/matplotlib": 0.0,
+        "scikit-learn/scikit-learn": 0.0,
+        "sphinx-doc/sphinx": 0.0,
+        "sympy/sympy": 0.0
+      },
+      "routes": {
+        "hybrid": {
+          "hot": 72
+        },
+        "lru_hybrid": {
+          "hot": 72
+        }
+      },
+      "pairs": {
+        "hybrid-multiple": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 72,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "hybrid-graph": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 72,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "hybrid-lru_hybrid": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 72,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "lru_hybrid-multiple": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 72,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "lru_hybrid-lru": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 72,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "graph-multiple": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 72,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        }
+      },
+      "repo_clusters_hybrid_minus_multiple": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 72,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      }
+    }
+  },
+  "claude": {
+    "edit": {
+      "n": 186,
+      "tasks": 48,
+      "lines": 2230,
+      "metrics": {
+        "graph": {
+          "full": 122,
+          "wrong": 2,
+          "returned": 1713,
+          "correct": 1711,
+          "compact_bytes": 93504
+        },
+        "lru": {
+          "full": 122,
+          "wrong": 2,
+          "returned": 1708,
+          "correct": 1706,
+          "compact_bytes": 93330
+        },
+        "multiple": {
+          "full": 121,
+          "wrong": 113,
+          "returned": 1741,
+          "correct": 1628,
+          "compact_bytes": 94647
+        },
+        "exact": {
+          "full": 38,
+          "wrong": 0,
+          "returned": 656,
+          "correct": 656,
+          "compact_bytes": 50551
+        },
+        "direct": {
+          "full": 118,
+          "wrong": 134,
+          "returned": 1724,
+          "correct": 1590,
+          "compact_bytes": 94078
+        },
+        "hybrid": {
+          "full": 129,
+          "wrong": 4,
+          "returned": 1745,
+          "correct": 1741,
+          "compact_bytes": 94761
+        },
+        "lru_hybrid": {
+          "full": 129,
+          "wrong": 4,
+          "returned": 1745,
+          "correct": 1741,
+          "compact_bytes": 94761
+        }
+      },
+      "cost": {
+        "multiple": {
+          "calls": 149,
+          "pages": 149,
+          "bytes": 1382866
+        },
+        "hybrid": {
+          "calls": 11,
+          "pages": 11,
+          "bytes": 374272
+        },
+        "lru_hybrid": {
+          "calls": 11,
+          "pages": 11,
+          "bytes": 402115
+        }
+      },
+      "by_repo": {
+        "astropy/astropy": {
+          "graph": 11,
+          "lru": 11,
+          "multiple": 11,
+          "exact": 3,
+          "direct": 11,
+          "hybrid": 11,
+          "lru_hybrid": 11,
+          "n": 18
+        },
+        "django/django": {
+          "graph": 16,
+          "lru": 16,
+          "multiple": 18,
+          "exact": 4,
+          "direct": 18,
+          "hybrid": 18,
+          "lru_hybrid": 18,
+          "n": 30
+        },
+        "matplotlib/matplotlib": {
+          "graph": 11,
+          "lru": 11,
+          "multiple": 11,
+          "exact": 3,
+          "direct": 11,
+          "hybrid": 11,
+          "lru_hybrid": 11,
+          "n": 13
+        },
+        "mwaskom/seaborn": {
+          "graph": 4,
+          "lru": 4,
+          "multiple": 4,
+          "exact": 2,
+          "direct": 4,
+          "hybrid": 4,
+          "lru_hybrid": 4,
+          "n": 13
+        },
+        "pallets/flask": {
+          "graph": 1,
+          "lru": 1,
+          "multiple": 1,
+          "exact": 0,
+          "direct": 1,
+          "hybrid": 1,
+          "lru_hybrid": 1,
+          "n": 1
+        },
+        "psf/requests": {
+          "graph": 13,
+          "lru": 13,
+          "multiple": 13,
+          "exact": 4,
+          "direct": 13,
+          "hybrid": 14,
+          "lru_hybrid": 14,
+          "n": 16
+        },
+        "pydata/xarray": {
+          "graph": 8,
+          "lru": 9,
+          "multiple": 9,
+          "exact": 1,
+          "direct": 8,
+          "hybrid": 9,
+          "lru_hybrid": 9,
+          "n": 15
+        },
+        "pylint-dev/pylint": {
+          "graph": 9,
+          "lru": 9,
+          "multiple": 9,
+          "exact": 4,
+          "direct": 9,
+          "hybrid": 10,
+          "lru_hybrid": 10,
+          "n": 14
+        },
+        "pytest-dev/pytest": {
+          "graph": 25,
+          "lru": 24,
+          "multiple": 22,
+          "exact": 11,
+          "direct": 22,
+          "hybrid": 25,
+          "lru_hybrid": 25,
+          "n": 30
+        },
+        "scikit-learn/scikit-learn": {
+          "graph": 4,
+          "lru": 4,
+          "multiple": 4,
+          "exact": 0,
+          "direct": 4,
+          "hybrid": 6,
+          "lru_hybrid": 6,
+          "n": 8
+        },
+        "sphinx-doc/sphinx": {
+          "graph": 12,
+          "lru": 12,
+          "multiple": 12,
+          "exact": 2,
+          "direct": 10,
+          "hybrid": 12,
+          "lru_hybrid": 12,
+          "n": 17
+        },
+        "sympy/sympy": {
+          "graph": 8,
+          "lru": 8,
+          "multiple": 7,
+          "exact": 4,
+          "direct": 7,
+          "hybrid": 8,
+          "lru_hybrid": 8,
+          "n": 11
+        }
+      },
+      "leave_one_repo_out": {
+        "astropy/astropy": 0.047619047619047616,
+        "django/django": 0.05128205128205128,
+        "matplotlib/matplotlib": 0.046242774566473986,
+        "mwaskom/seaborn": 0.046242774566473986,
+        "pallets/flask": 0.043243243243243246,
+        "psf/requests": 0.041176470588235294,
+        "pydata/xarray": 0.04678362573099415,
+        "pylint-dev/pylint": 0.040697674418604654,
+        "pytest-dev/pytest": 0.03205128205128205,
+        "scikit-learn/scikit-learn": 0.033707865168539325,
+        "sphinx-doc/sphinx": 0.047337278106508875,
+        "sympy/sympy": 0.04
+      },
+      "routes": {
+        "hybrid": {
+          "hot": 123,
+          "cold": 63
+        },
+        "lru_hybrid": {
+          "hot": 123,
+          "cold": 63
+        }
+      },
+      "pairs": {
+        "hybrid-multiple": {
+          "wins": 8,
+          "losses": 0,
+          "ties": 178,
+          "delta": 0.043010752688172046,
+          "ci": [
+            0.016042780748663103,
+            0.07526881720430108
+          ],
+          "p": 0.015625
+        },
+        "hybrid-graph": {
+          "wins": 7,
+          "losses": 0,
+          "ties": 179,
+          "delta": 0.03763440860215054,
+          "ci": [
+            0.0111731843575419,
+            0.06976744186046512
+          ],
+          "p": 0.03125
+        },
+        "hybrid-lru_hybrid": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 186,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "lru_hybrid-multiple": {
+          "wins": 8,
+          "losses": 0,
+          "ties": 178,
+          "delta": 0.043010752688172046,
+          "ci": [
+            0.016042780748663103,
+            0.07526881720430108
+          ],
+          "p": 0.015625
+        },
+        "lru_hybrid-lru": {
+          "wins": 7,
+          "losses": 0,
+          "ties": 179,
+          "delta": 0.03763440860215054,
+          "ci": [
+            0.011235955056179775,
+            0.06936416184971098
+          ],
+          "p": 0.03125
+        },
+        "graph-multiple": {
+          "wins": 8,
+          "losses": 7,
+          "ties": 171,
+          "delta": 0.005376344086021506,
+          "ci": [
+            -0.03553299492385787,
+            0.04516129032258064
+          ],
+          "p": 1.0
+        }
+      },
+      "repo_clusters_hybrid_minus_multiple": {
+        "wins": 8,
+        "losses": 0,
+        "ties": 178,
+        "delta": 0.043010752688172046,
+        "ci": [
+          0.011976047904191617,
+          0.07865168539325842
+        ],
+        "p": 0.0625
+      }
+    },
+    "control": {
+      "n": 46,
+      "tasks": 46,
+      "lines": 138,
+      "metrics": {
+        "graph": {
+          "full": 46,
+          "wrong": 0,
+          "returned": 138,
+          "correct": 138,
+          "compact_bytes": 8616
+        },
+        "lru": {
+          "full": 42,
+          "wrong": 0,
+          "returned": 126,
+          "correct": 126,
+          "compact_bytes": 8327
+        },
+        "multiple": {
+          "full": 46,
+          "wrong": 0,
+          "returned": 138,
+          "correct": 138,
+          "compact_bytes": 8616
+        },
+        "exact": {
+          "full": 35,
+          "wrong": 0,
+          "returned": 105,
+          "correct": 105,
+          "compact_bytes": 7269
+        },
+        "direct": {
+          "full": 46,
+          "wrong": 0,
+          "returned": 138,
+          "correct": 138,
+          "compact_bytes": 8616
+        },
+        "hybrid": {
+          "full": 46,
+          "wrong": 0,
+          "returned": 138,
+          "correct": 138,
+          "compact_bytes": 8616
+        },
+        "lru_hybrid": {
+          "full": 46,
+          "wrong": 0,
+          "returned": 138,
+          "correct": 138,
+          "compact_bytes": 8616
+        }
+      },
+      "cost": {
+        "multiple": {
+          "calls": 46,
+          "pages": 46,
+          "bytes": 566938
+        },
+        "hybrid": {
+          "calls": 0,
+          "pages": 0,
+          "bytes": 8616
+        },
+        "lru_hybrid": {
+          "calls": 4,
+          "pages": 4,
+          "bytes": 82031
+        }
+      },
+      "by_repo": {
+        "astropy/astropy": {
+          "graph": 5,
+          "lru": 4,
+          "multiple": 5,
+          "exact": 4,
+          "direct": 5,
+          "hybrid": 5,
+          "lru_hybrid": 5,
+          "n": 5
+        },
+        "django/django": {
+          "graph": 4,
+          "lru": 4,
+          "multiple": 4,
+          "exact": 3,
+          "direct": 4,
+          "hybrid": 4,
+          "lru_hybrid": 4,
+          "n": 4
+        },
+        "matplotlib/matplotlib": {
+          "graph": 5,
+          "lru": 5,
+          "multiple": 5,
+          "exact": 4,
+          "direct": 5,
+          "hybrid": 5,
+          "lru_hybrid": 5,
+          "n": 5
+        },
+        "mwaskom/seaborn": {
+          "graph": 2,
+          "lru": 2,
+          "multiple": 2,
+          "exact": 1,
+          "direct": 2,
+          "hybrid": 2,
+          "lru_hybrid": 2,
+          "n": 2
+        },
+        "pallets/flask": {
+          "graph": 1,
+          "lru": 1,
+          "multiple": 1,
+          "exact": 1,
+          "direct": 1,
+          "hybrid": 1,
+          "lru_hybrid": 1,
+          "n": 1
+        },
+        "psf/requests": {
+          "graph": 5,
+          "lru": 3,
+          "multiple": 5,
+          "exact": 4,
+          "direct": 5,
+          "hybrid": 5,
+          "lru_hybrid": 5,
+          "n": 5
+        },
+        "pydata/xarray": {
+          "graph": 5,
+          "lru": 5,
+          "multiple": 5,
+          "exact": 2,
+          "direct": 5,
+          "hybrid": 5,
+          "lru_hybrid": 5,
+          "n": 5
+        },
+        "pylint-dev/pylint": {
+          "graph": 4,
+          "lru": 4,
+          "multiple": 4,
+          "exact": 4,
+          "direct": 4,
+          "hybrid": 4,
+          "lru_hybrid": 4,
+          "n": 4
+        },
+        "pytest-dev/pytest": {
+          "graph": 4,
+          "lru": 4,
+          "multiple": 4,
+          "exact": 4,
+          "direct": 4,
+          "hybrid": 4,
+          "lru_hybrid": 4,
+          "n": 4
+        },
+        "scikit-learn/scikit-learn": {
+          "graph": 3,
+          "lru": 3,
+          "multiple": 3,
+          "exact": 1,
+          "direct": 3,
+          "hybrid": 3,
+          "lru_hybrid": 3,
+          "n": 3
+        },
+        "sphinx-doc/sphinx": {
+          "graph": 4,
+          "lru": 3,
+          "multiple": 4,
+          "exact": 4,
+          "direct": 4,
+          "hybrid": 4,
+          "lru_hybrid": 4,
+          "n": 4
+        },
+        "sympy/sympy": {
+          "graph": 4,
+          "lru": 4,
+          "multiple": 4,
+          "exact": 3,
+          "direct": 4,
+          "hybrid": 4,
+          "lru_hybrid": 4,
+          "n": 4
+        }
+      },
+      "leave_one_repo_out": {
+        "astropy/astropy": 0.0,
+        "django/django": 0.0,
+        "matplotlib/matplotlib": 0.0,
+        "mwaskom/seaborn": 0.0,
+        "pallets/flask": 0.0,
+        "psf/requests": 0.0,
+        "pydata/xarray": 0.0,
+        "pylint-dev/pylint": 0.0,
+        "pytest-dev/pytest": 0.0,
+        "scikit-learn/scikit-learn": 0.0,
+        "sphinx-doc/sphinx": 0.0,
+        "sympy/sympy": 0.0
+      },
+      "routes": {
+        "hybrid": {
+          "hot": 46
+        },
+        "lru_hybrid": {
+          "hot": 42,
+          "cold": 4
+        }
+      },
+      "pairs": {
+        "hybrid-multiple": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 46,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "hybrid-graph": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 46,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "hybrid-lru_hybrid": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 46,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "lru_hybrid-multiple": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 46,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        },
+        "lru_hybrid-lru": {
+          "wins": 4,
+          "losses": 0,
+          "ties": 42,
+          "delta": 0.08695652173913043,
+          "ci": [
+            0.021739130434782608,
+            0.17391304347826086
+          ],
+          "p": 0.125
+        },
+        "graph-multiple": {
+          "wins": 0,
+          "losses": 0,
+          "ties": 46,
+          "delta": 0.0,
+          "ci": [
+            0.0,
+            0.0
+          ],
+          "p": 1.0
+        }
+      },
+      "repo_clusters_hybrid_minus_multiple": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 46,
+        "delta": 0.0,
+        "ci": [
+          0.0,
+          0.0
+        ],
+        "p": 1.0
+      }
+    }
+  }
+}

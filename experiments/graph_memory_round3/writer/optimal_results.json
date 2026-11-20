@@ -1,0 +1,2788 @@
+{
+ "n": 1210,
+ "projects": 12,
+ "instances": 336,
+ "cuts": 2424,
+ "arms": {
+  "lru@4096": {
+   "whole": 451,
+   "fraction": 0.40007064759523164,
+   "start": 489,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20295471,
+    "evicted_pages": 15084,
+    "evicted_bytes": 6364772,
+    "max": 4096
+   }
+  },
+  "lru@12288": {
+   "whole": 663,
+   "fraction": 0.5587224095358878,
+   "start": 684,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 55865558,
+    "max": 12288,
+    "evicted_pages": 8721,
+    "evicted_bytes": 3764111
+   }
+  },
+  "twice@4096": {
+   "whole": 422,
+   "fraction": 0.3895450133952559,
+   "start": 488,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20400101,
+    "evicted_pages": 15397,
+    "evicted_bytes": 6407212,
+    "max": 4096
+   }
+  },
+  "twice@12288": {
+   "whole": 652,
+   "fraction": 0.5535276212263854,
+   "start": 683,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 55817723,
+    "max": 12288,
+    "evicted_pages": 8693,
+    "evicted_bytes": 3720024
+   }
+  },
+  "point@4096": {
+   "whole": 430,
+   "fraction": 0.43744387728997186,
+   "start": 612,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20140450,
+    "evicted_pages": 14292,
+    "evicted_bytes": 6232239,
+    "max": 4096
+   }
+  },
+  "point@12288": {
+   "whole": 690,
+   "fraction": 0.6023507098265345,
+   "start": 762,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 55635019,
+    "max": 12288,
+    "evicted_pages": 7883,
+    "evicted_bytes": 3613145
+   }
+  },
+  "global@4096": {
+   "whole": 483,
+   "fraction": 0.4442663475294349,
+   "start": 572,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20263752,
+    "evicted_pages": 14619,
+    "evicted_bytes": 6259124,
+    "max": 4096
+   }
+  },
+  "global@12288": {
+   "whole": 725,
+   "fraction": 0.6124818568433696,
+   "start": 758,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 55933150,
+    "max": 12288,
+    "evicted_pages": 8209,
+    "evicted_bytes": 3640984
+   }
+  },
+  "typed@4096": {
+   "whole": 494,
+   "fraction": 0.4514487721493422,
+   "start": 553,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20325492,
+    "evicted_pages": 14509,
+    "evicted_bytes": 6256812,
+    "max": 4096
+   }
+  },
+  "typed@12288": {
+   "whole": 739,
+   "fraction": 0.624251839675955,
+   "start": 758,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 56105400,
+    "max": 12288,
+    "evicted_pages": 8179,
+    "evicted_bytes": 3665566
+   }
+  },
+  "placebo@4096": {
+   "whole": 412,
+   "fraction": 0.4093184682743339,
+   "start": 557,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20136556,
+    "evicted_pages": 14673,
+    "evicted_bytes": 6274388,
+    "max": 4096
+   }
+  },
+  "placebo@12288": {
+   "whole": 707,
+   "fraction": 0.609847912417463,
+   "start": 752,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 55802909,
+    "max": 12288,
+    "evicted_pages": 8238,
+    "evicted_bytes": 3634363
+   }
+  },
+  "additive_greedy@4096": {
+   "whole": 459,
+   "fraction": 0.4466161369828421,
+   "start": 528,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20252248,
+    "evicted_pages": 14275,
+    "evicted_bytes": 6239728,
+    "max": 4096
+   }
+  },
+  "additive_greedy@12288": {
+   "whole": 724,
+   "fraction": 0.616135542464537,
+   "start": 748,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 55845352,
+    "max": 12288,
+    "evicted_pages": 7955,
+    "evicted_bytes": 3641927
+   }
+  },
+  "additive_exact@4096": {
+   "whole": 464,
+   "fraction": 0.45472443888729713,
+   "start": 538,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20859040,
+    "evicted_pages": 14304,
+    "evicted_bytes": 6183912,
+    "max": 4096
+   }
+  },
+  "additive_exact@12288": {
+   "whole": 722,
+   "fraction": 0.6177061324376929,
+   "start": 747,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 56327728,
+    "max": 12288,
+    "evicted_pages": 8014,
+    "evicted_bytes": 3603480
+   }
+  },
+  "chain_exact@4096": {
+   "whole": 496,
+   "fraction": 0.4565305433643006,
+   "start": 547,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 20788409,
+    "local_decisions": 2854,
+    "local_better": 1640,
+    "evicted_pages": 14497,
+    "evicted_bytes": 6225702,
+    "max": 4096
+   }
+  },
+  "chain_exact@12288": {
+   "whole": 736,
+   "fraction": 0.623317700607834,
+   "start": 755,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 56447854,
+    "max": 12288,
+    "local_decisions": 1839,
+    "local_better": 1152,
+    "evicted_pages": 8235,
+    "evicted_bytes": 3642694
+   }
+  },
+  "unbounded@0": {
+   "whole": 825,
+   "fraction": 0.6818181818181818,
+   "start": 825,
+   "usage": {
+    "events": 5885,
+    "retained_bytes_sum": 115060176,
+    "max": 107033
+   }
+  }
+ },
+ "paired": {
+  "chain_exact@4096 minus additive_exact@4096": {
+   "whole": {
+    "delta": 0.026446280991735537,
+    "ci": [
+     0.015772249683300626,
+     0.03856052658881575
+    ],
+    "macro": 0.04203716345492095,
+    "wins": 53,
+    "losses": 21,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      5.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      5.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      2.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      6.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      0.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      2.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      3.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      1.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      5.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.0018061044770033565,
+    "ci": [
+     -0.004583889020799185,
+     0.008767172879382687
+    ],
+    "macro": 0.007950114276768208,
+    "wins": 80,
+    "losses": 73,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.3571428571428571,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.44847090440752,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.31174968071519804,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.916749670203484,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.1476520512291109,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.15773509269075536,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -0.10456233876949966,
+      115.0
+     ],
+     "pallets__jinja": [
+      -2.116659565188977,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.5684623312213788,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -1.503914425496494,
+      109.0
+     ],
+     "python-trio__trio": [
+      -0.4640026640026641,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      2.466562823021392,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": 0.00743801652892562,
+    "ci": [
+     -0.007772424257098122,
+     0.024391271292662366
+    ],
+    "macro": 0.02340774751600001,
+    "wins": 48,
+    "losses": 39,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      6.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      4.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -4.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -2.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      -3.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      4.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      0.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "chain_exact@4096 minus typed@4096": {
+   "whole": {
+    "delta": 0.001652892561983471,
+    "ci": [
+     -0.006162005740141929,
+     0.00997015752380212
+    ],
+    "macro": 0.0027495879544417825,
+    "wins": 29,
+    "losses": 27,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      0.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      3.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -2.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      2.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -1.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.005081771214958378,
+    "ci": [
+     -0.0009009072696069859,
+     0.011769205486301585
+    ],
+    "macro": 0.005946459782993862,
+    "wins": 60,
+    "losses": 48,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.8390013495276651,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.376749680715198,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.2799667524537326,
+      131.0
+     ],
+     "iterative__dvc": [
+      -0.08420769437718584,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      2.2035191739184747,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -0.5397907032817519,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.20679863179863212,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      2.2982978800191916,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -0.8046419705529877,
+      109.0
+     ],
+     "python-trio__trio": [
+      -1.1609577922077925,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      1.5342078620864603,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": -0.0049586776859504135,
+    "ci": [
+     -0.012126111560226353,
+     0.0012725874286546122
+    ],
+    "macro": -0.0036533571392674846,
+    "wins": 29,
+    "losses": 35,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      -1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -4.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -1.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      0.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      -1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -1.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@4096 minus point@4096": {
+   "whole": {
+    "delta": 0.05289256198347107,
+    "ci": [
+     0.03505517857191994,
+     0.07107853036206405
+    ],
+    "macro": 0.06512260795959213,
+    "wins": 81,
+    "losses": 17,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      3.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      2.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      13.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      2.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      5.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      10.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      8.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      6.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      1.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      5.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      8.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.01400489485937036,
+    "ci": [
+     -0.0010440471285006493,
+     0.029886579041669376
+    ],
+    "macro": 0.023018311423101914,
+    "wins": 115,
+    "losses": 92,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.6428571428571428,
+      5.0
+     ],
+     "burnash__gspread": [
+      -0.3370054038192126,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.13175606641123894,
+      93.0
+     ],
+     "conan-io__conan": [
+      7.663992610502367,
+      131.0
+     ],
+     "iterative__dvc": [
+      -2.52436816888404,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      -1.6009664741680278,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      5.318449335018359,
+      115.0
+     ],
+     "pallets__jinja": [
+      1.7026549815860736,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.8422469653539286,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -1.196851841252561,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.2522211883098984,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      3.050936377922971,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": -0.048760330578512395,
+    "ci": [
+     -0.0661915583773591,
+     -0.030741147651288957
+    ],
+    "macro": -0.044491172075977255,
+    "wins": 26,
+    "losses": 85,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -6.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -4.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      -3.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -9.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      -9.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -2.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -12.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      -3.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -9.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      0.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -2.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@4096 minus global@4096": {
+   "whole": {
+    "delta": 0.00909090909090909,
+    "ci": [
+     0.0,
+     0.01925935231714126
+    ],
+    "macro": 0.01012215864629108,
+    "wins": 39,
+    "losses": 28,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      4.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      3.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -1.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      3.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.007182424619907219,
+    "ci": [
+     -0.002710076170255627,
+     0.01861566723438317
+    ],
+    "macro": 0.00835927349767731,
+    "wins": 75,
+    "losses": 66,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -0.4521136926400085,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.426458108594031,
+      93.0
+     ],
+     "conan-io__conan": [
+      -0.42190960772363006,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.5654162834493934,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      -0.9835932337038409,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      2.255790304703349,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.5144425430870441,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      2.964595476624165,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -1.3028324243858287,
+      109.0
+     ],
+     "python-trio__trio": [
+      3.283951465201466,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      3.9713611337803845,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": -0.015702479338842976,
+    "ci": [
+     -0.02976221032560868,
+     0.0008897790986487031
+    ],
+    "macro": -0.011557702087466086,
+    "wins": 33,
+    "losses": 52,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -2.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -3.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      -3.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -4.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      -6.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      2.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -5.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      3.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -3.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      3.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -1.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@4096 minus lru@4096": {
+   "whole": {
+    "delta": 0.03553719008264463,
+    "ci": [
+     0.017032452244474514,
+     0.05657093124456049
+    ],
+    "macro": 0.05090907671416239,
+    "wins": 84,
+    "losses": 41,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      3.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      3.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      6.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      9.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      7.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      9.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      5.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.05137812455411053,
+    "ci": [
+     0.028965578377620777,
+     0.07572807466838824
+    ],
+    "macro": 0.06557148403520978,
+    "wins": 144,
+    "losses": 60,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -1.0063726884779518,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -0.08687522473930231,
+      93.0
+     ],
+     "conan-io__conan": [
+      2.855828245835558,
+      131.0
+     ],
+     "iterative__dvc": [
+      4.256024948410582,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      7.589781994959838,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      11.96427413438283,
+      115.0
+     ],
+     "pallets__jinja": [
+      1.7105875801249482,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      8.106916905195593,
+      63.0
+     ],
+     "python-hyper__h11": [
+      6.233323377199154,
+      109.0
+     ],
+     "python-trio__trio": [
+      10.994818376068375,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      8.549223061514128,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": 0.05289256198347107,
+    "ci": [
+     0.027815997419414706,
+     0.07995858243998534
+    ],
+    "macro": 0.0682030233376942,
+    "wins": 104,
+    "losses": 40,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      8.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      3.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      5.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      12.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      10.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      5.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      11.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      10.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@4096 minus placebo@4096": {
+   "whole": {
+    "delta": 0.06776859504132231,
+    "ci": [
+     0.0551651100910192,
+     0.08030735302631198
+    ],
+    "macro": 0.07919819416086707,
+    "wins": 109,
+    "losses": 27,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      7.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      2.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      7.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      6.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      9.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      7.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      13.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      6.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      9.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      5.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      10.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.04213030387500838,
+    "ci": [
+     0.03478416334042371,
+     0.04946675511484546
+    ],
+    "macro": 0.05343783128585013,
+    "wins": 157,
+    "losses": 65,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      1.764188516482259,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      2.550161812297735,
+      93.0
+     ],
+     "conan-io__conan": [
+      6.387264166601536,
+      131.0
+     ],
+     "iterative__dvc": [
+      4.059374703230926,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      6.6214632894240335,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      6.957142673447021,
+      115.0
+     ],
+     "pallets__jinja": [
+      6.774376766699373,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.960392938418795,
+      63.0
+     ],
+     "python-hyper__h11": [
+      3.154159060919366,
+      109.0
+     ],
+     "python-trio__trio": [
+      3.7178952991452996,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      6.031248462093794,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": -0.003305785123966942,
+    "ci": [
+     -0.014255331934923727,
+     0.007732008595051865
+    ],
+    "macro": 0.011655711111885514,
+    "wins": 52,
+    "losses": 56,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -3.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      0.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      -4.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      3.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -1.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      -1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -1.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      2.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "additive_exact@4096 minus additive_greedy@4096": {
+   "whole": {
+    "delta": 0.004132231404958678,
+    "ci": [
+     -0.0009443317315294503,
+     0.009486166007905139
+    ],
+    "macro": 0.0033407322864465977,
+    "wins": 18,
+    "losses": 13,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      2.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -1.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      -1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      0.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      0.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.008108301904455063,
+    "ci": [
+     0.0028206553060171474,
+     0.013291286039639968
+    ],
+    "macro": 0.006943342325293789,
+    "wins": 52,
+    "losses": 28,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.16666666666666666,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.5399999999999999,
+      93.0
+     ],
+     "conan-io__conan": [
+      2.085785317644679,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.005293642880881133,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      2.7574129315749167,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      2.17180626752238,
+      115.0
+     ],
+     "pallets__jinja": [
+      1.3288676557375592,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.15883190883190879,
+      63.0
+     ],
+     "python-hyper__h11": [
+      1.2634485432591118,
+      109.0
+     ],
+     "python-trio__trio": [
+      -0.23571428571428565,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -0.4313533440131905,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": 0.008264462809917356,
+    "ci": [
+     0.002257293911980855,
+     0.014300542882003553
+    ],
+    "macro": 0.008339404555361432,
+    "wins": 24,
+    "losses": 14,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      3.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      1.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -1.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "chain_exact@12288 minus additive_exact@12288": {
+   "whole": {
+    "delta": 0.011570247933884297,
+    "ci": [
+     0.005974432829273542,
+     0.017857142857142856
+    ],
+    "macro": 0.027098875888100202,
+    "wins": 19,
+    "losses": 5,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      3.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      2.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      0.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      2.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      1.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.005611568170141116,
+    "ci": [
+     0.0009588227445615579,
+     0.011289955547074692
+    ],
+    "macro": 0.02158636265555233,
+    "wins": 24,
+    "losses": 18,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -0.13227513227513227,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -0.24038461538461542,
+      93.0
+     ],
+     "conan-io__conan": [
+      0.8089788732394366,
+      131.0
+     ],
+     "iterative__dvc": [
+      1.4420647149460708,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.26865248226950356,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      0.1038961038961039,
+      115.0
+     ],
+     "pallets__jinja": [
+      -0.6923076923076923,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.2535849056603774,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.4642857142857144,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -0.48649786845901566,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": 0.006611570247933884,
+    "ci": [
+     -0.002247233125010529,
+     0.014336917562724014
+    ],
+    "macro": 0.022288118879746466,
+    "wins": 14,
+    "losses": 6,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      2.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      2.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      0.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -3.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "chain_exact@12288 minus typed@12288": {
+   "whole": {
+    "delta": -0.0024793388429752068,
+    "ci": [
+     -0.01000019245573518,
+     0.005235716408697043
+    ],
+    "macro": -0.0016113502715282627,
+    "wins": 8,
+    "losses": 11,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      -1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -3.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      1.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -2.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": -0.0009341390681208989,
+    "ci": [
+     -0.007283829037602941,
+     0.005222272638971881
+    ],
+    "macro": -0.0004017477318151713,
+    "wins": 14,
+    "losses": 18,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.008818342151675485,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -0.1923076923076923,
+      93.0
+     ],
+     "conan-io__conan": [
+      -0.3913043478260869,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.52840288657836,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -1.9070929070929072,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.3312772133526851,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.8032786885245902,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      0.125,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -2.436380455806913,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": -0.0024793388429752068,
+    "ci": [
+     -0.01010973289898578,
+     0.005281806477632312
+    ],
+    "macro": -0.0013421599208161732,
+    "wins": 7,
+    "losses": 10,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      -1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -2.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      1.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      0.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      -3.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@12288 minus point@12288": {
+   "whole": {
+    "delta": 0.04049586776859504,
+    "ci": [
+     0.019762537697320306,
+     0.06501578677299209
+    ],
+    "macro": 0.06715724304624822,
+    "wins": 61,
+    "losses": 12,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      2.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      9.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      3.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      3.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      9.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      3.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      5.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      14.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.02190112984942043,
+    "ci": [
+     0.006955388998805877,
+     0.04122203332407721
+    ],
+    "macro": 0.04095359259797066,
+    "wins": 70,
+    "losses": 31,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.3487394957983192,
+      5.0
+     ],
+     "burnash__gspread": [
+      -0.08289241622574955,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.1477272727272727,
+      93.0
+     ],
+     "conan-io__conan": [
+      5.386973832713364,
+      131.0
+     ],
+     "iterative__dvc": [
+      -0.30940003908540165,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.4775413711583925,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      3.4165501165501166,
+      115.0
+     ],
+     "pallets__jinja": [
+      -0.3625722044213694,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.2727953244727275,
+      63.0
+     ],
+     "python-hyper__h11": [
+      0.9872117141170849,
+      109.0
+     ],
+     "python-trio__trio": [
+      3.5871573279661515,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      10.63053532202782,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": -0.003305785123966942,
+    "ci": [
+     -0.017781598983448606,
+     0.0121863524380607
+    ],
+    "macro": 0.013192728756027118,
+    "wins": 21,
+    "losses": 25,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      1.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      0.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -4.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      2.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -6.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      -2.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -1.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      5.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@12288 minus global@12288": {
+   "whole": {
+    "delta": 0.011570247933884297,
+    "ci": [
+     -0.0044915583994465935,
+     0.032132162156574405
+    ],
+    "macro": 0.011036537053627083,
+    "wins": 28,
+    "losses": 14,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      5.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      0.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -3.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      10.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.011769982832585275,
+    "ci": [
+     -0.0023049102260125527,
+     0.028613025245985003
+    ],
+    "macro": 0.011656587440220925,
+    "wins": 39,
+    "losses": 24,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.2610229276895943,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      4.32352537029927,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.373249299719888,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      0.3181818181818182,
+      115.0
+     ],
+     "pallets__jinja": [
+      -0.7500032812355165,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.8444213194785417,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -2.508695652173913,
+      109.0
+     ],
+     "python-trio__trio": [
+      3.1055194805194803,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      8.020956544388794,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": 0.0,
+    "ci": [
+     -0.015239537617064907,
+     0.016461351493152587
+    ],
+    "macro": 0.001383539111216195,
+    "wins": 20,
+    "losses": 20,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      2.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -2.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      0.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -6.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      -3.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      6.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@12288 minus lru@12288": {
+   "whole": {
+    "delta": 0.0628099173553719,
+    "ci": [
+     0.026687074829931975,
+     0.1074048308457079
+    ],
+    "macro": 0.09107908952961911,
+    "wins": 101,
+    "losses": 25,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      2.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      8.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      6.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      8.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      10.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -4.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      6.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      6.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      8.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      26.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.06552943014006714,
+    "ci": [
+     0.03044654384406863,
+     0.11195708002727713
+    ],
+    "macro": 0.09322542582807854,
+    "wins": 115,
+    "losses": 30,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      2.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.9047619047619047,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -0.875,
+      93.0
+     ],
+     "conan-io__conan": [
+      9.501045981772991,
+      131.0
+     ],
+     "iterative__dvc": [
+      5.330817238207857,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      6.826666666666666,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      9.48961038961039,
+      115.0
+     ],
+     "pallets__jinja": [
+      -1.5295272368524309,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      5.952090751272079,
+      63.0
+     ],
+     "python-hyper__h11": [
+      5.161923076923077,
+      109.0
+     ],
+     "python-trio__trio": [
+      9.196428571428571,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      27.33179312569013,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": 0.06115702479338843,
+    "ci": [
+     0.026413574960634276,
+     0.1040705810469883
+    ],
+    "macro": 0.08881330211599563,
+    "wins": 93,
+    "losses": 19,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      2.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      8.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      6.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      7.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      11.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -4.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      4.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      5.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      9.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      25.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "typed@12288 minus placebo@12288": {
+   "whole": {
+    "delta": 0.026446280991735537,
+    "ci": [
+     0.01098901098901099,
+     0.042811102696188194
+    ],
+    "macro": 0.02248235719847091,
+    "wins": 50,
+    "losses": 18,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      8.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      3.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      4.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      2.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      4.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      3.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      9.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.014403927258492018,
+    "ci": [
+     0.0025093474101368,
+     0.027934395784678566
+    ],
+    "macro": 0.012179540482685394,
+    "wins": 59,
+    "losses": 29,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -0.5555555555555556,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      4.335883295057924,
+      131.0
+     ],
+     "iterative__dvc": [
+      -1.0472770503550257,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      1.9260135135135137,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      2.817848817848818,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.5171732073995143,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      -0.033438525594417845,
+      63.0
+     ],
+     "python-hyper__h11": [
+      1.3113348416289594,
+      109.0
+     ],
+     "python-trio__trio": [
+      1.926948051948052,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      7.229821386883561,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": 0.0049586776859504135,
+    "ci": [
+     -0.012517472328707325,
+     0.020901124637078133
+    ],
+    "macro": 0.00505432987122302,
+    "wins": 27,
+    "losses": 21,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      -1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      2.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      -2.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      2.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      4.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      -7.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      -1.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      2.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      2.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      5.0,
+      112.0
+     ]
+    }
+   }
+  },
+  "additive_exact@12288 minus additive_greedy@12288": {
+   "whole": {
+    "delta": -0.001652892561983471,
+    "ci": [
+     -0.006642127716958233,
+     0.0034662796622780437
+    ],
+    "macro": -0.0016829122371770898,
+    "wins": 5,
+    "losses": 7,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      2.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      -1.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -2.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      0.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      -1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      0.0,
+      112.0
+     ]
+    }
+   },
+   "line_fraction": {
+    "delta": 0.0015705899731560363,
+    "ci": [
+     -0.0019194145786397385,
+     0.005222922651460011
+    ],
+    "macro": 0.0011521051030212676,
+    "wins": 12,
+    "losses": 10,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      0.1164021164021164,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      0.24038461538461542,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.8560417382342838,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.7571428571428573,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      -0.19722391084093216,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -1.0824175824175823,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.3529411764705882,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      0.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      -0.1428571428571429,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      0.0,
+      112.0
+     ]
+    }
+   },
+   "start": {
+    "delta": -0.0008264462809917355,
+    "ci": [
+     -0.0045594440049409445,
+     0.002796160891061052
+    ],
+    "macro": -0.001068349893869417,
+    "wins": 6,
+    "losses": 7,
+    "project_sums": {
+     "aio-libs__async-timeout": [
+      0.0,
+      5.0
+     ],
+     "burnash__gspread": [
+      -1.0,
+      77.0
+     ],
+     "cloudpipe__cloudpickle": [
+      1.0,
+      93.0
+     ],
+     "conan-io__conan": [
+      1.0,
+      131.0
+     ],
+     "iterative__dvc": [
+      0.0,
+      134.0
+     ],
+     "john-kurkowski__tldextract": [
+      0.0,
+      117.0
+     ],
+     "marshmallow-code__webargs": [
+      -1.0,
+      115.0
+     ],
+     "pallets__jinja": [
+      0.0,
+      149.0
+     ],
+     "pndurette__gTTS": [
+      0.0,
+      63.0
+     ],
+     "python-hyper__h11": [
+      0.0,
+      109.0
+     ],
+     "python-trio__trio": [
+      -1.0,
+      105.0
+     ],
+     "theskumar__python-dotenv": [
+      0.0,
+      112.0
+     ]
+    }
+   }
+  }
+ }
+}

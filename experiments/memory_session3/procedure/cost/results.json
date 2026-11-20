@@ -1,0 +1,173 @@
+{
+  "host": "Windows-10-10.0.19045-SP0",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "userland": {
+    "sed": "/usr/bin/sed (GNU sed) 4.9",
+    "cat": "cat (GNU coreutils) 8.32",
+    "head": "head (GNU coreutils) 8.32"
+  },
+  "cpu": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "branches": {
+    "sed": 289,
+    "cat": 3,
+    "head": 2
+  },
+  "lock_sha256": "ee5be6ba2e0fa2d5234d08ae5b84f0bb719d1df5b940e392c2334ebc36ff1e16",
+  "protocol_sha256": "e92b3b70b1b6dee446ffe4675eb321022e377c6e0cc29a5689c8bb8b83ee5d5f",
+  "benchmark_sha256": "e7b2f587545ac19ec68718dae96eb1b1b08de6642fec9eeeaf47cf2e2b81c0c0",
+  "timing_hashes": {
+    "management.csv": "5be10f7aef1f1970da3b83a4e43909dae68ae88e865cc9f3c4ee43eac1c9899e",
+    "physical.csv": "ce7f35a8e01db85c98728023d28e40634abf12c0dcdd812eb240bb06b9aa6e27"
+  },
+  "management": {
+    "range-bypass": {
+      "hits": 294,
+      "incremental_ms": {
+        "mean": 1951.60306,
+        "median": 1975.0257,
+        "p95": 2015.659,
+        "min": 1867.9681,
+        "max": 2015.659
+      },
+      "break_even_ms_per_skipped_call": {
+        "mean": 6.638105646258503,
+        "median": 6.717774489795918,
+        "p95": 6.855982993197279,
+        "min": 6.353632993197279,
+        "max": 6.855982993197279
+      },
+      "process_avoided_ms_by_block": [
+        4259.951,
+        2850.5636
+      ],
+      "process_net_ms_vs_median_management": [
+        2284.9253,
+        875.5379
+      ],
+      "python_avoided_ms_by_block": [
+        845.8981,
+        45.7796
+      ],
+      "python_net_ms_vs_median_management": [
+        -1129.1275999999998,
+        -1929.2460999999998
+      ]
+    },
+    "contained-bypass": {
+      "hits": 280,
+      "incremental_ms": {
+        "mean": 1926.9865,
+        "median": 1951.0159999999998,
+        "p95": 1992.8876,
+        "min": 1809.5808,
+        "max": 1992.8876
+      },
+      "break_even_ms_per_skipped_call": {
+        "mean": 6.882094642857143,
+        "median": 6.9679142857142855,
+        "p95": 7.117455714285715,
+        "min": 6.462788571428571,
+        "max": 7.117455714285715
+      },
+      "process_avoided_ms_by_block": [
+        4061.212,
+        2714.7096
+      ],
+      "process_net_ms_vs_median_management": [
+        2110.196,
+        763.6936000000003
+      ],
+      "python_avoided_ms_by_block": [
+        796.0042,
+        43.4859
+      ],
+      "python_net_ms_vs_median_management": [
+        -1155.0117999999998,
+        -1907.5301
+      ]
+    },
+    "exact-bypass": {
+      "hits": 14,
+      "incremental_ms": {
+        "mean": 1928.31578,
+        "median": 1936.2674,
+        "p95": 1974.7277,
+        "min": 1863.5509,
+        "max": 1974.7277
+      },
+      "break_even_ms_per_skipped_call": {
+        "mean": 137.73684142857144,
+        "median": 138.3048142857143,
+        "p95": 141.05197857142858,
+        "min": 133.11077857142857,
+        "max": 141.05197857142858
+      },
+      "process_avoided_ms_by_block": [
+        189.7668,
+        134.8192
+      ],
+      "process_net_ms_vs_median_management": [
+        -1746.5005999999998,
+        -1801.4482
+      ],
+      "python_avoided_ms_by_block": [
+        41.0691,
+        2.3109
+      ],
+      "python_net_ms_vs_median_management": [
+        -1895.1983,
+        -1933.9565
+      ]
+    },
+    "range-contained": {
+      "hits": 14,
+      "incremental_ms": {
+        "mean": 24.61656000000007,
+        "median": 22.771400000000085,
+        "p95": 58.387300000000096,
+        "min": -19.476599999999962,
+        "max": 58.387300000000096
+      },
+      "break_even_ms_per_skipped_call": {
+        "mean": 1.7583257142857194,
+        "median": 1.6265285714285775,
+        "p95": 4.170521428571435,
+        "min": -1.3911857142857116,
+        "max": 4.170521428571435
+      },
+      "process_avoided_ms_by_block": [
+        198.739,
+        135.85399999999998
+      ],
+      "process_net_ms_vs_median_management": [
+        175.96759999999992,
+        113.0825999999999
+      ],
+      "python_avoided_ms_by_block": [
+        49.8939,
+        2.2937
+      ],
+      "python_net_ms_vs_median_management": [
+        27.122499999999917,
+        -20.477700000000084
+      ]
+    }
+  },
+  "physical_ms_per_call": {
+    "process": {
+      "mean": 12.092711904761904,
+      "median": 11.05405,
+      "p95": 17.8225,
+      "min": 9.0748,
+      "max": 20.0636
+    },
+    "python": {
+      "mean": 1.5164586734693877,
+      "median": 0.1751,
+      "p95": 6.3249,
+      "min": 0.0897,
+      "max": 8.7133
+    }
+  },
+  "verified_physical_outputs": 1176
+}

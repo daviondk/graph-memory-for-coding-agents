@@ -1,0 +1,308 @@
+{
+  "decimal": {
+    "historical_modes": [
+      0,
+      1
+    ],
+    "cassette": [
+      {
+        "input": "1_7",
+        "previous": null,
+        "latest": null
+      },
+      {
+        "input": "123",
+        "previous": 123,
+        "latest": 123
+      },
+      {
+        "input": "+17",
+        "previous": null,
+        "latest": 17
+      },
+      {
+        "input": " 17 ",
+        "previous": null,
+        "latest": null
+      },
+      {
+        "input": "123",
+        "previous": 123,
+        "latest": 123
+      },
+      {
+        "input": "123",
+        "previous": 123,
+        "latest": 123
+      },
+      {
+        "input": "123",
+        "previous": 123,
+        "latest": 123
+      }
+    ],
+    "discriminating": {
+      "input": "+17",
+      "output": 17
+    },
+    "ordinary": {
+      "input": "123",
+      "output": 123
+    }
+  },
+  "dates": {
+    "historical_modes": [
+      3,
+      0
+    ],
+    "cassette": [
+      {
+        "input": "2024-01-02",
+        "previous": "2024-01-02",
+        "latest": "2024-01-02"
+      },
+      {
+        "input": "2024/02/14",
+        "previous": null,
+        "latest": null
+      },
+      {
+        "input": "2024-01-02",
+        "previous": "2024-01-02",
+        "latest": "2024-01-02"
+      },
+      {
+        "input": "20240214",
+        "previous": "2024-02-14",
+        "latest": null
+      },
+      {
+        "input": "2024-01-02",
+        "previous": "2024-01-02",
+        "latest": "2024-01-02"
+      },
+      {
+        "input": "2024-01-02",
+        "previous": "2024-01-02",
+        "latest": "2024-01-02"
+      },
+      {
+        "input": "2024.02.14",
+        "previous": null,
+        "latest": null
+      }
+    ],
+    "discriminating": {
+      "input": "20240214",
+      "output": null
+    },
+    "ordinary": {
+      "input": "2024-01-02",
+      "output": "2024-01-02"
+    }
+  },
+  "suffix": {
+    "historical_modes": [
+      2,
+      0
+    ],
+    "cassette": [
+      {
+        "input": "photo.jpg",
+        "previous": "jpg",
+        "latest": "jpg"
+      },
+      {
+        "input": "photo.jpg",
+        "previous": "jpg",
+        "latest": "jpg"
+      },
+      {
+        "input": "pkg.tar.gz",
+        "previous": "gz",
+        "latest": "gz"
+      },
+      {
+        "input": "photo.jpg",
+        "previous": "jpg",
+        "latest": "jpg"
+      },
+      {
+        "input": "photo.jpg",
+        "previous": "jpg",
+        "latest": "jpg"
+      },
+      {
+        "input": "index.HTML",
+        "previous": "html",
+        "latest": "html"
+      },
+      {
+        "input": ".env",
+        "previous": "env",
+        "latest": ""
+      }
+    ],
+    "discriminating": {
+      "input": ".env",
+      "output": ""
+    },
+    "ordinary": {
+      "input": "photo.jpg",
+      "output": "jpg"
+    }
+  },
+  "length": {
+    "historical_modes": [
+      3,
+      0
+    ],
+    "cassette": [
+      {
+        "input": "alpha",
+        "previous": 5,
+        "latest": 5
+      },
+      {
+        "input": "x\ud83c\udf0fy",
+        "previous": 3,
+        "latest": 3
+      },
+      {
+        "input": "xe\u0301y",
+        "previous": 3,
+        "latest": 4
+      },
+      {
+        "input": "x\r\ny",
+        "previous": 4,
+        "latest": 4
+      },
+      {
+        "input": "alpha",
+        "previous": 5,
+        "latest": 5
+      },
+      {
+        "input": "alpha",
+        "previous": 5,
+        "latest": 5
+      },
+      {
+        "input": "alpha",
+        "previous": 5,
+        "latest": 5
+      }
+    ],
+    "discriminating": {
+      "input": "xe\u0301y",
+      "output": 4
+    },
+    "ordinary": {
+      "input": "alpha",
+      "output": 5
+    }
+  },
+  "slug": {
+    "historical_modes": [
+      0,
+      1
+    ],
+    "cassette": [
+      {
+        "input": "m.n",
+        "previous": "m-n",
+        "latest": "mn"
+      },
+      {
+        "input": "Desk7",
+        "previous": "desk7",
+        "latest": "desk7"
+      },
+      {
+        "input": "Desk7",
+        "previous": "desk7",
+        "latest": "desk7"
+      },
+      {
+        "input": "m_n",
+        "previous": "m-n",
+        "latest": "m-n"
+      },
+      {
+        "input": "Desk7",
+        "previous": "desk7",
+        "latest": "desk7"
+      },
+      {
+        "input": "Desk7",
+        "previous": "desk7",
+        "latest": "desk7"
+      },
+      {
+        "input": "m+n",
+        "previous": "m-n",
+        "latest": "m-n"
+      }
+    ],
+    "discriminating": {
+      "input": "m.n",
+      "output": "mn"
+    },
+    "ordinary": {
+      "input": "Desk7",
+      "output": "desk7"
+    }
+  },
+  "bucket": {
+    "historical_modes": [
+      0,
+      2
+    ],
+    "cassette": [
+      {
+        "input": 35,
+        "previous": 3,
+        "latest": 3
+      },
+      {
+        "input": 35,
+        "previous": 3,
+        "latest": 3
+      },
+      {
+        "input": -21,
+        "previous": -3,
+        "latest": 0
+      },
+      {
+        "input": 127,
+        "previous": 12,
+        "latest": 12
+      },
+      {
+        "input": 20,
+        "previous": 2,
+        "latest": 2
+      },
+      {
+        "input": 35,
+        "previous": 3,
+        "latest": 3
+      },
+      {
+        "input": 35,
+        "previous": 3,
+        "latest": 3
+      }
+    ],
+    "discriminating": {
+      "input": -21,
+      "output": 0
+    },
+    "ordinary": {
+      "input": 35,
+      "output": 3
+    }
+  }
+}

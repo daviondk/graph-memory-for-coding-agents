@@ -1,0 +1,47 @@
+{
+  "n": 23,
+  "n_repos": 12,
+  "prediction_sha256": "78033e4c4353a4a44b208f8b61c714ec6455351d2f16a532886a1407f075417b",
+  "protocol_sha256": "e1eb811a29602e0e046312fa1dc7f9935b3e2b61c44fafbc78680012faeae933",
+  "means": {
+    "bm25": {
+      "f1_score": 0.0283426331098458,
+      "precision": 0.05952507078763173,
+      "recall": 0.02913055808930243,
+      "hit_file_rate": 0.11956521739130435,
+      "hit_region_rate": 0.08695652173913043,
+      "noise_file_rate": 0.8833333333333333,
+      "recall_at_300": 0.028279949797327127
+    },
+    "fusion": {
+      "f1_score": 0.08681869108076558,
+      "precision": 0.16854063849672912,
+      "recall": 0.08460026297442935,
+      "hit_file_rate": 0.2833333333333333,
+      "hit_region_rate": 0.2289855072463768,
+      "noise_file_rate": 0.7376811594202899,
+      "recall_at_300": 0.07496695138573418
+    }
+  },
+  "paired_primary": {
+    "difference": 0.05847605797091977,
+    "repo_bootstrap_95": [
+      0.01006058481222005,
+      0.1266118458291829
+    ],
+    "wins": 10,
+    "ties": 11,
+    "losses": 2
+  },
+  "secondary_excluding_memdev_illustrated_issue": 0.061134060605961583,
+  "budget": {
+    "bm25": {
+      "mean_emitted_regions": 5,
+      "mean_raw_lines_counting_overlap": 370.1304347826087
+    },
+    "fusion": {
+      "mean_emitted_regions": 5,
+      "mean_raw_lines_counting_overlap": 382.95652173913044
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Revision history
+
+The initial strict sensitivity used the independent PR inventory's first version of its target cutoff map. An end-to-end comparison against the exact original Related rows found one duplicate target with a different published timestamp. The frozen source protocol requires the first row. The final strict_cutoffs.py projects exactly this first row for all 228 targets and matches merge_times/target_dates_first.json on every entry. The files in this folder preserve the superseded strict outcomes using the first external inventory. The primary 219-target preregistered study and its original scores never changed. The corrected strict cohort contains 218 targets with available cache entries, with 35 hits for both path-only and gated cues.

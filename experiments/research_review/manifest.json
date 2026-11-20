@@ -1,0 +1,20 @@
+{
+  "run_date_local": "2026-11-16",
+  "timezone": "Europe/Moscow",
+  "review_type": "targeted scoping review; single reviewer; no meta-analysis",
+  "counts": {
+    "catalog_records": 74,
+    "bibliographic_database_hits": {
+      "OpenAlex": 200,
+      "arXiv API": 61
+    },
+    "distinct_exact_titles_database_only": 212,
+    "web_search_strings_logged": 77
+  },
+  "limitations": [
+    "arXiv query result caps 100, OpenAlex first 50 per query. Supplemented by targeted primary-source search.",
+    "Journal/venue fields only when identified. Crossref rate limits affected publisher matching; arXiv entries may have additional published versions.",
+    "A search hit is not an included source. Repeated database records are retained in the discovery log.",
+    "For the trace audit, parse rules were revised after the strict parser produced zero results. Records come from public historical trajectories, not new agent runs."
+  ]
+}

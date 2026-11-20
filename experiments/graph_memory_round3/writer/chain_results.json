@@ -1,0 +1,996 @@
+{
+ "n": 2135,
+ "cuts": 4051,
+ "arms": {
+  "lru/r2f/4096": {
+   "whole": 364,
+   "line_coverage": 0.23845467340151297,
+   "mean_tokens": 306.15550351288056
+  },
+  "lru/typed/4096": {
+   "whole": 500,
+   "line_coverage": 0.29265209455678953,
+   "mean_tokens": 427.784074941452
+  },
+  "lru/r2f/12288": {
+   "whole": 405,
+   "line_coverage": 0.2573895691615514,
+   "mean_tokens": 313.50023419203745
+  },
+  "lru/typed/12288": {
+   "whole": 540,
+   "line_coverage": 0.3191411579694022,
+   "mean_tokens": 444.6599531615925
+  },
+  "point/r2f/4096": {
+   "whole": 378,
+   "line_coverage": 0.2613711911940079,
+   "mean_tokens": 308.43138173302106
+  },
+  "point/typed/4096": {
+   "whole": 530,
+   "line_coverage": 0.3182635858772703,
+   "mean_tokens": 411.96065573770494
+  },
+  "point/r2f/12288": {
+   "whole": 406,
+   "line_coverage": 0.257266963954652,
+   "mean_tokens": 319.05245901639347
+  },
+  "point/typed/12288": {
+   "whole": 567,
+   "line_coverage": 0.3364363395765233,
+   "mean_tokens": 449.28665105386415
+  },
+  "typed/r2f/4096": {
+   "whole": 396,
+   "line_coverage": 0.259314452439226,
+   "mean_tokens": 304.1320843091335
+  },
+  "typed/typed/4096": {
+   "whole": 563,
+   "line_coverage": 0.3300371123071531,
+   "mean_tokens": 428.81077283372366
+  },
+  "typed/r2f/12288": {
+   "whole": 419,
+   "line_coverage": 0.2642549917211309,
+   "mean_tokens": 318.5911007025761
+  },
+  "typed/typed/12288": {
+   "whole": 573,
+   "line_coverage": 0.34096279819152575,
+   "mean_tokens": 452.2440281030445
+  }
+ },
+ "contrast": {
+  "typed/typed/4096 minus point/typed/4096": {
+   "delta": 0.015456674473067917,
+   "ci": [
+    0.003562250414278341,
+    0.028523000136281017
+   ],
+   "macro": 0.04452788660156037,
+   "wins": 85,
+   "losses": 52,
+   "project_sums": {
+    "Knio__dominate": [
+     4.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     3.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     1.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     -2.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     5.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     0.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     5.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     -6.0,
+     164.0
+    ],
+    "gruns__furl": [
+     2.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     4.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     0.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     2.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     5.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     1.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     5.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     -1.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     2.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     -1.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     1.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     0.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     0.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     1.0,
+     21.0
+    ],
+    "sloria__environs": [
+     0.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     -1.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     0.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     3.0,
+     64.0
+    ]
+   }
+  },
+  "typed/typed/4096 minus lru/typed/4096": {
+   "delta": 0.029508196721311476,
+   "ci": [
+    0.01674327703691993,
+    0.04159145303691097
+   ],
+   "macro": 0.04233548628191614,
+   "wins": 113,
+   "losses": 50,
+   "project_sums": {
+    "Knio__dominate": [
+     3.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     9.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     1.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     -1.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     8.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     0.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     2.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     3.0,
+     164.0
+    ],
+    "gruns__furl": [
+     2.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     1.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     0.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     5.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     16.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     3.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     4.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     -2.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     0.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     0.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     2.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     0.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     2.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     -1.0,
+     21.0
+    ],
+    "sloria__environs": [
+     1.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     1.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     0.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     4.0,
+     64.0
+    ]
+   }
+  },
+  "typed/typed/4096 minus typed/r2f/4096": {
+   "delta": 0.07822014051522248,
+   "ci": [
+    0.06453409111843923,
+    0.09706855551320258
+   ],
+   "macro": 0.10489582684051135,
+   "wins": 228,
+   "losses": 61,
+   "project_sums": {
+    "Knio__dominate": [
+     7.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     12.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     0.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     2.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     11.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     0.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     17.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     13.0,
+     164.0
+    ],
+    "gruns__furl": [
+     8.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     4.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     2.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     13.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     16.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     0.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     3.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     7.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     4.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     7.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     9.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     2.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     4.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     3.0,
+     21.0
+    ],
+    "sloria__environs": [
+     10.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     3.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     5.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     5.0,
+     64.0
+    ]
+   }
+  },
+  "typed/typed/4096 minus lru/r2f/4096": {
+   "delta": 0.09320843091334895,
+   "ci": [
+    0.07781220824688798,
+    0.11310589606152412
+   ],
+   "macro": 0.13179749936736196,
+   "wins": 266,
+   "losses": 67,
+   "project_sums": {
+    "Knio__dominate": [
+     9.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     17.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     1.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     1.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     13.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     0.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     15.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     17.0,
+     164.0
+    ],
+    "gruns__furl": [
+     8.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     6.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     2.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     12.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     25.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     3.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     5.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     8.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     3.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     8.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     10.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     2.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     7.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     2.0,
+     21.0
+    ],
+    "sloria__environs": [
+     12.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     3.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     3.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     7.0,
+     64.0
+    ]
+   }
+  },
+  "typed/typed/12288 minus point/typed/12288": {
+   "delta": 0.002810304449648712,
+   "ci": [
+    -0.002922710310658756,
+    0.00855997781832801
+   ],
+   "macro": 0.00532901006871326,
+   "wins": 24,
+   "losses": 18,
+   "project_sums": {
+    "Knio__dominate": [
+     -1.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     -3.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     0.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     0.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     3.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     1.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     1.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     0.0,
+     164.0
+    ],
+    "gruns__furl": [
+     0.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     0.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     0.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     -1.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     1.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     0.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     1.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     -1.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     0.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     4.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     0.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     0.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     0.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     0.0,
+     21.0
+    ],
+    "sloria__environs": [
+     0.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     0.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     0.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     1.0,
+     64.0
+    ]
+   }
+  },
+  "typed/typed/12288 minus lru/typed/12288": {
+   "delta": 0.015456674473067917,
+   "ci": [
+    0.004918483978925388,
+    0.026687232859656403
+   ],
+   "macro": 0.013578949418107705,
+   "wins": 59,
+   "losses": 26,
+   "project_sums": {
+    "Knio__dominate": [
+     2.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     10.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     0.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     0.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     6.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     1.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     -1.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     2.0,
+     164.0
+    ],
+    "gruns__furl": [
+     -1.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     -2.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     0.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     1.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     6.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     3.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     4.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     1.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     0.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     0.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     0.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     0.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     0.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     0.0,
+     21.0
+    ],
+    "sloria__environs": [
+     0.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     -1.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     0.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     2.0,
+     64.0
+    ]
+   }
+  },
+  "typed/typed/12288 minus typed/r2f/12288": {
+   "delta": 0.07213114754098361,
+   "ci": [
+    0.05223774538161904,
+    0.0938490761678246
+   ],
+   "macro": 0.0862029219680777,
+   "wins": 243,
+   "losses": 89,
+   "project_sums": {
+    "Knio__dominate": [
+     8.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     13.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     0.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     2.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     12.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     1.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     18.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     13.0,
+     164.0
+    ],
+    "gruns__furl": [
+     6.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     -2.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     2.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     12.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     4.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     0.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     4.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     4.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     2.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     15.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     10.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     2.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     2.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     2.0,
+     21.0
+    ],
+    "sloria__environs": [
+     12.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     2.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     4.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     6.0,
+     64.0
+    ]
+   }
+  },
+  "typed/typed/12288 minus lru/r2f/12288": {
+   "delta": 0.07868852459016394,
+   "ci": [
+    0.06178368580962866,
+    0.09887067274035949
+   ],
+   "macro": 0.09508227398517888,
+   "wins": 256,
+   "losses": 88,
+   "project_sums": {
+    "Knio__dominate": [
+     7.0,
+     41.0
+    ],
+    "Mimino666__langdetect": [
+     15.0,
+     172.0
+    ],
+    "borntyping__python-colorlog": [
+     0.0,
+     2.0
+    ],
+    "buriy__python-readability": [
+     2.0,
+     57.0
+    ],
+    "cookiecutter__cookiecutter": [
+     11.0,
+     134.0
+    ],
+    "datamade__usaddress": [
+     1.0,
+     8.0
+    ],
+    "getnikola__nikola": [
+     19.0,
+     162.0
+    ],
+    "graphql-python__graphene": [
+     14.0,
+     164.0
+    ],
+    "gruns__furl": [
+     6.0,
+     115.0
+    ],
+    "gruns__icecream": [
+     -1.0,
+     29.0
+    ],
+    "kennethreitz__records": [
+     2.0,
+     24.0
+    ],
+    "kurtmckee__feedparser": [
+     12.0,
+     192.0
+    ],
+    "lepture__mistune": [
+     9.0,
+     297.0
+    ],
+    "madzak__python-json-logger": [
+     3.0,
+     32.0
+    ],
+    "marshmallow-code__apispec": [
+     4.0,
+     91.0
+    ],
+    "martinblech__xmltodict": [
+     4.0,
+     62.0
+    ],
+    "mewwts__addict": [
+     2.0,
+     8.0
+    ],
+    "pdfminer__pdfminer": [
+     15.0,
+     220.0
+    ],
+    "pudo__dataset": [
+     10.0,
+     62.0
+    ],
+    "pwaller__pyfiglet": [
+     2.0,
+     18.0
+    ],
+    "pyparsing__pyparsing": [
+     2.0,
+     48.0
+    ],
+    "pytest-dev__iniconfig": [
+     2.0,
+     21.0
+    ],
+    "sloria__environs": [
+     12.0,
+     72.0
+    ],
+    "termcolor__termcolor": [
+     3.0,
+     16.0
+    ],
+    "vi3k6i5__flashtext": [
+     4.0,
+     24.0
+    ],
+    "weaveworks__grafanalib": [
+     8.0,
+     64.0
+    ]
+   }
+  }
+ }
+}

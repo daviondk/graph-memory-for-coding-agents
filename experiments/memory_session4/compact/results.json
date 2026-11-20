@@ -1,0 +1,2033 @@
+{
+ "native": {
+  "all_intents": 3320,
+  "accepted": 3105,
+  "unique_issues": 503,
+  "models": {
+   "claude-3-7-sonnet-20250219": 2251,
+   "claude-3-5-sonnet-20241022": 749,
+   "gpt-4o-2024-08-06": 105
+  },
+  "stats_accepted": {
+   "256": {
+    "drop_recenthead": {
+     "preimage": 432,
+     "path": 1913,
+     "tokens": 723120
+    },
+    "drop_recenttail": {
+     "preimage": 440,
+     "path": 1937,
+     "tokens": 720256
+    },
+    "drop_mid": {
+     "preimage": 464,
+     "path": 1881,
+     "tokens": 730318
+    },
+    "drop_lexical": {
+     "preimage": 324,
+     "path": 1745,
+     "tokens": 730231
+    },
+    "drop_fused": {
+     "preimage": 402,
+     "path": 1967,
+     "tokens": 731366
+    },
+    "rebase_recenthead": {
+     "preimage": 390,
+     "path": 1863,
+     "tokens": 733302
+    },
+    "rebase_mid": {
+     "preimage": 439,
+     "path": 1847,
+     "tokens": 736933
+    },
+    "rebase_fused": {
+     "preimage": 387,
+     "path": 1935,
+     "tokens": 738344
+    },
+    "stale_fused": {
+     "preimage": 398,
+     "path": 1943,
+     "tokens": 739991
+    },
+    "one_reopen": {
+     "preimage": 415,
+     "path": 1624,
+     "tokens": 592190
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 2472,
+     "tokens": 81659
+    }
+   },
+   "512": {
+    "drop_recenthead": {
+     "preimage": 807,
+     "path": 2072,
+     "tokens": 1447002
+    },
+    "drop_recenttail": {
+     "preimage": 836,
+     "path": 2094,
+     "tokens": 1445119
+    },
+    "drop_mid": {
+     "preimage": 825,
+     "path": 2067,
+     "tokens": 1452422
+    },
+    "drop_lexical": {
+     "preimage": 630,
+     "path": 2071,
+     "tokens": 1452374
+    },
+    "drop_fused": {
+     "preimage": 748,
+     "path": 2224,
+     "tokens": 1452806
+    },
+    "rebase_recenthead": {
+     "preimage": 846,
+     "path": 2025,
+     "tokens": 1496759
+    },
+    "rebase_mid": {
+     "preimage": 864,
+     "path": 2019,
+     "tokens": 1498846
+    },
+    "rebase_fused": {
+     "preimage": 778,
+     "path": 2195,
+     "tokens": 1499838
+    },
+    "stale_fused": {
+     "preimage": 783,
+     "path": 2181,
+     "tokens": 1503178
+    },
+    "one_reopen": {
+     "preimage": 775,
+     "path": 1624,
+     "tokens": 1126750
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 2472,
+     "tokens": 81659
+    }
+   },
+   "1024": {
+    "drop_recenthead": {
+     "preimage": 1173,
+     "path": 2225,
+     "tokens": 2727684
+    },
+    "drop_recenttail": {
+     "preimage": 1186,
+     "path": 2214,
+     "tokens": 2726033
+    },
+    "drop_mid": {
+     "preimage": 1174,
+     "path": 2200,
+     "tokens": 2730394
+    },
+    "drop_lexical": {
+     "preimage": 1001,
+     "path": 2291,
+     "tokens": 2730589
+    },
+    "drop_fused": {
+     "preimage": 1143,
+     "path": 2387,
+     "tokens": 2730646
+    },
+    "rebase_recenthead": {
+     "preimage": 1343,
+     "path": 2197,
+     "tokens": 2932956
+    },
+    "rebase_mid": {
+     "preimage": 1352,
+     "path": 2173,
+     "tokens": 2936100
+    },
+    "rebase_fused": {
+     "preimage": 1288,
+     "path": 2366,
+     "tokens": 2936367
+    },
+    "stale_fused": {
+     "preimage": 1263,
+     "path": 2364,
+     "tokens": 2950572
+    },
+    "one_reopen": {
+     "preimage": 1027,
+     "path": 1624,
+     "tokens": 1834246
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 2472,
+     "tokens": 81659
+    }
+   }
+  },
+  "stats_all_intents": {
+   "256": {
+    "drop_recenthead": {
+     "preimage": 475,
+     "path": 2070,
+     "tokens": 772572
+    },
+    "drop_recenttail": {
+     "preimage": 481,
+     "path": 2097,
+     "tokens": 769628
+    },
+    "drop_mid": {
+     "preimage": 509,
+     "path": 2046,
+     "tokens": 780235
+    },
+    "drop_lexical": {
+     "preimage": 345,
+     "path": 1897,
+     "tokens": 779401
+    },
+    "drop_fused": {
+     "preimage": 443,
+     "path": 2136,
+     "tokens": 781316
+    },
+    "rebase_recenthead": {
+     "preimage": 429,
+     "path": 2019,
+     "tokens": 784733
+    },
+    "rebase_mid": {
+     "preimage": 482,
+     "path": 2004,
+     "tokens": 788698
+    },
+    "rebase_fused": {
+     "preimage": 428,
+     "path": 2095,
+     "tokens": 789244
+    },
+    "stale_fused": {
+     "preimage": 441,
+     "path": 2104,
+     "tokens": 791036
+    },
+    "one_reopen": {
+     "preimage": 456,
+     "path": 1769,
+     "tokens": 633265
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 2666,
+     "tokens": 86613
+    }
+   },
+   "512": {
+    "drop_recenthead": {
+     "preimage": 857,
+     "path": 2251,
+     "tokens": 1543561
+    },
+    "drop_recenttail": {
+     "preimage": 887,
+     "path": 2268,
+     "tokens": 1541420
+    },
+    "drop_mid": {
+     "preimage": 875,
+     "path": 2244,
+     "tokens": 1549008
+    },
+    "drop_lexical": {
+     "preimage": 678,
+     "path": 2243,
+     "tokens": 1548878
+    },
+    "drop_fused": {
+     "preimage": 808,
+     "path": 2398,
+     "tokens": 1549597
+    },
+    "rebase_recenthead": {
+     "preimage": 897,
+     "path": 2200,
+     "tokens": 1600271
+    },
+    "rebase_mid": {
+     "preimage": 915,
+     "path": 2192,
+     "tokens": 1602692
+    },
+    "rebase_fused": {
+     "preimage": 833,
+     "path": 2368,
+     "tokens": 1602884
+    },
+    "stale_fused": {
+     "preimage": 836,
+     "path": 2356,
+     "tokens": 1607787
+    },
+    "one_reopen": {
+     "preimage": 822,
+     "path": 1769,
+     "tokens": 1196499
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 2666,
+     "tokens": 86613
+    }
+   },
+   "1024": {
+    "drop_recenthead": {
+     "preimage": 1237,
+     "path": 2406,
+     "tokens": 2888003
+    },
+    "drop_recenttail": {
+     "preimage": 1251,
+     "path": 2393,
+     "tokens": 2886224
+    },
+    "drop_mid": {
+     "preimage": 1237,
+     "path": 2379,
+     "tokens": 2890686
+    },
+    "drop_lexical": {
+     "preimage": 1061,
+     "path": 2474,
+     "tokens": 2890974
+    },
+    "drop_fused": {
+     "preimage": 1208,
+     "path": 2572,
+     "tokens": 2891229
+    },
+    "rebase_recenthead": {
+     "preimage": 1412,
+     "path": 2373,
+     "tokens": 3129389
+    },
+    "rebase_mid": {
+     "preimage": 1419,
+     "path": 2349,
+     "tokens": 3133515
+    },
+    "rebase_fused": {
+     "preimage": 1355,
+     "path": 2551,
+     "tokens": 3133965
+    },
+    "stale_fused": {
+     "preimage": 1329,
+     "path": 2548,
+     "tokens": 3159007
+    },
+    "one_reopen": {
+     "preimage": 1077,
+     "path": 1769,
+     "tokens": 1933869
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 2666,
+     "tokens": 86613
+    }
+   }
+  },
+  "ceilings": {
+   "drop": 1687,
+   "rebase": 2178,
+   "stale": 2152
+  },
+  "known_whole": 48,
+  "whole_unique": 48,
+  "primary_rebase_fused_minus_drop_fused": {
+   "opportunities": 3105,
+   "issues": 503,
+   "W": 97,
+   "L": 67,
+   "T": 2941,
+   "difference": 0.00966183574879227,
+   "issue_cluster_95": [
+    0.00125,
+    0.018238993710691823
+   ]
+  },
+  "primary_rebase_fused_minus_recenthead": {
+   "opportunities": 3105,
+   "issues": 503,
+   "W": 151,
+   "L": 180,
+   "T": 2774,
+   "difference": -0.00933977455716586,
+   "issue_cluster_95": [
+    -0.024128686327077747,
+    0.00572041473006793
+   ]
+  },
+  "controls": {
+   "drop_recenthead-drop_mid": {
+    "opportunities": 3105,
+    "issues": 503,
+    "W": 28,
+    "L": 46,
+    "T": 3031,
+    "difference": -0.005797101449275362,
+    "issue_cluster_95": [
+     -0.012982797792924375,
+     0.0012574662055957245
+    ]
+   },
+   "drop_recenttail-drop_mid": {
+    "opportunities": 3105,
+    "issues": 503,
+    "W": 44,
+    "L": 33,
+    "T": 3028,
+    "difference": 0.003542673107890499,
+    "issue_cluster_95": [
+     -0.0028580501746586218,
+     0.009440104166666666
+    ]
+   },
+   "drop_lexical-drop_mid": {
+    "opportunities": 3105,
+    "issues": 503,
+    "W": 160,
+    "L": 355,
+    "T": 2590,
+    "difference": -0.06280193236714976,
+    "issue_cluster_95": [
+     -0.0807565295706995,
+     -0.04564860426929392
+    ]
+   },
+   "drop_fused-drop_mid": {
+    "opportunities": 3105,
+    "issues": 503,
+    "W": 56,
+    "L": 133,
+    "T": 2916,
+    "difference": -0.024798711755233495,
+    "issue_cluster_95": [
+     -0.037340320995741895,
+     -0.012311901504787962
+    ]
+   },
+   "rebase_mid-drop_mid": {
+    "opportunities": 3105,
+    "issues": 503,
+    "W": 84,
+    "L": 45,
+    "T": 2976,
+    "difference": 0.012560386473429951,
+    "issue_cluster_95": [
+     0.004862236628849271,
+     0.020517995290951902
+    ]
+   },
+   "one_reopen-drop_mid": {
+    "opportunities": 3105,
+    "issues": 503,
+    "W": 96,
+    "L": 146,
+    "T": 2863,
+    "difference": -0.01610305958132045,
+    "issue_cluster_95": [
+     -0.027941633033219497,
+     -0.004013584439641865
+    ]
+   }
+  },
+  "update_on_previously_edited": {
+   "opportunities": 1674,
+   "issues": 365,
+   "W": 95,
+   "L": 59,
+   "T": 1520,
+   "difference": 0.021505376344086023,
+   "issue_cluster_95": [
+    0.006787330316742082,
+    0.03671970624235006
+   ]
+  },
+  "disjoint_halves": {
+   "0": {
+    "opportunities": 1631,
+    "issues": 242,
+    "W": 48,
+    "L": 38,
+    "T": 1545,
+    "difference": 0.0061312078479460455,
+    "issue_cluster_95": [
+     -0.004961411245865491,
+     0.017967781908302356
+    ]
+   },
+   "1": {
+    "opportunities": 1474,
+    "issues": 261,
+    "W": 49,
+    "L": 29,
+    "T": 1396,
+    "difference": 0.013568521031207599,
+    "issue_cluster_95": [
+     0.002086230876216968,
+     0.025714285714285714
+    ]
+   }
+  },
+  "uncontaminated_full": {
+   "n": 10,
+   "stats": {
+    "256": {
+     "drop_recenthead": {
+      "preimage": 3,
+      "path": 7,
+      "tokens": 2432
+     },
+     "drop_recenttail": {
+      "preimage": 2,
+      "path": 7,
+      "tokens": 2463
+     },
+     "drop_mid": {
+      "preimage": 2,
+      "path": 7,
+      "tokens": 2432
+     },
+     "drop_lexical": {
+      "preimage": 2,
+      "path": 7,
+      "tokens": 2392
+     },
+     "drop_fused": {
+      "preimage": 2,
+      "path": 9,
+      "tokens": 2442
+     },
+     "rebase_recenthead": {
+      "preimage": 3,
+      "path": 7,
+      "tokens": 2432
+     },
+     "rebase_mid": {
+      "preimage": 2,
+      "path": 7,
+      "tokens": 2432
+     },
+     "rebase_fused": {
+      "preimage": 2,
+      "path": 9,
+      "tokens": 2443
+     },
+     "stale_fused": {
+      "preimage": 2,
+      "path": 9,
+      "tokens": 2443
+     },
+     "one_reopen": {
+      "preimage": 2,
+      "path": 7,
+      "tokens": 2211
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 10,
+      "tokens": 361
+     }
+    },
+    "512": {
+     "drop_recenthead": {
+      "preimage": 7,
+      "path": 9,
+      "tokens": 4979
+     },
+     "drop_recenttail": {
+      "preimage": 6,
+      "path": 9,
+      "tokens": 4964
+     },
+     "drop_mid": {
+      "preimage": 6,
+      "path": 9,
+      "tokens": 4989
+     },
+     "drop_lexical": {
+      "preimage": 5,
+      "path": 10,
+      "tokens": 5013
+     },
+     "drop_fused": {
+      "preimage": 5,
+      "path": 10,
+      "tokens": 4984
+     },
+     "rebase_recenthead": {
+      "preimage": 7,
+      "path": 9,
+      "tokens": 4932
+     },
+     "rebase_mid": {
+      "preimage": 6,
+      "path": 9,
+      "tokens": 4969
+     },
+     "rebase_fused": {
+      "preimage": 5,
+      "path": 10,
+      "tokens": 5019
+     },
+     "stale_fused": {
+      "preimage": 5,
+      "path": 10,
+      "tokens": 5019
+     },
+     "one_reopen": {
+      "preimage": 5,
+      "path": 7,
+      "tokens": 3629
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 10,
+      "tokens": 361
+     }
+    },
+    "1024": {
+     "drop_recenthead": {
+      "preimage": 7,
+      "path": 10,
+      "tokens": 9597
+     },
+     "drop_recenttail": {
+      "preimage": 8,
+      "path": 9,
+      "tokens": 9522
+     },
+     "drop_mid": {
+      "preimage": 8,
+      "path": 10,
+      "tokens": 9555
+     },
+     "drop_lexical": {
+      "preimage": 6,
+      "path": 9,
+      "tokens": 9550
+     },
+     "drop_fused": {
+      "preimage": 6,
+      "path": 9,
+      "tokens": 9552
+     },
+     "rebase_recenthead": {
+      "preimage": 7,
+      "path": 10,
+      "tokens": 9603
+     },
+     "rebase_mid": {
+      "preimage": 8,
+      "path": 10,
+      "tokens": 9541
+     },
+     "rebase_fused": {
+      "preimage": 6,
+      "path": 9,
+      "tokens": 9569
+     },
+     "stale_fused": {
+      "preimage": 6,
+      "path": 9,
+      "tokens": 9586
+     },
+     "one_reopen": {
+      "preimage": 6,
+      "path": 7,
+      "tokens": 5722
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 10,
+      "tokens": 361
+     }
+    }
+   }
+  }
+ },
+ "tagged": {
+  "all_intents": 6161,
+  "accepted": 5814,
+  "unique_issues": 1034,
+  "models": {
+   "claude-3-7-sonnet-20250219": 4984,
+   "claude-3-5-sonnet-20241022": 818,
+   "gpt-4o-2024-08-06": 12
+  },
+  "stats_accepted": {
+   "256": {
+    "drop_recenthead": {
+     "preimage": 601,
+     "path": 3489,
+     "tokens": 1362996
+    },
+    "drop_recenttail": {
+     "preimage": 652,
+     "path": 3549,
+     "tokens": 1360786
+    },
+    "drop_mid": {
+     "preimage": 634,
+     "path": 3452,
+     "tokens": 1375651
+    },
+    "drop_lexical": {
+     "preimage": 471,
+     "path": 3164,
+     "tokens": 1376598
+    },
+    "drop_fused": {
+     "preimage": 577,
+     "path": 3603,
+     "tokens": 1378840
+    },
+    "rebase_recenthead": {
+     "preimage": 543,
+     "path": 3410,
+     "tokens": 1380391
+    },
+    "rebase_mid": {
+     "preimage": 604,
+     "path": 3397,
+     "tokens": 1387764
+    },
+    "rebase_fused": {
+     "preimage": 547,
+     "path": 3564,
+     "tokens": 1390119
+    },
+    "stale_fused": {
+     "preimage": 548,
+     "path": 3566,
+     "tokens": 1393426
+    },
+    "one_reopen": {
+     "preimage": 568,
+     "path": 2966,
+     "tokens": 1126164
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 4598,
+     "tokens": 155376
+    }
+   },
+   "512": {
+    "drop_recenthead": {
+     "preimage": 1304,
+     "path": 3801,
+     "tokens": 2762592
+    },
+    "drop_recenttail": {
+     "preimage": 1360,
+     "path": 3830,
+     "tokens": 2760655
+    },
+    "drop_mid": {
+     "preimage": 1320,
+     "path": 3781,
+     "tokens": 2772218
+    },
+    "drop_lexical": {
+     "preimage": 958,
+     "path": 3753,
+     "tokens": 2774690
+    },
+    "drop_fused": {
+     "preimage": 1202,
+     "path": 4089,
+     "tokens": 2772905
+    },
+    "rebase_recenthead": {
+     "preimage": 1351,
+     "path": 3709,
+     "tokens": 2833873
+    },
+    "rebase_mid": {
+     "preimage": 1389,
+     "path": 3690,
+     "tokens": 2838335
+    },
+    "rebase_fused": {
+     "preimage": 1237,
+     "path": 4036,
+     "tokens": 2839690
+    },
+    "stale_fused": {
+     "preimage": 1222,
+     "path": 4029,
+     "tokens": 2846923
+    },
+    "one_reopen": {
+     "preimage": 1249,
+     "path": 2966,
+     "tokens": 2179810
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 4598,
+     "tokens": 155376
+    }
+   },
+   "1024": {
+    "drop_recenthead": {
+     "preimage": 2014,
+     "path": 4093,
+     "tokens": 5297461
+    },
+    "drop_recenttail": {
+     "preimage": 2053,
+     "path": 4093,
+     "tokens": 5296659
+    },
+    "drop_mid": {
+     "preimage": 2023,
+     "path": 4070,
+     "tokens": 5306731
+    },
+    "drop_lexical": {
+     "preimage": 1603,
+     "path": 4206,
+     "tokens": 5311548
+    },
+    "drop_fused": {
+     "preimage": 1956,
+     "path": 4423,
+     "tokens": 5308655
+    },
+    "rebase_recenthead": {
+     "preimage": 2306,
+     "path": 4029,
+     "tokens": 5623016
+    },
+    "rebase_mid": {
+     "preimage": 2331,
+     "path": 3996,
+     "tokens": 5629527
+    },
+    "rebase_fused": {
+     "preimage": 2172,
+     "path": 4390,
+     "tokens": 5630820
+    },
+    "stale_fused": {
+     "preimage": 2130,
+     "path": 4384,
+     "tokens": 5659077
+    },
+    "one_reopen": {
+     "preimage": 1764,
+     "path": 2966,
+     "tokens": 3577405
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 4598,
+     "tokens": 155376
+    }
+   }
+  },
+  "stats_all_intents": {
+   "256": {
+    "drop_recenthead": {
+     "preimage": 633,
+     "path": 3728,
+     "tokens": 1444874
+    },
+    "drop_recenttail": {
+     "preimage": 684,
+     "path": 3789,
+     "tokens": 1442834
+    },
+    "drop_mid": {
+     "preimage": 666,
+     "path": 3687,
+     "tokens": 1458457
+    },
+    "drop_lexical": {
+     "preimage": 495,
+     "path": 3378,
+     "tokens": 1458344
+    },
+    "drop_fused": {
+     "preimage": 605,
+     "path": 3849,
+     "tokens": 1461748
+    },
+    "rebase_recenthead": {
+     "preimage": 574,
+     "path": 3641,
+     "tokens": 1463803
+    },
+    "rebase_mid": {
+     "preimage": 636,
+     "path": 3629,
+     "tokens": 1471918
+    },
+    "rebase_fused": {
+     "preimage": 574,
+     "path": 3813,
+     "tokens": 1473897
+    },
+    "stale_fused": {
+     "preimage": 575,
+     "path": 3814,
+     "tokens": 1477549
+    },
+    "one_reopen": {
+     "preimage": 598,
+     "path": 3171,
+     "tokens": 1195303
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 4905,
+     "tokens": 165039
+    }
+   },
+   "512": {
+    "drop_recenthead": {
+     "preimage": 1352,
+     "path": 4064,
+     "tokens": 2926456
+    },
+    "drop_recenttail": {
+     "preimage": 1406,
+     "path": 4091,
+     "tokens": 2924434
+    },
+    "drop_mid": {
+     "preimage": 1367,
+     "path": 4041,
+     "tokens": 2936325
+    },
+    "drop_lexical": {
+     "preimage": 993,
+     "path": 4012,
+     "tokens": 2938696
+    },
+    "drop_fused": {
+     "preimage": 1247,
+     "path": 4354,
+     "tokens": 2936968
+    },
+    "rebase_recenthead": {
+     "preimage": 1401,
+     "path": 3972,
+     "tokens": 3004206
+    },
+    "rebase_mid": {
+     "preimage": 1437,
+     "path": 3948,
+     "tokens": 3008922
+    },
+    "rebase_fused": {
+     "preimage": 1282,
+     "path": 4299,
+     "tokens": 3009366
+    },
+    "stale_fused": {
+     "preimage": 1265,
+     "path": 4291,
+     "tokens": 3018376
+    },
+    "one_reopen": {
+     "preimage": 1296,
+     "path": 3171,
+     "tokens": 2309536
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 4905,
+     "tokens": 165039
+    }
+   },
+   "1024": {
+    "drop_recenthead": {
+     "preimage": 2085,
+     "path": 4370,
+     "tokens": 5602053
+    },
+    "drop_recenttail": {
+     "preimage": 2124,
+     "path": 4371,
+     "tokens": 5600732
+    },
+    "drop_mid": {
+     "preimage": 2093,
+     "path": 4346,
+     "tokens": 5611104
+    },
+    "drop_lexical": {
+     "preimage": 1652,
+     "path": 4487,
+     "tokens": 5616484
+    },
+    "drop_fused": {
+     "preimage": 2023,
+     "path": 4713,
+     "tokens": 5613752
+    },
+    "rebase_recenthead": {
+     "preimage": 2389,
+     "path": 4299,
+     "tokens": 5957207
+    },
+    "rebase_mid": {
+     "preimage": 2411,
+     "path": 4265,
+     "tokens": 5963288
+    },
+    "rebase_fused": {
+     "preimage": 2245,
+     "path": 4679,
+     "tokens": 5965267
+    },
+    "stale_fused": {
+     "preimage": 2195,
+     "path": 4674,
+     "tokens": 6004733
+    },
+    "one_reopen": {
+     "preimage": 1819,
+     "path": 3171,
+     "tokens": 3775554
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 4905,
+     "tokens": 165039
+    }
+   }
+  },
+  "ceilings": {
+   "drop": 3100,
+   "rebase": 4078,
+   "stale": 3964
+  },
+  "known_whole": 73,
+  "whole_unique": 73,
+  "primary_rebase_fused_minus_drop_fused": {
+   "opportunities": 5814,
+   "issues": 1034,
+   "W": 156,
+   "L": 121,
+   "T": 5537,
+   "difference": 0.006019951840385277,
+   "issue_cluster_95": [
+    0.00016630633627141194,
+    0.011825449700199867
+   ]
+  },
+  "primary_rebase_fused_minus_recenthead": {
+   "opportunities": 5814,
+   "issues": 1034,
+   "W": 270,
+   "L": 337,
+   "T": 5207,
+   "difference": -0.01152390780873753,
+   "issue_cluster_95": [
+    -0.022156023086948428,
+    -0.0010617589807113785
+   ]
+  },
+  "controls": {
+   "drop_recenthead-drop_mid": {
+    "opportunities": 5814,
+    "issues": 1034,
+    "W": 58,
+    "L": 74,
+    "T": 5682,
+    "difference": -0.0027519779841761265,
+    "issue_cluster_95": [
+     -0.007237422771403354,
+     0.001699524133242692
+    ]
+   },
+   "drop_recenttail-drop_mid": {
+    "opportunities": 5814,
+    "issues": 1034,
+    "W": 102,
+    "L": 62,
+    "T": 5650,
+    "difference": 0.0068799449604403165,
+    "issue_cluster_95": [
+     0.0016172506738544475,
+     0.011887779362815026
+    ]
+   },
+   "drop_lexical-drop_mid": {
+    "opportunities": 5814,
+    "issues": 1034,
+    "W": 297,
+    "L": 659,
+    "T": 4858,
+    "difference": -0.06226350189198487,
+    "issue_cluster_95": [
+     -0.07663275352806038,
+     -0.048336702811983094
+    ]
+   },
+   "drop_fused-drop_mid": {
+    "opportunities": 5814,
+    "issues": 1034,
+    "W": 120,
+    "L": 238,
+    "T": 5456,
+    "difference": -0.020295837633298935,
+    "issue_cluster_95": [
+     -0.02880518152377706,
+     -0.01169906407487401
+    ]
+   },
+   "rebase_mid-drop_mid": {
+    "opportunities": 5814,
+    "issues": 1034,
+    "W": 151,
+    "L": 82,
+    "T": 5581,
+    "difference": 0.011867905056759546,
+    "issue_cluster_95": [
+     0.005523964256701868,
+     0.01786978060863411
+    ]
+   },
+   "one_reopen-drop_mid": {
+    "opportunities": 5814,
+    "issues": 1034,
+    "W": 169,
+    "L": 240,
+    "T": 5405,
+    "difference": -0.012211902304781561,
+    "issue_cluster_95": [
+     -0.020903573836817263,
+     -0.00392156862745098
+    ]
+   }
+  },
+  "update_on_previously_edited": {
+   "opportunities": 3142,
+   "issues": 708,
+   "W": 154,
+   "L": 112,
+   "T": 2876,
+   "difference": 0.01336728198599618,
+   "issue_cluster_95": [
+    0.0025165146272412707,
+    0.023920472196334266
+   ]
+  },
+  "disjoint_halves": {
+   "0": {
+    "opportunities": 2885,
+    "issues": 504,
+    "W": 85,
+    "L": 54,
+    "T": 2746,
+    "difference": 0.01074523396880416,
+    "issue_cluster_95": [
+     0.0023761031907671417,
+     0.019091256204658267
+    ]
+   },
+   "1": {
+    "opportunities": 2929,
+    "issues": 530,
+    "W": 71,
+    "L": 67,
+    "T": 2791,
+    "difference": 0.0013656538067599864,
+    "issue_cluster_95": [
+     -0.006599622878692646,
+     0.009497964721845319
+    ]
+   }
+  },
+  "uncontaminated_full": {
+   "n": 13,
+   "stats": {
+    "256": {
+     "drop_recenthead": {
+      "preimage": 3,
+      "path": 11,
+      "tokens": 3175
+     },
+     "drop_recenttail": {
+      "preimage": 2,
+      "path": 11,
+      "tokens": 3195
+     },
+     "drop_mid": {
+      "preimage": 3,
+      "path": 11,
+      "tokens": 3216
+     },
+     "drop_lexical": {
+      "preimage": 2,
+      "path": 10,
+      "tokens": 3090
+     },
+     "drop_fused": {
+      "preimage": 3,
+      "path": 12,
+      "tokens": 3250
+     },
+     "rebase_recenthead": {
+      "preimage": 3,
+      "path": 11,
+      "tokens": 3202
+     },
+     "rebase_mid": {
+      "preimage": 3,
+      "path": 11,
+      "tokens": 3183
+     },
+     "rebase_fused": {
+      "preimage": 3,
+      "path": 12,
+      "tokens": 3218
+     },
+     "stale_fused": {
+      "preimage": 3,
+      "path": 12,
+      "tokens": 3221
+     },
+     "one_reopen": {
+      "preimage": 3,
+      "path": 11,
+      "tokens": 2791
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 13,
+      "tokens": 461
+     }
+    },
+    "512": {
+     "drop_recenthead": {
+      "preimage": 9,
+      "path": 12,
+      "tokens": 6460
+     },
+     "drop_recenttail": {
+      "preimage": 9,
+      "path": 12,
+      "tokens": 6422
+     },
+     "drop_mid": {
+      "preimage": 9,
+      "path": 12,
+      "tokens": 6414
+     },
+     "drop_lexical": {
+      "preimage": 5,
+      "path": 12,
+      "tokens": 6527
+     },
+     "drop_fused": {
+      "preimage": 6,
+      "path": 13,
+      "tokens": 6436
+     },
+     "rebase_recenthead": {
+      "preimage": 9,
+      "path": 12,
+      "tokens": 6422
+     },
+     "rebase_mid": {
+      "preimage": 9,
+      "path": 12,
+      "tokens": 6459
+     },
+     "rebase_fused": {
+      "preimage": 6,
+      "path": 13,
+      "tokens": 6509
+     },
+     "stale_fused": {
+      "preimage": 6,
+      "path": 13,
+      "tokens": 6531
+     },
+     "one_reopen": {
+      "preimage": 9,
+      "path": 11,
+      "tokens": 5000
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 13,
+      "tokens": 461
+     }
+    },
+    "1024": {
+     "drop_recenthead": {
+      "preimage": 11,
+      "path": 13,
+      "tokens": 12563
+     },
+     "drop_recenttail": {
+      "preimage": 11,
+      "path": 12,
+      "tokens": 12464
+     },
+     "drop_mid": {
+      "preimage": 12,
+      "path": 13,
+      "tokens": 12537
+     },
+     "drop_lexical": {
+      "preimage": 6,
+      "path": 11,
+      "tokens": 12428
+     },
+     "drop_fused": {
+      "preimage": 8,
+      "path": 12,
+      "tokens": 12519
+     },
+     "rebase_recenthead": {
+      "preimage": 11,
+      "path": 13,
+      "tokens": 12635
+     },
+     "rebase_mid": {
+      "preimage": 12,
+      "path": 13,
+      "tokens": 12534
+     },
+     "rebase_fused": {
+      "preimage": 8,
+      "path": 12,
+      "tokens": 12572
+     },
+     "stale_fused": {
+      "preimage": 8,
+      "path": 12,
+      "tokens": 12561
+     },
+     "one_reopen": {
+      "preimage": 11,
+      "path": 11,
+      "tokens": 7167
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 13,
+      "tokens": 461
+     }
+    }
+   }
+  }
+ },
+ "identity": {
+  "session_overlap": 0,
+  "issue_overlap": 444,
+  "native_sessions": 852,
+  "tagged_sessions": 1537
+ },
+ "all": {
+  "all_intents": 9481,
+  "accepted": 8919,
+  "unique_issues": 1095,
+  "models": {
+   "claude-3-7-sonnet-20250219": 7235,
+   "claude-3-5-sonnet-20241022": 1567,
+   "gpt-4o-2024-08-06": 117
+  },
+  "stats_accepted": {
+   "256": {
+    "drop_recenthead": {
+     "preimage": 1033,
+     "path": 5402,
+     "tokens": 2086116
+    },
+    "drop_recenttail": {
+     "preimage": 1092,
+     "path": 5486,
+     "tokens": 2081042
+    },
+    "drop_mid": {
+     "preimage": 1098,
+     "path": 5333,
+     "tokens": 2105969
+    },
+    "drop_lexical": {
+     "preimage": 795,
+     "path": 4909,
+     "tokens": 2106829
+    },
+    "drop_fused": {
+     "preimage": 979,
+     "path": 5570,
+     "tokens": 2110206
+    },
+    "rebase_recenthead": {
+     "preimage": 933,
+     "path": 5273,
+     "tokens": 2113693
+    },
+    "rebase_mid": {
+     "preimage": 1043,
+     "path": 5244,
+     "tokens": 2124697
+    },
+    "rebase_fused": {
+     "preimage": 934,
+     "path": 5499,
+     "tokens": 2128463
+    },
+    "stale_fused": {
+     "preimage": 946,
+     "path": 5509,
+     "tokens": 2133417
+    },
+    "one_reopen": {
+     "preimage": 983,
+     "path": 4590,
+     "tokens": 1718354
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 7070,
+     "tokens": 237035
+    }
+   },
+   "512": {
+    "drop_recenthead": {
+     "preimage": 2111,
+     "path": 5873,
+     "tokens": 4209594
+    },
+    "drop_recenttail": {
+     "preimage": 2196,
+     "path": 5924,
+     "tokens": 4205774
+    },
+    "drop_mid": {
+     "preimage": 2145,
+     "path": 5848,
+     "tokens": 4224640
+    },
+    "drop_lexical": {
+     "preimage": 1588,
+     "path": 5824,
+     "tokens": 4227064
+    },
+    "drop_fused": {
+     "preimage": 1950,
+     "path": 6313,
+     "tokens": 4225711
+    },
+    "rebase_recenthead": {
+     "preimage": 2197,
+     "path": 5734,
+     "tokens": 4330632
+    },
+    "rebase_mid": {
+     "preimage": 2253,
+     "path": 5709,
+     "tokens": 4337181
+    },
+    "rebase_fused": {
+     "preimage": 2015,
+     "path": 6231,
+     "tokens": 4339528
+    },
+    "stale_fused": {
+     "preimage": 2005,
+     "path": 6210,
+     "tokens": 4350101
+    },
+    "one_reopen": {
+     "preimage": 2024,
+     "path": 4590,
+     "tokens": 3306560
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 7070,
+     "tokens": 237035
+    }
+   },
+   "1024": {
+    "drop_recenthead": {
+     "preimage": 3187,
+     "path": 6318,
+     "tokens": 8025145
+    },
+    "drop_recenttail": {
+     "preimage": 3239,
+     "path": 6307,
+     "tokens": 8022692
+    },
+    "drop_mid": {
+     "preimage": 3197,
+     "path": 6270,
+     "tokens": 8037125
+    },
+    "drop_lexical": {
+     "preimage": 2604,
+     "path": 6497,
+     "tokens": 8042137
+    },
+    "drop_fused": {
+     "preimage": 3099,
+     "path": 6810,
+     "tokens": 8039301
+    },
+    "rebase_recenthead": {
+     "preimage": 3649,
+     "path": 6226,
+     "tokens": 8555972
+    },
+    "rebase_mid": {
+     "preimage": 3683,
+     "path": 6169,
+     "tokens": 8565627
+    },
+    "rebase_fused": {
+     "preimage": 3460,
+     "path": 6756,
+     "tokens": 8567187
+    },
+    "stale_fused": {
+     "preimage": 3393,
+     "path": 6748,
+     "tokens": 8609649
+    },
+    "one_reopen": {
+     "preimage": 2791,
+     "path": 4590,
+     "tokens": 5411651
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 7070,
+     "tokens": 237035
+    }
+   }
+  },
+  "stats_all_intents": {
+   "256": {
+    "drop_recenthead": {
+     "preimage": 1108,
+     "path": 5798,
+     "tokens": 2217446
+    },
+    "drop_recenttail": {
+     "preimage": 1165,
+     "path": 5886,
+     "tokens": 2212462
+    },
+    "drop_mid": {
+     "preimage": 1175,
+     "path": 5733,
+     "tokens": 2238692
+    },
+    "drop_lexical": {
+     "preimage": 840,
+     "path": 5275,
+     "tokens": 2237745
+    },
+    "drop_fused": {
+     "preimage": 1048,
+     "path": 5985,
+     "tokens": 2243064
+    },
+    "rebase_recenthead": {
+     "preimage": 1003,
+     "path": 5660,
+     "tokens": 2248536
+    },
+    "rebase_mid": {
+     "preimage": 1118,
+     "path": 5633,
+     "tokens": 2260616
+    },
+    "rebase_fused": {
+     "preimage": 1002,
+     "path": 5908,
+     "tokens": 2263141
+    },
+    "stale_fused": {
+     "preimage": 1016,
+     "path": 5918,
+     "tokens": 2268585
+    },
+    "one_reopen": {
+     "preimage": 1054,
+     "path": 4940,
+     "tokens": 1828568
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 7571,
+     "tokens": 251652
+    }
+   },
+   "512": {
+    "drop_recenthead": {
+     "preimage": 2209,
+     "path": 6315,
+     "tokens": 4470017
+    },
+    "drop_recenttail": {
+     "preimage": 2293,
+     "path": 6359,
+     "tokens": 4465854
+    },
+    "drop_mid": {
+     "preimage": 2242,
+     "path": 6285,
+     "tokens": 4485333
+    },
+    "drop_lexical": {
+     "preimage": 1671,
+     "path": 6255,
+     "tokens": 4487574
+    },
+    "drop_fused": {
+     "preimage": 2055,
+     "path": 6752,
+     "tokens": 4486565
+    },
+    "rebase_recenthead": {
+     "preimage": 2298,
+     "path": 6172,
+     "tokens": 4604477
+    },
+    "rebase_mid": {
+     "preimage": 2352,
+     "path": 6140,
+     "tokens": 4611614
+    },
+    "rebase_fused": {
+     "preimage": 2115,
+     "path": 6667,
+     "tokens": 4612250
+    },
+    "stale_fused": {
+     "preimage": 2101,
+     "path": 6647,
+     "tokens": 4626163
+    },
+    "one_reopen": {
+     "preimage": 2118,
+     "path": 4940,
+     "tokens": 3506035
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 7571,
+     "tokens": 251652
+    }
+   },
+   "1024": {
+    "drop_recenthead": {
+     "preimage": 3322,
+     "path": 6776,
+     "tokens": 8490056
+    },
+    "drop_recenttail": {
+     "preimage": 3375,
+     "path": 6764,
+     "tokens": 8486956
+    },
+    "drop_mid": {
+     "preimage": 3330,
+     "path": 6725,
+     "tokens": 8501790
+    },
+    "drop_lexical": {
+     "preimage": 2713,
+     "path": 6961,
+     "tokens": 8507458
+    },
+    "drop_fused": {
+     "preimage": 3231,
+     "path": 7285,
+     "tokens": 8504981
+    },
+    "rebase_recenthead": {
+     "preimage": 3801,
+     "path": 6672,
+     "tokens": 9086596
+    },
+    "rebase_mid": {
+     "preimage": 3830,
+     "path": 6614,
+     "tokens": 9096803
+    },
+    "rebase_fused": {
+     "preimage": 3600,
+     "path": 7230,
+     "tokens": 9099232
+    },
+    "stale_fused": {
+     "preimage": 3524,
+     "path": 7222,
+     "tokens": 9163740
+    },
+    "one_reopen": {
+     "preimage": 2896,
+     "path": 4940,
+     "tokens": 5709423
+    },
+    "paths": {
+     "preimage": 0,
+     "path": 7571,
+     "tokens": 251652
+    }
+   }
+  },
+  "ceilings": {
+   "drop": 4787,
+   "rebase": 6256,
+   "stale": 6116
+  },
+  "known_whole": 121,
+  "whole_unique": 121,
+  "primary_rebase_fused_minus_drop_fused": {
+   "opportunities": 8919,
+   "issues": 1095,
+   "W": 253,
+   "L": 188,
+   "T": 8478,
+   "difference": 0.0072878125350375605,
+   "issue_cluster_95": [
+    0.0017213679137020885,
+    0.012868310282621767
+   ]
+  },
+  "primary_rebase_fused_minus_recenthead": {
+   "opportunities": 8919,
+   "issues": 1095,
+   "W": 421,
+   "L": 517,
+   "T": 7981,
+   "difference": -0.010763538513286243,
+   "issue_cluster_95": [
+    -0.021153623858513465,
+    -0.0003397893306150187
+   ]
+  },
+  "controls": {
+   "drop_recenthead-drop_mid": {
+    "opportunities": 8919,
+    "issues": 1095,
+    "W": 86,
+    "L": 120,
+    "T": 8713,
+    "difference": -0.0038120865567888777,
+    "issue_cluster_95": [
+     -0.008494208494208495,
+     0.0006646726487205051
+    ]
+   },
+   "drop_recenttail-drop_mid": {
+    "opportunities": 8919,
+    "issues": 1095,
+    "W": 146,
+    "L": 95,
+    "T": 8678,
+    "difference": 0.005718129835183316,
+    "issue_cluster_95": [
+     0.0008993816750983699,
+     0.01059945824991167
+    ]
+   },
+   "drop_lexical-drop_mid": {
+    "opportunities": 8919,
+    "issues": 1095,
+    "W": 457,
+    "L": 1014,
+    "T": 7448,
+    "difference": -0.06245094741562956,
+    "issue_cluster_95": [
+     -0.0762423417290674,
+     -0.049205994184746145
+    ]
+   },
+   "drop_fused-drop_mid": {
+    "opportunities": 8919,
+    "issues": 1095,
+    "W": 176,
+    "L": 371,
+    "T": 8372,
+    "difference": -0.02186343760511268,
+    "issue_cluster_95": [
+     -0.03036576949620428,
+     -0.013214285714285715
+    ]
+   },
+   "rebase_mid-drop_mid": {
+    "opportunities": 8919,
+    "issues": 1095,
+    "W": 235,
+    "L": 127,
+    "T": 8557,
+    "difference": 0.012108980827447022,
+    "issue_cluster_95": [
+     0.006070908207867897,
+     0.018044652869813438
+    ]
+   },
+   "one_reopen-drop_mid": {
+    "opportunities": 8919,
+    "issues": 1095,
+    "W": 265,
+    "L": 386,
+    "T": 8268,
+    "difference": -0.013566543334454536,
+    "issue_cluster_95": [
+     -0.022108843537414966,
+     -0.005553037171350862
+    ]
+   }
+  },
+  "update_on_previously_edited": {
+   "opportunities": 4816,
+   "issues": 758,
+   "W": 249,
+   "L": 171,
+   "T": 4396,
+   "difference": 0.016196013289036543,
+   "issue_cluster_95": [
+    0.006307904592943032,
+    0.02625349687970734
+   ]
+  },
+  "disjoint_halves": {
+   "0": {
+    "opportunities": 4516,
+    "issues": 538,
+    "W": 133,
+    "L": 92,
+    "T": 4291,
+    "difference": 0.00907883082373782,
+    "issue_cluster_95": [
+     0.0017376194613379669,
+     0.01711111111111111
+    ]
+   },
+   "1": {
+    "opportunities": 4403,
+    "issues": 557,
+    "W": 120,
+    "L": 96,
+    "T": 4187,
+    "difference": 0.005450828980240745,
+    "issue_cluster_95": [
+     -0.0025322866548493288,
+     0.013841615611527115
+    ]
+   }
+  },
+  "uncontaminated_full": {
+   "n": 23,
+   "stats": {
+    "256": {
+     "drop_recenthead": {
+      "preimage": 6,
+      "path": 18,
+      "tokens": 5607
+     },
+     "drop_recenttail": {
+      "preimage": 4,
+      "path": 18,
+      "tokens": 5658
+     },
+     "drop_mid": {
+      "preimage": 5,
+      "path": 18,
+      "tokens": 5648
+     },
+     "drop_lexical": {
+      "preimage": 4,
+      "path": 17,
+      "tokens": 5482
+     },
+     "drop_fused": {
+      "preimage": 5,
+      "path": 21,
+      "tokens": 5692
+     },
+     "rebase_recenthead": {
+      "preimage": 6,
+      "path": 18,
+      "tokens": 5634
+     },
+     "rebase_mid": {
+      "preimage": 5,
+      "path": 18,
+      "tokens": 5615
+     },
+     "rebase_fused": {
+      "preimage": 5,
+      "path": 21,
+      "tokens": 5661
+     },
+     "stale_fused": {
+      "preimage": 5,
+      "path": 21,
+      "tokens": 5664
+     },
+     "one_reopen": {
+      "preimage": 5,
+      "path": 18,
+      "tokens": 5002
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 23,
+      "tokens": 822
+     }
+    },
+    "512": {
+     "drop_recenthead": {
+      "preimage": 16,
+      "path": 21,
+      "tokens": 11439
+     },
+     "drop_recenttail": {
+      "preimage": 15,
+      "path": 21,
+      "tokens": 11386
+     },
+     "drop_mid": {
+      "preimage": 15,
+      "path": 21,
+      "tokens": 11403
+     },
+     "drop_lexical": {
+      "preimage": 10,
+      "path": 22,
+      "tokens": 11540
+     },
+     "drop_fused": {
+      "preimage": 11,
+      "path": 23,
+      "tokens": 11420
+     },
+     "rebase_recenthead": {
+      "preimage": 16,
+      "path": 21,
+      "tokens": 11354
+     },
+     "rebase_mid": {
+      "preimage": 15,
+      "path": 21,
+      "tokens": 11428
+     },
+     "rebase_fused": {
+      "preimage": 11,
+      "path": 23,
+      "tokens": 11528
+     },
+     "stale_fused": {
+      "preimage": 11,
+      "path": 23,
+      "tokens": 11550
+     },
+     "one_reopen": {
+      "preimage": 14,
+      "path": 18,
+      "tokens": 8629
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 23,
+      "tokens": 822
+     }
+    },
+    "1024": {
+     "drop_recenthead": {
+      "preimage": 18,
+      "path": 23,
+      "tokens": 22160
+     },
+     "drop_recenttail": {
+      "preimage": 19,
+      "path": 21,
+      "tokens": 21986
+     },
+     "drop_mid": {
+      "preimage": 20,
+      "path": 23,
+      "tokens": 22092
+     },
+     "drop_lexical": {
+      "preimage": 12,
+      "path": 20,
+      "tokens": 21978
+     },
+     "drop_fused": {
+      "preimage": 14,
+      "path": 21,
+      "tokens": 22071
+     },
+     "rebase_recenthead": {
+      "preimage": 18,
+      "path": 23,
+      "tokens": 22238
+     },
+     "rebase_mid": {
+      "preimage": 20,
+      "path": 23,
+      "tokens": 22075
+     },
+     "rebase_fused": {
+      "preimage": 14,
+      "path": 21,
+      "tokens": 22141
+     },
+     "stale_fused": {
+      "preimage": 14,
+      "path": 21,
+      "tokens": 22147
+     },
+     "one_reopen": {
+      "preimage": 17,
+      "path": 18,
+      "tokens": 12889
+     },
+     "paths": {
+      "preimage": 0,
+      "path": 23,
+      "tokens": 822
+     }
+    }
+   }
+  }
+ }
+}

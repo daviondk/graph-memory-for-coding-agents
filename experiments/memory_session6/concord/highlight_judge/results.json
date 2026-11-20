@@ -1,0 +1,118 @@
+{
+  "n_questions": 40,
+  "correct": {
+    "baseline": 39,
+    "raw": 15,
+    "window": 39,
+    "control": 39,
+    "correction": 38
+  },
+  "missing": {
+    "control": 1,
+    "correction": 1
+  },
+  "previous_requests": 30,
+  "new_calls": 15,
+  "contrasts": {
+    "control minus correction": {
+      "wins": 1,
+      "losses": 0,
+      "delta": 0.025,
+      "ci": [
+        0.0,
+        0.075
+      ],
+      "p_exact": 1,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 39,
+        "complete_pair_delta": 0.02564102564102564,
+        "shared_unknown_ties": 1,
+        "identified_delta_interval": [
+          0.025,
+          0.025
+        ]
+      }
+    },
+    "control minus baseline": {
+      "wins": 0,
+      "losses": 0,
+      "delta": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "p_exact": 1,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 39,
+        "complete_pair_delta": 0.0,
+        "shared_unknown_ties": 0,
+        "identified_delta_interval": [
+          0.0,
+          0.025
+        ]
+      }
+    },
+    "control minus raw": {
+      "wins": 24,
+      "losses": 0,
+      "delta": 0.6,
+      "ci": [
+        0.45,
+        0.75
+      ],
+      "p_exact": 1.1920928955078125e-07,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 39,
+        "complete_pair_delta": 0.6153846153846154,
+        "shared_unknown_ties": 0,
+        "identified_delta_interval": [
+          0.6,
+          0.625
+        ]
+      }
+    },
+    "correction minus baseline": {
+      "wins": 0,
+      "losses": 1,
+      "delta": -0.025,
+      "ci": [
+        -0.075,
+        0.0
+      ],
+      "p_exact": 1,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 39,
+        "complete_pair_delta": -0.02564102564102564,
+        "shared_unknown_ties": 0,
+        "identified_delta_interval": [
+          -0.025,
+          0.0
+        ]
+      }
+    },
+    "correction minus raw": {
+      "wins": 23,
+      "losses": 0,
+      "delta": 0.575,
+      "ci": [
+        0.425,
+        0.725
+      ],
+      "p_exact": 2.384185791015625e-07,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 39,
+        "complete_pair_delta": 0.5897435897435898,
+        "shared_unknown_ties": 0,
+        "identified_delta_interval": [
+          0.575,
+          0.6
+        ]
+      }
+    }
+  }
+}

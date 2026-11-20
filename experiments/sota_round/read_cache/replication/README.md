@@ -1,0 +1,19 @@
+# Independent transfer to structured Read / Edit calls
+
+All 300 public Claude Code past-experience traces of SWE-ContextBench Lite were verified by Git blob and SHA-256. The prior shell study and this transfer were separately preregistered. We used only chronological tool inputs and responses, never the 99 current questions, relevance relations or target solutions. Across 14,507 assistant decisions and 15,047 tool calls there were 1,900 Read calls. The shared prospective parser could score requests on 1,792 eligible calls (298 traces); 21 had unresolved paths or unsupported arguments and 87 occurred alongside a potential writer. Of eligible calls, 1,737 produced successful text and 55 returned tool errors. Only 38 had a previous occurrence of the same path/range key. There were no unscorable serves. [Pinned public histories](https://github.com/jiayuanz3/SWEContextBench/tree/12ad6ab14e18e9378e1e293c9edbc3f7ce43d27b/cases/SWEContextBench%20Lite%20Past%20Experience)
+
+Bounded LRU served 16 correct and 14 stale; TTL1 0, TTL3 3 correct/1 stale, TTL10 8/6. Global flushing and selective path invalidation each made a single correct return, with zero stale. Thus the incremental selective benefit found in VibeMemBench did not replicate here. Write-through generated 53 confirmed cache updates but only three updated values faced another identical Read. All three matched the full visible bytes, each after two edits, all in separate Django traces. The total was 4 correct/0 stale compared with selective 1/0. Paired gain +1.674 correct per 1,000 eligible, 95% repository-bootstrap interval [0, 3.366], 300-trajectory interval [0, 3.880]. Zero in both intervals and clustering in a single repository limit interpretation. A later successful result copied from a previous cache entry was never fed back to the policy.
+
+There were 1,606 admissible short successful text observations and 535 full default reads that exactly round-tripped from observed numbered lines, reconstructed file content and any literal visible suffix. A rewrite required the previous complete file and the earlier observed suffix to be retained inside the same budget; no copy of a complete edited file was read from the Edit response by the policy. Over 25 attempted edits, the write result was unconfirmed; 807 isolated successful Edits found no full default-key entry, 53 produced updated entries and 1 exceeded the output limit. Synthesis never fabricated a system reminder or inferred invisible text from partial reads.
+
+## Reproduce
+
+Python 3.14.4 and NumPy version in summary.json. Unpack ledgers.zip to inspect query, batch and history rows. Fetch only the 300 pinned public trace files with fetch.py into D:/claude-read-cache, or provide an existing frozen directory containing traces/. Preserve the supplied freeze.json before replay.
+
+    python fetch.py --data D:/claude-read-cache
+    python canary.py
+    python replay.py --data D:/claude-read-cache
+    python analyze.py
+    python audit_edits.py --data D:/claude-read-cache
+
+Each arm's returned item names a prior source read, its intervening edit offsets if any, predicted whole-response hash and verdict. The exact arm order is in runtime.json. All 12 repository proxies were identifiable from an explicit historical GitHub clone; the source path or repo proxy does not enter ranking. The historical input includes one malformed 94-byte line. The first locked run stopped there, before aggregate or partial outcomes were examined. The original replay, original freeze, line hash, and pre-analysis repair are retained. The repaired parser closes the current batch and clears all branch state on malformed JSON, keeping all 300 files. The final replay took 1.05 s on one CPU worker. This repair handles a data-format failure without choosing any score-specific cohort.

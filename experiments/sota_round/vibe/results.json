@@ -1,0 +1,293 @@
+{
+  "design": "2 purposively chosen targets x 1 paired seeds x 4 methods",
+  "solver": "openai/Qwen/Qwen3-8B",
+  "unrun": [
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "base",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "base",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "base",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "distractor",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "distractor",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "distractor",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "raw_bm25",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "raw_bm25",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "raw_bm25",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "action_receipt",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "action_receipt",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "brazilian-utils__brutils-python-125",
+      "method": "action_receipt",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "base",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "base",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "base",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "distractor",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "distractor",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "distractor",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "raw_bm25",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "raw_bm25",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "raw_bm25",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "action_receipt",
+      "seed": 1,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "action_receipt",
+      "seed": 2,
+      "reason": "administrative pre-outcome reallocation"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "action_receipt",
+      "seed": 3,
+      "reason": "administrative pre-outcome reallocation"
+    }
+  ],
+  "by_method": {
+    "base": {
+      "episodes": 2,
+      "resolved": 0,
+      "submitted": 1,
+      "nonempty_patches": 1,
+      "tests_executed": 1,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          0
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 19,
+        "calls_with_usage": 17,
+        "calls_accounted": 19,
+        "input_tokens": 64156,
+        "output_tokens": 2044,
+        "duration_s": 203.5
+      }
+    },
+    "distractor": {
+      "episodes": 2,
+      "resolved": 0,
+      "submitted": 1,
+      "nonempty_patches": 1,
+      "tests_executed": 1,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          0
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 16,
+        "calls_with_usage": 15,
+        "calls_accounted": 16,
+        "input_tokens": 55389,
+        "output_tokens": 1094,
+        "duration_s": 153.4
+      }
+    },
+    "raw_bm25": {
+      "episodes": 2,
+      "resolved": 0,
+      "submitted": 0,
+      "nonempty_patches": 0,
+      "tests_executed": 0,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          0
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 20,
+        "calls_with_usage": 20,
+        "calls_accounted": 20,
+        "input_tokens": 58324,
+        "output_tokens": 1576,
+        "duration_s": 183.4
+      }
+    },
+    "action_receipt": {
+      "episodes": 2,
+      "resolved": 0,
+      "submitted": 1,
+      "nonempty_patches": 1,
+      "tests_executed": 1,
+      "per_target": {
+        "brazilian-utils__brutils-python-125": [
+          0
+        ],
+        "s-knibbs__dataclasses-jsonschema-64": [
+          0
+        ]
+      },
+      "totals": {
+        "agent_calls": 20,
+        "calls_with_usage": 18,
+        "calls_accounted": 20,
+        "input_tokens": 65190,
+        "output_tokens": 1662,
+        "duration_s": 184.1
+      }
+    }
+  },
+  "interrupted": [
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "action_receipt",
+      "seed": 0,
+      "agent_calls": 7,
+      "calls_with_usage": 7,
+      "input_tokens": 16392,
+      "output_tokens": 453,
+      "exit_status": "",
+      "trajectory_sha256": "fc5d403d676f3036572fba5c6b38502d04dbe4acf44fc1e3e888f058344f748f"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "base",
+      "seed": 0,
+      "agent_calls": 7,
+      "calls_with_usage": 6,
+      "input_tokens": 18772,
+      "output_tokens": 453,
+      "exit_status": "",
+      "trajectory_sha256": "97709d88f4bc237afeda2d969ff93079c3d4de0bac515afb0c43b113733b4ad4"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "distractor",
+      "seed": 0,
+      "agent_calls": 7,
+      "calls_with_usage": 7,
+      "input_tokens": 25762,
+      "output_tokens": 212,
+      "exit_status": "",
+      "trajectory_sha256": "24fcb995a22380fbaf5a8779db4a007b27f1cfee43bbe156d285be42d49d4358"
+    },
+    {
+      "target": "s-knibbs__dataclasses-jsonschema-64",
+      "method": "raw_bm25",
+      "seed": 0,
+      "agent_calls": 6,
+      "calls_with_usage": 6,
+      "input_tokens": 15653,
+      "output_tokens": 466,
+      "exit_status": "",
+      "trajectory_sha256": "0427fe82763016debad82895cf4442de37f4e7b3014a1c5b5140adfb471dada4"
+    }
+  ],
+  "interruption_reason": "Host restart. Partial attempts archived; cells restarted in fresh verified containers from their same seed. First target/seed 0 batched across four arms; remaining cells run one at a time.",
+  "graded_attempts": 8,
+  "evidence_sha256": "a04999a47c7c65f85a9904015c4ace810615be4ac1782da8e230339420f44f0e"
+}

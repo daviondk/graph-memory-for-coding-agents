@@ -1,0 +1,1858 @@
+[
+ {
+  "name": "longest_common_subsequence",
+  "arm": "recent",
+  "key": "780b4b83671290b104d95dbe042a7b0758850853f0880d195f7dc42a4b3fe0aa",
+  "candidate": "def longest_common_subsequence(a, b):\n    \"\"\"\n    Longest Common Subsequence\n\n    Calculates the longest subsequence common to the two input strings. (A subsequence is any sequence of letters in the same order\n    they appear in the string, possibly skipping letters in between.)\n\n    Input:\n        a: The first string to consider.\n        b: The second string to consider.\n\n    Output:\n        The longest string which is a subsequence of both strings. (If multiple subsequences of equal length exist, either is OK.)\n\n    Example:\n        >>> longest_common_subsequence('headache', 'pentadactyl')\n        'eadac'\n    \"\"\"\n    m = len(a)\n    n = len(b)\n\n    # dp[i][j] = length of LCS of a[:i] and b[:j]\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if a[i - 1] == b[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n            else:\n                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])\n\n    # Backtrack to find the actual subsequence\n    i, j = m, n\n    result = []\n    while i > 0 and j > 0:\n        if a[i - 1] == b[j - 1]:\n            result.append(a[i - 1])\n            i -= 1\n            j -= 1\n        elif dp[i - 1][j] >= dp[i][j - 1]:\n            i -= 1\n        else:\n            j -= 1\n\n    result.reverse()\n    return ''.join(result)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 430,
+   "prompt_tokens": 386,
+   "total_tokens": 816,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-GxeUNphCdoUQfqocJVKhqj27W97vqbR4"
+ },
+ {
+  "name": "max_sublist_sum",
+  "arm": "witness",
+  "key": "6633b67afcfe836d6eeb007b04947e2e718419f33e37486af9e708722bae750f",
+  "candidate": "def max_sublist_sum(arr):\n    max_ending_here = 0\n    max_so_far = 0\n\n    for x in arr:\n        max_ending_here = max(0, max_ending_here + x)\n        max_so_far = max(max_so_far, max_ending_here)\n\n    return max_so_far\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 332,
+   "total_tokens": 409,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-LDS77nyRtpnUtgIhQHUbHDJz0IGKdr3H"
+ },
+ {
+  "name": "to_base",
+  "arm": "empty",
+  "key": "4fe30fa7204cb5bf6b604ea13d257e8111414ab0dfd843e6f7648c4b266a5eeb",
+  "candidate": "import string\n\ndef to_base(num, b):\n    if num == 0:\n        return '0'\n    result = ''\n    alphabet = string.digits + string.ascii_uppercase\n    while num > 0:\n        i = num % b\n        num = num // b\n        result = alphabet[i] + result\n    return result\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 82,
+   "prompt_tokens": 260,
+   "total_tokens": 342,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-5oDWZgi6thXPK5vB9U0Kh9OqhtMMdbHO"
+ },
+ {
+  "name": "find_first_in_sorted",
+  "arm": "witness",
+  "key": "df4328df35f2bd1e0712ea70343dcdf7439b1160ded9fd140ebe5a33a014114c",
+  "candidate": "def find_first_in_sorted(arr, x):\n    lo = 0\n    hi = len(arr) - 1\n\n    while lo <= hi:\n        mid = (lo + hi) // 2\n\n        if x == arr[mid] and (mid == 0 or x != arr[mid - 1]):\n            return mid\n\n        elif x <= arr[mid]:\n            hi = mid - 1\n\n        else:\n            lo = mid + 1\n\n    return -1\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 365,
+   "total_tokens": 475,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-3oIU1Bd3HGJscmko9LLAE5A3lscHZPRw"
+ },
+ {
+  "name": "to_base",
+  "arm": "full",
+  "key": "3798a8a45d56530730378329a19afa8706a7d4eeb060a584b95bcdd3f029c080",
+  "candidate": "import string\n\ndef to_base(num, b):\n    result = ''\n    alphabet = string.digits + string.ascii_uppercase\n    while num > 0:\n        i = num % b\n        num = num // b\n        result = alphabet[i] + result\n    return result\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 68,
+   "prompt_tokens": 432,
+   "total_tokens": 500,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ViK8I0fyP1KLYtTZnc2Do0UZ3cN6dkQ1"
+ },
+ {
+  "name": "hanoi",
+  "arm": "recent",
+  "key": "11ec50b21e0a6504cfe1785eb9baf4c9dd2704a4dbd7301448b25b31244cbdfc",
+  "candidate": "def hanoi(height, start=1, end=3):\n    steps = []\n    if height > 0:\n        helper = ({1, 2, 3} - {start} - {end}).pop()\n        steps.extend(hanoi(height - 1, start, helper))\n        steps.append((start, end))\n        steps.extend(hanoi(height - 1, helper, end))\n\n    return steps\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 98,
+   "prompt_tokens": 530,
+   "total_tokens": 628,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-r0h386ADN69JM8Rm2gtDbh9uwRGcpOdE"
+ },
+ {
+  "name": "lcs_length",
+  "arm": "recent",
+  "key": "f52eac1c62322e6d4dea5d607f59027268aad858d5047fcacecb15ac3e512f91",
+  "candidate": "def lcs_length(s, t):\n    \"\"\"\n    Longest Common Substring\n    longest-common-substring\n\n    Input:\n        s: a string\n        t: a string\n\n    Output:\n        Length of the longest substring common to s and t\n\n    Example:\n        >>> lcs_length('witch', 'sandwich')\n        2\n        >>> lcs_length('meow', 'homeowner')\n        4\n    \"\"\"\n    if not s or not t:\n        return 0\n\n    m, n = len(s), len(t)\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    max_len = 0\n\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if s[i - 1] == t[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n                if dp[i][j] > max_len:\n                    max_len = dp[i][j]\n            else:\n                dp[i][j] = 0\n\n    return max_len\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 267,
+   "prompt_tokens": 310,
+   "total_tokens": 577,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-koVx3fRKcsSRqVu0STmy5RKlZyyooV6A"
+ },
+ {
+  "name": "powerset",
+  "arm": "empty",
+  "key": "f762d55ec4bbbba488a4f6574b4cdca1e8c2193223a1a114bbb229f8143a360d",
+  "candidate": "def powerset(arr):\n    if arr:\n        first, *rest = arr\n        rest_subsets = powerset(rest)\n        return rest_subsets + [[first] + subset for subset in rest_subsets]\n    else:\n        return [[]]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 287,
+   "total_tokens": 349,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-GXqFBY4dzNCsPGBywSZtO0Qa9ngSDoSa"
+ },
+ {
+  "name": "longest_common_subsequence",
+  "arm": "witness",
+  "key": "4ef87f3ce31dbfae6e527d624e812afe722d0db6e6b2cd7f4fcdcfdfb40b511c",
+  "candidate": "def longest_common_subsequence(a, b):\n    if not a or not b:\n        return ''\n\n    elif a[0] == b[0]:\n        return a[0] + longest_common_subsequence(a[1:], b)\n\n    else:\n        return max(\n            longest_common_subsequence(a, b[1:]),\n            longest_common_subsequence(a[1:], b),\n            key=len\n        )\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 99,
+   "prompt_tokens": 387,
+   "total_tokens": 486,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-SxfPfv4L8m8mGpELgSTj5hhz1Wf4oSxz"
+ },
+ {
+  "name": "shunting_yard",
+  "arm": "recent",
+  "key": "aeb25498b76bbd29448882d0cec8b26a7dec2aa61b177f8116408dc9c3df5e97",
+  "candidate": "def shunting_yard(tokens):\n    precedence = {\n        '+': 1,\n        '-': 1,\n        '*': 2,\n        '/': 2\n    }\n\n    rpntokens = []\n    opstack = []\n    for token in tokens:\n        if isinstance(token, int):\n            rpntokens.append(token)\n        else:\n            while opstack and precedence[token] <= precedence[opstack[-1]]:\n                rpntokens.append(opstack.pop())\n            opstack.append(token)\n\n    while opstack:\n        rpntokens.append(opstack.pop())\n\n    return rpntokens\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 144,
+   "prompt_tokens": 520,
+   "total_tokens": 664,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-x6MgUSQVxIElgA7579otLQvSlNvVlAtx"
+ },
+ {
+  "name": "kth",
+  "arm": "empty",
+  "key": "52b30913cdda182021270638ec749fcdb2b105f4b330302bf52f94a9f6b20df5",
+  "candidate": "def kth(arr, k):\n    if len(arr) == 1:\n        return arr[0]\n    pivot = arr[0]\n    below = [x for x in arr if x < pivot]\n    above = [x for x in arr if x > pivot]\n\n    num_less = len(below)\n    num_lessoreq = len(arr) - len(above)\n\n    if k < num_less:\n        return kth(below, k)\n    elif k >= num_lessoreq:\n        return kth(above, k - num_lessoreq)\n    else:\n        return pivot\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 143,
+   "prompt_tokens": 282,
+   "total_tokens": 425,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-NCrOfxUoor6OKJyOERmWpBv5JQG6Kc9t"
+ },
+ {
+  "name": "kheapsort",
+  "arm": "witness",
+  "key": "eb9bd124ba84e74cc7f3819ca25eac2c61f336ce5e933f108a0301ba31736585",
+  "candidate": "def kheapsort(arr, k):\n    import heapq\n\n    heap = arr[:k + 1]\n    heapq.heapify(heap)\n\n    for x in arr[k + 1:]:\n        yield heapq.heappushpop(heap, x)\n\n    while heap:\n        yield heapq.heappop(heap)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 542,
+   "total_tokens": 616,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qQucMq2Ws7DmPQy4RWHrkNsVxhIg5NOJ"
+ },
+ {
+  "name": "quicksort",
+  "arm": "empty",
+  "key": "7c7f4d964e644979e30385f56393b00e59362cfa7210d5bb450db5c1c19dbdde",
+  "candidate": "def quicksort(arr):\n    if not arr:\n        return []\n\n    pivot = arr[0]\n    lesser = quicksort([x for x in arr[1:] if x < pivot])\n    greater = quicksort([x for x in arr[1:] if x > pivot])\n    return lesser + [pivot] + greater\n\n\"\"\"\nQuickSort\n\n\nInput:\n    arr: A list of ints\n\nOutput:\n    The elements of arr in sorted order\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 109,
+   "prompt_tokens": 203,
+   "total_tokens": 312,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-HJavlO6njepuoeSGBQcOqf2FVUKoDviz"
+ },
+ {
+  "name": "bitcount",
+  "arm": "full",
+  "key": "4fa6edbc6dc920d6c877b9a2051076fde98dc8a230c0b66ba1e63cf5455a098b",
+  "candidate": "def bitcount(n):\n    count = 0\n    while n:\n        n &= n - 1\n        count += 1\n    return count\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 40,
+   "prompt_tokens": 313,
+   "total_tokens": 353,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ABboEc3KVNNBc1hz2ylPisl5Pa5OCuJA"
+ },
+ {
+  "name": "next_palindrome",
+  "arm": "witness",
+  "key": "43261e54d80a0fa2687cbe82c7364f6d8eff22c111f5adebc9c6d70523faab94",
+  "candidate": "def next_palindrome(digit_list):\n    n = len(digit_list)\n    high_mid = n // 2\n    low_mid = (n - 1) // 2\n    while high_mid < n and low_mid >= 0:\n        if digit_list[high_mid] == 9:\n            digit_list[high_mid] = 0\n            digit_list[low_mid] = 0\n            high_mid += 1\n            low_mid -= 1\n        else:\n            digit_list[high_mid] += 1\n            if low_mid != high_mid:\n                digit_list[low_mid] += 1\n            return digit_list\n    return [1] + (n) * [0] + [1]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 167,
+   "prompt_tokens": 498,
+   "total_tokens": 665,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-m0Wpv15L29cXi7Unj1hobIQm1mlvWUvr"
+ },
+ {
+  "name": "longest_common_subsequence",
+  "arm": "full",
+  "key": "cc81708e911e5416cd79c486089b388033e83c8a1ed3fe11d88c0ef1518dacb3",
+  "candidate": "def longest_common_subsequence(a, b):\n    \"\"\"\n    Longest Common Subsequence\n\n    Calculates the longest subsequence common to the two input strings. (A subsequence is any sequence of letters in the same order\n    they appear in the string, possibly skipping letters in between.)\n\n    Input:\n        a: The first string to consider.\n        b: The second string to consider.\n\n    Output:\n        The longest string which is a subsequence of both strings. (If multiple subsequences of equal length exist, either is OK.)\n\n    Example:\n        >>> longest_common_subsequence('headache', 'pentadactyl')\n        'eadac'\n    \"\"\"\n    m = len(a)\n    n = len(b)\n\n    # dp[i][j] = length of LCS of a[:i] and b[:j]\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if a[i - 1] == b[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n            else:\n                dp[i][j] = max(dp[i - 1][j], dp[i][j - 1])\n\n    # Backtrack to find the actual subsequence\n    i, j = m, n\n    result = []\n    while i > 0 and j > 0:\n        if a[i - 1] == b[j - 1]:\n            result.append(a[i - 1])\n            i -= 1\n            j -= 1\n        elif dp[i - 1][j] >= dp[i][j - 1]:\n            i -= 1\n        else:\n            j -= 1\n\n    result.reverse()\n    return ''.join(result)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 430,
+   "prompt_tokens": 491,
+   "total_tokens": 921,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ahWo5Aggf8cEi4Gjh4JMsOyhwAfCL1XG"
+ },
+ {
+  "name": "powerset",
+  "arm": "recent",
+  "key": "1ec1e2793e996b4fdae412a21364a54cd28adafe45539f2278f96eed508a7e94",
+  "candidate": "def powerset(arr):\n    if arr:\n        first, *rest = arr\n        rest_subsets = powerset(rest)\n        return rest_subsets + [[first] + subset for subset in rest_subsets]\n    else:\n        return [[]]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 356,
+   "total_tokens": 418,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ZYNHkOEX1pjyYe1UVvXyNLcijtZnx9M9"
+ },
+ {
+  "name": "mergesort",
+  "arm": "witness",
+  "key": "f719e8236d43b812d4216951d919f8ce470e28fd5aad23dc8d2fd73dd49790cc",
+  "candidate": "def mergesort(arr):\n    def merge(left, right):\n        result = []\n        i = 0\n        j = 0\n        while i < len(left) and j < len(right):\n            if left[i] <= right[j]:\n                result.append(left[i])\n                i += 1\n            else:\n                result.append(right[j])\n                j += 1\n        result.extend(left[i:])\n        result.extend(right[j:])\n        return result\n\n    if len(arr) <= 1:\n        return arr\n    else:\n        middle = len(arr) // 2\n        left = mergesort(arr[:middle])\n        right = mergesort(arr[middle:])\n        return merge(left, right)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 164,
+   "prompt_tokens": 360,
+   "total_tokens": 524,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-BYnV49OC78NWPxCdN4HSoj3J7XlzuPbp"
+ },
+ {
+  "name": "find_in_sorted",
+  "arm": "full",
+  "key": "dbd997e14badb7c056dc703e88e9c97aacd6354e150615c0b2d54d3852b0ed69",
+  "candidate": "def find_in_sorted(arr, x):\n    def binsearch(start, end):\n        if start == end:\n            return -1\n        mid = start + (end - start) // 2\n        if x < arr[mid]:\n            return binsearch(start, mid)\n        elif x > arr[mid]:\n            return binsearch(mid, end)\n        else:\n            return mid\n\n    return binsearch(0, len(arr))\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 102,
+   "prompt_tokens": 479,
+   "total_tokens": 581,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-xHhhjyHyFtYxnoLIbtpfvtFV4sOPm6bQ"
+ },
+ {
+  "name": "next_permutation",
+  "arm": "recent",
+  "key": "c0f4039b01a67e4368d6811525784bc0d33325da43b01b893ff7d32ef08911d9",
+  "candidate": "def next_permutation(perm):\n    perm = list(perm)\n    n = len(perm)\n    # Step 1: Find the largest index i such that perm[i] < perm[i + 1]\n    i = n - 2\n    while i >= 0 and perm[i] >= perm[i + 1]:\n        i -= 1\n    if i < 0:\n        # This should not happen given the precondition, but handle gracefully\n        perm.reverse()\n        return perm\n    # Step 2: Find the largest index j > i such that perm[i] < perm[j]\n    j = n - 1\n    while perm[j] <= perm[i]:\n        j -= 1\n    # Step 3: Swap perm[i] and perm[j]\n    perm[i], perm[j] = perm[j], perm[i]\n    # Step 4: Reverse the suffix starting at i + 1\n    perm[i + 1:] = reversed(perm[i + 1:])\n    return perm\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 230,
+   "prompt_tokens": 392,
+   "total_tokens": 622,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-sLctgQ2WTUApbDdUMwEFK8pL3fP2o1Pw"
+ },
+ {
+  "name": "get_factors",
+  "arm": "recent",
+  "key": "9011859659405ce35a397b090b566ef69492d138fa4a12b61107c1e909b2ff4f",
+  "candidate": "def get_factors(n):\n    if n == 1:\n        return []\n\n    factors = []\n    d = 2\n    while d * d <= n:\n        while n % d == 0:\n            factors.append(d)\n            n //= d\n        d += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 332,
+   "total_tokens": 420,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-nJDgkB94BUOiH0w0sP774PSkypLSF1TE"
+ },
+ {
+  "name": "get_factors",
+  "arm": "full",
+  "key": "dc38e8c39f4d157c4a84570874480168e93b18ffe3a718a50b3ccd785e1b33e4",
+  "candidate": "def get_factors(n):\n    if n == 1:\n        return []\n\n    factors = []\n    d = 2\n    while d * d <= n:\n        while n % d == 0:\n            factors.append(d)\n            n //= d\n        d += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 439,
+   "total_tokens": 527,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-C0XCYwHmJDypdmJdDc8wj1sBq1kdBCw5"
+ },
+ {
+  "name": "find_first_in_sorted",
+  "arm": "recent",
+  "key": "16ff74eef7ede8d6411b2652e5547286cfd6b8ea31c910fc4ef87716a06487aa",
+  "candidate": "def find_first_in_sorted(arr, x):\n    lo = 0\n    hi = len(arr) - 1\n\n    while lo <= hi:\n        mid = (lo + hi) // 2\n\n        if x == arr[mid] and (mid == 0 or x != arr[mid - 1]):\n            return mid\n\n        elif x <= arr[mid]:\n            hi = mid - 1\n\n        else:\n            lo = mid + 1\n\n    return -1\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 371,
+   "total_tokens": 481,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-gEzdgV2wBQ0wGvgVRBMGaZruNlog7hSQ"
+ },
+ {
+  "name": "wrap",
+  "arm": "recent",
+  "key": "051826eb7a4a97361ed20d021bb27db3b542d471f7f5d5b0d6692ee7033976d4",
+  "candidate": "def wrap(text, cols):\n    lines = []\n    while len(text) > cols:\n        end = text.rfind(' ', 0, cols + 1)\n        if end == -1:\n            end = cols\n        line, text = text[:end], text[end:]\n        lines.append(line)\n\n    return lines\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 79,
+   "prompt_tokens": 550,
+   "total_tokens": 629,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-DmHW9kWvFQjYwTiHev4zI1vecdIn4FW2"
+ },
+ {
+  "name": "next_palindrome",
+  "arm": "empty",
+  "key": "808b75c8607f485f7f37a96469872a18d0115415deb77d6dff929661f5b26467",
+  "candidate": "def next_palindrome(digit_list):\n    n = len(digit_list)\n    if n == 0:\n        return [1]\n    \n    # Make a copy to avoid modifying the input\n    digits = list(digit_list)\n    \n    # Find the middle index\n    mid = n // 2\n    \n    # Try to increment the left half and mirror to the right half\n    # We need to find the next palindrome greater than the current one\n    \n    # Strategy: increment the left half (including middle for odd length)\n    # and mirror to the right half. If there's a carry that overflows,\n    # handle it.\n    \n    # First, let's try incrementing the left half\n    # The left half is digits[0:mid] for even, digits[0:mid+1] for odd\n    # Actually, let's think of it differently.\n    \n    # For a palindrome, the right half mirrors the left half.\n    # To get the next palindrome, we increment the left half (treating it as a number)\n    # and mirror it to the right half.\n    \n    # Let's extract the left half (including middle digit for odd length)\n    left_half_len = (n + 1) // 2\n    left_half = digits[:left_half_len]\n    \n    # Increment the left half as a number\n    # Handle carry\n    i = left_half_len - 1\n    while i >= 0:\n        if left_half[i] == 9:\n            left_half[i] = 0\n            i -= 1\n        else:\n            left_half[i] += 1\n            break\n    \n    # If i < 0, we had a carry overflow\n    if i < 0:\n        # The result is 100...001 (1 followed by n-2 zeros followed by 1)\n        # For n=1: 9 -> 11? No, 9 is a palindrome, next is 11\n        # For n=2: 99 -> 101\n        # For n=3: 999 -> 1001\n        # So it's 1, then (n-2) zeros, then 1\n        if n == 1:\n            return [1, 1]\n        return [1] + [0] * (n - 2) + [1]\n    \n    # Now mirror the left half to form the full palindrome\n    result = list(left_half)\n    # Mirror: for even n, mirror all of left_half reversed\n    # For odd n, mirror left_half[1:] reversed (skip the middle)\n    if n % 2 == 0:\n        result += left_half[::-1]\n    else:\n        result += left_half[-2::-1]\n    \n    return result\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 631,
+   "prompt_tokens": 376,
+   "total_tokens": 1007,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-nPLu2FGuhwJiwHtK6uN4SDVXmY3baSCe"
+ },
+ {
+  "name": "shunting_yard",
+  "arm": "witness",
+  "key": "de75d291ccb763895bf7822ae7687109bddfeb0dcd0d10a198301580fdbbb8c2",
+  "candidate": "def shunting_yard(tokens):\n    precedence = {\n        '+': 1,\n        '-': 1,\n        '*': 2,\n        '/': 2\n    }\n\n    rpntokens = []\n    opstack = []\n    for token in tokens:\n        if isinstance(token, int):\n            rpntokens.append(token)\n        else:\n            while opstack and precedence[token] <= precedence[opstack[-1]]:\n                rpntokens.append(opstack.pop())\n            opstack.append(token)\n\n    while opstack:\n        rpntokens.append(opstack.pop())\n\n    return rpntokens\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 144,
+   "prompt_tokens": 528,
+   "total_tokens": 672,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ZlWnkCIQdfXi4HIhYUmv1ZlOTlyXBVx2"
+ },
+ {
+  "name": "lcs_length",
+  "arm": "witness",
+  "key": "6ef08c0aee23bb3fd4407afa0d7e644cf5a7711b139407aaa2a5023d3c96d787",
+  "candidate": "def lcs_length(s, t):\n    \"\"\"\n    Longest Common Substring\n    longest-common-substring\n\n    Input:\n        s: a string\n        t: a string\n\n    Output:\n        Length of the longest substring common to s and t\n\n    Example:\n        >>> lcs_length('witch', 'sandwich')\n        2\n        >>> lcs_length('meow', 'homeowner')\n        4\n    \"\"\"\n    if not s or not t:\n        return 0\n\n    m, n = len(s), len(t)\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    max_len = 0\n\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if s[i - 1] == t[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n                if dp[i][j] > max_len:\n                    max_len = dp[i][j]\n            else:\n                dp[i][j] = 0\n\n    return max_len\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 267,
+   "prompt_tokens": 312,
+   "total_tokens": 579,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-cAZgKsdeX6mnk1TVAlpNdSUx7GTRE81T"
+ },
+ {
+  "name": "sieve",
+  "arm": "full",
+  "key": "03afdca20b57ded3a2fb0c58b94242df3be43960f39bede299fc2b6c904fcc64",
+  "candidate": "def sieve(max):\n    if max < 2:\n        return []\n    is_prime = [True] * (max + 1)\n    is_prime[0] = False\n    is_prime[1] = False\n    for n in range(2, int(max ** 0.5) + 1):\n        if is_prime[n]:\n            for multiple in range(n * n, max + 1, n):\n                is_prime[multiple] = False\n    return [n for n in range(2, max + 1) if is_prime[n]]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 131,
+   "prompt_tokens": 323,
+   "total_tokens": 454,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-UkZ27gFlL10s7iIHUJd6AYXC5NGCfopf"
+ },
+ {
+  "name": "bitcount",
+  "arm": "empty",
+  "key": "0e317d644ff3d43c573fb581c964fdcde867b638fdc62a52d8e5f7ff8f55f73b",
+  "candidate": "def bitcount(n):\n    count = 0\n    while n:\n        n &= n - 1\n        count += 1\n    return count\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 40,
+   "prompt_tokens": 204,
+   "total_tokens": 244,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-6IFdyxEji8xWQNfDO14mfEYBdycd5Aex"
+ },
+ {
+  "name": "subsequences",
+  "arm": "witness",
+  "key": "b1221a20a9c4b53b634d57f3351f987ac9efa01b12587c342a9ee4fcad38f10e",
+  "candidate": "def subsequences(a, b, k):\n    if k == 0:\n        return [[]]\n\n    ret = []\n    for i in range(a, b + 1 - k):\n        ret.extend(\n            [i] + rest for rest in subsequences(i + 1, b, k - 1)\n        )\n\n    return ret\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 84,
+   "prompt_tokens": 362,
+   "total_tokens": 446,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-GGDSo8h9IxwRKptHdfk5XsxlsiKua4fl"
+ },
+ {
+  "name": "is_valid_parenthesization",
+  "arm": "empty",
+  "key": "b72916e44c3879d02607b5f958749e702f317d37ccabca330044a792f71234b9",
+  "candidate": "def is_valid_parenthesization(parens):\n    depth = 0\n    for paren in parens:\n        if paren == '(':\n            depth += 1\n        else:\n            depth -= 1\n            if depth < 0:\n                return False\n\n    return depth == 0\n\n\n\"\"\"\nNested Parens\nInput:\n    parens: A string of parentheses\n\nPrecondition:\n    all(paren in '()' for paren in parens)\n\nOutput:\n    Whether the parentheses are properly nested\n\nExamples:\n    >>> is_valid_parenthesization('((()()))()')\n    True\n    >>> is_valid_parenthesization(')()(')\n    False\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 159,
+   "prompt_tokens": 250,
+   "total_tokens": 409,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-cvFfmpyJSqbeHaTgEL8Uk0sIJdgn5aOs"
+ },
+ {
+  "name": "flatten",
+  "arm": "recent",
+  "key": "26cc742b149ce28a215b2f43542ca67b0f0f37084172b837165ea04e14978178",
+  "candidate": "def flatten(arr):\n    for x in arr:\n        if isinstance(x, list):\n            for y in flatten(x):\n                yield y\n        else:\n            yield x\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 326,
+   "total_tokens": 371,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qVdtRrlegQb2QGieCwnqafXh5hptP89T"
+ },
+ {
+  "name": "shunting_yard",
+  "arm": "full",
+  "key": "c22285715599666cf8af57ee37065dd42834b693339e343f0f3a80f8b903c6f3",
+  "candidate": "def shunting_yard(tokens):\n    precedence = {\n        '+': 1,\n        '-': 1,\n        '*': 2,\n        '/': 2\n    }\n\n    rpntokens = []\n    opstack = []\n    for token in tokens:\n        if isinstance(token, int):\n            rpntokens.append(token)\n        else:\n            while opstack and precedence[token] <= precedence[opstack[-1]]:\n                rpntokens.append(opstack.pop())\n            opstack.append(token)\n\n    while opstack:\n        rpntokens.append(opstack.pop())\n\n    return rpntokens\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 144,
+   "prompt_tokens": 552,
+   "total_tokens": 696,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-9C5fnWmiBuTnEo1vQccNTU6N69lspBL3"
+ },
+ {
+  "name": "flatten",
+  "arm": "witness",
+  "key": "7d4e6e6e23e979b254d2e880e828029e2a068d0479e51d50959b778e2758bca5",
+  "candidate": "def flatten(arr):\n    for x in arr:\n        if isinstance(x, list):\n            for y in flatten(x):\n                yield y\n        else:\n            yield x\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 307,
+   "total_tokens": 352,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-MkPsPFuKLCMpIZQMM28M31CqizuaHDEf"
+ },
+ {
+  "name": "rpn_eval",
+  "arm": "full",
+  "key": "538ffe81cde92a516c8cc65bbb09a204f630d04dc6756afbb8c5b0595376cfb2",
+  "candidate": "def rpn_eval(tokens):\n    def op(symbol, a, b):\n        return {\n            '+': lambda a, b: a + b,\n            '-': lambda a, b: a - b,\n            '*': lambda a, b: a * b,\n            '/': lambda a, b: a / b\n        }[symbol](a, b)\n\n    stack = []\n\n    for token in tokens:\n        if isinstance(token, float):\n            stack.append(token)\n        else:\n            b = stack.pop()\n            a = stack.pop()\n            stack.append(\n                op(token, a, b)\n            )\n\n    return stack.pop()\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 154,
+   "prompt_tokens": 476,
+   "total_tokens": 630,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-49izk5WVDevyokwslT9m1QjVvikME3pP"
+ },
+ {
+  "name": "possible_change",
+  "arm": "recent",
+  "key": "08b19ab905d6476250f8fdfee9bca5438059aea10b23cd2d9f46e3472b9ea861",
+  "candidate": "def possible_change(coins, total):\n    if total == 0:\n        return 1\n    if total < 0:\n        return 0\n    if not coins:\n        return 0\n\n    first, *rest = coins\n    return possible_change(coins, total - first) + possible_change(rest, total)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 532,
+   "total_tokens": 610,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-pa5S7t9BF6bqyHbFUmyLh8UfnWtMss3K"
+ },
+ {
+  "name": "sqrt",
+  "arm": "recent",
+  "key": "2cf8e9e65a87c3a3fa34cf8f25e253493a2d4421233ae5fd08ac321ee3afae66",
+  "candidate": "def sqrt(x, epsilon):\n    if x < 0:\n        raise ValueError(\"x must be non-negative\")\n    if x == 0:\n        return 0.0\n    if epsilon <= 0:\n        raise ValueError(\"epsilon must be positive\")\n    \n    # Use Newton-Raphson method\n    approx = x / 2.0\n    # Add a safety limit to prevent infinite loops\n    max_iterations = 1000\n    for _ in range(max_iterations):\n        next_approx = 0.5 * (approx + x / approx)\n        if abs(next_approx - approx) < epsilon:\n            approx = next_approx\n            break\n        approx = next_approx\n    return approx\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 162,
+   "prompt_tokens": 312,
+   "total_tokens": 474,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-kKcLD8Qr3rQFUDHw0ARVV3pNaaR7cKIc"
+ },
+ {
+  "name": "bitcount",
+  "arm": "witness",
+  "key": "cfb4de6b617d93bb36028fbda7ed22a6222844b620d4d1e3fc7df55ccebfa598",
+  "candidate": "def bitcount(n):\n    count = 0\n    while n:\n        n &= n - 1\n        count += 1\n    return count\n\n\n\"\"\"\nBitcount\nbitcount\n\n\nInput:\n    n: a nonnegative int\n\nOutput:\n    The number of 1-bits in the binary encoding of n\n\nExamples:\n    >>> bitcount(127)\n    7\n    >>> bitcount(128)\n    1\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 243,
+   "total_tokens": 353,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-G6VSiOMKoDT5y21C7Bc5GmKzcc0w9nfx"
+ },
+ {
+  "name": "wrap",
+  "arm": "witness",
+  "key": "ed837c85f6af84e5a95f4031b5d1c63c659e38c3f4ecb64c92dff6d6af0ff288",
+  "candidate": "def wrap(text, cols):\n    lines = []\n    while len(text) > cols:\n        end = text.rfind(' ', 0, cols + 1)\n        if end == -1:\n            end = cols\n        line, text = text[:end], text[end:]\n        lines.append(line)\n\n    return lines\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 79,
+   "prompt_tokens": 545,
+   "total_tokens": 624,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-hvw8l72x4PwlIkklT6OD9hihJl9Ros4u"
+ },
+ {
+  "name": "next_permutation",
+  "arm": "witness",
+  "key": "40d8a9860a29152caacbfdc24f477c7f778441ca5893b703c34d08a4db64f815",
+  "candidate": "def next_permutation(perm):\n    perm = list(perm)\n    n = len(perm)\n    # Step 1: Find the largest index i such that perm[i] < perm[i + 1]\n    i = n - 2\n    while i >= 0 and perm[i] >= perm[i + 1]:\n        i -= 1\n    if i < 0:\n        # This should not happen given the precondition, but handle gracefully\n        perm.reverse()\n        return perm\n    # Step 2: Find the largest index j > i such that perm[i] < perm[j]\n    j = n - 1\n    while perm[j] <= perm[i]:\n        j -= 1\n    # Step 3: Swap perm[i] and perm[j]\n    perm[i], perm[j] = perm[j], perm[i]\n    # Step 4: Reverse the suffix starting at i + 1\n    perm[i + 1:] = reversed(perm[i + 1:])\n    return perm\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 230,
+   "prompt_tokens": 392,
+   "total_tokens": 622,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-A94GqYrZEfhMkqcobWkgZ5MSyMjZMXIa"
+ },
+ {
+  "name": "bucketsort",
+  "arm": "recent",
+  "key": "7e6710c5db760c6055632e9c501b60ab2acc8ca8d525575152a7f25e4bcf42a0",
+  "candidate": "def bucketsort(arr, k):\n    counts = [0] * k\n    for x in arr:\n        counts[x] += 1\n\n    sorted_arr = []\n    for i, count in enumerate(counts):\n        sorted_arr.extend([i] * count)\n\n    return sorted_arr\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 707,
+   "total_tokens": 777,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-rav2KZYUdXxQ3ue4O3GBvxsfQPLbEeQe"
+ },
+ {
+  "name": "max_sublist_sum",
+  "arm": "empty",
+  "key": "c0d8d6d9331a831b82d0b80862b3f481c39087d03e41a2d8f46b56a64f836b47",
+  "candidate": "def max_sublist_sum(arr):\n    if not arr:\n        return 0\n\n    max_ending_here = arr[0]\n    max_so_far = arr[0]\n\n    for x in arr[1:]:\n        max_ending_here = max(x, max_ending_here + x)\n        max_so_far = max(max_so_far, max_ending_here)\n\n    return max_so_far\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 94,
+   "prompt_tokens": 264,
+   "total_tokens": 358,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-W5TwOQAiJ2mXHLp3aG5SDlxA5YbIdPmg"
+ },
+ {
+  "name": "rpn_eval",
+  "arm": "recent",
+  "key": "7a15ba1e45cabcdbf2c50ee2ac58075ff67920edeceb1bad0f918fb6a1a41760",
+  "candidate": "def rpn_eval(tokens):\n    def op(symbol, a, b):\n        return {\n            '+': lambda a, b: a + b,\n            '-': lambda a, b: a - b,\n            '*': lambda a, b: a * b,\n            '/': lambda a, b: a / b\n        }[symbol](a, b)\n\n    stack = []\n\n    for token in tokens:\n        if isinstance(token, float):\n            stack.append(token)\n        else:\n            b = stack.pop()\n            a = stack.pop()\n            stack.append(\n                op(token, a, b)\n            )\n\n    return stack.pop()\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 154,
+   "prompt_tokens": 438,
+   "total_tokens": 592,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qV1WjR4cYHGtffftthNXhfqX2R6WekiO"
+ },
+ {
+  "name": "sqrt",
+  "arm": "witness",
+  "key": "d2400d0c6953f9c08ffdb939303751a168e87da26d5a3c9ee1fa412b3023c4a9",
+  "candidate": "def sqrt(x, epsilon):\n    if x < 0:\n        raise ValueError(\"x must be non-negative\")\n    if x == 0:\n        return 0.0\n    if epsilon <= 0:\n        raise ValueError(\"epsilon must be positive\")\n    \n    approx = x / 2.0\n    while abs(approx * approx - x) > epsilon:\n        approx = 0.5 * (approx + x / approx)\n    return approx\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 109,
+   "prompt_tokens": 302,
+   "total_tokens": 411,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-IeOMV8yWtVRrUupO3IbEQHlDZ9CH9UzP"
+ },
+ {
+  "name": "bitcount",
+  "arm": "recent",
+  "key": "4b379b2b41f4fe79c4545a2a26be57da4c1358b6f7e49cdd0bd30094b4d49920",
+  "candidate": "def bitcount(n):\n    count = 0\n    while n:\n        n &= n - 1\n        count += 1\n    return count\n\n\n\"\"\"\nBitcount\nbitcount\n\n\nInput:\n    n: a nonnegative int\n\nOutput:\n    The number of 1-bits in the binary encoding of n\n\nExamples:\n    >>> bitcount(127)\n    7\n    >>> bitcount(128)\n    1\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 244,
+   "total_tokens": 354,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-2XOhba1ZYC4x6xABoheyTLqKsqutlSVc"
+ },
+ {
+  "name": "powerset",
+  "arm": "full",
+  "key": "6a335341c0d05816d941e421cd89372ccf3bd20db4abb62098654278a6987a1c",
+  "candidate": "def powerset(arr):\n    if arr:\n        first, *rest = arr\n        rest_subsets = powerset(rest)\n        return rest_subsets + [[first] + subset for subset in rest_subsets]\n    else:\n        return [[]]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 465,
+   "total_tokens": 527,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-PY5IeAS41cUlQJpGEc4Ej25yHvboqQmU"
+ },
+ {
+  "name": "kheapsort",
+  "arm": "recent",
+  "key": "eb9bd124ba84e74cc7f3819ca25eac2c61f336ce5e933f108a0301ba31736585",
+  "candidate": "def kheapsort(arr, k):\n    import heapq\n\n    heap = arr[:k + 1]\n    heapq.heapify(heap)\n\n    for x in arr[k + 1:]:\n        yield heapq.heappushpop(heap, x)\n\n    while heap:\n        yield heapq.heappop(heap)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 542,
+   "total_tokens": 616,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qQucMq2Ws7DmPQy4RWHrkNsVxhIg5NOJ"
+ },
+ {
+  "name": "possible_change",
+  "arm": "empty",
+  "key": "0f75f297f2a66d2c4f4ccb31ad63923f2242768c35bf1940ce8d06e3a37cd7b5",
+  "candidate": "def possible_change(coins, total):\n    if total == 0:\n        return 1\n    if total < 0:\n        return 0\n    if not coins:\n        return 0\n\n    first, *rest = coins\n    return possible_change(coins, total - first) + possible_change(rest, total)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 418,
+   "total_tokens": 496,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-OvCWiX6uzpXWmfnnmZZxMPUVZORGauFJ"
+ },
+ {
+  "name": "subsequences",
+  "arm": "full",
+  "key": "a44f876df35a9305d71a354473cd4de423a869063fdfd9bea9b2c8c2b3f5776a",
+  "candidate": "def subsequences(a, b, k):\n    if k == 0:\n        return [[]]\n\n    ret = []\n    for i in range(a, b + 1 - k):\n        ret.extend(\n            [i] + rest for rest in subsequences(i + 1, b, k - 1)\n        )\n\n    return ret\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 84,
+   "prompt_tokens": 1197,
+   "total_tokens": 1281,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-7aeTCjNJCa9Ca28tR2JkAjhLt3dkHmNb"
+ },
+ {
+  "name": "max_sublist_sum",
+  "arm": "recent",
+  "key": "948335f3b320d890bbbdbf08640947056bbe6bf90a6a8f699800724917a3bb96",
+  "candidate": "def max_sublist_sum(arr):\n    if not arr:\n        return 0\n\n    max_ending_here = arr[0]\n    max_so_far = arr[0]\n\n    for x in arr[1:]:\n        max_ending_here = max(x, max_ending_here + x)\n        max_so_far = max(max_so_far, max_ending_here)\n\n    return max_so_far\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 94,
+   "prompt_tokens": 348,
+   "total_tokens": 442,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-aJDWSPpzIXSLofpJVyKqlzE8O6SkyG3f"
+ },
+ {
+  "name": "sqrt",
+  "arm": "full",
+  "key": "c0007fa86ba88fb690d84fef85094ab0a76049352a1a1d2971db417ace52af91",
+  "candidate": "def sqrt(x, epsilon):\n    if x == 0:\n        return 0.0\n    approx = x / 2.0\n    while abs(approx * approx - x) > epsilon:\n        approx = 0.5 * (approx + x / approx)\n    return approx\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 71,
+   "prompt_tokens": 390,
+   "total_tokens": 461,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-caADkmpitXZR4JeKmlIalDIugd29A95B"
+ },
+ {
+  "name": "max_sublist_sum",
+  "arm": "full",
+  "key": "4f8a4627464beea9d12c0e106e512309da654f67c1580a0834b02dff94a35e80",
+  "candidate": "def max_sublist_sum(arr):\n    max_ending_here = 0\n    max_so_far = 0\n\n    for x in arr:\n        max_ending_here = max(0, max_ending_here + x)\n        max_so_far = max(max_so_far, max_ending_here)\n\n    return max_so_far\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 77,
+   "prompt_tokens": 379,
+   "total_tokens": 456,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-SkTNCtphHhr7AIxErUS7j1MdZApG4XNz"
+ },
+ {
+  "name": "quicksort",
+  "arm": "witness",
+  "key": "6c9631b6603a52ed3987a712367f9f6adfea4ce8b48e9a3fb7cbd288ed20dadf",
+  "candidate": "def quicksort(arr):\n    if not arr:\n        return []\n\n    pivot = arr[0]\n    lesser = quicksort([x for x in arr[1:] if x < pivot])\n    greater = quicksort([x for x in arr[1:] if x > pivot])\n    return lesser + [pivot] + greater\n\n\"\"\"\nQuickSort\n\n\nInput:\n    arr: A list of ints\n\nOutput:\n    The elements of arr in sorted order\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 109,
+   "prompt_tokens": 325,
+   "total_tokens": 434,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-1mEy8sO17KMMEXlxjX2tpVNWXr7Himru"
+ },
+ {
+  "name": "gcd",
+  "arm": "empty",
+  "key": "856c0ac53a9cb0fe18989f738cd31afb7ea7f3ce38783da54bb8de21d1e16320",
+  "candidate": "def gcd(a, b):\n    if b == 0:\n        return a\n    else:\n        return gcd(b, a % b)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 38,
+   "prompt_tokens": 212,
+   "total_tokens": 250,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-o5kAOGGUTmGfQ8N34WLW0bIoX21mX6lN"
+ },
+ {
+  "name": "get_factors",
+  "arm": "empty",
+  "key": "b5c4d593209ad7adde669e91287ad0b725205141b891d4b7296cae73e1540c88",
+  "candidate": "def get_factors(n):\n    if n == 1:\n        return []\n\n    factors = []\n    d = 2\n    while d * d <= n:\n        while n % d == 0:\n            factors.append(d)\n            n //= d\n        d += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 276,
+   "total_tokens": 364,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-0yoTJzbsFDkNDOAC9rbVEFQVRYQbotn2"
+ },
+ {
+  "name": "mergesort",
+  "arm": "empty",
+  "key": "1b19d6d9976d27bb236c69eaa832ece3518cb467fdadea9fd948576808bc71a8",
+  "candidate": "def mergesort(arr):\n    def merge(left, right):\n        result = []\n        i = 0\n        j = 0\n        while i < len(left) and j < len(right):\n            if left[i] <= right[j]:\n                result.append(left[i])\n                i += 1\n            else:\n                result.append(right[j])\n                j += 1\n        result.extend(left[i:])\n        result.extend(right[j:])\n        return result\n\n    if len(arr) <= 1:\n        return arr\n    else:\n        middle = len(arr) // 2\n        left = mergesort(arr[:middle])\n        right = mergesort(arr[middle:])\n        return merge(left, right)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 164,
+   "prompt_tokens": 285,
+   "total_tokens": 449,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qlUOfB6MAPYg7sti2xWqVP5L5fHwrvGa"
+ },
+ {
+  "name": "rpn_eval",
+  "arm": "empty",
+  "key": "bb8d3498b339bb4877136e4bd7339a3456845860223856ccbd1fa09ed5c8bec8",
+  "candidate": "def rpn_eval(tokens):\n    def op(symbol, a, b):\n        return {\n            '+': lambda a, b: a + b,\n            '-': lambda a, b: a - b,\n            '*': lambda a, b: a * b,\n            '/': lambda a, b: a / b\n        }[symbol](a, b)\n\n    stack = []\n\n    for token in tokens:\n        if isinstance(token, float):\n            stack.append(token)\n        else:\n            a = stack.pop()\n            b = stack.pop()\n            stack.append(\n                op(token, b, a)\n            )\n\n    return stack.pop()\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 154,
+   "prompt_tokens": 353,
+   "total_tokens": 507,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-dKVH6gRGF5WtiDiTSVr3wwOcwIfK3Fyb"
+ },
+ {
+  "name": "lcs_length",
+  "arm": "empty",
+  "key": "5a0dbf77bfb3d9cabfeeae7d5fe62f0beb5bdd08718ff12a189b27759009e893",
+  "candidate": "def lcs_length(s, t):\n    \"\"\"\n    Longest Common Substring\n    longest-common-substring\n\n    Input:\n        s: a string\n        t: a string\n\n    Output:\n        Length of the longest substring common to s and t\n\n    Example:\n        >>> lcs_length('witch', 'sandwich')\n        2\n        >>> lcs_length('meow', 'homeowner')\n        4\n    \"\"\"\n    if not s or not t:\n        return 0\n\n    m, n = len(s), len(t)\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    max_len = 0\n\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if s[i - 1] == t[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n                if dp[i][j] > max_len:\n                    max_len = dp[i][j]\n            else:\n                dp[i][j] = 0\n\n    return max_len\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 267,
+   "prompt_tokens": 263,
+   "total_tokens": 530,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-TC7oU8Xyf7ySGCtiznj72dUyhX3WqphX"
+ },
+ {
+  "name": "kth",
+  "arm": "full",
+  "key": "cd89c248f0664682b4d73e9ba418b27b407dddbe36c55386fc9792ae6fe3cceb",
+  "candidate": "def kth(arr, k):\n    pivot = arr[0]\n    below = [x for x in arr if x < pivot]\n    above = [x for x in arr if x > pivot]\n\n    num_less = len(below)\n    num_lessoreq = len(arr) - len(above)\n\n    if k < num_less:\n        return kth(below, k)\n    elif k >= num_lessoreq:\n        return kth(above, k - num_lessoreq)\n    else:\n        return pivot\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 126,
+   "prompt_tokens": 470,
+   "total_tokens": 596,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-kQyoejy7R5weQWmnNbiw1jZaDrYs9V3T"
+ },
+ {
+  "name": "to_base",
+  "arm": "recent",
+  "key": "6b06c9608d41cc5979412f76ce2f42a5c72e5b65ef86dc7da2564910869452c0",
+  "candidate": "import string\n\ndef to_base(num, b):\n    result = ''\n    alphabet = string.digits + string.ascii_uppercase\n    if num == 0:\n        return '0'\n    while num > 0:\n        i = num % b\n        num = num // b\n        result = alphabet[i] + result\n    return result\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 82,
+   "prompt_tokens": 329,
+   "total_tokens": 411,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qDIXbibHqxEwYHXGwBr08FI4IfBNOKZp"
+ },
+ {
+  "name": "find_in_sorted",
+  "arm": "recent",
+  "key": "11a6b9e93185ce8429036fa06809b4ce59f4fb87afa7d7f6882c36e3f2fe2f9e",
+  "candidate": "def find_in_sorted(arr, x):\n    def binsearch(start, end):\n        if start == end:\n            return -1\n        mid = start + (end - start) // 2\n        if x < arr[mid]:\n            return binsearch(start, mid)\n        elif x > arr[mid]:\n            return binsearch(mid, end)\n        else:\n            return mid\n\n    return binsearch(0, len(arr))\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 102,
+   "prompt_tokens": 386,
+   "total_tokens": 488,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-xZiuhOZJ1pYvCsz7ZDx7uCdfBM1g8kwI"
+ },
+ {
+  "name": "pascal",
+  "arm": "witness",
+  "key": "3b0fc7d0db3b361f59060b569dfd5cc25e95490b4dc13d8121dd68d69a677f42",
+  "candidate": "def pascal(n):\n    rows = [[1]]\n    for r in range(1, n):\n        row = [1]\n        for c in range(1, r):\n            row.append(rows[r - 1][c - 1] + rows[r - 1][c])\n        row.append(1)\n        rows.append(row)\n    return rows\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 372,
+   "total_tokens": 460,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-kCKnRmt7zbNQv3UUufUTVVJxs999BXZ0"
+ },
+ {
+  "name": "wrap",
+  "arm": "empty",
+  "key": "a2f301919c79c89a39b69f802ac1200d9572df8db0b8cb7a344b9fe0161223e5",
+  "candidate": "def wrap(text, cols):\n    lines = []\n    while len(text) > cols:\n        end = text.rfind(' ', 0, cols + 1)\n        if end == -1:\n            end = cols\n        line, text = text[:end], text[end:]\n        lines.append(line)\n\n    if text:\n        lines.append(text)\n\n    return lines\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 90,
+   "prompt_tokens": 335,
+   "total_tokens": 425,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-xuPqmOGKfQQvNXMBt0nqFMQmL1AVWxCW"
+ },
+ {
+  "name": "bucketsort",
+  "arm": "empty",
+  "key": "528b81cdc877c9664dd07c92a25a5303f45f2a3aea4586e32026ced80cdde533",
+  "candidate": "def bucketsort(arr, k):\n    counts = [0] * k\n    for x in arr:\n        counts[x] += 1\n\n    sorted_arr = []\n    for i, count in enumerate(counts):\n        sorted_arr.extend([i] * count)\n\n    return sorted_arr\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 236,
+   "total_tokens": 306,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-vyEK0TDB2tr9punU2AloqeoCerCuJ4EC"
+ },
+ {
+  "name": "next_palindrome",
+  "arm": "full",
+  "key": "4da9f52c5089ab3891ccbb42411f8f12c6f57e3ea8912d5bae41198fb5c2c1ab",
+  "candidate": "def next_palindrome(digit_list):\n    n = len(digit_list)\n    high_mid = n // 2\n    low_mid = (n - 1) // 2\n    while high_mid < n and low_mid >= 0:\n        if digit_list[high_mid] == 9:\n            digit_list[high_mid] = 0\n            digit_list[low_mid] = 0\n            high_mid += 1\n            low_mid -= 1\n        else:\n            digit_list[high_mid] += 1\n            if low_mid != high_mid:\n                digit_list[low_mid] += 1\n            return digit_list\n    return [1] + (n) * [0] + [1]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 167,
+   "prompt_tokens": 576,
+   "total_tokens": 743,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-0f0IasWoOcewb2HXtmjwCblZ7fBPy0DJ"
+ },
+ {
+  "name": "sieve",
+  "arm": "empty",
+  "key": "953121ed804edb8675ebd14a9d44b88fb3c7b1f95171352f048236abfc77320b",
+  "candidate": "def sieve(max):\n    if max < 2:\n        return []\n    is_prime = [True] * (max + 1)\n    is_prime[0] = False\n    is_prime[1] = False\n    for i in range(2, int(max ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, max + 1, i):\n                is_prime[j] = False\n    return [i for i, prime in enumerate(is_prime) if prime]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 125,
+   "prompt_tokens": 195,
+   "total_tokens": 320,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-XnXBlF0vIjatcAoEdKBymF0XjHsBmWoi"
+ },
+ {
+  "name": "hanoi",
+  "arm": "full",
+  "key": "46bc17da9aa1287bc6124b4ab3199535434e7291c37ab519c08abbeaa93e257d",
+  "candidate": "def hanoi(height, start=1, end=3):\n    steps = []\n    if height > 0:\n        helper = ({1, 2, 3} - {start} - {end}).pop()\n        steps.extend(hanoi(height - 1, start, helper))\n        steps.append((start, end))\n        steps.extend(hanoi(height - 1, helper, end))\n\n    return steps\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 98,
+   "prompt_tokens": 656,
+   "total_tokens": 754,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-IYHNTFdZcNhdCipSScj4ki9Dog8hLNTu"
+ },
+ {
+  "name": "find_in_sorted",
+  "arm": "witness",
+  "key": "438ebc886823b0f18fe158a73f277ffaf670f7aacd4674b931fefd391012e2f2",
+  "candidate": "def find_in_sorted(arr, x):\n    def binsearch(start, end):\n        if start >= end:\n            return -1\n        mid = start + (end - start) // 2\n        if x < arr[mid]:\n            return binsearch(start, mid)\n        elif x > arr[mid]:\n            return binsearch(mid + 1, end)\n        else:\n            return mid\n\n    return binsearch(0, len(arr))\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 105,
+   "prompt_tokens": 382,
+   "total_tokens": 487,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-8fAvMaMMAR5GyOouveIHRwRpP6XgywrD"
+ },
+ {
+  "name": "kth",
+  "arm": "witness",
+  "key": "8b2d083b03e90ba538394cc6180863b1580d2a6b42f928079ed36024f4bb4682",
+  "candidate": "def kth(arr, k):\n    if len(arr) == 1:\n        return arr[0]\n    pivot = arr[0]\n    below = [x for x in arr if x < pivot]\n    above = [x for x in arr if x > pivot]\n\n    num_less = len(below)\n    num_lessoreq = len(arr) - len(above)\n\n    if k < num_less:\n        return kth(below, k)\n    elif k >= num_lessoreq:\n        return kth(above, k - num_lessoreq)\n    else:\n        return pivot\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 143,
+   "prompt_tokens": 365,
+   "total_tokens": 508,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-NZSqN6UKinMqNVgIH4dstiwYKPUNFuTh"
+ },
+ {
+  "name": "gcd",
+  "arm": "witness",
+  "key": "e496d6465d4cbcbf7120964c38bea1479f20acdc8f1048867da4b5137f98cb4c",
+  "candidate": "def gcd(a, b):\n    \"\"\"\n    Input:\n        a: A nonnegative int\n        b: A nonnegative int\n\n\n    Greatest Common Divisor\n\n    Precondition:\n        isinstance(a, int) and isinstance(b, int)\n\n    Output:\n        The greatest int that divides evenly into a and b\n\n    Example:\n        >>> gcd(35, 21)\n        7\n\n    \"\"\"\n    a = abs(a)\n    b = abs(b)\n    while b:\n        a, b = b, a % b\n    return a\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 132,
+   "prompt_tokens": 277,
+   "total_tokens": 409,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-v9qu84desaZp4HTNwzaEnS2ihHhL7iwN"
+ },
+ {
+  "name": "possible_change",
+  "arm": "witness",
+  "key": "21e037ff1dbdfd1c584d6b9ca51c1c43ea32f5946984628900d95153d3fc69c7",
+  "candidate": "def possible_change(coins, total):\n    if total == 0:\n        return 1\n    if total < 0:\n        return 0\n    if not coins:\n        return 0\n\n    first, *rest = coins\n    return possible_change(coins, total - first) + possible_change(rest, total)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 499,
+   "total_tokens": 577,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-8b9FnwR69LY0HT8SC3Lmhtz0O25lCHEj"
+ },
+ {
+  "name": "kheapsort",
+  "arm": "empty",
+  "key": "1ef5fae57d7ff311c365c9719bd28d52788c2c72fc8f1534309d0833974b2081",
+  "candidate": "def kheapsort(arr, k):\n    import heapq\n\n    heap = arr[:k + 1]\n    heapq.heapify(heap)\n\n    for x in arr[k + 1:]:\n        yield heapq.heappushpop(heap, x)\n\n    while heap:\n        yield heapq.heappop(heap)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 414,
+   "total_tokens": 488,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-JKiTWhAoVsp9OJP0XhqgPDOgWlI1vEiI"
+ },
+ {
+  "name": "subsequences",
+  "arm": "empty",
+  "key": "a42a819c5660a8ca1274e72e9b1b2c3ee92418805ece95d39ac4f5f8acf40a4c",
+  "candidate": "def subsequences(a, b, k):\n    if k == 0:\n        return [[]]\n\n    ret = []\n    for i in range(a, b + 1 - k):\n        ret.extend(\n            [i] + rest for rest in subsequences(i + 1, b, k - 1)\n        )\n\n    return ret\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 84,
+   "prompt_tokens": 285,
+   "total_tokens": 369,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-otUFfbuatMVgGlF4YmHQOEKxdQtjwGhx"
+ },
+ {
+  "name": "find_first_in_sorted",
+  "arm": "full",
+  "key": "b5c070908b66b32240cfbe82665821760d6d18fbad4ac000437944590ff175fa",
+  "candidate": "def find_first_in_sorted(arr, x):\n    lo = 0\n    hi = len(arr) - 1\n\n    while lo <= hi:\n        mid = (lo + hi) // 2\n\n        if x == arr[mid] and (mid == 0 or x != arr[mid - 1]):\n            return mid\n\n        elif x <= arr[mid]:\n            hi = mid - 1\n\n        else:\n            lo = mid + 1\n\n    return -1\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 460,
+   "total_tokens": 570,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-G2XK6KkK5rGF4lBPnIVcNvWGcb74taJ2"
+ },
+ {
+  "name": "gcd",
+  "arm": "recent",
+  "key": "672f77dd3d6263e89426b6819aee97cc778de043efcc167b2630c71028d66ffc",
+  "candidate": "def gcd(a, b):\n    \"\"\"\n    Input:\n        a: A nonnegative int\n        b: A nonnegative int\n\n\n    Greatest Common Divisor\n\n    Precondition:\n        isinstance(a, int) and isinstance(b, int)\n\n    Output:\n        The greatest int that divides evenly into a and b\n\n    Example:\n        >>> gcd(35, 21)\n        7\n\n    \"\"\"\n    a = abs(a)\n    b = abs(b)\n    while b:\n        a, b = b, a % b\n    return a\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 132,
+   "prompt_tokens": 277,
+   "total_tokens": 409,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-9Vg8K31GPfiEXWiIq69LxtsA8skffc17"
+ },
+ {
+  "name": "quicksort",
+  "arm": "full",
+  "key": "420aade4fffa7f025d812acfd9f27c6a712569aee511cac23711bf62ae1b672c",
+  "candidate": "def quicksort(arr):\n    if not arr:\n        return []\n\n    pivot = arr[0]\n    lesser = quicksort([x for x in arr[1:] if x < pivot])\n    greater = quicksort([x for x in arr[1:] if x > pivot])\n    return lesser + [pivot] + greater\n\n\"\"\"\nQuickSort\n\n\nInput:\n    arr: A list of ints\n\nOutput:\n    The elements of arr in sorted order\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 109,
+   "prompt_tokens": 1172,
+   "total_tokens": 1281,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-wVRhmyrkZ8UevaBLQL5cBdbpqVeODPVn"
+ },
+ {
+  "name": "find_in_sorted",
+  "arm": "empty",
+  "key": "cf691bc582f1d8ab04eb951b9084b7557faa098828366a469ae442e92bd2f8ef",
+  "candidate": "def find_in_sorted(arr, x):\n    def binsearch(start, end):\n        if start >= end:\n            return -1\n        mid = start + (end - start) // 2\n        if x < arr[mid]:\n            return binsearch(start, mid)\n        elif x > arr[mid]:\n            return binsearch(mid + 1, end)\n        else:\n            return mid\n\n    return binsearch(0, len(arr))\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 105,
+   "prompt_tokens": 284,
+   "total_tokens": 389,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-VTr0DjRam9k4tvFtXjmzsFJuepsmgbOm"
+ },
+ {
+  "name": "hanoi",
+  "arm": "empty",
+  "key": "146db5d628d0aac103edc14972684ff4a7bc4b06b24da18ad73a00e4f7ff409e",
+  "candidate": "def hanoi(height, start=1, end=3):\n    steps = []\n    if height > 0:\n        helper = ({1, 2, 3} - {start} - {end}).pop()\n        steps.extend(hanoi(height - 1, start, helper))\n        steps.append((start, end))\n        steps.extend(hanoi(height - 1, helper, end))\n\n    return steps\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 98,
+   "prompt_tokens": 420,
+   "total_tokens": 518,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ewjPNxxWfg4tIikyhpIE2XlRGyNKFmuJ"
+ },
+ {
+  "name": "lis",
+  "arm": "witness",
+  "key": "6522d61f8a728680ddd032b6585471e7770e6efb1beba034237f8edc06610f06",
+  "candidate": "def lis(arr):\n    ends = {}\n    longest = 0\n\n    for i, val in enumerate(arr):\n        prefix_lengths = [j for j in range(1, longest + 1) if arr[ends[j]] < val]\n\n        length = max(prefix_lengths) if prefix_lengths else 0\n\n        if length == longest or val < arr[ends[length + 1]]:\n            ends[length + 1] = i\n            longest = length + 1\n\n    return longest\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 113,
+   "prompt_tokens": 359,
+   "total_tokens": 472,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-WHxcwglyt3oKfFdYt7BHQKxsLwWbxYb7"
+ },
+ {
+  "name": "next_permutation",
+  "arm": "full",
+  "key": "1d141caae0d4b0f6c04908baed8caa8b9e0cc13d041d9550357bdfb7316b2fd8",
+  "candidate": "def next_permutation(perm):\n    perm = list(perm)\n    n = len(perm)\n    # Step 1: Find the largest index i such that perm[i] < perm[i + 1]\n    i = n - 2\n    while i >= 0 and perm[i] >= perm[i + 1]:\n        i -= 1\n    if i < 0:\n        # This should not happen given the precondition, but handle gracefully\n        perm.reverse()\n        return perm\n    # Step 2: Find the largest index j > i such that perm[i] < perm[j]\n    j = n - 1\n    while perm[j] <= perm[i]:\n        j -= 1\n    # Step 3: Swap perm[i] and perm[j]\n    perm[i], perm[j] = perm[j], perm[i]\n    # Step 4: Reverse the suffix starting at i + 1\n    perm[i + 1:] = reversed(perm[i + 1:])\n    return perm\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 230,
+   "prompt_tokens": 506,
+   "total_tokens": 736,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-hKeUxfGlsMI81NnhsNOwnNRBMvcTyhv1"
+ },
+ {
+  "name": "possible_change",
+  "arm": "full",
+  "key": "0a2d5eedb6489b139130430cd6d7844e93fdc4aba3495e164de6d92870b7587f",
+  "candidate": "def possible_change(coins, total):\n    if total == 0:\n        return 1\n    if total < 0:\n        return 0\n    if not coins:\n        return 0\n\n    first, *rest = coins\n    return possible_change(coins, total - first) + possible_change(rest, total)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 78,
+   "prompt_tokens": 682,
+   "total_tokens": 760,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-nF1kme1V0tNvw2B8wgp3aRyS2DXxz48l"
+ },
+ {
+  "name": "mergesort",
+  "arm": "recent",
+  "key": "7009ade60113d10b35a4d7b6bb2f932a73d07120b381dfe7b6c46a34573235bb",
+  "candidate": "def mergesort(arr):\n    def merge(left, right):\n        result = []\n        i = 0\n        j = 0\n        while i < len(left) and j < len(right):\n            if left[i] <= right[j]:\n                result.append(left[i])\n                i += 1\n            else:\n                result.append(right[j])\n                j += 1\n        result.extend(left[i:])\n        result.extend(right[j:])\n        return result\n\n    if len(arr) <= 1:\n        return arr\n    else:\n        middle = len(arr) // 2\n        left = mergesort(arr[:middle])\n        right = mergesort(arr[middle:])\n        return merge(left, right)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 164,
+   "prompt_tokens": 360,
+   "total_tokens": 524,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-vXaNoj6E4FmDDlSRj02BjqxRHNWm4cPX"
+ },
+ {
+  "name": "lis",
+  "arm": "full",
+  "key": "3966c61f05459d0bdf9e1ce240b109403d8b6777c4791716f4b9598659d60559",
+  "candidate": "def lis(arr):\n    \"\"\"\n    Longest Increasing Subsequence\n    longest-increasing-subsequence\n\n\n    Input:\n        arr: A sequence of ints\n\n    Precondition:\n        The ints in arr are unique\n\n    Output:\n        The length of the longest monotonically increasing subsequence of arr\n\n    Example:\n        >>> lis([4, 1, 5, 3, 7, 6, 2])\n        3\n    \"\"\"\n    if not arr:\n        return 0\n\n    # tails[i] holds the smallest tail element for an increasing subsequence of length i+1\n    tails = []\n\n    for val in arr:\n        # Find the position where val should be inserted in tails\n        # We want the leftmost element in tails that is >= val\n        lo, hi = 0, len(tails)\n        while lo < hi:\n            mid = (lo + hi) // 2\n            if tails[mid] < val:\n                lo = mid + 1\n            else:\n                hi = mid\n\n        if lo == len(tails):\n            tails.append(val)\n        else:\n            tails[lo] = val\n\n    return len(tails)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 271,
+   "prompt_tokens": 495,
+   "total_tokens": 766,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-UzEqnP3VIeHTxKzhJt8VI2Acv2goeJik"
+ },
+ {
+  "name": "gcd",
+  "arm": "full",
+  "key": "04963c5c3d2a1baf38af5f03998414ca15599cd13456276e8b0393505b95de7d",
+  "candidate": "def gcd(a, b):\n    \"\"\"\n    Input:\n        a: A nonnegative int\n        b: A nonnegative int\n\n\n    Greatest Common Divisor\n\n    Precondition:\n        isinstance(a, int) and isinstance(b, int)\n\n    Output:\n        The greatest int that divides evenly into a and b\n\n    Example:\n        >>> gcd(35, 21)\n        7\n\n    \"\"\"\n    a = abs(a)\n    b = abs(b)\n    while b:\n        a, b = b, a % b\n    return a\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 132,
+   "prompt_tokens": 318,
+   "total_tokens": 450,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-Q0cCvs2nhSsLCgEcYrStfQnXUqkDR1O0"
+ },
+ {
+  "name": "subsequences",
+  "arm": "recent",
+  "key": "b1221a20a9c4b53b634d57f3351f987ac9efa01b12587c342a9ee4fcad38f10e",
+  "candidate": "def subsequences(a, b, k):\n    if k == 0:\n        return [[]]\n\n    ret = []\n    for i in range(a, b + 1 - k):\n        ret.extend(\n            [i] + rest for rest in subsequences(i + 1, b, k - 1)\n        )\n\n    return ret\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 84,
+   "prompt_tokens": 362,
+   "total_tokens": 446,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-GGDSo8h9IxwRKptHdfk5XsxlsiKua4fl"
+ },
+ {
+  "name": "flatten",
+  "arm": "empty",
+  "key": "3bed70e9900d2bbb3aded3792e0eac2bb76f15fa699823cee8ad74d44b5135ba",
+  "candidate": "def flatten(arr):\n    for x in arr:\n        if isinstance(x, list):\n            for y in flatten(x):\n                yield y\n        else:\n            yield x\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 240,
+   "total_tokens": 285,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-wrUYoqpyoQkwLbuaRHx5rgvNj6CH9xKu"
+ },
+ {
+  "name": "sqrt",
+  "arm": "empty",
+  "key": "a93af60b3f203f7e19ae5d66d8418e82bbcbc614436ee3139cf13ac8f2c4243f",
+  "candidate": "def sqrt(x, epsilon):\n    if x < 0:\n        raise ValueError(\"x must be non-negative\")\n    if x == 0:\n        return 0.0\n    if epsilon <= 0:\n        raise ValueError(\"epsilon must be positive\")\n    \n    approx = x / 2.0\n    while abs(approx * approx - x) > epsilon:\n        approx = 0.5 * (approx + x / approx)\n    return approx\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 109,
+   "prompt_tokens": 250,
+   "total_tokens": 359,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-w5bW9ciBCLdQhemTIHqXpLYodX6ZMktn"
+ },
+ {
+  "name": "shunting_yard",
+  "arm": "empty",
+  "key": "37f71ce74812ddf80f45027086198693d3bfa021d7dbffb0945de71eead21023",
+  "candidate": "def shunting_yard(tokens):\n    precedence = {\n        '+': 1,\n        '-': 1,\n        '*': 2,\n        '/': 2\n    }\n\n    rpntokens = []\n    opstack = []\n    for token in tokens:\n        if isinstance(token, int):\n            rpntokens.append(token)\n        else:\n            while opstack and precedence[token] <= precedence[opstack[-1]]:\n                rpntokens.append(opstack.pop())\n            opstack.append(token)\n\n    while opstack:\n        rpntokens.append(opstack.pop())\n\n    return rpntokens\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 144,
+   "prompt_tokens": 447,
+   "total_tokens": 591,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-Umhiw7x7XWm7mLjHVFLu9FvNsCtNhPTu"
+ },
+ {
+  "name": "sieve",
+  "arm": "witness",
+  "key": "a157368a2f850bad67e5b6502812a569924a55e19414875d2da90191de94c0b3",
+  "candidate": "def sieve(max):\n    \"\"\"\n    Sieve of Eratosthenes\n    prime-sieve\n\n    Input:\n        max: A positive int representing an upper bound.\n\n    Output:\n        A list containing all primes up to and including max\n    \"\"\"\n    if max < 2:\n        return []\n    \n    is_prime = [True] * (max + 1)\n    is_prime[0] = False\n    is_prime[1] = False\n    \n    for i in range(2, int(max ** 0.5) + 1):\n        if is_prime[i]:\n            for j in range(i * i, max + 1, i):\n                is_prime[j] = False\n    \n    return [i for i, prime in enumerate(is_prime) if prime]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 179,
+   "prompt_tokens": 258,
+   "total_tokens": 437,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-WbSVFPgCx7bhHRHOOVR81LNmjcl2SAv6"
+ },
+ {
+  "name": "to_base",
+  "arm": "witness",
+  "key": "a175d4c229a41593e60d4f55a358cc56b49f40b2c2d378cc27e421d6ee6561d9",
+  "candidate": "import string\n\ndef to_base(num, b):\n    result = ''\n    alphabet = string.digits + string.ascii_uppercase\n    if num == 0:\n        return '0'\n    while num > 0:\n        i = num % b\n        num = num // b\n        result = alphabet[i] + result\n    return result\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 82,
+   "prompt_tokens": 324,
+   "total_tokens": 406,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-r78l1ANudkT4AsVbAUNGypkgPHrwMIOk"
+ },
+ {
+  "name": "powerset",
+  "arm": "witness",
+  "key": "1ec1e2793e996b4fdae412a21364a54cd28adafe45539f2278f96eed508a7e94",
+  "candidate": "def powerset(arr):\n    if arr:\n        first, *rest = arr\n        rest_subsets = powerset(rest)\n        return rest_subsets + [[first] + subset for subset in rest_subsets]\n    else:\n        return [[]]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 62,
+   "prompt_tokens": 356,
+   "total_tokens": 418,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ZYNHkOEX1pjyYe1UVvXyNLcijtZnx9M9"
+ },
+ {
+  "name": "bucketsort",
+  "arm": "witness",
+  "key": "3782288f6cf0e821fecf090d4499bcb547b649d68320177d8909dab934bcef2a",
+  "candidate": "def bucketsort(arr, k):\n    counts = [0] * k\n    for x in arr:\n        counts[x] += 1\n\n    sorted_arr = []\n    for i, count in enumerate(counts):\n        sorted_arr.extend([i] * count)\n\n    return sorted_arr\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 360,
+   "total_tokens": 430,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-kMEGmowcM6CRKuofTxKM7362RCCQKmRC"
+ },
+ {
+  "name": "pascal",
+  "arm": "recent",
+  "key": "6ec01e739667ca6ddc72e5c8d38bcfad963182485c620fbeddf76adf007db7fc",
+  "candidate": "def pascal(n):\n    rows = [[1]]\n    for r in range(1, n):\n        row = []\n        for c in range(0, r + 1):\n            upleft = rows[r - 1][c - 1] if c > 0 else 0\n            upright = rows[r - 1][c] if c < r else 0\n            row.append(upleft + upright)\n        rows.append(row)\n\n    return rows\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 390,
+   "total_tokens": 500,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-ablKTvTZREEli9NNuL3AGSK0bUulOtNH"
+ },
+ {
+  "name": "sieve",
+  "arm": "recent",
+  "key": "e9ffcbd944362f89ef9721a29d2d7c5897125541b8236949c8512dad2c53b3ce",
+  "candidate": "def sieve(max):\n    if max < 2:\n        return []\n    is_prime = [True] * (max + 1)\n    is_prime[0] = False\n    is_prime[1] = False\n    for n in range(2, int(max ** 0.5) + 1):\n        if is_prime[n]:\n            for multiple in range(n * n, max + 1, n):\n                is_prime[multiple] = False\n    return [n for n in range(2, max + 1) if is_prime[n]]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 131,
+   "prompt_tokens": 298,
+   "total_tokens": 429,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-Xxbr6wdoE6erxINb1mKOmdHGkxkQyTwI"
+ },
+ {
+  "name": "is_valid_parenthesization",
+  "arm": "full",
+  "key": "d659eb878875b121b69b143e6092a19fa0bee6687db744848f32420cd0551e3e",
+  "candidate": "def is_valid_parenthesization(parens):\n    depth = 0\n    for paren in parens:\n        if paren == '(':\n            depth += 1\n        else:\n            depth -= 1\n            if depth < 0:\n                return False\n\n    return depth == 0\n\n\n\"\"\"\nNested Parens\nInput:\n    parens: A string of parentheses\n\nPrecondition:\n    all(paren in '()' for paren in parens)\n\nOutput:\n    Whether the parentheses are properly nested\n\nExamples:\n    >>> is_valid_parenthesization('((()()))()')\n    True\n    >>> is_valid_parenthesization(')()(')\n    False\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 159,
+   "prompt_tokens": 296,
+   "total_tokens": 455,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-LOFYhwcdM3yWUOlFOXTCCH64zZKFFKBc"
+ },
+ {
+  "name": "lcs_length",
+  "arm": "full",
+  "key": "c3c7f6f64c7126c7d431ccc8eac64c60efac65e38c442e4e71c789189c3e4767",
+  "candidate": "def lcs_length(s, t):\n    \"\"\"\n    Longest Common Substring\n    longest-common-substring\n\n    Input:\n        s: a string\n        t: a string\n\n    Output:\n        Length of the longest substring common to s and t\n\n    Example:\n        >>> lcs_length('witch', 'sandwich')\n        2\n        >>> lcs_length('meow', 'homeowner')\n        4\n    \"\"\"\n    if not s or not t:\n        return 0\n\n    m, n = len(s), len(t)\n    # dp[i][j] = length of longest common substring ending at s[i-1] and t[j-1]\n    dp = [[0] * (n + 1) for _ in range(m + 1)]\n    max_len = 0\n\n    for i in range(1, m + 1):\n        for j in range(1, n + 1):\n            if s[i - 1] == t[j - 1]:\n                dp[i][j] = dp[i - 1][j - 1] + 1\n                if dp[i][j] > max_len:\n                    max_len = dp[i][j]\n            else:\n                dp[i][j] = 0\n\n    return max_len\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 294,
+   "prompt_tokens": 402,
+   "total_tokens": 696,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-G9cEnBlkieQzbKsIGTbFokTlXSVLcnal"
+ },
+ {
+  "name": "bucketsort",
+  "arm": "full",
+  "key": "38f6e1dc0acb2eb63446a878b699ee13ca264c23886eb269e6159d25ee93baf7",
+  "candidate": "def bucketsort(arr, k):\n    counts = [0] * k\n    for x in arr:\n        counts[x] += 1\n\n    sorted_arr = []\n    for i, count in enumerate(counts):\n        sorted_arr.extend([i] * count)\n\n    return sorted_arr\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 70,
+   "prompt_tokens": 920,
+   "total_tokens": 990,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-YwqHKDwW7bgdjdBE9Chtrc0FypEHCbFh"
+ },
+ {
+  "name": "lis",
+  "arm": "recent",
+  "key": "84b107a7653144ca051d3e345a7d3112c294b2bbc4ff8117c23c6a2b682d7392",
+  "candidate": "def lis(arr):\n    if not arr:\n        return 0\n\n    # tails[i] is the smallest tail element for an increasing subsequence of length i+1\n    tails = []\n\n    for val in arr:\n        # Find the position where val should be inserted in tails\n        # We want the leftmost element in tails that is >= val\n        lo, hi = 0, len(tails)\n        while lo < hi:\n            mid = (lo + hi) // 2\n            if tails[mid] < val:\n                lo = mid + 1\n            else:\n                hi = mid\n\n        if lo == len(tails):\n            tails.append(val)\n        else:\n            tails[lo] = val\n\n    return len(tails)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 174,
+   "prompt_tokens": 356,
+   "total_tokens": 530,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-mXda7eq9eLxxcLNmB9qo5aeu6IIMGDEE"
+ },
+ {
+  "name": "is_valid_parenthesization",
+  "arm": "recent",
+  "key": "d659eb878875b121b69b143e6092a19fa0bee6687db744848f32420cd0551e3e",
+  "candidate": "def is_valid_parenthesization(parens):\n    depth = 0\n    for paren in parens:\n        if paren == '(':\n            depth += 1\n        else:\n            depth -= 1\n            if depth < 0:\n                return False\n\n    return depth == 0\n\n\n\"\"\"\nNested Parens\nInput:\n    parens: A string of parentheses\n\nPrecondition:\n    all(paren in '()' for paren in parens)\n\nOutput:\n    Whether the parentheses are properly nested\n\nExamples:\n    >>> is_valid_parenthesization('((()()))()')\n    True\n    >>> is_valid_parenthesization(')()(')\n    False\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 159,
+   "prompt_tokens": 296,
+   "total_tokens": 455,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-LOFYhwcdM3yWUOlFOXTCCH64zZKFFKBc"
+ },
+ {
+  "name": "kheapsort",
+  "arm": "full",
+  "key": "eb9bd124ba84e74cc7f3819ca25eac2c61f336ce5e933f108a0301ba31736585",
+  "candidate": "def kheapsort(arr, k):\n    import heapq\n\n    heap = arr[:k + 1]\n    heapq.heapify(heap)\n\n    for x in arr[k + 1:]:\n        yield heapq.heappushpop(heap, x)\n\n    while heap:\n        yield heapq.heappop(heap)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 74,
+   "prompt_tokens": 542,
+   "total_tokens": 616,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qQucMq2Ws7DmPQy4RWHrkNsVxhIg5NOJ"
+ },
+ {
+  "name": "lis",
+  "arm": "empty",
+  "key": "84ac9f5f5bb6d5694c6aa8af0ae390516bd19a29479658c34c42d7987149b7d0",
+  "candidate": "def lis(arr):\n    if not arr:\n        return 0\n\n    # tails[i] holds the smallest tail element for an increasing subsequence of length i+1\n    tails = []\n\n    for val in arr:\n        # Find the leftmost element in tails that is >= val\n        lo, hi = 0, len(tails)\n        while lo < hi:\n            mid = (lo + hi) // 2\n            if tails[mid] < val:\n                lo = mid + 1\n            else:\n                hi = mid\n\n        if lo == len(tails):\n            tails.append(val)\n        else:\n            tails[lo] = val\n\n    return len(tails)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 160,
+   "prompt_tokens": 297,
+   "total_tokens": 457,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-KwXnSWvxafgkaKLlFdqHpuyR97rRNbMS"
+ },
+ {
+  "name": "pascal",
+  "arm": "empty",
+  "key": "a3a2b29c1bdd410a7486ccf38da0656f947a0fa0dda18631c9f533c0eb2c4a5b",
+  "candidate": "def pascal(n):\n    rows = [[1]]\n    for r in range(1, n):\n        row = []\n        for c in range(0, r + 1):\n            upleft = rows[r - 1][c - 1] if c > 0 else 0\n            upright = rows[r - 1][c] if c < r else 0\n            row.append(upleft + upright)\n        rows.append(row)\n\n    return rows\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 313,
+   "total_tokens": 423,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-2ozzgIVGyGBdm6bxU76I1vQJlZY8w42H"
+ },
+ {
+  "name": "mergesort",
+  "arm": "full",
+  "key": "11e94b85aa3d749a5f2edd5f667f96b2eb87f666bbc347941bf61fda5f32689b",
+  "candidate": "def mergesort(arr):\n    def merge(left, right):\n        result = []\n        i = 0\n        j = 0\n        while i < len(left) and j < len(right):\n            if left[i] <= right[j]:\n                result.append(left[i])\n                i += 1\n            else:\n                result.append(right[j])\n                j += 1\n        result.extend(left[i:])\n        result.extend(right[j:])\n        return result\n\n    if len(arr) <= 1:\n        return arr\n    else:\n        middle = len(arr) // 2\n        left = mergesort(arr[:middle])\n        right = mergesort(arr[middle:])\n        return merge(left, right)\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 164,
+   "prompt_tokens": 915,
+   "total_tokens": 1079,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-KwqpCSzDw99bEE7DZpCleCiKWNZroL1i"
+ },
+ {
+  "name": "wrap",
+  "arm": "full",
+  "key": "c32596f2a3a6a9eb9d1a525acda893295fe689001b20cfd9ba07d45fa7a455a7",
+  "candidate": "def wrap(text, cols):\n    lines = []\n    while len(text) > cols:\n        end = text.rfind(' ', 0, cols + 1)\n        if end == -1:\n            end = cols\n        line, text = text[:end], text[end:]\n        lines.append(line)\n\n    return lines\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 79,
+   "prompt_tokens": 657,
+   "total_tokens": 736,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-qHGonLIebbdb1foZFUzurCu9PyJNdUvO"
+ },
+ {
+  "name": "next_palindrome",
+  "arm": "recent",
+  "key": "2a085eec50656870aeca854316e8108f97a123cc764ff1691e458fee7b2bd974",
+  "candidate": "def next_palindrome(digit_list):\n    n = len(digit_list)\n    high_mid = n // 2\n    low_mid = (n - 1) // 2\n    while high_mid < n and low_mid >= 0:\n        if digit_list[high_mid] == 9:\n            digit_list[high_mid] = 0\n            digit_list[low_mid] = 0\n            high_mid += 1\n            low_mid -= 1\n        else:\n            digit_list[high_mid] += 1\n            if low_mid != high_mid:\n                digit_list[low_mid] += 1\n            return digit_list\n    return [1] + (n) * [0] + [1]\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 167,
+   "prompt_tokens": 505,
+   "total_tokens": 672,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-z638IlbY80xXIyKxCQ1DEFzjBXs8XMna"
+ },
+ {
+  "name": "kth",
+  "arm": "recent",
+  "key": "528b7b4b1b526b52a0f26a2618b1f4c531e65db803571c0c345d911a6c57bb6f",
+  "candidate": "def kth(arr, k):\n    pivot = arr[0]\n    below = [x for x in arr if x < pivot]\n    above = [x for x in arr if x > pivot]\n\n    num_less = len(below)\n    num_lessoreq = len(arr) - len(above)\n\n    if k < num_less:\n        return kth(below, k)\n    elif k >= num_lessoreq:\n        return kth(above, k - num_lessoreq)\n    else:\n        return pivot\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 126,
+   "prompt_tokens": 381,
+   "total_tokens": 507,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-34k4k9fv5SnLoZGENau24ZHWNTKRyaHZ"
+ },
+ {
+  "name": "longest_common_subsequence",
+  "arm": "empty",
+  "key": "d69fe8b04289b3ed183153033f988ac2ab7b1a96a605f8955c7c065048c46b4f",
+  "candidate": "def longest_common_subsequence(a, b):\n    if not a or not b:\n        return ''\n\n    elif a[0] == b[0]:\n        return a[0] + longest_common_subsequence(a[1:], b)\n\n    else:\n        return max(\n            longest_common_subsequence(a, b[1:]),\n            longest_common_subsequence(a[1:], b),\n            key=len\n        )\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 99,
+   "prompt_tokens": 323,
+   "total_tokens": 422,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-laVHVNKjgTse3WRe9oYzvCXafSUtZbgr"
+ },
+ {
+  "name": "rpn_eval",
+  "arm": "witness",
+  "key": "84430f5df7be0aeb69b4ff2712ad2299e691698965c9f75ddd7928aa55b13afd",
+  "candidate": "def rpn_eval(tokens):\n    def op(symbol, a, b):\n        return {\n            '+': lambda a, b: a + b,\n            '-': lambda a, b: a - b,\n            '*': lambda a, b: a * b,\n            '/': lambda a, b: a / b\n        }[symbol](a, b)\n\n    stack = []\n\n    for token in tokens:\n        if isinstance(token, float):\n            stack.append(token)\n        else:\n            b = stack.pop()\n            a = stack.pop()\n            stack.append(\n                op(token, a, b)\n            )\n\n    return stack.pop()\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 154,
+   "prompt_tokens": 430,
+   "total_tokens": 584,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-95AIEYbLj0Uq1G7Eg4eZq6M9mEG9eXBd"
+ },
+ {
+  "name": "pascal",
+  "arm": "full",
+  "key": "aa86eaa89c547512fc6901183ec8394e279cb751df22bc1b92f50ff2242eb1e9",
+  "candidate": "def pascal(n):\n    rows = [[1]]\n    for r in range(1, n):\n        row = [1]\n        for c in range(1, r):\n            row.append(rows[r - 1][c - 1] + rows[r - 1][c])\n        row.append(1)\n        rows.append(row)\n    return rows\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 426,
+   "total_tokens": 514,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-Zd8sZtEoSy7uiuBrqfAy8Bn2aBAuGL5z"
+ },
+ {
+  "name": "next_permutation",
+  "arm": "empty",
+  "key": "c86d138445371d31fa62a4152631144486b42bab9d345b91ac3c0a57e9f6949f",
+  "candidate": "def next_permutation(perm):\n    for i in range(len(perm) - 2, -1, -1):\n        if perm[i] < perm[i + 1]:\n            for j in range(len(perm) - 1, i, -1):\n                if perm[j] > perm[i]:\n                    next_perm = list(perm)\n                    next_perm[i], next_perm[j] = perm[j], perm[i]\n                    next_perm[i + 1:] = reversed(next_perm[i + 1:])\n                    return next_perm\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 124,
+   "prompt_tokens": 306,
+   "total_tokens": 430,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-l2MVQm6Q4BUbf88TWrFnJ3oEcz7VnM5f"
+ },
+ {
+  "name": "hanoi",
+  "arm": "witness",
+  "key": "81dceadfec6b2061054a57c8a73ea81d66fb71ae3974b7b61f54ab949a9e6560",
+  "candidate": "def hanoi(height, start=1, end=3):\n    steps = []\n    if height > 0:\n        helper = ({1, 2, 3} - {start} - {end}).pop()\n        steps.extend(hanoi(height - 1, start, helper))\n        steps.append((start, end))\n        steps.extend(hanoi(height - 1, helper, end))\n\n    return steps\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 98,
+   "prompt_tokens": 500,
+   "total_tokens": 598,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-L2WxKkIwgAOOk4ME6nZLxWqxNIT84eOg"
+ },
+ {
+  "name": "find_first_in_sorted",
+  "arm": "empty",
+  "key": "a0e9561fcbbc9ea1827cc951f2d6d7a43573d756331cf1b3f04e2364553eafcf",
+  "candidate": "def find_first_in_sorted(arr, x):\n    lo = 0\n    hi = len(arr) - 1\n\n    while lo <= hi:\n        mid = (lo + hi) // 2\n\n        if x == arr[mid] and (mid == 0 or x != arr[mid - 1]):\n            return mid\n\n        elif x <= arr[mid]:\n            hi = mid - 1\n\n        else:\n            lo = mid + 1\n\n    return -1\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 110,
+   "prompt_tokens": 295,
+   "total_tokens": 405,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-cpEERaGLLRdsAA3y0yZRMDMAJeZDXos4"
+ },
+ {
+  "name": "is_valid_parenthesization",
+  "arm": "witness",
+  "key": "d659eb878875b121b69b143e6092a19fa0bee6687db744848f32420cd0551e3e",
+  "candidate": "def is_valid_parenthesization(parens):\n    depth = 0\n    for paren in parens:\n        if paren == '(':\n            depth += 1\n        else:\n            depth -= 1\n            if depth < 0:\n                return False\n\n    return depth == 0\n\n\n\"\"\"\nNested Parens\nInput:\n    parens: A string of parentheses\n\nPrecondition:\n    all(paren in '()' for paren in parens)\n\nOutput:\n    Whether the parentheses are properly nested\n\nExamples:\n    >>> is_valid_parenthesization('((()()))()')\n    True\n    >>> is_valid_parenthesization(')()(')\n    False\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 159,
+   "prompt_tokens": 296,
+   "total_tokens": 455,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-LOFYhwcdM3yWUOlFOXTCCH64zZKFFKBc"
+ },
+ {
+  "name": "flatten",
+  "arm": "full",
+  "key": "7826fd7d801d707ad5531510d8fbea5a01db6a6831148f680a3a97b906cb353d",
+  "candidate": "def flatten(arr):\n    for x in arr:\n        if isinstance(x, list):\n            for y in flatten(x):\n                yield y\n        else:\n            yield x\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 45,
+   "prompt_tokens": 411,
+   "total_tokens": 456,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-dAU61RW1e77SK92WsSkPtsD9jLFAdq02"
+ },
+ {
+  "name": "quicksort",
+  "arm": "recent",
+  "key": "6f548553af9e5687c1477e6755358fbd66f34c0cd5316fbf6cffdcaa33df954b",
+  "candidate": "def quicksort(arr):\n    if not arr:\n        return []\n\n    pivot = arr[0]\n    lesser = quicksort([x for x in arr[1:] if x < pivot])\n    greater = quicksort([x for x in arr[1:] if x > pivot])\n    return lesser + [pivot] + greater\n\n\"\"\"\nQuickSort\n\n\nInput:\n    arr: A list of ints\n\nOutput:\n    The elements of arr in sorted order\n\"\"\"\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 109,
+   "prompt_tokens": 433,
+   "total_tokens": 542,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-NIr836O4pNSuxmEqKAZTfn01GS1qvYtv"
+ },
+ {
+  "name": "get_factors",
+  "arm": "witness",
+  "key": "972cd162e7d2201084cef950bdbf13c7e83cd2640b7dfe6a7361983dce38fe41",
+  "candidate": "def get_factors(n):\n    if n == 1:\n        return []\n\n    factors = []\n    d = 2\n    while d * d <= n:\n        while n % d == 0:\n            factors.append(d)\n            n //= d\n        d += 1\n    if n > 1:\n        factors.append(n)\n    return factors\n",
+  "length_finish": false,
+  "usage": {
+   "completion_tokens": 88,
+   "prompt_tokens": 319,
+   "total_tokens": 407,
+   "prompt_tokens_details": {
+    "cached_tokens": 0
+   }
+  },
+  "response_id": "chatcmpl-PeTdQOdIr4d4H8Y6zUK2XyjYqG5sUODK"
+ }
+]

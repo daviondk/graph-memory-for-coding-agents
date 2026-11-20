@@ -1,0 +1,47 @@
+{
+  "projection_and_ceiling": {
+    "clean_sessions": 10000,
+    "scoreable": 470,
+    "all20": 467,
+    "cap5": 464,
+    "one_swap_all_population": 464,
+    "q": 500,
+    "duplicate_top20_rows": 3,
+    "duplicate_top5_rows": 1
+  },
+  "correctable_misses": [
+    247,
+    287,
+    290,
+    298
+  ],
+  "selected_questions": 64,
+  "intersection_with_correctable": [],
+  "start": "2026-11-16T15:13:04.775715+00:00",
+  "end": "2026-11-16T15:14:31.719471+00:00",
+  "elapsed_hosted_span": 86.943756,
+  "host_usage": {
+    "retries": 0,
+    "actions": 0,
+    "input_tokens": 1240559,
+    "cached_input_tokens": 826368,
+    "cache_write_input_tokens": 0,
+    "output_tokens": 1294,
+    "reasoning_output_tokens": 157
+  },
+  "primary_and_followup_locks": {
+    "protocol.md": true,
+    "prepare.py": true,
+    "rank.py": true,
+    "decide.py": true,
+    "run_model.py": true,
+    "evaluate.py": false,
+    "papr_ranks.jsonl": true,
+    "followup-protocol.md": true,
+    "slate.py": true,
+    "slate_decide.py": true,
+    "neural_scores.jsonl": true,
+    "predictions.jsonl": true
+  },
+  "paired_stats_match_every_arm": true
+}

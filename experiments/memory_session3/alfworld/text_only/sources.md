@@ -1,0 +1,7 @@
+# Scope relative to ALFWorld studies
+
+Shridhar and colleagues introduced aligned symbolic text and visually embodied ALFRED environments and the modular BUTLER agent. This experiment addresses the symbolic text game; it does not execute an embodied policy. [ALFWorld, ICLR 2021](https://arxiv.org/abs/2010.03768) · [Authors' repository](https://github.com/alfworld/alfworld)
+
+ReAct's ALFWorld study reports 134 unseen games across six task types. Its prompting procedure samples and annotates training examples to elicit interleaved reasoning and acting. Our environment roster and solved-game endpoint support studying the same suite. Hand-coded language understanding, grammar, navigation and subgoal logic, different compute, the 50-command limit and reset state make this an ablation of one controller rather than a matched reproduction of the paper's LLM experiments. [ReAct, section 4 and appendix C.4](https://arxiv.org/html/2210.03629)
+
+The current actor builds action strings only from public task and observation text. The templates (move, open, take, heat, clean, cool, use) are those of the released game. They are fixed domain knowledge. TextWorld itself can return explicit environment information to evaluation code, so the new runner requests only the terminal win bit while collecting textual feedback. [Pinned ALFWorld command grammar](https://github.com/alfworld/alfworld/blob/aaba6870f86c5be6a08a491f32a50b906227bc3e/alfworld/data/alfred.twl2)

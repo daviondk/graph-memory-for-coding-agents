@@ -1,0 +1,409 @@
+{
+ "funnel": {
+  "tasks": 98,
+  "cuts": 801,
+  "attempt": 329,
+  "confirmed": 207,
+  "evaluable": 206
+ },
+ "n_scored_issues": 87,
+ "methods": {
+  "cap_base": {
+   "hits": 73,
+   "full": 0.35436893203883496,
+   "average_lines": 0.3692640692640693
+  },
+  "cap_address": {
+   "hits": 121,
+   "full": 0.587378640776699,
+   "average_lines": 0.6060388034295802
+  },
+  "cap_offset": {
+   "hits": 72,
+   "full": 0.34951456310679613,
+   "average_lines": 0.3626982419303407
+  },
+  "cap_lru_editor": {
+   "hits": 73,
+   "full": 0.35436893203883496,
+   "average_lines": 0.3692640692640693
+  },
+  "cap_lru_address": {
+   "hits": 119,
+   "full": 0.5776699029126213,
+   "average_lines": 0.5968155024587064
+  },
+  "free_base": {
+   "hits": 73,
+   "full": 0.35436893203883496,
+   "average_lines": 0.3692640692640693
+  },
+  "free_address": {
+   "hits": 122,
+   "full": 0.5922330097087378,
+   "average_lines": 0.610893172361619
+  },
+  "free_offset": {
+   "hits": 72,
+   "full": 0.34951456310679613,
+   "average_lines": 0.3626982419303407
+  }
+ },
+ "comparisons": {
+  "cap_address-cap_base": {
+   "count": 206,
+   "wins": 48,
+   "losses": 0,
+   "net": 48,
+   "delta": 0.23300970873786409,
+   "ci": [
+    0.1745267964672822,
+    0.297032531824611
+   ],
+   "p": 2.2737367544323206e-13,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     7,
+     43,
+     7
+    ],
+    "matplotlib/matplotlib": [
+     4,
+     13,
+     4
+    ],
+    "sympy/sympy": [
+     17,
+     68,
+     17
+    ],
+    "django/django": [
+     17,
+     72,
+     17
+    ],
+    "scikit-learn/scikit-learn": [
+     3,
+     10,
+     3
+    ]
+   }
+  },
+  "cap_address-cap_offset": {
+   "count": 206,
+   "wins": 49,
+   "losses": 0,
+   "net": 49,
+   "delta": 0.23786407766990292,
+   "ci": [
+    0.1782144310321443,
+    0.3031959717905809
+   ],
+   "p": 2.2737367544323206e-13,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     7,
+     43,
+     7
+    ],
+    "matplotlib/matplotlib": [
+     4,
+     13,
+     4
+    ],
+    "sympy/sympy": [
+     18,
+     68,
+     18
+    ],
+    "django/django": [
+     17,
+     72,
+     17
+    ],
+    "scikit-learn/scikit-learn": [
+     3,
+     10,
+     3
+    ]
+   }
+  },
+  "free_address-free_base": {
+   "count": 206,
+   "wins": 49,
+   "losses": 0,
+   "net": 49,
+   "delta": 0.23786407766990292,
+   "ci": [
+    0.1792452830188679,
+    0.3010204081632653
+   ],
+   "p": 1.1368683772161603e-13,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     7,
+     43,
+     7
+    ],
+    "matplotlib/matplotlib": [
+     4,
+     13,
+     4
+    ],
+    "sympy/sympy": [
+     17,
+     68,
+     17
+    ],
+    "django/django": [
+     17,
+     72,
+     17
+    ],
+    "scikit-learn/scikit-learn": [
+     4,
+     10,
+     4
+    ]
+   }
+  },
+  "free_address-free_offset": {
+   "count": 206,
+   "wins": 50,
+   "losses": 0,
+   "net": 50,
+   "delta": 0.24271844660194175,
+   "ci": [
+    0.18316831683168316,
+    0.3069306930693069
+   ],
+   "p": 1.1368683772161603e-13,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     7,
+     43,
+     7
+    ],
+    "matplotlib/matplotlib": [
+     4,
+     13,
+     4
+    ],
+    "sympy/sympy": [
+     18,
+     68,
+     18
+    ],
+    "django/django": [
+     17,
+     72,
+     17
+    ],
+    "scikit-learn/scikit-learn": [
+     4,
+     10,
+     4
+    ]
+   }
+  },
+  "cap_lru_address-cap_lru_editor": {
+   "count": 206,
+   "wins": 46,
+   "losses": 0,
+   "net": 46,
+   "delta": 0.22330097087378642,
+   "ci": [
+    0.1652533161385409,
+    0.28780487804878047
+   ],
+   "p": 9.094947017729282e-13,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     7,
+     43,
+     7
+    ],
+    "matplotlib/matplotlib": [
+     3,
+     13,
+     3
+    ],
+    "sympy/sympy": [
+     17,
+     68,
+     17
+    ],
+    "django/django": [
+     16,
+     72,
+     16
+    ],
+    "scikit-learn/scikit-learn": [
+     3,
+     10,
+     3
+    ]
+   }
+  },
+  "cap_address-cap_lru_address": {
+   "count": 206,
+   "wins": 2,
+   "losses": 0,
+   "net": 2,
+   "delta": 0.009708737864077669,
+   "ci": [
+    0.0,
+    0.025105128151216325
+   ],
+   "p": 0.5,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     0,
+     43,
+     0
+    ],
+    "matplotlib/matplotlib": [
+     1,
+     13,
+     1
+    ],
+    "sympy/sympy": [
+     0,
+     68,
+     0
+    ],
+    "django/django": [
+     1,
+     72,
+     1
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     10,
+     0
+    ]
+   }
+  },
+  "cap_base-cap_lru_editor": {
+   "count": 206,
+   "wins": 0,
+   "losses": 0,
+   "net": 0,
+   "delta": 0.0,
+   "ci": [
+    0.0,
+    0.0
+   ],
+   "p": 1.0,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     0,
+     43,
+     0
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     13,
+     0
+    ],
+    "sympy/sympy": [
+     0,
+     68,
+     0
+    ],
+    "django/django": [
+     0,
+     72,
+     0
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     10,
+     0
+    ]
+   }
+  },
+  "cap_offset-cap_base": {
+   "count": 206,
+   "wins": 0,
+   "losses": 1,
+   "net": -1,
+   "delta": -0.0048543689320388345,
+   "ci": [
+    -0.015544041450777202,
+    0.0
+   ],
+   "p": 1.0,
+   "per_repo": {
+    "sphinx-doc/sphinx": [
+     0,
+     43,
+     0
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     13,
+     0
+    ],
+    "sympy/sympy": [
+     -1,
+     68,
+     1
+    ],
+    "django/django": [
+     0,
+     72,
+     0
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     10,
+     0
+    ]
+   }
+  }
+ },
+ "projection": {
+  "candidate_lines": 10330,
+  "steps": 3428,
+  "parsed_steps": 321,
+  "search_one": 317,
+  "literal_range": 10013
+ },
+ "later_observations": {
+  "edit_neighbor_address_True": 370,
+  "edit_neighbor_offset_False": 356,
+  "edit_neighbor_offset_True": 9
+ },
+ "later_task_counts": {
+  "edit_neighbor_address": 51,
+  "edit_neighbor_offset": 57
+ },
+ "cost": {
+  "base": {
+   "steps": 3428,
+   "average_bytes": 1184.3596849474914,
+   "max_bytes": 4096
+  },
+  "address": {
+   "steps": 3428,
+   "average_bytes": 1619.0641773628938,
+   "max_bytes": 4096
+  },
+  "offset": {
+   "steps": 3428,
+   "average_bytes": 1460.801633605601,
+   "max_bytes": 4096
+  },
+  "lru_editor": {
+   "steps": 3428,
+   "average_bytes": 1153.6656942823804,
+   "max_bytes": 4096
+  },
+  "lru_address": {
+   "steps": 3428,
+   "average_bytes": 1586.6528588098017,
+   "max_bytes": 4096
+  }
+ }
+}

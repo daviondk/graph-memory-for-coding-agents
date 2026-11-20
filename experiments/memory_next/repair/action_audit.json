@@ -1,0 +1,240 @@
+{
+ "actions": 312,
+ "counts": {
+  "bash": 307,
+  "prefix/grep": 138,
+  "prefix/sed": 77,
+  "prefix/python": 30,
+  "read_details": 5,
+  "prefix/ls": 15,
+  "prefix/cd": 39,
+  "prefix/ls;": 1,
+  "prefix/git": 1,
+  "prefix/head": 1,
+  "prefix/pip": 1,
+  "prefix/cat": 4
+ },
+ "recognized_test_invocations": 20,
+ "outer_zero_with_visible_failure": 11,
+ "tests": [
+  {
+   "id": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 7,
+   "command": "python -m pytest test_requests.py -x -q 2>&1 | tail -30",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET",
+    "1 failed, 19 warnings in 0.27s"
+   ]
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 8,
+   "command": "python -m pytest test_requests.py -q 2>&1 | grep -E \"^(FAILED|ERROR|[0-9]+ (failed|passed))\" | tail -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_requests_in_history_are_not_overridden",
+    "FAILED test_requests.py::RequestsTestCase::test_session_pickling - requests.e...",
+    "FAILED test_requests.py::RequestsTestCase::test_set_cookie_on_301 - requests...."
+   ]
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 9,
+   "command": "python -m pytest test_requests.py::RequestsTestCase::test_session_pickling -q 2>&1 | grep -B5 \"Error\\|error\" | head -30",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 10,
+   "command": "python -m pytest test_requests.py::RequestsTestCase::test_session_pickling -q 2>&1 | grep -E \"^E |TypeError|requests\\.e\" | head -10",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_session_pickling - requests.e..."
+   ]
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 11,
+   "command": "python -m pytest test_requests.py -q 2>&1 | grep FAILED | grep -v \"requests.exceptio\\|requests.e\\.\\|ConnectionError\" ; echo ---; python -m pytest test_requests.py::RequestsTestCase::test_session_pickling --collect-only -q 2>&1 | head",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET",
+    "FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE",
+    "FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET"
+   ]
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 12,
+   "command": "python -m pytest test_requests.py -q 2>&1 | grep FAILED | grep -v \"requests.exceptio\\|requests.e\\.\\|ConnectionError\\|reques\\.\\|reque\\.\" ",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_BASICAUTH_TUPLE_HTTP_200_OK_GET",
+    "FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_QUOTES_QOP_VALUE",
+    "FAILED test_requests.py::RequestsTestCase::test_DIGESTAUTH_WRONG_HTTP_401_GET"
+   ]
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "brief",
+   "turn": 13,
+   "command": "python -m pytest test_requests.py::RequestsTestCase::test_conflicting_post_params -q 2>&1 | grep -E \"^E |def test\" | head",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 4,
+   "command": "cd /testbed && python -m pytest test_requests.py::TestRequests::test_session_pickling -x 2>&1 | tail -30",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 5,
+   "command": "cd /testbed && python -m pytest test_requests.py -k \"test_session_pickling\" -x 2>&1 | tail -30",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_session_pickling - requests.e...",
+    "====================== 1 failed, 145 deselected in 0.17s ======================="
+   ]
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 20,
+   "command": "cd /testbed && python -m pytest test_requests.py -k \"not httpbin and not http and not proxy and not timeout and not redirect and not session and not pool and not connection and not status_code and not content and not head and not post and not get\" 2>&1 | tail -10",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_request_ok_set - requests.exc...",
+    "FAILED test_requests.py::RequestsTestCase::test_requests_history_is_saved - r...",
+    "FAILED test_requests.py::RequestsTestCase::test_requests_in_history_are_not_overridden"
+   ]
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 21,
+   "command": "cd /testbed && python -m pytest test_requests.py -k \"test_session_pickling or test_unicode_method_name or test_method\" 2>&1 | grep -E \"PASSED|FAILED|Error\" | head -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 22,
+   "command": "cd /testbed && python -m pytest test_requests.py -k \"test_session_pickling or test_unicode_method_name or test_method\" 2>&1 | grep -E \"^(test_|.*::|.*Error|.*assert)\" | head -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-2344",
+   "arm": "eager",
+   "turn": 23,
+   "command": "cd /testbed && python -m pytest test_requests.py -k \"test_session_pickling or test_unicode_method_name or test_method\" 2>&1 | grep -B2 -A8 \"TypeError\\|unicode_method\" | head -60",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED test_requests.py::RequestsTestCase::test_session_pickling - requests.e...",
+    "FAILED test_requests.py::RequestsTestCase::test_unicode_method_name - request...",
+    "====================== 2 failed, 144 deselected in 0.30s ======================="
+   ]
+  },
+  {
+   "id": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 11,
+   "command": "cd /testbed && python -m pytest tests/test_requests.py -k \"decode_unicode or chunk_size\" -x -q 2>&1 | tail -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 19,
+   "command": "cd /testbed && python -m pytest tests/test_requests.py -q 2>&1 | tail -5",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "ERROR tests/test_requests.py::TestTimeout::test_encoded_methods",
+    "ERROR tests/test_requests.py::test_requests_are_updated_each_time",
+    "ERROR tests/test_requests.py::test_urllib3_retries"
+   ]
+  },
+  {
+   "id": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 20,
+   "command": "cd /testbed && python -m pytest tests/test_requests.py -q 2>&1 | grep -E \"^(FAILED|ERROR)\" | head -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "FAILED tests/test_requests.py::TestTimeout::test_connect_timeout - requests.e...",
+    "FAILED tests/test_requests.py::TestTimeout::test_total_timeout_connect - requ...",
+    "ERROR tests/test_requests.py::TestRequests::test_no_content_length[GET]"
+   ]
+  },
+  {
+   "id": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 22,
+   "command": "cd /testbed && python -m pytest tests/test_requests.py -q 2>&1 | grep -B5 \"ERROR at setup\" | head -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-3359",
+   "arm": "brief",
+   "turn": 24,
+   "command": "cd /testbed && python -m pytest tests/test_requests.py::TestTimeout -q 2>&1 | grep -A 15 \"test_connect_timeout\" | head -30",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-3359",
+   "arm": "eager",
+   "turn": 15,
+   "command": "cd /testbed && python -m pytest tests/test_requests.py -k \"decode_unicode\" -x -q 2>&1 | tail -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": []
+  },
+  {
+   "id": "psf__requests-3481",
+   "arm": "on_demand",
+   "turn": 9,
+   "command": "python -c \"import requests; print(requests.__version__)\"; python -m pytest /testbed/tests/test_requests.py -k \"decode_unicode or iter_lines\" -x -q 2>&1 | tail -20",
+   "outer_status": "Exit 0",
+   "has_pipeline": true,
+   "failure_evidence": [
+    "ERROR tests/test_requests.py::TestRequests::test_response_iter_lines",
+    "1 passed, 195 deselected, 1 error in 0.12s"
+   ]
+  }
+ ]
+}

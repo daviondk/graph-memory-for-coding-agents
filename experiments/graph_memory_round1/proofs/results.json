@@ -1,0 +1,1704 @@
+{
+  "A": {
+    "repositories": 12,
+    "queries": 3023,
+    "gold_lost": 48,
+    "at_least_two_paths": 2530,
+    "above_three_paths": 1631,
+    "changed_selected_sets": 216,
+    "arms": {
+      "one": {
+        "fast": {
+          "total": 1070,
+          "macro": 0.3392546498633057
+        },
+        "validated": {
+          "total": 2968,
+          "macro": 0.9835609592968368
+        },
+        "reads": {
+          "total": 3118,
+          "macro": 1.0313571668169152
+        },
+        "path_utf8": {
+          "total": 216544,
+          "macro": 66.90689457241794
+        },
+        "providers": {
+          "total": 7674,
+          "macro": 2.428507204371338
+        },
+        "edges": {
+          "total": 7674,
+          "macro": 2.428507204371338
+        }
+      },
+      "short3": {
+        "fast": {
+          "total": 1204,
+          "macro": 0.3837473000126081
+        },
+        "validated": {
+          "total": 2975,
+          "macro": 0.9851885634635035
+        },
+        "reads": {
+          "total": 2886,
+          "macro": 0.9650546208342794
+        },
+        "path_utf8": {
+          "total": 593679,
+          "macro": 177.47552594510034
+        },
+        "providers": {
+          "total": 12262,
+          "macro": 3.818294856054492
+        },
+        "edges": {
+          "total": 22409,
+          "macro": 6.956531840388845
+        }
+      },
+      "diverse": {
+        "fast": {
+          "total": 1217,
+          "macro": 0.38721952223483036
+        },
+        "validated": {
+          "total": 2975,
+          "macro": 0.9851885634635035
+        },
+        "reads": {
+          "total": 2871,
+          "macro": 0.9611483708342794
+        },
+        "path_utf8": {
+          "total": 594373,
+          "macro": 177.6476059026621
+        },
+        "providers": {
+          "total": 12446,
+          "macro": 3.863481970252023
+        },
+        "edges": {
+          "total": 22443,
+          "macro": 6.9654294098332885
+        }
+      },
+      "historical": {
+        "fast": {
+          "total": 1215,
+          "macro": 0.386894001401497
+        },
+        "validated": {
+          "total": 2975,
+          "macro": 0.9851885634635035
+        },
+        "reads": {
+          "total": 2862,
+          "macro": 0.9543069507022294
+        },
+        "path_utf8": {
+          "total": 594974,
+          "macro": 177.78738695976085
+        },
+        "providers": {
+          "total": 12467,
+          "macro": 3.8685255337808293
+        },
+        "edges": {
+          "total": 22453,
+          "macro": 6.968085820584317
+        }
+      }
+    },
+    "differences": {
+      "historical-short3": {
+        "macro": 0.003146701388888895,
+        "repo_ci": [
+          0.0,
+          0.007595486111111123
+        ],
+        "paired_win": 11,
+        "paired_loss": 0,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.0,
+          "arrow-py__arrow": 0.0,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.0,
+          "mido__mido": 0.0,
+          "pallets__click": 0.0,
+          "pallets__jinja": 0.0234375,
+          "pydantic__pydantic": 0.01041666666666674,
+          "pyparsing__pyparsing": 0.00390625,
+          "python-attrs__attrs": 0.0,
+          "python-jsonschema__jsonschema": 0.0,
+          "tkrajina__gpxpy": 0.0
+        }
+      },
+      "diverse-short3": {
+        "macro": 0.0034722222222222285,
+        "repo_ci": [
+          0.0,
+          0.008463541666666685
+        ],
+        "paired_win": 13,
+        "paired_loss": 0,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.0,
+          "arrow-py__arrow": 0.0,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.0,
+          "mido__mido": 0.0,
+          "pallets__click": 0.0,
+          "pallets__jinja": 0.0234375,
+          "pydantic__pydantic": 0.01822916666666674,
+          "pyparsing__pyparsing": 0.0,
+          "python-attrs__attrs": 0.0,
+          "python-jsonschema__jsonschema": 0.0,
+          "tkrajina__gpxpy": 0.0
+        }
+      },
+      "short3-one": {
+        "macro": 0.044492650149302405,
+        "repo_ci": [
+          0.021419753576514343,
+          0.07073079329064412
+        ],
+        "paired_win": 134,
+        "paired_loss": 0,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.030487804878048752,
+          "arrow-py__arrow": 0.1419753086419753,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.1049382716049383,
+          "mido__mido": 0.0026041666666666297,
+          "pallets__click": 0.026041666666666664,
+          "pallets__jinja": 0.046875,
+          "pydantic__pydantic": 0.09114583333333326,
+          "pyparsing__pyparsing": 0.0546875,
+          "python-attrs__attrs": 0.01171875,
+          "python-jsonschema__jsonschema": 0.0234375,
+          "tkrajina__gpxpy": 0.0
+        }
+      },
+      "historical-diverse": {
+        "macro": -0.0003255208333333333,
+        "repo_ci": [
+          -0.001953125,
+          0.0009765625
+        ],
+        "paired_win": 1,
+        "paired_loss": 3,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.0,
+          "arrow-py__arrow": 0.0,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.0,
+          "mido__mido": 0.0,
+          "pallets__click": 0.0,
+          "pallets__jinja": 0.0,
+          "pydantic__pydantic": -0.0078125,
+          "pyparsing__pyparsing": 0.00390625,
+          "python-attrs__attrs": 0.0,
+          "python-jsonschema__jsonschema": 0.0,
+          "tkrajina__gpxpy": 0.0
+        }
+      }
+    },
+    "per_repo": {
+      "agronholm__typeguard": {
+        "one": {
+          "fast": 0.31402439024390244,
+          "validated": 0.975609756097561,
+          "reads": 0.8567073170731707,
+          "path_utf8": 83.3109756097561,
+          "providers": 2.817073170731707,
+          "edges": 2.817073170731707
+        },
+        "short3": {
+          "fast": 0.3445121951219512,
+          "validated": 0.975609756097561,
+          "reads": 0.8262195121951219,
+          "path_utf8": 172.1280487804878,
+          "providers": 3.7865853658536586,
+          "edges": 6.067073170731708
+        },
+        "diverse": {
+          "fast": 0.3445121951219512,
+          "validated": 0.975609756097561,
+          "reads": 0.8262195121951219,
+          "path_utf8": 172.1280487804878,
+          "providers": 3.7865853658536586,
+          "edges": 6.067073170731708
+        },
+        "historical": {
+          "fast": 0.3445121951219512,
+          "validated": 0.975609756097561,
+          "reads": 0.8323170731707317,
+          "path_utf8": 172.1280487804878,
+          "providers": 3.7865853658536586,
+          "edges": 6.067073170731708
+        }
+      },
+      "arrow-py__arrow": {
+        "one": {
+          "fast": 0.17901234567901234,
+          "validated": 1.0,
+          "reads": 1.0246913580246915,
+          "path_utf8": 43.25925925925926,
+          "providers": 2.074074074074074,
+          "edges": 2.074074074074074
+        },
+        "short3": {
+          "fast": 0.32098765432098764,
+          "validated": 1.0,
+          "reads": 0.8827160493827161,
+          "path_utf8": 129.8148148148148,
+          "providers": 3.6666666666666665,
+          "edges": 6.62962962962963
+        },
+        "diverse": {
+          "fast": 0.32098765432098764,
+          "validated": 1.0,
+          "reads": 0.8827160493827161,
+          "path_utf8": 129.88888888888889,
+          "providers": 3.7037037037037037,
+          "edges": 6.62962962962963
+        },
+        "historical": {
+          "fast": 0.32098765432098764,
+          "validated": 1.0,
+          "reads": 0.8827160493827161,
+          "path_utf8": 130.07407407407408,
+          "providers": 3.7160493827160495,
+          "edges": 6.6419753086419755
+        }
+      },
+      "mahmoud__boltons": {
+        "one": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        },
+        "short3": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        },
+        "diverse": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        },
+        "historical": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        }
+      },
+      "marshmallow-code__marshmallow": {
+        "one": {
+          "fast": 0.4012345679012346,
+          "validated": 1.0,
+          "reads": 0.7160493827160493,
+          "path_utf8": 72.66666666666667,
+          "providers": 2.3333333333333335,
+          "edges": 2.3333333333333335
+        },
+        "short3": {
+          "fast": 0.5061728395061729,
+          "validated": 1.0,
+          "reads": 0.6111111111111112,
+          "path_utf8": 213.33333333333334,
+          "providers": 3.5925925925925926,
+          "edges": 7.37037037037037
+        },
+        "diverse": {
+          "fast": 0.5061728395061729,
+          "validated": 1.0,
+          "reads": 0.6111111111111112,
+          "path_utf8": 213.33333333333334,
+          "providers": 3.5925925925925926,
+          "edges": 7.37037037037037
+        },
+        "historical": {
+          "fast": 0.5061728395061729,
+          "validated": 1.0,
+          "reads": 0.5864197530864198,
+          "path_utf8": 213.33333333333334,
+          "providers": 3.5925925925925926,
+          "edges": 7.37037037037037
+        }
+      },
+      "mido__mido": {
+        "one": {
+          "fast": 0.6640625,
+          "validated": 0.9921875,
+          "reads": 0.609375,
+          "path_utf8": 72.35416666666667,
+          "providers": 2.734375,
+          "edges": 2.734375
+        },
+        "short3": {
+          "fast": 0.6666666666666666,
+          "validated": 0.9947916666666666,
+          "reads": 0.6041666666666666,
+          "path_utf8": 158.1171875,
+          "providers": 3.7083333333333335,
+          "edges": 6.213541666666667
+        },
+        "diverse": {
+          "fast": 0.6666666666666666,
+          "validated": 0.9947916666666666,
+          "reads": 0.6041666666666666,
+          "path_utf8": 157.671875,
+          "providers": 3.7708333333333335,
+          "edges": 6.2265625
+        },
+        "historical": {
+          "fast": 0.6666666666666666,
+          "validated": 0.9947916666666666,
+          "reads": 0.609375,
+          "path_utf8": 157.671875,
+          "providers": 3.7708333333333335,
+          "edges": 6.2265625
+        }
+      },
+      "pallets__click": {
+        "one": {
+          "fast": 0.041666666666666664,
+          "validated": 1.0,
+          "reads": 1.6119791666666667,
+          "path_utf8": 58.372395833333336,
+          "providers": 2.4322916666666665,
+          "edges": 2.4322916666666665
+        },
+        "short3": {
+          "fast": 0.06770833333333333,
+          "validated": 1.0,
+          "reads": 1.5859375,
+          "path_utf8": 184.04166666666666,
+          "providers": 4.328125,
+          "edges": 8.421875
+        },
+        "diverse": {
+          "fast": 0.06770833333333333,
+          "validated": 1.0,
+          "reads": 1.5859375,
+          "path_utf8": 183.7109375,
+          "providers": 4.393229166666667,
+          "edges": 8.421875
+        },
+        "historical": {
+          "fast": 0.06770833333333333,
+          "validated": 1.0,
+          "reads": 1.5598958333333333,
+          "path_utf8": 183.703125,
+          "providers": 4.393229166666667,
+          "edges": 8.421875
+        }
+      },
+      "pallets__jinja": {
+        "one": {
+          "fast": 0.0703125,
+          "validated": 1.0,
+          "reads": 1.87890625,
+          "path_utf8": 65.65234375,
+          "providers": 2.57421875,
+          "edges": 2.57421875
+        },
+        "short3": {
+          "fast": 0.1171875,
+          "validated": 1.0,
+          "reads": 1.83203125,
+          "path_utf8": 202.0078125,
+          "providers": 4.3125,
+          "edges": 8.47265625
+        },
+        "diverse": {
+          "fast": 0.140625,
+          "validated": 1.0,
+          "reads": 1.80859375,
+          "path_utf8": 202.70703125,
+          "providers": 4.41796875,
+          "edges": 8.52734375
+        },
+        "historical": {
+          "fast": 0.140625,
+          "validated": 1.0,
+          "reads": 1.8125,
+          "path_utf8": 202.6640625,
+          "providers": 4.4140625,
+          "edges": 8.5234375
+        }
+      },
+      "pydantic__pydantic": {
+        "one": {
+          "fast": 0.5520833333333334,
+          "validated": 0.9114583333333334,
+          "reads": 0.8151041666666666,
+          "path_utf8": 105.69270833333333,
+          "providers": 2.6901041666666665,
+          "edges": 2.6901041666666665
+        },
+        "short3": {
+          "fast": 0.6432291666666666,
+          "validated": 0.9244791666666666,
+          "reads": 0.484375,
+          "path_utf8": 318.5234375,
+          "providers": 4.846354166666667,
+          "edges": 8.526041666666666
+        },
+        "diverse": {
+          "fast": 0.6614583333333334,
+          "validated": 0.9244791666666666,
+          "reads": 0.4609375,
+          "path_utf8": 320.6458333333333,
+          "providers": 5.098958333333333,
+          "edges": 8.565104166666666
+        },
+        "historical": {
+          "fast": 0.6536458333333334,
+          "validated": 0.9244791666666666,
+          "reads": 0.4791666666666667,
+          "path_utf8": 322.1302083333333,
+          "providers": 5.151041666666667,
+          "edges": 8.588541666666666
+        }
+      },
+      "pyparsing__pyparsing": {
+        "one": {
+          "fast": 0.16796875,
+          "validated": 1.0,
+          "reads": 1.0234375,
+          "path_utf8": 62.5625,
+          "providers": 2.1640625,
+          "edges": 2.1640625
+        },
+        "short3": {
+          "fast": 0.22265625,
+          "validated": 1.0,
+          "reads": 0.96875,
+          "path_utf8": 205.80859375,
+          "providers": 4.01953125,
+          "edges": 7.76953125
+        },
+        "diverse": {
+          "fast": 0.22265625,
+          "validated": 1.0,
+          "reads": 0.96875,
+          "path_utf8": 205.77734375,
+          "providers": 4.03515625,
+          "edges": 7.76953125
+        },
+        "historical": {
+          "fast": 0.2265625,
+          "validated": 1.0,
+          "reads": 0.953125,
+          "path_utf8": 205.81640625,
+          "providers": 4.03515625,
+          "edges": 7.76953125
+        }
+      },
+      "python-attrs__attrs": {
+        "one": {
+          "fast": 0.37890625,
+          "validated": 0.97265625,
+          "reads": 1.0625,
+          "path_utf8": 52.80859375,
+          "providers": 2.57421875,
+          "edges": 2.57421875
+        },
+        "short3": {
+          "fast": 0.390625,
+          "validated": 0.9765625,
+          "reads": 1.03125,
+          "path_utf8": 140.22265625,
+          "providers": 3.91015625,
+          "edges": 7.29296875
+        },
+        "diverse": {
+          "fast": 0.390625,
+          "validated": 0.9765625,
+          "reads": 1.03125,
+          "path_utf8": 140.19921875,
+          "providers": 3.9140625,
+          "edges": 7.29296875
+        },
+        "historical": {
+          "fast": 0.390625,
+          "validated": 0.9765625,
+          "reads": 1.03125,
+          "path_utf8": 140.21875,
+          "providers": 3.9140625,
+          "edges": 7.29296875
+        }
+      },
+      "python-jsonschema__jsonschema": {
+        "one": {
+          "fast": 0.5859375,
+          "validated": 1.0,
+          "reads": 0.6901041666666666,
+          "path_utf8": 79.203125,
+          "providers": 2.6171875,
+          "edges": 2.6171875
+        },
+        "short3": {
+          "fast": 0.609375,
+          "validated": 1.0,
+          "reads": 0.6666666666666666,
+          "path_utf8": 205.921875,
+          "providers": 3.9765625,
+          "edges": 7.190104166666667
+        },
+        "diverse": {
+          "fast": 0.609375,
+          "validated": 1.0,
+          "reads": 0.6666666666666666,
+          "path_utf8": 205.921875,
+          "providers": 3.9765625,
+          "edges": 7.190104166666667
+        },
+        "historical": {
+          "fast": 0.609375,
+          "validated": 1.0,
+          "reads": 0.6666666666666666,
+          "path_utf8": 205.921875,
+          "providers": 3.9765625,
+          "edges": 7.190104166666667
+        }
+      },
+      "tkrajina__gpxpy": {
+        "one": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7540983606557377,
+          "path_utf8": 41.0,
+          "providers": 2.1311475409836067,
+          "edges": 2.1311475409836067
+        },
+        "short3": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7540983606557377,
+          "path_utf8": 133.78688524590163,
+          "providers": 3.6721311475409837,
+          "edges": 7.524590163934426
+        },
+        "diverse": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7540983606557377,
+          "path_utf8": 133.78688524590163,
+          "providers": 3.6721311475409837,
+          "edges": 7.524590163934426
+        },
+        "historical": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7049180327868851,
+          "path_utf8": 133.78688524590163,
+          "providers": 3.6721311475409837,
+          "edges": 7.524590163934426
+        }
+      }
+    }
+  },
+  "B": {
+    "repositories": 4,
+    "queries": 1536,
+    "gold_lost": 22,
+    "at_least_two_paths": 1323,
+    "above_three_paths": 1045,
+    "changed_selected_sets": 273,
+    "arms": {
+      "one": {
+        "fast": {
+          "total": 386,
+          "macro": 0.2513020833333333
+        },
+        "validated": {
+          "total": 1472,
+          "macro": 0.9583333333333334
+        },
+        "reads": {
+          "total": 2365,
+          "macro": 1.5397135416666665
+        },
+        "path_utf8": {
+          "total": 123026,
+          "macro": 80.09505208333333
+        },
+        "providers": {
+          "total": 4260,
+          "macro": 2.7734375
+        },
+        "edges": {
+          "total": 4260,
+          "macro": 2.7734375
+        }
+      },
+      "short3": {
+        "fast": {
+          "total": 514,
+          "macro": 0.3346354166666667
+        },
+        "validated": {
+          "total": 1491,
+          "macro": 0.970703125
+        },
+        "reads": {
+          "total": 2101,
+          "macro": 1.3678385416666665
+        },
+        "path_utf8": {
+          "total": 342581,
+          "macro": 223.03450520833334
+        },
+        "providers": {
+          "total": 7068,
+          "macro": 4.6015625
+        },
+        "edges": {
+          "total": 12494,
+          "macro": 8.134114583333334
+        }
+      },
+      "diverse": {
+        "fast": {
+          "total": 544,
+          "macro": 0.3541666666666667
+        },
+        "validated": {
+          "total": 1492,
+          "macro": 0.9713541666666666
+        },
+        "reads": {
+          "total": 2059,
+          "macro": 1.3404947916666667
+        },
+        "path_utf8": {
+          "total": 343900,
+          "macro": 223.89322916666666
+        },
+        "providers": {
+          "total": 7245,
+          "macro": 4.716796875
+        },
+        "edges": {
+          "total": 12522,
+          "macro": 8.15234375
+        }
+      },
+      "historical": {
+        "fast": {
+          "total": 554,
+          "macro": 0.3606770833333333
+        },
+        "validated": {
+          "total": 1492,
+          "macro": 0.9713541666666666
+        },
+        "reads": {
+          "total": 2028,
+          "macro": 1.3203125
+        },
+        "path_utf8": {
+          "total": 344169,
+          "macro": 224.068359375
+        },
+        "providers": {
+          "total": 7304,
+          "macro": 4.755208333333333
+        },
+        "edges": {
+          "total": 12534,
+          "macro": 8.16015625
+        }
+      }
+    },
+    "differences": {
+      "historical-short3": {
+        "macro": 0.026041666666666657,
+        "repo_ci": [
+          0.009114583333333329,
+          0.03776041666666666
+        ],
+        "paired_win": 44,
+        "paired_loss": 4,
+        "repo_deltas": {
+          "pallets__flask": 0.0390625,
+          "pallets__werkzeug": 0.0,
+          "psf__black": 0.036458333333333315,
+          "sphinx-doc__sphinx": 0.028645833333333315
+        }
+      },
+      "diverse-short3": {
+        "macro": 0.01953125,
+        "repo_ci": [
+          0.006510416666666685,
+          0.032552083333333315
+        ],
+        "paired_win": 35,
+        "paired_loss": 5,
+        "repo_deltas": {
+          "pallets__flask": 0.01302083333333337,
+          "pallets__werkzeug": 0.0,
+          "psf__black": 0.036458333333333315,
+          "sphinx-doc__sphinx": 0.028645833333333315
+        }
+      },
+      "short3-one": {
+        "macro": 0.08333333333333334,
+        "repo_ci": [
+          0.03190104166666667,
+          0.142578125
+        ],
+        "paired_win": 128,
+        "paired_loss": 0,
+        "repo_deltas": {
+          "pallets__flask": 0.171875,
+          "pallets__werkzeug": 0.010416666666666671,
+          "psf__black": 0.0546875,
+          "sphinx-doc__sphinx": 0.09635416666666669
+        }
+      },
+      "historical-diverse": {
+        "macro": 0.006510416666666657,
+        "repo_ci": [
+          0.0,
+          0.019531249999999972
+        ],
+        "paired_win": 12,
+        "paired_loss": 2,
+        "repo_deltas": {
+          "pallets__flask": 0.02604166666666663,
+          "pallets__werkzeug": 0.0,
+          "psf__black": 0.0,
+          "sphinx-doc__sphinx": 0.0
+        }
+      }
+    },
+    "per_repo": {
+      "pallets__flask": {
+        "one": {
+          "fast": 0.2552083333333333,
+          "validated": 0.9895833333333334,
+          "reads": 1.0833333333333333,
+          "path_utf8": 57.270833333333336,
+          "providers": 2.4895833333333335,
+          "edges": 2.4895833333333335
+        },
+        "short3": {
+          "fast": 0.4270833333333333,
+          "validated": 1.0,
+          "reads": 0.859375,
+          "path_utf8": 184.125,
+          "providers": 4.734375,
+          "edges": 8.5078125
+        },
+        "diverse": {
+          "fast": 0.4401041666666667,
+          "validated": 1.0,
+          "reads": 0.8385416666666666,
+          "path_utf8": 185.45833333333334,
+          "providers": 4.864583333333333,
+          "edges": 8.541666666666666
+        },
+        "historical": {
+          "fast": 0.4661458333333333,
+          "validated": 1.0,
+          "reads": 0.7213541666666666,
+          "path_utf8": 185.91145833333334,
+          "providers": 4.955729166666667,
+          "edges": 8.559895833333334
+        }
+      },
+      "pallets__werkzeug": {
+        "one": {
+          "fast": 0.0546875,
+          "validated": 0.84375,
+          "reads": 3.25,
+          "path_utf8": 98.953125,
+          "providers": 2.9479166666666665,
+          "edges": 2.9479166666666665
+        },
+        "short3": {
+          "fast": 0.06510416666666667,
+          "validated": 0.8828125,
+          "reads": 2.9401041666666665,
+          "path_utf8": 266.0885416666667,
+          "providers": 4.848958333333333,
+          "edges": 8.138020833333334
+        },
+        "diverse": {
+          "fast": 0.06510416666666667,
+          "validated": 0.8854166666666666,
+          "reads": 2.9192708333333335,
+          "path_utf8": 267.15625,
+          "providers": 4.986979166666667,
+          "edges": 8.153645833333334
+        },
+        "historical": {
+          "fast": 0.06510416666666667,
+          "validated": 0.8854166666666666,
+          "reads": 2.9348958333333335,
+          "path_utf8": 267.2890625,
+          "providers": 5.036458333333333,
+          "edges": 8.166666666666666
+        }
+      },
+      "psf__black": {
+        "one": {
+          "fast": 0.3046875,
+          "validated": 1.0,
+          "reads": 0.9479166666666666,
+          "path_utf8": 60.21875,
+          "providers": 2.6015625,
+          "edges": 2.6015625
+        },
+        "short3": {
+          "fast": 0.359375,
+          "validated": 1.0,
+          "reads": 0.8932291666666666,
+          "path_utf8": 163.078125,
+          "providers": 4.010416666666667,
+          "edges": 7.325520833333333
+        },
+        "diverse": {
+          "fast": 0.3958333333333333,
+          "validated": 1.0,
+          "reads": 0.8541666666666666,
+          "path_utf8": 163.65625,
+          "providers": 4.080729166666667,
+          "edges": 7.330729166666667
+        },
+        "historical": {
+          "fast": 0.3958333333333333,
+          "validated": 1.0,
+          "reads": 0.8515625,
+          "path_utf8": 163.65625,
+          "providers": 4.078125,
+          "edges": 7.330729166666667
+        }
+      },
+      "sphinx-doc__sphinx": {
+        "one": {
+          "fast": 0.390625,
+          "validated": 1.0,
+          "reads": 0.8776041666666666,
+          "path_utf8": 103.9375,
+          "providers": 3.0546875,
+          "edges": 3.0546875
+        },
+        "short3": {
+          "fast": 0.4869791666666667,
+          "validated": 1.0,
+          "reads": 0.7786458333333334,
+          "path_utf8": 278.8463541666667,
+          "providers": 4.8125,
+          "edges": 8.565104166666666
+        },
+        "diverse": {
+          "fast": 0.515625,
+          "validated": 1.0,
+          "reads": 0.75,
+          "path_utf8": 279.3020833333333,
+          "providers": 4.934895833333333,
+          "edges": 8.583333333333334
+        },
+        "historical": {
+          "fast": 0.515625,
+          "validated": 1.0,
+          "reads": 0.7734375,
+          "path_utf8": 279.4166666666667,
+          "providers": 4.950520833333333,
+          "edges": 8.583333333333334
+        }
+      }
+    }
+  },
+  "all": {
+    "repositories": 16,
+    "queries": 4559,
+    "gold_lost": 70,
+    "at_least_two_paths": 3853,
+    "above_three_paths": 2676,
+    "changed_selected_sets": 489,
+    "arms": {
+      "one": {
+        "fast": {
+          "total": 1456,
+          "macro": 0.3172665082308126
+        },
+        "validated": {
+          "total": 4440,
+          "macro": 0.977254052805961
+        },
+        "reads": {
+          "total": 5483,
+          "macro": 1.158446260529353
+        },
+        "path_utf8": {
+          "total": 339570,
+          "macro": 70.20393395014679
+        },
+        "providers": {
+          "total": 11934,
+          "macro": 2.5147397782785035
+        },
+        "edges": {
+          "total": 11934,
+          "macro": 2.5147397782785035
+        }
+      },
+      "short3": {
+        "fast": {
+          "total": 1718,
+          "macro": 0.37146932917612274
+        },
+        "validated": {
+          "total": 4466,
+          "macro": 0.9815672038476276
+        },
+        "reads": {
+          "total": 4987,
+          "macro": 1.0657506010423763
+        },
+        "path_utf8": {
+          "total": 936260,
+          "macro": 188.8652707609086
+        },
+        "providers": {
+          "total": 19330,
+          "macro": 4.014111767040869
+        },
+        "edges": {
+          "total": 34903,
+          "macro": 7.250927526124967
+        }
+      },
+      "diverse": {
+        "fast": {
+          "total": 1761,
+          "macro": 0.3789563083427894
+        },
+        "validated": {
+          "total": 4467,
+          "macro": 0.9817299642642943
+        },
+        "reads": {
+          "total": 4930,
+          "macro": 1.0559849760423763
+        },
+        "path_utf8": {
+          "total": 938273,
+          "macro": 189.20901171866322
+        },
+        "providers": {
+          "total": 19691,
+          "macro": 4.076810696439017
+        },
+        "edges": {
+          "total": 34965,
+          "macro": 7.262157994874967
+        }
+      },
+      "historical": {
+        "fast": {
+          "total": 1769,
+          "macro": 0.3803397718844561
+        },
+        "validated": {
+          "total": 4467,
+          "macro": 0.9817299642642943
+        },
+        "reads": {
+          "total": 4890,
+          "macro": 1.045808338026672
+        },
+        "path_utf8": {
+          "total": 939143,
+          "macro": 189.35763006357064
+        },
+        "providers": {
+          "total": 19771,
+          "macro": 4.090196233668955
+        },
+        "edges": {
+          "total": 34987,
+          "macro": 7.266103427938238
+        }
+      }
+    },
+    "differences": {
+      "historical-short3": {
+        "macro": 0.008870442708333336,
+        "repo_ci": [
+          0.002685546875,
+          0.016113281250000003
+        ],
+        "paired_win": 55,
+        "paired_loss": 4,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.0,
+          "arrow-py__arrow": 0.0,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.0,
+          "mido__mido": 0.0,
+          "pallets__click": 0.0,
+          "pallets__jinja": 0.0234375,
+          "pydantic__pydantic": 0.01041666666666674,
+          "pyparsing__pyparsing": 0.00390625,
+          "python-attrs__attrs": 0.0,
+          "python-jsonschema__jsonschema": 0.0,
+          "tkrajina__gpxpy": 0.0,
+          "pallets__flask": 0.0390625,
+          "pallets__werkzeug": 0.0,
+          "psf__black": 0.036458333333333315,
+          "sphinx-doc__sphinx": 0.028645833333333315
+        }
+      },
+      "diverse-short3": {
+        "macro": 0.007486979166666671,
+        "repo_ci": [
+          0.001953125000000007,
+          0.01367187500000001
+        ],
+        "paired_win": 48,
+        "paired_loss": 5,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.0,
+          "arrow-py__arrow": 0.0,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.0,
+          "mido__mido": 0.0,
+          "pallets__click": 0.0,
+          "pallets__jinja": 0.0234375,
+          "pydantic__pydantic": 0.01822916666666674,
+          "pyparsing__pyparsing": 0.0,
+          "python-attrs__attrs": 0.0,
+          "python-jsonschema__jsonschema": 0.0,
+          "tkrajina__gpxpy": 0.0,
+          "pallets__flask": 0.01302083333333337,
+          "pallets__werkzeug": 0.0,
+          "psf__black": 0.036458333333333315,
+          "sphinx-doc__sphinx": 0.028645833333333315
+        }
+      },
+      "short3-one": {
+        "macro": 0.05420282094531014,
+        "repo_ci": [
+          0.03059791810754478,
+          0.08041368235812348
+        ],
+        "paired_win": 262,
+        "paired_loss": 0,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.030487804878048752,
+          "arrow-py__arrow": 0.1419753086419753,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.1049382716049383,
+          "mido__mido": 0.0026041666666666297,
+          "pallets__click": 0.026041666666666664,
+          "pallets__jinja": 0.046875,
+          "pydantic__pydantic": 0.09114583333333326,
+          "pyparsing__pyparsing": 0.0546875,
+          "python-attrs__attrs": 0.01171875,
+          "python-jsonschema__jsonschema": 0.0234375,
+          "tkrajina__gpxpy": 0.0,
+          "pallets__flask": 0.171875,
+          "pallets__werkzeug": 0.010416666666666671,
+          "psf__black": 0.0546875,
+          "sphinx-doc__sphinx": 0.09635416666666669
+        }
+      },
+      "historical-diverse": {
+        "macro": 0.0013834635416666644,
+        "repo_ci": [
+          -0.001220703125,
+          0.005126953124999993
+        ],
+        "paired_win": 13,
+        "paired_loss": 5,
+        "repo_deltas": {
+          "agronholm__typeguard": 0.0,
+          "arrow-py__arrow": 0.0,
+          "mahmoud__boltons": 0.0,
+          "marshmallow-code__marshmallow": 0.0,
+          "mido__mido": 0.0,
+          "pallets__click": 0.0,
+          "pallets__jinja": 0.0,
+          "pydantic__pydantic": -0.0078125,
+          "pyparsing__pyparsing": 0.00390625,
+          "python-attrs__attrs": 0.0,
+          "python-jsonschema__jsonschema": 0.0,
+          "tkrajina__gpxpy": 0.0,
+          "pallets__flask": 0.02604166666666663,
+          "pallets__werkzeug": 0.0,
+          "psf__black": 0.0,
+          "sphinx-doc__sphinx": 0.0
+        }
+      }
+    },
+    "per_repo": {
+      "agronholm__typeguard": {
+        "one": {
+          "fast": 0.31402439024390244,
+          "validated": 0.975609756097561,
+          "reads": 0.8567073170731707,
+          "path_utf8": 83.3109756097561,
+          "providers": 2.817073170731707,
+          "edges": 2.817073170731707
+        },
+        "short3": {
+          "fast": 0.3445121951219512,
+          "validated": 0.975609756097561,
+          "reads": 0.8262195121951219,
+          "path_utf8": 172.1280487804878,
+          "providers": 3.7865853658536586,
+          "edges": 6.067073170731708
+        },
+        "diverse": {
+          "fast": 0.3445121951219512,
+          "validated": 0.975609756097561,
+          "reads": 0.8262195121951219,
+          "path_utf8": 172.1280487804878,
+          "providers": 3.7865853658536586,
+          "edges": 6.067073170731708
+        },
+        "historical": {
+          "fast": 0.3445121951219512,
+          "validated": 0.975609756097561,
+          "reads": 0.8323170731707317,
+          "path_utf8": 172.1280487804878,
+          "providers": 3.7865853658536586,
+          "edges": 6.067073170731708
+        }
+      },
+      "arrow-py__arrow": {
+        "one": {
+          "fast": 0.17901234567901234,
+          "validated": 1.0,
+          "reads": 1.0246913580246915,
+          "path_utf8": 43.25925925925926,
+          "providers": 2.074074074074074,
+          "edges": 2.074074074074074
+        },
+        "short3": {
+          "fast": 0.32098765432098764,
+          "validated": 1.0,
+          "reads": 0.8827160493827161,
+          "path_utf8": 129.8148148148148,
+          "providers": 3.6666666666666665,
+          "edges": 6.62962962962963
+        },
+        "diverse": {
+          "fast": 0.32098765432098764,
+          "validated": 1.0,
+          "reads": 0.8827160493827161,
+          "path_utf8": 129.88888888888889,
+          "providers": 3.7037037037037037,
+          "edges": 6.62962962962963
+        },
+        "historical": {
+          "fast": 0.32098765432098764,
+          "validated": 1.0,
+          "reads": 0.8827160493827161,
+          "path_utf8": 130.07407407407408,
+          "providers": 3.7160493827160495,
+          "edges": 6.6419753086419755
+        }
+      },
+      "mahmoud__boltons": {
+        "one": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        },
+        "short3": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        },
+        "diverse": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        },
+        "historical": {
+          "fast": 0.6666666666666666,
+          "validated": 1.0,
+          "reads": 0.3333333333333333,
+          "path_utf8": 66.0,
+          "providers": 2.0,
+          "edges": 2.0
+        }
+      },
+      "marshmallow-code__marshmallow": {
+        "one": {
+          "fast": 0.4012345679012346,
+          "validated": 1.0,
+          "reads": 0.7160493827160493,
+          "path_utf8": 72.66666666666667,
+          "providers": 2.3333333333333335,
+          "edges": 2.3333333333333335
+        },
+        "short3": {
+          "fast": 0.5061728395061729,
+          "validated": 1.0,
+          "reads": 0.6111111111111112,
+          "path_utf8": 213.33333333333334,
+          "providers": 3.5925925925925926,
+          "edges": 7.37037037037037
+        },
+        "diverse": {
+          "fast": 0.5061728395061729,
+          "validated": 1.0,
+          "reads": 0.6111111111111112,
+          "path_utf8": 213.33333333333334,
+          "providers": 3.5925925925925926,
+          "edges": 7.37037037037037
+        },
+        "historical": {
+          "fast": 0.5061728395061729,
+          "validated": 1.0,
+          "reads": 0.5864197530864198,
+          "path_utf8": 213.33333333333334,
+          "providers": 3.5925925925925926,
+          "edges": 7.37037037037037
+        }
+      },
+      "mido__mido": {
+        "one": {
+          "fast": 0.6640625,
+          "validated": 0.9921875,
+          "reads": 0.609375,
+          "path_utf8": 72.35416666666667,
+          "providers": 2.734375,
+          "edges": 2.734375
+        },
+        "short3": {
+          "fast": 0.6666666666666666,
+          "validated": 0.9947916666666666,
+          "reads": 0.6041666666666666,
+          "path_utf8": 158.1171875,
+          "providers": 3.7083333333333335,
+          "edges": 6.213541666666667
+        },
+        "diverse": {
+          "fast": 0.6666666666666666,
+          "validated": 0.9947916666666666,
+          "reads": 0.6041666666666666,
+          "path_utf8": 157.671875,
+          "providers": 3.7708333333333335,
+          "edges": 6.2265625
+        },
+        "historical": {
+          "fast": 0.6666666666666666,
+          "validated": 0.9947916666666666,
+          "reads": 0.609375,
+          "path_utf8": 157.671875,
+          "providers": 3.7708333333333335,
+          "edges": 6.2265625
+        }
+      },
+      "pallets__click": {
+        "one": {
+          "fast": 0.041666666666666664,
+          "validated": 1.0,
+          "reads": 1.6119791666666667,
+          "path_utf8": 58.372395833333336,
+          "providers": 2.4322916666666665,
+          "edges": 2.4322916666666665
+        },
+        "short3": {
+          "fast": 0.06770833333333333,
+          "validated": 1.0,
+          "reads": 1.5859375,
+          "path_utf8": 184.04166666666666,
+          "providers": 4.328125,
+          "edges": 8.421875
+        },
+        "diverse": {
+          "fast": 0.06770833333333333,
+          "validated": 1.0,
+          "reads": 1.5859375,
+          "path_utf8": 183.7109375,
+          "providers": 4.393229166666667,
+          "edges": 8.421875
+        },
+        "historical": {
+          "fast": 0.06770833333333333,
+          "validated": 1.0,
+          "reads": 1.5598958333333333,
+          "path_utf8": 183.703125,
+          "providers": 4.393229166666667,
+          "edges": 8.421875
+        }
+      },
+      "pallets__jinja": {
+        "one": {
+          "fast": 0.0703125,
+          "validated": 1.0,
+          "reads": 1.87890625,
+          "path_utf8": 65.65234375,
+          "providers": 2.57421875,
+          "edges": 2.57421875
+        },
+        "short3": {
+          "fast": 0.1171875,
+          "validated": 1.0,
+          "reads": 1.83203125,
+          "path_utf8": 202.0078125,
+          "providers": 4.3125,
+          "edges": 8.47265625
+        },
+        "diverse": {
+          "fast": 0.140625,
+          "validated": 1.0,
+          "reads": 1.80859375,
+          "path_utf8": 202.70703125,
+          "providers": 4.41796875,
+          "edges": 8.52734375
+        },
+        "historical": {
+          "fast": 0.140625,
+          "validated": 1.0,
+          "reads": 1.8125,
+          "path_utf8": 202.6640625,
+          "providers": 4.4140625,
+          "edges": 8.5234375
+        }
+      },
+      "pydantic__pydantic": {
+        "one": {
+          "fast": 0.5520833333333334,
+          "validated": 0.9114583333333334,
+          "reads": 0.8151041666666666,
+          "path_utf8": 105.69270833333333,
+          "providers": 2.6901041666666665,
+          "edges": 2.6901041666666665
+        },
+        "short3": {
+          "fast": 0.6432291666666666,
+          "validated": 0.9244791666666666,
+          "reads": 0.484375,
+          "path_utf8": 318.5234375,
+          "providers": 4.846354166666667,
+          "edges": 8.526041666666666
+        },
+        "diverse": {
+          "fast": 0.6614583333333334,
+          "validated": 0.9244791666666666,
+          "reads": 0.4609375,
+          "path_utf8": 320.6458333333333,
+          "providers": 5.098958333333333,
+          "edges": 8.565104166666666
+        },
+        "historical": {
+          "fast": 0.6536458333333334,
+          "validated": 0.9244791666666666,
+          "reads": 0.4791666666666667,
+          "path_utf8": 322.1302083333333,
+          "providers": 5.151041666666667,
+          "edges": 8.588541666666666
+        }
+      },
+      "pyparsing__pyparsing": {
+        "one": {
+          "fast": 0.16796875,
+          "validated": 1.0,
+          "reads": 1.0234375,
+          "path_utf8": 62.5625,
+          "providers": 2.1640625,
+          "edges": 2.1640625
+        },
+        "short3": {
+          "fast": 0.22265625,
+          "validated": 1.0,
+          "reads": 0.96875,
+          "path_utf8": 205.80859375,
+          "providers": 4.01953125,
+          "edges": 7.76953125
+        },
+        "diverse": {
+          "fast": 0.22265625,
+          "validated": 1.0,
+          "reads": 0.96875,
+          "path_utf8": 205.77734375,
+          "providers": 4.03515625,
+          "edges": 7.76953125
+        },
+        "historical": {
+          "fast": 0.2265625,
+          "validated": 1.0,
+          "reads": 0.953125,
+          "path_utf8": 205.81640625,
+          "providers": 4.03515625,
+          "edges": 7.76953125
+        }
+      },
+      "python-attrs__attrs": {
+        "one": {
+          "fast": 0.37890625,
+          "validated": 0.97265625,
+          "reads": 1.0625,
+          "path_utf8": 52.80859375,
+          "providers": 2.57421875,
+          "edges": 2.57421875
+        },
+        "short3": {
+          "fast": 0.390625,
+          "validated": 0.9765625,
+          "reads": 1.03125,
+          "path_utf8": 140.22265625,
+          "providers": 3.91015625,
+          "edges": 7.29296875
+        },
+        "diverse": {
+          "fast": 0.390625,
+          "validated": 0.9765625,
+          "reads": 1.03125,
+          "path_utf8": 140.19921875,
+          "providers": 3.9140625,
+          "edges": 7.29296875
+        },
+        "historical": {
+          "fast": 0.390625,
+          "validated": 0.9765625,
+          "reads": 1.03125,
+          "path_utf8": 140.21875,
+          "providers": 3.9140625,
+          "edges": 7.29296875
+        }
+      },
+      "python-jsonschema__jsonschema": {
+        "one": {
+          "fast": 0.5859375,
+          "validated": 1.0,
+          "reads": 0.6901041666666666,
+          "path_utf8": 79.203125,
+          "providers": 2.6171875,
+          "edges": 2.6171875
+        },
+        "short3": {
+          "fast": 0.609375,
+          "validated": 1.0,
+          "reads": 0.6666666666666666,
+          "path_utf8": 205.921875,
+          "providers": 3.9765625,
+          "edges": 7.190104166666667
+        },
+        "diverse": {
+          "fast": 0.609375,
+          "validated": 1.0,
+          "reads": 0.6666666666666666,
+          "path_utf8": 205.921875,
+          "providers": 3.9765625,
+          "edges": 7.190104166666667
+        },
+        "historical": {
+          "fast": 0.609375,
+          "validated": 1.0,
+          "reads": 0.6666666666666666,
+          "path_utf8": 205.921875,
+          "providers": 3.9765625,
+          "edges": 7.190104166666667
+        }
+      },
+      "tkrajina__gpxpy": {
+        "one": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7540983606557377,
+          "path_utf8": 41.0,
+          "providers": 2.1311475409836067,
+          "edges": 2.1311475409836067
+        },
+        "short3": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7540983606557377,
+          "path_utf8": 133.78688524590163,
+          "providers": 3.6721311475409837,
+          "edges": 7.524590163934426
+        },
+        "diverse": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7540983606557377,
+          "path_utf8": 133.78688524590163,
+          "providers": 3.6721311475409837,
+          "edges": 7.524590163934426
+        },
+        "historical": {
+          "fast": 0.04918032786885246,
+          "validated": 0.9508196721311475,
+          "reads": 1.7049180327868851,
+          "path_utf8": 133.78688524590163,
+          "providers": 3.6721311475409837,
+          "edges": 7.524590163934426
+        }
+      },
+      "pallets__flask": {
+        "one": {
+          "fast": 0.2552083333333333,
+          "validated": 0.9895833333333334,
+          "reads": 1.0833333333333333,
+          "path_utf8": 57.270833333333336,
+          "providers": 2.4895833333333335,
+          "edges": 2.4895833333333335
+        },
+        "short3": {
+          "fast": 0.4270833333333333,
+          "validated": 1.0,
+          "reads": 0.859375,
+          "path_utf8": 184.125,
+          "providers": 4.734375,
+          "edges": 8.5078125
+        },
+        "diverse": {
+          "fast": 0.4401041666666667,
+          "validated": 1.0,
+          "reads": 0.8385416666666666,
+          "path_utf8": 185.45833333333334,
+          "providers": 4.864583333333333,
+          "edges": 8.541666666666666
+        },
+        "historical": {
+          "fast": 0.4661458333333333,
+          "validated": 1.0,
+          "reads": 0.7213541666666666,
+          "path_utf8": 185.91145833333334,
+          "providers": 4.955729166666667,
+          "edges": 8.559895833333334
+        }
+      },
+      "pallets__werkzeug": {
+        "one": {
+          "fast": 0.0546875,
+          "validated": 0.84375,
+          "reads": 3.25,
+          "path_utf8": 98.953125,
+          "providers": 2.9479166666666665,
+          "edges": 2.9479166666666665
+        },
+        "short3": {
+          "fast": 0.06510416666666667,
+          "validated": 0.8828125,
+          "reads": 2.9401041666666665,
+          "path_utf8": 266.0885416666667,
+          "providers": 4.848958333333333,
+          "edges": 8.138020833333334
+        },
+        "diverse": {
+          "fast": 0.06510416666666667,
+          "validated": 0.8854166666666666,
+          "reads": 2.9192708333333335,
+          "path_utf8": 267.15625,
+          "providers": 4.986979166666667,
+          "edges": 8.153645833333334
+        },
+        "historical": {
+          "fast": 0.06510416666666667,
+          "validated": 0.8854166666666666,
+          "reads": 2.9348958333333335,
+          "path_utf8": 267.2890625,
+          "providers": 5.036458333333333,
+          "edges": 8.166666666666666
+        }
+      },
+      "psf__black": {
+        "one": {
+          "fast": 0.3046875,
+          "validated": 1.0,
+          "reads": 0.9479166666666666,
+          "path_utf8": 60.21875,
+          "providers": 2.6015625,
+          "edges": 2.6015625
+        },
+        "short3": {
+          "fast": 0.359375,
+          "validated": 1.0,
+          "reads": 0.8932291666666666,
+          "path_utf8": 163.078125,
+          "providers": 4.010416666666667,
+          "edges": 7.325520833333333
+        },
+        "diverse": {
+          "fast": 0.3958333333333333,
+          "validated": 1.0,
+          "reads": 0.8541666666666666,
+          "path_utf8": 163.65625,
+          "providers": 4.080729166666667,
+          "edges": 7.330729166666667
+        },
+        "historical": {
+          "fast": 0.3958333333333333,
+          "validated": 1.0,
+          "reads": 0.8515625,
+          "path_utf8": 163.65625,
+          "providers": 4.078125,
+          "edges": 7.330729166666667
+        }
+      },
+      "sphinx-doc__sphinx": {
+        "one": {
+          "fast": 0.390625,
+          "validated": 1.0,
+          "reads": 0.8776041666666666,
+          "path_utf8": 103.9375,
+          "providers": 3.0546875,
+          "edges": 3.0546875
+        },
+        "short3": {
+          "fast": 0.4869791666666667,
+          "validated": 1.0,
+          "reads": 0.7786458333333334,
+          "path_utf8": 278.8463541666667,
+          "providers": 4.8125,
+          "edges": 8.565104166666666
+        },
+        "diverse": {
+          "fast": 0.515625,
+          "validated": 1.0,
+          "reads": 0.75,
+          "path_utf8": 279.3020833333333,
+          "providers": 4.934895833333333,
+          "edges": 8.583333333333334
+        },
+        "historical": {
+          "fast": 0.515625,
+          "validated": 1.0,
+          "reads": 0.7734375,
+          "path_utf8": 279.4166666666667,
+          "providers": 4.950520833333333,
+          "edges": 8.583333333333334
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,194 @@
+{
+  "unique_inputs": 525,
+  "logical_by_source": {
+    "released": 600,
+    "local": 120
+  },
+  "unique_public_prompts": 464,
+  "unique_local_prompts": 76,
+  "unparseable_unique": 7,
+  "physical_calls": 533,
+  "usage": {
+    "completion_tokens": 24236,
+    "prompt_tokens": 191417
+  },
+  "author_agreement": {
+    "matrix": {
+      "TP": 475,
+      "FN": 4,
+      "TN": 114,
+      "FP": 0
+    },
+    "accuracy": 0.9932546374367622,
+    "cluster_ci": [
+      0.9793459552495697,
+      1.0
+    ],
+    "sensitivity": 0.9916492693110647,
+    "specificity": 1.0,
+    "unique_equal_weight_agreement": 0.9913793103448276,
+    "graded": 593,
+    "missing": 7,
+    "accuracy_bounds_all_600": [
+      0.9816666666666667,
+      0.9933333333333333
+    ]
+  },
+  "sums": {
+    "DeepSeek-V4-Pro | alert": {
+      "n": 40,
+      "correct": 30,
+      "authors_correct": 31,
+      "missing": 1
+    },
+    "DeepSeek-V4-Pro | block_context": {
+      "n": 40,
+      "correct": 39,
+      "authors_correct": 40
+    },
+    "DeepSeek-V4-Pro | diff": {
+      "n": 40,
+      "correct": 37,
+      "authors_correct": 38,
+      "missing": 1
+    },
+    "DeepSeek-V4-Pro | naive": {
+      "n": 40,
+      "correct": 24,
+      "authors_correct": 24
+    },
+    "DeepSeek-V4-Pro | oracle": {
+      "n": 40,
+      "correct": 39,
+      "authors_correct": 40,
+      "missing": 1
+    },
+    "glm-5.2 | alert": {
+      "n": 40,
+      "correct": 22,
+      "authors_correct": 23,
+      "missing": 2
+    },
+    "glm-5.2 | block_context": {
+      "n": 40,
+      "correct": 39,
+      "authors_correct": 40
+    },
+    "glm-5.2 | diff": {
+      "n": 40,
+      "correct": 31,
+      "authors_correct": 31
+    },
+    "glm-5.2 | naive": {
+      "n": 40,
+      "correct": 15,
+      "authors_correct": 15
+    },
+    "glm-5.2 | oracle": {
+      "n": 40,
+      "correct": 39,
+      "authors_correct": 40
+    },
+    "anthropic/claude-sonnet-5 | alert": {
+      "n": 40,
+      "correct": 26,
+      "authors_correct": 26
+    },
+    "anthropic/claude-sonnet-5 | block_context": {
+      "n": 40,
+      "correct": 39,
+      "authors_correct": 40,
+      "missing": 1
+    },
+    "anthropic/claude-sonnet-5 | diff": {
+      "n": 40,
+      "correct": 36,
+      "authors_correct": 36
+    },
+    "anthropic/claude-sonnet-5 | naive": {
+      "n": 40,
+      "correct": 20,
+      "authors_correct": 20,
+      "missing": 1
+    },
+    "anthropic/claude-sonnet-5 | oracle": {
+      "n": 40,
+      "correct": 39,
+      "authors_correct": 40
+    },
+    "qwen38-27b-ud-q4km | baseline": {
+      "n": 40,
+      "correct": 39
+    },
+    "qwen38-27b-ud-q4km | raw": {
+      "n": 40,
+      "correct": 15
+    },
+    "qwen38-27b-ud-q4km | window": {
+      "n": 40,
+      "correct": 39
+    }
+  },
+  "local_pairs": {
+    "window minus baseline": {
+      "delta": 0.0,
+      "ci": [
+        0.0,
+        0.0
+      ],
+      "wins": 0,
+      "losses": 0,
+      "p_exact": 1,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 40,
+        "complete_pair_delta": 0.0,
+        "shared_unknown_ties": 0,
+        "identified_delta_interval": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "window minus raw": {
+      "delta": 0.6,
+      "ci": [
+        0.45,
+        0.75
+      ],
+      "wins": 24,
+      "losses": 0,
+      "p_exact": 1.1920928955078125e-07,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 40,
+        "complete_pair_delta": 0.6,
+        "shared_unknown_ties": 0,
+        "identified_delta_interval": [
+          0.6,
+          0.6
+        ]
+      }
+    },
+    "baseline minus raw": {
+      "delta": 0.6,
+      "ci": [
+        0.45,
+        0.75
+      ],
+      "wins": 24,
+      "losses": 0,
+      "p_exact": 1.1920928955078125e-07,
+      "incomplete_verdict_bounds": {
+        "n": 40,
+        "complete_pairs": 40,
+        "complete_pair_delta": 0.6,
+        "shared_unknown_ties": 0,
+        "identified_delta_interval": [
+          0.6,
+          0.6
+        ]
+      }
+    }
+  }
+}

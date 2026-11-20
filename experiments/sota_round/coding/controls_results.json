@@ -1,0 +1,187 @@
+{
+  "n": 23,
+  "paired": {
+    "fusion_vs_bm25_five_regions": {
+      "difference": 0.05847605797091977,
+      "repo_bootstrap_95": [
+        0.01006058481222005,
+        0.1266118458291829
+      ],
+      "wins": 10,
+      "ties": 11,
+      "losses": 2
+    },
+    "fusion_vs_bm25_same_emitted_lines": {
+      "difference": 0.06060941127550971,
+      "repo_bootstrap_95": [
+        0.010083455159882957,
+        0.1350847684475199
+      ],
+      "wins": 11,
+      "ties": 11,
+      "losses": 1
+    },
+    "fusion_vs_potion_five_regions": {
+      "difference": 0.027294509247466858,
+      "repo_bootstrap_95": [
+        -0.02688731330914183,
+        0.09891032283154277
+      ],
+      "wins": 6,
+      "ties": 9,
+      "losses": 8
+    },
+    "fusion_vs_potion_same_emitted_lines": {
+      "difference": 0.030867909594489103,
+      "repo_bootstrap_95": [
+        -0.025791435334134527,
+        0.10873944168250158
+      ],
+      "wins": 7,
+      "ties": 10,
+      "losses": 6
+    },
+    "fusion_vs_tfidf_five_regions": {
+      "difference": -0.0009712113107614824,
+      "repo_bootstrap_95": [
+        -0.03279297125752021,
+        0.03156672550570421
+      ],
+      "wins": 5,
+      "ties": 9,
+      "losses": 9
+    },
+    "fusion_vs_tfidf_same_emitted_lines": {
+      "difference": 0.0090616009941718,
+      "repo_bootstrap_95": [
+        -0.031969581321177,
+        0.061936520344635405
+      ],
+      "wins": 4,
+      "ties": 13,
+      "losses": 6
+    }
+  },
+  "means": {
+    "fusion_vs_bm25_five_regions_fusion": {
+      "f1_score": 0.08681869108076558,
+      "precision": 0.16854063849672912,
+      "recall": 0.08460026297442935,
+      "hit_file_rate": 0.2833333333333333,
+      "hit_region_rate": 0.2289855072463768,
+      "noise_file_rate": 0.7376811594202899,
+      "recall_at_300": 0.07496695138573418,
+      "mean_raw_lines": 382.95652173913044
+    },
+    "fusion_vs_bm25_five_regions_bm25": {
+      "f1_score": 0.0283426331098458,
+      "precision": 0.05952507078763173,
+      "recall": 0.02913055808930243,
+      "hit_file_rate": 0.11956521739130435,
+      "hit_region_rate": 0.08695652173913043,
+      "noise_file_rate": 0.8833333333333333,
+      "recall_at_300": 0.028279949797327127,
+      "mean_raw_lines": 370.1304347826087
+    },
+    "fusion_vs_bm25_same_emitted_lines_fusion": {
+      "f1_score": 0.0889520443853555,
+      "precision": 0.17132570630740127,
+      "recall": 0.08381030156100609,
+      "hit_file_rate": 0.2833333333333333,
+      "hit_region_rate": 0.2289855072463768,
+      "noise_file_rate": 0.7340579710144928,
+      "recall_at_300": 0.07496695138573418,
+      "mean_raw_lines": 364.60869565217394
+    },
+    "fusion_vs_bm25_same_emitted_lines_bm25": {
+      "f1_score": 0.0283426331098458,
+      "precision": 0.05952507078763173,
+      "recall": 0.02913055808930243,
+      "hit_file_rate": 0.11956521739130435,
+      "hit_region_rate": 0.08695652173913043,
+      "noise_file_rate": 0.8833333333333333,
+      "recall_at_300": 0.028279949797327127,
+      "mean_raw_lines": 364.60869565217394
+    },
+    "fusion_vs_potion_five_regions_fusion": {
+      "f1_score": 0.08681869108076558,
+      "precision": 0.16854063849672912,
+      "recall": 0.08460026297442935,
+      "hit_file_rate": 0.2833333333333333,
+      "hit_region_rate": 0.2289855072463768,
+      "noise_file_rate": 0.7376811594202899,
+      "recall_at_300": 0.07496695138573418,
+      "mean_raw_lines": 382.95652173913044
+    },
+    "fusion_vs_potion_five_regions_potion": {
+      "f1_score": 0.05952418183329872,
+      "precision": 0.1389463367333975,
+      "recall": 0.051409748392206356,
+      "hit_file_rate": 0.16956521739130434,
+      "hit_region_rate": 0.16956521739130434,
+      "noise_file_rate": 0.8384057971014492,
+      "recall_at_300": 0.042754431598389424,
+      "mean_raw_lines": 379.1304347826087
+    },
+    "fusion_vs_potion_same_emitted_lines_fusion": {
+      "f1_score": 0.09006867732369499,
+      "precision": 0.1729208821587708,
+      "recall": 0.08460026297442935,
+      "hit_file_rate": 0.2833333333333333,
+      "hit_region_rate": 0.2289855072463768,
+      "noise_file_rate": 0.7376811594202899,
+      "recall_at_300": 0.07496695138573418,
+      "mean_raw_lines": 373.2608695652174
+    },
+    "fusion_vs_potion_same_emitted_lines_potion": {
+      "f1_score": 0.05920076772920589,
+      "precision": 0.1415017458168833,
+      "recall": 0.0510624779379766,
+      "hit_file_rate": 0.16956521739130434,
+      "hit_region_rate": 0.16956521739130434,
+      "noise_file_rate": 0.8384057971014492,
+      "recall_at_300": 0.042754431598389424,
+      "mean_raw_lines": 373.2608695652174
+    },
+    "fusion_vs_tfidf_five_regions_fusion": {
+      "f1_score": 0.08681869108076558,
+      "precision": 0.16854063849672912,
+      "recall": 0.08460026297442935,
+      "hit_file_rate": 0.2833333333333333,
+      "hit_region_rate": 0.2289855072463768,
+      "noise_file_rate": 0.7376811594202899,
+      "recall_at_300": 0.07496695138573418,
+      "mean_raw_lines": 382.95652173913044
+    },
+    "fusion_vs_tfidf_five_regions_tfidf": {
+      "f1_score": 0.08778990239152705,
+      "precision": 0.19732848201874106,
+      "recall": 0.06929652142709318,
+      "hit_file_rate": 0.2847826086956522,
+      "hit_region_rate": 0.23623188405797102,
+      "noise_file_rate": 0.741304347826087,
+      "recall_at_300": 0.06429639630097468,
+      "mean_raw_lines": 319.7391304347826
+    },
+    "fusion_vs_tfidf_same_emitted_lines_fusion": {
+      "f1_score": 0.09688470728194365,
+      "precision": 0.17982457548438893,
+      "recall": 0.08415000266768952,
+      "hit_file_rate": 0.26159420289855073,
+      "hit_region_rate": 0.2072463768115942,
+      "noise_file_rate": 0.7355072463768116,
+      "recall_at_300": 0.07451669107899435,
+      "mean_raw_lines": 317.82608695652175
+    },
+    "fusion_vs_tfidf_same_emitted_lines_tfidf": {
+      "f1_score": 0.08782310628777186,
+      "precision": 0.19743855356524628,
+      "recall": 0.06929652142709318,
+      "hit_file_rate": 0.2847826086956522,
+      "hit_region_rate": 0.23623188405797102,
+      "noise_file_rate": 0.741304347826087,
+      "recall_at_300": 0.06429639630097468,
+      "mean_raw_lines": 317.82608695652175
+    }
+  }
+}

@@ -1,0 +1,351 @@
+{
+  "population": {
+    "batches": 14507,
+    "branch_resets": 6,
+    "tools": 15047,
+    "reads": 1900,
+    "path_or_args_unresolved": 21,
+    "eligible": 1792,
+    "actual_error": 55,
+    "repeated": 38,
+    "admissible": 1606,
+    "roundtrip_full": 535,
+    "actual_success": 1737,
+    "edit_updated": 53,
+    "edit_no_default_entry": 807,
+    "edit_unconfirmed": 25,
+    "mixed_suppressed": 87,
+    "edit_over_budget": 1
+  },
+  "traces": 300,
+  "traces_with_read": 298,
+  "repo_proxy_histories": {
+    "django/django": 114,
+    "astropy/astropy": 6,
+    "scikit-learn/scikit-learn": 23,
+    "matplotlib/matplotlib": 23,
+    "sympy/sympy": 77,
+    "pytest-dev/pytest": 17,
+    "pylint-dev/pylint": 6,
+    "pydata/xarray": 5,
+    "mwaskom/seaborn": 4,
+    "sphinx-doc/sphinx": 16,
+    "psf/requests": 6,
+    "pallets/flask": 3
+  },
+  "policies": {
+    "lru": {
+      "miss": 1762,
+      "sum_end_bytes": 235197994,
+      "stale": 14,
+      "correct": 16,
+      "invalidate_global": 8,
+      "peak_bytes": 86655,
+      "mean_end_bytes": 16212.724477838285
+    },
+    "ttl1": {
+      "miss": 1792,
+      "sum_end_bytes": 14161096,
+      "invalidate_global": 1,
+      "peak_bytes": 43740,
+      "mean_end_bytes": 976.1560625904735
+    },
+    "ttl3": {
+      "miss": 1788,
+      "sum_end_bytes": 27903215,
+      "invalidate_global": 3,
+      "stale": 1,
+      "correct": 3,
+      "peak_bytes": 44596,
+      "mean_end_bytes": 1923.4311022265113
+    },
+    "ttl10": {
+      "miss": 1778,
+      "sum_end_bytes": 74303958,
+      "stale": 6,
+      "correct": 8,
+      "invalidate_global": 7,
+      "peak_bytes": 66722,
+      "mean_end_bytes": 5121.938236713311
+    },
+    "flush": {
+      "miss": 1791,
+      "sum_end_bytes": 18393088,
+      "invalidate_global": 1556,
+      "correct": 1,
+      "peak_bytes": 57668,
+      "mean_end_bytes": 1267.87674915558
+    },
+    "selective": {
+      "miss": 1791,
+      "sum_end_bytes": 21776907,
+      "invalidate_global": 1077,
+      "invalidate_path": 477,
+      "correct": 1,
+      "peak_bytes": 57668,
+      "mean_end_bytes": 1501.130971255256
+    },
+    "write_through": {
+      "miss": 1788,
+      "sum_end_bytes": 23315266,
+      "invalidate_global": 1113,
+      "invalidate_path": 491,
+      "correct": 4,
+      "edited_correct": 3,
+      "peak_bytes": 57668,
+      "mean_end_bytes": 1607.1735024470945
+    }
+  },
+  "outcomes_by_actual": {
+    "lru": {
+      "error_miss": 55,
+      "success_miss": 1707,
+      "success_stale": 14,
+      "success_correct": 16
+    },
+    "ttl1": {
+      "error_miss": 55,
+      "success_miss": 1737
+    },
+    "ttl3": {
+      "error_miss": 55,
+      "success_miss": 1733,
+      "success_stale": 1,
+      "success_correct": 3
+    },
+    "ttl10": {
+      "error_miss": 55,
+      "success_miss": 1723,
+      "success_stale": 6,
+      "success_correct": 8
+    },
+    "flush": {
+      "error_miss": 55,
+      "success_miss": 1736,
+      "success_correct": 1
+    },
+    "selective": {
+      "error_miss": 55,
+      "success_miss": 1736,
+      "success_correct": 1
+    },
+    "write_through": {
+      "error_miss": 55,
+      "success_miss": 1733,
+      "success_correct": 4
+    }
+  },
+  "bootstrap_repo": {
+    "selective-flush": {
+      "correct": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "stale": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "write_through-selective": {
+      "correct": {
+        "count": 3,
+        "per1000": 1.6741071428571428,
+        "ci95": [
+          0.0,
+          3.3657442034405385
+        ]
+      },
+      "stale": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "selective-ttl1": {
+      "correct": {
+        "count": 1,
+        "per1000": 0.5580357142857143,
+        "ci95": [
+          0.0,
+          1.1219147344801794
+        ]
+      },
+      "stale": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "selective-lru": {
+      "correct": {
+        "count": -15,
+        "per1000": -8.370535714285714,
+        "ci95": [
+          -14.07035175879397,
+          -4.893864396909665
+        ]
+      },
+      "stale": {
+        "count": -14,
+        "per1000": -7.8125,
+        "ci95": [
+          -11.793465254818605,
+          -3.191832069330205
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "bootstrap_trace": {
+    "selective-flush": {
+      "correct": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "stale": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "write_through-selective": {
+      "correct": {
+        "count": 3,
+        "per1000": 1.6741071428571428,
+        "ci95": [
+          0.0,
+          3.8802660753880267
+        ]
+      },
+      "stale": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "selective-ttl1": {
+      "correct": {
+        "count": 1,
+        "per1000": 0.5580357142857143,
+        "ci95": [
+          0.0,
+          1.7162471395881007
+        ]
+      },
+      "stale": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "selective-lru": {
+      "correct": {
+        "count": -15,
+        "per1000": -8.370535714285714,
+        "ci95": [
+          -13.450841554382526,
+          -4.206102523894872
+        ]
+      },
+      "stale": {
+        "count": -14,
+        "per1000": -7.8125,
+        "ci95": [
+          -12.561441835062807,
+          -3.90625
+        ]
+      },
+      "unknown": {
+        "count": 0,
+        "per1000": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "numpy": "2.4.4"
+}

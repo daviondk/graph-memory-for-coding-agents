@@ -1,0 +1,55 @@
+{
+  "scope": "Archived successful chat completions in the listed physical response directories. Excludes HTTP failures, tokenize/health calls, preparatory probes and author-side model calls. Workspaces or references served from an existing file incur no new call here. Completions with same request payload in separate directories count separately as physical receipts.",
+  "per_directory": {
+    "repair/calls": {
+      "completed_responses": 336,
+      "prompt_tokens": 34740,
+      "completion_tokens": 36957
+    },
+    "repair/cap1024/calls": {
+      "completed_responses": 21,
+      "prompt_tokens": 2004,
+      "completion_tokens": 8051
+    },
+    "concord/calls": {
+      "completed_responses": 281,
+      "prompt_tokens": 528947,
+      "completion_tokens": 11660
+    },
+    "concord/highlight/calls": {
+      "completed_responses": 111,
+      "prompt_tokens": 242190,
+      "completion_tokens": 5009
+    },
+    "concord/controls/calls": {
+      "completed_responses": 474,
+      "prompt_tokens": 1029761,
+      "completion_tokens": 18351
+    },
+    "concord/judge/calls": {
+      "completed_responses": 533,
+      "prompt_tokens": 191417,
+      "completion_tokens": 24236
+    },
+    "concord/highlight_judge/calls": {
+      "completed_responses": 15,
+      "prompt_tokens": 5181,
+      "completion_tokens": 979
+    },
+    "concord/controls/judge_calls": {
+      "completed_responses": 45,
+      "prompt_tokens": 15921,
+      "completion_tokens": 2779
+    }
+  },
+  "model_aliases": {
+    "qwen38-27b-ud-q4km": 1816
+  },
+  "total_completed": 1816,
+  "total_prompt_tokens": 2050161,
+  "total_completion_tokens": 108022,
+  "distinct_payloads": 1806,
+  "payloads_repeated_physically": 10,
+  "extra_physical_repeats": 10,
+  "repeated_payloads_with_different_text_tools_or_finish": 0
+}

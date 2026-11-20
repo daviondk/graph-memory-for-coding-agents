@@ -1,0 +1,170 @@
+{
+  "n": 64,
+  "physical_calls": 171,
+  "logical_calls": 192,
+  "reference_in_local_context": 1,
+  "near_eligible": 64,
+  "near_in_local_context": 4,
+  "edge_found": 64,
+  "source_shows_type": 48,
+  "display_shows_type": 48,
+  "methods": {
+    "edge": {
+      "em_count": 8,
+      "em_percent": 12.5,
+      "es": 57.5625,
+      "id_f1": 0.40923284487163164,
+      "prompt_tokens": 440.921875,
+      "completion_tokens": 15.953125,
+      "evidence_tokens": 114.484375,
+      "literal_external": 0,
+      "near_external": 1,
+      "near_external_without_exact": 1,
+      "finish": {
+        "stop": 64
+      },
+      "returned_multiple_nonempty_lines": 0
+    },
+    "head": {
+      "em_count": 8,
+      "em_percent": 12.5,
+      "es": 57.296875,
+      "id_f1": 0.41795935141673507,
+      "prompt_tokens": 530.125,
+      "completion_tokens": 16.046875,
+      "evidence_tokens": 203.765625,
+      "literal_external": 0,
+      "near_external": 0,
+      "near_external_without_exact": 0,
+      "finish": {
+        "stop": 64
+      },
+      "returned_multiple_nonempty_lines": 0
+    },
+    "local": {
+      "em_count": 8,
+      "em_percent": 12.5,
+      "es": 58.40625,
+      "id_f1": 0.4215918460237362,
+      "prompt_tokens": 418.203125,
+      "completion_tokens": 16.34375,
+      "evidence_tokens": 91.671875,
+      "literal_external": 0,
+      "near_external": 0,
+      "near_external_without_exact": 0,
+      "finish": {
+        "stop": 64
+      },
+      "returned_multiple_nonempty_lines": 0
+    }
+  },
+  "comparisons": {
+    "edge_vs_local": {
+      "all": {
+        "n": 64,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "changed_prompt": {
+        "n": 64,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "no_near_or_literal_in_visible_text": {
+        "n": 59,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "near_or_literal_in_visible_text": {
+        "n": 5,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      }
+    },
+    "edge_vs_head": {
+      "all": {
+        "n": 64,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "changed_prompt": {
+        "n": 64,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "no_near_or_literal_in_visible_text": {
+        "n": 59,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "near_or_literal_in_visible_text": {
+        "n": 5,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      }
+    },
+    "local_vs_head": {
+      "all": {
+        "n": 64,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "changed_prompt": {
+        "n": 43,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "no_near_or_literal_in_visible_text": {
+        "n": 60,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "same_prompt": {
+        "n": 21,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      },
+      "near_or_literal_in_visible_text": {
+        "n": 4,
+        "wins": 0,
+        "losses": 0,
+        "delta_em_pp": 0.0,
+        "exact_p": 1.0
+      }
+    }
+  },
+  "item_sha256": "a3ca52949e07204c25d8ec7a7265d2afbf3cc87ad29d12a6775b46d2e9c22900",
+  "locks": {
+    "data_lock": "8c30aee5e62ccee9b7732d25f39538d0906e25e4102bd5ecf964346361c5804d",
+    "input_lock": "d4869ff30dca3a17f9bb83b7d13a68e6ff03da287275526f8291c654c2e48dba",
+    "decisions": "da236b20d79cc24c08d1135fa20c8e0bedea777d0d0fe905314ca07272655414"
+  },
+  "target_sidecar_sha256": "9aee6790a42d0f839ffa6cf3eb4e73c6095897ffd1391cd32dff0f3e713c4470",
+  "script_sha256": "e39ca9872a7f1646372e0dcfa31ad75d24a3cc28f4a8c5a5bfe20c9d2c1300d8",
+  "utc": "2026-11-18T21:06:42.532244+00:00",
+  "project_overlap_A_B": 0
+}

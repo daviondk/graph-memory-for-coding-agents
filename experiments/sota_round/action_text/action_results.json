@@ -1,0 +1,295 @@
+{
+  "n_tasks": 34,
+  "n_assigned": 102,
+  "all_cells_included": true,
+  "arms": {
+    "raw": {
+      "n": 34,
+      "successes": 5,
+      "response_counts": {
+        "valid": 34
+      },
+      "builder_counts": {
+        "ok": 27,
+        "nonzero": 7
+      },
+      "checker_counts": {
+        "ok": 34
+      },
+      "infrastructure": 0,
+      "at_output_limit": 0,
+      "echoed_placeholder": 0,
+      "syntax_errors": 1,
+      "crashed_but_passed": [],
+      "input_tokens": {
+        "total": 34400,
+        "mean": 1011.7647058823529,
+        "median": 972.5,
+        "min": 587,
+        "max": 1584
+      },
+      "output_tokens": {
+        "total": 4982,
+        "mean": 146.52941176470588,
+        "median": 134.0,
+        "min": 30,
+        "max": 423
+      },
+      "memory_words": {
+        "total": 9989,
+        "mean": 293.79411764705884,
+        "median": 300.0,
+        "min": 223,
+        "max": 300
+      },
+      "builder_seconds": {
+        "total": 1.9508,
+        "mean": 0.05737647058823529,
+        "median": 0.0673,
+        "min": 0.035,
+        "max": 0.119
+      },
+      "checker_seconds": {
+        "total": 7.2379999999999995,
+        "mean": 0.21288235294117647,
+        "median": 0.2183,
+        "min": 0.1178,
+        "max": 0.3186
+      }
+    },
+    "receipt": {
+      "n": 34,
+      "successes": 4,
+      "response_counts": {
+        "valid": 34
+      },
+      "builder_counts": {
+        "ok": 27,
+        "nonzero": 7
+      },
+      "checker_counts": {
+        "ok": 34
+      },
+      "infrastructure": 0,
+      "at_output_limit": 1,
+      "echoed_placeholder": 0,
+      "syntax_errors": 2,
+      "crashed_but_passed": [],
+      "input_tokens": {
+        "total": 28871,
+        "mean": 849.1470588235294,
+        "median": 759.5,
+        "min": 592,
+        "max": 1474
+      },
+      "output_tokens": {
+        "total": 6414,
+        "mean": 188.64705882352942,
+        "median": 158.5,
+        "min": 30,
+        "max": 1280
+      },
+      "memory_words": {
+        "total": 8140,
+        "mean": 239.41176470588235,
+        "median": 237.0,
+        "min": 136,
+        "max": 300
+      },
+      "builder_seconds": {
+        "total": 2.0194,
+        "mean": 0.059394117647058826,
+        "median": 0.06735,
+        "min": 0.035,
+        "max": 0.1189
+      },
+      "checker_seconds": {
+        "total": 7.2334,
+        "mean": 0.2127470588235294,
+        "median": 0.2181,
+        "min": 0.1176,
+        "max": 0.2704
+      }
+    },
+    "empty": {
+      "n": 34,
+      "successes": 3,
+      "response_counts": {
+        "valid": 34
+      },
+      "builder_counts": {
+        "ok": 26,
+        "nonzero": 8
+      },
+      "checker_counts": {
+        "ok": 34
+      },
+      "infrastructure": 0,
+      "at_output_limit": 0,
+      "echoed_placeholder": 0,
+      "syntax_errors": 1,
+      "crashed_but_passed": [],
+      "input_tokens": {
+        "total": 16325,
+        "mean": 480.1470588235294,
+        "median": 405.0,
+        "min": 278,
+        "max": 1043
+      },
+      "output_tokens": {
+        "total": 4782,
+        "mean": 140.64705882352942,
+        "median": 148.5,
+        "min": 27,
+        "max": 298
+      },
+      "memory_words": {
+        "total": 0,
+        "mean": 0,
+        "median": 0.0,
+        "min": 0,
+        "max": 0
+      },
+      "builder_seconds": {
+        "total": 1.9822,
+        "mean": 0.0583,
+        "median": 0.0675,
+        "min": 0.0351,
+        "max": 0.1222
+      },
+      "checker_seconds": {
+        "total": 7.0678,
+        "mean": 0.2078764705882353,
+        "median": 0.2181,
+        "min": 0.1179,
+        "max": 0.2688
+      }
+    }
+  },
+  "paired": {
+    "receipt_minus_raw": {
+      "n": 34,
+      "wins": 0,
+      "losses": 1,
+      "ties": 33,
+      "delta": -0.029411764705882353,
+      "paired_percentile_ci95": [
+        -0.08823529411764706,
+        0.0
+      ],
+      "exact_two_sided_mcnemar": 1.0,
+      "fixed": [],
+      "harmed": [
+        "ts-mig-name"
+      ]
+    },
+    "receipt_minus_empty": {
+      "n": 34,
+      "wins": 1,
+      "losses": 0,
+      "ties": 33,
+      "delta": 0.029411764705882353,
+      "paired_percentile_ci95": [
+        0.0,
+        0.08823529411764706
+      ],
+      "exact_two_sided_mcnemar": 1.0,
+      "fixed": [
+        "ts-schema-additive"
+      ],
+      "harmed": []
+    },
+    "raw_minus_empty": {
+      "n": 34,
+      "wins": 2,
+      "losses": 0,
+      "ties": 32,
+      "delta": 0.058823529411764705,
+      "paired_percentile_ci95": [
+        0.0,
+        0.14705882352941177
+      ],
+      "exact_two_sided_mcnemar": 0.5,
+      "fixed": [
+        "ts-mig-name",
+        "ts-schema-additive"
+      ],
+      "harmed": []
+    }
+  },
+  "sensitivity_without_bool": {
+    "n": 33,
+    "wins": 0,
+    "losses": 1,
+    "ties": 32,
+    "delta": -0.030303030303030304,
+    "paired_percentile_ci95": [
+      -0.09090909090909091,
+      0.0
+    ],
+    "exact_two_sided_mcnemar": 1.0,
+    "fixed": [],
+    "harmed": [
+      "ts-mig-name"
+    ]
+  },
+  "strata": {
+    "excluding_ts_bool_env": {
+      "n": 33,
+      "raw": 5,
+      "receipt": 4,
+      "empty": 3
+    },
+    "ts": {
+      "n": 30,
+      "raw": 5,
+      "receipt": 4,
+      "empty": 3
+    },
+    "xs": {
+      "n": 3,
+      "raw": 0,
+      "receipt": 0,
+      "empty": 0
+    },
+    "fa": {
+      "n": 1,
+      "raw": 0,
+      "receipt": 0,
+      "empty": 0
+    },
+    "all_precursors_fetched_True": {
+      "n": 16,
+      "raw": 1,
+      "receipt": 1,
+      "empty": 1
+    },
+    "all_precursors_fetched_False": {
+      "n": 18,
+      "raw": 4,
+      "receipt": 3,
+      "empty": 2
+    }
+  },
+  "canaries": {
+    "informed": 34,
+    "naive_failed": 34,
+    "noop_failed": 34,
+    "isolation_pass": true
+  },
+  "whole_batch_generation_seconds": {
+    "total": 343.5759999966249,
+    "mean": 20.210352940977934,
+    "median": 14.889999999664724,
+    "min": 10.546000000089407,
+    "max": 89.921999999322
+  },
+  "prompt_cost": {
+    "raw_tokens": 34400,
+    "receipt_tokens": 28871,
+    "empty_tokens": 16325,
+    "fewer_tokens": 5529,
+    "relative_to_full_raw": 0.16072674418604652,
+    "relative_to_raw_increment": 0.3058921161825726
+  }
+}

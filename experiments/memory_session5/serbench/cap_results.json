@@ -1,0 +1,33 @@
+{
+  "cal500": {
+    "sha256": "480371b183472a9072999b704da3db894e41619867b46078217d28ca020c7e5c",
+    "rows": 500,
+    "changed": 0,
+    "mean_source_tokens": 3246.128,
+    "max_source_tokens": 5780,
+    "official_metrics": {
+      "pair_completion_cap6144": {
+        "states": 500.0,
+        "group_ndcg@5": 0.278632878583226,
+        "group_ndcg@8": 0.32217158838431326,
+        "group_recall@5": 0.3675,
+        "group_recall@8": 0.48133333333333334,
+        "mss_complete@5": 0.25,
+        "mss_complete@8": 0.356,
+        "necessity_weighted_recall@5": 0.36809891774891773,
+        "necessity_weighted_recall@8": 0.4832080808080808,
+        "required_novelty@5": 0.504,
+        "required_novelty@8": 0.616,
+        "role_coverage@5": 0.4181666666666667,
+        "role_coverage@8": 0.5285
+      }
+    }
+  },
+  "test500": {
+    "sha256": "42a811571694d3113b5b0e4cac7b8fb35420a9f28e0d806dd8df5ed9f03201ca",
+    "rows": 500,
+    "changed": 9,
+    "mean_source_tokens": 3734.6,
+    "max_source_tokens": 6143
+  }
+}

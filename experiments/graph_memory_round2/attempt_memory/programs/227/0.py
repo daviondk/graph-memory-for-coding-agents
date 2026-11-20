@@ -1,0 +1,13 @@
+def min_of_three(a, b, c):
+    """
+    Find the minimum of three numbers.
+    
+    Args:
+        a: First number
+        b: Second number
+        c: Third number
+    
+    Returns:
+        The minimum of the three numbers
+    """
+    return min(a, b, c)

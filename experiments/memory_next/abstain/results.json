@@ -1,0 +1,2418 @@
+{
+ "queries": 258,
+ "eligible": 38,
+ "methods": {
+  "all": {
+   "deliveries": 185,
+   "linked_delivered": 26,
+   "precision": 0.14054054054054055,
+   "retained": 1.0,
+   "matched_random_expected": 26.0
+  },
+  "gate": {
+   "deliveries": 55,
+   "linked_delivered": 14,
+   "precision": 0.2545454545454545,
+   "retained": 0.5384615384615384,
+   "matched_random_expected": 7.735294117647059
+  },
+  "bm25_25": {
+   "deliveries": 47,
+   "linked_delivered": 8,
+   "precision": 0.1702127659574468,
+   "retained": 0.3076923076923077,
+   "matched_random_expected": 4.291478129713424
+  },
+  "margin_25": {
+   "deliveries": 47,
+   "linked_delivered": 15,
+   "precision": 0.3191489361702128,
+   "retained": 0.5769230769230769,
+   "matched_random_expected": 7.2699849170437405
+  },
+  "symbol_25": {
+   "deliveries": 47,
+   "linked_delivered": 13,
+   "precision": 0.2765957446808511,
+   "retained": 0.5,
+   "matched_random_expected": 6.931372549019608
+  },
+  "bm25_50": {
+   "deliveries": 93,
+   "linked_delivered": 21,
+   "precision": 0.22580645161290322,
+   "retained": 0.8076923076923077,
+   "matched_random_expected": 15.217948717948717
+  },
+  "margin_50": {
+   "deliveries": 93,
+   "linked_delivered": 21,
+   "precision": 0.22580645161290322,
+   "retained": 0.8076923076923077,
+   "matched_random_expected": 16.476998491704375
+  },
+  "symbol_50": {
+   "deliveries": 93,
+   "linked_delivered": 19,
+   "precision": 0.20430107526881722,
+   "retained": 0.7307692307692307,
+   "matched_random_expected": 13.484917043740573
+  },
+  "bm25_75": {
+   "deliveries": 139,
+   "linked_delivered": 23,
+   "precision": 0.16546762589928057,
+   "retained": 0.8846153846153846,
+   "matched_random_expected": 20.55844645550528
+  },
+  "margin_75": {
+   "deliveries": 139,
+   "linked_delivered": 24,
+   "precision": 0.17266187050359713,
+   "retained": 0.9230769230769231,
+   "matched_random_expected": 21.448340874811464
+  },
+  "symbol_75": {
+   "deliveries": 139,
+   "linked_delivered": 23,
+   "precision": 0.16546762589928057,
+   "retained": 0.8846153846153846,
+   "matched_random_expected": 20.15346907993967
+  }
+ },
+ "by_repo": {
+  "all": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 34,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 11,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 10,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 3,
+    "kept": 3
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 9,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 13,
+    "top_hits": 3,
+    "kept": 3
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 26,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "gate": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 8,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 8,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 3,
+    "top_hits": 3,
+    "kept": 1
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "bm25_25": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 11,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 8,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 3,
+    "kept": 1
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 4,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "margin_25": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 7,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 3,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 7,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "symbol_25": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 9,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 6,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 2,
+    "top_hits": 3,
+    "kept": 1
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 7,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "bm25_50": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 3,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 17,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 7,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 9,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 7,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 10,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "margin_50": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 3,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 16,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 6,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 1,
+    "kept": 0
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 8,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 5,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 10,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "symbol_50": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 13,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 9,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 9,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 2,
+    "kept": 0
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 5,
+    "top_hits": 3,
+    "kept": 1
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 8,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "bm25_75": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 4,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 24,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 10,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 10,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 10,
+    "top_hits": 3,
+    "kept": 3
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 19,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "margin_75": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 4,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 22,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 9,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 10,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 8,
+    "top_hits": 3,
+    "kept": 3
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 20,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 0,
+    "top_hits": 0,
+    "kept": 0
+   }
+  },
+  "symbol_75": {
+   "PHP-CS-Fixer/PHP-CS-Fixer": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "PHPOffice/PhpSpreadsheet": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "apache/lucene": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "astral-sh/ruff": {
+    "pool": 3,
+    "selected": 2,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "astropy/astropy": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "axios/axios": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "babel/babel": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "caddyserver/caddy": {
+    "pool": 5,
+    "selected": 4,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "django/django": {
+    "pool": 34,
+    "selected": 22,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "fluent/fluentd": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "gin-gonic/gin": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "gohugoio/hugo": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "google/gson": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "hashicorp/terraform": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "jqlang/jq": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "laravel/framework": {
+    "pool": 3,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "matplotlib/matplotlib": {
+    "pool": 11,
+    "selected": 10,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "mwaskom/seaborn": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "preactjs/preact": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 1,
+    "kept": 1
+   },
+   "projectlombok/lombok": {
+    "pool": 4,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "prometheus/prometheus": {
+    "pool": 4,
+    "selected": 4,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "psf/requests": {
+    "pool": 6,
+    "selected": 5,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pydata/xarray": {
+    "pool": 10,
+    "selected": 10,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "pylint-dev/pylint": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "pytest-dev/pytest": {
+    "pool": 6,
+    "selected": 6,
+    "top_hits": 2,
+    "kept": 2
+   },
+   "redis/redis": {
+    "pool": 4,
+    "selected": 3,
+    "top_hits": 3,
+    "kept": 3
+   },
+   "rubocop/rubocop": {
+    "pool": 2,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "scikit-learn/scikit-learn": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sharkdp/bat": {
+    "pool": 9,
+    "selected": 6,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "sphinx-doc/sphinx": {
+    "pool": 13,
+    "selected": 8,
+    "top_hits": 3,
+    "kept": 2
+   },
+   "sympy/sympy": {
+    "pool": 26,
+    "selected": 14,
+    "top_hits": 2,
+    "kept": 1
+   },
+   "tokio-rs/axum": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "tokio-rs/tokio": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "uutils/coreutils": {
+    "pool": 1,
+    "selected": 1,
+    "top_hits": 0,
+    "kept": 0
+   },
+   "valkey-io/valkey": {
+    "pool": 2,
+    "selected": 2,
+    "top_hits": 0,
+    "kept": 0
+   }
+  }
+ },
+ "nonempty_repos": 35
+}

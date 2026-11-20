@@ -1,0 +1,17 @@
+{
+  "id": "2609.34385",
+  "title": "Just-In-Time Agent Memory with Runtime Agentic Research",
+  "authors": [
+    "Yan, Bingyu",
+    "Li, Chaofan",
+    "Qian, Hongjin",
+    "Lu, Shuqi",
+    "Li, Chaozhuo",
+    "Liu, Zheng"
+  ],
+  "date": "2026/09/28",
+  "url": "https://arxiv.org/abs/2609.34385",
+  "abstract": "Memory is critical for AI agents. Many existing agent-memory systems follow an Ahead-of-Time (AOT) design, constructing memory before a specific request arrives. While this reduces online serving cost, such request-agnostic memory construction can discard fine-grained information that later becomes important. To address this limitation, we propose Just-In-Time Agent Memory (JAM), a trainable framework for query-conditioned context construction at runtime. A Memorizer preserves complete raw histories in a hierarchical page-store with compact navigational summaries, while a Researcher iteratively retrieves, inspects, and integrates evidence for each request. To train these memory-use behaviors, we introduce Memory-Gym, an evidence-grounded data synthesis pipeline covering nine task types across six domains, and optimize the Researcher through verified-trajectory supervised fine-tuning followed by Hint-guided Group Relative Policy Optimization. We demonstrate the effectiveness of JAM across a variety of benchmarks on agent memory and long-context processing, where it achieves stronger task performance than AOT-style memory systems while remaining substantially more efficient than prior trained agentic memory approaches. To support reproducibility and future research, we release our anonymized source code at this https URL .",
+  "status": "",
+  "versions": "Submission history From: Bingyu Yan [ view email ] [v1] Mon, 28 Sep 2026 06:01:09 UTC (2,958 KB)"
+}

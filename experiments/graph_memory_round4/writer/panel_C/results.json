@@ -1,0 +1,380 @@
+{
+ "n": 833,
+ "issues": 204,
+ "repos": [
+  "django/django",
+  "sympy/sympy"
+ ],
+ "anchor": {
+  "agrees": 461,
+  "unlocated": 370,
+  "no_anchor": 2
+ },
+ "reachable": 463,
+ "arms": {
+  "lru": {
+   "full": 408,
+   "fraction": 0.4969916538043789,
+   "start": 414
+  },
+  "point": {
+   "full": 378,
+   "fraction": 0.4752766874740461,
+   "start": 403
+  },
+  "typed": {
+   "full": 405,
+   "fraction": 0.49789866346037204,
+   "start": 413
+  },
+  "mixed": {
+   "full": 413,
+   "fraction": 0.5041754797156958,
+   "start": 418
+  },
+  "dict_lru": {
+   "full": 413,
+   "fraction": 0.5013362487852284,
+   "start": 417
+  },
+  "dict_mixed": {
+   "full": 417,
+   "fraction": 0.5086892740289393,
+   "start": 422
+  },
+  "dict_center": {
+   "full": 417,
+   "fraction": 0.508717520621694,
+   "start": 423
+  },
+  "cal_pages": {
+   "full": 424,
+   "fraction": 0.5118047218887555,
+   "start": 426
+  },
+  "cal_center": {
+   "full": 424,
+   "fraction": 0.5139752870845308,
+   "start": 429
+  },
+  "cal_neighbor": {
+   "full": 425,
+   "fraction": 0.5142420604605479,
+   "start": 429
+  }
+ },
+ "operation_cost": {
+  "lru": {
+   "mean_bytes": 3602.62327049114,
+   "max_bytes": 4096,
+   "mean_ms": 0.7143298163281819,
+   "median_ms": 0.5627,
+   "p95_ms": 2.0137199999999997,
+   "overflows": 1714,
+   "mean_compressions": 1.498745853224371
+  },
+  "point": {
+   "mean_bytes": 3517.133910510559,
+   "max_bytes": 4096,
+   "mean_ms": 0.9477682579496723,
+   "median_ms": 0.5431,
+   "p95_ms": 3.8566499999999935,
+   "overflows": 1673,
+   "mean_compressions": 1.4911400598753946
+  },
+  "typed": {
+   "mean_bytes": 3567.015292499393,
+   "max_bytes": 4096,
+   "mean_ms": 1.003476138846185,
+   "median_ms": 0.5484,
+   "p95_ms": 4.230269999999999,
+   "overflows": 1698,
+   "mean_compressions": 1.4981794643579578
+  },
+  "mixed": {
+   "mean_bytes": 3605.011570515414,
+   "max_bytes": 4096,
+   "mean_ms": 0.770316579011247,
+   "median_ms": 0.5518,
+   "p95_ms": 2.1507899999999984,
+   "overflows": 1724,
+   "mean_compressions": 1.5116109717614694
+  },
+  "dict_lru": {
+   "mean_bytes": 3581.258111497694,
+   "max_bytes": 4096,
+   "mean_ms": 0.8005848288696497,
+   "median_ms": 0.6305,
+   "p95_ms": 2.226729999999992,
+   "overflows": 1673,
+   "mean_compressions": 1.4742293065782022
+  },
+  "dict_mixed": {
+   "mean_bytes": 3589.2035763411277,
+   "max_bytes": 4096,
+   "mean_ms": 0.8631414515737519,
+   "median_ms": 0.6282,
+   "p95_ms": 2.4292199999999995,
+   "overflows": 1651,
+   "mean_compressions": 1.488146290152925
+  },
+  "dict_center": {
+   "mean_bytes": 3630.8851039728133,
+   "max_bytes": 4096,
+   "mean_ms": 1.3495976697143781,
+   "median_ms": 0.6435,
+   "p95_ms": 5.448919999999993,
+   "overflows": 2222,
+   "mean_compressions": 2.8354235779593817
+  },
+  "cal_pages": {
+   "mean_bytes": 3583.1212881301076,
+   "max_bytes": 4096,
+   "mean_ms": 0.9961857108180274,
+   "median_ms": 0.6317,
+   "p95_ms": 3.7118399999999996,
+   "overflows": 1646,
+   "mean_compressions": 1.4773849016910754
+  },
+  "cal_center": {
+   "mean_bytes": 3624.437656768347,
+   "max_bytes": 4096,
+   "mean_ms": 1.5595458451331012,
+   "median_ms": 0.6493,
+   "p95_ms": 6.659329999999998,
+   "overflows": 2272,
+   "mean_compressions": 2.861234727728781
+  },
+  "cal_neighbor": {
+   "mean_bytes": 3624.235213204952,
+   "max_bytes": 4096,
+   "mean_ms": 1.5513524557002996,
+   "median_ms": 0.6357,
+   "p95_ms": 6.723879999999999,
+   "overflows": 2248,
+   "mean_compressions": 2.852496156646978
+  }
+ },
+ "checks": {
+  "byte_checks": 123590,
+  "decodes": 29620
+ },
+ "comparisons": {
+  "cal_neighbor-lru": {
+   "delta": 0.02040816326530612,
+   "net": 17,
+   "wins": 24,
+   "losses": 7,
+   "mean_issue": 0.02708156494921201,
+   "mean_repo": 0.0012403315768389264,
+   "ci_issues_within_repos": [
+    0.0047902759075151135,
+    0.03814111182009473
+   ],
+   "ci_repos": [
+    -0.022988505747126436,
+    0.02546916890080429
+   ],
+   "per_repo": {
+    "django/django": [
+     19,
+     746
+    ],
+    "sympy/sympy": [
+     -2,
+     87
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_neighbor-point": {
+   "delta": 0.056422569027611044,
+   "net": 47,
+   "wins": 51,
+   "losses": 4,
+   "mean_issue": 0.04527846880788057,
+   "mean_repo": 0.06196265138208376,
+   "ci_issues_within_repos": [
+    0.03672904256706813,
+    0.07719319408291538
+   ],
+   "ci_repos": [
+    0.054959785522788206,
+    0.06896551724137931
+   ],
+   "per_repo": {
+    "django/django": [
+     41,
+     746
+    ],
+    "sympy/sympy": [
+     6,
+     87
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "cal_neighbor-typed": {
+   "delta": 0.024009603841536616,
+   "net": 20,
+   "wins": 27,
+   "losses": 7,
+   "mean_issue": 0.017979392611745554,
+   "mean_repo": 0.023558596037102093,
+   "ci_issues_within_repos": [
+    0.009290714930958835,
+    0.04046242774566474
+   ],
+   "ci_repos": [
+    0.022988505747126436,
+    0.024128686327077747
+   ],
+   "per_repo": {
+    "django/django": [
+     18,
+     746
+    ],
+    "sympy/sympy": [
+     2,
+     87
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "cal_neighbor-mixed": {
+   "delta": 0.014405762304921969,
+   "net": 12,
+   "wins": 19,
+   "losses": 7,
+   "mean_issue": 0.009026009393656453,
+   "mean_repo": 0.013119780592277587,
+   "ci_issues_within_repos": [
+    0.0,
+    0.03011311242460431
+   ],
+   "ci_repos": [
+    0.011494252873563218,
+    0.014745308310991957
+   ],
+   "per_repo": {
+    "django/django": [
+     11,
+     746
+    ],
+    "sympy/sympy": [
+     1,
+     87
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "cal_neighbor-dict_lru": {
+   "delta": 0.014405762304921969,
+   "net": 12,
+   "wins": 20,
+   "losses": 8,
+   "mean_issue": 0.020420946156240277,
+   "mean_repo": -0.002110874857477428,
+   "ci_issues_within_repos": [
+    0.0,
+    0.03172784585828063
+   ],
+   "ci_repos": [
+    -0.022988505747126436,
+    0.01876675603217158
+   ],
+   "per_repo": {
+    "django/django": [
+     14,
+     746
+    ],
+    "sympy/sympy": [
+     -2,
+     87
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_neighbor-dict_mixed": {
+   "delta": 0.009603841536614645,
+   "net": 8,
+   "wins": 16,
+   "losses": 8,
+   "mean_issue": 0.004203625894802365,
+   "mean_repo": 0.010438815444824504,
+   "ci_issues_within_repos": [
+    -0.0037267080745341614,
+    0.02531645569620253
+   ],
+   "ci_repos": [
+    0.00938337801608579,
+    0.011494252873563218
+   ],
+   "per_repo": {
+    "django/django": [
+     7,
+     746
+    ],
+    "sympy/sympy": [
+     1,
+     87
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "cal_neighbor-dict_center": {
+   "delta": 0.009603841536614645,
+   "net": 8,
+   "wins": 16,
+   "losses": 8,
+   "mean_issue": 0.004203625894802365,
+   "mean_repo": 0.010438815444824504,
+   "ci_issues_within_repos": [
+    -0.0037267080745341614,
+    0.02531645569620253
+   ],
+   "ci_repos": [
+    0.00938337801608579,
+    0.011494252873563218
+   ],
+   "per_repo": {
+    "django/django": [
+     7,
+     746
+    ],
+    "sympy/sympy": [
+     1,
+     87
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "cal_neighbor-cal_center": {
+   "delta": 0.0012004801920768306,
+   "net": 1,
+   "wins": 1,
+   "losses": 0,
+   "mean_issue": 0.0006127450980392157,
+   "mean_repo": 0.0006702412868632708,
+   "ci_issues_within_repos": [
+    0.0,
+    0.003745318352059925
+   ],
+   "ci_repos": [
+    0.0,
+    0.0013404825737265416
+   ],
+   "per_repo": {
+    "django/django": [
+     1,
+     746
+    ],
+    "sympy/sympy": [
+     0,
+     87
+    ]
+   },
+   "signflip_repo": 1.0
+  }
+ }
+}

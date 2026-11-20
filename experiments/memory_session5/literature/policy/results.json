@@ -1,0 +1,1283 @@
+{
+ "0.0": {
+  "by_actor": {
+   "(a) Gemini 2.5 Flash": {
+    "LLM-Summary": {
+     "cost": 119.3486,
+     "mean_cost": 0.24208640973630832,
+     "n": 493,
+     "solves": 180,
+     "turns": 25605
+    },
+    "Observation Masking": {
+     "cost": 87.7841,
+     "mean_cost": 0.17806105476673428,
+     "n": 493,
+     "solves": 178,
+     "turns": 21719
+    },
+    "Raw Agent": {
+     "cost": 199.9556,
+     "mean_cost": 0.4055894523326572,
+     "n": 493,
+     "solves": 164,
+     "turns": 24350
+    },
+    "fullglobal": {
+     "cost": 116.5536,
+     "mean_cost": 0.23641703853955376,
+     "n": 493,
+     "solves": 175,
+     "turns": 25626
+    },
+    "fulllocal": {
+     "cost": 116.6365,
+     "mean_cost": 0.23658519269776876,
+     "n": 493,
+     "solves": 175,
+     "turns": 25452
+    },
+    "oneglobal": {
+     "cost": 111.15259999999999,
+     "mean_cost": 0.22546166328600406,
+     "n": 493,
+     "solves": 174,
+     "turns": 25021
+    },
+    "onelocal": {
+     "cost": 125.6755,
+     "mean_cost": 0.25491987829614604,
+     "n": 493,
+     "solves": 164,
+     "turns": 24640
+    },
+    "oracle_solve": {
+     "cost": 93.0165,
+     "mean_cost": 0.18867444219066937,
+     "n": 493,
+     "solves": 243,
+     "turns": 21990
+    }
+   },
+   "(b) Gemini 2.5 Flash (Thinking)": {
+    "LLM-Summary": {
+     "cost": 118.6714,
+     "mean_cost": 0.23925685483870968,
+     "n": 496,
+     "solves": 157,
+     "turns": 21190
+    },
+    "Observation Masking": {
+     "cost": 117.384,
+     "mean_cost": 0.23666129032258065,
+     "n": 496,
+     "solves": 182,
+     "turns": 25368
+    },
+    "Raw Agent": {
+     "cost": 271.7665,
+     "mean_cost": 0.5479163306451613,
+     "n": 496,
+     "solves": 201,
+     "turns": 24565
+    },
+    "fullglobal": {
+     "cost": 271.7665,
+     "mean_cost": 0.5479163306451613,
+     "n": 496,
+     "solves": 201,
+     "turns": 24565
+    },
+    "fulllocal": {
+     "cost": 273.3976,
+     "mean_cost": 0.5512048387096774,
+     "n": 496,
+     "solves": 192,
+     "turns": 24989
+    },
+    "oneglobal": {
+     "cost": 157.5723,
+     "mean_cost": 0.3176860887096774,
+     "n": 496,
+     "solves": 185,
+     "turns": 24866
+    },
+    "onelocal": {
+     "cost": 169.0029,
+     "mean_cost": 0.34073165322580645,
+     "n": 496,
+     "solves": 185,
+     "turns": 24513
+    },
+    "oracle_solve": {
+     "cost": 123.1791,
+     "mean_cost": 0.24834495967741935,
+     "n": 496,
+     "solves": 251,
+     "turns": 24745
+    }
+   },
+   "(c) Qwen3-Coder 480B": {
+    "LLM-Summary": {
+     "cost": 316.7859,
+     "mean_cost": 0.636116265060241,
+     "n": 498,
+     "solves": 269,
+     "turns": 34904
+    },
+    "Observation Masking": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "Raw Agent": {
+     "cost": 640.4554,
+     "mean_cost": 1.2860550200803214,
+     "n": 498,
+     "solves": 267,
+     "turns": 29123
+    },
+    "fullglobal": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "fulllocal": {
+     "cost": 319.3082,
+     "mean_cost": 0.6411811244979919,
+     "n": 498,
+     "solves": 272,
+     "turns": 31134
+    },
+    "oneglobal": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "onelocal": {
+     "cost": 347.9475,
+     "mean_cost": 0.6986897590361446,
+     "n": 498,
+     "solves": 274,
+     "turns": 30864
+    },
+    "oracle_solve": {
+     "cost": 311.7452,
+     "mean_cost": 0.6259943775100402,
+     "n": 498,
+     "solves": 320,
+     "turns": 30528
+    }
+   },
+   "(d) Qwen3-32B": {
+    "LLM-Summary": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "Observation Masking": {
+     "cost": 276.8997,
+     "mean_cost": 0.5537994,
+     "n": 500,
+     "solves": 75,
+     "turns": 29932
+    },
+    "Raw Agent": {
+     "cost": 558.4933,
+     "mean_cost": 1.1169866,
+     "n": 500,
+     "solves": 85,
+     "turns": 26000
+    },
+    "fullglobal": {
+     "cost": 480.1115,
+     "mean_cost": 0.960223,
+     "n": 500,
+     "solves": 80,
+     "turns": 25547
+    },
+    "fulllocal": {
+     "cost": 422.5921,
+     "mean_cost": 0.8451842,
+     "n": 500,
+     "solves": 72,
+     "turns": 25081
+    },
+    "oneglobal": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "onelocal": {
+     "cost": 367.706,
+     "mean_cost": 0.735412,
+     "n": 500,
+     "solves": 78,
+     "turns": 25703
+    },
+    "oracle_solve": {
+     "cost": 284.4339,
+     "mean_cost": 0.5688678,
+     "n": 500,
+     "solves": 134,
+     "turns": 29397
+    }
+   },
+   "(e) Qwen3-32B (Thinking)": {
+    "LLM-Summary": {
+     "cost": 255.2424,
+     "mean_cost": 0.5104848,
+     "n": 500,
+     "solves": 124,
+     "turns": 10816
+    },
+    "Observation Masking": {
+     "cost": 230.7947,
+     "mean_cost": 0.4615894,
+     "n": 500,
+     "solves": 123,
+     "turns": 10663
+    },
+    "Raw Agent": {
+     "cost": 256.2941,
+     "mean_cost": 0.5125882,
+     "n": 500,
+     "solves": 115,
+     "turns": 10142
+    },
+    "fullglobal": {
+     "cost": 234.0835,
+     "mean_cost": 0.468167,
+     "n": 500,
+     "solves": 115,
+     "turns": 10576
+    },
+    "fulllocal": {
+     "cost": 249.4345,
+     "mean_cost": 0.498869,
+     "n": 500,
+     "solves": 118,
+     "turns": 10882
+    },
+    "oneglobal": {
+     "cost": 243.1141,
+     "mean_cost": 0.4862282,
+     "n": 500,
+     "solves": 114,
+     "turns": 10136
+    },
+    "onelocal": {
+     "cost": 245.4989,
+     "mean_cost": 0.4909978,
+     "n": 500,
+     "solves": 120,
+     "turns": 10116
+    },
+    "oracle_solve": {
+     "cost": 228.641,
+     "mean_cost": 0.457282,
+     "n": 500,
+     "solves": 181,
+     "turns": 10481
+    }
+   }
+  },
+  "contrasts": {
+   "fulllocal vs fullglobal": {
+    "CI95": [
+     -0.024526198439241916,
+     0.002957121734844751
+    ],
+    "diff": -0.006433453960595094,
+    "losses": 61,
+    "repo_clusters": 12,
+    "wins": 45
+   },
+   "oneglobal vs Observation Masking": {
+    "CI95": [
+     -0.008123476848090982,
+     0.0045121263395375075
+    ],
+    "diff": -0.002010454362685967,
+    "losses": 96,
+    "repo_clusters": 12,
+    "wins": 91
+   },
+   "onelocal vs Observation Masking": {
+    "CI95": [
+     -0.01821335646140503,
+     0.006028131279303416
+    ],
+    "diff": -0.004422999597909127,
+    "losses": 131,
+    "repo_clusters": 12,
+    "wins": 120
+   },
+   "onelocal vs oneglobal": {
+    "CI95": [
+     -0.018823529411764704,
+     0.008429458740017746
+    ],
+    "diff": -0.0024125452352231603,
+    "losses": 104,
+    "repo_clusters": 12,
+    "wins": 98
+   }
+  },
+  "macro_resolution": {
+   "LLM-Summary": 0.3259608925001846,
+   "Observation Masking": 0.3348382107636198,
+   "Raw Agent": 0.3348087429216966,
+   "fullglobal": 0.3400824625466467,
+   "fulllocal": 0.33365021743717654,
+   "oneglobal": 0.3328251701302363,
+   "onelocal": 0.33036837499839045,
+   "oracle_solve": 0.4543038553481084
+  },
+  "omitted": {
+   "(a) Gemini 2.5 Flash": [
+    "astropy__astropy-8872",
+    "django__django-14311",
+    "django__django-15098",
+    "django__django-16502",
+    "pylint-dev__pylint-6528",
+    "sphinx-doc__sphinx-9229",
+    "sphinx-doc__sphinx-9711"
+   ],
+   "(b) Gemini 2.5 Flash (Thinking)": [
+    "django__django-16136",
+    "matplotlib__matplotlib-24870",
+    "pytest-dev__pytest-5787",
+    "sphinx-doc__sphinx-9658"
+   ],
+   "(c) Qwen3-Coder 480B": [
+    "django__django-11433",
+    "django__django-13344"
+   ],
+   "(d) Qwen3-32B": [],
+   "(e) Qwen3-32B (Thinking)": []
+  },
+  "pooled": {
+   "LLM-Summary": {
+    "cost": 1059.8649,
+    "mean_cost": 0.42616200241254526,
+    "n": 2487,
+    "solves": 810,
+    "turns": 117202
+   },
+   "Observation Masking": {
+    "cost": 1014.1615,
+    "mean_cost": 0.4077850824286289,
+    "n": 2487,
+    "solves": 832,
+    "turns": 117968
+   },
+   "Raw Agent": {
+    "cost": 1926.9649,
+    "mean_cost": 0.7748149979895457,
+    "n": 2487,
+    "solves": 832,
+    "turns": 114180
+   },
+   "fullglobal": {
+    "cost": 1403.8141,
+    "mean_cost": 0.5644608363490149,
+    "n": 2487,
+    "solves": 845,
+    "turns": 116600
+   },
+   "fulllocal": {
+    "cost": 1381.3689,
+    "mean_cost": 0.555435826296743,
+    "n": 2487,
+    "solves": 829,
+    "turns": 117538
+   },
+   "oneglobal": {
+    "cost": 1062.9546,
+    "mean_cost": 0.4274043425814234,
+    "n": 2487,
+    "solves": 827,
+    "turns": 114996
+   },
+   "onelocal": {
+    "cost": 1255.8308,
+    "mean_cost": 0.5049581021310816,
+    "n": 2487,
+    "solves": 821,
+    "turns": 115836
+   },
+   "oracle_solve": {
+    "cost": 1041.0157,
+    "mean_cost": 0.4185829111379172,
+    "n": 2487,
+    "solves": 1129,
+    "turns": 117141
+   }
+  }
+ },
+ "0.1": {
+  "by_actor": {
+   "(a) Gemini 2.5 Flash": {
+    "LLM-Summary": {
+     "cost": 119.3486,
+     "mean_cost": 0.24208640973630832,
+     "n": 493,
+     "solves": 180,
+     "turns": 25605
+    },
+    "Observation Masking": {
+     "cost": 87.7841,
+     "mean_cost": 0.17806105476673428,
+     "n": 493,
+     "solves": 178,
+     "turns": 21719
+    },
+    "Raw Agent": {
+     "cost": 199.9556,
+     "mean_cost": 0.4055894523326572,
+     "n": 493,
+     "solves": 164,
+     "turns": 24350
+    },
+    "fullglobal": {
+     "cost": 101.6524,
+     "mean_cost": 0.20619148073022311,
+     "n": 493,
+     "solves": 174,
+     "turns": 23594
+    },
+    "fulllocal": {
+     "cost": 102.357,
+     "mean_cost": 0.2076206896551724,
+     "n": 493,
+     "solves": 170,
+     "turns": 23868
+    },
+    "oneglobal": {
+     "cost": 111.15259999999999,
+     "mean_cost": 0.22546166328600406,
+     "n": 493,
+     "solves": 174,
+     "turns": 25021
+    },
+    "onelocal": {
+     "cost": 113.1628,
+     "mean_cost": 0.2295391480730223,
+     "n": 493,
+     "solves": 170,
+     "turns": 23343
+    },
+    "oracle_solve": {
+     "cost": 93.0165,
+     "mean_cost": 0.18867444219066937,
+     "n": 493,
+     "solves": 243,
+     "turns": 21990
+    }
+   },
+   "(b) Gemini 2.5 Flash (Thinking)": {
+    "LLM-Summary": {
+     "cost": 118.6714,
+     "mean_cost": 0.23925685483870968,
+     "n": 496,
+     "solves": 157,
+     "turns": 21190
+    },
+    "Observation Masking": {
+     "cost": 117.384,
+     "mean_cost": 0.23666129032258065,
+     "n": 496,
+     "solves": 182,
+     "turns": 25368
+    },
+    "Raw Agent": {
+     "cost": 271.7665,
+     "mean_cost": 0.5479163306451613,
+     "n": 496,
+     "solves": 201,
+     "turns": 24565
+    },
+    "fullglobal": {
+     "cost": 117.384,
+     "mean_cost": 0.23666129032258065,
+     "n": 496,
+     "solves": 182,
+     "turns": 25368
+    },
+    "fulllocal": {
+     "cost": 156.7447,
+     "mean_cost": 0.31601754032258067,
+     "n": 496,
+     "solves": 181,
+     "turns": 24313
+    },
+    "oneglobal": {
+     "cost": 117.384,
+     "mean_cost": 0.23666129032258065,
+     "n": 496,
+     "solves": 182,
+     "turns": 25368
+    },
+    "onelocal": {
+     "cost": 135.9899,
+     "mean_cost": 0.274173185483871,
+     "n": 496,
+     "solves": 178,
+     "turns": 24275
+    },
+    "oracle_solve": {
+     "cost": 123.1791,
+     "mean_cost": 0.24834495967741935,
+     "n": 496,
+     "solves": 251,
+     "turns": 24745
+    }
+   },
+   "(c) Qwen3-Coder 480B": {
+    "LLM-Summary": {
+     "cost": 316.7859,
+     "mean_cost": 0.636116265060241,
+     "n": 498,
+     "solves": 269,
+     "turns": 34904
+    },
+    "Observation Masking": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "Raw Agent": {
+     "cost": 640.4554,
+     "mean_cost": 1.2860550200803214,
+     "n": 498,
+     "solves": 267,
+     "turns": 29123
+    },
+    "fullglobal": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "fulllocal": {
+     "cost": 319.3798,
+     "mean_cost": 0.6413248995983936,
+     "n": 498,
+     "solves": 274,
+     "turns": 31949
+    },
+    "oneglobal": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "onelocal": {
+     "cost": 314.2241,
+     "mean_cost": 0.6309720883534137,
+     "n": 498,
+     "solves": 279,
+     "turns": 31482
+    },
+    "oracle_solve": {
+     "cost": 311.7452,
+     "mean_cost": 0.6259943775100402,
+     "n": 498,
+     "solves": 320,
+     "turns": 30528
+    }
+   },
+   "(d) Qwen3-32B": {
+    "LLM-Summary": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "Observation Masking": {
+     "cost": 276.8997,
+     "mean_cost": 0.5537994,
+     "n": 500,
+     "solves": 75,
+     "turns": 29932
+    },
+    "Raw Agent": {
+     "cost": 558.4933,
+     "mean_cost": 1.1169866,
+     "n": 500,
+     "solves": 85,
+     "turns": 26000
+    },
+    "fullglobal": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "fulllocal": {
+     "cost": 282.3061,
+     "mean_cost": 0.5646122,
+     "n": 500,
+     "solves": 71,
+     "turns": 26273
+    },
+    "oneglobal": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "onelocal": {
+     "cost": 275.0365,
+     "mean_cost": 0.550073,
+     "n": 500,
+     "solves": 78,
+     "turns": 25266
+    },
+    "oracle_solve": {
+     "cost": 284.4339,
+     "mean_cost": 0.5688678,
+     "n": 500,
+     "solves": 134,
+     "turns": 29397
+    }
+   },
+   "(e) Qwen3-32B (Thinking)": {
+    "LLM-Summary": {
+     "cost": 255.2424,
+     "mean_cost": 0.5104848,
+     "n": 500,
+     "solves": 124,
+     "turns": 10816
+    },
+    "Observation Masking": {
+     "cost": 230.7947,
+     "mean_cost": 0.4615894,
+     "n": 500,
+     "solves": 123,
+     "turns": 10663
+    },
+    "Raw Agent": {
+     "cost": 256.2941,
+     "mean_cost": 0.5125882,
+     "n": 500,
+     "solves": 115,
+     "turns": 10142
+    },
+    "fullglobal": {
+     "cost": 232.1911,
+     "mean_cost": 0.4643822,
+     "n": 500,
+     "solves": 116,
+     "turns": 10548
+    },
+    "fulllocal": {
+     "cost": 257.5707,
+     "mean_cost": 0.5151414,
+     "n": 500,
+     "solves": 118,
+     "turns": 10739
+    },
+    "oneglobal": {
+     "cost": 249.4684,
+     "mean_cost": 0.4989368,
+     "n": 500,
+     "solves": 117,
+     "turns": 10308
+    },
+    "onelocal": {
+     "cost": 240.3784,
+     "mean_cost": 0.4807568,
+     "n": 500,
+     "solves": 119,
+     "turns": 9977
+    },
+    "oracle_solve": {
+     "cost": 228.641,
+     "mean_cost": 0.457282,
+     "n": 500,
+     "solves": 181,
+     "turns": 10481
+    }
+   }
+  },
+  "contrasts": {
+   "fulllocal vs fullglobal": {
+    "CI95": [
+     -0.022058823529411766,
+     0.0040710584752035525
+    ],
+    "diff": -0.0048250904704463205,
+    "losses": 85,
+    "repo_clusters": 12,
+    "wins": 73
+   },
+   "oneglobal vs Observation Masking": {
+    "CI95": [
+     -0.009433962264150943,
+     0.0016806722689075631
+    ],
+    "diff": -0.002010454362685967,
+    "losses": 79,
+    "repo_clusters": 12,
+    "wins": 74
+   },
+   "onelocal vs Observation Masking": {
+    "CI95": [
+     -0.01664145234493192,
+     0.003808864265927978
+    ],
+    "diff": -0.003216726980297547,
+    "losses": 118,
+    "repo_clusters": 12,
+    "wins": 110
+   },
+   "onelocal vs oneglobal": {
+    "CI95": [
+     -0.013210798391728892,
+     0.006218905472636816
+    ],
+    "diff": -0.0012062726176115801,
+    "losses": 82,
+    "repo_clusters": 12,
+    "wins": 79
+   }
+  },
+  "macro_resolution": {
+   "LLM-Summary": 0.3259608925001846,
+   "Observation Masking": 0.3348382107636198,
+   "Raw Agent": 0.3348087429216966,
+   "fullglobal": 0.3324154927108815,
+   "fulllocal": 0.3275895488516915,
+   "oneglobal": 0.33281549271088146,
+   "onelocal": 0.33158790356085077,
+   "oracle_solve": 0.4543038553481084
+  },
+  "omitted": {
+   "(a) Gemini 2.5 Flash": [
+    "astropy__astropy-8872",
+    "django__django-14311",
+    "django__django-15098",
+    "django__django-16502",
+    "pylint-dev__pylint-6528",
+    "sphinx-doc__sphinx-9229",
+    "sphinx-doc__sphinx-9711"
+   ],
+   "(b) Gemini 2.5 Flash (Thinking)": [
+    "django__django-16136",
+    "matplotlib__matplotlib-24870",
+    "pytest-dev__pytest-5787",
+    "sphinx-doc__sphinx-9658"
+   ],
+   "(c) Qwen3-Coder 480B": [
+    "django__django-11433",
+    "django__django-13344"
+   ],
+   "(d) Qwen3-32B": [],
+   "(e) Qwen3-32B (Thinking)": []
+  },
+  "pooled": {
+   "LLM-Summary": {
+    "cost": 1059.8649,
+    "mean_cost": 0.42616200241254526,
+    "n": 2487,
+    "solves": 810,
+    "turns": 117202
+   },
+   "Observation Masking": {
+    "cost": 1014.1615,
+    "mean_cost": 0.4077850824286289,
+    "n": 2487,
+    "solves": 832,
+    "turns": 117968
+   },
+   "Raw Agent": {
+    "cost": 1926.9649,
+    "mean_cost": 0.7748149979895457,
+    "n": 2487,
+    "solves": 832,
+    "turns": 114180
+   },
+   "fullglobal": {
+    "cost": 1002.3431,
+    "mean_cost": 0.4030330116606353,
+    "n": 2487,
+    "solves": 826,
+    "turns": 114483
+   },
+   "fulllocal": {
+    "cost": 1118.3583,
+    "mean_cost": 0.4496816646562123,
+    "n": 2487,
+    "solves": 814,
+    "turns": 117142
+   },
+   "oneglobal": {
+    "cost": 1029.1206,
+    "mean_cost": 0.4138,
+    "n": 2487,
+    "solves": 827,
+    "turns": 115670
+   },
+   "onelocal": {
+    "cost": 1078.7917,
+    "mean_cost": 0.43377229593888217,
+    "n": 2487,
+    "solves": 824,
+    "turns": 114343
+   },
+   "oracle_solve": {
+    "cost": 1041.0157,
+    "mean_cost": 0.4185829111379172,
+    "n": 2487,
+    "solves": 1129,
+    "turns": 117141
+   }
+  }
+ },
+ "0.25": {
+  "by_actor": {
+   "(a) Gemini 2.5 Flash": {
+    "LLM-Summary": {
+     "cost": 119.3486,
+     "mean_cost": 0.24208640973630832,
+     "n": 493,
+     "solves": 180,
+     "turns": 25605
+    },
+    "Observation Masking": {
+     "cost": 87.7841,
+     "mean_cost": 0.17806105476673428,
+     "n": 493,
+     "solves": 178,
+     "turns": 21719
+    },
+    "Raw Agent": {
+     "cost": 199.9556,
+     "mean_cost": 0.4055894523326572,
+     "n": 493,
+     "solves": 164,
+     "turns": 24350
+    },
+    "fullglobal": {
+     "cost": 87.7841,
+     "mean_cost": 0.17806105476673428,
+     "n": 493,
+     "solves": 178,
+     "turns": 21719
+    },
+    "fulllocal": {
+     "cost": 101.7673,
+     "mean_cost": 0.20642454361054766,
+     "n": 493,
+     "solves": 168,
+     "turns": 23193
+    },
+    "oneglobal": {
+     "cost": 87.7841,
+     "mean_cost": 0.17806105476673428,
+     "n": 493,
+     "solves": 178,
+     "turns": 21719
+    },
+    "onelocal": {
+     "cost": 96.9047,
+     "mean_cost": 0.19656125760649087,
+     "n": 493,
+     "solves": 172,
+     "turns": 21837
+    },
+    "oracle_solve": {
+     "cost": 93.0165,
+     "mean_cost": 0.18867444219066937,
+     "n": 493,
+     "solves": 243,
+     "turns": 21990
+    }
+   },
+   "(b) Gemini 2.5 Flash (Thinking)": {
+    "LLM-Summary": {
+     "cost": 118.6714,
+     "mean_cost": 0.23925685483870968,
+     "n": 496,
+     "solves": 157,
+     "turns": 21190
+    },
+    "Observation Masking": {
+     "cost": 117.384,
+     "mean_cost": 0.23666129032258065,
+     "n": 496,
+     "solves": 182,
+     "turns": 25368
+    },
+    "Raw Agent": {
+     "cost": 271.7665,
+     "mean_cost": 0.5479163306451613,
+     "n": 496,
+     "solves": 201,
+     "turns": 24565
+    },
+    "fullglobal": {
+     "cost": 117.384,
+     "mean_cost": 0.23666129032258065,
+     "n": 496,
+     "solves": 182,
+     "turns": 25368
+    },
+    "fulllocal": {
+     "cost": 116.3654,
+     "mean_cost": 0.2346076612903226,
+     "n": 496,
+     "solves": 176,
+     "turns": 23524
+    },
+    "oneglobal": {
+     "cost": 117.384,
+     "mean_cost": 0.23666129032258065,
+     "n": 496,
+     "solves": 182,
+     "turns": 25368
+    },
+    "onelocal": {
+     "cost": 119.0802,
+     "mean_cost": 0.24008104838709676,
+     "n": 496,
+     "solves": 181,
+     "turns": 22970
+    },
+    "oracle_solve": {
+     "cost": 123.1791,
+     "mean_cost": 0.24834495967741935,
+     "n": 496,
+     "solves": 251,
+     "turns": 24745
+    }
+   },
+   "(c) Qwen3-Coder 480B": {
+    "LLM-Summary": {
+     "cost": 316.7859,
+     "mean_cost": 0.636116265060241,
+     "n": 498,
+     "solves": 269,
+     "turns": 34904
+    },
+    "Observation Masking": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "Raw Agent": {
+     "cost": 640.4554,
+     "mean_cost": 1.2860550200803214,
+     "n": 498,
+     "solves": 267,
+     "turns": 29123
+    },
+    "fullglobal": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "fulllocal": {
+     "cost": 321.6526,
+     "mean_cost": 0.6458887550200804,
+     "n": 498,
+     "solves": 274,
+     "turns": 32233
+    },
+    "oneglobal": {
+     "cost": 301.299,
+     "mean_cost": 0.6050180722891566,
+     "n": 498,
+     "solves": 274,
+     "turns": 30286
+    },
+    "onelocal": {
+     "cost": 312.9962,
+     "mean_cost": 0.6285064257028112,
+     "n": 498,
+     "solves": 279,
+     "turns": 31486
+    },
+    "oracle_solve": {
+     "cost": 311.7452,
+     "mean_cost": 0.6259943775100402,
+     "n": 498,
+     "solves": 320,
+     "turns": 30528
+    }
+   },
+   "(d) Qwen3-32B": {
+    "LLM-Summary": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "Observation Masking": {
+     "cost": 276.8997,
+     "mean_cost": 0.5537994,
+     "n": 500,
+     "solves": 75,
+     "turns": 29932
+    },
+    "Raw Agent": {
+     "cost": 558.4933,
+     "mean_cost": 1.1169866,
+     "n": 500,
+     "solves": 85,
+     "turns": 26000
+    },
+    "fullglobal": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "fulllocal": {
+     "cost": 264.1054,
+     "mean_cost": 0.5282108,
+     "n": 500,
+     "solves": 72,
+     "turns": 26840
+    },
+    "oneglobal": {
+     "cost": 249.8166,
+     "mean_cost": 0.4996332,
+     "n": 500,
+     "solves": 80,
+     "turns": 24687
+    },
+    "onelocal": {
+     "cost": 235.8022,
+     "mean_cost": 0.4716044,
+     "n": 500,
+     "solves": 80,
+     "turns": 24849
+    },
+    "oracle_solve": {
+     "cost": 284.4339,
+     "mean_cost": 0.5688678,
+     "n": 500,
+     "solves": 134,
+     "turns": 29397
+    }
+   },
+   "(e) Qwen3-32B (Thinking)": {
+    "LLM-Summary": {
+     "cost": 255.2424,
+     "mean_cost": 0.5104848,
+     "n": 500,
+     "solves": 124,
+     "turns": 10816
+    },
+    "Observation Masking": {
+     "cost": 230.7947,
+     "mean_cost": 0.4615894,
+     "n": 500,
+     "solves": 123,
+     "turns": 10663
+    },
+    "Raw Agent": {
+     "cost": 256.2941,
+     "mean_cost": 0.5125882,
+     "n": 500,
+     "solves": 115,
+     "turns": 10142
+    },
+    "fullglobal": {
+     "cost": 230.7947,
+     "mean_cost": 0.4615894,
+     "n": 500,
+     "solves": 123,
+     "turns": 10663
+    },
+    "fulllocal": {
+     "cost": 248.2196,
+     "mean_cost": 0.4964392,
+     "n": 500,
+     "solves": 116,
+     "turns": 10454
+    },
+    "oneglobal": {
+     "cost": 270.3994,
+     "mean_cost": 0.5407988,
+     "n": 500,
+     "solves": 122,
+     "turns": 10644
+    },
+    "onelocal": {
+     "cost": 242.7643,
+     "mean_cost": 0.4855286,
+     "n": 500,
+     "solves": 117,
+     "turns": 10212
+    },
+    "oracle_solve": {
+     "cost": 228.641,
+     "mean_cost": 0.457282,
+     "n": 500,
+     "solves": 181,
+     "turns": 10481
+    }
+   }
+  },
+  "contrasts": {
+   "fulllocal vs fullglobal": {
+    "CI95": [
+     -0.03044280442804428,
+     -0.00585480093676815
+    ],
+    "diff": -0.012464817048652996,
+    "losses": 92,
+    "repo_clusters": 12,
+    "wins": 61
+   },
+   "oneglobal vs Observation Masking": {
+    "CI95": [
+     -0.014953271028037384,
+     0.007147296457426973
+    ],
+    "diff": 0.0016083634901487736,
+    "losses": 71,
+    "repo_clusters": 12,
+    "wins": 75
+   },
+   "onelocal vs Observation Masking": {
+    "CI95": [
+     -0.014824797843665768,
+     0.006953498478922208
+    ],
+    "diff": -0.0012062726176115801,
+    "losses": 100,
+    "repo_clusters": 12,
+    "wins": 97
+   },
+   "onelocal vs oneglobal": {
+    "CI95": [
+     -0.0137434554973822,
+     0.014732965009208104
+    ],
+    "diff": -0.0028146361077603537,
+    "losses": 90,
+    "repo_clusters": 12,
+    "wins": 83
+   }
+  },
+  "macro_resolution": {
+   "LLM-Summary": 0.3259608925001846,
+   "Observation Masking": 0.3348382107636198,
+   "Raw Agent": 0.3348087429216966,
+   "fullglobal": 0.3368382107636198,
+   "fulllocal": 0.3243620607930643,
+   "oneglobal": 0.3364382107636198,
+   "onelocal": 0.33360894000657476,
+   "oracle_solve": 0.4543038553481084
+  },
+  "omitted": {
+   "(a) Gemini 2.5 Flash": [
+    "astropy__astropy-8872",
+    "django__django-14311",
+    "django__django-15098",
+    "django__django-16502",
+    "pylint-dev__pylint-6528",
+    "sphinx-doc__sphinx-9229",
+    "sphinx-doc__sphinx-9711"
+   ],
+   "(b) Gemini 2.5 Flash (Thinking)": [
+    "django__django-16136",
+    "matplotlib__matplotlib-24870",
+    "pytest-dev__pytest-5787",
+    "sphinx-doc__sphinx-9658"
+   ],
+   "(c) Qwen3-Coder 480B": [
+    "django__django-11433",
+    "django__django-13344"
+   ],
+   "(d) Qwen3-32B": [],
+   "(e) Qwen3-32B (Thinking)": []
+  },
+  "pooled": {
+   "LLM-Summary": {
+    "cost": 1059.8649,
+    "mean_cost": 0.42616200241254526,
+    "n": 2487,
+    "solves": 810,
+    "turns": 117202
+   },
+   "Observation Masking": {
+    "cost": 1014.1615,
+    "mean_cost": 0.4077850824286289,
+    "n": 2487,
+    "solves": 832,
+    "turns": 117968
+   },
+   "Raw Agent": {
+    "cost": 1926.9649,
+    "mean_cost": 0.7748149979895457,
+    "n": 2487,
+    "solves": 832,
+    "turns": 114180
+   },
+   "fullglobal": {
+    "cost": 987.0784,
+    "mean_cost": 0.3968952151186168,
+    "n": 2487,
+    "solves": 837,
+    "turns": 112723
+   },
+   "fulllocal": {
+    "cost": 1052.1103,
+    "mean_cost": 0.4230439485323683,
+    "n": 2487,
+    "solves": 806,
+    "turns": 116244
+   },
+   "oneglobal": {
+    "cost": 1026.6831,
+    "mean_cost": 0.4128199034981906,
+    "n": 2487,
+    "solves": 836,
+    "turns": 112704
+   },
+   "onelocal": {
+    "cost": 1007.5476,
+    "mean_cost": 0.4051256936067551,
+    "n": 2487,
+    "solves": 829,
+    "turns": 111354
+   },
+   "oracle_solve": {
+    "cost": 1041.0157,
+    "mean_cost": 0.4185829111379172,
+    "n": 2487,
+    "solves": 1129,
+    "turns": 117141
+   }
+  }
+ }
+}

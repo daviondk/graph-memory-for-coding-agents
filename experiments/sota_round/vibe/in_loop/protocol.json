@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-11-16T17:05:11.586119+00:00",
+  "state": "Prospective, before any 27B comparative grade and before any dynamic trial; first twenty assignments immutable.",
+  "solver": "openai/qwen38-27b-ud-q4km",
+  "runs_subdir": "pilot_in_loop",
+  "endpoint": "http://127.0.0.1:18841/episode/{iid}/{method}/{seed}/{attempt}/v1",
+  "planned_seeds": [
+    0,
+    1
+  ],
+  "temperature": 0.5,
+  "step_limit": 30,
+  "max_new_tokens_per_call": 1024,
+  "methods": [
+    "path_trigger",
+    "fixed_third"
+  ],
+  "targets": [
+    {
+      "language": "python",
+      "repo": "brazilian-utils/brutils-python",
+      "instance_id": "brazilian-utils__brutils-python-125",
+      "image_name": "docker.io/swerebenchv2/brazilian-utils-brutils-python:125-9046eed",
+      "base_commit": "9046eed21cc73b66b35d73fcbc42c9afe6ec6dd9"
+    },
+    {
+      "language": "python",
+      "repo": "s-knibbs/dataclasses-jsonschema",
+      "instance_id": "s-knibbs__dataclasses-jsonschema-64",
+      "image_name": "docker.io/swerebenchv2/s-knibbs-dataclasses-jsonschema:64-dad240e",
+      "base_commit": "dad240edc81fc6138d26f3248539d876a777f45d"
+    }
+  ],
+  "frozen_trigger": "On the first newly completed allowlisted read/search command for which either its command text or its actual returned tool observation contains a full component-bounded historical relative path from the frozen card. Match relative, ./relative, /testbed/relative or the exact image check-out prefix; exclude partial names, parent/suffix paths, the question and initial prompt, free assistant prose and disconnected call IDs. Inspect only new tool results. A valid batched tool response is available at the next model call after the batch. No matching read means no memory.",
+  "reads": "Single-line shell, optional cd/pwd, simple shell pipelines or &&/||/; chains. All possible segments must be allowlisted. Read commands allowed: cat, head, tail, nl, ls, rg, grep, find, git grep/ls-files/status, sed -n with plain line-print ranges. Simple sort/uniq/wc/cut may filter. Exclude writes, redirects, command substitutions, variable evaluation, arbitrary subprocesses, find actions and sed editing. Positive read/search segment required. Read only the returned tool result and original bash arguments.",
+  "fixed_control": "After third newly available completed tool response, regardless of command, text or success, expose the identical card to the next model call. The third can be in a multi-tool batch. Earlier formal termination means no exposure.",
+  "one_shot": "On the applicable request append exactly one user message containing the same frozen card within <relevant_experiences> to a deep copy of the incoming message list. Persist only the upstream original transcript, genuine model decisions and actual tool results. Never edit real tool output, seed, endpoint sampler, primary prompt, previous messages, source card, model response, tool call or released agent/checker. Later requests forward a clean copy. Mark delivery before transport; failure is logged, never silently injected again. A model can repeat information it saw in its subsequent native actions.",
+  "independence": "Per run fresh session; track tool_call_id and unique response event, counts, delivery and scheduling. Record condition, target, seed, trigger reason, path/match provenance, request sequence, result count, baseline/forwarded transcript hashes, exposure/eviction, source card digest and token accounting. Preserve outputs and all failures. Source card and path whitelist frozen in cards.json.",
+  "analysis": "Primary descriptive pair: path_trigger vs fixed_third at the same target/seed in 8 episodes. Secondary comparisons to completed persistent prior_files and no-memory arms from existing 20. Each target is one independent task. Whole policy timing and probability of receiving the card vary jointly. Original four conditions and prior_files do not change. No tuning using task scores.",
+  "execution": "Run only after the separate 99-item REM readout returns GPU; no interleaved solver calls. Smoke and canary use artificial transcripts or mock upstream outside trial accounting.",
+  "technical_clarification_utc": "2026-11-16T17:07:27.797757+00:00",
+  "mixed_commands": "To avoid attributing a historical path to a skipped branch, with || or without an observed zero return code in && chains the matcher accepts only an observed path. Other command matches are limited to positive read segment arguments. cd/pwd or filter-only arguments never trigger. Unique preceding native bash call IDs link actions to outcomes. Every restart gets a new run nonce.",
+  "tokens": "Record usage for every actual accepted model call. At single delivery also tokenize both exact native chat templates (with and without the one-shot card) against the same live GGUF and separately check the presented token count against the returned prompt_tokens. Log cost of card content alone separately."
+}

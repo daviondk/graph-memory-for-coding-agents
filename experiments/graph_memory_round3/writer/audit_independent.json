@@ -1,0 +1,87 @@
+{
+ "first": {
+  "counts": {
+   "boundaries": 4051,
+   "bounded_payloads": 48612,
+   "validated_read_packets": 48612,
+   "accepted": 2135,
+   "reachable": 1586,
+   "incremental_sample_budgets": 1688
+  },
+  "projects": 26,
+  "instances": 627,
+  "resident_hits": {
+   "lru@4096": 783,
+   "twice@4096": 759,
+   "point@4096": 806,
+   "global@4096": 894,
+   "typed@4096": 904,
+   "placebo@4096": 817,
+   "lru@12288": 1187,
+   "twice@12288": 1179,
+   "point@12288": 1296,
+   "global@12288": 1338,
+   "typed@12288": 1341,
+   "placebo@12288": 1294,
+   "unbounded@0": 1586
+  },
+  "hybrid_hits": {
+   "lru/r2f/4096": 364,
+   "lru/typed/4096": 500,
+   "lru/r2f/12288": 405,
+   "lru/typed/12288": 540,
+   "point/r2f/4096": 378,
+   "point/typed/4096": 530,
+   "point/r2f/12288": 406,
+   "point/typed/12288": 567,
+   "typed/r2f/4096": 396,
+   "typed/typed/4096": 563,
+   "typed/r2f/12288": 419,
+   "typed/typed/12288": 573
+  }
+ },
+ "external": {
+  "counts": {
+   "boundaries": 2424,
+   "bounded_payloads": 43632,
+   "accepted": 1210,
+   "reachable": 825,
+   "incremental_sample_budgets": 2648
+  },
+  "projects": 12,
+  "instances": 336,
+  "resident_hits": {
+   "lru@4096": 451,
+   "lru@12288": 663,
+   "twice@4096": 422,
+   "twice@12288": 652,
+   "point@4096": 430,
+   "point@12288": 690,
+   "global@4096": 483,
+   "global@12288": 725,
+   "typed@4096": 494,
+   "typed@12288": 739,
+   "placebo@4096": 412,
+   "placebo@12288": 707,
+   "additive_greedy@4096": 459,
+   "additive_greedy@12288": 724,
+   "additive_exact@4096": 464,
+   "additive_exact@12288": 722,
+   "chain_exact@4096": 496,
+   "chain_exact@12288": 736,
+   "unbounded@0": 825
+  },
+  "hybrid_hits": {}
+ },
+ "status": "passed",
+ "lock_members": 62,
+ "independent_exact_dp_cases": 154,
+ "masked_future_spot_snapshots": 1008,
+ "shared_projects": 0,
+ "shared_instances": 0,
+ "measurement_limits": [
+  "Only serialized resident page payload bytes count in the original writer cap. Python metadata, models, process memory and catalogs outside the policy are separate.",
+  "The actual input loop supplies prior recorded actor actions. This is offline replay measuring source availability, not renewed solved issues or live agent pass@1.",
+  "Determinism spot checks fed only issue and instance fields to policies, never future events."
+ ]
+}

@@ -1,0 +1,313 @@
+{
+  "dataset_sha256": "d6f21ea9d60a0d56f34a05b609c79c88a451d2ae03597821ea3d5a9678c3a442",
+  "protocol_sha256": "f2f9bd8386e77d8d7c6c7af458feac9754c9e87da39b93482b1cf581d2bf6cfa",
+  "rankings_sha256": "c6c9b9ed07195856d5dc66be7708583d3f4e76722d621bd74ff3a25189584c53",
+  "rows": 500,
+  "disposition_counts": {
+    "scored": 419,
+    "abstention": 30,
+    "no_positive_user_turn": 51
+  },
+  "n_evidence_clusters": 405,
+  "cluster_size_max": 2,
+  "costs_scored_totals": {
+    "sessions": 19933,
+    "user_turns": 102236,
+    "candidates": 5028,
+    "witness_probes": 9993,
+    "candidate_turns": 28891
+  },
+  "costs_all_totals": {
+    "sessions": 23867,
+    "user_turns": 122416,
+    "candidates": 6000,
+    "witness_probes": 11913,
+    "candidate_turns": 34392
+  },
+  "scores": {
+    "bm25_official": {
+      "recall_all@1": 0.17899761336515513,
+      "recall_all@3": 0.6539379474940334,
+      "recall_all@5": 0.7422434367541766,
+      "recall_all@10": 0.8233890214797136,
+      "recall_any@5": 0.8878281622911695,
+      "official_ndcg@5": 0.771504553827599
+    },
+    "bm25_normalized": {
+      "recall_all@1": 0.22673031026252982,
+      "recall_all@3": 0.7995226730310262,
+      "recall_all@5": 0.8544152744630071,
+      "recall_all@10": 0.9307875894988067,
+      "recall_any@5": 0.9570405727923628,
+      "official_ndcg@5": 0.8844151675510151
+    },
+    "contriever_session": {
+      "recall_all@1": 0.2458233890214797,
+      "recall_all@3": 0.8090692124105012,
+      "recall_all@5": 0.9021479713603818,
+      "recall_all@10": 0.9713603818615751,
+      "recall_any@5": 0.9785202863961814,
+      "official_ndcg@5": 0.9144942538460245
+    },
+    "flat_fusion": {
+      "recall_all@1": 0.2458233890214797,
+      "recall_all@3": 0.8496420047732697,
+      "recall_all@5": 0.918854415274463,
+      "recall_all@10": 0.9713603818615751,
+      "recall_any@5": 0.9761336515513126,
+      "official_ndcg@5": 0.9295356033259382
+    },
+    "witness": {
+      "recall_all@1": 0.24821002386634844,
+      "recall_all@3": 0.8520286396181385,
+      "recall_all@5": 0.9331742243436754,
+      "recall_all@10": 0.9713603818615751,
+      "recall_any@5": 0.9785202863961814,
+      "official_ndcg@5": 0.9365844802512351
+    },
+    "position_control": {
+      "recall_all@1": 0.22673031026252982,
+      "recall_all@3": 0.8329355608591885,
+      "recall_all@5": 0.9379474940334129,
+      "recall_all@10": 0.9737470167064439,
+      "recall_any@5": 0.9761336515513126,
+      "official_ndcg@5": 0.9243720927786894
+    },
+    "contriever_turn_max": {
+      "recall_all@1": 0.2553699284009546,
+      "recall_all@3": 0.8066825775656324,
+      "recall_all@5": 0.9140811455847255,
+      "recall_all@10": 0.9689737470167065,
+      "recall_any@5": 0.9809069212410502,
+      "official_ndcg@5": 0.9172194395071498
+    },
+    "exhaustive_rerank": {
+      "recall_all@1": 0.25059665871121717,
+      "recall_all@3": 0.8544152744630071,
+      "recall_all@5": 0.9379474940334129,
+      "recall_all@10": 0.9713603818615751,
+      "recall_any@5": 0.9809069212410502,
+      "official_ndcg@5": 0.9354658349442676
+    }
+  },
+  "successful_all5": {
+    "bm25_official": 311,
+    "bm25_normalized": 358,
+    "contriever_session": 378,
+    "flat_fusion": 385,
+    "witness": 391,
+    "position_control": 393,
+    "contriever_turn_max": 383,
+    "exhaustive_rerank": 393
+  },
+  "paired_witness_minus": {
+    "bm25_official": {
+      "n": 419,
+      "delta": 0.1909307875894988,
+      "wins": 83,
+      "losses": 3,
+      "ties": 333,
+      "ci95": [
+        0.15274463007159905,
+        0.22911694510739858
+      ],
+      "evidence_cluster_ci95": [
+        0.1510791366906475,
+        0.23095238095238096
+      ],
+      "conservative_exact_ci95": [
+        0.12721213747016114,
+        0.2503988457794615
+      ],
+      "exact_p": 2.7421554294015713e-21
+    },
+    "bm25_normalized": {
+      "n": 419,
+      "delta": 0.07875894988066826,
+      "wins": 35,
+      "losses": 2,
+      "ties": 382,
+      "ci95": [
+        0.05250596658711217,
+        0.10739856801909307
+      ],
+      "evidence_cluster_ci95": [
+        0.05084745762711865,
+        0.1076555023923445
+      ],
+      "conservative_exact_ci95": [
+        0.03564330812735361,
+        0.12321526012579777
+      ],
+      "exact_p": 1.0244548320770264e-08
+    },
+    "contriever_session": {
+      "n": 419,
+      "delta": 0.031026252983293555,
+      "wins": 16,
+      "losses": 3,
+      "ties": 400,
+      "ci95": [
+        0.011933174224343675,
+        0.05250596658711217
+      ],
+      "evidence_cluster_ci95": [
+        0.011876484560570071,
+        0.05188679245283019
+      ],
+      "conservative_exact_ci95": [
+        0.003635609566642925,
+        0.06984253100701134
+      ],
+      "exact_p": 0.004425048828125
+    },
+    "flat_fusion": {
+      "n": 419,
+      "delta": 0.014319809069212411,
+      "wins": 7,
+      "losses": 1,
+      "ties": 411,
+      "ci95": [
+        0.002386634844868735,
+        0.028639618138424822
+      ],
+      "evidence_cluster_ci95": [
+        0.0023752969121140144,
+        0.02857142857142857
+      ],
+      "conservative_exact_ci95": [
+        -0.006061532122094782,
+        0.0400429678985145
+      ],
+      "exact_p": 0.0703125
+    },
+    "position_control": {
+      "n": 419,
+      "delta": -0.00477326968973747,
+      "wins": 1,
+      "losses": 3,
+      "ties": 415,
+      "ci95": [
+        -0.014319809069212411,
+        0.00477326968973747
+      ],
+      "evidence_cluster_ci95": [
+        -0.014388489208633094,
+        0.004761904761904762
+      ],
+      "conservative_exact_ci95": [
+        -0.02651859001494137,
+        0.01856129519818302
+      ],
+      "exact_p": 0.625
+    },
+    "contriever_turn_max": {
+      "n": 419,
+      "delta": 0.01909307875894988,
+      "wins": 15,
+      "losses": 7,
+      "ties": 397,
+      "ci95": [
+        -0.002386634844868735,
+        0.0405727923627685
+      ],
+      "evidence_cluster_ci95": [
+        -0.002398081534772182,
+        0.040865384615384616
+      ],
+      "conservative_exact_ci95": [
+        -0.012861623211801471,
+        0.06240524513132755
+      ],
+      "exact_p": 0.13380050659179688
+    },
+    "exhaustive_rerank": {
+      "n": 419,
+      "delta": -0.00477326968973747,
+      "wins": 1,
+      "losses": 3,
+      "ties": 415,
+      "ci95": [
+        -0.014319809069212411,
+        0.00477326968973747
+      ],
+      "evidence_cluster_ci95": [
+        -0.014388489208633094,
+        0.004750593824228029
+      ],
+      "conservative_exact_ci95": [
+        -0.02651859001494137,
+        0.01856129519818302
+      ],
+      "exact_p": 0.625
+    }
+  },
+  "recall_all5_by_type": {
+    "knowledge-update": {
+      "n": 72,
+      "bm25_official": 0.9583333333333334,
+      "bm25_normalized": 0.9861111111111112,
+      "contriever_session": 0.9444444444444444,
+      "flat_fusion": 0.9861111111111112,
+      "witness": 0.9861111111111112,
+      "position_control": 0.9861111111111112,
+      "contriever_turn_max": 1.0,
+      "exhaustive_rerank": 0.9861111111111112
+    },
+    "multi-session": {
+      "n": 121,
+      "bm25_official": 0.5619834710743802,
+      "bm25_normalized": 0.7355371900826446,
+      "contriever_session": 0.8512396694214877,
+      "flat_fusion": 0.8677685950413223,
+      "witness": 0.9090909090909091,
+      "position_control": 0.9256198347107438,
+      "contriever_turn_max": 0.8677685950413223,
+      "exhaustive_rerank": 0.9173553719008265
+    },
+    "single-session-assistant": {
+      "n": 5,
+      "bm25_official": 0.8,
+      "bm25_normalized": 1.0,
+      "contriever_session": 1.0,
+      "flat_fusion": 1.0,
+      "witness": 1.0,
+      "position_control": 1.0,
+      "contriever_turn_max": 1.0,
+      "exhaustive_rerank": 1.0
+    },
+    "single-session-preference": {
+      "n": 30,
+      "bm25_official": 0.7,
+      "bm25_normalized": 0.7333333333333333,
+      "contriever_session": 0.9333333333333333,
+      "flat_fusion": 0.8666666666666667,
+      "witness": 0.9,
+      "position_control": 0.8666666666666667,
+      "contriever_turn_max": 0.9333333333333333,
+      "exhaustive_rerank": 0.9
+    },
+    "single-session-user": {
+      "n": 64,
+      "bm25_official": 0.9375,
+      "bm25_normalized": 1.0,
+      "contriever_session": 0.96875,
+      "flat_fusion": 1.0,
+      "witness": 0.984375,
+      "position_control": 0.984375,
+      "contriever_turn_max": 0.984375,
+      "exhaustive_rerank": 0.984375
+    },
+    "temporal-reasoning": {
+      "n": 127,
+      "bm25_official": 0.7007874015748031,
+      "bm25_normalized": 0.84251968503937,
+      "contriever_session": 0.8818897637795275,
+      "flat_fusion": 0.8976377952755905,
+      "witness": 0.905511811023622,
+      "position_control": 0.9133858267716536,
+      "contriever_turn_max": 0.8661417322834646,
+      "exhaustive_rerank": 0.9133858267716536
+    }
+  }
+}

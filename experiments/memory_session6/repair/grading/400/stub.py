@@ -1,0 +1,2 @@
+def extract_freq(test_list):
+    raise NotImplementedError

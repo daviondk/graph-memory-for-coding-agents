@@ -1,0 +1,217 @@
+{
+  "n": 30,
+  "repositories": 10,
+  "prediction_lock": "1e0c3194b975eb249962f2e5d7749ce8a2fa777974dc2b0736abe97e8e60ed23",
+  "gated_on_issues": 30,
+  "mean_index_and_ranking_seconds": {
+    "tfidf_seconds": 3.362276456722369,
+    "prior_additional_seconds": 1.6349617765595517,
+    "char_additional_seconds": 1.2821111367704967
+  },
+  "means": {
+    "equal_lines_tfidf": {
+      "f1_score": 0.07411080910838284,
+      "precision": 0.1385678002502096,
+      "recall": 0.07708114927136735,
+      "hit_file_rate": 0.20555555555555555,
+      "hit_region_rate": 0.14166666666666666,
+      "noise_file_rate": 0.8038888888888889,
+      "recall_at_300": 0.07173901957580624,
+      "mean_raw_lines": 333.96666666666664,
+      "mean_regions": 5
+    },
+    "equal_lines_prior": {
+      "f1_score": 0.086892635445258,
+      "precision": 0.20371727399491715,
+      "recall": 0.08308564337571075,
+      "hit_file_rate": 0.18333333333333332,
+      "hit_region_rate": 0.14722222222222223,
+      "noise_file_rate": 0.755,
+      "recall_at_300": 0.07964796933833901,
+      "mean_raw_lines": 333.96666666666664,
+      "mean_regions": 4.7
+    },
+    "equal_lines_new": {
+      "f1_score": 0.0752496716669853,
+      "precision": 0.1819262770593224,
+      "recall": 0.057026627572944154,
+      "hit_file_rate": 0.23055555555555554,
+      "hit_region_rate": 0.18055555555555555,
+      "noise_file_rate": 0.7294444444444445,
+      "recall_at_300": 0.05541235797209246,
+      "mean_raw_lines": 333.96666666666664,
+      "mean_regions": 4.766666666666667
+    },
+    "five_regions_tfidf": {
+      "f1_score": 0.07488915324361742,
+      "precision": 0.1393695887102062,
+      "recall": 0.07779036912952338,
+      "hit_file_rate": 0.20555555555555555,
+      "hit_region_rate": 0.14166666666666666,
+      "noise_file_rate": 0.8038888888888889,
+      "recall_at_300": 0.07173901957580624,
+      "mean_raw_lines": 336.1333333333333,
+      "mean_regions": 5
+    },
+    "five_regions_prior": {
+      "f1_score": 0.09160666621443733,
+      "precision": 0.19969666180980342,
+      "recall": 0.08808602182497648,
+      "hit_file_rate": 0.18333333333333332,
+      "hit_region_rate": 0.14722222222222223,
+      "noise_file_rate": 0.7577777777777778,
+      "recall_at_300": 0.07964796933833901,
+      "mean_raw_lines": 384.73333333333335,
+      "mean_regions": 5
+    },
+    "five_regions_new": {
+      "f1_score": 0.07749251944866889,
+      "precision": 0.1745374671778275,
+      "recall": 0.06020781775088261,
+      "hit_file_rate": 0.23055555555555554,
+      "hit_region_rate": 0.18055555555555555,
+      "noise_file_rate": 0.7322222222222222,
+      "recall_at_300": 0.05541235797209246,
+      "mean_raw_lines": 371,
+      "mean_regions": 5
+    }
+  },
+  "paired": {
+    "equal_lines_new_vs_tfidf": {
+      "difference": 0.0011388625586024631,
+      "repo_bootstrap_95": [
+        -0.03897714246203483,
+        0.03771535693848431
+      ],
+      "wins": 9,
+      "ties": 16,
+      "losses": 5,
+      "leave_one_repository_out": {
+        "astropy/astropy": 0.0012654028428916257,
+        "django/django": 0.000589544502799709,
+        "matplotlib/matplotlib": -0.0010502953531015577,
+        "psf/requests": -0.008831840322382494,
+        "pydata/xarray": -0.0008710125322944352,
+        "pylint-dev/pylint": 0.01349161390235668,
+        "pytest-dev/pytest": 0.013236970370014709,
+        "scikit-learn/scikit-learn": -0.00229021575556531,
+        "sphinx-doc/sphinx": -0.006275905819643251,
+        "sympy/sympy": 0.002124363750948956
+      },
+      "repository_differences": {
+        "astropy/astropy": 0.0,
+        "django/django": 0.006082725060827251,
+        "matplotlib/matplotlib": 0.02084128376393865,
+        "psf/requests": 0.09087518848746708,
+        "pydata/xarray": 0.01922773837667455,
+        "pylint-dev/pylint": -0.11003589953518549,
+        "pytest-dev/pytest": -0.10774410774410775,
+        "scikit-learn/scikit-learn": 0.03200056738611242,
+        "sphinx-doc/sphinx": 0.06787177796281389,
+        "sympy/sympy": -0.007730648172515971
+      }
+    },
+    "equal_lines_new_vs_prior": {
+      "difference": -0.011642963778272704,
+      "repo_bootstrap_95": [
+        -0.04188627803149454,
+        0.014746462805880147
+      ],
+      "wins": 5,
+      "ties": 18,
+      "losses": 7,
+      "leave_one_repository_out": {
+        "astropy/astropy": -0.012936626420303006,
+        "django/django": -0.013612484760394922,
+        "matplotlib/matplotlib": -0.012593634021414167,
+        "psf/requests": -0.00981935870545507,
+        "pydata/xarray": -0.01477696767947407,
+        "pylint-dev/pylint": -0.014714325549062724,
+        "pytest-dev/pytest": -0.0009650588931799217,
+        "scikit-learn/scikit-learn": -0.004710785700840238,
+        "sphinx-doc/sphinx": -0.019363769632299927,
+        "sympy/sympy": -0.012936626420303006
+      },
+      "repository_differences": {
+        "astropy/astropy": 0.0,
+        "django/django": 0.006082725060827251,
+        "matplotlib/matplotlib": -0.0030869315899995455,
+        "psf/requests": -0.028055409433631422,
+        "pydata/xarray": 0.01656307133253957,
+        "pylint-dev/pylint": 0.015999292158837476,
+        "pytest-dev/pytest": -0.10774410774410775,
+        "scikit-learn/scikit-learn": -0.07403256647516492,
+        "sphinx-doc/sphinx": 0.05784428890797228,
+        "sympy/sympy": 0.0
+      }
+    },
+    "five_regions_new_vs_tfidf": {
+      "difference": 0.0026033662050514734,
+      "repo_bootstrap_95": [
+        -0.038184738960827865,
+        0.03861647802041674
+      ],
+      "wins": 11,
+      "ties": 15,
+      "losses": 4,
+      "leave_one_repository_out": {
+        "astropy/astropy": 0.0028926291167238596,
+        "django/django": 0.0022167707766319426,
+        "matplotlib/matplotlib": 0.00030226315539294763,
+        "psf/requests": -0.006846330386838056,
+        "pydata/xarray": 0.0003278102726527985,
+        "pylint-dev/pylint": 0.01604756218352152,
+        "pytest-dev/pytest": 0.014864196643846942,
+        "scikit-learn/scikit-learn": -0.0005988281305861654,
+        "sphinx-doc/sphinx": -0.003935369486195976,
+        "sympy/sympy": 0.0007629579053649233
+      },
+      "repository_differences": {
+        "astropy/astropy": 0.0,
+        "django/django": 0.006082725060827251,
+        "matplotlib/matplotlib": 0.023313293651978206,
+        "psf/requests": 0.08765063553205724,
+        "pydata/xarray": 0.02308336959663955,
+        "pylint-dev/pylint": -0.11839439760117892,
+        "pytest-dev/pytest": -0.10774410774410775,
+        "scikit-learn/scikit-learn": 0.03142311522579022,
+        "sphinx-doc/sphinx": 0.06145198742627852,
+        "sympy/sympy": 0.019167040902230426
+      }
+    },
+    "five_regions_new_vs_prior": {
+      "difference": -0.014114146765768434,
+      "repo_bootstrap_95": [
+        -0.04577274845675389,
+        0.013422626775646224
+      ],
+      "wins": 6,
+      "ties": 15,
+      "losses": 9,
+      "leave_one_repository_out": {
+        "astropy/astropy": -0.015682385295298258,
+        "django/django": -0.016358243635390176,
+        "matplotlib/matplotlib": -0.015342119121257727,
+        "psf/requests": -0.01271892974167209,
+        "pydata/xarray": -0.01795361944875922,
+        "pylint-dev/pylint": -0.017396325268641755,
+        "pytest-dev/pytest": -0.0037108177681751757,
+        "scikit-learn/scikit-learn": -0.00554829790354946,
+        "sphinx-doc/sphinx": -0.021718134001834925,
+        "sympy/sympy": -0.014712595473105543
+      },
+      "repository_differences": {
+        "astropy/astropy": 0.0,
+        "django/django": 0.006082725060827251,
+        "matplotlib/matplotlib": -0.003062395566364784,
+        "psf/requests": -0.02667109998263553,
+        "pydata/xarray": 0.020441107381148668,
+        "pylint-dev/pylint": 0.015425459760091466,
+        "pytest-dev/pytest": -0.10774410774410775,
+        "scikit-learn/scikit-learn": -0.0912067865257392,
+        "sphinx-doc/sphinx": 0.05432173835882998,
+        "sympy/sympy": -0.008728108399734444
+      }
+    }
+  }
+}

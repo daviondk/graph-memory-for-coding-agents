@@ -1,0 +1,18 @@
+{
+  "id": "2310.06770",
+  "title": "SWE-bench: Can Language Models Resolve Real-World GitHub Issues?",
+  "authors": [
+    "Jimenez, Carlos E.",
+    "Yang, John",
+    "Wettig, Alexander",
+    "Yao, Shunyu",
+    "Pei, Kexin",
+    "Press, Ofir",
+    "Narasimhan, Karthik"
+  ],
+  "date": "2023/10/10",
+  "url": "https://arxiv.org/abs/2310.06770",
+  "abstract": "Language models have outpaced our ability to evaluate them effectively, but for their future development it is essential to study the frontier of their capabilities. We find real-world software engineering to be a rich, sustainable, and challenging testbed for evaluating the next generation of language models. To this end, we introduce SWE-bench, an evaluation framework consisting of $2,294$ software engineering problems drawn from real GitHub issues and corresponding pull requests across $12$ popular Python repositories. Given a codebase along with a description of an issue to be resolved, a language model is tasked with editing the codebase to address the issue. Resolving issues in SWE-bench frequently requires understanding and coordinating changes across multiple functions, classes, and even files simultaneously, calling for models to interact with execution environments, process extremely long contexts and perform complex reasoning that goes far beyond traditional code generation tasks. Our evaluations show that both state-of-the-art proprietary models and our fine-tuned model SWE-Llama can resolve only the simplest issues. The best-performing model, Claude 2, is able to solve a mere $1.96$% of the issues. Advances on SWE-bench represent steps towards LMs that are more practical, intelligent, and autonomous.",
+  "status": "Data, code, and leaderboard are available at this https URL ICLR 2024, this https URL",
+  "versions": "Submission history From: Carlos E. Jimenez [ view email ] [v1] Tue, 10 Oct 2023 16:47:29 UTC (2,003 KB) [v2] Fri, 5 Apr 2024 18:16:29 UTC (2,258 KB) [v3] Mon, 11 Nov 2024 23:05:04 UTC (2,398 KB)"
+}

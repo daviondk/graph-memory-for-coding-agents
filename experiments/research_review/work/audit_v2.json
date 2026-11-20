@@ -1,0 +1,1799 @@
+{
+  "source_revision": "11164976b4f920cdb0d0cd570ca572e49acea1e8",
+  "seed": "memory-review-20261116/v1",
+  "eligible_repos": 36,
+  "traces": [
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-3573/pybamm-team__pybamm-3573.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": [
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_models/test_submodels/test_electrolyte_conductivity/ -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_models/test_full_battery_models/test_lithium_ion/test_spm.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "80 passed, 3 warnings in 11.15s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_models/test_full_battery_models/test_lithium_ion/test_dfn.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "82 passed, 3 warnings in 11.05s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/integration/test_models/test_full_battery_models/test_lithium_ion/test_spme.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "16 failed, 3 passed, 1 warning in 35.94s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/integration/test_models/test_full_battery_models/test_lithium_ion/test_spme.py::TestSPMe::test_basic_processing -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "1 passed in 17.90s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-594/pybamm-team__pybamm-594.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": [
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/ -x -v -k mesh",
+          "strict": false,
+          "result": "other",
+          "summary": "3 warnings, 1 error in 1.15s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_meshes/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "10 passed, 4 skipped in 0.58s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_parameters/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "31 passed, 489 warnings in 2.36s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_discretisations/ tests/unit/test_spatial_methods/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "48 passed, 5 skipped, 1013 warnings in 2.12s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-1014/pybamm-team__pybamm-1014.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": [
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_expression_tree/test_unary_operators.py -x -v -k integral",
+          "strict": false,
+          "result": "passed",
+          "summary": "1 passed, 17 deselected in 0.90s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_spatial_methods/test_finite_volume/test_finite_volume.py -x -v -k indefinite",
+          "strict": false,
+          "result": "passed",
+          "summary": "3 passed, 23 deselected, 27 warnings in 0.86s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_expression_tree/ -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": "38 passed, 61 warnings, 1 error in 1.12s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_expression_tree/ -x --ignore=tests/unit/test_expression_tree/test_functions.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": "65 passed, 101 warnings, 1 error in 1.42s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_expression_tree/ --ignore=tests/unit/test_expression_tree/test_functions.py --ignore=tests/unit/test_expression_tree/test_operations/test_evaluate.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 174 passed, 212 warnings, 2 errors in 1.81s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_spatial_methods/test_finite_volume/ -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "36 passed, 1015 warnings in 2.84s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_spatial_methods/test_finite_volume/test_finite_volume.py -x -v -k indefinite",
+          "strict": false,
+          "result": "passed",
+          "summary": "3 passed, 23 deselected, 27 warnings in 0.81s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_expression_tree/test_unary_operators.py tests/unit/test_spatial_methods/test_finite_volume/test_finite_volume.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "44 passed, 863 warnings in 2.31s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-732/pybamm-team__pybamm-732.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": [
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_parameters/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "36 passed, 379 warnings in 5.33s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/ -x -v --timeout=120",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/ -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": "4 warnings, 1 error in 1.20s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/ -v --ignore=tests/unit/test_models/test_submodels/test_interface/test_inverse_kinetics/test_inverse_butler_volmer.py",
+          "strict": false,
+          "result": "other",
+          "summary": "1 error in 1.45s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/ -v",
+          "strict": false,
+          "result": "other",
+          "summary": "5 warnings, 2 errors in 1.80s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/ -v --ignore=tests/unit/test_models/test_submodels/test_interface/test_inverse_kinetics --ignore=tests/unit/test_models/test_submodels/test_interface/test_kinetics",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-819/pybamm-team__pybamm-819.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": [
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_solvers/test_base_solver.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "6 passed in 0.81s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_solvers/test_casadi_solver.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "11 passed, 28 warnings in 1.86s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_solvers/ -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 36 passed, 25 skipped, 288 warnings in 3.22s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_parameters/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "36 passed, 363 warnings in 2.17s"
+        },
+        {
+          "cmd": "/PyBaMM :: python3 -m pytest tests/unit/test_solvers/test_base_solver.py tests/unit/test_solvers/test_casadi_solver.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "17 passed, 28 warnings in 1.90s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-3921/pybamm-team__pybamm-3921.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": []
+    },
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-681/pybamm-team__pybamm-681.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": [
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_processed_variable.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "15 passed, 99 warnings in 1.15s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_processed_variable.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "15 passed, 98 warnings in 1.00s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_processed_variable.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "15 passed, 98 warnings in 1.01s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_processed_variable.py tests/unit/test_models/test_submodels/test_current_collector/test_effective_current_collector.py tests/unit/test_parameters/test_update_parameters.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 22 passed, 991 warnings in 4.69s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/pybamm-team__PyBaMM/pybamm-team__pybamm-1026/pybamm-team__pybamm-1026.traj.json",
+      "repo": "pybamm-team__PyBaMM",
+      "events": [
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 4 passed, 2004 warnings in 0.96s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 5 passed, 2005 warnings in 1.10s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 5 passed, 2005 warnings in 1.22s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 5 passed, 2005 warnings in 1.02s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 7 passed, 2008 warnings in 1.05s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "20 passed, 2197 warnings in 1.37s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_solution.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_solution.py::TestSolution::test_save -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 106 warnings in 0.99s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py tests/unit/test_solvers/test_solution.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py tests/unit/test_solvers/test_solution.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 4 passed, 2004 warnings in 1.05s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py tests/unit/test_solvers/test_solution.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "26 passed, 2673 warnings in 2.15s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/integration/test_solvers/test_external_variables.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "2 passed, 643 warnings in 2.61s"
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_plotting/ -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/PyBaMM :: python -m pytest tests/unit/test_solvers/test_processed_variable.py tests/unit/test_solvers/test_solution.py tests/integration/test_solvers/test_external_variables.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "28 passed, 3316 warnings in 4.12s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-491/fatiando__harmonica-491.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_cartesian.py -x -v --timeout=120",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_cartesian.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed in 4.74s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_cartesian.py -v -k 'not test_equivalent_sources_cartesian'",
+          "strict": false,
+          "result": "passed",
+          "summary": "48 passed, 3 deselected, 22 warnings in 19.21s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_spherical.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_spherical.py::test_equivalent_sources_spherical -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed in 6.42s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_gradient_boosted_eqs.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_gradient_boosted_eqs.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "43 failed, 30 passed, 16 warnings in 8.68s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_gradient_boosted_eqs.py::test_dtype -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_gradient_boosted_eqs.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "21 failed, 52 passed, 16 warnings in 46.82s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_gradient_boosted_eqs.py::test_window_size_less_than_5000 -v --tb=short",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed in 1.60s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_cartesian.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "2 failed, 49 passed, 22 warnings in 26.87s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_gradient_boosted_eqs.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 72 passed, 16 warnings in 38.29s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_spherical.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 11 passed in 10.39s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_cartesian.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "2 failed, 49 passed, 22 warnings in 21.92s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_gradient_boosted_eqs.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 72 passed, 16 warnings in 23.50s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_spherical.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 11 passed in 8.23s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest /harmonica/harmonica/tests/test_eq_sources_utils.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "9 passed in 1.42s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-373/fatiando__harmonica-373.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_prism.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "14 passed, 1 skipped, 1 warning in 8.09s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_prism_layer.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-453/fatiando__harmonica-453.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_dipole.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_dipole.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_dipole.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_dipole.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "8 failed, 17 passed in 13.01s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_dipole.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "4 failed, 21 passed in 12.94s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_dipole.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "25 passed in 12.73s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/ -v --timeout=60",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_dipole.py harmonica/tests/test_prism_magnetic.py harmonica/tests/test_forward_utils.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "81 passed, 6 skipped in 40.45s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-487/fatiando__harmonica-487.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica/harmonica :: python -m pytest tests/test_gradient_boosted_eqs.py -v --no-header",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica/harmonica :: python -m pytest tests/test_gradient_boosted_eqs.py -v --no-header",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica/harmonica :: python -m pytest tests/test_gradient_boosted_eqs.py::test_gradient_boosted_eqs_single_window tests/test_gradient_boosted_eqs.py::test_same_number_of_windows_data_and_sources tests/test_gradient_boosted_eqs.py::test_same_windows_data_and_sources -v --no-header",
+          "strict": false,
+          "result": "failed",
+          "summary": "3 failed in 21.29s"
+        },
+        {
+          "cmd": "/harmonica/harmonica :: python -m pytest tests/test_gradient_boosted_eqs.py::test_gradient_boosted_eqs_single_window tests/test_gradient_boosted_eqs.py::test_same_number_of_windows_data_and_sources tests/test_gradient_boosted_eqs.py::test_same_windows_data_and_sources -v --no-header",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 2 passed in 9.04s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-316/fatiando__harmonica-316.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica :: python -m pytest harmonica/tests/test_prism_layer.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "29 passed, 6 skipped, 1 warning in 4.15s"
+        },
+        {
+          "cmd": "/harmonica :: python -m pytest harmonica/tests/test_tesseroid.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "43 passed, 1 warning in 24.55s"
+        },
+        {
+          "cmd": "/harmonica :: python -m pytest --doctest-modules harmonica/forward/tesseroid_layer.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 1 warning in 1.47s"
+        },
+        {
+          "cmd": "/harmonica :: python -m pytest --doctest-modules harmonica/forward/prism_layer.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 1 warning in 1.48s"
+        },
+        {
+          "cmd": "/harmonica :: python -m pytest --doctest-modules harmonica/forward/tesseroid_layer.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "1 passed, 1 warning in 1.48s"
+        },
+        {
+          "cmd": "/harmonica :: python -m pytest --doctest-modules harmonica/forward/ -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 4 passed, 1 warning in 13.75s"
+        },
+        {
+          "cmd": "/harmonica :: python -m pytest harmonica/tests/test_prism_layer.py harmonica/tests/test_tesseroid.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "72 passed, 6 skipped, 1 warning in 27.36s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-478/fatiando__harmonica-478.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica :: python -m pytest harmonica/tests/test_transformations.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-419/fatiando__harmonica-419.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/tesseroid/ -v --timeout=60",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/tesseroid/ -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_tesseroid.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "43 passed, 8 warnings in 26.18s"
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_tesseroid_variable_density.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/fatiando__harmonica/fatiando__harmonica-515/fatiando__harmonica-515.traj.json",
+      "repo": "fatiando__harmonica",
+      "events": [
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_gradient_boosted_eqs.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/harmonica :: python3 -m pytest harmonica/tests/test_gradient_boosted_eqs.py::test_gradient_boosted_eqs_single_window -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed in 6.92s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-862/sdv-dev__rdt-862.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": [
+        {
+          "cmd": "/RDT :: python -m pytest tests/ -x -q --timeout=120",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/ -x -q",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 216 passed, 141 warnings, 112 subtests passed in 20.06s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/performance/test_performance.py::test_performance -q",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py tests/integration/transformers/test_numerical.py -x -q",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 46 passed, 10 warnings in 1.26s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py::TestClusterBasedNormalizer -x -q",
+          "strict": false,
+          "result": "passed",
+          "summary": "10 passed, 1 warning in 1.27s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py tests/integration/transformers/test_numerical.py -x -q",
+          "strict": false,
+          "result": "passed",
+          "summary": "81 passed, 17 warnings in 2.14s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/ -q --ignore=tests/performance",
+          "strict": false,
+          "result": "passed",
+          "summary": "720 passed, 201 warnings, 112 subtests passed in 19.08s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-731/sdv-dev__rdt-731.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": []
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-805/sdv-dev__rdt-805.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": [
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_null.py -x -v --disable-warnings",
+          "strict": false,
+          "result": "passed",
+          "summary": "23 passed, 1 warning in 1.23s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_categorical.py -x -v --disable-warnings",
+          "strict": false,
+          "result": "passed",
+          "summary": "94 passed, 25 warnings in 1.48s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_utils.py -x -v --disable-warnings",
+          "strict": false,
+          "result": "passed",
+          "summary": "15 passed, 1 warning in 1.39s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/integration/transformers/ -x -v --disable-warnings",
+          "strict": false,
+          "result": "passed",
+          "summary": "99 passed, 42 warnings in 8.52s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/ -x --disable-warnings",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 199 passed, 159 warnings in 24.56s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-718/sdv-dev__rdt-718.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": [
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_categorical.py -x -q",
+          "strict": false,
+          "result": "passed",
+          "summary": "90 passed, 24 warnings in 1.50s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-775/sdv-dev__rdt-775.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": []
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-970/sdv-dev__rdt-970.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": [
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_utils.py -v -k learn_rounding_digits",
+          "strict": false,
+          "result": "passed",
+          "summary": "19 passed, 16 deselected, 1 warning in 1.11s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_utils.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "35 passed, 1 warning in 1.26s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "90 passed, 11 warnings in 1.21s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-760/sdv-dev__rdt-760.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": [
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 10 passed, 2 warnings in 2.18s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "8 failed, 51 passed, 11 warnings in 1.75s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py::TestGaussianNormalizer -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "18 passed, 11 warnings in 1.22s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/ -v --ignore=tests/unit/transformers/test_numerical.py",
+          "strict": false,
+          "result": "passed",
+          "summary": "301 passed, 37 warnings in 3.00s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/sdv-dev__RDT/sdv-dev__rdt-659/sdv-dev__rdt-659.traj.json",
+      "repo": "sdv-dev__RDT",
+      "events": [
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/test_null.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "3 failed, 19 passed, 2 warnings in 1.67s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/integration/transformers/test_null.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": "1 warning in 0.01s"
+        },
+        {
+          "cmd": "/RDT :: python -m pytest tests/unit/transformers/ -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "3 failed, 289 passed, 21 warnings in 2.88s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-950/dbt-labs__dbt-redshift-950.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": [
+        {
+          "cmd": "/dbt-redshift :: python -m pytest tests/unit/test_auth_method.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "21 passed in 0.99s"
+        },
+        {
+          "cmd": "/dbt-redshift :: python -m pytest tests/unit/ -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "57 passed in 2.34s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-970/dbt-labs__dbt-redshift-970.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": []
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-420/dbt-labs__dbt-redshift-420.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": []
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-258/dbt-labs__dbt-redshift-258.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": []
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-836/dbt-labs__dbt-redshift-836.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": [
+        {
+          "cmd": "/dbt-redshift :: python3 -m pytest tests/unit/test_auth_method.py tests/unit/test_connection.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "22 passed in 0.92s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-841/dbt-labs__dbt-redshift-841.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": [
+        {
+          "cmd": "/dbt-redshift :: python -m pytest tests/unit/test_materialized_view.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "8 passed in 0.18s"
+        },
+        {
+          "cmd": "/dbt-redshift :: python -m pytest tests/unit/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "51 passed in 1.15s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-895/dbt-labs__dbt-redshift-895.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": []
+    },
+    {
+      "path": "history/python/dbt-labs__dbt-redshift/dbt-labs__dbt-redshift-473/dbt-labs__dbt-redshift-473.traj.json",
+      "repo": "dbt-labs__dbt-redshift",
+      "events": [
+        {
+          "cmd": "/dbt-redshift :: python3 -m pytest tests/unit/ -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-782/stac-utils__pystac-782.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": [
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/extensions/test_datacube.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 14 passed, 9 warnings in 0.40s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-700/stac-utils__pystac-700.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": [
+        {
+          "cmd": "/pystac :: python -m pytest tests/extensions/test_file.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "8 failed, 19 passed, 14 warnings in 2.14s"
+        },
+        {
+          "cmd": "/pystac :: python -m pytest tests/extensions/test_file.py -v -k 'test_item_asset_apply or test_item_asset_values'",
+          "strict": false,
+          "result": "failed",
+          "summary": "2 failed, 25 deselected in 0.17s"
+        },
+        {
+          "cmd": "/pystac :: python -m pytest tests/extensions/test_file.py -v -k 'test_item_asset_apply or test_item_asset_values'",
+          "strict": false,
+          "result": "passed",
+          "summary": "2 passed, 25 deselected in 0.12s"
+        },
+        {
+          "cmd": "/pystac :: python -m pytest tests/extensions/test_file.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "6 failed, 21 passed, 14 warnings in 1.54s"
+        },
+        {
+          "cmd": "/pystac :: python -m pytest tests/extensions/test_file.py -v -k 'not test_validate and not test_item_asset_byte_order and not test_item_asset_checksum and not test_item_asset_header_size and not test_item_asset_size'",
+          "strict": false,
+          "result": "passed",
+          "summary": "21 passed, 6 deselected, 8 warnings in 0.15s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-900/stac-utils__pystac-900.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": [
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -x -q",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -x -q",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 61 passed, 3 warnings in 1.83s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_link.py -x -q",
+          "strict": false,
+          "result": "passed",
+          "summary": "27 passed in 0.15s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -x -q",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 61 passed, 3 warnings in 25.74s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_writing.py tests/test_cache.py -x -q",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 4 warnings in 2.57s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_writing.py -x -q -k 'not test_testcases'",
+          "strict": false,
+          "result": "other",
+          "summary": "21 deselected in 0.11s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_item.py tests/test_collection.py tests/test_utils.py -x -q",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 12 passed, 1 warning, 2 subtests passed in 2.09s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py tests/test_link.py tests/test_writing.py tests/test_cache.py tests/test_item.py -q -k 'not test_testcases and not test_self_contained and not test_null_datetime'",
+          "strict": false,
+          "result": "failed",
+          "summary": "9 failed, 141 passed, 23 deselected, 29 warnings, 2 subtests passed in 20.07s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_link.py tests/test_cache.py -x -q",
+          "strict": false,
+          "result": "passed",
+          "summary": "31 passed in 0.16s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -x -q -k 'not test_validate_all and not test_self_contained'",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 72 passed, 8 deselected in 2.67s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -q -k 'not test_validate_all and not test_self_contained and not test_get_children_cbers'",
+          "strict": false,
+          "result": "passed",
+          "summary": "88 passed, 9 deselected in 1.57s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-984/stac-utils__pystac-984.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": [
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_item.py::ItemTest::test_set_self_href_does_not_break_asset_hrefs -xvs",
+          "strict": false,
+          "result": "passed",
+          "summary": "1 passed in 0.04s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_item.py -xvs",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_item.py::ItemTest::test_set_self_href_does_not_break_asset_hrefs tests/test_item.py::ItemTest::test_set_self_href_none_ignores_relative_asset_hrefs tests/test_item.py::ItemTest::test_make_asset_href_relative_is_noop_on_relative_hrefs tests/test_item.py::ItemTest::test_asset_absolute_href -xvs",
+          "strict": false,
+          "result": "passed",
+          "summary": "4 passed in 0.03s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -xvs",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -k normalize -xvs",
+          "strict": false,
+          "result": "passed",
+          "summary": "5 passed, 95 deselected in 0.08s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -k asset -xvs",
+          "strict": false,
+          "result": "passed",
+          "summary": "5 passed, 95 deselected in 0.10s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py tests/test_item.py tests/test_collection.py tests/test_link.py tests/test_utils.py -x --ignore=tests/test_validation",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 63 passed, 3 warnings in 1.69s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py tests/test_item.py tests/test_collection.py tests/test_link.py tests/test_utils.py -v --ignore=tests/test_validation -k 'not test_self_contained_catalog_collection_item_links and not test_null_datetime'",
+          "strict": false,
+          "result": "failed",
+          "summary": "12 failed, 218 passed, 3 deselected, 36 warnings, 13 subtests passed in 6.83s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_item.py -v -k 'not test_null_datetime and not test_null_geometry and not test_relative_extension_path'",
+          "strict": false,
+          "result": "passed",
+          "summary": "24 passed, 4 deselected, 2 subtests passed in 0.08s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_catalog.py -v -k 'normalize or asset or href' --ignore=tests/test_validation",
+          "strict": false,
+          "result": "passed",
+          "summary": "14 passed, 86 deselected in 0.18s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-1169/stac-utils__pystac-1169.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": [
+        {
+          "cmd": "/pystac :: python -m pytest tests/test_link.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-419/stac-utils__pystac-419.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": [
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/extensions/ -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/extensions/ -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "77 failed, 168 passed, 194 warnings in 19.02s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/extensions/ -v -k 'test_extend_invalid_object or test_item_apply'",
+          "strict": false,
+          "result": "passed",
+          "summary": "2 passed, 243 deselected in 0.23s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/extensions/ -v -k 'not validate and not schema and not epsg and not geometry and not projjson and not shape and not transform and not wkt2 and not all and not required and not both and not orbit and not no_args and not citation and not doi and not publication and not expires and not published and not unpublished and not azimuth and not incidence and not off_nadir and not sun and not elevation and not count and not density and not encoding and not type and not bands and not cloud and not summaries and not from_file and not label_classes and not label_description and not label_methods and not label_overviews and not label_properties and not label_tasks and not label_type and not validate_label and not item_asset_byte_order and not item_asset_checksum and not item_asset_header_size and not item_asset_size and not validate_collection and not validate_item and not partial_apply'",
+          "strict": false,
+          "result": "failed",
+          "summary": "10 failed, 111 passed, 124 deselected, 88 warnings in 2.77s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/extensions/test_version.py::ItemVersionExtensionTest::test_add_version -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 1 warning in 0.37s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-1049/stac-utils__pystac-1049.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": [
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_item.py::ItemTest::test_geo_interface -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed in 0.08s"
+        },
+        {
+          "cmd": "/pystac :: python3 -m pytest tests/test_item.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "5 failed, 28 passed, 4 warnings, 2 subtests passed in 1.42s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/stac-utils__pystac/stac-utils__pystac-1006/stac-utils__pystac-1006.traj.json",
+      "repo": "stac-utils__pystac",
+      "events": []
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1097/sinaptik-ai__pandas-ai-1097.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/schemas/test_df_config.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/agent/test_agent.py -v -k test_load_llm",
+          "strict": false,
+          "result": "other",
+          "summary": "1 error in 0.52s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/ -v --collect-only",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/connectors/test_pandas.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "6 passed, 2 warnings in 1.57s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1084/sinaptik-ai__pandas-ai-1084.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/ -x -q --no-header",
+          "strict": false,
+          "result": "other",
+          "summary": "2 warnings, 1 error in 1.37s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/ -x -q --no-header --ignore=tests/unit_tests/agent",
+          "strict": false,
+          "result": "other",
+          "summary": "2 warnings, 1 error in 1.51s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/helpers/test_dataframe_serializer.py -x -q --no-header",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/connectors/test_base.py tests/unit_tests/prompts/ -x -q --no-header",
+          "strict": false,
+          "result": "passed",
+          "summary": "35 passed, 2 warnings in 2.20s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/connectors/test_pandas.py -x -q --no-header",
+          "strict": false,
+          "result": "passed",
+          "summary": "6 passed, 2 warnings in 1.14s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1161/sinaptik-ai__pandas-ai-1161.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/connectors/test_sql.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "19 passed, 8 warnings in 1.76s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/connectors/test_snowflake.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "8 passed, 3 warnings in 1.63s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/connectors/test_databricks.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "8 passed, 3 warnings in 1.54s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1099/sinaptik-ai__pandas-ai-1099.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/test_query_tracker.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "19 passed, 2 warnings in 2.70s"
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/helpers/ -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 63 passed, 1 skipped, 2 warnings in 2.38s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1012/sinaptik-ai__pandas-ai-1012.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/ -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": "2 warnings, 1 error in 1.30s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/ -v --ignore=tests/unit_tests/agent/test_agent.py",
+          "strict": false,
+          "result": "other",
+          "summary": "2 warnings, 5 errors in 1.86s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1048/sinaptik-ai__pandas-ai-1048.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/test_codemanager.py -x -v -k dataframe",
+          "strict": false,
+          "result": "passed",
+          "summary": "4 passed, 31 deselected, 2 warnings in 1.29s"
+        },
+        {
+          "cmd": "/pandas-ai :: python -m pytest tests/unit_tests/test_codemanager.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "35 passed, 2 warnings in 1.57s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1019/sinaptik-ai__pandas-ai-1019.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/llms/test_openai.py -v -x",
+          "strict": false,
+          "result": "passed",
+          "summary": "10 passed, 2 warnings in 1.63s"
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/llms/test_azure_openai.py tests/unit_tests/llms/test_base_llm.py -v -x",
+          "strict": false,
+          "result": "passed",
+          "summary": "20 passed, 2 warnings in 1.53s"
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/ -v -x --timeout=60",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/ -v -x",
+          "strict": false,
+          "result": "other",
+          "summary": "1 error in 0.45s"
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/llms/ tests/unit_tests/helpers/ tests/unit_tests/schemas/ -v -x",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/llms/ tests/unit_tests/helpers/ -v",
+          "strict": false,
+          "result": "other",
+          "summary": "2 warnings, 2 errors in 1.45s"
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/llms/test_openai.py tests/unit_tests/llms/test_azure_openai.py tests/unit_tests/llms/test_base_llm.py tests/unit_tests/helpers/test_openai_info.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "53 passed, 2 warnings in 1.95s"
+        },
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/llms/test_openai.py tests/unit_tests/llms/test_azure_openai.py tests/unit_tests/llms/test_base_llm.py tests/unit_tests/helpers/test_openai_info.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "53 passed, 2 warnings in 1.94s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/Sinaptik-AI__pandas-ai/sinaptik-ai__pandas-ai-1295/sinaptik-ai__pandas-ai-1295.traj.json",
+      "repo": "Sinaptik-AI__pandas-ai",
+      "events": [
+        {
+          "cmd": "/pandas-ai :: python3 -m pytest tests/unit_tests/pipelines/smart_datalake/test_code_cleaning.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "37 passed, 2 warnings in 2.37s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-413/apiflask__apiflask-413.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": [
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_app.py -x -v --timeout=30",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_app.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "19 passed in 0.50s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 84 passed in 1.93s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_decorator_input.py::test_input_with_dict_schema -x -vv",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed in 0.41s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_openapi_blueprint.py tests/test_decorator_doc.py tests/test_base_response.py tests/test_decorators.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "42 passed in 0.74s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_settings_openapi_spec.py tests/test_settings_openapi_fields.py tests/test_async.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "21 passed in 0.48s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ --ignore=tests/test_decorator_input.py -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 255 passed in 3.07s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_decorator_output.py::test_output_with_dict_schema -x -vv",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed in 0.37s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -v --ignore=tests/test_decorator_input.py --ignore=tests/test_decorator_output.py",
+          "strict": false,
+          "result": "passed",
+          "summary": "247 passed in 3.02s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_decorator_output.py -v -k 'not test_output_with_dict_schema'",
+          "strict": false,
+          "result": "passed",
+          "summary": "8 passed, 1 deselected in 0.37s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-322/apiflask__apiflask-322.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": [
+        {
+          "cmd": "/apiflask :: python3 -m pytest tests/ -x -q",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 8 passed in 1.87s"
+        },
+        {
+          "cmd": "/apiflask :: python3 -m pytest tests/ -x -q -k 'not test_schema_name_resolver'",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 20 passed, 3 deselected in 1.25s"
+        },
+        {
+          "cmd": "/apiflask :: python3 -m pytest tests/test_base_response.py tests/test_route.py tests/test_app.py -x -q -k 'not test_schema_name_resolver'",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 1 passed, 3 deselected in 0.94s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-382/apiflask__apiflask-382.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": [
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_route.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "13 passed in 0.50s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -v --timeout=60",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "2 failed, 260 passed in 3.68s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-550/apiflask__apiflask-550.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": [
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_commands.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "10 passed in 0.34s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/test_commands.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "10 passed in 0.35s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-407/apiflask__apiflask-407.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": [
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 84 passed in 2.49s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -x -v -k 'spec or openapi'",
+          "strict": false,
+          "result": "passed",
+          "summary": "94 passed, 177 deselected in 1.57s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -v -k 'not test_input_with_dict_schema'",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 269 passed, 1 deselected in 3.60s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-605/apiflask__apiflask-605.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": [
+        {
+          "cmd": "/apiflask :: python3 -m pytest tests/ -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 71 passed in 2.76s"
+        },
+        {
+          "cmd": "/apiflask :: python3 -m pytest tests/test_decorator_input.py -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 16 passed in 1.00s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-659/apiflask__apiflask-659.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": []
+    },
+    {
+      "path": "history/python/apiflask__apiflask/apiflask__apiflask-495/apiflask__apiflask-495.traj.json",
+      "repo": "apiflask__apiflask",
+      "events": [
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -x -v",
+          "strict": false,
+          "result": "failed",
+          "summary": "1 failed, 64 passed in 2.00s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -v -k 'not test_doc_responses_custom_spec'",
+          "strict": false,
+          "result": "failed",
+          "summary": "2 failed, 273 passed, 1 deselected in 3.26s"
+        },
+        {
+          "cmd": "/apiflask :: python -m pytest tests/ -v -k 'not test_doc_responses_custom_spec and not test_input_with_dict_schema and not test_output_with_dict_schema'",
+          "strict": false,
+          "result": "passed",
+          "summary": "273 passed, 3 deselected in 3.16s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-727/ipython__traitlets-727.traj.json",
+      "repo": "ipython__traitlets",
+      "events": [
+        {
+          "cmd": "/traitlets :: python3 -m pytest traitlets/config/tests/test_application.py -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-687/ipython__traitlets-687.traj.json",
+      "repo": "ipython__traitlets",
+      "events": [
+        {
+          "cmd": "/traitlets :: python -m pytest /traitlets/traitlets/config/tests/test_loader.py -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        }
+      ]
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-306/ipython__traitlets-306.traj.json",
+      "repo": "ipython__traitlets",
+      "events": [
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/test_traitlets.py -x -v -k 'dict or Dict'",
+          "strict": false,
+          "result": "passed",
+          "summary": "15 passed, 233 deselected, 6 warnings in 0.26s"
+        },
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/test_traitlets.py -x --tb=short",
+          "strict": false,
+          "result": "passed",
+          "summary": "246 passed, 2 skipped, 34 warnings in 0.48s"
+        },
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/config/tests/ -x --tb=short",
+          "strict": false,
+          "result": "passed",
+          "summary": "101 passed, 5 warnings in 0.78s"
+        },
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/ -x --tb=short",
+          "strict": false,
+          "result": "passed",
+          "summary": "263 passed, 2 skipped, 34 warnings in 0.51s"
+        },
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/test_traitlets.py -x -k 'dict or Dict' -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "15 passed, 233 deselected, 2 warnings in 0.17s"
+        },
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/ traitlets/config/tests/ -x --tb=short",
+          "strict": false,
+          "result": "passed",
+          "summary": "364 passed, 2 skipped, 36 warnings in 1.14s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-517/ipython__traitlets-517.traj.json",
+      "repo": "ipython__traitlets",
+      "events": []
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-274/ipython__traitlets-274.traj.json",
+      "repo": "ipython__traitlets",
+      "events": [
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/test_traitlets.py -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "244 passed, 2 skipped, 39 warnings in 0.55s"
+        },
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "261 passed, 2 skipped, 35 warnings in 0.52s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-630/ipython__traitlets-630.traj.json",
+      "repo": "ipython__traitlets",
+      "events": [
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/ -x -v",
+          "strict": false,
+          "result": "other",
+          "summary": ""
+        },
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/tests/ -x -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "384 passed, 49 warnings in 0.61s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-293/ipython__traitlets-293.traj.json",
+      "repo": "ipython__traitlets",
+      "events": [
+        {
+          "cmd": "/traitlets :: python3 -m pytest traitlets/config/tests/test_application.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "22 passed, 3 warnings in 0.48s"
+        },
+        {
+          "cmd": "/traitlets :: python3 -m pytest traitlets/config/tests/ -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "92 passed, 8 warnings in 0.66s"
+        },
+        {
+          "cmd": "/traitlets :: python3 -m pytest traitlets/config/tests/ -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "92 passed, 5 warnings in 0.63s"
+        }
+      ]
+    },
+    {
+      "path": "history/python/ipython__traitlets/ipython__traitlets-319/ipython__traitlets-319.traj.json",
+      "repo": "ipython__traitlets",
+      "events": [
+        {
+          "cmd": "/traitlets :: python -m pytest traitlets/config/tests/test_application.py -v",
+          "strict": false,
+          "result": "passed",
+          "summary": "23 passed, 3 warnings in 0.50s"
+        }
+      ]
+    }
+  ],
+  "counts": {
+    "repos": 8,
+    "traces": 64,
+    "traces_with_pytest": 54,
+    "traces_with_interpretable_pytest": 48,
+    "strict_events": 0,
+    "events": 231,
+    "outcomes": {
+      "other": 62,
+      "passed": 100,
+      "failed": 69
+    },
+    "unique_commands_within_repo": 184,
+    "repeated_across_traces": 4,
+    "opposite_results_across_traces": 1
+  },
+  "opposite_signatures": [
+    [
+      "sdv-dev__RDT",
+      "/RDT :: python -m pytest tests/unit/transformers/test_numerical.py -v",
+      [
+        [
+          "history/python/sdv-dev__RDT/sdv-dev__rdt-970/sdv-dev__rdt-970.traj.json",
+          "passed"
+        ],
+        [
+          "history/python/sdv-dev__RDT/sdv-dev__rdt-760/sdv-dev__rdt-760.traj.json",
+          "failed"
+        ]
+      ]
+    ]
+  ]
+}

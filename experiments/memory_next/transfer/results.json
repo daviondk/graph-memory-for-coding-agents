@@ -1,0 +1,1461 @@
+{
+ "relation_sha256": "f59b1a0fd021c6608bd185f15113cbbd26f804c20494da6d4827adb9ea70edb5",
+ "blind_freeze_sha256": "3bbb252b9abdbce1682cfc56b5be9fc726341dfbf1d1a02aa412ebf673a103d9",
+ "results": {
+  "repo_time": {
+   "all": {
+    "n": 258,
+    "repos": 39,
+    "gold_available": 38,
+    "median_candidates": 4.0,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 35,
+      "mrr": 0.11348437307739634
+     },
+     "issue192": {
+      "hits1": 26,
+      "hits5": 35,
+      "mrr": 0.1153954411221853
+     },
+     "edit64": {
+      "hits1": 26,
+      "hits5": 38,
+      "mrr": 0.11589147286821705
+     },
+     "card": {
+      "hits1": 26,
+      "hits5": 36,
+      "mrr": 0.11718346253229975
+     },
+     "placebo": {
+      "hits1": 22,
+      "hits5": 34,
+      "mrr": 0.10626614987080103
+     },
+     "recency": {
+      "hits1": 18,
+      "hits5": 31,
+      "mrr": 0.09198069543957646
+     },
+     "separate": {
+      "hits1": 28,
+      "hits5": 38,
+      "mrr": 0.12118863049095607
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 2,
+      "loss": 1,
+      "delta": 0.003875968992248062,
+      "repo_ci95": [
+       -0.009390039295333127,
+       0.019704433497536946
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_issue192": {
+      "n": 258,
+      "repos": 39,
+      "gain": 2,
+      "loss": 2,
+      "delta": 0,
+      "repo_ci95": [
+       -0.01538659793814433,
+       0.017341040462427744
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_placebo": {
+      "n": 258,
+      "repos": 39,
+      "gain": 4,
+      "loss": 0,
+      "delta": 0.015503875968992248,
+      "repo_ci95": [
+       0.0032151764366394595,
+       0.035897435897435895
+      ],
+      "p_descriptive": 0.125
+     },
+     "separate_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.011627906976744186,
+      "repo_ci95": [
+       0.0,
+       0.027777777777777776
+      ],
+      "p_descriptive": 0.25
+     }
+    }
+   },
+   "available": {
+    "n": 38,
+    "repos": 20,
+    "gold_available": 38,
+    "median_candidates": 8.5,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 35,
+      "mrr": 0.770499164578112
+     },
+     "issue192": {
+      "hits1": 26,
+      "hits5": 35,
+      "mrr": 0.7834743107769424
+     },
+     "edit64": {
+      "hits1": 26,
+      "hits5": 38,
+      "mrr": 0.7868421052631579
+     },
+     "card": {
+      "hits1": 26,
+      "hits5": 36,
+      "mrr": 0.7956140350877193
+     },
+     "placebo": {
+      "hits1": 22,
+      "hits5": 34,
+      "mrr": 0.7214912280701754
+     },
+     "recency": {
+      "hits1": 18,
+      "hits5": 31,
+      "mrr": 0.6245005111423876
+     },
+     "separate": {
+      "hits1": 28,
+      "hits5": 38,
+      "mrr": 0.8228070175438597
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 2,
+      "loss": 1,
+      "delta": 0.02631578947368421,
+      "repo_ci95": [
+       -0.05714285714285714,
+       0.125
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_issue192": {
+      "n": 38,
+      "repos": 20,
+      "gain": 2,
+      "loss": 2,
+      "delta": 0,
+      "repo_ci95": [
+       -0.09090909090909091,
+       0.11428571428571428
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_placebo": {
+      "n": 38,
+      "repos": 20,
+      "gain": 4,
+      "loss": 0,
+      "delta": 0.10526315789473684,
+      "repo_ci95": [
+       0.024390243902439025,
+       0.21875
+      ],
+      "p_descriptive": 0.125
+     },
+     "separate_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.07894736842105263,
+      "repo_ci95": [
+       0.0,
+       0.16129032258064516
+      ],
+      "p_descriptive": 0.25
+     }
+    }
+   },
+   "available_at_least_5": {
+    "n": 31,
+    "repos": 18,
+    "gold_available": 31,
+    "median_candidates": 12,
+    "arms": {
+     "issue256": {
+      "hits1": 20,
+      "hits5": 28,
+      "mrr": 0.7509344598054275
+     },
+     "issue192": {
+      "hits1": 21,
+      "hits5": 28,
+      "mrr": 0.7668394777265745
+     },
+     "edit64": {
+      "hits1": 22,
+      "hits5": 31,
+      "mrr": 0.8086021505376344
+     },
+     "card": {
+      "hits1": 21,
+      "hits5": 29,
+      "mrr": 0.7870967741935484
+     },
+     "placebo": {
+      "hits1": 17,
+      "hits5": 27,
+      "mrr": 0.696236559139785
+     },
+     "recency": {
+      "hits1": 12,
+      "hits5": 24,
+      "mrr": 0.5558393362390557
+     },
+     "separate": {
+      "hits1": 23,
+      "hits5": 31,
+      "mrr": 0.8150537634408602
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 31,
+      "repos": 18,
+      "gain": 2,
+      "loss": 1,
+      "delta": 0.03225806451612903,
+      "repo_ci95": [
+       -0.06896551724137931,
+       0.16
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_issue192": {
+      "n": 31,
+      "repos": 18,
+      "gain": 2,
+      "loss": 2,
+      "delta": 0,
+      "repo_ci95": [
+       -0.10810810810810811,
+       0.15
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_placebo": {
+      "n": 31,
+      "repos": 18,
+      "gain": 4,
+      "loss": 0,
+      "delta": 0.12903225806451613,
+      "repo_ci95": [
+       0.02857142857142857,
+       0.2903225806451613
+      ],
+      "p_descriptive": 0.125
+     },
+     "separate_vs_issue256": {
+      "n": 31,
+      "repos": 18,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.0967741935483871,
+      "repo_ci95": [
+       0.0,
+       0.19047619047619047
+      ],
+      "p_descriptive": 0.25
+     }
+    }
+   },
+   "fully_dated": {
+    "n": 258,
+    "repos": 39,
+    "gold_available": 38,
+    "median_candidates": 4.0,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 35,
+      "mrr": 0.11348437307739634
+     },
+     "issue192": {
+      "hits1": 26,
+      "hits5": 35,
+      "mrr": 0.1153954411221853
+     },
+     "edit64": {
+      "hits1": 26,
+      "hits5": 38,
+      "mrr": 0.11589147286821705
+     },
+     "card": {
+      "hits1": 26,
+      "hits5": 36,
+      "mrr": 0.11718346253229975
+     },
+     "placebo": {
+      "hits1": 22,
+      "hits5": 34,
+      "mrr": 0.10626614987080103
+     },
+     "recency": {
+      "hits1": 18,
+      "hits5": 31,
+      "mrr": 0.09198069543957646
+     },
+     "separate": {
+      "hits1": 28,
+      "hits5": 38,
+      "mrr": 0.12118863049095607
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 2,
+      "loss": 1,
+      "delta": 0.003875968992248062,
+      "repo_ci95": [
+       -0.009390039295333127,
+       0.019704433497536946
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_issue192": {
+      "n": 258,
+      "repos": 39,
+      "gain": 2,
+      "loss": 2,
+      "delta": 0,
+      "repo_ci95": [
+       -0.01538659793814433,
+       0.017341040462427744
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_placebo": {
+      "n": 258,
+      "repos": 39,
+      "gain": 4,
+      "loss": 0,
+      "delta": 0.015503875968992248,
+      "repo_ci95": [
+       0.0032151764366394595,
+       0.035897435897435895
+      ],
+      "p_descriptive": 0.125
+     },
+     "separate_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.011627906976744186,
+      "repo_ci95": [
+       0.0,
+       0.027777777777777776
+      ],
+      "p_descriptive": 0.25
+     }
+    }
+   },
+   "fully_dated_available_at_least_5": {
+    "n": 31,
+    "repos": 18,
+    "gold_available": 31,
+    "median_candidates": 12,
+    "arms": {
+     "issue256": {
+      "hits1": 20,
+      "hits5": 28,
+      "mrr": 0.7509344598054275
+     },
+     "issue192": {
+      "hits1": 21,
+      "hits5": 28,
+      "mrr": 0.7668394777265745
+     },
+     "edit64": {
+      "hits1": 22,
+      "hits5": 31,
+      "mrr": 0.8086021505376344
+     },
+     "card": {
+      "hits1": 21,
+      "hits5": 29,
+      "mrr": 0.7870967741935484
+     },
+     "placebo": {
+      "hits1": 17,
+      "hits5": 27,
+      "mrr": 0.696236559139785
+     },
+     "recency": {
+      "hits1": 12,
+      "hits5": 24,
+      "mrr": 0.5558393362390557
+     },
+     "separate": {
+      "hits1": 23,
+      "hits5": 31,
+      "mrr": 0.8150537634408602
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 31,
+      "repos": 18,
+      "gain": 2,
+      "loss": 1,
+      "delta": 0.03225806451612903,
+      "repo_ci95": [
+       -0.06896551724137931,
+       0.16
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_issue192": {
+      "n": 31,
+      "repos": 18,
+      "gain": 2,
+      "loss": 2,
+      "delta": 0,
+      "repo_ci95": [
+       -0.10810810810810811,
+       0.15
+      ],
+      "p_descriptive": 1
+     },
+     "card_vs_placebo": {
+      "n": 31,
+      "repos": 18,
+      "gain": 4,
+      "loss": 0,
+      "delta": 0.12903225806451613,
+      "repo_ci95": [
+       0.02857142857142857,
+       0.2903225806451613
+      ],
+      "p_descriptive": 0.125
+     },
+     "separate_vs_issue256": {
+      "n": 31,
+      "repos": 18,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.0967741935483871,
+      "repo_ci95": [
+       0.0,
+       0.19047619047619047
+      ],
+      "p_descriptive": 0.25
+     }
+    }
+   },
+   "sensitivity": {
+    "card": {
+     "first": 26,
+     "last": 26
+    },
+    "issue256": {
+     "first": 25,
+     "last": 25
+    }
+   },
+   "candidate_distribution": {
+    "0": 73,
+    "1": 97,
+    "4": 138,
+    "9": 170,
+    "19": 193,
+    "49": 217
+   }
+  },
+  "all_time": {
+   "all": {
+    "n": 258,
+    "repos": 39,
+    "gold_available": 38,
+    "median_candidates": 445.5,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 28,
+      "mrr": 0.1060195678193656
+     },
+     "issue192": {
+      "hits1": 24,
+      "hits5": 29,
+      "mrr": 0.10483301847870931
+     },
+     "edit64": {
+      "hits1": 24,
+      "hits5": 32,
+      "mrr": 0.1042570681079573
+     },
+     "card": {
+      "hits1": 27,
+      "hits5": 34,
+      "mrr": 0.1162578985082405
+     },
+     "placebo": {
+      "hits1": 19,
+      "hits5": 31,
+      "mrr": 0.09513096557274016
+     },
+     "recency": {
+      "hits1": 3,
+      "hits5": 13,
+      "mrr": 0.03150404458381451
+     },
+     "separate": {
+      "hits1": 26,
+      "hits5": 33,
+      "mrr": 0.11198142942328988
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 1,
+      "delta": 0.007751937984496124,
+      "repo_ci95": [
+       -0.006757329363261566,
+       0.024752475247524754
+      ],
+      "p_descriptive": 0.625
+     },
+     "card_vs_issue192": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.011627906976744186,
+      "repo_ci95": [
+       0.0,
+       0.028455284552845527
+      ],
+      "p_descriptive": 0.25
+     },
+     "card_vs_placebo": {
+      "n": 258,
+      "repos": 39,
+      "gain": 8,
+      "loss": 0,
+      "delta": 0.031007751937984496,
+      "repo_ci95": [
+       0.010869565217391304,
+       0.060085836909871244
+      ],
+      "p_descriptive": 0.0078125
+     },
+     "separate_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 2,
+      "delta": 0.003875968992248062,
+      "repo_ci95": [
+       -0.016304902395740905,
+       0.02512562814070352
+      ],
+      "p_descriptive": 1
+     }
+    }
+   },
+   "available": {
+    "n": 38,
+    "repos": 20,
+    "gold_available": 38,
+    "median_candidates": 838.0,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 28,
+      "mrr": 0.7198170657209558
+     },
+     "issue192": {
+      "hits1": 24,
+      "hits5": 29,
+      "mrr": 0.7117610201975527
+     },
+     "edit64": {
+      "hits1": 24,
+      "hits5": 32,
+      "mrr": 0.7078506203119206
+     },
+     "card": {
+      "hits1": 27,
+      "hits5": 34,
+      "mrr": 0.7893299425033171
+     },
+     "placebo": {
+      "hits1": 19,
+      "hits5": 31,
+      "mrr": 0.6458891873096568
+     },
+     "recency": {
+      "hits1": 3,
+      "hits5": 13,
+      "mrr": 0.21389588164800377
+     },
+     "separate": {
+      "hits1": 26,
+      "hits5": 33,
+      "mrr": 0.760294968189705
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 1,
+      "delta": 0.05263157894736842,
+      "repo_ci95": [
+       -0.05,
+       0.15217391304347827
+      ],
+      "p_descriptive": 0.625
+     },
+     "card_vs_issue192": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.07894736842105263,
+      "repo_ci95": [
+       0.0,
+       0.18181818181818182
+      ],
+      "p_descriptive": 0.25
+     },
+     "card_vs_placebo": {
+      "n": 38,
+      "repos": 20,
+      "gain": 8,
+      "loss": 0,
+      "delta": 0.21052631578947367,
+      "repo_ci95": [
+       0.08888888888888889,
+       0.3469387755102041
+      ],
+      "p_descriptive": 0.0078125
+     },
+     "separate_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 2,
+      "delta": 0.02631578947368421,
+      "repo_ci95": [
+       -0.10256410256410256,
+       0.16216216216216217
+      ],
+      "p_descriptive": 1
+     }
+    }
+   },
+   "available_at_least_5": {
+    "n": 38,
+    "repos": 20,
+    "gold_available": 38,
+    "median_candidates": 838.0,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 28,
+      "mrr": 0.7198170657209558
+     },
+     "issue192": {
+      "hits1": 24,
+      "hits5": 29,
+      "mrr": 0.7117610201975527
+     },
+     "edit64": {
+      "hits1": 24,
+      "hits5": 32,
+      "mrr": 0.7078506203119206
+     },
+     "card": {
+      "hits1": 27,
+      "hits5": 34,
+      "mrr": 0.7893299425033171
+     },
+     "placebo": {
+      "hits1": 19,
+      "hits5": 31,
+      "mrr": 0.6458891873096568
+     },
+     "recency": {
+      "hits1": 3,
+      "hits5": 13,
+      "mrr": 0.21389588164800377
+     },
+     "separate": {
+      "hits1": 26,
+      "hits5": 33,
+      "mrr": 0.760294968189705
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 1,
+      "delta": 0.05263157894736842,
+      "repo_ci95": [
+       -0.05,
+       0.15217391304347827
+      ],
+      "p_descriptive": 0.625
+     },
+     "card_vs_issue192": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.07894736842105263,
+      "repo_ci95": [
+       0.0,
+       0.18181818181818182
+      ],
+      "p_descriptive": 0.25
+     },
+     "card_vs_placebo": {
+      "n": 38,
+      "repos": 20,
+      "gain": 8,
+      "loss": 0,
+      "delta": 0.21052631578947367,
+      "repo_ci95": [
+       0.08888888888888889,
+       0.3469387755102041
+      ],
+      "p_descriptive": 0.0078125
+     },
+     "separate_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 2,
+      "delta": 0.02631578947368421,
+      "repo_ci95": [
+       -0.10256410256410256,
+       0.16216216216216217
+      ],
+      "p_descriptive": 1
+     }
+    }
+   },
+   "fully_dated": {
+    "n": 258,
+    "repos": 39,
+    "gold_available": 38,
+    "median_candidates": 445.5,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 28,
+      "mrr": 0.1060195678193656
+     },
+     "issue192": {
+      "hits1": 24,
+      "hits5": 29,
+      "mrr": 0.10483301847870931
+     },
+     "edit64": {
+      "hits1": 24,
+      "hits5": 32,
+      "mrr": 0.1042570681079573
+     },
+     "card": {
+      "hits1": 27,
+      "hits5": 34,
+      "mrr": 0.1162578985082405
+     },
+     "placebo": {
+      "hits1": 19,
+      "hits5": 31,
+      "mrr": 0.09513096557274016
+     },
+     "recency": {
+      "hits1": 3,
+      "hits5": 13,
+      "mrr": 0.03150404458381451
+     },
+     "separate": {
+      "hits1": 26,
+      "hits5": 33,
+      "mrr": 0.11198142942328988
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 1,
+      "delta": 0.007751937984496124,
+      "repo_ci95": [
+       -0.006757329363261566,
+       0.024752475247524754
+      ],
+      "p_descriptive": 0.625
+     },
+     "card_vs_issue192": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.011627906976744186,
+      "repo_ci95": [
+       0.0,
+       0.028455284552845527
+      ],
+      "p_descriptive": 0.25
+     },
+     "card_vs_placebo": {
+      "n": 258,
+      "repos": 39,
+      "gain": 8,
+      "loss": 0,
+      "delta": 0.031007751937984496,
+      "repo_ci95": [
+       0.010869565217391304,
+       0.060085836909871244
+      ],
+      "p_descriptive": 0.0078125
+     },
+     "separate_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 3,
+      "loss": 2,
+      "delta": 0.003875968992248062,
+      "repo_ci95": [
+       -0.016304902395740905,
+       0.02512562814070352
+      ],
+      "p_descriptive": 1
+     }
+    }
+   },
+   "fully_dated_available_at_least_5": {
+    "n": 38,
+    "repos": 20,
+    "gold_available": 38,
+    "median_candidates": 838.0,
+    "arms": {
+     "issue256": {
+      "hits1": 25,
+      "hits5": 28,
+      "mrr": 0.7198170657209558
+     },
+     "issue192": {
+      "hits1": 24,
+      "hits5": 29,
+      "mrr": 0.7117610201975527
+     },
+     "edit64": {
+      "hits1": 24,
+      "hits5": 32,
+      "mrr": 0.7078506203119206
+     },
+     "card": {
+      "hits1": 27,
+      "hits5": 34,
+      "mrr": 0.7893299425033171
+     },
+     "placebo": {
+      "hits1": 19,
+      "hits5": 31,
+      "mrr": 0.6458891873096568
+     },
+     "recency": {
+      "hits1": 3,
+      "hits5": 13,
+      "mrr": 0.21389588164800377
+     },
+     "separate": {
+      "hits1": 26,
+      "hits5": 33,
+      "mrr": 0.760294968189705
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 1,
+      "delta": 0.05263157894736842,
+      "repo_ci95": [
+       -0.05,
+       0.15217391304347827
+      ],
+      "p_descriptive": 0.625
+     },
+     "card_vs_issue192": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 0,
+      "delta": 0.07894736842105263,
+      "repo_ci95": [
+       0.0,
+       0.18181818181818182
+      ],
+      "p_descriptive": 0.25
+     },
+     "card_vs_placebo": {
+      "n": 38,
+      "repos": 20,
+      "gain": 8,
+      "loss": 0,
+      "delta": 0.21052631578947367,
+      "repo_ci95": [
+       0.08888888888888889,
+       0.3469387755102041
+      ],
+      "p_descriptive": 0.0078125
+     },
+     "separate_vs_issue256": {
+      "n": 38,
+      "repos": 20,
+      "gain": 3,
+      "loss": 2,
+      "delta": 0.02631578947368421,
+      "repo_ci95": [
+       -0.10256410256410256,
+       0.16216216216216217
+      ],
+      "p_descriptive": 1
+     }
+    }
+   },
+   "sensitivity": {
+    "card": {
+     "first": 27,
+     "last": 27
+    },
+    "issue256": {
+     "first": 25,
+     "last": 25
+    }
+   },
+   "candidate_distribution": {
+    "0": 5,
+    "1": 6,
+    "4": 9,
+    "9": 14,
+    "19": 33,
+    "49": 43
+   }
+  },
+  "repo_release": {
+   "all": {
+    "n": 258,
+    "repos": 39,
+    "gold_available": 258,
+    "median_candidates": 24.0,
+    "arms": {
+     "issue256": {
+      "hits1": 141,
+      "hits5": 213,
+      "mrr": 0.6691063088595175
+     },
+     "issue192": {
+      "hits1": 145,
+      "hits5": 212,
+      "mrr": 0.6779382101998556
+     },
+     "edit64": {
+      "hits1": 111,
+      "hits5": 189,
+      "mrr": 0.5688875553167304
+     },
+     "card": {
+      "hits1": 151,
+      "hits5": 216,
+      "mrr": 0.703204184860525
+     },
+     "placebo": {
+      "hits1": 130,
+      "hits5": 209,
+      "mrr": 0.6408832315515337
+     },
+     "recency": {
+      "hits1": 13,
+      "hits5": 103,
+      "mrr": 0.19405488589542916
+     },
+     "separate": {
+      "hits1": 153,
+      "hits5": 219,
+      "mrr": 0.7033647746254282
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 20,
+      "loss": 10,
+      "delta": 0.03875968992248062,
+      "repo_ci95": [
+       -0.013574660633484163,
+       0.08680555555555555
+      ],
+      "p_descriptive": 0.09873714670538902
+     },
+     "card_vs_issue192": {
+      "n": 258,
+      "repos": 39,
+      "gain": 16,
+      "loss": 10,
+      "delta": 0.023255813953488372,
+      "repo_ci95": [
+       -0.02623166522864538,
+       0.06830643518989919
+      ],
+      "p_descriptive": 0.32693958282470703
+     },
+     "card_vs_placebo": {
+      "n": 258,
+      "repos": 39,
+      "gain": 25,
+      "loss": 4,
+      "delta": 0.08139534883720931,
+      "repo_ci95": [
+       0.044585987261146494,
+       0.12083447802197801
+      ],
+      "p_descriptive": 0.00010371580719947815
+     },
+     "separate_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 27,
+      "loss": 15,
+      "delta": 0.046511627906976744,
+      "repo_ci95": [
+       0.0,
+       0.08823529411764706
+      ],
+      "p_descriptive": 0.08842954698775429
+     }
+    }
+   },
+   "available": {
+    "n": 258,
+    "repos": 39,
+    "gold_available": 258,
+    "median_candidates": 24.0,
+    "arms": {
+     "issue256": {
+      "hits1": 141,
+      "hits5": 213,
+      "mrr": 0.6691063088595175
+     },
+     "issue192": {
+      "hits1": 145,
+      "hits5": 212,
+      "mrr": 0.6779382101998556
+     },
+     "edit64": {
+      "hits1": 111,
+      "hits5": 189,
+      "mrr": 0.5688875553167304
+     },
+     "card": {
+      "hits1": 151,
+      "hits5": 216,
+      "mrr": 0.703204184860525
+     },
+     "placebo": {
+      "hits1": 130,
+      "hits5": 209,
+      "mrr": 0.6408832315515337
+     },
+     "recency": {
+      "hits1": 13,
+      "hits5": 103,
+      "mrr": 0.19405488589542916
+     },
+     "separate": {
+      "hits1": 153,
+      "hits5": 219,
+      "mrr": 0.7033647746254282
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 20,
+      "loss": 10,
+      "delta": 0.03875968992248062,
+      "repo_ci95": [
+       -0.013574660633484163,
+       0.08680555555555555
+      ],
+      "p_descriptive": 0.09873714670538902
+     },
+     "card_vs_issue192": {
+      "n": 258,
+      "repos": 39,
+      "gain": 16,
+      "loss": 10,
+      "delta": 0.023255813953488372,
+      "repo_ci95": [
+       -0.02623166522864538,
+       0.06830643518989919
+      ],
+      "p_descriptive": 0.32693958282470703
+     },
+     "card_vs_placebo": {
+      "n": 258,
+      "repos": 39,
+      "gain": 25,
+      "loss": 4,
+      "delta": 0.08139534883720931,
+      "repo_ci95": [
+       0.044585987261146494,
+       0.12083447802197801
+      ],
+      "p_descriptive": 0.00010371580719947815
+     },
+     "separate_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 27,
+      "loss": 15,
+      "delta": 0.046511627906976744,
+      "repo_ci95": [
+       0.0,
+       0.08823529411764706
+      ],
+      "p_descriptive": 0.08842954698775429
+     }
+    }
+   },
+   "available_at_least_5": {
+    "n": 250,
+    "repos": 37,
+    "gold_available": 250,
+    "median_candidates": 26.0,
+    "arms": {
+     "issue256": {
+      "hits1": 134,
+      "hits5": 205,
+      "mrr": 0.660517710743022
+     },
+     "issue192": {
+      "hits1": 138,
+      "hits5": 204,
+      "mrr": 0.669632232926251
+     },
+     "edit64": {
+      "hits1": 107,
+      "hits5": 181,
+      "mrr": 0.5630919570868658
+     },
+     "card": {
+      "hits1": 144,
+      "hits5": 208,
+      "mrr": 0.6957067187760618
+     },
+     "placebo": {
+      "hits1": 124,
+      "hits5": 201,
+      "mrr": 0.6333914949611827
+     },
+     "recency": {
+      "hits1": 12,
+      "hits5": 95,
+      "mrr": 0.18393130891074955
+     },
+     "separate": {
+      "hits1": 146,
+      "hits5": 211,
+      "mrr": 0.695872447413442
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 250,
+      "repos": 37,
+      "gain": 20,
+      "loss": 10,
+      "delta": 0.04,
+      "repo_ci95": [
+       -0.013955118452510322,
+       0.08962297183024152
+      ],
+      "p_descriptive": 0.09873714670538902
+     },
+     "card_vs_issue192": {
+      "n": 250,
+      "repos": 37,
+      "gain": 16,
+      "loss": 10,
+      "delta": 0.024,
+      "repo_ci95": [
+       -0.0273972602739726,
+       0.06968843691759173
+      ],
+      "p_descriptive": 0.32693958282470703
+     },
+     "card_vs_placebo": {
+      "n": 250,
+      "repos": 37,
+      "gain": 24,
+      "loss": 4,
+      "delta": 0.08,
+      "repo_ci95": [
+       0.041666666666666664,
+       0.12033195020746888
+      ],
+      "p_descriptive": 0.00017999112606048584
+     },
+     "separate_vs_issue256": {
+      "n": 250,
+      "repos": 37,
+      "gain": 27,
+      "loss": 15,
+      "delta": 0.048,
+      "repo_ci95": [
+       0.0,
+       0.09205158555384275
+      ],
+      "p_descriptive": 0.08842954698775429
+     }
+    }
+   },
+   "fully_dated": {
+    "n": 258,
+    "repos": 39,
+    "gold_available": 258,
+    "median_candidates": 24.0,
+    "arms": {
+     "issue256": {
+      "hits1": 141,
+      "hits5": 213,
+      "mrr": 0.6691063088595175
+     },
+     "issue192": {
+      "hits1": 145,
+      "hits5": 212,
+      "mrr": 0.6779382101998556
+     },
+     "edit64": {
+      "hits1": 111,
+      "hits5": 189,
+      "mrr": 0.5688875553167304
+     },
+     "card": {
+      "hits1": 151,
+      "hits5": 216,
+      "mrr": 0.703204184860525
+     },
+     "placebo": {
+      "hits1": 130,
+      "hits5": 209,
+      "mrr": 0.6408832315515337
+     },
+     "recency": {
+      "hits1": 13,
+      "hits5": 103,
+      "mrr": 0.19405488589542916
+     },
+     "separate": {
+      "hits1": 153,
+      "hits5": 219,
+      "mrr": 0.7033647746254282
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 20,
+      "loss": 10,
+      "delta": 0.03875968992248062,
+      "repo_ci95": [
+       -0.013574660633484163,
+       0.08680555555555555
+      ],
+      "p_descriptive": 0.09873714670538902
+     },
+     "card_vs_issue192": {
+      "n": 258,
+      "repos": 39,
+      "gain": 16,
+      "loss": 10,
+      "delta": 0.023255813953488372,
+      "repo_ci95": [
+       -0.02623166522864538,
+       0.06830643518989919
+      ],
+      "p_descriptive": 0.32693958282470703
+     },
+     "card_vs_placebo": {
+      "n": 258,
+      "repos": 39,
+      "gain": 25,
+      "loss": 4,
+      "delta": 0.08139534883720931,
+      "repo_ci95": [
+       0.044585987261146494,
+       0.12083447802197801
+      ],
+      "p_descriptive": 0.00010371580719947815
+     },
+     "separate_vs_issue256": {
+      "n": 258,
+      "repos": 39,
+      "gain": 27,
+      "loss": 15,
+      "delta": 0.046511627906976744,
+      "repo_ci95": [
+       0.0,
+       0.08823529411764706
+      ],
+      "p_descriptive": 0.08842954698775429
+     }
+    }
+   },
+   "fully_dated_available_at_least_5": {
+    "n": 250,
+    "repos": 37,
+    "gold_available": 250,
+    "median_candidates": 26.0,
+    "arms": {
+     "issue256": {
+      "hits1": 134,
+      "hits5": 205,
+      "mrr": 0.660517710743022
+     },
+     "issue192": {
+      "hits1": 138,
+      "hits5": 204,
+      "mrr": 0.669632232926251
+     },
+     "edit64": {
+      "hits1": 107,
+      "hits5": 181,
+      "mrr": 0.5630919570868658
+     },
+     "card": {
+      "hits1": 144,
+      "hits5": 208,
+      "mrr": 0.6957067187760618
+     },
+     "placebo": {
+      "hits1": 124,
+      "hits5": 201,
+      "mrr": 0.6333914949611827
+     },
+     "recency": {
+      "hits1": 12,
+      "hits5": 95,
+      "mrr": 0.18393130891074955
+     },
+     "separate": {
+      "hits1": 146,
+      "hits5": 211,
+      "mrr": 0.695872447413442
+     }
+    },
+    "pairs": {
+     "card_vs_issue256": {
+      "n": 250,
+      "repos": 37,
+      "gain": 20,
+      "loss": 10,
+      "delta": 0.04,
+      "repo_ci95": [
+       -0.013955118452510322,
+       0.08962297183024152
+      ],
+      "p_descriptive": 0.09873714670538902
+     },
+     "card_vs_issue192": {
+      "n": 250,
+      "repos": 37,
+      "gain": 16,
+      "loss": 10,
+      "delta": 0.024,
+      "repo_ci95": [
+       -0.0273972602739726,
+       0.06968843691759173
+      ],
+      "p_descriptive": 0.32693958282470703
+     },
+     "card_vs_placebo": {
+      "n": 250,
+      "repos": 37,
+      "gain": 24,
+      "loss": 4,
+      "delta": 0.08,
+      "repo_ci95": [
+       0.041666666666666664,
+       0.12033195020746888
+      ],
+      "p_descriptive": 0.00017999112606048584
+     },
+     "separate_vs_issue256": {
+      "n": 250,
+      "repos": 37,
+      "gain": 27,
+      "loss": 15,
+      "delta": 0.048,
+      "repo_ci95": [
+       0.0,
+       0.09205158555384275
+      ],
+      "p_descriptive": 0.08842954698775429
+     }
+    }
+   },
+   "sensitivity": {
+    "card": {
+     "first": 151,
+     "last": 151
+    },
+    "issue256": {
+     "first": 141,
+     "last": 141
+    }
+   },
+   "candidate_distribution": {
+    "0": 0,
+    "1": 0,
+    "4": 8,
+    "9": 74,
+    "19": 122,
+    "49": 150
+   }
+  }
+ }
+}

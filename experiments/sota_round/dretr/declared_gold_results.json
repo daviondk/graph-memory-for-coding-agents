@@ -1,0 +1,62 @@
+{
+  "n": 470,
+  "post_hoc_endpoint": true,
+  "scores": {
+    "bm25_official": {
+      "all5": 0.7404255319148936,
+      "any5": 0.8914893617021277,
+      "official_ndcg5": 0.7768520711194778,
+      "all5_count": 348,
+      "any5_count": 419
+    },
+    "bm25_normalized": {
+      "all5": 0.8425531914893617,
+      "any5": 0.9531914893617022,
+      "official_ndcg5": 0.8845316187870669,
+      "all5_count": 396,
+      "any5_count": 448
+    },
+    "contriever_session": {
+      "all5": 0.8936170212765957,
+      "any5": 0.9787234042553191,
+      "official_ndcg5": 0.9190684244189757,
+      "all5_count": 420,
+      "any5_count": 460
+    },
+    "flat_fusion": {
+      "all5": 0.9063829787234042,
+      "any5": 0.9723404255319149,
+      "official_ndcg5": 0.9288890267222086,
+      "all5_count": 426,
+      "any5_count": 457
+    },
+    "witness": {
+      "all5": 0.9234042553191489,
+      "any5": 0.9808510638297873,
+      "official_ndcg5": 0.9380002548089993,
+      "all5_count": 434,
+      "any5_count": 461
+    },
+    "position_control": {
+      "all5": 0.9340425531914893,
+      "any5": 0.9787234042553191,
+      "official_ndcg5": 0.9288805933273123,
+      "all5_count": 439,
+      "any5_count": 460
+    },
+    "contriever_turn_max": {
+      "all5": 0.9063829787234042,
+      "any5": 0.9808510638297873,
+      "official_ndcg5": 0.9219820236108378,
+      "all5_count": 426,
+      "any5_count": 461
+    },
+    "exhaustive_rerank": {
+      "all5": 0.9319148936170213,
+      "any5": 0.9829787234042553,
+      "official_ndcg5": 0.9397591220953992,
+      "all5_count": 438,
+      "any5_count": 462
+    }
+  }
+}

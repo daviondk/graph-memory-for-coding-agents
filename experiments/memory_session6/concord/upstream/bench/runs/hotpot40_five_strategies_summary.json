@@ -1,0 +1,74 @@
+{
+  "strategies": [
+    {
+      "strategy": "oracle",
+      "policy": "raw",
+      "patch": false,
+      "success": 40,
+      "count": 40,
+      "success_rate": 1.0,
+      "avg_steps": 3.7,
+      "total_steps": 148,
+      "total_tokens": 219753,
+      "avg_tokens_per_task": 5493.825,
+      "total_prompt_tokens": 205099,
+      "total_completion_tokens": 14654
+    },
+    {
+      "strategy": "naive",
+      "policy": "raw",
+      "patch": true,
+      "success": 15,
+      "count": 40,
+      "success_rate": 0.375,
+      "avg_steps": 4.675,
+      "total_steps": 187,
+      "total_tokens": 408511,
+      "avg_tokens_per_task": 10212.775,
+      "total_prompt_tokens": 355869,
+      "total_completion_tokens": 52642
+    },
+    {
+      "strategy": "diff",
+      "policy": "git",
+      "patch": true,
+      "success": 31,
+      "count": 40,
+      "success_rate": 0.775,
+      "avg_steps": 6.725,
+      "total_steps": 269,
+      "total_tokens": 663430,
+      "avg_tokens_per_task": 16585.75,
+      "total_prompt_tokens": 579454,
+      "total_completion_tokens": 83976
+    },
+    {
+      "strategy": "alert",
+      "policy": "system_alert",
+      "patch": true,
+      "success": 23,
+      "count": 40,
+      "success_rate": 0.575,
+      "avg_steps": 4.65,
+      "total_steps": 186,
+      "total_tokens": 430712,
+      "avg_tokens_per_task": 10767.8,
+      "total_prompt_tokens": 369581,
+      "total_completion_tokens": 61131
+    },
+    {
+      "strategy": "block_context",
+      "policy": "block_context",
+      "patch": true,
+      "success": 40,
+      "count": 40,
+      "success_rate": 1.0,
+      "avg_steps": 4.75,
+      "total_steps": 190,
+      "total_tokens": 389953,
+      "avg_tokens_per_task": 9748.825,
+      "total_prompt_tokens": 360350,
+      "total_completion_tokens": 29603
+    }
+  ]
+}

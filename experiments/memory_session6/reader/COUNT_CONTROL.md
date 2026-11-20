@@ -1,0 +1,3 @@
+# Exploratory read-count-matched control
+
+Added after the four registered results, before simulating count-matched random policies. Within target fold and empty/nonempty-history stratum preserve exactly the observed count of requested reads. Randomly assign those reads within each stratum without looking at gains. Compute the exact expected quality from stratum means, a randomization band (50,000 masks, seed 20261119), and the fraction of masks with quality at least the observed policy. This describes dependence on where reads were used, conditional on these fixed data and counts. It is not a formal test across newly fitted or deployed models. This control matches reads, not tokens or measured runtime. Report all four evaluations.

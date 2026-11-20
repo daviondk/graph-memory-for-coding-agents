@@ -1,0 +1,77 @@
+{
+ "all_passed": true,
+ "manifest_files": 9759,
+ "checks": [
+  {
+   "entry": "action/verify.py",
+   "exit": 0,
+   "stdout": "PASS complete chronological feedback verification; held-out examples [20486, 979, 3687]\n",
+   "stderr": ""
+  },
+  {
+   "entry": "compact/verify.py",
+   "exit": 0,
+   "stdout": "native {'sessions': 2436, 'boundaries': 5995, 'intents': 3320, 'accepted': 3105}\ntagged {'sessions': 1564, 'boundaries': 11327, 'intents': 6161, 'accepted': 5814}\nVerified 240 independently sampled full-file sources, 594 historical replacements, 335 source-confirmed edits.\nPASS {'predictions': 571626, 'sessions': 4000, 'boundaries': 17322, 'intents': 9481, 'accepted': 8919} native tokenizer recount False\n",
+   "stderr": ""
+  },
+  {
+   "entry": "discovery/verify.py",
+   "exit": 0,
+   "stdout": "{\n \"passed\": true,\n \"heldout_turns_replayed\": 29830,\n \"identified_targets\": 19519,\n \"independent_simple_predictions\": 29830,\n \"independent_context_predictions\": 19519,\n \"demos_per_split\": {\n  \"test_iid\": 99,\n  \"test_web\": 211,\n  \"test_cat\": 222,\n  \"test_geo\": 290,\n  \"test_vis\": 443\n },\n \"calibration_retrained_identically\": true,\n \"raw_not_required\": true\n}\n",
+   "stderr": ""
+  },
+  {
+   "entry": "handoff/verify.py",
+   "exit": 0,
+   "stdout": "Backend attribution verified {\"gpu_only_issue_pairs\": 87, \"strict_assignments\": {\"CPU_after_CUDA_fault\": 9, \"GPU\": 183}, \"unique_native_calls\": 1464}\nPASS complete offline audit {\"assignments\": 1536, \"labels\": 1441, \"raw_http_reports\": 1441, \"receipts\": 1441}\nOriginal official report bytes verified against SHA-256 and source MD5 or Git blob hashes. Repository tests were not rerun.\n",
+   "stderr": ""
+  },
+  {
+   "entry": "handoff/verify_patch_identity.py",
+   "exit": 0,
+   "stdout": "{\n  \"utc\": \"2026-11-17T15:41:43.691744+00:00\",\n  \"passed\": true,\n  \"analysis_status\": \"Post-result exploratory analysis. This verifier fixes the gate before reading grade files.\",\n  \"source_flips\": 77,\n  \"distinct_patch_flips\": 67,\n  \"equal_full_patches\": 10,\n  \"no_memory_position_B\": 173,\n  \"no_memory_assignments\": 192,\n  \"incremental_tokens\": 178134,\n  \"total_tokens\": 402580,\n  \"gate_mask_sha256_before_loading_grades_in_verifier\": \"1636b7106cd57d64ee69c9fcd26e226367a69fb0496129fa04c6fd744dd0a4ef\",\n  \"gating_uses_outcome_labels\": false,\n  \"registered_outcome_vector_unchanged\": true,\n  \"all_patch_identity_fields_recomputed\": true\n}\n",
+   "stderr": ""
+  },
+  {
+   "entry": "handoff/attestation/external/verify.py",
+   "exit": 0,
+   "stdout": "PASS 984 sampled pairs {'known': 984, 'byte_same': 945, 'byte_different': 3, 'signed_different': 2, 'patchid_different': 2} git independently rechecked True\nRaw trajectory payloads were discarded; their fetch-time SHA/MD5 receipts are preserved. Offline verification checks stored projections, not original trace bodies.\n",
+   "stderr": ""
+  }
+ ],
+ "runtime": {
+  "actual_by_experiment": {
+   "original": {
+    "prompt_tokens": 657024,
+    "completion_tokens": 1028,
+    "calls": 514
+   },
+   "clean": {
+    "prompt_tokens": 714197,
+    "completion_tokens": 1132,
+    "calls": 566
+   },
+   "permuted_control": {
+    "prompt_tokens": 251766,
+    "completion_tokens": 384,
+    "calls": 192
+   },
+   "strict_attribution": {
+    "prompt_tokens": 243038,
+    "completion_tokens": 384,
+    "calls": 192
+   }
+  },
+  "native_calls": 1464,
+  "all_saved_responses_success": true,
+  "cuda_illegal_access_incidents": 1,
+  "headroom_stops": 0,
+  "telemetry_samples": 452,
+  "peak_gpu_all_processes_MiB": 18836.0,
+  "min_host_available_MiB": 2204.859375
+ },
+ "source": "D:\\CodexResearch\\x20-session4-offline-check-v2",
+ "used_only_packaged_data": true,
+ "network_requests": 0,
+ "gpu_inference_requests": 0
+}

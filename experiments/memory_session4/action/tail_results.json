@@ -1,0 +1,182 @@
+{
+ "n": 3687,
+ "paired": {
+  "glm_type vs glm": {
+   "brier": {
+    "difference": -0.007814700527737037,
+    "macro_project_difference": -0.006943628492103568,
+    "project_boot95": [
+     -0.014232365317649768,
+     -0.0005865755114678176
+    ],
+    "projects": 1685
+   },
+   "rescues": {
+    "difference": 0.01762950908597776,
+    "macro_project_difference": 0.01591154509511553,
+    "project_boot95": [
+     0.0035822540644805732,
+     0.032042351629980495
+    ],
+    "projects": 1685
+   }
+  },
+  "typed vs glm_type": {
+   "brier": {
+    "difference": 0.0070212326477601264,
+    "macro_project_difference": 0.0023913819095797407,
+    "project_boot95": [
+     -0.0017434203174254547,
+     0.015310422039031412
+    ],
+    "projects": 1685
+   },
+   "rescues": {
+    "difference": -0.0010848928668294006,
+    "macro_project_difference": 0.010216010304484841,
+    "project_boot95": [
+     -0.016985710434079267,
+     0.014488791689447786
+    ],
+    "projects": 1685
+   }
+  },
+  "typed vs global_type": {
+   "brier": {
+    "difference": -0.0024765615403325556,
+    "macro_project_difference": 0.0017679039649618183,
+    "project_boot95": [
+     -0.012497828230072595,
+     0.0061387504199579696
+    ],
+    "projects": 1685
+   },
+   "rescues": {
+    "difference": 0.0013561160835367507,
+    "macro_project_difference": -0.008751951626745153,
+    "project_boot95": [
+     -0.017791584298220843,
+     0.024213679480778832
+    ],
+    "projects": 1685
+   }
+  },
+  "typed vs repo_status": {
+   "brier": {
+    "difference": -0.0031570292641481855,
+    "macro_project_difference": -0.0042467578685416105,
+    "project_boot95": [
+     -0.006287425110311707,
+     0.0003591999873110015
+    ],
+    "projects": 1685
+   },
+   "rescues": {
+    "difference": 0.014917276918904258,
+    "macro_project_difference": 0.02092598827032886,
+    "project_boot95": [
+     0.0017103762827822121,
+     0.026330532212885154
+    ],
+    "projects": 1685
+   }
+  },
+  "typed_if_uncertain vs typed": {
+   "brier": {
+    "difference": 0.000522601807542861,
+    "macro_project_difference": 4.4214579856881214e-05,
+    "project_boot95": [
+     -0.0008252885181758931,
+     0.0021383078462560955
+    ],
+    "projects": 1685
+   },
+   "rescues": {
+    "difference": -0.0021697857336588013,
+    "macro_project_difference": 0.00562729216369482,
+    "project_boot95": [
+     -0.025726781579624387,
+     0.013663535439795047
+    ],
+    "projects": 1685
+   }
+  }
+ },
+ "projects": 1685,
+ "rates": {
+  "glm": {
+   "brier": 0.23402982756222007,
+   "hours": 159.20138888888889,
+   "recovered": 427,
+   "selected": 737
+  },
+  "glm_type": {
+   "brier": 0.22621512703448304,
+   "hours": 176.6625,
+   "recovered": 492,
+   "selected": 737
+  },
+  "global": {
+   "brier": 0.25199920454826796,
+   "hours": 123.985,
+   "recovered": 366,
+   "selected": 737
+  },
+  "global_type": {
+   "brier": 0.2357129212225757,
+   "hours": 173.98611111111111,
+   "recovered": 483,
+   "selected": 737
+  },
+  "random": {
+   "brier": 0.25,
+   "hours": 123.985,
+   "recovered": 366,
+   "selected": 737
+  },
+  "recent8": {
+   "brier": 0.2398964835908316,
+   "hours": 162.14083333333335,
+   "recovered": 412,
+   "selected": 737
+  },
+  "repo": {
+   "brier": 0.23525646007643652,
+   "hours": 146.74833333333333,
+   "recovered": 452,
+   "selected": 737
+  },
+  "repo_status": {
+   "brier": 0.23639338894639136,
+   "hours": 139.19611111111112,
+   "recovered": 433,
+   "selected": 737
+  },
+  "typed": {
+   "brier": 0.23323635968224316,
+   "hours": 173.47444444444446,
+   "recovered": 488,
+   "selected": 737
+  },
+  "typed_if_sparse": {
+   "brier": 0.23373541476846224,
+   "hours": 171.4036111111111,
+   "recovered": 477,
+   "selected": 737
+  },
+  "typed_if_uncertain": {
+   "brier": 0.23375896148978603,
+   "hours": 171.6861111111111,
+   "recovered": 480,
+   "selected": 737
+  }
+ },
+ "reads": {
+  "always": 3687,
+  "sparse": 3415,
+  "uncertain": 3313
+ },
+ "recoveries": 1879,
+ "time_end": 1571056034000,
+ "time_start": 1570664401000
+}

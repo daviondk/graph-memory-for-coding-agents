@@ -1,0 +1,1829 @@
+{
+ "n": 535,
+ "issues": 129,
+ "repos": [
+  "astropy/astropy",
+  "django/django",
+  "matplotlib/matplotlib",
+  "pydata/xarray",
+  "pytest-dev/pytest",
+  "scikit-learn/scikit-learn",
+  "sphinx-doc/sphinx",
+  "sympy/sympy"
+ ],
+ "anchor": {
+  "agrees": 318,
+  "unlocated": 217
+ },
+ "reachable": 318,
+ "arms": {
+  "lru": {
+   "full": 296,
+   "fraction": 0.5561804144656644,
+   "start": 297
+  },
+  "point": {
+   "full": 277,
+   "fraction": 0.5436074579919435,
+   "start": 295
+  },
+  "typed": {
+   "full": 295,
+   "fraction": 0.5592023406184315,
+   "start": 299
+  },
+  "mixed": {
+   "full": 299,
+   "fraction": 0.5628114781060737,
+   "start": 300
+  },
+  "dict_lru": {
+   "full": 299,
+   "fraction": 0.5618679979102572,
+   "start": 299
+  },
+  "dict_mixed": {
+   "full": 303,
+   "fraction": 0.5702792128635282,
+   "start": 303
+  },
+  "dict_center": {
+   "full": 303,
+   "fraction": 0.5704015982662873,
+   "start": 303
+  },
+  "dict_neighbor": {
+   "full": 303,
+   "fraction": 0.5703125907006443,
+   "start": 303
+  },
+  "cal_pages": {
+   "full": 302,
+   "fraction": 0.5692979044523132,
+   "start": 305
+  },
+  "cal_center": {
+   "full": 302,
+   "fraction": 0.5697651941719394,
+   "start": 305
+  },
+  "cal_neighbor": {
+   "full": 303,
+   "fraction": 0.5716343530504441,
+   "start": 306
+  },
+  "plain_neighbor": {
+   "full": 299,
+   "fraction": 0.5630896267487083,
+   "start": 300
+  }
+ },
+ "operation_cost": {
+  "lru": {
+   "mean_bytes": 3535.3169253152278,
+   "max_bytes": 4096,
+   "mean_ms": 0.6593014185257032,
+   "median_ms": 0.52485,
+   "p95_ms": 1.7859099999999943,
+   "overflows": 1013,
+   "mean_compressions": 1.4370756547041708
+  },
+  "point": {
+   "mean_bytes": 3444.148642095053,
+   "max_bytes": 4096,
+   "mean_ms": 0.8621895853540252,
+   "median_ms": 0.50915,
+   "p95_ms": 3.5341549999999997,
+   "overflows": 1016,
+   "mean_compressions": 1.4351357904946653
+  },
+  "typed": {
+   "mean_bytes": 3530.4555043646947,
+   "max_bytes": 4096,
+   "mean_ms": 0.9266145004849661,
+   "median_ms": 0.5165,
+   "p95_ms": 3.9315699999999993,
+   "overflows": 1045,
+   "mean_compressions": 1.4459262851600387
+  },
+  "mixed": {
+   "mean_bytes": 3547.0562560620756,
+   "max_bytes": 4096,
+   "mean_ms": 0.7062187560620756,
+   "median_ms": 0.5127,
+   "p95_ms": 1.9215899999999997,
+   "overflows": 1030,
+   "mean_compressions": 1.4458050436469447
+  },
+  "dict_lru": {
+   "mean_bytes": 3519.296314258002,
+   "max_bytes": 4096,
+   "mean_ms": 0.7446173011639186,
+   "median_ms": 0.5865,
+   "p95_ms": 1.9180049999999993,
+   "overflows": 986,
+   "mean_compressions": 1.4131910766246363
+  },
+  "dict_mixed": {
+   "mean_bytes": 3531.8796071774977,
+   "max_bytes": 4096,
+   "mean_ms": 0.7941000727449078,
+   "median_ms": 0.5833,
+   "p95_ms": 2.0356149999999995,
+   "overflows": 998,
+   "mean_compressions": 1.4253152279340446
+  },
+  "dict_center": {
+   "mean_bytes": 3572.580019398642,
+   "max_bytes": 4096,
+   "mean_ms": 1.2055420586808923,
+   "median_ms": 0.5903,
+   "p95_ms": 4.953579999999996,
+   "overflows": 1338,
+   "mean_compressions": 2.63421435499515
+  },
+  "dict_neighbor": {
+   "mean_bytes": 3572.3667555771094,
+   "max_bytes": 4096,
+   "mean_ms": 1.1985064742967992,
+   "median_ms": 0.5798,
+   "p95_ms": 4.90906,
+   "overflows": 1346,
+   "mean_compressions": 2.638094083414161
+  },
+  "cal_pages": {
+   "mean_bytes": 3530.540252182347,
+   "max_bytes": 4096,
+   "mean_ms": 0.9089663676042676,
+   "median_ms": 0.5803,
+   "p95_ms": 3.413365,
+   "overflows": 994,
+   "mean_compressions": 1.4211930164888458
+  },
+  "cal_center": {
+   "mean_bytes": 3570.9079776915614,
+   "max_bytes": 4096,
+   "mean_ms": 1.4041524975751696,
+   "median_ms": 0.59065,
+   "p95_ms": 6.219474999999999,
+   "overflows": 1368,
+   "mean_compressions": 2.6869544131910765
+  },
+  "cal_neighbor": {
+   "mean_bytes": 3571.427861299709,
+   "max_bytes": 4096,
+   "mean_ms": 1.3962147793404462,
+   "median_ms": 0.5831,
+   "p95_ms": 6.2042649999999995,
+   "overflows": 1358,
+   "mean_compressions": 2.67725509214355
+  },
+  "plain_neighbor": {
+   "mean_bytes": 3588.952715809893,
+   "max_bytes": 4096,
+   "mean_ms": 1.071852788554801,
+   "median_ms": 0.5287,
+   "p95_ms": 4.19608,
+   "overflows": 1374,
+   "mean_compressions": 2.70041222114452
+  }
+ },
+ "checks": {
+  "byte_checks": 98976,
+  "decodes": 23844
+ },
+ "comparisons": {
+  "dict_neighbor-lru": {
+   "delta": 0.013084112149532711,
+   "net": 7,
+   "wins": 9,
+   "losses": 2,
+   "mean_issue": 0.019499815430047987,
+   "mean_repo": 0.027020687645687644,
+   "ci_issues_within_repos": [
+    0.0,
+    0.02872557213314348
+   ],
+   "ci_repos": [
+    0.0028328611898017,
+    0.03893762807377045
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     1,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     4,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 0.125
+  },
+  "dict_neighbor-point": {
+   "delta": 0.048598130841121495,
+   "net": 26,
+   "wins": 29,
+   "losses": 3,
+   "mean_issue": 0.05583548664944014,
+   "mean_repo": 0.03719731048678417,
+   "ci_issues_within_repos": [
+    0.026208641091347604,
+    0.0724907063197026
+   ],
+   "ci_repos": [
+    0.031914893617021274,
+    0.07214480507406565
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     6,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     6,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     2,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     8,
+     135
+    ],
+    "sympy/sympy": [
+     4,
+     132
+    ]
+   },
+   "signflip_repo": 0.0625
+  },
+  "dict_neighbor-typed": {
+   "delta": 0.014953271028037384,
+   "net": 8,
+   "wins": 12,
+   "losses": 4,
+   "mean_issue": 0.019272179155900085,
+   "mean_repo": 0.002482526002262845,
+   "ci_issues_within_repos": [
+    -0.0018051357544342967,
+    0.03313891185205596
+   ],
+   "ci_repos": [
+    0.0,
+    0.043011303543098886
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     -1,
+     8
+    ],
+    "django/django": [
+     0,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     5,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     2,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 0.25
+  },
+  "dict_neighbor-mixed": {
+   "delta": 0.007476635514018692,
+   "net": 4,
+   "wins": 4,
+   "losses": 0,
+   "mean_issue": 0.0048449612403100775,
+   "mean_repo": 0.008044871794871795,
+   "ci_issues_within_repos": [
+    0.0,
+    0.02045075458980246
+   ],
+   "ci_repos": [
+    0.0,
+    0.02512562814070352
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     1,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     0,
+     132
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "dict_neighbor-dict_lru": {
+   "delta": 0.007476635514018692,
+   "net": 4,
+   "wins": 6,
+   "losses": 2,
+   "mean_issue": 0.016592838685861942,
+   "mean_repo": 0.01980914918414918,
+   "ci_issues_within_repos": [
+    -0.00196078431372549,
+    0.018292682926829267
+   ],
+   "ci_repos": [
+    0.0025806451612903226,
+    0.017142857142857144
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     1,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     1,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 0.125
+  },
+  "dict_neighbor-dict_mixed": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 0,
+   "losses": 0,
+   "mean_issue": 0.0,
+   "mean_repo": 0.0,
+   "ci_issues_within_repos": [
+    0.0,
+    0.0
+   ],
+   "ci_repos": [
+    0.0,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     0,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     0,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "dict_neighbor-dict_center": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 0,
+   "losses": 0,
+   "mean_issue": 0.0,
+   "mean_repo": 0.0,
+   "ci_issues_within_repos": [
+    0.0,
+    0.0
+   ],
+   "ci_repos": [
+    0.0,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     0,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     0,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "dict_neighbor-cal_center": {
+   "delta": 0.001869158878504673,
+   "net": 1,
+   "wins": 8,
+   "losses": 7,
+   "mean_issue": 0.0048572659037775315,
+   "mean_repo": -0.006449745430008587,
+   "ci_issues_within_repos": [
+    -0.012259463002159595,
+    0.018083182640144666
+   ],
+   "ci_repos": [
+    -0.022728449087144737,
+    0.028927925767414372
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     -1,
+     8
+    ],
+    "django/django": [
+     -5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     3,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_pages-lru": {
+   "delta": 0.011214953271028037,
+   "net": 6,
+   "wins": 10,
+   "losses": 4,
+   "mean_issue": 0.013673557278208437,
+   "mean_repo": 0.03504094589620905,
+   "ci_issues_within_repos": [
+    -0.0017301787673984876,
+    0.02430010805482359
+   ],
+   "ci_repos": [
+    -0.008547619047619049,
+    0.03614457831325301
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     2,
+     8
+    ],
+    "django/django": [
+     5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     2,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -2,
+     132
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "cal_pages-point": {
+   "delta": 0.04672897196261682,
+   "net": 25,
+   "wins": 29,
+   "losses": 4,
+   "mean_issue": 0.05000922849760059,
+   "mean_repo": 0.04521756873730558,
+   "ci_issues_within_repos": [
+    0.025728987993138937,
+    0.06944578507078505
+   ],
+   "ci_repos": [
+    0.019046972049689442,
+    0.06587615283267458
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     10,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     4,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     8,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 0.03125
+  },
+  "cal_pages-typed": {
+   "delta": 0.013084112149532711,
+   "net": 7,
+   "wins": 10,
+   "losses": 3,
+   "mean_issue": 0.013445921004060538,
+   "mean_repo": 0.010502784252784253,
+   "ci_issues_within_repos": [
+    0.0,
+    0.0284200854885991
+   ],
+   "ci_repos": [
+    -0.00641051364365971,
+    0.031578947368421054
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     4,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     2,
+     135
+    ],
+    "sympy/sympy": [
+     -2,
+     132
+    ]
+   },
+   "signflip_repo": 0.375
+  },
+  "cal_pages-mixed": {
+   "delta": 0.005607476635514018,
+   "net": 3,
+   "wins": 7,
+   "losses": 4,
+   "mean_issue": -0.0009812969115294713,
+   "mean_repo": 0.0160651300453932,
+   "ci_issues_within_repos": [
+    -0.005747402210602951,
+    0.01711059169748424
+   ],
+   "ci_repos": [
+    -0.015152153916909397,
+    0.027777777777777776
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     1,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -3,
+     132
+    ]
+   },
+   "signflip_repo": 0.75
+  },
+  "cal_pages-dict_lru": {
+   "delta": 0.005607476635514018,
+   "net": 3,
+   "wins": 10,
+   "losses": 7,
+   "mean_issue": 0.01076658053402239,
+   "mean_repo": 0.02782940743467059,
+   "ci_issues_within_repos": [
+    -0.008976660682226212,
+    0.02008082581582611
+   ],
+   "ci_repos": [
+    -0.013808158912145046,
+    0.029411764705882353
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     2,
+     8
+    ],
+    "django/django": [
+     5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -1,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -2,
+     132
+    ]
+   },
+   "signflip_repo": 0.8125
+  },
+  "cal_pages-dict_mixed": {
+   "delta": -0.001869158878504673,
+   "net": -1,
+   "wins": 6,
+   "losses": 7,
+   "mean_issue": -0.005826258151839547,
+   "mean_repo": 0.008020258250521408,
+   "ci_issues_within_repos": [
+    -0.014814814814814815,
+    0.010080729872594197
+   ],
+   "ci_repos": [
+    -0.02320718337137719,
+    0.018728155567544723
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     4,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -2,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -3,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_pages-dict_center": {
+   "delta": -0.001869158878504673,
+   "net": -1,
+   "wins": 6,
+   "losses": 7,
+   "mean_issue": -0.005826258151839547,
+   "mean_repo": 0.008020258250521408,
+   "ci_issues_within_repos": [
+    -0.014814814814814815,
+    0.010080729872594197
+   ],
+   "ci_repos": [
+    -0.02320718337137719,
+    0.018728155567544723
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     4,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -2,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -3,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_pages-cal_center": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 1,
+   "losses": 1,
+   "mean_issue": -0.0009689922480620155,
+   "mean_repo": 0.0015705128205128205,
+   "ci_issues_within_repos": [
+    -0.0056179775280898875,
+    0.005357142857142857
+   ],
+   "ci_repos": [
+    -0.004431314623338257,
+    0.007751937984496124
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     -1,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     1,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     0,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_neighbor-lru": {
+   "delta": 0.013084112149532711,
+   "net": 7,
+   "wins": 11,
+   "losses": 4,
+   "mean_issue": 0.016580534022394483,
+   "mean_repo": 0.034417402772665924,
+   "ci_issues_within_repos": [
+    0.001763668430335097,
+    0.02583062510545582
+   ],
+   "ci_repos": [
+    -0.005556722689075629,
+    0.037209302325581395
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     2,
+     8
+    ],
+    "django/django": [
+     6,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     1,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -1,
+     132
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "cal_neighbor-point": {
+   "delta": 0.048598130841121495,
+   "net": 26,
+   "wins": 29,
+   "losses": 3,
+   "mean_issue": 0.05291620524178663,
+   "mean_repo": 0.04459402561376245,
+   "ci_issues_within_repos": [
+    0.028960124579881768,
+    0.07058823529411765
+   ],
+   "ci_repos": [
+    0.022222222222222223,
+    0.06690140845070422
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     11,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     8,
+     135
+    ],
+    "sympy/sympy": [
+     2,
+     132
+    ]
+   },
+   "signflip_repo": 0.03125
+  },
+  "cal_neighbor-typed": {
+   "delta": 0.014953271028037384,
+   "net": 8,
+   "wins": 10,
+   "losses": 2,
+   "mean_issue": 0.01635289774824658,
+   "mean_repo": 0.009879241129241129,
+   "ci_issues_within_repos": [
+    0.0035650623885918,
+    0.029296875
+   ],
+   "ci_repos": [
+    -0.0019455252918287938,
+    0.029535864978902954
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     2,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     2,
+     135
+    ],
+    "sympy/sympy": [
+     -1,
+     132
+    ]
+   },
+   "signflip_repo": 0.25
+  },
+  "cal_neighbor-mixed": {
+   "delta": 0.007476635514018692,
+   "net": 4,
+   "wins": 8,
+   "losses": 4,
+   "mean_issue": 0.0019256798326565752,
+   "mean_repo": 0.01544158692185008,
+   "ci_issues_within_repos": [
+    -0.003597284334694407,
+    0.018315018315018316
+   ],
+   "ci_repos": [
+    -0.011922651868224336,
+    0.03023317383808886
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     6,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -2,
+     132
+    ]
+   },
+   "signflip_repo": 0.875
+  },
+  "cal_neighbor-dict_lru": {
+   "delta": 0.007476635514018692,
+   "net": 4,
+   "wins": 11,
+   "losses": 7,
+   "mean_issue": 0.013673557278208437,
+   "mean_repo": 0.027205864311127464,
+   "ci_issues_within_repos": [
+    -0.009329231650735088,
+    0.02355072463768116
+   ],
+   "ci_repos": [
+    -0.015625,
+    0.03299702277159941
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     2,
+     8
+    ],
+    "django/django": [
+     6,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -2,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -1,
+     132
+    ]
+   },
+   "signflip_repo": 0.8125
+  },
+  "cal_neighbor-dict_mixed": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 7,
+   "losses": 7,
+   "mean_issue": -0.0029192814076535005,
+   "mean_repo": 0.007396715126978284,
+   "ci_issues_within_repos": [
+    -0.015707063434102386,
+    0.013769617276756066
+   ],
+   "ci_repos": [
+    -0.02610966057441253,
+    0.02304147465437788
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -2,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_neighbor-dict_center": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 7,
+   "losses": 7,
+   "mean_issue": -0.0029192814076535005,
+   "mean_repo": 0.007396715126978284,
+   "ci_issues_within_repos": [
+    -0.015707063434102386,
+    0.013769617276756066
+   ],
+   "ci_repos": [
+    -0.02610966057441253,
+    0.02304147465437788
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     -1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     -2,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "cal_neighbor-cal_center": {
+   "delta": 0.001869158878504673,
+   "net": 1,
+   "wins": 1,
+   "losses": 0,
+   "mean_issue": 0.001937984496124031,
+   "mean_repo": 0.000946969696969697,
+   "ci_issues_within_repos": [
+    0.0,
+    0.006012024048096192
+   ],
+   "ci_repos": [
+    0.0,
+    0.005263157894736842
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     0,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "plain_neighbor-lru": {
+   "delta": 0.005607476635514018,
+   "net": 3,
+   "wins": 5,
+   "losses": 2,
+   "mean_issue": 0.01465485418973791,
+   "mean_repo": 0.01897581585081585,
+   "ci_issues_within_repos": [
+    -0.0037243947858473,
+    0.015625
+   ],
+   "ci_repos": [
+    0.0010951708091411945,
+    0.01634877384196185
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     0,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     1,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 0.25
+  },
+  "plain_neighbor-point": {
+   "delta": 0.041121495327102804,
+   "net": 22,
+   "wins": 25,
+   "losses": 3,
+   "mean_issue": 0.05099052540913006,
+   "mean_repo": 0.029152438691912377,
+   "ci_issues_within_repos": [
+    0.020689655172413793,
+    0.06284658040665435
+   ],
+   "ci_repos": [
+    0.029209621993127148,
+    0.054187192118226604
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     5,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     2,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     8,
+     135
+    ],
+    "sympy/sympy": [
+     4,
+     132
+    ]
+   },
+   "signflip_repo": 0.0625
+  },
+  "plain_neighbor-typed": {
+   "delta": 0.007476635514018692,
+   "net": 4,
+   "wins": 9,
+   "losses": 5,
+   "mean_issue": 0.01442721791559001,
+   "mean_repo": -0.005562345792608949,
+   "ci_issues_within_repos": [
+    -0.006073491655969191,
+    0.022336769759450172
+   ],
+   "ci_repos": [
+    -0.005000208681135225,
+    0.02064927228845169
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     -1,
+     8
+    ],
+    "django/django": [
+     -1,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     2,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     2,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 0.40625
+  },
+  "plain_neighbor-mixed": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 0,
+   "losses": 0,
+   "mean_issue": 0.0,
+   "mean_repo": 0.0,
+   "ci_issues_within_repos": [
+    0.0,
+    0.0
+   ],
+   "ci_repos": [
+    0.0,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     0,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     0,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "plain_neighbor-dict_lru": {
+   "delta": 0.0,
+   "net": 0,
+   "wins": 5,
+   "losses": 5,
+   "mean_issue": 0.011747877445551863,
+   "mean_repo": 0.011764277389277388,
+   "ci_issues_within_repos": [
+    -0.015414258188824663,
+    0.0136465593206761
+   ],
+   "ci_repos": [
+    -0.012396694214876033,
+    0.010135994044892339
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     1,
+     8
+    ],
+    "django/django": [
+     0,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -2,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     1,
+     132
+    ]
+   },
+   "signflip_repo": 1.0
+  },
+  "plain_neighbor-dict_mixed": {
+   "delta": -0.007476635514018692,
+   "net": -4,
+   "wins": 0,
+   "losses": 4,
+   "mean_issue": -0.0048449612403100775,
+   "mean_repo": -0.008044871794871795,
+   "ci_issues_within_repos": [
+    -0.02045075458980247,
+    0.0
+   ],
+   "ci_repos": [
+    -0.02512562814070352,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     -1,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     0,
+     132
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "plain_neighbor-dict_center": {
+   "delta": -0.007476635514018692,
+   "net": -4,
+   "wins": 0,
+   "losses": 4,
+   "mean_issue": -0.0048449612403100775,
+   "mean_repo": -0.008044871794871795,
+   "ci_issues_within_repos": [
+    -0.02045075458980247,
+    0.0
+   ],
+   "ci_repos": [
+    -0.02512562814070352,
+    0.0
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     0,
+     8
+    ],
+    "django/django": [
+     -1,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     -3,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     0,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     0,
+     132
+    ]
+   },
+   "signflip_repo": 0.5
+  },
+  "plain_neighbor-cal_center": {
+   "delta": -0.005607476635514018,
+   "net": -3,
+   "wins": 5,
+   "losses": 8,
+   "mean_issue": 1.2304663467455843e-05,
+   "mean_repo": -0.014494617224880383,
+   "ci_issues_within_repos": [
+    -0.01694915254237288,
+    0.0056925996204933585
+   ],
+   "ci_repos": [
+    -0.03023317383808887,
+    0.01653167585704263
+   ],
+   "per_repo": {
+    "astropy/astropy": [
+     -1,
+     8
+    ],
+    "django/django": [
+     -6,
+     150
+    ],
+    "matplotlib/matplotlib": [
+     0,
+     52
+    ],
+    "pydata/xarray": [
+     0,
+     12
+    ],
+    "pytest-dev/pytest": [
+     0,
+     8
+    ],
+    "scikit-learn/scikit-learn": [
+     1,
+     38
+    ],
+    "sphinx-doc/sphinx": [
+     0,
+     135
+    ],
+    "sympy/sympy": [
+     3,
+     132
+    ]
+   },
+   "signflip_repo": 0.875
+  }
+ }
+}

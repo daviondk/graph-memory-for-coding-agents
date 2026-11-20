@@ -1,0 +1,518 @@
+{
+ "actual_actions": 11912,
+ "contrasts": {
+  "cursor-pose_cycle": {
+   "delta_pp": 0.0,
+   "exact_discordance_p": 1,
+   "floorplans": 4,
+   "losses": 0,
+   "paired_floorplan_cluster95": [
+    0.0,
+    0.0
+   ],
+   "paired_task_boot95": [
+    0.0,
+    0.0
+   ],
+   "ties": 134,
+   "wins": 0
+  },
+  "full-pose_cycle": {
+   "delta_pp": 0.0,
+   "exact_discordance_p": 1,
+   "floorplans": 4,
+   "losses": 0,
+   "paired_floorplan_cluster95": [
+    0.0,
+    0.0
+   ],
+   "paired_task_boot95": [
+    0.0,
+    0.0
+   ],
+   "ties": 134,
+   "wins": 0
+  },
+  "pose_cycle-none": {
+   "delta_pp": 65.67164179104478,
+   "exact_discordance_p": 6.462348535570529e-27,
+   "floorplans": 4,
+   "losses": 0,
+   "paired_floorplan_cluster95": [
+    47.05882352941177,
+    77.27272727272727
+   ],
+   "paired_task_boot95": [
+    57.46268656716418,
+    73.13432835820896
+   ],
+   "ties": 46,
+   "wins": 88
+  },
+  "trained-full": {
+   "delta_pp": -7.462686567164179,
+   "exact_discordance_p": 0.001953125,
+   "floorplans": 4,
+   "losses": 10,
+   "paired_floorplan_cluster95": [
+    -26.31578947368421,
+    0.0
+   ],
+   "paired_task_boot95": [
+    -11.940298507462687,
+    -3.7313432835820897
+   ],
+   "ties": 124,
+   "wins": 0
+  },
+  "trained-pose_cycle": {
+   "delta_pp": -7.462686567164179,
+   "exact_discordance_p": 0.001953125,
+   "floorplans": 4,
+   "losses": 10,
+   "paired_floorplan_cluster95": [
+    -26.31578947368421,
+    0.0
+   ],
+   "paired_task_boot95": [
+    -11.940298507462687,
+    -3.7313432835820897
+   ],
+   "ties": 124,
+   "wins": 0
+  }
+ },
+ "families": {
+  "look_at_obj_in_light": {
+   "arms": {
+    "cursor": {
+     "attempts": 222,
+     "max_extra_search_entries": 1,
+     "mean_capped_steps": 12.333333333333334,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 18
+    },
+    "full": {
+     "attempts": 169,
+     "max_extra_search_entries": 7,
+     "mean_capped_steps": 9.38888888888889,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 18
+    },
+    "none": {
+     "attempts": 712,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 39.55555555555556,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 4
+    },
+    "pose_cycle": {
+     "attempts": 222,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 12.333333333333334,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 18
+    },
+    "trained": {
+     "attempts": 254,
+     "max_extra_search_entries": 9,
+     "mean_capped_steps": 14.11111111111111,
+     "nothing_happens": 141,
+     "unrecognized": 141,
+     "won": 15
+    }
+   },
+   "n": 18
+  },
+  "pick_and_place_simple": {
+   "arms": {
+    "cursor": {
+     "attempts": 293,
+     "max_extra_search_entries": 1,
+     "mean_capped_steps": 12.208333333333334,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 24
+    },
+    "full": {
+     "attempts": 293,
+     "max_extra_search_entries": 24,
+     "mean_capped_steps": 12.208333333333334,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 24
+    },
+    "none": {
+     "attempts": 699,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 29.125,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 11
+    },
+    "pose_cycle": {
+     "attempts": 293,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 12.208333333333334,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 24
+    },
+    "trained": {
+     "attempts": 396,
+     "max_extra_search_entries": 20,
+     "mean_capped_steps": 16.5,
+     "nothing_happens": 144,
+     "unrecognized": 144,
+     "won": 21
+    }
+   },
+   "n": 24
+  },
+  "pick_clean_then_place_in_recep": {
+   "arms": {
+    "cursor": {
+     "attempts": 481,
+     "max_extra_search_entries": 1,
+     "mean_capped_steps": 15.516129032258064,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 31
+    },
+    "full": {
+     "attempts": 481,
+     "max_extra_search_entries": 16,
+     "mean_capped_steps": 15.516129032258064,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 31
+    },
+    "none": {
+     "attempts": 1201,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 38.74193548387097,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 8
+    },
+    "pose_cycle": {
+     "attempts": 481,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 15.516129032258064,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 31
+    },
+    "trained": {
+     "attempts": 281,
+     "max_extra_search_entries": 8,
+     "mean_capped_steps": 9.064516129032258,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 31
+    }
+   },
+   "n": 31
+  },
+  "pick_cool_then_place_in_recep": {
+   "arms": {
+    "cursor": {
+     "attempts": 275,
+     "max_extra_search_entries": 1,
+     "mean_capped_steps": 13.095238095238095,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 21
+    },
+    "full": {
+     "attempts": 275,
+     "max_extra_search_entries": 16,
+     "mean_capped_steps": 13.095238095238095,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 21
+    },
+    "none": {
+     "attempts": 610,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 29.047619047619047,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 10
+    },
+    "pose_cycle": {
+     "attempts": 275,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 13.095238095238095,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 21
+    },
+    "trained": {
+     "attempts": 186,
+     "max_extra_search_entries": 6,
+     "mean_capped_steps": 8.857142857142858,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 21
+    }
+   },
+   "n": 21
+  },
+  "pick_heat_then_place_in_recep": {
+   "arms": {
+    "cursor": {
+     "attempts": 267,
+     "max_extra_search_entries": 1,
+     "mean_capped_steps": 11.608695652173912,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 23
+    },
+    "full": {
+     "attempts": 267,
+     "max_extra_search_entries": 21,
+     "mean_capped_steps": 11.608695652173912,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 23
+    },
+    "none": {
+     "attempts": 709,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 30.82608695652174,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 10
+    },
+    "pose_cycle": {
+     "attempts": 267,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 11.608695652173912,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 23
+    },
+    "trained": {
+     "attempts": 222,
+     "max_extra_search_entries": 8,
+     "mean_capped_steps": 9.652173913043478,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 23
+    }
+   },
+   "n": 23
+  },
+  "pick_two_obj_and_place": {
+   "arms": {
+    "cursor": {
+     "attempts": 350,
+     "max_extra_search_entries": 1,
+     "mean_capped_steps": 20.58823529411765,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 17
+    },
+    "full": {
+     "attempts": 267,
+     "max_extra_search_entries": 16,
+     "mean_capped_steps": 15.705882352941176,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 17
+    },
+    "none": {
+     "attempts": 725,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 42.64705882352941,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 3
+    },
+    "pose_cycle": {
+     "attempts": 350,
+     "max_extra_search_entries": 0,
+     "mean_capped_steps": 20.58823529411765,
+     "nothing_happens": 0,
+     "unrecognized": 0,
+     "won": 17
+    },
+    "trained": {
+     "attempts": 389,
+     "max_extra_search_entries": 11,
+     "mean_capped_steps": 22.88235294117647,
+     "nothing_happens": 166,
+     "unrecognized": 166,
+     "won": 13
+    }
+   },
+   "n": 17
+  }
+ },
+ "horizon_sensitivity": {
+  "10": {
+   "cursor": 61,
+   "full": 67,
+   "none": 46,
+   "pose_cycle": 61,
+   "trained": 90
+  },
+  "20": {
+   "cursor": 103,
+   "full": 107,
+   "none": 46,
+   "pose_cycle": 103,
+   "trained": 119
+  },
+  "30": {
+   "cursor": 129,
+   "full": 130,
+   "none": 46,
+   "pose_cycle": 129,
+   "trained": 123
+  },
+  "40": {
+   "cursor": 134,
+   "full": 134,
+   "none": 46,
+   "pose_cycle": 134,
+   "trained": 124
+  },
+  "50": {
+   "cursor": 134,
+   "full": 134,
+   "none": 46,
+   "pose_cycle": 134,
+   "trained": 124
+  }
+ },
+ "identical_to_pose_action_traces": {
+  "cursor": 134,
+  "full": 103,
+  "none": 43,
+  "pose_cycle": 134,
+  "trained": 18
+ },
+ "overall": {
+  "arms": {
+   "cursor": {
+    "attempts": 1888,
+    "max_extra_search_entries": 1,
+    "mean_capped_steps": 14.08955223880597,
+    "nothing_happens": 0,
+    "unrecognized": 0,
+    "won": 134
+   },
+   "full": {
+    "attempts": 1752,
+    "max_extra_search_entries": 24,
+    "mean_capped_steps": 13.074626865671641,
+    "nothing_happens": 0,
+    "unrecognized": 0,
+    "won": 134
+   },
+   "none": {
+    "attempts": 4656,
+    "max_extra_search_entries": 0,
+    "mean_capped_steps": 34.74626865671642,
+    "nothing_happens": 0,
+    "unrecognized": 0,
+    "won": 46
+   },
+   "pose_cycle": {
+    "attempts": 1888,
+    "max_extra_search_entries": 0,
+    "mean_capped_steps": 14.08955223880597,
+    "nothing_happens": 0,
+    "unrecognized": 0,
+    "won": 134
+   },
+   "trained": {
+    "attempts": 1728,
+    "max_extra_search_entries": 20,
+    "mean_capped_steps": 12.895522388059701,
+    "nothing_happens": 451,
+    "unrecognized": 451,
+    "won": 124
+   }
+  },
+  "n": 134
+ },
+ "step_contrasts": {
+  "cursor-pose_cycle": {
+   "equal": 134,
+   "fewer": 0,
+   "floorplan_boot95": [
+    0.0,
+    0.0
+   ],
+   "mean_delta_steps": 0.0,
+   "more": 0,
+   "paired_task_boot95": [
+    0.0,
+    0.0
+   ]
+  },
+  "full-pose_cycle": {
+   "equal": 103,
+   "fewer": 23,
+   "floorplan_boot95": [
+    -3.2666666666666666,
+    -0.17829457364341086
+   ],
+   "mean_delta_steps": -1.0149253731343284,
+   "more": 8,
+   "paired_task_boot95": [
+    -1.708955223880597,
+    -0.40298507462686567
+   ]
+  },
+  "pose_cycle-none": {
+   "equal": 43,
+   "fewer": 88,
+   "floorplan_boot95": [
+    -25.263157894736842,
+    -14.321428571428571
+   ],
+   "mean_delta_steps": -20.65671641791045,
+   "more": 3,
+   "paired_task_boot95": [
+    -23.417910447761194,
+    -17.888059701492537
+   ]
+  },
+  "trained-full": {
+   "equal": 32,
+   "fewer": 56,
+   "floorplan_boot95": [
+    -4.177685950413223,
+    8.552631578947368
+   ],
+   "mean_delta_steps": -0.1791044776119403,
+   "more": 46,
+   "paired_task_boot95": [
+    -2.2388059701492535,
+    2.074626865671642
+   ]
+  },
+  "trained-pose_cycle": {
+   "equal": 23,
+   "fewer": 65,
+   "floorplan_boot95": [
+    -4.385416666666667,
+    6.868421052631579
+   ],
+   "mean_delta_steps": -1.1940298507462686,
+   "more": 46,
+   "paired_task_boot95": [
+    -3.253731343283582,
+    1.0223880597014925
+   ]
+  }
+ }
+}

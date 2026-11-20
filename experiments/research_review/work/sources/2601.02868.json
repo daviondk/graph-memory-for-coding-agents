@@ -1,0 +1,16 @@
+{
+  "id": "2601.02868",
+  "title": "CodeMEM: AST-Guided Adaptive Memory for Repository-Level Iterative Code Generation",
+  "authors": [
+    "Wang, Peiding",
+    "Zhang, Li",
+    "Liu, Fang",
+    "Tao, Chongyang",
+    "Zhu, Yinghao"
+  ],
+  "date": "2026/01/06",
+  "url": "https://arxiv.org/abs/2601.02868",
+  "abstract": "Large language models (LLMs) substantially enhance developer productivity in repository-level code generation through interactive collaboration. However, as interactions progress, repository context must be continuously preserved and updated to integrate newly validated information. Meanwhile, the expanding session history increases cognitive burden, often leading to forgetting and the reintroduction of previously resolved errors. Existing memory management approaches show promise but remain limited by natural language-centric representations. To overcome these limitations, we propose CodeMEM, an AST-guided dynamic memory management system tailored for repository-level iterative code generation. Specifically, CodeMEM introduces the Code Context Memory component that dynamically maintains and updates repository context through AST-guided LLM operations, along with the Code Session Memory that constructs a code-centric representation of interaction history and explicitly detects and mitigates forgetting through AST-based analysis. Experimental results on the instruction-following benchmark CodeIF-Bench and the code generation benchmark CoderEval demonstrate that CodeMEM achieves state-of-the-art performance, improving instruction following by 12.2% for the current turn and 11.5% for the session level, and reducing interaction rounds by 2-3, while maintaining competitive inference latency and token efficiency.",
+  "status": "preprint",
+  "versions": "Submission history From: Peiding Wang [ view email ] [v1] Tue, 6 Jan 2026 09:57:19 UTC (435 KB)"
+}

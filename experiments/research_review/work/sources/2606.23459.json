@@ -1,0 +1,20 @@
+{
+  "id": "2606.23459",
+  "title": "TriggerBench: Investigating Prospective Memory for Large Language Models",
+  "authors": [
+    "Zhang, Tianhua",
+    "Wang, Xinjiang",
+    "Zhang, Qianxi",
+    "Chen, Qi",
+    "Li, Kun",
+    "Chen, Yaoqi",
+    "Wang, Dingdong",
+    "Meng, Helen",
+    "Lu, Yan"
+  ],
+  "date": "2026/06/22",
+  "url": "https://arxiv.org/abs/2606.23459",
+  "abstract": "While Large Language Models (LLMs) are increasingly deployed in long interactions, existing evaluations focus predominantly on retrospective memory (RM) via explicit queries. Prospective memory (PM), the critical ability to spontaneously recall and act on latent constraints without direct prompts, remains largely unevaluated. We introduce TriggerBench, a comprehensive PM benchmark spanning five dimensions across both daily assistants and professional workflows. TriggerBench pairs scenarios with matched RM controls, contrastive positive/negative variants, and overloaded triggers, enabling fine-grained measurement of proactive recall, false-alarm rate, and attentional robustness under a single protocol. Our evaluation yields three key findings. (i) PM shows a precision-recall trade-off and attentional fragility. Though enhanced reasoning significantly improves proactive recall, models may overfit to an \"always-remind\" heuristic. Furthermore, PM accuracy degrades substantially under implicit constraints or triggers overloaded by concurrent user requests, indicating that robust PM remains an open challenge. (ii) PM is notably harder than RM: on identical contexts, RM near-saturates up to 100K tokens, while PM decays sharply as context length scales. (iii) PM may serve as a behavioral probe of spare reasoning capacity. Pairing PM scenarios with AIME-2025 math problems reveals that successful trajectories yield higher PM accuracy than failed ones at the same context length, showing PM tracks spare reasoning budget that token count obscures. Project page: this https URL .",
+  "status": "",
+  "versions": "Submission history From: Tianhua Zhang [ view email ] [v1] Mon, 22 Jun 2026 15:07:36 UTC (810 KB)"
+}

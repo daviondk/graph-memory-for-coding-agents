@@ -1,0 +1,96 @@
+{
+  "transport_smoke_requests": 5,
+  "subsequent_requests": 106,
+  "smoke_ids": [
+    "chatcmpl-0bd2c58cb6e44e94b38439d46eb11be8",
+    "chatcmpl-16c91f4d18bb43b6a0a7a0044d5657ef",
+    "chatcmpl-3c0d493f08ba4be2b74b0425eee4ab16",
+    "chatcmpl-5dde2ad04c9c426eb84f0e2cf0fe0c59",
+    "chatcmpl-d4f4ca7c64ae48ffbfd8f21f9316c5cd"
+  ],
+  "prompt_tokens": 342609,
+  "generated_tokens": 8316,
+  "max_input": 8837,
+  "max_output": 427,
+  "finish_reasons": {
+    "tool_calls": 99,
+    "stop": 7
+  },
+  "observed_call_limits": [
+    512
+  ],
+  "observed_temperatures": [
+    0.5
+  ],
+  "by_replicate": {
+    "0": 106
+  },
+  "tool_counts": {
+    "1": 99,
+    "0": 7
+  },
+  "batch_sizes_per_request": {
+    "4": 20,
+    "3": 3,
+    "1": 45,
+    "2": 38
+  },
+  "caller_latency_s_median": 8.6485,
+  "caller_latency_s_p95": 19.906,
+  "request_span_s": 3046.077849626541,
+  "peak_cuda_bytes": 19641881088,
+  "pre_restart_nonsmoke_requests": 67,
+  "post_restart_requests": 39,
+  "single_worker_memory": {
+    "samples": 31,
+    "minimum_system_commit_headroom_bytes": 20773220352,
+    "minimum_physical_available_bytes": 18017501184,
+    "peak_solver_private_commit_bytes": 24530526208,
+    "peak_solver_rss_bytes": 1647443968,
+    "peak_gpu_used_MiB": 22982.0
+  },
+  "successful_episode_windows": {
+    "episodes": 8,
+    "requests": 75,
+    "prompt_tokens": 243059,
+    "completion_tokens": 6376
+  },
+  "outside_final_episode_windows": {
+    "requests": 31,
+    "prompt_tokens": 99550,
+    "completion_tokens": 1940,
+    "ids": [
+      "chatcmpl-f3f0a7d52f1541eaa6ced228faaf922a",
+      "chatcmpl-e9581f35db3a45acb054394ee360a364",
+      "chatcmpl-5065bdfd299e43ebb831b94c0bb83025",
+      "chatcmpl-8972731ac43e4b7b90825b90646f7f12",
+      "chatcmpl-006397b45b5349fab68a4402da53fcaa",
+      "chatcmpl-2c1542836e364311896686de160652b5",
+      "chatcmpl-338a225b8cf94222bff7faf3c45ead6f",
+      "chatcmpl-3baf9cad178948b0a46f2b1b15b1b363",
+      "chatcmpl-c1f3f5f79c244f6697da12a537eab597",
+      "chatcmpl-cfb9478caa6744d89d3f6120889fb7de",
+      "chatcmpl-bf70616b52d749199926c6f504a551ee",
+      "chatcmpl-58b4ec7e12544e34aa0018ba510a8958",
+      "chatcmpl-86fea9c731684bd7bfde773cd30c29fa",
+      "chatcmpl-040993b9438c439880eb5e42e85a9e07",
+      "chatcmpl-3739748ce6e94aa3a969fa195df41d1d",
+      "chatcmpl-0064475c111843258eaeab17cc6ede16",
+      "chatcmpl-70f9942f0142476bb1e6886b12400609",
+      "chatcmpl-a71af5cacc3c4bf18e3e07e2a8276c3c",
+      "chatcmpl-d18ff82005c540988ff5cdee91bceb9e",
+      "chatcmpl-7ca58277cbce4a27982e9e85ec3c1c1b",
+      "chatcmpl-40edaa3598e54c5ca7f01e68cc198926",
+      "chatcmpl-1a26b87c8f8947829e65e9e1d441ae6a",
+      "chatcmpl-f96768ed52db4b689ed5619fcd4a80b0",
+      "chatcmpl-a4cb0478a2ae451a9f72e77dbbfa6291",
+      "chatcmpl-da5553161d864e68aab390785b70d03c",
+      "chatcmpl-1f3c3f0266f64a60ba2f8d429d5845aa",
+      "chatcmpl-291e6707f4a34e3eb098e6af5dd4d157",
+      "chatcmpl-1d8086d79ca0465a9086c29cc7938fc7",
+      "chatcmpl-54c92fbcd190461abc98c9f70a690e9a",
+      "chatcmpl-5956832d04ce42f1884e559ec81b0c8d",
+      "chatcmpl-ed9a76ffbb264e3eb0a01360515cee48"
+    ]
+  }
+}

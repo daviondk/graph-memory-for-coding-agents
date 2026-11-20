@@ -1,0 +1,74 @@
+{
+ "utc": "2026-11-18T19:29:41.779653+00:00",
+ "candidate": "cal_neighbor",
+ "comparison_same_codec": "dict_mixed",
+ "arms": [
+  "lru",
+  "point",
+  "typed",
+  "mixed",
+  "dict_lru",
+  "dict_mixed",
+  "dict_center",
+  "cal_pages",
+  "cal_center",
+  "cal_neighbor"
+ ],
+ "rankings": {
+  "dict_neighbor": [
+   303,
+   376,
+   -1.1985064742967992
+  ],
+  "cal_pages": [
+   302,
+   377,
+   -0.9089663676042676
+  ],
+  "cal_neighbor": [
+   303,
+   377,
+   -1.3962147793404462
+  ],
+  "plain_neighbor": [
+   299,
+   368,
+   -1.071852788554801
+  ]
+ },
+ "inputs": {
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\PROTOCOL_RU.md": "31b4cc01955776655faa2251ee724f95ab92e770b65cc1f7b08939ef490b7f35",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\choose_roster.py": "59cbaf7709b015bc7e95ed8a278d527f972157e9771a7b123ba04a9fc20cc4d8",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\acquire_data.py": "825e2e56fe00d41a7fdea4d9e41ae4be11d0177f1baf195f27c82e96529f66a0",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\dictionary.py": "31c64a67aac9b0bc33d4099ca8db67e3d417806a787da051c96062bdc1e23af8",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\python_prior.bin": "c5ce37b8700f95d64ec1a8129f4421b9d6b1dcd2415a5291f0e76cd3f0f01fa1",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\risk.py": "aabe7a9a73d5960dca51a430ddfa22c98ac28af8ec57ca1f4ccc75c867934597",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\risk_model.json": "ac3cccf04c1bb029c34302206570fff8360c507c414657cf6c5d46cde526f1fd",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\memory.py": "b612a9004b97b205c6f169f0c086455048adeec4abf3b4690830fffedc7f090c",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\experiment.py": "eae4b57a7df0da501e3965654eb85f0c00452f2ac3b622c13873eea61d081126",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\shared.py": "687dd7b48cee4ce963c2f1200fa78e55a829e6c009554d218f6ef87636a5dc3a",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\audit_controls.py": "19cd6f219a4210b1b7b9a10c7077c3d57716e5eaa09ecfd105b91569e8523295",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\controls_audit.json": "18db9d80d646b9cf11a89e0e719f77577632b3e7345df50712d99520436ebfb0",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\freeze.py": "bfa0cb63d0a604cbad5290e29e0f0c22b3ad0f3969d17d073edb72b699e9be68",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\selection.json": "f109a193cc233aa696238f19360cf6a3ae781ac5f0304dd1d39fa0a297efc3a0",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\receipts.json": "5b55fcef0c47afe71af33326e94c8412983dd7ad908689be8b6b95022f6f9c09",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\panel_A\\results.json": "8e922801b6508b65c1e4fc48b9e2bf288503586a49a2e18c63550125e70283c6",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\panel_B\\results.json": "11d5bd669a1fe721caf92e3d36fce57f9b9c74d1b7a8333201e40e9ce733348f",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_0.jsonl.gz": "43aa0d82b2cef0b5e811351885183fd3185ca149bc7e7c5a1f950447fdc170ba",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_1.jsonl.gz": "79636db8741171f71966b820da71ee85d6d73a7302b60aa75b09bc3afec8d956",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_2.jsonl.gz": "429331ad8266b22b55cf55a3f3d39810d0e20983830037cb5d57fd454d9b8484",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_3.jsonl.gz": "5f034d2e8f8f00dd2b970973e14408a4ac52681351b957f32527fd157ca0d018",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_4.jsonl.gz": "d14f26b6bd8c5209ba971cc00960d293e94b616d2a88e159a68b382548955c74",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_5.jsonl.gz": "b7324cb0dbe2a9e04952de33edbea31c0263190b2239ef3776109542b96fc022",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_6.jsonl.gz": "c6403f6c3e1dadd4a19bde3e8da549a82c1b9f9ce17b3f44f8186f0a64a98c2f",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round4\\writer\\source_7.jsonl.gz": "ee00f16fa84ef298d55aaceca1cab20b841f03a0fb85386077ace19a356606f3",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round3\\real_swe_followup\\writer_followup.py": "47d143e658cffcb0a5a5105a950be70dd5e02d37fb386e6a5f042f10347b4d57",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round3\\real_swe_followup\\transfer_followup.py": "4733bd364ed51c192a9fbb9d06720bb53aae806663c7b0c6b7d0b38b709f2ef6",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round3\\real_swe\\acquire.py": "b5d768ee529da31ab84291e7ebb536164d8e0e6ad0c06d90eca30eaf31200943",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round3\\context\\context.py": "18cc1e54f1a1e14c643f605268a1113da0e4218431626fb92815581434c4ad86",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round2\\span_memory\\run.py": "a0a62037cd1ce42436178c6b6be37a33abc3bf7fdb565f5a5b1748fa6a830d7a",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round2\\span_memory\\width_model.json": "556be0e7f8af845d681a8623ac5d3aa50dd3e618702e5fd9ee3ae8ef7578225f",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round2\\span_memory\\offset.json": "46bfd25b0121892144ead9786d847db732008feaad76fd47db81e7d7c5ae4ed2",
+  "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round2\\edit_memory\\model.json": "9d0f51866a79346880320542b9112c07ecb5b029622d622dd8d4591d57cbc3d4"
+ }
+}

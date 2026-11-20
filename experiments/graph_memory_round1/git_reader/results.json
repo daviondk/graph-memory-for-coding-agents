@@ -1,0 +1,801 @@
+{
+  "n": 24,
+  "repos": 10,
+  "ceiling": 18,
+  "deterministic": {
+    "lexical": 6,
+    "graph": 11
+  },
+  "arms": {
+    "shuffled": {
+      "n": 24,
+      "hit": 1,
+      "malformed": 0,
+      "input_tokens": 7795,
+      "output_tokens": 48,
+      "cached_tokens": 0,
+      "seconds": 11.866433800023515,
+      "http_retries": 0
+    },
+    "true": {
+      "n": 24,
+      "hit": 11,
+      "malformed": 0,
+      "input_tokens": 7795,
+      "output_tokens": 48,
+      "cached_tokens": 0,
+      "seconds": 11.522446999995736,
+      "http_retries": 0
+    },
+    "masked": {
+      "n": 24,
+      "hit": 7,
+      "malformed": 0,
+      "input_tokens": 6823,
+      "output_tokens": 48,
+      "cached_tokens": 0,
+      "seconds": 10.448084699979518,
+      "http_retries": 0
+    }
+  },
+  "pairs": {
+    "true_vs_shuffled": {
+      "wins": 10,
+      "losses": 0,
+      "ties": 14,
+      "delta": 0.4166666666666667,
+      "exact_p_two_sided": 0.001953125,
+      "different_choices": 22,
+      "posthoc_by_repo_signed_deltas": {
+        "encode__httpx": 1,
+        "pypa__packaging": 1,
+        "django__asgiref": 3,
+        "tox-dev__tox": 3,
+        "psf__black": 0,
+        "urllib3__urllib3": 1,
+        "pytest-dev__pluggy": 0,
+        "sphinx-doc__sphinx": 0,
+        "pypa__build": 1,
+        "psf__requests": 0
+      },
+      "posthoc_cluster_swap_two_sided": 0.03125
+    },
+    "true_vs_masked": {
+      "wins": 4,
+      "losses": 0,
+      "ties": 20,
+      "delta": 0.16666666666666666,
+      "exact_p_two_sided": 0.125,
+      "different_choices": 11,
+      "posthoc_by_repo_signed_deltas": {
+        "encode__httpx": 0,
+        "pypa__packaging": 0,
+        "django__asgiref": 0,
+        "tox-dev__tox": 2,
+        "psf__black": 0,
+        "urllib3__urllib3": 1,
+        "pytest-dev__pluggy": 0,
+        "sphinx-doc__sphinx": 0,
+        "pypa__build": 1,
+        "psf__requests": 0
+      },
+      "posthoc_cluster_swap_two_sided": 0.25
+    },
+    "masked_vs_shuffled": {
+      "wins": 6,
+      "losses": 0,
+      "ties": 18,
+      "delta": 0.25,
+      "exact_p_two_sided": 0.03125,
+      "different_choices": 20,
+      "posthoc_by_repo_signed_deltas": {
+        "encode__httpx": 1,
+        "pypa__packaging": 1,
+        "django__asgiref": 3,
+        "tox-dev__tox": 1,
+        "psf__black": 0,
+        "urllib3__urllib3": 0,
+        "pytest-dev__pluggy": 0,
+        "sphinx-doc__sphinx": 0,
+        "pypa__build": 0,
+        "psf__requests": 0
+      },
+      "posthoc_cluster_swap_two_sided": 0.125
+    }
+  },
+  "table": [
+    {
+      "repo": "encode__httpx",
+      "sha": "ae1b9f66238f75ced3ced5e4485408435de10768",
+      "anchor": "httpx/_auth.py",
+      "targets": [
+        "httpx/__init__.py"
+      ],
+      "ceiling": false,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "A",
+          "path": "tests/test_auth.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "A",
+          "path": "tests/test_auth.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "D",
+          "path": "httpx/_config.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "pypa__packaging",
+      "sha": "d1ebe59dedf03ba8248d3205dcc1db6275582384",
+      "anchor": "src/packaging/pylock.py",
+      "targets": [
+        "src/packaging/direct_url.py"
+      ],
+      "ceiling": false,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "C",
+          "path": "tests/test_pylock.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "F",
+          "path": "tests/test_pylock_select.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "B",
+          "path": "src/packaging/specifiers.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "django__asgiref",
+      "sha": "a916061ac57b745bc1abe713d19aa892c35e66f4",
+      "anchor": "tests/test_sync.py",
+      "targets": [
+        "asgiref/sync.py"
+      ],
+      "ceiling": true,
+      "lexical": true,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "D",
+          "path": "asgiref/sync.py",
+          "hit": 1
+        },
+        "true": {
+          "answer": "D",
+          "path": "asgiref/sync.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "C",
+          "path": "asgiref/local.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "tox-dev__tox",
+      "sha": "cada4e3ed935c1ccd204c58efe870a3fcf8138eb",
+      "anchor": "src/tox/config/loader/toml/_replace.py",
+      "targets": [
+        "tests/config/source/test_toml_pyproject.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "F",
+          "path": "src/tox/config/loader/replacer.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "A",
+          "path": "tests/config/source/test_toml_pyproject.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "G",
+          "path": "tests/config/source/test_toml_tox.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "psf__black",
+      "sha": "86b8a3b3a54c64f39fe66981c17e91aacdbb3412",
+      "anchor": "src/black/linegen.py",
+      "targets": [
+        "tests/data/cases/fmtonoff_comment_only_async.py"
+      ],
+      "ceiling": false,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "D",
+          "path": "src/black/lines.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "G",
+          "path": "src/black/mode.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "D",
+          "path": "src/black/lines.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "urllib3__urllib3",
+      "sha": "f5a5dae331c7014f8aed83159dd30710e74eb353",
+      "anchor": "src/urllib3/connection.py",
+      "targets": [
+        "test/test_connection.py",
+        "test/with_dummyserver/test_socketlevel.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "F",
+          "path": "src/urllib3/poolmanager.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "F",
+          "path": "src/urllib3/poolmanager.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "H",
+          "path": "src/urllib3/response.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "pytest-dev__pluggy",
+      "sha": "d70fe1840d01c78b7d85f693cfef01ccdf2f80a6",
+      "anchor": "testing/test_tracer.py",
+      "targets": [
+        "src/pluggy/_tracing.py",
+        "testing/test_pluginmanager.py"
+      ],
+      "ceiling": true,
+      "lexical": true,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "G",
+          "path": "src/pluggy/_hooks.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "G",
+          "path": "src/pluggy/_hooks.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "G",
+          "path": "src/pluggy/_hooks.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "sphinx-doc__sphinx",
+      "sha": "412cebf1660c54966245a88269516e54d0a85c37",
+      "anchor": "tests/test_intl/test_intl.py",
+      "targets": [
+        "sphinx/builders/_epub_base.py",
+        "sphinx/highlighting.py",
+        "sphinx/util/docutils.py",
+        "tests/test_builders/test_build_html_code.py",
+        "tests/test_builders/test_build_latex.py",
+        "tests/test_builders/test_build_linkcheck.py",
+        "tests/test_directives/test_directive_code.py",
+        "tests/test_extensions/test_ext_viewcode.py",
+        "tests/test_highlighting.py",
+        "tests/test_util/test_util_nodes.py",
+        "utils/convert_attestations.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "E",
+          "path": "sphinx/transforms/i18n.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "E",
+          "path": "sphinx/transforms/i18n.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "H",
+          "path": "tests/test_ext_autosummary/test_ext_autosummary.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "pypa__build",
+      "sha": "501d36e68eeded370fed12140f9e42902625210d",
+      "anchor": "tests/test_main.py",
+      "targets": [
+        "src/build/__main__.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "B",
+          "path": "tests/test_env.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "F",
+          "path": "src/build/__main__.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "E",
+          "path": "src/build/__init__.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "psf__requests",
+      "sha": "6f205ff422bccd5e4c4fc0b64c5f3e7df5181db6",
+      "anchor": "src/requests/models.py",
+      "targets": [
+        "tests/test_requests.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "D",
+          "path": "src/requests/adapters.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "G",
+          "path": "src/requests/_types.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "E",
+          "path": "src/requests/sessions.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "encode__httpx",
+      "sha": "49d74a2e7f773f88a84dd4af900d7a8543636ae2",
+      "anchor": "tests/client/test_headers.py",
+      "targets": [
+        "httpx/_utils.py"
+      ],
+      "ceiling": false,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "H",
+          "path": "tests/client/test_client.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "H",
+          "path": "tests/client/test_client.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "H",
+          "path": "tests/client/test_client.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "pypa__packaging",
+      "sha": "2602dd07d8bd5d6c54a3ce0e212f52eb2e127f3e",
+      "anchor": "tests/test_requirements.py",
+      "targets": [
+        "src/packaging/_tokenizer.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "G",
+          "path": "src/packaging/requirements.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "G",
+          "path": "src/packaging/requirements.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "A",
+          "path": "src/packaging/_parser.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "django__asgiref",
+      "sha": "b08087c3b6df811a0524585c4d4dafdc6b12c222",
+      "anchor": "asgiref/sync.py",
+      "targets": [
+        "tests/test_sync.py"
+      ],
+      "ceiling": true,
+      "lexical": true,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "A",
+          "path": "tests/test_sync.py",
+          "hit": 1
+        },
+        "true": {
+          "answer": "A",
+          "path": "tests/test_sync.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "D",
+          "path": "asgiref/typing.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "tox-dev__tox",
+      "sha": "9abae011441a6bbac9932dae331987dcc420034a",
+      "anchor": "src/tox/tox_env/python/pip/req/file.py",
+      "targets": [
+        "tests/tox_env/python/pip/req/test_file.py"
+      ],
+      "ceiling": true,
+      "lexical": true,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "F",
+          "path": "tests/tox_env/python/pip/test_req_file.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "E",
+          "path": "tests/tox_env/python/pip/req/test_file.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "H",
+          "path": "tests/tox_env/python/pip/test_pip_install.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "psf__black",
+      "sha": "d1deb4afcdbc5d01875b5babb4e7859261f20fca",
+      "anchor": "src/black/comments.py",
+      "targets": [
+        "tests/data/cases/fmtonoff_comments_before_fmt_on.py"
+      ],
+      "ceiling": false,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "E",
+          "path": "src/black/linegen.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "A",
+          "path": "tests/data/cases/fmtskip10.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "E",
+          "path": "src/black/linegen.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "urllib3__urllib3",
+      "sha": "ba8b97b0df7ce88111751350d4bd21a2174461d1",
+      "anchor": "src/urllib3/http2/connection.py",
+      "targets": [
+        "src/urllib3/connectionpool.py",
+        "test/test_connectionpool.py",
+        "test/test_http2_connection.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "C",
+          "path": "src/urllib3/connection.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "D",
+          "path": "test/test_http2_connection.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "H",
+          "path": "src/urllib3/response.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "pytest-dev__pluggy",
+      "sha": "0744fd993b0392a609375dbbbc8346bbd8a1b198",
+      "anchor": "testing/test_details.py",
+      "targets": [
+        "src/pluggy/_hooks.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "C",
+          "path": "testing/test_pluginmanager.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "B",
+          "path": "src/pluggy/_manager.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "H",
+          "path": "testing/test_hookcaller.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "sphinx-doc__sphinx",
+      "sha": "a5e373ce51bc85f85f1061858bd5f388469e7385",
+      "anchor": "tests/test_builders/test_build_linkcheck.py",
+      "targets": [
+        "tests/test_builders/test_build_html_image.py",
+        "tests/test_builders/test_build_manpage.py"
+      ],
+      "ceiling": false,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "F",
+          "path": "sphinx/builders/linkcheck.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "F",
+          "path": "sphinx/builders/linkcheck.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "C",
+          "path": "tests/roots/test-linkcheck-case-check/conf.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "pypa__build",
+      "sha": "260ae22ee29fbca9b452a1b44cf3aacd09bb9250",
+      "anchor": "src/build/env.py",
+      "targets": [
+        "src/build/_builder.py",
+        "tests/test_env.py",
+        "tests/test_projectbuilder.py"
+      ],
+      "ceiling": true,
+      "lexical": true,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "D",
+          "path": "tests/test_env.py",
+          "hit": 1
+        },
+        "true": {
+          "answer": "D",
+          "path": "tests/test_env.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "E",
+          "path": "src/build/_builder.py",
+          "hit": 1
+        }
+      }
+    },
+    {
+      "repo": "psf__requests",
+      "sha": "e50e5945294f79ee9ab4ec69de24d14f9b26a7ae",
+      "anchor": "src/requests/help.py",
+      "targets": [
+        "src/requests/__init__.py",
+        "src/requests/compat.py",
+        "src/requests/models.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": false,
+      "answers": {
+        "masked": {
+          "answer": "H",
+          "path": "tests/test_help.py",
+          "hit": 0
+        },
+        "true": {
+          "answer": "C",
+          "path": "src/requests/adapters.py",
+          "hit": 0
+        },
+        "shuffled": {
+          "answer": "B",
+          "path": "tests/test_requests.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "encode__httpx",
+      "sha": "7c0cda153d301bde9a011e1dd7157d7e2b20889d",
+      "anchor": "httpx/_urlparse.py",
+      "targets": [
+        "tests/models/test_url.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "D",
+          "path": "tests/models/test_url.py",
+          "hit": 1
+        },
+        "true": {
+          "answer": "D",
+          "path": "tests/models/test_url.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "E",
+          "path": "httpx/_models.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "pypa__packaging",
+      "sha": "b635dc5e60d6fb8020416c6bab9421964bfa342a",
+      "anchor": "tests/property/test_ranges_set_relations.py",
+      "targets": [
+        "src/packaging/_ranges.py",
+        "src/packaging/ranges.py",
+        "tests/test_ranges.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "G",
+          "path": "tests/test_ranges.py",
+          "hit": 1
+        },
+        "true": {
+          "answer": "B",
+          "path": "src/packaging/ranges.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "F",
+          "path": "tests/property/test_ranges_pubgrub.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "django__asgiref",
+      "sha": "34fba6328f67a753d814c280811fd34094bd1f6c",
+      "anchor": "tests/test_sync.py",
+      "targets": [
+        "asgiref/sync.py"
+      ],
+      "ceiling": true,
+      "lexical": true,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "E",
+          "path": "asgiref/sync.py",
+          "hit": 1
+        },
+        "true": {
+          "answer": "E",
+          "path": "asgiref/sync.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "A",
+          "path": "tests/test_local.py",
+          "hit": 0
+        }
+      }
+    },
+    {
+      "repo": "tox-dev__tox",
+      "sha": "0e7938f73acd7395b26d70f1dc2cc33b75570a40",
+      "anchor": "tests/tox_env/python/test_python_api.py",
+      "targets": [
+        "src/tox/tox_env/python/api.py"
+      ],
+      "ceiling": true,
+      "lexical": false,
+      "graph": true,
+      "answers": {
+        "masked": {
+          "answer": "E",
+          "path": "src/tox/tox_env/python/api.py",
+          "hit": 1
+        },
+        "true": {
+          "answer": "E",
+          "path": "src/tox/tox_env/python/api.py",
+          "hit": 1
+        },
+        "shuffled": {
+          "answer": "F",
+          "path": "src/tox/config/cli/parser.py",
+          "hit": 0
+        }
+      }
+    }
+  ]
+}
