@@ -1,0 +1,130 @@
+{
+ "main": {
+  "n_tasks": 13,
+  "arms": {
+   "none": {
+    "valid": 13,
+    "opened": 13,
+    "selected_cue": 0,
+    "patch": 7,
+    "nav": 1,
+    "in_tokens": 15437,
+    "out_tokens": 435,
+    "patch_n": 8,
+    "nav_n": 11
+   },
+   "strong": {
+    "valid": 13,
+    "opened": 13,
+    "selected_cue": 8,
+    "patch": 2,
+    "nav": 0,
+    "in_tokens": 15506,
+    "out_tokens": 426,
+    "patch_n": 8,
+    "nav_n": 11
+   },
+   "graph": {
+    "valid": 13,
+    "opened": 13,
+    "selected_cue": 10,
+    "patch": 6,
+    "nav": 1,
+    "in_tokens": 15504,
+    "out_tokens": 430,
+    "patch_n": 8,
+    "nav_n": 11
+   }
+  },
+  "paired": {
+   "none->strong": {
+    "changed_choice": 9,
+    "n": 13,
+    "gains": 0,
+    "losses": 5,
+    "tied": 3,
+    "patch_n": 8
+   },
+   "none->graph": {
+    "changed_choice": 3,
+    "n": 13,
+    "gains": 0,
+    "losses": 1,
+    "tied": 7,
+    "patch_n": 8
+   },
+   "strong->graph": {
+    "changed_choice": 9,
+    "n": 13,
+    "gains": 5,
+    "losses": 1,
+    "tied": 2,
+    "patch_n": 8
+   }
+  }
+ },
+ "external": {
+  "n_tasks": 5,
+  "arms": {
+   "none": {
+    "valid": 5,
+    "opened": 5,
+    "selected_cue": 0,
+    "patch": 2,
+    "nav": 1,
+    "in_tokens": 4746,
+    "out_tokens": 170,
+    "patch_n": 3,
+    "nav_n": 4
+   },
+   "strong": {
+    "valid": 5,
+    "opened": 5,
+    "selected_cue": 2,
+    "patch": 2,
+    "nav": 1,
+    "in_tokens": 4779,
+    "out_tokens": 171,
+    "patch_n": 3,
+    "nav_n": 4
+   },
+   "graph": {
+    "valid": 5,
+    "opened": 5,
+    "selected_cue": 3,
+    "patch": 3,
+    "nav": 2,
+    "in_tokens": 4774,
+    "out_tokens": 169,
+    "patch_n": 3,
+    "nav_n": 4
+   }
+  },
+  "paired": {
+   "none->strong": {
+    "changed_choice": 1,
+    "n": 5,
+    "gains": 0,
+    "losses": 0,
+    "tied": 3,
+    "patch_n": 3
+   },
+   "none->graph": {
+    "changed_choice": 2,
+    "n": 5,
+    "gains": 1,
+    "losses": 0,
+    "tied": 2,
+    "patch_n": 3
+   },
+   "strong->graph": {
+    "changed_choice": 2,
+    "n": 5,
+    "gains": 1,
+    "losses": 0,
+    "tied": 2,
+    "patch_n": 3
+   }
+  }
+ }
+}

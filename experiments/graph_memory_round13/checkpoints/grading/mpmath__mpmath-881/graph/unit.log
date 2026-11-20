@@ -1,0 +1,51 @@
+HEAD is now at 99e3b46 Merge pull request #879 from skirpichev/pin-setuptools
+============================= test session starts ==============================
+collected 12 items
+
+mpmath/tests/test_format.py .F..........                                 [100%]
+
+=================================== FAILURES ===================================
+E   AssertionError: assert '1.00000' == '1.0000'
+      
+      - 1.0000
+      + 1.00000
+      ?       +
+    Falsifying example: test_mpf_floats_bulk(
+        fmt='#g',
+        x=0.9999999999998099,
+    )
+    Explanation:
+        These lines were always and only run by failing examples:
+            /mpmath/mpmath/libmp/libmpf.py:1250
+            /mpmath/mpmath/libmp/libmpf.py:1269
+/mpmath/mpmath/tests/test_format.py:490: AssertionError: assert '1.00000' == '1.0000'
+==================================== PASSES ====================================
+============================= slowest 20 durations =============================
+51.61s call     mpmath/tests/test_format.py::test_mpc_complexes
+31.41s call     mpmath/tests/test_format.py::test_mpf_floats_bulk
+9.98s call     mpmath/tests/test_format.py::test_binary_with_gmpy2_bulk
+9.89s call     mpmath/tests/test_format.py::test_hexadecimal_with_libc_bulk
+8.92s call     mpmath/tests/test_format.py::test_hexadecimal_bulk
+0.05s setup    mpmath/tests/test_format.py::test_mpc_complexes
+
+(14 durations < 0.005s hidden.  Use -vv to show these durations.)
+=========================== short test summary info ============================
+PASSED mpmath/tests/test_format.py::test_mpf_fmt_cpython
+PASSED mpmath/tests/test_format.py::test_mpc_complexes
+PASSED mpmath/tests/test_format.py::test_mpc_fmt
+PASSED mpmath/tests/test_format.py::test_mpf_fmt
+PASSED mpmath/tests/test_format.py::test_issue_858
+PASSED mpmath/tests/test_format.py::test_errors
+PASSED mpmath/tests/test_format.py::test_hexadecimal_bulk
+PASSED mpmath/tests/test_format.py::test_hexadecimal_with_libc_bulk
+PASSED mpmath/tests/test_format.py::test_binary_with_gmpy2_bulk
+PASSED mpmath/tests/test_format.py::test_binary_fmt
+PASSED mpmath/tests/test_format.py::test_hexadecimal_fmt
+FAILED mpmath/tests/test_format.py::test_mpf_floats_bulk - AssertionError: as...
+=================== 1 failed, 11 passed in 114.09s (0:01:54) ===================
+Checking patch mpmath/libmp/libmpf.py...
+Applied patch to 'mpmath/libmp/libmpf.py' cleanly.
+Applied patch mpmath/libmp/libmpf.py cleanly.
+Checking patch mpmath/tests/test_format.py...
+Applied patch to 'mpmath/tests/test_format.py' cleanly.
+Applied patch mpmath/tests/test_format.py cleanly.
