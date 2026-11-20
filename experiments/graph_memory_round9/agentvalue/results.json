@@ -1,0 +1,117 @@
+{
+  "arms": {
+    "edge": {
+      "address_correct": 1,
+      "all_pass": 6,
+      "applied": 9,
+      "complete": 9,
+      "cost": {
+        "calls": 9,
+        "output": 538,
+        "prompt": 4578,
+        "seconds": 18.430264400085434
+      },
+      "held_passed": 12,
+      "held_tests": 15,
+      "hold_pass": 6,
+      "mean_test_fraction": 0.8851851851851852,
+      "tests": 36,
+      "tests_passed": 32
+    },
+    "line": {
+      "address_correct": 1,
+      "all_pass": 6,
+      "applied": 9,
+      "complete": 9,
+      "cost": {
+        "calls": 9,
+        "output": 538,
+        "prompt": 4578,
+        "seconds": 18.430264400085434
+      },
+      "held_passed": 12,
+      "held_tests": 15,
+      "hold_pass": 6,
+      "mean_test_fraction": 0.8851851851851852,
+      "tests": 36,
+      "tests_passed": 32
+    },
+    "off": {
+      "address_correct": 0,
+      "all_pass": 6,
+      "applied": 9,
+      "complete": 9,
+      "cost": {
+        "calls": 9,
+        "output": 538,
+        "prompt": 4563,
+        "seconds": 18.4302078000037
+      },
+      "held_passed": 12,
+      "held_tests": 15,
+      "hold_pass": 6,
+      "mean_test_fraction": 0.8851851851851852,
+      "tests": 36,
+      "tests_passed": 32
+    },
+    "oracle": {
+      "address_correct": 9,
+      "all_pass": 7,
+      "applied": 9,
+      "complete": 9,
+      "cost": {
+        "calls": 9,
+        "output": 576,
+        "prompt": 4590,
+        "seconds": 19.76744350005174
+      },
+      "held_passed": 13,
+      "held_tests": 15,
+      "hold_pass": 7,
+      "mean_test_fraction": 0.9074074074074076,
+      "tests": 36,
+      "tests_passed": 33
+    }
+  },
+  "cohort": 9,
+  "contrasts": {
+    "edge->oracle": {
+      "losses": 0,
+      "p": 1,
+      "ties": 8,
+      "wins": 1
+    },
+    "line->edge": {
+      "losses": 0,
+      "p": 1,
+      "ties": 9,
+      "wins": 0
+    },
+    "off->edge": {
+      "losses": 0,
+      "p": 1,
+      "ties": 9,
+      "wins": 0
+    },
+    "off->line": {
+      "losses": 0,
+      "p": 1,
+      "ties": 9,
+      "wins": 0
+    },
+    "off->oracle": {
+      "losses": 0,
+      "p": 1,
+      "ties": 8,
+      "wins": 1
+    }
+  },
+  "eligible": 9,
+  "physical": {
+    "calls": 22,
+    "output": 1381,
+    "prompt": 11398,
+    "seconds": 47.2589230001322
+  },
+  "with_prefix_failure": 5
+}

@@ -1,0 +1,60 @@
+{
+  "mode": "reverse_order_revert",
+  "test": "sympy/core/tests/test_basic.py::test_immutable",
+  "order": [
+    "sympy/core/tests/test_basic.py::test_subs_with_unicode_symbols",
+    "sympy/core/tests/test_basic.py::test_rewrite",
+    "sympy/core/tests/test_basic.py::test_preorder_traversal",
+    "sympy/core/tests/test_basic.py::test_matches_basic",
+    "sympy/core/tests/test_basic.py::test_literal_evalf_is_number_is_zero_is_comparable",
+    "sympy/core/tests/test_basic.py::test_immutable",
+    "sympy/core/tests/test_basic.py::test_has",
+    "sympy/core/tests/test_basic.py::test_free_symbols_empty",
+    "sympy/core/tests/test_basic.py::test_doit",
+    "sympy/core/tests/test_basic.py::test_atoms",
+    "sympy/core/tests/test_basic.py::test_atomic",
+    "sympy/core/tests/test_basic.py::test_as_dummy",
+    "sympy/core/tests/test_basic.py::test_S"
+  ],
+  "old_sha256": "a1b98e9614841032bc3c81b20c28a3abce2c2018cf500b2ae98003a07281bc0b",
+  "new_sha256": "cc55d811d3d83daf7bb1a83e295e5073366136d2c7337f16d9dbb46ed05d5085",
+  "mtime_before": 1650000000,
+  "mtime_after": 1650000200.0,
+  "sqlite_file_total": 2,
+  "legacy_test_file_edges": [
+    "conftest.py",
+    "sympy/core/tests/test_basic.py"
+  ],
+  "changed_target": "sympy/core/_print_helpers.py",
+  "tracked_fingerprints_for_target": [],
+  "old_fingerprint_matches_new_source": [],
+  "all_print_module_signatures": [
+    [
+      "sympy/core/_print_helpers.py",
+      "3A91FCF91CFBB7A0",
+      null,
+      "d704ed220d444e2d8510b280dca85c8ae6149d4c"
+    ]
+  ],
+  "prior": [
+    [
+      "setup",
+      "passed",
+      0.000394199974834919
+    ],
+    [
+      "call",
+      "passed",
+      0.0005330999847501516
+    ],
+    [
+      "teardown",
+      "passed",
+      0.00015949999215081334
+    ]
+  ],
+  "plugin_after": null,
+  "direct_pytest_after": 1,
+  "plugin_rc_after": 0,
+  "build_db_sha256": "81a11d0fb553291c9ffdb60e47985a12fe1e95d812350f6ba798e5e1e713cefc"
+}

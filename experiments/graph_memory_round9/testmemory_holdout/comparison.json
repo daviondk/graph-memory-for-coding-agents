@@ -1,0 +1,167 @@
+{
+  "initial_eligible": 206,
+  "final_eligible": 206,
+  "only_initial": 0,
+  "only_final": 0,
+  "logical_differences": {
+    "prior": 0,
+    "actual": 0,
+    "selected": 0,
+    "old_affected": 0,
+    "dynamic_symbols": 24,
+    "common_symbols": 0,
+    "changed_symbols": 0
+  },
+  "byte_identity": {
+    "forecasts.json.gz": false,
+    "graphs.json.gz": false,
+    "storage.json": false
+  },
+  "changed_graph_contexts": {
+    "test": 26
+  },
+  "issue": {
+    "sympy__sympy-18698": {
+      "fix": {
+        "n": 13,
+        "flips": 1
+      },
+      "revert": {
+        "n": 13,
+        "flips": 1
+      }
+    },
+    "sympy__sympy-19040": {
+      "fix": {
+        "n": 13,
+        "flips": 1
+      },
+      "revert": {
+        "n": 13,
+        "flips": 1
+      }
+    },
+    "sympy__sympy-19637": {
+      "fix": {
+        "n": 13,
+        "flips": 1
+      },
+      "revert": {
+        "n": 13,
+        "flips": 1
+      }
+    },
+    "sympy__sympy-20801": {
+      "fix": {
+        "n": 13,
+        "flips": 1
+      },
+      "revert": {
+        "n": 13,
+        "flips": 1
+      }
+    },
+    "sympy__sympy-21596": {
+      "fix": {
+        "n": 13,
+        "flips": 1
+      },
+      "revert": {
+        "n": 13,
+        "flips": 1
+      }
+    },
+    "sympy__sympy-22914": {
+      "fix": {
+        "n": 13,
+        "flips": 1
+      },
+      "revert": {
+        "n": 13,
+        "flips": 1
+      }
+    },
+    "sympy__sympy-23534": {
+      "fix": {
+        "n": 12,
+        "flips": 1
+      },
+      "revert": {
+        "n": 12,
+        "flips": 1
+      }
+    },
+    "sympy__sympy-24539": {
+      "fix": {
+        "n": 13,
+        "flips": 1
+      },
+      "revert": {
+        "n": 13,
+        "flips": 1
+      }
+    }
+  },
+  "additional_intervals": {
+    "fix": {
+      "lines minus testmon": {
+        "pp": -8.737864077669903,
+        "ci": [
+          -19.23076923076923,
+          -0.9615384615384616
+        ]
+      },
+      "shared2048 minus symbol": {
+        "pp": 0.970873786407767,
+        "ci": [
+          0.0,
+          2.912621359223301
+        ]
+      },
+      "shared2048 minus bloom2048": {
+        "pp": -33.00970873786408,
+        "ci": [
+          -61.53846153846154,
+          -7.8431372549019605
+        ]
+      },
+      "symbol minus testmon": {
+        "pp": 13.592233009708737,
+        "ci": [
+          0.0,
+          32.0
+        ]
+      }
+    },
+    "revert": {
+      "lines minus testmon": {
+        "pp": 2.912621359223301,
+        "ci": [
+          -8.910891089108912,
+          17.307692307692307
+        ]
+      },
+      "shared2048 minus symbol": {
+        "pp": 0.970873786407767,
+        "ci": [
+          0.0,
+          2.912621359223301
+        ]
+      },
+      "shared2048 minus bloom2048": {
+        "pp": -33.00970873786408,
+        "ci": [
+          -61.53846153846154,
+          -7.8431372549019605
+        ]
+      },
+      "symbol minus testmon": {
+        "pp": 13.592233009708737,
+        "ci": [
+          0.0,
+          32.0
+        ]
+      }
+    }
+  }
+}

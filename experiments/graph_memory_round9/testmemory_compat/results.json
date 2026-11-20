@@ -1,0 +1,253 @@
+{
+  "fix": {
+    "n": 106,
+    "tasks": 10,
+    "flips": 11,
+    "policies": {
+      "always": {
+        "rerun": 106,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 19.06429470021976
+      },
+      "bloom2048": {
+        "rerun": 75,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 31,
+        "estimated_test_phase_s": 12.502865899936296
+      },
+      "bloom2048_or_failed": {
+        "rerun": 75,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 31,
+        "estimated_test_phase_s": 12.502865899936296
+      },
+      "bloom512": {
+        "rerun": 106,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 19.06429470021976
+      },
+      "failed": {
+        "rerun": 11,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 95,
+        "estimated_test_phase_s": 6.861865899816621
+      },
+      "file": {
+        "rerun": 106,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 19.06429470021976
+      },
+      "lines": {
+        "rerun": 44,
+        "stale": 1,
+        "missed_new_failures": 0,
+        "successful_reuse": 61,
+        "estimated_test_phase_s": 8.114604199770838
+      },
+      "lines_or_failed": {
+        "rerun": 45,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 61,
+        "estimated_test_phase_s": 8.115589099761564
+      },
+      "reuse": {
+        "rerun": 0,
+        "stale": 11,
+        "missed_new_failures": 0,
+        "successful_reuse": 95,
+        "estimated_test_phase_s": 0
+      },
+      "shared2048": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.134156199696008
+      },
+      "shared2048_or_failed": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.134156199696008
+      },
+      "shared512": {
+        "rerun": 65,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 41,
+        "estimated_test_phase_s": 12.663031499774661
+      },
+      "symbol": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.134156199696008
+      },
+      "symbol_or_failed": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.134156199696008
+      },
+      "testmon": {
+        "rerun": 49,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 57,
+        "estimated_test_phase_s": 11.952047499886248
+      }
+    },
+    "symbol_minus_file_ci": [
+      -0.7010309278350515,
+      -0.1346153846153846
+    ],
+    "symbol_minus_testmon_ci": [
+      -0.018518518518518517,
+      0.3384615384615385
+    ]
+  },
+  "revert": {
+    "n": 106,
+    "tasks": 10,
+    "flips": 11,
+    "policies": {
+      "always": {
+        "rerun": 106,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 19.377940399805084
+      },
+      "bloom2048": {
+        "rerun": 75,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 31,
+        "estimated_test_phase_s": 12.619785799703095
+      },
+      "bloom2048_or_failed": {
+        "rerun": 75,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 31,
+        "estimated_test_phase_s": 12.619785799703095
+      },
+      "bloom512": {
+        "rerun": 106,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 19.377940399805084
+      },
+      "failed": {
+        "rerun": 0,
+        "stale": 11,
+        "missed_new_failures": 11,
+        "successful_reuse": 95,
+        "estimated_test_phase_s": 0
+      },
+      "file": {
+        "rerun": 106,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 19.377940399805084
+      },
+      "lines": {
+        "rerun": 57,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 49,
+        "estimated_test_phase_s": 8.08649269968737
+      },
+      "lines_or_failed": {
+        "rerun": 57,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 49,
+        "estimated_test_phase_s": 8.08649269968737
+      },
+      "reuse": {
+        "rerun": 0,
+        "stale": 11,
+        "missed_new_failures": 11,
+        "successful_reuse": 95,
+        "estimated_test_phase_s": 0
+      },
+      "shared2048": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.14089119975688
+      },
+      "shared2048_or_failed": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.14089119975688
+      },
+      "shared512": {
+        "rerun": 65,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 41,
+        "estimated_test_phase_s": 12.782959599746391
+      },
+      "symbol": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.14089119975688
+      },
+      "symbol_or_failed": {
+        "rerun": 61,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 45,
+        "estimated_test_phase_s": 12.14089119975688
+      },
+      "testmon": {
+        "rerun": 48,
+        "stale": 1,
+        "missed_new_failures": 1,
+        "successful_reuse": 57,
+        "estimated_test_phase_s": 11.848601599922404
+      }
+    },
+    "symbol_minus_file_ci": [
+      -0.7010309278350515,
+      -0.1346153846153846
+    ],
+    "symbol_minus_testmon_ci": [
+      -0.018518518518518517,
+      0.36923076923076925
+    ]
+  },
+  "accounting": {
+    "eligible": 212,
+    "scheduled": 212,
+    "excluded": 0,
+    "exclude_log": [],
+    "per_direction_records": 20,
+    "median_shared_symbols": 647.0,
+    "med_compressed_exact_graph": 8571.5,
+    "med_shared_only_gzip": 4402.0,
+    "median_plugin_db": 102400.0
+  }
+}

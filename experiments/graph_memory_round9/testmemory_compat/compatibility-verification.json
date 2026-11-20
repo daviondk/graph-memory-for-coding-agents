@@ -1,0 +1,404 @@
+{
+  "python": "3.11.15 (main, Mar  3 2026, 14:55:34) [MSC v.1944 64 bit (AMD64)]",
+  "versions": {
+    "coverage": "7.13.5",
+    "pytest": "7.4.4",
+    "mpmath": "1.2.1",
+    "pytest-testmon": "2.3.1",
+    "py": "1.11.0"
+  },
+  "freeze_sha256": "1b45a40101fecd1af85d143094ee8475f8aa80885366ed5a2e40da7835919de2",
+  "all_groups_106": true,
+  "valid_total": 212,
+  "directions": 2,
+  "selected_leakage": "prediction sealed before scoring; outcome reproduction uses native tests",
+  "recovered": [
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "fix",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_10773",
+      "current": [
+        "passed",
+        "passed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    },
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "fix",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+      "current": [
+        "failed",
+        "passed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    },
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "fix",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_7663",
+      "current": [
+        "passed",
+        "passed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    },
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "fix",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_sympy_parser",
+      "current": [
+        "passed",
+        "passed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    },
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "revert",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_10773",
+      "current": [
+        "passed",
+        "passed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    },
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "revert",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+      "current": [
+        "passed",
+        "failed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    },
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "revert",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_7663",
+      "current": [
+        "passed",
+        "passed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    },
+    {
+      "task": "sympy__sympy-24661",
+      "direction": "revert",
+      "node": "sympy/parsing/tests/test_sympy_parser.py::test_sympy_parser",
+      "current": [
+        "passed",
+        "passed"
+      ],
+      "old": [
+        "failed",
+        "failed"
+      ]
+    }
+  ],
+  "scope_covered": {
+    "fix": {
+      "file_candidate_but_unchanged_scope": 45,
+      "flips_on_them": 0,
+      "no_scope_dependency": 45,
+      "flips_without_dependency": 0,
+      "all_reached_changed_scopes": 61
+    },
+    "revert": {
+      "file_candidate_but_unchanged_scope": 45,
+      "flips_on_them": 0,
+      "no_scope_dependency": 45,
+      "flips_without_dependency": 0,
+      "all_reached_changed_scopes": 61
+    }
+  },
+  "flips": {
+    "fix": [
+      {
+        "task": "sympy__sympy-16792",
+        "node": "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg",
+        "old_affected": [
+          "sympy/utilities/codegen.py|CodeGen.routine"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-18189",
+        "node": "sympy/solvers/tests/test_diophantine.py::test_diophantine",
+        "old_affected": [
+          "sympy/solvers/diophantine.py|diophantine"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-18211",
+        "node": "sympy/core/tests/test_relational.py::test_issue_18188",
+        "old_affected": [
+          "sympy/core/relational.py|Relational._eval_as_set"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-19783",
+        "node": "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+        "old_affected": [
+          "sympy/physics/quantum/dagger.py|<module>"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-19783",
+        "node": "sympy/physics/quantum/tests/test_operator.py::test_identity",
+        "old_affected": [
+          "sympy/physics/quantum/dagger.py|<module>",
+          "sympy/physics/quantum/operator.py|IdentityOperator.__mul__"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-19954",
+        "node": "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup",
+        "old_affected": [
+          "sympy/combinatorics/perm_groups.py|PermutationGroup.minimal_blocks"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-20590",
+        "node": "sympy/core/tests/test_basic.py::test_immutable",
+        "old_affected": [
+          "sympy/core/_print_helpers.py|<module>"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-20916",
+        "node": "sympy/printing/tests/test_conventions.py::test_super_sub",
+        "old_affected": [
+          "sympy/printing/conventions.py|<module>",
+          "sympy/printing/conventions.py|split_super_sub"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-21379",
+        "node": "sympy/core/tests/test_arit.py::test_Mod",
+        "old_affected": [
+          "sympy/core/mod.py|Mod.eval"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-24443",
+        "node": "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism",
+        "old_affected": [
+          "sympy/combinatorics/homomorphisms.py|_check_homomorphism",
+          "sympy/combinatorics/homomorphisms.py|_check_homomorphism._image"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+        "old_affected": [
+          "sympy/parsing/sympy_parser.py|<module>"
+        ],
+        "prior": "failed",
+        "actual": "passed",
+        "testmon": true,
+        "exact_scope": true
+      }
+    ],
+    "revert": [
+      {
+        "task": "sympy__sympy-16792",
+        "node": "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg",
+        "old_affected": [
+          "sympy/utilities/codegen.py|CodeGen.routine",
+          "sympy/utilities/codegen.py|CodeGen.routine.dimensions"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-18189",
+        "node": "sympy/solvers/tests/test_diophantine.py::test_diophantine",
+        "old_affected": [
+          "sympy/solvers/diophantine.py|diophantine"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-18211",
+        "node": "sympy/core/tests/test_relational.py::test_issue_18188",
+        "old_affected": [
+          "sympy/core/relational.py|Relational._eval_as_set"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-19783",
+        "node": "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+        "old_affected": [
+          "sympy/physics/quantum/dagger.py|<module>",
+          "sympy/physics/quantum/dagger.py|Dagger.__mul__"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-19783",
+        "node": "sympy/physics/quantum/tests/test_operator.py::test_identity",
+        "old_affected": [
+          "sympy/physics/quantum/dagger.py|<module>",
+          "sympy/physics/quantum/dagger.py|Dagger.__mul__",
+          "sympy/physics/quantum/operator.py|IdentityOperator.__mul__"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-19954",
+        "node": "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup",
+        "old_affected": [
+          "sympy/combinatorics/perm_groups.py|PermutationGroup.minimal_blocks"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-20590",
+        "node": "sympy/core/tests/test_basic.py::test_immutable",
+        "old_affected": [
+          "sympy/core/_print_helpers.py|<module>"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": false,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-20916",
+        "node": "sympy/printing/tests/test_conventions.py::test_super_sub",
+        "old_affected": [
+          "sympy/printing/conventions.py|<module>",
+          "sympy/printing/conventions.py|split_super_sub"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-21379",
+        "node": "sympy/core/tests/test_arit.py::test_Mod",
+        "old_affected": [
+          "sympy/core/mod.py|Mod.eval"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-24443",
+        "node": "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism",
+        "old_affected": [
+          "sympy/combinatorics/homomorphisms.py|_check_homomorphism",
+          "sympy/combinatorics/homomorphisms.py|_check_homomorphism._image"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+        "old_affected": [
+          "sympy/parsing/sympy_parser.py|<module>",
+          "sympy/parsing/sympy_parser.py|EvaluateFalseTransformer.visit_Compare"
+        ],
+        "prior": "passed",
+        "actual": "failed",
+        "testmon": true,
+        "exact_scope": true
+      }
+    ]
+  },
+  "plugin_code_same": true,
+  "result_sha256": "7085b3d52de9c9f92a08f610556edd833e8aac92ee1a676fe0735e59143f6b32",
+  "independent_scenarios": [
+    "edited_test",
+    "reverse_order_revert",
+    "single_fix",
+    "single_revert",
+    "touch_only"
+  ]
+}

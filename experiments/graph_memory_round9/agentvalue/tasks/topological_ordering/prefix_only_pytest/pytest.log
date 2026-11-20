@@ -1,0 +1,20 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+____________________________________ test1 ____________________________________
+python_testcases\test_topological_ordering.py:42: in test1
+    assert result == [5, 7, 3, 11, 8, 10, 2, 9]
+E   assert [5, 7, 3, 10] == [5, 7, 3, 11, 8, 10, ...]
+E     At index 3 diff: 10 != 11
+E     Right contains 4 more items, first extra item: 8
+E     Use -v to get more diff
+____________________________________ test3 ____________________________________
+python_testcases\test_topological_ordering.py:118: in test3
+    assert result == expected
+E   AssertionError: assert ['3/4 cup mil...heat griddle'] == ['3/4 cup mil...1/4 cup', ...]
+E     Right contains 5 more items, first extra item: '1 cup mix'
+E     Use -v to get more diff
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\topological_ordering\prefix_only_pytest\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_topological_ordering.py::test1 - assert [5, 7, 3...
+FAILED python_testcases/test_topological_ordering.py::test3 - AssertionError:...
+2 failed in 0.16s

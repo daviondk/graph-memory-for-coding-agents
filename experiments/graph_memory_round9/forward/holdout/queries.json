@@ -1,0 +1,630 @@
+[
+  {
+    "case": "572d7a1ca7e095021769",
+    "commit": "5b184ac783784c1ca4baf1437888c79bd9460763",
+    "project": "Alluxio/alluxio",
+    "source": [
+      "tachyon.worker.block.evictor.LRUEvictor",
+      "freeSpace",
+      [
+        "long",
+        "BlockStoreLocation"
+      ]
+    ]
+  },
+  {
+    "case": "3f12be45737845e251e4",
+    "commit": "543a9808a85619dbe5acc2373cb4fe5344442de7",
+    "project": "MovingBlocks/Terasology",
+    "source": [
+      "org.terasology.engine.subsystem.lwjgl.LwjglTimer",
+      "initTimer",
+      [
+        "Context"
+      ]
+    ]
+  },
+  {
+    "case": "48bc91b4ded20461bd48",
+    "commit": "543a9808a85619dbe5acc2373cb4fe5344442de7",
+    "project": "MovingBlocks/Terasology",
+    "source": [
+      "org.terasology.engine.subsystem.lwjgl.LwjglAudio",
+      "initOpenAL",
+      [
+        "Context"
+      ]
+    ]
+  },
+  {
+    "case": "1028597c751efcd7185a",
+    "commit": "543a9808a85619dbe5acc2373cb4fe5344442de7",
+    "project": "MovingBlocks/Terasology",
+    "source": [
+      "org.terasology.engine.TerasologyEngine",
+      "validateServerIdentity",
+      []
+    ]
+  },
+  {
+    "case": "2cc8c5c34bc598a61234",
+    "commit": "543a9808a85619dbe5acc2373cb4fe5344442de7",
+    "project": "MovingBlocks/Terasology",
+    "source": [
+      "org.terasology.engine.subsystem.EngineSubsystem",
+      "shutdown",
+      [
+        "Config"
+      ]
+    ]
+  },
+  {
+    "case": "3fb8faba6fe916894874",
+    "commit": "543a9808a85619dbe5acc2373cb4fe5344442de7",
+    "project": "MovingBlocks/Terasology",
+    "source": [
+      "org.terasology.engine.subsystem.EngineSubsystem",
+      "dispose",
+      []
+    ]
+  },
+  {
+    "case": "64dfba4521d46466f532",
+    "commit": "f283ed29814403bde6350a2598cdd6e2c8b983d5",
+    "project": "apache/cassandra",
+    "source": [
+      "org.apache.cassandra.db.compaction.CompactionManager",
+      "submitBackground",
+      [
+        "ColumnFamilyStore",
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "03d7e559034091091767",
+    "commit": "f797bfa4da53315b49f8d97b784047f33ba1bf5f",
+    "project": "apache/cassandra",
+    "source": [
+      "org.apache.cassandra.cql3.IndexedValuesValidationTest",
+      "testIndexOnCompositeValueOver64k",
+      []
+    ]
+  },
+  {
+    "case": "071a3e3f354223ad0ef1",
+    "commit": "3bdcaa336a6e6a9727c333b433bb9f5d3afc0fb1",
+    "project": "apache/cassandra",
+    "source": [
+      "org.apache.cassandra.cql3.statements.CreateTableStatement.RawStatement",
+      "setOrdering",
+      [
+        "ColumnIdentifier",
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "1a8fa6592cb20283686f",
+    "commit": "446e2537895c15b404a74107069a12f3fc404b15",
+    "project": "apache/cassandra",
+    "source": [
+      "org.apache.cassandra.pig.ThriftColumnFamilyTest",
+      "testCassandraStorageCounterCF",
+      []
+    ]
+  },
+  {
+    "case": "70235b013ab85f5b7e63",
+    "commit": "3bdcaa336a6e6a9727c333b433bb9f5d3afc0fb1",
+    "project": "apache/cassandra",
+    "source": [
+      "org.apache.cassandra.db.ColumnFamilyStore",
+      "initRowCache",
+      []
+    ]
+  },
+  {
+    "case": "b375b314a19499ad51dd",
+    "commit": "03ade425dd5a65d3a713d5e7d85aa7605956fbd2",
+    "project": "apache/giraph",
+    "source": [
+      "org.apache.giraph.ooc.DiskBackedPartitionStore",
+      "putPartition",
+      [
+        "MetaPartition"
+      ]
+    ]
+  },
+  {
+    "case": "6bfc5095b10770fa3c45",
+    "commit": "92dce401344a28ff966ad4cf3dd969a676852315",
+    "project": "apache/pig",
+    "source": [
+      "org.apache.pig.impl.util.Utils",
+      "depthFirstSearchForFile",
+      [
+        "FileStatus",
+        "FileSystem"
+      ]
+    ]
+  },
+  {
+    "case": "0154d35770ab2773b8f4",
+    "commit": "7a1659c12d76b510809dea1dea1f5100bcf4cd60",
+    "project": "apache/pig",
+    "source": [
+      "org.apache.pig.backend.hadoop.executionengine.spark.SparkLauncher",
+      "startSparkJob",
+      []
+    ]
+  },
+  {
+    "case": "19fa24d87135fb6b5f81",
+    "commit": "065a0a8122be356d1f898321763d3518b504b075",
+    "project": "eclipse/jgit",
+    "source": [
+      "org.eclipse.jgit.storage.pack.PackWriter",
+      "addResult",
+      [
+        "RevObject",
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "a8e1e29cc9980459f9da",
+    "commit": "f5fe2dca3cb9f57891e1a4b18832fcc158d0c490",
+    "project": "eclipse/jgit",
+    "source": [
+      "org.eclipse.jgit.storage.pack.PackWriter",
+      "addObject",
+      [
+        "RevObject",
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "b4db9fc4f48fc6e05bd9",
+    "commit": "065a0a8122be356d1f898321763d3518b504b075",
+    "project": "eclipse/jgit",
+    "source": [
+      "org.eclipse.jgit.storage.pack.PackWriter",
+      "addResultOrBase",
+      [
+        "RevObject",
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "d62df362b64a95803848",
+    "commit": "6ed4cf9e83fe24fc6ab6fc9ebede016c777c9725",
+    "project": "facebook/buck",
+    "source": [
+      "com.facebook.buck.cxx.DebugPathSanitizer",
+      "sanitize",
+      [
+        "Optional<Path>",
+        "String",
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "c5a3a119df9855ac3cac",
+    "commit": "0f8a0af934f09deef1b58e961ffe789c7299bcc1",
+    "project": "facebook/buck",
+    "source": [
+      "com.facebook.buck.cxx.AbstractCxxPreprocessorInput",
+      "addAllEntriesToIncludeMap",
+      [
+        "Map<Path,SourcePath>",
+        "Map<Path,SourcePath>"
+      ]
+    ]
+  },
+  {
+    "case": "0331b1c52a8ceaca0cc5",
+    "commit": "cfea606b129dbfc5703eb279d4803185afc99c58",
+    "project": "facebook/buck",
+    "source": [
+      "com.facebook.buck.js.ReactNativeBundle",
+      "getPathToJSBundleDir",
+      []
+    ]
+  },
+  {
+    "case": "218007461443b169887f",
+    "commit": "6ed4cf9e83fe24fc6ab6fc9ebede016c777c9725",
+    "project": "facebook/buck",
+    "source": [
+      "com.facebook.buck.cxx.DebugPathSanitizerTest",
+      "sanitizeWithoutAnyMatchesWithoutExpandPaths",
+      []
+    ]
+  },
+  {
+    "case": "d8c4d69115dd27b25654",
+    "commit": "22fb2c9c6974bd1fe0f6ff684f52e6cfbed1a387",
+    "project": "gwtproject/gwt",
+    "source": [
+      "com.google.gwt.dev.jjs.impl.ControlFlowAnalyzer.RescueVisitor",
+      "rescueAndInstantiate",
+      [
+        "JClassType"
+      ]
+    ]
+  },
+  {
+    "case": "fda57679d3dcec339612",
+    "commit": "22fb2c9c6974bd1fe0f6ff684f52e6cfbed1a387",
+    "project": "gwtproject/gwt",
+    "source": [
+      "com.google.gwt.dev.jjs.impl.ControlFlowAnalyzer.RescueVisitor",
+      "rescueAndInstantiate",
+      [
+        "JClassType"
+      ]
+    ]
+  },
+  {
+    "case": "14bf5ad6ae2337406312",
+    "commit": "22fb2c9c6974bd1fe0f6ff684f52e6cfbed1a387",
+    "project": "gwtproject/gwt",
+    "source": [
+      "com.google.gwt.core.client.interop.JsTypeArrayTest",
+      "_disabled_testJsTypeArray_returnFromNativeWithACall",
+      []
+    ]
+  },
+  {
+    "case": "a65f0c610a860888749b",
+    "commit": "22fb2c9c6974bd1fe0f6ff684f52e6cfbed1a387",
+    "project": "gwtproject/gwt",
+    "source": [
+      "com.google.gwt.dev.jjs.impl.ControlFlowAnalyzer.RescueVisitor",
+      "rescueMembersIfInstantiable",
+      [
+        "JDeclaredType"
+      ]
+    ]
+  },
+  {
+    "case": "79764a8eba0ca052fe5d",
+    "commit": "204bf49cba03fe5d581a35ff82dd22587a681f46",
+    "project": "hazelcast/hazelcast",
+    "source": [
+      "com.hazelcast.cluster.impl.ClusterServiceImpl",
+      "sendHearBeatIfRequired",
+      [
+        "long",
+        "MemberImpl"
+      ]
+    ]
+  },
+  {
+    "case": "ff766da98372e246718d",
+    "commit": "204bf49cba03fe5d581a35ff82dd22587a681f46",
+    "project": "hazelcast/hazelcast",
+    "source": [
+      "com.hazelcast.cluster.impl.ClusterServiceImpl",
+      "sendHearBeatIfRequired",
+      [
+        "long",
+        "MemberImpl"
+      ]
+    ]
+  },
+  {
+    "case": "1213d04b9146e6cc1c5a",
+    "commit": "30c4ae09745d6062077925a54f27205b7401d8df",
+    "project": "hazelcast/hazelcast",
+    "source": [
+      "com.hazelcast.internal.metrics.impl.GaugeImplTest",
+      "setup",
+      []
+    ]
+  },
+  {
+    "case": "da6b736f5a5a8f15ac10",
+    "commit": "e84e96ff5c2bdc48cea7f75fd794506159c4e1f7",
+    "project": "hazelcast/hazelcast",
+    "source": [
+      "com.hazelcast.client.protocol.generator.CodecModel.ParameterModel",
+      "convertTypeToCSharp",
+      [
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "014c26da6823862752b7",
+    "commit": "e84e96ff5c2bdc48cea7f75fd794506159c4e1f7",
+    "project": "hazelcast/hazelcast",
+    "source": [
+      "com.hazelcast.client.impl.protocol.util.ParameterUtil",
+      "calculateStringDataSize",
+      [
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "0724a3a29d26e5b1a1b8",
+    "commit": "76d7f5e3fe4eb41b383c1d884bc1217b9fa7192e",
+    "project": "hazelcast/hazelcast",
+    "source": [
+      "com.hazelcast.mapreduce.MapReduceTest",
+      "tripshutdown",
+      [
+        "HazelcastInstance[]"
+      ]
+    ]
+  },
+  {
+    "case": "0da00b01a45dd4f43a47",
+    "commit": "ce4f6292d6350a2c6b82d995352fdf6d07042c9c",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.infinispan.interceptors.distribution.TxDistributionInterceptor",
+      "lockAndWrap",
+      [
+        "InvocationContext",
+        "Object",
+        "InternalCacheEntry",
+        "FlagAffectedCommand"
+      ]
+    ]
+  },
+  {
+    "case": "308fc72ed003c7e316a3",
+    "commit": "35b6c869546a7968b6fd2f640add6eea87e03c22",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.infinispan.query.remote.QueryFacadeImpl",
+      "executeNonIndexedQuery",
+      [
+        "AdvancedCache<byte[],byte[]>",
+        "Configuration",
+        "SerializationContext",
+        "QueryRequest"
+      ]
+    ]
+  },
+  {
+    "case": "bf7e4c17544e45caa077",
+    "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.infinispan.server.jgroups.subsystem.JGroupsSubsystemXMLWriter",
+      "writeOptional",
+      [
+        "XMLExtendedStreamWriter",
+        "Attribute",
+        "ModelNode",
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "680a647ea1535beb2c48",
+    "commit": "35b6c869546a7968b6fd2f640add6eea87e03c22",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.infinispan.client.hotrod.marshall.EmbeddedCompatTest",
+      "createAccountPB",
+      []
+    ]
+  },
+  {
+    "case": "4bb8f29c4f61a5e97778",
+    "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.jboss.as.clustering.jgroups.JGroupsMessages",
+      "transportNotDefined",
+      [
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "56bdb935a2e199d9864b",
+    "commit": "8f446b6ddf540e1b1fefca34dd10f45ba7256095",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.jboss.as.clustering.jgroups.JGroupsMessages",
+      "protocolNotDefined",
+      [
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "08a9a0f7d7c54e954fd9",
+    "commit": "ce4f6292d6350a2c6b82d995352fdf6d07042c9c",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.infinispan.transaction.xa.recovery.RecoveryManagerImpl",
+      "removeRecoveryInformationFromCluster",
+      [
+        "Collection<Address>",
+        "Xid",
+        "boolean",
+        "GlobalTransaction"
+      ]
+    ]
+  },
+  {
+    "case": "15e238c9fe490d39ffd2",
+    "commit": "35b6c869546a7968b6fd2f640add6eea87e03c22",
+    "project": "infinispan/infinispan",
+    "source": [
+      "org.infinispan.query.remote.QueryFacadeImpl",
+      "executeIndexedQuery",
+      [
+        "AdvancedCache<byte[],byte[]>",
+        "Configuration",
+        "SerializationContext",
+        "QueryRequest"
+      ]
+    ]
+  },
+  {
+    "case": "16a84a2ecf3a012f1193",
+    "commit": "2bd1557bc293cb8c2348374771aad832befbe26f",
+    "project": "libgdx/libgdx",
+    "source": [
+      "com.badlogic.gdx.scenes.scene2d.ui.CheckBox",
+      "setCheckBoxRight",
+      [
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "7b54a613e9763d6d5e33",
+    "commit": "54fa890a6af4ccf564fb481d3e1b6ad4d084de9e",
+    "project": "linkedin/rest.li",
+    "source": [
+      "com.linkedin.restli.examples.RestLiIntTestServer",
+      "createServer",
+      [
+        "Engine",
+        "int",
+        "String",
+        "boolean",
+        "int",
+        "List<?extendsRequestFilter>",
+        "List<?extendsResponseFilter>"
+      ]
+    ]
+  },
+  {
+    "case": "c8c5cd99fdf781ba8b82",
+    "commit": "f61db44ca4a862f1a84450643d92f85449016cfa",
+    "project": "linkedin/rest.li",
+    "source": [
+      "com.linkedin.pegasus.generator.TemplateSpecGenerator",
+      "generate",
+      [
+        "DataSchema"
+      ]
+    ]
+  },
+  {
+    "case": "f31d82266176467390c9",
+    "commit": "f61db44ca4a862f1a84450643d92f85449016cfa",
+    "project": "linkedin/rest.li",
+    "source": [
+      "com.linkedin.pegasus.generator.TemplateSpecGenerator",
+      "generate",
+      [
+        "DataSchema"
+      ]
+    ]
+  },
+  {
+    "case": "6c4c04277a250e4b394f",
+    "commit": "54fa890a6af4ccf564fb481d3e1b6ad4d084de9e",
+    "project": "linkedin/rest.li",
+    "source": [
+      "com.linkedin.restli.examples.TestCompressionServer",
+      "contentEncodingGeneratorDataProvider",
+      []
+    ]
+  },
+  {
+    "case": "7c12fb6e91f8ef7c8b8f",
+    "commit": "54fa890a6af4ccf564fb481d3e1b6ad4d084de9e",
+    "project": "linkedin/rest.li",
+    "source": [
+      "com.linkedin.r2.filter.CompressionConfig",
+      "shouldCompressRequest",
+      [
+        "int",
+        "CompressionOption"
+      ]
+    ]
+  },
+  {
+    "case": "23f1e9bf2b66844729e7",
+    "commit": "54fa890a6af4ccf564fb481d3e1b6ad4d084de9e",
+    "project": "linkedin/rest.li",
+    "source": [
+      "com.linkedin.r2.transport.http.client.TestHttpClientFactory",
+      "testGetCompressionConfig",
+      [
+        "String",
+        "int",
+        "CompressionConfig"
+      ]
+    ]
+  },
+  {
+    "case": "244d1267767d4372407e",
+    "commit": "ec5ea36faa3dd74585bb339beabdba6149ed63be",
+    "project": "linkedin/rest.li",
+    "source": [
+      "com.linkedin.restli.internal.server.RestLiCallback.FilterResponseContextAdapter",
+      "setAugmentedRestLiResponseData",
+      [
+        "AugmentedRestLiResponseData"
+      ]
+    ]
+  },
+  {
+    "case": "e179ba1b834b6beec6dc",
+    "commit": "229d1b60c03a3f8375451c68a6911660a3993777",
+    "project": "rstudio/rstudio",
+    "source": [
+      "org.rstudio.studio.client.rsconnect.RSConnect",
+      "fireValidatedRSconnectPublish",
+      [
+        "RSConnectPublishResult",
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "2dee67a469482cd8742b",
+    "commit": "229d1b60c03a3f8375451c68a6911660a3993777",
+    "project": "rstudio/rstudio",
+    "source": [
+      "org.rstudio.studio.client.rsconnect.RSConnect",
+      "checkForExistingApp",
+      [
+        "RSConnectAccount",
+        "String",
+        "OperationWithInput<Boolean>"
+      ]
+    ]
+  },
+  {
+    "case": "5983862cafa8c91a70ef",
+    "commit": "9a581e07cb6381d70f3fd9bb2055e810e2a682a9",
+    "project": "rstudio/rstudio",
+    "source": [
+      "org.rstudio.studio.client.workbench.views.source.editors.text.ChunkOptionsPopupPanel",
+      "addCheckboxController",
+      [
+        "String",
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "d90a68a534a8c97a143a",
+    "commit": "229d1b60c03a3f8375451c68a6911660a3993777",
+    "project": "rstudio/rstudio",
+    "source": [
+      "org.rstudio.core.client.widget.Wizard",
+      "validate",
+      [
+        "T"
+      ]
+    ]
+  }
+]

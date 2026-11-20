@@ -1,0 +1,18 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+____________________________________ test3 ____________________________________
+python_testcases\test_shortest_paths.py:64: in test3
+    assert result == expected
+E   AssertionError: assert {'A': 0, 'B':...'D': inf, ...} == {'A': 0, 'B':..., 'D': 6, ...}
+E     Omitting 1 identical items, use -vv to show
+E     Differing items:
+E     {'E': inf} != {'E': 5}
+E     {'B': inf} != {'B': 1}
+E     {'F': inf} != {'F': 9}
+E     {'D': inf} != {'D': 6}
+E     {'C': inf} != {'C': 3}
+E     Use -v to get more diff
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\shortest_paths\heldout_only\e99679a54634bc94\heldout\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_shortest_paths.py::test3 - AssertionError: asser...
+1 failed in 0.13s

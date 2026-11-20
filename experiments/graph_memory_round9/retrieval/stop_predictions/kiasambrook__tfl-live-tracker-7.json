@@ -1,0 +1,146 @@
+{
+ "issue": "kiasambrook__tfl-live-tracker-7",
+ "policies": {
+  "fixed6": {
+   "reads": 6,
+   "tokens": 597,
+   "bytes": 1734,
+   "fresh": null,
+   "base_position": null,
+   "trace": [
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/fetch_arrivals",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/ui/cli_ui.py/CLIUI/display_arrivals",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/fetch_all_stop_points",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/__init__",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/ui/cli_ui.py/CLIUI/__init__",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/main.py/main",
+     "outside_edges": [],
+     "eligible": []
+    }
+   ],
+   "rank": [
+    "app/api/tfl_api.py/TfLAPI/fetch_arrivals",
+    "app/ui/cli_ui.py/CLIUI/display_arrivals",
+    "app/api/tfl_api.py/TfLAPI/fetch_all_stop_points",
+    "app/api/tfl_api.py/TfLAPI/__init__",
+    "app/ui/cli_ui.py/CLIUI/__init__",
+    "app/main.py/main",
+    "app/ui/main_window.py/MainWindow/build",
+    "app/ui/dropdown.py/Dropdown/select_option",
+    "app/ui/dropdown.py/Dropdown/on_dropdown_options",
+    "app/ui/dropdown.py/Dropdown/__init__",
+    "app/ui/dropdown.py/Dropdown/open_dropdown"
+   ]
+  },
+  "early": {
+   "reads": 6,
+   "tokens": 597,
+   "bytes": 1734,
+   "fresh": null,
+   "base_position": null,
+   "trace": [
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/fetch_arrivals",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/ui/cli_ui.py/CLIUI/display_arrivals",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/fetch_all_stop_points",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/__init__",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/ui/cli_ui.py/CLIUI/__init__",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/main.py/main",
+     "outside_edges": [],
+     "eligible": []
+    }
+   ],
+   "rank": [
+    "app/api/tfl_api.py/TfLAPI/fetch_arrivals",
+    "app/ui/cli_ui.py/CLIUI/display_arrivals",
+    "app/api/tfl_api.py/TfLAPI/fetch_all_stop_points",
+    "app/api/tfl_api.py/TfLAPI/__init__",
+    "app/ui/cli_ui.py/CLIUI/__init__",
+    "app/main.py/main",
+    "app/ui/main_window.py/MainWindow/build",
+    "app/ui/dropdown.py/Dropdown/select_option",
+    "app/ui/dropdown.py/Dropdown/on_dropdown_options",
+    "app/ui/dropdown.py/Dropdown/__init__",
+    "app/ui/dropdown.py/Dropdown/open_dropdown"
+   ]
+  },
+  "early3": {
+   "reads": 3,
+   "tokens": 418,
+   "bytes": 1340,
+   "fresh": null,
+   "base_position": null,
+   "trace": [
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/fetch_arrivals",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/ui/cli_ui.py/CLIUI/display_arrivals",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/api/tfl_api.py/TfLAPI/fetch_all_stop_points",
+     "outside_edges": [],
+     "eligible": []
+    }
+   ],
+   "rank": [
+    "app/api/tfl_api.py/TfLAPI/fetch_arrivals",
+    "app/ui/cli_ui.py/CLIUI/display_arrivals",
+    "app/api/tfl_api.py/TfLAPI/fetch_all_stop_points",
+    "app/api/tfl_api.py/TfLAPI/__init__",
+    "app/ui/cli_ui.py/CLIUI/__init__",
+    "app/main.py/main",
+    "app/ui/main_window.py/MainWindow/build",
+    "app/ui/dropdown.py/Dropdown/select_option",
+    "app/ui/dropdown.py/Dropdown/on_dropdown_options",
+    "app/ui/dropdown.py/Dropdown/__init__",
+    "app/ui/dropdown.py/Dropdown/open_dropdown"
+   ]
+  }
+ }
+}

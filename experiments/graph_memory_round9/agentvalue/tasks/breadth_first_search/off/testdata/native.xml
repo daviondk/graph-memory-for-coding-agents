@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="5" time="0.085" timestamp="2026-11-20T23:46:38.898487" hostname="DESKTOP-PU57F9M"><testcase classname="python_testcases.test_breadth_first_search" name="test1" time="0.007" /><testcase classname="python_testcases.test_breadth_first_search" name="test2" time="0.001" /><testcase classname="python_testcases.test_breadth_first_search" name="test3" time="0.000"><failure message="IndexError: pop from an empty deque">python_testcases\test_breadth_first_search.py:52: in test3
+    path_found = breadth_first_search(nodef, nodee)
+python_programs\breadth_first_search.py:12: in breadth_first_search
+    node = queue.popleft()
+E   IndexError: pop from an empty deque</failure></testcase><testcase classname="python_testcases.test_breadth_first_search" name="test4" time="0.001" /><testcase classname="python_testcases.test_breadth_first_search" name="test5" time="0.000" /></testsuite></testsuites>

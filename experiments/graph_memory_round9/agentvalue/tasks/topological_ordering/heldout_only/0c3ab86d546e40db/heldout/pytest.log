@@ -1,0 +1,13 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+____________________________________ test2 ____________________________________
+python_testcases\test_topological_ordering.py:70: in test2
+    assert result == [4, 5, 0, 2, 3, 1]
+E   assert [4, 5, 0, 1] == [4, 5, 0, 2, 3, 1]
+E     At index 3 diff: 1 != 2
+E     Right contains 2 more items, first extra item: 3
+E     Use -v to get more diff
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\topological_ordering\heldout_only\0c3ab86d546e40db\heldout\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_topological_ordering.py::test2 - assert [4, 5, 0...
+1 failed in 0.15s

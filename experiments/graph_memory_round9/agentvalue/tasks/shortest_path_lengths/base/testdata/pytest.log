@@ -1,0 +1,57 @@
+FFFF                                                                     [100%]
+================================== FAILURES ===================================
+____________________________________ test1 ____________________________________
+python_testcases\test_shortest_path_lengths.py:62: in test1
+    assert result == expected
+E   AssertionError: assert defaultdict(<..., (5, 4): -1}) == {(0, 0): 0, (..., 3): 10, ...}
+E     Omitting 14 identical items, use -vv to show
+E     Differing items:
+E     {(4, 0): 4} != {(4, 0): inf}
+E     {(4, 3): -5} != {(4, 3): inf}
+E     {(5, 4): -1} != {(5, 4): inf}
+E     {(0, 2): -1} != {(0, 2): 3}
+E     {(0, 5): 5} != {(0, 5): 4}...
+E     
+E     ...Full output truncated (18 lines hidden), use '-vv' to show
+____________________________________ test2 ____________________________________
+python_testcases\test_shortest_path_lengths.py:104: in test2
+    assert result == expected
+E   AssertionError: assert defaultdict(<...f, (4, 3): 7}) == {(0, 0): 0, (...0, 3): 6, ...}
+E     Omitting 14 identical items, use -vv to show
+E     Differing items:
+E     {(2, 4): inf} != {(2, 4): 5}
+E     {(0, 4): inf} != {(0, 4): 13}
+E     {(2, 1): 5} != {(2, 1): inf}
+E     {(4, 3): 7} != {(4, 3): inf}
+E     {(0, 3): inf} != {(0, 3): 6}...
+E     
+E     ...Full output truncated (7 lines hidden), use '-vv' to show
+____________________________________ test3 ____________________________________
+python_testcases\test_shortest_path_lengths.py:135: in test3
+    assert result == expected
+E   assert defaultdict(<...f, (3, 2): 5}) == {(0, 0): 0, (... 3): inf, ...}
+E     Omitting 14 identical items, use -vv to show
+E     Differing items:
+E     {(1, 0): 3} != {(1, 0): inf}
+E     {(3, 2): 5} != {(3, 2): inf}
+E     Use -v to get more diff
+____________________________________ test4 ____________________________________
+python_testcases\test_shortest_path_lengths.py:160: in test4
+    assert result == expected
+E   AssertionError: assert defaultdict(<...3, (2, 1): 1}) == {(0, 0): 0, (...1, 0): 4, ...}
+E     Omitting 2 identical items, use -vv to show
+E     Differing items:
+E     {(1, 2): 3} != {(1, 2): 5}
+E     {(2, 1): 1} != {(2, 1): 2}
+E     {(0, 0): -2} != {(0, 0): 0}
+E     {(2, 0): -5} != {(2, 0): -1}
+E     {(0, 2): -3} != {(0, 2): 8}...
+E     
+E     ...Full output truncated (3 lines hidden), use '-vv' to show
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\shortest_path_lengths\base\testdata\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_shortest_path_lengths.py::test1 - AssertionError...
+FAILED python_testcases/test_shortest_path_lengths.py::test2 - AssertionError...
+FAILED python_testcases/test_shortest_path_lengths.py::test3 - assert default...
+FAILED python_testcases/test_shortest_path_lengths.py::test4 - AssertionError...
+4 failed in 0.11s

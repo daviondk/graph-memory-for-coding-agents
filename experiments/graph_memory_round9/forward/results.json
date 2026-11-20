@@ -1,0 +1,901 @@
+{
+  "arms": {
+    "disappear": {
+      "address": 47,
+      "balanced": 0.5,
+      "fn": 0,
+      "fp": 27,
+      "joint": 23,
+      "tn": 0,
+      "tp": 27
+    },
+    "edge": {
+      "address": 35,
+      "balanced": 0.6851851851851851,
+      "fn": 5,
+      "fp": 12,
+      "joint": 31,
+      "tn": 15,
+      "tp": 22
+    },
+    "edge_lex_agree": {
+      "address": 47,
+      "balanced": 0.9074074074074074,
+      "fn": 5,
+      "fp": 0,
+      "joint": 43,
+      "tn": 27,
+      "tp": 22
+    },
+    "git_prior": {
+      "address": 40,
+      "balanced": 0.9074074074074074,
+      "fn": 2,
+      "fp": 3,
+      "joint": 39,
+      "tn": 24,
+      "tp": 25
+    },
+    "lex_prior": {
+      "address": 47,
+      "balanced": 0.9259259259259259,
+      "fn": 2,
+      "fp": 2,
+      "joint": 46,
+      "tn": 25,
+      "tp": 25
+    }
+  },
+  "commits": 27,
+  "kind": {
+    "Inline Method": {
+      "arms": {
+        "disappear": {
+          "address": 23,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 23,
+          "tn": 0,
+          "tp": 27
+        },
+        "edge": {
+          "address": 23,
+          "balanced": null,
+          "fn": 5,
+          "fp": 0,
+          "joint": 19,
+          "tn": 0,
+          "tp": 22
+        },
+        "edge_lex_agree": {
+          "address": 23,
+          "balanced": null,
+          "fn": 5,
+          "fp": 0,
+          "joint": 19,
+          "tn": 0,
+          "tp": 22
+        },
+        "git_prior": {
+          "address": 20,
+          "balanced": null,
+          "fn": 2,
+          "fp": 0,
+          "joint": 19,
+          "tn": 0,
+          "tp": 25
+        },
+        "lex_prior": {
+          "address": 23,
+          "balanced": null,
+          "fn": 2,
+          "fp": 0,
+          "joint": 22,
+          "tn": 0,
+          "tp": 25
+        }
+      },
+      "commits": 16,
+      "n": 27,
+      "resolved": 27
+    },
+    "Move Method": {
+      "arms": {
+        "disappear": {
+          "address": 10,
+          "balanced": null,
+          "fn": 0,
+          "fp": 12,
+          "joint": 0,
+          "tn": 0,
+          "tp": 0
+        },
+        "edge": {
+          "address": 9,
+          "balanced": null,
+          "fn": 0,
+          "fp": 1,
+          "joint": 9,
+          "tn": 11,
+          "tp": 0
+        },
+        "edge_lex_agree": {
+          "address": 10,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 10,
+          "tn": 12,
+          "tp": 0
+        },
+        "git_prior": {
+          "address": 8,
+          "balanced": null,
+          "fn": 0,
+          "fp": 3,
+          "joint": 8,
+          "tn": 9,
+          "tp": 0
+        },
+        "lex_prior": {
+          "address": 10,
+          "balanced": null,
+          "fn": 0,
+          "fp": 2,
+          "joint": 10,
+          "tn": 10,
+          "tp": 0
+        }
+      },
+      "commits": 8,
+      "n": 12,
+      "resolved": 10
+    },
+    "Rename Method": {
+      "arms": {
+        "disappear": {
+          "address": 14,
+          "balanced": null,
+          "fn": 0,
+          "fp": 15,
+          "joint": 0,
+          "tn": 0,
+          "tp": 0
+        },
+        "edge": {
+          "address": 3,
+          "balanced": null,
+          "fn": 0,
+          "fp": 11,
+          "joint": 3,
+          "tn": 4,
+          "tp": 0
+        },
+        "edge_lex_agree": {
+          "address": 14,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 14,
+          "tn": 15,
+          "tp": 0
+        },
+        "git_prior": {
+          "address": 12,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 12,
+          "tn": 15,
+          "tp": 0
+        },
+        "lex_prior": {
+          "address": 14,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 14,
+          "tn": 15,
+          "tp": 0
+        }
+      },
+      "commits": 13,
+      "n": 15,
+      "resolved": 15
+    }
+  },
+  "n": 54,
+  "pairs": {
+    "edge minus disappear": {
+      "address": {
+        "ci95": [
+          -35.8974358974359,
+          -10.9375
+        ],
+        "delta_pp": -22.22222222222222
+      },
+      "balanced": {
+        "ci95": [
+          4.584040747028864,
+          29.833333333333336
+        ],
+        "delta_pp": 18.51851851851852
+      },
+      "joint": {
+        "ci95": [
+          1.8867924528301887,
+          28.571428571428573
+        ],
+        "delta_pp": 14.814814814814815
+      }
+    },
+    "edge minus edge_lex_agree": {
+      "address": {
+        "ci95": [
+          -35.8974358974359,
+          -10.9375
+        ],
+        "delta_pp": -22.22222222222222
+      },
+      "balanced": {
+        "ci95": [
+          -33.33333333333333,
+          -12.068965517241379
+        ],
+        "delta_pp": -22.22222222222222
+      },
+      "joint": {
+        "ci95": [
+          -35.8974358974359,
+          -10.9375
+        ],
+        "delta_pp": -22.22222222222222
+      }
+    },
+    "edge minus git_prior": {
+      "address": {
+        "ci95": [
+          -24.528301886792452,
+          4.477611940298507
+        ],
+        "delta_pp": -9.25925925925926
+      },
+      "balanced": {
+        "ci95": [
+          -37.31182795698925,
+          -9.698275862068966
+        ],
+        "delta_pp": -22.22222222222222
+      },
+      "joint": {
+        "ci95": [
+          -32.6530612244898,
+          0.0
+        ],
+        "delta_pp": -14.814814814814815
+      }
+    },
+    "edge minus lex_prior": {
+      "address": {
+        "ci95": [
+          -35.8974358974359,
+          -10.9375
+        ],
+        "delta_pp": -22.22222222222222
+      },
+      "balanced": {
+        "ci95": [
+          -39.111111111111114,
+          -10.416666666666666
+        ],
+        "delta_pp": -24.074074074074073
+      },
+      "joint": {
+        "ci95": [
+          -42.5,
+          -16.071428571428573
+        ],
+        "delta_pp": -27.77777777777778
+      }
+    },
+    "lex_prior minus git_prior": {
+      "address": {
+        "ci95": [
+          2.3255813953488373,
+          22.950819672131146
+        ],
+        "delta_pp": 12.962962962962964
+      },
+      "balanced": {
+        "ci95": [
+          -5.0,
+          7.987711213517665
+        ],
+        "delta_pp": 1.8518518518518516
+      },
+      "joint": {
+        "ci95": [
+          2.3255813953488373,
+          22.950819672131146
+        ],
+        "delta_pp": 12.962962962962964
+      }
+    }
+  },
+  "project": {
+    "antlr/antlr4": {
+      "arms": {
+        "disappear": {
+          "address": 2,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 3,
+          "joint": 0,
+          "tn": 0,
+          "tp": 1
+        },
+        "edge": {
+          "address": 1,
+          "balanced": 0.3333333333333333,
+          "fn": 1,
+          "fp": 1,
+          "joint": 1,
+          "tn": 2,
+          "tp": 0
+        },
+        "edge_lex_agree": {
+          "address": 2,
+          "balanced": 0.5,
+          "fn": 1,
+          "fp": 0,
+          "joint": 2,
+          "tn": 3,
+          "tp": 0
+        },
+        "git_prior": {
+          "address": 2,
+          "balanced": 0.8333333333333333,
+          "fn": 0,
+          "fp": 1,
+          "joint": 2,
+          "tn": 2,
+          "tp": 1
+        },
+        "lex_prior": {
+          "address": 2,
+          "balanced": 0.3333333333333333,
+          "fn": 1,
+          "fp": 1,
+          "joint": 2,
+          "tn": 2,
+          "tp": 0
+        }
+      },
+      "commits": 2,
+      "n": 4,
+      "resolved": 3
+    },
+    "apache/drill": {
+      "arms": {
+        "disappear": {
+          "address": 4,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 3,
+          "joint": 2,
+          "tn": 0,
+          "tp": 2
+        },
+        "edge": {
+          "address": 4,
+          "balanced": 0.75,
+          "fn": 1,
+          "fp": 0,
+          "joint": 3,
+          "tn": 3,
+          "tp": 1
+        },
+        "edge_lex_agree": {
+          "address": 4,
+          "balanced": 0.75,
+          "fn": 1,
+          "fp": 0,
+          "joint": 3,
+          "tn": 3,
+          "tp": 1
+        },
+        "git_prior": {
+          "address": 5,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 5,
+          "tn": 3,
+          "tp": 2
+        },
+        "lex_prior": {
+          "address": 4,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 4,
+          "tn": 3,
+          "tp": 2
+        }
+      },
+      "commits": 2,
+      "n": 5,
+      "resolved": 5
+    },
+    "checkstyle/checkstyle": {
+      "arms": {
+        "disappear": {
+          "address": 8,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 4,
+          "joint": 4,
+          "tn": 0,
+          "tp": 4
+        },
+        "edge": {
+          "address": 6,
+          "balanced": 0.75,
+          "fn": 0,
+          "fp": 2,
+          "joint": 6,
+          "tn": 2,
+          "tp": 4
+        },
+        "edge_lex_agree": {
+          "address": 8,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 8,
+          "tn": 4,
+          "tp": 4
+        },
+        "git_prior": {
+          "address": 7,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 7,
+          "tn": 4,
+          "tp": 4
+        },
+        "lex_prior": {
+          "address": 8,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 8,
+          "tn": 4,
+          "tp": 4
+        }
+      },
+      "commits": 3,
+      "n": 8,
+      "resolved": 8
+    },
+    "google/closure-compiler": {
+      "arms": {
+        "disappear": {
+          "address": 6,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 4,
+          "joint": 2,
+          "tn": 0,
+          "tp": 2
+        },
+        "edge": {
+          "address": 5,
+          "balanced": 0.875,
+          "fn": 0,
+          "fp": 1,
+          "joint": 5,
+          "tn": 3,
+          "tp": 2
+        },
+        "edge_lex_agree": {
+          "address": 6,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 6,
+          "tn": 4,
+          "tp": 2
+        },
+        "git_prior": {
+          "address": 4,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 4,
+          "tn": 4,
+          "tp": 2
+        },
+        "lex_prior": {
+          "address": 6,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 6,
+          "tn": 4,
+          "tp": 2
+        }
+      },
+      "commits": 4,
+      "n": 6,
+      "resolved": 6
+    },
+    "google/guava": {
+      "arms": {
+        "disappear": {
+          "address": 1,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 1,
+          "tn": 0,
+          "tp": 2
+        },
+        "edge": {
+          "address": 1,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 1,
+          "tn": 0,
+          "tp": 2
+        },
+        "edge_lex_agree": {
+          "address": 1,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 1,
+          "tn": 0,
+          "tp": 2
+        },
+        "git_prior": {
+          "address": 1,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 1,
+          "tn": 0,
+          "tp": 2
+        },
+        "lex_prior": {
+          "address": 1,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 1,
+          "tn": 0,
+          "tp": 2
+        }
+      },
+      "commits": 1,
+      "n": 2,
+      "resolved": 2
+    },
+    "gradle/gradle": {
+      "arms": {
+        "disappear": {
+          "address": 5,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 3,
+          "joint": 2,
+          "tn": 0,
+          "tp": 2
+        },
+        "edge": {
+          "address": 2,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 3,
+          "joint": 2,
+          "tn": 0,
+          "tp": 2
+        },
+        "edge_lex_agree": {
+          "address": 5,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 5,
+          "tn": 3,
+          "tp": 2
+        },
+        "git_prior": {
+          "address": 5,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 5,
+          "tn": 3,
+          "tp": 2
+        },
+        "lex_prior": {
+          "address": 5,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 5,
+          "tn": 3,
+          "tp": 2
+        }
+      },
+      "commits": 4,
+      "n": 5,
+      "resolved": 5
+    },
+    "graphhopper/graphhopper": {
+      "arms": {
+        "disappear": {
+          "address": 5,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 4,
+          "joint": 1,
+          "tn": 0,
+          "tp": 1
+        },
+        "edge": {
+          "address": 3,
+          "balanced": 0.25,
+          "fn": 1,
+          "fp": 2,
+          "joint": 2,
+          "tn": 2,
+          "tp": 0
+        },
+        "edge_lex_agree": {
+          "address": 5,
+          "balanced": 0.5,
+          "fn": 1,
+          "fp": 0,
+          "joint": 4,
+          "tn": 4,
+          "tp": 0
+        },
+        "git_prior": {
+          "address": 4,
+          "balanced": 0.375,
+          "fn": 1,
+          "fp": 1,
+          "joint": 3,
+          "tn": 3,
+          "tp": 0
+        },
+        "lex_prior": {
+          "address": 5,
+          "balanced": 0.5,
+          "fn": 1,
+          "fp": 0,
+          "joint": 4,
+          "tn": 4,
+          "tp": 0
+        }
+      },
+      "commits": 1,
+      "n": 5,
+      "resolved": 5
+    },
+    "neo4j/neo4j": {
+      "arms": {
+        "disappear": {
+          "address": 6,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 4,
+          "joint": 3,
+          "tn": 0,
+          "tp": 3
+        },
+        "edge": {
+          "address": 4,
+          "balanced": 0.5833333333333333,
+          "fn": 1,
+          "fp": 2,
+          "joint": 3,
+          "tn": 2,
+          "tp": 2
+        },
+        "edge_lex_agree": {
+          "address": 6,
+          "balanced": 0.8333333333333333,
+          "fn": 1,
+          "fp": 0,
+          "joint": 5,
+          "tn": 4,
+          "tp": 2
+        },
+        "git_prior": {
+          "address": 5,
+          "balanced": 0.7083333333333333,
+          "fn": 1,
+          "fp": 1,
+          "joint": 5,
+          "tn": 3,
+          "tp": 2
+        },
+        "lex_prior": {
+          "address": 6,
+          "balanced": 0.875,
+          "fn": 0,
+          "fp": 1,
+          "joint": 6,
+          "tn": 3,
+          "tp": 3
+        }
+      },
+      "commits": 6,
+      "n": 7,
+      "resolved": 6
+    },
+    "processing/processing": {
+      "arms": {
+        "disappear": {
+          "address": 2,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 2,
+          "tn": 0,
+          "tp": 2
+        },
+        "edge": {
+          "address": 2,
+          "balanced": null,
+          "fn": 1,
+          "fp": 0,
+          "joint": 1,
+          "tn": 0,
+          "tp": 1
+        },
+        "edge_lex_agree": {
+          "address": 2,
+          "balanced": null,
+          "fn": 1,
+          "fp": 0,
+          "joint": 1,
+          "tn": 0,
+          "tp": 1
+        },
+        "git_prior": {
+          "address": 2,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 2,
+          "tn": 0,
+          "tp": 2
+        },
+        "lex_prior": {
+          "address": 2,
+          "balanced": null,
+          "fn": 0,
+          "fp": 0,
+          "joint": 2,
+          "tn": 0,
+          "tp": 2
+        }
+      },
+      "commits": 2,
+      "n": 2,
+      "resolved": 2
+    },
+    "puniverse/quasar": {
+      "arms": {
+        "disappear": {
+          "address": 5,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 1,
+          "joint": 4,
+          "tn": 0,
+          "tp": 4
+        },
+        "edge": {
+          "address": 5,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 5,
+          "tn": 1,
+          "tp": 4
+        },
+        "edge_lex_agree": {
+          "address": 5,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 5,
+          "tn": 1,
+          "tp": 4
+        },
+        "git_prior": {
+          "address": 4,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 4,
+          "tn": 1,
+          "tp": 4
+        },
+        "lex_prior": {
+          "address": 5,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 5,
+          "tn": 1,
+          "tp": 4
+        }
+      },
+      "commits": 1,
+      "n": 5,
+      "resolved": 5
+    },
+    "real-logic/Aeron": {
+      "arms": {
+        "disappear": {
+          "address": 3,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 1,
+          "joint": 2,
+          "tn": 0,
+          "tp": 4
+        },
+        "edge": {
+          "address": 2,
+          "balanced": 0.5,
+          "fn": 0,
+          "fp": 1,
+          "joint": 2,
+          "tn": 0,
+          "tp": 4
+        },
+        "edge_lex_agree": {
+          "address": 3,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 3,
+          "tn": 1,
+          "tp": 4
+        },
+        "git_prior": {
+          "address": 1,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 1,
+          "tn": 1,
+          "tp": 4
+        },
+        "lex_prior": {
+          "address": 3,
+          "balanced": 1.0,
+          "fn": 0,
+          "fp": 0,
+          "joint": 3,
+          "tn": 1,
+          "tp": 4
+        }
+      },
+      "commits": 1,
+      "n": 5,
+      "resolved": 5
+    }
+  },
+  "resolved": 52
+}

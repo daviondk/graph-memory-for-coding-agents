@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.108" timestamp="2026-11-20T23:52:10.238671" hostname="DESKTOP-PU57F9M"><testcase classname="python_testcases.test_shortest_paths" name="test3" time="0.011"><failure message="AssertionError: assert {'A': 0, 'B':...'D': inf, ...} == {'A': 0, 'B':..., 'D': 6, ...}&#10;  Omitting 1 identical items, use -vv to show&#10;  Differing items:&#10;  {'E': inf} != {'E': 5}&#10;  {'B': inf} != {'B': 1}&#10;  {'F': inf} != {'F': 9}&#10;  {'D': inf} != {'D': 6}&#10;  {'C': inf} != {'C': 3}&#10;  Use -v to get more diff">python_testcases\test_shortest_paths.py:64: in test3
+    assert result == expected
+E   AssertionError: assert {'A': 0, 'B':...'D': inf, ...} == {'A': 0, 'B':..., 'D': 6, ...}
+E     Omitting 1 identical items, use -vv to show
+E     Differing items:
+E     {'E': inf} != {'E': 5}
+E     {'B': inf} != {'B': 1}
+E     {'F': inf} != {'F': 9}
+E     {'D': inf} != {'D': 6}
+E     {'C': inf} != {'C': 3}
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

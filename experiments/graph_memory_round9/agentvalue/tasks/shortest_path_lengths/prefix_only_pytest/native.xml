@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="0.120" timestamp="2026-11-20T23:50:04.137037" hostname="DESKTOP-PU57F9M"><testcase classname="python_testcases.test_shortest_path_lengths" name="test2" time="0.012"><failure message="AssertionError: assert defaultdict(&lt;...f, (4, 3): 7}) == {(0, 0): 0, (...0, 3): 6, ...}&#10;  Omitting 14 identical items, use -vv to show&#10;  Differing items:&#10;  {(2, 4): inf} != {(2, 4): 5}&#10;  {(0, 4): inf} != {(0, 4): 13}&#10;  {(2, 1): 5} != {(2, 1): inf}&#10;  {(4, 3): 7} != {(4, 3): inf}&#10;  {(0, 3): inf} != {(0, 3): 6}...&#10;  &#10;  ...Full output truncated (7 lines hidden), use '-vv' to show">python_testcases\test_shortest_path_lengths.py:104: in test2
+    assert result == expected
+E   AssertionError: assert defaultdict(&lt;...f, (4, 3): 7}) == {(0, 0): 0, (...0, 3): 6, ...}
+E     Omitting 14 identical items, use -vv to show
+E     Differing items:
+E     {(2, 4): inf} != {(2, 4): 5}
+E     {(0, 4): inf} != {(0, 4): 13}
+E     {(2, 1): 5} != {(2, 1): inf}
+E     {(4, 3): 7} != {(4, 3): inf}
+E     {(0, 3): inf} != {(0, 3): 6}...
+E     
+E     ...Full output truncated (7 lines hidden), use '-vv' to show</failure></testcase><testcase classname="python_testcases.test_shortest_path_lengths" name="test3" time="0.002"><failure message="assert defaultdict(&lt;...f, (3, 2): 5}) == {(0, 0): 0, (... 3): inf, ...}&#10;  Omitting 14 identical items, use -vv to show&#10;  Differing items:&#10;  {(1, 0): 3} != {(1, 0): inf}&#10;  {(3, 2): 5} != {(3, 2): inf}&#10;  Use -v to get more diff">python_testcases\test_shortest_path_lengths.py:135: in test3
+    assert result == expected
+E   assert defaultdict(&lt;...f, (3, 2): 5}) == {(0, 0): 0, (... 3): inf, ...}
+E     Omitting 14 identical items, use -vv to show
+E     Differing items:
+E     {(1, 0): 3} != {(1, 0): inf}
+E     {(3, 2): 5} != {(3, 2): inf}
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

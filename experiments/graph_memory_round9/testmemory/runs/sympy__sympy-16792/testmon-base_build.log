@@ -1,0 +1,17 @@
+F............                                                            [100%]
+================================== FAILURES ===================================
+E   assert '#include "te..._result;\n}\n' == '#include "te..._result;\n}\n'
+      
+      Skipping 45 identical leading characters in diff, use -v to show
+      - st(double *x) {
+      ?           -
+      + st(double x) {
+           double test_result;
+           test_result = 1.0;
+           return test_result;
+        }
+D:\CodexResearch\x20-round9-test-runtime\testmon-ccpzpie7\repo\sympy\utilities\tests\test_codegen.py:602: assert '#include "te..._result;\n}\n' == '#include "te..._result;\n}\n'
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg - a...
+1 failed, 12 passed, 9 warnings in 3.23s

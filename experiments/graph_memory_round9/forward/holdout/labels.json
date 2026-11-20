@@ -1,0 +1,528 @@
+{
+  "014c26da6823862752b7": {
+    "role": "Rename Method",
+    "target": [
+      "com.hazelcast.client.impl.protocol.util.ParameterUtil",
+      "calculateDataSize",
+      [
+        "String"
+      ]
+    ]
+  },
+  "0154d35770ab2773b8f4": {
+    "role": "Rename Method",
+    "target": [
+      "org.apache.pig.backend.hadoop.executionengine.spark.SparkLauncher",
+      "addFilesToSparkJob",
+      []
+    ]
+  },
+  "0331b1c52a8ceaca0cc5": {
+    "role": "Rename Method",
+    "target": [
+      "com.facebook.buck.js.ReactNativeBundle",
+      "getJSBundleDir",
+      []
+    ]
+  },
+  "03d7e559034091091767": {
+    "role": "Move Method",
+    "target": [
+      "org.apache.cassandra.cql3.validation.entities.SecondaryIndexTest",
+      "testIndexOnCompositeValueOver64k",
+      []
+    ]
+  },
+  "071a3e3f354223ad0ef1": {
+    "role": "Move Method",
+    "target": [
+      "org.apache.cassandra.cql3.statements.CFProperties",
+      "setOrdering",
+      [
+        "ColumnIdentifier",
+        "boolean"
+      ]
+    ]
+  },
+  "0724a3a29d26e5b1a1b8": {
+    "role": "Rename Method",
+    "target": [
+      "com.hazelcast.mapreduce.MapReduceTest",
+      "tripTerminate",
+      [
+        "HazelcastInstance[]"
+      ]
+    ]
+  },
+  "08a9a0f7d7c54e954fd9": {
+    "role": "Rename Method",
+    "target": [
+      "org.infinispan.transaction.xa.recovery.RecoveryManagerImpl",
+      "removeRecoveryInformation",
+      [
+        "Collection<Address>",
+        "Xid",
+        "boolean",
+        "GlobalTransaction",
+        "boolean"
+      ]
+    ]
+  },
+  "0da00b01a45dd4f43a47": {
+    "role": "Inline Method",
+    "target": [
+      "org.infinispan.interceptors.distribution.TxDistributionInterceptor",
+      "remoteGet",
+      [
+        "InvocationContext",
+        "Object",
+        "boolean",
+        "FlagAffectedCommand"
+      ]
+    ]
+  },
+  "1028597c751efcd7185a": {
+    "role": "Move Method",
+    "target": [
+      "org.terasology.engine.subsystem.common.ConfigurationSubsystem",
+      "validateServerIdentity",
+      []
+    ]
+  },
+  "1213d04b9146e6cc1c5a": {
+    "role": "Move Method",
+    "target": [
+      "com.hazelcast.internal.metrics.impl.DoubleGaugeImplTest",
+      "setup",
+      []
+    ]
+  },
+  "14bf5ad6ae2337406312": {
+    "role": "Rename Method",
+    "target": [
+      "com.google.gwt.core.client.interop.JsTypeArrayTest",
+      "testJsTypeArray_returnFromNativeWithACall",
+      []
+    ]
+  },
+  "15e238c9fe490d39ffd2": {
+    "role": "Rename Method",
+    "target": [
+      "org.infinispan.query.remote.QueryFacadeImpl",
+      "buildLuceneQuery",
+      [
+        "AdvancedCache<?,?>",
+        "boolean",
+        "SerializationContext",
+        "String",
+        "long",
+        "int"
+      ]
+    ]
+  },
+  "16a84a2ecf3a012f1193": {
+    "role": "Inline Method",
+    "target": [
+      "com.badlogic.gdx.scenes.scene2d.ui.CheckBox",
+      "CheckBox",
+      [
+        "String",
+        "CheckBoxStyle"
+      ]
+    ]
+  },
+  "19fa24d87135fb6b5f81": {
+    "role": "Inline Method",
+    "target": [
+      "org.eclipse.jgit.storage.pack.PackWriter",
+      "addObject",
+      [
+        "RevObject",
+        "int"
+      ]
+    ]
+  },
+  "1a8fa6592cb20283686f": {
+    "role": "Rename Method",
+    "target": [
+      "org.apache.cassandra.pig.ThriftColumnFamilyTest",
+      "testCqlNativeStorageCounterCF",
+      []
+    ]
+  },
+  "218007461443b169887f": {
+    "role": "Rename Method",
+    "target": [
+      "com.facebook.buck.cxx.DebugPathSanitizerTest",
+      "sanitizeWithoutAnyMatches",
+      []
+    ]
+  },
+  "23f1e9bf2b66844729e7": {
+    "role": "Rename Method",
+    "target": [
+      "com.linkedin.r2.transport.http.client.TestHttpClientFactory",
+      "testGetRequestCompressionConfig",
+      [
+        "String",
+        "int",
+        "CompressionConfig"
+      ]
+    ]
+  },
+  "244d1267767d4372407e": {
+    "role": "Rename Method",
+    "target": [
+      "com.linkedin.restli.internal.server.RestLiCallback.FilterResponseContextAdapter",
+      "setRestLiResponseEnvelope",
+      [
+        "RestLiResponseEnvelope"
+      ]
+    ]
+  },
+  "2cc8c5c34bc598a61234": {
+    "role": "Rename Method",
+    "target": [
+      "org.terasology.engine.subsystem.EngineSubsystem",
+      "preShutdown",
+      []
+    ]
+  },
+  "2dee67a469482cd8742b": {
+    "role": "Move Method",
+    "target": [
+      "org.rstudio.studio.client.rsconnect.ui.RSConnectDeploy",
+      "checkForExistingApp",
+      [
+        "RSConnectAccount",
+        "String",
+        "OperationWithInput<Boolean>"
+      ]
+    ]
+  },
+  "308fc72ed003c7e316a3": {
+    "role": "Inline Method",
+    "target": [
+      "org.infinispan.query.remote.QueryFacadeImpl",
+      "query",
+      [
+        "AdvancedCache<byte[],byte[]>",
+        "byte[]"
+      ]
+    ]
+  },
+  "3f12be45737845e251e4": {
+    "role": "Inline Method",
+    "target": [
+      "org.terasology.engine.subsystem.lwjgl.LwjglTimer",
+      "preInitialise",
+      [
+        "Context"
+      ]
+    ]
+  },
+  "3fb8faba6fe916894874": {
+    "role": "Rename Method",
+    "target": [
+      "org.terasology.engine.subsystem.EngineSubsystem",
+      "shutdown",
+      []
+    ]
+  },
+  "48bc91b4ded20461bd48": {
+    "role": "Inline Method",
+    "target": [
+      "org.terasology.engine.subsystem.lwjgl.LwjglAudio",
+      "initialise",
+      [
+        "Context"
+      ]
+    ]
+  },
+  "4bb8f29c4f61a5e97778": {
+    "role": "Move Method",
+    "target": [
+      "org.infinispan.server.jgroups.logging.JGroupsLogger",
+      "transportNotDefined",
+      [
+        "String"
+      ]
+    ]
+  },
+  "56bdb935a2e199d9864b": {
+    "role": "Move Method",
+    "target": [
+      "org.infinispan.server.jgroups.logging.JGroupsLogger",
+      "protocolNotDefined",
+      [
+        "String"
+      ]
+    ]
+  },
+  "572d7a1ca7e095021769": {
+    "role": "Inline Method",
+    "target": [
+      "tachyon.worker.block.evictor.LRUEvictor",
+      "freeSpaceWithView",
+      [
+        "long",
+        "BlockStoreLocation",
+        "BlockMetadataManagerView"
+      ]
+    ]
+  },
+  "5983862cafa8c91a70ef": {
+    "role": "Rename Method",
+    "target": [
+      "org.rstudio.studio.client.workbench.views.source.editors.text.ChunkOptionsPopupPanel",
+      "makeTriStateCheckBox",
+      [
+        "String",
+        "String"
+      ]
+    ]
+  },
+  "64dfba4521d46466f532": {
+    "role": "Inline Method",
+    "target": [
+      "org.apache.cassandra.db.compaction.CompactionManager",
+      "submitBackground",
+      [
+        "ColumnFamilyStore"
+      ]
+    ]
+  },
+  "680a647ea1535beb2c48": {
+    "role": "Inline Method",
+    "target": [
+      "org.infinispan.client.hotrod.marshall.EmbeddedCompatTest",
+      "testPutAndGet",
+      []
+    ]
+  },
+  "6bfc5095b10770fa3c45": {
+    "role": "Inline Method",
+    "target": [
+      "org.apache.pig.impl.util.Utils",
+      "depthFirstSearchForFile",
+      [
+        "FileStatus[]",
+        "FileSystem",
+        "PathFilter"
+      ]
+    ]
+  },
+  "6c4c04277a250e4b394f": {
+    "role": "Move Method",
+    "target": [
+      "com.linkedin.r2.filter.compression.TestClientCompressionFilter",
+      "contentEncodingGeneratorDataProvider",
+      []
+    ]
+  },
+  "70235b013ab85f5b7e63": {
+    "role": "Rename Method",
+    "target": [
+      "org.apache.cassandra.db.ColumnFamilyStore",
+      "init",
+      []
+    ]
+  },
+  "79764a8eba0ca052fe5d": {
+    "role": "Inline Method",
+    "target": [
+      "com.hazelcast.cluster.impl.ClusterServiceImpl",
+      "heartBeaterMaster",
+      [
+        "long",
+        "long"
+      ]
+    ]
+  },
+  "7b54a613e9763d6d5e33": {
+    "role": "Inline Method",
+    "target": [
+      "com.linkedin.restli.examples.RestLiIntTestServer",
+      "createServer",
+      [
+        "Engine",
+        "int",
+        "String",
+        "boolean",
+        "int"
+      ]
+    ]
+  },
+  "7c12fb6e91f8ef7c8b8f": {
+    "role": "Move Method",
+    "target": [
+      "com.linkedin.r2.filter.compression.ClientCompressionFilter",
+      "shouldCompressRequest",
+      [
+        "int",
+        "CompressionOption"
+      ]
+    ]
+  },
+  "a65f0c610a860888749b": {
+    "role": "Rename Method",
+    "target": [
+      "com.google.gwt.dev.jjs.impl.ControlFlowAnalyzer.RescueVisitor",
+      "rescueMembersAndInstantiateSuperInterfaces",
+      [
+        "JDeclaredType"
+      ]
+    ]
+  },
+  "a8e1e29cc9980459f9da": {
+    "role": "Rename Method",
+    "target": [
+      "org.eclipse.jgit.storage.pack.PackWriter",
+      "addResultOrBase",
+      [
+        "RevObject",
+        "int"
+      ]
+    ]
+  },
+  "b375b314a19499ad51dd": {
+    "role": "Inline Method",
+    "target": [
+      "org.apache.giraph.ooc.DiskBackedPartitionStore",
+      "putPartition",
+      [
+        "Partition<I,V,E>"
+      ]
+    ]
+  },
+  "b4db9fc4f48fc6e05bd9": {
+    "role": "Rename Method",
+    "target": [
+      "org.eclipse.jgit.storage.pack.PackWriter",
+      "addObject",
+      [
+        "RevObject",
+        "int"
+      ]
+    ]
+  },
+  "bf7e4c17544e45caa077": {
+    "role": "Inline Method",
+    "target": [
+      "org.infinispan.server.jgroups.subsystem.JGroupsSubsystemXMLWriter",
+      "writeContent",
+      [
+        "XMLExtendedStreamWriter",
+        "SubsystemMarshallingContext"
+      ]
+    ]
+  },
+  "c5a3a119df9855ac3cac": {
+    "role": "Move Method",
+    "target": [
+      "com.facebook.buck.cxx.AbstractCxxHeaders",
+      "addAllEntriesToIncludeMap",
+      [
+        "Map<Path,SourcePath>",
+        "Map<Path,SourcePath>"
+      ]
+    ]
+  },
+  "c8c5cd99fdf781ba8b82": {
+    "role": "Inline Method",
+    "target": [
+      "com.linkedin.pegasus.generator.TemplateSpecGenerator",
+      "generateRecord",
+      [
+        "RecordDataSchema"
+      ]
+    ]
+  },
+  "d62df362b64a95803848": {
+    "role": "Inline Method",
+    "target": [
+      "com.facebook.buck.cxx.DebugPathSanitizer",
+      "sanitize",
+      [
+        "Optional<Path>",
+        "String"
+      ]
+    ]
+  },
+  "d8c4d69115dd27b25654": {
+    "role": "Inline Method",
+    "target": [
+      "com.google.gwt.dev.jjs.impl.ControlFlowAnalyzer.RescueVisitor",
+      "visit",
+      [
+        "JsniMethodRef",
+        "Context"
+      ]
+    ]
+  },
+  "d90a68a534a8c97a143a": {
+    "role": "Rename Method",
+    "target": [
+      "org.rstudio.core.client.widget.Wizard",
+      "validateAsync",
+      [
+        "T",
+        "OperationWithInput<Boolean>"
+      ]
+    ]
+  },
+  "da6b736f5a5a8f15ac10": {
+    "role": "Move Method",
+    "target": [
+      "com.hazelcast.client.protocol.generator.CodeGenerationUtils",
+      "convertTypeToCSharp",
+      [
+        "String"
+      ]
+    ]
+  },
+  "e179ba1b834b6beec6dc": {
+    "role": "Inline Method",
+    "target": [
+      "org.rstudio.studio.client.rsconnect.RSConnect",
+      "fireRSConnectPublishEvent",
+      [
+        "RSConnectPublishResult",
+        "boolean"
+      ]
+    ]
+  },
+  "f31d82266176467390c9": {
+    "role": "Inline Method",
+    "target": [
+      "com.linkedin.pegasus.generator.TemplateSpecGenerator",
+      "generate",
+      [
+        "DataSchema",
+        "DataSchemaLocation"
+      ]
+    ]
+  },
+  "fda57679d3dcec339612": {
+    "role": "Inline Method",
+    "target": [
+      "com.google.gwt.dev.jjs.impl.ControlFlowAnalyzer.RescueVisitor",
+      "visit",
+      [
+        "JNewInstance",
+        "Context"
+      ]
+    ]
+  },
+  "ff766da98372e246718d": {
+    "role": "Inline Method",
+    "target": [
+      "com.hazelcast.cluster.impl.ClusterServiceImpl",
+      "heartBeaterSlave",
+      [
+        "long",
+        "long"
+      ]
+    ]
+  }
+}

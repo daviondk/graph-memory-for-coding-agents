@@ -1,0 +1,666 @@
+[
+  {
+    "case": "4e5c2b48f9a06c0ef233",
+    "commit": "b395127e733b33c27f344695ebf155ecf5edeeab",
+    "project": "antlr/antlr4",
+    "source": [
+      "org.antlr.v4.runtime.tree.Trees",
+      "toStringTree",
+      [
+        "Tree",
+        "TreeTextProvider"
+      ]
+    ]
+  },
+  {
+    "case": "1126cd1de0d4a58f534e",
+    "commit": "b395127e733b33c27f344695ebf155ecf5edeeab",
+    "project": "antlr/antlr4",
+    "source": [
+      "org.antlr.v4.runtime.RuleContext",
+      "inspect",
+      [
+        "Parser"
+      ]
+    ]
+  },
+  {
+    "case": "42888d85c693d5fff41d",
+    "commit": "b395127e733b33c27f344695ebf155ecf5edeeab",
+    "project": "antlr/antlr4",
+    "source": [
+      "org.antlr.v4.runtime.tree.Trees",
+      "getPS",
+      [
+        "Tree",
+        "List<String>",
+        "String",
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "7cf99c6a5d2ffc7dca88",
+    "commit": "a9ca2efae56815dc464189b055ffe9da23766f7f",
+    "project": "antlr/antlr4",
+    "source": [
+      "org.antlr.v4.test.tool.TestAmbigParseTrees",
+      "testInterp",
+      [
+        "LexerGrammar",
+        "Grammar",
+        "String",
+        "String",
+        "int",
+        "String",
+        "String",
+        "String[]"
+      ]
+    ]
+  },
+  {
+    "case": "a2f53028021e059886c3",
+    "commit": "00aa01fb90f3210d1e3027d7f759fb1085b814bd",
+    "project": "apache/drill",
+    "source": [
+      "org.apache.drill.exec.server.TestDrillbitResilience",
+      "assertCancelled",
+      [
+        "String",
+        "String",
+        "WaitUntilCompleteListener"
+      ]
+    ]
+  },
+  {
+    "case": "ddafb7ea580551803332",
+    "commit": "c1b847acdc8cb90a1498b236b3bb5c81ca75c044",
+    "project": "apache/drill",
+    "source": [
+      "org.apache.drill.exec.util.ImpersonationUtil",
+      "createFileSystem",
+      [
+        "String",
+        "Configuration",
+        "OperatorStats"
+      ]
+    ]
+  },
+  {
+    "case": "5e55a40e1a417186a6b9",
+    "commit": "c1b847acdc8cb90a1498b236b3bb5c81ca75c044",
+    "project": "apache/drill",
+    "source": [
+      "org.apache.drill.exec.store.hive.HiveTestDataGenerator",
+      "executeQuery",
+      [
+        "Driver",
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "0356e25c395e77bd3e98",
+    "commit": "00aa01fb90f3210d1e3027d7f759fb1085b814bd",
+    "project": "apache/drill",
+    "source": [
+      "org.apache.drill.exec.server.TestDrillbitResilience",
+      "settingNoopInjectionsAndQuery",
+      []
+    ]
+  },
+  {
+    "case": "a43c25142a3e48c614d5",
+    "commit": "c1b847acdc8cb90a1498b236b3bb5c81ca75c044",
+    "project": "apache/drill",
+    "source": [
+      "org.apache.drill.exec.impersonation.TestImpersonationDisabledWithMiniDFS",
+      "addMiniDfsBasedStorage",
+      []
+    ]
+  },
+  {
+    "case": "70487d2040ae2dc44be7",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedTryDepthCheck",
+      "visitLiteralTry",
+      [
+        "DetailAST"
+      ]
+    ]
+  },
+  {
+    "case": "831f9161b282a9194a58",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck",
+      "visitLiteralIf",
+      [
+        "DetailAST"
+      ]
+    ]
+  },
+  {
+    "case": "bc2498f72557a6a4df16",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck",
+      "leaveLiteralIf",
+      [
+        "DetailAST"
+      ]
+    ]
+  },
+  {
+    "case": "be0fc3fd35da4e15c174",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedTryDepthCheck",
+      "leaveLiteralTry",
+      []
+    ]
+  },
+  {
+    "case": "06f7f9d3344f2291c86d",
+    "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.utils.Utils",
+      "getIntFromField",
+      [
+        "Field",
+        "Object"
+      ]
+    ]
+  },
+  {
+    "case": "07235d0907fbe0e01efd",
+    "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.utils.Utils",
+      "relativizeAndNormalizePath",
+      [
+        "String",
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "17167eb4295482b3a3ea",
+    "commit": "0a1a4c6e94c9b3b73b21b323f14ae7b7337b1b44",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+      "markFinalVariableCandidateAsAssignInIfBlock",
+      [
+        "DetailAST"
+      ]
+    ]
+  },
+  {
+    "case": "81e076cc683ae01ac7ba",
+    "commit": "0a1a4c6e94c9b3b73b21b323f14ae7b7337b1b44",
+    "project": "checkstyle/checkstyle",
+    "source": [
+      "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+      "markFinalVariableCandidateAsAssignOutsideIfOrElseBlock",
+      [
+        "DetailAST"
+      ]
+    ]
+  },
+  {
+    "case": "1d4fa67a7e4b0ee9a0ef",
+    "commit": "ba5e6d44526a2491a7004423ca2ad780c6992c46",
+    "project": "google/closure-compiler",
+    "source": [
+      "com.google.javascript.jscomp.GlobalTypeInfo.ProcessScope",
+      "getRawTypeFromJSType",
+      [
+        "JSType"
+      ]
+    ]
+  },
+  {
+    "case": "4fb18524ffbcd40383c4",
+    "commit": "b9a17665b158955ad28ef7f50cc0a8585460f053",
+    "project": "google/closure-compiler",
+    "source": [
+      "com.google.javascript.jscomp.Es6TemplateLiterals",
+      "createUntaggedTemplateLiteral",
+      [
+        "Node"
+      ]
+    ]
+  },
+  {
+    "case": "045745404121648101b5",
+    "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+    "project": "google/closure-compiler",
+    "source": [
+      "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest",
+      "testConvertTypeUnion",
+      []
+    ]
+  },
+  {
+    "case": "0b050504ab51349b0f7d",
+    "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+    "project": "google/closure-compiler",
+    "source": [
+      "com.google.javascript.jscomp.parsing.TypeDeclarationsIRFactoryTest",
+      "testConvertFunctionNewType",
+      []
+    ]
+  },
+  {
+    "case": "9dcee3af50cca80fda1d",
+    "commit": "545a7d027b4c55c116dc52d9cd8121fbb09777f0",
+    "project": "google/closure-compiler",
+    "source": [
+      "com.google.javascript.rhino.jstype.FunctionType",
+      "usesImplicitMatch",
+      []
+    ]
+  },
+  {
+    "case": "a4e23328e829b5a80c93",
+    "commit": "b9a17665b158955ad28ef7f50cc0a8585460f053",
+    "project": "google/closure-compiler",
+    "source": [
+      "com.google.javascript.jscomp.Es6TemplateLiterals",
+      "createTaggedTemplateLiteral",
+      [
+        "NodeTraversal",
+        "Node"
+      ]
+    ]
+  },
+  {
+    "case": "0a6c2d7feeb3257b2aa9",
+    "commit": "5bab9e837cf273250aa26702204f139fdcfd9e7a",
+    "project": "google/guava",
+    "source": [
+      "com.google.common.collect.HashBiMap.Itr",
+      "checkForConcurrentModification",
+      []
+    ]
+  },
+  {
+    "case": "105aa640acdf837f3ffd",
+    "commit": "5bab9e837cf273250aa26702204f139fdcfd9e7a",
+    "project": "google/guava",
+    "source": [
+      "com.google.common.collect.HashBiMap.Itr",
+      "checkForConcurrentModification",
+      []
+    ]
+  },
+  {
+    "case": "46da7f57b345fbcab111",
+    "commit": "31fc19200207ccadc45328037d8a2a62b617c029",
+    "project": "google/guava",
+    "source": [
+      "com.google.common.primitives.Ints",
+      "digit",
+      [
+        "char"
+      ]
+    ]
+  },
+  {
+    "case": "01ca373aafe086f8ff4d",
+    "commit": "f841d8dda2bf461f595755f85c3eba786783702d",
+    "project": "gradle/gradle",
+    "source": [
+      "org.gradle.tooling.internal.provider.runner.ClientForwardingBuildListener",
+      "adaptResult",
+      [
+        "BuildResult",
+        "long",
+        "long"
+      ]
+    ]
+  },
+  {
+    "case": "5b3249d5f4cffe9e1a72",
+    "commit": "c41466b6fd11ef4edc40cb9fd42dc13cf4f6fde1",
+    "project": "gradle/gradle",
+    "source": [
+      "org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver",
+      "resolveMetaDataArtifact",
+      [
+        "ModuleComponentArtifactMetaData",
+        "ResourceAwareResolveResult"
+      ]
+    ]
+  },
+  {
+    "case": "a109772970ad6fb0ab1f",
+    "commit": "3a7ccf5a252077332b9505acb22f190745f726f7",
+    "project": "gradle/gradle",
+    "source": [
+      "org.gradle.play.plugins.PlayApplicationPlugin.Rules",
+      "registerOrFindDeploymentHandle",
+      [
+        "DeploymentRegistry",
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "083a5275994ac916e9eb",
+    "commit": "f841d8dda2bf461f595755f85c3eba786783702d",
+    "project": "gradle/gradle",
+    "source": [
+      "org.gradle.internal.progress.BuildOperationInternal",
+      "getPayload",
+      []
+    ]
+  },
+  {
+    "case": "7deecf8e37ee2fdbdff4",
+    "commit": "79c66ceab11dae0b9fd1dade7bb4120028738705",
+    "project": "gradle/gradle",
+    "source": [
+      "org.gradle.nativeplatform.test.internal.DefaultNativeTestSuiteBinarySpec",
+      "getAllSources",
+      []
+    ]
+  },
+  {
+    "case": "2f79241075119a43483d",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "project": "graphhopper/graphhopper",
+    "source": [
+      "com.graphhopper.util.GHUtility",
+      "guessStorage",
+      [
+        "Graph",
+        "Directory",
+        "EncodingManager"
+      ]
+    ]
+  },
+  {
+    "case": "00312a948cce2da65f98",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "project": "graphhopper/graphhopper",
+    "source": [
+      "com.graphhopper.storage.GraphHopperStorage",
+      "isTestingEnabled",
+      []
+    ]
+  },
+  {
+    "case": "0462c6822c39ecc0b5d3",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "project": "graphhopper/graphhopper",
+    "source": [
+      "com.graphhopper.storage.GraphHopperStorage",
+      "internalEdgeDisconnect",
+      [
+        "int",
+        "long",
+        "int",
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "0872ab2835cb06964b12",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "project": "graphhopper/graphhopper",
+    "source": [
+      "com.graphhopper.routing.EdgeBasedRoutingAlgorithmTest",
+      "createGraph",
+      [
+        "EncodingManager"
+      ]
+    ]
+  },
+  {
+    "case": "0a78363424e37b8d5061",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "project": "graphhopper/graphhopper",
+    "source": [
+      "com.graphhopper.storage.AbstractGraphStorageTester",
+      "createGraph",
+      []
+    ]
+  },
+  {
+    "case": "4929bbb43e266843dd87",
+    "commit": "77fab3caea4495798a248035f0e928f745c7c2db",
+    "project": "neo4j/neo4j",
+    "source": [
+      "org.neo4j.kernel.impl.locking.community.CommunityLockClient",
+      "releaseAllExclusive",
+      []
+    ]
+  },
+  {
+    "case": "fa2b31b0e44e3aa22b65",
+    "commit": "74d2cc420e5590ba3bc0ffcc15b30b76a9cbef0b",
+    "project": "neo4j/neo4j",
+    "source": [
+      "org.neo4j.kernel.AvailabilityGuard",
+      "AvailabilityGuard",
+      [
+        "Clock",
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "687f8c173b1b12f48296",
+    "commit": "77fab3caea4495798a248035f0e928f745c7c2db",
+    "project": "neo4j/neo4j",
+    "source": [
+      "org.neo4j.kernel.impl.locking.community.CommunityLockClient",
+      "releaseAllShared",
+      []
+    ]
+  },
+  {
+    "case": "34cefda097e69f8d1fdd",
+    "commit": "021d17c8234904dcb1d54596662352395927fe7b",
+    "project": "neo4j/neo4j",
+    "source": [
+      "org.neo4j.kernel.impl.api.store.DiskLayer",
+      "directionOf",
+      [
+        "long",
+        "long",
+        "long",
+        "long"
+      ]
+    ]
+  },
+  {
+    "case": "4b1e1b79ce4b3a81ebfb",
+    "commit": "a26b61201cd86c9a8773b418d9c84b446e95a601",
+    "project": "neo4j/neo4j",
+    "source": [
+      "org.neo4j.kernel.impl.util.IoPrimitiveUtils",
+      "arrayAsCollection",
+      [
+        "Object"
+      ]
+    ]
+  },
+  {
+    "case": "02a6502c934148aaaf56",
+    "commit": "001de307492df8f84ad15f6aaa0bd1e748d4ce27",
+    "project": "neo4j/neo4j",
+    "source": [
+      "org.neo4j.kernel.impl.store.counts.CountsRotationTest",
+      "rotateLog",
+      [
+        "GraphDatabaseAPI"
+      ]
+    ]
+  },
+  {
+    "case": "04b58c645f659e742a95",
+    "commit": "e0072aac53b3b88de787e7ca653c7e17f9499018",
+    "project": "neo4j/neo4j",
+    "source": [
+      "org.neo4j.packstream.PackStream.Unpacker",
+      "unpackBytes",
+      [
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "a5fd61d6b26343c08430",
+    "commit": "acf67c8cb58d13827e14bbeeec11a66f9277015f",
+    "project": "processing/processing",
+    "source": [
+      "processing.core.PApplet",
+      "runSketchEDT",
+      [
+        "String[]",
+        "PApplet"
+      ]
+    ]
+  },
+  {
+    "case": "c2017ca2862d7698c6e4",
+    "commit": "8707194f003444a9fb8e00bffa2893ef0c2492c6",
+    "project": "processing/processing",
+    "source": [
+      "processing.opengl.PSurfaceJOGL",
+      "setFrameCentered",
+      []
+    ]
+  },
+  {
+    "case": "1fb912628157737d4fef",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "project": "puniverse/quasar",
+    "source": [
+      "co.paralleluniverse.fibers.Fiber",
+      "verifySuspend",
+      [
+        "Fiber",
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "46560a9282630c62835e",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "project": "puniverse/quasar",
+    "source": [
+      "co.paralleluniverse.fibers.Fiber",
+      "checkInstrumentation",
+      [
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "ba06d8b2274ad3ff3eb0",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "project": "puniverse/quasar",
+    "source": [
+      "co.paralleluniverse.fibers.Stack",
+      "popMethod",
+      [
+        "boolean"
+      ]
+    ]
+  },
+  {
+    "case": "d046369c04a01d9c1a66",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "project": "puniverse/quasar",
+    "source": [
+      "co.paralleluniverse.fibers.Stack",
+      "pushMethod",
+      [
+        "int",
+        "int",
+        "String",
+        "int"
+      ]
+    ]
+  },
+  {
+    "case": "93eea4cf260a7eac1098",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "project": "puniverse/quasar",
+    "source": [
+      "co.paralleluniverse.fibers.Fiber",
+      "isNonSuspendable",
+      [
+        "Class",
+        "String"
+      ]
+    ]
+  },
+  {
+    "case": "1cfd211a98ab297d939e",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "project": "real-logic/Aeron",
+    "source": [
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "verifyReceiverRemovesSubscription",
+      [
+        "VerificationMode"
+      ]
+    ]
+  },
+  {
+    "case": "2528e44cd6d8cdcfd610",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "project": "real-logic/Aeron",
+    "source": [
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "verifyReceiverRemovesSubscription",
+      [
+        "VerificationMode"
+      ]
+    ]
+  },
+  {
+    "case": "34b228bffd084f13408d",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "project": "real-logic/Aeron",
+    "source": [
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "verifyExceptionLogged",
+      []
+    ]
+  },
+  {
+    "case": "354488b449fe3b8819a6",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "project": "real-logic/Aeron",
+    "source": [
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "verifyExceptionLogged",
+      []
+    ]
+  },
+  {
+    "case": "4b4dc7ca079a0a873f8f",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "project": "real-logic/Aeron",
+    "source": [
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "processTimersUntil",
+      [
+        "BooleanSupplier"
+      ]
+    ]
+  }
+]

@@ -4,6 +4,8 @@
 
 **Отчёт** · [PDF, 4 страницы](docs/report.pdf) · [редактируемый Word](docs/report.docx) · [читать на GitHub](docs/report.md).
 
+[Девятая серия](experiments/graph_memory_round9/REPORT_RU.md) — внешние Java-панели, Loc-Bench, память о тестовых исходах и абляции с реальным решателем.
+
 [Восьмая серия](experiments/graph_memory_round8/REPORT_RU.md) — восстановление ссылок после рефакторинга, типы связей, сравнение с SweRank и три парных опыта с исполняемыми ссылками.
 
 [Седьмая серия](experiments/graph_memory_round7/REPORT_RU.md) — прогноз следующего чтения, проверка сохранённых связей между версиями кода, локализация строк и парный прогон Qwen с pytest.

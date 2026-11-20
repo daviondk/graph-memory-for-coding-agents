@@ -1,0 +1,23 @@
+F...F...F..F.                                                            [100%]
+================================== FAILURES ===================================
+E   AttributeError: module 'ast' has no attribute 'NameConstant'
+D:\CodexResearch\x20-round9-test-runtime\testmon-us83usaa\repo\sympy\parsing\sympy_parser.py:1200: AttributeError: module 'ast' has no attribute 'NameConstant'
+E   AttributeError: module 'ast' has no attribute 'Num'
+D:\CodexResearch\x20-round9-test-runtime\testmon-us83usaa\repo\sympy\parsing\sympy_parser.py:1181: AttributeError: module 'ast' has no attribute 'Num'
+E   AttributeError: module 'ast' has no attribute 'NameConstant'
+D:\CodexResearch\x20-round9-test-runtime\testmon-us83usaa\repo\sympy\parsing\sympy_parser.py:1138: AttributeError: module 'ast' has no attribute 'NameConstant'
+ValueError: Error from parse_expr with transformed code: "Symbol ('x' )!"
+
+The above exception was the direct cause of the following exception:
+E     File "<string>", line 1
+        Symbol ('x' )!
+                     ^
+    SyntaxError: invalid syntax
+D:\CodexResearch\x20-round9-test-runtime\testmon-us83usaa\repo\sympy\parsing\sympy_parser.py:906:   File "<string>", line 1
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/parsing/tests/test_sympy_parser.py::test_issue_7663 - AttributeE...
+FAILED sympy/parsing/tests/test_sympy_parser.py::test_issue_10773 - Attribute...
+FAILED sympy/parsing/tests/test_sympy_parser.py::test_issue_24288 - Attribute...
+FAILED sympy/parsing/tests/test_sympy_parser.py::test_sympy_parser -   File "...
+4 failed, 9 passed, 1 warning in 3.11s

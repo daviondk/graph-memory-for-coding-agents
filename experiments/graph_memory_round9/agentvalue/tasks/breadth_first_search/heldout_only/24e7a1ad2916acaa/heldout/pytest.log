@@ -1,0 +1,12 @@
+F.                                                                       [100%]
+================================== FAILURES ===================================
+____________________________________ test3 ____________________________________
+python_testcases\test_breadth_first_search.py:52: in test3
+    path_found = breadth_first_search(nodef, nodee)
+python_programs\breadth_first_search.py:12: in breadth_first_search
+    node = queue.popleft()
+E   IndexError: pop from an empty deque
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\breadth_first_search\heldout_only\24e7a1ad2916acaa\heldout\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_breadth_first_search.py::test3 - IndexError: pop...
+1 failed, 1 passed in 0.14s

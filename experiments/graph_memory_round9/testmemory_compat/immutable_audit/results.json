@@ -1,0 +1,190 @@
+[
+  {
+    "mode": "single_revert",
+    "test": "sympy/core/tests/test_basic.py::test_immutable",
+    "order": [
+      "sympy/core/tests/test_basic.py::test_immutable"
+    ],
+    "old_sha256": "a1b98e9614841032bc3c81b20c28a3abce2c2018cf500b2ae98003a07281bc0b",
+    "new_sha256": "cc55d811d3d83daf7bb1a83e295e5073366136d2c7337f16d9dbb46ed05d5085",
+    "mtime_before": 1650000000,
+    "mtime_after": 1650000200.0,
+    "sqlite_file_total": 4,
+    "changed_target": "sympy/core/_print_helpers.py",
+    "old_fingerprint_matches_new_source": [],
+    "prior": [
+      [
+        "setup",
+        "passed",
+        0.006026099959854037
+      ],
+      [
+        "call",
+        "passed",
+        0.0008806000114418566
+      ],
+      [
+        "teardown",
+        "passed",
+        0.0003367000026628375
+      ]
+    ],
+    "plugin_after": null,
+    "direct_pytest_after": 1,
+    "plugin_rc_after": 0,
+    "build_db_sha256": "dc6cabe5c4365a81c15c716372cf4ca68c0ebab93c960fba9ffcb4fd9e04fc03"
+  },
+  {
+    "mode": "single_fix",
+    "test": "sympy/core/tests/test_basic.py::test_immutable",
+    "order": [
+      "sympy/core/tests/test_basic.py::test_immutable"
+    ],
+    "old_sha256": "cc55d811d3d83daf7bb1a83e295e5073366136d2c7337f16d9dbb46ed05d5085",
+    "new_sha256": "a1b98e9614841032bc3c81b20c28a3abce2c2018cf500b2ae98003a07281bc0b",
+    "mtime_before": 1650000000,
+    "mtime_after": 1650000200.0,
+    "sqlite_file_total": 8,
+    "changed_target": "sympy/core/_print_helpers.py",
+    "old_fingerprint_matches_new_source": [
+      false
+    ],
+    "prior": [
+      [
+        "setup",
+        "passed",
+        0.0063884000410325825
+      ],
+      [
+        "call",
+        "failed",
+        0.0024087000056169927
+      ],
+      [
+        "teardown",
+        "passed",
+        0.00041500001680105925
+      ]
+    ],
+    "plugin_after": [
+      [
+        "setup",
+        "passed",
+        0.005925599951297045
+      ],
+      [
+        "call",
+        "passed",
+        0.0009725000127218664
+      ],
+      [
+        "teardown",
+        "passed",
+        0.0003129999968223274
+      ]
+    ],
+    "direct_pytest_after": 0,
+    "plugin_rc_after": 0,
+    "build_db_sha256": "46a168f1d7a33d555b00023e9a706f675ad91558c62f04c2a941cb55eb816986"
+  },
+  {
+    "mode": "reverse_order_revert",
+    "test": "sympy/core/tests/test_basic.py::test_immutable",
+    "order": [
+      "sympy/core/tests/test_basic.py::test_subs_with_unicode_symbols",
+      "sympy/core/tests/test_basic.py::test_rewrite",
+      "sympy/core/tests/test_basic.py::test_preorder_traversal",
+      "sympy/core/tests/test_basic.py::test_matches_basic",
+      "sympy/core/tests/test_basic.py::test_literal_evalf_is_number_is_zero_is_comparable",
+      "sympy/core/tests/test_basic.py::test_immutable",
+      "sympy/core/tests/test_basic.py::test_has",
+      "sympy/core/tests/test_basic.py::test_free_symbols_empty",
+      "sympy/core/tests/test_basic.py::test_doit",
+      "sympy/core/tests/test_basic.py::test_atoms",
+      "sympy/core/tests/test_basic.py::test_atomic",
+      "sympy/core/tests/test_basic.py::test_as_dummy",
+      "sympy/core/tests/test_basic.py::test_S"
+    ],
+    "old_sha256": "a1b98e9614841032bc3c81b20c28a3abce2c2018cf500b2ae98003a07281bc0b",
+    "new_sha256": "cc55d811d3d83daf7bb1a83e295e5073366136d2c7337f16d9dbb46ed05d5085",
+    "mtime_before": 1650000000,
+    "mtime_after": 1650000200.0,
+    "sqlite_file_total": 2,
+    "changed_target": "sympy/core/_print_helpers.py",
+    "old_fingerprint_matches_new_source": [],
+    "prior": [
+      [
+        "setup",
+        "passed",
+        0.000394199974834919
+      ],
+      [
+        "call",
+        "passed",
+        0.0005330999847501516
+      ],
+      [
+        "teardown",
+        "passed",
+        0.00015949999215081334
+      ]
+    ],
+    "plugin_after": null,
+    "direct_pytest_after": 1,
+    "plugin_rc_after": 0,
+    "build_db_sha256": "81a11d0fb553291c9ffdb60e47985a12fe1e95d812350f6ba798e5e1e713cefc"
+  },
+  {
+    "mode": "edited_test",
+    "test": "sympy/core/tests/test_basic.py::test_immutable",
+    "order": [
+      "sympy/core/tests/test_basic.py::test_immutable"
+    ],
+    "old_sha256": "6827bdfa2d0e22307d99d46e93ef79d90aae72c6eca8184976dd2838161a1411",
+    "new_sha256": "4b8561820e9a2b569c2c2dfd37b0264b60df281d4683a74c8fd6fc85d1b2c83a",
+    "mtime_before": 1650000000,
+    "mtime_after": 1650000200.0,
+    "sqlite_file_total": 4,
+    "changed_target": "sympy/core/tests/test_basic.py",
+    "old_fingerprint_matches_new_source": [
+      false
+    ],
+    "prior": [
+      [
+        "setup",
+        "passed",
+        0.005347499973140657
+      ],
+      [
+        "call",
+        "passed",
+        0.0008991000358946621
+      ],
+      [
+        "teardown",
+        "passed",
+        0.00033270003041252494
+      ]
+    ],
+    "plugin_after": [
+      [
+        "setup",
+        "passed",
+        0.007243699976243079
+      ],
+      [
+        "call",
+        "failed",
+        0.0017022999818436801
+      ],
+      [
+        "teardown",
+        "passed",
+        0.0004911000141873956
+      ]
+    ],
+    "direct_pytest_after": 1,
+    "plugin_rc_after": 1,
+    "build_db_sha256": "bd53e498baaf993b4473792474950223722b20ee34675f7ad4b860f02b0acf77"
+  }
+]

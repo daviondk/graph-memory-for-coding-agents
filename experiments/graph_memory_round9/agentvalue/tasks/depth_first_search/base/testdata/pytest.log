@@ -1,0 +1,27 @@
+....F                                                                    [100%]
+================================== FAILURES ===================================
+____________________________________ test5 ____________________________________
+python_testcases\test_depth_first_search.py:83: in test5
+    path_found = depth_first_search(nodea, nodef)
+python_programs\depth_first_search.py:14: in depth_first_search
+    return search_from(startnode)
+python_programs\depth_first_search.py:10: in search_from
+    return any(
+python_programs\depth_first_search.py:11: in <genexpr>
+    search_from(nextnode) for nextnode in node.successors
+python_programs\depth_first_search.py:10: in search_from
+    return any(
+python_programs\depth_first_search.py:11: in <genexpr>
+    search_from(nextnode) for nextnode in node.successors
+python_programs\depth_first_search.py:10: in search_from
+    return any(
+python_programs\depth_first_search.py:11: in <genexpr>
+    search_from(nextnode) for nextnode in node.successors
+python_programs\depth_first_search.py:10: in search_from
+    return any(
+E   RecursionError: maximum recursion depth exceeded
+!!! Recursion detected (same locals & position)
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\depth_first_search\base\testdata\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_depth_first_search.py::test5 - RecursionError: m...
+1 failed, 4 passed in 0.11s

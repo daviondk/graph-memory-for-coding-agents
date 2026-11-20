@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="3" time="0.129" timestamp="2026-11-20T23:52:06.006152" hostname="DESKTOP-PU57F9M"><testcase classname="python_testcases.test_detect_cycle" name="test4" time="0.008"><failure message="AttributeError: 'NoneType' object has no attribute 'successor'">python_testcases\test_detect_cycle.py:59: in test4
+    detected = detect_cycle(node7)
+python_programs\detect_cycle.py:5: in detect_cycle
+    if hare.successor is None:
+E   AttributeError: 'NoneType' object has no attribute 'successor'</failure></testcase><testcase classname="python_testcases.test_detect_cycle" name="test5" time="0.001" /><testcase classname="python_testcases.test_detect_cycle" name="test6" time="0.001" /></testsuite></testsuites>

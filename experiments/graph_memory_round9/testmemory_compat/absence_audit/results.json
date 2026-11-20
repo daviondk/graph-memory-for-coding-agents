@@ -1,0 +1,51 @@
+[
+  {
+    "direction": "create",
+    "old": "passed",
+    "new": "failed",
+    "touched": [
+      "sympy/adjustments.py|<module>",
+      "sympy/adjustments.py|adjust"
+    ],
+    "old_local_dependencies": [
+      "sympy/rules.py|adjust",
+      "sympy/rules.py|total"
+    ],
+    "old_shared_dependencies": [
+      "sympy/rules.py|<module>"
+    ],
+    "exact_selected": false,
+    "testmon_selected": false,
+    "input_hashes": {
+      "sympy/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sympy/rules.py": "870f5d34d33d75ab417e93e838c586e465791568a9967769dd5a01bd30b7a246",
+      "tests/test_rules.py": "f9f6344e17ef76bede2d5ffdf7543ffbf299060f670757cb51e730d183551f2e",
+      "sympy/adjustments.py": "8978cca65033fa11e9d460c25dc7a1e4bb362d928c1542fb6507db0092e86aaa"
+    }
+  },
+  {
+    "direction": "delete",
+    "old": "failed",
+    "new": "passed",
+    "touched": [
+      "sympy/adjustments.py|<module>",
+      "sympy/adjustments.py|adjust"
+    ],
+    "old_local_dependencies": [
+      "sympy/adjustments.py|adjust",
+      "sympy/rules.py|total"
+    ],
+    "old_shared_dependencies": [
+      "sympy/adjustments.py|<module>",
+      "sympy/rules.py|<module>"
+    ],
+    "exact_selected": true,
+    "testmon_selected": true,
+    "input_hashes": {
+      "sympy/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "sympy/rules.py": "870f5d34d33d75ab417e93e838c586e465791568a9967769dd5a01bd30b7a246",
+      "tests/test_rules.py": "f9f6344e17ef76bede2d5ffdf7543ffbf299060f670757cb51e730d183551f2e",
+      "sympy/adjustments.py": "8978cca65033fa11e9d460c25dc7a1e4bb362d928c1542fb6507db0092e86aaa"
+    }
+  }
+]

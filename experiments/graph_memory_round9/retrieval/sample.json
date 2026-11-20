@@ -1,0 +1,802 @@
+{
+ "n_archive": 660,
+ "n_official": 560,
+ "n_in_archive_and_official": 560,
+ "n_previously_scored_in_test": 1,
+ "n_test_remaining": 559,
+ "n_outside_size": 491,
+ "counts": {
+  "eligible": 40,
+  "domain": 13,
+  "issue domain": 7,
+  "function count": 8
+ },
+ "n_eligible_repo": 28,
+ "sampling_trace": [
+  {
+   "issue": "kiasambrook__tfl-live-tracker-7",
+   "repo": "kiasambrook__tfl-live-tracker",
+   "reason": "eligible",
+   "bytes": 1257,
+   "functions": 11,
+   "corpus_sha256": "47e9f4d134450915e4748e992973838b207b3e21be515bea75ade70cbe94ab92",
+   "query_file_sha256": "ed467841c4ba2ce98834d5ea1a3000eba94eb6099bac9d8d05084eb88b9abf41",
+   "band": "0-20000"
+  },
+  {
+   "issue": "matchms__matchms-backup-187",
+   "repo": "matchms__matchms-backup",
+   "reason": "eligible",
+   "bytes": 9571,
+   "functions": 90,
+   "corpus_sha256": "85bcc88e49f129040e210083863d59ad80dd7822d4d7fcc93708329ebb895126",
+   "query_file_sha256": "6e966f28868e3de8bd48729bfd92b98b15c0028e48681bd0f18966a21e85743f",
+   "band": "0-20000"
+  },
+  {
+   "issue": "intelowlproject__GreedyBear-397",
+   "reason": "domain",
+   "bytes": 13304,
+   "band": "0-20000"
+  },
+  {
+   "issue": "JackPlowman__repo_standards_validator-137",
+   "reason": "issue domain",
+   "bytes": 2944,
+   "band": "0-20000"
+  },
+  {
+   "issue": "okta__okta-jwt-verifier-python-59",
+   "reason": "domain",
+   "bytes": 4654,
+   "band": "0-20000"
+  },
+  {
+   "issue": "openwisp__openwisp-users-286",
+   "reason": "issue domain",
+   "bytes": 12128,
+   "band": "0-20000"
+  },
+  {
+   "issue": "pm4-graders__3ES-72",
+   "repo": "pm4-graders__3ES",
+   "reason": "eligible",
+   "bytes": 13685,
+   "functions": 80,
+   "corpus_sha256": "1d96237d4c6bd0406beab1e95e0c693339de54cd1389443b53a68a9a404c80b7",
+   "query_file_sha256": "28a01ba2e43f4565cc6839b9615ab7bceb2dcb56c32aea53a0b9de5a085e07ee",
+   "band": "0-20000"
+  },
+  {
+   "issue": "Standard-Labs__real-intent-27",
+   "repo": "Standard-Labs__real-intent",
+   "reason": "eligible",
+   "bytes": 9426,
+   "functions": 72,
+   "corpus_sha256": "ef8db42af07c923b3455e11af5a031a0b0949e164b2d4ea13b8929f16571b36e",
+   "query_file_sha256": "4908d174ee6dc632d31749458e3a4c25963ccc71b0fec7fca1e46db9c5046c1f",
+   "band": "0-20000"
+  },
+  {
+   "issue": "celery__django-celery-beat-835",
+   "repo": "celery__django-celery-beat",
+   "reason": "eligible",
+   "bytes": 10186,
+   "functions": 108,
+   "corpus_sha256": "580680ee40dce7d21a07098756ba5163b51294454c81408e42171d0aae0b6c47",
+   "query_file_sha256": "ee09efd074b95819ad6e26e1a407472521bbca15384de3a66964c0f717e2d8f8",
+   "band": "0-20000"
+  },
+  {
+   "issue": "avantifellows__quiz-backend-84",
+   "repo": "avantifellows__quiz-backend",
+   "reason": "eligible",
+   "bytes": 4568,
+   "functions": 19,
+   "corpus_sha256": "eeda5a1cbe29d4e79647c0ac4ebc4b4b0c0516792934f3110ae1813a013b7c9f",
+   "query_file_sha256": "afe74da741e1bb23073588ae1cd4a477654a748e517f57a1f37dbb686fbf2af4",
+   "band": "0-20000"
+  },
+  {
+   "issue": "alexa-pi__AlexaPi-188",
+   "repo": "alexa-pi__AlexaPi",
+   "reason": "eligible",
+   "bytes": 18526,
+   "functions": 237,
+   "corpus_sha256": "ce7b42f88127941e9760a991075b8be045588ba4fd0319ea5b80c16a566f84bd",
+   "query_file_sha256": "b49c2993f3ffa6350533d1e1e213187b5f524b893fa6b70c166e88f57d83e808",
+   "band": "0-20000"
+  },
+  {
+   "issue": "jobatabs__textec-53",
+   "reason": "issue domain",
+   "bytes": 3322,
+   "band": "0-20000"
+  },
+  {
+   "issue": "sancus-tee__sancus-compiler-36",
+   "reason": "domain",
+   "bytes": 6630,
+   "band": "0-20000"
+  },
+  {
+   "issue": "rapidsai__dask-cuda-98",
+   "repo": "rapidsai__dask-cuda",
+   "reason": "eligible",
+   "bytes": 18887,
+   "functions": 81,
+   "corpus_sha256": "9433f12148e613b3ea309cd787ede1bcf966efec072f4fa79914b15b60902df3",
+   "query_file_sha256": "299e20029b32ba7d05eaf6be6533812179febaf997a6210901038a20c4ddd811",
+   "band": "0-20000"
+  },
+  {
+   "issue": "duncanscanga__VDRS-Solutions-73",
+   "reason": "domain",
+   "bytes": 5795,
+   "band": "0-20000"
+  },
+  {
+   "issue": "tarantool__ansible-cartridge-172",
+   "repo": "tarantool__ansible-cartridge",
+   "reason": "eligible",
+   "bytes": 15146,
+   "functions": 127,
+   "corpus_sha256": "d95f02f2281774bf6828f01176cbea5d6fa8d7bae01c14ed59c7a07ceab9409c",
+   "query_file_sha256": "1f453b1fad589d62eb4bec2ec01a1b1677f38c55208ddd30f9713e1a8f49d631",
+   "band": "0-20000"
+  },
+  {
+   "issue": "jazzband__django-two-factor-auth-390",
+   "reason": "domain",
+   "bytes": 14802,
+   "band": "0-20000"
+  },
+  {
+   "issue": "fulcrumgenomics__prymer-99",
+   "reason": "domain",
+   "bytes": 33080,
+   "band": "20000-50000"
+  },
+  {
+   "issue": "SYSTRAN__faster-whisper-1198",
+   "repo": "SYSTRAN__faster-whisper",
+   "reason": "eligible",
+   "bytes": 26800,
+   "functions": 82,
+   "corpus_sha256": "19aa7ecc644c7bd31ba59e8909b8bf386de3455a43a8a0b9391f02f1f2802947",
+   "query_file_sha256": "f5f0e58d40621b1e1a619011c5f823f092de342216b8399cd80b9c580f3ea4f6",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "jupyterhub__oauthenticator-764",
+   "reason": "domain",
+   "bytes": 26622,
+   "band": "20000-50000"
+  },
+  {
+   "issue": "Delgan__loguru-1239",
+   "repo": "Delgan__loguru",
+   "reason": "eligible",
+   "bytes": 43697,
+   "functions": 214,
+   "corpus_sha256": "821fdb9c4d7962fb118801411a02d8dca7bcab639872f7ba35337cfc54f2e975",
+   "query_file_sha256": "19486bb13d3fbbb401ae590596b3e80a42729ecd8bbf50f06bbdc0d8b47a9952",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "SYSTRAN__faster-whisper-1157",
+   "repo": "SYSTRAN__faster-whisper",
+   "reason": "eligible",
+   "bytes": 27058,
+   "functions": 82,
+   "corpus_sha256": "bed94b28d6b69b6325a2be824f1e8fcc3e042efe3366504d3d79ec4065de2938",
+   "query_file_sha256": "3aaf21b03b7ba5f10d2422a0dd58670b59e06c51a726b7c24ab9f62b0339827a",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "latchset__jwcrypto-195",
+   "reason": "domain",
+   "bytes": 23355,
+   "band": "20000-50000"
+  },
+  {
+   "issue": "NatLibFi__Annif-610",
+   "repo": "NatLibFi__Annif",
+   "reason": "eligible",
+   "bytes": 41352,
+   "functions": 424,
+   "corpus_sha256": "d9dba0191b0215b38c56982ad9f3b5aaf5ff23411ddf756c8219877d76eaabae",
+   "query_file_sha256": "1521fb55d2a291d185c852912214f482df18d29019c0c240a75b42f2c0f97f20",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "SYSTRAN__faster-whisper-1141",
+   "repo": "SYSTRAN__faster-whisper",
+   "reason": "eligible",
+   "bytes": 29023,
+   "functions": 85,
+   "corpus_sha256": "89d44bdaa0e1c1d72798b675051d22534dac460676e2591187c3ede5a85aad64",
+   "query_file_sha256": "1076adfac2d17830acb8c193cc133d6fc5642e780c1732f4cbd28096d1bf6816",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "Innopoints__backend-124",
+   "repo": "Innopoints__backend",
+   "reason": "eligible",
+   "bytes": 23897,
+   "functions": 122,
+   "corpus_sha256": "658fa62932a729fd17ecfcc677ecf957c305901ab4300874d435c21e3efa1f7d",
+   "query_file_sha256": "67229262646c6299475e5432794309f8052af9c3855ab0620812b3b82a669fe1",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "webcompat__webcompat.com-2731",
+   "repo": "webcompat__webcompat.com",
+   "reason": "eligible",
+   "bytes": 26952,
+   "functions": 151,
+   "corpus_sha256": "f7f1107a024ce602e1969f69e3b3f2a3fd62f89e1e0f73745f3b84415f006d44",
+   "query_file_sha256": "7420d10705961567e566b813b2d2694cd0f31aae8123535b0012c463c6dc15da",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "vitalik__django-ninja-1349",
+   "repo": "vitalik__django-ninja",
+   "reason": "eligible",
+   "bytes": 35446,
+   "functions": 310,
+   "corpus_sha256": "068e2b2c1e448646c50bbee05913866354552c3b58b43d29d9df1fde72d5748b",
+   "query_file_sha256": "90251ee7c157a73b4b451eba8231268896a90fd95fc2bd00b1c67de5b1aafa45",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "Standard-Labs__real-intent-102",
+   "repo": "Standard-Labs__real-intent",
+   "reason": "eligible",
+   "bytes": 20241,
+   "functions": 130,
+   "corpus_sha256": "c40a3ba2d543b5f1a95b8bf2baff46b0191f25d16a7e14ed2cbc6f6cc9e13e8a",
+   "query_file_sha256": "6c18343d0f733915fbc975f12f99ef08bc2846546acc4b00bd50e23884b9890e",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "gaogaotiantian__viztracer-528",
+   "repo": "gaogaotiantian__viztracer",
+   "reason": "eligible",
+   "bytes": 40927,
+   "functions": 248,
+   "corpus_sha256": "27e1a03176f6194d29a9651b2d822bfcb78d0261dad067253196cf6480f05da0",
+   "query_file_sha256": "4f101c4875463b678c046a4c69b3dd7aa02aa7210f6c8fcf0d0dd31620246e74",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "huggingface__optimum-benchmark-266",
+   "repo": "huggingface__optimum-benchmark",
+   "reason": "function count",
+   "bytes": 49520,
+   "functions": 466,
+   "corpus_sha256": "12ff1771d256e247d0f2eecc8580fa4fef703dbbaf3f1afeb4bf579698273184",
+   "query_file_sha256": "d65f1f3a1f0bf391131a63266e54fa6361402095a98d47a52cc18713599b7f86",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "justin13601__ACES-145",
+   "repo": "justin13601__ACES",
+   "reason": "eligible",
+   "bytes": 32635,
+   "functions": 54,
+   "corpus_sha256": "f41a77c44ab6e0ffba935816c9944c7ae4e990da3227ad8443c6f17c4bd3548f",
+   "query_file_sha256": "81d5f7ff3065c83c2f098044e4db5b93cc0424dc360e561f70a189e7c15133ff",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "hyeneung__tech-blog-hub-site-49",
+   "repo": "hyeneung__tech-blog-hub-site",
+   "reason": "eligible",
+   "bytes": 34632,
+   "functions": 141,
+   "corpus_sha256": "25a1692850e88550d20a2b6f1c6a71af424eeff0bf11609b100bd15e8f19f97b",
+   "query_file_sha256": "e8d5dd1d75a7a613fdd01206bb8c1d0b512bde9e2cadfc4c29e340daa6abd608",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "twisted__klein-773",
+   "repo": "twisted__klein",
+   "reason": "eligible",
+   "bytes": 33509,
+   "functions": 264,
+   "corpus_sha256": "afa315c0d716a4e4949154b1feb8c48f5c30971d2f096a1af93e201f1c6ab99d",
+   "query_file_sha256": "8fea7f198626b6621b97f6297f92b4496173b26071603f171d194bd0b96a3c02",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "pyca__pyopenssl-578",
+   "reason": "domain",
+   "bytes": 38822,
+   "band": "20000-50000"
+  },
+  {
+   "issue": "NCSU-High-Powered-Rocketry-Club__AirbrakesV2-151",
+   "reason": "domain",
+   "bytes": 36992,
+   "band": "20000-50000"
+  },
+  {
+   "issue": "explodinggradients__ragas-1627",
+   "repo": "explodinggradients__ragas",
+   "reason": "eligible",
+   "bytes": 47344,
+   "functions": 384,
+   "corpus_sha256": "0ee62579d1532531e373f34dd55802b858e92aa077057a9727c72ad16b236f1c",
+   "query_file_sha256": "1c1a4391b61af4b6b8720dee0e815e1095aa01dd0ab00f65d19e6dfd1717b2ce",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "instructor-ai__instructor-1254",
+   "repo": "instructor-ai__instructor",
+   "reason": "function count",
+   "bytes": 70466,
+   "functions": 458,
+   "corpus_sha256": "a9bc0e414e941895a0482824b18b25e1c60f8268da12f6361869824efd74ae0e",
+   "query_file_sha256": "e5a2a01ba57c05580dbcbb225ec7c2336e2fe95a8ec7d27671ee08322d8324fb",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "CrossGL__crosstl-229",
+   "repo": "CrossGL__crosstl",
+   "reason": "function count",
+   "bytes": 50402,
+   "functions": 636,
+   "corpus_sha256": "0aa39916eb13499da7b091d71809777bd11cf9bbad6e45719b252afb0ad3ca23",
+   "query_file_sha256": "940f6118d4b8311ebc8dc2f777f4cd74962fcad5f6915a88745688baa08af3cb",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-528",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 63668,
+   "functions": 332,
+   "corpus_sha256": "6bfdc73a571033fa29927b7d14d6b42a1fea998b89caa078eea3a38f085a436e",
+   "query_file_sha256": "8c2702436be99a7be530892e9561d55c41e0351bb9af831718eb58d520d90484",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-307",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 57662,
+   "functions": 301,
+   "corpus_sha256": "0fafe7aa399c23fa10148f718c985edb2ee72e91be39e16f960b97b524f8e0df",
+   "query_file_sha256": "5160fb7dfe4a517db09ac936489332ce2619cb747a1ef62f11df89da214c4b65",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "ranaroussi__yfinance-2173",
+   "repo": "ranaroussi__yfinance",
+   "reason": "eligible",
+   "bytes": 75228,
+   "functions": 407,
+   "corpus_sha256": "3b8cce0790ec6ae8adfa682508bbd6bbc97225fbb1d6d02086891a616238f457",
+   "query_file_sha256": "1b8683776e8d02a4ec95c220f876c48cd8c180d07add16055a4b26ff3d016e4a",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-472",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 62964,
+   "functions": 326,
+   "corpus_sha256": "dae07e403087d09edd660ba8d74faa6db1c951153bdd769bd29e4769c61b6d5b",
+   "query_file_sha256": "31a657527b43891f1b835e9baa38db04e751147c56eaadde54c0becd94547d47",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "sgkit-dev__sgkit-447",
+   "repo": "sgkit-dev__sgkit",
+   "reason": "eligible",
+   "bytes": 69662,
+   "functions": 212,
+   "corpus_sha256": "6de343f72ae42a563a21250c5da5ff9b7bab32feb0cb7e25c44779c00ed8bb06",
+   "query_file_sha256": "8ffa8ef3717dccbc6b2f2e8744394f3c438438c8815156d89fec412abd95e820",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-302",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 57662,
+   "functions": 301,
+   "corpus_sha256": "0fafe7aa399c23fa10148f718c985edb2ee72e91be39e16f960b97b524f8e0df",
+   "query_file_sha256": "b48acc209cb53daeccec83293cd0145c670bf846357d7c881316100a2420a5cc",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "xCDAT__xcdat-689",
+   "repo": "xCDAT__xcdat",
+   "reason": "eligible",
+   "bytes": 53575,
+   "functions": 134,
+   "corpus_sha256": "6e1ab6460eb3fd88d7d2f5c3723b8a89acd3e47be28b04b7b8549d84f3f4eb6e",
+   "query_file_sha256": "635861523b5a2d1a6c5071999d3a2944b52ee67ed9a316783ddda53ef458325d",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "Chainlit__chainlit-1575",
+   "reason": "issue domain",
+   "bytes": 71594,
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-330",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 58256,
+   "functions": 306,
+   "corpus_sha256": "7f6299446f586d065ba5f4197e3095661a62030d08b0fcc3395f603247259a2c",
+   "query_file_sha256": "aab8965819cd5a0c8684ec4ebc8238293de1629ea73f782a00aa69715e0c07c3",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "Chainlit__chainlit-1534",
+   "repo": "Chainlit__chainlit",
+   "reason": "function count",
+   "bytes": 70744,
+   "functions": 608,
+   "corpus_sha256": "c66297f1beb599f5915d26f9e90b8398aa1b9537ca334ddfd850e47b9e123094",
+   "query_file_sha256": "38a379e1c43401a695c0b9ebb5519316d4014bc623f832514eb12fc84f2708a1",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "Zulko__moviepy-2253",
+   "repo": "Zulko__moviepy",
+   "reason": "eligible",
+   "bytes": 70709,
+   "functions": 335,
+   "corpus_sha256": "45babec4fee771d8b02269aa30a4e0680f5168cb671a49c757a784ba97641325",
+   "query_file_sha256": "d453974ad3639e2a3168649c648ed8fc18b11db131528dd380ef58d22f60adf9",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "ranaroussi__yfinance-2122",
+   "repo": "ranaroussi__yfinance",
+   "reason": "eligible",
+   "bytes": 71104,
+   "functions": 398,
+   "corpus_sha256": "1389e9d0bdcb2f7a9702ea32c3257f85d2f06699af1d26105b76720c346ffa1e",
+   "query_file_sha256": "a9777826108a2b5b14a67085dd27828264565bece7ced45e5545ea2b0eaeca37",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "zarr-developers__zarr-python-738",
+   "repo": "zarr-developers__zarr-python",
+   "reason": "function count",
+   "bytes": 73543,
+   "functions": 604,
+   "corpus_sha256": "aabdddb6020a75ea6a46f4f142a662b5a9f10ea1821a65b092f69ec1825bf85d",
+   "query_file_sha256": "f3da9d0482931f3c57cf28df5c3f7702fe4c62a2ba7b71e4feace2ba0b1bc035",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "plone__plone.restapi-859",
+   "reason": "issue domain",
+   "bytes": 53698,
+   "band": "50000-80000"
+  },
+  {
+   "issue": "rq__rq-2138",
+   "repo": "rq__rq",
+   "reason": "function count",
+   "bytes": 74671,
+   "functions": 532,
+   "corpus_sha256": "1e02d5e31c00574f11685358c9ce7e476c250cbffcd8aaa5e84a017fe681ced1",
+   "query_file_sha256": "beaf395053b816d63f479742197f60591b677e641fe50e2f7636d56d75749d9b",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "airbnb__knowledge-repo-558",
+   "reason": "issue domain",
+   "bytes": 61671,
+   "band": "50000-80000"
+  },
+  {
+   "issue": "aiortc__aiortc-795",
+   "repo": "aiortc__aiortc",
+   "reason": "function count",
+   "bytes": 76230,
+   "functions": 614,
+   "corpus_sha256": "c10251d1958c9ba611883cf7ad7fe94d6a998ad9b3dfb4ad1cb375960febdb8a",
+   "query_file_sha256": "de5c80feeeb7b87e23cf18ae2508c353fd33f2abdc985cb534599c481320de6e",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "AzureAD__microsoft-authentication-library-for-python-407",
+   "reason": "domain",
+   "bytes": 53028,
+   "band": "50000-80000"
+  },
+  {
+   "issue": "AzureAD__microsoft-authentication-library-for-python-454",
+   "reason": "domain",
+   "bytes": 55054,
+   "band": "50000-80000"
+  },
+  {
+   "issue": "paperless-ngx__paperless-ngx-1227",
+   "repo": "paperless-ngx__paperless-ngx",
+   "reason": "eligible",
+   "bytes": 61102,
+   "functions": 405,
+   "corpus_sha256": "14bcc45dc2848b716936357f31cf369b8cd6f2688e99c5d54225c3798c7ec5e9",
+   "query_file_sha256": "c9251a458834505b01ce1a47ac9ec64ad1e68ed53666b2197537c99a13511665",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-322",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 58153,
+   "functions": 306,
+   "corpus_sha256": "abbe000bc4537c5af9f512fbde451c5b7bae159bff1f806d0875a9d95ebeb012",
+   "query_file_sha256": "7ad7f377b1e3b163e91d050e26519731c1be1428f0f68b70be4634c5d6cb6ea3",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-442",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 61962,
+   "functions": 324,
+   "corpus_sha256": "6b4b77af62b6ab6d4dbeda7010a22fbe383feee7c3579f3640b4c02dcc7ac86e",
+   "query_file_sha256": "4d9eefa0db9dcbc4f66efeba73c46533477ffa050c48ca3d8f58a6fdf3d860fc",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "OpenEnergyPlatform__open-MaStR-598",
+   "repo": "OpenEnergyPlatform__open-MaStR",
+   "reason": "eligible",
+   "bytes": 53301,
+   "functions": 153,
+   "corpus_sha256": "7aa0b1db13e669998d4e072b8f168377d6bbd4cb00efb21854ae4e555b8f21a4",
+   "query_file_sha256": "4e33676d4383a1a420b8b8c6648a20e67554b4a97322de8c1c48d22d5d9c04e3",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "ctc-oss__fapolicy-analyzer-809",
+   "repo": "ctc-oss__fapolicy-analyzer",
+   "reason": "function count",
+   "bytes": 69330,
+   "functions": 638,
+   "corpus_sha256": "342a0f6fd01e416a5fd91d34474b389285a00b1cff6010d654e0fa4ae93a080a",
+   "query_file_sha256": "2cb1ec38c944b278e55e1bded98c1728a7c94d907cb67fe4f24fe7da553cb248",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "Chainlit__chainlit-1441",
+   "reason": "issue domain",
+   "bytes": 68798,
+   "band": "50000-80000"
+  },
+  {
+   "issue": "TransformerLensOrg__TransformerLens-333",
+   "repo": "TransformerLensOrg__TransformerLens",
+   "reason": "eligible",
+   "bytes": 75474,
+   "functions": 301,
+   "corpus_sha256": "f851956a15cab01949f832b062046a313bfebfb9d51526fbf0ee7ea78fed42d8",
+   "query_file_sha256": "032ea996f6a228e5fc9230e43d51a8b27f57b4335ae6331c7aa0df7c78e6458d",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "freedomofpress__securedrop-client-944",
+   "reason": "domain",
+   "bytes": 56150,
+   "band": "50000-80000"
+  },
+  {
+   "issue": "ranaroussi__yfinance-2139",
+   "repo": "ranaroussi__yfinance",
+   "reason": "eligible",
+   "bytes": 73935,
+   "functions": 403,
+   "corpus_sha256": "71475edadcca71527608da46b0f231b41f2adff435a95fe64524bc7a17ecae23",
+   "query_file_sha256": "51f319226d8de834170043731a03b5b7b3b5e198b58d4b99bbf3dd9f140c0fac",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "DS4SD__docling-314",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 58115,
+   "functions": 306,
+   "corpus_sha256": "e232424f0696a91f928766c699755fcd5071b3135f16ad2a4901f478ba87855e",
+   "query_file_sha256": "b5dad9b08ff0592ea89e945a889d78030e2f7aaae8b8cf8a8d6d211c7c62296d",
+   "band": "50000-80000"
+  }
+ ],
+ "selected": [
+  {
+   "issue": "kiasambrook__tfl-live-tracker-7",
+   "repo": "kiasambrook__tfl-live-tracker",
+   "reason": "eligible",
+   "bytes": 1257,
+   "functions": 11,
+   "corpus_sha256": "47e9f4d134450915e4748e992973838b207b3e21be515bea75ade70cbe94ab92",
+   "query_file_sha256": "ed467841c4ba2ce98834d5ea1a3000eba94eb6099bac9d8d05084eb88b9abf41",
+   "band": "0-20000"
+  },
+  {
+   "issue": "matchms__matchms-backup-187",
+   "repo": "matchms__matchms-backup",
+   "reason": "eligible",
+   "bytes": 9571,
+   "functions": 90,
+   "corpus_sha256": "85bcc88e49f129040e210083863d59ad80dd7822d4d7fcc93708329ebb895126",
+   "query_file_sha256": "6e966f28868e3de8bd48729bfd92b98b15c0028e48681bd0f18966a21e85743f",
+   "band": "0-20000"
+  },
+  {
+   "issue": "pm4-graders__3ES-72",
+   "repo": "pm4-graders__3ES",
+   "reason": "eligible",
+   "bytes": 13685,
+   "functions": 80,
+   "corpus_sha256": "1d96237d4c6bd0406beab1e95e0c693339de54cd1389443b53a68a9a404c80b7",
+   "query_file_sha256": "28a01ba2e43f4565cc6839b9615ab7bceb2dcb56c32aea53a0b9de5a085e07ee",
+   "band": "0-20000"
+  },
+  {
+   "issue": "Standard-Labs__real-intent-27",
+   "repo": "Standard-Labs__real-intent",
+   "reason": "eligible",
+   "bytes": 9426,
+   "functions": 72,
+   "corpus_sha256": "ef8db42af07c923b3455e11af5a031a0b0949e164b2d4ea13b8929f16571b36e",
+   "query_file_sha256": "4908d174ee6dc632d31749458e3a4c25963ccc71b0fec7fca1e46db9c5046c1f",
+   "band": "0-20000"
+  },
+  {
+   "issue": "celery__django-celery-beat-835",
+   "repo": "celery__django-celery-beat",
+   "reason": "eligible",
+   "bytes": 10186,
+   "functions": 108,
+   "corpus_sha256": "580680ee40dce7d21a07098756ba5163b51294454c81408e42171d0aae0b6c47",
+   "query_file_sha256": "ee09efd074b95819ad6e26e1a407472521bbca15384de3a66964c0f717e2d8f8",
+   "band": "0-20000"
+  },
+  {
+   "issue": "avantifellows__quiz-backend-84",
+   "repo": "avantifellows__quiz-backend",
+   "reason": "eligible",
+   "bytes": 4568,
+   "functions": 19,
+   "corpus_sha256": "eeda5a1cbe29d4e79647c0ac4ebc4b4b0c0516792934f3110ae1813a013b7c9f",
+   "query_file_sha256": "afe74da741e1bb23073588ae1cd4a477654a748e517f57a1f37dbb686fbf2af4",
+   "band": "0-20000"
+  },
+  {
+   "issue": "SYSTRAN__faster-whisper-1198",
+   "repo": "SYSTRAN__faster-whisper",
+   "reason": "eligible",
+   "bytes": 26800,
+   "functions": 82,
+   "corpus_sha256": "19aa7ecc644c7bd31ba59e8909b8bf386de3455a43a8a0b9391f02f1f2802947",
+   "query_file_sha256": "f5f0e58d40621b1e1a619011c5f823f092de342216b8399cd80b9c580f3ea4f6",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "Delgan__loguru-1239",
+   "repo": "Delgan__loguru",
+   "reason": "eligible",
+   "bytes": 43697,
+   "functions": 214,
+   "corpus_sha256": "821fdb9c4d7962fb118801411a02d8dca7bcab639872f7ba35337cfc54f2e975",
+   "query_file_sha256": "19486bb13d3fbbb401ae590596b3e80a42729ecd8bbf50f06bbdc0d8b47a9952",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "NatLibFi__Annif-610",
+   "repo": "NatLibFi__Annif",
+   "reason": "eligible",
+   "bytes": 41352,
+   "functions": 424,
+   "corpus_sha256": "d9dba0191b0215b38c56982ad9f3b5aaf5ff23411ddf756c8219877d76eaabae",
+   "query_file_sha256": "1521fb55d2a291d185c852912214f482df18d29019c0c240a75b42f2c0f97f20",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "Innopoints__backend-124",
+   "repo": "Innopoints__backend",
+   "reason": "eligible",
+   "bytes": 23897,
+   "functions": 122,
+   "corpus_sha256": "658fa62932a729fd17ecfcc677ecf957c305901ab4300874d435c21e3efa1f7d",
+   "query_file_sha256": "67229262646c6299475e5432794309f8052af9c3855ab0620812b3b82a669fe1",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "webcompat__webcompat.com-2731",
+   "repo": "webcompat__webcompat.com",
+   "reason": "eligible",
+   "bytes": 26952,
+   "functions": 151,
+   "corpus_sha256": "f7f1107a024ce602e1969f69e3b3f2a3fd62f89e1e0f73745f3b84415f006d44",
+   "query_file_sha256": "7420d10705961567e566b813b2d2694cd0f31aae8123535b0012c463c6dc15da",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "vitalik__django-ninja-1349",
+   "repo": "vitalik__django-ninja",
+   "reason": "eligible",
+   "bytes": 35446,
+   "functions": 310,
+   "corpus_sha256": "068e2b2c1e448646c50bbee05913866354552c3b58b43d29d9df1fde72d5748b",
+   "query_file_sha256": "90251ee7c157a73b4b451eba8231268896a90fd95fc2bd00b1c67de5b1aafa45",
+   "band": "20000-50000"
+  },
+  {
+   "issue": "DS4SD__docling-528",
+   "repo": "DS4SD__docling",
+   "reason": "eligible",
+   "bytes": 63668,
+   "functions": 332,
+   "corpus_sha256": "6bfdc73a571033fa29927b7d14d6b42a1fea998b89caa078eea3a38f085a436e",
+   "query_file_sha256": "8c2702436be99a7be530892e9561d55c41e0351bb9af831718eb58d520d90484",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "ranaroussi__yfinance-2173",
+   "repo": "ranaroussi__yfinance",
+   "reason": "eligible",
+   "bytes": 75228,
+   "functions": 407,
+   "corpus_sha256": "3b8cce0790ec6ae8adfa682508bbd6bbc97225fbb1d6d02086891a616238f457",
+   "query_file_sha256": "1b8683776e8d02a4ec95c220f876c48cd8c180d07add16055a4b26ff3d016e4a",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "sgkit-dev__sgkit-447",
+   "repo": "sgkit-dev__sgkit",
+   "reason": "eligible",
+   "bytes": 69662,
+   "functions": 212,
+   "corpus_sha256": "6de343f72ae42a563a21250c5da5ff9b7bab32feb0cb7e25c44779c00ed8bb06",
+   "query_file_sha256": "8ffa8ef3717dccbc6b2f2e8744394f3c438438c8815156d89fec412abd95e820",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "xCDAT__xcdat-689",
+   "repo": "xCDAT__xcdat",
+   "reason": "eligible",
+   "bytes": 53575,
+   "functions": 134,
+   "corpus_sha256": "6e1ab6460eb3fd88d7d2f5c3723b8a89acd3e47be28b04b7b8549d84f3f4eb6e",
+   "query_file_sha256": "635861523b5a2d1a6c5071999d3a2944b52ee67ed9a316783ddda53ef458325d",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "Zulko__moviepy-2253",
+   "repo": "Zulko__moviepy",
+   "reason": "eligible",
+   "bytes": 70709,
+   "functions": 335,
+   "corpus_sha256": "45babec4fee771d8b02269aa30a4e0680f5168cb671a49c757a784ba97641325",
+   "query_file_sha256": "d453974ad3639e2a3168649c648ed8fc18b11db131528dd380ef58d22f60adf9",
+   "band": "50000-80000"
+  },
+  {
+   "issue": "paperless-ngx__paperless-ngx-1227",
+   "repo": "paperless-ngx__paperless-ngx",
+   "reason": "eligible",
+   "bytes": 61102,
+   "functions": 405,
+   "corpus_sha256": "14bcc45dc2848b716936357f31cf369b8cd6f2688e99c5d54225c3798c7ec5e9",
+   "query_file_sha256": "c9251a458834505b01ce1a47ac9ec64ad1e68ed53666b2197537c99a13511665",
+   "band": "50000-80000"
+  }
+ ],
+ "official_split_sha256": "8df0833c2c1276c5837aab923d489ab97d7654529abe759d0f59242c4978a662",
+ "protocol_sha256": "d466c539c465df9c8aac1dc0be7733332616cc2445f8ba7d4cb7cab7d1a72a49",
+ "sampling_code_sha256": "3f0bcbec4581748256f6a1b283adca8b8c8b1efdfa5f079f8e14581b32862aed"
+}

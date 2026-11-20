@@ -1,0 +1,29 @@
+FF                                                                       [100%]
+================================== FAILURES ===================================
+____________________________________ test2 ____________________________________
+python_testcases\test_shortest_path_lengths.py:104: in test2
+    assert result == expected
+E   AssertionError: assert defaultdict(<...f, (4, 3): 7}) == {(0, 0): 0, (...0, 3): 6, ...}
+E     Omitting 14 identical items, use -vv to show
+E     Differing items:
+E     {(2, 4): inf} != {(2, 4): 5}
+E     {(0, 4): inf} != {(0, 4): 13}
+E     {(2, 1): 5} != {(2, 1): inf}
+E     {(4, 3): 7} != {(4, 3): inf}
+E     {(0, 3): inf} != {(0, 3): 6}...
+E     
+E     ...Full output truncated (7 lines hidden), use '-vv' to show
+____________________________________ test3 ____________________________________
+python_testcases\test_shortest_path_lengths.py:135: in test3
+    assert result == expected
+E   assert defaultdict(<...f, (3, 2): 5}) == {(0, 0): 0, (... 3): inf, ...}
+E     Omitting 14 identical items, use -vv to show
+E     Differing items:
+E     {(1, 0): 3} != {(1, 0): inf}
+E     {(3, 2): 5} != {(3, 2): inf}
+E     Use -v to get more diff
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\shortest_path_lengths\prefix_only_pytest\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_shortest_path_lengths.py::test2 - AssertionError...
+FAILED python_testcases/test_shortest_path_lengths.py::test3 - assert default...
+2 failed in 0.15s

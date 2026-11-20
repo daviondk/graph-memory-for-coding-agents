@@ -1,0 +1,638 @@
+[
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": false,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 2,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 4
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": false,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 2,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 4
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": false,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 2,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 4
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": true,
+        "anchor": 11,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 5
+      }
+    },
+    "base": {
+      "test1": "passed",
+      "test2": "passed",
+      "test3": "failed",
+      "test4": "passed",
+      "test5": "passed"
+    },
+    "failed_early": 0,
+    "gold_lines": [
+      11
+    ],
+    "heldout": [
+      "test5",
+      "test3"
+    ],
+    "id": "breadth_first_search"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 5
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 5
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 5
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": true,
+        "anchor": 10,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 5,
+        "tests_passed": 5
+      }
+    },
+    "base": {
+      "test1": "passed",
+      "test2": "passed",
+      "test3": "passed",
+      "test4": "passed",
+      "test5": "failed"
+    },
+    "failed_early": 0,
+    "gold_lines": [
+      10
+    ],
+    "heldout": [
+      "test5",
+      "test2"
+    ],
+    "id": "depth_first_search"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": false,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 3,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 6,
+        "tests_passed": 5
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": false,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 3,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 6,
+        "tests_passed": 5
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": false,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 3,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 6,
+        "tests_passed": 5
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": false,
+        "anchor": 5,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 3,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 6,
+        "tests_passed": 5
+      }
+    },
+    "base": {
+      "test1": "passed",
+      "test2": "passed",
+      "test3": "passed",
+      "test4": "failed",
+      "test5": "passed",
+      "test6": "passed"
+    },
+    "failed_early": 0,
+    "gold_lines": [
+      5
+    ],
+    "heldout": [
+      "test6",
+      "test5",
+      "test4"
+    ],
+    "id": "detect_cycle"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 11,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 11,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": true,
+        "anchor": 12,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      }
+    },
+    "base": {
+      "test1": "failed",
+      "test2": "failed",
+      "test3": "failed"
+    },
+    "failed_early": 2,
+    "gold_lines": [
+      12
+    ],
+    "heldout": [
+      "test1"
+    ],
+    "id": "minimum_spanning_tree"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": true,
+        "all_pass": false,
+        "anchor": 6,
+        "applied": true,
+        "complete": true,
+        "held_passed": 0,
+        "held_tests": 1,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 1
+      },
+      "line": {
+        "address_correct": true,
+        "all_pass": false,
+        "anchor": 6,
+        "applied": true,
+        "complete": true,
+        "held_passed": 0,
+        "held_tests": 1,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 1
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": false,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 0,
+        "held_tests": 1,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 1
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": false,
+        "anchor": 6,
+        "applied": true,
+        "complete": true,
+        "held_passed": 0,
+        "held_tests": 1,
+        "hold_pass": false,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 1
+      }
+    },
+    "base": {
+      "test1": "failed",
+      "test2": "failed",
+      "test3": "passed"
+    },
+    "failed_early": 1,
+    "gold_lines": [
+      6
+    ],
+    "heldout": [
+      "test1"
+    ],
+    "id": "reverse_linked_list"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": true,
+        "anchor": 22,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      }
+    },
+    "base": {
+      "test1": "failed",
+      "test2": "failed",
+      "test3": "passed",
+      "test4": "passed"
+    },
+    "failed_early": 0,
+    "gold_lines": [
+      22
+    ],
+    "heldout": [
+      "test1",
+      "test2"
+    ],
+    "id": "shortest_path_length"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 8,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 8,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": true,
+        "anchor": 13,
+        "applied": true,
+        "complete": true,
+        "held_passed": 2,
+        "held_tests": 2,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 4,
+        "tests_passed": 4
+      }
+    },
+    "base": {
+      "test1": "failed",
+      "test2": "failed",
+      "test3": "failed",
+      "test4": "failed"
+    },
+    "failed_early": 2,
+    "gold_lines": [
+      13
+    ],
+    "heldout": [
+      "test4",
+      "test1"
+    ],
+    "id": "shortest_path_lengths"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 8,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 8,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": true,
+        "anchor": 10,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      }
+    },
+    "base": {
+      "test1": "failed",
+      "test2": "failed",
+      "test3": "failed"
+    },
+    "failed_early": 2,
+    "gold_lines": [
+      10
+    ],
+    "heldout": [
+      "test3"
+    ],
+    "id": "shortest_paths"
+  },
+  {
+    "arms": {
+      "edge": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 4,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "line": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": 4,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "off": {
+        "address_correct": false,
+        "all_pass": true,
+        "anchor": null,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      },
+      "oracle": {
+        "address_correct": true,
+        "all_pass": true,
+        "anchor": 6,
+        "applied": true,
+        "complete": true,
+        "held_passed": 1,
+        "held_tests": 1,
+        "hold_pass": true,
+        "reason": "",
+        "tests": 3,
+        "tests_passed": 3
+      }
+    },
+    "base": {
+      "test1": "failed",
+      "test2": "failed",
+      "test3": "failed"
+    },
+    "failed_early": 2,
+    "gold_lines": [
+      6
+    ],
+    "heldout": [
+      "test2"
+    ],
+    "id": "topological_ordering"
+  }
+]

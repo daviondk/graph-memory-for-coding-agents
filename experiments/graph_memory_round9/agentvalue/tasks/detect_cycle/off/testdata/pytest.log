@@ -1,0 +1,12 @@
+...F..                                                                   [100%]
+================================== FAILURES ===================================
+____________________________________ test4 ____________________________________
+python_testcases\test_detect_cycle.py:59: in test4
+    detected = detect_cycle(node7)
+python_programs\detect_cycle.py:5: in detect_cycle
+    if hare.successor is None:
+E   AttributeError: 'NoneType' object has no attribute 'successor'
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round9\agentvalue\tasks\detect_cycle\off\testdata\native.xml -
+=========================== short test summary info ===========================
+FAILED python_testcases/test_detect_cycle.py::test4 - AttributeError: 'NoneTy...
+1 failed, 5 passed in 0.09s

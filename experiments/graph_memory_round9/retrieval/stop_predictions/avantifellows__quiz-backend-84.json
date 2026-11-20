@@ -1,0 +1,197 @@
+{
+ "issue": "avantifellows__quiz-backend-84",
+ "policies": {
+  "fixed6": {
+   "reads": 6,
+   "tokens": 2313,
+   "bytes": 8926,
+   "fresh": null,
+   "base_position": null,
+   "trace": [
+    {
+     "source": "app/routers/sessions.py/update_session",
+     "outside_edges": [
+      "app/routers/sessions.py/str_to_datetime"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/session_answers.py/update_session_answer",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/quizzes.py/update_quiz_for_backwards_compatibility",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/organizations.py/create_organization",
+     "outside_edges": [
+      "app/routers/organizations.py/generate_random_string"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "app/utils.py/remove_optional_unset_args",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/utils.py/remove_optional_unset_args/union",
+     "outside_edges": [],
+     "eligible": []
+    }
+   ],
+   "rank": [
+    "app/routers/sessions.py/update_session",
+    "app/routers/session_answers.py/update_session_answer",
+    "app/routers/quizzes.py/update_quiz_for_backwards_compatibility",
+    "app/routers/organizations.py/create_organization",
+    "app/utils.py/remove_optional_unset_args",
+    "app/utils.py/remove_optional_unset_args/union",
+    "app/routers/sessions.py/create_session",
+    "app/routers/quizzes.py/create_quiz",
+    "app/routers/questions.py/get_questions",
+    "app/schemas.py/PyObjectId/__modify_schema__",
+    "app/routers/quizzes.py/get_quiz",
+    "app/routers/organizations.py/check_auth_token",
+    "app/routers/sessions.py/get_session",
+    "app/routers/questions.py/get_question",
+    "app/routers/organizations.py/generate_random_string",
+    "app/routers/session_answers.py/get_session_answer",
+    "app/schemas.py/PyObjectId/__get_validators__",
+    "app/schemas.py/PyObjectId/validate",
+    "app/routers/sessions.py/str_to_datetime"
+   ]
+  },
+  "early": {
+   "reads": 6,
+   "tokens": 2313,
+   "bytes": 8926,
+   "fresh": null,
+   "base_position": null,
+   "trace": [
+    {
+     "source": "app/routers/sessions.py/update_session",
+     "outside_edges": [
+      "app/routers/sessions.py/str_to_datetime"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/session_answers.py/update_session_answer",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/quizzes.py/update_quiz_for_backwards_compatibility",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/organizations.py/create_organization",
+     "outside_edges": [
+      "app/routers/organizations.py/generate_random_string"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "app/utils.py/remove_optional_unset_args",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/utils.py/remove_optional_unset_args/union",
+     "outside_edges": [],
+     "eligible": []
+    }
+   ],
+   "rank": [
+    "app/routers/sessions.py/update_session",
+    "app/routers/session_answers.py/update_session_answer",
+    "app/routers/quizzes.py/update_quiz_for_backwards_compatibility",
+    "app/routers/organizations.py/create_organization",
+    "app/utils.py/remove_optional_unset_args",
+    "app/utils.py/remove_optional_unset_args/union",
+    "app/routers/sessions.py/create_session",
+    "app/routers/quizzes.py/create_quiz",
+    "app/routers/questions.py/get_questions",
+    "app/schemas.py/PyObjectId/__modify_schema__",
+    "app/routers/quizzes.py/get_quiz",
+    "app/routers/organizations.py/check_auth_token",
+    "app/routers/sessions.py/get_session",
+    "app/routers/questions.py/get_question",
+    "app/routers/organizations.py/generate_random_string",
+    "app/routers/session_answers.py/get_session_answer",
+    "app/schemas.py/PyObjectId/__get_validators__",
+    "app/schemas.py/PyObjectId/validate",
+    "app/routers/sessions.py/str_to_datetime"
+   ]
+  },
+  "early3": {
+   "reads": 6,
+   "tokens": 2313,
+   "bytes": 8926,
+   "fresh": null,
+   "base_position": null,
+   "trace": [
+    {
+     "source": "app/routers/sessions.py/update_session",
+     "outside_edges": [
+      "app/routers/sessions.py/str_to_datetime"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/session_answers.py/update_session_answer",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/quizzes.py/update_quiz_for_backwards_compatibility",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/routers/organizations.py/create_organization",
+     "outside_edges": [
+      "app/routers/organizations.py/generate_random_string"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "app/utils.py/remove_optional_unset_args",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "app/utils.py/remove_optional_unset_args/union",
+     "outside_edges": [],
+     "eligible": []
+    }
+   ],
+   "rank": [
+    "app/routers/sessions.py/update_session",
+    "app/routers/session_answers.py/update_session_answer",
+    "app/routers/quizzes.py/update_quiz_for_backwards_compatibility",
+    "app/routers/organizations.py/create_organization",
+    "app/utils.py/remove_optional_unset_args",
+    "app/utils.py/remove_optional_unset_args/union",
+    "app/routers/sessions.py/create_session",
+    "app/routers/quizzes.py/create_quiz",
+    "app/routers/questions.py/get_questions",
+    "app/schemas.py/PyObjectId/__modify_schema__",
+    "app/routers/quizzes.py/get_quiz",
+    "app/routers/organizations.py/check_auth_token",
+    "app/routers/sessions.py/get_session",
+    "app/routers/questions.py/get_question",
+    "app/routers/organizations.py/generate_random_string",
+    "app/routers/session_answers.py/get_session_answer",
+    "app/schemas.py/PyObjectId/__get_validators__",
+    "app/schemas.py/PyObjectId/validate",
+    "app/routers/sessions.py/str_to_datetime"
+   ]
+  }
+ }
+}

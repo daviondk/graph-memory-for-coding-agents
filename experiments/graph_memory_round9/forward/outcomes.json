@@ -1,0 +1,2406 @@
+[
+  {
+    "address_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": false
+    },
+    "candidates": [
+      74,
+      81
+    ],
+    "case": "4e5c2b48f9a06c0ef233",
+    "commit": "b395127e733b33c27f344695ebf155ecf5edeeab",
+    "gold": [
+      "runtime/Java/src/org/antlr/v4/runtime/tree/Trees.java",
+      "org.antlr.v4.runtime.tree.Trees",
+      "toStringTree",
+      [
+        "Tree",
+        "List<String>"
+      ],
+      70,
+      84
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": false
+    },
+    "kind": "Inline Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": false
+    },
+    "project": "antlr/antlr4",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "candidates": [
+      81,
+      70
+    ],
+    "case": "1126cd1de0d4a58f534e",
+    "commit": "b395127e733b33c27f344695ebf155ecf5edeeab",
+    "gold": null,
+    "gold_count": 0,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "antlr/antlr4",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      74,
+      81
+    ],
+    "case": "42888d85c693d5fff41d",
+    "commit": "b395127e733b33c27f344695ebf155ecf5edeeab",
+    "gold": [
+      "tool/src/org/antlr/v4/gui/Trees.java",
+      "org.antlr.v4.gui.Trees",
+      "getPS",
+      [
+        "Tree",
+        "List<String>",
+        "String",
+        "int"
+      ],
+      62,
+      68
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "antlr/antlr4",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      38,
+      59
+    ],
+    "case": "7cf99c6a5d2ffc7dca88",
+    "commit": "a9ca2efae56815dc464189b055ffe9da23766f7f",
+    "gold": [
+      "tool/test/org/antlr/v4/test/tool/TestAmbigParseTrees.java",
+      "org.antlr.v4.test.tool.TestAmbigParseTrees",
+      "testAmbiguousTrees",
+      [
+        "LexerGrammar",
+        "Grammar",
+        "String",
+        "String",
+        "int",
+        "String",
+        "String",
+        "String[]"
+      ],
+      212,
+      253
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 6,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "antlr/antlr4",
+    "raw_old_calls": 6
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      175,
+      172
+    ],
+    "case": "a2f53028021e059886c3",
+    "commit": "00aa01fb90f3210d1e3027d7f759fb1085b814bd",
+    "gold": [
+      "exec/java-exec/src/test/java/org/apache/drill/exec/server/TestDrillbitResilience.java",
+      "org.apache.drill.exec.server.TestDrillbitResilience",
+      "assertCancelledWithoutException",
+      [
+        "String",
+        "WaitUntilCompleteListener",
+        "String"
+      ],
+      525,
+      532
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "apache/drill",
+    "raw_old_calls": 4
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      54,
+      84
+    ],
+    "case": "ddafb7ea580551803332",
+    "commit": "c1b847acdc8cb90a1498b236b3bb5c81ca75c044",
+    "gold": [
+      "exec/java-exec/src/main/java/org/apache/drill/exec/util/ImpersonationUtil.java",
+      "org.apache.drill.exec.util.ImpersonationUtil",
+      "createFileSystem",
+      [
+        "String",
+        "Configuration"
+      ],
+      132,
+      134
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "apache/drill",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      58,
+      87
+    ],
+    "case": "5e55a40e1a417186a6b9",
+    "commit": "c1b847acdc8cb90a1498b236b3bb5c81ca75c044",
+    "gold": [
+      "contrib/storage-hive/core/src/test/java/org/apache/drill/exec/hive/HiveTestUtilities.java",
+      "org.apache.drill.exec.hive.HiveTestUtilities",
+      "executeQuery",
+      [
+        "Driver",
+        "String"
+      ],
+      32,
+      49
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "apache/drill",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      175,
+      172
+    ],
+    "case": "0356e25c395e77bd3e98",
+    "commit": "00aa01fb90f3210d1e3027d7f759fb1085b814bd",
+    "gold": [
+      "exec/java-exec/src/test/java/org/apache/drill/exec/server/TestDrillbitResilience.java",
+      "org.apache.drill.exec.server.TestDrillbitResilience",
+      "settingNoOpInjectionsAndQuery",
+      [],
+      328,
+      343
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "apache/drill",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": false
+    },
+    "candidates": [
+      65,
+      103
+    ],
+    "case": "a43c25142a3e48c614d5",
+    "commit": "c1b847acdc8cb90a1498b236b3bb5c81ca75c044",
+    "gold": [
+      "exec/java-exec/src/test/java/org/apache/drill/exec/impersonation/TestImpersonationDisabledWithMiniDFS.java",
+      "org.apache.drill.exec.impersonation.TestImpersonationDisabledWithMiniDFS",
+      "setup",
+      [],
+      28,
+      34
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": false
+    },
+    "kind": "Rename Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "apache/drill",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      26,
+      21
+    ],
+    "case": "70487d2040ae2dc44be7",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/NestedTryDepthCheck.java",
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedTryDepthCheck",
+      "visitToken",
+      [
+        "DetailAST"
+      ],
+      55,
+      58
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      26,
+      21
+    ],
+    "case": "831f9161b282a9194a58",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/NestedIfDepthCheck.java",
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck",
+      "visitToken",
+      [
+        "DetailAST"
+      ],
+      57,
+      62
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      26,
+      21
+    ],
+    "case": "bc2498f72557a6a4df16",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/NestedIfDepthCheck.java",
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedIfDepthCheck",
+      "leaveToken",
+      [
+        "DetailAST"
+      ],
+      64,
+      69
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      26,
+      21
+    ],
+    "case": "be0fc3fd35da4e15c174",
+    "commit": "a07cae0aca9f9072256b3a5fd05779e8d69b9748",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/NestedTryDepthCheck.java",
+      "com.puppycrawl.tools.checkstyle.checks.coding.NestedTryDepthCheck",
+      "leaveToken",
+      [
+        "DetailAST"
+      ],
+      60,
+      63
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      99,
+      101
+    ],
+    "case": "06f7f9d3344f2291c86d",
+    "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/utils/TokenUtils.java",
+      "com.puppycrawl.tools.checkstyle.utils.TokenUtils",
+      "getIntFromField",
+      [
+        "Field",
+        "Object"
+      ],
+      97,
+      104
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      99,
+      101
+    ],
+    "case": "07235d0907fbe0e01efd",
+    "commit": "cdf3e56bacd3895262af8a1df9ca5c81f4071970",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/utils/CommonUtils.java",
+      "com.puppycrawl.tools.checkstyle.utils.CommonUtils",
+      "relativizeAndNormalizePath",
+      [
+        "String",
+        "String"
+      ],
+      212,
+      219
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 6
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      35,
+      36
+    ],
+    "case": "17167eb4295482b3a3ea",
+    "commit": "0a1a4c6e94c9b3b73b21b323f14ae7b7337b1b44",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+      "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+      "markFinalVariableCandidateAsAssignedInIfBlock",
+      [
+        "DetailAST"
+      ],
+      248,
+      263
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      35,
+      36
+    ],
+    "case": "81e076cc683ae01ac7ba",
+    "commit": "0a1a4c6e94c9b3b73b21b323f14ae7b7337b1b44",
+    "gold": [
+      "src/main/java/com/puppycrawl/tools/checkstyle/checks/coding/FinalLocalVariableCheck.java",
+      "com.puppycrawl.tools.checkstyle.checks.coding.FinalLocalVariableCheck",
+      "markFinalVariableCandidateAsAssignedOutsideIfOrElseBlock",
+      [
+        "DetailAST"
+      ],
+      299,
+      314
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "checkstyle/checkstyle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      474,
+      474
+    ],
+    "case": "1d4fa67a7e4b0ee9a0ef",
+    "commit": "ba5e6d44526a2491a7004423ca2ad780c6992c46",
+    "gold": [
+      "src/com/google/javascript/jscomp/GlobalTypeInfo.java",
+      "com.google.javascript.jscomp.GlobalTypeInfo.ProcessScope",
+      "visitOtherPropertyDeclaration",
+      [
+        "Node"
+      ],
+      1380,
+      1407
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "google/closure-compiler",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      825,
+      825
+    ],
+    "case": "4fb18524ffbcd40383c4",
+    "commit": "b9a17665b158955ad28ef7f50cc0a8585460f053",
+    "gold": [
+      "src/com/google/javascript/jscomp/Es6TemplateLiterals.java",
+      "com.google.javascript.jscomp.Es6TemplateLiterals",
+      "visitTemplateLiteral",
+      [
+        "NodeTraversal",
+        "Node"
+      ],
+      36,
+      66
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "google/closure-compiler",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      36,
+      34
+    ],
+    "case": "045745404121648101b5",
+    "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+    "gold": [
+      "test/com/google/javascript/jscomp/JsdocToEs6TypedConverterTest.java",
+      "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest",
+      "testConvertTypeUnion",
+      [],
+      157,
+      160
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "google/closure-compiler",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      36,
+      34
+    ],
+    "case": "0b050504ab51349b0f7d",
+    "commit": "5a853a60f93e09c446d458673bc7a2f6bb26742c",
+    "gold": [
+      "test/com/google/javascript/jscomp/JsdocToEs6TypedConverterTest.java",
+      "com.google.javascript.jscomp.JsdocToEs6TypedConverterTest",
+      "testConvertFunctionNewType",
+      [],
+      224,
+      229
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "google/closure-compiler",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      298,
+      322
+    ],
+    "case": "9dcee3af50cca80fda1d",
+    "commit": "545a7d027b4c55c116dc52d9cd8121fbb09777f0",
+    "gold": [
+      "src/com/google/javascript/rhino/jstype/FunctionType.java",
+      "com.google.javascript.rhino.jstype.FunctionType",
+      "isStructuralInterface",
+      [],
+      1400,
+      1402
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "google/closure-compiler",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      825,
+      825
+    ],
+    "case": "a4e23328e829b5a80c93",
+    "commit": "b9a17665b158955ad28ef7f50cc0a8585460f053",
+    "gold": [
+      "src/com/google/javascript/jscomp/Es6TemplateLiterals.java",
+      "com.google.javascript.jscomp.Es6TemplateLiterals",
+      "visitTaggedTemplateLiteral",
+      [
+        "NodeTraversal",
+        "Node"
+      ],
+      81,
+      111
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "google/closure-compiler",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "candidates": [
+      60,
+      66
+    ],
+    "case": "0a6c2d7feeb3257b2aa9",
+    "commit": "5bab9e837cf273250aa26702204f139fdcfd9e7a",
+    "gold": [
+      "guava/src/com/google/common/collect/HashBiMap.java",
+      "com.google.common.collect.HashBiMap.Itr",
+      "remove",
+      [],
+      415,
+      424
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "kind": "Inline Method",
+    "n_lost": 3,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "google/guava",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      60,
+      66
+    ],
+    "case": "105aa640acdf837f3ffd",
+    "commit": "5bab9e837cf273250aa26702204f139fdcfd9e7a",
+    "gold": [
+      "guava/src/com/google/common/collect/HashBiMap.java",
+      "com.google.common.collect.HashBiMap.Itr",
+      "hasNext",
+      [],
+      395,
+      401
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 3,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "google/guava",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      28,
+      26
+    ],
+    "case": "01ca373aafe086f8ff4d",
+    "commit": "f841d8dda2bf461f595755f85c3eba786783702d",
+    "gold": [
+      "subprojects/tooling-api-builders/src/main/java/org/gradle/tooling/internal/provider/runner/ClientForwardingBuildListener.java",
+      "org.gradle.tooling.internal.provider.runner.ClientForwardingBuildListener",
+      "adaptResult",
+      [
+        "BuildOperationInternal"
+      ],
+      57,
+      65
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "gradle/gradle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      72,
+      74
+    ],
+    "case": "5b3249d5f4cffe9e1a72",
+    "commit": "c41466b6fd11ef4edc40cb9fd42dc13cf4f6fde1",
+    "gold": [
+      "subprojects/dependency-management/src/main/java/org/gradle/api/internal/artifacts/repositories/resolver/DefaultExternalResourceArtifactResolver.java",
+      "org.gradle.api.internal.artifacts.repositories.resolver.DefaultExternalResourceArtifactResolver",
+      "resolveArtifact",
+      [
+        "ModuleComponentArtifactMetaData",
+        "ResourceAwareResolveResult"
+      ],
+      56,
+      61
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 2,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "gradle/gradle",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      44,
+      43
+    ],
+    "case": "a109772970ad6fb0ab1f",
+    "commit": "3a7ccf5a252077332b9505acb22f190745f726f7",
+    "gold": [
+      "subprojects/platform-play/src/main/java/org/gradle/play/tasks/PlayRun.java",
+      "org.gradle.play.tasks.PlayRun",
+      "registerOrFindDeploymentHandle",
+      [
+        "String"
+      ],
+      189,
+      197
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "gradle/gradle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      28,
+      26
+    ],
+    "case": "083a5275994ac916e9eb",
+    "commit": "f841d8dda2bf461f595755f85c3eba786783702d",
+    "gold": [
+      "subprojects/core/src/main/groovy/org/gradle/internal/progress/BuildOperationInternal.java",
+      "org.gradle.internal.progress.BuildOperationInternal",
+      "getFailure",
+      [],
+      54,
+      56
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "gradle/gradle",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      92,
+      95
+    ],
+    "case": "7deecf8e37ee2fdbdff4",
+    "commit": "79c66ceab11dae0b9fd1dade7bb4120028738705",
+    "gold": [
+      "subprojects/platform-native/src/main/groovy/org/gradle/nativeplatform/test/internal/DefaultNativeTestSuiteBinarySpec.java",
+      "org.gradle.nativeplatform.test.internal.DefaultNativeTestSuiteBinarySpec",
+      "getInputs",
+      [],
+      58,
+      64
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 2,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "gradle/gradle",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      123,
+      122
+    ],
+    "case": "2f79241075119a43483d",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "gold": [
+      "core/src/main/java/com/graphhopper/util/GHUtility.java",
+      "com.graphhopper.util.GHUtility",
+      "newStorage",
+      [
+        "GraphHopperStorage"
+      ],
+      319,
+      327
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "kind": "Inline Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "graphhopper/graphhopper",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      193,
+      211
+    ],
+    "case": "00312a948cce2da65f98",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "gold": [
+      "core/src/main/java/com/graphhopper/storage/BaseGraph.java",
+      "com.graphhopper.storage.BaseGraph",
+      "isTestingEnabled",
+      [],
+      1336,
+      1341
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": false
+    },
+    "project": "graphhopper/graphhopper",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      193,
+      211
+    ],
+    "case": "0462c6822c39ecc0b5d3",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "gold": [
+      "core/src/main/java/com/graphhopper/storage/BaseGraph.java",
+      "com.graphhopper.storage.BaseGraph",
+      "internalEdgeDisconnect",
+      [
+        "int",
+        "long",
+        "int",
+        "int"
+      ],
+      944,
+      961
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "graphhopper/graphhopper",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      104,
+      105
+    ],
+    "case": "0872ab2835cb06964b12",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "gold": [
+      "core/src/test/java/com/graphhopper/routing/EdgeBasedRoutingAlgorithmTest.java",
+      "com.graphhopper.routing.EdgeBasedRoutingAlgorithmTest",
+      "createStorage",
+      [
+        "EncodingManager"
+      ],
+      81,
+      84
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 4,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "graphhopper/graphhopper",
+    "raw_old_calls": 4
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      244,
+      258
+    ],
+    "case": "0a78363424e37b8d5061",
+    "commit": "7f80425b6a0af9bdfef12c8a873676e39e0a04a6",
+    "gold": [
+      "core/src/test/java/com/graphhopper/storage/AbstractGraphStorageTester.java",
+      "com.graphhopper.storage.AbstractGraphStorageTester",
+      "createGHStorage",
+      [],
+      58,
+      65
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 35,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "graphhopper/graphhopper",
+    "raw_old_calls": 35
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      234,
+      224
+    ],
+    "case": "4929bbb43e266843dd87",
+    "commit": "77fab3caea4495798a248035f0e928f745c7c2db",
+    "gold": [
+      "community/kernel/src/main/java/org/neo4j/kernel/impl/locking/community/CommunityLockClient.java",
+      "org.neo4j.kernel.impl.locking.community.CommunityLockClient",
+      "releaseAll",
+      [],
+      157,
+      164
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "neo4j/neo4j",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      118,
+      118
+    ],
+    "case": "fa2b31b0e44e3aa22b65",
+    "commit": "74d2cc420e5590ba3bc0ffcc15b30b76a9cbef0b",
+    "gold": [
+      "community/kernel/src/main/java/org/neo4j/kernel/AvailabilityGuard.java",
+      "org.neo4j.kernel.AvailabilityGuard",
+      "AvailabilityGuard",
+      [
+        "Clock"
+      ],
+      113,
+      116
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "neo4j/neo4j",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      234,
+      224
+    ],
+    "case": "687f8c173b1b12f48296",
+    "commit": "77fab3caea4495798a248035f0e928f745c7c2db",
+    "gold": [
+      "community/kernel/src/main/java/org/neo4j/kernel/impl/locking/community/CommunityLockClient.java",
+      "org.neo4j.kernel.impl.locking.community.CommunityLockClient",
+      "releaseAll",
+      [],
+      157,
+      164
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "project": "neo4j/neo4j",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      227,
+      216
+    ],
+    "case": "34cefda097e69f8d1fdd",
+    "commit": "021d17c8234904dcb1d54596662352395927fe7b",
+    "gold": [
+      "community/kernel/src/main/java/org/neo4j/kernel/impl/api/store/StoreAbstractNodeCursor.java",
+      "org.neo4j.kernel.impl.api.store.StoreAbstractNodeCursor",
+      "directionOf",
+      [
+        "long",
+        "long",
+        "long",
+        "long"
+      ],
+      373,
+      385
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "neo4j/neo4j",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "candidates": [
+      115,
+      106
+    ],
+    "case": "4b1e1b79ce4b3a81ebfb",
+    "commit": "a26b61201cd86c9a8773b418d9c84b446e95a601",
+    "gold": null,
+    "gold_count": 0,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "kind": "Move Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "neo4j/neo4j",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      211,
+      213
+    ],
+    "case": "02a6502c934148aaaf56",
+    "commit": "001de307492df8f84ad15f6aaa0bd1e748d4ce27",
+    "gold": [
+      "community/kernel/src/test/java/org/neo4j/kernel/impl/store/counts/CountsRotationTest.java",
+      "org.neo4j.kernel.impl.store.counts.CountsRotationTest",
+      "checkPoint",
+      [
+        "GraphDatabaseAPI"
+      ],
+      178,
+      181
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "neo4j/neo4j",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      106,
+      154
+    ],
+    "case": "04b58c645f659e742a95",
+    "commit": "e0072aac53b3b88de787e7ca653c7e17f9499018",
+    "gold": [
+      "community/ndp/packstream-v1/src/main/java/org/neo4j/packstream/PackStream.java",
+      "org.neo4j.packstream.PackStream.Unpacker",
+      "unpackRawBytes",
+      [
+        "int"
+      ],
+      784,
+      796
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "neo4j/neo4j",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      720,
+      719
+    ],
+    "case": "a5fd61d6b26343c08430",
+    "commit": "acf67c8cb58d13827e14bbeeec11a66f9277015f",
+    "gold": [
+      "core/src/processing/core/PApplet.java",
+      "processing.core.PApplet",
+      "runSketch",
+      [
+        "String[]",
+        "PApplet"
+      ],
+      9875,
+      10100
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "processing/processing",
+    "raw_old_calls": 0
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      62,
+      61
+    ],
+    "case": "c2017ca2862d7698c6e4",
+    "commit": "8707194f003444a9fb8e00bffa2893ef0c2492c6",
+    "gold": [
+      "core/src/processing/opengl/PSurfaceJOGL.java",
+      "processing.opengl.PSurfaceJOGL",
+      "placeWindow",
+      [
+        "int[]",
+        "int[]"
+      ],
+      359,
+      435
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "processing/processing",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      282,
+      280
+    ],
+    "case": "1fb912628157737d4fef",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "gold": [
+      "quasar-core/src/main/java/co/paralleluniverse/fibers/Fiber.java",
+      "co.paralleluniverse.fibers.Fiber",
+      "verifySuspend",
+      [
+        "Fiber"
+      ],
+      1576,
+      1580
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "puniverse/quasar",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      282,
+      280
+    ],
+    "case": "46560a9282630c62835e",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "gold": [
+      "quasar-core/src/main/java/co/paralleluniverse/fibers/Fiber.java",
+      "co.paralleluniverse.fibers.Fiber",
+      "checkInstrumentation",
+      [],
+      1604,
+      1669
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "puniverse/quasar",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      282,
+      280
+    ],
+    "case": "ba06d8b2274ad3ff3eb0",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "gold": [
+      "quasar-core/src/main/java/co/paralleluniverse/fibers/Stack.java",
+      "co.paralleluniverse.fibers.Stack",
+      "popMethod",
+      [],
+      153,
+      178
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "puniverse/quasar",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      282,
+      280
+    ],
+    "case": "d046369c04a01d9c1a66",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "gold": [
+      "quasar-core/src/main/java/co/paralleluniverse/fibers/Stack.java",
+      "co.paralleluniverse.fibers.Stack",
+      "pushMethod",
+      [
+        "int",
+        "int"
+      ],
+      129,
+      151
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 1,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "puniverse/quasar",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      282,
+      280
+    ],
+    "case": "93eea4cf260a7eac1098",
+    "commit": "56d4b999e8be70be237049708f019c278c356e71",
+    "gold": [
+      "quasar-core/src/main/java/co/paralleluniverse/fibers/Fiber.java",
+      "co.paralleluniverse.fibers.Fiber",
+      "isSuspendable",
+      [
+        "Class",
+        "String"
+      ],
+      1681,
+      1683
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 0,
+    "predicted": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "puniverse/quasar",
+    "raw_old_calls": 1
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      28,
+      22
+    ],
+    "case": "1cfd211a98ab297d939e",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "gold": [
+      "aeron-driver/src/test/java/uk/co/real_logic/aeron/driver/DriverConductorTest.java",
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "shouldNotTimeoutSubscriptionOnKeepAlive",
+      [],
+      416,
+      441
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 2,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "real-logic/Aeron",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "candidates": [
+      28,
+      22
+    ],
+    "case": "2528e44cd6d8cdcfd610",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "gold": [
+      "aeron-driver/src/test/java/uk/co/real_logic/aeron/driver/DriverConductorTest.java",
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "shouldTimeoutSubscription",
+      [],
+      396,
+      414
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "kind": "Inline Method",
+    "n_lost": 2,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "real-logic/Aeron",
+    "raw_old_calls": 2
+  },
+  {
+    "address_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "candidates": [
+      28,
+      22
+    ],
+    "case": "34b228bffd084f13408d",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "gold": [
+      "aeron-driver/src/test/java/uk/co/real_logic/aeron/driver/DriverConductorTest.java",
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "shouldErrorOnRemoveChannelOnUnknownSessionId",
+      [],
+      309,
+      321
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "kind": "Inline Method",
+    "n_lost": 3,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "real-logic/Aeron",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "candidates": [
+      28,
+      22
+    ],
+    "case": "354488b449fe3b8819a6",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "gold": [
+      "aeron-driver/src/test/java/uk/co/real_logic/aeron/driver/DriverConductorTest.java",
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "shouldErrorOnAddSubscriptionWithInvalidUri",
+      [],
+      338,
+      351
+    ],
+    "gold_count": 1,
+    "inline": true,
+    "joint_hit": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": false,
+      "lex_prior": true
+    },
+    "kind": "Inline Method",
+    "n_lost": 3,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "project": "real-logic/Aeron",
+    "raw_old_calls": 3
+  },
+  {
+    "address_hit": {
+      "disappear": true,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "candidates": [
+      28,
+      22
+    ],
+    "case": "4b4dc7ca079a0a873f8f",
+    "commit": "35893c115ba23bd62a7036a33390420f074ce660",
+    "gold": [
+      "aeron-driver/src/test/java/uk/co/real_logic/aeron/driver/DriverConductorTest.java",
+      "uk.co.real_logic.aeron.driver.DriverConductorTest",
+      "doWorkUntil",
+      [
+        "BooleanSupplier"
+      ],
+      478,
+      493
+    ],
+    "gold_count": 1,
+    "inline": false,
+    "joint_hit": {
+      "disappear": false,
+      "edge": false,
+      "edge_lex_agree": true,
+      "git_prior": true,
+      "lex_prior": true
+    },
+    "kind": "Rename Method",
+    "n_lost": 6,
+    "predicted": {
+      "disappear": true,
+      "edge": true,
+      "edge_lex_agree": false,
+      "git_prior": false,
+      "lex_prior": false
+    },
+    "project": "real-logic/Aeron",
+    "raw_old_calls": 6
+  }
+]

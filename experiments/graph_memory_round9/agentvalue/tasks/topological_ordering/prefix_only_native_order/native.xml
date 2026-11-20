@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="0.120" timestamp="2026-11-20T23:50:30.621811" hostname="DESKTOP-PU57F9M"><testcase classname="python_testcases.test_topological_ordering" name="test1" time="0.012"><failure message="assert [5, 7, 3, 10] == [5, 7, 3, 11, 8, 10, ...]&#10;  At index 3 diff: 10 != 11&#10;  Right contains 4 more items, first extra item: 8&#10;  Use -v to get more diff">python_testcases\test_topological_ordering.py:42: in test1
+    assert result == [5, 7, 3, 11, 8, 10, 2, 9]
+E   assert [5, 7, 3, 10] == [5, 7, 3, 11, 8, 10, ...]
+E     At index 3 diff: 10 != 11
+E     Right contains 4 more items, first extra item: 8
+E     Use -v to get more diff</failure></testcase><testcase classname="python_testcases.test_topological_ordering" name="test3" time="0.001"><failure message="AssertionError: assert ['3/4 cup mil...heat griddle'] == ['3/4 cup mil...1/4 cup', ...]&#10;  Right contains 5 more items, first extra item: '1 cup mix'&#10;  Use -v to get more diff">python_testcases\test_topological_ordering.py:118: in test3
+    assert result == expected
+E   AssertionError: assert ['3/4 cup mil...heat griddle'] == ['3/4 cup mil...1/4 cup', ...]
+E     Right contains 5 more items, first extra item: '1 cup mix'
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

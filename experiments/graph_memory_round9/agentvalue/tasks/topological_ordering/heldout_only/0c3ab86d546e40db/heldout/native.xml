@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.130" timestamp="2026-11-20T23:52:10.306262" hostname="DESKTOP-PU57F9M"><testcase classname="python_testcases.test_topological_ordering" name="test2" time="0.015"><failure message="assert [4, 5, 0, 1] == [4, 5, 0, 2, 3, 1]&#10;  At index 3 diff: 1 != 2&#10;  Right contains 2 more items, first extra item: 3&#10;  Use -v to get more diff">python_testcases\test_topological_ordering.py:70: in test2
+    assert result == [4, 5, 0, 2, 3, 1]
+E   assert [4, 5, 0, 1] == [4, 5, 0, 2, 3, 1]
+E     At index 3 diff: 1 != 2
+E     Right contains 2 more items, first extra item: 3
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

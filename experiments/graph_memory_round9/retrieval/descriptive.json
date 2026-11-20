@@ -1,0 +1,162 @@
+{
+ "method_totals": {
+  "dense": {
+   "seed_reads": 0,
+   "extra_reads": 0,
+   "new_correct": 0,
+   "removed_correct": 0,
+   "returned_correct": 31,
+   "acc5": 6,
+   "acc10": 8,
+   "acc15": 9
+  },
+  "bm25": {
+   "seed_reads": 0,
+   "extra_reads": 0,
+   "new_correct": 0,
+   "removed_correct": 15,
+   "returned_correct": 22,
+   "acc5": 1,
+   "acc10": 2,
+   "acc15": 2
+  },
+  "ids": {
+   "seed_reads": 0,
+   "extra_reads": 10,
+   "new_correct": 1,
+   "removed_correct": 0,
+   "returned_correct": 32,
+   "acc5": 6,
+   "acc10": 8,
+   "acc15": 9
+  },
+  "one": {
+   "seed_reads": 108,
+   "extra_reads": 30,
+   "new_correct": 3,
+   "removed_correct": 1,
+   "returned_correct": 33,
+   "acc5": 6,
+   "acc10": 9,
+   "acc15": 9
+  },
+  "corroborated": {
+   "seed_reads": 108,
+   "extra_reads": 9,
+   "new_correct": 0,
+   "removed_correct": 0,
+   "returned_correct": 31,
+   "acc5": 6,
+   "acc10": 8,
+   "acc15": 9
+  },
+  "two_callers": {
+   "seed_reads": 108,
+   "extra_reads": 7,
+   "new_correct": 0,
+   "removed_correct": 0,
+   "returned_correct": 31,
+   "acc5": 6,
+   "acc10": 8,
+   "acc15": 9
+  },
+  "matched": {
+   "seed_reads": 108,
+   "extra_reads": 9,
+   "new_correct": 1,
+   "removed_correct": 0,
+   "returned_correct": 32,
+   "acc5": 6,
+   "acc10": 8,
+   "acc15": 9
+  }
+ },
+ "strata": {
+  "0-20000": {
+   "n": 6,
+   "n_functions": 380,
+   "acc10": {
+    "dense": 3,
+    "bm25": 2,
+    "ids": 3,
+    "one": 3,
+    "corroborated": 3,
+    "two_callers": 3,
+    "matched": 3
+   }
+  },
+  "20000-50000": {
+   "n": 6,
+   "n_functions": 1303,
+   "acc10": {
+    "dense": 2,
+    "bm25": 0,
+    "ids": 2,
+    "one": 3,
+    "corroborated": 2,
+    "two_callers": 2,
+    "matched": 2
+   }
+  },
+  "50000-80000": {
+   "n": 6,
+   "n_functions": 1825,
+   "acc10": {
+    "dense": 3,
+    "bm25": 0,
+    "ids": 3,
+    "one": 3,
+    "corroborated": 3,
+    "two_callers": 3,
+    "matched": 3
+   }
+  }
+ },
+ "all_true": 58,
+ "gold_outside_dense10": 27,
+ "reachable_outside": 6,
+ "n_issues_miss": 10,
+ "n_issues_reachable": 4,
+ "edges": 149,
+ "bytes": 17768,
+ "seed_wordpieces": 54646,
+ "differences_vs_dense": {
+  "dense": [],
+  "bm25": [
+   [
+    "Standard-Labs__real-intent-27",
+    -1
+   ],
+   [
+    "SYSTRAN__faster-whisper-1198",
+    -1
+   ],
+   [
+    "vitalik__django-ninja-1349",
+    -1
+   ],
+   [
+    "ranaroussi__yfinance-2173",
+    -1
+   ],
+   [
+    "Zulko__moviepy-2253",
+    -1
+   ],
+   [
+    "paperless-ngx__paperless-ngx-1227",
+    -1
+   ]
+  ],
+  "ids": [],
+  "one": [
+   [
+    "Delgan__loguru-1239",
+    1
+   ]
+  ],
+  "corroborated": [],
+  "two_callers": [],
+  "matched": []
+ }
+}

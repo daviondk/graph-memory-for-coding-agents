@@ -1,0 +1,411 @@
+{
+ "issue": "SYSTRAN__faster-whisper-1198",
+ "policies": {
+  "fixed6": {
+   "reads": 6,
+   "tokens": 7050,
+   "bytes": 30269,
+   "fresh": "faster_whisper/vad.py/collect_chunks",
+   "base_position": 12,
+   "trace": [
+    {
+     "source": "faster_whisper/vad.py/SileroVADModel/__call__",
+     "outside_edges": [
+      "benchmark/utils.py/MyThread/run"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/vad.py/get_speech_timestamps",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/vad.py/SileroVADModel/__init__",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/transcribe.py/WhisperModel/detect_language",
+     "outside_edges": [
+      "faster_whisper/audio.py/pad_or_trim",
+      "faster_whisper/vad.py/collect_chunks"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/transcribe.py/WhisperModel/transcribe",
+     "outside_edges": [
+      "faster_whisper/audio.py/decode_audio",
+      "faster_whisper/transcribe.py/WhisperModel/generate_segments",
+      "faster_whisper/transcribe.py/get_suppressed_tokens",
+      "faster_whisper/transcribe.py/restore_speech_timestamps",
+      "faster_whisper/utils.py/format_timestamp",
+      "faster_whisper/vad.py/collect_chunks"
+     ],
+     "eligible": [
+      "faster_whisper/vad.py/collect_chunks"
+     ]
+    },
+    {
+     "source": "faster_whisper/transcribe.py/WhisperModel/add_word_timestamps",
+     "outside_edges": [
+      "faster_whisper/transcribe.py/WhisperModel/find_alignment",
+      "faster_whisper/transcribe.py/merge_punctuations"
+     ],
+     "eligible": [
+      "faster_whisper/vad.py/collect_chunks"
+     ]
+    }
+   ],
+   "rank": [
+    "faster_whisper/vad.py/SileroVADModel/__call__",
+    "faster_whisper/vad.py/get_speech_timestamps",
+    "faster_whisper/vad.py/SileroVADModel/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/detect_language",
+    "faster_whisper/transcribe.py/WhisperModel/transcribe",
+    "faster_whisper/transcribe.py/WhisperModel/add_word_timestamps",
+    "faster_whisper/vad.py/get_vad_model",
+    "faster_whisper/transcribe.py/WhisperModel/__init__",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/transcribe",
+    "faster_whisper/vad.py/collect_chunks",
+    "faster_whisper/vad.py/SpeechTimestampsMap/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments",
+    "faster_whisper/transcribe.py/WhisperModel/generate_with_fallback",
+    "faster_whisper/vad.py/merge_segments",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/_batched_segments_generator",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/generate_segment_batched",
+    "faster_whisper/transcribe.py/WhisperModel/encode",
+    "faster_whisper/transcribe.py/WhisperModel/_split_segments_by_timestamps",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/forward",
+    "faster_whisper/transcribe.py/WhisperModel/find_alignment",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/__init__",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/__call__",
+    "faster_whisper/vad.py/SpeechTimestampsMap/get_chunk_index",
+    "faster_whisper/utils.py/download_model",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/is_segment_anomaly",
+    "faster_whisper/audio.py/decode_audio",
+    "faster_whisper/transcribe.py/WhisperModel/_get_feature_kwargs",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/word_anomaly_score",
+    "faster_whisper/transcribe.py/WhisperModel/get_prompt",
+    "faster_whisper/transcribe.py/get_suppressed_tokens",
+    "faster_whisper/vad.py/SpeechTimestampsMap/get_original_time",
+    "faster_whisper/transcribe.py/get_ctranslate2_storage",
+    "faster_whisper/transcribe.py/WhisperModel/supported_languages",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/stft",
+    "faster_whisper/utils.py/disabled_tqdm/__init__",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/get_mel_filters",
+    "faster_whisper/transcribe.py/Segment/_asdict",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/next_words_segment",
+    "faster_whisper/transcribe.py/Word/_asdict",
+    "faster_whisper/transcribe.py/restore_speech_timestamps",
+    "faster_whisper/audio.py/_group_frames",
+    "faster_whisper/tokenizer.py/Tokenizer/non_speech_tokens",
+    "faster_whisper/tokenizer.py/Tokenizer/transcribe",
+    "faster_whisper/tokenizer.py/Tokenizer/sot",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_lm",
+    "faster_whisper/audio.py/pad_or_trim",
+    "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_unicode",
+    "faster_whisper/utils.py/format_timestamp",
+    "faster_whisper/audio.py/_resample_frames",
+    "faster_whisper/tokenizer.py/Tokenizer/eot",
+    "faster_whisper/tokenizer.py/Tokenizer/decode",
+    "faster_whisper/transcribe.py/get_compression_ratio",
+    "faster_whisper/tokenizer.py/Tokenizer/decode_with_timestamps",
+    "faster_whisper/tokenizer.py/Tokenizer/split_to_word_tokens",
+    "faster_whisper/tokenizer.py/Tokenizer/__init__",
+    "faster_whisper/tokenizer.py/Tokenizer/translate",
+    "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_spaces",
+    "faster_whisper/utils.py/get_logger",
+    "faster_whisper/tokenizer.py/Tokenizer/encode",
+    "faster_whisper/utils.py/get_end",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_sequence",
+    "faster_whisper/transcribe.py/merge_punctuations",
+    "faster_whisper/audio.py/_ignore_invalid_frames",
+    "faster_whisper/utils.py/available_models",
+    "faster_whisper/tokenizer.py/Tokenizer/timestamp_begin",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_prev",
+    "faster_whisper/tokenizer.py/Tokenizer/no_timestamps",
+    "faster_whisper/utils.py/get_assets_path",
+    "benchmark/memory_benchmark.py/measure_memory",
+    "setup.py/get_project_version",
+    "benchmark/wer_benchmark.py/inference",
+    "benchmark/utils.py/inference",
+    "benchmark/evaluate_yt_commons.py/url_to_audio",
+    "benchmark/memory_benchmark.py/measure_memory/_get_gpu_info",
+    "benchmark/utils.py/MyThread/__init__",
+    "benchmark/utils.py/MyThread/run",
+    "benchmark/utils.py/get_logger",
+    "benchmark/speed_benchmark.py/measure_speed",
+    "benchmark/utils.py/MyThread/get_result",
+    "setup.py/get_requirements",
+    "setup.py/get_long_description"
+   ]
+  },
+  "early": {
+   "reads": 5,
+   "tokens": 5626,
+   "bytes": 24180,
+   "fresh": "faster_whisper/vad.py/collect_chunks",
+   "base_position": 12,
+   "trace": [
+    {
+     "source": "faster_whisper/vad.py/SileroVADModel/__call__",
+     "outside_edges": [
+      "benchmark/utils.py/MyThread/run"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/vad.py/get_speech_timestamps",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/vad.py/SileroVADModel/__init__",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/transcribe.py/WhisperModel/detect_language",
+     "outside_edges": [
+      "faster_whisper/audio.py/pad_or_trim",
+      "faster_whisper/vad.py/collect_chunks"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/transcribe.py/WhisperModel/transcribe",
+     "outside_edges": [
+      "faster_whisper/audio.py/decode_audio",
+      "faster_whisper/transcribe.py/WhisperModel/generate_segments",
+      "faster_whisper/transcribe.py/get_suppressed_tokens",
+      "faster_whisper/transcribe.py/restore_speech_timestamps",
+      "faster_whisper/utils.py/format_timestamp",
+      "faster_whisper/vad.py/collect_chunks"
+     ],
+     "eligible": [
+      "faster_whisper/vad.py/collect_chunks"
+     ]
+    }
+   ],
+   "rank": [
+    "faster_whisper/vad.py/SileroVADModel/__call__",
+    "faster_whisper/vad.py/get_speech_timestamps",
+    "faster_whisper/vad.py/SileroVADModel/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/detect_language",
+    "faster_whisper/transcribe.py/WhisperModel/transcribe",
+    "faster_whisper/transcribe.py/WhisperModel/add_word_timestamps",
+    "faster_whisper/vad.py/get_vad_model",
+    "faster_whisper/transcribe.py/WhisperModel/__init__",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/transcribe",
+    "faster_whisper/vad.py/collect_chunks",
+    "faster_whisper/vad.py/SpeechTimestampsMap/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments",
+    "faster_whisper/transcribe.py/WhisperModel/generate_with_fallback",
+    "faster_whisper/vad.py/merge_segments",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/_batched_segments_generator",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/generate_segment_batched",
+    "faster_whisper/transcribe.py/WhisperModel/encode",
+    "faster_whisper/transcribe.py/WhisperModel/_split_segments_by_timestamps",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/forward",
+    "faster_whisper/transcribe.py/WhisperModel/find_alignment",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/__init__",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/__call__",
+    "faster_whisper/vad.py/SpeechTimestampsMap/get_chunk_index",
+    "faster_whisper/utils.py/download_model",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/is_segment_anomaly",
+    "faster_whisper/audio.py/decode_audio",
+    "faster_whisper/transcribe.py/WhisperModel/_get_feature_kwargs",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/word_anomaly_score",
+    "faster_whisper/transcribe.py/WhisperModel/get_prompt",
+    "faster_whisper/transcribe.py/get_suppressed_tokens",
+    "faster_whisper/vad.py/SpeechTimestampsMap/get_original_time",
+    "faster_whisper/transcribe.py/get_ctranslate2_storage",
+    "faster_whisper/transcribe.py/WhisperModel/supported_languages",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/stft",
+    "faster_whisper/utils.py/disabled_tqdm/__init__",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/get_mel_filters",
+    "faster_whisper/transcribe.py/Segment/_asdict",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/next_words_segment",
+    "faster_whisper/transcribe.py/Word/_asdict",
+    "faster_whisper/transcribe.py/restore_speech_timestamps",
+    "faster_whisper/audio.py/_group_frames",
+    "faster_whisper/tokenizer.py/Tokenizer/non_speech_tokens",
+    "faster_whisper/tokenizer.py/Tokenizer/transcribe",
+    "faster_whisper/tokenizer.py/Tokenizer/sot",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_lm",
+    "faster_whisper/audio.py/pad_or_trim",
+    "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_unicode",
+    "faster_whisper/utils.py/format_timestamp",
+    "faster_whisper/audio.py/_resample_frames",
+    "faster_whisper/tokenizer.py/Tokenizer/eot",
+    "faster_whisper/tokenizer.py/Tokenizer/decode",
+    "faster_whisper/transcribe.py/get_compression_ratio",
+    "faster_whisper/tokenizer.py/Tokenizer/decode_with_timestamps",
+    "faster_whisper/tokenizer.py/Tokenizer/split_to_word_tokens",
+    "faster_whisper/tokenizer.py/Tokenizer/__init__",
+    "faster_whisper/tokenizer.py/Tokenizer/translate",
+    "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_spaces",
+    "faster_whisper/utils.py/get_logger",
+    "faster_whisper/tokenizer.py/Tokenizer/encode",
+    "faster_whisper/utils.py/get_end",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_sequence",
+    "faster_whisper/transcribe.py/merge_punctuations",
+    "faster_whisper/audio.py/_ignore_invalid_frames",
+    "faster_whisper/utils.py/available_models",
+    "faster_whisper/tokenizer.py/Tokenizer/timestamp_begin",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_prev",
+    "faster_whisper/tokenizer.py/Tokenizer/no_timestamps",
+    "faster_whisper/utils.py/get_assets_path",
+    "benchmark/memory_benchmark.py/measure_memory",
+    "setup.py/get_project_version",
+    "benchmark/wer_benchmark.py/inference",
+    "benchmark/utils.py/inference",
+    "benchmark/evaluate_yt_commons.py/url_to_audio",
+    "benchmark/memory_benchmark.py/measure_memory/_get_gpu_info",
+    "benchmark/utils.py/MyThread/__init__",
+    "benchmark/utils.py/MyThread/run",
+    "benchmark/utils.py/get_logger",
+    "benchmark/speed_benchmark.py/measure_speed",
+    "benchmark/utils.py/MyThread/get_result",
+    "setup.py/get_requirements",
+    "setup.py/get_long_description"
+   ]
+  },
+  "early3": {
+   "reads": 5,
+   "tokens": 5626,
+   "bytes": 24180,
+   "fresh": "faster_whisper/vad.py/collect_chunks",
+   "base_position": 12,
+   "trace": [
+    {
+     "source": "faster_whisper/vad.py/SileroVADModel/__call__",
+     "outside_edges": [
+      "benchmark/utils.py/MyThread/run"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/vad.py/get_speech_timestamps",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/vad.py/SileroVADModel/__init__",
+     "outside_edges": [],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/transcribe.py/WhisperModel/detect_language",
+     "outside_edges": [
+      "faster_whisper/audio.py/pad_or_trim",
+      "faster_whisper/vad.py/collect_chunks"
+     ],
+     "eligible": []
+    },
+    {
+     "source": "faster_whisper/transcribe.py/WhisperModel/transcribe",
+     "outside_edges": [
+      "faster_whisper/audio.py/decode_audio",
+      "faster_whisper/transcribe.py/WhisperModel/generate_segments",
+      "faster_whisper/transcribe.py/get_suppressed_tokens",
+      "faster_whisper/transcribe.py/restore_speech_timestamps",
+      "faster_whisper/utils.py/format_timestamp",
+      "faster_whisper/vad.py/collect_chunks"
+     ],
+     "eligible": [
+      "faster_whisper/vad.py/collect_chunks"
+     ]
+    }
+   ],
+   "rank": [
+    "faster_whisper/vad.py/SileroVADModel/__call__",
+    "faster_whisper/vad.py/get_speech_timestamps",
+    "faster_whisper/vad.py/SileroVADModel/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/detect_language",
+    "faster_whisper/transcribe.py/WhisperModel/transcribe",
+    "faster_whisper/transcribe.py/WhisperModel/add_word_timestamps",
+    "faster_whisper/vad.py/get_vad_model",
+    "faster_whisper/transcribe.py/WhisperModel/__init__",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/transcribe",
+    "faster_whisper/vad.py/collect_chunks",
+    "faster_whisper/vad.py/SpeechTimestampsMap/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments",
+    "faster_whisper/transcribe.py/WhisperModel/generate_with_fallback",
+    "faster_whisper/vad.py/merge_segments",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/_batched_segments_generator",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/generate_segment_batched",
+    "faster_whisper/transcribe.py/WhisperModel/encode",
+    "faster_whisper/transcribe.py/WhisperModel/_split_segments_by_timestamps",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/forward",
+    "faster_whisper/transcribe.py/WhisperModel/find_alignment",
+    "faster_whisper/transcribe.py/BatchedInferencePipeline/__init__",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/__call__",
+    "faster_whisper/vad.py/SpeechTimestampsMap/get_chunk_index",
+    "faster_whisper/utils.py/download_model",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/is_segment_anomaly",
+    "faster_whisper/audio.py/decode_audio",
+    "faster_whisper/transcribe.py/WhisperModel/_get_feature_kwargs",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/__init__",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/word_anomaly_score",
+    "faster_whisper/transcribe.py/WhisperModel/get_prompt",
+    "faster_whisper/transcribe.py/get_suppressed_tokens",
+    "faster_whisper/vad.py/SpeechTimestampsMap/get_original_time",
+    "faster_whisper/transcribe.py/get_ctranslate2_storage",
+    "faster_whisper/transcribe.py/WhisperModel/supported_languages",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/stft",
+    "faster_whisper/utils.py/disabled_tqdm/__init__",
+    "faster_whisper/feature_extractor.py/FeatureExtractor/get_mel_filters",
+    "faster_whisper/transcribe.py/Segment/_asdict",
+    "faster_whisper/transcribe.py/WhisperModel/generate_segments/next_words_segment",
+    "faster_whisper/transcribe.py/Word/_asdict",
+    "faster_whisper/transcribe.py/restore_speech_timestamps",
+    "faster_whisper/audio.py/_group_frames",
+    "faster_whisper/tokenizer.py/Tokenizer/non_speech_tokens",
+    "faster_whisper/tokenizer.py/Tokenizer/transcribe",
+    "faster_whisper/tokenizer.py/Tokenizer/sot",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_lm",
+    "faster_whisper/audio.py/pad_or_trim",
+    "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_unicode",
+    "faster_whisper/utils.py/format_timestamp",
+    "faster_whisper/audio.py/_resample_frames",
+    "faster_whisper/tokenizer.py/Tokenizer/eot",
+    "faster_whisper/tokenizer.py/Tokenizer/decode",
+    "faster_whisper/transcribe.py/get_compression_ratio",
+    "faster_whisper/tokenizer.py/Tokenizer/decode_with_timestamps",
+    "faster_whisper/tokenizer.py/Tokenizer/split_to_word_tokens",
+    "faster_whisper/tokenizer.py/Tokenizer/__init__",
+    "faster_whisper/tokenizer.py/Tokenizer/translate",
+    "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_spaces",
+    "faster_whisper/utils.py/get_logger",
+    "faster_whisper/tokenizer.py/Tokenizer/encode",
+    "faster_whisper/utils.py/get_end",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_sequence",
+    "faster_whisper/transcribe.py/merge_punctuations",
+    "faster_whisper/audio.py/_ignore_invalid_frames",
+    "faster_whisper/utils.py/available_models",
+    "faster_whisper/tokenizer.py/Tokenizer/timestamp_begin",
+    "faster_whisper/tokenizer.py/Tokenizer/sot_prev",
+    "faster_whisper/tokenizer.py/Tokenizer/no_timestamps",
+    "faster_whisper/utils.py/get_assets_path",
+    "benchmark/memory_benchmark.py/measure_memory",
+    "setup.py/get_project_version",
+    "benchmark/wer_benchmark.py/inference",
+    "benchmark/utils.py/inference",
+    "benchmark/evaluate_yt_commons.py/url_to_audio",
+    "benchmark/memory_benchmark.py/measure_memory/_get_gpu_info",
+    "benchmark/utils.py/MyThread/__init__",
+    "benchmark/utils.py/MyThread/run",
+    "benchmark/utils.py/get_logger",
+    "benchmark/speed_benchmark.py/measure_speed",
+    "benchmark/utils.py/MyThread/get_result",
+    "setup.py/get_requirements",
+    "setup.py/get_long_description"
+   ]
+  }
+ }
+}

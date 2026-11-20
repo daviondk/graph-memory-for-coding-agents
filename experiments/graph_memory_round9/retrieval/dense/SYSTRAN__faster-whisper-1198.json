@@ -1,0 +1,419 @@
+{
+ "issue": "SYSTRAN__faster-whisper-1198",
+ "timing_s": 26.875,
+ "from_embedding_cache": 0,
+ "corpus_sha256": "19aa7ecc644c7bd31ba59e8909b8bf386de3455a43a8a0b9391f02f1f2802947",
+ "query_file_sha256": "f5f0e58d40621b1e1a619011c5f823f092de342216b8399cd80b9c580f3ea4f6",
+ "candidates": [
+  {
+   "id": "setup.py/get_long_description",
+   "dot": -29.755958557128906,
+   "bm25": 14.062976744979181
+  },
+  {
+   "id": "setup.py/get_project_version",
+   "dot": 91.03629302978516,
+   "bm25": 17.59088194594164
+  },
+  {
+   "id": "setup.py/get_requirements",
+   "dot": -18.014068603515625,
+   "bm25": 5.938983880178033
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/__init__",
+   "dot": 158.9300537109375,
+   "bm25": 5.997384234454877
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/transcribe",
+   "dot": 183.25283813476562,
+   "bm25": 1.9329784944518056
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/translate",
+   "dot": 150.14535522460938,
+   "bm25": 1.9329784944518056
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/sot",
+   "dot": 181.9356689453125,
+   "bm25": 1.9329784944518056
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/sot_lm",
+   "dot": 178.67813110351562,
+   "bm25": 1.9060420972255208
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/sot_prev",
+   "dot": 130.18992614746094,
+   "bm25": 1.9060420972255208
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/eot",
+   "dot": 170.88966369628906,
+   "bm25": 1.9329784944518056
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/no_timestamps",
+   "dot": 122.45362091064453,
+   "bm25": 1.9060420972255208
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/timestamp_begin",
+   "dot": 131.80523681640625,
+   "bm25": 0.5096737074684077
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/sot_sequence",
+   "dot": 144.595703125,
+   "bm25": 2.345941503306442
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/encode",
+   "dot": 146.421875,
+   "bm25": 0.5008571460586623
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/decode",
+   "dot": 170.24990844726562,
+   "bm25": 1.558586178951645
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/decode_with_timestamps",
+   "dot": 167.60592651367188,
+   "bm25": 6.300605480201014
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/non_speech_tokens",
+   "dot": 183.33718872070312,
+   "bm25": 23.630693112719822
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/split_to_word_tokens",
+   "dot": 159.2423553466797,
+   "bm25": 21.462619471039194
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_unicode",
+   "dot": 172.57106018066406,
+   "bm25": 8.621931791859907
+  },
+  {
+   "id": "faster_whisper/tokenizer.py/Tokenizer/split_tokens_on_spaces",
+   "dot": 146.73379516601562,
+   "bm25": 8.414045324741569
+  },
+  {
+   "id": "faster_whisper/audio.py/decode_audio",
+   "dot": 219.91195678710938,
+   "bm25": 42.21084441433838
+  },
+  {
+   "id": "faster_whisper/audio.py/_ignore_invalid_frames",
+   "dot": 140.66580200195312,
+   "bm25": 2.972452573876577
+  },
+  {
+   "id": "faster_whisper/audio.py/_group_frames",
+   "dot": 187.43408203125,
+   "bm25": 7.80423138437966
+  },
+  {
+   "id": "faster_whisper/audio.py/_resample_frames",
+   "dot": 171.00601196289062,
+   "bm25": 6.934635010853703
+  },
+  {
+   "id": "faster_whisper/audio.py/pad_or_trim",
+   "dot": 176.19107055664062,
+   "bm25": 7.5363030469395085
+  },
+  {
+   "id": "faster_whisper/transcribe.py/Word/_asdict",
+   "dot": 195.37078857421875,
+   "bm25": 2.126136385300206
+  },
+  {
+   "id": "faster_whisper/transcribe.py/Segment/_asdict",
+   "dot": 196.75643920898438,
+   "bm25": 2.126136385300206
+  },
+  {
+   "id": "faster_whisper/transcribe.py/BatchedInferencePipeline/__init__",
+   "dot": 230.93215942382812,
+   "bm25": 2.722697343698373
+  },
+  {
+   "id": "faster_whisper/transcribe.py/BatchedInferencePipeline/forward",
+   "dot": 244.42523193359375,
+   "bm25": 6.3259393518776585
+  },
+  {
+   "id": "faster_whisper/transcribe.py/BatchedInferencePipeline/generate_segment_batched",
+   "dot": 249.04913330078125,
+   "bm25": 16.269395158225446
+  },
+  {
+   "id": "faster_whisper/transcribe.py/BatchedInferencePipeline/transcribe",
+   "dot": 290.13134765625,
+   "bm25": 47.90506004748705
+  },
+  {
+   "id": "faster_whisper/transcribe.py/BatchedInferencePipeline/_batched_segments_generator",
+   "dot": 250.33827209472656,
+   "bm25": 5.173482721115733
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/__init__",
+   "dot": 292.8814392089844,
+   "bm25": 48.803663078061675
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/supported_languages",
+   "dot": 203.38766479492188,
+   "bm25": 5.5559455442360415
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/_get_feature_kwargs",
+   "dot": 219.1742706298828,
+   "bm25": 11.867548253016999
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/transcribe",
+   "dot": 302.53582763671875,
+   "bm25": 49.76333326080986
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/_split_segments_by_timestamps",
+   "dot": 245.28538513183594,
+   "bm25": 7.932765582277831
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/generate_segments",
+   "dot": 268.4426574707031,
+   "bm25": 20.99952618674544
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/generate_segments/word_anomaly_score",
+   "dot": 212.11151123046875,
+   "bm25": 0.5356027457886448
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/generate_segments/is_segment_anomaly",
+   "dot": 220.83079528808594,
+   "bm25": 3.7736182671138736
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/generate_segments/next_words_segment",
+   "dot": 195.97650146484375,
+   "bm25": 1.615362133464995
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/encode",
+   "dot": 247.89239501953125,
+   "bm25": 35.911926260240676
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/generate_with_fallback",
+   "dot": 254.81304931640625,
+   "bm25": 22.412602581220533
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/get_prompt",
+   "dot": 210.5003204345703,
+   "bm25": 2.2582918225323985
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/add_word_timestamps",
+   "dot": 296.4073181152344,
+   "bm25": 25.93585269913217
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/find_alignment",
+   "dot": 244.22894287109375,
+   "bm25": 17.741545928260873
+  },
+  {
+   "id": "faster_whisper/transcribe.py/WhisperModel/detect_language",
+   "dot": 305.93182373046875,
+   "bm25": 31.427276990845503
+  },
+  {
+   "id": "faster_whisper/transcribe.py/restore_speech_timestamps",
+   "dot": 187.72354125976562,
+   "bm25": 9.076348717452118
+  },
+  {
+   "id": "faster_whisper/transcribe.py/get_ctranslate2_storage",
+   "dot": 203.56057739257812,
+   "bm25": 9.224701149343732
+  },
+  {
+   "id": "faster_whisper/transcribe.py/get_compression_ratio",
+   "dot": 167.95608520507812,
+   "bm25": 0.4890142862246315
+  },
+  {
+   "id": "faster_whisper/transcribe.py/get_suppressed_tokens",
+   "dot": 209.08920288085938,
+   "bm25": 9.863201982504876
+  },
+  {
+   "id": "faster_whisper/transcribe.py/merge_punctuations",
+   "dot": 143.13787841796875,
+   "bm25": 12.001991593516692
+  },
+  {
+   "id": "faster_whisper/feature_extractor.py/FeatureExtractor/__init__",
+   "dot": 214.23065185546875,
+   "bm25": 2.9411137040055517
+  },
+  {
+   "id": "faster_whisper/feature_extractor.py/FeatureExtractor/get_mel_filters",
+   "dot": 198.09481811523438,
+   "bm25": 13.078469008450192
+  },
+  {
+   "id": "faster_whisper/feature_extractor.py/FeatureExtractor/stft",
+   "dot": 201.24972534179688,
+   "bm25": 16.878850616950704
+  },
+  {
+   "id": "faster_whisper/feature_extractor.py/FeatureExtractor/__call__",
+   "dot": 230.53634643554688,
+   "bm25": 6.5549390874428175
+  },
+  {
+   "id": "faster_whisper/vad.py/get_speech_timestamps",
+   "dot": 332.54071044921875,
+   "bm25": 25.00452461476061
+  },
+  {
+   "id": "faster_whisper/vad.py/collect_chunks",
+   "dot": 265.8498229980469,
+   "bm25": 6.667824457744464
+  },
+  {
+   "id": "faster_whisper/vad.py/SpeechTimestampsMap/__init__",
+   "dot": 280.09429931640625,
+   "bm25": 5.768906888534927
+  },
+  {
+   "id": "faster_whisper/vad.py/SpeechTimestampsMap/get_original_time",
+   "dot": 204.1043243408203,
+   "bm25": 6.67918386676314
+  },
+  {
+   "id": "faster_whisper/vad.py/SpeechTimestampsMap/get_chunk_index",
+   "dot": 226.5922088623047,
+   "bm25": 5.54610608947179
+  },
+  {
+   "id": "faster_whisper/vad.py/get_vad_model",
+   "dot": 294.3891296386719,
+   "bm25": 14.179327943458388
+  },
+  {
+   "id": "faster_whisper/vad.py/SileroVADModel/__init__",
+   "dot": 332.27545166015625,
+   "bm25": 14.962385429142097
+  },
+  {
+   "id": "faster_whisper/vad.py/SileroVADModel/__call__",
+   "dot": 334.43927001953125,
+   "bm25": 18.03220215804718
+  },
+  {
+   "id": "faster_whisper/vad.py/merge_segments",
+   "dot": 250.95526123046875,
+   "bm25": 11.91691707632001
+  },
+  {
+   "id": "faster_whisper/utils.py/available_models",
+   "dot": 136.109130859375,
+   "bm25": 4.512646922617409
+  },
+  {
+   "id": "faster_whisper/utils.py/get_assets_path",
+   "dot": 96.11795806884766,
+   "bm25": 3.574915464066549
+  },
+  {
+   "id": "faster_whisper/utils.py/get_logger",
+   "dot": 146.5630340576172,
+   "bm25": 2.0958153358502125
+  },
+  {
+   "id": "faster_whisper/utils.py/download_model",
+   "dot": 226.525146484375,
+   "bm25": 31.823447402155015
+  },
+  {
+   "id": "faster_whisper/utils.py/format_timestamp",
+   "dot": 171.04464721679688,
+   "bm25": 10.202249440281934
+  },
+  {
+   "id": "faster_whisper/utils.py/disabled_tqdm/__init__",
+   "dot": 200.65731811523438,
+   "bm25": 0.49913031064581265
+  },
+  {
+   "id": "faster_whisper/utils.py/get_end",
+   "dot": 144.7085723876953,
+   "bm25": 3.535730403065965
+  },
+  {
+   "id": "benchmark/memory_benchmark.py/measure_memory",
+   "dot": 92.57559204101562,
+   "bm25": 25.09556710822845
+  },
+  {
+   "id": "benchmark/memory_benchmark.py/measure_memory/_get_gpu_info",
+   "dot": 47.06568145751953,
+   "bm25": 12.281606081897756
+  },
+  {
+   "id": "benchmark/speed_benchmark.py/measure_speed",
+   "dot": 9.342153549194336,
+   "bm25": 18.10711043198774
+  },
+  {
+   "id": "benchmark/utils.py/inference",
+   "dot": 69.20133972167969,
+   "bm25": 1.100866814756951
+  },
+  {
+   "id": "benchmark/utils.py/get_logger",
+   "dot": 14.212789535522461,
+   "bm25": 0
+  },
+  {
+   "id": "benchmark/utils.py/MyThread/__init__",
+   "dot": 31.527179718017578,
+   "bm25": 0
+  },
+  {
+   "id": "benchmark/utils.py/MyThread/run",
+   "dot": 14.29755687713623,
+   "bm25": 0
+  },
+  {
+   "id": "benchmark/utils.py/MyThread/get_result",
+   "dot": -1.8953800201416016,
+   "bm25": 0
+  },
+  {
+   "id": "benchmark/wer_benchmark.py/inference",
+   "dot": 87.61136627197266,
+   "bm25": 8.212871119512414
+  },
+  {
+   "id": "benchmark/evaluate_yt_commons.py/url_to_audio",
+   "dot": 61.109161376953125,
+   "bm25": 5.077134701200793
+  }
+ ]
+}

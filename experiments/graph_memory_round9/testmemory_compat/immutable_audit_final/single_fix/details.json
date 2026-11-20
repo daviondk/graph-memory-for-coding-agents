@@ -1,0 +1,80 @@
+{
+  "mode": "single_fix",
+  "test": "sympy/core/tests/test_basic.py::test_immutable",
+  "order": [
+    "sympy/core/tests/test_basic.py::test_immutable"
+  ],
+  "old_sha256": "cc55d811d3d83daf7bb1a83e295e5073366136d2c7337f16d9dbb46ed05d5085",
+  "new_sha256": "a1b98e9614841032bc3c81b20c28a3abce2c2018cf500b2ae98003a07281bc0b",
+  "mtime_before": 1650000000,
+  "mtime_after": 1650000200.0,
+  "sqlite_file_total": 8,
+  "legacy_test_file_edges": [
+    "conftest.py",
+    "sympy/conftest.py",
+    "sympy/core/_print_helpers.py",
+    "sympy/core/basic.py",
+    "sympy/core/cache.py",
+    "sympy/core/tests/test_basic.py",
+    "sympy/printing/printer.py",
+    "sympy/printing/str.py"
+  ],
+  "changed_target": "sympy/core/_print_helpers.py",
+  "tracked_fingerprints_for_target": [
+    [
+      "sympy/core/tests/test_basic.py::test_immutable",
+      "sympy/core/_print_helpers.py",
+      "70ECE4991CFBB7A0",
+      null,
+      "96d7e72676f23ccc229c1e37bf0b1da4d2468920"
+    ]
+  ],
+  "old_fingerprint_matches_new_source": [
+    false
+  ],
+  "all_print_module_signatures": [
+    [
+      "sympy/core/_print_helpers.py",
+      "70ECE4991CFBB7A0",
+      null,
+      "96d7e72676f23ccc229c1e37bf0b1da4d2468920"
+    ]
+  ],
+  "prior": [
+    [
+      "setup",
+      "passed",
+      0.006639700033701956
+    ],
+    [
+      "call",
+      "failed",
+      0.0027621000190265477
+    ],
+    [
+      "teardown",
+      "passed",
+      0.0003776000230573118
+    ]
+  ],
+  "plugin_after": [
+    [
+      "setup",
+      "passed",
+      0.006842200004030019
+    ],
+    [
+      "call",
+      "passed",
+      0.0014167999615892768
+    ],
+    [
+      "teardown",
+      "passed",
+      0.0004395999712869525
+    ]
+  ],
+  "direct_pytest_after": 0,
+  "plugin_rc_after": 0,
+  "build_db_sha256": "b606f49e80fa125e1f0f22d0bfca96d427dc1f1ed45d9cb743911038ee9a456a"
+}

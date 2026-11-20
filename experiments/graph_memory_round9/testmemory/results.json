@@ -1,0 +1,366 @@
+{
+  "fix": {
+    "n": 102,
+    "tasks": 10,
+    "flips": 10,
+    "policies": {
+      "always": {
+        "rerun": 102,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 4.92206650035223
+      },
+      "bloom2048": {
+        "rerun": 67,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 35,
+        "estimated_test_phase_s": 2.5026702999603003
+      },
+      "bloom2048_or_failed": {
+        "rerun": 67,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 35,
+        "estimated_test_phase_s": 2.5026702999603003
+      },
+      "bloom512": {
+        "rerun": 102,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 4.92206650035223
+      },
+      "failed": {
+        "rerun": 10,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 92,
+        "estimated_test_phase_s": 1.7763308000867255
+      },
+      "file": {
+        "rerun": 102,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 4.92206650035223
+      },
+      "lines": {
+        "rerun": 29,
+        "stale": 1,
+        "missed_new_failures": 0,
+        "successful_reuse": 72,
+        "estimated_test_phase_s": 2.0664061999996193
+      },
+      "lines_or_failed": {
+        "rerun": 30,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 72,
+        "estimated_test_phase_s": 2.066742700000759
+      },
+      "reuse": {
+        "rerun": 0,
+        "stale": 10,
+        "missed_new_failures": 0,
+        "successful_reuse": 92,
+        "estimated_test_phase_s": 0
+      },
+      "shared2048": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.2962551997043192
+      },
+      "shared2048_or_failed": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.2962551997043192
+      },
+      "shared512": {
+        "rerun": 49,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 53,
+        "estimated_test_phase_s": 2.5068576997728087
+      },
+      "symbol": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.2962551997043192
+      },
+      "symbol_or_failed": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.2962551997043192
+      },
+      "testmon": {
+        "rerun": 45,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 57,
+        "estimated_test_phase_s": 3.153521600179374
+      }
+    },
+    "symbol_minus_file_ci": [
+      -0.7849462365591398,
+      -0.24358974358974358
+    ],
+    "symbol_minus_testmon_ci": [
+      -0.21739130434782608,
+      0.3
+    ]
+  },
+  "revert": {
+    "n": 102,
+    "tasks": 10,
+    "flips": 10,
+    "policies": {
+      "always": {
+        "rerun": 102,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 5.3548598001361825
+      },
+      "bloom2048": {
+        "rerun": 67,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 35,
+        "estimated_test_phase_s": 2.8236883997451514
+      },
+      "bloom2048_or_failed": {
+        "rerun": 67,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 35,
+        "estimated_test_phase_s": 2.8236883997451514
+      },
+      "bloom512": {
+        "rerun": 102,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 5.3548598001361825
+      },
+      "failed": {
+        "rerun": 0,
+        "stale": 10,
+        "missed_new_failures": 10,
+        "successful_reuse": 92,
+        "estimated_test_phase_s": 0
+      },
+      "file": {
+        "rerun": 102,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 0,
+        "estimated_test_phase_s": 5.3548598001361825
+      },
+      "lines": {
+        "rerun": 42,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 60,
+        "estimated_test_phase_s": 2.4567032000632025
+      },
+      "lines_or_failed": {
+        "rerun": 42,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 60,
+        "estimated_test_phase_s": 2.4567032000632025
+      },
+      "reuse": {
+        "rerun": 0,
+        "stale": 10,
+        "missed_new_failures": 10,
+        "successful_reuse": 92,
+        "estimated_test_phase_s": 0
+      },
+      "shared2048": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.523269800003618
+      },
+      "shared2048_or_failed": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.523269800003618
+      },
+      "shared512": {
+        "rerun": 49,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 53,
+        "estimated_test_phase_s": 2.83584889996564
+      },
+      "symbol": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.523269800003618
+      },
+      "symbol_or_failed": {
+        "rerun": 47,
+        "stale": 0,
+        "missed_new_failures": 0,
+        "successful_reuse": 55,
+        "estimated_test_phase_s": 2.523269800003618
+      },
+      "testmon": {
+        "rerun": 44,
+        "stale": 1,
+        "missed_new_failures": 1,
+        "successful_reuse": 57,
+        "estimated_test_phase_s": 3.24479040002916
+      }
+    },
+    "symbol_minus_file_ci": [
+      -0.7849462365591398,
+      -0.24358974358974358
+    ],
+    "symbol_minus_testmon_ci": [
+      -0.21739130434782608,
+      0.3275862068965517
+    ]
+  },
+  "accounting": {
+    "eligible": 204,
+    "scheduled": 212,
+    "excluded": 8,
+    "exclude_log": [
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "fix",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_10773",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "passed",
+          "passed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "fix",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "failed",
+          "passed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "fix",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_7663",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "passed",
+          "passed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "fix",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_sympy_parser",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "passed",
+          "passed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "revert",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_10773",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "passed",
+          "passed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "revert",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_24288",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "passed",
+          "failed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "revert",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_issue_7663",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "passed",
+          "passed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      },
+      {
+        "task": "sympy__sympy-24661",
+        "direction": "revert",
+        "node": "sympy/parsing/tests/test_sympy_parser.py::test_sympy_parser",
+        "prior": "failed",
+        "current": "failed",
+        "historical": [
+          "passed",
+          "passed"
+        ],
+        "plugin_observed": "failed",
+        "plugin_parity": true,
+        "eligible": false
+      }
+    ],
+    "per_direction_records": 20,
+    "median_shared_symbols": 647.0,
+    "med_compressed_exact_graph": 7644.0,
+    "med_shared_only_gzip": 4454.0,
+    "median_plugin_db": 98304.0
+  }
+}

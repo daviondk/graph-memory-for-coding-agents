@@ -1,0 +1,929 @@
+{
+  "macro_probability": {
+    "disagree": 0.26296296296296295,
+    "edge_exact": 0.12962962962962962,
+    "line_exact": 0.17407407407407408,
+    "with_failure": 0.837037037037037
+  },
+  "observations_reused_from_original_native_order": true,
+  "rows": [
+    {
+      "counts": {
+        "disagree": 6,
+        "edge_exact": 0,
+        "line_exact": 3,
+        "with_failure": 6
+      },
+      "id": "breadth_first_search",
+      "n_subsets": 10,
+      "subsets": [
+        {
+          "disagree": true,
+          "edge": 12,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test3"
+          ],
+          "line": 11,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test4"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test5"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 12,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3",
+            "test4"
+          ],
+          "line": 18,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 12,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3",
+            "test5"
+          ],
+          "line": 11,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test4",
+            "test5"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 12,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3",
+            "test4"
+          ],
+          "line": 18,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 12,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3",
+            "test5"
+          ],
+          "line": 11,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test4",
+            "test5"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 12,
+          "edge_exact": false,
+          "ids": [
+            "test3",
+            "test4",
+            "test5"
+          ],
+          "line": 18,
+          "line_exact": false,
+          "with_failure": true
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 6,
+        "edge_exact": 0,
+        "line_exact": 6,
+        "with_failure": 6
+      },
+      "id": "depth_first_search",
+      "n_subsets": 10,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test3"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test4"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 7,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test5"
+          ],
+          "line": 10,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3",
+            "test4"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 7,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3",
+            "test5"
+          ],
+          "line": 10,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 7,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test4",
+            "test5"
+          ],
+          "line": 10,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3",
+            "test4"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 7,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3",
+            "test5"
+          ],
+          "line": 10,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 7,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test4",
+            "test5"
+          ],
+          "line": 10,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 7,
+          "edge_exact": false,
+          "ids": [
+            "test3",
+            "test4",
+            "test5"
+          ],
+          "line": 10,
+          "line_exact": true,
+          "with_failure": true
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 10,
+        "edge_exact": 10,
+        "line_exact": 0,
+        "with_failure": 10
+      },
+      "id": "detect_cycle",
+      "n_subsets": 20,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test3"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test1",
+            "test2",
+            "test4"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test5"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2",
+            "test6"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test1",
+            "test3",
+            "test4"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3",
+            "test5"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3",
+            "test6"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test1",
+            "test4",
+            "test5"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test1",
+            "test4",
+            "test6"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test5",
+            "test6"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test2",
+            "test3",
+            "test4"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3",
+            "test5"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3",
+            "test6"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test2",
+            "test4",
+            "test5"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test2",
+            "test4",
+            "test6"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test5",
+            "test6"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test3",
+            "test4",
+            "test5"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test3",
+            "test4",
+            "test6"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test3",
+            "test5",
+            "test6"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        },
+        {
+          "disagree": true,
+          "edge": 5,
+          "edge_exact": true,
+          "ids": [
+            "test4",
+            "test5",
+            "test6"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 0,
+        "edge_exact": 0,
+        "line_exact": 0,
+        "with_failure": 3
+      },
+      "id": "minimum_spanning_tree",
+      "n_subsets": 3,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": 11,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 11,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 11,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 0,
+        "edge_exact": 2,
+        "line_exact": 2,
+        "with_failure": 3
+      },
+      "id": "reverse_linked_list",
+      "n_subsets": 3,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": 3,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2"
+          ],
+          "line": 3,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 6,
+          "edge_exact": true,
+          "ids": [
+            "test1",
+            "test3"
+          ],
+          "line": 6,
+          "line_exact": true,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 6,
+          "edge_exact": true,
+          "ids": [
+            "test2",
+            "test3"
+          ],
+          "line": 6,
+          "line_exact": true,
+          "with_failure": true
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 4,
+        "edge_exact": 0,
+        "line_exact": 0,
+        "with_failure": 5
+      },
+      "id": "shortest_path_length",
+      "n_subsets": 6,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": 9,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2"
+          ],
+          "line": 9,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 10,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3"
+          ],
+          "line": 13,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 10,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test4"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 10,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3"
+          ],
+          "line": 13,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": true,
+          "edge": 10,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test4"
+          ],
+          "line": 11,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": null,
+          "edge_exact": false,
+          "ids": [
+            "test3",
+            "test4"
+          ],
+          "line": null,
+          "line_exact": false,
+          "with_failure": false
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 0,
+        "edge_exact": 0,
+        "line_exact": 0,
+        "with_failure": 6
+      },
+      "id": "shortest_path_lengths",
+      "n_subsets": 6,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test4"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test4"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test3",
+            "test4"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 0,
+        "edge_exact": 0,
+        "line_exact": 0,
+        "with_failure": 3
+      },
+      "id": "shortest_paths",
+      "n_subsets": 3,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 8,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3"
+          ],
+          "line": 8,
+          "line_exact": false,
+          "with_failure": true
+        }
+      ]
+    },
+    {
+      "counts": {
+        "disagree": 0,
+        "edge_exact": 0,
+        "line_exact": 0,
+        "with_failure": 3
+      },
+      "id": "topological_ordering",
+      "n_subsets": 3,
+      "subsets": [
+        {
+          "disagree": false,
+          "edge": 4,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test2"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 4,
+          "edge_exact": false,
+          "ids": [
+            "test1",
+            "test3"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        },
+        {
+          "disagree": false,
+          "edge": 4,
+          "edge_exact": false,
+          "ids": [
+            "test2",
+            "test3"
+          ],
+          "line": 4,
+          "line_exact": false,
+          "with_failure": true
+        }
+      ]
+    }
+  ],
+  "sum_nested_subsets": 64,
+  "tasks": 9
+}

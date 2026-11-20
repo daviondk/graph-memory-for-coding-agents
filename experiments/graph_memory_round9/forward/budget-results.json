@@ -1,0 +1,326 @@
+{
+  "holdout": {
+    "comparisons": {
+      "1": {
+        "bytes_saved_percent": {
+          "ci95": [
+            64.09360210499892,
+            81.02549895030819
+          ],
+          "point": 74.08503606813146
+        },
+        "joint_change_pp": {
+          "ci95": [
+            -18.64406779661017,
+            -2.380952380952381
+          ],
+          "point": -10.204081632653061
+        }
+      },
+      "2": {
+        "bytes_saved_percent": {
+          "ci95": [
+            50.68053892054529,
+            74.32468368552351
+          ],
+          "point": 64.4996031816599
+        },
+        "joint_change_pp": {
+          "ci95": [
+            -12.727272727272727,
+            0.0
+          ],
+          "point": -6.122448979591836
+        }
+      },
+      "4": {
+        "bytes_saved_percent": {
+          "ci95": [
+            27.7163770197943,
+            48.36220294322542
+          ],
+          "point": 40.021970746262255
+        },
+        "joint_change_pp": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "point": 0.0
+        }
+      }
+    },
+    "metrics": {
+      "1": {
+        "arms": {
+          "edge": {
+            "address": 21,
+            "fp": 9,
+            "joint": 19,
+            "tp": 17
+          },
+          "edge_lex_agree": {
+            "address": 26,
+            "fp": 0,
+            "joint": 23,
+            "tp": 12
+          },
+          "lex_prior": {
+            "address": 26,
+            "fp": 8,
+            "joint": 24,
+            "tp": 15
+          }
+        },
+        "available": 49,
+        "commits": 27,
+        "files": 49,
+        "n": 49,
+        "sha_bytes": 2200515
+      },
+      "2": {
+        "arms": {
+          "edge": {
+            "address": 19,
+            "fp": 13,
+            "joint": 18,
+            "tp": 18
+          },
+          "edge_lex_agree": {
+            "address": 28,
+            "fp": 0,
+            "joint": 25,
+            "tp": 12
+          },
+          "lex_prior": {
+            "address": 28,
+            "fp": 7,
+            "joint": 26,
+            "tp": 15
+          }
+        },
+        "available": 49,
+        "commits": 27,
+        "files": 96,
+        "n": 49,
+        "sha_bytes": 3014442
+      },
+      "4": {
+        "arms": {
+          "edge": {
+            "address": 21,
+            "fp": 13,
+            "joint": 20,
+            "tp": 18
+          },
+          "edge_lex_agree": {
+            "address": 31,
+            "fp": 0,
+            "joint": 28,
+            "tp": 12
+          },
+          "lex_prior": {
+            "address": 31,
+            "fp": 5,
+            "joint": 29,
+            "tp": 15
+          }
+        },
+        "available": 49,
+        "commits": 27,
+        "files": 183,
+        "n": 49,
+        "sha_bytes": 5092909
+      },
+      "8": {
+        "arms": {
+          "edge": {
+            "address": 21,
+            "fp": 13,
+            "joint": 20,
+            "tp": 18
+          },
+          "edge_lex_agree": {
+            "address": 31,
+            "fp": 0,
+            "joint": 28,
+            "tp": 11
+          },
+          "lex_prior": {
+            "address": 31,
+            "fp": 5,
+            "joint": 29,
+            "tp": 15
+          }
+        },
+        "available": 49,
+        "commits": 27,
+        "files": 329,
+        "n": 49,
+        "sha_bytes": 8491291
+      }
+    }
+  },
+  "primary": {
+    "comparisons": {
+      "1": {
+        "bytes_saved_percent": {
+          "ci95": [
+            48.61159274643015,
+            83.48550670813175
+          ],
+          "point": 68.50411791134724
+        },
+        "joint_change_pp": {
+          "ci95": [
+            -25.0,
+            -3.4482758620689653
+          ],
+          "point": -12.962962962962964
+        }
+      },
+      "2": {
+        "bytes_saved_percent": {
+          "ci95": [
+            37.991336244221095,
+            72.7862608063185
+          ],
+          "point": 56.42623626022529
+        },
+        "joint_change_pp": {
+          "ci95": [
+            -18.181818181818183,
+            0.0
+          ],
+          "point": -7.407407407407407
+        }
+      },
+      "4": {
+        "bytes_saved_percent": {
+          "ci95": [
+            17.432993692064304,
+            49.49936166836619
+          ],
+          "point": 33.87407878722912
+        },
+        "joint_change_pp": {
+          "ci95": [
+            -6.0,
+            0.0
+          ],
+          "point": -1.8518518518518519
+        }
+      }
+    },
+    "metrics": {
+      "1": {
+        "arms": {
+          "edge": {
+            "address": 31,
+            "fp": 10,
+            "joint": 26,
+            "tp": 22
+          },
+          "edge_lex_agree": {
+            "address": 40,
+            "fp": 1,
+            "joint": 35,
+            "tp": 22
+          },
+          "lex_prior": {
+            "address": 40,
+            "fp": 8,
+            "joint": 39,
+            "tp": 26
+          }
+        },
+        "available": 54,
+        "commits": 27,
+        "files": 54,
+        "n": 54,
+        "sha_bytes": 3240788
+      },
+      "2": {
+        "arms": {
+          "edge": {
+            "address": 31,
+            "fp": 12,
+            "joint": 27,
+            "tp": 22
+          },
+          "edge_lex_agree": {
+            "address": 43,
+            "fp": 0,
+            "joint": 39,
+            "tp": 22
+          },
+          "lex_prior": {
+            "address": 43,
+            "fp": 4,
+            "joint": 42,
+            "tp": 25
+          }
+        },
+        "available": 54,
+        "commits": 27,
+        "files": 99,
+        "n": 54,
+        "sha_bytes": 4483549
+      },
+      "4": {
+        "arms": {
+          "edge": {
+            "address": 34,
+            "fp": 12,
+            "joint": 30,
+            "tp": 22
+          },
+          "edge_lex_agree": {
+            "address": 46,
+            "fp": 0,
+            "joint": 42,
+            "tp": 22
+          },
+          "lex_prior": {
+            "address": 46,
+            "fp": 3,
+            "joint": 45,
+            "tp": 25
+          }
+        },
+        "available": 54,
+        "commits": 27,
+        "files": 180,
+        "n": 54,
+        "sha_bytes": 6804067
+      },
+      "8": {
+        "arms": {
+          "edge": {
+            "address": 35,
+            "fp": 12,
+            "joint": 31,
+            "tp": 22
+          },
+          "edge_lex_agree": {
+            "address": 47,
+            "fp": 0,
+            "joint": 43,
+            "tp": 22
+          },
+          "lex_prior": {
+            "address": 47,
+            "fp": 2,
+            "joint": 46,
+            "tp": 25
+          }
+        },
+        "available": 54,
+        "commits": 27,
+        "files": 297,
+        "n": 54,
+        "sha_bytes": 10289561
+      }
+    }
+  }
+}
