@@ -1,0 +1,79 @@
+{
+ "direct_parent_subset": {
+  "strict": {
+   "n": 5,
+   "change": 0,
+   "exact_reruns": 0,
+   "scope_reruns": 3
+  },
+  "weak": {
+   "n": 14,
+   "change": 2,
+   "exact_reruns": 2,
+   "scope_reruns": 8
+  }
+ },
+ "first_parent_check": [
+  {
+   "iid": "sphinx-doc__sphinx-8459",
+   "pr": "https://github.com/sphinx-doc/sphinx/pull/8459",
+   "base": "68aa4fb29e7dfe521749e1e14f750d7afabb3481",
+   "merge": "ad804647b5c1bbbe3bb4bfd23e23bbf0ee20b2dc",
+   "first_parent": "68aa4fb29e7dfe521749e1e14f750d7afabb3481",
+   "was_present_in_first_parent": false,
+   "present_after_merge": true,
+   "functional_attribute": "literal_presence_only"
+  },
+  {
+   "iid": "scikit-learn__scikit-learn-11310",
+   "pr": "https://github.com/scikit-learn/scikit-learn/pull/11310",
+   "base": "553b5fb8f84ba05c8397f26dd079deece2b05029",
+   "merge": "768ff4d1b7b8f26b73a30525b951458a26553c55",
+   "first_parent": "1ff836438775cca5c480bde82b323651046c3fb2",
+   "was_present_in_first_parent": false,
+   "present_after_merge": true,
+   "functional_attribute": "literal_presence_only"
+  },
+  {
+   "iid": "astropy__astropy-7166",
+   "pr": "https://github.com/astropy/astropy/pull/7166",
+   "base": "26d147868f8a891a6009a25cd6a8576d2e1bd747",
+   "merge": "61d6a98da287acc7289f7b4cd8c50dc6056317c9",
+   "first_parent": "26d147868f8a891a6009a25cd6a8576d2e1bd747",
+   "was_present_in_first_parent": false,
+   "present_after_merge": true,
+   "functional_attribute": "literal_presence_only"
+  }
+ ],
+ "equal_budget_after_eligibility": {
+  "blocks": [
+   {
+    "panel": "Claude",
+    "n": 11,
+    "keep": 5,
+    "changed": 2
+   },
+   {
+    "panel": "Kimi-transfer",
+    "n": 8,
+    "keep": 2,
+    "changed": 0
+   },
+   {
+    "panel": "Kimi-writer",
+    "n": 10,
+    "keep": 3,
+    "changed": 1
+   }
+  ],
+  "stored": 10,
+  "random_reread_distribution": {
+   "19": 0.19090909090909092,
+   "20": 0.4636363636363636,
+   "21": 0.2909090909090909,
+   "22": 0.05454545454545454
+  },
+  "expected_rereads": 20.20909090909091,
+  "use_rereads_observed": 21
+ }
+}

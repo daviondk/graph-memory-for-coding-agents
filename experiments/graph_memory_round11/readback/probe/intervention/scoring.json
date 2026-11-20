@@ -1,0 +1,482 @@
+[
+  {
+    "id": "matplotlib__matplotlib-24149|35",
+    "correct": 3,
+    "alternate": 2,
+    "target": 3470,
+    "changes": [
+      {
+        "old": "library (and implicitly the broadcasting).",
+        "new": "return np.asarray(err, dtype=object)"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-24149|12",
+    "correct": 1,
+    "alternate": 4,
+    "target": 2191,
+    "changes": [
+      {
+        "old": "delist = False",
+        "new": "except (TypeError, IndexError, KeyError):"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-24627|18",
+    "correct": 4,
+    "alternate": 3,
+    "target": 969,
+    "changes": [
+      {
+        "old": "[*Discouraged*] Alias for the `clear()` method.",
+        "new": "Parameters"
+      }
+    ]
+  },
+  {
+    "id": "mwaskom__seaborn-3187|18",
+    "correct": 2,
+    "alternate": 1,
+    "target": 379,
+    "changes": [
+      {
+        "old": "locs = axis.major.locator()",
+        "new": "axis.set_view_interval(vmin, vmax)"
+      }
+    ]
+  },
+  {
+    "id": "sphinx-doc__sphinx-10449|12",
+    "correct": 3,
+    "alternate": 2,
+    "target": 16,
+    "changes": [
+      {
+        "old": "options: Dict, args: str, retann: str) -> None:",
+        "new": "except (TypeError, ValueError):"
+      }
+    ]
+  },
+  {
+    "id": "pylint-dev__pylint-4604|18",
+    "correct": 3,
+    "alternate": 1,
+    "target": 860,
+    "changes": [
+      {
+        "old": "if not (",
+        "new": "def leave_functiondef(self, node):"
+      }
+    ]
+  },
+  {
+    "id": "scikit-learn__scikit-learn-14496|6",
+    "correct": 1,
+    "alternate": 3,
+    "target": 630,
+    "changes": [
+      {
+        "old": "ordering, xi,",
+        "new": "min_cluster_size = max(2, min_cluster_size * n_samples)"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-7432|6",
+    "correct": 1,
+    "alternate": 4,
+    "target": 272,
+    "changes": [
+      {
+        "old": "rep.outcome = \"failed\"",
+        "new": "rep.wasxfail = xfailed.reason"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-20488|16",
+    "correct": 4,
+    "alternate": 2,
+    "target": 542,
+    "changes": [
+      {
+        "old": "output = self.norm(resampled_masked)",
+        "new": "output[..., 3] = output_alpha  # recombine rgb and alpha"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-20488|9",
+    "correct": 4,
+    "alternate": 1,
+    "target": 1476,
+    "changes": [
+      {
+        "old": "if not np.isfinite([t_vmin, t_vmax]).all():",
+        "new": "def __call__(self, value, clip=None):"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-8399|8",
+    "correct": 2,
+    "alternate": 4,
+    "target": 820,
+    "changes": [
+      {
+        "old": "func = getimfunc(teardown_class)",
+        "new": "Using a fixture to invoke this methods ensures we play nicely and unsurprisingly with"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-7490|42",
+    "correct": 1,
+    "alternate": 3,
+    "target": 548,
+    "changes": [
+      {
+        "old": "class TestXFailwithSetupTeardown:",
+        "new": "import pytest"
+      }
+    ]
+  },
+  {
+    "id": "scikit-learn__scikit-learn-11310|34",
+    "correct": 4,
+    "alternate": 2,
+    "target": 1089,
+    "changes": [
+      {
+        "old": "If `n_jobs` was set to a value higher than one, the data is copied for each",
+        "new": "n_splits_ : int"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-8399|9",
+    "correct": 2,
+    "alternate": 3,
+    "target": 830,
+    "changes": [
+      {
+        "old": "other fixtures (#517).",
+        "new": "def _inject_setup_method_fixture(self) -> None:"
+      }
+    ]
+  },
+  {
+    "id": "sphinx-doc__sphinx-10435|12",
+    "correct": 4,
+    "alternate": 3,
+    "target": 1717,
+    "changes": [
+      {
+        "old": "self.body.append('}}')",
+        "new": "self.body.append(hlcode)"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-6197|32",
+    "correct": 1,
+    "alternate": 4,
+    "target": 185,
+    "changes": [
+      {
+        "old": "return ihook.pytest_pycollect_makemodule(path=path, parent=parent)",
+        "new": "ext = path.ext"
+      }
+    ]
+  },
+  {
+    "id": "sympy__sympy-13877|13",
+    "correct": 3,
+    "alternate": 4,
+    "target": 1175,
+    "changes": [
+      {
+        "old": "cont, p = expr.as_content_primitive(radical=radical, clear=clear)",
+        "new": "b, e = a.as_base_exp()"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-6197|6",
+    "correct": 4,
+    "alternate": 3,
+    "target": 499,
+    "changes": [
+      {
+        "old": "argpath = names.pop(0)",
+        "new": "def _collect(self, arg):"
+      }
+    ]
+  },
+  {
+    "id": "sympy__sympy-14711|10",
+    "correct": 3,
+    "alternate": 1,
+    "target": 60,
+    "changes": [
+      {
+        "old": "other = _check_vector(other)",
+        "new": "def __add__(self, other):"
+      }
+    ]
+  },
+  {
+    "id": "pydata__xarray-4695|5",
+    "correct": 4,
+    "alternate": 3,
+    "target": 185,
+    "changes": [
+      {
+        "old": "if tolerance is not None:",
+        "new": "if np.any(indexer < 0):"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-24627|11",
+    "correct": 2,
+    "alternate": 1,
+    "target": 1404,
+    "changes": [
+      {
+        "old": "def cla(self):",
+        "new": "self.__clear()"
+      }
+    ]
+  },
+  {
+    "id": "pydata__xarray-3993|6",
+    "correct": 2,
+    "alternate": 3,
+    "target": 3520,
+    "changes": [
+      {
+        "old": "[ 6,  7,  8],",
+        "new": "kwargs: Mapping[str, Any] = None,"
+      }
+    ]
+  },
+  {
+    "id": "astropy__astropy-7336|5",
+    "correct": 1,
+    "alternate": 3,
+    "target": 226,
+    "changes": [
+      {
+        "old": "return return_",
+        "new": "if wrapped_signature.return_annotation is not inspect.Signature.empty:"
+      }
+    ]
+  },
+  {
+    "id": "pydata__xarray-7393|6",
+    "correct": 3,
+    "alternate": 4,
+    "target": 4600,
+    "changes": [
+      {
+        "old": "for new_dim, dims in dimensions.items():",
+        "new": "DataArray.to_unstacked_dataset"
+      }
+    ]
+  },
+  {
+    "id": "pydata__xarray-4695|19",
+    "correct": 1,
+    "alternate": 3,
+    "target": 1208,
+    "changes": [
+      {
+        "old": "def head(",
+        "new": "tolerance=tolerance,"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-7490|10",
+    "correct": 2,
+    "alternate": 1,
+    "target": 278,
+    "changes": [
+      {
+        "old": "rep.outcome = \"skipped\"",
+        "new": "rep.wasxfail = \"reason: \" + call.excinfo.value.msg"
+      }
+    ]
+  },
+  {
+    "id": "pylint-dev__pylint-4604|17",
+    "correct": 4,
+    "alternate": 3,
+    "target": 872,
+    "changes": [
+      {
+        "old": "is_method = node.is_method()",
+        "new": "not_consumed = self._to_consume.pop().to_consume"
+      }
+    ]
+  },
+  {
+    "id": "pydata__xarray-3993|10",
+    "correct": 3,
+    "alternate": 1,
+    "target": 6060,
+    "changes": [
+      {
+        "old": "v.data, coord_var.data, axis=v.get_axis_num(dim)",
+        "new": "indexes = {k: v for k, v in self.indexes.items() if k in variables}"
+      }
+    ]
+  },
+  {
+    "id": "sphinx-doc__sphinx-10435|6",
+    "correct": 4,
+    "alternate": 3,
+    "target": 1716,
+    "changes": [
+      {
+        "old": "self.body.append(hlcode)",
+        "new": "def depart_literal(self, node: Element) -> None:"
+      }
+    ]
+  },
+  {
+    "id": "sympy__sympy-23950|12",
+    "correct": 1,
+    "alternate": 3,
+    "target": 180,
+    "changes": [
+      {
+        "old": "raise NotImplementedError(\"Sorry, as_set has not yet been\"",
+        "new": "return self._eval_as_set()"
+      }
+    ]
+  },
+  {
+    "id": "astropy__astropy-14365|2",
+    "correct": 1,
+    "alternate": 3,
+    "target": 81,
+    "changes": [
+      {
+        "old": "continue",
+        "new": "_decimal_re = r\"[+-]?(\\d+(\\.\\d*)?|\\.\\d+)([eE][+-]?\\d+)?\""
+      }
+    ]
+  },
+  {
+    "id": "pydata__xarray-4094|13",
+    "correct": 2,
+    "alternate": 3,
+    "target": 1964,
+    "changes": [
+      {
+        "old": "data_dict[k] = self.sel({variable_dim: k}).squeeze(drop=True)",
+        "new": "data_dict = {}"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-25287|11",
+    "correct": 1,
+    "alternate": 4,
+    "target": 2514,
+    "changes": [
+      {
+        "old": "verticalalignment='baseline', horizontalalignment='left',",
+        "new": "return inside, info"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-26113|5",
+    "correct": 1,
+    "alternate": 3,
+    "target": 4850,
+    "changes": [
+      {
+        "old": "mincnt : int > 0, default: *None*",
+        "new": "colormapped rectangles along the bottom of the x-axis and"
+      }
+    ]
+  },
+  {
+    "id": "sphinx-doc__sphinx-8551|5",
+    "correct": 3,
+    "alternate": 1,
+    "target": 83,
+    "changes": [
+      {
+        "old": "if text == 'None':",
+        "new": "reftype = 'obj'"
+      }
+    ]
+  },
+  {
+    "id": "scikit-learn__scikit-learn-11310|6",
+    "correct": 4,
+    "alternate": 3,
+    "target": 650,
+    "changes": [
+      {
+        "old": "n_jobs=self.n_jobs, verbose=self.verbose,",
+        "new": "def _store(key_name, array, weights=None, splits=False, rank=False):"
+      }
+    ]
+  },
+  {
+    "id": "pydata__xarray-7393|10",
+    "correct": 3,
+    "alternate": 1,
+    "target": 4495,
+    "changes": [
+      {
+        "old": "def _stack_once(",
+        "new": "If `create_index=True`, create a new index if none is found or raise"
+      }
+    ]
+  },
+  {
+    "id": "matplotlib__matplotlib-25287|10",
+    "correct": 1,
+    "alternate": 3,
+    "target": 2268,
+    "changes": [
+      {
+        "old": "x, y = mouseevent.x, mouseevent.y",
+        "new": "color=mpl.rcParams['xtick.color'],"
+      }
+    ]
+  },
+  {
+    "id": "pytest-dev__pytest-7432|2",
+    "correct": 3,
+    "alternate": 2,
+    "target": 302,
+    "changes": [
+      {
+        "old": "_, _, reason = rep.longrepr",
+        "new": "assert line is not None"
+      }
+    ]
+  },
+  {
+    "id": "mwaskom__seaborn-3187|4",
+    "correct": 4,
+    "alternate": 3,
+    "target": 388,
+    "changes": [
+      {
+        "old": "arg = self.trans",
+        "new": "return np.min(np.diff(np.sort(x)))"
+      }
+    ]
+  }
+]

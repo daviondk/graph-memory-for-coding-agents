@@ -4,6 +4,8 @@
 
 **Отчёт** · [PDF, 4 страницы](docs/report.pdf) · [редактируемый Word](docs/report.docx) · [читать на GitHub](docs/report.md).
 
+[Одиннадцатая серия](experiments/graph_memory_round11/REPORT_RU.md) — естественные пустые поиски, побайтно проверенные ссылки на прошлые чтения, сравнение с sqz и интервенции на памяти Qwen.
+
 [Десятая серия](experiments/graph_memory_round10/REPORT_RU.md) — отрицательные зависимости, компактные словари, нативные свидетельства MemTrace и выбор одного теста с Qwen.
 
 [Девятая серия](experiments/graph_memory_round9/REPORT_RU.md) — внешние Java-панели, Loc-Bench, память о тестовых исходах и абляции с реальным решателем.

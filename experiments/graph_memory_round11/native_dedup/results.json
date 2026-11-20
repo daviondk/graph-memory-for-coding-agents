@@ -1,0 +1,135 @@
+{
+  "all": {
+    "ci95": [
+      0.5975182385224042,
+      1.8622285109116479
+    ],
+    "db_median_nonempty": 157696.0,
+    "delta_strict_union": 5928,
+    "n": 199,
+    "points": 1.1582219495563861,
+    "totals": {
+      "backup": 62,
+      "db_bytes": 15683584,
+      "expand_if_requested": 28572,
+      "invalid": 0,
+      "messages": 426,
+      "native": 485375,
+      "raw": 511819,
+      "raw_stdout": 485375,
+      "ref": 86,
+      "single": 501487,
+      "stderr_tokens": 0,
+      "strict": 507301,
+      "strict_ref": 24,
+      "union": 501373,
+      "whole": 506839
+    },
+    "types": {
+      "exact": 6,
+      "literal": 340,
+      "range": 80
+    },
+    "union_losses": 0,
+    "union_wins": 32
+  },
+  "claude": {
+    "ci95": [
+      0.9918955550023512,
+      3.1937362660806863
+    ],
+    "db_median_nonempty": 204800,
+    "delta_strict_union": 5928,
+    "n": 37,
+    "points": 1.8911624523859656,
+    "totals": {
+      "backup": 56,
+      "db_bytes": 7974912,
+      "expand_if_requested": 19517,
+      "invalid": 0,
+      "messages": 347,
+      "native": 295955,
+      "raw": 313458,
+      "raw_stdout": 295955,
+      "ref": 80,
+      "single": 303126,
+      "stderr_tokens": 0,
+      "strict": 308940,
+      "strict_ref": 24,
+      "union": 303012,
+      "whole": 308478
+    },
+    "types": {
+      "literal": 267,
+      "range": 80
+    },
+    "union_losses": 0,
+    "union_wins": 32
+  },
+  "kimi": {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "db_median_nonempty": 151552,
+    "delta_strict_union": 0,
+    "n": 65,
+    "points": 0.0,
+    "totals": {
+      "backup": 3,
+      "db_bytes": 3092480,
+      "expand_if_requested": 5043,
+      "invalid": 0,
+      "messages": 33,
+      "native": 83834,
+      "raw": 88821,
+      "raw_stdout": 83834,
+      "ref": 3,
+      "single": 88821,
+      "stderr_tokens": 0,
+      "strict": 88821,
+      "strict_ref": 0,
+      "union": 88821,
+      "whole": 88821
+    },
+    "types": {
+      "exact": 3,
+      "literal": 30
+    },
+    "union_losses": 0,
+    "union_wins": 0
+  },
+  "kimi_replication": {
+    "ci95": [
+      0.0,
+      0.0
+    ],
+    "db_median_nonempty": 131072.0,
+    "delta_strict_union": 0,
+    "n": 97,
+    "points": 0.0,
+    "totals": {
+      "backup": 3,
+      "db_bytes": 4616192,
+      "expand_if_requested": 4012,
+      "invalid": 0,
+      "messages": 46,
+      "native": 105586,
+      "raw": 109540,
+      "raw_stdout": 105586,
+      "ref": 3,
+      "single": 109540,
+      "stderr_tokens": 0,
+      "strict": 109540,
+      "strict_ref": 0,
+      "union": 109540,
+      "whole": 109540
+    },
+    "types": {
+      "exact": 3,
+      "literal": 43
+    },
+    "union_losses": 0,
+    "union_wins": 0
+  }
+}

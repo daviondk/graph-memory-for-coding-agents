@@ -1,0 +1,194 @@
+{
+  "checks": [
+    {
+      "case": "whole",
+      "contains": false,
+      "exact": false,
+      "ref": "§ref:80606721454970b4§",
+      "tail": "{\"ref\":\"§ref:80606721454970b4§\"}"
+    },
+    {
+      "case": "slice",
+      "contains": false,
+      "exact": false,
+      "ref": "§ref:80606721454970b4:L11-32§",
+      "tail": "{\"ref\":\"§ref:80606721454970b4:L11-32§\"}"
+    }
+  ],
+  "executable_sha": "796fb0dfa054aef0d2b1d23828fedc193ed07c43124519994e57575525b6361b",
+  "exit": 0,
+  "first_contains": true,
+  "release_sha": "b148bc46b79ea7645029295c758e4e68ae70a3e1ac54c14517ed37ff6914d9f3",
+  "stderr": "",
+  "trace": [
+    {
+      "request": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "method": "initialize",
+        "params": {
+          "capabilities": {},
+          "clientInfo": {
+            "name": "offline-check",
+            "version": "1"
+          },
+          "protocolVersion": "2024-11-05"
+        }
+      },
+      "response": {
+        "id": 1,
+        "jsonrpc": "2.0",
+        "result": {
+          "capabilities": {
+            "tools": {
+              "listChanged": false
+            }
+          },
+          "protocolVersion": "2024-11-05",
+          "serverInfo": {
+            "name": "sqz-mcp",
+            "version": "2.2.0"
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "method": "tools/call",
+        "params": {
+          "arguments": {
+            "path": "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round11\\native_dedup\\scratch\\tmpzxdt8m_m\\observation.py"
+          },
+          "name": "sqz_read_file"
+        }
+      },
+      "response": {
+        "id": 2,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "[sqz_read_file path=D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round11\\native_dedup\\scratch\\tmpzxdt8m_m\\observation.py size=11043]\n1\t# Licensed under a 3-clause BSD style license - see LICENSE.rst\n2\t\n3\t\"\"\"\n4\tFunctions to determine if a model is separable, i.e.\n5\tif the model outputs are independent.\n6\t\n7\tIt analyzes ``n_inputs``, ``n_outputs`` and the operators\n8\tin a compound model by stepping through the transforms\n9\tand creating a ``coord_matrix`` of shape (``n_outputs``, ``n_inputs``).\n10\t\n11\t\n12\tEach modeling operator is represented by a function which\n13\ttakes two simple models (or two ``coord_matrix`` arrays) and\n14\treturns an array of shape (``n_outputs``, ``n_inputs``).\n15\t\n16\t\"\"\"\n17\t\n18\timport numpy as np\n19\t\n20\tfrom .core import Model, ModelDefinitionError, CompoundModel\n21\tfrom .mappings import Mapping\n22\t\n23\t\n24\t__all__ = [\"is_separable\", \"separability_matrix\"]\n25\t\n26\t\n27\tdef is_separable(transform):\n28\t    \"\"\"\n29\t    A separability test for the outputs of a transform.\n30\t\n31\t    Parameters\n32\t    ----------\n33\t    transform : `~astropy.modeling.core.Model`\n34\t        A (compound) model.\n35\t\n36\t    Returns\n37\t    -------\n38\t    is_separable : ndarray\n39\t        A boolean array with size ``transform.n_outputs`` where\n40\t        each element indicates whether the output is independent\n41\t        and the result of a separable transform.\n42\t\n43\t    Examples\n44\t    --------\n45\t    >>> from astropy.modeling.models import Shift, Scale, Rotation2D, Polynomial2D\n46\t    >>> is_separable(Shift(1) & Shift(2) | Scale(1) & Scale(2))\n47\t        array([ True,  True]...)\n48\t    >>> is_separable(Shift(1) & Shift(2) | Rotation2D(2))\n49\t        array([False, False]...)\n50\t    >>> is_separable(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]) | \\\n51\t        Polynomial2D(1) & Polynomial2D(2))\n52\t        array([False, False]...)\n53\t    >>> is_separable(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]))\n54\t        array([ True,  True,  True,  True]...)\n55\t\n56\t    \"\"\"\n57\t    if transform.n_inputs == 1 and transform.n_outputs > 1:\n58\t        is_separable = np.array([False] * transform.n_outputs).T\n59\t        return is_separable\n60\t    separable_matrix = _separable(transform)\n61\t    is_separable = separable_matrix.sum(1)\n62\t    is_separable = np.where(is_separable != 1, False, True)\n63\t    return is_separable\n64\t\n65\t\n66\tdef separability_matrix(transform):\n67\t    \"\"\"\n68\t    Compute the correlation between outputs and inputs.\n69\t\n70\t    Parameters\n71\t    ----------\n72\t    transform : `~astropy.modeling.core.Model`\n73\t        A (compound) model.\n74\t\n75\t    Returns\n76\t    -------\n77\t    separable_matrix : ndarray\n78\t        A boolean correlation matrix of shape (n_outputs, n_inputs).\n79\t        Indicates the dependence of outputs on inputs. For completely\n80\t        independent outputs, the diagonal elements are True and\n81\t        off-diagonal elements are False.\n82\t\n83\t    Examples\n84\t    --------\n85\t    >>> from astropy.modeling.models import Shift, Scale, Rotation2D, Polynomial2D\n86\t    >>> separability_matrix(Shift(1) & Shift(2) | Scale(1) & Scale(2))\n87\t        array([[ True, False], [False,  True]]...)\n88\t    >>> separability_matrix(Shift(1) & Shift(2) | Rotation2D(2))\n89\t        array([[ True,  True], [ True,  True]]...)\n90\t    >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]) | \\\n91\t        Polynomial2D(1) & Polynomial2D(2))\n92\t        array([[ True,  True], [ True,  True]]...)\n93\t    >>> separability_matrix(Shift(1) & Shift(2) | Mapping([0, 1, 0, 1]))\n94\t        array([[ True, False], [False,  True], [ True, False], [False,  True]]...)\n95\t\n96\t    \"\"\"\n97\t    if transform.n_inputs == 1 and transform.n_outputs > 1:\n98\t        return np.ones((transform.n_outputs, transform.n_inputs),\n99\t                       dtype=np.bool_)\n100\t    separable_matrix = _separable(transform)\n101\t    separable_matrix = np.where(separable_matrix != 0, True, False)\n102\t    return separable_matrix\n103\t\n104\t\n105\tdef _compute_n_outputs(left, right):\n106\t    \"\"\"\n107\t    Compute the number of outputs of two models.\n108\t\n109\t    The two models are the left and right model to an operation in\n110\t    the expression tree of a compound model.\n111\t\n112\t    Parameters\n113\t    ----------\n114\t    left, right : `astropy.modeling.Model` or ndarray\n115\t        If input is of an array, it is the output of `coord_matrix`.\n116\t\n117\t    \"\"\"\n118\t    if isinstance(left, Model):\n119\t        lnout = left.n_outputs\n120\t    else:\n121\t        lnout = left.shape[0]\n122\t    if isinstance(right, Model):\n123\t        rnout = right.n_outputs\n124\t    else:\n125\t        rnout = right.shape[0]\n126\t    noutp = lnout + rnout\n127\t    return noutp\n128\t\n129\t\n130\tdef _arith_oper(left, right):\n131\t    \"\"\"\n132\t    Function corresponding to one of the arithmetic operators\n133\t    ['+', '-'. '*', '/', '**'].\n134\t\n135\t    This always returns a nonseparable output.\n136\t\n137\t\n138\t    Parameters\n139\t    ----------\n140\t    left, right : `astropy.modeling.Model` or ndarray\n141\t        If input is of an array, it is the output of `coord_matrix`.\n142\t\n143\t    Returns\n144\t    -------\n145\t    result : ndarray\n146\t        Result from this operation.\n147\t    \"\"\"\n148\t    # models have the same number of inputs and outputs\n149\t    def _n_inputs_outputs(input):\n150\t        if isinstance(input, Model):\n151\t            n_outputs, n_inputs = input.n_outputs, input.n_inputs\n152\t        else:\n153\t            n_outputs, n_inputs = input.shape\n154\t        return n_inputs, n_outputs\n155\t\n156\t    left_inputs, left_outputs = _n_inputs_outputs(left)\n157\t    right_inputs, right_outputs = _n_inputs_outputs(right)\n158\t\n159\t    if left_inputs != right_inputs or left_outputs != right_outputs:\n160\t        raise ModelDefinitionError(\n161\t            \"Unsupported operands for arithmetic operator: left (n_inputs={}, \"\n162\t            \"n_outputs={}) and right (n_inputs={}, n_outputs={}); \"\n163\t            \"models must have the same n_inputs and the same \"\n164\t            \"n_outputs for this operator.\".format(\n165\t                left_inputs, left_outputs, right_inputs, right_outputs))\n166\t\n167\t    result = np.ones((left_outputs, left_inputs))\n168\t    return result\n169\t\n170\t\n171\tdef _coord_matrix(model, pos, noutp):\n172\t    \"\"\"\n173\t    Create an array representing inputs and outputs of a simple model.\n174\t\n175\t    The array has a shape (noutp, model.n_inputs).\n176\t\n177\t    Parameters\n178\t    ----------\n179\t    model : `astropy.modeling.Model`\n180\t        model\n181\t    pos : str\n182\t        Position of this model in the expression tree.\n183\t        One of ['left', 'right'].\n184\t    noutp : int\n185\t        Number of outputs of the compound model of which the input model\n186\t        is a left or right child.\n187\t\n188\t    \"\"\"\n189\t    if isinstance(model, Mapping):\n190\t        axes = []\n191\t        for i in model.mapping:\n192\t            axis = np.zeros((model.n_inputs,))\n193\t            axis[i] = 1\n194\t            axes.append(axis)\n195\t        m = np.vstack(axes)\n196\t        mat = np.zeros((noutp, model.n_inputs))\n197\t        if pos == 'left':\n198\t            mat[: model.n_outputs, :model.n_inputs] = m\n199\t        else:\n200\t            mat[-model.n_outputs:, -model.n_inputs:] = m\n201\t        return mat\n202\t    if not model.separable:\n203\t        # this does not work for more than 2 coordinates\n204\t        mat = np.zeros((noutp, model.n_inputs))\n205\t        if pos == 'left':\n206\t            mat[:model.n_outputs, : model.n_inputs] = 1\n207\t        else:\n208\t            mat[-model.n_outputs:, -model.n_inputs:] = 1\n209\t    else:\n210\t        mat = np.zeros((noutp, model.n_inputs))\n211\t\n212\t        for i in range(model.n_inputs):\n213\t            mat[i, i] = 1\n214\t        if pos == 'right':\n215\t            mat = np.roll(mat, (noutp - model.n_outputs))\n216\t    return mat\n217\t\n218\t\n219\tdef _cstack(left, right):\n220\t    \"\"\"\n221\t    Function corresponding to '&' operation.\n222\t\n223\t    Parameters\n224\t    ----------\n225\t    left, right : `astropy.modeling.Model` or ndarray\n226\t        If input is of an array, it is the output of `coord_matrix`.\n227\t\n228\t    Returns\n229\t    -------\n230\t    result : ndarray\n231\t        Result from this operation.\n232\t\n233\t    \"\"\"\n234\t    noutp = _compute_n_outputs(left, right)\n235\t\n236\t    if isinstance(left, Model):\n237\t        cleft = _coord_matrix(left, 'left', noutp)\n238\t    else:\n239\t        cleft = np.zeros((noutp, left.shape[1]))\n240\t        cleft[: left.shape[0], : left.shape[1]] = left\n241\t    if isinstance(right, Model):\n242\t        cright = _coord_matrix(right, 'right', noutp)\n243\t    else:\n244\t        cright = np.zeros((noutp, right.shape[1]))\n245\t        cright[-right.shape[0]:, -right.shape[1]:] = 1\n246\t\n247\t    return np.hstack([cleft, cright])\n248\t\n249\t\n250\tdef _cdot(left, right):\n251\t    \"\"\"\n252\t    Function corresponding to \"|\" operation.\n253\t\n254\t    Parameters\n255\t    ----------\n256\t    left, right : `astropy.modeling.Model` or ndarray\n257\t        If input is of an array, it is the output of `coord_matrix`.\n258\t\n259\t    Returns\n260\t    -------\n261\t    result : ndarray\n262\t        Result from this operation.\n263\t    \"\"\"\n264\t\n265\t    left, right = right, left\n266\t\n267\t    def _n_inputs_outputs(input, position):\n268\t        \"\"\"\n269\t        Return ``n_inputs``, ``n_outputs`` for a model or coord_matrix.\n270\t        \"\"\"\n271\t        if isinstance(input, Model):\n272\t            coords = _coord_matrix(input, position, input.n_outputs)\n273\t        else:\n274\t            coords = input\n275\t        return coords\n276\t\n277\t    cleft = _n_inputs_outputs(left, 'left')\n278\t    cright = _n_inputs_outputs(right, 'right')\n279\t\n280\t    try:\n281\t        result = np.dot(cleft, cright)\n282\t    except ValueError:\n283\t        raise ModelDefinitionError(\n284\t            'Models cannot be combined with the \"|\" operator; '\n285\t            'left coord_matrix is {}, right coord_matrix is {}'.format(\n286\t                cright, cleft))\n287\t    return result\n288\t\n289\t\n290\tdef _separable(transform):\n291\t    \"\"\"\n292\t    Calculate the separability of outputs.\n293\t\n294\t    Parameters\n295\t    ----------\n296\t    transform : `astropy.modeling.Model`\n297\t        A transform (usually a compound model).\n298\t\n299\t    Returns :\n300\t    is_separable : ndarray of dtype np.bool\n301\t        An array of shape (transform.n_outputs,) of boolean type\n302\t        Each element represents the separablity of the corresponding output.\n303\t    \"\"\"\n304\t    if (transform_matrix := transform._calculate_separability_matrix()) is not NotImplemented:\n305\t        return transform_matrix\n306\t    elif isinstance(transform, CompoundModel):\n307\t        sepleft = _separable(transform.left)\n308\t        sepright = _separable(transform.right)\n309\t        return _operators[transform.op](sepleft, sepright)\n310\t    elif isinstance(transform, Model):\n311\t        return _coord_matrix(transform, 'left', transform.n_outputs)\n312\t\n313\t\n314\t# Maps modeling operators to a function computing and represents the\n315\t# relationship of axes as an array of 0-es and 1-s\n316\t_operators = {'&': _cstack, '|': _cdot, '+': _arith_oper, '-': _arith_oper,\n317\t              '*': _arith_oper, '/': _arith_oper, '**': _arith_oper}\n318\t\n",
+              "type": "text"
+            }
+          ],
+          "tokens_compressed": 2803,
+          "tokens_original": 2803
+        }
+      }
+    },
+    {
+      "request": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "method": "tools/call",
+        "params": {
+          "arguments": {
+            "path": "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round11\\native_dedup\\scratch\\tmpzxdt8m_m\\observation.py"
+          },
+          "name": "sqz_read_file"
+        }
+      },
+      "response": {
+        "id": 3,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "[sqz_read_file path=D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round11\\native_dedup\\scratch\\tmpzxdt8m_m\\observation.py size=11043]\n§ref:80606721454970b4§",
+              "type": "text"
+            }
+          ],
+          "tokens_compressed": 13,
+          "tokens_original": 2803
+        }
+      }
+    },
+    {
+      "request": {
+        "id": 4,
+        "jsonrpc": "2.0",
+        "method": "tools/call",
+        "params": {
+          "arguments": {
+            "limit": 22,
+            "offset": 11,
+            "path": "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round11\\native_dedup\\scratch\\tmpzxdt8m_m\\observation.py"
+          },
+          "name": "sqz_read_file"
+        }
+      },
+      "response": {
+        "id": 4,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "[sqz_read_file path=D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round11\\native_dedup\\scratch\\tmpzxdt8m_m\\observation.py size=11043 lines=11-32 of 318]\n§ref:80606721454970b4:L11-32§",
+              "type": "text"
+            }
+          ],
+          "tokens_compressed": 16,
+          "tokens_original": 142
+        }
+      }
+    },
+    {
+      "request": {
+        "id": 5,
+        "jsonrpc": "2.0",
+        "method": "tools/call",
+        "params": {
+          "arguments": {
+            "ref": "§ref:80606721454970b4§"
+          },
+          "name": "sqz_expand"
+        }
+      },
+      "response": {
+        "id": 5,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "{\"ref\":\"§ref:80606721454970b4§\"}",
+              "type": "text"
+            }
+          ],
+          "tokens_compressed": 15,
+          "tokens_original": 15
+        }
+      }
+    },
+    {
+      "request": {
+        "id": 6,
+        "jsonrpc": "2.0",
+        "method": "tools/call",
+        "params": {
+          "arguments": {
+            "ref": "§ref:80606721454970b4:L11-32§"
+          },
+          "name": "sqz_expand"
+        }
+      },
+      "response": {
+        "id": 6,
+        "jsonrpc": "2.0",
+        "result": {
+          "content": [
+            {
+              "text": "{\"ref\":\"§ref:80606721454970b4:L11-32§\"}",
+              "type": "text"
+            }
+          ],
+          "tokens_compressed": 19,
+          "tokens_original": 19
+        }
+      }
+    }
+  ],
+  "url": "https://github.com/ojuschugh1/sqz/releases/download/v2.2.0/sqz-mcp-v2.2.0-x86_64-pc-windows-msvc.zip"
+}
