@@ -1,0 +1,295 @@
+{
+ "no_epoch": [
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "protocolVersion": "2025-11-25",
+     "capabilities": {},
+     "clientInfo": {
+      "name": "local-observation-test",
+      "version": "1"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+     "protocolVersion": "2025-11-25",
+     "capabilities": {
+      "experimental": {
+       "claude/channel": {}
+      },
+      "extensions": {
+       "io.modelcontextprotocol/tasks": {}
+      },
+      "resources": {
+       "subscribe": true
+      },
+      "tools": {}
+     },
+     "serverInfo": {
+      "name": "octofs",
+      "version": "0.25.2"
+     },
+     "instructions": "Tools for file reading, search, editing, copying, shell execution, the session working directory, and code exploration (outlines, syntax-tree search, and the `symbol` tool for definitions, references, callers, callees, imports and type hierarchies, computed from the files on disk). File lines render as `N:hh|content`; copy `N:hh` verbatim for line-addressed edits; content sent to edit tools is raw text without `N:hh|` prefixes. Edit results include fresh ids and line shifts for follow-up edits; an earlier id still works while its line is unchanged: do not change its number. Relative paths resolve against the session's workdir."
+    }
+   },
+   "request_bytes": 168,
+   "response_bytes": 915,
+   "elapsed_ns": 4971100
+  },
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+     "name": "view",
+     "arguments": {
+      "path": "context.py"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+     "content": [
+      {
+       "type": "text",
+       "text": "1:ab|first=1\n2:94|second=2"
+      }
+     ],
+     "isError": false
+    }
+   },
+   "request_bytes": 106,
+   "response_bytes": 117,
+   "elapsed_ns": 6204400
+  },
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+     "name": "view",
+     "arguments": {
+      "path": "context.py"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "result": {
+     "content": [
+      {
+       "type": "text",
+       "text": "1:ab|first=1\n2:94|second=2"
+      }
+     ],
+     "isError": false
+    }
+   },
+   "request_bytes": 106,
+   "response_bytes": 117,
+   "elapsed_ns": 760100
+  }
+ ],
+ "renewed_session": [
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "protocolVersion": "2025-11-25",
+     "capabilities": {
+      "experimental": {
+       "session": {
+        "session_id": "renewed",
+        "context_epoch": 1,
+        "workdir": "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round14\\ledger\\scratch"
+       }
+      }
+     },
+     "clientInfo": {
+      "name": "local-observation-test",
+      "version": "1"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+     "protocolVersion": "2025-11-25",
+     "capabilities": {
+      "experimental": {
+       "claude/channel": {}
+      },
+      "extensions": {
+       "io.modelcontextprotocol/tasks": {}
+      },
+      "resources": {
+       "subscribe": true
+      },
+      "tools": {}
+     },
+     "serverInfo": {
+      "name": "octofs",
+      "version": "0.25.2"
+     },
+     "instructions": "Tools for file reading, search, editing, copying, shell execution, the session working directory, and code exploration (outlines, syntax-tree search, and the `symbol` tool for definitions, references, callers, callees, imports and type hierarchies, computed from the files on disk). File lines render as `N:hh|content`; copy `N:hh` verbatim for line-addressed edits; content sent to edit tools is raw text without `N:hh|` prefixes. Edit results include fresh ids and line shifts for follow-up edits; an earlier id still works while its line is unchanged: do not change its number. Relative paths resolve against the session's workdir."
+    }
+   },
+   "request_bytes": 333,
+   "response_bytes": 915,
+   "elapsed_ns": 4855700
+  },
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+     "name": "view",
+     "arguments": {
+      "path": "context.py"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+     "content": [
+      {
+       "type": "text",
+       "text": "1:ab|first=1\n2:94|second=2"
+      }
+     ],
+     "isError": false
+    }
+   },
+   "request_bytes": 106,
+   "response_bytes": 117,
+   "elapsed_ns": 1341200
+  }
+ ],
+ "native": [
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "method": "initialize",
+    "params": {
+     "protocolVersion": "2025-11-25",
+     "capabilities": {
+      "experimental": {
+       "session": {
+        "session_id": "native",
+        "context_epoch": 0,
+        "workdir": "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round14\\ledger\\scratch"
+       }
+      }
+     },
+     "clientInfo": {
+      "name": "local-observation-test",
+      "version": "1"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 1,
+    "result": {
+     "protocolVersion": "2025-11-25",
+     "capabilities": {
+      "experimental": {
+       "claude/channel": {}
+      },
+      "extensions": {
+       "io.modelcontextprotocol/tasks": {}
+      },
+      "resources": {
+       "subscribe": true
+      },
+      "tools": {}
+     },
+     "serverInfo": {
+      "name": "octofs",
+      "version": "0.25.2"
+     },
+     "instructions": "Tools for file reading, search, editing, copying, shell execution, the session working directory, and code exploration (outlines, syntax-tree search, and the `symbol` tool for definitions, references, callers, callees, imports and type hierarchies, computed from the files on disk). File lines render as `N:hh|content`; copy `N:hh` verbatim for line-addressed edits; content sent to edit tools is raw text without `N:hh|` prefixes. Edit results include fresh ids and line shifts for follow-up edits; an earlier id still works while its line is unchanged: do not change its number. Relative paths resolve against the session's workdir."
+    }
+   },
+   "request_bytes": 332,
+   "response_bytes": 915,
+   "elapsed_ns": 6765800
+  },
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "method": "tools/call",
+    "params": {
+     "name": "view",
+     "arguments": {
+      "path": "context.py"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 2,
+    "result": {
+     "content": [
+      {
+       "type": "text",
+       "text": "1:ab|first=1\n2:94|second=2"
+      }
+     ],
+     "isError": false
+    }
+   },
+   "request_bytes": 106,
+   "response_bytes": 117,
+   "elapsed_ns": 1292600
+  },
+  {
+   "request": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "method": "tools/call",
+    "params": {
+     "name": "view",
+     "arguments": {
+      "path": "context.py"
+     }
+    }
+   },
+   "response": {
+    "jsonrpc": "2.0",
+    "id": 3,
+    "result": {
+     "content": [
+      {
+       "type": "text",
+       "text": "[unchanged since you last viewed or edited it (compared with the file on disk just now): 2 lines. Pass full: true to re-read, or view a line range.]"
+      }
+     ],
+     "isError": false
+    }
+   },
+   "request_bytes": 106,
+   "response_bytes": 238,
+   "elapsed_ns": 779900
+  }
+ ]
+}

@@ -1,0 +1,67 @@
+{
+  "batch": 8,
+  "compute_dtype": "float32",
+  "counts": {
+    "primary": {
+      "anchors": 267,
+      "empty": 46,
+      "fresh_document_versions": 1336,
+      "max_fresh": 35,
+      "median_fresh": 3,
+      "pairs": 1795
+    },
+    "replication": {
+      "anchors": 73,
+      "empty": 8,
+      "fresh_document_versions": 189,
+      "max_fresh": 15,
+      "median_fresh": 1,
+      "pairs": 230
+    }
+  },
+  "device": "cpu",
+  "load_sec": 1.0544201000011526,
+  "max_tokens": 512,
+  "model_package_bytes": 274474917,
+  "processor": "AMD64 Family 25 Model 117 Stepping 2, AuthenticAMD",
+  "python": "3.12.13",
+  "rank_sec": 0.01827290002256632,
+  "text_stats": {
+    "document": {
+      "additional_unique": 1512,
+      "encoded_tokens_unpadded": 287453,
+      "padded_tokens": 331896,
+      "requested_unique": 1512,
+      "sec": 312.20277590001933,
+      "truncated_texts": 198
+    },
+    "issue": {
+      "additional_unique": 185,
+      "encoded_tokens_unpadded": 46205,
+      "padded_tokens": 59757,
+      "requested_unique": 185,
+      "sec": 56.66660160000902,
+      "truncated_texts": 1
+    },
+    "path": {
+      "additional_unique": 918,
+      "encoded_tokens_unpadded": 15184,
+      "padded_tokens": 18220,
+      "requested_unique": 918,
+      "sec": 18.636463599978015,
+      "truncated_texts": 0
+    },
+    "query": {
+      "additional_unique": 280,
+      "encoded_tokens_unpadded": 74837,
+      "padded_tokens": 92880,
+      "requested_unique": 280,
+      "sec": 83.06431330001215,
+      "truncated_texts": 2
+    }
+  },
+  "threads": 4,
+  "torch": "2.6.0+cpu",
+  "transformers": "4.52.4",
+  "weight_bytes": 273474944
+}

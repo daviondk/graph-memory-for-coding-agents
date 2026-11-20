@@ -1,0 +1,338 @@
+{
+ "ext4": {
+  "controlled": {
+   "native": {
+    "n": 96,
+    "ok": 96,
+    "hit": 0,
+    "payload": 282480,
+    "text": 18453,
+    "median_us": 962.55,
+    "mean_us": 973.1145833333334
+   },
+   "full": {
+    "n": 96,
+    "ok": 96,
+    "hit": 0,
+    "payload": 282480,
+    "text": 337128,
+    "median_us": 988.6,
+    "mean_us": 1003.2072916666667
+   },
+   "mtime_size": {
+    "n": 96,
+    "ok": 72,
+    "hit": 48,
+    "payload": 141516,
+    "text": 15671,
+    "median_us": 411.6,
+    "mean_us": 497.64479166666666
+   },
+   "mtime_id": {
+    "n": 96,
+    "ok": 84,
+    "hit": 36,
+    "payload": 176757,
+    "text": 17062,
+    "median_us": 860.3499999999999,
+    "mean_us": 626.0802083333333
+   },
+   "ctime_id": {
+    "n": 96,
+    "ok": 96,
+    "hit": 24,
+    "payload": 211998,
+    "text": 18453,
+    "median_us": 908.0999999999999,
+    "mean_us": 735.7270833333333
+   }
+  },
+  "released": {
+   "native": {
+    "n": 56,
+    "ok": 56,
+    "hit": 0,
+    "payload": 172517,
+    "text": 11311,
+    "median_us": 888.3,
+    "mean_us": 909.2107142857143
+   },
+   "full": {
+    "n": 56,
+    "ok": 56,
+    "hit": 0,
+    "payload": 172517,
+    "text": 204182,
+    "median_us": 944.85,
+    "mean_us": 960.4339464285714
+   },
+   "mtime_size": {
+    "n": 56,
+    "ok": 56,
+    "hit": 49,
+    "payload": 16224,
+    "text": 11311,
+    "median_us": 13.55,
+    "mean_us": 131.75
+   },
+   "mtime_id": {
+    "n": 56,
+    "ok": 56,
+    "hit": 49,
+    "payload": 16224,
+    "text": 11311,
+    "median_us": 15.600000000000001,
+    "mean_us": 134.35357142857143
+   },
+   "ctime_id": {
+    "n": 56,
+    "ok": 56,
+    "hit": 49,
+    "payload": 16224,
+    "text": 11311,
+    "median_us": 13.0,
+    "mean_us": 133.72321428571428
+   }
+  },
+  "bursts": {
+   "replace_restore": {
+    "native": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    },
+    "ctime_id": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    }
+   },
+   "atomic_restore": {
+    "native": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    },
+    "ctime_id": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    }
+   }
+  },
+  "native_syscalls": {
+   "controlled": {
+    "native": {
+     "stat": 480,
+     "open": 96,
+     "read": 848,
+     "bytes": 282480,
+     "close": 96,
+     "wrapper_stat": 0
+    },
+    "ctime_id": {
+     "stat": 360,
+     "open": 72,
+     "read": 636,
+     "bytes": 211998,
+     "close": 72,
+     "wrapper_stat": 96
+    }
+   },
+   "released": {
+    "native": {
+     "stat": 280,
+     "open": 56,
+     "read": 498,
+     "bytes": 172517,
+     "close": 56,
+     "wrapper_stat": 0
+    },
+    "ctime_id": {
+     "stat": 35,
+     "open": 7,
+     "read": 59,
+     "bytes": 16224,
+     "close": 7,
+     "wrapper_stat": 56
+    }
+   }
+  }
+ },
+ "tmpfs": {
+  "controlled": {
+   "native": {
+    "n": 96,
+    "ok": 96,
+    "hit": 0,
+    "payload": 282480,
+    "text": 18453,
+    "median_us": 932.2,
+    "mean_us": 950.584375
+   },
+   "full": {
+    "n": 96,
+    "ok": 96,
+    "hit": 0,
+    "payload": 282480,
+    "text": 337128,
+    "median_us": 952.2,
+    "mean_us": 972.571875
+   },
+   "mtime_size": {
+    "n": 96,
+    "ok": 72,
+    "hit": 48,
+    "payload": 141516,
+    "text": 15671,
+    "median_us": 408.8,
+    "mean_us": 496.27501041666665
+   },
+   "mtime_id": {
+    "n": 96,
+    "ok": 84,
+    "hit": 36,
+    "payload": 176757,
+    "text": 17062,
+    "median_us": 840.35,
+    "mean_us": 610.1010416666667
+   },
+   "ctime_id": {
+    "n": 96,
+    "ok": 96,
+    "hit": 24,
+    "payload": 211998,
+    "text": 18453,
+    "median_us": 906.95,
+    "mean_us": 719.2395833333334
+   }
+  },
+  "released": {
+   "native": {
+    "n": 56,
+    "ok": 56,
+    "hit": 0,
+    "payload": 172517,
+    "text": 11311,
+    "median_us": 875.95,
+    "mean_us": 883.3857321428571
+   },
+   "full": {
+    "n": 56,
+    "ok": 56,
+    "hit": 0,
+    "payload": 172517,
+    "text": 204182,
+    "median_us": 953.85,
+    "mean_us": 971.1642857142857
+   },
+   "mtime_size": {
+    "n": 56,
+    "ok": 56,
+    "hit": 49,
+    "payload": 16224,
+    "text": 11311,
+    "median_us": 12.7,
+    "mean_us": 121.8375
+   },
+   "mtime_id": {
+    "n": 56,
+    "ok": 56,
+    "hit": 49,
+    "payload": 16224,
+    "text": 11311,
+    "median_us": 14.45,
+    "mean_us": 129.74642857142857
+   },
+   "ctime_id": {
+    "n": 56,
+    "ok": 56,
+    "hit": 49,
+    "payload": 16224,
+    "text": 11311,
+    "median_us": 13.5,
+    "mean_us": 126.8892857142857
+   }
+  },
+  "bursts": {
+   "replace_restore": {
+    "native": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    },
+    "ctime_id": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    }
+   },
+   "atomic_restore": {
+    "native": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    },
+    "ctime_id": {
+     "n": 128,
+     "distinct_content_events": 128,
+     "correct": 128,
+     "matching_stamp": 0,
+     "cached": 0
+    }
+   }
+  },
+  "native_syscalls": {
+   "controlled": {
+    "native": {
+     "stat": 480,
+     "open": 96,
+     "read": 848,
+     "bytes": 282480,
+     "close": 96,
+     "wrapper_stat": 0
+    },
+    "ctime_id": {
+     "stat": 360,
+     "open": 72,
+     "read": 636,
+     "bytes": 211998,
+     "close": 72,
+     "wrapper_stat": 96
+    }
+   },
+   "released": {
+    "native": {
+     "stat": 280,
+     "open": 56,
+     "read": 498,
+     "bytes": 172517,
+     "close": 56,
+     "wrapper_stat": 0
+    },
+    "ctime_id": {
+     "stat": 35,
+     "open": 7,
+     "read": 59,
+     "bytes": 16224,
+     "close": 7,
+     "wrapper_stat": 56
+    }
+   }
+  }
+ }
+}

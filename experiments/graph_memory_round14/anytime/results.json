@@ -1,0 +1,354 @@
+{
+  "cost": {
+    "distinct_byte_payloads_any_task": 10,
+    "every_poll_bytes": 168749,
+    "every_poll_gzip": 67461,
+    "last_only_bytes": 5723,
+    "last_only_gzip": 2048,
+    "native_fresh": 6,
+    "native_grade_reused_identical_bytes": 5,
+    "pair_dedup_bytes": 13621,
+    "pair_dedup_gzip": 5103,
+    "pairs_with_real_unit_log": 9,
+    "physical_events_jsonl_bytes": 44174,
+    "physical_patch_gzip_unique": 5083,
+    "physical_patch_raw_unique": 13621,
+    "unique_task_state_pairs": 11
+  },
+  "episodes": {
+    "adamchainz__flake8-comprehensions-553|base|seed0": {
+      "choices": {
+        "first_nonempty": {
+          "resolved": false,
+          "sha": "9027c301d5e7f6903821a0bda856bbbabee5935233c2aa9ced94f1fafb9c791b",
+          "status": "unresolved"
+        },
+        "last": {
+          "resolved": false,
+          "sha": "8b884685c34d2e7899173c9dcefcbb7496aa4db94fc0aaa04ec78e7ea9de9ce9",
+          "status": "unresolved"
+        },
+        "one_final_available": {
+          "resolved": false,
+          "sha": "8b884685c34d2e7899173c9dcefcbb7496aa4db94fc0aaa04ec78e7ea9de9ce9",
+          "status": "unresolved"
+        },
+        "visible_pass": {
+          "resolved": null,
+          "sha": null,
+          "status": "abstain"
+        }
+      },
+      "first_passing_poll": null,
+      "first_passing_relative_request": null,
+      "first_passing_seconds": null,
+      "later_lost": null,
+      "left_truncated": true,
+      "official_submission_resolved": false,
+      "polls": 25,
+      "remained_to_end": null,
+      "remaining_observed_seconds_after_first_pass": null,
+      "remaining_proxy_requests_after_first_pass": null,
+      "sampled_span_seconds": 133.321,
+      "unique": 2,
+      "versions_in_order": [
+        {
+          "bytes": 1723,
+          "first": 1,
+          "first_global_proxy_request": 64,
+          "first_relative_proxy_request": 0,
+          "first_seconds": 0.0,
+          "last": 2,
+          "resolved": false,
+          "sha": "9027c301d5e7f6903821a0bda856bbbabee5935233c2aa9ced94f1fafb9c791b"
+        },
+        {
+          "bytes": 2515,
+          "first": 3,
+          "first_global_proxy_request": 65,
+          "first_relative_proxy_request": 1,
+          "first_seconds": 12.637,
+          "last": 25,
+          "resolved": false,
+          "sha": "8b884685c34d2e7899173c9dcefcbb7496aa4db94fc0aaa04ec78e7ea9de9ce9"
+        }
+      ],
+      "visible_pass_summary_zero_code": 1,
+      "visible_test_mentions": 1
+    },
+    "adamchainz__flake8-comprehensions-553|raw|seed0": {
+      "choices": {
+        "first_nonempty": {
+          "resolved": false,
+          "sha": "bc2df1180ec3efe972c62095703e7657bae2f819b82b5c0e656049ae5c103111",
+          "status": "unresolved"
+        },
+        "last": {
+          "resolved": true,
+          "sha": "ba5c2b357fb39661adf4aa91fa9fccb3547677248e540fadca7cd407402d52e8",
+          "status": "resolved"
+        },
+        "one_final_available": {
+          "resolved": true,
+          "sha": "ba5c2b357fb39661adf4aa91fa9fccb3547677248e540fadca7cd407402d52e8",
+          "status": "resolved"
+        },
+        "visible_pass": {
+          "resolved": null,
+          "sha": null,
+          "status": "abstain"
+        }
+      },
+      "first_passing_poll": 33,
+      "first_passing_relative_request": 16,
+      "first_passing_seconds": 163.841,
+      "later_lost": false,
+      "left_truncated": false,
+      "official_submission_resolved": false,
+      "polls": 56,
+      "remained_to_end": true,
+      "remaining_observed_seconds_after_first_pass": 132.98,
+      "remaining_proxy_requests_after_first_pass": 8,
+      "sampled_span_seconds": 296.821,
+      "unique": 5,
+      "versions_in_order": [
+        {
+          "bytes": 0,
+          "first": 1,
+          "first_global_proxy_request": 120,
+          "first_relative_proxy_request": 0,
+          "first_seconds": 0.0,
+          "last": 24,
+          "resolved": false,
+          "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 628,
+          "first": 25,
+          "first_global_proxy_request": 133,
+          "first_relative_proxy_request": 13,
+          "first_seconds": 121.415,
+          "last": 32,
+          "resolved": false,
+          "sha": "bc2df1180ec3efe972c62095703e7657bae2f819b82b5c0e656049ae5c103111"
+        },
+        {
+          "bytes": 1591,
+          "first": 33,
+          "first_global_proxy_request": 136,
+          "first_relative_proxy_request": 16,
+          "first_seconds": 163.841,
+          "last": 38,
+          "resolved": true,
+          "sha": "7203560181f7007a3aad26e1a0a165e87c3cebf68c5bad289a11245ed4b2c9f1"
+        },
+        {
+          "bytes": 2372,
+          "first": 39,
+          "first_global_proxy_request": 138,
+          "first_relative_proxy_request": 18,
+          "first_seconds": 199.63,
+          "last": 41,
+          "resolved": true,
+          "sha": "3a42c4b8710b9fa846928bfede56dae1aae507c2e7c72e8e005f15d2b8189686"
+        },
+        {
+          "bytes": 2721,
+          "first": 42,
+          "first_global_proxy_request": 139,
+          "first_relative_proxy_request": 19,
+          "first_seconds": 216.54,
+          "last": 56,
+          "resolved": true,
+          "sha": "ba5c2b357fb39661adf4aa91fa9fccb3547677248e540fadca7cd407402d52e8"
+        }
+      ],
+      "visible_pass_summary_zero_code": 1,
+      "visible_test_mentions": 1
+    },
+    "mpmath__mpmath-881|graph|seed0": {
+      "choices": {
+        "first_nonempty": {
+          "resolved": false,
+          "sha": "cc8ffc6f2273a4c76b95a4cb6e4fc28e71fe493f8b2da4088f8a3a53530ab8b1",
+          "status": "unresolved"
+        },
+        "last": {
+          "resolved": false,
+          "sha": "d5e0a4d684efe19acf214d8f42d094de1b03f36730163d356a0e713dfe08cdfc",
+          "status": "unresolved"
+        },
+        "one_final_available": {
+          "resolved": false,
+          "sha": "d5e0a4d684efe19acf214d8f42d094de1b03f36730163d356a0e713dfe08cdfc",
+          "status": "unresolved"
+        },
+        "visible_pass": {
+          "resolved": null,
+          "sha": null,
+          "status": "abstain"
+        }
+      },
+      "first_passing_poll": null,
+      "first_passing_relative_request": null,
+      "first_passing_seconds": null,
+      "later_lost": null,
+      "left_truncated": false,
+      "official_submission_resolved": false,
+      "polls": 97,
+      "remained_to_end": null,
+      "remaining_observed_seconds_after_first_pass": null,
+      "remaining_proxy_requests_after_first_pass": null,
+      "sampled_span_seconds": 566.345,
+      "unique": 3,
+      "versions_in_order": [
+        {
+          "bytes": 0,
+          "first": 1,
+          "first_global_proxy_request": 96,
+          "first_relative_proxy_request": 0,
+          "first_seconds": 0.0,
+          "last": 25,
+          "resolved": false,
+          "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 900,
+          "first": 26,
+          "first_global_proxy_request": 108,
+          "first_relative_proxy_request": 12,
+          "first_seconds": 139.828,
+          "last": 29,
+          "resolved": false,
+          "sha": "cc8ffc6f2273a4c76b95a4cb6e4fc28e71fe493f8b2da4088f8a3a53530ab8b1"
+        },
+        {
+          "bytes": 0,
+          "first": 30,
+          "first_global_proxy_request": 109,
+          "first_relative_proxy_request": 13,
+          "first_seconds": 161.063,
+          "last": 50,
+          "resolved": false,
+          "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 487,
+          "first": 51,
+          "first_global_proxy_request": 114,
+          "first_relative_proxy_request": 18,
+          "first_seconds": 283.857,
+          "last": 97,
+          "resolved": false,
+          "sha": "d5e0a4d684efe19acf214d8f42d094de1b03f36730163d356a0e713dfe08cdfc"
+        }
+      ],
+      "visible_pass_summary_zero_code": 0,
+      "visible_test_mentions": 2
+    },
+    "mpmath__mpmath-881|raw|seed0": {
+      "choices": {
+        "first_nonempty": {
+          "resolved": false,
+          "sha": "4eaf607299375d4d70bbc8d6b66fc7858d358bce5ae5b444c69bd546c86f1b21",
+          "status": "unresolved"
+        },
+        "last": {
+          "resolved": false,
+          "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "status": "no_patch"
+        },
+        "one_final_available": {
+          "resolved": false,
+          "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "status": "no_patch"
+        },
+        "visible_pass": {
+          "resolved": null,
+          "sha": null,
+          "status": "abstain"
+        }
+      },
+      "first_passing_poll": null,
+      "first_passing_relative_request": null,
+      "first_passing_seconds": null,
+      "later_lost": null,
+      "left_truncated": false,
+      "official_submission_resolved": false,
+      "polls": 58,
+      "remained_to_end": null,
+      "remaining_observed_seconds_after_first_pass": null,
+      "remaining_proxy_requests_after_first_pass": null,
+      "sampled_span_seconds": 323.871,
+      "unique": 2,
+      "versions_in_order": [
+        {
+          "bytes": 0,
+          "first": 1,
+          "first_global_proxy_request": 72,
+          "first_relative_proxy_request": 0,
+          "first_seconds": 0.0,
+          "last": 28,
+          "resolved": false,
+          "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        },
+        {
+          "bytes": 684,
+          "first": 29,
+          "first_global_proxy_request": 87,
+          "first_relative_proxy_request": 15,
+          "first_seconds": 152.954,
+          "last": 55,
+          "resolved": false,
+          "sha": "4eaf607299375d4d70bbc8d6b66fc7858d358bce5ae5b444c69bd546c86f1b21"
+        },
+        {
+          "bytes": 0,
+          "first": 56,
+          "first_global_proxy_request": 95,
+          "first_relative_proxy_request": 23,
+          "first_seconds": 311.209,
+          "last": 58,
+          "resolved": false,
+          "sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+        }
+      ],
+      "visible_pass_summary_zero_code": 0,
+      "visible_test_mentions": 0
+    }
+  },
+  "passing_unique_states": {
+    "adamchainz__flake8-comprehensions-553": 3,
+    "mpmath__mpmath-881": 0
+  },
+  "totals": {
+    "first_nonempty": {
+      "abstain": 0,
+      "answered": 4,
+      "resolved": 0
+    },
+    "last": {
+      "abstain": 0,
+      "answered": 4,
+      "resolved": 1
+    },
+    "official_submission": {
+      "answered": 4,
+      "resolved": 0
+    },
+    "one_final_available": {
+      "abstain": 0,
+      "answered": 4,
+      "resolved": 1
+    },
+    "oracle_any_passing": {
+      "answered": 4,
+      "resolved": 1
+    },
+    "visible_pass": {
+      "abstain": 4,
+      "answered": 0,
+      "resolved": 0
+    }
+  }
+}

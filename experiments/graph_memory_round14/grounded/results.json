@@ -1,0 +1,238 @@
+{
+ "arms": {
+  "named": {
+   "graph_top": 18,
+   "in_pair": 22,
+   "in_tokens": 31786,
+   "navigation": 9,
+   "opened": 30,
+   "out_tokens": 948,
+   "patch": 12,
+   "read_bytes": 1525359,
+   "valid": 30
+  },
+  "none": {
+   "graph_top": 19,
+   "in_pair": 24,
+   "in_tokens": 31100,
+   "navigation": 9,
+   "opened": 30,
+   "out_tokens": 950,
+   "patch": 13,
+   "read_bytes": 1486659,
+   "valid": 30
+  },
+  "pair": {
+   "graph_top": 19,
+   "in_pair": 23,
+   "in_tokens": 31771,
+   "navigation": 9,
+   "opened": 30,
+   "out_tokens": 951,
+   "patch": 13,
+   "read_bytes": 1531504,
+   "valid": 30
+  },
+  "recommend": {
+   "graph_top": 26,
+   "in_pair": 27,
+   "in_tokens": 31332,
+   "navigation": 8,
+   "opened": 30,
+   "out_tokens": 954,
+   "patch": 12,
+   "read_bytes": 1522162,
+   "valid": 30
+  }
+ },
+ "flow": {
+  "by_repo": {
+   "Sinaptik-AI/pandas-ai": 1,
+   "aws-cloudformation/cfn-lint": 10,
+   "getmoto/moto": 19
+  },
+  "counts": {
+   "eligible_anchors": 66,
+   "eligible_tasks": 47,
+   "empty_anchors": 111,
+   "excluded_issue": 22,
+   "source": 376
+  },
+  "selected": 30
+ },
+ "n": 30,
+ "nav_ceiling": 16,
+ "next_n": 25,
+ "pair_ceiling": 12,
+ "pair_excerpt_frequency": {
+  "0": 10,
+  "1": 15,
+  "2": 5
+ },
+ "pairs": {
+  "named-none": {
+   "all_choice_changes": 5,
+   "navigation": {
+    "bootstrap_ci": [
+     -0.12,
+     0.12
+    ],
+    "changed_read": 5,
+    "delta": 0.0,
+    "exact_p": 1.0,
+    "losses": 1,
+    "n": 25,
+    "ties": 23,
+    "wins": 1
+   },
+   "patch": {
+    "bootstrap_ci": [
+     -0.15789473684210525,
+     0.0
+    ],
+    "changed_read": 2,
+    "delta": -0.05263157894736842,
+    "exact_p": 1.0,
+    "losses": 1,
+    "n": 19,
+    "ties": 18,
+    "wins": 0
+   }
+  },
+  "named-pair": {
+   "all_choice_changes": 1,
+   "navigation": {
+    "bootstrap_ci": [
+     0.0,
+     0.0
+    ],
+    "changed_read": 1,
+    "delta": 0.0,
+    "exact_p": 1.0,
+    "losses": 0,
+    "n": 25,
+    "ties": 25,
+    "wins": 0
+   },
+   "patch": {
+    "bootstrap_ci": [
+     -0.15789473684210525,
+     0.0
+    ],
+    "changed_read": 1,
+    "delta": -0.05263157894736842,
+    "exact_p": 1.0,
+    "losses": 1,
+    "n": 19,
+    "ties": 18,
+    "wins": 0
+   }
+  },
+  "named-recommend": {
+   "all_choice_changes": 8,
+   "navigation": {
+    "bootstrap_ci": [
+     -0.08,
+     0.16
+    ],
+    "changed_read": 7,
+    "delta": 0.04,
+    "exact_p": 1.0,
+    "losses": 1,
+    "n": 25,
+    "ties": 22,
+    "wins": 2
+   },
+   "patch": {
+    "bootstrap_ci": [
+     -0.15789473684210525,
+     0.15789473684210525
+    ],
+    "changed_read": 5,
+    "delta": 0.0,
+    "exact_p": 1.0,
+    "losses": 1,
+    "n": 19,
+    "ties": 17,
+    "wins": 1
+   }
+  },
+  "pair-none": {
+   "all_choice_changes": 4,
+   "navigation": {
+    "bootstrap_ci": [
+     -0.12,
+     0.12
+    ],
+    "changed_read": 4,
+    "delta": 0.0,
+    "exact_p": 1.0,
+    "losses": 1,
+    "n": 25,
+    "ties": 23,
+    "wins": 1
+   },
+   "patch": {
+    "bootstrap_ci": [
+     0.0,
+     0.0
+    ],
+    "changed_read": 1,
+    "delta": 0.0,
+    "exact_p": 1.0,
+    "losses": 0,
+    "n": 19,
+    "ties": 19,
+    "wins": 0
+   }
+  },
+  "recommend-none": {
+   "all_choice_changes": 7,
+   "navigation": {
+    "bootstrap_ci": [
+     -0.16,
+     0.08
+    ],
+    "changed_read": 6,
+    "delta": -0.04,
+    "exact_p": 1.0,
+    "losses": 2,
+    "n": 25,
+    "ties": 22,
+    "wins": 1
+   },
+   "patch": {
+    "bootstrap_ci": [
+     -0.15789473684210525,
+     0.0
+    ],
+    "changed_read": 5,
+    "delta": -0.05263157894736842,
+    "exact_p": 1.0,
+    "losses": 1,
+    "n": 19,
+    "ties": 18,
+    "wins": 0
+   }
+  }
+ },
+ "patch_ceiling": 13,
+ "receipt_sources": {
+  "immutable raw Git revision": 120
+ },
+ "scoring_files": {
+  "pr_oracle.py": "57046a7a85e8441463063f9f7fb5b9f69fd6f2ab3300f4ee06cf16ccbb258920",
+  "prefix.py": "ab421423a6b24f1159b602eddd963fb7e3ceabf33d30d00e1db8f93addd455c1"
+ },
+ "status": {
+  "eligible": 19,
+  "no_old_production_python": 2,
+  "not_direct": 9
+ },
+ "strict_repos": {
+  "aws-cloudformation/cfn-lint": 7,
+  "getmoto/moto": 12
+ },
+ "symbol_already_visible": 26,
+ "symbol_in_common_prose_or_excerpt": 24
+}

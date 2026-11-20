@@ -1,0 +1,1703 @@
+{
+ "ext4/controlled": {
+  "n": 96,
+  "all_masks": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size"
+    ],
+    "hit": 72,
+    "stale": 36
+   },
+   {
+    "fields": [
+     "device"
+    ],
+    "hit": 96,
+    "stale": 60
+   },
+   {
+    "fields": [
+     "inode"
+    ],
+    "hit": 84,
+    "stale": 48
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device"
+    ],
+    "hit": 72,
+    "stale": 36
+   },
+   {
+    "fields": [
+     "size",
+     "inode"
+    ],
+    "hit": 60,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode"
+    ],
+    "hit": 84,
+    "stale": 48
+   },
+   {
+    "fields": [
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 60,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   }
+  ],
+  "minimum_single_fields_without_false_reuse": [
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   }
+  ]
+ },
+ "ext4/released": {
+  "n": 56,
+  "all_masks": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "device"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "inode"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "inode"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   }
+  ],
+  "minimum_single_fields_without_false_reuse": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   }
+  ]
+ },
+ "tmpfs/controlled": {
+  "n": 96,
+  "all_masks": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size"
+    ],
+    "hit": 72,
+    "stale": 36
+   },
+   {
+    "fields": [
+     "device"
+    ],
+    "hit": 96,
+    "stale": 60
+   },
+   {
+    "fields": [
+     "inode"
+    ],
+    "hit": 84,
+    "stale": 48
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device"
+    ],
+    "hit": 72,
+    "stale": 36
+   },
+   {
+    "fields": [
+     "size",
+     "inode"
+    ],
+    "hit": 60,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode"
+    ],
+    "hit": 84,
+    "stale": 48
+   },
+   {
+    "fields": [
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 60,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   }
+  ],
+  "minimum_single_fields_without_false_reuse": [
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   }
+  ]
+ },
+ "tmpfs/released": {
+  "n": 56,
+  "all_masks": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "device"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "inode"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "inode"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   }
+  ],
+  "minimum_single_fields_without_false_reuse": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   }
+  ]
+ },
+ "ntfs/controlled": {
+  "n": 96,
+  "all_masks": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size"
+    ],
+    "hit": 72,
+    "stale": 36
+   },
+   {
+    "fields": [
+     "device"
+    ],
+    "hit": 96,
+    "stale": 60
+   },
+   {
+    "fields": [
+     "inode"
+    ],
+    "hit": 84,
+    "stale": 48
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device"
+    ],
+    "hit": 72,
+    "stale": 36
+   },
+   {
+    "fields": [
+     "size",
+     "inode"
+    ],
+    "hit": 60,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode"
+    ],
+    "hit": 84,
+    "stale": 48
+   },
+   {
+    "fields": [
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device"
+    ],
+    "hit": 48,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 60,
+    "stale": 24
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 36,
+    "stale": 12
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   }
+  ],
+  "minimum_single_fields_without_false_reuse": [
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 24,
+    "stale": 0
+   }
+  ]
+ },
+ "ntfs/released": {
+  "n": 56,
+  "all_masks": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "device"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "inode"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "inode"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode"
+    ],
+    "hit": 56,
+    "stale": 7
+   },
+   {
+    "fields": [
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 50,
+    "stale": 1
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "mtime_ns",
+     "size",
+     "device",
+     "inode",
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   }
+  ],
+  "minimum_single_fields_without_false_reuse": [
+   {
+    "fields": [
+     "mtime_ns"
+    ],
+    "hit": 49,
+    "stale": 0
+   },
+   {
+    "fields": [
+     "status_change"
+    ],
+    "hit": 49,
+    "stale": 0
+   }
+  ]
+ }
+}
