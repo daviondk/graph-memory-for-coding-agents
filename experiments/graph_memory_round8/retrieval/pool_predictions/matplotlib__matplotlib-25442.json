@@ -1,0 +1,869 @@
+{
+ "task": "matplotlib__matplotlib-25442",
+ "repo": "matplotlib__matplotlib",
+ "corpus_sha256": "fdf67eb46b455e78f02cc4a343a11fc638c36a944256fdf5ae87f0368ce93748",
+ "query_sha256": "e83cbeef7784ec0de45e90a3cbcded93e83f130b751ce6ac7fcb4a69c00826a3",
+ "n_corpus": 6662,
+ "n_scanned_for_graph": 6662,
+ "n_propagated": 10,
+ "anchors": [
+  "lib/matplotlib/backend_managers.py/ToolManager/canvas",
+  "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented",
+  "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+  "lib/matplotlib/widgets.py/MultiCursor/disconnect",
+  "lib/matplotlib/pyplot.py/disconnect",
+  "lib/matplotlib/cbook.py/CallbackRegistry/disconnect",
+  "lib/matplotlib/widgets.py/CheckButtons/disconnect",
+  "lib/matplotlib/widgets.py/Button/disconnect"
+ ],
+ "top40": {
+  "body": [
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_release",
+    "score": 109.99364384915668,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_motion",
+    "score": 76.47579915187922,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_pick",
+    "score": 74.41296438759221,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 73.97899466210913,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented",
+    "score": 73.97050911098982,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/__init__",
+    "score": 71.097293132247,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 67.04357237929138,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/switch_backend",
+    "score": 64.63383245463602,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 60.405526999365016,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 59.45926623531509,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 59.174734347744646,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/use",
+    "score": 57.43439459668882,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/CallbackRegistry/process",
+    "score": 56.88064965279054,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/patches.py/ConnectionPatch/__init__",
+    "score": 56.54690294130302,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+    "score": 56.39066418837008,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_rc_params_in_file",
+    "score": 55.979422513806554,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 53.502694946094344,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/NavigationToolbar2/configure_subplots",
+    "score": 53.34514420486477,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/_create_qApp",
+    "score": 53.326438462768515,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/scatter",
+    "score": 52.71258627421124,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/imsave",
+    "score": 52.425983806197955,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/FigureCanvasBase/mpl_connect",
+    "score": 52.419473884799714,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/__init__",
+    "score": 51.61067268028716,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/setp",
+    "score": 50.93487842800433,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/dviread.py/_find_tex_file",
+    "score": 50.57994217801648,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/thumbnail",
+    "score": 50.53735367328298,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/errorbar",
+    "score": 50.53695034738205,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_api/deprecation.py/deprecated",
+    "score": 50.50743020089994,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_get_executable_info",
+    "score": 50.21829222165491,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/path.py/Path/contains_point",
+    "score": 50.0080030954485,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/plot",
+    "score": 49.96458623209019,
+    "supports": []
+   },
+   {
+    "id": "matplotlib/setupext.py/FreeType/do_custom_build",
+    "score": 49.87827813168748,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/rcsetup.py/cycler",
+    "score": 49.78174386931942,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/text.py/Annotation/__init__",
+    "score": 49.621912466445025,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_axes",
+    "score": 49.592884531871356,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cm.py/ScalarMappable/to_rgba",
+    "score": 49.448527026076555,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/impl",
+    "score": 49.32688464248297,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_base.py/_process_plot_var_args/_plot_args",
+    "score": 49.208593445046155,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/_parse_scatter_color_args",
+    "score": 48.96030833580938,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/get_cursor_data",
+    "score": 48.64493525682237,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_release",
+    "score": 0.16783216783216784,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented",
+    "score": 0.1575757575757576,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/FigureCanvasBase/mpl_disconnect",
+    "score": 0.0945692883895131,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+     "lib/matplotlib/pyplot.py/disconnect",
+     "lib/matplotlib/widgets.py/MultiCursor/disconnect"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_motion",
+    "score": 0.08546099290780142,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_pick",
+    "score": 0.07904621917360771,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/print_figure",
+    "score": 0.07796451914098973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 0.07734573119188504,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.07535885167464115,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0712719298245614,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.06969309462915602,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axisartist/axis_artist.py/AttributeCopier/get_attribute_from_ref_artist",
+    "score": 0.06768603465851172,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/__init__",
+    "score": 0.06532485875706215,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/get_cursor_data",
+    "score": 0.06347826086956522,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_rc_params_in_file",
+    "score": 0.06346153846153846,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/RcParams/_get_backend_or_none",
+    "score": 0.059335038363171354,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/tri/_triangulation.py/Triangulation/get_from_args_and_kwargs",
+    "score": 0.057582073996873366,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axisartist/axis_artist.py/AttributeCopier/get_ref_artist",
+    "score": 0.056829440905874024,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/switch_backend",
+    "score": 0.05657078398195149,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_weak_or_strong_ref",
+    "score": 0.05169491525423729,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.05132275132275132,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 0.050492853622474125,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 0.04964744518497054,
+    "supports": []
+   },
+   {
+    "id": "matplotlib/setupext.py/Python/check",
+    "score": 0.048298395445134576,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/CallbackRegistry/process",
+    "score": 0.04754330151997172,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/showEvent",
+    "score": 0.047520661157024795,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+    "score": 0.04740740740740741,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/use",
+    "score": 0.046178658416167466,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/__init__",
+    "score": 0.0453030303030303,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_get_version",
+    "score": 0.045208333333333336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/patches.py/ConnectionPatch/__init__",
+    "score": 0.04220314735336194,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/format_cursor_data",
+    "score": 0.04195240016135539,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_combine_masks",
+    "score": 0.03982930298719772,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_base.py/_process_plot_var_args/__call__",
+    "score": 0.03970125786163522,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_StrongRef/__init__",
+    "score": 0.0390964590964591,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/set_cursor",
+    "score": 0.038687202053538684,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/keyReleaseEvent",
+    "score": 0.03774680603948896,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/mouseReleaseEvent",
+    "score": 0.03689821755788772,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/NavigationToolbar2/configure_subplots",
+    "score": 0.03596598468231994,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/scatter",
+    "score": 0.03553113553113553,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/_create_qApp",
+    "score": 0.035280206786558875,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented",
+    "score": 0.2409090909090909,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_release",
+    "score": 0.16783216783216784,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+    "score": 0.12433048433048434,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/FigureCanvasBase/mpl_disconnect",
+    "score": 0.0945692883895131,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+     "lib/matplotlib/pyplot.py/disconnect",
+     "lib/matplotlib/widgets.py/MultiCursor/disconnect"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backend_managers.py/ToolManager/canvas",
+    "score": 0.0918522539044678,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/MultiCursor/disconnect",
+    "score": 0.09080841638981174,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_motion",
+    "score": 0.08546099290780142,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/disconnect",
+    "score": 0.08476733614348293,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_pick",
+    "score": 0.07904621917360771,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/print_figure",
+    "score": 0.07796451914098973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 0.07734573119188504,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.07535885167464115,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/CallbackRegistry/disconnect",
+    "score": 0.07297293312890671,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/CheckButtons/disconnect",
+    "score": 0.0720097316404867,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0712719298245614,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.06969309462915602,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axisartist/axis_artist.py/AttributeCopier/get_attribute_from_ref_artist",
+    "score": 0.06768603465851172,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/__init__",
+    "score": 0.06532485875706215,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/get_cursor_data",
+    "score": 0.06347826086956522,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_rc_params_in_file",
+    "score": 0.06346153846153846,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/RcParams/_get_backend_or_none",
+    "score": 0.059335038363171354,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Button/disconnect",
+    "score": 0.05790142276422764,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/tri/_triangulation.py/Triangulation/get_from_args_and_kwargs",
+    "score": 0.057582073996873366,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axisartist/axis_artist.py/AttributeCopier/get_ref_artist",
+    "score": 0.056829440905874024,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/switch_backend",
+    "score": 0.05657078398195149,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_weak_or_strong_ref",
+    "score": 0.05169491525423729,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.05132275132275132,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 0.050492853622474125,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 0.04964744518497054,
+    "supports": []
+   },
+   {
+    "id": "matplotlib/setupext.py/Python/check",
+    "score": 0.048298395445134576,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/CallbackRegistry/process",
+    "score": 0.04754330151997172,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/showEvent",
+    "score": 0.047520661157024795,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/use",
+    "score": 0.046178658416167466,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/__init__",
+    "score": 0.0453030303030303,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_get_version",
+    "score": 0.045208333333333336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/patches.py/ConnectionPatch/__init__",
+    "score": 0.04220314735336194,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/format_cursor_data",
+    "score": 0.04195240016135539,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_combine_masks",
+    "score": 0.03982930298719772,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_base.py/_process_plot_var_args/__call__",
+    "score": 0.03970125786163522,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_StrongRef/__init__",
+    "score": 0.0390964590964591,
+    "supports": []
+   }
+  ],
+  "graph": [
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented",
+    "score": 0.2409090909090909,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_release",
+    "score": 0.2094988344988345,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/FigureCanvasBase/mpl_disconnect",
+    "score": 0.13303082685105155,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+     "lib/matplotlib/pyplot.py/disconnect",
+     "lib/matplotlib/widgets.py/MultiCursor/disconnect"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_motion",
+    "score": 0.1271276595744681,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/disconnect",
+    "score": 0.12433048433048434,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/on_pick",
+    "score": 0.12071288584027437,
+    "supports": [
+     "lib/matplotlib/offsetbox.py/DraggableBase/_check_still_parented"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backend_managers.py/ToolManager/canvas",
+    "score": 0.0918522539044678,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/MultiCursor/disconnect",
+    "score": 0.09080841638981174,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/disconnect",
+    "score": 0.08476733614348293,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/print_figure",
+    "score": 0.07796451914098973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 0.07734573119188504,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.07535885167464115,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/CallbackRegistry/disconnect",
+    "score": 0.07297293312890671,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/CheckButtons/disconnect",
+    "score": 0.0720097316404867,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0712719298245614,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.06969309462915602,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axisartist/axis_artist.py/AttributeCopier/get_attribute_from_ref_artist",
+    "score": 0.06768603465851172,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/offsetbox.py/DraggableBase/__init__",
+    "score": 0.06532485875706215,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/get_cursor_data",
+    "score": 0.06347826086956522,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_rc_params_in_file",
+    "score": 0.06346153846153846,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/RcParams/_get_backend_or_none",
+    "score": 0.059335038363171354,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Button/disconnect",
+    "score": 0.05790142276422764,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/tri/_triangulation.py/Triangulation/get_from_args_and_kwargs",
+    "score": 0.057582073996873366,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axisartist/axis_artist.py/AttributeCopier/get_ref_artist",
+    "score": 0.056829440905874024,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/switch_backend",
+    "score": 0.05657078398195149,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_weak_or_strong_ref",
+    "score": 0.05169491525423729,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.05132275132275132,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__init__",
+    "score": 0.050774521150805225,
+    "supports": [
+     "lib/matplotlib/backend_managers.py/ToolManager/canvas"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 0.050492853622474125,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 0.04964744518497054,
+    "supports": []
+   },
+   {
+    "id": "matplotlib/setupext.py/Python/check",
+    "score": 0.048298395445134576,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/CallbackRegistry/process",
+    "score": 0.04754330151997172,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/showEvent",
+    "score": 0.047520661157024795,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_agg.py/RendererAgg/start_filter",
+    "score": 0.04722868881993918,
+    "supports": [
+     "lib/matplotlib/backend_managers.py/ToolManager/canvas"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/use",
+    "score": 0.046178658416167466,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureCanvasQT/__init__",
+    "score": 0.0453030303030303,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_get_version",
+    "score": 0.045208333333333336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/patches.py/ConnectionPatch/__init__",
+    "score": 0.04220314735336194,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/format_cursor_data",
+    "score": 0.04195240016135539,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook.py/_combine_masks",
+    "score": 0.03982930298719772,
+    "supports": []
+   }
+  ]
+ }
+}

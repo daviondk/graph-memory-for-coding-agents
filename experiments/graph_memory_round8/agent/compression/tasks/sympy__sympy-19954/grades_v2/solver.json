@@ -1,0 +1,131 @@
+{
+ "flat": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/combinatorics/perm_groups.py": "--- \n+++ \n@@ -2198,7 +2198,8 @@\n                 for i, r in enumerate(rep_blocks):\n                     if len(r) > len(rep) and rep.issubset(r):\n                         # i-th block system is not minimal\n-                        del num_blocks[i], blocks[i]\n+                        num_blocks.pop(i)\n+                        blocks.pop(i)\n                         to_remove.append(rep_blocks[i])\n                     elif len(r) < len(rep) and r.issubset(rep):\n                         # the system being checked is not minimal"
+  },
+  "call_id": "816f1791e3814c6b386e892723c9b392b86d9aac19d70924e30f3c99afcdcf2a",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 4.14100000000326,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_polycyclic",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_is_alt_sym",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_random_pr",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbits",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_PermutationGroup",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbit_rep",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_center",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_order",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_elementary",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_has",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_eq",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_make_perm"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_polycyclic",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_is_alt_sym",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_random_pr",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbits",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_PermutationGroup",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbit_rep",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_center",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_order",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_elementary",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_has",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_eq",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_make_perm"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 3.3429999999934807,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "evidence": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/combinatorics/perm_groups.py": "--- \n+++ \n@@ -2198,7 +2198,8 @@\n                 for i, r in enumerate(rep_blocks):\n                     if len(r) > len(rep) and rep.issubset(r):\n                         # i-th block system is not minimal\n-                        del num_blocks[i], blocks[i]\n+                        num_blocks.pop(i)\n+                        blocks.pop(i)\n                         to_remove.append(rep_blocks[i])\n                     elif len(r) < len(rep) and r.issubset(rep):\n                         # the system being checked is not minimal"
+  },
+  "call_id": "5ee131c3d24515843138469e43d7d2cee5d1c95f4e93e6c79d026b6307bae6f5",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 4.14100000000326,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_polycyclic",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_is_alt_sym",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_random_pr",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbits",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_PermutationGroup",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbit_rep",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_center",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_order",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_elementary",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_has",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_eq",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_make_perm"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/combinatorics/tests/test_perm_groups.py::test_polycyclic",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_is_alt_sym",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_random_pr",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbits",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_PermutationGroup",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_orbit_rep",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_center",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_order",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_elementary",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_has",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_eq",
+     "sympy/combinatorics/tests/test_perm_groups.py::test_make_perm"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 3.3429999999934807,
+    "complete": true,
+    "diagnostic": ""
+   }
+  },
+  "reused": "flat"
+ }
+}

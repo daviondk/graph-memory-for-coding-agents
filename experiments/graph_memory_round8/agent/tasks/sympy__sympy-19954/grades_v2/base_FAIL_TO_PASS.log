@@ -1,0 +1,15 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+_____________________________ test_sylow_subgroup _____________________________
+sympy\combinatorics\tests\test_perm_groups.py:909: in test_sylow_subgroup
+    S = G.sylow_subgroup(p=2)
+sympy\combinatorics\perm_groups.py:4354: in sylow_subgroup
+    blocks = self.minimal_blocks()
+sympy\combinatorics\perm_groups.py:2201: in minimal_blocks
+    del num_blocks[i], blocks[i]
+E   IndexError: list assignment index out of range
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round8\agent\tasks\sympy__sympy-19954\grades_v2\base_FAIL_TO_PASS.xml -
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/combinatorics/tests/test_perm_groups.py::test_sylow_subgroup - I...
+1 failed, 2 warnings in 1.20s

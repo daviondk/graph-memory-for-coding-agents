@@ -1,0 +1,33 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+__________________________________ test_Mod ___________________________________
+sympy\core\tests\test_arit.py:1921: in test_Mod
+    (Piecewise((x_r, y_r > x_r), (y_r, True)) / z) % 1
+sympy\core\decorators.py:266: in _func
+    return func(self, other)
+sympy\core\decorators.py:136: in binary_op_wrapper
+    return func(self, other)
+sympy\core\expr.py:280: in __mod__
+    return Mod(self, other)
+sympy\core\cache.py:72: in wrapper
+    retval = cfunc(*args, **kwargs)
+sympy\core\function.py:473: in __new__
+    result = super().__new__(cls, *args, **options)
+sympy\core\cache.py:72: in wrapper
+    retval = cfunc(*args, **kwargs)
+sympy\core\function.py:285: in __new__
+    evaluated = cls.eval(*args)
+sympy\core\mod.py:169: in eval
+    G = gcd(p, q)
+sympy\polys\polytools.py:5306: in gcd
+    (F, G), opt = parallel_poly_from_expr((f, g), *gens, **args)
+sympy\polys\polytools.py:4340: in parallel_poly_from_expr
+    return _parallel_poly_from_expr(exprs, opt)
+sympy\polys\polytools.py:4399: in _parallel_poly_from_expr
+    raise PolynomialError("Piecewise generators do not make sense")
+E   sympy.polys.polyerrors.PolynomialError: Piecewise generators do not make sense
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round8\agent\tasks\sympy__sympy-21379\grades_v2\base_FAIL_TO_PASS.xml -
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/core/tests/test_arit.py::test_Mod - sympy.polys.polyerrors.Polyn...
+1 failed, 2 warnings in 2.29s

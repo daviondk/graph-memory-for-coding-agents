@@ -1,0 +1,131 @@
+{
+ "flat": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/solvers/solveset.py": "--- \n+++ \n@@ -354,7 +354,7 @@\n         parg = _invert_real(f, pos, symbol)\n         narg = _invert_real(-f, pos, symbol)\n         if parg[0] != narg[0]:\n-            raise NotImplementedError\n+            return parg[0], Union(narg[1], parg[1])\n         return parg[0], Union(narg[1], parg[1])\n \n     # check conditions: all these must be true. If any are unknown"
+  },
+  "call_id": "89bec7057249389c65990a69418edc52d7a81669be3ab62539293a60150f0c7d",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_relational.py::test_issue_18188"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/core/tests/test_relational.py::test_issue_18188"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 2.5,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_relational.py::test_issue_8449",
+     "sympy/core/tests/test_relational.py::test_issue_10927",
+     "sympy/core/tests/test_relational.py::test_issue_10633",
+     "sympy/core/tests/test_relational.py::test_complex_infinity_inequalities",
+     "sympy/core/tests/test_relational.py::test_x_minus_y_not_same_as_x_lt_y",
+     "sympy/core/tests/test_relational.py::test_improved_canonical",
+     "sympy/core/tests/test_relational.py::test_Not",
+     "sympy/core/tests/test_relational.py::test_inequalities_cant_sympify_other",
+     "sympy/core/tests/test_relational.py::test_binary_symbols",
+     "sympy/core/tests/test_relational.py::test_imaginary_compare_raises_TypeError",
+     "sympy/core/tests/test_relational.py::test_inequalities_symbol_name_same_complex",
+     "sympy/core/tests/test_relational.py::test_rich_cmp"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/core/tests/test_relational.py::test_issue_8449",
+     "sympy/core/tests/test_relational.py::test_issue_10927",
+     "sympy/core/tests/test_relational.py::test_issue_10633",
+     "sympy/core/tests/test_relational.py::test_complex_infinity_inequalities",
+     "sympy/core/tests/test_relational.py::test_x_minus_y_not_same_as_x_lt_y",
+     "sympy/core/tests/test_relational.py::test_improved_canonical",
+     "sympy/core/tests/test_relational.py::test_Not",
+     "sympy/core/tests/test_relational.py::test_inequalities_cant_sympify_other",
+     "sympy/core/tests/test_relational.py::test_binary_symbols",
+     "sympy/core/tests/test_relational.py::test_imaginary_compare_raises_TypeError",
+     "sympy/core/tests/test_relational.py::test_inequalities_symbol_name_same_complex",
+     "sympy/core/tests/test_relational.py::test_rich_cmp"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.922000000020489,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "evidence": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/solvers/solveset.py": "--- \n+++ \n@@ -354,7 +354,7 @@\n         parg = _invert_real(f, pos, symbol)\n         narg = _invert_real(-f, pos, symbol)\n         if parg[0] != narg[0]:\n-            raise NotImplementedError\n+            return parg[0], Union(narg[1], parg[1])\n         return parg[0], Union(narg[1], parg[1])\n \n     # check conditions: all these must be true. If any are unknown"
+  },
+  "call_id": "89bec7057249389c65990a69418edc52d7a81669be3ab62539293a60150f0c7d",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_relational.py::test_issue_18188"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/core/tests/test_relational.py::test_issue_18188"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 2.5,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_relational.py::test_issue_8449",
+     "sympy/core/tests/test_relational.py::test_issue_10927",
+     "sympy/core/tests/test_relational.py::test_issue_10633",
+     "sympy/core/tests/test_relational.py::test_complex_infinity_inequalities",
+     "sympy/core/tests/test_relational.py::test_x_minus_y_not_same_as_x_lt_y",
+     "sympy/core/tests/test_relational.py::test_improved_canonical",
+     "sympy/core/tests/test_relational.py::test_Not",
+     "sympy/core/tests/test_relational.py::test_inequalities_cant_sympify_other",
+     "sympy/core/tests/test_relational.py::test_binary_symbols",
+     "sympy/core/tests/test_relational.py::test_imaginary_compare_raises_TypeError",
+     "sympy/core/tests/test_relational.py::test_inequalities_symbol_name_same_complex",
+     "sympy/core/tests/test_relational.py::test_rich_cmp"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/core/tests/test_relational.py::test_issue_8449",
+     "sympy/core/tests/test_relational.py::test_issue_10927",
+     "sympy/core/tests/test_relational.py::test_issue_10633",
+     "sympy/core/tests/test_relational.py::test_complex_infinity_inequalities",
+     "sympy/core/tests/test_relational.py::test_x_minus_y_not_same_as_x_lt_y",
+     "sympy/core/tests/test_relational.py::test_improved_canonical",
+     "sympy/core/tests/test_relational.py::test_Not",
+     "sympy/core/tests/test_relational.py::test_inequalities_cant_sympify_other",
+     "sympy/core/tests/test_relational.py::test_binary_symbols",
+     "sympy/core/tests/test_relational.py::test_imaginary_compare_raises_TypeError",
+     "sympy/core/tests/test_relational.py::test_inequalities_symbol_name_same_complex",
+     "sympy/core/tests/test_relational.py::test_rich_cmp"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.922000000020489,
+    "complete": true,
+    "diagnostic": ""
+   }
+  },
+  "reused": "flat"
+ }
+}

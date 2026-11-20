@@ -1,0 +1,130 @@
+{
+ "base": {
+  "applied": true,
+  "reason": "",
+  "diff": {},
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+     "sympy/physics/quantum/tests/test_operator.py::test_identity"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+     "sympy/physics/quantum/tests/test_operator.py::test_identity"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 4.2810000000172295,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/physics/quantum/tests/test_operator.py::test_hermitian",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator",
+     "sympy/physics/quantum/tests/test_operator.py::test_outer_product",
+     "sympy/physics/quantum/tests/test_dagger.py::test_scalars",
+     "sympy/physics/quantum/tests/test_dagger.py::test_eval_adjoint",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_dagger",
+     "sympy/physics/quantum/tests/test_dagger.py::test_matrix",
+     "sympy/physics/quantum/tests/test_operator.py::test_unitary",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_inv"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/physics/quantum/tests/test_operator.py::test_hermitian",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator",
+     "sympy/physics/quantum/tests/test_operator.py::test_outer_product",
+     "sympy/physics/quantum/tests/test_dagger.py::test_scalars",
+     "sympy/physics/quantum/tests/test_dagger.py::test_eval_adjoint",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_dagger",
+     "sympy/physics/quantum/tests/test_dagger.py::test_matrix",
+     "sympy/physics/quantum/tests/test_operator.py::test_unitary",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_inv"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.75,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "gold": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/physics/quantum/operator.py": "--- \n+++ \n@@ -307,7 +307,7 @@\n \n     def __mul__(self, other):\n \n-        if isinstance(other, Operator):\n+        if isinstance(other, (Operator, Dagger)):\n             return other\n \n         return Mul(self, other)",
+   "sympy/physics/quantum/dagger.py": "--- \n+++ \n@@ -1,8 +1,6 @@\n \"\"\"Hermitian conjugation.\"\"\"\n \n-from __future__ import print_function, division\n-\n-from sympy.core import Expr\n+from sympy.core import Expr, Mul\n from sympy.functions.elementary.complexes import adjoint\n \n __all__ = [\n@@ -85,5 +83,12 @@\n             return obj\n         return Expr.__new__(cls, arg)\n \n+    def __mul__(self, other):\n+        from sympy.physics.quantum import IdentityOperator\n+        if isinstance(other, IdentityOperator):\n+            return self\n+\n+        return Mul(self, other)\n+\n adjoint.__name__ = \"Dagger\"\n adjoint._sympyrepr = lambda a, b: \"Dagger(%s)\" % b._print(a.args[0])"
+  },
+  "gold_lines": {
+   "sympy/physics/quantum/operator.py": [
+    310
+   ],
+   "sympy/physics/quantum/dagger.py": [
+    3,
+    4,
+    5,
+    88
+   ]
+  },
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+     "sympy/physics/quantum/tests/test_operator.py::test_identity"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/physics/quantum/tests/test_dagger.py::test_dagger_mul",
+     "sympy/physics/quantum/tests/test_operator.py::test_identity"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.6880000000237487,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/physics/quantum/tests/test_operator.py::test_hermitian",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator",
+     "sympy/physics/quantum/tests/test_operator.py::test_outer_product",
+     "sympy/physics/quantum/tests/test_dagger.py::test_scalars",
+     "sympy/physics/quantum/tests/test_dagger.py::test_eval_adjoint",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_dagger",
+     "sympy/physics/quantum/tests/test_dagger.py::test_matrix",
+     "sympy/physics/quantum/tests/test_operator.py::test_unitary",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_inv"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/physics/quantum/tests/test_operator.py::test_hermitian",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator",
+     "sympy/physics/quantum/tests/test_operator.py::test_outer_product",
+     "sympy/physics/quantum/tests/test_dagger.py::test_scalars",
+     "sympy/physics/quantum/tests/test_dagger.py::test_eval_adjoint",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_dagger",
+     "sympy/physics/quantum/tests/test_dagger.py::test_matrix",
+     "sympy/physics/quantum/tests/test_operator.py::test_unitary",
+     "sympy/physics/quantum/tests/test_operator.py::test_operator_inv"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.7179999999934807,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ }
+}

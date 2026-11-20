@@ -1,0 +1,472 @@
+{
+ "task": "tjorim__pyrail-23",
+ "repo": "tjorim__pyrail",
+ "n_corpus": 19,
+ "corpus_sha256": "2d9b98a7059c2bb8430ed6a08fe608f71c4299fc060da79d716e78937f982b2e",
+ "query_sha256": "780652d411d96ca8538f542c87225247330abece30296158655894546a650bac",
+ "anchors": [],
+ "edges": [
+  [
+   "pyrail/irail.py/iRail/__init__",
+   "pyrail/irail.py/iRail/lang"
+  ],
+  [
+   "pyrail/irail.py/iRail/_refill_tokens",
+   "pyrail/irail.py/iRail/_handle_rate_limit"
+  ],
+  [
+   "pyrail/irail.py/iRail/_handle_rate_limit",
+   "pyrail/irail.py/iRail/_do_request"
+  ],
+  [
+   "pyrail/irail.py/iRail/_add_etag_header",
+   "pyrail/irail.py/iRail/_do_request"
+  ],
+  [
+   "pyrail/irail.py/iRail/_validate_date",
+   "pyrail/irail.py/iRail/_validate_params"
+  ],
+  [
+   "pyrail/irail.py/iRail/_validate_time",
+   "pyrail/irail.py/iRail/_validate_params"
+  ],
+  [
+   "pyrail/irail.py/iRail/_validate_params",
+   "pyrail/irail.py/iRail/_do_request"
+  ],
+  [
+   "pyrail/irail.py/iRail/_handle_success_response",
+   "pyrail/irail.py/iRail/_handle_response"
+  ],
+  [
+   "pyrail/irail.py/iRail/_handle_response",
+   "pyrail/irail.py/iRail/_do_request"
+  ],
+  [
+   "pyrail/irail.py/iRail/_do_request",
+   "pyrail/irail.py/iRail/get_stations"
+  ],
+  [
+   "pyrail/irail.py/iRail/_do_request",
+   "pyrail/irail.py/iRail/get_liveboard"
+  ],
+  [
+   "pyrail/irail.py/iRail/_do_request",
+   "pyrail/irail.py/iRail/get_connections"
+  ],
+  [
+   "pyrail/irail.py/iRail/_do_request",
+   "pyrail/irail.py/iRail/get_vehicle"
+  ],
+  [
+   "pyrail/irail.py/iRail/_do_request",
+   "pyrail/irail.py/iRail/get_composition"
+  ],
+  [
+   "pyrail/irail.py/iRail/_do_request",
+   "pyrail/irail.py/iRail/get_disturbances"
+  ]
+ ],
+ "explicit_identifiers": {},
+ "candidates": [
+  {
+   "id": "pyrail/irail.py/iRail/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06761020421981812,
+    "rrf": 0.10795454545454546,
+    "direct": 0.10795454545454546,
+    "graph": 0.10795454545454546,
+    "rewired": 0.10795454545454546,
+    "dense_dot": 40.03023147583008
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 6,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 10,
+    "rewired": 10,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/__aenter__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.02971480041742325,
+    "rrf": 0.09166666666666667,
+    "direct": 0.09166666666666667,
+    "graph": 0.09166666666666667,
+    "rewired": 0.09166666666666667,
+    "dense_dot": 17.651161193847656
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 14,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 13,
+    "rewired": 13,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/__aexit__",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.003994688857346773,
+    "rrf": 0.08210180623973727,
+    "direct": 0.08210180623973727,
+    "graph": 0.08210180623973727,
+    "rewired": 0.08210180623973727,
+    "dense_dot": -2.3728082180023193
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 19,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 16,
+    "rewired": 16,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/lang",
+   "scores": {
+    "bm25": 1.9326640757804403,
+    "dense": 0.04739338904619217,
+    "rrf": 0.12454212454212454,
+    "direct": 0.12454212454212454,
+    "graph": 0.12454212454212454,
+    "rewired": 0.12454212454212454,
+    "dense_dot": 28.167266845703125
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 11,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_refill_tokens",
+   "scores": {
+    "bm25": 1.3772177166679884,
+    "dense": 0.06881756335496902,
+    "rrf": 0.13025210084033612,
+    "direct": 0.13025210084033612,
+    "graph": 0.13025210084033612,
+    "rewired": 0.13025210084033612,
+    "dense_dot": 40.59636688232422
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 4,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_handle_rate_limit",
+   "scores": {
+    "bm25": 1.458309286665636,
+    "dense": 0.04424342140555382,
+    "rrf": 0.11212121212121212,
+    "direct": 0.11212121212121212,
+    "graph": 0.11212121212121212,
+    "rewired": 0.11212121212121212,
+    "dense_dot": 26.103084564208984
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 12,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 8,
+    "rewired": 8,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_add_etag_header",
+   "scores": {
+    "bm25": 3.356209260273324,
+    "dense": 0.08930844813585281,
+    "rrf": 0.17424242424242425,
+    "direct": 0.17424242424242425,
+    "graph": 0.17424242424242425,
+    "rewired": 0.17424242424242425,
+    "dense_dot": 52.84447479248047
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 2,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_validate_date",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.048505283892154694,
+    "rrf": 0.09166666666666667,
+    "direct": 0.09166666666666667,
+    "graph": 0.09166666666666667,
+    "rewired": 0.09166666666666667,
+    "dense_dot": 28.775772094726562
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 10,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 14,
+    "rewired": 14,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_validate_time",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.052536383271217346,
+    "rrf": 0.0988235294117647,
+    "direct": 0.0988235294117647,
+    "graph": 0.0988235294117647,
+    "rewired": 0.0988235294117647,
+    "dense_dot": 31.181427001953125
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 7,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 12,
+    "rewired": 12,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_validate_params",
+   "scores": {
+    "bm25": 1.4810192623867202,
+    "dense": 0.01414044201374054,
+    "rrf": 0.10989010989010989,
+    "direct": 0.10989010989010989,
+    "graph": 0.10989010989010989,
+    "rewired": 0.10989010989010989,
+    "dense_dot": 8.353273391723633
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 16,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 9,
+    "rewired": 9,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_handle_success_response",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07236117869615555,
+    "rrf": 0.12040133779264214,
+    "direct": 0.12040133779264214,
+    "graph": 0.12040133779264214,
+    "rewired": 0.12040133779264214,
+    "dense_dot": 42.679931640625
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 3,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 6,
+    "rewired": 6,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_handle_response",
+   "scores": {
+    "bm25": 1.2321283463731583,
+    "dense": 0.10633479803800583,
+    "rrf": 0.14646464646464646,
+    "direct": 0.14646464646464646,
+    "graph": 0.14646464646464646,
+    "rewired": 0.14646464646464646,
+    "dense_dot": 62.74798583984375
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 1,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/_do_request",
+   "scores": {
+    "bm25": 3.340333284666184,
+    "dense": 0.05086250603199005,
+    "rrf": 0.1388888888888889,
+    "direct": 0.1388888888888889,
+    "graph": 0.1388888888888889,
+    "rewired": 0.1388888888888889,
+    "dense_dot": 30.192712783813477
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 8,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/get_stations",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.048607904464006424,
+    "rrf": 0.08711433756805807,
+    "direct": 0.08711433756805807,
+    "graph": 0.08711433756805807,
+    "rewired": 0.08711433756805807,
+    "dense_dot": 28.846332550048828
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 9,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 15,
+    "rewired": 15,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/get_liveboard",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.005392853170633316,
+    "rrf": 0.07142857142857142,
+    "direct": 0.07142857142857142,
+    "graph": 0.07142857142857142,
+    "rewired": 0.07142857142857142,
+    "dense_dot": 3.1905384063720703
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 18,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 19,
+    "rewired": 19,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/get_connections",
+   "scores": {
+    "bm25": 1.0152458196478857,
+    "dense": 0.06821577250957489,
+    "rrf": 0.11929824561403508,
+    "direct": 0.11929824561403508,
+    "graph": 0.11929824561403508,
+    "rewired": 0.11929824561403508,
+    "dense_dot": 40.52598571777344
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 5,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 7,
+    "rewired": 7,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/get_vehicle",
+   "scores": {
+    "bm25": 1.4236504856400947,
+    "dense": 0.010715736076235771,
+    "rrf": 0.09953703703703703,
+    "direct": 0.09953703703703703,
+    "graph": 0.09953703703703703,
+    "rewired": 0.09953703703703703,
+    "dense_dot": 6.3537163734436035
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 17,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 11,
+    "rewired": 11,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/get_composition",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.016762491315603256,
+    "rrf": 0.07846153846153847,
+    "direct": 0.07846153846153847,
+    "graph": 0.07846153846153847,
+    "rewired": 0.07846153846153847,
+    "dense_dot": 9.929611206054688
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 15,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 18,
+    "rewired": 18,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "pyrail/irail.py/iRail/get_disturbances",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.04239106550812721,
+    "rrf": 0.08051529790660225,
+    "direct": 0.08051529790660225,
+    "graph": 0.08051529790660225,
+    "rewired": 0.08051529790660225,
+    "dense_dot": 25.16539192199707
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 13,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 17,
+    "rewired": 17,
+    "dense_dot": 13
+   }
+  }
+ ]
+}

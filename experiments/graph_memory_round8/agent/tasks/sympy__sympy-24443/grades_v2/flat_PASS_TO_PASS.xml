@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.276" timestamp="2026-11-20T22:59:28.048776" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.combinatorics.tests.test_homomorphisms" name="test_isomorphisms" time="0.055"><failure message="KeyError: c">sympy\combinatorics\tests\test_homomorphisms.py:79: in test_isomorphisms
+    check, T =  group_isomorphism(G, H)
+sympy\combinatorics\homomorphisms.py:529: in group_isomorphism
+    if _check_homomorphism(G, _H, _images):
+sympy\combinatorics\homomorphisms.py:366: in _check_homomorphism
+    s = _image(r).is_identity
+sympy\combinatorics\homomorphisms.py:328: in _image
+    w = w*images[sym]**p
+E   KeyError: c</failure></testcase></testsuite></testsuites>

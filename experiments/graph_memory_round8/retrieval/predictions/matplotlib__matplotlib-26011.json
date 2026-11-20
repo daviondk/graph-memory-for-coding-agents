@@ -1,0 +1,979 @@
+{
+ "task": "matplotlib__matplotlib-26011",
+ "repo": "matplotlib__matplotlib",
+ "corpus_sha256": "398fef5cfe5c9cf8162f5a3c8a195f9f8d9a1933f2078ced53b394ed79457622",
+ "query_sha256": "3458a32b81335fb9fa0d8fb51443fa3f9276f8d67f8805ad5f16d1012f21efad",
+ "n_corpus": 6710,
+ "anchors": [
+  "lib/matplotlib/axes/_base.py/_AxesBase/axis",
+  "lib/matplotlib/axes/_base.py/_AxesBase/set_xlim"
+ ],
+ "edges": [
+  [
+   "lib/matplotlib/axis.py/Axis/_set_lim",
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_xlim"
+  ],
+  [
+   "lib/matplotlib/axis.py/Axis/_set_lim",
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_ylim"
+  ],
+  [
+   "lib/matplotlib/axis.py/Axis/_set_lim",
+   "lib/matplotlib/axes/_base.py/_AxesBase/__clear"
+  ],
+  [
+   "lib/matplotlib/axis.py/Axis/_set_lim",
+   "lib/matplotlib/axis.py/Axis/set_view_interval"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_xlim",
+   "lib/matplotlib/axes/_base.py/_AxesBase/axis"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_xlim",
+   "lib/matplotlib/axes/_base.py/_AxesBase/sharex"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_xlim",
+   "lib/matplotlib/pyplot.py/xlim"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_xlim",
+   "lib/matplotlib/projections/polar.py/PolarAxes/set_thetalim"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/autoscale_view",
+   "lib/matplotlib/axes/_base.py/_AxesBase/axis"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/autoscale_view",
+   "lib/matplotlib/axes/_base.py/handle_single_axis"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/axis",
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_ylim"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/axis",
+   "lib/matplotlib/figure.py/FigureBase/subplots"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/axis",
+   "lib/matplotlib/pyplot.py/subplot_mosaic"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/axis",
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_aspect"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/axis",
+   "lib/matplotlib/axes/_base.py/_AxesBase/apply_aspect"
+  ],
+  [
+   "lib/matplotlib/pyplot.py/subplot",
+   "lib/matplotlib/figure.py/FigureBase/delaxes"
+  ],
+  [
+   "lib/matplotlib/pyplot.py/subplot",
+   "lib/matplotlib/axes/_axes.py/Axes/plot"
+  ],
+  [
+   "lib/matplotlib/pyplot.py/subplot",
+   "lib/matplotlib/figure.py/FigureBase/add_subplot"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_adjustable",
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_aspect"
+  ],
+  [
+   "lib/matplotlib/figure.py/FigureBase/subplots",
+   "lib/matplotlib/axes/_axes.py/Axes/plot"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/__clear",
+   "lib/matplotlib/axes/_base.py/_AxesBase/grid"
+  ],
+  [
+   "lib/matplotlib/pyplot.py/subplots",
+   "lib/matplotlib/axes/_axes.py/Axes/plot"
+  ],
+  [
+   "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/__init__",
+   "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/view_init"
+  ],
+  [
+   "lib/matplotlib/axes/_axes.py/Axes/plot",
+   "lib/matplotlib/figure.py/FigureBase/legend"
+  ],
+  [
+   "lib/matplotlib/axes/_axes.py/Axes/plot",
+   "lib/matplotlib/axes/_axes.py/Axes/legend"
+  ],
+  [
+   "lib/matplotlib/axes/_axes.py/Axes/imshow",
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_aspect"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_aspect",
+   "lib/matplotlib/axes/_base.py/_AxesBase/apply_aspect"
+  ],
+  [
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_aspect",
+   "lib/matplotlib/axes/_base.py/_AxesBase/set_anchor"
+  ]
+ ],
+ "explicit_identifiers": {
+  "xlim_changed": 4,
+  "axis": 6,
+  "issue": 3,
+  "callbacks": 4,
+  "_base": 2,
+  "set_xlim": 3,
+  "process": 1,
+  "_shared_x_axes": 1,
+  "get_siblings": 1,
+  "viewLim": 1
+ },
+ "candidates": [
+  {
+   "id": "lib/matplotlib/axis.py/Axis/_set_lim",
+   "scores": {
+    "bm25": 99.0147149212725,
+    "dense": 0.4663331210613251,
+    "rrf": 0.16783216783216784,
+    "direct": 0.16783216783216784,
+    "graph": 0.2094988344988345,
+    "rewired": 0.16783216783216784,
+    "dense_dot": 273.0318603515625
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 3,
+    "rrf": 2,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 4,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/set_xlim",
+   "scores": {
+    "bm25": 85.35996907022641,
+    "dense": 0.5270253419876099,
+    "rrf": 0.17424242424242425,
+    "direct": 0.25757575757575757,
+    "graph": 0.25757575757575757,
+    "rewired": 0.25757575757575757,
+    "dense_dot": 310.42034912109375
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/autoscale_view",
+   "scores": {
+    "bm25": 82.88646888616645,
+    "dense": 0.36781129240989685,
+    "rrf": 0.12955465587044535,
+    "direct": 0.12955465587044535,
+    "graph": 0.17500920132499082,
+    "rewired": 0.12955465587044535,
+    "dense_dot": 215.51516723632812
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 9,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/axis",
+   "scores": {
+    "bm25": 80.20292970533312,
+    "dense": 0.3981672525405884,
+    "rrf": 0.14285714285714285,
+    "direct": 0.23376623376623376,
+    "graph": 0.23376623376623376,
+    "rewired": 0.23376623376623376,
+    "dense_dot": 234.0655517578125
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 4,
+    "rrf": 3,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "lib/matplotlib/pyplot.py/show",
+   "scores": {
+    "bm25": 78.71983107368386,
+    "dense": 0.16674305498600006,
+    "rrf": 0.08794326241134752,
+    "direct": 0.08794326241134752,
+    "graph": 0.08794326241134752,
+    "rewired": 0.08794326241134752,
+    "dense_dot": 97.70579528808594
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 37,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 17,
+    "rewired": 13,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_process_plot_var_args/_makefill",
+   "scores": {
+    "bm25": 78.66805148737359,
+    "dense": 0.18961754441261292,
+    "rrf": 0.08522727272727273,
+    "direct": 0.08522727272727273,
+    "graph": 0.08522727272727273,
+    "rewired": 0.08522727272727273,
+    "dense_dot": 109.84519958496094
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 34,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 18,
+    "rewired": 14,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "lib/matplotlib/pyplot.py/subplot",
+   "scores": {
+    "bm25": 77.79246930827063,
+    "dense": 0.21751976013183594,
+    "rrf": 0.08321377331420374,
+    "direct": 0.08321377331420374,
+    "graph": 0.08321377331420374,
+    "rewired": 0.08321377331420374,
+    "dense_dot": 127.58209991455078
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 31,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 19,
+    "rewired": 15,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/sharex",
+   "scores": {
+    "bm25": 77.33711875037477,
+    "dense": 0.4945516288280487,
+    "rrf": 0.1388888888888889,
+    "direct": 0.1388888888888889,
+    "graph": 0.18055555555555555,
+    "rewired": 0.18434343434343436,
+    "dense_dot": 290.28173828125
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 2,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 3,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/set_adjustable",
+   "scores": {
+    "bm25": 77.2339486939122,
+    "dense": 0.3683740794658661,
+    "rrf": 0.10818713450292397,
+    "direct": 0.10818713450292397,
+    "graph": 0.10818713450292397,
+    "rewired": 0.10818713450292397,
+    "dense_dot": 216.09426879882812
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 8,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 10,
+    "rewired": 6,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "lib/matplotlib/backend_bases.py/TimerBase/_on_timer",
+   "scores": {
+    "bm25": 75.3206282345994,
+    "dense": 0.223338782787323,
+    "rrf": 0.07631578947368421,
+    "direct": 0.07631578947368421,
+    "graph": 0.07631578947368421,
+    "rewired": 0.07631578947368421,
+    "dense_dot": 131.29299926757812
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 28,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 20,
+    "rewired": 16,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/set_ylim",
+   "scores": {
+    "bm25": 73.31193088176697,
+    "dense": 0.3587014377117157,
+    "rrf": 0.09761904761904762,
+    "direct": 0.09761904761904762,
+    "graph": 0.14307359307359307,
+    "rewired": 0.09761904761904762,
+    "dense_dot": 210.72183227539062
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 10,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 6,
+    "rewired": 11,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "lib/matplotlib/figure.py/FigureBase/delaxes",
+   "scores": {
+    "bm25": 70.7054731735432,
+    "dense": 0.33517879247665405,
+    "rrf": 0.09307359307359307,
+    "direct": 0.09307359307359307,
+    "graph": 0.09307359307359307,
+    "rewired": 0.09307359307359307,
+    "dense_dot": 196.45513916015625
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 11,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 15,
+    "rewired": 12,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/handle_single_axis",
+   "scores": {
+    "bm25": 70.00052387096922,
+    "dense": 0.376636803150177,
+    "rrf": 0.10597826086956522,
+    "direct": 0.10597826086956522,
+    "graph": 0.10597826086956522,
+    "rewired": 0.10597826086956522,
+    "dense_dot": 218.32955932617188
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 6,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 13,
+    "rewired": 7,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "lib/matplotlib/pyplot.py/xlim",
+   "scores": {
+    "bm25": 69.50807420641645,
+    "dense": 0.37316587567329407,
+    "rrf": 0.10049019607843138,
+    "direct": 0.10049019607843138,
+    "graph": 0.14215686274509803,
+    "rewired": 0.10049019607843138,
+    "dense_dot": 219.50350952148438
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 7,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 7,
+    "rewired": 9,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "lib/matplotlib/figure.py/FigureBase/subplots",
+   "scores": {
+    "bm25": 69.26969473071159,
+    "dense": 0.261728972196579,
+    "rrf": 0.07030303030303031,
+    "direct": 0.07030303030303031,
+    "graph": 0.11575757575757577,
+    "rewired": 0.07030303030303031,
+    "dense_dot": 153.41366577148438
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 23,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 8,
+    "rewired": 19,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "lib/matplotlib/_api/__init__.py/select_matching_signature",
+   "scores": {
+    "bm25": 68.89195730637942,
+    "dense": 0.13299714028835297,
+    "rrf": 0.05846153846153847,
+    "direct": 0.05846153846153847,
+    "graph": 0.05846153846153847,
+    "rewired": 0.05846153846153847,
+    "dense_dot": 78.01498413085938
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 40,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 28,
+    "rewired": 27,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/__clear",
+   "scores": {
+    "bm25": 67.72209973565728,
+    "dense": 0.380741149187088,
+    "rrf": 0.1037037037037037,
+    "direct": 0.1037037037037037,
+    "graph": 0.1037037037037037,
+    "rewired": 0.1037037037037037,
+    "dense_dot": 223.0447998046875
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 5,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 14,
+    "rewired": 8,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "lib/matplotlib/pyplot.py/subplots",
+   "scores": {
+    "bm25": 67.24654840382627,
+    "dense": 0.25210341811180115,
+    "rrf": 0.06512605042016806,
+    "direct": 0.06512605042016806,
+    "graph": 0.06512605042016806,
+    "rewired": 0.06512605042016806,
+    "dense_dot": 147.0438232421875
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 24,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 24,
+    "rewired": 22,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/locator_params",
+   "scores": {
+    "bm25": 66.46769403679606,
+    "dense": 0.29083043336868286,
+    "rrf": 0.07294429708222812,
+    "direct": 0.07294429708222812,
+    "graph": 0.07294429708222812,
+    "rewired": 0.07294429708222812,
+    "dense_dot": 170.66983032226562
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 16,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 21,
+    "rewired": 17,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/__init__",
+   "scores": {
+    "bm25": 66.41787636660091,
+    "dense": 0.22969003021717072,
+    "rrf": 0.06111111111111111,
+    "direct": 0.06111111111111111,
+    "graph": 0.06111111111111111,
+    "rewired": 0.06111111111111111,
+    "dense_dot": 133.4825439453125
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 26,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 25,
+    "rewired": 25,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "lib/matplotlib/axis.py/Axis/set_ticks",
+   "scores": {
+    "bm25": 65.67571809655794,
+    "dense": 0.21996118128299713,
+    "rrf": 0.05789909015715467,
+    "direct": 0.05789909015715467,
+    "graph": 0.05789909015715467,
+    "rewired": 0.05789909015715467,
+    "dense_dot": 129.20074462890625
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 29,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 31,
+    "rewired": 30,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "lib/matplotlib/axis.py/Axis/set_view_interval",
+   "scores": {
+    "bm25": 65.58958789288427,
+    "dense": 0.3137633204460144,
+    "rrf": 0.07291666666666666,
+    "direct": 0.07291666666666666,
+    "graph": 0.07291666666666666,
+    "rewired": 0.07291666666666666,
+    "dense_dot": 183.87701416015625
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 14,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 22,
+    "rewired": 18,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "lib/matplotlib/pyplot.py/subplot_mosaic",
+   "scores": {
+    "bm25": 64.95649014332837,
+    "dense": 0.2617611587047577,
+    "rrf": 0.061553030303030304,
+    "direct": 0.061553030303030304,
+    "graph": 0.10700757575757576,
+    "rewired": 0.061553030303030304,
+    "dense_dot": 152.7431182861328
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 22,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 12,
+    "rewired": 24,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_axes.py/Axes/plot",
+   "scores": {
+    "bm25": 64.82528566247,
+    "dense": 0.2515077590942383,
+    "rrf": 0.05798319327731093,
+    "direct": 0.05798319327731093,
+    "graph": 0.05798319327731093,
+    "rewired": 0.05798319327731093,
+    "dense_dot": 148.28285217285156
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 25,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 30,
+    "rewired": 29,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "lib/matplotlib/figure.py/FigureBase/legend",
+   "scores": {
+    "bm25": 64.49438122513003,
+    "dense": 0.16543297469615936,
+    "rrf": 0.0494047619047619,
+    "direct": 0.0494047619047619,
+    "graph": 0.0494047619047619,
+    "rewired": 0.0494047619047619,
+    "dense_dot": 97.29292297363281
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 38,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 37,
+    "rewired": 36,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "lib/matplotlib/ticker.py/MaxNLocator/__init__",
+   "scores": {
+    "bm25": 64.4503732976376,
+    "dense": 0.21215102076530457,
+    "rrf": 0.051587301587301584,
+    "direct": 0.051587301587301584,
+    "graph": 0.051587301587301584,
+    "rewired": 0.051587301587301584,
+    "dense_dot": 124.30195617675781
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 32,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 34,
+    "rewired": 33,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_axes.py/Axes/legend",
+   "scores": {
+    "bm25": 64.42901177701872,
+    "dense": 0.20786356925964355,
+    "rrf": 0.0502828409805154,
+    "direct": 0.0502828409805154,
+    "graph": 0.0502828409805154,
+    "rewired": 0.0502828409805154,
+    "dense_dot": 122.18860626220703
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 33,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 36,
+    "rewired": 35,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "lib/matplotlib/figure.py/FigureBase/add_subplot",
+   "scores": {
+    "bm25": 64.30453223141734,
+    "dense": 0.21887606382369995,
+    "rrf": 0.05131578947368421,
+    "direct": 0.05131578947368421,
+    "graph": 0.05131578947368421,
+    "rewired": 0.05131578947368421,
+    "dense_dot": 128.63558959960938
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 30,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 35,
+    "rewired": 34,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "lib/matplotlib/figure.py/Figure/show",
+   "scores": {
+    "bm25": 64.24669335198519,
+    "dense": 0.18463993072509766,
+    "rrf": 0.04786324786324786,
+    "direct": 0.04786324786324786,
+    "graph": 0.04786324786324786,
+    "rewired": 0.04786324786324786,
+    "dense_dot": 108.17631530761719
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 35,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 38,
+    "rewired": 37,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/margins",
+   "scores": {
+    "bm25": 64.18683273172304,
+    "dense": 0.27011018991470337,
+    "rrf": 0.058333333333333334,
+    "direct": 0.058333333333333334,
+    "graph": 0.058333333333333334,
+    "rewired": 0.058333333333333334,
+    "dense_dot": 158.49459838867188
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 20,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 29,
+    "rewired": 28,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_axes.py/Axes/imshow",
+   "scores": {
+    "bm25": 63.941706099935,
+    "dense": 0.27422991394996643,
+    "rrf": 0.05887300252312868,
+    "direct": 0.05887300252312868,
+    "graph": 0.05887300252312868,
+    "rewired": 0.05887300252312868,
+    "dense_dot": 161.209228515625
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 19,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 26,
+    "rewired": 26,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/view_init",
+   "scores": {
+    "bm25": 63.65059293741669,
+    "dense": 0.26188331842422485,
+    "rrf": 0.05606758832565284,
+    "direct": 0.05606758832565284,
+    "graph": 0.05606758832565284,
+    "rewired": 0.05606758832565284,
+    "dense_dot": 152.30990600585938
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 21,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 32,
+    "rewired": 31,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/_set_view_from_bbox",
+   "scores": {
+    "bm25": 62.66945104534703,
+    "dense": 0.31544625759124756,
+    "rrf": 0.06673407482305359,
+    "direct": 0.06673407482305359,
+    "graph": 0.06673407482305359,
+    "rewired": 0.06673407482305359,
+    "dense_dot": 185.66259765625
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 13,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 23,
+    "rewired": 21,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/set_aspect",
+   "scores": {
+    "bm25": 62.57136717935393,
+    "dense": 0.30723074078559875,
+    "rrf": 0.06272727272727273,
+    "direct": 0.06272727272727273,
+    "graph": 0.10818181818181818,
+    "rewired": 0.06272727272727273,
+    "dense_dot": 180.48646545410156
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 15,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 11,
+    "rewired": 23,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/apply_aspect",
+   "scores": {
+    "bm25": 60.93156908335088,
+    "dense": 0.3293706178665161,
+    "rrf": 0.06767676767676768,
+    "direct": 0.06767676767676768,
+    "graph": 0.11313131313131314,
+    "rewired": 0.06767676767676768,
+    "dense_dot": 193.2559814453125
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 12,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 9,
+    "rewired": 20,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/grid",
+   "scores": {
+    "bm25": 60.836051842023444,
+    "dense": 0.2784986197948456,
+    "rrf": 0.05877616747181964,
+    "direct": 0.05877616747181964,
+    "graph": 0.05877616747181964,
+    "rewired": 0.10044283413848631,
+    "dense_dot": 163.2000732421875
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 17,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 27,
+    "rewired": 10,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/BoundaryNorm/__init__",
+   "scores": {
+    "bm25": 60.72104036790849,
+    "dense": 0.15795627236366272,
+    "rrf": 0.04168475900998697,
+    "direct": 0.04168475900998697,
+    "graph": 0.04168475900998697,
+    "rewired": 0.04168475900998697,
+    "dense_dot": 92.58136749267578
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 39,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "lib/matplotlib/projections/polar.py/PolarAxes/set_thetalim",
+   "scores": {
+    "bm25": 60.71392003619694,
+    "dense": 0.2255038172006607,
+    "rrf": 0.04786036036036036,
+    "direct": 0.04786036036036036,
+    "graph": 0.08952702702702703,
+    "rewired": 0.04786036036036036,
+    "dense_dot": 131.90440368652344
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 27,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 16,
+    "rewired": 38,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "lib/matplotlib/backend_bases.py/TimerBase/remove_callback",
+   "scores": {
+    "bm25": 60.68320835282304,
+    "dense": 0.17868801951408386,
+    "rrf": 0.042147293700088725,
+    "direct": 0.042147293700088725,
+    "graph": 0.042147293700088725,
+    "rewired": 0.042147293700088725,
+    "dense_dot": 105.01020812988281
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 36,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "lib/matplotlib/axes/_base.py/_AxesBase/set_anchor",
+   "scores": {
+    "bm25": 60.626023219825576,
+    "dense": 0.2781197428703308,
+    "rrf": 0.055714285714285716,
+    "direct": 0.055714285714285716,
+    "graph": 0.055714285714285716,
+    "rewired": 0.055714285714285716,
+    "dense_dot": 163.5589599609375
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 18,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 33,
+    "rewired": 32,
+    "dense_dot": 17
+   }
+  }
+ ]
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.158" timestamp="2026-11-20T23:09:19.417806" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.printing.tests.test_conventions" name="test_super_sub" time="0.003"><failure message="AssertionError: assert ('w#x1D7D9', [], []) == ('w', [], ['#x1D7D9'])&#10;  At index 0 diff: 'w#x1D7D9' != 'w'&#10;  Use -v to get more diff">sympy\printing\tests\test_conventions.py:35: in test_super_sub
+    assert split_super_sub("w#x1D7D9") == ("w", [], ["#x1D7D9"])
+E   AssertionError: assert ('w#x1D7D9', [], []) == ('w', [], ['#x1D7D9'])
+E     At index 0 diff: 'w#x1D7D9' != 'w'
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

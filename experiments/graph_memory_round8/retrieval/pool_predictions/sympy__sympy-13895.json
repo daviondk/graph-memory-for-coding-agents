@@ -1,0 +1,852 @@
+{
+ "task": "sympy__sympy-13895",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "7b8366a77d78d767e914be761c381038074ee34691cbbca0e7e94fda8de218d3",
+ "query_sha256": "3fcc14a8c1b76702d094aed807ceca9af17cc90787a060c9f819702b91536d94",
+ "n_corpus": 15375,
+ "n_scanned_for_graph": 15375,
+ "n_propagated": 13,
+ "anchors": [
+  "sympy/core/basic.py/Basic/subs",
+  "sympy/physics/vector/vector.py/Vector/subs",
+  "sympy/physics/vector/dyadic.py/Dyadic/subs",
+  "sympy/matrices/common.py/MatrixOperations/subs",
+  "sympy/strategies/tools.py/subs",
+  "sympy/polys/fields.py/FracElement/subs",
+  "sympy/strategies/rl.py/subs",
+  "sympy/polys/rings.py/PolyElement/subs"
+ ],
+ "top40": {
+  "body": [
+   {
+    "id": "sympy/logic/boolalg.py/simplify_logic",
+    "score": 21.414762607010672,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/sqrtdenest.py/_sqrt_symbolic_denest",
+    "score": 20.478819177986548,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 20.47762695401345,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/xreplace",
+    "score": 20.104272640952754,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/add.py/Add/_eval_as_leading_term",
+    "score": 19.56261696169196,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/combsimp.py/combsimp",
+    "score": 19.464205573613306,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/expr_with_limits.py/ExprWithLimits/_eval_subs",
+    "score": 19.331704010367506,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 19.205355504696392,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/decompogen.py/decompogen",
+    "score": 19.06677867611664,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/kauers.py/finite_diff",
+    "score": 18.9194166258654,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_rewrite_single",
+    "score": 18.89428592447906,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/__new__",
+    "score": 18.849766518099404,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/clear_coefficients",
+    "score": 18.49702453389471,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/ode.py/constantsimp",
+    "score": 18.466226838785072,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/delta.py/deltasummation",
+    "score": 18.26170285033761,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 18.257019023567373,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/epathtools.py/epath",
+    "score": 18.236495601297616,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv_interface.py/variance",
+    "score": 18.230172816369677,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv.py/sample_iter",
+    "score": 18.166640787470268,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/gammasimp.py/gammasimp",
+    "score": 17.90921202462965,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/secondquant.py/evaluate_deltas",
+    "score": 17.855711359557304,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv_interface.py/standard_deviation",
+    "score": 17.79627805316406,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_constant",
+    "score": 17.638560000746537,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/polytools.py/_torational_factor_list",
+    "score": 17.635139740996365,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/ode.py/ode_nth_linear_euler_eq_nonhomogeneous_undetermined_coefficients",
+    "score": 17.600859172576232,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/powsimp.py/powdenest",
+    "score": 17.49473708974204,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv.py/given",
+    "score": 17.383119218694052,
+    "supports": []
+   },
+   {
+    "id": "sympy/calculus/singularities.py/singularities",
+    "score": 17.32265095522548,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 17.30229679353886,
+    "supports": []
+   },
+   {
+    "id": "sympy/logic/boolalg.py/eliminate_implications",
+    "score": 17.188317353152435,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/checksol",
+    "score": 17.15430237653237,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/summations.py/_eval_sum_hyper",
+    "score": 17.061428681060775,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/epathtools.py/EPath/select",
+    "score": 17.05270915556162,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/_sympify",
+    "score": 17.003987206961337,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve_linear",
+    "score": 16.976085433714346,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/dense.py/DenseMatrix/equals",
+    "score": 16.94492177195118,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/_subs",
+    "score": 16.920797138472995,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/simplify/cse_main.py/tree_cse",
+    "score": 16.90622243880126,
+    "supports": []
+   },
+   {
+    "id": "sympy/codegen/rewriting.py/optimize",
+    "score": 16.811759783929627,
+    "supports": []
+   },
+   {
+    "id": "sympy/calculus/util.py/periodicity",
+    "score": 16.708196372997012,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ExpressionDomain",
+    "score": 0.09282847670563601,
+    "supports": []
+   },
+   {
+    "id": "sympy/logic/boolalg.py/simplify_logic",
+    "score": 0.0926302613049601,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 0.0872323552735924,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/Expression/simplify",
+    "score": 0.08566978193146417,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/sqrtdenest.py/_sqrt_symbolic_denest",
+    "score": 0.08465433729634522,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/make_expression",
+    "score": 0.07801597309794031,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/parse_expression",
+    "score": 0.07345286292654714,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.07250470809792843,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/xreplace",
+    "score": 0.0719650521152667,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/Expression/_to_ex",
+    "score": 0.06760212036170876,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/add.py/Add/_eval_as_leading_term",
+    "score": 0.06677517361111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/_real_to_rational",
+    "score": 0.06668410041841004,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/combsimp.py/combsimp",
+    "score": 0.06608422939068101,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/expr_with_limits.py/ExprWithLimits/_eval_subs",
+    "score": 0.0610310349305285,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/_import",
+    "score": 0.059677500376751895,
+    "supports": []
+   },
+   {
+    "id": "examples/all.py/__import__",
+    "score": 0.056699720315280956,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.05485498108448929,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/decompogen.py/decompogen",
+    "score": 0.05327055658315116,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/hyper.py/meijerg/an",
+    "score": 0.05295045649838882,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/domain.py/Domain/from_ExpressionDomain",
+    "score": 0.05159744408945687,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/kauers.py/finite_diff",
+    "score": 0.050226654578422486,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/expressions/matexpr.py/MatrixSymbol/_eval_subs",
+    "score": 0.04986120008541533,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/clear_coefficients",
+    "score": 0.04950235725510738,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_rewrite_single",
+    "score": 0.047905498492722784,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/fourier.py/FourierSeries/an",
+    "score": 0.045779326227523696,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/__new__",
+    "score": 0.04574900952992826,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/to_sympy",
+    "score": 0.0444279284858995,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_sympy",
+    "score": 0.043421052631578944,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/ode.py/constantsimp",
+    "score": 0.04229441305712492,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_gmpy",
+    "score": 0.04173010380622837,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/delta.py/deltasummation",
+    "score": 0.04087489063867017,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/epathtools.py/epath",
+    "score": 0.040583136327817175,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_python",
+    "score": 0.04018865417829148,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ZZ_gmpy",
+    "score": 0.03876117496807152,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/_subs",
+    "score": 0.03794326241134752,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ZZ_python",
+    "score": 0.037435456110154905,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/gammasimp.py/gammasimp",
+    "score": 0.036746302616609786,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv_interface.py/variance",
+    "score": 0.03593101740045823,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/importtools.py/import_module",
+    "score": 0.03523747560182173,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_FractionField",
+    "score": 0.03502824858757062,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.1457640719935802,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.10628114345659585,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.09968542260208926,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ExpressionDomain",
+    "score": 0.09282847670563601,
+    "supports": []
+   },
+   {
+    "id": "sympy/logic/boolalg.py/simplify_logic",
+    "score": 0.0926302613049601,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 0.0872323552735924,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.08598273477369199,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/Expression/simplify",
+    "score": 0.08566978193146417,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/sqrtdenest.py/_sqrt_symbolic_denest",
+    "score": 0.08465433729634522,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.08283730158730158,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/make_expression",
+    "score": 0.07801597309794031,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.07695286915456433,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/parse_expression",
+    "score": 0.07345286292654714,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.07250470809792843,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/xreplace",
+    "score": 0.0719650521152667,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.0705403448508116,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/Expression/_to_ex",
+    "score": 0.06760212036170876,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/add.py/Add/_eval_as_leading_term",
+    "score": 0.06677517361111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/_real_to_rational",
+    "score": 0.06668410041841004,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/combsimp.py/combsimp",
+    "score": 0.06608422939068101,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.06271003096836522,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/expr_with_limits.py/ExprWithLimits/_eval_subs",
+    "score": 0.0610310349305285,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/_import",
+    "score": 0.059677500376751895,
+    "supports": []
+   },
+   {
+    "id": "examples/all.py/__import__",
+    "score": 0.056699720315280956,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/decompogen.py/decompogen",
+    "score": 0.05327055658315116,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/hyper.py/meijerg/an",
+    "score": 0.05295045649838882,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/domain.py/Domain/from_ExpressionDomain",
+    "score": 0.05159744408945687,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/kauers.py/finite_diff",
+    "score": 0.050226654578422486,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/expressions/matexpr.py/MatrixSymbol/_eval_subs",
+    "score": 0.04986120008541533,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/clear_coefficients",
+    "score": 0.04950235725510738,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_rewrite_single",
+    "score": 0.047905498492722784,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/fourier.py/FourierSeries/an",
+    "score": 0.045779326227523696,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/__new__",
+    "score": 0.04574900952992826,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/to_sympy",
+    "score": 0.0444279284858995,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_sympy",
+    "score": 0.043421052631578944,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/ode.py/constantsimp",
+    "score": 0.04229441305712492,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_gmpy",
+    "score": 0.04173010380622837,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/delta.py/deltasummation",
+    "score": 0.04087489063867017,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/epathtools.py/epath",
+    "score": 0.040583136327817175,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_python",
+    "score": 0.04018865417829148,
+    "supports": []
+   }
+  ],
+  "graph": [
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.1457640719935802,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.10628114345659585,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.09968542260208926,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ExpressionDomain",
+    "score": 0.09282847670563601,
+    "supports": []
+   },
+   {
+    "id": "sympy/logic/boolalg.py/simplify_logic",
+    "score": 0.0926302613049601,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 0.0872323552735924,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.08598273477369199,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/Expression/simplify",
+    "score": 0.08566978193146417,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/sqrtdenest.py/_sqrt_symbolic_denest",
+    "score": 0.08465433729634522,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/_subs",
+    "score": 0.08339780786589297,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.08283730158730158,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/make_expression",
+    "score": 0.07801597309794031,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.07695286915456433,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/parse_expression",
+    "score": 0.07345286292654714,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.07250470809792843,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/xreplace",
+    "score": 0.0719650521152667,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.0705403448508116,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/Expression/_to_ex",
+    "score": 0.06760212036170876,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/add.py/Add/_eval_as_leading_term",
+    "score": 0.06677517361111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/_real_to_rational",
+    "score": 0.06668410041841004,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/combsimp.py/combsimp",
+    "score": 0.06608422939068101,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.06271003096836522,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/expr_with_limits.py/ExprWithLimits/_eval_subs",
+    "score": 0.0610310349305285,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/_import",
+    "score": 0.059677500376751895,
+    "supports": []
+   },
+   {
+    "id": "examples/all.py/__import__",
+    "score": 0.056699720315280956,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/decompogen.py/decompogen",
+    "score": 0.05327055658315116,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/hyper.py/meijerg/an",
+    "score": 0.05295045649838882,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.052807486631016046,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/polys/domains/domain.py/Domain/from_ExpressionDomain",
+    "score": 0.05159744408945687,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/kauers.py/finite_diff",
+    "score": 0.050226654578422486,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/expressions/matexpr.py/MatrixSymbol/_eval_subs",
+    "score": 0.04986120008541533,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/clear_coefficients",
+    "score": 0.04950235725510738,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_rewrite_single",
+    "score": 0.047905498492722784,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/_aresame",
+    "score": 0.04688842038114413,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/utilities/misc.py/filldedent",
+    "score": 0.04665487917251346,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/exprtools.py/Dummy",
+    "score": 0.046549873124512746,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/codegen/ast.py/Variable/type",
+    "score": 0.04613366647697634,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/containers.py/Dict/keys",
+    "score": 0.04611249103168944,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/containers.py/Dict/items",
+    "score": 0.04609713315012127,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs",
+     "sympy/strategies/tools.py/subs"
+    ]
+   },
+   {
+    "id": "sympy/plotting/intervalmath/lib_interval.py/cos",
+    "score": 0.04585221717879856,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   }
+  ]
+ }
+}

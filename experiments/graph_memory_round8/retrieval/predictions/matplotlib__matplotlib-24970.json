@@ -1,0 +1,913 @@
+{
+ "task": "matplotlib__matplotlib-24970",
+ "repo": "matplotlib__matplotlib",
+ "corpus_sha256": "8eadb3f6307ddd60a4556dbcb3b2bc72509f763dda3af08dd253e79f06f38baa",
+ "query_sha256": "5ae160cc5420b0587fc3a4d567fb1d76d86d4d20de526eaaaeb95759ea568dbf",
+ "n_corpus": 6707,
+ "anchors": [],
+ "edges": [
+  [
+   "lib/matplotlib/cm.py/ScalarMappable/to_rgba",
+   "lib/matplotlib/image.py/_ImageBase/_make_image"
+  ],
+  [
+   "lib/matplotlib/cm.py/ScalarMappable/to_rgba",
+   "lib/matplotlib/colors.py/to_rgba_array"
+  ],
+  [
+   "lib/matplotlib/pyplot.py/switch_backend",
+   "lib/matplotlib/__init__.py/use"
+  ],
+  [
+   "lib/matplotlib/pyplot.py/switch_backend",
+   "lib/matplotlib/figure.py/Figure/show"
+  ],
+  [
+   "lib/matplotlib/colors.py/Normalize/process_value",
+   "lib/matplotlib/colors.py/BoundaryNorm/__call__"
+  ],
+  [
+   "lib/matplotlib/_api/deprecation.py/warn_deprecated",
+   "lib/matplotlib/_api/deprecation.py/rename_parameter"
+  ],
+  [
+   "lib/matplotlib/_api/deprecation.py/warn_deprecated",
+   "lib/matplotlib/_api/deprecation.py/deprecate_method_override"
+  ],
+  [
+   "lib/matplotlib/_api/deprecation.py/warn_deprecated",
+   "lib/matplotlib/__init__.py/_rc_params_in_file"
+  ],
+  [
+   "lib/matplotlib/colors.py/Colormap/set_extremes",
+   "lib/matplotlib/colors.py/Colormap/with_extremes"
+  ],
+  [
+   "lib/matplotlib/backend_bases.py/FigureManagerBase/pyplot_show",
+   "lib/matplotlib/figure.py/Figure/show"
+  ],
+  [
+   "lib/matplotlib/colors.py/LightSource/shade_rgb",
+   "lib/matplotlib/colors.py/LightSource/shade"
+  ]
+ ],
+ "explicit_identifiers": {
+  "NumPy": 5,
+  "get_cmap": 1,
+  "empty": 1,
+  "DeprecationWarning": 3,
+  "array": 3,
+  "astype": 3,
+  "result": 3,
+  "_i_over": 1,
+  "_i_under": 1,
+  "mask_bad": 1,
+  "_i_bad": 1,
+  "_No": 2,
+  "response_": 2,
+  "ArchLinux": 1,
+  "QtAgg": 1
+ },
+ "candidates": [
+  {
+   "id": "lib/matplotlib/colors.py/Colormap/__call__",
+   "scores": {
+    "bm25": 106.99668407729423,
+    "dense": 0.5865185260772705,
+    "rrf": 0.18181818181818182,
+    "direct": 0.18181818181818182,
+    "graph": 0.18181818181818182,
+    "rewired": 0.18181818181818182,
+    "dense_dot": 347.91357421875
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/Colormap/_set_extremes",
+   "scores": {
+    "bm25": 58.97688307845751,
+    "dense": 0.45759251713752747,
+    "rrf": 0.16025641025641024,
+    "direct": 0.16025641025641024,
+    "graph": 0.16025641025641024,
+    "rewired": 0.16025641025641024,
+    "dense_dot": 270.72998046875
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 3,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "lib/matplotlib/image.py/_ImageBase/set_data",
+   "scores": {
+    "bm25": 57.09232501619331,
+    "dense": 0.4409524202346802,
+    "rrf": 0.14358974358974358,
+    "direct": 0.14358974358974358,
+    "graph": 0.14358974358974358,
+    "rewired": 0.14358974358974358,
+    "dense_dot": 260.99737548828125
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 5,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "lib/matplotlib/cm.py/ScalarMappable/to_rgba",
+   "scores": {
+    "bm25": 56.50881809768275,
+    "dense": 0.42125046253204346,
+    "rrf": 0.13025210084033612,
+    "direct": 0.13025210084033612,
+    "graph": 0.13025210084033612,
+    "rewired": 0.13025210084033612,
+    "dense_dot": 249.0801239013672
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 7,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/Colormap/__init__",
+   "scores": {
+    "bm25": 55.33399326112376,
+    "dense": 0.46444469690322876,
+    "rrf": 0.15,
+    "direct": 0.15,
+    "graph": 0.15,
+    "rewired": 0.15,
+    "dense_dot": 274.9057922363281
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 2,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "lib/matplotlib/cbook.py/index_of",
+   "scores": {
+    "bm25": 50.125814056831544,
+    "dense": 0.29725173115730286,
+    "rrf": 0.09475806451612903,
+    "direct": 0.09475806451612903,
+    "graph": 0.09475806451612903,
+    "rewired": 0.09475806451612903,
+    "dense_dot": 175.191162109375
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 21,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 10,
+    "rewired": 10,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "lib/matplotlib/image.py/_ImageBase/_make_image",
+   "scores": {
+    "bm25": 47.11920851193347,
+    "dense": 0.33290350437164307,
+    "rrf": 0.0988235294117647,
+    "direct": 0.0988235294117647,
+    "graph": 0.0988235294117647,
+    "rewired": 0.0988235294117647,
+    "dense_dot": 195.96603393554688
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 15,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 7,
+    "rewired": 7,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "lib/matplotlib/rcsetup.py/f",
+   "scores": {
+    "bm25": 46.81857169493758,
+    "dense": 0.11766178905963898,
+    "rrf": 0.07555555555555556,
+    "direct": 0.07555555555555556,
+    "graph": 0.07555555555555556,
+    "rewired": 0.07555555555555556,
+    "dense_dot": 68.85720825195312
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 40,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 15,
+    "rewired": 15,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "lib/matplotlib/cbook.py/_combine_masks",
+   "scores": {
+    "bm25": 45.88352492072956,
+    "dense": 0.3630927801132202,
+    "rrf": 0.09808612440191387,
+    "direct": 0.09808612440191387,
+    "graph": 0.09808612440191387,
+    "rewired": 0.09808612440191387,
+    "dense_dot": 212.94200134277344
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 12,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 8,
+    "rewired": 8,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+   "scores": {
+    "bm25": 45.85952624348332,
+    "dense": 0.17633208632469177,
+    "rrf": 0.07439024390243903,
+    "direct": 0.07439024390243903,
+    "graph": 0.07439024390243903,
+    "rewired": 0.07439024390243903,
+    "dense_dot": 103.90699768066406
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 31,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 16,
+    "rewired": 16,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "lib/matplotlib/pyplot.py/switch_backend",
+   "scores": {
+    "bm25": 45.80988804492166,
+    "dense": 0.14776824414730072,
+    "rrf": 0.06935817805383022,
+    "direct": 0.06935817805383022,
+    "graph": 0.06935817805383022,
+    "rewired": 0.06935817805383022,
+    "dense_dot": 86.70297241210938
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 36,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 19,
+    "rewired": 19,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/Normalize/process_value",
+   "scores": {
+    "bm25": 45.259333541213145,
+    "dense": 0.3792378604412079,
+    "rrf": 0.09545454545454546,
+    "direct": 0.09545454545454546,
+    "graph": 0.09545454545454546,
+    "rewired": 0.09545454545454546,
+    "dense_dot": 222.68368530273438
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 10,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 9,
+    "rewired": 9,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "lib/matplotlib/figure.py/Figure/__setstate__",
+   "scores": {
+    "bm25": 44.48161643816651,
+    "dense": 0.19862593710422516,
+    "rrf": 0.06847826086956521,
+    "direct": 0.06847826086956521,
+    "graph": 0.06847826086956521,
+    "rewired": 0.06847826086956521,
+    "dense_dot": 116.88844299316406
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 30,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 21,
+    "rewired": 21,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "lib/matplotlib/path.py/Path/make_compound_path",
+   "scores": {
+    "bm25": 43.06853121414216,
+    "dense": 0.13777080178260803,
+    "rrf": 0.06207482993197279,
+    "direct": 0.06207482993197279,
+    "graph": 0.06207482993197279,
+    "rewired": 0.06207482993197279,
+    "dense_dot": 81.19158935546875
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 39,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 24,
+    "rewired": 24,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/to_rgba_array",
+   "scores": {
+    "bm25": 43.04355130388953,
+    "dense": 0.4499078691005707,
+    "rrf": 0.11142857142857143,
+    "direct": 0.11142857142857143,
+    "graph": 0.11142857142857143,
+    "rewired": 0.11142857142857143,
+    "dense_dot": 265.2720642089844
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 4,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 6,
+    "rewired": 6,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "lib/matplotlib/_api/deprecation.py/warn_deprecated",
+   "scores": {
+    "bm25": 42.85315344670184,
+    "dense": 0.24967342615127563,
+    "rrf": 0.06623931623931624,
+    "direct": 0.06623931623931624,
+    "graph": 0.06623931623931624,
+    "rewired": 0.06623931623931624,
+    "dense_dot": 146.70474243164062
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 26,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 22,
+    "rewired": 22,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/from_levels_and_colors",
+   "scores": {
+    "bm25": 42.229893423275485,
+    "dense": 0.30977416038513184,
+    "rrf": 0.07151979565772669,
+    "direct": 0.07151979565772669,
+    "graph": 0.07151979565772669,
+    "rewired": 0.07151979565772669,
+    "dense_dot": 181.58981323242188
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 19,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 17,
+    "rewired": 17,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "lib/matplotlib/image.py/composite_images",
+   "scores": {
+    "bm25": 42.20840006326344,
+    "dense": 0.20694920420646667,
+    "rrf": 0.06135531135531135,
+    "direct": 0.06135531135531135,
+    "graph": 0.06135531135531135,
+    "rewired": 0.06135531135531135,
+    "dense_dot": 121.59962463378906
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 29,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 28,
+    "rewired": 28,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "lib/matplotlib/_api/deprecation.py/rename_parameter",
+   "scores": {
+    "bm25": 42.20158601454102,
+    "dense": 0.2267857789993286,
+    "rrf": 0.06150978564771668,
+    "direct": 0.06150978564771668,
+    "graph": 0.06150978564771668,
+    "rewired": 0.06150978564771668,
+    "dense_dot": 133.03968811035156
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 27,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 27,
+    "rewired": 27,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/BoundaryNorm/__call__",
+   "scores": {
+    "bm25": 41.48161615454744,
+    "dense": 0.3809170722961426,
+    "rrf": 0.08596491228070174,
+    "direct": 0.08596491228070174,
+    "graph": 0.08596491228070174,
+    "rewired": 0.08596491228070174,
+    "dense_dot": 224.41851806640625
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 9,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 13,
+    "rewired": 13,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "lib/matplotlib/_api/deprecation.py/deprecate_method_override",
+   "scores": {
+    "bm25": 40.8455727850282,
+    "dense": 0.2956452965736389,
+    "rrf": 0.06350806451612903,
+    "direct": 0.06350806451612903,
+    "graph": 0.06350806451612903,
+    "rewired": 0.06350806451612903,
+    "dense_dot": 173.74249267578125
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 22,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 23,
+    "rewired": 23,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/Colormap/get_under",
+   "scores": {
+    "bm25": 40.591995456273985,
+    "dense": 0.3831924796104431,
+    "rrf": 0.08680555555555555,
+    "direct": 0.08680555555555555,
+    "graph": 0.08680555555555555,
+    "rewired": 0.08680555555555555,
+    "dense_dot": 227.3837127685547
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 8,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 12,
+    "rewired": 12,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "lib/matplotlib/dates.py/date2num",
+   "scores": {
+    "bm25": 40.162138330969825,
+    "dense": 0.2711900472640991,
+    "rrf": 0.06060606060606061,
+    "direct": 0.06060606060606061,
+    "graph": 0.06060606060606061,
+    "rewired": 0.06060606060606061,
+    "dense_dot": 159.92184448242188
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 23,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 29,
+    "rewired": 29,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/Colormap/set_extremes",
+   "scores": {
+    "bm25": 39.658131309603654,
+    "dense": 0.37569305300712585,
+    "rrf": 0.07703081232492998,
+    "direct": 0.07703081232492998,
+    "graph": 0.07703081232492998,
+    "rewired": 0.07703081232492998,
+    "dense_dot": 222.43092346191406
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 11,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 14,
+    "rewired": 14,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "lib/matplotlib/rcsetup.py/_listify_validator",
+   "scores": {
+    "bm25": 39.588313784371564,
+    "dense": 0.15368101000785828,
+    "rrf": 0.05182724252491694,
+    "direct": 0.05182724252491694,
+    "graph": 0.05182724252491694,
+    "rewired": 0.05182724252491694,
+    "dense_dot": 89.56689453125
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 33,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 33,
+    "rewired": 33,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/Colormap/with_extremes",
+   "scores": {
+    "bm25": 39.55874044635207,
+    "dense": 0.35114985704421997,
+    "rrf": 0.06944444444444445,
+    "direct": 0.06944444444444445,
+    "graph": 0.06944444444444445,
+    "rewired": 0.06944444444444445,
+    "dense_dot": 207.58338928222656
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 14,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 18,
+    "rewired": 18,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "lib/matplotlib/__init__.py/_rc_params_in_file",
+   "scores": {
+    "bm25": 39.27408623807738,
+    "dense": 0.2703845798969269,
+    "rrf": 0.05643879173290938,
+    "direct": 0.05643879173290938,
+    "graph": 0.05643879173290938,
+    "rewired": 0.05643879173290938,
+    "dense_dot": 159.48770141601562
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 24,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 31,
+    "rewired": 31,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/ListedColormap/resampled",
+   "scores": {
+    "bm25": 39.11949412429199,
+    "dense": 0.3099971413612366,
+    "rrf": 0.06203007518796992,
+    "direct": 0.06203007518796992,
+    "graph": 0.06203007518796992,
+    "rewired": 0.06203007518796992,
+    "dense_dot": 183.37387084960938
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 18,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 25,
+    "rewired": 25,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "lib/matplotlib/__init__.py/use",
+   "scores": {
+    "bm25": 39.116069862844135,
+    "dense": 0.15274083614349365,
+    "rrf": 0.04836829836829837,
+    "direct": 0.04836829836829837,
+    "graph": 0.04836829836829837,
+    "rewired": 0.04836829836829837,
+    "dense_dot": 89.80180358886719
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 34,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 36,
+    "rewired": 36,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/ListedColormap/reversed",
+   "scores": {
+    "bm25": 38.738631112006786,
+    "dense": 0.35265764594078064,
+    "rrf": 0.06847826086956521,
+    "direct": 0.06847826086956521,
+    "graph": 0.06847826086956521,
+    "rewired": 0.06847826086956521,
+    "dense_dot": 209.39105224609375
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 13,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 20,
+    "rewired": 20,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/Colormap/get_over",
+   "scores": {
+    "bm25": 38.637803121555685,
+    "dense": 0.43687888979911804,
+    "rrf": 0.08689024390243902,
+    "direct": 0.08689024390243902,
+    "graph": 0.08689024390243902,
+    "rewired": 0.08689024390243902,
+    "dense_dot": 258.89508056640625
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 6,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 11,
+    "rewired": 11,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "lib/matplotlib/backends/backend_webagg_core.py/FigureCanvasWebAggCore/get_diff_image",
+   "scores": {
+    "bm25": 38.56112754104753,
+    "dense": 0.21406875550746918,
+    "rrf": 0.05012531328320802,
+    "direct": 0.05012531328320802,
+    "graph": 0.05012531328320802,
+    "rewired": 0.05012531328320802,
+    "dense_dot": 126.14739990234375
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 28,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 35,
+    "rewired": 35,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "lib/matplotlib/contour.py/ContourSet/_process_colors",
+   "scores": {
+    "bm25": 38.03875440779734,
+    "dense": 0.33164358139038086,
+    "rrf": 0.061717352415026835,
+    "direct": 0.061717352415026835,
+    "graph": 0.061717352415026835,
+    "rewired": 0.061717352415026835,
+    "dense_dot": 194.15264892578125
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 16,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 26,
+    "rewired": 26,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "lib/matplotlib/cbook.py/_reshape_2D",
+   "scores": {
+    "bm25": 37.96284836470503,
+    "dense": 0.2614554166793823,
+    "rrf": 0.0512987012987013,
+    "direct": 0.0512987012987013,
+    "graph": 0.0512987012987013,
+    "rewired": 0.0512987012987013,
+    "dense_dot": 153.06784057617188
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 25,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 34,
+    "rewired": 34,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "lib/matplotlib/backends/backend_pdf.py/_get_pdf_charprocs",
+   "scores": {
+    "bm25": 37.94664177902385,
+    "dense": 0.1435297429561615,
+    "rrf": 0.043055555555555555,
+    "direct": 0.043055555555555555,
+    "graph": 0.043055555555555555,
+    "rewired": 0.043055555555555555,
+    "dense_dot": 84.34125518798828
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 38,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 38,
+    "rewired": 38,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+   "scores": {
+    "bm25": 37.78466771053584,
+    "dense": 0.1734740138053894,
+    "rrf": 0.045548654244306416,
+    "direct": 0.045548654244306416,
+    "graph": 0.045548654244306416,
+    "rewired": 0.045548654244306416,
+    "dense_dot": 101.86334991455078
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 32,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 37,
+    "rewired": 37,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "lib/matplotlib/backend_bases.py/FigureManagerBase/pyplot_show",
+   "scores": {
+    "bm25": 37.720398967377406,
+    "dense": 0.1470688432455063,
+    "rrf": 0.0425531914893617,
+    "direct": 0.0425531914893617,
+    "graph": 0.0425531914893617,
+    "rewired": 0.0425531914893617,
+    "dense_dot": 86.52364349365234
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 37,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/LightSource/shade_rgb",
+   "scores": {
+    "bm25": 37.30322283586181,
+    "dense": 0.30850934982299805,
+    "rrf": 0.05416666666666667,
+    "direct": 0.05416666666666667,
+    "graph": 0.05416666666666667,
+    "rewired": 0.05416666666666667,
+    "dense_dot": 181.58963012695312
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 20,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 32,
+    "rewired": 32,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "lib/matplotlib/colors.py/LightSource/shade",
+   "scores": {
+    "bm25": 37.25474072830957,
+    "dense": 0.31536680459976196,
+    "rrf": 0.05744520030234315,
+    "direct": 0.05744520030234315,
+    "graph": 0.05744520030234315,
+    "rewired": 0.05744520030234315,
+    "dense_dot": 185.74864196777344
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 17,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 30,
+    "rewired": 30,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "lib/matplotlib/figure.py/Figure/show",
+   "scores": {
+    "bm25": 37.17709190261557,
+    "dense": 0.14965219795703888,
+    "rrf": 0.042222222222222223,
+    "direct": 0.042222222222222223,
+    "graph": 0.042222222222222223,
+    "rewired": 0.042222222222222223,
+    "dense_dot": 87.94300842285156
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 35,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 35
+   }
+  }
+ ]
+}

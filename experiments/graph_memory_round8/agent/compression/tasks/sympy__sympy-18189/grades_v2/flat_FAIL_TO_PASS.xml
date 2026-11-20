@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.504" timestamp="2026-11-20T23:05:35.600445" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.solvers.tests.test_diophantine" name="test_diophantine" time="0.668"><failure message="assert {(3, 2)} == {(-3, -2), (-..., (2, 3), ...}&#10;  Extra items in the right set:&#10;  (-3, -2)&#10;  (3, -2)&#10;  (2, -3)&#10;  (-2, -3)&#10;  (2, 3)&#10;  (-2, 3)&#10;  (-3, 2)&#10;  Use -v to get more diff">sympy\solvers\tests\test_diophantine.py:554: in test_diophantine
+    assert diophantine(y**4 + x**4 - 2**4 - 3**4, syms=(y, x), permute=True) == \
+E   assert {(3, 2)} == {(-3, -2), (-..., (2, 3), ...}
+E     Extra items in the right set:
+E     (-3, -2)
+E     (3, -2)
+E     (2, -3)
+E     (-2, -3)
+E     (2, 3)
+E     (-2, 3)
+E     (-3, 2)
+E     Use -v to get more diff</failure></testcase></testsuite></testsuites>

@@ -1,0 +1,1442 @@
+{
+  "sampled": 18,
+  "judged": 18,
+  "empty_qrels": [],
+  "means": {
+    "body": {
+      "mrr10": 0.2228395061728395,
+      "hit1": 0.1111111111111111,
+      "hit5": 0.3888888888888889,
+      "hit10": 0.5,
+      "recall10": 0.4425925925925926,
+      "ndcg10": 0.24792669363173594,
+      "all10": 0.3333333333333333,
+      "recall40": 0.5925925925925926,
+      "hit40": 0.6111111111111112
+    },
+    "field": {
+      "mrr10": 0.3027777777777778,
+      "hit1": 0.2222222222222222,
+      "hit5": 0.4444444444444444,
+      "hit10": 0.4444444444444444,
+      "recall10": 0.4037037037037037,
+      "ndcg10": 0.28579810628803615,
+      "all10": 0.3333333333333333,
+      "recall40": 0.5555555555555556,
+      "hit40": 0.5555555555555556
+    },
+    "direct": {
+      "mrr10": 0.275,
+      "hit1": 0.16666666666666666,
+      "hit5": 0.4444444444444444,
+      "hit10": 0.4444444444444444,
+      "recall10": 0.38703703703703707,
+      "ndcg10": 0.27455965266825205,
+      "all10": 0.2777777777777778,
+      "recall40": 0.5555555555555556,
+      "hit40": 0.5555555555555556
+    },
+    "graph": {
+      "mrr10": 0.275,
+      "hit1": 0.16666666666666666,
+      "hit5": 0.4444444444444444,
+      "hit10": 0.4444444444444444,
+      "recall10": 0.38703703703703707,
+      "ndcg10": 0.27390622377976226,
+      "all10": 0.2777777777777778,
+      "recall40": 0.5925925925925926,
+      "hit40": 0.6111111111111112
+    }
+  },
+  "comparisons": {
+    "graph-direct": {
+      "mrr10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.0006534288884898056,
+        "lo": -0.004185925088294536,
+        "hi": 0.0022256384228251194,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall40": {
+        "delta": 0.037037037037037035,
+        "lo": -0.03703703703703704,
+        "hi": 0.14814814814814814,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit40": {
+        "delta": 0.05555555555555555,
+        "lo": 0.0,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 17,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "direct-field": {
+      "mrr10": {
+        "delta": -0.027777777777777776,
+        "lo": -0.08333333333333333,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit1": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": -0.016666666666666663,
+        "lo": -0.08333333333333333,
+        "hi": 0.03333333333333335,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.01123845361978407,
+        "lo": -0.03174686437306942,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 16,
+        "losses": 2,
+        "sign_p": 0.5
+      },
+      "all10": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "recall40": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit40": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "graph-field": {
+      "mrr10": {
+        "delta": -0.027777777777777776,
+        "lo": -0.08333333333333333,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit1": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": -0.016666666666666663,
+        "lo": -0.08333333333333333,
+        "hi": 0.03333333333333335,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.011891882508273876,
+        "lo": -0.03215792449269288,
+        "hi": -0.00024236876886635228,
+        "wins": 0,
+        "ties": 15,
+        "losses": 3,
+        "sign_p": 0.25
+      },
+      "all10": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "recall40": {
+        "delta": 0.037037037037037035,
+        "lo": -0.03703703703703704,
+        "hi": 0.14814814814814814,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit40": {
+        "delta": 0.05555555555555555,
+        "lo": 0.0,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 17,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "field-body": {
+      "mrr10": {
+        "delta": 0.07993827160493827,
+        "lo": -0.0003086419753086409,
+        "hi": 0.1851851851851852,
+        "wins": 4,
+        "ties": 13,
+        "losses": 1,
+        "sign_p": 0.375
+      },
+      "hit1": {
+        "delta": 0.1111111111111111,
+        "lo": 0.0,
+        "hi": 0.2777777777777778,
+        "wins": 2,
+        "ties": 16,
+        "losses": 0,
+        "sign_p": 0.5
+      },
+      "hit5": {
+        "delta": 0.05555555555555555,
+        "lo": 0.0,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 17,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": -0.038888888888888896,
+        "lo": -0.16666666666666666,
+        "hi": 0.05555555555555555,
+        "wins": 1,
+        "ties": 15,
+        "losses": 2,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": 0.037871412656300195,
+        "lo": -0.03451131984179781,
+        "hi": 0.1196850384226869,
+        "wins": 5,
+        "ties": 11,
+        "losses": 2,
+        "sign_p": 0.453125
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": -0.1111111111111111,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "recall40": {
+        "delta": -0.037037037037037035,
+        "lo": -0.16666666666666666,
+        "hi": 0.03703703703703704,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit40": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      }
+    },
+    "graph-body": {
+      "mrr10": {
+        "delta": 0.052160493827160495,
+        "lo": -0.050663580246913545,
+        "hi": 0.16666666666666669,
+        "wins": 4,
+        "ties": 12,
+        "losses": 2,
+        "sign_p": 0.6875
+      },
+      "hit1": {
+        "delta": 0.05555555555555555,
+        "lo": -0.1111111111111111,
+        "hi": 0.2222222222222222,
+        "wins": 2,
+        "ties": 15,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": 0.05555555555555555,
+        "lo": 0.0,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 17,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": 0.02597953014802632,
+        "lo": -0.04320443125613165,
+        "hi": 0.10452742553900565,
+        "wins": 4,
+        "ties": 12,
+        "losses": 2,
+        "sign_p": 0.6875
+      },
+      "all10": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "recall40": {
+        "delta": 0.0,
+        "lo": -0.16666666666666666,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit40": {
+        "delta": 0.0,
+        "lo": -0.16666666666666666,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      }
+    }
+  },
+  "details": {
+    "sympy__sympy-13895": {
+      "repo": "sympy__sympy",
+      "n_corpus": 15375,
+      "n_propagated": 13,
+      "n_scanned_for_graph": 15375,
+      "n_anchors": 8,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        }
+      }
+    },
+    "sympy__sympy-13177": {
+      "repo": "sympy__sympy",
+      "n_corpus": 13796,
+      "n_propagated": 0,
+      "n_scanned_for_graph": 0,
+      "n_anchors": 0,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "sympy__sympy-14024": {
+      "repo": "sympy__sympy",
+      "n_corpus": 15768,
+      "n_propagated": 13,
+      "n_scanned_for_graph": 15768,
+      "n_anchors": 8,
+      "n_gold": 2,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        }
+      }
+    },
+    "sympy__sympy-20212": {
+      "repo": "sympy__sympy",
+      "n_corpus": 27929,
+      "n_propagated": 0,
+      "n_scanned_for_graph": 0,
+      "n_anchors": 0,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0.1111111111111111,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.3010299956639812,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "sympy__sympy-16792": {
+      "repo": "sympy__sympy",
+      "n_corpus": 26008,
+      "n_propagated": 7,
+      "n_scanned_for_graph": 26008,
+      "n_anchors": 8,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        }
+      }
+    },
+    "sympy__sympy-20442": {
+      "repo": "sympy__sympy",
+      "n_corpus": 27943,
+      "n_propagated": 6,
+      "n_scanned_for_graph": 27943,
+      "n_anchors": 3,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "sphinx-doc__sphinx-8721": {
+      "repo": "sphinx-doc__sphinx",
+      "n_corpus": 4219,
+      "n_propagated": 0,
+      "n_scanned_for_graph": 0,
+      "n_anchors": 0,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0.16666666666666666,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.3562071871080222,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "sphinx-doc__sphinx-8801": {
+      "repo": "sphinx-doc__sphinx",
+      "n_corpus": 4233,
+      "n_propagated": 0,
+      "n_scanned_for_graph": 0,
+      "n_anchors": 0,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0.2,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.38685280723454163,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 0.2,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.38685280723454163,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 0.2,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.38685280723454163,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 0.2,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.38685280723454163,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "sphinx-doc__sphinx-8627": {
+      "repo": "sphinx-doc__sphinx",
+      "n_corpus": 4205,
+      "n_propagated": 0,
+      "n_scanned_for_graph": 0,
+      "n_anchors": 0,
+      "n_gold": 2,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        }
+      }
+    },
+    "sphinx-doc__sphinx-8273": {
+      "repo": "sphinx-doc__sphinx",
+      "n_corpus": 4149,
+      "n_propagated": 13,
+      "n_scanned_for_graph": 4149,
+      "n_anchors": 3,
+      "n_gold": 2,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        }
+      }
+    },
+    "sphinx-doc__sphinx-7686": {
+      "repo": "sphinx-doc__sphinx",
+      "n_corpus": 4061,
+      "n_propagated": 0,
+      "n_scanned_for_graph": 0,
+      "n_anchors": 0,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0.2,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.38685280723454163,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "sphinx-doc__sphinx-8713": {
+      "repo": "sphinx-doc__sphinx",
+      "n_corpus": 4105,
+      "n_propagated": 13,
+      "n_scanned_for_graph": 4105,
+      "n_anchors": 5,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "matplotlib__matplotlib-25442": {
+      "repo": "matplotlib__matplotlib",
+      "n_corpus": 6662,
+      "n_propagated": 10,
+      "n_scanned_for_graph": 6662,
+      "n_anchors": 8,
+      "n_gold": 5,
+      "methods": {
+        "body": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.8,
+          "ndcg10": 0.8435378753444459,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.6,
+          "ndcg10": 0.6164336326286644,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.8,
+          "ndcg10": 0.5987171642521193,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.8,
+          "ndcg10": 0.61207099478907,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "matplotlib__matplotlib-25079": {
+      "repo": "matplotlib__matplotlib",
+      "n_corpus": 6715,
+      "n_propagated": 14,
+      "n_scanned_for_graph": 6715,
+      "n_anchors": 8,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        }
+      }
+    },
+    "matplotlib__matplotlib-23964": {
+      "repo": "matplotlib__matplotlib",
+      "n_corpus": 6753,
+      "n_propagated": 23,
+      "n_scanned_for_graph": 6753,
+      "n_anchors": 8,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "matplotlib__matplotlib-23314": {
+      "repo": "matplotlib__matplotlib",
+      "n_corpus": 6728,
+      "n_propagated": 19,
+      "n_scanned_for_graph": 6728,
+      "n_anchors": 8,
+      "n_gold": 1,
+      "methods": {
+        "body": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "field": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0,
+          "recall40": 0.0,
+          "hit40": 0
+        }
+      }
+    },
+    "matplotlib__matplotlib-23562": {
+      "repo": "matplotlib__matplotlib",
+      "n_corpus": 6718,
+      "n_propagated": 62,
+      "n_scanned_for_graph": 6718,
+      "n_anchors": 8,
+      "n_gold": 2,
+      "methods": {
+        "body": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.6131471927654584,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.7977228895450266,
+          "all10": 1,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.6131471927654584,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.6131471927654584,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        }
+      }
+    },
+    "matplotlib__matplotlib-22711": {
+      "repo": "matplotlib__matplotlib",
+      "n_corpus": 6728,
+      "n_propagated": 298,
+      "n_scanned_for_graph": 6728,
+      "n_anchors": 8,
+      "n_gold": 3,
+      "methods": {
+        "body": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.6666666666666666,
+          "ndcg10": 0.4441228664487979,
+          "all10": 0,
+          "recall40": 0.6666666666666666,
+          "hit40": 1
+        },
+        "field": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.6666666666666666,
+          "ndcg10": 0.6508205185601091,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.6666666666666666,
+          "ndcg10": 0.6508205185601091,
+          "all10": 0,
+          "recall40": 1.0,
+          "hit40": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.6666666666666666,
+          "ndcg10": 0.6257049680303419,
+          "all10": 0,
+          "recall40": 0.6666666666666666,
+          "hit40": 1
+        }
+      }
+    }
+  }
+}

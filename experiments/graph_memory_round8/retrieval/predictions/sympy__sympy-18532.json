@@ -1,0 +1,1012 @@
+{
+ "task": "sympy__sympy-18532",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "49349e4c11c70da67d4276e05367d7fada34690806c78b29752c92b0db23f4e1",
+ "query_sha256": "ea8ba9c6ef25373f9d6955ab42298223c99634fa3d8a30ca115caf37564ed3a3",
+ "n_corpus": 27045,
+ "anchors": [
+  "sympy/core/basic.py/Basic/atoms"
+ ],
+ "edges": [
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/solvers/solveset.py/_is_modular"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/integrals/risch.py/DifferentialExtension/_rewrite_exps_pows"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/core/expr.py/Expr/equals"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/functions/elementary/piecewise.py/Piecewise/eval"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/plotting/experimental_lambdify.py/Lambdifier/sympy_atoms_namespace"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/utilities/lambdify.py/lambdify"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/solvers/ode/ode.py/odesimp"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/functions/elementary/piecewise.py/Piecewise/_handle_irel"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/simplify/simplify.py/simplify"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/solvers/deutils.py/_preprocess"
+  ],
+  [
+   "sympy/core/basic.py/Basic/atoms",
+   "sympy/solvers/solvers.py/solve"
+  ],
+  [
+   "sympy/integrals/risch.py/integrate_nonlinear_no_specials",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/integrals/risch.py/integrate_nonlinear_no_specials",
+   "sympy/core/basic.py/Basic/subs"
+  ],
+  [
+   "sympy/core/exprtools.py/_mask_nc",
+   "sympy/core/basic.py/Basic/subs"
+  ],
+  [
+   "sympy/tensor/index_methods.py/_get_indices_Pow",
+   "sympy/tensor/index_methods.py/get_indices"
+  ],
+  [
+   "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/solvers/solveset.py/_is_modular",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/tensor/index_methods.py/get_contraction_structure",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/core/basic.py/Basic/_subs",
+   "sympy/core/basic.py/Basic/subs"
+  ],
+  [
+   "sympy/tensor/index_methods.py/get_indices",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/integrals/risch.py/DifferentialExtension/_rewrite_exps_pows",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/core/expr.py/Expr/equals",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/core/expr.py/Expr/equals",
+   "sympy/simplify/simplify.py/simplify"
+  ],
+  [
+   "sympy/core/expr.py/Expr/equals",
+   "sympy/solvers/solvers.py/solve"
+  ],
+  [
+   "sympy/functions/elementary/piecewise.py/Piecewise/eval",
+   "sympy/core/basic.py/Basic/has"
+  ],
+  [
+   "sympy/core/basic.py/Basic/has",
+   "sympy/utilities/enumerative.py/MultisetPartitionTraverser/count_partitions"
+  ],
+  [
+   "sympy/core/basic.py/Basic/has",
+   "sympy/core/expr.py/Expr/as_coeff_mul"
+  ],
+  [
+   "sympy/core/basic.py/Basic/has",
+   "sympy/solvers/ode/ode.py/odesimp"
+  ],
+  [
+   "sympy/core/basic.py/Basic/has",
+   "sympy/simplify/simplify.py/simplify"
+  ],
+  [
+   "sympy/core/basic.py/Basic/has",
+   "sympy/solvers/deutils.py/_preprocess"
+  ],
+  [
+   "sympy/core/basic.py/Basic/has",
+   "sympy/solvers/solvers.py/solve"
+  ],
+  [
+   "sympy/functions/special/delta_functions.py/Heaviside/_eval_rewrite_as_SingularityFunction",
+   "sympy/solvers/solvers.py/solve"
+  ],
+  [
+   "sympy/polys/rationaltools.py/together",
+   "sympy/simplify/simplify.py/simplify"
+  ],
+  [
+   "sympy/solvers/ode/ode.py/odesimp",
+   "sympy/simplify/simplify.py/simplify"
+  ],
+  [
+   "sympy/solvers/ode/ode.py/odesimp",
+   "sympy/solvers/solvers.py/solve"
+  ],
+  [
+   "sympy/simplify/simplify.py/simplify",
+   "sympy/core/basic.py/Basic/subs"
+  ],
+  [
+   "sympy/core/basic.py/Basic/subs",
+   "sympy/solvers/deutils.py/_preprocess"
+  ],
+  [
+   "sympy/core/basic.py/Basic/subs",
+   "sympy/solvers/solvers.py/solve"
+  ]
+ ],
+ "explicit_identifiers": {
+  "expr": 3,
+  "atoms": 2,
+  "args": 2,
+  "Atom": 2
+ },
+ "candidates": [
+  {
+   "id": "sympy/core/basic.py/Atom/_sorted_args",
+   "scores": {
+    "bm25": 51.78797897394313,
+    "dense": 0.41279134154319763,
+    "rrf": 0.17424242424242425,
+    "direct": 0.17424242424242425,
+    "graph": 0.17424242424242425,
+    "rewired": 0.17424242424242425,
+    "dense_dot": 247.81692504882812
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 2,
+    "rrf": 1,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "sympy/physics/quantum/qexpr.py/QExpr/default_args",
+   "scores": {
+    "bm25": 47.67478172574472,
+    "dense": 0.32201719284057617,
+    "rrf": 0.16025641025641024,
+    "direct": 0.16025641025641024,
+    "graph": 0.16025641025641024,
+    "rewired": 0.16025641025641024,
+    "dense_dot": 193.3948974609375
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 3,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "sympy/core/basic.py/Basic/atoms",
+   "scores": {
+    "bm25": 42.901937658895676,
+    "dense": 0.45790722966194153,
+    "rrf": 0.16783216783216784,
+    "direct": 0.25874125874125875,
+    "graph": 0.25874125874125875,
+    "rewired": 0.25874125874125875,
+    "dense_dot": 272.6595458984375
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 1,
+    "rrf": 2,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "sympy/core/expr.py/Expr/_eval_nseries",
+   "scores": {
+    "bm25": 41.36851384997011,
+    "dense": 0.24366268515586853,
+    "rrf": 0.12142857142857143,
+    "direct": 0.12142857142857143,
+    "graph": 0.12142857142857143,
+    "rewired": 0.12142857142857143,
+    "dense_dot": 145.1893768310547
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 10,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 7,
+    "rewired": 5,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "sympy/integrals/risch.py/integrate_nonlinear_no_specials",
+   "scores": {
+    "bm25": 41.30909894220889,
+    "dense": 0.17620515823364258,
+    "rrf": 0.09523809523809523,
+    "direct": 0.09523809523809523,
+    "graph": 0.09523809523809523,
+    "rewired": 0.09523809523809523,
+    "dense_dot": 104.13914489746094
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 25,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 18,
+    "rewired": 9,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "sympy/core/exprtools.py/_mask_nc",
+   "scores": {
+    "bm25": 41.27107026401494,
+    "dense": 0.2777930796146393,
+    "rrf": 0.125,
+    "direct": 0.125,
+    "graph": 0.125,
+    "rewired": 0.125,
+    "dense_dot": 165.09104919433594
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 6,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 5,
+    "rewired": 4,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "sympy/physics/secondquant.py/NO/_expand_operators",
+   "scores": {
+    "bm25": 40.87029406394228,
+    "dense": 0.18999844789505005,
+    "rrf": 0.0900735294117647,
+    "direct": 0.0900735294117647,
+    "graph": 0.0900735294117647,
+    "rewired": 0.0900735294117647,
+    "dense_dot": 113.3639144897461
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 22,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 20,
+    "rewired": 10,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "sympy/utilities/iterables.py/postorder_traversal",
+   "scores": {
+    "bm25": 40.856949964245544,
+    "dense": 0.26089948415756226,
+    "rrf": 0.10818713450292397,
+    "direct": 0.10818713450292397,
+    "graph": 0.10818713450292397,
+    "rewired": 0.10818713450292397,
+    "dense_dot": 155.2829132080078
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 9,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 12,
+    "rewired": 7,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "sympy/printing/dot.py/dotprint",
+   "scores": {
+    "bm25": 40.54752106755937,
+    "dense": 0.29259762167930603,
+    "rrf": 0.11929824561403508,
+    "direct": 0.11929824561403508,
+    "graph": 0.11929824561403508,
+    "rewired": 0.11929824561403508,
+    "dense_dot": 174.3323516845703
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 5,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 8,
+    "rewired": 6,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "sympy/tensor/index_methods.py/_get_indices_Pow",
+   "scores": {
+    "bm25": 40.137112816951266,
+    "dense": 0.08798842877149582,
+    "rrf": 0.07,
+    "direct": 0.07,
+    "graph": 0.07,
+    "rewired": 0.07,
+    "dense_dot": 52.374755859375
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 40,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 27,
+    "rewired": 18,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+   "scores": {
+    "bm25": 40.12381616240474,
+    "dense": 0.1685287356376648,
+    "rrf": 0.07464607464607464,
+    "direct": 0.07464607464607464,
+    "graph": 0.07464607464607464,
+    "rewired": 0.07464607464607464,
+    "dense_dot": 100.82777404785156
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 27,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 23,
+    "rewired": 14,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "sympy/core/evalf.py/fastlog",
+   "scores": {
+    "bm25": 39.97981995874088,
+    "dense": 0.1576763540506363,
+    "rrf": 0.06926406926406926,
+    "direct": 0.06926406926406926,
+    "graph": 0.06926406926406926,
+    "rewired": 0.06926406926406926,
+    "dense_dot": 93.99913024902344
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 32,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 28,
+    "rewired": 20,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "sympy/solvers/solveset.py/_is_modular",
+   "scores": {
+    "bm25": 39.93398805781791,
+    "dense": 0.1604904681444168,
+    "rrf": 0.06847826086956521,
+    "direct": 0.06847826086956521,
+    "graph": 0.11393280632411067,
+    "rewired": 0.06847826086956521,
+    "dense_dot": 95.06597900390625
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 30,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 11,
+    "rewired": 22,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "sympy/tensor/index_methods.py/get_contraction_structure",
+   "scores": {
+    "bm25": 39.293611918968104,
+    "dense": 0.1652287095785141,
+    "rrf": 0.06798245614035087,
+    "direct": 0.06798245614035087,
+    "graph": 0.06798245614035087,
+    "rewired": 0.06798245614035087,
+    "dense_dot": 98.60234069824219
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 28,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 29,
+    "rewired": 23,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "sympy/core/basic.py/Basic/_subs",
+   "scores": {
+    "bm25": 38.84726705228961,
+    "dense": 0.17279478907585144,
+    "rrf": 0.06777777777777777,
+    "direct": 0.06777777777777777,
+    "graph": 0.06777777777777777,
+    "rewired": 0.06777777777777777,
+    "dense_dot": 102.9705810546875
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 26,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 30,
+    "rewired": 24,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "sympy/tensor/index_methods.py/get_indices",
+   "scores": {
+    "bm25": 38.46779899242516,
+    "dense": 0.20413658022880554,
+    "rrf": 0.07294429708222812,
+    "direct": 0.07294429708222812,
+    "graph": 0.07294429708222812,
+    "rewired": 0.07294429708222812,
+    "dense_dot": 121.45057678222656
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 19,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 24,
+    "rewired": 15,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "sympy/ntheory/factor_.py/pollard_pm1",
+   "scores": {
+    "bm25": 38.38502997190139,
+    "dense": 0.12401533871889114,
+    "rrf": 0.05831363278171789,
+    "direct": 0.05831363278171789,
+    "graph": 0.05831363278171789,
+    "rewired": 0.05831363278171789,
+    "dense_dot": 73.26400756835938
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 37,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 33,
+    "rewired": 29,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "sympy/integrals/risch.py/DifferentialExtension/_rewrite_exps_pows",
+   "scores": {
+    "bm25": 38.09522958636154,
+    "dense": 0.16449199616909027,
+    "rrf": 0.06135531135531135,
+    "direct": 0.06135531135531135,
+    "graph": 0.1068098568098568,
+    "rewired": 0.06135531135531135,
+    "dense_dot": 97.00248718261719
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 29,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 13,
+    "rewired": 27,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "sympy/core/expr.py/Expr/equals",
+   "scores": {
+    "bm25": 37.75237421080537,
+    "dense": 0.23527942597866058,
+    "rrf": 0.07796101949025487,
+    "direct": 0.07796101949025487,
+    "graph": 0.12341556494480033,
+    "rewired": 0.07796101949025487,
+    "dense_dot": 139.8857421875
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 13,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 6,
+    "rewired": 13,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "sympy/utilities/enumerative.py/MultisetPartitionTraverser/decrement_part_small",
+   "scores": {
+    "bm25": 37.51072314437225,
+    "dense": 0.14076580107212067,
+    "rrf": 0.05606060606060606,
+    "direct": 0.05606060606060606,
+    "graph": 0.05606060606060606,
+    "rewired": 0.05606060606060606,
+    "dense_dot": 83.04913330078125
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 34,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 34,
+    "rewired": 30,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "sympy/categories/baseclasses.py/Diagram/__new__",
+   "scores": {
+    "bm25": 37.47711214749749,
+    "dense": 0.27174243330955505,
+    "rrf": 0.08781362007168458,
+    "direct": 0.08781362007168458,
+    "graph": 0.08781362007168458,
+    "rewired": 0.08781362007168458,
+    "dense_dot": 160.65621948242188
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 8,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 22,
+    "rewired": 11,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "sympy/functions/elementary/piecewise.py/Piecewise/eval",
+   "scores": {
+    "bm25": 37.40538105363653,
+    "dense": 0.22281648218631744,
+    "rrf": 0.06971153846153846,
+    "direct": 0.06971153846153846,
+    "graph": 0.11516608391608392,
+    "rewired": 0.06971153846153846,
+    "dense_dot": 131.73757934570312
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 16,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 9,
+    "rewired": 19,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "sympy/core/basic.py/Basic/has",
+   "scores": {
+    "bm25": 37.347897850207694,
+    "dense": 0.22369419038295746,
+    "rrf": 0.07030303030303031,
+    "direct": 0.07030303030303031,
+    "graph": 0.07030303030303031,
+    "rewired": 0.07030303030303031,
+    "dense_dot": 133.51901245117188
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 15,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 26,
+    "rewired": 17,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "sympy/utilities/enumerative.py/MultisetPartitionTraverser/count_partitions",
+   "scores": {
+    "bm25": 36.840311335356674,
+    "dense": 0.13892993330955505,
+    "rrf": 0.05115089514066496,
+    "direct": 0.05115089514066496,
+    "graph": 0.05115089514066496,
+    "rewired": 0.05115089514066496,
+    "dense_dot": 81.82697296142578
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 36,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 37,
+    "rewired": 35,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "sympy/core/operations.py/AssocOp/_new_rawargs",
+   "scores": {
+    "bm25": 36.79623665461673,
+    "dense": 0.20414820313453674,
+    "rrf": 0.06428571428571428,
+    "direct": 0.06428571428571428,
+    "graph": 0.06428571428571428,
+    "rewired": 0.06428571428571428,
+    "dense_dot": 121.64105224609375
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 18,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 31,
+    "rewired": 25,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "sympy/functions/special/delta_functions.py/Heaviside/_eval_rewrite_as_SingularityFunction",
+   "scores": {
+    "bm25": 36.08216832689146,
+    "dense": 0.11094135046005249,
+    "rrf": 0.048185941043083894,
+    "direct": 0.048185941043083894,
+    "graph": 0.048185941043083894,
+    "rewired": 0.048185941043083894,
+    "dense_dot": 65.67316436767578
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 39,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 38,
+    "rewired": 37,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "sympy/core/expr.py/Expr/as_coeff_mul",
+   "scores": {
+    "bm25": 36.03852192279742,
+    "dense": 0.30854353308677673,
+    "rrf": 0.09845559845559845,
+    "direct": 0.09845559845559845,
+    "graph": 0.09845559845559845,
+    "rewired": 0.09845559845559845,
+    "dense_dot": 184.6945343017578
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 4,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 16,
+    "rewired": 8,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "sympy/plotting/experimental_lambdify.py/Lambdifier/sympy_atoms_namespace",
+   "scores": {
+    "bm25": 36.02966663213469,
+    "dense": 0.27533602714538574,
+    "rrf": 0.08513931888544891,
+    "direct": 0.08513931888544891,
+    "graph": 0.13059386433999437,
+    "rewired": 0.08513931888544891,
+    "dense_dot": 163.93017578125
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 7,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 4,
+    "rewired": 12,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "sympy/ntheory/modular.py/crt",
+   "scores": {
+    "bm25": 35.993362439091,
+    "dense": 0.18551351130008698,
+    "rrf": 0.055944055944055944,
+    "direct": 0.055944055944055944,
+    "graph": 0.055944055944055944,
+    "rewired": 0.055944055944055944,
+    "dense_dot": 109.80728912353516
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 23,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 35,
+    "rewired": 31,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "sympy/utilities/lambdify.py/lambdify",
+   "scores": {
+    "bm25": 35.81991776172872,
+    "dense": 0.18532563745975494,
+    "rrf": 0.054411764705882354,
+    "direct": 0.054411764705882354,
+    "graph": 0.09986631016042781,
+    "rewired": 0.054411764705882354,
+    "dense_dot": 110.33763885498047
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 24,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 15,
+    "rewired": 33,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "sympy/polys/rationaltools.py/together",
+   "scores": {
+    "bm25": 35.79595912862004,
+    "dense": 0.24201847612857819,
+    "rrf": 0.07200929152148663,
+    "direct": 0.07200929152148663,
+    "graph": 0.07200929152148663,
+    "rewired": 0.07200929152148663,
+    "dense_dot": 143.8382568359375
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 11,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 25,
+    "rewired": 16,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "sympy/solvers/ode/ode.py/odesimp",
+   "scores": {
+    "bm25": 35.74157012045174,
+    "dense": 0.1579391062259674,
+    "rrf": 0.04819976771196283,
+    "direct": 0.04819976771196283,
+    "graph": 0.0936543131665083,
+    "rewired": 0.04819976771196283,
+    "dense_dot": 93.25018310546875
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 31,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 19,
+    "rewired": 36,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "sympy/functions/elementary/piecewise.py/Piecewise/_handle_irel",
+   "scores": {
+    "bm25": 35.34557655739879,
+    "dense": 0.2371380478143692,
+    "rrf": 0.06871035940803383,
+    "direct": 0.06871035940803383,
+    "graph": 0.11416490486257928,
+    "rewired": 0.06871035940803383,
+    "dense_dot": 140.28628540039062
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 12,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 10,
+    "rewired": 21,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "sympy/simplify/simplify.py/simplify",
+   "scores": {
+    "bm25": 35.329715042515396,
+    "dense": 0.21291865408420563,
+    "rrf": 0.05976430976430976,
+    "direct": 0.05976430976430976,
+    "graph": 0.10521885521885521,
+    "rewired": 0.05976430976430976,
+    "dense_dot": 126.8814926147461
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 17,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 14,
+    "rewired": 28,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "sympy/core/basic.py/Basic/subs",
+   "scores": {
+    "bm25": 35.32757122003942,
+    "dense": 0.20089426636695862,
+    "rrf": 0.05555555555555555,
+    "direct": 0.05555555555555555,
+    "graph": 0.05555555555555555,
+    "rewired": 0.05555555555555555,
+    "dense_dot": 120.29998016357422
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 20,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 36,
+    "rewired": 32,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "sympy/physics/quantum/qexpr.py/QExpr/_represent",
+   "scores": {
+    "bm25": 35.077579404585805,
+    "dense": 0.13961538672447205,
+    "rrf": 0.043961352657004835,
+    "direct": 0.043961352657004835,
+    "graph": 0.043961352657004835,
+    "rewired": 0.043961352657004835,
+    "dense_dot": 83.22166442871094
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 35,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "sympy/solvers/deutils.py/_preprocess",
+   "scores": {
+    "bm25": 34.97361999943673,
+    "dense": 0.15477105975151062,
+    "rrf": 0.044532409698169226,
+    "direct": 0.044532409698169226,
+    "graph": 0.08998695515271468,
+    "rewired": 0.044532409698169226,
+    "dense_dot": 91.05534362792969
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 33,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 21,
+    "rewired": 38,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "sympy/solvers/solveset.py/_transolve",
+   "scores": {
+    "bm25": 34.90300965750376,
+    "dense": 0.1205809935927391,
+    "rrf": 0.041666666666666664,
+    "direct": 0.041666666666666664,
+    "graph": 0.041666666666666664,
+    "rewired": 0.041666666666666664,
+    "dense_dot": 72.01263427734375
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 38,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "sympy/integrals/rubi/utility_function.py/FractionalPowerSubexpressionQ",
+   "scores": {
+    "bm25": 34.77495908400571,
+    "dense": 0.22543534636497498,
+    "rrf": 0.06207482993197279,
+    "direct": 0.06207482993197279,
+    "graph": 0.06207482993197279,
+    "rewired": 0.06207482993197279,
+    "dense_dot": 133.71493530273438
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 14,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 32,
+    "rewired": 26,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "sympy/solvers/solvers.py/solve",
+   "scores": {
+    "bm25": 34.7713745700466,
+    "dense": 0.19517944753170013,
+    "rrf": 0.052258064516129035,
+    "direct": 0.052258064516129035,
+    "graph": 0.09771260997067449,
+    "rewired": 0.052258064516129035,
+    "dense_dot": 116.55538177490234
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 21,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 17,
+    "rewired": 34,
+    "dense_dot": 21
+   }
+  }
+ ]
+}

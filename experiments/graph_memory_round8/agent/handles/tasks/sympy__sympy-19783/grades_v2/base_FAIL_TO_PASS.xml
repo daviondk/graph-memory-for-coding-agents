@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="2" skipped="0" tests="2" time="0.722" timestamp="2026-11-20T23:09:28.340197" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.physics.quantum.tests.test_dagger" name="test_dagger_mul" time="0.002"><failure message="assert (Dagger(O) * I) == Dagger(O)&#10; +  where Dagger(O) = Dagger(O)&#10; +  and   I = Dagger(I)&#10; +  and   Dagger(O) = Dagger(O)">sympy\physics\quantum\tests\test_dagger.py:39: in test_dagger_mul
+    assert Dagger(O)*Dagger(I) == Dagger(O)
+E   assert (Dagger(O) * I) == Dagger(O)
+E    +  where Dagger(O) = Dagger(O)
+E    +  and   I = Dagger(I)
+E    +  and   Dagger(O) = Dagger(O)</failure></testcase><testcase classname="sympy.physics.quantum.tests.test_operator" name="test_identity" time="0.001"><failure message="assert (I * Dagger(O)) == Dagger(O)&#10; +  where Dagger(O) = Dagger(O)&#10; +  and   Dagger(O) = Dagger(O)">sympy\physics\quantum\tests\test_operator.py:97: in test_identity
+    assert I * Dagger(O) == Dagger(O)
+E   assert (I * Dagger(O)) == Dagger(O)
+E    +  where Dagger(O) = Dagger(O)
+E    +  and   Dagger(O) = Dagger(O)</failure></testcase></testsuite></testsuites>

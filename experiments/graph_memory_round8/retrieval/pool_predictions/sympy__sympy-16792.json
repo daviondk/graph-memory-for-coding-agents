@@ -1,0 +1,855 @@
+{
+ "task": "sympy__sympy-16792",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "e3ce92db77d151f0b243d3c99c70ff72d10704eeee2858c95934d487d6a19c32",
+ "query_sha256": "48b3d6d8e3ddfc9a78b57d8f79cf5ca78ba55a990f1eba937b998fd9160a77a8",
+ "n_corpus": 26008,
+ "n_scanned_for_graph": 26008,
+ "n_propagated": 7,
+ "anchors": [
+  "sympy/utilities/autowrap.py/autowrap",
+  "sympy/physics/quantum/operator.py/DifferentialOperator/expr",
+  "sympy/functions/elementary/piecewise.py/ExprCondPair/expr",
+  "sympy/physics/quantum/state.py/Wavefunction/expr",
+  "sympy/core/function.py/Subs/expr",
+  "sympy/codegen/array_utils.py/CodegenArrayContraction/expr",
+  "sympy/codegen/array_utils.py/CodegenArrayDiagonal/expr",
+  "sympy/codegen/array_utils.py/CodegenArrayPermuteDims/expr"
+ ],
+ "top40": {
+  "body": [
+   {
+    "id": "sympy/utilities/autowrap.py/ufuncify",
+    "score": 134.0100315454333,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 130.239918723766,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/autowrap",
+    "score": 115.0584098075193,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/OutputArgument/__init__",
+    "score": 112.02560315666028,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 107.99090725889022,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/Result/__init__",
+    "score": 105.62309382621694,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/codegen",
+    "score": 101.91277623840786,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/julia.py/julia_code",
+    "score": 101.06359112174432,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/octave.py/octave_code",
+    "score": 100.26905695665631,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/operations.py/AssocOp/_new_rawargs",
+    "score": 100.01441691434997,
+    "supports": []
+   },
+   {
+    "id": "examples/advanced/autowrap_integrators.py/main",
+    "score": 99.54166826532244,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 99.30812188915394,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/make_routine",
+    "score": 98.57257654229987,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/enumerative.py/MultisetPartitionTraverser/decrement_part_small",
+    "score": 98.12991480866349,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/rust.py/rust_code",
+    "score": 96.99277961740673,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/fcode.py/fcode",
+    "score": 96.52167863214014,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/risch.py/risch_integrate",
+    "score": 96.07014404024696,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/Function/__new__",
+    "score": 95.57817125918979,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 95.11930751606522,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/glsl.py/glsl_code",
+    "score": 95.09786788133698,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/ccode.py/ccode",
+    "score": 94.82608793193589,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/jscode.py/jscode",
+    "score": 94.77749080506578,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/equals",
+    "score": 94.52139669268466,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/nseries",
+    "score": 94.44276855995818,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/integrate",
+    "score": 94.283048467194,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/rcode.py/rcode",
+    "score": 94.01303423636631,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 93.09314342196765,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/theanocode.py/theano_function",
+    "score": 91.67264602464252,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solveset.py/_transolve",
+    "score": 91.38648631190368,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/llvmjitcode.py/llvm_callable",
+    "score": 91.04757689871168,
+    "supports": []
+   },
+   {
+    "id": "sympy/codegen/ast.py/aug_assign",
+    "score": 89.76306846118653,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 89.50423769222206,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/transform",
+    "score": 89.28254128646802,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve",
+    "score": 89.02294637972498,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 87.06820988637854,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/_solve",
+    "score": 86.80546828418261,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_rational_function",
+    "score": 86.56658706054165,
+    "supports": []
+   },
+   {
+    "id": "sympy/combinatorics/permutations.py/Permutation/__new__",
+    "score": 86.31494728150233,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/risch.py/integer_powers",
+    "score": 85.623916900249,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/CodeGen/routine",
+    "score": 85.52558008443435,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "sympy/utilities/codegen.py/OutputArgument/__init__",
+    "score": 0.14285714285714285,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/ufuncify",
+    "score": 0.09675704412546518,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_get_wrapped_function",
+    "score": 0.09188756449030422,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/autowrap",
+    "score": 0.08958130477117819,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/Result/__init__",
+    "score": 0.08630952380952381,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.08371341695172937,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/CodeGenArgumentListError/missing_args",
+    "score": 0.08371012308465209,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_partition_args",
+    "score": 0.08029008029008029,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/OutputArgument/__str__",
+    "score": 0.06709021601016518,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.06679962770908124,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/codegen",
+    "score": 0.0633280339162692,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/F2PyCodeWrapper/_get_wrapped_function",
+    "score": 0.06296750818139317,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/UfuncifyCodeWrapper/_get_wrapped_function",
+    "score": 0.05929081913139087,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/command",
+    "score": 0.055958456441937504,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/julia.py/julia_code",
+    "score": 0.05584037469540175,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/ccode.py/_as_macro_if_defined",
+    "score": 0.05362561473265669,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/octave.py/octave_code",
+    "score": 0.052916235935697484,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/__init__",
+    "score": 0.052546744036105736,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/decorator.py/depends_on_deco",
+    "score": 0.050274499039253365,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/operations.py/AssocOp/_new_rawargs",
+    "score": 0.05005266206751277,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/decorator.py/doctest_depends_on",
+    "score": 0.049231950844854065,
+    "supports": []
+   },
+   {
+    "id": "examples/advanced/autowrap_integrators.py/main",
+    "score": 0.048336407733825235,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.045579295953547455,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/make_routine",
+    "score": 0.0451505016722408,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/importtools.py/import_module",
+    "score": 0.04483430799220273,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/InOutArgument/__init__",
+    "score": 0.043843624406284254,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/enumerative.py/MultisetPartitionTraverser/decrement_part_small",
+    "score": 0.04338193253287593,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/InOutArgument/__str__",
+    "score": 0.04196988073579947,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/DummyWrapper/_get_wrapped_function",
+    "score": 0.04034141345169,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/rust.py/rust_code",
+    "score": 0.04028457598178714,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_call_arg",
+    "score": 0.038881001548786785,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/fcode.py/fcode",
+    "score": 0.03858949751464147,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_declare_arg",
+    "score": 0.037696667643897196,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_prepare_files",
+    "score": 0.037462537462537464,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/risch.py/risch_integrate",
+    "score": 0.03714161766870405,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/Function/__new__",
+    "score": 0.036023022978873546,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_prototype_arg",
+    "score": 0.035597585822473375,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 0.034572284135461366,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/dump_pyx",
+    "score": 0.03439481665288117,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/FCodeGen/_declare_arguments",
+    "score": 0.03407661520869068,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "sympy/utilities/autowrap.py/autowrap",
+    "score": 0.1804903956802691,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/OutputArgument/__init__",
+    "score": 0.14285714285714285,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/ufuncify",
+    "score": 0.09675704412546518,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_get_wrapped_function",
+    "score": 0.09188756449030422,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/Result/__init__",
+    "score": 0.08630952380952381,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/operator.py/DifferentialOperator/expr",
+    "score": 0.0842211070219448,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.08371341695172937,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/CodeGenArgumentListError/missing_args",
+    "score": 0.08371012308465209,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_partition_args",
+    "score": 0.08029008029008029,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/piecewise.py/ExprCondPair/expr",
+    "score": 0.07811091931667154,
+    "supports": []
+   },
+   {
+    "id": "sympy/codegen/array_utils.py/CodegenArrayContraction/expr",
+    "score": 0.07721028679699742,
+    "supports": []
+   },
+   {
+    "id": "sympy/codegen/array_utils.py/CodegenArrayDiagonal/expr",
+    "score": 0.07332672956089786,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/state.py/Wavefunction/expr",
+    "score": 0.07195009935789742,
+    "supports": []
+   },
+   {
+    "id": "sympy/codegen/array_utils.py/CodegenArrayPermuteDims/expr",
+    "score": 0.06827084080851573,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/Subs/expr",
+    "score": 0.06792967815850905,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/OutputArgument/__str__",
+    "score": 0.06709021601016518,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.06679962770908124,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/codegen",
+    "score": 0.0633280339162692,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/F2PyCodeWrapper/_get_wrapped_function",
+    "score": 0.06296750818139317,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/UfuncifyCodeWrapper/_get_wrapped_function",
+    "score": 0.05929081913139087,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/command",
+    "score": 0.055958456441937504,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/julia.py/julia_code",
+    "score": 0.05584037469540175,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/ccode.py/_as_macro_if_defined",
+    "score": 0.05362561473265669,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/octave.py/octave_code",
+    "score": 0.052916235935697484,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/__init__",
+    "score": 0.052546744036105736,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/decorator.py/depends_on_deco",
+    "score": 0.050274499039253365,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/operations.py/AssocOp/_new_rawargs",
+    "score": 0.05005266206751277,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/decorator.py/doctest_depends_on",
+    "score": 0.049231950844854065,
+    "supports": []
+   },
+   {
+    "id": "examples/advanced/autowrap_integrators.py/main",
+    "score": 0.048336407733825235,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.045579295953547455,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/make_routine",
+    "score": 0.0451505016722408,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/importtools.py/import_module",
+    "score": 0.04483430799220273,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/InOutArgument/__init__",
+    "score": 0.043843624406284254,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/enumerative.py/MultisetPartitionTraverser/decrement_part_small",
+    "score": 0.04338193253287593,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/InOutArgument/__str__",
+    "score": 0.04196988073579947,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/DummyWrapper/_get_wrapped_function",
+    "score": 0.04034141345169,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/rust.py/rust_code",
+    "score": 0.04028457598178714,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_call_arg",
+    "score": 0.038881001548786785,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/fcode.py/fcode",
+    "score": 0.03858949751464147,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_declare_arg",
+    "score": 0.037696667643897196,
+    "supports": []
+   }
+  ],
+  "graph": [
+   {
+    "id": "sympy/utilities/autowrap.py/autowrap",
+    "score": 0.1804903956802691,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/OutputArgument/__init__",
+    "score": 0.14285714285714285,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/ufuncify",
+    "score": 0.14221158958001062,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "examples/advanced/autowrap_integrators.py/main",
+    "score": 0.09379095318837069,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_get_wrapped_function",
+    "score": 0.09188756449030422,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/Result/__init__",
+    "score": 0.08630952380952381,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/operator.py/DifferentialOperator/expr",
+    "score": 0.0842211070219448,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.08371341695172937,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/CodeGenArgumentListError/missing_args",
+    "score": 0.08371012308465209,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/_partition_args",
+    "score": 0.08029008029008029,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/piecewise.py/ExprCondPair/expr",
+    "score": 0.07811091931667154,
+    "supports": []
+   },
+   {
+    "id": "sympy/codegen/array_utils.py/CodegenArrayContraction/expr",
+    "score": 0.07721028679699742,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/_validate_backend_language",
+    "score": 0.0753962518668401,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/codegen/array_utils.py/CodegenArrayDiagonal/expr",
+    "score": 0.07332672956089786,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/state.py/Wavefunction/expr",
+    "score": 0.07195009935789742,
+    "supports": []
+   },
+   {
+    "id": "sympy/codegen/array_utils.py/CodegenArrayPermuteDims/expr",
+    "score": 0.06827084080851573,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/Subs/expr",
+    "score": 0.06792967815850905,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/OutputArgument/__str__",
+    "score": 0.06709021601016518,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.06679962770908124,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/codegen",
+    "score": 0.0633280339162692,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/F2PyCodeWrapper/_get_wrapped_function",
+    "score": 0.06296750818139317,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/binary_function",
+    "score": 0.061383517905257035,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/UfuncifyCodeWrapper/_get_wrapped_function",
+    "score": 0.05929081913139087,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/command",
+    "score": 0.055958456441937504,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/julia.py/julia_code",
+    "score": 0.05584037469540175,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/iterable",
+    "score": 0.05406288309544832,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/printing/ccode.py/_as_macro_if_defined",
+    "score": 0.05362561473265669,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/octave.py/octave_code",
+    "score": 0.052916235935697484,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/CythonCodeWrapper/__init__",
+    "score": 0.052546744036105736,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/get_code_generator",
+    "score": 0.051552230006402376,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/utilities/decorator.py/depends_on_deco",
+    "score": 0.050274499039253365,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/_infer_language",
+    "score": 0.050124154061161934,
+    "supports": [
+     "sympy/utilities/autowrap.py/autowrap"
+    ]
+   },
+   {
+    "id": "sympy/core/operations.py/AssocOp/_new_rawargs",
+    "score": 0.05005266206751277,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/decorator.py/doctest_depends_on",
+    "score": 0.049231950844854065,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.045579295953547455,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/make_routine",
+    "score": 0.0451505016722408,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/importtools.py/import_module",
+    "score": 0.04483430799220273,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/InOutArgument/__init__",
+    "score": 0.043843624406284254,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/enumerative.py/MultisetPartitionTraverser/decrement_part_small",
+    "score": 0.04338193253287593,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/InOutArgument/__str__",
+    "score": 0.04196988073579947,
+    "supports": []
+   }
+  ]
+ }
+}

@@ -1,0 +1,887 @@
+{
+ "task": "sphinx-doc__sphinx-10325",
+ "repo": "sphinx-doc__sphinx",
+ "corpus_sha256": "7dc56aef91cc550d4b682f19d202c723f15a626f287925f0518c7cdf14855bb9",
+ "query_sha256": "48d9c774e2b156031f06622c80895f45185cc06595c9d36394cda61c1f10600c",
+ "n_corpus": 4249,
+ "anchors": [],
+ "edges": [
+  [
+   "sphinx/ext/autodoc/__init__.py/Documenter/generate",
+   "sphinx/ext/autodoc/__init__.py/Documenter/document_members"
+  ],
+  [
+   "sphinx/ext/autodoc/__init__.py/Documenter/document_members",
+   "sphinx/ext/autodoc/__init__.py/Documenter/filter_members"
+  ],
+  [
+   "sphinx/environment/adapters/toctree.py/TocTree/resolve",
+   "sphinx/environment/__init__.py/BuildEnvironment/resolve_toctree"
+  ],
+  [
+   "sphinx/environment/adapters/toctree.py/TocTree/resolve",
+   "sphinx/environment/adapters/toctree.py/_entries_from_toctree"
+  ],
+  [
+   "sphinx/environment/adapters/toctree.py/TocTree/resolve",
+   "sphinx/environment/adapters/toctree.py/_toctree_add_classes"
+  ],
+  [
+   "sphinx/directives/__init__.py/ObjectDescription/run",
+   "sphinx/domains/python.py/PyObject/before_content"
+  ],
+  [
+   "sphinx/directives/__init__.py/ObjectDescription/run",
+   "sphinx/ext/autosummary/__init__.py/extract_summary"
+  ],
+  [
+   "sphinx/util/__init__.py/split_full_qualified_name",
+   "sphinx/ext/autosummary/generate.py/generate_autosummary_content"
+  ]
+ ],
+ "explicit_identifiers": {
+  "ignored": 2
+ },
+ "candidates": [
+  {
+   "id": "sphinx/cmd/quickstart.py/ask_user",
+   "scores": {
+    "bm25": 73.49239624790332,
+    "dense": 0.21553462743759155,
+    "rrf": 0.12539184952978055,
+    "direct": 0.12539184952978055,
+    "graph": 0.12539184952978055,
+    "rewired": 0.12539184952978055,
+    "dense_dot": 126.31028747558594
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 19,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "doc/usage/extensions/example_numpy.py/module_level_function",
+   "scores": {
+    "bm25": 65.38481539321982,
+    "dense": 0.18371199071407318,
+    "rrf": 0.10964912280701754,
+    "direct": 0.10964912280701754,
+    "graph": 0.10964912280701754,
+    "rewired": 0.10964912280701754,
+    "dense_dot": 107.9189224243164
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 28,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 7,
+    "rewired": 7,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "doc/usage/extensions/example_google.py/module_level_function",
+   "scores": {
+    "bm25": 65.06555745357402,
+    "dense": 0.1974155455827713,
+    "rrf": 0.10722610722610723,
+    "direct": 0.10722610722610723,
+    "graph": 0.10722610722610723,
+    "rewired": 0.10722610722610723,
+    "dense_dot": 115.45709228515625
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 23,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 9,
+    "rewired": 9,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "sphinx/application.py/Sphinx/add_object_type",
+   "scores": {
+    "bm25": 65.01093054701339,
+    "dense": 0.23063363134860992,
+    "rrf": 0.10846560846560846,
+    "direct": 0.10846560846560846,
+    "graph": 0.10846560846560846,
+    "rewired": 0.10846560846560846,
+    "dense_dot": 136.2134246826172
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 17,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 8,
+    "rewired": 8,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "sphinx/ext/autodoc/__init__.py/Documenter/generate",
+   "scores": {
+    "bm25": 63.41699165772832,
+    "dense": 0.4473978579044342,
+    "rrf": 0.12549019607843137,
+    "direct": 0.12549019607843137,
+    "graph": 0.12549019607843137,
+    "rewired": 0.12549019607843137,
+    "dense_dot": 261.7571105957031
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 7,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "sphinx/ext/autodoc/__init__.py/Documenter/document_members",
+   "scores": {
+    "bm25": 56.22632126939336,
+    "dense": 0.6162843108177185,
+    "rrf": 0.1534090909090909,
+    "direct": 0.1534090909090909,
+    "graph": 0.1534090909090909,
+    "rewired": 0.1534090909090909,
+    "dense_dot": 363.1872863769531
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "sphinx/domains/__init__.py/Index/generate",
+   "scores": {
+    "bm25": 55.86846679039865,
+    "dense": 0.21020884811878204,
+    "rrf": 0.09108159392789374,
+    "direct": 0.09108159392789374,
+    "graph": 0.09108159392789374,
+    "rewired": 0.09108159392789374,
+    "dense_dot": 124.10011291503906
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 21,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 12,
+    "rewired": 12,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "sphinx/environment/adapters/toctree.py/TocTree/resolve",
+   "scores": {
+    "bm25": 55.502640989194695,
+    "dense": 0.18833978474140167,
+    "rrf": 0.08412698412698412,
+    "direct": 0.08412698412698412,
+    "graph": 0.08412698412698412,
+    "rewired": 0.08412698412698412,
+    "dense_dot": 110.53582763671875
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 25,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 16,
+    "rewired": 16,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "sphinx/ext/autodoc/__init__.py/Documenter/filter_members",
+   "scores": {
+    "bm25": 54.36338367229184,
+    "dense": 0.6054342985153198,
+    "rrf": 0.13596491228070173,
+    "direct": 0.13596491228070173,
+    "graph": 0.13596491228070173,
+    "rewired": 0.13596491228070173,
+    "dense_dot": 357.03515625
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 2,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "sphinx/environment/__init__.py/BuildEnvironment/__init__",
+   "scores": {
+    "bm25": 50.65459036750194,
+    "dense": 0.18977268040180206,
+    "rrf": 0.07941176470588235,
+    "direct": 0.07941176470588235,
+    "graph": 0.07941176470588235,
+    "rewired": 0.07941176470588235,
+    "dense_dot": 111.36787414550781
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 24,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 19,
+    "rewired": 19,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "sphinx/application.py/Sphinx/add_config_value",
+   "scores": {
+    "bm25": 49.89413883967991,
+    "dense": 0.13974857330322266,
+    "rrf": 0.06935817805383022,
+    "direct": 0.06935817805383022,
+    "graph": 0.06935817805383022,
+    "rewired": 0.06935817805383022,
+    "dense_dot": 82.50450897216797
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 36,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 23,
+    "rewired": 23,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "sphinx/ext/inheritance_diagram.py/InheritanceGraph/_class_info",
+   "scores": {
+    "bm25": 49.40999695907081,
+    "dense": 0.3834434747695923,
+    "rrf": 0.09808612440191387,
+    "direct": 0.09808612440191387,
+    "graph": 0.09808612440191387,
+    "rewired": 0.09808612440191387,
+    "dense_dot": 224.66104125976562
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 9,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 10,
+    "rewired": 10,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "sphinx/ext/autodoc/__init__.py/Documenter/get_object_members",
+   "scores": {
+    "bm25": 49.36445835063946,
+    "dense": 0.5297550559043884,
+    "rrf": 0.11490683229813664,
+    "direct": 0.11490683229813664,
+    "graph": 0.11490683229813664,
+    "rewired": 0.11490683229813664,
+    "dense_dot": 312.0273742675781
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 4,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "sphinx/ext/autodoc/__init__.py/cut_lines",
+   "scores": {
+    "bm25": 48.16060740060337,
+    "dense": 0.25754451751708984,
+    "rrf": 0.08166666666666667,
+    "direct": 0.08166666666666667,
+    "graph": 0.08166666666666667,
+    "rewired": 0.08166666666666667,
+    "dense_dot": 151.23451232910156
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 15,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 17,
+    "rewired": 17,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "sphinx/ext/napoleon/__init__.py/_skip_member",
+   "scores": {
+    "bm25": 47.991328776556394,
+    "dense": 0.4354987144470215,
+    "rrf": 0.09555555555555556,
+    "direct": 0.09555555555555556,
+    "graph": 0.09555555555555556,
+    "rewired": 0.09555555555555556,
+    "dense_dot": 256.66094970703125
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 8,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 11,
+    "rewired": 11,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "sphinx/directives/__init__.py/ObjectDescription/run",
+   "scores": {
+    "bm25": 47.420778899204095,
+    "dense": 0.28369858860969543,
+    "rrf": 0.08608058608058608,
+    "direct": 0.08608058608058608,
+    "graph": 0.08608058608058608,
+    "rewired": 0.08608058608058608,
+    "dense_dot": 166.25735473632812
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 11,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 15,
+    "rewired": 15,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "sphinx/application.py/Sphinx/add_node",
+   "scores": {
+    "bm25": 47.05161588223779,
+    "dense": 0.18380287289619446,
+    "rrf": 0.06406406406406406,
+    "direct": 0.06406406406406406,
+    "graph": 0.06406406406406406,
+    "rewired": 0.06406406406406406,
+    "dense_dot": 108.76893615722656
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 27,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 24,
+    "rewired": 24,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "sphinx/ext/extlinks.py/make_link_role",
+   "scores": {
+    "bm25": 46.11369795219008,
+    "dense": 0.16317543387413025,
+    "rrf": 0.05952380952380952,
+    "direct": 0.05952380952380952,
+    "graph": 0.05952380952380952,
+    "rewired": 0.05952380952380952,
+    "dense_dot": 95.42112731933594
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 32,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 26,
+    "rewired": 26,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "sphinx/environment/__init__.py/BuildEnvironment/resolve_toctree",
+   "scores": {
+    "bm25": 45.67672151196799,
+    "dense": 0.17708346247673035,
+    "rrf": 0.059482758620689656,
+    "direct": 0.059482758620689656,
+    "graph": 0.059482758620689656,
+    "rewired": 0.059482758620689656,
+    "dense_dot": 103.84715270996094
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 30,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 27,
+    "rewired": 27,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "sphinx/ext/autodoc/__init__.py/ModuleDocumenter/get_object_members",
+   "scores": {
+    "bm25": 45.26440928708544,
+    "dense": 0.5375216603279114,
+    "rrf": 0.11025641025641025,
+    "direct": 0.11025641025641025,
+    "graph": 0.11025641025641025,
+    "rewired": 0.11025641025641025,
+    "dense_dot": 317.4659729003906
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 3,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 6,
+    "rewired": 6,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "doc/usage/extensions/example_google.py/ExampleClass/__init__",
+   "scores": {
+    "bm25": 44.82042887937549,
+    "dense": 0.2811071276664734,
+    "rrf": 0.07771260997067449,
+    "direct": 0.07771260997067449,
+    "graph": 0.07771260997067449,
+    "rewired": 0.07771260997067449,
+    "dense_dot": 164.95419311523438
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 12,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 20,
+    "rewired": 20,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "doc/usage/extensions/example_numpy.py/ExampleClass/__init__",
+   "scores": {
+    "bm25": 44.82042887937549,
+    "dense": 0.2872520983219147,
+    "rrf": 0.08125,
+    "direct": 0.08125,
+    "graph": 0.08125,
+    "rewired": 0.08125,
+    "dense_dot": 169.6431884765625
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 10,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 18,
+    "rewired": 18,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "sphinx/domains/std.py/StandardDomain/note_hyperlink_target",
+   "scores": {
+    "bm25": 44.32458943739763,
+    "dense": 0.15614743530750275,
+    "rrf": 0.053558844256518676,
+    "direct": 0.053558844256518676,
+    "graph": 0.053558844256518676,
+    "rewired": 0.053558844256518676,
+    "dense_dot": 91.77853393554688
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 33,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 30,
+    "rewired": 30,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "sphinx/ext/intersphinx.py/fetch_inventory_group",
+   "scores": {
+    "bm25": 43.40509000358702,
+    "dense": 0.1438540816307068,
+    "rrf": 0.05163398692810457,
+    "direct": 0.05163398692810457,
+    "graph": 0.05163398692810457,
+    "rewired": 0.05163398692810457,
+    "dense_dot": 83.84242248535156
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 35,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 31,
+    "rewired": 31,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "sphinx/domains/python.py/PyObject/before_content",
+   "scores": {
+    "bm25": 43.255133524093814,
+    "dense": 0.2670305371284485,
+    "rrf": 0.07023809523809524,
+    "direct": 0.07023809523809524,
+    "graph": 0.07023809523809524,
+    "rewired": 0.07023809523809524,
+    "dense_dot": 157.0968017578125
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 14,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 22,
+    "rewired": 22,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "sphinx/ext/autosummary/__init__.py/extract_summary",
+   "scores": {
+    "bm25": 43.20369564951324,
+    "dense": 0.27378928661346436,
+    "rrf": 0.07125603864734299,
+    "direct": 0.07125603864734299,
+    "graph": 0.07125603864734299,
+    "rewired": 0.07125603864734299,
+    "dense_dot": 159.75732421875
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 13,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 21,
+    "rewired": 21,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "sphinx/ext/intersphinx.py/load_mappings",
+   "scores": {
+    "bm25": 42.924870348201445,
+    "dense": 0.11352270841598511,
+    "rrf": 0.047435190292333146,
+    "direct": 0.047435190292333146,
+    "graph": 0.047435190292333146,
+    "rewired": 0.047435190292333146,
+    "dense_dot": 66.44959259033203
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 39,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 36,
+    "rewired": 36,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "sphinx/config.py/convert_source_suffix",
+   "scores": {
+    "bm25": 41.53491784190149,
+    "dense": 0.15331342816352844,
+    "rrf": 0.04904306220095694,
+    "direct": 0.04904306220095694,
+    "graph": 0.04904306220095694,
+    "rewired": 0.04904306220095694,
+    "dense_dot": 89.85767364501953
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 34,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 34,
+    "rewired": 34,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "sphinx/util/__init__.py/split_full_qualified_name",
+   "scores": {
+    "bm25": 41.48211548810214,
+    "dense": 0.16347956657409668,
+    "rrf": 0.050031269543464665,
+    "direct": 0.050031269543464665,
+    "graph": 0.050031269543464665,
+    "rewired": 0.050031269543464665,
+    "dense_dot": 96.31517028808594
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 31,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 33,
+    "rewired": 33,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "sphinx/application.py/Sphinx/add_crossref_type",
+   "scores": {
+    "bm25": 41.391038330020244,
+    "dense": 0.2537976801395416,
+    "rrf": 0.06346153846153846,
+    "direct": 0.06346153846153846,
+    "graph": 0.06346153846153846,
+    "rewired": 0.06346153846153846,
+    "dense_dot": 149.634521484375
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 16,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 25,
+    "rewired": 25,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "sphinx/environment/adapters/toctree.py/_entries_from_toctree",
+   "scores": {
+    "bm25": 41.370163919299905,
+    "dense": 0.21539518237113953,
+    "rrf": 0.05772357723577236,
+    "direct": 0.05772357723577236,
+    "graph": 0.05772357723577236,
+    "rewired": 0.05772357723577236,
+    "dense_dot": 126.4265365600586
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 20,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 28,
+    "rewired": 28,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "sphinx/ext/autosummary/generate.py/generate_autosummary_content",
+   "scores": {
+    "bm25": 41.309268159524855,
+    "dense": 0.4552789628505707,
+    "rrf": 0.08630952380952381,
+    "direct": 0.08630952380952381,
+    "graph": 0.08630952380952381,
+    "rewired": 0.08630952380952381,
+    "dense_dot": 266.0399169921875
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 6,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 14,
+    "rewired": 14,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "sphinx/ext/autodoc/__init__.py/ClassDocumenter/generate",
+   "scores": {
+    "bm25": 41.14120861925576,
+    "dense": 0.4842786490917206,
+    "rrf": 0.08992248062015504,
+    "direct": 0.08992248062015504,
+    "graph": 0.08992248062015504,
+    "rewired": 0.08992248062015504,
+    "dense_dot": 284.21783447265625
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 5,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 13,
+    "rewired": 13,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "sphinx/domains/c.py/DefinitionParser/_parse_expression_fallback",
+   "scores": {
+    "bm25": 41.094851216604354,
+    "dense": 0.10675442218780518,
+    "rrf": 0.042727272727272725,
+    "direct": 0.042727272727272725,
+    "graph": 0.042727272727272725,
+    "rewired": 0.042727272727272725,
+    "dense_dot": 62.621185302734375
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 40,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "sphinx/domains/cpp.py/DefinitionParser/_parse_expression_fallback",
+   "scores": {
+    "bm25": 40.99804158201415,
+    "dense": 0.13242527842521667,
+    "rrf": 0.043498817966903074,
+    "direct": 0.043498817966903074,
+    "graph": 0.043498817966903074,
+    "rewired": 0.043498817966903074,
+    "dense_dot": 77.65003967285156
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 37,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 38,
+    "rewired": 38,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "sphinx/domains/python.py/PythonModuleIndex/generate",
+   "scores": {
+    "bm25": 40.970277810581706,
+    "dense": 0.22053509950637817,
+    "rrf": 0.05745341614906832,
+    "direct": 0.05745341614906832,
+    "graph": 0.05745341614906832,
+    "rewired": 0.05745341614906832,
+    "dense_dot": 129.29901123046875
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 18,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 29,
+    "rewired": 29,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "sphinx/builders/epub3.py/Epub3Builder/build_navlist",
+   "scores": {
+    "bm25": 40.81094281084474,
+    "dense": 0.13108360767364502,
+    "rrf": 0.04210992907801418,
+    "direct": 0.04210992907801418,
+    "graph": 0.04210992907801418,
+    "rewired": 0.04210992907801418,
+    "dense_dot": 77.09785461425781
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 38,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "sphinx/transforms/post_transforms/__init__.py/ReferencesResolver/resolve_anyref",
+   "scores": {
+    "bm25": 40.615932658731865,
+    "dense": 0.18223445117473602,
+    "rrf": 0.046474358974358976,
+    "direct": 0.046474358974358976,
+    "graph": 0.046474358974358976,
+    "rewired": 0.046474358974358976,
+    "dense_dot": 106.82615661621094
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 29,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 37,
+    "rewired": 37,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "sphinx/util/docstrings.py/prepare_docstring",
+   "scores": {
+    "bm25": 40.37888953099772,
+    "dense": 0.18592000007629395,
+    "rrf": 0.048185941043083894,
+    "direct": 0.048185941043083894,
+    "graph": 0.048185941043083894,
+    "rewired": 0.048185941043083894,
+    "dense_dot": 108.34991455078125
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 26,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 35,
+    "rewired": 35,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "sphinx/environment/adapters/toctree.py/_toctree_add_classes",
+   "scores": {
+    "bm25": 40.343907074494325,
+    "dense": 0.20639294385910034,
+    "rrf": 0.051250000000000004,
+    "direct": 0.051250000000000004,
+    "graph": 0.051250000000000004,
+    "rewired": 0.051250000000000004,
+    "dense_dot": 120.80049133300781
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 22,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 32,
+    "rewired": 32,
+    "dense_dot": 22
+   }
+  }
+ ]
+}

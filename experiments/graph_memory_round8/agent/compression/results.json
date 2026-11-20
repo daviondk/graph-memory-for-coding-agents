@@ -1,0 +1,75 @@
+{
+  "tasks": 10,
+  "valid_and_complete": 10,
+  "changed_trajectories": 2,
+  "changed_final_prompts": 7,
+  "initial_search_nonempty": 7,
+  "primary": {
+    "n_tasks": 10,
+    "pointer_wins": 0,
+    "history_wins": 0,
+    "ties": 10,
+    "delta_tasks": 0,
+    "exact_two_sided_p": 1
+  },
+  "localization": {
+    "n_tasks": 10,
+    "pointer_wins": 0,
+    "history_wins": 0,
+    "ties": 10,
+    "delta_tasks": 0,
+    "exact_two_sided_p": 1
+  },
+  "applications": {
+    "n_tasks": 10,
+    "pointer_wins": 0,
+    "history_wins": 1,
+    "ties": 9,
+    "delta_tasks": -1,
+    "exact_two_sided_p": 1
+  },
+  "history": {
+    "applied": 3,
+    "exposures": 9,
+    "exact_address_reads": 1,
+    "valid_reads": 5,
+    "localized": 2,
+    "truncated_reads": 0,
+    "strict_success": 1,
+    "cost": {
+      "calls": 40,
+      "prompt_tokens": 22102,
+      "answer_tokens": 2577,
+      "model_wall_s": 102.7722749998793,
+      "attempts": 40,
+      "tool_wall_s": 0.31402619992149994,
+      "full_wall_s": 103.0863011998008
+    }
+  },
+  "pointer": {
+    "applied": 2,
+    "exposures": 8,
+    "exact_address_reads": 0,
+    "valid_reads": 5,
+    "localized": 2,
+    "truncated_reads": 0,
+    "strict_success": 1,
+    "cost": {
+      "calls": 40,
+      "prompt_tokens": 21642,
+      "answer_tokens": 3429,
+      "model_wall_s": 125.35205220000353,
+      "attempts": 40,
+      "tool_wall_s": 0.2634517998085357,
+      "full_wall_s": 125.61550399981206
+    }
+  },
+  "physical_unique_model": {
+    "calls": 61,
+    "prompt_tokens": 33858,
+    "answer_tokens": 4837,
+    "model_wall_s": 175.65685969981132,
+    "attempts": 61
+  },
+  "source": "Historical SWE-bench Verified SymPy, sampled regressions, native Windows pytest"
+}

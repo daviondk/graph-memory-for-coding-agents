@@ -1,0 +1,85 @@
+{
+ "flat": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/utilities/quality_unicode.py": "--- \n+++ \n@@ -2,6 +2,7 @@\n \n SymPyDeprecationWarning(\n     feature=\"Import sympy.utilities.quality_unicode\",\n+    # TODO: Fix subscript formatting for Greek letters in pprint unicode\n     useinstead=\"Import from sympy.testing.quality_unicode\",\n     issue=18095,\n     deprecated_since_version=\"1.6\").warn()"
+  },
+  "call_id": "45a6a83c83d40fee8485f9bac31b031ddb63aa0768e8e918af26cce79ecda875",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/printing/tests/test_conventions.py::test_super_sub"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/printing/tests/test_conventions.py::test_super_sub"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 1.7189999999827705,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/printing/tests/test_conventions.py::test_requires_partial"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/printing/tests/test_conventions.py::test_requires_partial"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.6560000000172295,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "evidence": {
+  "applied": false,
+  "reason": "bad edit count",
+  "diff": {},
+  "call_id": "0222e03f6b19d1f6fced835d694f8cf3ccff0ed194c853eaac62a04c67fb1809",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/printing/tests/test_conventions.py::test_super_sub"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/printing/tests/test_conventions.py::test_super_sub"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 3.7030000000377186,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/printing/tests/test_conventions.py::test_requires_partial"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/printing/tests/test_conventions.py::test_requires_partial"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.7649999999557622,
+    "complete": true,
+    "diagnostic": ""
+   }
+  },
+  "reused": "base"
+ }
+}

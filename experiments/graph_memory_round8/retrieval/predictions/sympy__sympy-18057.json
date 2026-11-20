@@ -1,0 +1,944 @@
+{
+ "task": "sympy__sympy-18057",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "4a10a8b4dcb663209319152802b9f4df7330e1300ba5cf223a79160f14cb3bbc",
+ "query_sha256": "e6123af2c04c44fa1728b05a34d72f619b8fd01f33b20afef9a5b3f19a4620f0",
+ "n_corpus": 26859,
+ "anchors": [
+  "sympy/core/sympify.py/sympify",
+  "sympy/parsing/sympy_parser.py/eval_expr",
+  "sympy/parsing/sympy_parser.py/parse_expr",
+  "sympy/parsing/ast_parser.py/parse_expr",
+  "sympy/core/numbers.py/Float/__eq__",
+  "sympy/core/basic.py/Basic/__eq__"
+ ],
+ "edges": [
+  [
+   "sympy/parsing/sympy_parser.py/eval_expr",
+   "sympy/parsing/sympy_parser.py/parse_expr"
+  ],
+  [
+   "sympy/parsing/sympy_parser.py/parse_expr",
+   "sympy/parsing/sympy_parser.py/stringify_expr"
+  ],
+  [
+   "sympy/parsing/sympy_parser.py/parse_expr",
+   "sympy/core/compatibility.py/iterable"
+  ],
+  [
+   "sympy/parsing/ast_parser.py/parse_expr",
+   "sympy/parsing/c/c_parser.py/CCodeConverter/parse"
+  ],
+  [
+   "sympy/core/sympify.py/sympify",
+   "sympy/core/compatibility.py/iterable"
+  ],
+  [
+   "sympy/core/sympify.py/sympify",
+   "sympy/core/sympify.py/kernS"
+  ],
+  [
+   "sympy/core/sympify.py/sympify",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/core/sympify.py/sympify",
+   "sympy/simplify/simplify.py/separatevars"
+  ],
+  [
+   "sympy/core/sympify.py/sympify",
+   "sympy/core/compatibility.py/default_sort_key"
+  ],
+  [
+   "sympy/parsing/sympy_parser.py/function_exponentiation",
+   "sympy/parsing/sympy_parser.py/_token_callable"
+  ],
+  [
+   "sympy/parsing/sympy_parser.py/_token_callable",
+   "sympy/parsing/sympy_parser.py/_apply_functions"
+  ],
+  [
+   "sympy/parsing/c/c_parser.py/CCodeConverter/parse",
+   "sympy/parsing/c/c_parser.py/CCodeConverter/parse_str"
+  ],
+  [
+   "sympy/core/compatibility.py/iterable",
+   "sympy/solvers/ode.py/dsolve"
+  ],
+  [
+   "sympy/core/compatibility.py/iterable",
+   "sympy/core/compatibility.py/default_sort_key"
+  ],
+  [
+   "sympy/core/numbers.py/Float/__eq__",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/core/basic.py/Basic/__eq__",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/core/basic.py/Basic/__eq__",
+   "sympy/core/expr.py/Expr/_hashable_content"
+  ],
+  [
+   "sympy/core/sympify.py/_sympify",
+   "sympy/core/relational.py/_Inequality/__new__"
+  ]
+ ],
+ "explicit_identifiers": {
+  "eval": 3,
+  "__eq__": 2,
+  "__repr__": 3,
+  "Symbol": 6,
+  "AttributeError": 3,
+  "global_dict": 3,
+  "local_dict": 4,
+  "sympify": 3,
+  "parse_expr": 2,
+  "sympy_parser": 2,
+  "eval_expr": 2
+ },
+ "candidates": [
+  {
+   "id": "sympy/parsing/sympy_parser.py/eval_expr",
+   "scores": {
+    "bm25": 145.37579190745325,
+    "dense": 0.5654485821723938,
+    "rrf": 0.18181818181818182,
+    "direct": 0.26515151515151514,
+    "graph": 0.26515151515151514,
+    "rewired": 0.26515151515151514,
+    "dense_dot": 335.2298583984375
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/parse_expr",
+   "scores": {
+    "bm25": 144.59713728198685,
+    "dense": 0.5431643128395081,
+    "rrf": 0.16666666666666666,
+    "direct": 0.24358974358974358,
+    "graph": 0.24358974358974358,
+    "rewired": 0.24358974358974358,
+    "dense_dot": 322.30755615234375
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 2,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/stringify_expr",
+   "scores": {
+    "bm25": 109.23488893165336,
+    "dense": 0.47154873609542847,
+    "rrf": 0.13942307692307693,
+    "direct": 0.13942307692307693,
+    "graph": 0.1778846153846154,
+    "rewired": 0.13942307692307693,
+    "dense_dot": 277.78045654296875
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 6,
+    "rrf": 3,
+    "direct": 7,
+    "graph": 5,
+    "rewired": 7,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "sympy/parsing/ast_parser.py/parse_expr",
+   "scores": {
+    "bm25": 108.49075159439954,
+    "dense": 0.49103739857673645,
+    "rrf": 0.1380952380952381,
+    "direct": 0.20952380952380953,
+    "graph": 0.20952380952380953,
+    "rewired": 0.20952380952380953,
+    "dense_dot": 289.87884521484375
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 5,
+    "rrf": 4,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/convert_equals_signs",
+   "scores": {
+    "bm25": 104.26001888733072,
+    "dense": 0.49105238914489746,
+    "rrf": 0.1380952380952381,
+    "direct": 0.1380952380952381,
+    "graph": 0.1380952380952381,
+    "rewired": 0.1380952380952381,
+    "dense_dot": 289.9835510253906
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 4,
+    "rrf": 5,
+    "direct": 8,
+    "graph": 8,
+    "rewired": 8,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "sympy/core/sympify.py/sympify",
+   "scores": {
+    "bm25": 99.37932954397004,
+    "dense": 0.4571302533149719,
+    "rrf": 0.11513157894736842,
+    "direct": 0.20604066985645933,
+    "graph": 0.20604066985645933,
+    "rewired": 0.20604066985645933,
+    "dense_dot": 271.21905517578125
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 9,
+    "rrf": 6,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/implicit_application",
+   "scores": {
+    "bm25": 98.89084200960623,
+    "dense": 0.37728404998779297,
+    "rrf": 0.0900735294117647,
+    "direct": 0.0900735294117647,
+    "graph": 0.0900735294117647,
+    "rewired": 0.0900735294117647,
+    "dense_dot": 221.24073791503906
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 22,
+    "rrf": 12,
+    "direct": 13,
+    "graph": 19,
+    "rewired": 13,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/implicit_multiplication",
+   "scores": {
+    "bm25": 98.25472076740779,
+    "dense": 0.3845316767692566,
+    "rrf": 0.09003831417624521,
+    "direct": 0.09003831417624521,
+    "graph": 0.09003831417624521,
+    "rewired": 0.09003831417624521,
+    "dense_dot": 226.41993713378906
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 19,
+    "rrf": 13,
+    "direct": 14,
+    "graph": 20,
+    "rewired": 14,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/implicit_multiplication_application",
+   "scores": {
+    "bm25": 96.3141452690242,
+    "dense": 0.39676761627197266,
+    "rrf": 0.08834586466165413,
+    "direct": 0.08834586466165413,
+    "graph": 0.08834586466165413,
+    "rewired": 0.08834586466165413,
+    "dense_dot": 233.26068115234375
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 18,
+    "rrf": 14,
+    "direct": 15,
+    "graph": 21,
+    "rewired": 15,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/split_symbols_custom",
+   "scores": {
+    "bm25": 80.6506014015881,
+    "dense": 0.4238261878490448,
+    "rrf": 0.09166666666666667,
+    "direct": 0.09166666666666667,
+    "graph": 0.09166666666666667,
+    "rewired": 0.12291666666666667,
+    "dense_dot": 250.78195190429688
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 14,
+    "rrf": 10,
+    "direct": 11,
+    "graph": 17,
+    "rewired": 9,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/function_exponentiation",
+   "scores": {
+    "bm25": 73.85408842961616,
+    "dense": 0.4251132309436798,
+    "rrf": 0.09109730848861283,
+    "direct": 0.09109730848861283,
+    "graph": 0.09109730848861283,
+    "rewired": 0.09109730848861283,
+    "dense_dot": 251.13839721679688
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 13,
+    "rrf": 11,
+    "direct": 12,
+    "graph": 18,
+    "rewired": 12,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/_token_callable",
+   "scores": {
+    "bm25": 72.29762395771212,
+    "dense": 0.47082364559173584,
+    "rrf": 0.10427807486631016,
+    "direct": 0.10427807486631016,
+    "graph": 0.10427807486631016,
+    "rewired": 0.10427807486631016,
+    "dense_dot": 277.54229736328125
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 7,
+    "rrf": 8,
+    "direct": 9,
+    "graph": 13,
+    "rewired": 10,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/_apply_functions",
+   "scores": {
+    "bm25": 71.22683255609026,
+    "dense": 0.3989945948123932,
+    "rrf": 0.08193979933110368,
+    "direct": 0.08193979933110368,
+    "graph": 0.08193979933110368,
+    "rewired": 0.08193979933110368,
+    "dense_dot": 235.8984832763672
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 16,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 22,
+    "rewired": 16,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "sympy/solvers/pde.py/pdsolve",
+   "scores": {
+    "bm25": 67.4988580552108,
+    "dense": 0.34018975496292114,
+    "rrf": 0.07023809523809524,
+    "direct": 0.07023809523809524,
+    "graph": 0.07023809523809524,
+    "rewired": 0.07023809523809524,
+    "dense_dot": 201.2075958251953
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 25,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 25,
+    "rewired": 21,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "sympy/parsing/c/c_parser.py/CCodeConverter/parse",
+   "scores": {
+    "bm25": 67.33596361275463,
+    "dense": 0.20004965364933014,
+    "rrf": 0.06,
+    "direct": 0.06,
+    "graph": 0.09571428571428571,
+    "rewired": 0.06,
+    "dense_dot": 118.50302124023438
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 40,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 15,
+    "rewired": 24,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "sympy/parsing/c/c_parser.py/CCodeConverter/parse_str",
+   "scores": {
+    "bm25": 67.20498107548734,
+    "dense": 0.23444780707359314,
+    "rrf": 0.05929487179487179,
+    "direct": 0.05929487179487179,
+    "graph": 0.05929487179487179,
+    "rewired": 0.05929487179487179,
+    "dense_dot": 138.39511108398438
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 38,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 27,
+    "rewired": 26,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "sympy/parsing/sympy_parser.py/_transform_equals_sign",
+   "scores": {
+    "bm25": 66.2785702151532,
+    "dense": 0.46871405839920044,
+    "rrf": 0.09259259259259259,
+    "direct": 0.09259259259259259,
+    "graph": 0.09259259259259259,
+    "rewired": 0.09259259259259259,
+    "dense_dot": 276.679931640625
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 8,
+    "rrf": 9,
+    "direct": 10,
+    "graph": 16,
+    "rewired": 11,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "sympy/core/compatibility.py/iterable",
+   "scores": {
+    "bm25": 65.15520640753239,
+    "dense": 0.2940213978290558,
+    "rrf": 0.05952380952380952,
+    "direct": 0.05952380952380952,
+    "graph": 0.10497835497835498,
+    "rewired": 0.05952380952380952,
+    "dense_dot": 174.8401336669922
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 32,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 12,
+    "rewired": 25,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "sympy/core/numbers.py/Float/__eq__",
+   "scores": {
+    "bm25": 64.33085056976263,
+    "dense": 0.4356828033924103,
+    "rrf": 0.08210180623973727,
+    "direct": 0.14876847290640394,
+    "graph": 0.14876847290640394,
+    "rewired": 0.14876847290640394,
+    "dense_dot": 259.83221435546875
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 11,
+    "rrf": 15,
+    "direct": 6,
+    "graph": 7,
+    "rewired": 6,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "sympy/core/sympify.py/kernS",
+   "scores": {
+    "bm25": 64.13747799238043,
+    "dense": 0.4023161828517914,
+    "rrf": 0.07333333333333333,
+    "direct": 0.07333333333333333,
+    "graph": 0.11878787878787879,
+    "rewired": 0.07333333333333333,
+    "dense_dot": 237.72952270507812
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 15,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 10,
+    "rewired": 19,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "sympy/core/basic.py/Basic/__eq__",
+   "scores": {
+    "bm25": 63.86653083806939,
+    "dense": 0.5013790726661682,
+    "rrf": 0.10918114143920596,
+    "direct": 0.17168114143920596,
+    "graph": 0.17168114143920596,
+    "rewired": 0.17168114143920596,
+    "dense_dot": 300.0206298828125
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 3,
+    "rrf": 7,
+    "direct": 5,
+    "graph": 6,
+    "rewired": 5,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "sympy/core/basic.py/Atom/_sorted_args",
+   "scores": {
+    "bm25": 63.349279548057574,
+    "dense": 0.23583891987800598,
+    "rrf": 0.052526595744680854,
+    "direct": 0.052526595744680854,
+    "graph": 0.052526595744680854,
+    "rewired": 0.052526595744680854,
+    "dense_dot": 141.03387451171875
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 37,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 32,
+    "rewired": 32,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "sympy/core/sympify.py/_sympify",
+   "scores": {
+    "bm25": 62.5094382921789,
+    "dense": 0.4272851049900055,
+    "rrf": 0.07575757575757576,
+    "direct": 0.07575757575757576,
+    "graph": 0.12121212121212122,
+    "rewired": 0.07575757575757576,
+    "dense_dot": 255.4188995361328
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 12,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 9,
+    "rewired": 18,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "sympy/utilities/codegen.py/Routine/__init__",
+   "scores": {
+    "bm25": 61.79622126909875,
+    "dense": 0.3298529386520386,
+    "rrf": 0.05572755417956656,
+    "direct": 0.05572755417956656,
+    "graph": 0.05572755417956656,
+    "rewired": 0.05572755417956656,
+    "dense_dot": 193.7458038330078
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 28,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 28,
+    "rewired": 27,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "sympy/parsing/ast_parser.py/Transform/__init__",
+   "scores": {
+    "bm25": 61.67209661555191,
+    "dense": 0.3805028200149536,
+    "rrf": 0.06190476190476191,
+    "direct": 0.06190476190476191,
+    "graph": 0.06190476190476191,
+    "rewired": 0.06190476190476191,
+    "dense_dot": 224.6414031982422
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 20,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 26,
+    "rewired": 23,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "sympy/solvers/ode.py/dsolve",
+   "scores": {
+    "bm25": 61.555198264750445,
+    "dense": 0.3147890269756317,
+    "rrf": 0.053418803418803416,
+    "direct": 0.053418803418803416,
+    "graph": 0.053418803418803416,
+    "rewired": 0.053418803418803416,
+    "dense_dot": 185.848876953125
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 29,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 31,
+    "rewired": 31,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "sympy/simplify/simplify.py/separatevars",
+   "scores": {
+    "bm25": 61.40042049615715,
+    "dense": 0.3974709212779999,
+    "rrf": 0.06406406406406406,
+    "direct": 0.06406406406406406,
+    "graph": 0.10951860951860952,
+    "rewired": 0.06406406406406406,
+    "dense_dot": 234.77276611328125
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 17,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 11,
+    "rewired": 22,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "sympy/core/compatibility.py/default_sort_key",
+   "scores": {
+    "bm25": 60.896581610576526,
+    "dense": 0.3388243019580841,
+    "rrf": 0.054093567251461985,
+    "direct": 0.054093567251461985,
+    "graph": 0.09954811270600744,
+    "rewired": 0.054093567251461985,
+    "dense_dot": 201.3998565673828
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 26,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 14,
+    "rewired": 30,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "sympy/utilities/codegen.py/make_routine",
+   "scores": {
+    "bm25": 60.8470793499185,
+    "dense": 0.3108554482460022,
+    "rrf": 0.05064102564102564,
+    "direct": 0.05064102564102564,
+    "graph": 0.05064102564102564,
+    "rewired": 0.05064102564102564,
+    "dense_dot": 183.9161376953125
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 30,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 34,
+    "rewired": 34,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "sympy/printing/rust.py/rust_code",
+   "scores": {
+    "bm25": 60.81933569137274,
+    "dense": 0.2969190180301666,
+    "rrf": 0.04939024390243903,
+    "direct": 0.04939024390243903,
+    "graph": 0.04939024390243903,
+    "rewired": 0.04939024390243903,
+    "dense_dot": 176.2647705078125
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 31,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 35,
+    "rewired": 35,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "sympy/solvers/solveset.py/_transolve",
+   "scores": {
+    "bm25": 60.71946049733725,
+    "dense": 0.28585463762283325,
+    "rrf": 0.04711751662971175,
+    "direct": 0.04711751662971175,
+    "graph": 0.04711751662971175,
+    "rewired": 0.07836751662971175,
+    "dense_dot": 170.0523681640625
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 34,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 37,
+    "rewired": 17,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "sympy/utilities/misc.py/strlines",
+   "scores": {
+    "bm25": 60.717821883301724,
+    "dense": 0.3473416566848755,
+    "rrf": 0.05411255411255411,
+    "direct": 0.05411255411255411,
+    "graph": 0.05411255411255411,
+    "rewired": 0.05411255411255411,
+    "dense_dot": 206.12860107421875
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 23,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 30,
+    "rewired": 29,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "sympy/core/exprtools.py/_mask_nc",
+   "scores": {
+    "bm25": 60.291749217139966,
+    "dense": 0.37903639674186707,
+    "rrf": 0.0555138784696174,
+    "direct": 0.0555138784696174,
+    "graph": 0.0555138784696174,
+    "rewired": 0.0555138784696174,
+    "dense_dot": 224.3833465576172
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 21,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 29,
+    "rewired": 28,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "sympy/core/relational.py/_Inequality/__new__",
+   "scores": {
+    "bm25": 60.1052231797096,
+    "dense": 0.44903531670570374,
+    "rrf": 0.07272727272727272,
+    "direct": 0.07272727272727272,
+    "graph": 0.07272727272727272,
+    "rewired": 0.07272727272727272,
+    "dense_dot": 266.1495361328125
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 10,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 24,
+    "rewired": 20,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "sympy/solvers/ode.py/checkodesol",
+   "scores": {
+    "bm25": 59.66963581818779,
+    "dense": 0.251261442899704,
+    "rrf": 0.043961352657004835,
+    "direct": 0.043961352657004835,
+    "graph": 0.043961352657004835,
+    "rewired": 0.043961352657004835,
+    "dense_dot": 147.9569549560547
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 36,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 38,
+    "rewired": 37,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "sympy/core/basic.py/Basic/_subs",
+   "scores": {
+    "bm25": 59.53913558670328,
+    "dense": 0.34653493762016296,
+    "rrf": 0.05115089514066496,
+    "direct": 0.05115089514066496,
+    "graph": 0.05115089514066496,
+    "rewired": 0.05115089514066496,
+    "dense_dot": 205.70132446289062
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 24,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 33,
+    "rewired": 33,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "sympy/printing/fcode.py/fcode",
+   "scores": {
+    "bm25": 59.4763850273647,
+    "dense": 0.333866685628891,
+    "rrf": 0.04830362277170788,
+    "direct": 0.04830362277170788,
+    "graph": 0.04830362277170788,
+    "rewired": 0.04830362277170788,
+    "dense_dot": 197.7791748046875
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 27,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 36,
+    "rewired": 36,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "sympy/simplify/epathtools.py/epath",
+   "scores": {
+    "bm25": 59.44422729718404,
+    "dense": 0.28124234080314636,
+    "rrf": 0.043055555555555555,
+    "direct": 0.043055555555555555,
+    "graph": 0.043055555555555555,
+    "rewired": 0.043055555555555555,
+    "dense_dot": 165.93960571289062
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 35,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "sympy/core/exprtools.py/_factor_sum_int",
+   "scores": {
+    "bm25": 59.28832786180981,
+    "dense": 0.23148490488529205,
+    "rrf": 0.04081632653061224,
+    "direct": 0.04081632653061224,
+    "graph": 0.04081632653061224,
+    "rewired": 0.04081632653061224,
+    "dense_dot": 136.22328186035156
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 39,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "sympy/core/expr.py/Expr/_hashable_content",
+   "scores": {
+    "bm25": 59.238767836486815,
+    "dense": 0.29000505805015564,
+    "rrf": 0.043255813953488376,
+    "direct": 0.043255813953488376,
+    "graph": 0.07450581395348838,
+    "rewired": 0.043255813953488376,
+    "dense_dot": 173.8197784423828
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 33,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 23,
+    "rewired": 38,
+    "dense_dot": 33
+   }
+  }
+ ]
+}

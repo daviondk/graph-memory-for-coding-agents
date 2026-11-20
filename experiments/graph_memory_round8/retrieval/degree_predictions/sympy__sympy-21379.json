@@ -1,0 +1,1287 @@
+{
+ "task": "sympy__sympy-21379",
+ "repo": "sympy__sympy",
+ "query_sha256": "e199bb269f9d7eedd813b73859ebc266bbf9180ba44e93fee83257f13a7b3c38",
+ "corpus_sha256": "ba585c455746fbc5ccf816eed1778bc4b78e6753f8021c7a0003efd250fc4cec",
+ "n_corpus": 28317,
+ "n_scanned_for_graph": 28317,
+ "n_propagated": 17,
+ "anchors": [
+  "sympy/core/basic.py/Basic/subs",
+  "sympy/matrices/common.py/MatrixOperations/subs",
+  "sympy/strategies/tools.py/subs",
+  "sympy/polys/fields.py/FracElement/subs",
+  "sympy/physics/vector/vector.py/Vector/subs",
+  "sympy/physics/vector/dyadic.py/Dyadic/subs",
+  "sympy/strategies/rl.py/subs",
+  "sympy/polys/rings.py/PolyElement/subs"
+ ],
+ "degrees": {
+  "sympy/core/basic.py/Basic/subs": 13,
+  "sympy/matrices/common.py/MatrixOperations/subs": 1,
+  "sympy/strategies/tools.py/subs": 2,
+  "sympy/polys/fields.py/FracElement/subs": 1,
+  "sympy/physics/vector/vector.py/Vector/subs": 0,
+  "sympy/physics/vector/dyadic.py/Dyadic/subs": 0,
+  "sympy/strategies/rl.py/subs": 0,
+  "sympy/polys/rings.py/PolyElement/subs": 1
+ },
+ "top40": {
+  "body": [
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 116.84622022103535,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/trigsimp.py/trigsimp_groebner",
+    "score": 106.86941314955295,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_meijerint_indefinite_1",
+    "score": 105.71264898022683,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/nseries",
+    "score": 104.19643923224523,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 103.01328929636476,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/expand",
+    "score": 97.22267855236359,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 96.29088604606345,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve",
+    "score": 94.97681207285893,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 94.6228669992238,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 93.43089697639887,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 90.15645985316604,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/equals",
+    "score": 90.08045504214104,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/__new__",
+    "score": 89.07775298976536,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/integrate",
+    "score": 88.60734679072424,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/collect",
+    "score": 88.48907641833516,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_constant",
+    "score": 88.40176035593193,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/round",
+    "score": 88.26158209040281,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/factor_.py/pollard_pm1",
+    "score": 87.93205507293291,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 87.75334179106532,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_polynomial",
+    "score": 86.48487349827353,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/ode/ode.py/odesimp",
+    "score": 86.36448824537976,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/_solve",
+    "score": 86.22158474439021,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/__int__",
+    "score": 86.12315663774567,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/numbers.py/igcd_lehmer",
+    "score": 85.41852150159538,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/risch.py/risch_integrate",
+    "score": 85.04648785234046,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/checksol",
+    "score": 84.68222212254598,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/ode/subscheck.py/checkodesol",
+    "score": 84.647127468692,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/piecewise.py/Piecewise/eval",
+    "score": 84.00732184317233,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/evalf.py/fastlog",
+    "score": 83.96043465864294,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/logcombine",
+    "score": 83.87653411491392,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/glsl.py/glsl_code",
+    "score": 83.81688804979298,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/gammasimp.py/gammasimp",
+    "score": 83.79137173822711,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/kernS",
+    "score": 83.5194418411162,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/eigen.py/_is_diagonalizable",
+    "score": 83.49723971665114,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/separatevars",
+    "score": 83.27720570271815,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solveset.py/solveset",
+    "score": 83.24289571917721,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/iterable",
+    "score": 83.20287041357605,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/aseries",
+    "score": 83.11266388053859,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/clear_coefficients",
+    "score": 82.88919325694496,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/as_independent",
+    "score": 82.68142792873157,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.0922979797979798,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/cache.py/_cache/clear_cache",
+    "score": 0.09158843873517787,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rootoftools.py/ComplexRootOf/clear_cache",
+    "score": 0.08611111111111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/trigsimp.py/trigsimp_groebner",
+    "score": 0.0834146738246299,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_sinh",
+    "score": 0.07716415696164973,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_meijerint_indefinite_1",
+    "score": 0.07701275497885668,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/nseries",
+    "score": 0.07248453763765274,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_cosh",
+    "score": 0.07166947723440134,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_tanh",
+    "score": 0.06693058854579044,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.06676809683199783,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_cosh",
+    "score": 0.06275654181631606,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/expand",
+    "score": 0.06269577133907596,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_polynomial",
+    "score": 0.05964912280701754,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/error_functions.py/real_to_real_as_real_imag",
+    "score": 0.05904063753160839,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 0.0589942361376097,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_tanh",
+    "score": 0.05581982616866338,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve",
+    "score": 0.05565646372911761,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_sinh",
+    "score": 0.05288845025484337,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 0.05270982620871427,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 0.05249709639953542,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/as_real_imag",
+    "score": 0.050528262017960915,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.050194363459669586,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/as_real_imag",
+    "score": 0.0482157063302648,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_is_real",
+    "score": 0.04717571585041465,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/equals",
+    "score": 0.046524064171122995,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/as_real_imag",
+    "score": 0.044193568451825586,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/__new__",
+    "score": 0.04356875041802237,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/__int__",
+    "score": 0.0428030303030303,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_is_real",
+    "score": 0.04211249814236885,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_constant",
+    "score": 0.0419951073661321,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/integrate",
+    "score": 0.041772430812621185,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_is_real",
+    "score": 0.04163934426229508,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/collect",
+    "score": 0.040101781170483464,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_exp",
+    "score": 0.03867654598680185,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/round",
+    "score": 0.03808635498037387,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/_import",
+    "score": 0.037268932617769826,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_exp",
+    "score": 0.03725222963441169,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_exp",
+    "score": 0.03592472342472342,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/factor_.py/pollard_pm1",
+    "score": 0.035780484575665294,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_is_extended_real",
+    "score": 0.03475892542543972,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.10811012803044676,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.0922979797979798,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/cache.py/_cache/clear_cache",
+    "score": 0.09158843873517787,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rootoftools.py/ComplexRootOf/clear_cache",
+    "score": 0.08611111111111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.08396892752946787,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/trigsimp.py/trigsimp_groebner",
+    "score": 0.0834146738246299,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.07765441262647967,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_sinh",
+    "score": 0.07716415696164973,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_meijerint_indefinite_1",
+    "score": 0.07701275497885668,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/nseries",
+    "score": 0.07248453763765274,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.07197051665365306,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_cosh",
+    "score": 0.07166947723440134,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.06722366089329222,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_tanh",
+    "score": 0.06693058854579044,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.06676809683199783,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.06305579103330802,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_cosh",
+    "score": 0.06275654181631606,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/expand",
+    "score": 0.06269577133907596,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_polynomial",
+    "score": 0.05964912280701754,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.059471363320950404,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/error_functions.py/real_to_real_as_real_imag",
+    "score": 0.05904063753160839,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 0.0589942361376097,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.05606384558268424,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_tanh",
+    "score": 0.05581982616866338,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve",
+    "score": 0.05565646372911761,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_sinh",
+    "score": 0.05288845025484337,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 0.05270982620871427,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 0.05249709639953542,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/as_real_imag",
+    "score": 0.050528262017960915,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.050194363459669586,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/as_real_imag",
+    "score": 0.0482157063302648,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_is_real",
+    "score": 0.04717571585041465,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/equals",
+    "score": 0.046524064171122995,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/as_real_imag",
+    "score": 0.044193568451825586,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/__new__",
+    "score": 0.04356875041802237,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/__int__",
+    "score": 0.0428030303030303,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_is_real",
+    "score": 0.04211249814236885,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_constant",
+    "score": 0.0419951073661321,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/integrate",
+    "score": 0.041772430812621185,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_is_real",
+    "score": 0.04163934426229508,
+    "supports": []
+   }
+  ],
+  "uniform": [
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.10811012803044676,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.09564890891421504,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.0922979797979798,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/cache.py/_cache/clear_cache",
+    "score": 0.09158843873517787,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rootoftools.py/ComplexRootOf/clear_cache",
+    "score": 0.08611111111111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.08396892752946787,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/trigsimp.py/trigsimp_groebner",
+    "score": 0.0834146738246299,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.07765441262647967,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_sinh",
+    "score": 0.07716415696164973,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_meijerint_indefinite_1",
+    "score": 0.07701275497885668,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/nseries",
+    "score": 0.07248453763765274,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.07197051665365306,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_cosh",
+    "score": 0.07166947723440134,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.06722366089329222,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_tanh",
+    "score": 0.06693058854579044,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/iterable",
+    "score": 0.06692795285047606,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.06676809683199783,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.06305579103330802,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_cosh",
+    "score": 0.06275654181631606,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/expand",
+    "score": 0.06269577133907596,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/ordered",
+    "score": 0.05973582542084463,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_polynomial",
+    "score": 0.05964912280701754,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.059471363320950404,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/error_functions.py/real_to_real_as_real_imag",
+    "score": 0.05904063753160839,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 0.0589942361376097,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/_subs",
+    "score": 0.05621829495273895,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.05606384558268424,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_tanh",
+    "score": 0.05581982616866338,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve",
+    "score": 0.05565646372911761,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_sinh",
+    "score": 0.05288845025484337,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 0.05270982620871427,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/default_sort_key",
+    "score": 0.05263442628092958,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 0.05249709639953542,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/as_real_imag",
+    "score": 0.050528262017960915,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/as_real_imag",
+    "score": 0.0482157063302648,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/is_sequence",
+    "score": 0.04810711266755223,
+    "supports": [
+     "sympy/matrices/common.py/MatrixOperations/subs"
+    ]
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_is_real",
+    "score": 0.04717571585041465,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/_aresame",
+    "score": 0.047159846596642595,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/equals",
+    "score": 0.046524064171122995,
+    "supports": []
+   },
+   {
+    "id": "sympy/plotting/intervalmath/lib_interval.py/sin",
+    "score": 0.046309250211580104,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   }
+  ],
+  "gate": [
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.10811012803044676,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.09564890891421504,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.0922979797979798,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/cache.py/_cache/clear_cache",
+    "score": 0.09158843873517787,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rootoftools.py/ComplexRootOf/clear_cache",
+    "score": 0.08611111111111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.08396892752946787,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/trigsimp.py/trigsimp_groebner",
+    "score": 0.0834146738246299,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.07765441262647967,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_sinh",
+    "score": 0.07716415696164973,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_meijerint_indefinite_1",
+    "score": 0.07701275497885668,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/nseries",
+    "score": 0.07248453763765274,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.07197051665365306,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_cosh",
+    "score": 0.07166947723440134,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.06722366089329222,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_tanh",
+    "score": 0.06693058854579044,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/iterable",
+    "score": 0.06692795285047606,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.06676809683199783,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.06305579103330802,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_cosh",
+    "score": 0.06275654181631606,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/expand",
+    "score": 0.06269577133907596,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/ordered",
+    "score": 0.05973582542084463,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_polynomial",
+    "score": 0.05964912280701754,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.059471363320950404,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/error_functions.py/real_to_real_as_real_imag",
+    "score": 0.05904063753160839,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 0.0589942361376097,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/_subs",
+    "score": 0.05621829495273895,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.05606384558268424,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_tanh",
+    "score": 0.05581982616866338,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve",
+    "score": 0.05565646372911761,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_sinh",
+    "score": 0.05288845025484337,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 0.05270982620871427,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/default_sort_key",
+    "score": 0.05263442628092958,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 0.05249709639953542,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/as_real_imag",
+    "score": 0.050528262017960915,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/as_real_imag",
+    "score": 0.0482157063302648,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/is_sequence",
+    "score": 0.04810711266755223,
+    "supports": [
+     "sympy/matrices/common.py/MatrixOperations/subs"
+    ]
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_is_real",
+    "score": 0.04717571585041465,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/_aresame",
+    "score": 0.047159846596642595,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/equals",
+    "score": 0.046524064171122995,
+    "supports": []
+   },
+   {
+    "id": "sympy/plotting/intervalmath/lib_interval.py/sin",
+    "score": 0.046309250211580104,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   }
+  ],
+  "allocation": [
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.10811012803044676,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 0.0922979797979798,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/cache.py/_cache/clear_cache",
+    "score": 0.09158843873517787,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rootoftools.py/ComplexRootOf/clear_cache",
+    "score": 0.08611111111111111,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.08396892752946787,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/trigsimp.py/trigsimp_groebner",
+    "score": 0.0834146738246299,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.07765441262647967,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_sinh",
+    "score": 0.07716415696164973,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/_meijerint_indefinite_1",
+    "score": 0.07701275497885668,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/nseries",
+    "score": 0.07248453763765274,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.07197051665365306,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_cosh",
+    "score": 0.07166947723440134,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.06722366089329222,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_rewrite_as_tanh",
+    "score": 0.06693058854579044,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/simplify",
+    "score": 0.06676809683199783,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.06305579103330802,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_cosh",
+    "score": 0.06275654181631606,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/function.py/expand",
+    "score": 0.06269577133907596,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_polynomial",
+    "score": 0.05964912280701754,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.059471363320950404,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/special/error_functions.py/real_to_real_as_real_imag",
+    "score": 0.05904063753160839,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 0.0589942361376097,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.05606384558268424,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_rewrite_as_tanh",
+    "score": 0.05581982616866338,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/solve",
+    "score": 0.05565646372911761,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.05369086695617308,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/_eval_rewrite_as_sinh",
+    "score": 0.05288845025484337,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/_eval_integral",
+    "score": 0.05270982620871427,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 0.05249709639953542,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/as_real_imag",
+    "score": 0.050528262017960915,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/as_real_imag",
+    "score": 0.0482157063302648,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/compatibility.py/is_sequence",
+    "score": 0.04810711266755223,
+    "supports": [
+     "sympy/matrices/common.py/MatrixOperations/subs"
+    ]
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/cosh/_eval_is_real",
+    "score": 0.04717571585041465,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/equals",
+    "score": 0.046524064171122995,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/tanh/as_real_imag",
+    "score": 0.044193568451825586,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/Integral/__new__",
+    "score": 0.04356875041802237,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/__int__",
+    "score": 0.0428030303030303,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/hyperbolic.py/sinh/_eval_is_real",
+    "score": 0.04211249814236885,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/is_constant",
+    "score": 0.0419951073661321,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/integrals.py/integrate",
+    "score": 0.041772430812621185,
+    "supports": []
+   }
+  ]
+ }
+}

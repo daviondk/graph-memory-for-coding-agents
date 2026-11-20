@@ -1,0 +1,131 @@
+{
+ "base": {
+  "applied": true,
+  "reason": "",
+  "diff": {},
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/solvers/tests/test_diophantine.py::test_diophantine"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/solvers/tests/test_diophantine.py::test_diophantine"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 4.35999999998603,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/solvers/tests/test_diophantine.py::test_prime_as_sum_of_two_squares",
+     "sympy/solvers/tests/test_diophantine.py::test_diopcoverage",
+     "sympy/solvers/tests/test_diophantine.py::test_power_representation",
+     "sympy/solvers/tests/test_diophantine.py::test_diop_partition",
+     "sympy/solvers/tests/test_diophantine.py::test_issue_18138",
+     "sympy/solvers/tests/test_diophantine.py::test_univariate",
+     "sympy/solvers/tests/test_diophantine.py::test_length",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_non_perfect_square",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_simple_hyperbolic_case",
+     "sympy/solvers/tests/test_diophantine.py::test_descent",
+     "sympy/solvers/tests/test_diophantine.py::test_bf_pell",
+     "sympy/solvers/tests/test_diophantine.py::test__can_do_sum_of_squares"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/solvers/tests/test_diophantine.py::test_prime_as_sum_of_two_squares",
+     "sympy/solvers/tests/test_diophantine.py::test_diopcoverage",
+     "sympy/solvers/tests/test_diophantine.py::test_power_representation",
+     "sympy/solvers/tests/test_diophantine.py::test_diop_partition",
+     "sympy/solvers/tests/test_diophantine.py::test_issue_18138",
+     "sympy/solvers/tests/test_diophantine.py::test_univariate",
+     "sympy/solvers/tests/test_diophantine.py::test_length",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_non_perfect_square",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_simple_hyperbolic_case",
+     "sympy/solvers/tests/test_diophantine.py::test_descent",
+     "sympy/solvers/tests/test_diophantine.py::test_bf_pell",
+     "sympy/solvers/tests/test_diophantine.py::test__can_do_sum_of_squares"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 3.64000000001397,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "gold": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/solvers/diophantine.py": "--- \n+++ \n@@ -182,7 +182,7 @@\n             if syms != var:\n                 dict_sym_index = dict(zip(syms, range(len(syms))))\n                 return {tuple([t[dict_sym_index[i]] for i in var])\n-                            for t in diophantine(eq, param)}\n+                            for t in diophantine(eq, param, permute=permute)}\n         n, d = eq.as_numer_denom()\n         if n.is_number:\n             return set()"
+  },
+  "gold_lines": {
+   "sympy/solvers/diophantine.py": [
+    185
+   ]
+  },
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/solvers/tests/test_diophantine.py::test_diophantine"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/solvers/tests/test_diophantine.py::test_diophantine"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 2.297000000020489,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/solvers/tests/test_diophantine.py::test_prime_as_sum_of_two_squares",
+     "sympy/solvers/tests/test_diophantine.py::test_diopcoverage",
+     "sympy/solvers/tests/test_diophantine.py::test_power_representation",
+     "sympy/solvers/tests/test_diophantine.py::test_diop_partition",
+     "sympy/solvers/tests/test_diophantine.py::test_issue_18138",
+     "sympy/solvers/tests/test_diophantine.py::test_univariate",
+     "sympy/solvers/tests/test_diophantine.py::test_length",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_non_perfect_square",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_simple_hyperbolic_case",
+     "sympy/solvers/tests/test_diophantine.py::test_descent",
+     "sympy/solvers/tests/test_diophantine.py::test_bf_pell",
+     "sympy/solvers/tests/test_diophantine.py::test__can_do_sum_of_squares"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/solvers/tests/test_diophantine.py::test_prime_as_sum_of_two_squares",
+     "sympy/solvers/tests/test_diophantine.py::test_diopcoverage",
+     "sympy/solvers/tests/test_diophantine.py::test_power_representation",
+     "sympy/solvers/tests/test_diophantine.py::test_diop_partition",
+     "sympy/solvers/tests/test_diophantine.py::test_issue_18138",
+     "sympy/solvers/tests/test_diophantine.py::test_univariate",
+     "sympy/solvers/tests/test_diophantine.py::test_length",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_non_perfect_square",
+     "sympy/solvers/tests/test_diophantine.py::test_quadratic_simple_hyperbolic_case",
+     "sympy/solvers/tests/test_diophantine.py::test_descent",
+     "sympy/solvers/tests/test_diophantine.py::test_bf_pell",
+     "sympy/solvers/tests/test_diophantine.py::test__can_do_sum_of_squares"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 3.7339999999967404,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ }
+}

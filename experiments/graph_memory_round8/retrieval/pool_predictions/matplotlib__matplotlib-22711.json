@@ -1,0 +1,994 @@
+{
+ "task": "matplotlib__matplotlib-22711",
+ "repo": "matplotlib__matplotlib",
+ "corpus_sha256": "f86ca11ec739a98d4a93cfbd3d4f1b1f4f09fac1eb273b0dcb96a3a528f4df42",
+ "query_sha256": "60c46390eeb09af9bdd52dfc1fe70f81de99fafb5eec07a4d94bc153858b46eb",
+ "n_corpus": 6728,
+ "n_scanned_for_graph": 6728,
+ "n_propagated": 298,
+ "anchors": [
+  "lib/matplotlib/widgets.py/RangeSlider/set_val",
+  "lib/matplotlib/widgets.py/Slider/set_val",
+  "lib/matplotlib/widgets.py/TextBox/set_val",
+  "lib/matplotlib/streamplot.py/Grid/shape",
+  "lib/matplotlib/transforms.py/BboxBase/min",
+  "lib/matplotlib/transforms.py/BboxBase/max",
+  "examples/widgets/range_slider.py/update",
+  "lib/matplotlib/axes/_axes.py/Axes/axvline"
+ ],
+ "top40": {
+  "body": [
+   {
+    "id": "examples/widgets/range_slider.py/update",
+    "score": 200.9679502510343,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_val",
+    "score": 173.46539952962667,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/set_val",
+    "score": 139.6894964725294,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/__init__",
+    "score": 116.44726854957693,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/__init__",
+    "score": 112.39495205267986,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/figimage",
+    "score": 104.87575216401413,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/thumbnail",
+    "score": 100.87651447168774,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_update_val_from_pos",
+    "score": 100.66398516978613,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist",
+    "score": 99.12435614220638,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/on_changed",
+    "score": 98.85895484216279,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolorfast",
+    "score": 95.43736535327999,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/imshow",
+    "score": 95.13897012990317,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist2d",
+    "score": 94.13930180384509,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 93.92369315599646,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/imsave",
+    "score": 93.13921832204613,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/_ImageBase/_make_image",
+    "score": 92.54098941713671,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "examples/lines_bars_and_markers/gradient_bar.py/gradient_image",
+    "score": 92.3012983583652,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 90.68151177994248,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "examples/color/colormap_reference.py/plot_color_gradients",
+    "score": 88.70245405452127,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/figaspect",
+    "score": 88.24908276934013,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "tutorials/colors/colormap-manipulation.py/plot_examples",
+    "score": 86.58901416735198,
+    "supports": []
+   },
+   {
+    "id": "tutorials/colors/colormaps.py/plot_color_gradients",
+    "score": 86.55620809240042,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/matshow",
+    "score": 86.48825599504411,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/PcolorImage/set_data",
+    "score": 86.46119914377395,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/__init__",
+    "score": 86.33914803261551,
+    "supports": []
+   },
+   {
+    "id": "examples/lines_bars_and_markers/filled_step.py/filled_hist",
+    "score": 85.66710418245592,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 84.92888857442404,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/eventplot",
+    "score": 84.87854090700905,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "examples/images_contours_and_fields/image_annotated_heatmap.py/annotate_heatmap",
+    "score": 84.76419335191491,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/subplots",
+    "score": 84.01971382030658,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_base.py/_process_plot_var_args/_plot_args",
+    "score": 83.8211190907884,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/cbook/__init__.py/index_of",
+    "score": 83.07313709782255,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cm.py/ScalarMappable/to_rgba",
+    "score": 82.60995347268181,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/image.py/imread",
+    "score": 82.17953782397954,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/_auto_draw_if_interactive",
+    "score": 82.0741907628973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_axes",
+    "score": 81.91203351570655,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/spy",
+    "score": 81.8650890067247,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolor",
+    "score": 81.74914337360151,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolormesh",
+    "score": 81.45239796410709,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/scatter",
+    "score": 81.08454392868457,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   }
+  ],
+  "field": [
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_val",
+    "score": 0.15476190476190477,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/on_changed",
+    "score": 0.12692307692307692,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/set_val",
+    "score": 0.12454212454212454,
+    "supports": []
+   },
+   {
+    "id": "examples/widgets/range_slider.py/update",
+    "score": 0.11868686868686869,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_update_val_from_pos",
+    "score": 0.11805555555555555,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/__init__",
+    "score": 0.10666666666666666,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_min_in_bounds",
+    "score": 0.10267379679144385,
+    "supports": [
+     "lib/matplotlib/widgets.py/RangeSlider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_max_in_bounds",
+    "score": 0.09420289855072464,
+    "supports": [
+     "lib/matplotlib/widgets.py/RangeSlider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_value_in_bounds",
+    "score": 0.08421052631578947,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/__init__",
+    "score": 0.08253968253968254,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/on_changed",
+    "score": 0.07142857142857142,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_min",
+    "score": 0.07005948446794448,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_max",
+    "score": 0.06283566058002148,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/figimage",
+    "score": 0.06281675641431739,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/thumbnail",
+    "score": 0.059248699479791916,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist",
+    "score": 0.05592105263157894,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_update",
+    "score": 0.051952837140751655,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_format",
+    "score": 0.051536098310291864,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/imshow",
+    "score": 0.04862914862914863,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolorfast",
+    "score": 0.04789713438211769,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/lines.py/Line2D/set_xdata",
+    "score": 0.0464368637256653,
+    "supports": [
+     "examples/widgets/range_slider.py/update",
+     "lib/matplotlib/widgets.py/Slider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist2d",
+    "score": 0.04621050130672369,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.04431216931216931,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/_value_in_bounds",
+    "score": 0.042438271604938266,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/_auto_draw_if_interactive",
+    "score": 0.042222222222222223,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/TextBox/set_val",
+    "score": 0.04063415933919531,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_axes",
+    "score": 0.04060705496308449,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook/__init__.py/index_of",
+    "score": 0.04047619047619047,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/imsave",
+    "score": 0.040425350914504464,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/subplots_adjust",
+    "score": 0.04007056451612903,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots_adjust",
+    "score": 0.039299761428847765,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/_ImageBase/_make_image",
+    "score": 0.039039907460960095,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "examples/pyplots/auto_subplots_adjust.py/on_draw",
+    "score": 0.038373860182370816,
+    "supports": []
+   },
+   {
+    "id": "examples/color/colormap_reference.py/plot_color_gradients",
+    "score": 0.03822807697274958,
+    "supports": []
+   },
+   {
+    "id": "examples/lines_bars_and_markers/gradient_bar.py/gradient_image",
+    "score": 0.03779691545648992,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.03599283724631914,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axis.py/Axis/limit_range_for_scale",
+    "score": 0.03520373915421525,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/on_changed",
+    "score": 0.03380997775659358,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/figaspect",
+    "score": 0.03359936153232242,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "tutorials/colors/colormap-manipulation.py/plot_examples",
+    "score": 0.03272976262933658,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_val",
+    "score": 0.24567099567099568,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/set_val",
+    "score": 0.20787545787545786,
+    "supports": []
+   },
+   {
+    "id": "examples/widgets/range_slider.py/update",
+    "score": 0.1775103980986334,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/on_changed",
+    "score": 0.12692307692307692,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_update_val_from_pos",
+    "score": 0.11805555555555555,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/TextBox/set_val",
+    "score": 0.11755723626227224,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/__init__",
+    "score": 0.10666666666666666,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_min_in_bounds",
+    "score": 0.10267379679144385,
+    "supports": [
+     "lib/matplotlib/widgets.py/RangeSlider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_max_in_bounds",
+    "score": 0.09420289855072464,
+    "supports": [
+     "lib/matplotlib/widgets.py/RangeSlider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_value_in_bounds",
+    "score": 0.08421052631578947,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/__init__",
+    "score": 0.08253968253968254,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/streamplot.py/Grid/shape",
+    "score": 0.072718701515694,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/axvline",
+    "score": 0.0726182451409954,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/on_changed",
+    "score": 0.07142857142857142,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_min",
+    "score": 0.07005948446794448,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/transforms.py/BboxBase/min",
+    "score": 0.06794138282944254,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/transforms.py/BboxBase/max",
+    "score": 0.06343227329616566,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_max",
+    "score": 0.06283566058002148,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/figimage",
+    "score": 0.06281675641431739,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/thumbnail",
+    "score": 0.059248699479791916,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist",
+    "score": 0.05592105263157894,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_update",
+    "score": 0.051952837140751655,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_format",
+    "score": 0.051536098310291864,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/imshow",
+    "score": 0.04862914862914863,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolorfast",
+    "score": 0.04789713438211769,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/lines.py/Line2D/set_xdata",
+    "score": 0.0464368637256653,
+    "supports": [
+     "examples/widgets/range_slider.py/update",
+     "lib/matplotlib/widgets.py/Slider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist2d",
+    "score": 0.04621050130672369,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.04431216931216931,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/_value_in_bounds",
+    "score": 0.042438271604938266,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/_auto_draw_if_interactive",
+    "score": 0.042222222222222223,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_axes",
+    "score": 0.04060705496308449,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook/__init__.py/index_of",
+    "score": 0.04047619047619047,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/imsave",
+    "score": 0.040425350914504464,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/subplots_adjust",
+    "score": 0.04007056451612903,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots_adjust",
+    "score": 0.039299761428847765,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/_ImageBase/_make_image",
+    "score": 0.039039907460960095,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "examples/pyplots/auto_subplots_adjust.py/on_draw",
+    "score": 0.038373860182370816,
+    "supports": []
+   },
+   {
+    "id": "examples/color/colormap_reference.py/plot_color_gradients",
+    "score": 0.03822807697274958,
+    "supports": []
+   },
+   {
+    "id": "examples/lines_bars_and_markers/gradient_bar.py/gradient_image",
+    "score": 0.03779691545648992,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.03599283724631914,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   }
+  ],
+  "graph": [
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_val",
+    "score": 0.24567099567099568,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/set_val",
+    "score": 0.20787545787545786,
+    "supports": []
+   },
+   {
+    "id": "examples/widgets/range_slider.py/update",
+    "score": 0.1775103980986334,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/on_changed",
+    "score": 0.16263736263736261,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_min_in_bounds",
+    "score": 0.1481283422459893,
+    "supports": [
+     "lib/matplotlib/widgets.py/RangeSlider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_max_in_bounds",
+    "score": 0.13965744400527008,
+    "supports": [
+     "lib/matplotlib/widgets.py/RangeSlider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_update_val_from_pos",
+    "score": 0.11805555555555555,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/TextBox/set_val",
+    "score": 0.11755723626227224,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/__init__",
+    "score": 0.10666666666666666,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist",
+    "score": 0.09163533834586465,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/lines.py/Line2D/set_xdata",
+    "score": 0.08810353039233196,
+    "supports": [
+     "examples/widgets/range_slider.py/update",
+     "lib/matplotlib/widgets.py/Slider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/_value_in_bounds",
+    "score": 0.08421052631578947,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolorfast",
+    "score": 0.0836114200964034,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/__init__",
+    "score": 0.08253968253968254,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hist2d",
+    "score": 0.0819247870210094,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/streamplot.py/Grid/shape",
+    "score": 0.072718701515694,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/axvline",
+    "score": 0.0726182451409954,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/_ImageBase/_make_image",
+    "score": 0.07237324079429343,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/Slider/on_changed",
+    "score": 0.07142857142857142,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_min",
+    "score": 0.07005948446794448,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.06932617057965247,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "examples/lines_bars_and_markers/gradient_bar.py/gradient_image",
+    "score": 0.06904691545648992,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/transforms.py/BboxBase/min",
+    "score": 0.06794138282944254,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/figaspect",
+    "score": 0.06693269486565576,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/transforms.py/BboxBase/max",
+    "score": 0.06343227329616566,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/widgets.py/RangeSlider/set_max",
+    "score": 0.06283566058002148,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/figimage",
+    "score": 0.06281675641431739,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/eventplot",
+    "score": 0.05992782960746347,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "examples/scales/custom_scale.py/MercatorLatitudeScale/limit_range_for_scale",
+    "score": 0.0596901913184209,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/image.py/thumbnail",
+    "score": 0.059248699479791916,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook/__init__.py/CallbackRegistry/process",
+    "score": 0.05872356383952564,
+    "supports": [
+     "lib/matplotlib/widgets.py/Slider/set_val",
+     "lib/matplotlib/widgets.py/RangeSlider/set_val",
+     "lib/matplotlib/widgets.py/TextBox/set_val"
+    ]
+   },
+   {
+    "id": "examples/images_contours_and_fields/image_annotated_heatmap.py/annotate_heatmap",
+    "score": 0.05714146390799284,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/cm.py/ScalarMappable/to_rgba",
+    "score": 0.05689190235796915,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolor",
+    "score": 0.056825783164447974,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolormesh",
+    "score": 0.056400458431913214,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_base.py/_process_plot_var_args/_plot_args",
+    "score": 0.056343478782889096,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/scatter",
+    "score": 0.05599183220332263,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/voxels",
+    "score": 0.05413666199088378,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_api/__init__.py/check_shape",
+    "score": 0.053465375204505644,
+    "supports": [
+     "lib/matplotlib/streamplot.py/Grid/shape",
+     "lib/matplotlib/widgets.py/RangeSlider/set_val"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/colors.py/LightSource/shade",
+    "score": 0.053121714473837914,
+    "supports": [
+     "lib/matplotlib/transforms.py/BboxBase/min",
+     "lib/matplotlib/transforms.py/BboxBase/max"
+    ]
+   }
+  ]
+ }
+}

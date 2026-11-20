@@ -1,0 +1,1337 @@
+{
+ "task": "matplotlib__matplotlib-23299",
+ "repo": "matplotlib__matplotlib",
+ "query_sha256": "e09f2f06fba2878eb83a9b899e7f51c5053caf050a9e1ccaa56a015edf027cc6",
+ "corpus_sha256": "6518dbb5614fd9808e57aad5e629bceeaa91718048c7b0051471b9bef4693cbf",
+ "n_corpus": 6736,
+ "n_scanned_for_graph": 6736,
+ "n_propagated": 14,
+ "anchors": [
+  "lib/matplotlib/pyplot.py/figure",
+  "lib/matplotlib/__init__.py/rc_context",
+  "lib/matplotlib/pyplot.py/rc_context",
+  "lib/matplotlib/__init__.py/get_backend",
+  "lib/matplotlib/backend_managers.py/ToolManager/figure",
+  "lib/matplotlib/backend_tools.py/ToolBase/figure",
+  "lib/matplotlib/pyplot.py/close",
+  "lib/matplotlib/pyplot.py/ion"
+ ],
+ "degrees": {
+  "lib/matplotlib/pyplot.py/figure": 6,
+  "lib/matplotlib/__init__.py/rc_context": 1,
+  "lib/matplotlib/pyplot.py/rc_context": 0,
+  "lib/matplotlib/__init__.py/get_backend": 3,
+  "lib/matplotlib/backend_managers.py/ToolManager/figure": 0,
+  "lib/matplotlib/backend_tools.py/ToolBase/figure": 0,
+  "lib/matplotlib/pyplot.py/close": 4,
+  "lib/matplotlib/pyplot.py/ion": 2
+ },
+ "top40": {
+  "body": [
+   {
+    "id": "lib/matplotlib/pyplot.py/close",
+    "score": 98.13571484012215,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ion",
+    "score": 86.20036439097247,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ioff",
+    "score": 83.22364350107274,
+    "supports": [
+     "lib/matplotlib/pyplot.py/ion"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__setstate__",
+    "score": 80.83198604879584,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 78.50561656977196,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__getstate__",
+    "score": 78.4368190639599,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_fig",
+    "score": 77.99555034618966,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 76.4105203075953,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_Backend/show",
+    "score": 75.22821584436188,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 74.95285885797426,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/xkcd",
+    "score": 72.59217952023626,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/pause",
+    "score": 71.04249402005964,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 70.20591520817509,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_all",
+    "score": 69.62015156377795,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 67.04360239496593,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/render_figures",
+    "score": 66.95614086600955,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/use",
+    "score": 66.25085376812522,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 65.55983109935018,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/switch_backend",
+    "score": 65.1098891274353,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy",
+    "score": 61.80709889075088,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/destroy",
+    "score": 59.89879637577835,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 58.560937024678104,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/isinteractive",
+    "score": 58.439828837245656,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/_backend_tk.py/FigureManagerTk/destroy",
+    "score": 57.55846262305557,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/qt_compat.py/_maybe_allow_interrupt",
+    "score": 57.22554184644606,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_context",
+    "score": 56.52014202051439,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 56.498572037453556,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_fig_manager",
+    "score": 56.450067983177554,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/subplots",
+    "score": 56.10390080954174,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/gcf",
+    "score": 55.42859004762701,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_num_fig_managers",
+    "score": 55.023001905845355,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_all_fig_managers",
+    "score": 54.87337175505004,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/FigureCanvasBase/_fix_ipython_backend2gui",
+    "score": 54.662490285943235,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/install_repl_displayhook",
+    "score": 54.31590766134607,
+    "supports": [
+     "lib/matplotlib/__init__.py/get_backend"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_wx.py/FigureManagerWx/destroy",
+    "score": 54.17345813402018,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/_widgetclosed",
+    "score": 53.59286321094847,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/connection_info",
+    "score": 52.620563270559884,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_active",
+    "score": 52.1494105936051,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/legend",
+    "score": 51.99893641493511,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_wx.py/FigureFrameWx/_on_close",
+    "score": 51.84934800852561,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_fig",
+    "score": 0.1497326203208556,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_all",
+    "score": 0.125,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_all_fig_managers",
+    "score": 0.10073260073260074,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy",
+    "score": 0.1,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_fig_manager",
+    "score": 0.09774436090225563,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/close",
+    "score": 0.09766584766584767,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ion",
+    "score": 0.09684684684684684,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/destroy",
+    "score": 0.08781362007168458,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_num_fig_managers",
+    "score": 0.08689024390243902,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.08585055643879173,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ioff",
+    "score": 0.07776059786110037,
+    "supports": [
+     "lib/matplotlib/pyplot.py/ion"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.07551622418879056,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_active",
+    "score": 0.07346491228070175,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__setstate__",
+    "score": 0.07209791547140944,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/_set_new_active_manager",
+    "score": 0.06694915254237288,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/_widgetclosed",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__getstate__",
+    "score": 0.06317069081153588,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_context",
+    "score": 0.06003584229390681,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 0.0580936266215454,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/set_active",
+    "score": 0.057800224466891134,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/has_fignum",
+    "score": 0.05752003771805752,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_Backend/show",
+    "score": 0.05307582594870116,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.050817661488143914,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/xkcd",
+    "score": 0.04841776966377605,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/_backend_tk.py/FigureManagerTk/destroy",
+    "score": 0.04793028322440087,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/show",
+    "score": 0.04633555420956996,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/pause",
+    "score": 0.04628649220995311,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0458128078817734,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/rc_context",
+    "score": 0.04547426885359715,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.0449486301369863,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 0.04418697809139371,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/resize",
+    "score": 0.04374531835205993,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/get_window_title",
+    "score": 0.04357298474945533,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.0408110300081103,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/__init__",
+    "score": 0.04045362220717671,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_wx.py/FigureManagerWx/destroy",
+    "score": 0.0404040404040404,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/render_figures",
+    "score": 0.039694584084226506,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/get_current_fig_manager",
+    "score": 0.03952991452991453,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/full_screen_toggle",
+    "score": 0.03931367649508579,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/set_window_title",
+    "score": 0.0385146804835924,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "lib/matplotlib/pyplot.py/close",
+    "score": 0.15648937707761237,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ion",
+    "score": 0.15240240240240238,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_fig",
+    "score": 0.1497326203208556,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 0.14900271753063632,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_context",
+    "score": 0.14336917562724014,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_all",
+    "score": 0.125,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/rc_context",
+    "score": 0.12239734577667408,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_all_fig_managers",
+    "score": 0.10073260073260074,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy",
+    "score": 0.1,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_fig_manager",
+    "score": 0.09774436090225563,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/destroy",
+    "score": 0.08781362007168458,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_num_fig_managers",
+    "score": 0.08689024390243902,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.08585055643879173,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/get_backend",
+    "score": 0.08369366693072793,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ioff",
+    "score": 0.07776059786110037,
+    "supports": [
+     "lib/matplotlib/pyplot.py/ion"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.07551622418879056,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_active",
+    "score": 0.07346491228070175,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__setstate__",
+    "score": 0.07209791547140944,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_managers.py/ToolManager/figure",
+    "score": 0.06957377750960887,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/_set_new_active_manager",
+    "score": 0.06694915254237288,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backend_tools.py/ToolBase/figure",
+    "score": 0.06350619000242803,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/_widgetclosed",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__getstate__",
+    "score": 0.06317069081153588,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/set_active",
+    "score": 0.057800224466891134,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/has_fignum",
+    "score": 0.05752003771805752,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_Backend/show",
+    "score": 0.05307582594870116,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.050817661488143914,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/xkcd",
+    "score": 0.04841776966377605,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/_backend_tk.py/FigureManagerTk/destroy",
+    "score": 0.04793028322440087,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/show",
+    "score": 0.04633555420956996,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/pause",
+    "score": 0.04628649220995311,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0458128078817734,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.0449486301369863,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 0.04418697809139371,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/resize",
+    "score": 0.04374531835205993,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/get_window_title",
+    "score": 0.04357298474945533,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.0408110300081103,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/__init__",
+    "score": 0.04045362220717671,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_wx.py/FigureManagerWx/destroy",
+    "score": 0.0404040404040404,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/render_figures",
+    "score": 0.039694584084226506,
+    "supports": []
+   }
+  ],
+  "uniform": [
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_fig",
+    "score": 0.17914438502673796,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/close",
+    "score": 0.15648937707761237,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_all",
+    "score": 0.15441176470588236,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ion",
+    "score": 0.15240240240240238,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 0.14900271753063632,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_context",
+    "score": 0.14336917562724014,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_fig_manager",
+    "score": 0.1431989063568011,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/rc_context",
+    "score": 0.12239734577667408,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/_set_new_active_manager",
+    "score": 0.11240369799691834,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ioff",
+    "score": 0.10553837563887815,
+    "supports": [
+     "lib/matplotlib/pyplot.py/ion"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_all_fig_managers",
+    "score": 0.10073260073260074,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy",
+    "score": 0.1,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/destroy",
+    "score": 0.08781362007168458,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_num_fig_managers",
+    "score": 0.08689024390243902,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.08585055643879173,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/get_backend",
+    "score": 0.08369366693072793,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.07551622418879056,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_active",
+    "score": 0.07346491228070175,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__setstate__",
+    "score": 0.07209791547140944,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_managers.py/ToolManager/figure",
+    "score": 0.06957377750960887,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/get_fignums",
+    "score": 0.06483144515059408,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure",
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backend_tools.py/ToolBase/figure",
+    "score": 0.06350619000242803,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/_widgetclosed",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/get_figlabels",
+    "score": 0.06337005809271698,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure",
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__getstate__",
+    "score": 0.06317069081153588,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/install_repl_displayhook",
+    "score": 0.059113150113821705,
+    "supports": [
+     "lib/matplotlib/__init__.py/get_backend"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/set_active",
+    "score": 0.057800224466891134,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/has_fignum",
+    "score": 0.05752003771805752,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_Backend/show",
+    "score": 0.05307582594870116,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/FigureManagerBase/show",
+    "score": 0.05177140641730975,
+    "supports": [
+     "lib/matplotlib/__init__.py/get_backend"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.050817661488143914,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/xkcd",
+    "score": 0.04841776966377605,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/_backend_tk.py/FigureManagerTk/destroy",
+    "score": 0.04793028322440087,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_file",
+    "score": 0.04719632546578241,
+    "supports": [
+     "lib/matplotlib/__init__.py/rc_context"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_api/__init__.py/warn_external",
+    "score": 0.04656679820316184,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/show",
+    "score": 0.04633555420956996,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/pause",
+    "score": 0.04628649220995311,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/transforms.py/BboxBase/max",
+    "score": 0.045889406099869044,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0458128078817734,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.0449486301369863,
+    "supports": []
+   }
+  ],
+  "gate": [
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_fig",
+    "score": 0.17914438502673796,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/close",
+    "score": 0.15648937707761237,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_all",
+    "score": 0.15441176470588236,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ion",
+    "score": 0.15240240240240238,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 0.14900271753063632,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_context",
+    "score": 0.14336917562724014,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_fig_manager",
+    "score": 0.1431989063568011,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/rc_context",
+    "score": 0.12239734577667408,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/_set_new_active_manager",
+    "score": 0.11240369799691834,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ioff",
+    "score": 0.10553837563887815,
+    "supports": [
+     "lib/matplotlib/pyplot.py/ion"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_all_fig_managers",
+    "score": 0.10073260073260074,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy",
+    "score": 0.1,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/destroy",
+    "score": 0.08781362007168458,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_num_fig_managers",
+    "score": 0.08689024390243902,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.08585055643879173,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/get_backend",
+    "score": 0.08369366693072793,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.07551622418879056,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_active",
+    "score": 0.07346491228070175,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__setstate__",
+    "score": 0.07209791547140944,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_managers.py/ToolManager/figure",
+    "score": 0.06957377750960887,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/get_fignums",
+    "score": 0.06483144515059408,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure",
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backend_tools.py/ToolBase/figure",
+    "score": 0.06350619000242803,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/_widgetclosed",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/get_figlabels",
+    "score": 0.06337005809271698,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure",
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__getstate__",
+    "score": 0.06317069081153588,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/install_repl_displayhook",
+    "score": 0.059113150113821705,
+    "supports": [
+     "lib/matplotlib/__init__.py/get_backend"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/set_active",
+    "score": 0.057800224466891134,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/has_fignum",
+    "score": 0.05752003771805752,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_Backend/show",
+    "score": 0.05307582594870116,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/FigureManagerBase/show",
+    "score": 0.05177140641730975,
+    "supports": [
+     "lib/matplotlib/__init__.py/get_backend"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.050817661488143914,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/xkcd",
+    "score": 0.04841776966377605,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/_backend_tk.py/FigureManagerTk/destroy",
+    "score": 0.04793028322440087,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_file",
+    "score": 0.04719632546578241,
+    "supports": [
+     "lib/matplotlib/__init__.py/rc_context"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_api/__init__.py/warn_external",
+    "score": 0.04656679820316184,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/show",
+    "score": 0.04633555420956996,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/pause",
+    "score": 0.04628649220995311,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/transforms.py/BboxBase/max",
+    "score": 0.045889406099869044,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0458128078817734,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.0449486301369863,
+    "supports": []
+   }
+  ],
+  "allocation": [
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_fig",
+    "score": 0.1570855614973262,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/close",
+    "score": 0.15648937707761237,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ion",
+    "score": 0.15240240240240238,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 0.14900271753063632,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_context",
+    "score": 0.14336917562724014,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy_all",
+    "score": 0.1323529411764706,
+    "supports": [
+     "lib/matplotlib/pyplot.py/close"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/rc_context",
+    "score": 0.12239734577667408,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_fig_manager",
+    "score": 0.1053201184780132,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_all_fig_managers",
+    "score": 0.10073260073260074,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/destroy",
+    "score": 0.1,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/ioff",
+    "score": 0.09164948674998927,
+    "supports": [
+     "lib/matplotlib/pyplot.py/ion"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/destroy",
+    "score": 0.08781362007168458,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_num_fig_managers",
+    "score": 0.08689024390243902,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.08585055643879173,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/get_backend",
+    "score": 0.08369366693072793,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_nbagg.py/FigureManagerNbAgg/show",
+    "score": 0.07551622418879056,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/_set_new_active_manager",
+    "score": 0.07452491011813045,
+    "supports": [
+     "lib/matplotlib/pyplot.py/figure"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/get_active",
+    "score": 0.07346491228070175,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__setstate__",
+    "score": 0.07209791547140944,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_managers.py/ToolManager/figure",
+    "score": 0.06957377750960887,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_tools.py/ToolBase/figure",
+    "score": 0.06350619000242803,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/_widgetclosed",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/__getstate__",
+    "score": 0.06317069081153588,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/set_active",
+    "score": 0.057800224466891134,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/has_fignum",
+    "score": 0.05752003771805752,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_Backend/show",
+    "score": 0.05307582594870116,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/show",
+    "score": 0.050817661488143914,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/xkcd",
+    "score": 0.04841776966377605,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/_backend_tk.py/FigureManagerTk/destroy",
+    "score": 0.04793028322440087,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_file",
+    "score": 0.04719632546578241,
+    "supports": [
+     "lib/matplotlib/__init__.py/rc_context"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/show",
+    "score": 0.04633555420956996,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/pause",
+    "score": 0.04628649220995311,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qtagg.py/FigureCanvasQTAgg/paintEvent",
+    "score": 0.0458128078817734,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_safe_pyplot_import",
+    "score": 0.0449486301369863,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 0.04418697809139371,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/resize",
+    "score": 0.04374531835205993,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/get_window_title",
+    "score": 0.04357298474945533,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.0408110300081103,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_qt.py/FigureManagerQT/__init__",
+    "score": 0.04045362220717671,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backends/backend_wx.py/FigureManagerWx/destroy",
+    "score": 0.0404040404040404,
+    "supports": []
+   }
+  ]
+ }
+}

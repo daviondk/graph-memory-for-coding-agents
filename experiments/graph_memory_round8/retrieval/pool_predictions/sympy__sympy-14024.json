@@ -1,0 +1,842 @@
+{
+ "task": "sympy__sympy-14024",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "e901f4c10ab0f8a580a854d496dd5b027934005b845e99e273a12f6ca0a0023e",
+ "query_sha256": "bbd50ce91b881caf2253f58ded139f30a291472de9d8b2e3b60f4e6ae9494eb7",
+ "n_corpus": 15768,
+ "n_scanned_for_graph": 15768,
+ "n_propagated": 13,
+ "anchors": [
+  "sympy/core/basic.py/Basic/subs",
+  "sympy/physics/vector/vector.py/Vector/subs",
+  "sympy/physics/vector/dyadic.py/Dyadic/subs",
+  "sympy/matrices/common.py/MatrixOperations/subs",
+  "sympy/polys/fields.py/FracElement/subs",
+  "sympy/strategies/rl.py/subs",
+  "sympy/strategies/tools.py/subs",
+  "sympy/polys/rings.py/PolyElement/subs"
+ ],
+ "top40": {
+  "body": [
+   {
+    "id": "sympy/core/expr.py/Expr/as_independent",
+    "score": 27.862621486340785,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/compare",
+    "score": 26.481121802552952,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_pretty",
+    "score": 23.052311436591346,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/as_f_sign_1",
+    "score": 22.54632624694857,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 21.109139854844678,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label",
+    "score": 21.030578838618354,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/crv_types.py/Erlang",
+    "score": 20.876172517840054,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PerfectSquareQ",
+    "score": 20.864781727994806,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/gaussopt.py/CurvedRefraction/__new__",
+    "score": 20.52013239653509,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_latex",
+    "score": 20.51662801432323,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/do",
+    "score": 20.329784865143573,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/trig_split",
+    "score": 20.26779060723479,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/TR10i",
+    "score": 19.980365911283123,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/gaussopt.py/FlatRefraction/__new__",
+    "score": 19.94473200364316,
+    "supports": []
+   },
+   {
+    "id": "sympy/combinatorics/tensor_can.py/perm_af_direct_product",
+    "score": 19.825738239385856,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/partitions_.py/_a",
+    "score": 19.784526654687603,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/__new__",
+    "score": 19.644329964201486,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/crv_types.py/ChiSquared",
+    "score": 19.47902332930223,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/powsimp.py/powdenest",
+    "score": 19.332283486235937,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/summations.py/_eval_sum_hyper",
+    "score": 19.061473444692407,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/utils.py/refraction_angle",
+    "score": 18.951298507483667,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/core.py/BasicMeta/__cmp__",
+    "score": 18.859989572702403,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/checksol",
+    "score": 18.79328145459217,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/hyperexpand.py/Hyper_Function/build_invariants",
+    "score": 18.772479096586114,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/TR9",
+    "score": 18.550498033804928,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/rules/logarithms.py/With108",
+    "score": 18.343808368618372,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/rules/logarithms.py/With109",
+    "score": 18.343808368618372,
+    "supports": []
+   },
+   {
+    "id": "sympy/geometry/util.py/are_similar",
+    "score": 18.28344952654503,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/utils.py/brewster_angle",
+    "score": 18.172509072050467,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/rules/logarithms.py/With110",
+    "score": 18.140421854683346,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/symbol.py/_uniquely_named_symbol",
+    "score": 18.10603880671315,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/_build_coupled",
+    "score": 18.044953949162327,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/crv_types.py/Chi",
+    "score": 17.870923839157307,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/approximants.py/approximants",
+    "score": 17.68362706469379,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/rules/logarithms.py/logarithms",
+    "score": 17.681889148983313,
+    "supports": []
+   },
+   {
+    "id": "sympy/combinatorics/perm_groups.py/PermutationGroup/__mul__",
+    "score": 17.5673908522157,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/miscellaneous.py/cbrt",
+    "score": 17.295949775707367,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/sqrtdenest.py/_sqrt_symbolic_denest",
+    "score": 17.197371156434386,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/hyperexpand.py/_mod1",
+    "score": 17.1219683801592,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/dummy_eq",
+    "score": 17.02743008721678,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "sympy/core/basic.py/Basic/compare",
+    "score": 0.11458333333333333,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/modularinteger.py/ModularInteger/_compare",
+    "score": 0.10008340283569642,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/as_independent",
+    "score": 0.09090909090909091,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/_n2",
+    "score": 0.08785822021116138,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/power.py/_n2",
+    "score": 0.07978021978021979,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_pretty",
+    "score": 0.07749614282565573,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/expressions/matexpr.py/MatrixSymbol/_eval_subs",
+    "score": 0.07455357142857143,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/IsNonPositiveInteger/eval",
+    "score": 0.07412935323383084,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 0.07412935323383084,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/as_f_sign_1",
+    "score": 0.07308970099667773,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PositiveIntegerQ",
+    "score": 0.06602112676056338,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label",
+    "score": 0.0631265664160401,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv.py/RandomSymbol/_eval_is_positive",
+    "score": 0.062459893048128344,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PositiveIntegerPowerQ",
+    "score": 0.05910165484633569,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/crv_types.py/Erlang",
+    "score": 0.058823529411764705,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PerfectSquareQ",
+    "score": 0.05555555555555555,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/fcode.py/FCodePrinter/_print_BooleanTrue",
+    "score": 0.053750147180030614,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/gaussopt.py/CurvedRefraction/__new__",
+    "score": 0.05263157894736842,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/lambdarepr.py/LambdaPrinter/_print_BooleanTrue",
+    "score": 0.05111731843575419,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_latex",
+    "score": 0.05057339449541284,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/do",
+    "score": 0.05036630036630036,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/repr.py/ReprPrinter/_print_BooleanTrue",
+    "score": 0.04873511904761905,
+    "supports": []
+   },
+   {
+    "id": "examples/advanced/pyglet_plotting.py/lambda_vs_sympy_evaluation",
+    "score": 0.047417840375586856,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/trig_split",
+    "score": 0.047112920247248606,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/str.py/StrPrinter/_print_BooleanTrue",
+    "score": 0.046569372656329176,
+    "supports": []
+   },
+   {
+    "id": "sympy/assumptions/handlers/matrices.py/AskPositiveDefiniteHandler/MatrixSymbol",
+    "score": 0.04645161290322581,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/TR10i",
+    "score": 0.045170308246891784,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/intpoly.py/compare",
+    "score": 0.04505058791359037,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/gruntz.py/compare",
+    "score": 0.04363905325443787,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/gaussopt.py/FlatRefraction/__new__",
+    "score": 0.041666666666666664,
+    "supports": []
+   },
+   {
+    "id": "sympy/combinatorics/tensor_can.py/perm_af_direct_product",
+    "score": 0.04,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/ccode.py/C89CodePrinter/_print_BooleanTrue",
+    "score": 0.03955802968960864,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/partitions_.py/_a",
+    "score": 0.038461538461538464,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/julia.py/JuliaCodePrinter/_print_BooleanTrue",
+    "score": 0.03813232728895379,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/powsimp.py/powdenest",
+    "score": 0.03706007820831852,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/__new__",
+    "score": 0.037037037037037035,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/octave.py/OctaveCodePrinter/_print_BooleanTrue",
+    "score": 0.03680837761800562,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/symbol.py/_uniquely_named_symbol",
+    "score": 0.036154949784791966,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/crv_types.py/ChiSquared",
+    "score": 0.03571428571428571,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/rust.py/RustCodePrinter/_print_BooleanTrue",
+    "score": 0.03556034482758621,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "sympy/core/basic.py/Basic/compare",
+    "score": 0.11458333333333333,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.10430786567353759,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/modularinteger.py/ModularInteger/_compare",
+    "score": 0.10008340283569642,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.09470405372831625,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/as_independent",
+    "score": 0.09090909090909091,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.0883388296648516,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/_n2",
+    "score": 0.08785822021116138,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/power.py/_n2",
+    "score": 0.07978021978021979,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.0782762991286357,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_pretty",
+    "score": 0.07749614282565573,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/expressions/matexpr.py/MatrixSymbol/_eval_subs",
+    "score": 0.07455357142857143,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/IsNonPositiveInteger/eval",
+    "score": 0.07412935323383084,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 0.07412935323383084,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.07383370816441275,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.07340200060555165,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/as_f_sign_1",
+    "score": 0.07308970099667773,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.07003058039524793,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PositiveIntegerQ",
+    "score": 0.06602112676056338,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label",
+    "score": 0.0631265664160401,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv.py/RandomSymbol/_eval_is_positive",
+    "score": 0.062459893048128344,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.062057085327266545,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PositiveIntegerPowerQ",
+    "score": 0.05910165484633569,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/crv_types.py/Erlang",
+    "score": 0.058823529411764705,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PerfectSquareQ",
+    "score": 0.05555555555555555,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/fcode.py/FCodePrinter/_print_BooleanTrue",
+    "score": 0.053750147180030614,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/gaussopt.py/CurvedRefraction/__new__",
+    "score": 0.05263157894736842,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/lambdarepr.py/LambdaPrinter/_print_BooleanTrue",
+    "score": 0.05111731843575419,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_latex",
+    "score": 0.05057339449541284,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/do",
+    "score": 0.05036630036630036,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/repr.py/ReprPrinter/_print_BooleanTrue",
+    "score": 0.04873511904761905,
+    "supports": []
+   },
+   {
+    "id": "examples/advanced/pyglet_plotting.py/lambda_vs_sympy_evaluation",
+    "score": 0.047417840375586856,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/trig_split",
+    "score": 0.047112920247248606,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/str.py/StrPrinter/_print_BooleanTrue",
+    "score": 0.046569372656329176,
+    "supports": []
+   },
+   {
+    "id": "sympy/assumptions/handlers/matrices.py/AskPositiveDefiniteHandler/MatrixSymbol",
+    "score": 0.04645161290322581,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/TR10i",
+    "score": 0.045170308246891784,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/intpoly.py/compare",
+    "score": 0.04505058791359037,
+    "supports": []
+   },
+   {
+    "id": "sympy/series/gruntz.py/compare",
+    "score": 0.04363905325443787,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/gaussopt.py/FlatRefraction/__new__",
+    "score": 0.041666666666666664,
+    "supports": []
+   },
+   {
+    "id": "sympy/combinatorics/tensor_can.py/perm_af_direct_product",
+    "score": 0.04,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/ccode.py/C89CodePrinter/_print_BooleanTrue",
+    "score": 0.03955802968960864,
+    "supports": []
+   }
+  ],
+  "graph": [
+   {
+    "id": "sympy/core/basic.py/Basic/compare",
+    "score": 0.11458333333333333,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/subs",
+    "score": 0.10430786567353759,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/modularinteger.py/ModularInteger/_compare",
+    "score": 0.10008340283569642,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/vector.py/Vector/subs",
+    "score": 0.09470405372831625,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/Expr/as_independent",
+    "score": 0.09090909090909091,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/vector/dyadic.py/Dyadic/subs",
+    "score": 0.0883388296648516,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/expr.py/_n2",
+    "score": 0.08785822021116138,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/power.py/_n2",
+    "score": 0.07978021978021979,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/common.py/MatrixOperations/subs",
+    "score": 0.0782762991286357,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_pretty",
+    "score": 0.07749614282565573,
+    "supports": []
+   },
+   {
+    "id": "sympy/matrices/expressions/matexpr.py/MatrixSymbol/_eval_subs",
+    "score": 0.07455357142857143,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/meijerint.py/IsNonPositiveInteger/eval",
+    "score": 0.07412935323383084,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/posify",
+    "score": 0.07412935323383084,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/rl.py/subs",
+    "score": 0.07383370816441275,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/fields.py/FracElement/subs",
+    "score": 0.07340200060555165,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/as_f_sign_1",
+    "score": 0.07308970099667773,
+    "supports": []
+   },
+   {
+    "id": "sympy/strategies/tools.py/subs",
+    "score": 0.07003058039524793,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PositiveIntegerQ",
+    "score": 0.06602112676056338,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label",
+    "score": 0.0631265664160401,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv.py/RandomSymbol/_eval_is_positive",
+    "score": 0.062459893048128344,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/rings.py/PolyElement/subs",
+    "score": 0.062057085327266545,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PositiveIntegerPowerQ",
+    "score": 0.05910165484633569,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/crv_types.py/Erlang",
+    "score": 0.058823529411764705,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/_subs",
+    "score": 0.05691959659127922,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/integrals/rubi/utility_function.py/PerfectSquareQ",
+    "score": 0.05555555555555555,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/fcode.py/FCodePrinter/_print_BooleanTrue",
+    "score": 0.053750147180030614,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/optics/gaussopt.py/CurvedRefraction/__new__",
+    "score": 0.05263157894736842,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/lambdarepr.py/LambdaPrinter/_print_BooleanTrue",
+    "score": 0.05111731843575419,
+    "supports": []
+   },
+   {
+    "id": "sympy/physics/quantum/spin.py/CoupledSpinState/_print_label_latex",
+    "score": 0.05057339449541284,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/do",
+    "score": 0.05036630036630036,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/repr.py/ReprPrinter/_print_BooleanTrue",
+    "score": 0.04873511904761905,
+    "supports": []
+   },
+   {
+    "id": "examples/advanced/pyglet_plotting.py/lambda_vs_sympy_evaluation",
+    "score": 0.047417840375586856,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/fu.py/trig_split",
+    "score": 0.047112920247248606,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/str.py/StrPrinter/_print_BooleanTrue",
+    "score": 0.046569372656329176,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/sympify.py/sympify",
+    "score": 0.04655951783023606,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/assumptions/handlers/matrices.py/AskPositiveDefiniteHandler/MatrixSymbol",
+    "score": 0.04645161290322581,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/_aresame",
+    "score": 0.04566396953831509,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/containers.py/OrderedSet/pop",
+    "score": 0.04565518750912009,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/codegen/ast.py/Variable/type",
+    "score": 0.04560635963398982,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs"
+    ]
+   },
+   {
+    "id": "sympy/core/containers.py/Dict/items",
+    "score": 0.04559580834478419,
+    "supports": [
+     "sympy/core/basic.py/Basic/subs",
+     "sympy/strategies/tools.py/subs"
+    ]
+   }
+  ]
+ }
+}

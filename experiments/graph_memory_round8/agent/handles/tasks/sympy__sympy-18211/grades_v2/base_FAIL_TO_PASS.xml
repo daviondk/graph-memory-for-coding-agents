@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="1.007" timestamp="2026-11-20T23:08:58.426749" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.core.tests.test_relational" name="test_issue_18188" time="0.462"><failure message="NotImplementedError: &#10;The inequality, Eq(x*cos(x) - 3*sin(x), 0), cannot be solved using&#10;solve_univariate_inequality.">sympy\solvers\inequalities.py:524: in solve_univariate_inequality
+    solns = solvify(e, gen, domain)
+sympy\solvers\solveset.py:2138: in solvify
+    raise NotImplementedError('solveset is unable to solve this equation.')
+E   NotImplementedError: solveset is unable to solve this equation.
+
+During handling of the above exception, another exception occurred:
+sympy\core\tests\test_relational.py:964: in test_issue_18188
+    assert result1.as_set() == ConditionSet(x, Eq(x*cos(x) - 3*sin(x), 0), Reals)
+sympy\logic\boolalg.py:159: in as_set
+    return self.subs(reps)._eval_as_set()
+sympy\core\relational.py:395: in _eval_as_set
+    return solve_univariate_inequality(self, x, relational=False)
+sympy\solvers\inequalities.py:531: in solve_univariate_inequality
+    raise NotImplementedError(filldedent('''
+E   NotImplementedError: 
+E   The inequality, Eq(x*cos(x) - 3*sin(x), 0), cannot be solved using
+E   solve_univariate_inequality.</failure></testcase></testsuite></testsuites>

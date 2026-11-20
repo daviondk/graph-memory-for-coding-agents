@@ -1,0 +1,1013 @@
+{
+ "task": "Kuuuube__kanjigrid-11",
+ "repo": "Kuuuube__kanjigrid",
+ "n_corpus": 35,
+ "corpus_sha256": "d52934cb52d4ce5c65869cb5bd6c7a268f5315dd99fb1e17d2ecde62f437cdf9",
+ "query_sha256": "11127769ab48a9c756cd033926808b63196c85832c6b62ab0a7982bd7bcafeb6",
+ "anchors": [
+  "__init__.py/KanjiGrid/__init__",
+  "__init__.py/KanjiGrid/open_note_browser",
+  "__init__.py/KanjiGrid/displaygrid",
+  "__init__.py/KanjiGrid/generate",
+  "__init__.py/KanjiGrid/generate/kanjitile",
+  "util.py/get_search",
+  "util.py/scoreAdjust"
+ ],
+ "edges": [
+  [
+   "save.py/get_filename",
+   "save.py/savehtml"
+  ],
+  [
+   "save.py/get_filename",
+   "save.py/savepng"
+  ],
+  [
+   "save.py/get_filename",
+   "save.py/savepdf"
+  ],
+  [
+   "save.py/get_filename",
+   "save.py/savejson"
+  ],
+  [
+   "save.py/get_filename",
+   "save.py/savetxt"
+  ],
+  [
+   "save.py/savehtml",
+   "save.py/savepdf/finish"
+  ],
+  [
+   "save.py/savehtml",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "save.py/savehtml",
+   "__init__.py/KanjiGrid/displaygrid"
+  ],
+  [
+   "save.py/savehtml",
+   "__init__.py/KanjiGrid/kanjigrid"
+  ],
+  [
+   "save.py/savepng",
+   "__init__.py/KanjiGrid/displaygrid"
+  ],
+  [
+   "save.py/savepdf",
+   "save.py/savepdf/finish"
+  ],
+  [
+   "save.py/savepdf",
+   "__init__.py/KanjiGrid/displaygrid"
+  ],
+  [
+   "save.py/savepdf/finish",
+   "save.py/savejson"
+  ],
+  [
+   "save.py/savepdf/finish",
+   "save.py/savetxt"
+  ],
+  [
+   "save.py/savepdf/finish",
+   "__init__.py/KanjiGrid/setup"
+  ],
+  [
+   "save.py/savejson",
+   "__init__.py/KanjiGrid/displaygrid"
+  ],
+  [
+   "save.py/savetxt",
+   "__init__.py/KanjiGrid/displaygrid"
+  ],
+  [
+   "util.py/SortOrder/pretty_value",
+   "__init__.py/KanjiGrid/setup"
+  ],
+  [
+   "util.py/isKanji",
+   "util.py/addUnitData"
+  ],
+  [
+   "util.py/isKanji",
+   "util.py/safe_unicodedata_name"
+  ],
+  [
+   "util.py/scoreAdjust",
+   "util.py/get_background_color"
+  ],
+  [
+   "util.py/scoreAdjust",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "util.py/scoreAdjust",
+   "__init__.py/KanjiGrid/generate/kanjitile"
+  ],
+  [
+   "util.py/addUnitData",
+   "util.py/addDataFromCard"
+  ],
+  [
+   "util.py/addUnitData",
+   "__init__.py/KanjiGrid/kanjigrid"
+  ],
+  [
+   "util.py/hsvrgbstr",
+   "util.py/hsvrgbstr/_256"
+  ],
+  [
+   "util.py/hsvrgbstr",
+   "util.py/get_background_color"
+  ],
+  [
+   "util.py/hsvrgbstr",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "util.py/get_background_color",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "util.py/get_font_css",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "util.py/get_search",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "util.py/get_search",
+   "__init__.py/KanjiGrid/generate/kanjitile"
+  ],
+  [
+   "util.py/get_browse_command",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "util.py/get_browse_command",
+   "__init__.py/KanjiGrid/generate/kanjitile"
+  ],
+  [
+   "util.py/fields_to_query",
+   "util.py/make_query"
+  ],
+  [
+   "util.py/make_query",
+   "__init__.py/KanjiGrid/kanjigrid"
+  ],
+  [
+   "util.py/safe_unicodedata_name",
+   "__init__.py/KanjiGrid/generate"
+  ],
+  [
+   "util.py/safe_unicodedata_name",
+   "__init__.py/KanjiGrid/generate/kanjitile"
+  ],
+  [
+   "config_util.py/validate_config",
+   "__init__.py/KanjiGrid/setup"
+  ],
+  [
+   "data.py/init_groups",
+   "__init__.py/KanjiGrid/setup"
+  ],
+  [
+   "__init__.py/KanjiGrid/generate",
+   "__init__.py/KanjiGrid/generate/kanjitile"
+  ],
+  [
+   "__init__.py/KanjiGrid/generate",
+   "__init__.py/KanjiGrid/displaygrid"
+  ],
+  [
+   "__init__.py/KanjiGrid/open_note_browser",
+   "__init__.py/KanjiGrid/displaygrid"
+  ],
+  [
+   "__init__.py/KanjiGrid/displaygrid",
+   "__init__.py/KanjiGrid/makegrid"
+  ],
+  [
+   "__init__.py/KanjiGrid/kanjigrid",
+   "__init__.py/KanjiGrid/makegrid"
+  ],
+  [
+   "__init__.py/KanjiGrid/makegrid",
+   "__init__.py/KanjiGrid/setup"
+  ],
+  [
+   "__init__.py/KanjiGrid/setup",
+   "__init__.py/KanjiGrid/setup/update_fields_dropdown"
+  ]
+ ],
+ "explicit_identifiers": {
+  "action": 2,
+  "effective": 2,
+  "kanji": 3,
+  "QTableWidget": 1,
+  "html": 1,
+  "small": 1,
+  "mouseenter": 1,
+  "mouseleave": 1,
+  "bridgeCommand": 3,
+  "__init__": 4,
+  "import": 8,
+  "gui_hooks": 3,
+  "AnkiWebView": 3,
+  "QAction": 1,
+  "QSizePolicy": 1,
+  "QDialog": 2,
+  "QHBoxLayout": 1,
+  "QVBoxLayout": 2,
+  "QGroupBox": 1,
+  "QLabel": 1,
+  "QCheckBox": 1,
+  "QSpinBox": 1,
+  "QComboBox": 2,
+  "QPushButton": 2,
+  "QLineEdit": 2,
+  "QMenu": 2,
+  "QApplication": 2,
+  "qconnect": 5,
+  "config_util": 1,
+  "KanjiGrid": 2,
+  "kanjitile": 1,
+  "avg_interval": 4,
+  "exporting": 1,
+  "context_menu_events": 3,
+  "name": 1,
+  "str": 2,
+  "format": 2,
+  "scoreAdjust": 1,
+  "searchEdit": 1,
+  "lineEdit": 1,
+  "setText": 2,
+  "fields_string": 1,
+  "onSearchActivated": 1,
+  "open_search_link": 2,
+  "get_search": 1,
+  "eval": 1,
+  "window": 2,
+  "open": 2,
+  "_blank": 1,
+  "link_handler": 2,
+  "on_browse_cmd": 3,
+  "add_webview_context_menu_items": 3,
+  "addAction": 3,
+  "clipboard": 2,
+  "on_copy_cmd": 2,
+  "on_search_cmd": 2,
+  "displaygrid": 1,
+  "generate": 1,
+  "timepoint": 1,
+  "fields_list": 2,
+  "set_bridge_command": 2,
+  "search_string": 2,
+  "open_note_browser": 2,
+  "webview_will_show_context_menu": 2,
+  "append": 1,
+  "remove": 1,
+  "setContentsMargins": 1,
+  "addWidget": 1
+ },
+ "candidates": [
+  {
+   "id": "save.py/get_filename",
+   "scores": {
+    "bm25": 9.617077515509314,
+    "dense": 0.01848328299820423,
+    "rrf": 0.04939024390243903,
+    "direct": 0.04939024390243903,
+    "graph": 0.04939024390243903,
+    "rewired": 0.04939024390243903,
+    "dense_dot": 10.936856269836426
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 30,
+    "rrf": 32,
+    "direct": 33,
+    "graph": 34,
+    "rewired": 33,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "save.py/savehtml",
+   "scores": {
+    "bm25": 48.12599081847092,
+    "dense": 0.3125132918357849,
+    "rrf": 0.10317460317460317,
+    "direct": 0.10317460317460317,
+    "graph": 0.14163614163614163,
+    "rewired": 0.1365079365079365,
+    "dense_dot": 184.1039581298828
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 11,
+    "rrf": 9,
+    "direct": 11,
+    "graph": 7,
+    "rewired": 8,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "save.py/savepng",
+   "scores": {
+    "bm25": 37.11458850305613,
+    "dense": 0.15725453197956085,
+    "rrf": 0.08116883116883117,
+    "direct": 0.08116883116883117,
+    "graph": 0.11963036963036963,
+    "rewired": 0.11241883116883117,
+    "dense_dot": 92.6427001953125
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 18,
+    "rrf": 12,
+    "direct": 14,
+    "graph": 11,
+    "rewired": 12,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "save.py/savepng/resize_to_content",
+   "scores": {
+    "bm25": 19.63660583615962,
+    "dense": 0.07039467245340347,
+    "rrf": 0.06350806451612903,
+    "direct": 0.06350806451612903,
+    "graph": 0.06350806451612903,
+    "rewired": 0.06350806451612903,
+    "dense_dot": 41.723777770996094
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 22,
+    "rrf": 24,
+    "direct": 25,
+    "graph": 28,
+    "rewired": 27,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "save.py/savepdf",
+   "scores": {
+    "bm25": 46.47932714964555,
+    "dense": 0.06808716803789139,
+    "rrf": 0.0803030303030303,
+    "direct": 0.0803030303030303,
+    "graph": 0.11876456876456877,
+    "rewired": 0.0803030303030303,
+    "dense_dot": 40.195106506347656
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 23,
+    "rrf": 13,
+    "direct": 15,
+    "graph": 12,
+    "rewired": 21,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "save.py/savepdf/finish",
+   "scores": {
+    "bm25": 19.26347338300662,
+    "dense": 0.03574351221323013,
+    "rrf": 0.05827702702702703,
+    "direct": 0.05827702702702703,
+    "graph": 0.05827702702702703,
+    "rewired": 0.09161036036036035,
+    "dense_dot": 21.16680335998535
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 27,
+    "rrf": 26,
+    "direct": 27,
+    "graph": 30,
+    "rewired": 19,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "save.py/savejson",
+   "scores": {
+    "bm25": 35.101911068438454,
+    "dense": 0.10763784497976303,
+    "rrf": 0.07392473118279569,
+    "direct": 0.07392473118279569,
+    "graph": 0.11238626964433415,
+    "rewired": 0.07392473118279569,
+    "dense_dot": 63.51180648803711
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 21,
+    "rrf": 17,
+    "direct": 19,
+    "graph": 15,
+    "rewired": 23,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "save.py/savetxt",
+   "scores": {
+    "bm25": 31.30665484438609,
+    "dense": 0.12883082032203674,
+    "rrf": 0.07294429708222812,
+    "direct": 0.07294429708222812,
+    "graph": 0.11140583554376658,
+    "rewired": 0.07294429708222812,
+    "dense_dot": 75.57186889648438
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 19,
+    "rrf": 18,
+    "direct": 20,
+    "graph": 17,
+    "rewired": 24,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "util.py/SortOrder/pretty_value",
+   "scores": {
+    "bm25": 8.856056442821766,
+    "dense": 0.062325093895196915,
+    "rrf": 0.05322128851540616,
+    "direct": 0.05322128851540616,
+    "graph": 0.05322128851540616,
+    "rewired": 0.05322128851540616,
+    "dense_dot": 36.999027252197266
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 24,
+    "rrf": 30,
+    "direct": 31,
+    "graph": 32,
+    "rewired": 31,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "util.py/isKanji",
+   "scores": {
+    "bm25": 10.037969106489854,
+    "dense": 0.23384127020835876,
+    "rrf": 0.06346153846153846,
+    "direct": 0.06346153846153846,
+    "graph": 0.06346153846153846,
+    "rewired": 0.06346153846153846,
+    "dense_dot": 138.89572143554688
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 16,
+    "rrf": 25,
+    "direct": 26,
+    "graph": 29,
+    "rewired": 28,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "util.py/scoreAdjust",
+   "scores": {
+    "bm25": 12.517373041116713,
+    "dense": -0.018946470692753792,
+    "rrf": 0.04904306220095694,
+    "direct": 0.10786659161272164,
+    "graph": 0.10786659161272164,
+    "rewired": 0.10786659161272164,
+    "dense_dot": -11.269407272338867
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 34,
+    "rrf": 33,
+    "direct": 10,
+    "graph": 18,
+    "rewired": 14,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "util.py/addUnitData",
+   "scores": {
+    "bm25": 24.543585516772577,
+    "dense": 0.2404409945011139,
+    "rrf": 0.0757142857142857,
+    "direct": 0.0757142857142857,
+    "graph": 0.0757142857142857,
+    "rewired": 0.0757142857142857,
+    "dense_dot": 141.3240966796875
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 15,
+    "rrf": 16,
+    "direct": 18,
+    "graph": 23,
+    "rewired": 22,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "util.py/addDataFromCard",
+   "scores": {
+    "bm25": 25.398689124459892,
+    "dense": 0.0364803783595562,
+    "rrf": 0.06481481481481481,
+    "direct": 0.06481481481481481,
+    "graph": 0.06481481481481481,
+    "rewired": 0.06481481481481481,
+    "dense_dot": 21.578960418701172
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 26,
+    "rrf": 22,
+    "direct": 23,
+    "graph": 26,
+    "rewired": 25,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "util.py/hsvrgbstr",
+   "scores": {
+    "bm25": 1.9412582382989065,
+    "dense": -0.004090487491339445,
+    "rrf": 0.0454780361757106,
+    "direct": 0.0454780361757106,
+    "graph": 0.08119232188999631,
+    "rewired": 0.0454780361757106,
+    "dense_dot": -2.4424428939819336
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 33,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 22,
+    "rewired": 34,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "util.py/hsvrgbstr/_256",
+   "scores": {
+    "bm25": 2.4075819102920484,
+    "dense": -0.03642919287085533,
+    "rrf": 0.04494949494949495,
+    "direct": 0.04494949494949495,
+    "graph": 0.04494949494949495,
+    "rewired": 0.04494949494949495,
+    "dense_dot": -21.767330169677734
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 35,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 35,
+    "rewired": 35,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "util.py/get_background_color",
+   "scores": {
+    "bm25": 44.91643116109233,
+    "dense": 0.057937923818826675,
+    "rrf": 0.07619047619047618,
+    "direct": 0.07619047619047618,
+    "graph": 0.1119047619047619,
+    "rewired": 0.10952380952380952,
+    "dense_dot": 34.24216842651367
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 25,
+    "rrf": 15,
+    "direct": 17,
+    "graph": 16,
+    "rewired": 13,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "util.py/get_font_css",
+   "scores": {
+    "bm25": 4.769110014449091,
+    "dense": 0.12225958704948425,
+    "rrf": 0.056589147286821705,
+    "direct": 0.056589147286821705,
+    "graph": 0.09230343300110741,
+    "rewired": 0.10204369274136715,
+    "dense_dot": 73.00121307373047
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 20,
+    "rrf": 27,
+    "direct": 28,
+    "graph": 19,
+    "rewired": 17,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "util.py/get_search",
+   "scores": {
+    "bm25": 14.623261826146333,
+    "dense": 0.21983712911605835,
+    "rrf": 0.0656084656084656,
+    "direct": 0.12810846560846562,
+    "graph": 0.12810846560846562,
+    "rewired": 0.12810846560846562,
+    "dense_dot": 129.7923583984375
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 17,
+    "rrf": 21,
+    "direct": 7,
+    "graph": 9,
+    "rewired": 9,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "util.py/get_browse_command",
+   "scores": {
+    "bm25": 22.274852301352933,
+    "dense": 0.29680535197257996,
+    "rrf": 0.0787878787878788,
+    "direct": 0.0787878787878788,
+    "graph": 0.11450216450216451,
+    "rewired": 0.12424242424242425,
+    "dense_dot": 176.81019592285156
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 12,
+    "rrf": 14,
+    "direct": 16,
+    "graph": 13,
+    "rewired": 10,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "util.py/fields_to_query",
+   "scores": {
+    "bm25": 15.755148808231237,
+    "dense": 0.018632810562849045,
+    "rrf": 0.05505279034690799,
+    "direct": 0.05505279034690799,
+    "graph": 0.05505279034690799,
+    "rewired": 0.05505279034690799,
+    "dense_dot": 11.059925079345703
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 29,
+    "rrf": 28,
+    "direct": 29,
+    "graph": 31,
+    "rewired": 29,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "util.py/make_query",
+   "scores": {
+    "bm25": 32.1860565731443,
+    "dense": 0.008144442923367023,
+    "rrf": 0.06439024390243903,
+    "direct": 0.06439024390243903,
+    "graph": 0.06439024390243903,
+    "rewired": 0.06439024390243903,
+    "dense_dot": 4.813599586486816
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 31,
+    "rrf": 23,
+    "direct": 24,
+    "graph": 27,
+    "rewired": 26,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "util.py/safe_unicodedata_name",
+   "scores": {
+    "bm25": 13.533691999039496,
+    "dense": 0.02283179759979248,
+    "rrf": 0.05334281650071124,
+    "direct": 0.05334281650071124,
+    "graph": 0.08905710221499695,
+    "rewired": 0.05334281650071124,
+    "dense_dot": 13.480252265930176
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 28,
+    "rrf": 29,
+    "direct": 30,
+    "graph": 20,
+    "rewired": 30,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "config_util.py/validate_config",
+   "scores": {
+    "bm25": 11.863365237890573,
+    "dense": -0.002152584260329604,
+    "rrf": 0.04945054945054945,
+    "direct": 0.04945054945054945,
+    "graph": 0.04945054945054945,
+    "rewired": 0.04945054945054945,
+    "dense_dot": -1.2769136428833008
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 32,
+    "rrf": 31,
+    "direct": 32,
+    "graph": 33,
+    "rewired": 32,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "data.py/init_groups",
+   "scores": {
+    "bm25": 13.754848866242892,
+    "dense": 0.27885735034942627,
+    "rrf": 0.07125603864734299,
+    "direct": 0.07125603864734299,
+    "graph": 0.07125603864734299,
+    "rewired": 0.10458937198067633,
+    "dense_dot": 165.0587921142578
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 13,
+    "rrf": 20,
+    "direct": 22,
+    "graph": 25,
+    "rewired": 16,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/__init__",
+   "scores": {
+    "bm25": 48.07210379924041,
+    "dense": 0.4098389148712158,
+    "rrf": 0.11929824561403508,
+    "direct": 0.210207336523126,
+    "graph": 0.210207336523126,
+    "rewired": 0.210207336523126,
+    "dense_dot": 242.92208862304688
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 5,
+    "rrf": 7,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/generate",
+   "scores": {
+    "bm25": 120.49210909294925,
+    "dense": 0.5572302341461182,
+    "rrf": 0.16783216783216784,
+    "direct": 0.23926073926073926,
+    "graph": 0.23926073926073926,
+    "rewired": 0.23926073926073926,
+    "dense_dot": 329.6723327636719
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/generate/kanjitile",
+   "scores": {
+    "bm25": 115.96005729536925,
+    "dense": 0.5445390343666077,
+    "rrf": 0.15476190476190477,
+    "direct": 0.22142857142857142,
+    "graph": 0.22142857142857142,
+    "rewired": 0.22142857142857142,
+    "dense_dot": 322.7291259765625
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 2,
+    "rrf": 4,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/open_note_browser",
+   "scores": {
+    "bm25": 99.51310138605241,
+    "dense": 0.40637096762657166,
+    "rrf": 0.12916666666666665,
+    "direct": 0.21249999999999997,
+    "graph": 0.21249999999999997,
+    "rewired": 0.21249999999999997,
+    "dense_dot": 240.90151977539062
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 6,
+    "rrf": 5,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/displaygrid",
+   "scores": {
+    "bm25": 138.38956063732476,
+    "dense": 0.45280712842941284,
+    "rrf": 0.16233766233766234,
+    "direct": 0.23926073926073926,
+    "graph": 0.23926073926073926,
+    "rewired": 0.23926073926073926,
+    "dense_dot": 266.8931884765625
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 4,
+    "rrf": 2,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/kanjigrid",
+   "scores": {
+    "bm25": 69.53337992150932,
+    "dense": 0.40271660685539246,
+    "rrf": 0.1213235294117647,
+    "direct": 0.1213235294117647,
+    "graph": 0.1213235294117647,
+    "rewired": 0.15073529411764705,
+    "dense_dot": 238.33367919921875
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 7,
+    "rrf": 6,
+    "direct": 8,
+    "graph": 10,
+    "rewired": 7,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/makegrid",
+   "scores": {
+    "bm25": 36.44022998106325,
+    "dense": 0.3335501253604889,
+    "rrf": 0.09347826086956522,
+    "direct": 0.09347826086956522,
+    "graph": 0.13193979933110367,
+    "rewired": 0.09347826086956522,
+    "dense_dot": 196.93943786621094
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 10,
+    "rrf": 10,
+    "direct": 12,
+    "graph": 8,
+    "rewired": 18,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/setup",
+   "scores": {
+    "bm25": 123.67660808370083,
+    "dense": 0.48707783222198486,
+    "rrf": 0.16025641025641024,
+    "direct": 0.16025641025641024,
+    "graph": 0.16025641025641024,
+    "rewired": 0.2057109557109557,
+    "dense_dot": 287.40045166015625
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 3,
+    "rrf": 3,
+    "direct": 6,
+    "graph": 6,
+    "rewired": 6,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/setup/change_did",
+   "scores": {
+    "bm25": 16.104987441282823,
+    "dense": 0.27847498655319214,
+    "rrf": 0.07196969696969696,
+    "direct": 0.07196969696969696,
+    "graph": 0.07196969696969696,
+    "rewired": 0.10530303030303029,
+    "dense_dot": 163.97528076171875
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 14,
+    "rrf": 19,
+    "direct": 21,
+    "graph": 24,
+    "rewired": 15,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/setup/update_fields_dropdown",
+   "scores": {
+    "bm25": 58.94155747251284,
+    "dense": 0.3662227392196655,
+    "rrf": 0.11437908496732026,
+    "direct": 0.11437908496732026,
+    "graph": 0.11437908496732026,
+    "rewired": 0.11437908496732026,
+    "dense_dot": 216.01268005371094
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 8,
+    "rrf": 8,
+    "direct": 9,
+    "graph": 14,
+    "rewired": 11,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "__init__.py/KanjiGrid/setup/update_pagelang_dropdown",
+   "scores": {
+    "bm25": 22.316716117807328,
+    "dense": 0.3354620933532715,
+    "rrf": 0.08711433756805807,
+    "direct": 0.08711433756805807,
+    "graph": 0.08711433756805807,
+    "rewired": 0.08711433756805807,
+    "dense_dot": 197.77975463867188
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 9,
+    "rrf": 11,
+    "direct": 13,
+    "graph": 21,
+    "rewired": 20,
+    "dense_dot": 9
+   }
+  }
+ ]
+}

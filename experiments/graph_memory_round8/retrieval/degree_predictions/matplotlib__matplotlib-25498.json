@@ -1,0 +1,1267 @@
+{
+ "task": "matplotlib__matplotlib-25498",
+ "repo": "matplotlib__matplotlib",
+ "query_sha256": "a3dd187365c81befeaa3264d4415942c3fc1bc4a37283f31c35f405ab1c2ae43",
+ "corpus_sha256": "8704d03b89714cdcbbc5200463c284fb6563e617e5120d05b0d35e0fedda41de",
+ "n_corpus": 6660,
+ "n_scanned_for_graph": 6660,
+ "n_propagated": 21,
+ "anchors": [
+  "lib/matplotlib/figure.py/FigureBase/colorbar",
+  "lib/matplotlib/pyplot.py/colorbar",
+  "lib/mpl_toolkits/axes_grid1/axes_grid.py/CbarAxesBase/colorbar",
+  "lib/matplotlib/axes/_axes.py/Axes/plot",
+  "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot",
+  "galleries/examples/misc/packed_bubbles.py/BubbleChart/plot",
+  "galleries/examples/misc/multiprocess_sgskip.py/NBPlot/plot",
+  "galleries/examples/specialty_plots/radar_chart.py/RadarAxes/plot"
+ ],
+ "degrees": {
+  "lib/matplotlib/figure.py/FigureBase/colorbar": 5,
+  "lib/matplotlib/pyplot.py/colorbar": 2,
+  "lib/mpl_toolkits/axes_grid1/axes_grid.py/CbarAxesBase/colorbar": 0,
+  "lib/matplotlib/axes/_axes.py/Axes/plot": 7,
+  "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot": 6,
+  "galleries/examples/misc/packed_bubbles.py/BubbleChart/plot": 1,
+  "galleries/examples/misc/multiprocess_sgskip.py/NBPlot/plot": 0,
+  "galleries/examples/specialty_plots/radar_chart.py/RadarAxes/plot": 1
+ },
+ "top40": {
+  "body": [
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_process_values",
+    "score": 78.66637426458978,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/update_normal",
+    "score": 77.9922862609938,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_reset_locator_formatter_scale",
+    "score": 71.55002700839916,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_examples",
+    "score": 66.99053482795239,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/__init__",
+    "score": 62.34788755403335,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/inverse",
+    "score": 60.04417745044348,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 59.20040111645576,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_draw_all",
+    "score": 57.245987288737126,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormaps.py/plot_color_gradients",
+    "score": 56.34965581470919,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/colorbar",
+    "score": 55.329642048875,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_mesh",
+    "score": 55.17777075113571,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/advanced_hillshading.py/display_colorbar",
+    "score": 54.58318971833987,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 54.05152611144916,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/format_cursor_data",
+    "score": 52.39743057846409,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 52.2516662588103,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/_make_norm_from_scale",
+    "score": 52.074714384022734,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_enums.py/JoinStyle/demo",
+    "score": 50.594624825605926,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Normalize/inverse",
+    "score": 50.24766236104042,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/scatter",
+    "score": 49.38879047981498,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__call__",
+    "score": 49.198962638186856,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/render_figures",
+    "score": 49.11216265827928,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/advanced_hillshading.py/avoid_outliers",
+    "score": 48.97141880676451,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_linearmap",
+    "score": 48.88831698785484,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 48.54749386451604,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cm.py/ScalarMappable/to_rgba",
+    "score": 48.54312115720496,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/image.py/thumbnail",
+    "score": 48.395055651947814,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cm.py/ScalarMappable/__init__",
+    "score": 48.319663735329144,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 47.938712998636774,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/_rc_params_in_file",
+    "score": 47.83280268121515,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/images_contours_and_fields/shading_example.py/compare",
+    "score": 47.768221664246525,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/__init__.py/rc_context",
+    "score": 47.56765568310014,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/LightSource/shade",
+    "score": 47.488823214768296,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/leftventricle_bullseye.py/bullseye_plot",
+    "score": 47.378193745944834,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/pcolorfast",
+    "score": 46.9842596789146,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cm.py/ScalarMappable/_scale_norm",
+    "score": 46.496498379162915,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/__call__",
+    "score": 46.412594622420244,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/contour.py/ContourSet/__init__",
+    "score": 46.320591294263224,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/figimage",
+    "score": 46.30583277244143,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Normalize/__call__",
+    "score": 46.05081310034378,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/axes_grid1/demo_axes_divider.py/demo_locatable_axes_hard",
+    "score": 45.952133699063126,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_process_values",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/update_normal",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_draw_all",
+    "score": 0.13247863247863248,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/inverse",
+    "score": 0.12916666666666665,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__call__",
+    "score": 0.08888888888888888,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/draw_all",
+    "score": 0.08782201405152225,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_reset_locator_formatter_scale",
+    "score": 0.07961849471283435,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_examples",
+    "score": 0.07581453634085213,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.0713235294117647,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/__init__",
+    "score": 0.06992399565689468,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/inverse",
+    "score": 0.06490384615384616,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/_make_norm_from_scale",
+    "score": 0.06477732793522267,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_uniform_y",
+    "score": 0.06408668730650155,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/inverse",
+    "score": 0.05708245243128964,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormaps.py/plot_color_gradients",
+    "score": 0.05697940503432494,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/__call__",
+    "score": 0.05421135777833208,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/subplots_axes_and_figures/subfigures.py/example_plot",
+    "score": 0.05378753922008068,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmax",
+    "score": 0.05314465408805032,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Normalize/inverse",
+    "score": 0.052107728337236536,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/colorbar",
+    "score": 0.05181818181818182,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_mesh",
+    "score": 0.05128205128205128,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmin",
+    "score": 0.05077362175153973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/TwoSlopeNorm/inverse",
+    "score": 0.05063965884861407,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__init__",
+    "score": 0.04654471544715447,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/advanced_hillshading.py/display_colorbar",
+    "score": 0.046353826030085026,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/__call__",
+    "score": 0.044466403162055336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.04396042094671083,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.04227790432801822,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/format_cursor_data",
+    "score": 0.041984328674290555,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.04175744371822803,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/__call__",
+    "score": 0.041351010101010104,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 0.04118483412322275,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_no_output_draw",
+    "score": 0.039690039690039695,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/inverse",
+    "score": 0.039065434602959956,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_enums.py/JoinStyle/demo",
+    "score": 0.037458800006248336,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/subplots_axes_and_figures/demo_constrained_layout.py/example_plot",
+    "score": 0.03621586087372258,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cm.py/ScalarMappable/_scale_norm",
+    "score": 0.03504273504273504,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/scatter",
+    "score": 0.0349619153049254,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/subplots_axes_and_figures/demo_tight_layout.py/example_plot",
+    "score": 0.03495145631067961,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_linearmap",
+    "score": 0.034669842530104536,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_process_values",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/update_normal",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/colorbar",
+    "score": 0.14272727272727273,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_draw_all",
+    "score": 0.13247863247863248,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/inverse",
+    "score": 0.12916666666666665,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/colorbar",
+    "score": 0.1060374149659864,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__call__",
+    "score": 0.08888888888888888,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/draw_all",
+    "score": 0.08782201405152225,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/plot",
+    "score": 0.08361828774062816,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axes_grid1/axes_grid.py/CbarAxesBase/colorbar",
+    "score": 0.08017109538589591,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_reset_locator_formatter_scale",
+    "score": 0.07961849471283435,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_examples",
+    "score": 0.07581453634085213,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot",
+    "score": 0.07150841750841751,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.0713235294117647,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/__init__",
+    "score": 0.06992399565689468,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/packed_bubbles.py/BubbleChart/plot",
+    "score": 0.06625659441623362,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/inverse",
+    "score": 0.06490384615384616,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/_make_norm_from_scale",
+    "score": 0.06477732793522267,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_uniform_y",
+    "score": 0.06408668730650155,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/multiprocess_sgskip.py/NBPlot/plot",
+    "score": 0.061676687528778563,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/inverse",
+    "score": 0.05708245243128964,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/radar_chart.py/RadarAxes/plot",
+    "score": 0.05705318053412489,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormaps.py/plot_color_gradients",
+    "score": 0.05697940503432494,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/__call__",
+    "score": 0.05421135777833208,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/subplots_axes_and_figures/subfigures.py/example_plot",
+    "score": 0.05378753922008068,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmax",
+    "score": 0.05314465408805032,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Normalize/inverse",
+    "score": 0.052107728337236536,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_mesh",
+    "score": 0.05128205128205128,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmin",
+    "score": 0.05077362175153973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/TwoSlopeNorm/inverse",
+    "score": 0.05063965884861407,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__init__",
+    "score": 0.04654471544715447,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/advanced_hillshading.py/display_colorbar",
+    "score": 0.046353826030085026,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/__call__",
+    "score": 0.044466403162055336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.04396042094671083,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.04227790432801822,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/format_cursor_data",
+    "score": 0.041984328674290555,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.04175744371822803,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/__call__",
+    "score": 0.041351010101010104,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 0.04118483412322275,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_no_output_draw",
+    "score": 0.039690039690039695,
+    "supports": []
+   }
+  ],
+  "uniform": [
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_process_values",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/update_normal",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/colorbar",
+    "score": 0.14272727272727273,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_draw_all",
+    "score": 0.13247863247863248,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/inverse",
+    "score": 0.12916666666666665,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/colorbar",
+    "score": 0.1060374149659864,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__call__",
+    "score": 0.08888888888888888,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/draw_all",
+    "score": 0.08782201405152225,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/plot",
+    "score": 0.08361828774062816,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axes_grid1/axes_grid.py/CbarAxesBase/colorbar",
+    "score": 0.08017109538589591,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_reset_locator_formatter_scale",
+    "score": 0.07961849471283435,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_examples",
+    "score": 0.07581453634085213,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot",
+    "score": 0.07150841750841751,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.0713235294117647,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/__init__",
+    "score": 0.06992399565689468,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/packed_bubbles.py/BubbleChart/plot",
+    "score": 0.06625659441623362,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/inverse",
+    "score": 0.06490384615384616,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/_make_norm_from_scale",
+    "score": 0.06477732793522267,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_uniform_y",
+    "score": 0.06408668730650155,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/multiprocess_sgskip.py/NBPlot/plot",
+    "score": 0.061676687528778563,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/inverse",
+    "score": 0.05708245243128964,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/radar_chart.py/RadarAxes/plot",
+    "score": 0.05705318053412489,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormaps.py/plot_color_gradients",
+    "score": 0.05697940503432494,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/__call__",
+    "score": 0.05421135777833208,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/subplots_axes_and_figures/subfigures.py/example_plot",
+    "score": 0.05378753922008068,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmax",
+    "score": 0.05314465408805032,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Normalize/inverse",
+    "score": 0.052107728337236536,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/make_axes",
+    "score": 0.05163090189967249,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_mesh",
+    "score": 0.05128205128205128,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmin",
+    "score": 0.05077362175153973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/TwoSlopeNorm/inverse",
+    "score": 0.05063965884861407,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/make_axes_gridspec",
+    "score": 0.048931668218390616,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_api/deprecation.py/warn_deprecated",
+    "score": 0.047087853476380205,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__init__",
+    "score": 0.04654471544715447,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/advanced_hillshading.py/display_colorbar",
+    "score": 0.046353826030085026,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/font_manager.py/_JSONEncoder/default",
+    "score": 0.04599719558285624,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_base.py/_AxesBase/images",
+    "score": 0.04594178088431639,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/__call__",
+    "score": 0.044466403162055336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.04396042094671083,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/gcf",
+    "score": 0.043918444200882444,
+    "supports": [
+     "lib/matplotlib/pyplot.py/colorbar"
+    ]
+   }
+  ],
+  "gate": [
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_process_values",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/update_normal",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/colorbar",
+    "score": 0.14272727272727273,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_draw_all",
+    "score": 0.13247863247863248,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/inverse",
+    "score": 0.12916666666666665,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/colorbar",
+    "score": 0.1060374149659864,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__call__",
+    "score": 0.08888888888888888,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/draw_all",
+    "score": 0.08782201405152225,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/plot",
+    "score": 0.08361828774062816,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axes_grid1/axes_grid.py/CbarAxesBase/colorbar",
+    "score": 0.08017109538589591,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_reset_locator_formatter_scale",
+    "score": 0.07961849471283435,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_examples",
+    "score": 0.07581453634085213,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot",
+    "score": 0.07150841750841751,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.0713235294117647,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/__init__",
+    "score": 0.06992399565689468,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/packed_bubbles.py/BubbleChart/plot",
+    "score": 0.06625659441623362,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/inverse",
+    "score": 0.06490384615384616,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/_make_norm_from_scale",
+    "score": 0.06477732793522267,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_uniform_y",
+    "score": 0.06408668730650155,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/multiprocess_sgskip.py/NBPlot/plot",
+    "score": 0.061676687528778563,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/inverse",
+    "score": 0.05708245243128964,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/radar_chart.py/RadarAxes/plot",
+    "score": 0.05705318053412489,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormaps.py/plot_color_gradients",
+    "score": 0.05697940503432494,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/__call__",
+    "score": 0.05421135777833208,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/subplots_axes_and_figures/subfigures.py/example_plot",
+    "score": 0.05378753922008068,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmax",
+    "score": 0.05314465408805032,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Normalize/inverse",
+    "score": 0.052107728337236536,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/make_axes",
+    "score": 0.05163090189967249,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_mesh",
+    "score": 0.05128205128205128,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmin",
+    "score": 0.05077362175153973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/TwoSlopeNorm/inverse",
+    "score": 0.05063965884861407,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/make_axes_gridspec",
+    "score": 0.048931668218390616,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/_api/deprecation.py/warn_deprecated",
+    "score": 0.047087853476380205,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__init__",
+    "score": 0.04654471544715447,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/advanced_hillshading.py/display_colorbar",
+    "score": 0.046353826030085026,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/font_manager.py/_JSONEncoder/default",
+    "score": 0.04599719558285624,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/axes/_base.py/_AxesBase/images",
+    "score": 0.04594178088431639,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/colorbar"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/__call__",
+    "score": 0.044466403162055336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.04396042094671083,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/gcf",
+    "score": 0.043918444200882444,
+    "supports": [
+     "lib/matplotlib/pyplot.py/colorbar"
+    ]
+   }
+  ],
+  "allocation": [
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_process_values",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/update_normal",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/colorbar",
+    "score": 0.14272727272727273,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_draw_all",
+    "score": 0.13247863247863248,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/inverse",
+    "score": 0.12916666666666665,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/colorbar",
+    "score": 0.1060374149659864,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__call__",
+    "score": 0.08888888888888888,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/draw_all",
+    "score": 0.08782201405152225,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/plot",
+    "score": 0.08361828774062816,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axes_grid1/axes_grid.py/CbarAxesBase/colorbar",
+    "score": 0.08017109538589591,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_reset_locator_formatter_scale",
+    "score": 0.07961849471283435,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormap-manipulation.py/plot_examples",
+    "score": 0.07581453634085213,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot",
+    "score": 0.07150841750841751,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.0713235294117647,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/__init__",
+    "score": 0.06992399565689468,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/packed_bubbles.py/BubbleChart/plot",
+    "score": 0.06625659441623362,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/inverse",
+    "score": 0.06490384615384616,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/_make_norm_from_scale",
+    "score": 0.06477732793522267,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_uniform_y",
+    "score": 0.06408668730650155,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/misc/multiprocess_sgskip.py/NBPlot/plot",
+    "score": 0.061676687528778563,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/inverse",
+    "score": 0.05708245243128964,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/radar_chart.py/RadarAxes/plot",
+    "score": 0.05705318053412489,
+    "supports": []
+   },
+   {
+    "id": "galleries/users_explain/colors/colormaps.py/plot_color_gradients",
+    "score": 0.05697940503432494,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/NoNorm/__call__",
+    "score": 0.05421135777833208,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/subplots_axes_and_figures/subfigures.py/example_plot",
+    "score": 0.05378753922008068,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmax",
+    "score": 0.05314465408805032,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Normalize/inverse",
+    "score": 0.052107728337236536,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colorbar.py/Colorbar/_mesh",
+    "score": 0.05128205128205128,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/CenteredNorm/vmin",
+    "score": 0.05077362175153973,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/TwoSlopeNorm/inverse",
+    "score": 0.05063965884861407,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/PowerNorm/__init__",
+    "score": 0.04654471544715447,
+    "supports": []
+   },
+   {
+    "id": "galleries/examples/specialty_plots/advanced_hillshading.py/display_colorbar",
+    "score": 0.046353826030085026,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/BoundaryNorm/__call__",
+    "score": 0.044466403162055336,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/hexbin",
+    "score": 0.04396042094671083,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/_pylab_helpers.py/Gcf/draw_all",
+    "score": 0.04227790432801822,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/artist.py/Artist/format_cursor_data",
+    "score": 0.041984328674290555,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.04175744371822803,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/colors.py/Norm/__call__",
+    "score": 0.041351010101010104,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/sphinxext/plot_directive.py/_run_code",
+    "score": 0.04118483412322275,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/backend_bases.py/_no_output_draw",
+    "score": 0.039690039690039695,
+    "supports": []
+   }
+  ]
+ }
+}

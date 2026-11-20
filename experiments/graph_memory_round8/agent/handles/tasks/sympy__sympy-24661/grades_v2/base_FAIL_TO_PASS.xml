@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.171" timestamp="2026-11-20T23:09:09.852125" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.parsing.tests.test_sympy_parser" name="test_issue_24288" time="0.003"><failure message="AssertionError: assert True == 1 &lt; 2&#10; +  where True = parse_expr('1 &lt; 2', evaluate=False)">sympy\parsing\tests\test_sympy_parser.py:292: in test_issue_24288
+    assert parse_expr(text, evaluate=False) == result
+E   AssertionError: assert True == 1 &lt; 2
+E    +  where True = parse_expr('1 &lt; 2', evaluate=False)</failure></testcase></testsuite></testsuites>

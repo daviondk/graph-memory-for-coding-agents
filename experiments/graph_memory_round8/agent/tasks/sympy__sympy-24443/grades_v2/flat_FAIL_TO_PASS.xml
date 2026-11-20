@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.243" timestamp="2026-11-20T22:59:26.183316" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.combinatorics.tests.test_homomorphisms" name="test_homomorphism" time="0.008"><failure message="KeyError: a">sympy\combinatorics\tests\test_homomorphisms.py:17: in test_homomorphism
+    T = homomorphism(G, A, [a, b], [c, d])
+sympy\combinatorics\homomorphisms.py:306: in homomorphism
+    if check and not _check_homomorphism(domain, codomain, images):
+sympy\combinatorics\homomorphisms.py:366: in _check_homomorphism
+    s = _image(r).is_identity
+sympy\combinatorics\homomorphisms.py:328: in _image
+    w = w*images[sym]**p
+E   KeyError: a</failure></testcase></testsuite></testsuites>

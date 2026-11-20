@@ -1,0 +1,19 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+_________________________ test_ccode_unused_array_arg _________________________
+sympy\utilities\tests\test_codegen.py:602: in test_ccode_unused_array_arg
+    assert source == expected
+E   assert '#include "te..._result;\n}\n' == '#include "te..._result;\n}\n'
+E     Skipping 45 identical leading characters in diff, use -v to show
+E     - st(double *x) {
+E     ?           -
+E     + st(double x) {
+E          double test_result;
+E          test_result = 1.0;
+E          return test_result;
+E       }
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round8\agent\handles\tasks\sympy__sympy-16792\grades_v2\base_FAIL_TO_PASS.xml -
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg - a...
+1 failed, 9 warnings in 0.23s

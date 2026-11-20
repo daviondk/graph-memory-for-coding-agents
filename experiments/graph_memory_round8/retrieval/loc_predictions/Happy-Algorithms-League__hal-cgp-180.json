@@ -1,0 +1,4899 @@
+{
+ "task": "Happy-Algorithms-League__hal-cgp-180",
+ "repo": "Happy-Algorithms-League__hal-cgp",
+ "n_corpus": 207,
+ "corpus_sha256": "bd59071fd64ff0d412d34806a0696341743c120ea4f2f9de525abbac43842caf",
+ "query_sha256": "63d510310603b48f03fbef3e13c97ee6093160c51da8351dc94dc50e7a130321",
+ "anchors": [
+  "cgp/genome.py/Genome/mutate",
+  "cgp/individual.py/IndividualMultiGenome/mutate",
+  "cgp/population.py/Population/mutate",
+  "cgp/individual.py/IndividualSingleGenome/mutate",
+  "cgp/individual.py/IndividualBase/mutate"
+ ],
+ "edges": [
+  [
+   "setup.py/_cut_version_number_from_requirement",
+   "setup.py/read_extra_requirements"
+  ],
+  [
+   "examples/example_evo_regression.py/evolution",
+   "cgp/population.py/Population/fitness_parents"
+  ],
+  [
+   "examples/example_evo_regression.py/evolution/recording_callback",
+   "cgp/population.py/Population/fitness_parents"
+  ],
+  [
+   "examples/example_differential_evo_regression.py/recording_callback",
+   "cgp/population.py/Population/fitness_parents"
+  ],
+  [
+   "examples/example_mountain_car.py/inner_objective",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step"
+  ],
+  [
+   "examples/example_mountain_car.py/evaluate_best_expr",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step"
+  ],
+  [
+   "cgp/hl_api.py/evolve",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/initialize_fitness_parents"
+  ],
+  [
+   "cgp/hl_api.py/evolve",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step"
+  ],
+  [
+   "cgp/primitives.py/Primitives/__post_init__",
+   "cgp/primitives.py/Primitives/_check_types"
+  ],
+  [
+   "cgp/primitives.py/Primitives/__post_init__",
+   "cgp/primitives.py/Primitives/_determine_max_arity"
+  ],
+  [
+   "cgp/primitives.py/Primitives/_determine_max_arity",
+   "cgp/node.py/Node/arity"
+  ],
+  [
+   "cgp/primitives.py/Primitives/sample_allele",
+   "cgp/genome.py/Genome/_create_random_hidden_region"
+  ],
+  [
+   "cgp/primitives.py/Primitives/sample_allele",
+   "cgp/genome.py/Genome/_mutate_hidden_region"
+  ],
+  [
+   "cgp/primitives.py/Primitives/is_valid_allele",
+   "cgp/genome.py/Genome/_validate_dna"
+  ],
+  [
+   "cgp/node.py/register",
+   "cgp/node.py/Node/__init_subclass__"
+  ],
+  [
+   "cgp/node.py/Node/activate",
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes"
+  ],
+  [
+   "cgp/node.py/OperatorNode/__init_subclass__",
+   "cgp/node.py/OperatorNode/_extract_input_names_from_def_output"
+  ],
+  [
+   "cgp/node.py/OperatorNode/__init_subclass__",
+   "cgp/node.py/OperatorNode/_extract_parameter_names_from_def_output"
+  ],
+  [
+   "cgp/node.py/OperatorNode/__init_subclass__",
+   "cgp/node_validation.py/check_to_func"
+  ],
+  [
+   "cgp/node.py/OperatorNode/__init_subclass__",
+   "cgp/node_validation.py/check_to_numpy"
+  ],
+  [
+   "cgp/node.py/OperatorNode/__init_subclass__",
+   "cgp/node_validation.py/check_to_torch"
+  ],
+  [
+   "cgp/node.py/OperatorNode/__init_subclass__",
+   "cgp/node_validation.py/check_to_sympy"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_extract_index_from_input_name",
+   "cgp/node.py/OperatorNode/__call__"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_extract_index_from_input_name",
+   "cgp/node.py/OperatorNode/_replace_input_names"
+  ],
+  [
+   "cgp/node.py/OperatorNode/initial_value",
+   "cgp/genome.py/Genome/_initialize_unkown_parameters"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_replace_input_names",
+   "cgp/node.py/OperatorNode/_format_output_str"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_replace_parameter_names",
+   "cgp/node.py/OperatorNode/_format_output_str"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_format_output_str",
+   "cgp/node.py/OperatorNode/format_output_str"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_format_output_str",
+   "cgp/node.py/OperatorNode/format_output_str_numpy"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_format_output_str",
+   "cgp/node.py/OperatorNode/format_output_str_torch"
+  ],
+  [
+   "cgp/node.py/OperatorNode/_format_output_str",
+   "cgp/node.py/OperatorNode/format_output_str_sympy"
+  ],
+  [
+   "cgp/node.py/OperatorNode/format_output_str_torch",
+   "cgp/node.py/OperatorNode/_replace_parameter_names_in_output_str_with_members"
+  ],
+  [
+   "cgp/node.py/OperatorNode/format_parameter_str",
+   "cgp/cartesian_graph.py/CartesianGraph/to_torch"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/__init__",
+   "cgp/cartesian_graph.py/CartesianGraph/parse_genome"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/pretty_str",
+   "cgp/cartesian_graph.py/CartesianGraph/pretty_str/pretty_node_str"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/pretty_str",
+   "cgp/cartesian_graph.py/CartesianGraph/pretty_str/empty_node_str"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/parse_genome",
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/parse_genome",
+   "cgp/genome.py/Genome/iter_input_regions"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/parse_genome",
+   "cgp/genome.py/Genome/iter_hidden_regions"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/parse_genome",
+   "cgp/genome.py/Genome/iter_output_regions"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/determine_active_regions"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/__call__"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_of_all_nodes"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_numpy_of_all_nodes"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/to_torch"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_sympy_of_all_nodes"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/determine_active_regions",
+   "cgp/genome.py/Genome/mutate"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/to_str",
+   "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_of_all_nodes"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_of_all_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/to_func"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_fill_parameter_values",
+   "cgp/cartesian_graph.py/CartesianGraph/to_func"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_fill_parameter_values",
+   "cgp/cartesian_graph.py/CartesianGraph/to_numpy"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_fill_parameter_values",
+   "cgp/cartesian_graph.py/CartesianGraph/to_torch"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_fill_parameter_values",
+   "cgp/cartesian_graph.py/CartesianGraph/to_sympy"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_numpy_of_all_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/to_numpy"
+  ],
+  [
+   "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_sympy_of_all_nodes",
+   "cgp/cartesian_graph.py/CartesianGraph/to_sympy"
+  ],
+  [
+   "cgp/utils.py/__check_cache_consistency",
+   "cgp/utils.py/disk_cache"
+  ],
+  [
+   "cgp/utils.py/__check_cache_consistency",
+   "cgp/utils.py/disk_cache/decorator"
+  ],
+  [
+   "cgp/utils.py/__compute_key_from_args",
+   "cgp/utils.py/disk_cache"
+  ],
+  [
+   "cgp/utils.py/__compute_key_from_args",
+   "cgp/utils.py/disk_cache/decorator"
+  ],
+  [
+   "cgp/utils.py/__compute_key_from_args",
+   "cgp/utils.py/disk_cache/decorator/wrapper"
+  ],
+  [
+   "cgp/utils.py/__find_result_in_cache_file",
+   "cgp/utils.py/disk_cache"
+  ],
+  [
+   "cgp/utils.py/__find_result_in_cache_file",
+   "cgp/utils.py/disk_cache/decorator"
+  ],
+  [
+   "cgp/utils.py/__find_result_in_cache_file",
+   "cgp/utils.py/disk_cache/decorator/wrapper"
+  ],
+  [
+   "cgp/utils.py/__store_new_cache_entry",
+   "cgp/utils.py/disk_cache"
+  ],
+  [
+   "cgp/utils.py/__store_new_cache_entry",
+   "cgp/utils.py/disk_cache/decorator"
+  ],
+  [
+   "cgp/utils.py/__store_new_cache_entry",
+   "cgp/utils.py/disk_cache/decorator/wrapper"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_mutate_genome",
+   "cgp/individual.py/IndividualSingleGenome/mutate"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_mutate_genome",
+   "cgp/individual.py/IndividualMultiGenome/mutate"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_randomize_genome",
+   "cgp/individual.py/IndividualSingleGenome/randomize_genome"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_randomize_genome",
+   "cgp/individual.py/IndividualMultiGenome/randomize_genome"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_randomize_genome",
+   "cgp/genome.py/Genome/randomize"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_func",
+   "cgp/individual.py/IndividualSingleGenome/to_func"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_func",
+   "cgp/individual.py/IndividualMultiGenome/to_func"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_numpy",
+   "cgp/individual.py/IndividualSingleGenome/to_numpy"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_numpy",
+   "cgp/individual.py/IndividualMultiGenome/to_numpy"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_torch",
+   "cgp/individual.py/IndividualSingleGenome/to_torch"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_torch",
+   "cgp/individual.py/IndividualMultiGenome/to_torch"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_sympy",
+   "cgp/individual.py/IndividualSingleGenome/to_sympy"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_to_sympy",
+   "cgp/individual.py/IndividualMultiGenome/to_sympy"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_update_parameters_from_torch_class",
+   "cgp/individual.py/IndividualSingleGenome/update_parameters_from_torch_class"
+  ],
+  [
+   "cgp/individual.py/IndividualBase/_update_parameters_from_torch_class",
+   "cgp/individual.py/IndividualMultiGenome/update_parameters_from_torch_class"
+  ],
+  [
+   "cgp/node_validation.py/_create_genome",
+   "cgp/node_validation.py/check_to_func"
+  ],
+  [
+   "cgp/node_validation.py/_create_genome",
+   "cgp/node_validation.py/check_to_numpy"
+  ],
+  [
+   "cgp/node_validation.py/_create_genome",
+   "cgp/node_validation.py/check_to_torch"
+  ],
+  [
+   "cgp/node_validation.py/_create_genome",
+   "cgp/node_validation.py/check_to_sympy"
+  ],
+  [
+   "cgp/population.py/Population/__init__",
+   "cgp/population.py/Population/_generate_random_parent_population"
+  ],
+  [
+   "cgp/population.py/Population/_generate_random_parent_population",
+   "cgp/population.py/Population/generate_random_individual"
+  ],
+  [
+   "cgp/population.py/Population/get_idx_for_new_individual",
+   "cgp/population.py/Population/generate_random_individual"
+  ],
+  [
+   "cgp/population.py/Population/get_idx_for_new_individual",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_create_new_offspring_generation"
+  ],
+  [
+   "cgp/genome.py/Genome/dna",
+   "cgp/genome.py/Genome/_validate_dna"
+  ],
+  [
+   "cgp/genome.py/Genome/dna",
+   "cgp/genome.py/Genome/_initialize_unkown_parameters"
+  ],
+  [
+   "cgp/genome.py/Genome/__repr__",
+   "cgp/genome.py/Genome/iter_input_regions"
+  ],
+  [
+   "cgp/genome.py/Genome/__repr__",
+   "cgp/genome.py/Genome/iter_hidden_regions"
+  ],
+  [
+   "cgp/genome.py/Genome/__repr__",
+   "cgp/genome.py/Genome/iter_output_regions"
+  ],
+  [
+   "cgp/genome.py/Genome/_create_input_region",
+   "cgp/genome.py/Genome/randomize"
+  ],
+  [
+   "cgp/genome.py/Genome/_create_random_hidden_region",
+   "cgp/genome.py/Genome/randomize"
+  ],
+  [
+   "cgp/genome.py/Genome/_create_random_output_region",
+   "cgp/genome.py/Genome/randomize"
+  ],
+  [
+   "cgp/genome.py/Genome/randomize",
+   "cgp/genome.py/Genome/_permissible_inputs"
+  ],
+  [
+   "cgp/genome.py/Genome/randomize",
+   "cgp/genome.py/Genome/_permissible_inputs_for_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs",
+   "cgp/genome.py/Genome/_permissible_inputs_for_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs",
+   "cgp/genome.py/Genome/_validate_dna"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs",
+   "cgp/genome.py/Genome/_is_input_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs",
+   "cgp/genome.py/Genome/_is_hidden_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs",
+   "cgp/genome.py/Genome/_is_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs",
+   "cgp/genome.py/Genome/_mutate_hidden_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs_for_output_region",
+   "cgp/genome.py/Genome/_validate_dna"
+  ],
+  [
+   "cgp/genome.py/Genome/_permissible_inputs_for_output_region",
+   "cgp/genome.py/Genome/_mutate_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_validate_dna",
+   "cgp/genome.py/Genome/iter_input_regions"
+  ],
+  [
+   "cgp/genome.py/Genome/_validate_dna",
+   "cgp/genome.py/Genome/iter_hidden_regions"
+  ],
+  [
+   "cgp/genome.py/Genome/_validate_dna",
+   "cgp/genome.py/Genome/iter_output_regions"
+  ],
+  [
+   "cgp/genome.py/Genome/iter_hidden_regions",
+   "cgp/genome.py/Genome/_initialize_unkown_parameters"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_gene_in_hidden_region",
+   "cgp/genome.py/Genome/_mutate_hidden_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_gene_in_output_region",
+   "cgp/genome.py/Genome/_mutate_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_input_region",
+   "cgp/genome.py/Genome/_is_active_input_gene"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_input_region",
+   "cgp/genome.py/Genome/mutate"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_hidden_region",
+   "cgp/genome.py/Genome/_is_active_input_gene"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_hidden_region",
+   "cgp/genome.py/Genome/mutate"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_output_region",
+   "cgp/genome.py/Genome/_is_active_input_gene"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_output_region",
+   "cgp/genome.py/Genome/mutate"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_function_gene",
+   "cgp/genome.py/Genome/_mutate_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_function_gene",
+   "cgp/genome.py/Genome/_mutate_hidden_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_active_input_gene",
+   "cgp/genome.py/Genome/_mutate_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/_is_active_input_gene",
+   "cgp/genome.py/Genome/_mutate_hidden_region"
+  ],
+  [
+   "cgp/genome.py/Genome/mutate",
+   "cgp/genome.py/Genome/mutate/count_dna_differences"
+  ],
+  [
+   "cgp/genome.py/Genome/mutate",
+   "cgp/genome.py/Genome/_mutate_output_region"
+  ],
+  [
+   "cgp/genome.py/Genome/mutate",
+   "cgp/genome.py/Genome/_mutate_hidden_region"
+  ],
+  [
+   "cgp/local_search/gradient_based.py/gradient_based",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step"
+  ],
+  [
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/initialize_fitness_parents",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_compute_fitness"
+  ],
+  [
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_create_new_offspring_generation"
+  ],
+  [
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_compute_fitness"
+  ],
+  [
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_sort"
+  ],
+  [
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step",
+   "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_create_new_parent_population"
+  ]
+ ],
+ "explicit_identifiers": {
+  "mutation_rate": 1,
+  "mutate": 3,
+  "n_mutations": 1,
+  "HenrikMettler": 1
+ },
+ "candidates": [
+  {
+   "id": "setup.py/_cut_version_number_from_requirement",
+   "scores": {
+    "bm25": 8.377460768266484,
+    "dense": 0.011823838576674461,
+    "rrf": 0.01934712255522724,
+    "direct": 0.01934712255522724,
+    "graph": 0.01934712255522724,
+    "rewired": 0.01934712255522724,
+    "dense_dot": 6.862504482269287
+   },
+   "ranks": {
+    "bm25": 59,
+    "dense": 196,
+    "rrf": 111,
+    "direct": 111,
+    "graph": 111,
+    "rewired": 113,
+    "dense_dot": 196
+   }
+  },
+  {
+   "id": "setup.py/read_version",
+   "scores": {
+    "bm25": 10.975263202940242,
+    "dense": 0.02990758791565895,
+    "rrf": 0.025562802440563852,
+    "direct": 0.025562802440563852,
+    "graph": 0.025562802440563852,
+    "rewired": 0.025562802440563852,
+    "dense_dot": 17.332321166992188
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 184,
+    "rrf": 80,
+    "direct": 80,
+    "graph": 81,
+    "rewired": 83,
+    "dense_dot": 184
+   }
+  },
+  {
+   "id": "setup.py/read_requirements",
+   "scores": {
+    "bm25": 8.88690839364951,
+    "dense": -0.04256581515073776,
+    "rrf": 0.01978114478114478,
+    "direct": 0.01978114478114478,
+    "graph": 0.01978114478114478,
+    "rewired": 0.01978114478114478,
+    "dense_dot": -24.534523010253906
+   },
+   "ranks": {
+    "bm25": 56,
+    "dense": 206,
+    "rrf": 109,
+    "direct": 109,
+    "graph": 109,
+    "rewired": 111,
+    "dense_dot": 206
+   }
+  },
+  {
+   "id": "setup.py/read_extra_requirements",
+   "scores": {
+    "bm25": 20.569278158653024,
+    "dense": 0.04682719334959984,
+    "rrf": 0.045434782608695656,
+    "direct": 0.045434782608695656,
+    "graph": 0.045434782608695656,
+    "rewired": 0.045434782608695656,
+    "dense_dot": 27.03067970275879
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 174,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 38,
+    "rewired": 37,
+    "dense_dot": 174
+   }
+  },
+  {
+   "id": "setup.py/read_long_description",
+   "scores": {
+    "bm25": 18.859171123097624,
+    "dense": 0.05361868813633919,
+    "rrf": 0.04281738385784628,
+    "direct": 0.04281738385784628,
+    "graph": 0.04281738385784628,
+    "rewired": 0.04281738385784628,
+    "dense_dot": 31.06495475769043
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 163,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 41,
+    "rewired": 41,
+    "dense_dot": 163
+   }
+  },
+  {
+   "id": "examples/example_evo_regression.py/f_target_easy",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05199465528130531,
+    "rrf": 0.010387182910547396,
+    "direct": 0.010387182910547396,
+    "graph": 0.010387182910547396,
+    "rewired": 0.010387182910547396,
+    "dense_dot": 30.15835952758789
+   },
+   "ranks": {
+    "bm25": 204,
+    "dense": 165,
+    "rrf": 198,
+    "direct": 198,
+    "graph": 198,
+    "rewired": 199,
+    "dense_dot": 166
+   }
+  },
+  {
+   "id": "examples/example_evo_regression.py/f_target_hard",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0911325067281723,
+    "rrf": 0.012284750576957215,
+    "direct": 0.012284750576957215,
+    "graph": 0.012284750576957215,
+    "rewired": 0.012284750576957215,
+    "dense_dot": 52.83483123779297
+   },
+   "ranks": {
+    "bm25": 205,
+    "dense": 121,
+    "rrf": 163,
+    "direct": 163,
+    "graph": 163,
+    "rewired": 164,
+    "dense_dot": 122
+   }
+  },
+  {
+   "id": "examples/example_evo_regression.py/objective",
+   "scores": {
+    "bm25": 11.519113021145115,
+    "dense": 0.22622181475162506,
+    "rrf": 0.05298913043478261,
+    "direct": 0.05298913043478261,
+    "graph": 0.05298913043478261,
+    "rewired": 0.05298913043478261,
+    "dense_dot": 130.57223510742188
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 22,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 28,
+    "rewired": 27,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "examples/example_evo_regression.py/evolution",
+   "scores": {
+    "bm25": 19.33589359081445,
+    "dense": 0.1898495852947235,
+    "rrf": 0.058069381598793365,
+    "direct": 0.058069381598793365,
+    "graph": 0.058069381598793365,
+    "rewired": 0.058069381598793365,
+    "dense_dot": 109.97769165039062
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 41,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 23,
+    "rewired": 20,
+    "dense_dot": 41
+   }
+  },
+  {
+   "id": "examples/example_evo_regression.py/evolution/recording_callback",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.040019694715738297,
+    "rrf": 0.010042429263638873,
+    "direct": 0.010042429263638873,
+    "graph": 0.010042429263638873,
+    "rewired": 0.010042429263638873,
+    "dense_dot": 23.2366943359375
+   },
+   "ranks": {
+    "bm25": 203,
+    "dense": 177,
+    "rrf": 202,
+    "direct": 202,
+    "graph": 202,
+    "rewired": 203,
+    "dense_dot": 177
+   }
+  },
+  {
+   "id": "examples/example_caching.py/f_target",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.014692330732941628,
+    "rrf": 0.009663865546218488,
+    "direct": 0.009663865546218488,
+    "graph": 0.009663865546218488,
+    "rewired": 0.009663865546218488,
+    "dense_dot": 8.55533218383789
+   },
+   "ranks": {
+    "bm25": 200,
+    "dense": 194,
+    "rrf": 206,
+    "direct": 206,
+    "graph": 206,
+    "rewired": 206,
+    "dense_dot": 194
+   }
+  },
+  {
+   "id": "examples/example_caching.py/inner_objective",
+   "scores": {
+    "bm25": 29.413685203690964,
+    "dense": 0.09556465595960617,
+    "rrf": 0.07473118279569893,
+    "direct": 0.07473118279569893,
+    "graph": 0.07473118279569893,
+    "rewired": 0.07473118279569893,
+    "dense_dot": 55.433380126953125
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 114,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 14,
+    "rewired": 15,
+    "dense_dot": 114
+   }
+  },
+  {
+   "id": "examples/example_caching.py/objective",
+   "scores": {
+    "bm25": 3.7957169869093748,
+    "dense": 0.03860901668667793,
+    "rrf": 0.012263593380614658,
+    "direct": 0.012263593380614658,
+    "graph": 0.012263593380614658,
+    "rewired": 0.012263593380614658,
+    "dense_dot": 22.49415397644043
+   },
+   "ranks": {
+    "bm25": 134,
+    "dense": 178,
+    "rrf": 165,
+    "direct": 165,
+    "graph": 165,
+    "rewired": 166,
+    "dense_dot": 178
+   }
+  },
+  {
+   "id": "examples/example_differential_evo_regression.py/f_target",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06552935391664505,
+    "rrf": 0.010874305818044369,
+    "direct": 0.010874305818044369,
+    "graph": 0.010874305818044369,
+    "rewired": 0.010874305818044369,
+    "dense_dot": 37.99891662597656
+   },
+   "ranks": {
+    "bm25": 201,
+    "dense": 153,
+    "rrf": 190,
+    "direct": 190,
+    "graph": 190,
+    "rewired": 191,
+    "dense_dot": 153
+   }
+  },
+  {
+   "id": "examples/example_differential_evo_regression.py/inner_objective",
+   "scores": {
+    "bm25": 9.002462579789368,
+    "dense": 0.14760024845600128,
+    "rrf": 0.02736726874657909,
+    "direct": 0.02736726874657909,
+    "graph": 0.02736726874657909,
+    "rewired": 0.02736726874657909,
+    "dense_dot": 85.1962890625
+   },
+   "ranks": {
+    "bm25": 53,
+    "dense": 77,
+    "rrf": 70,
+    "direct": 70,
+    "graph": 73,
+    "rewired": 73,
+    "dense_dot": 78
+   }
+  },
+  {
+   "id": "examples/example_differential_evo_regression.py/objective",
+   "scores": {
+    "bm25": 7.279516593328732,
+    "dense": 0.1074855774641037,
+    "rrf": 0.021674311926605506,
+    "direct": 0.021674311926605506,
+    "graph": 0.021674311926605506,
+    "rewired": 0.021674311926605506,
+    "dense_dot": 62.26708984375
+   },
+   "ranks": {
+    "bm25": 70,
+    "dense": 99,
+    "rrf": 98,
+    "direct": 98,
+    "graph": 98,
+    "rewired": 100,
+    "dense_dot": 103
+   }
+  },
+  {
+   "id": "examples/example_differential_evo_regression.py/recording_callback",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.021766556426882744,
+    "rrf": 0.009667476181580422,
+    "direct": 0.009667476181580422,
+    "graph": 0.009667476181580422,
+    "rewired": 0.009667476181580422,
+    "dense_dot": 12.61313247680664
+   },
+   "ranks": {
+    "bm25": 202,
+    "dense": 192,
+    "rrf": 205,
+    "direct": 205,
+    "graph": 205,
+    "rewired": 205,
+    "dense_dot": 192
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/ConstantFloatZeroPointOne/__init__",
+   "scores": {
+    "bm25": 4.896316476159297,
+    "dense": 0.0244351327419281,
+    "rrf": 0.013747054202670856,
+    "direct": 0.013747054202670856,
+    "graph": 0.013747054202670856,
+    "rewired": 0.013747054202670856,
+    "dense_dot": 14.210695266723633
+   },
+   "ranks": {
+    "bm25": 104,
+    "dense": 191,
+    "rrf": 150,
+    "direct": 150,
+    "graph": 150,
+    "rewired": 151,
+    "dense_dot": 191
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/ConstantFloatTen/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.02734951674938202,
+    "rrf": 0.009705771761609324,
+    "direct": 0.009705771761609324,
+    "graph": 0.009705771761609324,
+    "rewired": 0.04303910509494266,
+    "dense_dot": 15.912063598632812
+   },
+   "ranks": {
+    "bm25": 206,
+    "dense": 187,
+    "rrf": 204,
+    "direct": 204,
+    "graph": 204,
+    "rewired": 39,
+    "dense_dot": 187
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/inner_objective",
+   "scores": {
+    "bm25": 6.949736546695847,
+    "dense": 0.14686214923858643,
+    "rrf": 0.023000660938532716,
+    "direct": 0.023000660938532716,
+    "graph": 0.023000660938532716,
+    "rewired": 0.023000660938532716,
+    "dense_dot": 84.84615325927734
+   },
+   "ranks": {
+    "bm25": 75,
+    "dense": 79,
+    "rrf": 93,
+    "direct": 93,
+    "graph": 93,
+    "rewired": 95,
+    "dense_dot": 79
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/objective",
+   "scores": {
+    "bm25": 7.6524363623155685,
+    "dense": 0.22288520634174347,
+    "rrf": 0.04208494208494208,
+    "direct": 0.04208494208494208,
+    "graph": 0.04208494208494208,
+    "rewired": 0.04208494208494208,
+    "dense_dot": 128.4866943359375
+   },
+   "ranks": {
+    "bm25": 64,
+    "dense": 25,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 42,
+    "rewired": 42,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/evolve",
+   "scores": {
+    "bm25": 10.502194459888136,
+    "dense": 0.2267235666513443,
+    "rrf": 0.05077658303464755,
+    "direct": 0.05077658303464755,
+    "graph": 0.05077658303464755,
+    "rewired": 0.05077658303464755,
+    "dense_dot": 131.15744018554688
+   },
+   "ranks": {
+    "bm25": 44,
+    "dense": 21,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 29,
+    "rewired": 28,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/evolve/recording_callback",
+   "scores": {
+    "bm25": 1.4799811055978596,
+    "dense": 0.03650832176208496,
+    "rrf": 0.011180317658050451,
+    "direct": 0.011180317658050451,
+    "graph": 0.011180317658050451,
+    "rewired": 0.011180317658050451,
+    "dense_dot": 21.166664123535156
+   },
+   "ranks": {
+    "bm25": 159,
+    "dense": 180,
+    "rrf": 187,
+    "direct": 187,
+    "graph": 187,
+    "rewired": 188,
+    "dense_dot": 181
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/plot_fitness_over_generation_index",
+   "scores": {
+    "bm25": 5.148354220012344,
+    "dense": 0.09194082766771317,
+    "rrf": 0.017038102084831058,
+    "direct": 0.017038102084831058,
+    "graph": 0.017038102084831058,
+    "rewired": 0.017038102084831058,
+    "dense_dot": 53.318939208984375
+   },
+   "ranks": {
+    "bm25": 97,
+    "dense": 120,
+    "rrf": 123,
+    "direct": 123,
+    "graph": 123,
+    "rewired": 124,
+    "dense_dot": 120
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/evaluate_best_expr",
+   "scores": {
+    "bm25": 4.880281383219134,
+    "dense": 0.06974329054355621,
+    "rrf": 0.014949803579223046,
+    "direct": 0.014949803579223046,
+    "graph": 0.014949803579223046,
+    "rewired": 0.014949803579223046,
+    "dense_dot": 40.242332458496094
+   },
+   "ranks": {
+    "bm25": 106,
+    "dense": 148,
+    "rrf": 140,
+    "direct": 140,
+    "graph": 140,
+    "rewired": 141,
+    "dense_dot": 149
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/evaluate_best_expr/f",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.07758167386054993,
+    "rrf": 0.009216589861751152,
+    "direct": 0.009216589861751152,
+    "graph": 0.009216589861751152,
+    "rewired": 0.009216589861751152,
+    "dense_dot": -45.188873291015625
+   },
+   "ranks": {
+    "bm25": 207,
+    "dense": 207,
+    "rrf": 207,
+    "direct": 207,
+    "graph": 207,
+    "rewired": 207,
+    "dense_dot": 207
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/visualize_behaviour_for_evolutionary_jumps",
+   "scores": {
+    "bm25": 4.24034400929633,
+    "dense": 0.1800280213356018,
+    "rrf": 0.02420594262295082,
+    "direct": 0.02420594262295082,
+    "graph": 0.02420594262295082,
+    "rewired": 0.02420594262295082,
+    "dense_dot": 103.90237426757812
+   },
+   "ranks": {
+    "bm25": 118,
+    "dense": 51,
+    "rrf": 85,
+    "direct": 85,
+    "graph": 86,
+    "rewired": 88,
+    "dense_dot": 52
+   }
+  },
+  {
+   "id": "examples/example_mountain_car.py/visualize_behaviour_for_evolutionary_jumps/f",
+   "scores": {
+    "bm25": 1.670859302216068,
+    "dense": 0.04889347031712532,
+    "rrf": 0.011579651941097724,
+    "direct": 0.011579651941097724,
+    "graph": 0.011579651941097724,
+    "rewired": 0.011579651941097724,
+    "dense_dot": 28.349611282348633
+   },
+   "ranks": {
+    "bm25": 156,
+    "dense": 170,
+    "rrf": 176,
+    "direct": 176,
+    "graph": 176,
+    "rewired": 177,
+    "dense_dot": 170
+   }
+  },
+  {
+   "id": "cgp/hl_api.py/evolve",
+   "scores": {
+    "bm25": 26.103229803787553,
+    "dense": 0.18560819327831268,
+    "rrf": 0.07373737373737374,
+    "direct": 0.07373737373737374,
+    "graph": 0.07373737373737374,
+    "rewired": 0.07373737373737374,
+    "dense_dot": 107.76026153564453
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 45,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 16,
+    "rewired": 16,
+    "dense_dot": 45
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/InputNode/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07196170836687088,
+    "rrf": 0.011445568883572052,
+    "direct": 0.011445568883572052,
+    "graph": 0.011445568883572052,
+    "rewired": 0.011445568883572052,
+    "dense_dot": 41.80512237548828
+   },
+   "ranks": {
+    "bm25": 187,
+    "dense": 147,
+    "rrf": 178,
+    "direct": 178,
+    "graph": 178,
+    "rewired": 179,
+    "dense_dot": 147
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/InputNode/__call__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0780797153711319,
+    "rrf": 0.011813450212299684,
+    "direct": 0.011813450212299684,
+    "graph": 0.011813450212299684,
+    "rewired": 0.011813450212299684,
+    "dense_dot": 45.5285530090332
+   },
+   "ranks": {
+    "bm25": 186,
+    "dense": 139,
+    "rrf": 170,
+    "direct": 170,
+    "graph": 170,
+    "rewired": 171,
+    "dense_dot": 139
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/InputNode/format_output_str",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.09328197687864304,
+    "rrf": 0.012863005050505052,
+    "direct": 0.012863005050505052,
+    "graph": 0.012863005050505052,
+    "rewired": 0.012863005050505052,
+    "dense_dot": 54.35002136230469
+   },
+   "ranks": {
+    "bm25": 188,
+    "dense": 118,
+    "rrf": 159,
+    "direct": 159,
+    "graph": 159,
+    "rewired": 160,
+    "dense_dot": 118
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/InputNode/format_output_str_numpy",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0735052227973938,
+    "rrf": 0.011435382038397113,
+    "direct": 0.011435382038397113,
+    "graph": 0.011435382038397113,
+    "rewired": 0.011435382038397113,
+    "dense_dot": 42.78065490722656
+   },
+   "ranks": {
+    "bm25": 189,
+    "dense": 146,
+    "rrf": 180,
+    "direct": 180,
+    "graph": 180,
+    "rewired": 181,
+    "dense_dot": 146
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/InputNode/format_output_str_torch",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0886235237121582,
+    "rrf": 0.01243781094527363,
+    "direct": 0.01243781094527363,
+    "graph": 0.01243781094527363,
+    "rewired": 0.01243781094527363,
+    "dense_dot": 51.587074279785156
+   },
+   "ranks": {
+    "bm25": 191,
+    "dense": 124,
+    "rrf": 161,
+    "direct": 161,
+    "graph": 161,
+    "rewired": 162,
+    "dense_dot": 124
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/InputNode/format_output_str_sympy",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06762921810150146,
+    "rrf": 0.01125,
+    "direct": 0.01125,
+    "graph": 0.01125,
+    "rewired": 0.01125,
+    "dense_dot": 39.476654052734375
+   },
+   "ranks": {
+    "bm25": 190,
+    "dense": 150,
+    "rrf": 184,
+    "direct": 184,
+    "graph": 184,
+    "rewired": 185,
+    "dense_dot": 150
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/OutputNode/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07665793597698212,
+    "rrf": 0.01150505574280529,
+    "direct": 0.01150505574280529,
+    "graph": 0.01150505574280529,
+    "rewired": 0.01150505574280529,
+    "dense_dot": 44.544219970703125
+   },
+   "ranks": {
+    "bm25": 193,
+    "dense": 142,
+    "rrf": 177,
+    "direct": 177,
+    "graph": 177,
+    "rewired": 178,
+    "dense_dot": 142
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/OutputNode/__call__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05466822534799576,
+    "rrf": 0.010764448537877044,
+    "direct": 0.010764448537877044,
+    "graph": 0.010764448537877044,
+    "rewired": 0.010764448537877044,
+    "dense_dot": 31.81500244140625
+   },
+   "ranks": {
+    "bm25": 192,
+    "dense": 162,
+    "rrf": 192,
+    "direct": 192,
+    "graph": 192,
+    "rewired": 193,
+    "dense_dot": 162
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/OutputNode/format_output_str",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07639116048812866,
+    "rrf": 0.011437908496732027,
+    "direct": 0.011437908496732027,
+    "graph": 0.011437908496732027,
+    "rewired": 0.011437908496732027,
+    "dense_dot": 44.482696533203125
+   },
+   "ranks": {
+    "bm25": 194,
+    "dense": 143,
+    "rrf": 179,
+    "direct": 179,
+    "graph": 179,
+    "rewired": 180,
+    "dense_dot": 143
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/OutputNode/format_output_str_numpy",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07962065935134888,
+    "rrf": 0.011634805537244563,
+    "direct": 0.011634805537244563,
+    "graph": 0.011634805537244563,
+    "rewired": 0.011634805537244563,
+    "dense_dot": 46.43611145019531
+   },
+   "ranks": {
+    "bm25": 195,
+    "dense": 138,
+    "rrf": 175,
+    "direct": 175,
+    "graph": 175,
+    "rewired": 176,
+    "dense_dot": 138
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/OutputNode/format_output_str_torch",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.08141908794641495,
+    "rrf": 0.011823924867403128,
+    "direct": 0.011823924867403128,
+    "graph": 0.011823924867403128,
+    "rewired": 0.011823924867403128,
+    "dense_dot": 47.47209548950195
+   },
+   "ranks": {
+    "bm25": 197,
+    "dense": 133,
+    "rrf": 169,
+    "direct": 169,
+    "graph": 169,
+    "rewired": 170,
+    "dense_dot": 134
+   }
+  },
+  {
+   "id": "cgp/node_input_output.py/OutputNode/format_output_str_sympy",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05861930921673775,
+    "rrf": 0.010736721873215305,
+    "direct": 0.010736721873215305,
+    "graph": 0.010736721873215305,
+    "rewired": 0.010736721873215305,
+    "dense_dot": 34.197486877441406
+   },
+   "ranks": {
+    "bm25": 196,
+    "dense": 160,
+    "rrf": 193,
+    "direct": 193,
+    "graph": 193,
+    "rewired": 194,
+    "dense_dot": 160
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/__post_init__",
+   "scores": {
+    "bm25": 3.811369342139376,
+    "dense": 0.08316965401172638,
+    "rrf": 0.014135864135864136,
+    "direct": 0.014135864135864136,
+    "graph": 0.014135864135864136,
+    "rewired": 0.014135864135864136,
+    "dense_dot": 48.26354217529297
+   },
+   "ranks": {
+    "bm25": 133,
+    "dense": 130,
+    "rrf": 146,
+    "direct": 146,
+    "graph": 146,
+    "rewired": 147,
+    "dense_dot": 131
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/_check_types",
+   "scores": {
+    "bm25": 8.089738742523442,
+    "dense": 0.03635350242257118,
+    "rrf": 0.019124490983129724,
+    "direct": 0.019124490983129724,
+    "graph": 0.019124490983129724,
+    "rewired": 0.019124490983129724,
+    "dense_dot": 21.18036651611328
+   },
+   "ranks": {
+    "bm25": 62,
+    "dense": 181,
+    "rrf": 112,
+    "direct": 112,
+    "graph": 112,
+    "rewired": 114,
+    "dense_dot": 180
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/_determine_max_arity",
+   "scores": {
+    "bm25": 10.106136280411203,
+    "dense": 0.13332657516002655,
+    "rrf": 0.02807017543859649,
+    "direct": 0.02807017543859649,
+    "graph": 0.02807017543859649,
+    "rewired": 0.02807017543859649,
+    "dense_dot": 77.24494934082031
+   },
+   "ranks": {
+    "bm25": 47,
+    "dense": 85,
+    "rrf": 67,
+    "direct": 67,
+    "graph": 70,
+    "rewired": 70,
+    "dense_dot": 85
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/__iter__",
+   "scores": {
+    "bm25": 4.123518242770039,
+    "dense": -0.01846896857023239,
+    "rrf": 0.012306484982521224,
+    "direct": 0.012306484982521224,
+    "graph": 0.012306484982521224,
+    "rewired": 0.012306484982521224,
+    "dense_dot": -10.779675483703613
+   },
+   "ranks": {
+    "bm25": 121,
+    "dense": 204,
+    "rrf": 162,
+    "direct": 162,
+    "graph": 162,
+    "rewired": 163,
+    "dense_dot": 204
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/sample_allele",
+   "scores": {
+    "bm25": 10.684670521696406,
+    "dense": 0.21725939214229584,
+    "rrf": 0.04589495155532891,
+    "direct": 0.04589495155532891,
+    "graph": 0.04589495155532891,
+    "rewired": 0.04589495155532891,
+    "dense_dot": 126.56367492675781
+   },
+   "ranks": {
+    "bm25": 43,
+    "dense": 27,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 36,
+    "rewired": 35,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/__getitem__",
+   "scores": {
+    "bm25": 10.984190321011436,
+    "dense": 0.044853731989860535,
+    "rrf": 0.026238738738738738,
+    "direct": 0.026238738738738738,
+    "graph": 0.026238738738738738,
+    "rewired": 0.026238738738738738,
+    "dense_dot": 26.18178939819336
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 175,
+    "rrf": 76,
+    "direct": 76,
+    "graph": 77,
+    "rewired": 79,
+    "dense_dot": 175
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/max_arity",
+   "scores": {
+    "bm25": 3.944838911395121,
+    "dense": 0.08040115982294083,
+    "rrf": 0.014090796328454478,
+    "direct": 0.014090796328454478,
+    "graph": 0.014090796328454478,
+    "rewired": 0.014090796328454478,
+    "dense_dot": 46.95758056640625
+   },
+   "ranks": {
+    "bm25": 129,
+    "dense": 135,
+    "rrf": 148,
+    "direct": 148,
+    "graph": 148,
+    "rewired": 149,
+    "dense_dot": 135
+   }
+  },
+  {
+   "id": "cgp/primitives.py/Primitives/is_valid_allele",
+   "scores": {
+    "bm25": 10.072048648574825,
+    "dense": 0.1349402219057083,
+    "rrf": 0.027879677182685254,
+    "direct": 0.027879677182685254,
+    "graph": 0.027879677182685254,
+    "rewired": 0.027879677182685254,
+    "dense_dot": 78.56719970703125
+   },
+   "ranks": {
+    "bm25": 48,
+    "dense": 84,
+    "rrf": 68,
+    "direct": 68,
+    "graph": 71,
+    "rewired": 71,
+    "dense_dot": 84
+   }
+  },
+  {
+   "id": "cgp/node.py/register",
+   "scores": {
+    "bm25": 10.268895514248465,
+    "dense": 0.049059487879276276,
+    "rrf": 0.02376841036058913,
+    "direct": 0.02376841036058913,
+    "graph": 0.02376841036058913,
+    "rewired": 0.02376841036058913,
+    "dense_dot": 28.53903579711914
+   },
+   "ranks": {
+    "bm25": 45,
+    "dense": 169,
+    "rrf": 88,
+    "direct": 88,
+    "graph": 89,
+    "rewired": 91,
+    "dense_dot": 169
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/__init__",
+   "scores": {
+    "bm25": 10.86224210366486,
+    "dense": 0.1323261708021164,
+    "rrf": 0.030024509803921566,
+    "direct": 0.030024509803921566,
+    "graph": 0.030024509803921566,
+    "rewired": 0.030024509803921566,
+    "dense_dot": 76.72314453125
+   },
+   "ranks": {
+    "bm25": 41,
+    "dense": 86,
+    "rrf": 60,
+    "direct": 60,
+    "graph": 64,
+    "rewired": 63,
+    "dense_dot": 86
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/__init_subclass__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.042492154985666275,
+    "rrf": 0.010840824960338447,
+    "direct": 0.010840824960338447,
+    "graph": 0.010840824960338447,
+    "rewired": 0.010840824960338447,
+    "dense_dot": 24.9012451171875
+   },
+   "ranks": {
+    "bm25": 173,
+    "dense": 176,
+    "rrf": 191,
+    "direct": 191,
+    "graph": 191,
+    "rewired": 192,
+    "dense_dot": 176
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/__call__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06881614774465561,
+    "rrf": 0.011783813670606123,
+    "direct": 0.011783813670606123,
+    "graph": 0.011783813670606123,
+    "rewired": 0.011783813670606123,
+    "dense_dot": 40.29633331298828
+   },
+   "ranks": {
+    "bm25": 172,
+    "dense": 149,
+    "rrf": 171,
+    "direct": 171,
+    "graph": 171,
+    "rewired": 172,
+    "dense_dot": 148
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/arity",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.008842218667268753,
+    "rrf": 0.010236323279801542,
+    "direct": 0.010236323279801542,
+    "graph": 0.010236323279801542,
+    "rewired": 0.010236323279801542,
+    "dense_dot": 5.14263916015625
+   },
+   "ranks": {
+    "bm25": 175,
+    "dense": 197,
+    "rrf": 199,
+    "direct": 199,
+    "graph": 199,
+    "rewired": 200,
+    "dense_dot": 197
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/max_arity",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06458692252635956,
+    "rrf": 0.011416709911779968,
+    "direct": 0.011416709911779968,
+    "graph": 0.011416709911779968,
+    "rewired": 0.011416709911779968,
+    "dense_dot": 37.523033142089844
+   },
+   "ranks": {
+    "bm25": 178,
+    "dense": 154,
+    "rrf": 181,
+    "direct": 181,
+    "graph": 181,
+    "rewired": 182,
+    "dense_dot": 154
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/inputs",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.049495432525873184,
+    "rrf": 0.010997311097011995,
+    "direct": 0.010997311097011995,
+    "graph": 0.010997311097011995,
+    "rewired": 0.010997311097011995,
+    "dense_dot": 28.80611228942871
+   },
+   "ranks": {
+    "bm25": 177,
+    "dense": 167,
+    "rrf": 189,
+    "direct": 189,
+    "graph": 189,
+    "rewired": 190,
+    "dense_dot": 167
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/idx",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05526655167341232,
+    "rrf": 0.011224297302395774,
+    "direct": 0.011224297302395774,
+    "graph": 0.011224297302395774,
+    "rewired": 0.011224297302395774,
+    "dense_dot": 32.346466064453125
+   },
+   "ranks": {
+    "bm25": 176,
+    "dense": 161,
+    "rrf": 185,
+    "direct": 185,
+    "graph": 185,
+    "rewired": 186,
+    "dense_dot": 161
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/__repr__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.03252303972840309,
+    "rrf": 0.010643115942028984,
+    "direct": 0.010643115942028984,
+    "graph": 0.010643115942028984,
+    "rewired": 0.010643115942028984,
+    "dense_dot": 19.0405330657959
+   },
+   "ranks": {
+    "bm25": 174,
+    "dense": 182,
+    "rrf": 194,
+    "direct": 194,
+    "graph": 194,
+    "rewired": 195,
+    "dense_dot": 182
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/pretty_str",
+   "scores": {
+    "bm25": 12.337406510314572,
+    "dense": 0.11732877045869827,
+    "rrf": 0.034523809523809526,
+    "direct": 0.034523809523809526,
+    "graph": 0.034523809523809526,
+    "rewired": 0.034523809523809526,
+    "dense_dot": 68.24456024169922
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 95,
+    "rrf": 51,
+    "direct": 51,
+    "graph": 55,
+    "rewired": 54,
+    "dense_dot": 95
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/output",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.02835812233388424,
+    "rrf": 0.01039304610733182,
+    "direct": 0.01039304610733182,
+    "graph": 0.01039304610733182,
+    "rewired": 0.01039304610733182,
+    "dense_dot": 16.541259765625
+   },
+   "ranks": {
+    "bm25": 179,
+    "dense": 186,
+    "rrf": 197,
+    "direct": 197,
+    "graph": 197,
+    "rewired": 198,
+    "dense_dot": 186
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/output_str",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0002183456381317228,
+    "rrf": 0.010047846889952153,
+    "direct": 0.010047846889952153,
+    "graph": 0.010047846889952153,
+    "rewired": 0.010047846889952153,
+    "dense_dot": 0.12778377532958984
+   },
+   "ranks": {
+    "bm25": 180,
+    "dense": 199,
+    "rrf": 201,
+    "direct": 201,
+    "graph": 201,
+    "rewired": 202,
+    "dense_dot": 199
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/activate",
+   "scores": {
+    "bm25": 1.7059008911873301,
+    "dense": 0.029358699917793274,
+    "rrf": 0.011188811188811189,
+    "direct": 0.011188811188811189,
+    "graph": 0.011188811188811189,
+    "rewired": 0.011188811188811189,
+    "dense_dot": 17.128665924072266
+   },
+   "ranks": {
+    "bm25": 155,
+    "dense": 185,
+    "rrf": 186,
+    "direct": 186,
+    "graph": 186,
+    "rewired": 187,
+    "dense_dot": 185
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/format_output_str",
+   "scores": {
+    "bm25": 4.127505345971292,
+    "dense": 0.10706973820924759,
+    "rrf": 0.01662087912087912,
+    "direct": 0.01662087912087912,
+    "graph": 0.01662087912087912,
+    "rewired": 0.01662087912087912,
+    "dense_dot": 62.619224548339844
+   },
+   "ranks": {
+    "bm25": 120,
+    "dense": 102,
+    "rrf": 130,
+    "direct": 130,
+    "graph": 130,
+    "rewired": 131,
+    "dense_dot": 101
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/format_output_str_numpy",
+   "scores": {
+    "bm25": 1.2940403097860902,
+    "dense": 0.06696022301912308,
+    "rrf": 0.01205519244734931,
+    "direct": 0.01205519244734931,
+    "graph": 0.01205519244734931,
+    "rewired": 0.01205519244734931,
+    "dense_dot": 39.185394287109375
+   },
+   "ranks": {
+    "bm25": 160,
+    "dense": 152,
+    "rrf": 167,
+    "direct": 167,
+    "graph": 167,
+    "rewired": 168,
+    "dense_dot": 151
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/format_output_str_torch",
+   "scores": {
+    "bm25": 1.2940403097860902,
+    "dense": 0.07451015710830688,
+    "rrf": 0.012265566391597899,
+    "direct": 0.012265566391597899,
+    "graph": 0.012265566391597899,
+    "rewired": 0.012265566391597899,
+    "dense_dot": 43.566280364990234
+   },
+   "ranks": {
+    "bm25": 162,
+    "dense": 145,
+    "rrf": 164,
+    "direct": 164,
+    "graph": 164,
+    "rewired": 165,
+    "dense_dot": 144
+   }
+  },
+  {
+   "id": "cgp/node.py/Node/format_output_str_sympy",
+   "scores": {
+    "bm25": 1.2940403097860902,
+    "dense": 0.05866019055247307,
+    "rrf": 0.011765112979687877,
+    "direct": 0.011765112979687877,
+    "graph": 0.011765112979687877,
+    "rewired": 0.011765112979687877,
+    "dense_dot": 34.368080139160156
+   },
+   "ranks": {
+    "bm25": 161,
+    "dense": 159,
+    "rrf": 173,
+    "direct": 173,
+    "graph": 173,
+    "rewired": 174,
+    "dense_dot": 159
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/__init_subclass__",
+   "scores": {
+    "bm25": 4.500727844490509,
+    "dense": 0.04854902625083923,
+    "rrf": 0.013589378007485296,
+    "direct": 0.013589378007485296,
+    "graph": 0.013589378007485296,
+    "rewired": 0.013589378007485296,
+    "dense_dot": 28.24315643310547
+   },
+   "ranks": {
+    "bm25": 114,
+    "dense": 171,
+    "rrf": 151,
+    "direct": 151,
+    "graph": 151,
+    "rewired": 152,
+    "dense_dot": 171
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/_extract_input_names_from_def_output",
+   "scores": {
+    "bm25": 15.11523540215146,
+    "dense": 0.08015291392803192,
+    "rrf": 0.03910737958462218,
+    "direct": 0.03910737958462218,
+    "graph": 0.03910737958462218,
+    "rewired": 0.03910737958462218,
+    "dense_dot": 46.57316589355469
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 136,
+    "rrf": 42,
+    "direct": 42,
+    "graph": 46,
+    "rewired": 46,
+    "dense_dot": 137
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/_extract_parameter_names_from_def_output",
+   "scores": {
+    "bm25": 7.032708627719945,
+    "dense": -0.009245001710951328,
+    "rrf": 0.016787529263975334,
+    "direct": 0.016787529263975334,
+    "graph": 0.016787529263975334,
+    "rewired": 0.016787529263975334,
+    "dense_dot": -5.37052059173584
+   },
+   "ranks": {
+    "bm25": 73,
+    "dense": 201,
+    "rrf": 128,
+    "direct": 128,
+    "graph": 128,
+    "rewired": 129,
+    "dense_dot": 201
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/_extract_index_from_input_name",
+   "scores": {
+    "bm25": 3.153372796366988,
+    "dense": 0.0798916295170784,
+    "rrf": 0.013514130484408528,
+    "direct": 0.013514130484408528,
+    "graph": 0.013514130484408528,
+    "rewired": 0.013514130484408528,
+    "dense_dot": 46.582801818847656
+   },
+   "ranks": {
+    "bm25": 139,
+    "dense": 137,
+    "rrf": 152,
+    "direct": 152,
+    "graph": 152,
+    "rewired": 153,
+    "dense_dot": 136
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/initial_value",
+   "scores": {
+    "bm25": 4.10598897346908,
+    "dense": 0.026871152222156525,
+    "rrf": 0.01260088320389828,
+    "direct": 0.01260088320389828,
+    "graph": 0.01260088320389828,
+    "rewired": 0.01260088320389828,
+    "dense_dot": 15.604287147521973
+   },
+   "ranks": {
+    "bm25": 122,
+    "dense": 189,
+    "rrf": 160,
+    "direct": 160,
+    "graph": 160,
+    "rewired": 161,
+    "dense_dot": 189
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/parameter_str",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.028359537944197655,
+    "rrf": 0.009779367918902802,
+    "direct": 0.009779367918902802,
+    "graph": 0.009779367918902802,
+    "rewired": 0.009779367918902802,
+    "dense_dot": -16.50347328186035
+   },
+   "ranks": {
+    "bm25": 185,
+    "dense": 205,
+    "rrf": 203,
+    "direct": 203,
+    "graph": 203,
+    "rewired": 204,
+    "dense_dot": 205
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/__call__",
+   "scores": {
+    "bm25": 11.461515621050195,
+    "dense": 0.10267031192779541,
+    "rrf": 0.029609929078014185,
+    "direct": 0.029609929078014185,
+    "graph": 0.029609929078014185,
+    "rewired": 0.029609929078014185,
+    "dense_dot": 59.73612976074219
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 110,
+    "rrf": 61,
+    "direct": 61,
+    "graph": 65,
+    "rewired": 64,
+    "dense_dot": 110
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/_replace_input_names",
+   "scores": {
+    "bm25": 3.8828441835799428,
+    "dense": 0.08917222917079926,
+    "rrf": 0.014561050513607964,
+    "direct": 0.014561050513607964,
+    "graph": 0.014561050513607964,
+    "rewired": 0.014561050513607964,
+    "dense_dot": 51.864013671875
+   },
+   "ranks": {
+    "bm25": 132,
+    "dense": 123,
+    "rrf": 142,
+    "direct": 142,
+    "graph": 142,
+    "rewired": 143,
+    "dense_dot": 123
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/_replace_parameter_names",
+   "scores": {
+    "bm25": 4.726744283117958,
+    "dense": 0.04913175851106644,
+    "rrf": 0.014092553799276328,
+    "direct": 0.014092553799276328,
+    "graph": 0.014092553799276328,
+    "rewired": 0.014092553799276328,
+    "dense_dot": 28.65098762512207
+   },
+   "ranks": {
+    "bm25": 108,
+    "dense": 168,
+    "rrf": 147,
+    "direct": 147,
+    "graph": 147,
+    "rewired": 148,
+    "dense_dot": 168
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/_format_output_str",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06342137604951859,
+    "rrf": 0.011259698479783007,
+    "direct": 0.011259698479783007,
+    "graph": 0.011259698479783007,
+    "rewired": 0.011259698479783007,
+    "dense_dot": 36.93658447265625
+   },
+   "ranks": {
+    "bm25": 181,
+    "dense": 156,
+    "rrf": 183,
+    "direct": 183,
+    "graph": 183,
+    "rewired": 184,
+    "dense_dot": 156
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/format_output_str",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.09330142289400101,
+    "rrf": 0.013082349081364828,
+    "direct": 0.013082349081364828,
+    "graph": 0.013082349081364828,
+    "rewired": 0.013082349081364828,
+    "dense_dot": 54.36822509765625
+   },
+   "ranks": {
+    "bm25": 182,
+    "dense": 117,
+    "rrf": 156,
+    "direct": 156,
+    "graph": 156,
+    "rewired": 157,
+    "dense_dot": 117
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/format_output_str_numpy",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.09508737176656723,
+    "rrf": 0.013181347150259069,
+    "direct": 0.013181347150259069,
+    "graph": 0.013181347150259069,
+    "rewired": 0.013181347150259069,
+    "dense_dot": 55.43117904663086
+   },
+   "ranks": {
+    "bm25": 183,
+    "dense": 115,
+    "rrf": 155,
+    "direct": 155,
+    "graph": 155,
+    "rewired": 156,
+    "dense_dot": 115
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/format_output_str_torch",
+   "scores": {
+    "bm25": 2.8716190072075594,
+    "dense": 0.08312512934207916,
+    "rrf": 0.013758865248226951,
+    "direct": 0.013758865248226951,
+    "graph": 0.013758865248226951,
+    "rewired": 0.013758865248226951,
+    "dense_dot": 48.441673278808594
+   },
+   "ranks": {
+    "bm25": 140,
+    "dense": 131,
+    "rrf": 149,
+    "direct": 149,
+    "graph": 149,
+    "rewired": 150,
+    "dense_dot": 130
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/_replace_parameter_names_in_output_str_with_members",
+   "scores": {
+    "bm25": 9.47617498956283,
+    "dense": -0.0015226410469040275,
+    "rrf": 0.020890937019969278,
+    "direct": 0.020890937019969278,
+    "graph": 0.020890937019969278,
+    "rewired": 0.020890937019969278,
+    "dense_dot": -0.8879709243774414
+   },
+   "ranks": {
+    "bm25": 52,
+    "dense": 200,
+    "rrf": 106,
+    "direct": 106,
+    "graph": 106,
+    "rewired": 108,
+    "dense_dot": 200
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/format_output_str_sympy",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0625004842877388,
+    "rrf": 0.011142663127353541,
+    "direct": 0.011142663127353541,
+    "graph": 0.011142663127353541,
+    "rewired": 0.011142663127353541,
+    "dense_dot": 36.426692962646484
+   },
+   "ranks": {
+    "bm25": 184,
+    "dense": 157,
+    "rrf": 188,
+    "direct": 188,
+    "graph": 188,
+    "rewired": 189,
+    "dense_dot": 157
+   }
+  },
+  {
+   "id": "cgp/node.py/OperatorNode/format_parameter_str",
+   "scores": {
+    "bm25": 4.934275853847343,
+    "dense": 0.07452661544084549,
+    "rrf": 0.015343064015630388,
+    "direct": 0.015343064015630388,
+    "graph": 0.015343064015630388,
+    "rewired": 0.015343064015630388,
+    "dense_dot": 43.297035217285156
+   },
+   "ranks": {
+    "bm25": 103,
+    "dense": 144,
+    "rrf": 138,
+    "direct": 138,
+    "graph": 138,
+    "rewired": 139,
+    "dense_dot": 145
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/__init__",
+   "scores": {
+    "bm25": 5.540311848101505,
+    "dense": 0.17127549648284912,
+    "rrf": 0.024634110998406025,
+    "direct": 0.024634110998406025,
+    "graph": 0.024634110998406025,
+    "rewired": 0.024634110998406025,
+    "dense_dot": 99.70803833007812
+   },
+   "ranks": {
+    "bm25": 93,
+    "dense": 57,
+    "rrf": 84,
+    "direct": 84,
+    "graph": 85,
+    "rewired": 87,
+    "dense_dot": 58
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/__repr__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.013198397122323513,
+    "rrf": 0.010625175217269415,
+    "direct": 0.010625175217269415,
+    "graph": 0.010625175217269415,
+    "rewired": 0.010625175217269415,
+    "dense_dot": 7.7491912841796875
+   },
+   "ranks": {
+    "bm25": 164,
+    "dense": 195,
+    "rrf": 195,
+    "direct": 195,
+    "graph": 195,
+    "rewired": 196,
+    "dense_dot": 195
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/print_active_nodes",
+   "scores": {
+    "bm25": 6.37364062269007,
+    "dense": 0.059150680899620056,
+    "rrf": 0.016821946169772256,
+    "direct": 0.016821946169772256,
+    "graph": 0.016821946169772256,
+    "rewired": 0.016821946169772256,
+    "dense_dot": 34.683441162109375
+   },
+   "ranks": {
+    "bm25": 82,
+    "dense": 158,
+    "rrf": 127,
+    "direct": 127,
+    "graph": 127,
+    "rewired": 128,
+    "dense_dot": 158
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/pretty_str",
+   "scores": {
+    "bm25": 4.220134455761514,
+    "dense": 0.1077428013086319,
+    "rrf": 0.017011197243755383,
+    "direct": 0.017011197243755383,
+    "graph": 0.017011197243755383,
+    "rewired": 0.017011197243755383,
+    "dense_dot": 62.72892761230469
+   },
+   "ranks": {
+    "bm25": 119,
+    "dense": 98,
+    "rrf": 124,
+    "direct": 124,
+    "graph": 124,
+    "rewired": 125,
+    "dense_dot": 99
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/pretty_str/pretty_node_str",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06740089505910873,
+    "rrf": 0.011766735679779157,
+    "direct": 0.011766735679779157,
+    "graph": 0.011766735679779157,
+    "rewired": 0.011766735679779157,
+    "dense_dot": 39.16836166381836
+   },
+   "ranks": {
+    "bm25": 170,
+    "dense": 151,
+    "rrf": 172,
+    "direct": 172,
+    "graph": 172,
+    "rewired": 173,
+    "dense_dot": 152
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/pretty_str/empty_node_str",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05188601091504097,
+    "rrf": 0.011268410360589131,
+    "direct": 0.011268410360589131,
+    "graph": 0.011268410360589131,
+    "rewired": 0.011268410360589131,
+    "dense_dot": 30.294849395751953
+   },
+   "ranks": {
+    "bm25": 169,
+    "dense": 166,
+    "rrf": 182,
+    "direct": 182,
+    "graph": 182,
+    "rewired": 183,
+    "dense_dot": 165
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/parse_genome",
+   "scores": {
+    "bm25": 10.23981521117146,
+    "dense": 0.21776266396045685,
+    "rrf": 0.04563492063492063,
+    "direct": 0.04563492063492063,
+    "graph": 0.04563492063492063,
+    "rewired": 0.04563492063492063,
+    "dense_dot": 126.59181213378906
+   },
+   "ranks": {
+    "bm25": 46,
+    "dense": 26,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 37,
+    "rewired": 36,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/_hidden_column_idx",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.18179360032081604,
+    "rrf": 0.02295566502463054,
+    "direct": 0.02295566502463054,
+    "graph": 0.02295566502463054,
+    "rewired": 0.02295566502463054,
+    "dense_dot": 105.47093200683594
+   },
+   "ranks": {
+    "bm25": 165,
+    "dense": 48,
+    "rrf": 95,
+    "direct": 95,
+    "graph": 95,
+    "rewired": 97,
+    "dense_dot": 48
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/input_nodes",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0841747522354126,
+    "rrf": 0.012896094325718498,
+    "direct": 0.012896094325718498,
+    "graph": 0.012896094325718498,
+    "rewired": 0.012896094325718498,
+    "dense_dot": 49.03843688964844
+   },
+   "ranks": {
+    "bm25": 167,
+    "dense": 128,
+    "rrf": 158,
+    "direct": 158,
+    "graph": 158,
+    "rewired": 159,
+    "dense_dot": 128
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/hidden_nodes",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.1156187355518341,
+    "rrf": 0.015115780445969125,
+    "direct": 0.015115780445969125,
+    "graph": 0.015115780445969125,
+    "rewired": 0.015115780445969125,
+    "dense_dot": 67.30390167236328
+   },
+   "ranks": {
+    "bm25": 166,
+    "dense": 96,
+    "rrf": 139,
+    "direct": 139,
+    "graph": 139,
+    "rewired": 140,
+    "dense_dot": 96
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/output_nodes",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.10733059048652649,
+    "rrf": 0.014708886618998978,
+    "direct": 0.014708886618998978,
+    "graph": 0.014708886618998978,
+    "rewired": 0.014708886618998978,
+    "dense_dot": 62.63410949707031
+   },
+   "ranks": {
+    "bm25": 168,
+    "dense": 100,
+    "rrf": 141,
+    "direct": 141,
+    "graph": 141,
+    "rewired": 142,
+    "dense_dot": 100
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/_determine_active_nodes",
+   "scores": {
+    "bm25": 26.576836170185132,
+    "dense": 0.14274601638317108,
+    "rrf": 0.06993464052287582,
+    "direct": 0.06993464052287582,
+    "graph": 0.06993464052287582,
+    "rewired": 0.06993464052287582,
+    "dense_dot": 82.81170654296875
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 80,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 20,
+    "rewired": 17,
+    "dense_dot": 80
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/determine_active_regions",
+   "scores": {
+    "bm25": 10.735332830386632,
+    "dense": 0.12515851855278015,
+    "rrf": 0.029131759329779135,
+    "direct": 0.029131759329779135,
+    "graph": 0.0745863047843246,
+    "rewired": 0.029131759329779135,
+    "dense_dot": 72.73292541503906
+   },
+   "ranks": {
+    "bm25": 42,
+    "dense": 91,
+    "rrf": 64,
+    "direct": 64,
+    "graph": 15,
+    "rewired": 67,
+    "dense_dot": 91
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/__call__",
+   "scores": {
+    "bm25": 8.165704049293986,
+    "dense": 0.08843443542718887,
+    "rrf": 0.021491914449660927,
+    "direct": 0.021491914449660927,
+    "graph": 0.021491914449660927,
+    "rewired": 0.021491914449660927,
+    "dense_dot": 51.58282470703125
+   },
+   "ranks": {
+    "bm25": 61,
+    "dense": 125,
+    "rrf": 99,
+    "direct": 99,
+    "graph": 99,
+    "rewired": 101,
+    "dense_dot": 125
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/__getitem__",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.011501244269311428,
+    "rrf": 0.010475182501560421,
+    "direct": 0.010475182501560421,
+    "graph": 0.010475182501560421,
+    "rewired": 0.010475182501560421,
+    "dense_dot": -6.750469207763672
+   },
+   "ranks": {
+    "bm25": 163,
+    "dense": 203,
+    "rrf": 196,
+    "direct": 196,
+    "graph": 196,
+    "rewired": 197,
+    "dense_dot": 203
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/to_str",
+   "scores": {
+    "bm25": 11.877669598048424,
+    "dense": 0.027076739817857742,
+    "rrf": 0.028306319003993424,
+    "direct": 0.028306319003993424,
+    "graph": 0.028306319003993424,
+    "rewired": 0.028306319003993424,
+    "dense_dot": 15.871045112609863
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 188,
+    "rrf": 66,
+    "direct": 66,
+    "graph": 69,
+    "rewired": 69,
+    "dense_dot": 188
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_of_all_nodes",
+   "scores": {
+    "bm25": 5.131948672240631,
+    "dense": 0.11904255300760269,
+    "rrf": 0.01878969654199012,
+    "direct": 0.01878969654199012,
+    "graph": 0.01878969654199012,
+    "rewired": 0.01878969654199012,
+    "dense_dot": 69.31793212890625
+   },
+   "ranks": {
+    "bm25": 99,
+    "dense": 94,
+    "rrf": 114,
+    "direct": 114,
+    "graph": 114,
+    "rewired": 116,
+    "dense_dot": 94
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/_fill_parameter_values",
+   "scores": {
+    "bm25": 6.765214212771169,
+    "dense": 0.024751462042331696,
+    "rrf": 0.016363636363636365,
+    "direct": 0.016363636363636365,
+    "graph": 0.016363636363636365,
+    "rewired": 0.016363636363636365,
+    "dense_dot": 14.415287017822266
+   },
+   "ranks": {
+    "bm25": 78,
+    "dense": 190,
+    "rrf": 133,
+    "direct": 133,
+    "graph": 133,
+    "rewired": 134,
+    "dense_dot": 190
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/to_func",
+   "scores": {
+    "bm25": 15.811284833868182,
+    "dense": 0.09343326836824417,
+    "rrf": 0.04126984126984127,
+    "direct": 0.04126984126984127,
+    "graph": 0.04126984126984127,
+    "rewired": 0.04126984126984127,
+    "dense_dot": 54.44451904296875
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 116,
+    "rrf": 41,
+    "direct": 41,
+    "graph": 45,
+    "rewired": 45,
+    "dense_dot": 116
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_numpy_of_all_nodes",
+   "scores": {
+    "bm25": 5.077638099438675,
+    "dense": 0.08207622170448303,
+    "rrf": 0.01605126253013577,
+    "direct": 0.01605126253013577,
+    "graph": 0.01605126253013577,
+    "rewired": 0.01605126253013577,
+    "dense_dot": 47.79814147949219
+   },
+   "ranks": {
+    "bm25": 101,
+    "dense": 132,
+    "rrf": 135,
+    "direct": 135,
+    "graph": 135,
+    "rewired": 136,
+    "dense_dot": 132
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/to_numpy",
+   "scores": {
+    "bm25": 14.247867680648985,
+    "dense": 0.10317108780145645,
+    "rrf": 0.03877760657421674,
+    "direct": 0.03877760657421674,
+    "graph": 0.03877760657421674,
+    "rewired": 0.03877760657421674,
+    "dense_dot": 60.35642623901367
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 108,
+    "rrf": 44,
+    "direct": 44,
+    "graph": 48,
+    "rewired": 48,
+    "dense_dot": 107
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/to_torch",
+   "scores": {
+    "bm25": 14.242431783392595,
+    "dense": 0.10732877254486084,
+    "rrf": 0.03842077371489136,
+    "direct": 0.03842077371489136,
+    "graph": 0.03842077371489136,
+    "rewired": 0.07688231217642982,
+    "dense_dot": 62.575889587402344
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 101,
+    "rrf": 46,
+    "direct": 46,
+    "graph": 50,
+    "rewired": 13,
+    "dense_dot": 102
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/_format_output_str_sympy_of_all_nodes",
+   "scores": {
+    "bm25": 5.077638099438675,
+    "dense": 0.08425507694482803,
+    "rrf": 0.01622784150156413,
+    "direct": 0.01622784150156413,
+    "graph": 0.01622784150156413,
+    "rewired": 0.01622784150156413,
+    "dense_dot": 49.05791473388672
+   },
+   "ranks": {
+    "bm25": 102,
+    "dense": 127,
+    "rrf": 134,
+    "direct": 134,
+    "graph": 134,
+    "rewired": 135,
+    "dense_dot": 127
+   }
+  },
+  {
+   "id": "cgp/cartesian_graph.py/CartesianGraph/to_sympy",
+   "scores": {
+    "bm25": 17.289752187593304,
+    "dense": 0.103322334587574,
+    "rrf": 0.0430297671676982,
+    "direct": 0.0430297671676982,
+    "graph": 0.0430297671676982,
+    "rewired": 0.0430297671676982,
+    "dense_dot": 60.1931037902832
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 107,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 108
+   }
+  },
+  {
+   "id": "cgp/utils.py/__check_cache_consistency",
+   "scores": {
+    "bm25": 12.60275927876237,
+    "dense": 0.11252091825008392,
+    "rrf": 0.035661583866207575,
+    "direct": 0.035661583866207575,
+    "graph": 0.035661583866207575,
+    "rewired": 0.035661583866207575,
+    "dense_dot": 65.27998352050781
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 97,
+    "rrf": 49,
+    "direct": 49,
+    "graph": 53,
+    "rewired": 52,
+    "dense_dot": 97
+   }
+  },
+  {
+   "id": "cgp/utils.py/__compute_key_from_args",
+   "scores": {
+    "bm25": 3.2015931468494734,
+    "dense": 0.017392434179782867,
+    "rrf": 0.01172882946281961,
+    "direct": 0.01172882946281961,
+    "graph": 0.01172882946281961,
+    "rewired": 0.01172882946281961,
+    "dense_dot": 10.101191520690918
+   },
+   "ranks": {
+    "bm25": 137,
+    "dense": 193,
+    "rrf": 174,
+    "direct": 174,
+    "graph": 174,
+    "rewired": 175,
+    "dense_dot": 193
+   }
+  },
+  {
+   "id": "cgp/utils.py/__find_result_in_cache_file",
+   "scores": {
+    "bm25": 11.582609493270102,
+    "dense": 0.08408753573894501,
+    "rrf": 0.02941646682653877,
+    "direct": 0.02941646682653877,
+    "graph": 0.02941646682653877,
+    "rewired": 0.02941646682653877,
+    "dense_dot": 48.766754150390625
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 129,
+    "rrf": 63,
+    "direct": 63,
+    "graph": 67,
+    "rewired": 66,
+    "dense_dot": 129
+   }
+  },
+  {
+   "id": "cgp/utils.py/__store_new_cache_entry",
+   "scores": {
+    "bm25": 5.2015414324377325,
+    "dense": 0.06422768533229828,
+    "rrf": 0.015494568324757003,
+    "direct": 0.015494568324757003,
+    "graph": 0.015494568324757003,
+    "rewired": 0.015494568324757003,
+    "dense_dot": 37.105918884277344
+   },
+   "ranks": {
+    "bm25": 96,
+    "dense": 155,
+    "rrf": 136,
+    "direct": 136,
+    "graph": 136,
+    "rewired": 137,
+    "dense_dot": 155
+   }
+  },
+  {
+   "id": "cgp/utils.py/disk_cache",
+   "scores": {
+    "bm25": 34.52394372734504,
+    "dense": 0.10425715893507004,
+    "rrf": 0.08004926108374384,
+    "direct": 0.08004926108374384,
+    "graph": 0.08004926108374384,
+    "rewired": 0.08004926108374384,
+    "dense_dot": 60.425052642822266
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 106,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 13,
+    "rewired": 12,
+    "dense_dot": 106
+   }
+  },
+  {
+   "id": "cgp/utils.py/disk_cache/decorator",
+   "scores": {
+    "bm25": 6.880957049371665,
+    "dense": 0.0870414450764656,
+    "rrf": 0.018980848153214776,
+    "direct": 0.018980848153214776,
+    "graph": 0.018980848153214776,
+    "rewired": 0.018980848153214776,
+    "dense_dot": 50.52600860595703
+   },
+   "ranks": {
+    "bm25": 76,
+    "dense": 126,
+    "rrf": 113,
+    "direct": 113,
+    "graph": 113,
+    "rewired": 115,
+    "dense_dot": 126
+   }
+  },
+  {
+   "id": "cgp/utils.py/disk_cache/decorator/wrapper",
+   "scores": {
+    "bm25": 7.5518251016635425,
+    "dense": 0.04824493080377579,
+    "rrf": 0.018481518481518484,
+    "direct": 0.018481518481518484,
+    "graph": 0.018481518481518484,
+    "rewired": 0.018481518481518484,
+    "dense_dot": 27.994426727294922
+   },
+   "ranks": {
+    "bm25": 67,
+    "dense": 172,
+    "rrf": 115,
+    "direct": 115,
+    "graph": 115,
+    "rewired": 117,
+    "dense_dot": 172
+   }
+  },
+  {
+   "id": "cgp/utils.py/primitives_from_class_names",
+   "scores": {
+    "bm25": 9.752660615940025,
+    "dense": -0.009609746746718884,
+    "rrf": 0.021383647798742137,
+    "direct": 0.021383647798742137,
+    "graph": 0.021383647798742137,
+    "rewired": 0.021383647798742137,
+    "dense_dot": -5.588329315185547
+   },
+   "ranks": {
+    "bm25": 50,
+    "dense": 202,
+    "rrf": 101,
+    "direct": 101,
+    "graph": 101,
+    "rewired": 103,
+    "dense_dot": 202
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/__init__",
+   "scores": {
+    "bm25": 3.7945578946725673,
+    "dense": 0.12213750183582306,
+    "rrf": 0.016700473292765382,
+    "direct": 0.016700473292765382,
+    "graph": 0.016700473292765382,
+    "rewired": 0.016700473292765382,
+    "dense_dot": 71.37642669677734
+   },
+   "ranks": {
+    "bm25": 135,
+    "dense": 92,
+    "rrf": 129,
+    "direct": 129,
+    "graph": 129,
+    "rewired": 130,
+    "dense_dot": 92
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/clone",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.10689930617809296,
+    "rrf": 0.014296791703014441,
+    "direct": 0.014296791703014441,
+    "graph": 0.014296791703014441,
+    "rewired": 0.014296791703014441,
+    "dense_dot": 62.85181427001953
+   },
+   "ranks": {
+    "bm25": 171,
+    "dense": 104,
+    "rrf": 145,
+    "direct": 145,
+    "graph": 145,
+    "rewired": 146,
+    "dense_dot": 98
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/mutate",
+   "scores": {
+    "bm25": 17.314349637248103,
+    "dense": 0.406281977891922,
+    "rrf": 0.10238095238095238,
+    "direct": 0.16904761904761906,
+    "graph": 0.16904761904761906,
+    "rewired": 0.16904761904761906,
+    "dense_dot": 236.97457885742188
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 5,
+    "rrf": 7,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/randomize_genome",
+   "scores": {
+    "bm25": 1.7375913711161617,
+    "dense": 0.2238214910030365,
+    "rrf": 0.03550932568149211,
+    "direct": 0.03550932568149211,
+    "graph": 0.03550932568149211,
+    "rewired": 0.03550932568149211,
+    "dense_dot": 130.725341796875
+   },
+   "ranks": {
+    "bm25": 154,
+    "dense": 24,
+    "rrf": 50,
+    "direct": 50,
+    "graph": 54,
+    "rewired": 53,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/to_func",
+   "scores": {
+    "bm25": 2.019059819322341,
+    "dense": 0.046980537474155426,
+    "rrf": 0.01200042858673524,
+    "direct": 0.01200042858673524,
+    "graph": 0.01200042858673524,
+    "rewired": 0.01200042858673524,
+    "dense_dot": 27.48005485534668
+   },
+   "ranks": {
+    "bm25": 143,
+    "dense": 173,
+    "rrf": 168,
+    "direct": 168,
+    "graph": 168,
+    "rewired": 169,
+    "dense_dot": 173
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/to_numpy",
+   "scores": {
+    "bm25": 2.019059819322341,
+    "dense": 0.05218452960252762,
+    "rrf": 0.012240632930288103,
+    "direct": 0.012240632930288103,
+    "graph": 0.012240632930288103,
+    "rewired": 0.012240632930288103,
+    "dense_dot": 30.670001983642578
+   },
+   "ranks": {
+    "bm25": 144,
+    "dense": 164,
+    "rrf": 166,
+    "direct": 166,
+    "graph": 166,
+    "rewired": 167,
+    "dense_dot": 164
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/to_torch",
+   "scores": {
+    "bm25": 2.019059819322341,
+    "dense": 0.07750527560710907,
+    "rrf": 0.013074129459517197,
+    "direct": 0.013074129459517197,
+    "graph": 0.013074129459517197,
+    "rewired": 0.013074129459517197,
+    "dense_dot": 45.369140625
+   },
+   "ranks": {
+    "bm25": 145,
+    "dense": 141,
+    "rrf": 157,
+    "direct": 157,
+    "graph": 157,
+    "rewired": 158,
+    "dense_dot": 140
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/to_sympy",
+   "scores": {
+    "bm25": 2.0083874201207546,
+    "dense": 0.08127260208129883,
+    "rrf": 0.013354700854700854,
+    "direct": 0.013354700854700854,
+    "graph": 0.013354700854700854,
+    "rewired": 0.013354700854700854,
+    "dense_dot": 47.543670654296875
+   },
+   "ranks": {
+    "bm25": 146,
+    "dense": 134,
+    "rrf": 154,
+    "direct": 154,
+    "graph": 154,
+    "rewired": 155,
+    "dense_dot": 133
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/update_parameters_from_torch_class",
+   "scores": {
+    "bm25": 3.185356667705045,
+    "dense": 0.09063149243593216,
+    "rrf": 0.014332514332514333,
+    "direct": 0.014332514332514333,
+    "graph": 0.014332514332514333,
+    "rewired": 0.014332514332514333,
+    "dense_dot": 52.89301300048828
+   },
+   "ranks": {
+    "bm25": 138,
+    "dense": 122,
+    "rrf": 144,
+    "direct": 144,
+    "graph": 144,
+    "rewired": 145,
+    "dense_dot": 121
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/_mutate_genome",
+   "scores": {
+    "bm25": 21.291745635653086,
+    "dense": 0.43373343348503113,
+    "rrf": 0.12040133779264214,
+    "direct": 0.12040133779264214,
+    "graph": 0.1620680044593088,
+    "rewired": 0.12040133779264214,
+    "dense_dot": 251.5089569091797
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 3,
+    "rrf": 5,
+    "direct": 7,
+    "graph": 6,
+    "rewired": 7,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/_randomize_genome",
+   "scores": {
+    "bm25": 2.006171499595218,
+    "dense": 0.25524771213531494,
+    "rrf": 0.04984768762115757,
+    "direct": 0.04984768762115757,
+    "graph": 0.04984768762115757,
+    "rewired": 0.04984768762115757,
+    "dense_dot": 148.45889282226562
+   },
+   "ranks": {
+    "bm25": 147,
+    "dense": 13,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 31,
+    "rewired": 30,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/_to_func",
+   "scores": {
+    "bm25": 3.951696827721409,
+    "dense": 0.12860576808452606,
+    "rrf": 0.017716685757922873,
+    "direct": 0.017716685757922873,
+    "graph": 0.017716685757922873,
+    "rewired": 0.017716685757922873,
+    "dense_dot": 74.66402435302734
+   },
+   "ranks": {
+    "bm25": 125,
+    "dense": 87,
+    "rrf": 119,
+    "direct": 119,
+    "graph": 119,
+    "rewired": 121,
+    "dense_dot": 87
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/_to_numpy",
+   "scores": {
+    "bm25": 3.951696827721409,
+    "dense": 0.12678419053554535,
+    "rrf": 0.01745395127748069,
+    "direct": 0.01745395127748069,
+    "graph": 0.01745395127748069,
+    "rewired": 0.05591548973901915,
+    "dense_dot": 74.07412719726562
+   },
+   "ranks": {
+    "bm25": 126,
+    "dense": 89,
+    "rrf": 121,
+    "direct": 121,
+    "graph": 121,
+    "rewired": 23,
+    "dense_dot": 89
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/_to_torch",
+   "scores": {
+    "bm25": 3.9812970174568294,
+    "dense": 0.1358194649219513,
+    "rrf": 0.018271485164524214,
+    "direct": 0.018271485164524214,
+    "graph": 0.018271485164524214,
+    "rewired": 0.018271485164524214,
+    "dense_dot": 79.22908020019531
+   },
+   "ranks": {
+    "bm25": 123,
+    "dense": 83,
+    "rrf": 117,
+    "direct": 117,
+    "graph": 117,
+    "rewired": 119,
+    "dense_dot": 83
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/_to_sympy",
+   "scores": {
+    "bm25": 3.9370611754099754,
+    "dense": 0.1649230718612671,
+    "rrf": 0.020476190476190478,
+    "direct": 0.020476190476190478,
+    "graph": 0.020476190476190478,
+    "rewired": 0.020476190476190478,
+    "dense_dot": 96.00909423828125
+   },
+   "ranks": {
+    "bm25": 130,
+    "dense": 65,
+    "rrf": 107,
+    "direct": 107,
+    "graph": 107,
+    "rewired": 109,
+    "dense_dot": 64
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualBase/_update_parameters_from_torch_class",
+   "scores": {
+    "bm25": 5.1257956153105475,
+    "dense": 0.16605491936206818,
+    "rrf": 0.02297979797979798,
+    "direct": 0.02297979797979798,
+    "graph": 0.02297979797979798,
+    "rewired": 0.02297979797979798,
+    "dense_dot": 96.40128326416016
+   },
+   "ranks": {
+    "bm25": 100,
+    "dense": 62,
+    "rrf": 94,
+    "direct": 94,
+    "graph": 94,
+    "rewired": 96,
+    "dense_dot": 62
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/__init__",
+   "scores": {
+    "bm25": 6.966477083706968,
+    "dense": 0.18031325936317444,
+    "rrf": 0.02857142857142857,
+    "direct": 0.02857142857142857,
+    "graph": 0.02857142857142857,
+    "rewired": 0.02857142857142857,
+    "dense_dot": 104.76466369628906
+   },
+   "ranks": {
+    "bm25": 74,
+    "dense": 50,
+    "rrf": 65,
+    "direct": 65,
+    "graph": 68,
+    "rewired": 68,
+    "dense_dot": 49
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/__repr__",
+   "scores": {
+    "bm25": 1.9461381163379505,
+    "dense": 0.09618102759122849,
+    "rrf": 0.014419389476913638,
+    "direct": 0.014419389476913638,
+    "graph": 0.014419389476913638,
+    "rewired": 0.014419389476913638,
+    "dense_dot": 56.302894592285156
+   },
+   "ranks": {
+    "bm25": 149,
+    "dense": 113,
+    "rrf": 143,
+    "direct": 143,
+    "graph": 143,
+    "rewired": 144,
+    "dense_dot": 113
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/clone",
+   "scores": {
+    "bm25": 1.9630428790533347,
+    "dense": 0.1707795411348343,
+    "rrf": 0.021034996276991808,
+    "direct": 0.021034996276991808,
+    "graph": 0.021034996276991808,
+    "rewired": 0.021034996276991808,
+    "dense_dot": 99.81381225585938
+   },
+   "ranks": {
+    "bm25": 148,
+    "dense": 58,
+    "rrf": 104,
+    "direct": 104,
+    "graph": 104,
+    "rewired": 106,
+    "dense_dot": 57
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/mutate",
+   "scores": {
+    "bm25": 25.40178742058184,
+    "dense": 0.4179137051105499,
+    "rrf": 0.12142857142857143,
+    "direct": 0.19285714285714284,
+    "graph": 0.19285714285714284,
+    "rewired": 0.19285714285714284,
+    "dense_dot": 242.73721313476562
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 4,
+    "rrf": 4,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/randomize_genome",
+   "scores": {
+    "bm25": 2.027241699380436,
+    "dense": 0.23704349994659424,
+    "rrf": 0.04657894736842105,
+    "direct": 0.04657894736842105,
+    "graph": 0.04657894736842105,
+    "rewired": 0.04657894736842105,
+    "dense_dot": 137.792236328125
+   },
+   "ranks": {
+    "bm25": 142,
+    "dense": 15,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 34,
+    "rewired": 33,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/to_func",
+   "scores": {
+    "bm25": 3.951696827721409,
+    "dense": 0.12114249169826508,
+    "rrf": 0.01700800793707037,
+    "direct": 0.01700800793707037,
+    "graph": 0.01700800793707037,
+    "rewired": 0.01700800793707037,
+    "dense_dot": 70.33245086669922
+   },
+   "ranks": {
+    "bm25": 127,
+    "dense": 93,
+    "rrf": 125,
+    "direct": 125,
+    "graph": 125,
+    "rewired": 126,
+    "dense_dot": 93
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/to_numpy",
+   "scores": {
+    "bm25": 3.951696827721409,
+    "dense": 0.10126006603240967,
+    "rrf": 0.015443098123069612,
+    "direct": 0.015443098123069612,
+    "graph": 0.015443098123069612,
+    "rewired": 0.015443098123069612,
+    "dense_dot": 59.14628219604492
+   },
+   "ranks": {
+    "bm25": 128,
+    "dense": 112,
+    "rrf": 137,
+    "direct": 137,
+    "graph": 137,
+    "rewired": 138,
+    "dense_dot": 111
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/to_torch",
+   "scores": {
+    "bm25": 3.9812970174568294,
+    "dense": 0.13803404569625854,
+    "rrf": 0.018451697556175168,
+    "direct": 0.018451697556175168,
+    "graph": 0.018451697556175168,
+    "rewired": 0.018451697556175168,
+    "dense_dot": 80.620849609375
+   },
+   "ranks": {
+    "bm25": 124,
+    "dense": 81,
+    "rrf": 116,
+    "direct": 116,
+    "graph": 116,
+    "rewired": 118,
+    "dense_dot": 81
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/to_sympy",
+   "scores": {
+    "bm25": 3.9081127103248194,
+    "dense": 0.16247646510601044,
+    "rrf": 0.019592198581560284,
+    "direct": 0.019592198581560284,
+    "graph": 0.019592198581560284,
+    "rewired": 0.019592198581560284,
+    "dense_dot": 94.54217529296875
+   },
+   "ranks": {
+    "bm25": 131,
+    "dense": 70,
+    "rrf": 110,
+    "direct": 110,
+    "graph": 110,
+    "rewired": 112,
+    "dense_dot": 69
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualSingleGenome/update_parameters_from_torch_class",
+   "scores": {
+    "bm25": 4.8817141204918695,
+    "dense": 0.16189232468605042,
+    "rrf": 0.02104133118625872,
+    "direct": 0.02104133118625872,
+    "graph": 0.02104133118625872,
+    "rewired": 0.02104133118625872,
+    "dense_dot": 94.47140502929688
+   },
+   "ranks": {
+    "bm25": 105,
+    "dense": 71,
+    "rrf": 103,
+    "direct": 103,
+    "graph": 103,
+    "rewired": 105,
+    "dense_dot": 71
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/__init__",
+   "scores": {
+    "bm25": 7.113792284298212,
+    "dense": 0.16523092985153198,
+    "rrf": 0.025708635464733027,
+    "direct": 0.025708635464733027,
+    "graph": 0.025708635464733027,
+    "rewired": 0.025708635464733027,
+    "dense_dot": 96.31924438476562
+   },
+   "ranks": {
+    "bm25": 72,
+    "dense": 64,
+    "rrf": 79,
+    "direct": 79,
+    "graph": 80,
+    "rewired": 82,
+    "dense_dot": 63
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/clone",
+   "scores": {
+    "bm25": 4.355157028544538,
+    "dense": 0.18366365134716034,
+    "rrf": 0.025417875397154302,
+    "direct": 0.025417875397154302,
+    "graph": 0.025417875397154302,
+    "rewired": 0.025417875397154302,
+    "dense_dot": 107.25843811035156
+   },
+   "ranks": {
+    "bm25": 117,
+    "dense": 47,
+    "rrf": 81,
+    "direct": 81,
+    "graph": 82,
+    "rewired": 84,
+    "dense_dot": 47
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/mutate",
+   "scores": {
+    "bm25": 27.38907911009722,
+    "dense": 0.4428578317165375,
+    "rrf": 0.14583333333333331,
+    "direct": 0.22916666666666663,
+    "graph": 0.22916666666666663,
+    "rewired": 0.22916666666666663,
+    "dense_dot": 257.5235290527344
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 2,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/randomize_genome",
+   "scores": {
+    "bm25": 4.494641965534898,
+    "dense": 0.2459479123353958,
+    "rrf": 0.049666666666666665,
+    "direct": 0.049666666666666665,
+    "graph": 0.049666666666666665,
+    "rewired": 0.049666666666666665,
+    "dense_dot": 143.40789794921875
+   },
+   "ranks": {
+    "bm25": 115,
+    "dense": 14,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 32,
+    "rewired": 31,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/to_func",
+   "scores": {
+    "bm25": 6.403099790388498,
+    "dense": 0.15191194415092468,
+    "rrf": 0.0227390180878553,
+    "direct": 0.0227390180878553,
+    "graph": 0.0227390180878553,
+    "rewired": 0.0227390180878553,
+    "dense_dot": 88.01243591308594
+   },
+   "ranks": {
+    "bm25": 80,
+    "dense": 76,
+    "rrf": 96,
+    "direct": 96,
+    "graph": 96,
+    "rewired": 98,
+    "dense_dot": 76
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/to_numpy",
+   "scores": {
+    "bm25": 6.403099790388498,
+    "dense": 0.13703200221061707,
+    "rrf": 0.021858576206402296,
+    "direct": 0.021858576206402296,
+    "graph": 0.021858576206402296,
+    "rewired": 0.021858576206402296,
+    "dense_dot": 79.79707336425781
+   },
+   "ranks": {
+    "bm25": 81,
+    "dense": 82,
+    "rrf": 97,
+    "direct": 97,
+    "graph": 97,
+    "rewired": 99,
+    "dense_dot": 82
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/to_torch",
+   "scores": {
+    "bm25": 6.471536664906695,
+    "dense": 0.16288161277770996,
+    "rrf": 0.024056467876692595,
+    "direct": 0.024056467876692595,
+    "graph": 0.024056467876692595,
+    "rewired": 0.024056467876692595,
+    "dense_dot": 94.86308288574219
+   },
+   "ranks": {
+    "bm25": 79,
+    "dense": 68,
+    "rrf": 87,
+    "direct": 87,
+    "graph": 88,
+    "rewired": 90,
+    "dense_dot": 66
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/to_sympy",
+   "scores": {
+    "bm25": 6.303488464240441,
+    "dense": 0.17530763149261475,
+    "rrf": 0.026137303556658397,
+    "direct": 0.026137303556658397,
+    "graph": 0.026137303556658397,
+    "rewired": 0.026137303556658397,
+    "dense_dot": 101.78057861328125
+   },
+   "ranks": {
+    "bm25": 83,
+    "dense": 55,
+    "rrf": 77,
+    "direct": 77,
+    "graph": 78,
+    "rewired": 80,
+    "dense_dot": 55
+   }
+  },
+  {
+   "id": "cgp/individual.py/IndividualMultiGenome/update_parameters_from_torch_class",
+   "scores": {
+    "bm25": 6.803387812449369,
+    "dense": 0.17831182479858398,
+    "rrf": 0.027623285131627734,
+    "direct": 0.027623285131627734,
+    "graph": 0.027623285131627734,
+    "rewired": 0.027623285131627734,
+    "dense_dot": 104.05009460449219
+   },
+   "ranks": {
+    "bm25": 77,
+    "dense": 52,
+    "rrf": 69,
+    "direct": 69,
+    "graph": 72,
+    "rewired": 72,
+    "dense_dot": 51
+   }
+  },
+  {
+   "id": "cgp/node_validation.py/_create_genome",
+   "scores": {
+    "bm25": 10.92059117112613,
+    "dense": 0.1852644681930542,
+    "rrf": 0.03785714285714285,
+    "direct": 0.03785714285714285,
+    "graph": 0.03785714285714285,
+    "rewired": 0.03785714285714285,
+    "dense_dot": 107.56175994873047
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 46,
+    "rrf": 47,
+    "direct": 47,
+    "graph": 51,
+    "rewired": 50,
+    "dense_dot": 46
+   }
+  },
+  {
+   "id": "cgp/node_validation.py/check_to_func",
+   "scores": {
+    "bm25": 6.13744460951672,
+    "dense": 0.17608635127544403,
+    "rrf": 0.026399331662489554,
+    "direct": 0.026399331662489554,
+    "graph": 0.026399331662489554,
+    "rewired": 0.026399331662489554,
+    "dense_dot": 101.97545623779297
+   },
+   "ranks": {
+    "bm25": 85,
+    "dense": 53,
+    "rrf": 75,
+    "direct": 75,
+    "graph": 76,
+    "rewired": 78,
+    "dense_dot": 54
+   }
+  },
+  {
+   "id": "cgp/node_validation.py/check_to_numpy",
+   "scores": {
+    "bm25": 6.08133277110386,
+    "dense": 0.16532261669635773,
+    "rrf": 0.024115296803652965,
+    "direct": 0.024115296803652965,
+    "graph": 0.024115296803652965,
+    "rewired": 0.024115296803652965,
+    "dense_dot": 95.91112518310547
+   },
+   "ranks": {
+    "bm25": 86,
+    "dense": 63,
+    "rrf": 86,
+    "direct": 86,
+    "graph": 87,
+    "rewired": 89,
+    "dense_dot": 65
+   }
+  },
+  {
+   "id": "cgp/node_validation.py/check_to_torch",
+   "scores": {
+    "bm25": 5.919991833534341,
+    "dense": 0.17581142485141754,
+    "rrf": 0.025726010101010104,
+    "direct": 0.025726010101010104,
+    "graph": 0.025726010101010104,
+    "rewired": 0.025726010101010104,
+    "dense_dot": 102.01226806640625
+   },
+   "ranks": {
+    "bm25": 89,
+    "dense": 54,
+    "rrf": 78,
+    "direct": 78,
+    "graph": 79,
+    "rewired": 81,
+    "dense_dot": 53
+   }
+  },
+  {
+   "id": "cgp/node_validation.py/check_to_sympy",
+   "scores": {
+    "bm25": 5.894068390971258,
+    "dense": 0.19533462822437286,
+    "rrf": 0.03040816326530612,
+    "direct": 0.03040816326530612,
+    "graph": 0.03040816326530612,
+    "rewired": 0.03040816326530612,
+    "dense_dot": 113.32406616210938
+   },
+   "ranks": {
+    "bm25": 90,
+    "dense": 39,
+    "rrf": 59,
+    "direct": 59,
+    "graph": 63,
+    "rewired": 62,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/__init__",
+   "scores": {
+    "bm25": 37.64970119440572,
+    "dense": 0.3911668658256531,
+    "rrf": 0.14583333333333331,
+    "direct": 0.14583333333333331,
+    "graph": 0.14583333333333331,
+    "rewired": 0.14583333333333331,
+    "dense_dot": 227.16131591796875
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 6,
+    "rrf": 3,
+    "direct": 6,
+    "graph": 7,
+    "rewired": 6,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/champion",
+   "scores": {
+    "bm25": 4.830272202345515,
+    "dense": 0.007698921486735344,
+    "rrf": 0.013354700854700856,
+    "direct": 0.013354700854700856,
+    "graph": 0.013354700854700856,
+    "rewired": 0.013354700854700856,
+    "dense_dot": 4.5004377365112305
+   },
+   "ranks": {
+    "bm25": 107,
+    "dense": 198,
+    "rrf": 153,
+    "direct": 153,
+    "graph": 153,
+    "rewired": 154,
+    "dense_dot": 198
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/parents",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.16083630919456482,
+    "rrf": 0.016979810946434824,
+    "direct": 0.016979810946434824,
+    "graph": 0.016979810946434824,
+    "rewired": 0.016979810946434824,
+    "dense_dot": 93.46939086914062
+   },
+   "ranks": {
+    "bm25": 199,
+    "dense": 72,
+    "rrf": 126,
+    "direct": 126,
+    "graph": 126,
+    "rewired": 127,
+    "dense_dot": 72
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/__getitem__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.037773746997117996,
+    "rrf": 0.010098697598697599,
+    "direct": 0.010098697598697599,
+    "graph": 0.010098697598697599,
+    "rewired": 0.010098697598697599,
+    "dense_dot": 22.137619018554688
+   },
+   "ranks": {
+    "bm25": 198,
+    "dense": 179,
+    "rrf": 200,
+    "direct": 200,
+    "graph": 200,
+    "rewired": 201,
+    "dense_dot": 179
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/_generate_random_parent_population",
+   "scores": {
+    "bm25": 2.4014476586244395,
+    "dense": 0.21054308116436005,
+    "rrf": 0.030432040365815198,
+    "direct": 0.030432040365815198,
+    "graph": 0.030432040365815198,
+    "rewired": 0.030432040365815198,
+    "dense_dot": 122.48435974121094
+   },
+   "ranks": {
+    "bm25": 141,
+    "dense": 32,
+    "rrf": 58,
+    "direct": 58,
+    "graph": 62,
+    "rewired": 61,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/get_idx_for_new_individual",
+   "scores": {
+    "bm25": 1.6454386404054928,
+    "dense": 0.16041703522205353,
+    "rrf": 0.01789278585685771,
+    "direct": 0.01789278585685771,
+    "graph": 0.01789278585685771,
+    "rewired": 0.01789278585685771,
+    "dense_dot": 93.33980560302734
+   },
+   "ranks": {
+    "bm25": 157,
+    "dense": 74,
+    "rrf": 118,
+    "direct": 118,
+    "graph": 118,
+    "rewired": 120,
+    "dense_dot": 73
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/generate_random_individual",
+   "scores": {
+    "bm25": 12.471587599691379,
+    "dense": 0.2240753322839737,
+    "rrf": 0.055944055944055944,
+    "direct": 0.055944055944055944,
+    "graph": 0.055944055944055944,
+    "rewired": 0.055944055944055944,
+    "dense_dot": 130.01966857910156
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 23,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 24,
+    "rewired": 22,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/mutate",
+   "scores": {
+    "bm25": 25.91355261770402,
+    "dense": 0.3177033066749573,
+    "rrf": 0.10818713450292397,
+    "direct": 0.1851102114260009,
+    "graph": 0.1851102114260009,
+    "rewired": 0.1851102114260009,
+    "dense_dot": 184.84857177734375
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 8,
+    "rrf": 6,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "cgp/population.py/Population/fitness_parents",
+   "scores": {
+    "bm25": 7.2217512316644425,
+    "dense": 0.03088930808007717,
+    "rrf": 0.017527026162604747,
+    "direct": 0.017527026162604747,
+    "graph": 0.017527026162604747,
+    "rewired": 0.017527026162604747,
+    "dense_dot": 18.031352996826172
+   },
+   "ranks": {
+    "bm25": 71,
+    "dense": 183,
+    "rrf": 120,
+    "direct": 120,
+    "graph": 120,
+    "rewired": 122,
+    "dense_dot": 183
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/__init__",
+   "scores": {
+    "bm25": 24.933993448675015,
+    "dense": 0.2790355086326599,
+    "rrf": 0.09307359307359307,
+    "direct": 0.09307359307359307,
+    "graph": 0.09307359307359307,
+    "rewired": 0.09307359307359307,
+    "dense_dot": 162.30613708496094
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 12,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 11,
+    "rewired": 9,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/__getitem__",
+   "scores": {
+    "bm25": 8.419555512021205,
+    "dense": 0.12548895180225372,
+    "rrf": 0.024705882352941175,
+    "direct": 0.024705882352941175,
+    "graph": 0.024705882352941175,
+    "rewired": 0.024705882352941175,
+    "dense_dot": 73.14885711669922
+   },
+   "ranks": {
+    "bm25": 58,
+    "dense": 90,
+    "rrf": 83,
+    "direct": 83,
+    "graph": 84,
+    "rewired": 86,
+    "dense_dot": 90
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/__setitem__",
+   "scores": {
+    "bm25": 1.8677302845817045,
+    "dense": 0.12829667329788208,
+    "rrf": 0.016376921138825898,
+    "direct": 0.016376921138825898,
+    "graph": 0.016376921138825898,
+    "rewired": 0.016376921138825898,
+    "dense_dot": 74.56539916992188
+   },
+   "ranks": {
+    "bm25": 152,
+    "dense": 88,
+    "rrf": 132,
+    "direct": 132,
+    "graph": 132,
+    "rewired": 133,
+    "dense_dot": 88
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/dna",
+   "scores": {
+    "bm25": 1.8677302845817045,
+    "dense": 0.16966326534748077,
+    "rrf": 0.02042068361086766,
+    "direct": 0.02042068361086766,
+    "graph": 0.02042068361086766,
+    "rewired": 0.02042068361086766,
+    "dense_dot": 98.892333984375
+   },
+   "ranks": {
+    "bm25": 153,
+    "dense": 60,
+    "rrf": 108,
+    "direct": 108,
+    "graph": 108,
+    "rewired": 110,
+    "dense_dot": 59
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_n_hidden",
+   "scores": {
+    "bm25": 1.9186013594380744,
+    "dense": 0.2115926742553711,
+    "rrf": 0.030640243902439024,
+    "direct": 0.030640243902439024,
+    "graph": 0.030640243902439024,
+    "rewired": 0.030640243902439024,
+    "dense_dot": 122.69697570800781
+   },
+   "ranks": {
+    "bm25": 150,
+    "dense": 31,
+    "rrf": 57,
+    "direct": 57,
+    "graph": 61,
+    "rewired": 60,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_n_regions",
+   "scores": {
+    "bm25": 1.8964640627655667,
+    "dense": 0.18607552349567413,
+    "rrf": 0.024729698642742118,
+    "direct": 0.024729698642742118,
+    "graph": 0.024729698642742118,
+    "rewired": 0.024729698642742118,
+    "dense_dot": 108.03276062011719
+   },
+   "ranks": {
+    "bm25": 151,
+    "dense": 44,
+    "rrf": 82,
+    "direct": 82,
+    "graph": 83,
+    "rewired": 85,
+    "dense_dot": 44
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_n_genes",
+   "scores": {
+    "bm25": 7.513065994145548,
+    "dense": 0.1939132958650589,
+    "rrf": 0.03282051282051282,
+    "direct": 0.03282051282051282,
+    "graph": 0.03282051282051282,
+    "rewired": 0.03282051282051282,
+    "dense_dot": 112.79258728027344
+   },
+   "ranks": {
+    "bm25": 68,
+    "dense": 40,
+    "rrf": 52,
+    "direct": 52,
+    "graph": 56,
+    "rewired": 55,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/__repr__",
+   "scores": {
+    "bm25": 4.557614068652235,
+    "dense": 0.10300757735967636,
+    "rrf": 0.016533442645350824,
+    "direct": 0.016533442645350824,
+    "graph": 0.016533442645350824,
+    "rewired": 0.016533442645350824,
+    "dense_dot": 60.172401428222656
+   },
+   "ranks": {
+    "bm25": 113,
+    "dense": 109,
+    "rrf": 131,
+    "direct": 131,
+    "graph": 131,
+    "rewired": 132,
+    "dense_dot": 109
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_create_input_region",
+   "scores": {
+    "bm25": 11.88511013581146,
+    "dense": 0.20675019919872284,
+    "rrf": 0.046031746031746035,
+    "direct": 0.046031746031746035,
+    "graph": 0.046031746031746035,
+    "rewired": 0.046031746031746035,
+    "dense_dot": 119.86907958984375
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 35,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 35,
+    "rewired": 34,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_create_random_hidden_region",
+   "scores": {
+    "bm25": 4.6617159402693265,
+    "dense": 0.22750073671340942,
+    "rrf": 0.041666666666666664,
+    "direct": 0.041666666666666664,
+    "graph": 0.041666666666666664,
+    "rewired": 0.041666666666666664,
+    "dense_dot": 132.04058837890625
+   },
+   "ranks": {
+    "bm25": 110,
+    "dense": 20,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 43,
+    "rewired": 43,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_create_random_output_region",
+   "scores": {
+    "bm25": 9.817793003650147,
+    "dense": 0.23632946610450745,
+    "rrf": 0.05541069100391134,
+    "direct": 0.05541069100391134,
+    "graph": 0.05541069100391134,
+    "rewired": 0.05541069100391134,
+    "dense_dot": 137.29002380371094
+   },
+   "ranks": {
+    "bm25": 49,
+    "dense": 16,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 25,
+    "rewired": 24,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/randomize",
+   "scores": {
+    "bm25": 12.122382535830829,
+    "dense": 0.28811922669410706,
+    "rrf": 0.07200929152148663,
+    "direct": 0.07200929152148663,
+    "graph": 0.07200929152148663,
+    "rewired": 0.11367595818815329,
+    "dense_dot": 167.5785369873047
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 11,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 19,
+    "rewired": 8,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_permissible_inputs",
+   "scores": {
+    "bm25": 8.941361597799293,
+    "dense": 0.2289365977048874,
+    "rrf": 0.050107758620689655,
+    "direct": 0.050107758620689655,
+    "graph": 0.050107758620689655,
+    "rewired": 0.050107758620689655,
+    "dense_dot": 133.18931579589844
+   },
+   "ranks": {
+    "bm25": 54,
+    "dense": 19,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 30,
+    "rewired": 29,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_permissible_inputs_for_output_region",
+   "scores": {
+    "bm25": 3.4188815819930065,
+    "dense": 0.21464890241622925,
+    "rrf": 0.03184931506849315,
+    "direct": 0.03184931506849315,
+    "graph": 0.03184931506849315,
+    "rewired": 0.03184931506849315,
+    "dense_dot": 124.45653533935547
+   },
+   "ranks": {
+    "bm25": 136,
+    "dense": 30,
+    "rrf": 54,
+    "direct": 54,
+    "graph": 58,
+    "rewired": 57,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_validate_dna",
+   "scores": {
+    "bm25": 12.943826293166925,
+    "dense": 0.23613831400871277,
+    "rrf": 0.06406406406406406,
+    "direct": 0.06406406406406406,
+    "graph": 0.06406406406406406,
+    "rewired": 0.06406406406406406,
+    "dense_dot": 137.4657745361328
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 17,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 22,
+    "rewired": 18,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_hidden_column_idx",
+   "scores": {
+    "bm25": 1.5957349809596892,
+    "dense": 0.2300233393907547,
+    "rrf": 0.041666666666666664,
+    "direct": 0.041666666666666664,
+    "graph": 0.041666666666666664,
+    "rewired": 0.041666666666666664,
+    "dense_dot": 133.438720703125
+   },
+   "ranks": {
+    "bm25": 158,
+    "dense": 18,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 44,
+    "rewired": 44,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/iter_input_regions",
+   "scores": {
+    "bm25": 5.335544081525132,
+    "dense": 0.15920093655586243,
+    "rrf": 0.021380090497737557,
+    "direct": 0.021380090497737557,
+    "graph": 0.021380090497737557,
+    "rewired": 0.021380090497737557,
+    "dense_dot": 92.38349914550781
+   },
+   "ranks": {
+    "bm25": 94,
+    "dense": 75,
+    "rrf": 102,
+    "direct": 102,
+    "graph": 102,
+    "rewired": 104,
+    "dense_dot": 75
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/iter_hidden_regions",
+   "scores": {
+    "bm25": 5.223545951973841,
+    "dense": 0.18050923943519592,
+    "rrf": 0.026472962066182406,
+    "direct": 0.026472962066182406,
+    "graph": 0.026472962066182406,
+    "rewired": 0.026472962066182406,
+    "dense_dot": 104.54332733154297
+   },
+   "ranks": {
+    "bm25": 95,
+    "dense": 49,
+    "rrf": 74,
+    "direct": 74,
+    "graph": 75,
+    "rewired": 77,
+    "dense_dot": 50
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/iter_output_regions",
+   "scores": {
+    "bm25": 5.14277165995883,
+    "dense": 0.16980576515197754,
+    "rrf": 0.023752012882447666,
+    "direct": 0.023752012882447666,
+    "graph": 0.023752012882447666,
+    "rewired": 0.023752012882447666,
+    "dense_dot": 98.53240966796875
+   },
+   "ranks": {
+    "bm25": 98,
+    "dense": 59,
+    "rrf": 89,
+    "direct": 89,
+    "graph": 90,
+    "rewired": 92,
+    "dense_dot": 60
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_gene_in_input_region",
+   "scores": {
+    "bm25": 6.040559049986268,
+    "dense": 0.19814473390579224,
+    "rrf": 0.031585874095196316,
+    "direct": 0.031585874095196316,
+    "graph": 0.031585874095196316,
+    "rewired": 0.031585874095196316,
+    "dense_dot": 115.0288314819336
+   },
+   "ranks": {
+    "bm25": 87,
+    "dense": 37,
+    "rrf": 55,
+    "direct": 55,
+    "graph": 59,
+    "rewired": 58,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_gene_in_hidden_region",
+   "scores": {
+    "bm25": 5.678437900493423,
+    "dense": 0.2030344307422638,
+    "rrf": 0.03154305200341006,
+    "direct": 0.03154305200341006,
+    "graph": 0.03154305200341006,
+    "rewired": 0.03154305200341006,
+    "dense_dot": 117.63587188720703
+   },
+   "ranks": {
+    "bm25": 92,
+    "dense": 36,
+    "rrf": 56,
+    "direct": 56,
+    "graph": 60,
+    "rewired": 59,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_gene_in_output_region",
+   "scores": {
+    "bm25": 5.95906220686304,
+    "dense": 0.21714450418949127,
+    "rrf": 0.03651987110633727,
+    "direct": 0.03651987110633727,
+    "graph": 0.03651987110633727,
+    "rewired": 0.03651987110633727,
+    "dense_dot": 125.84149169921875
+   },
+   "ranks": {
+    "bm25": 88,
+    "dense": 28,
+    "rrf": 48,
+    "direct": 48,
+    "graph": 52,
+    "rewired": 51,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_input_region",
+   "scores": {
+    "bm25": 4.663078080387022,
+    "dense": 0.17213639616966248,
+    "rrf": 0.023554876496052965,
+    "direct": 0.023554876496052965,
+    "graph": 0.06900942195059842,
+    "rewired": 0.0568882098293863,
+    "dense_dot": 100.07757568359375
+   },
+   "ranks": {
+    "bm25": 109,
+    "dense": 56,
+    "rrf": 91,
+    "direct": 91,
+    "graph": 21,
+    "rewired": 21,
+    "dense_dot": 56
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_hidden_region",
+   "scores": {
+    "bm25": 4.477216999924393,
+    "dense": 0.1880621463060379,
+    "rrf": 0.027167277167277168,
+    "direct": 0.027167277167277168,
+    "graph": 0.07262182262182262,
+    "rewired": 0.027167277167277168,
+    "dense_dot": 109.11607360839844
+   },
+   "ranks": {
+    "bm25": 116,
+    "dense": 42,
+    "rrf": 71,
+    "direct": 71,
+    "graph": 17,
+    "rewired": 74,
+    "dense_dot": 42
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_output_region",
+   "scores": {
+    "bm25": 4.599396598741183,
+    "dense": 0.18783654272556305,
+    "rrf": 0.027064645839777295,
+    "direct": 0.027064645839777295,
+    "graph": 0.07251919129432274,
+    "rewired": 0.027064645839777295,
+    "dense_dot": 109.11312866210938
+   },
+   "ranks": {
+    "bm25": 112,
+    "dense": 43,
+    "rrf": 72,
+    "direct": 72,
+    "graph": 18,
+    "rewired": 75,
+    "dense_dot": 43
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_function_gene",
+   "scores": {
+    "bm25": 4.6204253867546585,
+    "dense": 0.16277429461479187,
+    "rrf": 0.02092269065801862,
+    "direct": 0.02092269065801862,
+    "graph": 0.02092269065801862,
+    "rewired": 0.02092269065801862,
+    "dense_dot": 94.47844696044922
+   },
+   "ranks": {
+    "bm25": 111,
+    "dense": 69,
+    "rrf": 105,
+    "direct": 105,
+    "graph": 105,
+    "rewired": 107,
+    "dense_dot": 70
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_is_active_input_gene",
+   "scores": {
+    "bm25": 5.877318822797804,
+    "dense": 0.20741327106952667,
+    "rrf": 0.03262826282628263,
+    "direct": 0.03262826282628263,
+    "graph": 0.03262826282628263,
+    "rewired": 0.03262826282628263,
+    "dense_dot": 120.42162322998047
+   },
+   "ranks": {
+    "bm25": 91,
+    "dense": 34,
+    "rrf": 53,
+    "direct": 53,
+    "graph": 57,
+    "rewired": 56,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/mutate",
+   "scores": {
+    "bm25": 41.681624293432165,
+    "dense": 0.488362193107605,
+    "rrf": 0.18181818181818182,
+    "direct": 0.2727272727272727,
+    "graph": 0.2727272727272727,
+    "rewired": 0.2727272727272727,
+    "dense_dot": 283.39556884765625
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/mutate/count_dna_differences",
+   "scores": {
+    "bm25": 7.56961079136957,
+    "dense": 0.2993052899837494,
+    "rrf": 0.06315789473684211,
+    "direct": 0.06315789473684211,
+    "graph": 0.10861244019138756,
+    "rewired": 0.06315789473684211,
+    "dense_dot": 174.50985717773438
+   },
+   "ranks": {
+    "bm25": 66,
+    "dense": 10,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 10,
+    "rewired": 19,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_mutate_output_region",
+   "scores": {
+    "bm25": 11.76413911837295,
+    "dense": 0.304201602935791,
+    "rrf": 0.07535885167464115,
+    "direct": 0.07535885167464115,
+    "graph": 0.12081339712918661,
+    "rewired": 0.07535885167464115,
+    "dense_dot": 176.4431610107422
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 9,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 9,
+    "rewired": 14,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_mutate_hidden_region",
+   "scores": {
+    "bm25": 13.877267437875062,
+    "dense": 0.3451404273509979,
+    "rrf": 0.08660130718954248,
+    "direct": 0.08660130718954248,
+    "graph": 0.13205585264408792,
+    "rewired": 0.08660130718954248,
+    "dense_dot": 200.01853942871094
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 7,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 8,
+    "rewired": 11,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/primitives",
+   "scores": {
+    "bm25": 6.151847957906754,
+    "dense": 0.0779295489192009,
+    "rrf": 0.01730496453900709,
+    "direct": 0.01730496453900709,
+    "graph": 0.01730496453900709,
+    "rewired": 0.01730496453900709,
+    "dense_dot": 45.301605224609375
+   },
+   "ranks": {
+    "bm25": 84,
+    "dense": 140,
+    "rrf": 122,
+    "direct": 122,
+    "graph": 122,
+    "rewired": 123,
+    "dense_dot": 141
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/clone",
+   "scores": {
+    "bm25": 7.623123256313894,
+    "dense": 0.21528799831867218,
+    "rrf": 0.038974358974358976,
+    "direct": 0.038974358974358976,
+    "graph": 0.038974358974358976,
+    "rewired": 0.038974358974358976,
+    "dense_dot": 125.47502899169922
+   },
+   "ranks": {
+    "bm25": 65,
+    "dense": 29,
+    "rrf": 43,
+    "direct": 43,
+    "graph": 47,
+    "rewired": 47,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/update_parameters_from_torch_class",
+   "scores": {
+    "bm25": 13.929017693953606,
+    "dense": 0.19579201936721802,
+    "rrf": 0.0494047619047619,
+    "direct": 0.0494047619047619,
+    "graph": 0.0494047619047619,
+    "rewired": 0.0494047619047619,
+    "dense_dot": 113.48277282714844
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 38,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 33,
+    "rewired": 32,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "cgp/genome.py/Genome/_initialize_unkown_parameters",
+   "scores": {
+    "bm25": 9.71415638164939,
+    "dense": 0.163433238863945,
+    "rrf": 0.029551337359792925,
+    "direct": 0.029551337359792925,
+    "graph": 0.029551337359792925,
+    "rewired": 0.029551337359792925,
+    "dense_dot": 94.78703308105469
+   },
+   "ranks": {
+    "bm25": 51,
+    "dense": 66,
+    "rrf": 62,
+    "direct": 62,
+    "graph": 66,
+    "rewired": 65,
+    "dense_dot": 67
+   }
+  },
+  {
+   "id": "cgp/local_search/gradient_based.py/gradient_based",
+   "scores": {
+    "bm25": 20.60931000296762,
+    "dense": 0.14736708998680115,
+    "rrf": 0.053030303030303025,
+    "direct": 0.053030303030303025,
+    "graph": 0.053030303030303025,
+    "rewired": 0.053030303030303025,
+    "dense_dot": 85.45226287841797
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 78,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 27,
+    "rewired": 26,
+    "dense_dot": 77
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/__init__",
+   "scores": {
+    "bm25": 14.298898456949539,
+    "dense": 0.16298311948776245,
+    "rrf": 0.04423701298701299,
+    "direct": 0.04423701298701299,
+    "graph": 0.04423701298701299,
+    "rewired": 0.04423701298701299,
+    "dense_dot": 94.75198364257812
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 67,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 39,
+    "rewired": 38,
+    "dense_dot": 68
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/initialize_fitness_parents",
+   "scores": {
+    "bm25": 22.711157570464124,
+    "dense": 0.10154273360967636,
+    "rrf": 0.05371900826446281,
+    "direct": 0.05371900826446281,
+    "graph": 0.05371900826446281,
+    "rewired": 0.05371900826446281,
+    "dense_dot": 58.95185852050781
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 111,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 26,
+    "rewired": 25,
+    "dense_dot": 112
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/step",
+   "scores": {
+    "bm25": 37.50707083605118,
+    "dense": 0.16060738265514374,
+    "rrf": 0.08897126969416126,
+    "direct": 0.08897126969416126,
+    "graph": 0.08897126969416126,
+    "rewired": 0.08897126969416126,
+    "dense_dot": 92.916015625
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 73,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 12,
+    "rewired": 10,
+    "dense_dot": 74
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_create_new_offspring_generation",
+   "scores": {
+    "bm25": 8.93295214289833,
+    "dense": 0.2096613496541977,
+    "rrf": 0.03864042933810376,
+    "direct": 0.03864042933810376,
+    "graph": 0.03864042933810376,
+    "rewired": 0.03864042933810376,
+    "dense_dot": 121.37727355957031
+   },
+   "ranks": {
+    "bm25": 55,
+    "dense": 33,
+    "rrf": 45,
+    "direct": 45,
+    "graph": 49,
+    "rewired": 49,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_compute_fitness",
+   "scores": {
+    "bm25": 8.692450565628826,
+    "dense": 0.10469087213277817,
+    "rrf": 0.0236210253082414,
+    "direct": 0.0236210253082414,
+    "graph": 0.0236210253082414,
+    "rewired": 0.0236210253082414,
+    "dense_dot": 60.80463409423828
+   },
+   "ranks": {
+    "bm25": 57,
+    "dense": 105,
+    "rrf": 90,
+    "direct": 90,
+    "graph": 91,
+    "rewired": 93,
+    "dense_dot": 105
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_sort",
+   "scores": {
+    "bm25": 7.7014357696494224,
+    "dense": 0.09207087755203247,
+    "rrf": 0.021450568121482425,
+    "direct": 0.021450568121482425,
+    "graph": 0.021450568121482425,
+    "rewired": 0.021450568121482425,
+    "dense_dot": 53.42634201049805
+   },
+   "ranks": {
+    "bm25": 63,
+    "dense": 119,
+    "rrf": 100,
+    "direct": 100,
+    "graph": 100,
+    "rewired": 102,
+    "dense_dot": 119
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_sort/sort_func",
+   "scores": {
+    "bm25": 8.36594790703926,
+    "dense": 0.10699359327554703,
+    "rrf": 0.023135271807838177,
+    "direct": 0.023135271807838177,
+    "graph": 0.023135271807838177,
+    "rewired": 0.023135271807838177,
+    "dense_dot": 62.177940368652344
+   },
+   "ranks": {
+    "bm25": 60,
+    "dense": 103,
+    "rrf": 92,
+    "direct": 92,
+    "graph": 92,
+    "rewired": 94,
+    "dense_dot": 104
+   }
+  },
+  {
+   "id": "cgp/ea/mu_plus_lambda.py/MuPlusLambda/_create_new_parent_population",
+   "scores": {
+    "bm25": 7.35075169336976,
+    "dense": 0.16708329319953918,
+    "rrf": 0.026742734890354787,
+    "direct": 0.026742734890354787,
+    "graph": 0.026742734890354787,
+    "rewired": 0.026742734890354787,
+    "dense_dot": 97.05427551269531
+   },
+   "ranks": {
+    "bm25": 69,
+    "dense": 61,
+    "rrf": 73,
+    "direct": 73,
+    "graph": 74,
+    "rewired": 76,
+    "dense_dot": 61
+   }
+  }
+ ]
+}

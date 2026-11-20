@@ -1,0 +1,10 @@
+{"instance_id": "sympy__sympy-16792", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-18211", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-21379", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-18189", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-24661", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-24443", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": "--- a/sympy/combinatorics/homomorphisms.py\n+++ b/sympy/combinatorics/homomorphisms.py\n@@ -333,10 +333,7 @@\n             # both indices\n             while i < len(r):\n                 power = r_arr[j][1]\n-                if isinstance(domain, PermutationGroup) and r[i] in gens:\n-                    s = domain.generators[gens.index(r[i])]\n-                else:\n-                    s = r[i]\n+                s = r[i]\n                 if s in images:\n                     w = w*images[s]**power\n                 elif s**-1 in images:\n"}
+{"instance_id": "sympy__sympy-20916", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-19954", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-20590", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}
+{"instance_id": "sympy__sympy-19783", "model_name_or_path": "r8-qwen38-27b-pointer", "model_patch": ""}

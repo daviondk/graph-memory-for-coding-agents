@@ -1,0 +1,131 @@
+{
+ "base": {
+  "applied": true,
+  "reason": "",
+  "diff": {},
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_basic.py::test_immutable"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/core/tests/test_basic.py::test_immutable"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 4.625,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_basic.py::test_subs_with_unicode_symbols",
+     "sympy/core/tests/test_basic.py::test_atomic",
+     "sympy/core/tests/test_basic.py::test_as_dummy",
+     "sympy/core/tests/test_basic.py::test_rewrite",
+     "sympy/core/tests/test_basic.py::test_has",
+     "sympy/core/tests/test_basic.py::test_atoms",
+     "sympy/core/tests/test_basic.py::test_S",
+     "sympy/core/tests/test_basic.py::test_matches_basic",
+     "sympy/core/tests/test_basic.py::test_free_symbols_empty",
+     "sympy/core/tests/test_basic.py::test_literal_evalf_is_number_is_zero_is_comparable",
+     "sympy/core/tests/test_basic.py::test_doit",
+     "sympy/core/tests/test_basic.py::test_preorder_traversal"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/core/tests/test_basic.py::test_subs_with_unicode_symbols",
+     "sympy/core/tests/test_basic.py::test_atomic",
+     "sympy/core/tests/test_basic.py::test_as_dummy",
+     "sympy/core/tests/test_basic.py::test_rewrite",
+     "sympy/core/tests/test_basic.py::test_has",
+     "sympy/core/tests/test_basic.py::test_atoms",
+     "sympy/core/tests/test_basic.py::test_S",
+     "sympy/core/tests/test_basic.py::test_matches_basic",
+     "sympy/core/tests/test_basic.py::test_free_symbols_empty",
+     "sympy/core/tests/test_basic.py::test_literal_evalf_is_number_is_zero_is_comparable",
+     "sympy/core/tests/test_basic.py::test_doit",
+     "sympy/core/tests/test_basic.py::test_preorder_traversal"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 2.4369999999762513,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "gold": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/core/_print_helpers.py": "--- \n+++ \n@@ -16,6 +16,11 @@\n \n     This also adds support for LaTeX printing in jupyter notebooks.\n     \"\"\"\n+\n+    # Since this class is used as a mixin we set empty slots. That means that\n+    # instances of any subclasses that use slots will not need to have a\n+    # __dict__.\n+    __slots__ = ()\n \n     # Note, we always use the default ordering (lex) in __str__ and __repr__,\n     # regardless of the global setting. See issue 5487."
+  },
+  "gold_lines": {
+   "sympy/core/_print_helpers.py": [
+    19
+   ]
+  },
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_basic.py::test_immutable"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/core/tests/test_basic.py::test_immutable"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 2.125,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/core/tests/test_basic.py::test_subs_with_unicode_symbols",
+     "sympy/core/tests/test_basic.py::test_atomic",
+     "sympy/core/tests/test_basic.py::test_as_dummy",
+     "sympy/core/tests/test_basic.py::test_rewrite",
+     "sympy/core/tests/test_basic.py::test_has",
+     "sympy/core/tests/test_basic.py::test_atoms",
+     "sympy/core/tests/test_basic.py::test_S",
+     "sympy/core/tests/test_basic.py::test_matches_basic",
+     "sympy/core/tests/test_basic.py::test_free_symbols_empty",
+     "sympy/core/tests/test_basic.py::test_literal_evalf_is_number_is_zero_is_comparable",
+     "sympy/core/tests/test_basic.py::test_doit",
+     "sympy/core/tests/test_basic.py::test_preorder_traversal"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/core/tests/test_basic.py::test_subs_with_unicode_symbols",
+     "sympy/core/tests/test_basic.py::test_atomic",
+     "sympy/core/tests/test_basic.py::test_as_dummy",
+     "sympy/core/tests/test_basic.py::test_rewrite",
+     "sympy/core/tests/test_basic.py::test_has",
+     "sympy/core/tests/test_basic.py::test_atoms",
+     "sympy/core/tests/test_basic.py::test_S",
+     "sympy/core/tests/test_basic.py::test_matches_basic",
+     "sympy/core/tests/test_basic.py::test_free_symbols_empty",
+     "sympy/core/tests/test_basic.py::test_literal_evalf_is_number_is_zero_is_comparable",
+     "sympy/core/tests/test_basic.py::test_doit",
+     "sympy/core/tests/test_basic.py::test_preorder_traversal"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 2.2820000000065193,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ }
+}

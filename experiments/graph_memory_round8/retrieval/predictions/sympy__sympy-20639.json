@@ -1,0 +1,925 @@
+{
+ "task": "sympy__sympy-20639",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "ebb02c1ed9ee37d48e5cc5eb11a81327a0bc0fa42cf28906d1d189b727ae9654",
+ "query_sha256": "ede4de53ba4882c882835bb37eefd2666513c9d309fe7da120b89c7e70c67bee",
+ "n_corpus": 28039,
+ "anchors": [
+  "sympy/printing/latex.py/latex"
+ ],
+ "edges": [
+  [
+   "sympy/interactive/printing.py/init_printing",
+   "sympy/interactive/session.py/init_session"
+  ],
+  [
+   "sympy/interactive/printing.py/init_printing",
+   "sympy/core/_print_helpers.py/Printable/_repr_latex_"
+  ],
+  [
+   "sympy/interactive/printing.py/init_printing",
+   "sympy/interactive/printing.py/_init_ipython_printing"
+  ],
+  [
+   "sympy/interactive/printing.py/init_printing",
+   "sympy/printing/latex.py/latex"
+  ],
+  [
+   "sympy/interactive/printing.py/init_printing",
+   "sympy/physics/vector/printing.py/init_vprinting"
+  ],
+  [
+   "sympy/interactive/printing.py/init_printing",
+   "sympy/combinatorics/permutations.py/Permutation/_af_new"
+  ],
+  [
+   "sympy/interactive/session.py/init_session",
+   "sympy/printing/latex.py/latex"
+  ],
+  [
+   "sympy/core/_print_helpers.py/Printable/_repr_latex_",
+   "sympy/printing/latex.py/latex"
+  ],
+  [
+   "sympy/interactive/printing.py/_init_ipython_printing",
+   "sympy/printing/latex.py/latex"
+  ],
+  [
+   "sympy/interactive/printing.py/_init_ipython_printing",
+   "sympy/interactive/printing.py/_matplotlib_wrapper"
+  ],
+  [
+   "sympy/interactive/printing.py/_init_ipython_printing",
+   "sympy/printing/preview.py/preview"
+  ],
+  [
+   "sympy/physics/vector/vector.py/Vector/_pretty",
+   "sympy/physics/vector/vector.py/Fake/render"
+  ],
+  [
+   "sympy/printing/latex.py/latex",
+   "sympy/printing/preview.py/preview"
+  ],
+  [
+   "sympy/printing/latex.py/latex",
+   "sympy/printing/latex.py/print_latex"
+  ],
+  [
+   "sympy/parsing/latex/__init__.py/parse_latex",
+   "sympy/external/importtools.py/import_module"
+  ],
+  [
+   "sympy/vector/vector.py/BaseVector/__new__",
+   "sympy/combinatorics/permutations.py/Permutation/_af_new"
+  ]
+ ],
+ "explicit_identifiers": {
+  "LaTeX": 1,
+  "str": 2,
+  "print": 1,
+  "latex": 1,
+  "exp": 1
+ },
+ "candidates": [
+  {
+   "id": "sympy/interactive/printing.py/init_printing",
+   "scores": {
+    "bm25": 57.34991276419527,
+    "dense": 0.3869428038597107,
+    "rrf": 0.13636363636363635,
+    "direct": 0.13636363636363635,
+    "graph": 0.18181818181818182,
+    "rewired": 0.13636363636363635,
+    "dense_dot": 227.12747192382812
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 12,
+    "rrf": 2,
+    "direct": 3,
+    "graph": 2,
+    "rewired": 3,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "sympy/interactive/session.py/init_session",
+   "scores": {
+    "bm25": 42.97232454562118,
+    "dense": 0.33907830715179443,
+    "rrf": 0.12333333333333332,
+    "direct": 0.12333333333333332,
+    "graph": 0.16878787878787876,
+    "rewired": 0.12333333333333332,
+    "dense_dot": 198.82064819335938
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 15,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 3,
+    "rewired": 5,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "sympy/core/_print_helpers.py/Printable/_repr_latex_",
+   "scores": {
+    "bm25": 42.6757688684064,
+    "dense": 0.3751680552959442,
+    "rrf": 0.12040133779264214,
+    "direct": 0.12040133779264214,
+    "graph": 0.16585588324718759,
+    "rewired": 0.12040133779264214,
+    "dense_dot": 222.42987060546875
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 13,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 4,
+    "rewired": 6,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "release/authors.py/get_previous_version_tag",
+   "scores": {
+    "bm25": 40.48611248623479,
+    "dense": 0.07681374251842499,
+    "rrf": 0.09270516717325228,
+    "direct": 0.09270516717325228,
+    "graph": 0.09270516717325228,
+    "rewired": 0.09270516717325228,
+    "dense_dot": 45.4998779296875
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 37,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 14,
+    "rewired": 12,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "sympy/printing/latex.py/LatexPrinter/_print_Function",
+   "scores": {
+    "bm25": 39.55277841537015,
+    "dense": 0.4699549376964569,
+    "rrf": 0.1380952380952381,
+    "direct": 0.1380952380952381,
+    "graph": 0.1380952380952381,
+    "rewired": 0.1380952380952381,
+    "dense_dot": 277.58807373046875
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 4,
+    "rrf": 1,
+    "direct": 2,
+    "graph": 6,
+    "rewired": 2,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "sympy/printing/precedence.py/precedence_traditional",
+   "scores": {
+    "bm25": 39.373955282878995,
+    "dense": 0.2982064485549927,
+    "rrf": 0.09475806451612903,
+    "direct": 0.09475806451612903,
+    "graph": 0.09475806451612903,
+    "rewired": 0.09475806451612903,
+    "dense_dot": 176.9918670654297
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 21,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 13,
+    "rewired": 11,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "release/fabfile.py/get_previous_version_tag",
+   "scores": {
+    "bm25": 39.065373112273356,
+    "dense": 0.04478900134563446,
+    "rrf": 0.07965686274509803,
+    "direct": 0.07965686274509803,
+    "graph": 0.07965686274509803,
+    "rewired": 0.07965686274509803,
+    "dense_dot": 26.5211238861084
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 38,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 19,
+    "rewired": 17,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "sympy/interactive/printing.py/_init_ipython_printing",
+   "scores": {
+    "bm25": 38.78824883281083,
+    "dense": 0.3946455717086792,
+    "rrf": 0.10818713450292397,
+    "direct": 0.10818713450292397,
+    "graph": 0.1536416799574694,
+    "rewired": 0.10818713450292397,
+    "dense_dot": 231.3595428466797
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 9,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 5,
+    "rewired": 9,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "sympy/physics/vector/vector.py/Vector/_pretty",
+   "scores": {
+    "bm25": 38.08202300040179,
+    "dense": 0.4120749533176422,
+    "rrf": 0.10818713450292397,
+    "direct": 0.10818713450292397,
+    "graph": 0.10818713450292397,
+    "rewired": 0.10818713450292397,
+    "dense_dot": 242.5693817138672
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 8,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 11,
+    "rewired": 10,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "sympy/printing/str.py/StrPrinter/_print_Pow",
+   "scores": {
+    "bm25": 37.3811971891897,
+    "dense": 0.42215803265571594,
+    "rrf": 0.10882352941176471,
+    "direct": 0.10882352941176471,
+    "graph": 0.10882352941176471,
+    "rewired": 0.10882352941176471,
+    "dense_dot": 249.5064697265625
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 7,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 10,
+    "rewired": 8,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "sympy/printing/latex.py/latex",
+   "scores": {
+    "bm25": 37.046516093119365,
+    "dense": 0.49846720695495605,
+    "rrf": 0.12454212454212454,
+    "direct": 0.21545121545121546,
+    "graph": 0.21545121545121546,
+    "rewired": 0.21545121545121546,
+    "dense_dot": 293.8882141113281
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 3,
+    "rrf": 4,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "sympy/parsing/latex/__init__.py/parse_latex",
+   "scores": {
+    "bm25": 37.02697598868401,
+    "dense": 0.2358388602733612,
+    "rrf": 0.0710955710955711,
+    "direct": 0.0710955710955711,
+    "graph": 0.0710955710955711,
+    "rewired": 0.0710955710955711,
+    "dense_dot": 139.41067504882812
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 29,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 20,
+    "rewired": 19,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "release/fabfile.py/gitrepos",
+   "scores": {
+    "bm25": 36.88212118171047,
+    "dense": 0.08646299690008163,
+    "rrf": 0.06521739130434782,
+    "direct": 0.06521739130434782,
+    "graph": 0.06521739130434782,
+    "rewired": 0.06521739130434782,
+    "dense_dot": 51.01197052001953
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 36,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 23,
+    "rewired": 22,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "sympy/printing/pretty/pretty.py/PrettyPrinter/_print_nth_root",
+   "scores": {
+    "bm25": 36.449008459427084,
+    "dense": 0.5607396364212036,
+    "rrf": 0.13257575757575757,
+    "direct": 0.13257575757575757,
+    "graph": 0.13257575757575757,
+    "rewired": 0.13257575757575757,
+    "dense_dot": 329.4517822265625
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 1,
+    "rrf": 3,
+    "direct": 4,
+    "graph": 7,
+    "rewired": 4,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "sympy/vector/vector.py/BaseVector/__new__",
+   "scores": {
+    "bm25": 36.04903016287086,
+    "dense": 0.2370518445968628,
+    "rrf": 0.06631578947368422,
+    "direct": 0.06631578947368422,
+    "graph": 0.06631578947368422,
+    "rewired": 0.06631578947368422,
+    "dense_dot": 139.15487670898438
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 28,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 22,
+    "rewired": 21,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "sympy/physics/vector/vector.py/Fake/render",
+   "scores": {
+    "bm25": 35.252089716657835,
+    "dense": 0.37258291244506836,
+    "rrf": 0.08012820512820512,
+    "direct": 0.08012820512820512,
+    "graph": 0.08012820512820512,
+    "rewired": 0.08012820512820512,
+    "dense_dot": 219.59385681152344
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 14,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 18,
+    "rewired": 16,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "sympy/physics/vector/printing.py/init_vprinting",
+   "scores": {
+    "bm25": 34.548619542085774,
+    "dense": 0.2921643555164337,
+    "rrf": 0.0664488017429194,
+    "direct": 0.0664488017429194,
+    "graph": 0.0664488017429194,
+    "rewired": 0.0664488017429194,
+    "dense_dot": 172.6714630126953
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 24,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 21,
+    "rewired": 20,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "sympy/printing/pretty/pretty.py/PrettyPrinter/_print_Mul",
+   "scores": {
+    "bm25": 34.40069111996514,
+    "dense": 0.511522650718689,
+    "rrf": 0.11904761904761904,
+    "direct": 0.11904761904761904,
+    "graph": 0.11904761904761904,
+    "rewired": 0.11904761904761904,
+    "dense_dot": 301.34100341796875
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 2,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 9,
+    "rewired": 7,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "sympy/interactive/printing.py/_matplotlib_wrapper",
+   "scores": {
+    "bm25": 34.38521223304442,
+    "dense": 0.2814689576625824,
+    "rrf": 0.06226053639846743,
+    "direct": 0.06226053639846743,
+    "graph": 0.06226053639846743,
+    "rewired": 0.06226053639846743,
+    "dense_dot": 166.4338836669922
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 26,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 25,
+    "rewired": 24,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "sympy/integrals/risch.py/DifferentialExtension/_rewrite_exps_pows",
+   "scores": {
+    "bm25": 34.24684039070688,
+    "dense": 0.2831791639328003,
+    "rrf": 0.06190476190476191,
+    "direct": 0.06190476190476191,
+    "graph": 0.06190476190476191,
+    "rewired": 0.06190476190476191,
+    "dense_dot": 165.54864501953125
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 25,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 26,
+    "rewired": 25,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "sympy/external/importtools.py/import_module",
+   "scores": {
+    "bm25": 33.71958333988646,
+    "dense": 0.1084304079413414,
+    "rrf": 0.05448028673835126,
+    "direct": 0.05448028673835126,
+    "graph": 0.05448028673835126,
+    "rewired": 0.05448028673835126,
+    "dense_dot": 64.26905822753906
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 35,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 30,
+    "rewired": 29,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "sympy/categories/diagram_drawing.py/DiagramGrid/_get_connected_components",
+   "scores": {
+    "bm25": 33.70221255639737,
+    "dense": 0.032011859118938446,
+    "rrf": 0.051250000000000004,
+    "direct": 0.051250000000000004,
+    "graph": 0.051250000000000004,
+    "rewired": 0.051250000000000004,
+    "dense_dot": 18.848220825195312
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 40,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 34,
+    "rewired": 34,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "sympy/printing/pretty/pretty.py/pager_print",
+   "scores": {
+    "bm25": 33.65684237402459,
+    "dense": 0.3940981328487396,
+    "rrf": 0.0803030303030303,
+    "direct": 0.0803030303030303,
+    "graph": 0.0803030303030303,
+    "rewired": 0.0803030303030303,
+    "dense_dot": 231.37466430664062
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 10,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 17,
+    "rewired": 15,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "sympy/physics/vector/vector.py/Vector/_latex",
+   "scores": {
+    "bm25": 33.576836919691914,
+    "dense": 0.3198070824146271,
+    "rrf": 0.063894523326572,
+    "direct": 0.063894523326572,
+    "graph": 0.063894523326572,
+    "rewired": 0.063894523326572,
+    "dense_dot": 189.51724243164062
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 19,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 24,
+    "rewired": 23,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "sympy/printing/preview.py/preview",
+   "scores": {
+    "bm25": 33.3416519561328,
+    "dense": 0.3917892873287201,
+    "rrf": 0.07619047619047618,
+    "direct": 0.07619047619047618,
+    "graph": 0.12164502164502164,
+    "rewired": 0.07619047619047618,
+    "dense_dot": 229.63742065429688
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 11,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 8,
+    "rewired": 18,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "release/fabfile.py/update_docs",
+   "scores": {
+    "bm25": 33.1765233977249,
+    "dense": 0.03468051180243492,
+    "rrf": 0.048185941043083894,
+    "direct": 0.048185941043083894,
+    "graph": 0.048185941043083894,
+    "rewired": 0.048185941043083894,
+    "dense_dot": 20.397890090942383
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 39,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 38,
+    "rewired": 38,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "sympy/integrals/risch.py/integer_powers",
+   "scores": {
+    "bm25": 33.056533995381294,
+    "dense": 0.25771740078926086,
+    "rrf": 0.05405405405405406,
+    "direct": 0.05405405405405406,
+    "graph": 0.05405405405405406,
+    "rewired": 0.05405405405405406,
+    "dense_dot": 151.27243041992188
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 27,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 31,
+    "rewired": 30,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "sympy/printing/pretty/pretty.py/pretty_print",
+   "scores": {
+    "bm25": 32.89011821552882,
+    "dense": 0.43654489517211914,
+    "rrf": 0.08881578947368421,
+    "direct": 0.08881578947368421,
+    "graph": 0.08881578947368421,
+    "rewired": 0.08881578947368421,
+    "dense_dot": 256.6733703613281
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 6,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 15,
+    "rewired": 13,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "sympy/physics/vector/frame.py/ReferenceFrame/__init__",
+   "scores": {
+    "bm25": 32.771668808401714,
+    "dense": 0.19887687265872955,
+    "rrf": 0.04945054945054945,
+    "direct": 0.04945054945054945,
+    "graph": 0.04945054945054945,
+    "rewired": 0.04945054945054945,
+    "dense_dot": 117.34149169921875
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 32,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 36,
+    "rewired": 36,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "sympy/printing/pycode.py/NumPyPrinter/_print_And",
+   "scores": {
+    "bm25": 32.72632762794379,
+    "dense": 0.23453500866889954,
+    "rrf": 0.05,
+    "direct": 0.05,
+    "graph": 0.05,
+    "rewired": 0.05,
+    "dense_dot": 139.20806884765625
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 30,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 35,
+    "rewired": 35,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "sympy/combinatorics/permutations.py/Permutation/_af_new",
+   "scores": {
+    "bm25": 32.571901349266646,
+    "dense": 0.11658557504415512,
+    "rrf": 0.0476460578559274,
+    "direct": 0.0476460578559274,
+    "graph": 0.0476460578559274,
+    "rewired": 0.0476460578559274,
+    "dense_dot": 68.67584228515625
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 33,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "doc/ext/docscrape_sphinx.py/SphinxDocString/_str_member_list",
+   "scores": {
+    "bm25": 32.53361278917153,
+    "dense": 0.21143008768558502,
+    "rrf": 0.04819976771196283,
+    "direct": 0.04819976771196283,
+    "graph": 0.04819976771196283,
+    "rewired": 0.04819976771196283,
+    "dense_dot": 124.26641845703125
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 31,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 37,
+    "rewired": 37,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "sympy/physics/vector/printing.py/VectorPrettyPrinter/_print_Function",
+   "scores": {
+    "bm25": 32.34415612712596,
+    "dense": 0.3334292769432068,
+    "rrf": 0.061717352415026835,
+    "direct": 0.061717352415026835,
+    "graph": 0.061717352415026835,
+    "rewired": 0.061717352415026835,
+    "dense_dot": 196.21495056152344
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 16,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 27,
+    "rewired": 26,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "sympy/physics/vector/frame.py/ReferenceFrame/orientnew",
+   "scores": {
+    "bm25": 32.18130222335701,
+    "dense": 0.11502689868211746,
+    "rrf": 0.045454545454545456,
+    "direct": 0.045454545454545456,
+    "graph": 0.045454545454545456,
+    "rewired": 0.045454545454545456,
+    "dense_dot": 67.63506317138672
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 34,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "sympy/printing/latex.py/print_latex",
+   "scores": {
+    "bm25": 32.12971116702978,
+    "dense": 0.29287201166152954,
+    "rrf": 0.05347222222222223,
+    "direct": 0.05347222222222223,
+    "graph": 0.09892676767676768,
+    "rewired": 0.05347222222222223,
+    "dense_dot": 173.37860107421875
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 22,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 12,
+    "rewired": 32,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "sympy/interactive/printing.py/_displayhook",
+   "scores": {
+    "bm25": 32.05221827474906,
+    "dense": 0.3297845125198364,
+    "rrf": 0.05877616747181964,
+    "direct": 0.05877616747181964,
+    "graph": 0.05877616747181964,
+    "rewired": 0.05877616747181964,
+    "dense_dot": 193.7283935546875
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 17,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 28,
+    "rewired": 27,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "sympy/physics/vector/dyadic.py/Dyadic/_latex",
+   "scores": {
+    "bm25": 31.906042933874595,
+    "dense": 0.292411208152771,
+    "rrf": 0.05157962604771116,
+    "direct": 0.05157962604771116,
+    "graph": 0.05157962604771116,
+    "rewired": 0.05157962604771116,
+    "dense_dot": 173.156982421875
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 23,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 33,
+    "rewired": 33,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "sympy/physics/vector/printing.py/vpprint",
+   "scores": {
+    "bm25": 31.80370067476172,
+    "dense": 0.32571908831596375,
+    "rrf": 0.05654761904761904,
+    "direct": 0.05654761904761904,
+    "graph": 0.05654761904761904,
+    "rewired": 0.05654761904761904,
+    "dense_dot": 191.17898559570312
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 18,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 29,
+    "rewired": 28,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "sympy/printing/latex.py/LatexPrinter/_printer_tensor_indices",
+   "scores": {
+    "bm25": 31.693905535339752,
+    "dense": 0.319486528635025,
+    "rrf": 0.05374149659863946,
+    "direct": 0.05374149659863946,
+    "graph": 0.05374149659863946,
+    "rewired": 0.05374149659863946,
+    "dense_dot": 189.73199462890625
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 20,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 32,
+    "rewired": 31,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "sympy/printing/pretty/pretty.py/PrettyPrinter/_print_matrix_contents",
+   "scores": {
+    "bm25": 31.685640355714696,
+    "dense": 0.45760729908943176,
+    "rrf": 0.08666666666666667,
+    "direct": 0.08666666666666667,
+    "graph": 0.08666666666666667,
+    "rewired": 0.08666666666666667,
+    "dense_dot": 268.99908447265625
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 5,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 16,
+    "rewired": 14,
+    "dense_dot": 5
+   }
+  }
+ ]
+}

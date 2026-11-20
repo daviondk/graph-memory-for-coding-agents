@@ -1,0 +1,87 @@
+{
+ "flat": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/combinatorics/homomorphisms.py": "--- \n+++ \n@@ -333,10 +333,7 @@\n             # both indices\n             while i < len(r):\n                 power = r_arr[j][1]\n-                if isinstance(domain, PermutationGroup) and r[i] in gens:\n-                    s = domain.generators[gens.index(r[i])]\n-                else:\n-                    s = r[i]\n+                s = r[i]\n                 if s in images:\n                     w = w*images[s]**power\n                 elif s**-1 in images:"
+  },
+  "call_id": "68d08d5284dc76f8047ec47a73268d0e3dceb1d93fafc79f1a467f9c14c2867e",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.7969999999622814,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.7660000000032596,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "evidence": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/combinatorics/homomorphisms.py": "--- \n+++ \n@@ -333,10 +333,7 @@\n             # both indices\n             while i < len(r):\n                 power = r_arr[j][1]\n-                if isinstance(domain, PermutationGroup) and r[i] in gens:\n-                    s = domain.generators[gens.index(r[i])]\n-                else:\n-                    s = r[i]\n+                s = r[i]\n                 if s in images:\n                     w = w*images[s]**power\n                 elif s**-1 in images:"
+  },
+  "call_id": "68d08d5284dc76f8047ec47a73268d0e3dceb1d93fafc79f1a467f9c14c2867e",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.7969999999622814,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 1.7660000000032596,
+    "complete": true,
+    "diagnostic": ""
+   }
+  },
+  "reused": "flat"
+ }
+}

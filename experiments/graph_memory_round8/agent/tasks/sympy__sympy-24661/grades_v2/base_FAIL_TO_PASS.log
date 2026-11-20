@@ -1,0 +1,12 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+______________________________ test_issue_24288 _______________________________
+sympy\parsing\tests\test_sympy_parser.py:292: in test_issue_24288
+    assert parse_expr(text, evaluate=False) == result
+E   AssertionError: assert True == 1 < 2
+E    +  where True = parse_expr('1 < 2', evaluate=False)
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round8\agent\tasks\sympy__sympy-24661\grades_v2\base_FAIL_TO_PASS.xml -
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/parsing/tests/test_sympy_parser.py::test_issue_24288 - Assertion...
+1 failed in 0.23s

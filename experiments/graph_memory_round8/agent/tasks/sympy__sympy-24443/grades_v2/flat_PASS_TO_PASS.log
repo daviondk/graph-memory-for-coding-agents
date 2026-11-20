@@ -1,0 +1,17 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+______________________________ test_isomorphisms ______________________________
+sympy\combinatorics\tests\test_homomorphisms.py:79: in test_isomorphisms
+    check, T =  group_isomorphism(G, H)
+sympy\combinatorics\homomorphisms.py:529: in group_isomorphism
+    if _check_homomorphism(G, _H, _images):
+sympy\combinatorics\homomorphisms.py:366: in _check_homomorphism
+    s = _image(r).is_identity
+sympy\combinatorics\homomorphisms.py:328: in _image
+    w = w*images[sym]**p
+E   KeyError: c
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round8\agent\tasks\sympy__sympy-24443\grades_v2\flat_PASS_TO_PASS.xml -
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms - K...
+1 failed in 0.29s

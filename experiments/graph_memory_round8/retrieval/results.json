@@ -1,0 +1,2360 @@
+{
+  "diagnostics": {
+    "sampled": 18,
+    "n_judged": 18,
+    "empty_qrels": [],
+    "hit40_count": 13,
+    "n_anchors_issues": 13,
+    "n_activated_issues": 12,
+    "n_gold_propagated": 1,
+    "median_corpus": 6715.0
+  },
+  "means": {
+    "bm25": {
+      "mrr10": 0.30108024691358026,
+      "hit1": 0.2222222222222222,
+      "hit5": 0.3888888888888889,
+      "hit10": 0.5555555555555556,
+      "recall10": 0.4907407407407407,
+      "ndcg10": 0.33421465938458017,
+      "all10": 0.4444444444444444
+    },
+    "dense": {
+      "mrr10": 0.5185185185185186,
+      "hit1": 0.3888888888888889,
+      "hit5": 0.7222222222222222,
+      "hit10": 0.7222222222222222,
+      "recall10": 0.6018518518518517,
+      "ndcg10": 0.5057030837415886,
+      "all10": 0.5
+    },
+    "rrf": {
+      "mrr10": 0.404320987654321,
+      "hit1": 0.2222222222222222,
+      "hit5": 0.6666666666666666,
+      "hit10": 0.7222222222222222,
+      "recall10": 0.6018518518518517,
+      "ndcg10": 0.4331831463695781,
+      "all10": 0.5
+    },
+    "direct": {
+      "mrr10": 0.40617283950617283,
+      "hit1": 0.2777777777777778,
+      "hit5": 0.6111111111111112,
+      "hit10": 0.7222222222222222,
+      "recall10": 0.6018518518518517,
+      "ndcg10": 0.4336286161093624,
+      "all10": 0.5
+    },
+    "graph": {
+      "mrr10": 0.3988977072310405,
+      "hit1": 0.2777777777777778,
+      "hit5": 0.5555555555555556,
+      "hit10": 0.7222222222222222,
+      "recall10": 0.6018518518518517,
+      "ndcg10": 0.42904197284498496,
+      "all10": 0.5
+    },
+    "rewired": {
+      "mrr10": 0.3990740740740741,
+      "hit1": 0.2777777777777778,
+      "hit5": 0.5555555555555556,
+      "hit10": 0.7222222222222222,
+      "recall10": 0.6018518518518517,
+      "ndcg10": 0.4276672009955486,
+      "all10": 0.5
+    },
+    "dense_dot": {
+      "mrr10": 0.5185185185185186,
+      "hit1": 0.3888888888888889,
+      "hit5": 0.7222222222222222,
+      "hit10": 0.7222222222222222,
+      "recall10": 0.6018518518518517,
+      "ndcg10": 0.5057030837415886,
+      "all10": 0.5
+    }
+  },
+  "comparisons": {
+    "graph-bm25": {
+      "mrr10": {
+        "delta": 0.09781746031746033,
+        "lo": -0.017091049382716064,
+        "hi": 0.2160493827160494,
+        "wins": 8,
+        "ties": 9,
+        "losses": 1,
+        "sign_p": 0.0390625
+      },
+      "hit1": {
+        "delta": 0.05555555555555555,
+        "lo": -0.1111111111111111,
+        "hi": 0.2222222222222222,
+        "wins": 2,
+        "ties": 15,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": 0.16666666666666666,
+        "lo": 0.0,
+        "hi": 0.3333333333333333,
+        "wins": 3,
+        "ties": 15,
+        "losses": 0,
+        "sign_p": 0.25
+      },
+      "hit10": {
+        "delta": 0.16666666666666666,
+        "lo": 0.0,
+        "hi": 0.3333333333333333,
+        "wins": 3,
+        "ties": 15,
+        "losses": 0,
+        "sign_p": 0.25
+      },
+      "recall10": {
+        "delta": 0.1111111111111111,
+        "lo": 0.0,
+        "hi": 0.2222222222222222,
+        "wins": 3,
+        "ties": 15,
+        "losses": 0,
+        "sign_p": 0.25
+      },
+      "ndcg10": {
+        "delta": 0.0948273134604048,
+        "lo": 0.004948738396518196,
+        "hi": 0.184854867186917,
+        "wins": 8,
+        "ties": 9,
+        "losses": 1,
+        "sign_p": 0.0390625
+      },
+      "all10": {
+        "delta": 0.05555555555555555,
+        "lo": 0.0,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 17,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "graph-dense": {
+      "mrr10": {
+        "delta": -0.11962081128747795,
+        "lo": -0.27673390652557317,
+        "hi": 0.036331569664902995,
+        "wins": 1,
+        "ties": 12,
+        "losses": 5,
+        "sign_p": 0.21875
+      },
+      "hit1": {
+        "delta": -0.1111111111111111,
+        "lo": -0.3333333333333333,
+        "hi": 0.1111111111111111,
+        "wins": 1,
+        "ties": 14,
+        "losses": 3,
+        "sign_p": 0.625
+      },
+      "hit5": {
+        "delta": -0.16666666666666666,
+        "lo": -0.3333333333333333,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 15,
+        "losses": 3,
+        "sign_p": 0.25
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.07666111089660362,
+        "lo": -0.18880843943419223,
+        "hi": 0.032740974118167294,
+        "wins": 1,
+        "ties": 12,
+        "losses": 5,
+        "sign_p": 0.21875
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "graph-rrf": {
+      "mrr10": {
+        "delta": -0.005423280423280423,
+        "lo": -0.059523809523809534,
+        "hi": 0.06481481481481481,
+        "wins": 1,
+        "ties": 13,
+        "losses": 4,
+        "sign_p": 0.375
+      },
+      "hit1": {
+        "delta": 0.05555555555555555,
+        "lo": 0.0,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 17,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": -0.1111111111111111,
+        "lo": -0.2222222222222222,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 16,
+        "losses": 2,
+        "sign_p": 0.5
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.0041411735245931265,
+        "lo": -0.04442084655915192,
+        "hi": 0.04856054371777371,
+        "wins": 1,
+        "ties": 13,
+        "losses": 4,
+        "sign_p": 0.375
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "graph-direct": {
+      "mrr10": {
+        "delta": -0.007275132275132276,
+        "lo": -0.01917989417989418,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 16,
+        "losses": 2,
+        "sign_p": 0.5
+      },
+      "hit1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.004586643264377424,
+        "lo": -0.011218390484833508,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 16,
+        "losses": 2,
+        "sign_p": 0.5
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "graph-rewired": {
+      "mrr10": {
+        "delta": -0.0001763668430335106,
+        "lo": -0.013932980599647267,
+        "hi": 0.012962962962962963,
+        "wins": 3,
+        "ties": 13,
+        "losses": 2,
+        "sign_p": 1.0
+      },
+      "hit1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": 0.0,
+        "lo": -0.1111111111111111,
+        "hi": 0.1111111111111111,
+        "wins": 1,
+        "ties": 16,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": 0.0013747718494362881,
+        "lo": -0.007494938541520998,
+        "hi": 0.01081856605264634,
+        "wins": 3,
+        "ties": 13,
+        "losses": 2,
+        "sign_p": 1.0
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "graph-dense_dot": {
+      "mrr10": {
+        "delta": -0.11962081128747795,
+        "lo": -0.27673390652557317,
+        "hi": 0.036331569664902995,
+        "wins": 1,
+        "ties": 12,
+        "losses": 5,
+        "sign_p": 0.21875
+      },
+      "hit1": {
+        "delta": -0.1111111111111111,
+        "lo": -0.3333333333333333,
+        "hi": 0.1111111111111111,
+        "wins": 1,
+        "ties": 14,
+        "losses": 3,
+        "sign_p": 0.625
+      },
+      "hit5": {
+        "delta": -0.16666666666666666,
+        "lo": -0.3333333333333333,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 15,
+        "losses": 3,
+        "sign_p": 0.25
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.07666111089660362,
+        "lo": -0.18880843943419223,
+        "hi": 0.032740974118167294,
+        "wins": 1,
+        "ties": 12,
+        "losses": 5,
+        "sign_p": 0.21875
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "direct-rrf": {
+      "mrr10": {
+        "delta": 0.0018518518518518515,
+        "lo": -0.0462962962962963,
+        "hi": 0.06944444444444445,
+        "wins": 1,
+        "ties": 13,
+        "losses": 4,
+        "sign_p": 0.375
+      },
+      "hit1": {
+        "delta": 0.05555555555555555,
+        "lo": 0.0,
+        "hi": 0.16666666666666666,
+        "wins": 1,
+        "ties": 17,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": 0.00044546973978429945,
+        "lo": -0.03675185739681216,
+        "hi": 0.05109039624891753,
+        "wins": 1,
+        "ties": 13,
+        "losses": 4,
+        "sign_p": 0.375
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "rrf-dense": {
+      "mrr10": {
+        "delta": -0.11419753086419754,
+        "lo": -0.25154320987654327,
+        "hi": 0.029320987654321007,
+        "wins": 2,
+        "ties": 10,
+        "losses": 6,
+        "sign_p": 0.2890625
+      },
+      "hit1": {
+        "delta": -0.16666666666666666,
+        "lo": -0.3888888888888889,
+        "hi": 0.05555555555555555,
+        "wins": 1,
+        "ties": 13,
+        "losses": 4,
+        "sign_p": 0.375
+      },
+      "hit5": {
+        "delta": -0.05555555555555555,
+        "lo": -0.16666666666666666,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 17,
+        "losses": 1,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": -0.0725199373720105,
+        "lo": -0.17375610932207858,
+        "hi": 0.029621212560102396,
+        "wins": 2,
+        "ties": 10,
+        "losses": 6,
+        "sign_p": 0.2890625
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    },
+    "dense-dense_dot": {
+      "mrr10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit1": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit5": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "hit10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "recall10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "ndcg10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      },
+      "all10": {
+        "delta": 0.0,
+        "lo": 0.0,
+        "hi": 0.0,
+        "wins": 0,
+        "ties": 18,
+        "losses": 0,
+        "sign_p": 1.0
+      }
+    }
+  },
+  "details": {
+    "sympy__sympy-18057": {
+      "repo": "sympy__sympy",
+      "eligible_gold": 0,
+      "all_gold": 1,
+      "n_corpus": 26859,
+      "n_anchors": 6,
+      "n_edges": 18,
+      "n_propagated": 8,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [],
+        "dense": [],
+        "rrf": [],
+        "direct": [],
+        "graph": [],
+        "rewired": [],
+        "dense_dot": []
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        }
+      }
+    },
+    "sympy__sympy-13043": {
+      "repo": "sympy__sympy",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 13651,
+      "n_anchors": 1,
+      "n_edges": 34,
+      "n_propagated": 1,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          1
+        ],
+        "dense": [
+          1
+        ],
+        "rrf": [
+          1
+        ],
+        "direct": [
+          1
+        ],
+        "graph": [
+          1
+        ],
+        "rewired": [
+          1
+        ],
+        "dense_dot": [
+          1
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        }
+      }
+    },
+    "sympy__sympy-20639": {
+      "repo": "sympy__sympy",
+      "eligible_gold": 1,
+      "all_gold": 2,
+      "n_corpus": 28039,
+      "n_anchors": 1,
+      "n_edges": 16,
+      "n_propagated": 6,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          14
+        ],
+        "dense": [
+          1
+        ],
+        "rrf": [
+          3
+        ],
+        "direct": [
+          4
+        ],
+        "graph": [
+          7
+        ],
+        "rewired": [
+          4
+        ],
+        "dense_dot": [
+          1
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.6131471927654584,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.3065735963827292,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.2640681225725909,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0.14285714285714285,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.20438239758848611,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.2640681225725909,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.6131471927654584,
+          "all10": 0
+        }
+      }
+    },
+    "sympy__sympy-18532": {
+      "repo": "sympy__sympy",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 27045,
+      "n_anchors": 1,
+      "n_edges": 38,
+      "n_propagated": 11,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          3
+        ],
+        "dense": [
+          1
+        ],
+        "rrf": [
+          2
+        ],
+        "direct": [
+          1
+        ],
+        "graph": [
+          1
+        ],
+        "rewired": [
+          1
+        ],
+        "dense_dot": [
+          1
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        }
+      }
+    },
+    "sympy__sympy-23117": {
+      "repo": "sympy__sympy",
+      "eligible_gold": 1,
+      "all_gold": 3,
+      "n_corpus": 29116,
+      "n_anchors": 8,
+      "n_edges": 20,
+      "n_propagated": 3,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          2
+        ],
+        "dense": [
+          2
+        ],
+        "rrf": [
+          2
+        ],
+        "direct": [
+          2
+        ],
+        "graph": [
+          2
+        ],
+        "rewired": [
+          2
+        ],
+        "dense_dot": [
+          2
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.3333333333333333,
+          "ndcg10": 0.2960819109658652,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.3333333333333333,
+          "ndcg10": 0.2960819109658652,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.3333333333333333,
+          "ndcg10": 0.2960819109658652,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.3333333333333333,
+          "ndcg10": 0.2960819109658652,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.3333333333333333,
+          "ndcg10": 0.2960819109658652,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.3333333333333333,
+          "ndcg10": 0.2960819109658652,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.3333333333333333,
+          "ndcg10": 0.2960819109658652,
+          "all10": 0
+        }
+      }
+    },
+    "sympy__sympy-18621": {
+      "repo": "sympy__sympy",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 27091,
+      "n_anchors": 8,
+      "n_edges": 10,
+      "n_propagated": 3,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          10
+        ],
+        "dense": [
+          1
+        ],
+        "rrf": [
+          3
+        ],
+        "direct": [
+          6
+        ],
+        "graph": [
+          7
+        ],
+        "rewired": [
+          6
+        ],
+        "dense_dot": [
+          1
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0.1,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.2890648263178879,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 0.16666666666666666,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.3562071871080222,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 0.14285714285714285,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.3333333333333333,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 0.16666666666666666,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.3562071871080222,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        }
+      }
+    },
+    "sphinx-doc__sphinx-7738": {
+      "repo": "sphinx-doc__sphinx",
+      "eligible_gold": 0,
+      "all_gold": 1,
+      "n_corpus": 4067,
+      "n_anchors": 4,
+      "n_edges": 11,
+      "n_propagated": 2,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [],
+        "dense": [],
+        "rrf": [],
+        "direct": [],
+        "graph": [],
+        "rewired": [],
+        "dense_dot": []
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        }
+      }
+    },
+    "sphinx-doc__sphinx-10451": {
+      "repo": "sphinx-doc__sphinx",
+      "eligible_gold": 1,
+      "all_gold": 2,
+      "n_corpus": 4243,
+      "n_anchors": 2,
+      "n_edges": 16,
+      "n_propagated": 0,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          33
+        ],
+        "dense": [
+          3
+        ],
+        "rrf": [
+          9
+        ],
+        "direct": [
+          9
+        ],
+        "graph": [
+          9
+        ],
+        "rewired": [
+          10
+        ],
+        "dense_dot": [
+          3
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.3065735963827292,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0.1111111111111111,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.18457569677956817,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0.1111111111111111,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.18457569677956817,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0.1111111111111111,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.18457569677956817,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0.1,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.17723928678404774,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.3065735963827292,
+          "all10": 0
+        }
+      }
+    },
+    "sphinx-doc__sphinx-8474": {
+      "repo": "sphinx-doc__sphinx",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 4177,
+      "n_anchors": 0,
+      "n_edges": 9,
+      "n_propagated": 0,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          29
+        ],
+        "dense": [
+          1
+        ],
+        "rrf": [
+          4
+        ],
+        "direct": [
+          4
+        ],
+        "graph": [
+          4
+        ],
+        "rewired": [
+          4
+        ],
+        "dense_dot": [
+          1
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        }
+      }
+    },
+    "sphinx-doc__sphinx-8506": {
+      "repo": "sphinx-doc__sphinx",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 4181,
+      "n_anchors": 0,
+      "n_edges": 8,
+      "n_propagated": 0,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          4
+        ],
+        "dense": [
+          3
+        ],
+        "rrf": [
+          1
+        ],
+        "direct": [
+          1
+        ],
+        "graph": [
+          1
+        ],
+        "rewired": [
+          1
+        ],
+        "dense_dot": [
+          3
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        }
+      }
+    },
+    "sphinx-doc__sphinx-11445": {
+      "repo": "sphinx-doc__sphinx",
+      "eligible_gold": 0,
+      "all_gold": 1,
+      "n_corpus": 4057,
+      "n_anchors": 0,
+      "n_edges": 6,
+      "n_propagated": 0,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [],
+        "dense": [],
+        "rrf": [],
+        "direct": [],
+        "graph": [],
+        "rewired": [],
+        "dense_dot": []
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        }
+      }
+    },
+    "sphinx-doc__sphinx-10325": {
+      "repo": "sphinx-doc__sphinx",
+      "eligible_gold": 1,
+      "all_gold": 2,
+      "n_corpus": 4249,
+      "n_anchors": 0,
+      "n_edges": 8,
+      "n_propagated": 0,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          9
+        ],
+        "dense": [
+          2
+        ],
+        "rrf": [
+          2
+        ],
+        "direct": [
+          2
+        ],
+        "graph": [
+          2
+        ],
+        "rewired": [
+          2
+        ],
+        "dense_dot": [
+          2
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0.1111111111111111,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.18457569677956817,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.38685280723454163,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.38685280723454163,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.38685280723454163,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.38685280723454163,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.38685280723454163,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 0.5,
+          "ndcg10": 0.38685280723454163,
+          "all10": 0
+        }
+      }
+    },
+    "matplotlib__matplotlib-24970": {
+      "repo": "matplotlib__matplotlib",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 6707,
+      "n_anchors": 0,
+      "n_edges": 11,
+      "n_propagated": 0,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          1
+        ],
+        "dense": [
+          1
+        ],
+        "rrf": [
+          1
+        ],
+        "direct": [
+          1
+        ],
+        "graph": [
+          1
+        ],
+        "rewired": [
+          1
+        ],
+        "dense_dot": [
+          1
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        }
+      }
+    },
+    "matplotlib__matplotlib-25433": {
+      "repo": "matplotlib__matplotlib",
+      "eligible_gold": 0,
+      "all_gold": 1,
+      "n_corpus": 6662,
+      "n_anchors": 8,
+      "n_edges": 25,
+      "n_propagated": 4,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [],
+        "dense": [],
+        "rrf": [],
+        "direct": [],
+        "graph": [],
+        "rewired": [],
+        "dense_dot": []
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        }
+      }
+    },
+    "matplotlib__matplotlib-26011": {
+      "repo": "matplotlib__matplotlib",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 6710,
+      "n_anchors": 2,
+      "n_edges": 28,
+      "n_propagated": 10,
+      "n_gold_propagated": 1,
+      "gold_ranks": {
+        "bm25": [
+          1
+        ],
+        "dense": [
+          3
+        ],
+        "rrf": [
+          2
+        ],
+        "direct": [
+          3
+        ],
+        "graph": [
+          3
+        ],
+        "rewired": [
+          4
+        ],
+        "dense_dot": [
+          3
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 0.5,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.6309297535714575,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        }
+      }
+    },
+    "matplotlib__matplotlib-23476": {
+      "repo": "matplotlib__matplotlib",
+      "eligible_gold": 0,
+      "all_gold": 1,
+      "n_corpus": 6733,
+      "n_anchors": 5,
+      "n_edges": 28,
+      "n_propagated": 8,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [],
+        "dense": [],
+        "rrf": [],
+        "direct": [],
+        "graph": [],
+        "rewired": [],
+        "dense_dot": []
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rrf": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "direct": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "graph": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "rewired": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        },
+        "dense_dot": {
+          "mrr10": 0,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 0,
+          "recall10": 0.0,
+          "ndcg10": 0.0,
+          "all10": 0
+        }
+      }
+    },
+    "matplotlib__matplotlib-22835": {
+      "repo": "matplotlib__matplotlib",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 6736,
+      "n_anchors": 4,
+      "n_edges": 19,
+      "n_propagated": 6,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          1
+        ],
+        "dense": [
+          1
+        ],
+        "rrf": [
+          1
+        ],
+        "direct": [
+          1
+        ],
+        "graph": [
+          1
+        ],
+        "rewired": [
+          1
+        ],
+        "dense_dot": [
+          1
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 1.0,
+          "hit1": 1,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 1.0,
+          "all10": 1
+        }
+      }
+    },
+    "matplotlib__matplotlib-23563": {
+      "repo": "matplotlib__matplotlib",
+      "eligible_gold": 1,
+      "all_gold": 1,
+      "n_corpus": 6720,
+      "n_anchors": 6,
+      "n_edges": 12,
+      "n_propagated": 1,
+      "n_gold_propagated": 0,
+      "gold_ranks": {
+        "bm25": [
+          8
+        ],
+        "dense": [
+          3
+        ],
+        "rrf": [
+          4
+        ],
+        "direct": [
+          5
+        ],
+        "graph": [
+          5
+        ],
+        "rewired": [
+          6
+        ],
+        "dense_dot": [
+          3
+        ]
+      },
+      "methods": {
+        "bm25": {
+          "mrr10": 0.125,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.31546487678572877,
+          "all10": 1
+        },
+        "dense": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        },
+        "rrf": {
+          "mrr10": 0.25,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.43067655807339306,
+          "all10": 1
+        },
+        "direct": {
+          "mrr10": 0.2,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.38685280723454163,
+          "all10": 1
+        },
+        "graph": {
+          "mrr10": 0.2,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.38685280723454163,
+          "all10": 1
+        },
+        "rewired": {
+          "mrr10": 0.16666666666666666,
+          "hit1": 0,
+          "hit5": 0,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.3562071871080222,
+          "all10": 1
+        },
+        "dense_dot": {
+          "mrr10": 0.3333333333333333,
+          "hit1": 0,
+          "hit5": 1,
+          "hit10": 1,
+          "recall10": 1.0,
+          "ndcg10": 0.5,
+          "all10": 1
+        }
+      }
+    }
+  }
+}

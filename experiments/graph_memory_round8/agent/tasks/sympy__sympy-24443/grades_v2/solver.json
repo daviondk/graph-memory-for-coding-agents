@@ -1,0 +1,87 @@
+{
+ "flat": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/combinatorics/homomorphisms.py": "--- \n+++ \n@@ -321,11 +321,12 @@\n         else:\n             w = identity\n             r_arr = r.array_form\n-            i = 0\n-            j = 0\n-            # i is the index for r and j is for\n-            # r_arr. r_arr[j] is the tuple (sym, p)\n-            # where sym is the generator symbol\n+            for sym, p in r_arr:\n+                if p == 1:\n+                    w = w*images[sym]\n+                else:\n+                    w = w*images[sym]**p\n+            return w\n             # and p is the power to which it is\n             # raised while r[i] is a generator\n             # (not just its symbol) or the inverse of"
+  },
+  "call_id": "7b6e2d7bce115003b367fa4972a1d65c0f0341ed1da139d91c38834a3ef90a6d",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 1.922000000020489,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 1.8589999999967404,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "evidence": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/combinatorics/homomorphisms.py": "--- \n+++ \n@@ -321,11 +321,12 @@\n         else:\n             w = identity\n             r_arr = r.array_form\n-            i = 0\n-            j = 0\n-            # i is the index for r and j is for\n-            # r_arr. r_arr[j] is the tuple (sym, p)\n-            # where sym is the generator symbol\n+            for sym, p in r_arr:\n+                if p == 1:\n+                    w = w*images[sym]\n+                else:\n+                    w = w*images[sym]**p\n+            return w\n             # and p is the power to which it is\n             # raised while r[i] is a generator\n             # (not just its symbol) or the inverse of"
+  },
+  "call_id": "7b6e2d7bce115003b367fa4972a1d65c0f0341ed1da139d91c38834a3ef90a6d",
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_homomorphism"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 1.922000000020489,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/combinatorics/tests/test_homomorphisms.py::test_isomorphisms"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 1.8589999999967404,
+    "complete": true,
+    "diagnostic": ""
+   }
+  },
+  "reused": "flat"
+ }
+}

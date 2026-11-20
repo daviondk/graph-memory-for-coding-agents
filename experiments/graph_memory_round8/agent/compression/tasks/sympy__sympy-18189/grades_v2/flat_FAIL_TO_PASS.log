@@ -1,0 +1,20 @@
+F                                                                        [100%]
+================================== FAILURES ===================================
+______________________________ test_diophantine _______________________________
+sympy\solvers\tests\test_diophantine.py:554: in test_diophantine
+    assert diophantine(y**4 + x**4 - 2**4 - 3**4, syms=(y, x), permute=True) == \
+E   assert {(3, 2)} == {(-3, -2), (-..., (2, 3), ...}
+E     Extra items in the right set:
+E     (-3, -2)
+E     (3, -2)
+E     (2, -3)
+E     (-2, -3)
+E     (2, 3)
+E     (-2, 3)
+E     (-3, 2)
+E     Use -v to get more diff
+- generated xml file: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round8\agent\compression\tasks\sympy__sympy-18189\grades_v2\flat_FAIL_TO_PASS.xml -
+                               DO *NOT* COMMIT!                               
+=========================== short test summary info ===========================
+FAILED sympy/solvers/tests/test_diophantine.py::test_diophantine - assert {(3...
+1 failed, 2 warnings in 1.52s

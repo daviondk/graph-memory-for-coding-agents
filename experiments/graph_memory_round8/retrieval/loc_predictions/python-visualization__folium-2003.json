@@ -1,0 +1,4444 @@
+{
+ "task": "python-visualization__folium-2003",
+ "repo": "python-visualization__folium",
+ "n_corpus": 189,
+ "corpus_sha256": "fefb933afa3611a326489102598e78baee70f84dd28f16b781b54333b5cb3527",
+ "query_sha256": "a4c8236ac018d375784911a63225448892f8dfebd314ca8a0ed656d0d0972a84",
+ "anchors": [],
+ "edges": [
+  [
+   "setup.py/read",
+   "folium/features.py/GeoJson/process_data"
+  ],
+  [
+   "setup.py/read",
+   "folium/utilities.py/image_to_url"
+  ],
+  [
+   "setup.py/read",
+   "folium/plugins/timestamped_geo_json.py/TimestampedGeoJson/__init__"
+  ],
+  [
+   "folium/features.py/RegularPolygonMarker/__init__",
+   "folium/vector_layers.py/path_options"
+  ],
+  [
+   "folium/features.py/Vega/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/VegaLite/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v5",
+   "folium/features.py/VegaLite/_vega_embed"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v5",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v4",
+   "folium/features.py/VegaLite/_vega_embed"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v4",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v3",
+   "folium/features.py/VegaLite/_vega_embed"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v3",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v2",
+   "folium/features.py/VegaLite/_vega_embed"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v2",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/VegaLite/_vega_embed",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/VegaLite/_embed_vegalite_v1",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/GeoJson/__init__",
+   "folium/features.py/GeoJson/process_data"
+  ],
+  [
+   "folium/features.py/GeoJson/__init__",
+   "folium/features.py/GeoJson/convert_to_feature_collection"
+  ],
+  [
+   "folium/features.py/GeoJson/__init__",
+   "folium/features.py/GeoJson/_validate_function"
+  ],
+  [
+   "folium/features.py/GeoJson/__init__",
+   "folium/features.py/GeoJson/find_identifier"
+  ],
+  [
+   "folium/features.py/GeoJson/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/GeoJson/process_data",
+   "folium/features.py/GeoJson/get_geojson_from_web"
+  ],
+  [
+   "folium/features.py/GeoJson/process_data",
+   "folium/plugins/time_slider_choropleth.py/TimeSliderChoropleth/__init__"
+  ],
+  [
+   "folium/features.py/GeoJson/render",
+   "folium/features.py/GeoJsonStyleMapper/get_style_map"
+  ],
+  [
+   "folium/features.py/GeoJson/render",
+   "folium/features.py/GeoJsonStyleMapper/get_highlight_map"
+  ],
+  [
+   "folium/features.py/GeoJson/render",
+   "folium/utilities.py/get_obj_in_upper_tree"
+  ],
+  [
+   "folium/features.py/GeoJsonStyleMapper/get_style_map",
+   "folium/features.py/GeoJsonStyleMapper/_create_mapping"
+  ],
+  [
+   "folium/features.py/GeoJsonStyleMapper/get_highlight_map",
+   "folium/features.py/GeoJsonStyleMapper/_create_mapping"
+  ],
+  [
+   "folium/features.py/GeoJsonStyleMapper/_create_mapping",
+   "folium/features.py/GeoJsonStyleMapper/get_feature_id"
+  ],
+  [
+   "folium/features.py/GeoJsonStyleMapper/_create_mapping",
+   "folium/features.py/GeoJsonStyleMapper/_to_key"
+  ],
+  [
+   "folium/features.py/GeoJsonStyleMapper/_create_mapping",
+   "folium/features.py/GeoJsonStyleMapper/_set_default_key"
+  ],
+  [
+   "folium/features.py/TopoJson/__init__",
+   "folium/utilities.py/javascript_identifier_path_to_array_notation"
+  ],
+  [
+   "folium/features.py/TopoJson/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/TopoJson/style_data",
+   "folium/features.py/TopoJson/style_data/recursive_get"
+  ],
+  [
+   "folium/features.py/TopoJson/style_data",
+   "folium/features.py/TopoJson/render"
+  ],
+  [
+   "folium/features.py/GeoJsonDetail/warn_for_geometry_collections",
+   "folium/features.py/GeoJsonDetail/render"
+  ],
+  [
+   "folium/features.py/GeoJsonDetail/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/GeoJsonTooltip/__init__",
+   "folium/utilities.py/camelize"
+  ],
+  [
+   "folium/features.py/GeoJsonPopup/__init__",
+   "folium/utilities.py/camelize"
+  ],
+  [
+   "folium/features.py/Choropleth/__init__",
+   "folium/features.py/Choropleth/_get_by_key"
+  ],
+  [
+   "folium/features.py/Choropleth/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/features.py/ClickForMarker/__init__",
+   "folium/utilities.py/escape_backticks"
+  ],
+  [
+   "folium/features.py/CustomIcon/__init__",
+   "folium/utilities.py/image_to_url"
+  ],
+  [
+   "folium/features.py/ColorLine/__init__",
+   "folium/utilities.py/validate_locations"
+  ],
+  [
+   "folium/features.py/ColorLine/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/utilities.py/validate_location",
+   "folium/utilities.py/validate_locations"
+  ],
+  [
+   "folium/utilities.py/validate_location",
+   "folium/utilities.py/validate_multi_locations"
+  ],
+  [
+   "folium/utilities.py/validate_location",
+   "folium/map.py/Marker/__init__"
+  ],
+  [
+   "folium/utilities.py/validate_location",
+   "folium/folium.py/Map/__init__"
+  ],
+  [
+   "folium/utilities.py/validate_location",
+   "folium/plugins/fast_marker_cluster.py/FastMarkerCluster/__init__"
+  ],
+  [
+   "folium/utilities.py/validate_location",
+   "folium/plugins/heat_map.py/HeatMap/__init__"
+  ],
+  [
+   "folium/utilities.py/_validate_locations_basics",
+   "folium/utilities.py/validate_locations"
+  ],
+  [
+   "folium/utilities.py/_validate_locations_basics",
+   "folium/utilities.py/validate_multi_locations"
+  ],
+  [
+   "folium/utilities.py/validate_locations",
+   "folium/utilities.py/validate_multi_locations"
+  ],
+  [
+   "folium/utilities.py/validate_locations",
+   "folium/utilities.py/if_pandas_df_convert_to_numpy"
+  ],
+  [
+   "folium/utilities.py/validate_locations",
+   "folium/vector_layers.py/Rectangle/__init__"
+  ],
+  [
+   "folium/utilities.py/validate_locations",
+   "folium/plugins/marker_cluster.py/MarkerCluster/__init__"
+  ],
+  [
+   "folium/utilities.py/validate_multi_locations",
+   "folium/utilities.py/if_pandas_df_convert_to_numpy"
+  ],
+  [
+   "folium/utilities.py/validate_multi_locations",
+   "folium/vector_layers.py/BaseMultiLocation/__init__"
+  ],
+  [
+   "folium/utilities.py/if_pandas_df_convert_to_numpy",
+   "folium/plugins/fast_marker_cluster.py/FastMarkerCluster/__init__"
+  ],
+  [
+   "folium/utilities.py/if_pandas_df_convert_to_numpy",
+   "folium/plugins/heat_map.py/HeatMap/__init__"
+  ],
+  [
+   "folium/utilities.py/image_to_url",
+   "folium/utilities.py/_is_url"
+  ],
+  [
+   "folium/utilities.py/image_to_url",
+   "folium/raster_layers.py/ImageOverlay/__init__"
+  ],
+  [
+   "folium/utilities.py/mercator_transform",
+   "folium/utilities.py/mercator_transform/mercator"
+  ],
+  [
+   "folium/utilities.py/mercator_transform",
+   "folium/raster_layers.py/ImageOverlay/__init__"
+  ],
+  [
+   "folium/utilities.py/iter_coords",
+   "folium/utilities.py/get_bounds"
+  ],
+  [
+   "folium/utilities.py/camelize",
+   "folium/utilities.py/parse_options"
+  ],
+  [
+   "folium/utilities.py/camelize",
+   "folium/vector_layers.py/path_options"
+  ],
+  [
+   "folium/utilities.py/camelize",
+   "folium/map.py/Tooltip/parse_options"
+  ],
+  [
+   "folium/utilities.py/camelize",
+   "folium/template.py/tojavascript"
+  ],
+  [
+   "folium/utilities.py/camelize",
+   "folium/plugins/timeline.py/Timeline/__init__"
+  ],
+  [
+   "folium/utilities.py/camelize",
+   "folium/plugins/timeline.py/TimelineSlider/__init__"
+  ],
+  [
+   "folium/utilities.py/camelize",
+   "folium/plugins/realtime.py/Realtime/__init__"
+  ],
+  [
+   "folium/utilities.py/compare_rendered",
+   "folium/utilities.py/normalize"
+  ],
+  [
+   "folium/utilities.py/temp_html_filepath",
+   "folium/folium.py/Map/_to_png"
+  ],
+  [
+   "folium/utilities.py/temp_html_filepath",
+   "folium/folium.py/Map/show_in_browser"
+  ],
+  [
+   "folium/utilities.py/deep_copy",
+   "folium/plugins/dual_map.py/DualMap/render"
+  ],
+  [
+   "folium/utilities.py/get_obj_in_upper_tree",
+   "folium/plugins/pattern.py/StripePattern/render"
+  ],
+  [
+   "folium/utilities.py/get_obj_in_upper_tree",
+   "folium/plugins/pattern.py/CirclePattern/render"
+  ],
+  [
+   "folium/utilities.py/escape_backticks",
+   "folium/map.py/Popup/__init__"
+  ],
+  [
+   "folium/utilities.py/escape_double_quotes",
+   "folium/utilities.py/javascript_identifier_path_to_array_notation"
+  ],
+  [
+   "folium/utilities.py/parse_font_size",
+   "folium/folium.py/Map/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/vector_layers.py/PolyLine/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/vector_layers.py/Polygon/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/vector_layers.py/Rectangle/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/vector_layers.py/Circle/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/vector_layers.py/CircleMarker/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/plugins/semicircle.py/SemiCircle/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/plugins/encoded.py/PolyLineFromEncoded/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/plugins/encoded.py/PolygonFromEncoded/__init__"
+  ],
+  [
+   "folium/vector_layers.py/path_options",
+   "folium/plugins/antpath.py/AntPath/__init__"
+  ],
+  [
+   "folium/vector_layers.py/BaseMultiLocation/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/vector_layers.py/Rectangle/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/map.py/Evented/on",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/map.py/Layer/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/map.py/LayerControl/reset",
+   "folium/map.py/LayerControl/render"
+  ],
+  [
+   "folium/map.py/LayerControl/reset",
+   "folium/plugins/dual_map.py/DualMap/render"
+  ],
+  [
+   "folium/map.py/Marker/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/map.py/Popup/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/map.py/Popup/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/folium.py/Map/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/folium.py/Map/_to_png",
+   "folium/folium.py/Map/_repr_png_"
+  ],
+  [
+   "folium/folium.py/Map/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/folium.py/Map/fit_bounds",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/template.py/tojavascript",
+   "folium/template.py/_to_escaped_json"
+  ],
+  [
+   "folium/elements.py/JSCSSMixin/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/elements.py/JSCSSMixin/add_css_link",
+   "folium/elements.py/JSCSSMixin/_add_link"
+  ],
+  [
+   "folium/elements.py/JSCSSMixin/add_js_link",
+   "folium/elements.py/JSCSSMixin/_add_link"
+  ],
+  [
+   "folium/raster_layers.py/ImageOverlay/render",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/plugins/marker_cluster.py/MarkerCluster/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/plugins/dual_map.py/DualMap/__init__",
+   "folium/plugins/dual_map.py/DualMap/add_child"
+  ],
+  [
+   "folium/plugins/dual_map.py/DualMap/add_child",
+   "folium/plugins/dual_map.py/DualMap/render"
+  ],
+  [
+   "folium/plugins/dual_map.py/DualMap/add_child",
+   "folium/plugins/heat_map_withtime.py/HeatMapWithTime/render"
+  ],
+  [
+   "folium/plugins/dual_map.py/DualMap/add_child",
+   "folium/plugins/draw.py/Draw/render"
+  ],
+  [
+   "folium/plugins/search.py/Search/test_params",
+   "folium/plugins/search.py/Search/render"
+  ]
+ ],
+ "explicit_identifiers": {
+  "case": 1
+ },
+ "candidates": [
+  {
+   "id": "setup.py/read",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.054119378328323364,
+    "rrf": 0.010153330756345832,
+    "direct": 0.010153330756345832,
+    "graph": 0.010153330756345832,
+    "rewired": 0.010153330756345832,
+    "dense_dot": -31.755516052246094
+   },
+   "ranks": {
+    "bm25": 189,
+    "dense": 185,
+    "rrf": 189,
+    "direct": 189,
+    "graph": 189,
+    "rewired": 189,
+    "dense_dot": 185
+   }
+  },
+  {
+   "id": "setup.py/walk_subpkg",
+   "scores": {
+    "bm25": 5.113183448875418,
+    "dense": 0.0041747731156647205,
+    "rrf": 0.014251314560912083,
+    "direct": 0.014251314560912083,
+    "graph": 0.014251314560912083,
+    "rewired": 0.014251314560912083,
+    "dense_dot": 2.448821544647217
+   },
+   "ranks": {
+    "bm25": 109,
+    "dense": 161,
+    "rrf": 153,
+    "direct": 153,
+    "graph": 153,
+    "rewired": 153,
+    "dense_dot": 161
+   }
+  },
+  {
+   "id": "docs/update_switcher.py/main",
+   "scores": {
+    "bm25": 18.993362706767357,
+    "dense": 0.13381317257881165,
+    "rrf": 0.05829228243021346,
+    "direct": 0.05829228243021346,
+    "graph": 0.05829228243021346,
+    "rewired": 0.05829228243021346,
+    "dense_dot": 78.38090515136719
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 32,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 25,
+    "rewired": 25,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "docs/_static/flask_example.py/fullscreen",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.03334856778383255,
+    "rrf": 0.012676508344030809,
+    "direct": 0.012676508344030809,
+    "graph": 0.012676508344030809,
+    "rewired": 0.012676508344030809,
+    "dense_dot": 19.804553985595703
+   },
+   "ranks": {
+    "bm25": 154,
+    "dense": 142,
+    "rrf": 167,
+    "direct": 167,
+    "graph": 167,
+    "rewired": 167,
+    "dense_dot": 142
+   }
+  },
+  {
+   "id": "docs/_static/flask_example.py/iframe",
+   "scores": {
+    "bm25": 9.51399241229342,
+    "dense": 0.06322986632585526,
+    "rrf": 0.02072274397713352,
+    "direct": 0.02072274397713352,
+    "graph": 0.02072274397713352,
+    "rewired": 0.02072274397713352,
+    "dense_dot": 37.45616149902344
+   },
+   "ranks": {
+    "bm25": 69,
+    "dense": 114,
+    "rrf": 104,
+    "direct": 104,
+    "graph": 104,
+    "rewired": 104,
+    "dense_dot": 111
+   }
+  },
+  {
+   "id": "docs/_static/flask_example.py/components",
+   "scores": {
+    "bm25": 4.659415430529448,
+    "dense": 0.08752063661813736,
+    "rrf": 0.01881720430107527,
+    "direct": 0.01881720430107527,
+    "graph": 0.01881720430107527,
+    "rewired": 0.01881720430107527,
+    "dense_dot": 51.909217834472656
+   },
+   "ranks": {
+    "bm25": 114,
+    "dense": 83,
+    "rrf": 114,
+    "direct": 114,
+    "graph": 114,
+    "rewired": 114,
+    "dense_dot": 82
+   }
+  },
+  {
+   "id": "folium/features.py/RegularPolygonMarker/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.08887480944395065,
+    "rrf": 0.017153114819493383,
+    "direct": 0.017153114819493383,
+    "graph": 0.017153114819493383,
+    "rewired": 0.017153114819493383,
+    "dense_dot": 52.571075439453125
+   },
+   "ranks": {
+    "bm25": 159,
+    "dense": 79,
+    "rrf": 125,
+    "direct": 125,
+    "graph": 125,
+    "rewired": 125,
+    "dense_dot": 78
+   }
+  },
+  {
+   "id": "folium/features.py/Vega/__init__",
+   "scores": {
+    "bm25": 6.986970459703363,
+    "dense": 0.09789630025625229,
+    "rrf": 0.024039829302987197,
+    "direct": 0.024039829302987197,
+    "graph": 0.024039829302987197,
+    "rewired": 0.024039829302987197,
+    "dense_dot": 57.49410629272461
+   },
+   "ranks": {
+    "bm25": 85,
+    "dense": 64,
+    "rrf": 86,
+    "direct": 86,
+    "graph": 86,
+    "rewired": 86,
+    "dense_dot": 65
+   }
+  },
+  {
+   "id": "folium/features.py/Vega/render",
+   "scores": {
+    "bm25": 11.338730382332514,
+    "dense": 0.09729728102684021,
+    "rrf": 0.028782894736842105,
+    "direct": 0.028782894736842105,
+    "graph": 0.028782894736842105,
+    "rewired": 0.028782894736842105,
+    "dense_dot": 57.35504913330078
+   },
+   "ranks": {
+    "bm25": 54,
+    "dense": 66,
+    "rrf": 61,
+    "direct": 61,
+    "graph": 61,
+    "rewired": 61,
+    "dense_dot": 66
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/__init__",
+   "scores": {
+    "bm25": 6.8267545711438435,
+    "dense": 0.11097141355276108,
+    "rrf": 0.02649445272396092,
+    "direct": 0.02649445272396092,
+    "graph": 0.02649445272396092,
+    "rewired": 0.02649445272396092,
+    "dense_dot": 65.23277282714844
+   },
+   "ranks": {
+    "bm25": 89,
+    "dense": 51,
+    "rrf": 73,
+    "direct": 73,
+    "graph": 73,
+    "rewired": 73,
+    "dense_dot": 51
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/render",
+   "scores": {
+    "bm25": 11.676396203123103,
+    "dense": 0.13630418479442596,
+    "rrf": 0.04298245614035087,
+    "direct": 0.04298245614035087,
+    "graph": 0.04298245614035087,
+    "rewired": 0.04298245614035087,
+    "dense_dot": 80.35021209716797
+   },
+   "ranks": {
+    "bm25": 50,
+    "dense": 28,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 36,
+    "rewired": 36,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/vegalite_major_version",
+   "scores": {
+    "bm25": 5.836559743619741,
+    "dense": 0.0763496682047844,
+    "rrf": 0.018436703483432453,
+    "direct": 0.018436703483432453,
+    "graph": 0.018436703483432453,
+    "rewired": 0.018436703483432453,
+    "dense_dot": 45.00977325439453
+   },
+   "ranks": {
+    "bm25": 100,
+    "dense": 97,
+    "rrf": 118,
+    "direct": 118,
+    "graph": 118,
+    "rewired": 118,
+    "dense_dot": 97
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/_embed_vegalite_v5",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0324142761528492,
+    "rrf": 0.012316294533227549,
+    "direct": 0.012316294533227549,
+    "graph": 0.012316294533227549,
+    "rewired": 0.012316294533227549,
+    "dense_dot": 19.109683990478516
+   },
+   "ranks": {
+    "bm25": 163,
+    "dense": 143,
+    "rrf": 172,
+    "direct": 172,
+    "graph": 172,
+    "rewired": 172,
+    "dense_dot": 143
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/_embed_vegalite_v4",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.012502694502472878,
+    "rrf": 0.011838049873914262,
+    "direct": 0.011838049873914262,
+    "graph": 0.011838049873914262,
+    "rewired": 0.011838049873914262,
+    "dense_dot": 7.375908851623535
+   },
+   "ranks": {
+    "bm25": 162,
+    "dense": 156,
+    "rrf": 180,
+    "direct": 180,
+    "graph": 180,
+    "rewired": 180,
+    "dense_dot": 156
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/_embed_vegalite_v3",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.020062290132045746,
+    "rrf": 0.01205913334059787,
+    "direct": 0.01205913334059787,
+    "graph": 0.01205913334059787,
+    "rewired": 0.01205913334059787,
+    "dense_dot": 11.818565368652344
+   },
+   "ranks": {
+    "bm25": 161,
+    "dense": 151,
+    "rrf": 177,
+    "direct": 177,
+    "graph": 177,
+    "rewired": 177,
+    "dense_dot": 151
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/_embed_vegalite_v2",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.011699101887643337,
+    "rrf": 0.01187037689327228,
+    "direct": 0.01187037689327228,
+    "graph": 0.01187037689327228,
+    "rewired": 0.01187037689327228,
+    "dense_dot": 6.891644477844238
+   },
+   "ranks": {
+    "bm25": 160,
+    "dense": 157,
+    "rrf": 179,
+    "direct": 179,
+    "graph": 179,
+    "rewired": 179,
+    "dense_dot": 157
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/_vega_embed",
+   "scores": {
+    "bm25": 3.9900781192429804,
+    "dense": -0.0001033121588989161,
+    "rrf": 0.01341393460706879,
+    "direct": 0.01341393460706879,
+    "graph": 0.01341393460706879,
+    "rewired": 0.01341393460706879,
+    "dense_dot": -0.060889244079589844
+   },
+   "ranks": {
+    "bm25": 121,
+    "dense": 163,
+    "rrf": 160,
+    "direct": 160,
+    "graph": 160,
+    "rewired": 160,
+    "dense_dot": 163
+   }
+  },
+  {
+   "id": "folium/features.py/VegaLite/_embed_vegalite_v1",
+   "scores": {
+    "bm25": 3.250385402814632,
+    "dense": 0.0027644478250294924,
+    "rrf": 0.013113223561364793,
+    "direct": 0.013113223561364793,
+    "graph": 0.013113223561364793,
+    "rewired": 0.013113223561364793,
+    "dense_dot": 1.6231670379638672
+   },
+   "ranks": {
+    "bm25": 127,
+    "dense": 162,
+    "rrf": 162,
+    "direct": 162,
+    "graph": 162,
+    "rewired": 162,
+    "dense_dot": 162
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/__init__",
+   "scores": {
+    "bm25": 17.565921683705646,
+    "dense": 0.19934478402137756,
+    "rrf": 0.0900735294117647,
+    "direct": 0.0900735294117647,
+    "graph": 0.0900735294117647,
+    "rewired": 0.0900735294117647,
+    "dense_dot": 117.18612670898438
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 7,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 9,
+    "rewired": 9,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/process_data",
+   "scores": {
+    "bm25": 11.54934810986781,
+    "dense": 0.10759098082780838,
+    "rrf": 0.03252247488101534,
+    "direct": 0.03252247488101534,
+    "graph": 0.03252247488101534,
+    "rewired": 0.03252247488101534,
+    "dense_dot": 63.26887512207031
+   },
+   "ranks": {
+    "bm25": 51,
+    "dense": 52,
+    "rrf": 52,
+    "direct": 52,
+    "graph": 52,
+    "rewired": 52,
+    "dense_dot": 52
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/get_geojson_from_web",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.02184021845459938,
+    "rrf": 0.012277332128196438,
+    "direct": 0.012277332128196438,
+    "graph": 0.012277332128196438,
+    "rewired": 0.012277332128196438,
+    "dense_dot": 12.889158248901367
+   },
+   "ranks": {
+    "bm25": 157,
+    "dense": 149,
+    "rrf": 174,
+    "direct": 174,
+    "graph": 174,
+    "rewired": 174,
+    "dense_dot": 149
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/convert_to_feature_collection",
+   "scores": {
+    "bm25": 31.371958417111394,
+    "dense": 0.10065219551324844,
+    "rrf": 0.09803921568627451,
+    "direct": 0.09803921568627451,
+    "graph": 0.09803921568627451,
+    "rewired": 0.09803921568627451,
+    "dense_dot": 59.058475494384766
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 58,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 7,
+    "rewired": 7,
+    "dense_dot": 60
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/_validate_function",
+   "scores": {
+    "bm25": 19.597830012973073,
+    "dense": 0.10022859275341034,
+    "rrf": 0.05254604550379199,
+    "direct": 0.05254604550379199,
+    "graph": 0.05254604550379199,
+    "rewired": 0.05254604550379199,
+    "dense_dot": 59.10692596435547
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 61,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 29,
+    "rewired": 29,
+    "dense_dot": 59
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/find_identifier",
+   "scores": {
+    "bm25": 28.550634737804444,
+    "dense": 0.038184504956007004,
+    "rrf": 0.08363448631905009,
+    "direct": 0.08363448631905009,
+    "graph": 0.08363448631905009,
+    "rewired": 0.08363448631905009,
+    "dense_dot": 22.448583602905273
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 139,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 11,
+    "rewired": 11,
+    "dense_dot": 139
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/_get_self_bounds",
+   "scores": {
+    "bm25": 11.844567440235524,
+    "dense": 0.05283962935209274,
+    "rrf": 0.025264550264550264,
+    "direct": 0.025264550264550264,
+    "graph": 0.025264550264550264,
+    "rewired": 0.025264550264550264,
+    "dense_dot": 31.222911834716797
+   },
+   "ranks": {
+    "bm25": 46,
+    "dense": 125,
+    "rrf": 79,
+    "direct": 79,
+    "graph": 79,
+    "rewired": 79,
+    "dense_dot": 125
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJson/render",
+   "scores": {
+    "bm25": 7.408424517692544,
+    "dense": 0.1354949027299881,
+    "rrf": 0.03514293207448203,
+    "direct": 0.03514293207448203,
+    "graph": 0.03514293207448203,
+    "rewired": 0.03514293207448203,
+    "dense_dot": 80.0142822265625
+   },
+   "ranks": {
+    "bm25": 83,
+    "dense": 31,
+    "rrf": 47,
+    "direct": 47,
+    "graph": 47,
+    "rewired": 47,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonStyleMapper/__init__",
+   "scores": {
+    "bm25": 2.5902604809269985,
+    "dense": 0.054032932966947556,
+    "rrf": 0.014463241436925647,
+    "direct": 0.014463241436925647,
+    "graph": 0.014463241436925647,
+    "rewired": 0.014463241436925647,
+    "dense_dot": 31.889202117919922
+   },
+   "ranks": {
+    "bm25": 134,
+    "dense": 123,
+    "rrf": 147,
+    "direct": 147,
+    "graph": 147,
+    "rewired": 147,
+    "dense_dot": 123
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonStyleMapper/get_style_map",
+   "scores": {
+    "bm25": 5.123998424066793,
+    "dense": 0.09772107750177383,
+    "rrf": 0.021807909604519775,
+    "direct": 0.021807909604519775,
+    "graph": 0.021807909604519775,
+    "rewired": 0.021807909604519775,
+    "dense_dot": 57.763099670410156
+   },
+   "ranks": {
+    "bm25": 108,
+    "dense": 65,
+    "rrf": 96,
+    "direct": 96,
+    "graph": 96,
+    "rewired": 96,
+    "dense_dot": 64
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonStyleMapper/get_highlight_map",
+   "scores": {
+    "bm25": 5.123998424066793,
+    "dense": 0.10371270030736923,
+    "rrf": 0.0236985236985237,
+    "direct": 0.0236985236985237,
+    "graph": 0.0236985236985237,
+    "rewired": 0.0236985236985237,
+    "dense_dot": 61.317626953125
+   },
+   "ranks": {
+    "bm25": 107,
+    "dense": 56,
+    "rrf": 89,
+    "direct": 89,
+    "graph": 89,
+    "rewired": 89,
+    "dense_dot": 56
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonStyleMapper/_create_mapping",
+   "scores": {
+    "bm25": 9.227122136583718,
+    "dense": 0.14987705647945404,
+    "rrf": 0.04359567901234568,
+    "direct": 0.04359567901234568,
+    "graph": 0.04359567901234568,
+    "rewired": 0.04359567901234568,
+    "dense_dot": 88.21977233886719
+   },
+   "ranks": {
+    "bm25": 71,
+    "dense": 22,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 35,
+    "rewired": 35,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonStyleMapper/get_feature_id",
+   "scores": {
+    "bm25": 1.396355301768234,
+    "dense": 0.0701584443449974,
+    "rrf": 0.015147265077138851,
+    "direct": 0.015147265077138851,
+    "graph": 0.015147265077138851,
+    "rewired": 0.015147265077138851,
+    "dense_dot": 41.45319366455078
+   },
+   "ranks": {
+    "bm25": 145,
+    "dense": 105,
+    "rrf": 140,
+    "direct": 140,
+    "graph": 140,
+    "rewired": 140,
+    "dense_dot": 105
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonStyleMapper/_to_key",
+   "scores": {
+    "bm25": 4.182585404936349,
+    "dense": 0.08552338182926178,
+    "rrf": 0.018400331537505178,
+    "direct": 0.018400331537505178,
+    "graph": 0.018400331537505178,
+    "rewired": 0.018400331537505178,
+    "dense_dot": 50.644405364990234
+   },
+   "ranks": {
+    "bm25": 117,
+    "dense": 85,
+    "rrf": 119,
+    "direct": 119,
+    "graph": 119,
+    "rewired": 119,
+    "dense_dot": 85
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonStyleMapper/_set_default_key",
+   "scores": {
+    "bm25": 5.850104270601566,
+    "dense": 0.031793102622032166,
+    "rrf": 0.015667818420112,
+    "direct": 0.015667818420112,
+    "graph": 0.015667818420112,
+    "rewired": 0.015667818420112,
+    "dense_dot": 18.671466827392578
+   },
+   "ranks": {
+    "bm25": 99,
+    "dense": 144,
+    "rrf": 134,
+    "direct": 134,
+    "graph": 134,
+    "rewired": 134,
+    "dense_dot": 144
+   }
+  },
+  {
+   "id": "folium/features.py/TopoJson/__init__",
+   "scores": {
+    "bm25": 14.013145193379712,
+    "dense": 0.1705540120601654,
+    "rrf": 0.06570048309178744,
+    "direct": 0.06570048309178744,
+    "graph": 0.06570048309178744,
+    "rewired": 0.06570048309178744,
+    "dense_dot": 100.36713409423828
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 13,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 18,
+    "rewired": 18,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "folium/features.py/TopoJson/style_data",
+   "scores": {
+    "bm25": 5.816549638797252,
+    "dense": 0.11309733241796494,
+    "rrf": 0.026552868658131813,
+    "direct": 0.026552868658131813,
+    "graph": 0.026552868658131813,
+    "rewired": 0.026552868658131813,
+    "dense_dot": 66.99093627929688
+   },
+   "ranks": {
+    "bm25": 101,
+    "dense": 47,
+    "rrf": 71,
+    "direct": 71,
+    "graph": 71,
+    "rewired": 71,
+    "dense_dot": 47
+   }
+  },
+  {
+   "id": "folium/features.py/TopoJson/style_data/recursive_get",
+   "scores": {
+    "bm25": 3.7384103481952162,
+    "dense": 0.0966561883687973,
+    "rrf": 0.02050580997949419,
+    "direct": 0.02050580997949419,
+    "graph": 0.02050580997949419,
+    "rewired": 0.02050580997949419,
+    "dense_dot": 57.08437728881836
+   },
+   "ranks": {
+    "bm25": 123,
+    "dense": 67,
+    "rrf": 106,
+    "direct": 106,
+    "graph": 106,
+    "rewired": 106,
+    "dense_dot": 67
+   }
+  },
+  {
+   "id": "folium/features.py/TopoJson/render",
+   "scores": {
+    "bm25": 4.005563538902812,
+    "dense": 0.1069161668419838,
+    "rrf": 0.023565323565323565,
+    "direct": 0.023565323565323565,
+    "graph": 0.023565323565323565,
+    "rewired": 0.023565323565323565,
+    "dense_dot": 63.21095275878906
+   },
+   "ranks": {
+    "bm25": 120,
+    "dense": 53,
+    "rrf": 90,
+    "direct": 90,
+    "graph": 90,
+    "rewired": 90,
+    "dense_dot": 53
+   }
+  },
+  {
+   "id": "folium/features.py/TopoJson/get_bounds",
+   "scores": {
+    "bm25": 11.445477066155673,
+    "dense": 0.04724087938666344,
+    "rrf": 0.022915269394142634,
+    "direct": 0.022915269394142634,
+    "graph": 0.022915269394142634,
+    "rewired": 0.022915269394142634,
+    "dense_dot": 27.762237548828125
+   },
+   "ranks": {
+    "bm25": 53,
+    "dense": 132,
+    "rrf": 94,
+    "direct": 94,
+    "graph": 94,
+    "rewired": 94,
+    "dense_dot": 132
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonDetail/__init__",
+   "scores": {
+    "bm25": 10.280962027279124,
+    "dense": 0.12821383774280548,
+    "rrf": 0.037541528239202655,
+    "direct": 0.037541528239202655,
+    "graph": 0.037541528239202655,
+    "rewired": 0.037541528239202655,
+    "dense_dot": 75.59081268310547
+   },
+   "ranks": {
+    "bm25": 60,
+    "dense": 33,
+    "rrf": 42,
+    "direct": 42,
+    "graph": 42,
+    "rewired": 42,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonDetail/warn_for_geometry_collections",
+   "scores": {
+    "bm25": 9.141828698434088,
+    "dense": 0.034736376255750656,
+    "rrf": 0.018817638507510902,
+    "direct": 0.018817638507510902,
+    "graph": 0.018817638507510902,
+    "rewired": 0.018817638507510902,
+    "dense_dot": 20.408449172973633
+   },
+   "ranks": {
+    "bm25": 72,
+    "dense": 141,
+    "rrf": 113,
+    "direct": 113,
+    "graph": 113,
+    "rewired": 113,
+    "dense_dot": 141
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonDetail/render",
+   "scores": {
+    "bm25": 13.774136395764604,
+    "dense": 0.1666618436574936,
+    "rrf": 0.06340579710144928,
+    "direct": 0.06340579710144928,
+    "graph": 0.06340579710144928,
+    "rewired": 0.06340579710144928,
+    "dense_dot": 97.97972869873047
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 14,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 20,
+    "rewired": 20,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonTooltip/__init__",
+   "scores": {
+    "bm25": 0.8573839484401289,
+    "dense": 0.12321983277797699,
+    "rrf": 0.028357191547375597,
+    "direct": 0.028357191547375597,
+    "graph": 0.028357191547375597,
+    "rewired": 0.028357191547375597,
+    "dense_dot": 72.49061584472656
+   },
+   "ranks": {
+    "bm25": 153,
+    "dense": 35,
+    "rrf": 64,
+    "direct": 64,
+    "graph": 64,
+    "rewired": 64,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "folium/features.py/GeoJsonPopup/__init__",
+   "scores": {
+    "bm25": 0.8721307806970506,
+    "dense": 0.16402585804462433,
+    "rrf": 0.044672718585762064,
+    "direct": 0.044672718585762064,
+    "graph": 0.044672718585762064,
+    "rewired": 0.044672718585762064,
+    "dense_dot": 96.87461853027344
+   },
+   "ranks": {
+    "bm25": 151,
+    "dense": 16,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 34,
+    "rewired": 34,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "folium/features.py/Choropleth/__init__",
+   "scores": {
+    "bm25": 24.66301600068188,
+    "dense": 0.3231205344200134,
+    "rrf": 0.13247863247863248,
+    "direct": 0.13247863247863248,
+    "graph": 0.13247863247863248,
+    "rewired": 0.13247863247863248,
+    "dense_dot": 189.1715545654297
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 3,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "folium/features.py/Choropleth/_get_by_key",
+   "scores": {
+    "bm25": 11.702343044609167,
+    "dense": 0.19398625195026398,
+    "rrf": 0.06987295825771325,
+    "direct": 0.06987295825771325,
+    "graph": 0.06987295825771325,
+    "rewired": 0.06987295825771325,
+    "dense_dot": 114.69246673583984
+   },
+   "ranks": {
+    "bm25": 48,
+    "dense": 9,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 15,
+    "rewired": 15,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "folium/features.py/Choropleth/render",
+   "scores": {
+    "bm25": 14.429498065543726,
+    "dense": 0.19862723350524902,
+    "rrf": 0.07881136950904392,
+    "direct": 0.07881136950904392,
+    "graph": 0.07881136950904392,
+    "rewired": 0.07881136950904392,
+    "dense_dot": 117.29749298095703
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 8,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 12,
+    "rewired": 12,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "folium/features.py/DivIcon/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.14425230026245117,
+    "rrf": 0.033801874163319943,
+    "direct": 0.033801874163319943,
+    "graph": 0.033801874163319943,
+    "rewired": 0.033801874163319943,
+    "dense_dot": 85.10749816894531
+   },
+   "ranks": {
+    "bm25": 156,
+    "dense": 26,
+    "rrf": 50,
+    "direct": 50,
+    "graph": 50,
+    "rewired": 50,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "folium/features.py/LatLngPopup/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06929300725460052,
+    "rrf": 0.0144993894993895,
+    "direct": 0.0144993894993895,
+    "graph": 0.0144993894993895,
+    "rewired": 0.0144993894993895,
+    "dense_dot": 40.919578552246094
+   },
+   "ranks": {
+    "bm25": 158,
+    "dense": 107,
+    "rrf": 145,
+    "direct": 145,
+    "graph": 145,
+    "rewired": 145,
+    "dense_dot": 106
+   }
+  },
+  {
+   "id": "folium/features.py/ClickForMarker/__init__",
+   "scores": {
+    "bm25": 1.0819643277066167,
+    "dense": 0.1239967793226242,
+    "rrf": 0.028977272727272727,
+    "direct": 0.028977272727272727,
+    "graph": 0.028977272727272727,
+    "rewired": 0.028977272727272727,
+    "dense_dot": 73.50546264648438
+   },
+   "ranks": {
+    "bm25": 150,
+    "dense": 34,
+    "rrf": 59,
+    "direct": 59,
+    "graph": 59,
+    "rewired": 59,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "folium/features.py/ClickForLatLng/__init__",
+   "scores": {
+    "bm25": 8.2812211372167,
+    "dense": 0.147340789437294,
+    "rrf": 0.04090601757944557,
+    "direct": 0.04090601757944557,
+    "graph": 0.04090601757944557,
+    "rewired": 0.04090601757944557,
+    "dense_dot": 87.04878234863281
+   },
+   "ranks": {
+    "bm25": 77,
+    "dense": 24,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 37,
+    "rewired": 37,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "folium/features.py/CustomIcon/__init__",
+   "scores": {
+    "bm25": 2.9064597633309113,
+    "dense": 0.12278551608324051,
+    "rrf": 0.028269602737687843,
+    "direct": 0.028269602737687843,
+    "graph": 0.028269602737687843,
+    "rewired": 0.028269602737687843,
+    "dense_dot": 72.26126098632812
+   },
+   "ranks": {
+    "bm25": 133,
+    "dense": 37,
+    "rrf": 65,
+    "direct": 65,
+    "graph": 65,
+    "rewired": 65,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "folium/features.py/ColorLine/__init__",
+   "scores": {
+    "bm25": 5.082861474946133,
+    "dense": 0.11641556769609451,
+    "rrf": 0.02685185185185185,
+    "direct": 0.02685185185185185,
+    "graph": 0.02685185185185185,
+    "rewired": 0.02685185185185185,
+    "dense_dot": 68.82977294921875
+   },
+   "ranks": {
+    "bm25": 110,
+    "dense": 44,
+    "rrf": 70,
+    "direct": 70,
+    "graph": 70,
+    "rewired": 70,
+    "dense_dot": 44
+   }
+  },
+  {
+   "id": "folium/utilities.py/validate_location",
+   "scores": {
+    "bm25": 24.16961971421851,
+    "dense": 0.06329906731843948,
+    "rrf": 0.06076166024818143,
+    "direct": 0.06076166024818143,
+    "graph": 0.06076166024818143,
+    "rewired": 0.06076166024818143,
+    "dense_dot": 37.279273986816406
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 113,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 23,
+    "rewired": 23,
+    "dense_dot": 113
+   }
+  },
+  {
+   "id": "folium/utilities.py/_validate_locations_basics",
+   "scores": {
+    "bm25": 12.780666189961984,
+    "dense": -0.01356576569378376,
+    "rrf": 0.02635819521178637,
+    "direct": 0.02635819521178637,
+    "graph": 0.02635819521178637,
+    "rewired": 0.02635819521178637,
+    "dense_dot": -8.00903034210205
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 171,
+    "rrf": 74,
+    "direct": 74,
+    "graph": 74,
+    "rewired": 74,
+    "dense_dot": 171
+   }
+  },
+  {
+   "id": "folium/utilities.py/validate_locations",
+   "scores": {
+    "bm25": 3.393536293012466,
+    "dense": 0.035914622247219086,
+    "rrf": 0.014074074074074076,
+    "direct": 0.014074074074074076,
+    "graph": 0.014074074074074076,
+    "rewired": 0.014074074074074076,
+    "dense_dot": 21.151683807373047
+   },
+   "ranks": {
+    "bm25": 125,
+    "dense": 140,
+    "rrf": 156,
+    "direct": 156,
+    "graph": 156,
+    "rewired": 156,
+    "dense_dot": 140
+   }
+  },
+  {
+   "id": "folium/utilities.py/validate_multi_locations",
+   "scores": {
+    "bm25": 4.42287980485593,
+    "dense": 0.04821885749697685,
+    "rrf": 0.015142857142857142,
+    "direct": 0.015142857142857142,
+    "graph": 0.015142857142857142,
+    "rewired": 0.015142857142857142,
+    "dense_dot": 28.472923278808594
+   },
+   "ranks": {
+    "bm25": 115,
+    "dense": 130,
+    "rrf": 141,
+    "direct": 141,
+    "graph": 141,
+    "rewired": 141,
+    "dense_dot": 130
+   }
+  },
+  {
+   "id": "folium/utilities.py/if_pandas_df_convert_to_numpy",
+   "scores": {
+    "bm25": 11.764201114133254,
+    "dense": -0.017547067254781723,
+    "rrf": 0.022978642257818458,
+    "direct": 0.022978642257818458,
+    "graph": 0.022978642257818458,
+    "rewired": 0.022978642257818458,
+    "dense_dot": -10.278119087219238
+   },
+   "ranks": {
+    "bm25": 47,
+    "dense": 174,
+    "rrf": 92,
+    "direct": 92,
+    "graph": 92,
+    "rewired": 92,
+    "dense_dot": 174
+   }
+  },
+  {
+   "id": "folium/utilities.py/image_to_url",
+   "scores": {
+    "bm25": 25.898212842877292,
+    "dense": 0.15335430204868317,
+    "rrf": 0.1,
+    "direct": 0.1,
+    "graph": 0.1,
+    "rewired": 0.1,
+    "dense_dot": 89.99571990966797
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 20,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 6,
+    "rewired": 6,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "folium/utilities.py/_is_url",
+   "scores": {
+    "bm25": 5.6166689423073395,
+    "dense": -0.01021622959524393,
+    "rrf": 0.01432748538011696,
+    "direct": 0.01432748538011696,
+    "graph": 0.01432748538011696,
+    "rewired": 0.01432748538011696,
+    "dense_dot": -5.9995436668396
+   },
+   "ranks": {
+    "bm25": 104,
+    "dense": 170,
+    "rrf": 150,
+    "direct": 150,
+    "graph": 150,
+    "rewired": 150,
+    "dense_dot": 170
+   }
+  },
+  {
+   "id": "folium/utilities.py/mercator_transform",
+   "scores": {
+    "bm25": 16.83848600572839,
+    "dense": 0.1491587907075882,
+    "rrf": 0.06060606060606061,
+    "direct": 0.06060606060606061,
+    "graph": 0.06060606060606061,
+    "rewired": 0.06060606060606061,
+    "dense_dot": 87.13665771484375
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 23,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 24,
+    "rewired": 24,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "folium/utilities.py/mercator_transform/mercator",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.03846535086631775,
+    "rrf": 0.011911395932014488,
+    "direct": 0.011911395932014488,
+    "graph": 0.011911395932014488,
+    "rewired": 0.011911395932014488,
+    "dense_dot": 22.663427352905273
+   },
+   "ranks": {
+    "bm25": 184,
+    "dense": 138,
+    "rrf": 178,
+    "direct": 178,
+    "graph": 178,
+    "rewired": 178,
+    "dense_dot": 138
+   }
+  },
+  {
+   "id": "folium/utilities.py/iter_coords",
+   "scores": {
+    "bm25": 11.254369685002477,
+    "dense": 0.021274685859680176,
+    "rrf": 0.021634615384615384,
+    "direct": 0.021634615384615384,
+    "graph": 0.021634615384615384,
+    "rewired": 0.021634615384615384,
+    "dense_dot": 12.555219650268555
+   },
+   "ranks": {
+    "bm25": 55,
+    "dense": 150,
+    "rrf": 100,
+    "direct": 100,
+    "graph": 100,
+    "rewired": 100,
+    "dense_dot": 150
+   }
+  },
+  {
+   "id": "folium/utilities.py/get_bounds",
+   "scores": {
+    "bm25": 3.7914604747550777,
+    "dense": 0.11492922157049179,
+    "rrf": 0.025757575757575757,
+    "direct": 0.025757575757575757,
+    "graph": 0.025757575757575757,
+    "rewired": 0.025757575757575757,
+    "dense_dot": 67.74413299560547
+   },
+   "ranks": {
+    "bm25": 122,
+    "dense": 45,
+    "rrf": 77,
+    "direct": 77,
+    "graph": 77,
+    "rewired": 77,
+    "dense_dot": 45
+   }
+  },
+  {
+   "id": "folium/utilities.py/camelize",
+   "scores": {
+    "bm25": 15.994425013219262,
+    "dense": 0.06351006031036377,
+    "rrf": 0.03676814988290398,
+    "direct": 0.03676814988290398,
+    "graph": 0.03676814988290398,
+    "rewired": 0.03676814988290398,
+    "dense_dot": 37.35480499267578
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 112,
+    "rrf": 43,
+    "direct": 43,
+    "graph": 43,
+    "rewired": 43,
+    "dense_dot": 112
+   }
+  },
+  {
+   "id": "folium/utilities.py/compare_rendered",
+   "scores": {
+    "bm25": 6.345053563573242,
+    "dense": -0.005368764046579599,
+    "rrf": 0.015358455378201963,
+    "direct": 0.015358455378201963,
+    "graph": 0.015358455378201963,
+    "rewired": 0.015358455378201963,
+    "dense_dot": -3.174409866333008
+   },
+   "ranks": {
+    "bm25": 93,
+    "dense": 167,
+    "rrf": 139,
+    "direct": 139,
+    "graph": 139,
+    "rewired": 139,
+    "dense_dot": 167
+   }
+  },
+  {
+   "id": "folium/utilities.py/normalize",
+   "scores": {
+    "bm25": 5.929540450461708,
+    "dense": 0.01981285959482193,
+    "rrf": 0.015432098765432098,
+    "direct": 0.015432098765432098,
+    "graph": 0.015432098765432098,
+    "rewired": 0.015432098765432098,
+    "dense_dot": 11.596195220947266
+   },
+   "ranks": {
+    "bm25": 98,
+    "dense": 152,
+    "rrf": 138,
+    "direct": 138,
+    "graph": 138,
+    "rewired": 138,
+    "dense_dot": 152
+   }
+  },
+  {
+   "id": "folium/utilities.py/temp_html_filepath",
+   "scores": {
+    "bm25": 5.153592574814716,
+    "dense": 0.017054535448551178,
+    "rrf": 0.01471825063078217,
+    "direct": 0.01471825063078217,
+    "graph": 0.01471825063078217,
+    "rewired": 0.01471825063078217,
+    "dense_dot": 10.001167297363281
+   },
+   "ranks": {
+    "bm25": 106,
+    "dense": 154,
+    "rrf": 143,
+    "direct": 143,
+    "graph": 143,
+    "rewired": 143,
+    "dense_dot": 154
+   }
+  },
+  {
+   "id": "folium/utilities.py/deep_copy",
+   "scores": {
+    "bm25": 3.3430577604019898,
+    "dense": -0.017278866842389107,
+    "rrf": 0.012817422050787529,
+    "direct": 0.012817422050787529,
+    "graph": 0.012817422050787529,
+    "rewired": 0.012817422050787529,
+    "dense_dot": -10.222694396972656
+   },
+   "ranks": {
+    "bm25": 126,
+    "dense": 173,
+    "rrf": 166,
+    "direct": 166,
+    "graph": 166,
+    "rewired": 166,
+    "dense_dot": 173
+   }
+  },
+  {
+   "id": "folium/utilities.py/get_obj_in_upper_tree",
+   "scores": {
+    "bm25": 11.546954540117452,
+    "dense": -0.007623984944075346,
+    "rrf": 0.021715624436835466,
+    "direct": 0.021715624436835466,
+    "graph": 0.021715624436835466,
+    "rewired": 0.021715624436835466,
+    "dense_dot": -4.484377861022949
+   },
+   "ranks": {
+    "bm25": 52,
+    "dense": 169,
+    "rrf": 98,
+    "direct": 98,
+    "graph": 98,
+    "rewired": 98,
+    "dense_dot": 169
+   }
+  },
+  {
+   "id": "folium/utilities.py/parse_options",
+   "scores": {
+    "bm25": 6.721430317724315,
+    "dense": 0.11693567037582397,
+    "rrf": 0.028867924528301885,
+    "direct": 0.028867924528301885,
+    "graph": 0.028867924528301885,
+    "rewired": 0.028867924528301885,
+    "dense_dot": 69.03543090820312
+   },
+   "ranks": {
+    "bm25": 90,
+    "dense": 43,
+    "rrf": 60,
+    "direct": 60,
+    "graph": 60,
+    "rewired": 60,
+    "dense_dot": 43
+   }
+  },
+  {
+   "id": "folium/utilities.py/escape_backticks",
+   "scores": {
+    "bm25": 8.527837146556033,
+    "dense": 0.039481960237026215,
+    "rrf": 0.018567426970788316,
+    "direct": 0.018567426970788316,
+    "graph": 0.018567426970788316,
+    "rewired": 0.018567426970788316,
+    "dense_dot": 23.297786712646484
+   },
+   "ranks": {
+    "bm25": 75,
+    "dense": 137,
+    "rrf": 116,
+    "direct": 116,
+    "graph": 116,
+    "rewired": 116,
+    "dense_dot": 137
+   }
+  },
+  {
+   "id": "folium/utilities.py/escape_double_quotes",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05122945457696915,
+    "rrf": 0.012480617223251767,
+    "direct": 0.012480617223251767,
+    "graph": 0.012480617223251767,
+    "rewired": 0.012480617223251767,
+    "dense_dot": 30.326202392578125
+   },
+   "ranks": {
+    "bm25": 183,
+    "dense": 127,
+    "rrf": 169,
+    "direct": 169,
+    "graph": 169,
+    "rewired": 169,
+    "dense_dot": 127
+   }
+  },
+  {
+   "id": "folium/utilities.py/javascript_identifier_path_to_array_notation",
+   "scores": {
+    "bm25": 8.009805138640484,
+    "dense": 0.026193372905254364,
+    "rrf": 0.01752136752136752,
+    "direct": 0.01752136752136752,
+    "graph": 0.01752136752136752,
+    "rewired": 0.01752136752136752,
+    "dense_dot": 15.492496490478516
+   },
+   "ranks": {
+    "bm25": 80,
+    "dense": 146,
+    "rrf": 123,
+    "direct": 123,
+    "graph": 123,
+    "rewired": 123,
+    "dense_dot": 146
+   }
+  },
+  {
+   "id": "folium/utilities.py/get_and_assert_figure_root",
+   "scores": {
+    "bm25": 15.342269307437824,
+    "dense": 0.023322416469454765,
+    "rrf": 0.03335614095107766,
+    "direct": 0.03335614095107766,
+    "graph": 0.03335614095107766,
+    "rewired": 0.03335614095107766,
+    "dense_dot": 13.665664672851562
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 148,
+    "rrf": 51,
+    "direct": 51,
+    "graph": 51,
+    "rewired": 51,
+    "dense_dot": 148
+   }
+  },
+  {
+   "id": "folium/utilities.py/JsCode/__init__",
+   "scores": {
+    "bm25": 0.8656225322274074,
+    "dense": 0.09229125827550888,
+    "rrf": 0.018221032277257177,
+    "direct": 0.018221032277257177,
+    "graph": 0.018221032277257177,
+    "rewired": 0.018221032277257177,
+    "dense_dot": 54.57924270629883
+   },
+   "ranks": {
+    "bm25": 152,
+    "dense": 73,
+    "rrf": 121,
+    "direct": 121,
+    "graph": 121,
+    "rewired": 121,
+    "dense_dot": 73
+   }
+  },
+  {
+   "id": "folium/utilities.py/JsCode/__str__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.04614856466650963,
+    "rrf": 0.012152777777777776,
+    "direct": 0.012152777777777776,
+    "graph": 0.012152777777777776,
+    "rewired": 0.012152777777777776,
+    "dense_dot": 27.383760452270508
+   },
+   "ranks": {
+    "bm25": 182,
+    "dense": 134,
+    "rrf": 176,
+    "direct": 176,
+    "graph": 176,
+    "rewired": 176,
+    "dense_dot": 133
+   }
+  },
+  {
+   "id": "folium/utilities.py/parse_font_size",
+   "scores": {
+    "bm25": 14.553216679256273,
+    "dense": 0.06353870779275894,
+    "rrf": 0.032073986619441164,
+    "direct": 0.032073986619441164,
+    "graph": 0.032073986619441164,
+    "rewired": 0.032073986619441164,
+    "dense_dot": 37.25140380859375
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 111,
+    "rrf": 54,
+    "direct": 54,
+    "graph": 54,
+    "rewired": 54,
+    "dense_dot": 114
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/path_options",
+   "scores": {
+    "bm25": 25.3307500673799,
+    "dense": 0.056978750973939896,
+    "rrf": 0.07019230769230769,
+    "direct": 0.07019230769230769,
+    "graph": 0.07019230769230769,
+    "rewired": 0.07019230769230769,
+    "dense_dot": 33.5008544921875
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 120,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 14,
+    "rewired": 14,
+    "dense_dot": 120
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/BaseMultiLocation/__init__",
+   "scores": {
+    "bm25": 4.26241582029001,
+    "dense": 0.07045654952526093,
+    "rrf": 0.01670843776106934,
+    "direct": 0.01670843776106934,
+    "graph": 0.01670843776106934,
+    "rewired": 0.01670843776106934,
+    "dense_dot": 41.703433990478516
+   },
+   "ranks": {
+    "bm25": 116,
+    "dense": 104,
+    "rrf": 129,
+    "direct": 129,
+    "graph": 129,
+    "rewired": 129,
+    "dense_dot": 104
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/BaseMultiLocation/_get_self_bounds",
+   "scores": {
+    "bm25": 5.546109869819825,
+    "dense": -0.03283693268895149,
+    "rrf": 0.013958810068649886,
+    "direct": 0.013958810068649886,
+    "graph": 0.013958810068649886,
+    "rewired": 0.013958810068649886,
+    "dense_dot": -19.423736572265625
+   },
+   "ranks": {
+    "bm25": 105,
+    "dense": 180,
+    "rrf": 159,
+    "direct": 159,
+    "graph": 159,
+    "rewired": 159,
+    "dense_dot": 180
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/PolyLine/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05218558758497238,
+    "rrf": 0.012429083308450283,
+    "direct": 0.012429083308450283,
+    "graph": 0.012429083308450283,
+    "rewired": 0.012429083308450283,
+    "dense_dot": 30.86267852783203
+   },
+   "ranks": {
+    "bm25": 187,
+    "dense": 126,
+    "rrf": 170,
+    "direct": 170,
+    "graph": 170,
+    "rewired": 170,
+    "dense_dot": 126
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/Polygon/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05885232985019684,
+    "rrf": 0.012863005050505052,
+    "direct": 0.012863005050505052,
+    "graph": 0.012863005050505052,
+    "rewired": 0.012863005050505052,
+    "dense_dot": 34.81927490234375
+   },
+   "ranks": {
+    "bm25": 188,
+    "dense": 118,
+    "rrf": 164,
+    "direct": 164,
+    "graph": 164,
+    "rewired": 164,
+    "dense_dot": 118
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/Rectangle/__init__",
+   "scores": {
+    "bm25": 4.055439773358875,
+    "dense": 0.08281994611024857,
+    "rrf": 0.017852948085506228,
+    "direct": 0.017852948085506228,
+    "graph": 0.017852948085506228,
+    "rewired": 0.017852948085506228,
+    "dense_dot": 48.862030029296875
+   },
+   "ranks": {
+    "bm25": 119,
+    "dense": 89,
+    "rrf": 122,
+    "direct": 122,
+    "graph": 122,
+    "rewired": 122,
+    "dense_dot": 89
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/Rectangle/_get_self_bounds",
+   "scores": {
+    "bm25": 5.712166092581289,
+    "dense": -0.020921284332871437,
+    "rrf": 0.014333976833976834,
+    "direct": 0.014333976833976834,
+    "graph": 0.014333976833976834,
+    "rewired": 0.014333976833976834,
+    "dense_dot": -12.330425262451172
+   },
+   "ranks": {
+    "bm25": 102,
+    "dense": 175,
+    "rrf": 149,
+    "direct": 149,
+    "graph": 149,
+    "rewired": 149,
+    "dense_dot": 175
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/Circle/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07340365648269653,
+    "rrf": 0.014302517054810632,
+    "direct": 0.014302517054810632,
+    "graph": 0.014302517054810632,
+    "rewired": 0.014302517054810632,
+    "dense_dot": 43.401390075683594
+   },
+   "ranks": {
+    "bm25": 185,
+    "dense": 99,
+    "rrf": 151,
+    "direct": 151,
+    "graph": 151,
+    "rewired": 151,
+    "dense_dot": 98
+   }
+  },
+  {
+   "id": "folium/vector_layers.py/CircleMarker/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.08727885782718658,
+    "rrf": 0.015740338688666956,
+    "direct": 0.015740338688666956,
+    "graph": 0.015740338688666956,
+    "rewired": 0.015740338688666956,
+    "dense_dot": 51.66023635864258
+   },
+   "ranks": {
+    "bm25": 186,
+    "dense": 84,
+    "rrf": 133,
+    "direct": 133,
+    "graph": 133,
+    "rewired": 133,
+    "dense_dot": 83
+   }
+  },
+  {
+   "id": "folium/map.py/Evented/on",
+   "scores": {
+    "bm25": 5.67625889933872,
+    "dense": 0.06264252960681915,
+    "rrf": 0.016849557522123894,
+    "direct": 0.016849557522123894,
+    "graph": 0.016849557522123894,
+    "rewired": 0.016849557522123894,
+    "dense_dot": 37.05598831176758
+   },
+   "ranks": {
+    "bm25": 103,
+    "dense": 115,
+    "rrf": 128,
+    "direct": 128,
+    "graph": 128,
+    "rewired": 128,
+    "dense_dot": 115
+   }
+  },
+  {
+   "id": "folium/map.py/Layer/__init__",
+   "scores": {
+    "bm25": 10.45763944562363,
+    "dense": 0.09396309405565262,
+    "rrf": 0.027051561365286855,
+    "direct": 0.027051561365286855,
+    "graph": 0.027051561365286855,
+    "rewired": 0.027051561365286855,
+    "dense_dot": 55.42555236816406
+   },
+   "ranks": {
+    "bm25": 58,
+    "dense": 71,
+    "rrf": 69,
+    "direct": 69,
+    "graph": 69,
+    "rewired": 69,
+    "dense_dot": 70
+   }
+  },
+  {
+   "id": "folium/map.py/Layer/render",
+   "scores": {
+    "bm25": 5.071085483774585,
+    "dense": 0.07112953066825867,
+    "rrf": 0.01711402033204125,
+    "direct": 0.01711402033204125,
+    "graph": 0.01711402033204125,
+    "rewired": 0.01711402033204125,
+    "dense_dot": 42.044254302978516
+   },
+   "ranks": {
+    "bm25": 111,
+    "dense": 103,
+    "rrf": 126,
+    "direct": 126,
+    "graph": 126,
+    "rewired": 126,
+    "dense_dot": 102
+   }
+  },
+  {
+   "id": "folium/map.py/FeatureGroup/__init__",
+   "scores": {
+    "bm25": 9.8314984596687,
+    "dense": 0.0947038009762764,
+    "rrf": 0.0259915611814346,
+    "direct": 0.0259915611814346,
+    "graph": 0.0259915611814346,
+    "rewired": 0.0259915611814346,
+    "dense_dot": 55.62901306152344
+   },
+   "ranks": {
+    "bm25": 65,
+    "dense": 69,
+    "rrf": 76,
+    "direct": 76,
+    "graph": 76,
+    "rewired": 76,
+    "dense_dot": 69
+   }
+  },
+  {
+   "id": "folium/map.py/LayerControl/__init__",
+   "scores": {
+    "bm25": 3.011272607217092,
+    "dense": 0.06819011270999908,
+    "rrf": 0.015495559926098098,
+    "direct": 0.015495559926098098,
+    "graph": 0.015495559926098098,
+    "rewired": 0.015495559926098098,
+    "dense_dot": 40.10267639160156
+   },
+   "ranks": {
+    "bm25": 131,
+    "dense": 109,
+    "rrf": 137,
+    "direct": 137,
+    "graph": 137,
+    "rewired": 137,
+    "dense_dot": 109
+   }
+  },
+  {
+   "id": "folium/map.py/LayerControl/reset",
+   "scores": {
+    "bm25": 3.2120628919401635,
+    "dense": -0.06794258207082748,
+    "rrf": 0.012271502439734907,
+    "direct": 0.012271502439734907,
+    "graph": 0.012271502439734907,
+    "rewired": 0.012271502439734907,
+    "dense_dot": -40.17734146118164
+   },
+   "ranks": {
+    "bm25": 128,
+    "dense": 189,
+    "rrf": 175,
+    "direct": 175,
+    "graph": 175,
+    "rewired": 175,
+    "dense_dot": 189
+   }
+  },
+  {
+   "id": "folium/map.py/LayerControl/render",
+   "scores": {
+    "bm25": 10.476247658872627,
+    "dense": 0.024124490097165108,
+    "rrf": 0.021294799885920715,
+    "direct": 0.021294799885920715,
+    "graph": 0.021294799885920715,
+    "rewired": 0.021294799885920715,
+    "dense_dot": 14.315820693969727
+   },
+   "ranks": {
+    "bm25": 57,
+    "dense": 147,
+    "rrf": 101,
+    "direct": 101,
+    "graph": 101,
+    "rewired": 101,
+    "dense_dot": 147
+   }
+  },
+  {
+   "id": "folium/map.py/Icon/__init__",
+   "scores": {
+    "bm25": 4.795127000933676,
+    "dense": 0.10473962128162384,
+    "rrf": 0.023514696685428396,
+    "direct": 0.023514696685428396,
+    "graph": 0.023514696685428396,
+    "rewired": 0.023514696685428396,
+    "dense_dot": 61.977394104003906
+   },
+   "ranks": {
+    "bm25": 113,
+    "dense": 55,
+    "rrf": 91,
+    "direct": 91,
+    "graph": 91,
+    "rewired": 91,
+    "dense_dot": 55
+   }
+  },
+  {
+   "id": "folium/map.py/Marker/__init__",
+   "scores": {
+    "bm25": 6.833564091428385,
+    "dense": 0.10218233615159988,
+    "rrf": 0.02512945476698142,
+    "direct": 0.02512945476698142,
+    "graph": 0.02512945476698142,
+    "rewired": 0.02512945476698142,
+    "dense_dot": 60.47105407714844
+   },
+   "ranks": {
+    "bm25": 88,
+    "dense": 57,
+    "rrf": 81,
+    "direct": 81,
+    "graph": 81,
+    "rewired": 81,
+    "dense_dot": 57
+   }
+  },
+  {
+   "id": "folium/map.py/Marker/_get_self_bounds",
+   "scores": {
+    "bm25": 12.081875192092143,
+    "dense": -0.03775656595826149,
+    "rrf": 0.02372685185185185,
+    "direct": 0.02372685185185185,
+    "graph": 0.02372685185185185,
+    "rewired": 0.02372685185185185,
+    "dense_dot": -22.30124282836914
+   },
+   "ranks": {
+    "bm25": 44,
+    "dense": 182,
+    "rrf": 88,
+    "direct": 88,
+    "graph": 88,
+    "rewired": 88,
+    "dense_dot": 182
+   }
+  },
+  {
+   "id": "folium/map.py/Marker/render",
+   "scores": {
+    "bm25": 6.895387756154617,
+    "dense": -0.02989571914076805,
+    "rrf": 0.015600283641520754,
+    "direct": 0.015600283641520754,
+    "graph": 0.015600283641520754,
+    "rewired": 0.015600283641520754,
+    "dense_dot": -17.722360610961914
+   },
+   "ranks": {
+    "bm25": 87,
+    "dense": 179,
+    "rrf": 135,
+    "direct": 135,
+    "graph": 135,
+    "rewired": 135,
+    "dense_dot": 179
+   }
+  },
+  {
+   "id": "folium/map.py/Popup/__init__",
+   "scores": {
+    "bm25": 8.96605503396692,
+    "dense": 0.15451779961585999,
+    "rrf": 0.04653095139177399,
+    "direct": 0.04653095139177399,
+    "graph": 0.04653095139177399,
+    "rewired": 0.04653095139177399,
+    "dense_dot": 91.48082733154297
+   },
+   "ranks": {
+    "bm25": 73,
+    "dense": 19,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 33,
+    "rewired": 33,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "folium/map.py/Popup/render",
+   "scores": {
+    "bm25": 12.064623580511398,
+    "dense": 0.08307448774576187,
+    "rrf": 0.028491096532333643,
+    "direct": 0.028491096532333643,
+    "graph": 0.028491096532333643,
+    "rewired": 0.028491096532333643,
+    "dense_dot": 49.081024169921875
+   },
+   "ranks": {
+    "bm25": 45,
+    "dense": 87,
+    "rrf": 62,
+    "direct": 62,
+    "graph": 62,
+    "rewired": 62,
+    "dense_dot": 87
+   }
+  },
+  {
+   "id": "folium/map.py/Tooltip/__init__",
+   "scores": {
+    "bm25": 2.1342021651162213,
+    "dense": 0.09037351608276367,
+    "rrf": 0.01833931637271734,
+    "direct": 0.01833931637271734,
+    "graph": 0.01833931637271734,
+    "rewired": 0.01833931637271734,
+    "dense_dot": 53.118804931640625
+   },
+   "ranks": {
+    "bm25": 139,
+    "dense": 76,
+    "rrf": 120,
+    "direct": 120,
+    "graph": 120,
+    "rewired": 120,
+    "dense_dot": 76
+   }
+  },
+  {
+   "id": "folium/map.py/Tooltip/parse_options",
+   "scores": {
+    "bm25": 12.70360287911242,
+    "dense": 0.14539684355258942,
+    "rrf": 0.04897959183673469,
+    "direct": 0.04897959183673469,
+    "graph": 0.04897959183673469,
+    "rewired": 0.04897959183673469,
+    "dense_dot": 85.8203353881836
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 25,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 30,
+    "rewired": 30,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "folium/map.py/FitBounds/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06570420414209366,
+    "rrf": 0.014015151515151515,
+    "direct": 0.014015151515151515,
+    "graph": 0.014015151515151515,
+    "rewired": 0.014015151515151515,
+    "dense_dot": 38.85099411010742
+   },
+   "ranks": {
+    "bm25": 166,
+    "dense": 110,
+    "rrf": 157,
+    "direct": 157,
+    "graph": 157,
+    "rewired": 157,
+    "dense_dot": 110
+   }
+  },
+  {
+   "id": "folium/map.py/FitOverlays/__init__",
+   "scores": {
+    "bm25": 6.496538271818233,
+    "dense": 0.08287069946527481,
+    "rrf": 0.02010507173166296,
+    "direct": 0.02010507173166296,
+    "graph": 0.02010507173166296,
+    "rewired": 0.02010507173166296,
+    "dense_dot": 49.01097869873047
+   },
+   "ranks": {
+    "bm25": 91,
+    "dense": 88,
+    "rrf": 108,
+    "direct": 108,
+    "graph": 108,
+    "rewired": 108,
+    "dense_dot": 88
+   }
+  },
+  {
+   "id": "folium/map.py/CustomPane/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.09881540387868881,
+    "rrf": 0.0196031746031746,
+    "direct": 0.0196031746031746,
+    "graph": 0.0196031746031746,
+    "rewired": 0.0196031746031746,
+    "dense_dot": 58.190547943115234
+   },
+   "ranks": {
+    "bm25": 165,
+    "dense": 62,
+    "rrf": 109,
+    "direct": 109,
+    "graph": 109,
+    "rewired": 109,
+    "dense_dot": 62
+   }
+  },
+  {
+   "id": "folium/folium.py/GlobalSwitches/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.1188259869813919,
+    "rrf": 0.02497789566755084,
+    "direct": 0.02497789566755084,
+    "graph": 0.02497789566755084,
+    "rewired": 0.02497789566755084,
+    "dense_dot": 69.83047485351562
+   },
+   "ranks": {
+    "bm25": 164,
+    "dense": 42,
+    "rrf": 83,
+    "direct": 83,
+    "graph": 83,
+    "rewired": 83,
+    "dense_dot": 42
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/__init__",
+   "scores": {
+    "bm25": 8.179166548538092,
+    "dense": 0.1375720202922821,
+    "rrf": 0.038390663390663396,
+    "direct": 0.038390663390663396,
+    "graph": 0.038390663390663396,
+    "rewired": 0.038390663390663396,
+    "dense_dot": 80.81965637207031
+   },
+   "ranks": {
+    "bm25": 78,
+    "dense": 27,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/_repr_html_",
+   "scores": {
+    "bm25": 6.029825727299036,
+    "dense": 0.08943579345941544,
+    "rrf": 0.02092821513771416,
+    "direct": 0.02092821513771416,
+    "graph": 0.02092821513771416,
+    "rewired": 0.02092821513771416,
+    "dense_dot": 52.878143310546875
+   },
+   "ranks": {
+    "bm25": 96,
+    "dense": 77,
+    "rrf": 103,
+    "direct": 103,
+    "graph": 103,
+    "rewired": 103,
+    "dense_dot": 77
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/_to_png",
+   "scores": {
+    "bm25": 22.252804243782926,
+    "dense": 0.05361253395676613,
+    "rrf": 0.055081734186211796,
+    "direct": 0.055081734186211796,
+    "graph": 0.055081734186211796,
+    "rewired": 0.055081734186211796,
+    "dense_dot": 31.6544246673584
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 124,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 28,
+    "rewired": 28,
+    "dense_dot": 124
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/_repr_png_",
+   "scores": {
+    "bm25": 22.5066527943674,
+    "dense": 0.01838749274611473,
+    "rrf": 0.056134969325153376,
+    "direct": 0.056134969325153376,
+    "graph": 0.056134969325153376,
+    "rewired": 0.056134969325153376,
+    "dense_dot": 10.810073852539062
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 153,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 26,
+    "rewired": 26,
+    "dense_dot": 153
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/render",
+   "scores": {
+    "bm25": 12.35386360344643,
+    "dense": 0.11205742508172989,
+    "rrf": 0.03617992177314211,
+    "direct": 0.03617992177314211,
+    "graph": 0.03617992177314211,
+    "rewired": 0.03617992177314211,
+    "dense_dot": 66.29357147216797
+   },
+   "ranks": {
+    "bm25": 42,
+    "dense": 49,
+    "rrf": 44,
+    "direct": 44,
+    "graph": 44,
+    "rewired": 44,
+    "dense_dot": 49
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/show_in_browser",
+   "scores": {
+    "bm25": 14.74925276159273,
+    "dense": 0.0064684427343308926,
+    "rrf": 0.030882352941176472,
+    "direct": 0.030882352941176472,
+    "graph": 0.030882352941176472,
+    "rewired": 0.030882352941176472,
+    "dense_dot": 3.7999582290649414
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 160,
+    "rrf": 57,
+    "direct": 57,
+    "graph": 57,
+    "rewired": 57,
+    "dense_dot": 160
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/fit_bounds",
+   "scores": {
+    "bm25": 11.688615421766587,
+    "dense": 0.04303567856550217,
+    "rrf": 0.023845704266510812,
+    "direct": 0.023845704266510812,
+    "graph": 0.023845704266510812,
+    "rewired": 0.023845704266510812,
+    "dense_dot": 25.521724700927734
+   },
+   "ranks": {
+    "bm25": 49,
+    "dense": 135,
+    "rrf": 87,
+    "direct": 87,
+    "graph": 87,
+    "rewired": 87,
+    "dense_dot": 135
+   }
+  },
+  {
+   "id": "folium/folium.py/Map/keep_in_front",
+   "scores": {
+    "bm25": 20.21563842570116,
+    "dense": -0.05840752273797989,
+    "rrf": 0.046768707482993194,
+    "direct": 0.046768707482993194,
+    "graph": 0.046768707482993194,
+    "rewired": 0.046768707482993194,
+    "dense_dot": -34.47515106201172
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 186,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 32,
+    "rewired": 32,
+    "dense_dot": 186
+   }
+  },
+  {
+   "id": "folium/template.py/tojavascript",
+   "scores": {
+    "bm25": 3.164375226642547,
+    "dense": 0.11401449143886566,
+    "rrf": 0.024999999999999998,
+    "direct": 0.024999999999999998,
+    "graph": 0.024999999999999998,
+    "rewired": 0.024999999999999998,
+    "dense_dot": 67.4147720336914
+   },
+   "ranks": {
+    "bm25": 130,
+    "dense": 46,
+    "rrf": 82,
+    "direct": 82,
+    "graph": 82,
+    "rewired": 82,
+    "dense_dot": 46
+   }
+  },
+  {
+   "id": "folium/template.py/_to_escaped_json",
+   "scores": {
+    "bm25": 2.009797300324181,
+    "dense": 0.011695600114762783,
+    "rrf": 0.01261904761904762,
+    "direct": 0.01261904761904762,
+    "graph": 0.01261904761904762,
+    "rewired": 0.01261904761904762,
+    "dense_dot": 6.889169692993164
+   },
+   "ranks": {
+    "bm25": 140,
+    "dense": 158,
+    "rrf": 168,
+    "direct": 168,
+    "graph": 168,
+    "rewired": 168,
+    "dense_dot": 158
+   }
+  },
+  {
+   "id": "folium/template.py/Environment/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.11194326728582382,
+    "rrf": 0.021902268760907506,
+    "direct": 0.021902268760907506,
+    "graph": 0.021902268760907506,
+    "rewired": 0.021902268760907506,
+    "dense_dot": 66.24751281738281
+   },
+   "ranks": {
+    "bm25": 181,
+    "dense": 50,
+    "rrf": 95,
+    "direct": 95,
+    "graph": 95,
+    "rewired": 95,
+    "dense_dot": 50
+   }
+  },
+  {
+   "id": "folium/elements.py/JSCSSMixin/render",
+   "scores": {
+    "bm25": 9.258725755691003,
+    "dense": 0.09654983878135681,
+    "rrf": 0.02532051282051282,
+    "direct": 0.02532051282051282,
+    "graph": 0.02532051282051282,
+    "rewired": 0.02532051282051282,
+    "dense_dot": 57.05200958251953
+   },
+   "ranks": {
+    "bm25": 70,
+    "dense": 68,
+    "rrf": 78,
+    "direct": 78,
+    "graph": 78,
+    "rewired": 78,
+    "dense_dot": 68
+   }
+  },
+  {
+   "id": "folium/elements.py/JSCSSMixin/add_css_link",
+   "scores": {
+    "bm25": 2.244020338471938,
+    "dense": 0.050834111869335175,
+    "rrf": 0.013996965692751922,
+    "direct": 0.013996965692751922,
+    "graph": 0.013996965692751922,
+    "rewired": 0.013996965692751922,
+    "dense_dot": 30.09772491455078
+   },
+   "ranks": {
+    "bm25": 137,
+    "dense": 129,
+    "rrf": 158,
+    "direct": 158,
+    "graph": 158,
+    "rewired": 158,
+    "dense_dot": 129
+   }
+  },
+  {
+   "id": "folium/elements.py/JSCSSMixin/add_js_link",
+   "scores": {
+    "bm25": 2.244020338471938,
+    "dense": 0.05883854627609253,
+    "rrf": 0.014508694741252881,
+    "direct": 0.014508694741252881,
+    "graph": 0.014508694741252881,
+    "rewired": 0.014508694741252881,
+    "dense_dot": 34.81636047363281
+   },
+   "ranks": {
+    "bm25": 138,
+    "dense": 119,
+    "rrf": 144,
+    "direct": 144,
+    "graph": 144,
+    "rewired": 144,
+    "dense_dot": 119
+   }
+  },
+  {
+   "id": "folium/elements.py/JSCSSMixin/_add_link",
+   "scores": {
+    "bm25": 8.817384291594205,
+    "dense": 0.08129987120628357,
+    "rrf": 0.021805752003771807,
+    "direct": 0.021805752003771807,
+    "graph": 0.021805752003771807,
+    "rewired": 0.021805752003771807,
+    "dense_dot": 48.24250793457031
+   },
+   "ranks": {
+    "bm25": 74,
+    "dense": 91,
+    "rrf": 97,
+    "direct": 97,
+    "graph": 97,
+    "rewired": 97,
+    "dense_dot": 91
+   }
+  },
+  {
+   "id": "folium/elements.py/EventHandler/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0814642459154129,
+    "rrf": 0.01606060606060606,
+    "direct": 0.01606060606060606,
+    "graph": 0.01606060606060606,
+    "rewired": 0.01606060606060606,
+    "dense_dot": 48.30064392089844
+   },
+   "ranks": {
+    "bm25": 155,
+    "dense": 90,
+    "rrf": 132,
+    "direct": 132,
+    "graph": 132,
+    "rewired": 132,
+    "dense_dot": 90
+   }
+  },
+  {
+   "id": "folium/elements.py/ElementAddToElement/__init__",
+   "scores": {
+    "bm25": 1.9143897103663814,
+    "dense": -0.0010664415312930942,
+    "rrf": 0.012326073805202661,
+    "direct": 0.012326073805202661,
+    "graph": 0.012326073805202661,
+    "rewired": 0.012326073805202661,
+    "dense_dot": -0.6306896209716797
+   },
+   "ranks": {
+    "bm25": 142,
+    "dense": 164,
+    "rrf": 171,
+    "direct": 171,
+    "graph": 171,
+    "rewired": 171,
+    "dense_dot": 164
+   }
+  },
+  {
+   "id": "folium/raster_layers.py/TileLayer/__init__",
+   "scores": {
+    "bm25": 9.766928165714672,
+    "dense": 0.08069165050983429,
+    "rrf": 0.022961816305469555,
+    "direct": 0.022961816305469555,
+    "graph": 0.022961816305469555,
+    "rewired": 0.022961816305469555,
+    "dense_dot": 47.414634704589844
+   },
+   "ranks": {
+    "bm25": 66,
+    "dense": 92,
+    "rrf": 93,
+    "direct": 93,
+    "graph": 93,
+    "rewired": 93,
+    "dense_dot": 92
+   }
+  },
+  {
+   "id": "folium/raster_layers.py/WmsTileLayer/__init__",
+   "scores": {
+    "bm25": 14.743099487183107,
+    "dense": 0.17830723524093628,
+    "rrf": 0.06984478935698449,
+    "direct": 0.06984478935698449,
+    "graph": 0.06984478935698449,
+    "rewired": 0.06984478935698449,
+    "dense_dot": 104.84629821777344
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 12,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 16,
+    "rewired": 16,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "folium/raster_layers.py/ImageOverlay/__init__",
+   "scores": {
+    "bm25": 7.993827490894802,
+    "dense": 0.12130028754472733,
+    "rrf": 0.03098901098901099,
+    "direct": 0.03098901098901099,
+    "graph": 0.03098901098901099,
+    "rewired": 0.03098901098901099,
+    "dense_dot": 71.35200500488281
+   },
+   "ranks": {
+    "bm25": 81,
+    "dense": 40,
+    "rrf": 56,
+    "direct": 56,
+    "graph": 56,
+    "rewired": 56,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "folium/raster_layers.py/ImageOverlay/render",
+   "scores": {
+    "bm25": 8.406481842360058,
+    "dense": 0.055475909262895584,
+    "rrf": 0.019203664552501762,
+    "direct": 0.019203664552501762,
+    "graph": 0.019203664552501762,
+    "rewired": 0.019203664552501762,
+    "dense_dot": 32.68864059448242
+   },
+   "ranks": {
+    "bm25": 76,
+    "dense": 122,
+    "rrf": 111,
+    "direct": 111,
+    "graph": 111,
+    "rewired": 111,
+    "dense_dot": 122
+   }
+  },
+  {
+   "id": "folium/raster_layers.py/ImageOverlay/_get_self_bounds",
+   "scores": {
+    "bm25": 10.269092143104254,
+    "dense": -0.017148470506072044,
+    "rrf": 0.019579012536759016,
+    "direct": 0.019579012536759016,
+    "graph": 0.019579012536759016,
+    "rewired": 0.019579012536759016,
+    "dense_dot": -10.135880470275879
+   },
+   "ranks": {
+    "bm25": 61,
+    "dense": 172,
+    "rrf": 110,
+    "direct": 110,
+    "graph": 110,
+    "rewired": 110,
+    "dense_dot": 172
+   }
+  },
+  {
+   "id": "folium/raster_layers.py/VideoOverlay/__init__",
+   "scores": {
+    "bm25": 6.431114111779869,
+    "dense": 0.09145475178956985,
+    "rrf": 0.021708683473389355,
+    "direct": 0.021708683473389355,
+    "graph": 0.021708683473389355,
+    "rewired": 0.021708683473389355,
+    "dense_dot": 53.62690353393555
+   },
+   "ranks": {
+    "bm25": 92,
+    "dense": 74,
+    "rrf": 99,
+    "direct": 99,
+    "graph": 99,
+    "rewired": 99,
+    "dense_dot": 74
+   }
+  },
+  {
+   "id": "folium/raster_layers.py/VideoOverlay/_get_self_bounds",
+   "scores": {
+    "bm25": 10.269092143104254,
+    "dense": -0.03561946749687195,
+    "rrf": 0.019124490983129724,
+    "direct": 0.019124490983129724,
+    "graph": 0.019124490983129724,
+    "rewired": 0.019124490983129724,
+    "dense_dot": -20.9698429107666
+   },
+   "ranks": {
+    "bm25": 62,
+    "dense": 181,
+    "rrf": 112,
+    "direct": 112,
+    "graph": 112,
+    "rewired": 112,
+    "dense_dot": 181
+   }
+  },
+  {
+   "id": "folium/plugins/marker_cluster.py/MarkerCluster/__init__",
+   "scores": {
+    "bm25": 13.010159654649613,
+    "dense": 0.10044045001268387,
+    "rrf": 0.035769349367869255,
+    "direct": 0.035769349367869255,
+    "graph": 0.035769349367869255,
+    "rewired": 0.035769349367869255,
+    "dense_dot": 59.053993225097656
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 59,
+    "rrf": 46,
+    "direct": 46,
+    "graph": 46,
+    "rewired": 46,
+    "dense_dot": 61
+   }
+  },
+  {
+   "id": "folium/plugins/fast_marker_cluster.py/FastMarkerCluster/__init__",
+   "scores": {
+    "bm25": 15.599963186716368,
+    "dense": 0.08867629617452621,
+    "rrf": 0.03888888888888889,
+    "direct": 0.03888888888888889,
+    "graph": 0.03888888888888889,
+    "rewired": 0.03888888888888889,
+    "dense_dot": 51.91892623901367
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 80,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 81
+   }
+  },
+  {
+   "id": "folium/plugins/tag_filter_button.py/TagFilterButton/__init__",
+   "scores": {
+    "bm25": 7.4071483566030665,
+    "dense": 0.12226156145334244,
+    "rrf": 0.031471631205673756,
+    "direct": 0.031471631205673756,
+    "graph": 0.031471631205673756,
+    "rewired": 0.031471631205673756,
+    "dense_dot": 72.01971435546875
+   },
+   "ranks": {
+    "bm25": 84,
+    "dense": 38,
+    "rrf": 55,
+    "direct": 55,
+    "graph": 55,
+    "rewired": 55,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "folium/plugins/timeline.py/Timeline/__init__",
+   "scores": {
+    "bm25": 6.190082388847215,
+    "dense": 0.20581868290901184,
+    "rrf": 0.07211538461538461,
+    "direct": 0.07211538461538461,
+    "graph": 0.07211538461538461,
+    "rewired": 0.07211538461538461,
+    "dense_dot": 121.08580017089844
+   },
+   "ranks": {
+    "bm25": 94,
+    "dense": 6,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 13,
+    "rewired": 13,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "folium/plugins/timeline.py/Timeline/_get_self_bounds",
+   "scores": {
+    "bm25": 12.24138619043577,
+    "dense": 0.08783120661973953,
+    "rrf": 0.02973748974569319,
+    "direct": 0.02973748974569319,
+    "graph": 0.02973748974569319,
+    "rewired": 0.02973748974569319,
+    "dense_dot": 51.64751052856445
+   },
+   "ranks": {
+    "bm25": 43,
+    "dense": 82,
+    "rrf": 58,
+    "direct": 58,
+    "graph": 58,
+    "rewired": 58,
+    "dense_dot": 84
+   }
+  },
+  {
+   "id": "folium/plugins/timeline.py/TimelineSlider/__init__",
+   "scores": {
+    "bm25": 19.946642638499238,
+    "dense": 0.32641953229904175,
+    "rrf": 0.12333333333333332,
+    "direct": 0.12333333333333332,
+    "graph": 0.12333333333333332,
+    "rewired": 0.12333333333333332,
+    "dense_dot": 191.62559509277344
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 2,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "folium/plugins/timeline.py/TimelineSlider/add_timelines",
+   "scores": {
+    "bm25": 19.194088172100862,
+    "dense": 0.1359393298625946,
+    "rrf": 0.06267806267806267,
+    "direct": 0.06267806267806267,
+    "graph": 0.06267806267806267,
+    "rewired": 0.06267806267806267,
+    "dense_dot": 80.45944213867188
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 29,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 21,
+    "rewired": 21,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "folium/plugins/timeline.py/TimelineSlider/render",
+   "scores": {
+    "bm25": 19.029002234507928,
+    "dense": 0.18985877931118011,
+    "rrf": 0.08571428571428572,
+    "direct": 0.08571428571428572,
+    "graph": 0.08571428571428572,
+    "rewired": 0.08571428571428572,
+    "dense_dot": 112.10609436035156
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 10,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 10,
+    "rewired": 10,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "folium/plugins/mouse_position.py/MousePosition/__init__",
+   "scores": {
+    "bm25": 2.329692502882381,
+    "dense": 0.16510608792304993,
+    "rrf": 0.04684931506849315,
+    "direct": 0.04684931506849315,
+    "graph": 0.04684931506849315,
+    "rewired": 0.04684931506849315,
+    "dense_dot": 97.18451690673828
+   },
+   "ranks": {
+    "bm25": 136,
+    "dense": 15,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 31,
+    "rewired": 31,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "folium/plugins/vectorgrid_protobuf.py/VectorGridProtobuf/__init__",
+   "scores": {
+    "bm25": 9.862334987731598,
+    "dense": 0.04769916832447052,
+    "rrf": 0.020605712095073798,
+    "direct": 0.020605712095073798,
+    "graph": 0.020605712095073798,
+    "rewired": 0.020605712095073798,
+    "dense_dot": 28.008495330810547
+   },
+   "ranks": {
+    "bm25": 64,
+    "dense": 131,
+    "rrf": 105,
+    "direct": 105,
+    "graph": 105,
+    "rewired": 105,
+    "dense_dot": 131
+   }
+  },
+  {
+   "id": "folium/plugins/dual_map.py/DualMap/__init__",
+   "scores": {
+    "bm25": 7.560021037186499,
+    "dense": 0.10036460310220718,
+    "rrf": 0.025155279503105588,
+    "direct": 0.025155279503105588,
+    "graph": 0.025155279503105588,
+    "rewired": 0.025155279503105588,
+    "dense_dot": 59.19916915893555
+   },
+   "ranks": {
+    "bm25": 82,
+    "dense": 60,
+    "rrf": 80,
+    "direct": 80,
+    "graph": 80,
+    "rewired": 80,
+    "dense_dot": 58
+   }
+  },
+  {
+   "id": "folium/plugins/dual_map.py/DualMap/_repr_html_",
+   "scores": {
+    "bm25": 5.938722785831902,
+    "dense": 0.08851762115955353,
+    "rrf": 0.020334805381534354,
+    "direct": 0.020334805381534354,
+    "graph": 0.020334805381534354,
+    "rewired": 0.020334805381534354,
+    "dense_dot": 52.47541046142578
+   },
+   "ranks": {
+    "bm25": 97,
+    "dense": 81,
+    "rrf": 107,
+    "direct": 107,
+    "graph": 107,
+    "rewired": 107,
+    "dense_dot": 79
+   }
+  },
+  {
+   "id": "folium/plugins/dual_map.py/DualMap/add_child",
+   "scores": {
+    "bm25": 9.546320917907211,
+    "dense": -0.0021725399419665337,
+    "rrf": 0.018502331002331,
+    "direct": 0.018502331002331,
+    "graph": 0.018502331002331,
+    "rewired": 0.018502331002331,
+    "dense_dot": -1.2798881530761719
+   },
+   "ranks": {
+    "bm25": 68,
+    "dense": 166,
+    "rrf": 117,
+    "direct": 117,
+    "graph": 117,
+    "rewired": 117,
+    "dense_dot": 166
+   }
+  },
+  {
+   "id": "folium/plugins/dual_map.py/DualMap/render",
+   "scores": {
+    "bm25": 16.64605076674562,
+    "dense": -0.024745998904109,
+    "rrf": 0.034730913642052566,
+    "direct": 0.034730913642052566,
+    "graph": 0.034730913642052566,
+    "rewired": 0.034730913642052566,
+    "dense_dot": -14.544053077697754
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 178,
+    "rrf": 49,
+    "direct": 49,
+    "graph": 49,
+    "rewired": 49,
+    "dense_dot": 178
+   }
+  },
+  {
+   "id": "folium/plugins/dual_map.py/DualMap/fit_bounds",
+   "scores": {
+    "bm25": 1.1686015405529422,
+    "dense": -0.023259326815605164,
+    "rrf": 0.011676707506938333,
+    "direct": 0.011676707506938333,
+    "graph": 0.011676707506938333,
+    "rewired": 0.011676707506938333,
+    "dense_dot": -13.800618171691895
+   },
+   "ranks": {
+    "bm25": 148,
+    "dense": 177,
+    "rrf": 182,
+    "direct": 182,
+    "graph": 182,
+    "rewired": 182,
+    "dense_dot": 177
+   }
+  },
+  {
+   "id": "folium/plugins/dual_map.py/DualMap/keep_in_front",
+   "scores": {
+    "bm25": 1.6336168560123654,
+    "dense": -0.04539075866341591,
+    "rrf": 0.01167485364376556,
+    "direct": 0.01167485364376556,
+    "graph": 0.01167485364376556,
+    "rewired": 0.01167485364376556,
+    "dense_dot": -26.814468383789062
+   },
+   "ranks": {
+    "bm25": 144,
+    "dense": 183,
+    "rrf": 183,
+    "direct": 183,
+    "graph": 183,
+    "rewired": 183,
+    "dense_dot": 183
+   }
+  },
+  {
+   "id": "folium/plugins/terminator.py/Terminator/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.005475291516631842,
+    "rrf": 0.010881135422826729,
+    "direct": 0.010881135422826729,
+    "graph": 0.010881135422826729,
+    "rewired": 0.010881135422826729,
+    "dense_dot": -3.23750638961792
+   },
+   "ranks": {
+    "bm25": 180,
+    "dense": 168,
+    "rrf": 188,
+    "direct": 188,
+    "graph": 188,
+    "rewired": 188,
+    "dense_dot": 168
+   }
+  },
+  {
+   "id": "folium/plugins/float_image.py/FloatImage/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.09053560346364975,
+    "rrf": 0.017259211376858437,
+    "direct": 0.017259211376858437,
+    "graph": 0.017259211376858437,
+    "rewired": 0.017259211376858437,
+    "dense_dot": 53.574317932128906
+   },
+   "ranks": {
+    "bm25": 172,
+    "dense": 75,
+    "rrf": 124,
+    "direct": 124,
+    "graph": 124,
+    "rewired": 124,
+    "dense_dot": 75
+   }
+  },
+  {
+   "id": "folium/plugins/treelayercontrol.py/TreeLayerControl/__init__",
+   "scores": {
+    "bm25": 10.07827745642557,
+    "dense": 0.09431881457567215,
+    "rrf": 0.0261986301369863,
+    "direct": 0.0261986301369863,
+    "graph": 0.0261986301369863,
+    "rewired": 0.0261986301369863,
+    "dense_dot": 55.38372039794922
+   },
+   "ranks": {
+    "bm25": 63,
+    "dense": 70,
+    "rrf": 75,
+    "direct": 75,
+    "graph": 75,
+    "rewired": 75,
+    "dense_dot": 71
+   }
+  },
+  {
+   "id": "folium/plugins/feature_group_sub_group.py/FeatureGroupSubGroup/__init__",
+   "scores": {
+    "bm25": 6.918236585418796,
+    "dense": 0.09855429083108902,
+    "rrf": 0.024115296803652965,
+    "direct": 0.024115296803652965,
+    "graph": 0.024115296803652965,
+    "rewired": 0.024115296803652965,
+    "dense_dot": 57.965110778808594
+   },
+   "ranks": {
+    "bm25": 86,
+    "dense": 63,
+    "rrf": 84,
+    "direct": 84,
+    "graph": 84,
+    "rewired": 84,
+    "dense_dot": 63
+   }
+  },
+  {
+   "id": "folium/plugins/side_by_side.py/SideBySideLayers/__init__",
+   "scores": {
+    "bm25": 6.184033532495318,
+    "dense": 0.01586131565272808,
+    "rrf": 0.015584415584415586,
+    "direct": 0.015584415584415586,
+    "graph": 0.015584415584415586,
+    "rewired": 0.015584415584415586,
+    "dense_dot": 9.361259460449219
+   },
+   "ranks": {
+    "bm25": 95,
+    "dense": 155,
+    "rrf": 136,
+    "direct": 136,
+    "graph": 136,
+    "rewired": 136,
+    "dense_dot": 155
+   }
+  },
+  {
+   "id": "folium/plugins/timestamped_wmstilelayer.py/TimestampedWmsTileLayers/__init__",
+   "scores": {
+    "bm25": 10.40760413019285,
+    "dense": 0.12132535874843597,
+    "rrf": 0.034900916888494525,
+    "direct": 0.034900916888494525,
+    "graph": 0.034900916888494525,
+    "rewired": 0.034900916888494525,
+    "dense_dot": 71.16748809814453
+   },
+   "ranks": {
+    "bm25": 59,
+    "dense": 39,
+    "rrf": 48,
+    "direct": 48,
+    "graph": 48,
+    "rewired": 48,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "folium/plugins/scroll_zoom_toggler.py/ScrollZoomToggler/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.04631972685456276,
+    "rrf": 0.012284012284012283,
+    "direct": 0.012284012284012283,
+    "graph": 0.012284012284012283,
+    "rewired": 0.012284012284012283,
+    "dense_dot": 27.369657516479492
+   },
+   "ranks": {
+    "bm25": 179,
+    "dense": 133,
+    "rrf": 173,
+    "direct": 173,
+    "graph": 173,
+    "rewired": 173,
+    "dense_dot": 134
+   }
+  },
+  {
+   "id": "folium/plugins/heat_map_withtime.py/HeatMapWithTime/__init__",
+   "scores": {
+    "bm25": 18.474050942203874,
+    "dense": 0.27923038601875305,
+    "rrf": 0.10476190476190475,
+    "direct": 0.10476190476190475,
+    "graph": 0.10476190476190475,
+    "rewired": 0.10476190476190475,
+    "dense_dot": 163.14154052734375
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 4,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "folium/plugins/heat_map_withtime.py/HeatMapWithTime/render",
+   "scores": {
+    "bm25": 27.805545236107335,
+    "dense": 0.25372400879859924,
+    "rrf": 0.1380952380952381,
+    "direct": 0.1380952380952381,
+    "graph": 0.1380952380952381,
+    "rewired": 0.1380952380952381,
+    "dense_dot": 148.47677612304688
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 5,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "folium/plugins/heat_map_withtime.py/HeatMapWithTime/_get_self_bounds",
+   "scores": {
+    "bm25": 15.008328439809162,
+    "dense": 0.15484511852264404,
+    "rrf": 0.06135531135531135,
+    "direct": 0.06135531135531135,
+    "graph": 0.06135531135531135,
+    "rewired": 0.06135531135531135,
+    "dense_dot": 90.8961181640625
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 18,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 22,
+    "rewired": 22,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "folium/plugins/semicircle.py/SemiCircle/__init__",
+   "scores": {
+    "bm25": 9.71567644875729,
+    "dense": 0.13559918105602264,
+    "rrf": 0.037987012987012986,
+    "direct": 0.037987012987012986,
+    "graph": 0.037987012987012986,
+    "rewired": 0.037987012987012986,
+    "dense_dot": 80.14778137207031
+   },
+   "ranks": {
+    "bm25": 67,
+    "dense": 30,
+    "rrf": 41,
+    "direct": 41,
+    "graph": 41,
+    "rewired": 41,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "folium/plugins/groupedlayercontrol.py/GroupedLayerControl/__init__",
+   "scores": {
+    "bm25": 15.159667738609889,
+    "dense": 0.0799790471792221,
+    "rrf": 0.035931174089068825,
+    "direct": 0.035931174089068825,
+    "graph": 0.035931174089068825,
+    "rewired": 0.035931174089068825,
+    "dense_dot": 46.70771789550781
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 94,
+    "rrf": 45,
+    "direct": 45,
+    "graph": 45,
+    "rewired": 45,
+    "dense_dot": 95
+   }
+  },
+  {
+   "id": "folium/plugins/minimap.py/MiniMap/__init__",
+   "scores": {
+    "bm25": 1.3472852441347363,
+    "dense": 0.0928615853190422,
+    "rrf": 0.018605378361475924,
+    "direct": 0.018605378361475924,
+    "graph": 0.018605378361475924,
+    "rewired": 0.018605378361475924,
+    "dense_dot": 54.61903762817383
+   },
+   "ranks": {
+    "bm25": 146,
+    "dense": 72,
+    "rrf": 115,
+    "direct": 115,
+    "graph": 115,
+    "rewired": 115,
+    "dense_dot": 72
+   }
+  },
+  {
+   "id": "folium/plugins/time_slider_choropleth.py/TimeSliderChoropleth/__init__",
+   "scores": {
+    "bm25": 32.234805470889036,
+    "dense": 0.45314326882362366,
+    "rrf": 0.18181818181818182,
+    "direct": 0.18181818181818182,
+    "graph": 0.18181818181818182,
+    "rewired": 0.18181818181818182,
+    "dense_dot": 265.1104736328125
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "folium/plugins/pattern.py/StripePattern/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07324448227882385,
+    "rrf": 0.014467253176930596,
+    "direct": 0.014467253176930596,
+    "graph": 0.014467253176930596,
+    "rewired": 0.014467253176930596,
+    "dense_dot": 43.165367126464844
+   },
+   "ranks": {
+    "bm25": 176,
+    "dense": 100,
+    "rrf": 146,
+    "direct": 146,
+    "graph": 146,
+    "rewired": 146,
+    "dense_dot": 100
+   }
+  },
+  {
+   "id": "folium/plugins/pattern.py/StripePattern/render",
+   "scores": {
+    "bm25": 1.189156109156166,
+    "dense": 0.02737615630030632,
+    "rrf": 0.012821039654818164,
+    "direct": 0.012821039654818164,
+    "graph": 0.012821039654818164,
+    "rewired": 0.012821039654818164,
+    "dense_dot": 16.10127830505371
+   },
+   "ranks": {
+    "bm25": 147,
+    "dense": 145,
+    "rrf": 165,
+    "direct": 165,
+    "graph": 165,
+    "rewired": 165,
+    "dense_dot": 145
+   }
+  },
+  {
+   "id": "folium/plugins/pattern.py/CirclePattern/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.05606122687458992,
+    "rrf": 0.013038993191664947,
+    "direct": 0.013038993191664947,
+    "graph": 0.013038993191664947,
+    "rewired": 0.013038993191664947,
+    "dense_dot": 33.25395965576172
+   },
+   "ranks": {
+    "bm25": 175,
+    "dense": 121,
+    "rrf": 163,
+    "direct": 163,
+    "graph": 163,
+    "rewired": 163,
+    "dense_dot": 121
+   }
+  },
+  {
+   "id": "folium/plugins/pattern.py/CirclePattern/render",
+   "scores": {
+    "bm25": 1.1686015405529422,
+    "dense": 0.06074097007513046,
+    "rrf": 0.014225816112608565,
+    "direct": 0.014225816112608565,
+    "graph": 0.014225816112608565,
+    "rewired": 0.014225816112608565,
+    "dense_dot": 35.95867919921875
+   },
+   "ranks": {
+    "bm25": 149,
+    "dense": 116,
+    "rrf": 154,
+    "direct": 154,
+    "graph": 154,
+    "rewired": 154,
+    "dense_dot": 116
+   }
+  },
+  {
+   "id": "folium/plugins/draw.py/Draw/__init__",
+   "scores": {
+    "bm25": 14.060316225083783,
+    "dense": 0.08027911186218262,
+    "rrf": 0.0324360105913504,
+    "direct": 0.0324360105913504,
+    "graph": 0.0324360105913504,
+    "rewired": 0.0324360105913504,
+    "dense_dot": 47.14854431152344
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 93,
+    "rrf": 53,
+    "direct": 53,
+    "graph": 53,
+    "rewired": 53,
+    "dense_dot": 93
+   }
+  },
+  {
+   "id": "folium/plugins/draw.py/Draw/render",
+   "scores": {
+    "bm25": 8.041648237224303,
+    "dense": 0.11236686259508133,
+    "rrf": 0.028477334366524602,
+    "direct": 0.028477334366524602,
+    "graph": 0.028477334366524602,
+    "rewired": 0.028477334366524602,
+    "dense_dot": 66.43209838867188
+   },
+   "ranks": {
+    "bm25": 79,
+    "dense": 48,
+    "rrf": 63,
+    "direct": 63,
+    "graph": 63,
+    "rewired": 63,
+    "dense_dot": 48
+   }
+  },
+  {
+   "id": "folium/plugins/beautify_icon.py/BeautifyIcon/__init__",
+   "scores": {
+    "bm25": 2.3983621556171166,
+    "dense": 0.11901792138814926,
+    "rrf": 0.026504394861392833,
+    "direct": 0.026504394861392833,
+    "graph": 0.026504394861392833,
+    "rewired": 0.026504394861392833,
+    "dense_dot": 70.18476104736328
+   },
+   "ranks": {
+    "bm25": 135,
+    "dense": 41,
+    "rrf": 72,
+    "direct": 72,
+    "graph": 72,
+    "rewired": 72,
+    "dense_dot": 41
+   }
+  },
+  {
+   "id": "folium/plugins/realtime.py/Realtime/__init__",
+   "scores": {
+    "bm25": 4.10273667261616,
+    "dense": 0.15200789272785187,
+    "rrf": 0.04007056451612903,
+    "direct": 0.04007056451612903,
+    "graph": 0.04007056451612903,
+    "rewired": 0.04007056451612903,
+    "dense_dot": 89.33056640625
+   },
+   "ranks": {
+    "bm25": 118,
+    "dense": 21,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 38,
+    "rewired": 38,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "folium/plugins/measure_control.py/MeasureControl/__init__",
+   "scores": {
+    "bm25": 3.189972777189872,
+    "dense": 0.07353310286998749,
+    "rrf": 0.016453503863575806,
+    "direct": 0.016453503863575806,
+    "graph": 0.016453503863575806,
+    "rewired": 0.016453503863575806,
+    "dense_dot": 43.308631896972656
+   },
+   "ranks": {
+    "bm25": 129,
+    "dense": 98,
+    "rrf": 131,
+    "direct": 131,
+    "graph": 131,
+    "rewired": 131,
+    "dense_dot": 99
+   }
+  },
+  {
+   "id": "folium/plugins/polyline_text_path.py/PolyLineTextPath/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.08894680440425873,
+    "rrf": 0.016682785299806577,
+    "direct": 0.016682785299806577,
+    "graph": 0.016682785299806577,
+    "rewired": 0.016682785299806577,
+    "dense_dot": 52.36206817626953
+   },
+   "ranks": {
+    "bm25": 178,
+    "dense": 78,
+    "rrf": 130,
+    "direct": 130,
+    "graph": 130,
+    "rewired": 130,
+    "dense_dot": 80
+   }
+  },
+  {
+   "id": "folium/plugins/polyline_offset.py/PolyLineOffset/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07150915265083313,
+    "rrf": 0.014356602591896708,
+    "direct": 0.014356602591896708,
+    "graph": 0.014356602591896708,
+    "rewired": 0.014356602591896708,
+    "dense_dot": 42.366966247558594
+   },
+   "ranks": {
+    "bm25": 177,
+    "dense": 101,
+    "rrf": 148,
+    "direct": 148,
+    "graph": 148,
+    "rewired": 148,
+    "dense_dot": 101
+   }
+  },
+  {
+   "id": "folium/plugins/fullscreen.py/Fullscreen/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.10651608556509018,
+    "rrf": 0.02108948087431694,
+    "direct": 0.02108948087431694,
+    "graph": 0.02108948087431694,
+    "rewired": 0.02108948087431694,
+    "dense_dot": 63.059715270996094
+   },
+   "ranks": {
+    "bm25": 173,
+    "dense": 54,
+    "rrf": 102,
+    "direct": 102,
+    "graph": 102,
+    "rewired": 102,
+    "dense_dot": 54
+   }
+  },
+  {
+   "id": "folium/plugins/boat_marker.py/BoatMarker/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.0781719833612442,
+    "rrf": 0.01505193979224083,
+    "direct": 0.01505193979224083,
+    "graph": 0.01505193979224083,
+    "rewired": 0.01505193979224083,
+    "dense_dot": 46.10525894165039
+   },
+   "ranks": {
+    "bm25": 168,
+    "dense": 96,
+    "rrf": 142,
+    "direct": 142,
+    "graph": 142,
+    "rewired": 142,
+    "dense_dot": 96
+   }
+  },
+  {
+   "id": "folium/plugins/timestamped_geo_json.py/TimestampedGeoJson/__init__",
+   "scores": {
+    "bm25": 20.429935368007158,
+    "dense": 0.1860317587852478,
+    "rrf": 0.09109730848861283,
+    "direct": 0.09109730848861283,
+    "graph": 0.09109730848861283,
+    "rewired": 0.09109730848861283,
+    "dense_dot": 109.0408706665039
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 11,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 8,
+    "rewired": 8,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "folium/plugins/timestamped_geo_json.py/TimestampedGeoJson/render",
+   "scores": {
+    "bm25": 12.439642519929128,
+    "dense": 0.059698931872844696,
+    "rrf": 0.027874015748031496,
+    "direct": 0.027874015748031496,
+    "graph": 0.027874015748031496,
+    "rewired": 0.027874015748031496,
+    "dense_dot": 35.105384826660156
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 117,
+    "rrf": 67,
+    "direct": 67,
+    "graph": 67,
+    "rewired": 67,
+    "dense_dot": 117
+   }
+  },
+  {
+   "id": "folium/plugins/timestamped_geo_json.py/TimestampedGeoJson/_get_self_bounds",
+   "scores": {
+    "bm25": 21.715943064893864,
+    "dense": 0.08538790792226791,
+    "rrf": 0.05587121212121212,
+    "direct": 0.05587121212121212,
+    "graph": 0.05587121212121212,
+    "rewired": 0.05587121212121212,
+    "dense_dot": 49.96708679199219
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 86,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 27,
+    "rewired": 27,
+    "dense_dot": 86
+   }
+  },
+  {
+   "id": "folium/plugins/search.py/Search/__init__",
+   "scores": {
+    "bm25": 12.382029878890991,
+    "dense": 0.06962458789348602,
+    "rrf": 0.028228532792427315,
+    "direct": 0.028228532792427315,
+    "graph": 0.028228532792427315,
+    "rewired": 0.028228532792427315,
+    "dense_dot": 40.803466796875
+   },
+   "ranks": {
+    "bm25": 41,
+    "dense": 106,
+    "rrf": 66,
+    "direct": 66,
+    "graph": 66,
+    "rewired": 66,
+    "dense_dot": 107
+   }
+  },
+  {
+   "id": "folium/plugins/search.py/Search/test_params",
+   "scores": {
+    "bm25": 24.71799753072006,
+    "dense": 0.04172252491116524,
+    "rrf": 0.06567284448025786,
+    "direct": 0.06567284448025786,
+    "graph": 0.06567284448025786,
+    "rewired": 0.06567284448025786,
+    "dense_dot": 24.548892974853516
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 136,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 19,
+    "rewired": 19,
+    "dense_dot": 136
+   }
+  },
+  {
+   "id": "folium/plugins/search.py/Search/render",
+   "scores": {
+    "bm25": 3.0060576265351835,
+    "dense": 0.051119137555360794,
+    "rrf": 0.014288630332720964,
+    "direct": 0.014288630332720964,
+    "graph": 0.014288630332720964,
+    "rewired": 0.014288630332720964,
+    "dense_dot": 30.14481544494629
+   },
+   "ranks": {
+    "bm25": 132,
+    "dense": 128,
+    "rrf": 152,
+    "direct": 152,
+    "graph": 152,
+    "rewired": 152,
+    "dense_dot": 128
+   }
+  },
+  {
+   "id": "folium/plugins/geocoder.py/Geocoder/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.12307624518871307,
+    "rrf": 0.02717391304347826,
+    "direct": 0.02717391304347826,
+    "graph": 0.02717391304347826,
+    "rewired": 0.02717391304347826,
+    "dense_dot": 72.70872497558594
+   },
+   "ranks": {
+    "bm25": 174,
+    "dense": 36,
+    "rrf": 68,
+    "direct": 68,
+    "graph": 68,
+    "rewired": 68,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "folium/plugins/heat_map.py/HeatMap/__init__",
+   "scores": {
+    "bm25": 17.86590841724115,
+    "dense": 0.15837088227272034,
+    "rrf": 0.06929510155316607,
+    "direct": 0.06929510155316607,
+    "graph": 0.06929510155316607,
+    "rewired": 0.06929510155316607,
+    "dense_dot": 93.13558959960938
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 17,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 17,
+    "rewired": 17,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "folium/plugins/heat_map.py/HeatMap/_get_self_bounds",
+   "scores": {
+    "bm25": 10.984241779732644,
+    "dense": 0.07124847918748856,
+    "rrf": 0.02408008658008658,
+    "direct": 0.02408008658008658,
+    "graph": 0.02408008658008658,
+    "rewired": 0.02408008658008658,
+    "dense_dot": 41.96310043334961
+   },
+   "ranks": {
+    "bm25": 56,
+    "dense": 102,
+    "rrf": 85,
+    "direct": 85,
+    "graph": 85,
+    "rewired": 85,
+    "dense_dot": 103
+   }
+  },
+  {
+   "id": "folium/plugins/locate_control.py/LocateControl/__init__",
+   "scores": {
+    "bm25": 3.4733163989418965,
+    "dense": 0.07933872193098068,
+    "rrf": 0.016986496090973704,
+    "direct": 0.016986496090973704,
+    "graph": 0.016986496090973704,
+    "rewired": 0.016986496090973704,
+    "dense_dot": 46.79924011230469
+   },
+   "ranks": {
+    "bm25": 124,
+    "dense": 95,
+    "rrf": 127,
+    "direct": 127,
+    "graph": 127,
+    "rewired": 127,
+    "dense_dot": 94
+   }
+  },
+  {
+   "id": "folium/plugins/encoded.py/_BaseFromEncoded/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.021392233669757843,
+    "rrf": 0.010901205964474544,
+    "direct": 0.010901205964474544,
+    "graph": 0.010901205964474544,
+    "rewired": 0.010901205964474544,
+    "dense_dot": -12.617002487182617
+   },
+   "ranks": {
+    "bm25": 171,
+    "dense": 176,
+    "rrf": 187,
+    "direct": 187,
+    "graph": 187,
+    "rewired": 187,
+    "dense_dot": 176
+   }
+  },
+  {
+   "id": "folium/plugins/encoded.py/_BaseFromEncoded/_encoding_type",
+   "scores": {
+    "bm25": 4.857149538119613,
+    "dense": -0.05932280421257019,
+    "rrf": 0.013272863443455105,
+    "direct": 0.013272863443455105,
+    "graph": 0.013272863443455105,
+    "rewired": 0.013272863443455105,
+    "dense_dot": -34.97076416015625
+   },
+   "ranks": {
+    "bm25": 112,
+    "dense": 187,
+    "rrf": 161,
+    "direct": 161,
+    "graph": 161,
+    "rewired": 161,
+    "dense_dot": 187
+   }
+  },
+  {
+   "id": "folium/plugins/encoded.py/PolyLineFromEncoded/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": -0.0014473169576376677,
+    "rrf": 0.011300877893056664,
+    "direct": 0.011300877893056664,
+    "graph": 0.011300877893056664,
+    "rewired": 0.011300877893056664,
+    "dense_dot": -0.8534517288208008
+   },
+   "ranks": {
+    "bm25": 169,
+    "dense": 165,
+    "rrf": 186,
+    "direct": 186,
+    "graph": 186,
+    "rewired": 186,
+    "dense_dot": 165
+   }
+  },
+  {
+   "id": "folium/plugins/encoded.py/PolyLineFromEncoded/_encoding_type",
+   "scores": {
+    "bm25": 1.9106755439242693,
+    "dense": -0.04906107857823372,
+    "rrf": 0.011690586887676033,
+    "direct": 0.011690586887676033,
+    "graph": 0.011690586887676033,
+    "rewired": 0.011690586887676033,
+    "dense_dot": -28.92581558227539
+   },
+   "ranks": {
+    "bm25": 143,
+    "dense": 184,
+    "rrf": 181,
+    "direct": 181,
+    "graph": 181,
+    "rewired": 181,
+    "dense_dot": 184
+   }
+  },
+  {
+   "id": "folium/plugins/encoded.py/PolygonFromEncoded/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.007542431354522705,
+    "rrf": 0.011472715318869165,
+    "direct": 0.011472715318869165,
+    "graph": 0.011472715318869165,
+    "rewired": 0.011472715318869165,
+    "dense_dot": 4.454503059387207
+   },
+   "ranks": {
+    "bm25": 170,
+    "dense": 159,
+    "rrf": 185,
+    "direct": 185,
+    "graph": 185,
+    "rewired": 185,
+    "dense_dot": 159
+   }
+  },
+  {
+   "id": "folium/plugins/encoded.py/PolygonFromEncoded/_encoding_type",
+   "scores": {
+    "bm25": 1.9242787563176802,
+    "dense": -0.06647803634405136,
+    "rrf": 0.011673021606796442,
+    "direct": 0.011673021606796442,
+    "graph": 0.011673021606796442,
+    "rewired": 0.011673021606796442,
+    "dense_dot": -39.25851058959961
+   },
+   "ranks": {
+    "bm25": 141,
+    "dense": 188,
+    "rrf": 184,
+    "direct": 184,
+    "graph": 184,
+    "rewired": 184,
+    "dense_dot": 188
+   }
+  },
+  {
+   "id": "folium/plugins/antpath.py/AntPath/__init__",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.06879532337188721,
+    "rrf": 0.014124293785310734,
+    "direct": 0.014124293785310734,
+    "graph": 0.014124293785310734,
+    "rewired": 0.014124293785310734,
+    "dense_dot": 40.476558685302734
+   },
+   "ranks": {
+    "bm25": 167,
+    "dense": 108,
+    "rrf": 155,
+    "direct": 155,
+    "graph": 155,
+    "rewired": 155,
+    "dense_dot": 108
+   }
+  }
+ ]
+}

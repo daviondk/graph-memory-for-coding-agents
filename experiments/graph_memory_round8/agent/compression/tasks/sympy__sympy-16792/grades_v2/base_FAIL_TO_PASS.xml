@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="1" time="0.276" timestamp="2026-11-20T23:04:33.874490" hostname="DESKTOP-PU57F9M"><testcase classname="sympy.utilities.tests.test_codegen" name="test_ccode_unused_array_arg" time="0.025"><failure message="assert '#include &quot;te..._result;\n}\n' == '#include &quot;te..._result;\n}\n'&#10;  Skipping 45 identical leading characters in diff, use -v to show&#10;  - st(double *x) {&#10;  ?           -&#10;  + st(double x) {&#10;       double test_result;&#10;       test_result = 1.0;&#10;       return test_result;&#10;    }">sympy\utilities\tests\test_codegen.py:602: in test_ccode_unused_array_arg
+    assert source == expected
+E   assert '#include "te..._result;\n}\n' == '#include "te..._result;\n}\n'
+E     Skipping 45 identical leading characters in diff, use -v to show
+E     - st(double *x) {
+E     ?           -
+E     + st(double x) {
+E          double test_result;
+E          test_result = 1.0;
+E          return test_result;
+E       }</failure></testcase></testsuite></testsuites>

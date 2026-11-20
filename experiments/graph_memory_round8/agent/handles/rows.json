@@ -1,0 +1,1014 @@
+[
+  {
+    "task": "sympy__sympy-16792",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 12,
+    "reference_lines": {
+      "sympy/utilities/codegen.py": [
+        698,
+        706,
+        708,
+        709,
+        710,
+        742
+      ]
+    },
+    "initial_query": "def _get_cython_code",
+    "initial_matches": 0,
+    "history": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "d0df517c5089095bb917b04d783b1dff8d1aefe6363306f959b6eb8f91686344",
+      "actions": [
+        [
+          "search",
+          {},
+          "def _get_cython_code"
+        ],
+        [
+          "done",
+          {},
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 0,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2961,
+        "answer_tokens": 139,
+        "model_wall_s": 7.548902100068517,
+        "attempts": 4,
+        "tool_wall_s": 0.04213219997473061,
+        "full_wall_s": 7.591034300043248
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "d0df517c5089095bb917b04d783b1dff8d1aefe6363306f959b6eb8f91686344",
+      "actions": [
+        [
+          "search",
+          {},
+          "def _get_cython_code"
+        ],
+        [
+          "done",
+          {},
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 0,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2961,
+        "answer_tokens": 139,
+        "model_wall_s": 7.548902100068517,
+        "attempts": 4,
+        "tool_wall_s": 0.05251740000676364,
+        "full_wall_s": 7.601419500075281
+      }
+    },
+    "different_actions": false,
+    "different_final_prompt": false
+  },
+  {
+    "task": "sympy__sympy-18211",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 12,
+    "reference_lines": {
+      "sympy/core/relational.py": [
+        392,
+        395
+      ]
+    },
+    "initial_query": "NotImplementedError",
+    "initial_matches": 8,
+    "history": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "328880049ab5651553ac218a12409a2e94998a5069c23a1a4e17f3059076d0cb",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "search",
+          {},
+          "NotImplementedError"
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2081,
+        "answer_tokens": 115,
+        "model_wall_s": 5.3641834001173265,
+        "attempts": 4,
+        "tool_wall_s": 0.03511279990198091,
+        "full_wall_s": 5.399296200019307
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "317fd26786f21017bb884b7f13750f8b1c7e05400e1248f4a23087a747523f42",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 5735,
+            "end": 5753,
+            "path": "sympy/integrals/rubi/utility_function.py",
+            "start": 5726,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "read",
+          {
+            "center": 1,
+            "end": 28,
+            "path": "sympy/solvers/solveset.py",
+            "start": 1,
+            "truncated": false
+          },
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 1,
+      "valid_reads": 2,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2840,
+        "answer_tokens": 109,
+        "model_wall_s": 5.741225300065707,
+        "attempts": 4,
+        "tool_wall_s": 0.020237899967469275,
+        "full_wall_s": 5.761463200033177
+      }
+    },
+    "different_actions": true,
+    "different_final_prompt": true
+  },
+  {
+    "task": "sympy__sympy-21379",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 12,
+    "reference_lines": {
+      "sympy/core/mod.py": [
+        43,
+        169,
+        170,
+        171,
+        172
+      ]
+    },
+    "initial_query": "Piecewise generators do not make sense",
+    "initial_matches": 0,
+    "history": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "bad edit count",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "b96d5b62dee0db0860ace3c7bb84f869e1d69b62c02f953950b00addcf2b9623",
+      "actions": [
+        [
+          "search",
+          {},
+          "Piecewise generators do not make sense"
+        ],
+        [
+          "done",
+          {},
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 0,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2962,
+        "answer_tokens": 47,
+        "model_wall_s": 4.333690500003286,
+        "attempts": 4,
+        "tool_wall_s": 0.034427399979904294,
+        "full_wall_s": 4.36811789998319
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "bad edit count",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "b96d5b62dee0db0860ace3c7bb84f869e1d69b62c02f953950b00addcf2b9623",
+      "actions": [
+        [
+          "search",
+          {},
+          "Piecewise generators do not make sense"
+        ],
+        [
+          "done",
+          {},
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 0,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2962,
+        "answer_tokens": 47,
+        "model_wall_s": 4.333690500003286,
+        "attempts": 4,
+        "tool_wall_s": 0.03484239999670535,
+        "full_wall_s": 4.368532899999991
+      }
+    },
+    "different_actions": false,
+    "different_final_prompt": false
+  },
+  {
+    "task": "sympy__sympy-18189",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 12,
+    "reference_lines": {
+      "sympy/solvers/diophantine.py": [
+        185
+      ]
+    },
+    "initial_query": "permute",
+    "initial_matches": 8,
+    "history": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "a9a895634317841788b4364f4b6fea5e453490551046956253a61c7185e3ba30",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "search",
+          {},
+          "permute"
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2596,
+        "answer_tokens": 137,
+        "model_wall_s": 6.3863532999530435,
+        "attempts": 4,
+        "tool_wall_s": 0.03181190002942458,
+        "full_wall_s": 6.418165199982468
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "8962a589f3c57e495eb94bad2d97b19259d2e64113ea3f336daffa710080f1e1",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 102,
+            "end": 120,
+            "path": "sympy/solvers/diophantine.py",
+            "start": 93,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "read",
+          {
+            "center": 102,
+            "end": 120,
+            "path": "sympy/solvers/diophantine.py",
+            "start": 93,
+            "truncated": false
+          },
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 1,
+      "valid_reads": 2,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 3373,
+        "answer_tokens": 128,
+        "model_wall_s": 6.76177819998702,
+        "attempts": 4,
+        "tool_wall_s": 0.019002200046088547,
+        "full_wall_s": 6.780780400033109
+      }
+    },
+    "different_actions": true,
+    "different_final_prompt": true
+  },
+  {
+    "task": "sympy__sympy-24661",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 12,
+    "reference_lines": {
+      "sympy/parsing/sympy_parser.py": [
+        1122
+      ]
+    },
+    "initial_query": "parse_expr",
+    "initial_matches": 1,
+    "history": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "unsupported operations in generated code",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "bbb880a0234adf7ece0b50bf3d732eab2a44615f0ac15f2bee7a09eea001962e",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "search",
+          {},
+          "def parse_expr"
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 1593,
+        "answer_tokens": 163,
+        "model_wall_s": 6.0729403998702765,
+        "attempts": 4,
+        "tool_wall_s": 0.03195050003705546,
+        "full_wall_s": 6.104890899907332
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "unsupported operations in generated code",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "bd6bc791acfb045a262b4dbb03fb6e091a4ef04387c52a15b205261c442f2168",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 64,
+            "end": 79,
+            "path": "sympy/parsing/ast_parser.py",
+            "start": 55,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "done",
+          {},
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 1,
+      "valid_reads": 1,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2054,
+        "answer_tokens": 423,
+        "model_wall_s": 12.949099499965087,
+        "attempts": 4,
+        "tool_wall_s": 0.01812010002322495,
+        "full_wall_s": 12.967219599988312
+      }
+    },
+    "different_actions": true,
+    "different_final_prompt": true
+  },
+  {
+    "task": "sympy__sympy-24443",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 1,
+    "reference_lines": {
+      "sympy/combinatorics/homomorphisms.py": [
+        311,
+        312,
+        313,
+        314,
+        315,
+        319,
+        320,
+        321,
+        322,
+        323,
+        324,
+        325,
+        326,
+        327,
+        328,
+        329,
+        330,
+        331,
+        332,
+        333,
+        334,
+        335,
+        336,
+        337,
+        338,
+        339,
+        340,
+        341,
+        342,
+        343,
+        344,
+        345,
+        346
+      ]
+    },
+    "initial_query": "_check_homomorphism",
+    "initial_matches": 3,
+    "history": {
+      "strict_success": true,
+      "applied": true,
+      "reason": "",
+      "target_passed": 1,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "68d08d5284dc76f8047ec47a73268d0e3dceb1d93fafc79f1a467f9c14c2867e",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "read",
+          {
+            "center": 336,
+            "end": 354,
+            "path": "sympy/combinatorics/homomorphisms.py",
+            "start": 327,
+            "truncated": false
+          },
+          null
+        ]
+      ],
+      "localized": true,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 1,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2363,
+        "answer_tokens": 266,
+        "model_wall_s": 9.273363700020127,
+        "attempts": 4,
+        "tool_wall_s": 0.020730000047478825,
+        "full_wall_s": 9.294093700067606
+      }
+    },
+    "pointer": {
+      "strict_success": true,
+      "applied": true,
+      "reason": "",
+      "target_passed": 1,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "68d08d5284dc76f8047ec47a73268d0e3dceb1d93fafc79f1a467f9c14c2867e",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "read",
+          {
+            "center": 336,
+            "end": 354,
+            "path": "sympy/combinatorics/homomorphisms.py",
+            "start": 327,
+            "truncated": false
+          },
+          null
+        ]
+      ],
+      "localized": true,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 1,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2363,
+        "answer_tokens": 266,
+        "model_wall_s": 9.273363700020127,
+        "attempts": 4,
+        "tool_wall_s": 0.020590599975548685,
+        "full_wall_s": 9.293954299995676
+      }
+    },
+    "different_actions": false,
+    "different_final_prompt": false
+  },
+  {
+    "task": "sympy__sympy-20916",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 1,
+    "reference_lines": {
+      "sympy/printing/conventions.py": [
+        10,
+        63
+      ]
+    },
+    "initial_query": "quality_unicode",
+    "initial_matches": 3,
+    "history": {
+      "strict_success": false,
+      "applied": true,
+      "reason": "",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "45a6a83c83d40fee8485f9bac31b031ddb63aa0768e8e918af26cce79ecda875",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "search",
+          {},
+          "subscript"
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 1194,
+        "answer_tokens": 112,
+        "model_wall_s": 4.367548299895134,
+        "attempts": 4,
+        "tool_wall_s": 0.025899100000970066,
+        "full_wall_s": 4.393447399896104
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "bad edit count",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "0222e03f6b19d1f6fced835d694f8cf3ccff0ed194c853eaac62a04c67fb1809",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 4,
+            "end": 9,
+            "path": "sympy/utilities/quality_unicode.py",
+            "start": 1,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "search",
+          {},
+          "subscript"
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 1,
+      "valid_reads": 1,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 1384,
+        "answer_tokens": 35,
+        "model_wall_s": 2.731451899977401,
+        "attempts": 4,
+        "tool_wall_s": 0.03356309997616336,
+        "full_wall_s": 2.7650149999535643
+      }
+    },
+    "different_actions": true,
+    "different_final_prompt": true
+  },
+  {
+    "task": "sympy__sympy-19954",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 12,
+    "reference_lines": {
+      "sympy/combinatorics/perm_groups.py": [
+        2197,
+        2201,
+        2202,
+        2208
+      ]
+    },
+    "initial_query": "del num_blocks[i], blocks[i]",
+    "initial_matches": 1,
+    "history": {
+      "strict_success": false,
+      "applied": true,
+      "reason": "",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "2512d2389c6d9f50a6d46338b26b3a57407123dfba4a578e18fc4adb72903fe3",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "done",
+          {},
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2465,
+        "answer_tokens": 101,
+        "model_wall_s": 5.205374600016512,
+        "attempts": 4,
+        "tool_wall_s": 0.018445299996528774,
+        "full_wall_s": 5.223819900013041
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "unsupported operations in generated code",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "60f6b13fecd84bda881a045634feace660b0469d0fc92056f0d07f0240db1e53",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 2201,
+            "end": 2219,
+            "path": "sympy/combinatorics/perm_groups.py",
+            "start": 2192,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "done",
+          {},
+          null
+        ]
+      ],
+      "localized": true,
+      "exposures": 1,
+      "exact_address_reads": 1,
+      "valid_reads": 1,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2999,
+        "answer_tokens": 338,
+        "model_wall_s": 11.540340000006836,
+        "attempts": 4,
+        "tool_wall_s": 0.02000899997074157,
+        "full_wall_s": 11.560348999977577
+      }
+    },
+    "different_actions": true,
+    "different_final_prompt": true
+  },
+  {
+    "task": "sympy__sympy-20590",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 1,
+    "target_tests": 1,
+    "base_green_regression": 12,
+    "reference_lines": {
+      "sympy/core/_print_helpers.py": [
+        19
+      ]
+    },
+    "initial_query": "__slots__",
+    "initial_matches": 4,
+    "history": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "74015ce02d2ad176c77958e6fceace42faacd3194c5ff59e1628eef037bdd3e4",
+      "actions": [
+        [
+          "read",
+          null,
+          null
+        ],
+        [
+          "read",
+          null,
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 0,
+      "valid_reads": 0,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 1859,
+        "answer_tokens": 155,
+        "model_wall_s": 6.082122500054538,
+        "attempts": 4,
+        "tool_wall_s": 0.02538900001673028,
+        "full_wall_s": 6.1075115000712685
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "bad edit count",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "6d348af9dbf7fa012922affffc6c6ca5651214d2309c6a7cb0ae72a8ee666519",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 30,
+            "end": 48,
+            "path": "sympy/core/symbol.py",
+            "start": 21,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "read",
+          {
+            "center": 30,
+            "end": 48,
+            "path": "sympy/core/symbol.py",
+            "start": 21,
+            "truncated": false
+          },
+          null
+        ]
+      ],
+      "localized": false,
+      "exposures": 1,
+      "exact_address_reads": 1,
+      "valid_reads": 2,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 2519,
+        "answer_tokens": 36,
+        "model_wall_s": 3.6872398999985307,
+        "attempts": 4,
+        "tool_wall_s": 0.027711299946531653,
+        "full_wall_s": 3.7149511999450624
+      }
+    },
+    "different_actions": true,
+    "different_final_prompt": true
+  },
+  {
+    "task": "sympy__sympy-19783",
+    "control_valid": true,
+    "controls_complete": true,
+    "base_failing": 2,
+    "target_tests": 2,
+    "base_green_regression": 9,
+    "reference_lines": {
+      "sympy/physics/quantum/operator.py": [
+        310
+      ],
+      "sympy/physics/quantum/dagger.py": [
+        3,
+        4,
+        5,
+        88
+      ]
+    },
+    "initial_query": "_eval_matrix_mul",
+    "initial_matches": 0,
+    "history": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "0658be587abf476ae55c02c76c6139fcd556a2ab59f6a434673d5bad80651b3b",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 1,
+            "end": 28,
+            "path": "sympy/physics/quantum/dagger.py",
+            "start": 1,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "read",
+          {
+            "center": 28,
+            "end": 46,
+            "path": "sympy/physics/quantum/dagger.py",
+            "start": 19,
+            "truncated": false
+          },
+          null
+        ]
+      ],
+      "localized": true,
+      "exposures": 0,
+      "exact_address_reads": 0,
+      "valid_reads": 2,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 1921,
+        "answer_tokens": 330,
+        "model_wall_s": 10.716352999967057,
+        "attempts": 4,
+        "tool_wall_s": 0.021239200024865568,
+        "full_wall_s": 10.737592199991923
+      }
+    },
+    "pointer": {
+      "strict_success": false,
+      "applied": false,
+      "reason": "substring is missing, ambiguous, or unchanged",
+      "target_passed": 0,
+      "regression_green_lost": [],
+      "complete": true,
+      "final_key": "0658be587abf476ae55c02c76c6139fcd556a2ab59f6a434673d5bad80651b3b",
+      "actions": [
+        [
+          "read",
+          {
+            "center": 1,
+            "end": 28,
+            "path": "sympy/physics/quantum/dagger.py",
+            "start": 1,
+            "truncated": false
+          },
+          null
+        ],
+        [
+          "read",
+          {
+            "center": 28,
+            "end": 46,
+            "path": "sympy/physics/quantum/dagger.py",
+            "start": 19,
+            "truncated": false
+          },
+          null
+        ]
+      ],
+      "localized": true,
+      "exposures": 0,
+      "exact_address_reads": 0,
+      "valid_reads": 2,
+      "truncated_reads": 0,
+      "cost": {
+        "calls": 4,
+        "prompt_tokens": 1921,
+        "answer_tokens": 330,
+        "model_wall_s": 10.716352999967057,
+        "attempts": 4,
+        "tool_wall_s": 0.020646599994506687,
+        "full_wall_s": 10.736999599961564
+      }
+    },
+    "different_actions": false,
+    "different_final_prompt": false
+  }
+]

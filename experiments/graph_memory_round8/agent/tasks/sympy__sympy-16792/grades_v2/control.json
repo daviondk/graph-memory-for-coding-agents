@@ -1,0 +1,136 @@
+{
+ "base": {
+  "applied": true,
+  "reason": "",
+  "diff": {},
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg"
+    ],
+    "unresolved": [],
+    "passed": [],
+    "failed": [
+     "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg"
+    ],
+    "errors": [],
+    "skip": [],
+    "code": 1,
+    "time": 5.85899999999674,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/utilities/tests/test_codegen.py::test_simple_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_empty_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice",
+     "sympy/utilities/tests/test_codegen.py::test_loops",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice_autoname",
+     "sympy/utilities/tests/test_codegen.py::test_simple_c_header",
+     "sympy/utilities/tests/test_codegen.py::test_global_vars",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c",
+     "sympy/utilities/tests/test_codegen.py::test_numbersymbol_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math2_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c_reserved_words"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/utilities/tests/test_codegen.py::test_simple_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_empty_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice",
+     "sympy/utilities/tests/test_codegen.py::test_loops",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice_autoname",
+     "sympy/utilities/tests/test_codegen.py::test_simple_c_header",
+     "sympy/utilities/tests/test_codegen.py::test_global_vars",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c",
+     "sympy/utilities/tests/test_codegen.py::test_numbersymbol_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math2_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c_reserved_words"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 2.4060000000172295,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ },
+ "gold": {
+  "applied": true,
+  "reason": "",
+  "diff": {
+   "sympy/utilities/codegen.py": "--- \n+++ \n@@ -695,6 +695,11 @@\n         arg_list = []\n \n         # setup input argument list\n+\n+        # helper to get dimensions for data for array-like args\n+        def dimensions(s):\n+            return [(S.Zero, dim - 1) for dim in s.shape]\n+\n         array_symbols = {}\n         for array in expressions.atoms(Indexed) | local_expressions.atoms(Indexed):\n             array_symbols[array.base.label] = array\n@@ -703,11 +708,8 @@\n \n         for symbol in sorted(symbols, key=str):\n             if symbol in array_symbols:\n-                dims = []\n                 array = array_symbols[symbol]\n-                for dim in array.shape:\n-                    dims.append((S.Zero, dim - 1))\n-                metadata = {'dimensions': dims}\n+                metadata = {'dimensions': dimensions(array)}\n             else:\n                 metadata = {}\n \n@@ -739,7 +741,11 @@\n                 try:\n                     new_args.append(name_arg_dict[symbol])\n                 except KeyError:\n-                    new_args.append(InputArgument(symbol))\n+                    if isinstance(symbol, (IndexedBase, MatrixSymbol)):\n+                        metadata = {'dimensions': dimensions(symbol)}\n+                    else:\n+                        metadata = {}\n+                    new_args.append(InputArgument(symbol, **metadata))\n             arg_list = new_args\n \n         return Routine(name, arg_list, return_val, local_vars, global_vars)"
+  },
+  "gold_lines": {
+   "sympy/utilities/codegen.py": [
+    698,
+    706,
+    708,
+    709,
+    710,
+    742
+   ]
+  },
+  "tests": {
+   "FAIL_TO_PASS": {
+    "requested": [
+     "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/utilities/tests/test_codegen.py::test_ccode_unused_array_arg"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 2.327999999979511,
+    "complete": true,
+    "diagnostic": ""
+   },
+   "PASS_TO_PASS": {
+    "requested": [
+     "sympy/utilities/tests/test_codegen.py::test_simple_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_empty_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice",
+     "sympy/utilities/tests/test_codegen.py::test_loops",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice_autoname",
+     "sympy/utilities/tests/test_codegen.py::test_simple_c_header",
+     "sympy/utilities/tests/test_codegen.py::test_global_vars",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c",
+     "sympy/utilities/tests/test_codegen.py::test_numbersymbol_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math2_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c_reserved_words"
+    ],
+    "unresolved": [],
+    "passed": [
+     "sympy/utilities/tests/test_codegen.py::test_simple_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_empty_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice",
+     "sympy/utilities/tests/test_codegen.py::test_loops",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_fcode_matrixsymbol_slice_autoname",
+     "sympy/utilities/tests/test_codegen.py::test_simple_c_header",
+     "sympy/utilities/tests/test_codegen.py::test_global_vars",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c",
+     "sympy/utilities/tests/test_codegen.py::test_numbersymbol_f_code",
+     "sympy/utilities/tests/test_codegen.py::test_intrinsic_math2_codegen",
+     "sympy/utilities/tests/test_codegen.py::test_output_arg_c_reserved_words"
+    ],
+    "failed": [],
+    "errors": [],
+    "skip": [],
+    "code": 0,
+    "time": 2.3910000000032596,
+    "complete": true,
+    "diagnostic": ""
+   }
+  }
+ }
+}

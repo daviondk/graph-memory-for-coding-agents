@@ -1,0 +1,918 @@
+{
+ "task": "sympy__sympy-18621",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "8f9f29530685257022a7212d88e59727ade5b5a1638312de72aab8457a8001ad",
+ "query_sha256": "3b14eab3538bfede706a6b6d2a1039cfe291d15d2423491b86d56f45a9650e2f",
+ "n_corpus": 27091,
+ "anchors": [
+  "sympy/matrices/dense.py/MutableDenseMatrix/_new",
+  "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+  "sympy/matrices/immutable.py/ImmutableDenseMatrix/_new",
+  "sympy/matrices/expressions/blockmatrix.py/BlockMatrix/_entry",
+  "sympy/matrices/expressions/matexpr.py/MatrixExpr/as_explicit",
+  "sympy/tensor/array/dense_ndim_array.py/MutableDenseNDimArray/_new",
+  "sympy/matrices/expressions/matpow.py/MatPow/_entry",
+  "sympy/matrices/common.py/MatrixRequired/_new"
+ ],
+ "edges": [
+  [
+   "sympy/matrices/dense.py/MutableDenseMatrix/_new",
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "sympy/matrices/immutable.py/ImmutableDenseMatrix/_new"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "sympy/matrices/sparse.py/SparseMatrix/__new__"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "sympy/matrices/expressions/matexpr.py/MatrixExpr/as_explicit"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "sympy/core/compatibility.py/as_int"
+  ],
+  [
+   "sympy/matrices/sparsetools.py/banded",
+   "sympy/core/compatibility.py/as_int"
+  ],
+  [
+   "sympy/matrices/expressions/matexpr.py/MatrixExpr/as_explicit",
+   "sympy/matrices/expressions/matpow.py/MatPow/_entry"
+  ],
+  [
+   "sympy/matrices/expressions/matexpr.py/MatrixExpr/as_explicit",
+   "sympy/matrices/matrices.py/MatrixBase/irregular"
+  ],
+  [
+   "sympy/core/compatibility.py/as_int",
+   "sympy/matrices/common.py/MatrixSpecial/jordan_block"
+  ],
+  [
+   "sympy/core/compatibility.py/as_int",
+   "sympy/matrices/matrices.py/MatrixBase/irregular"
+  ]
+ ],
+ "explicit_identifiers": {
+  "BlockDiagMatrix": 4,
+  "Matrix": 9,
+  "Traceback": 1,
+  "__new__": 1,
+  "_new": 2,
+  "flat_list": 1,
+  "_handle_creation_inputs": 2,
+  "as_explicit": 2,
+  "_mat": 1,
+  "range": 3,
+  "__getitem__": 1,
+  "_entry": 2,
+  "row_block": 1,
+  "col_block": 1,
+  "TypeError": 1
+ },
+ "candidates": [
+  {
+   "id": "sympy/matrices/dense.py/MutableDenseMatrix/_new",
+   "scores": {
+    "bm25": 142.33503716130417,
+    "dense": 0.4518243074417114,
+    "rrf": 0.12539184952978055,
+    "direct": 0.21630094043887146,
+    "graph": 0.21630094043887146,
+    "rewired": 0.21630094043887146,
+    "dense_dot": 267.04449462890625
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 19,
+    "rrf": 5,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "scores": {
+    "bm25": 127.90037240934744,
+    "dense": 0.5891631841659546,
+    "rrf": 0.15476190476190477,
+    "direct": 0.23809523809523808,
+    "graph": 0.23809523809523808,
+    "rewired": 0.23809523809523808,
+    "dense_dot": 348.09234619140625
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 4,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "sympy/matrices/immutable.py/ImmutableDenseMatrix/_new",
+   "scores": {
+    "bm25": 122.39463401743333,
+    "dense": 0.491591215133667,
+    "rrf": 0.12454212454212454,
+    "direct": 0.20146520146520147,
+    "graph": 0.20146520146520147,
+    "rewired": 0.20146520146520147,
+    "dense_dot": 290.47613525390625
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 11,
+    "rrf": 6,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockMatrix/_entry",
+   "scores": {
+    "bm25": 105.42980795606086,
+    "dense": 0.5596528053283691,
+    "rrf": 0.1380952380952381,
+    "direct": 0.20952380952380953,
+    "graph": 0.20952380952380953,
+    "rewired": 0.20952380952380953,
+    "dense_dot": 333.17083740234375
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 5,
+    "rrf": 4,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "sympy/matrices/sparse.py/SparseMatrix/__new__",
+   "scores": {
+    "bm25": 97.82512527448374,
+    "dense": 0.46419844031333923,
+    "rrf": 0.10833333333333334,
+    "direct": 0.10833333333333334,
+    "graph": 0.15,
+    "rewired": 0.13611111111111113,
+    "dense_dot": 274.3068542480469
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 14,
+    "rrf": 7,
+    "direct": 11,
+    "graph": 5,
+    "rewired": 8,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockMatrix/__new__",
+   "scores": {
+    "bm25": 97.3011543554539,
+    "dense": 0.6223429441452026,
+    "rrf": 0.14583333333333331,
+    "direct": 0.14583333333333331,
+    "graph": 0.14583333333333331,
+    "rewired": 0.14583333333333331,
+    "dense_dot": 368.6300048828125
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 2,
+    "rrf": 2,
+    "direct": 5,
+    "graph": 6,
+    "rewired": 5,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "sympy/matrices/common.py/MatrixSpecial/diag",
+   "scores": {
+    "bm25": 95.75975600065054,
+    "dense": 0.45687082409858704,
+    "rrf": 0.09453781512605042,
+    "direct": 0.09453781512605042,
+    "graph": 0.09453781512605042,
+    "rewired": 0.09453781512605042,
+    "dense_dot": 271.2766418457031
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 18,
+    "rrf": 10,
+    "direct": 14,
+    "graph": 15,
+    "rewired": 15,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/bc_dist",
+   "scores": {
+    "bm25": 91.03975786809642,
+    "dense": 0.4671991467475891,
+    "rrf": 0.09903381642512077,
+    "direct": 0.09903381642512077,
+    "graph": 0.09903381642512077,
+    "rewired": 0.13474810213940647,
+    "dense_dot": 276.1249084472656
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 13,
+    "rrf": 9,
+    "direct": 13,
+    "graph": 14,
+    "rewired": 9,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "sympy/matrices/dense.py/DenseMatrix/_eval_matrix_mul",
+   "scores": {
+    "bm25": 89.24018709299561,
+    "dense": 0.3741267919540405,
+    "rrf": 0.07965860597439545,
+    "direct": 0.07965860597439545,
+    "graph": 0.07965860597439545,
+    "rewired": 0.07965860597439545,
+    "dense_dot": 221.21363830566406
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 27,
+    "rrf": 14,
+    "direct": 18,
+    "graph": 20,
+    "rewired": 20,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockDiagMatrix/blocks",
+   "scores": {
+    "bm25": 88.57403476901555,
+    "dense": 0.642306387424469,
+    "rrf": 0.14090909090909093,
+    "direct": 0.14090909090909093,
+    "graph": 0.14090909090909093,
+    "rewired": 0.14090909090909093,
+    "dense_dot": 382.51275634765625
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 1,
+    "rrf": 3,
+    "direct": 6,
+    "graph": 7,
+    "rewired": 6,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "sympy/matrices/sparsetools.py/banded",
+   "scores": {
+    "bm25": 88.43035326357355,
+    "dense": 0.39098381996154785,
+    "rrf": 0.07703081232492998,
+    "direct": 0.07703081232492998,
+    "graph": 0.07703081232492998,
+    "rewired": 0.07703081232492998,
+    "dense_dot": 230.99594116210938
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 24,
+    "rrf": 16,
+    "direct": 20,
+    "graph": 22,
+    "rewired": 22,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/matexpr.py/MatrixExpr/as_explicit",
+   "scores": {
+    "bm25": 84.76032425482185,
+    "dense": 0.385219544172287,
+    "rrf": 0.07323232323232323,
+    "direct": 0.1398989898989899,
+    "graph": 0.1398989898989899,
+    "rewired": 0.1398989898989899,
+    "dense_dot": 228.0938720703125
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 26,
+    "rrf": 19,
+    "direct": 7,
+    "graph": 8,
+    "rewired": 7,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "sympy/core/compatibility.py/as_int",
+   "scores": {
+    "bm25": 84.6451022278782,
+    "dense": 0.1980355679988861,
+    "rrf": 0.06347826086956522,
+    "direct": 0.06347826086956522,
+    "graph": 0.10514492753623189,
+    "rewired": 0.06347826086956522,
+    "dense_dot": 117.12730407714844
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 40,
+    "rrf": 25,
+    "direct": 26,
+    "graph": 13,
+    "rewired": 29,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/MutableDenseNDimArray/_new",
+   "scores": {
+    "bm25": 78.34597847416912,
+    "dense": 0.34097594022750854,
+    "rrf": 0.06439393939393939,
+    "direct": 0.1268939393939394,
+    "graph": 0.1268939393939394,
+    "rewired": 0.1268939393939394,
+    "dense_dot": 201.2066650390625
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 34,
+    "rrf": 24,
+    "direct": 9,
+    "graph": 10,
+    "rewired": 11,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "sympy/matrices/dense.py/DenseMatrix/__getitem__",
+   "scores": {
+    "bm25": 78.00318354076586,
+    "dense": 0.47204458713531494,
+    "rrf": 0.08545454545454545,
+    "direct": 0.08545454545454545,
+    "graph": 0.08545454545454545,
+    "rewired": 0.08545454545454545,
+    "dense_dot": 280.4338073730469
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 12,
+    "rrf": 12,
+    "direct": 16,
+    "graph": 17,
+    "rewired": 18,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/matpow.py/MatPow/_entry",
+   "scores": {
+    "bm25": 77.3077809952065,
+    "dense": 0.4091324806213379,
+    "rrf": 0.06971153846153846,
+    "direct": 0.12853506787330315,
+    "graph": 0.12853506787330315,
+    "rewired": 0.12853506787330315,
+    "dense_dot": 242.07223510742188
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 22,
+    "rrf": 21,
+    "direct": 8,
+    "graph": 9,
+    "rewired": 10,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "sympy/matrices/common.py/_MinimalMatrix/__getitem__",
+   "scores": {
+    "bm25": 77.17918067843794,
+    "dense": 0.4297080636024475,
+    "rrf": 0.06929510155316607,
+    "direct": 0.06929510155316607,
+    "graph": 0.06929510155316607,
+    "rewired": 0.06929510155316607,
+    "dense_dot": 254.54910278320312
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 21,
+    "rrf": 22,
+    "direct": 24,
+    "graph": 26,
+    "rewired": 27,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "sympy/matrices/common.py/MatrixRequired/_new",
+   "scores": {
+    "bm25": 76.968435408605,
+    "dense": 0.3545669913291931,
+    "rrf": 0.06010452961672474,
+    "direct": 0.1156600851722803,
+    "graph": 0.1156600851722803,
+    "rewired": 0.1156600851722803,
+    "dense_dot": 210.53616333007812
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 31,
+    "rrf": 27,
+    "direct": 10,
+    "graph": 11,
+    "rewired": 12,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/deblock",
+   "scores": {
+    "bm25": 76.2479718929502,
+    "dense": 0.46026164293289185,
+    "rrf": 0.07151979565772669,
+    "direct": 0.07151979565772669,
+    "graph": 0.07151979565772669,
+    "rewired": 0.07151979565772669,
+    "dense_dot": 272.0182189941406
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 17,
+    "rrf": 20,
+    "direct": 23,
+    "graph": 25,
+    "rewired": 26,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "sympy/matrices/sparse.py/SparseMatrix/__getitem__",
+   "scores": {
+    "bm25": 76.02014520776011,
+    "dense": 0.3605760633945465,
+    "rrf": 0.05897435897435897,
+    "direct": 0.05897435897435897,
+    "graph": 0.05897435897435897,
+    "rewired": 0.05897435897435897,
+    "dense_dot": 214.06979370117188
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 29,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 29,
+    "rewired": 31,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "sympy/matrices/reductions.py/_row_reduce_list",
+   "scores": {
+    "bm25": 75.96066252560452,
+    "dense": 0.3507150709629059,
+    "rrf": 0.0555138784696174,
+    "direct": 0.0555138784696174,
+    "graph": 0.0555138784696174,
+    "rewired": 0.0555138784696174,
+    "dense_dot": 206.09622192382812
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 33,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 31,
+    "rewired": 33,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockDiagMatrix/shape",
+   "scores": {
+    "bm25": 75.5236968631156,
+    "dense": 0.5230793356895447,
+    "rrf": 0.0900735294117647,
+    "direct": 0.0900735294117647,
+    "graph": 0.0900735294117647,
+    "rewired": 0.0900735294117647,
+    "dense_dot": 311.34930419921875
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 7,
+    "rrf": 11,
+    "direct": 15,
+    "graph": 16,
+    "rewired": 16,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "sympy/core/sympify.py/sympify",
+   "scores": {
+    "bm25": 74.83063672968568,
+    "dense": 0.2447117418050766,
+    "rrf": 0.05071119356833642,
+    "direct": 0.05071119356833642,
+    "graph": 0.05071119356833642,
+    "rewired": 0.05071119356833642,
+    "dense_dot": 144.64886474609375
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 39,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 35,
+    "rewired": 36,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockDiagMatrix/__new__",
+   "scores": {
+    "bm25": 74.46537478009184,
+    "dense": 0.590745210647583,
+    "rrf": 0.10633484162895929,
+    "direct": 0.10633484162895929,
+    "graph": 0.10633484162895929,
+    "rewired": 0.10633484162895929,
+    "dense_dot": 350.63031005859375
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 3,
+    "rrf": 8,
+    "direct": 12,
+    "graph": 12,
+    "rewired": 14,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/ImmutableDenseNDimArray/_new",
+   "scores": {
+    "bm25": 73.4182596907299,
+    "dense": 0.3675287663936615,
+    "rrf": 0.054887218045112776,
+    "direct": 0.054887218045112776,
+    "graph": 0.054887218045112776,
+    "rewired": 0.054887218045112776,
+    "dense_dot": 216.622314453125
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 28,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 32,
+    "rewired": 34,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "sympy/matrices/dense.py/diag",
+   "scores": {
+    "bm25": 72.51082783986591,
+    "dense": 0.4062092900276184,
+    "rrf": 0.05808080808080808,
+    "direct": 0.05808080808080808,
+    "graph": 0.05808080808080808,
+    "rewired": 0.05808080808080808,
+    "dense_dot": 240.8973388671875
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 23,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 30,
+    "rewired": 32,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "sympy/matrices/common.py/MatrixSpecial/jordan_block",
+   "scores": {
+    "bm25": 72.24781247175311,
+    "dense": 0.4631812274456024,
+    "rrf": 0.06548856548856549,
+    "direct": 0.06548856548856549,
+    "graph": 0.06548856548856549,
+    "rewired": 0.06548856548856549,
+    "dense_dot": 275.3318176269531
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 16,
+    "rrf": 23,
+    "direct": 25,
+    "graph": 27,
+    "rewired": 28,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/inverse.py/Inverse/__new__",
+   "scores": {
+    "bm25": 72.03334099144827,
+    "dense": 0.3100828528404236,
+    "rrf": 0.04805491990846682,
+    "direct": 0.04805491990846682,
+    "graph": 0.04805491990846682,
+    "rewired": 0.08376920562275253,
+    "dense_dot": 183.1748504638672
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 36,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 36,
+    "rewired": 19,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "sympy/matrices/matrices.py/MatrixBase/D",
+   "scores": {
+    "bm25": 71.84838319092604,
+    "dense": 0.387384295463562,
+    "rrf": 0.054212454212454214,
+    "direct": 0.054212454212454214,
+    "graph": 0.054212454212454214,
+    "rewired": 0.054212454212454214,
+    "dense_dot": 228.59170532226562
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 25,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 33,
+    "rewired": 35,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "sympy/tensor/array/sparse_ndim_array.py/MutableSparseNDimArray/__new__",
+   "scores": {
+    "bm25": 71.59145448495657,
+    "dense": 0.27522221207618713,
+    "rrf": 0.04627659574468085,
+    "direct": 0.04627659574468085,
+    "graph": 0.04627659574468085,
+    "rewired": 0.07405437352245862,
+    "dense_dot": 162.1236114501953
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 37,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 38,
+    "rewired": 25,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockDiagMatrix/_eval_transpose",
+   "scores": {
+    "bm25": 71.02555366104653,
+    "dense": 0.5110024809837341,
+    "rrf": 0.07439024390243903,
+    "direct": 0.07439024390243903,
+    "graph": 0.07439024390243903,
+    "rewired": 0.07439024390243903,
+    "dense_dot": 303.99700927734375
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 10,
+    "rrf": 18,
+    "direct": 22,
+    "graph": 24,
+    "rewired": 24,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockDiagMatrix/colblocksizes",
+   "scores": {
+    "bm25": 70.66690504086519,
+    "dense": 0.5119990706443787,
+    "rrf": 0.07644110275689223,
+    "direct": 0.07644110275689223,
+    "graph": 0.07644110275689223,
+    "rewired": 0.07644110275689223,
+    "dense_dot": 303.7873840332031
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 9,
+    "rrf": 17,
+    "direct": 21,
+    "graph": 23,
+    "rewired": 23,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "sympy/codegen/ast.py/AssignmentBase/_check_args",
+   "scores": {
+    "bm25": 70.49952307933704,
+    "dense": 0.3515070676803589,
+    "rrf": 0.04706533776301218,
+    "direct": 0.04706533776301218,
+    "graph": 0.04706533776301218,
+    "rewired": 0.04706533776301218,
+    "dense_dot": 207.65093994140625
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 32,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 37,
+    "rewired": 38,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockDiagMatrix/_eval_inverse",
+   "scores": {
+    "bm25": 70.41133066644973,
+    "dense": 0.520656943321228,
+    "rrf": 0.07828282828282829,
+    "direct": 0.07828282828282829,
+    "graph": 0.07828282828282829,
+    "rewired": 0.07828282828282829,
+    "dense_dot": 308.8890380859375
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 8,
+    "rrf": 15,
+    "direct": 19,
+    "graph": 21,
+    "rewired": 21,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "sympy/matrices/matrices.py/MatrixBase/irregular",
+   "scores": {
+    "bm25": 70.39120013759697,
+    "dense": 0.3568956255912781,
+    "rrf": 0.04722222222222222,
+    "direct": 0.04722222222222222,
+    "graph": 0.08055555555555555,
+    "rewired": 0.04722222222222222,
+    "dense_dot": 211.2403564453125
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 30,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 19,
+    "rewired": 37,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/BlockDiagMatrix/rowblocksizes",
+   "scores": {
+    "bm25": 70.3722196892357,
+    "dense": 0.526134729385376,
+    "rrf": 0.08423913043478261,
+    "direct": 0.08423913043478261,
+    "graph": 0.08423913043478261,
+    "rewired": 0.11201690821256038,
+    "dense_dot": 311.14251708984375
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 6,
+    "rrf": 13,
+    "direct": 17,
+    "graph": 18,
+    "rewired": 13,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "sympy/matrices/expressions/blockmatrix.py/bc_block_plus_ident",
+   "scores": {
+    "bm25": 69.85225862226656,
+    "dense": 0.46415403485298157,
+    "rrf": 0.06127659574468085,
+    "direct": 0.06127659574468085,
+    "graph": 0.06127659574468085,
+    "rewired": 0.06127659574468085,
+    "dense_dot": 273.9427490234375
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 15,
+    "rrf": 26,
+    "direct": 27,
+    "graph": 28,
+    "rewired": 30,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "sympy/combinatorics/permutations.py/Permutation/__new__",
+   "scores": {
+    "bm25": 69.42547000426656,
+    "dense": 0.2617684006690979,
+    "rrf": 0.041666666666666664,
+    "direct": 0.041666666666666664,
+    "graph": 0.041666666666666664,
+    "rewired": 0.041666666666666664,
+    "dense_dot": 154.01425170898438
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 38,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "sympy/matrices/sparse.py/SparseMatrix/_eval_matrix_mul",
+   "scores": {
+    "bm25": 68.87312388121613,
+    "dense": 0.33321017026901245,
+    "rrf": 0.042630385487528344,
+    "direct": 0.042630385487528344,
+    "graph": 0.042630385487528344,
+    "rewired": 0.042630385487528344,
+    "dense_dot": 196.87420654296875
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 35,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "sympy/matrices/common.py/_MinimalMatrix/__init__",
+   "scores": {
+    "bm25": 68.80083940639523,
+    "dense": 0.44514375925064087,
+    "rrf": 0.05333333333333333,
+    "direct": 0.05333333333333333,
+    "graph": 0.05333333333333333,
+    "rewired": 0.08904761904761904,
+    "dense_dot": 263.1127624511719
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 20,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 34,
+    "rewired": 17,
+    "dense_dot": 20
+   }
+  }
+ ]
+}

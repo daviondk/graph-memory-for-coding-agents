@@ -1,0 +1,1256 @@
+{
+ "task": "joselc__life-sim-first-try-2",
+ "repo": "joselc__life-sim-first-try",
+ "n_corpus": 57,
+ "corpus_sha256": "0e758eb2e9a11ffa1f6566c9b0f5131e1c70ddfbf95fd9631c1c5350a0b5bf9d",
+ "query_sha256": "8ab0b25640ff58657f25f6d76a397da52c289b1de78fdb990c1184787ea394ee",
+ "anchors": [],
+ "edges": [
+  [
+   "main.py/main",
+   "src/game_state.py/GameStateManager/handle_input"
+  ],
+  [
+   "main.py/main",
+   "src/i18n/__init__.py/get_current_language"
+  ],
+  [
+   "src/game_state.py/GameStateManager/__init__",
+   "src/game_state.py/GameStateManager/_update_controls"
+  ],
+  [
+   "src/game_state.py/GameStateManager/_update_controls",
+   "src/game_state.py/GameStateManager/toggle_language"
+  ],
+  [
+   "src/game_state.py/GameStateManager/toggle_pause",
+   "src/game_state.py/GameStateManager/handle_input"
+  ],
+  [
+   "src/game_state.py/GameStateManager/toggle_help",
+   "src/game_state.py/GameStateManager/handle_input"
+  ],
+  [
+   "src/game_state.py/GameStateManager/adjust_speed",
+   "src/game_state.py/GameStateManager/handle_input"
+  ],
+  [
+   "src/game_state.py/GameStateManager/toggle_grid",
+   "src/game_state.py/GameStateManager/handle_input"
+  ],
+  [
+   "src/game_state.py/GameStateManager/toggle_language",
+   "src/game_state.py/GameStateManager/handle_input"
+  ],
+  [
+   "src/game_state.py/GameStateManager/toggle_language",
+   "src/i18n/__init__.py/get_current_language"
+  ],
+  [
+   "src/game_state.py/GameStateManager/toggle_language",
+   "src/i18n/__init__.py/get_available_languages"
+  ]
+ ],
+ "explicit_identifiers": {
+  "ground": 2
+ },
+ "candidates": [
+  {
+   "id": "main.py/main",
+   "scores": {
+    "bm25": 8.105334017806305,
+    "dense": 0.20204824209213257,
+    "rrf": 0.11011904761904762,
+    "direct": 0.11011904761904762,
+    "graph": 0.11011904761904762,
+    "rewired": 0.11011904761904762,
+    "dense_dot": 119.25363159179688
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 11,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 8,
+    "rewired": 8,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/__init__",
+   "scores": {
+    "bm25": 0.18350670418016002,
+    "dense": 0.13727203011512756,
+    "rrf": 0.05960729312762973,
+    "direct": 0.05960729312762973,
+    "graph": 0.05960729312762973,
+    "rewired": 0.05960729312762973,
+    "dense_dot": 80.64572143554688
+   },
+   "ranks": {
+    "bm25": 52,
+    "dense": 13,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 20,
+    "rewired": 20,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/_update_controls",
+   "scores": {
+    "bm25": 0.14397744142793575,
+    "dense": 0.053647931665182114,
+    "rrf": 0.03864042933810376,
+    "direct": 0.03864042933810376,
+    "graph": 0.03864042933810376,
+    "rewired": 0.03864042933810376,
+    "dense_dot": 31.61821937561035
+   },
+   "ranks": {
+    "bm25": 55,
+    "dense": 33,
+    "rrf": 49,
+    "direct": 49,
+    "graph": 49,
+    "rewired": 49,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/toggle_pause",
+   "scores": {
+    "bm25": 1.184936681280374,
+    "dense": 0.04949548467993736,
+    "rrf": 0.040740740740740744,
+    "direct": 0.040740740740740744,
+    "graph": 0.040740740740740744,
+    "rewired": 0.040740740740740744,
+    "dense_dot": 29.11605453491211
+   },
+   "ranks": {
+    "bm25": 44,
+    "dense": 35,
+    "rrf": 46,
+    "direct": 46,
+    "graph": 46,
+    "rewired": 46,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/toggle_help",
+   "scores": {
+    "bm25": 1.2708627869688416,
+    "dense": 0.0689445212483406,
+    "rrf": 0.04487179487179487,
+    "direct": 0.04487179487179487,
+    "graph": 0.04487179487179487,
+    "rewired": 0.04487179487179487,
+    "dense_dot": 40.5296516418457
+   },
+   "ranks": {
+    "bm25": 42,
+    "dense": 29,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/adjust_speed",
+   "scores": {
+    "bm25": 5.0390122543048985,
+    "dense": 0.1157471239566803,
+    "rrf": 0.07142857142857142,
+    "direct": 0.07142857142857142,
+    "graph": 0.07142857142857142,
+    "rewired": 0.07142857142857142,
+    "dense_dot": 67.71847534179688
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 18,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 17,
+    "rewired": 17,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/toggle_grid",
+   "scores": {
+    "bm25": 2.2493667445909575,
+    "dense": 0.052897870540618896,
+    "rrf": 0.046536796536796536,
+    "direct": 0.046536796536796536,
+    "graph": 0.046536796536796536,
+    "rewired": 0.046536796536796536,
+    "dense_dot": 30.84759521484375
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 34,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 35,
+    "rewired": 35,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/toggle_language",
+   "scores": {
+    "bm25": 0.14961754868521704,
+    "dense": 0.041750840842723846,
+    "rrf": 0.03645833333333333,
+    "direct": 0.03645833333333333,
+    "graph": 0.03645833333333333,
+    "rewired": 0.03645833333333333,
+    "dense_dot": 24.52243423461914
+   },
+   "ranks": {
+    "bm25": 54,
+    "dense": 38,
+    "rrf": 51,
+    "direct": 51,
+    "graph": 51,
+    "rewired": 51,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "src/game_state.py/GameStateManager/handle_input",
+   "scores": {
+    "bm25": 5.896082880272476,
+    "dense": 0.09473567456007004,
+    "rrf": 0.08095238095238094,
+    "direct": 0.08095238095238094,
+    "graph": 0.08095238095238094,
+    "rewired": 0.08095238095238094,
+    "dense_dot": 55.41795349121094
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 20,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 15,
+    "rewired": 15,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "src/i18n/string_provider.py/StringProvider/get_string",
+   "scores": {
+    "bm25": 4.603165885813539,
+    "dense": -0.016223028302192688,
+    "rrf": 0.04636091724825524,
+    "direct": 0.04636091724825524,
+    "graph": 0.04636091724825524,
+    "rewired": 0.04636091724825524,
+    "dense_dot": -9.535579681396484
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 49,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 36,
+    "rewired": 36,
+    "dense_dot": 49
+   }
+  },
+  {
+   "id": "src/i18n/string_provider.py/DefaultStringProvider/__init__",
+   "scores": {
+    "bm25": 2.627953285194632,
+    "dense": -0.05589820817112923,
+    "rrf": 0.03954175905395418,
+    "direct": 0.03954175905395418,
+    "graph": 0.03954175905395418,
+    "rewired": 0.03954175905395418,
+    "dense_dot": -32.84638977050781
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 56,
+    "rrf": 48,
+    "direct": 48,
+    "graph": 48,
+    "rewired": 48,
+    "dense_dot": 56
+   }
+  },
+  {
+   "id": "src/i18n/string_provider.py/DefaultStringProvider/get_string",
+   "scores": {
+    "bm25": 5.406730124448731,
+    "dense": -0.03946216031908989,
+    "rrf": 0.05779569892473118,
+    "direct": 0.05779569892473118,
+    "graph": 0.05779569892473118,
+    "rewired": 0.05779569892473118,
+    "dense_dot": -23.11974334716797
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 52,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 21,
+    "rewired": 21,
+    "dense_dot": 52
+   }
+  },
+  {
+   "id": "src/i18n/language_manager.py/LanguageManager/__init__",
+   "scores": {
+    "bm25": 0.1603883745211273,
+    "dense": -0.047605738043785095,
+    "rrf": 0.03125763125763126,
+    "direct": 0.03125763125763126,
+    "graph": 0.03125763125763126,
+    "rewired": 0.03125763125763126,
+    "dense_dot": -28.005735397338867
+   },
+   "ranks": {
+    "bm25": 53,
+    "dense": 55,
+    "rrf": 57,
+    "direct": 57,
+    "graph": 57,
+    "rewired": 57,
+    "dense_dot": 55
+   }
+  },
+  {
+   "id": "src/i18n/language_manager.py/LanguageManager/current_language",
+   "scores": {
+    "bm25": 0.24598109797650825,
+    "dense": -0.02469937689602375,
+    "rrf": 0.03421052631578947,
+    "direct": 0.03421052631578947,
+    "graph": 0.03421052631578947,
+    "rewired": 0.03421052631578947,
+    "dense_dot": -14.53366756439209
+   },
+   "ranks": {
+    "bm25": 47,
+    "dense": 50,
+    "rrf": 56,
+    "direct": 56,
+    "graph": 56,
+    "rewired": 56,
+    "dense_dot": 50
+   }
+  },
+  {
+   "id": "src/i18n/language_manager.py/LanguageManager/available_languages",
+   "scores": {
+    "bm25": 1.599621269239641,
+    "dense": -0.060844119638204575,
+    "rrf": 0.03533353639963448,
+    "direct": 0.03533353639963448,
+    "graph": 0.03533353639963448,
+    "rewired": 0.03533353639963448,
+    "dense_dot": -35.689544677734375
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 57,
+    "rrf": 53,
+    "direct": 53,
+    "graph": 53,
+    "rewired": 53,
+    "dense_dot": 57
+   }
+  },
+  {
+   "id": "src/i18n/language_manager.py/LanguageManager/get_string",
+   "scores": {
+    "bm25": 4.351649749858554,
+    "dense": -0.04626108705997467,
+    "rrf": 0.043402777777777776,
+    "direct": 0.043402777777777776,
+    "graph": 0.043402777777777776,
+    "rewired": 0.043402777777777776,
+    "dense_dot": -27.229511260986328
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 54,
+    "rrf": 41,
+    "direct": 41,
+    "graph": 41,
+    "rewired": 41,
+    "dense_dot": 54
+   }
+  },
+  {
+   "id": "src/i18n/language_manager.py/LanguageManager/switch_language",
+   "scores": {
+    "bm25": 3.49801708628445,
+    "dense": 0.015711402520537376,
+    "rrf": 0.04554655870445344,
+    "direct": 0.04554655870445344,
+    "graph": 0.04554655870445344,
+    "rewired": 0.04554655870445344,
+    "dense_dot": 9.234174728393555
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 42,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 37,
+    "rewired": 37,
+    "dense_dot": 42
+   }
+  },
+  {
+   "id": "src/i18n/__init__.py/get_string",
+   "scores": {
+    "bm25": 4.603165885813539,
+    "dense": -0.026203026995062828,
+    "rrf": 0.04669647292598113,
+    "direct": 0.04669647292598113,
+    "graph": 0.04669647292598113,
+    "rewired": 0.04669647292598113,
+    "dense_dot": -15.39930534362793
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 51,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 34,
+    "rewired": 34,
+    "dense_dot": 51
+   }
+  },
+  {
+   "id": "src/i18n/__init__.py/get_current_language",
+   "scores": {
+    "bm25": 0.2541657290394196,
+    "dense": -0.00552943954244256,
+    "rrf": 0.03540100250626566,
+    "direct": 0.03540100250626566,
+    "graph": 0.03540100250626566,
+    "rewired": 0.03540100250626566,
+    "dense_dot": -3.243572235107422
+   },
+   "ranks": {
+    "bm25": 46,
+    "dense": 47,
+    "rrf": 52,
+    "direct": 52,
+    "graph": 52,
+    "rewired": 52,
+    "dense_dot": 47
+   }
+  },
+  {
+   "id": "src/i18n/__init__.py/get_available_languages",
+   "scores": {
+    "bm25": 1.652344903731055,
+    "dense": -0.01580563746392727,
+    "rrf": 0.03807471264367816,
+    "direct": 0.03807471264367816,
+    "graph": 0.03807471264367816,
+    "rewired": 0.03807471264367816,
+    "dense_dot": -9.267203330993652
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 48,
+    "rrf": 50,
+    "direct": 50,
+    "graph": 50,
+    "rewired": 50,
+    "dense_dot": 48
+   }
+  },
+  {
+   "id": "src/i18n/__init__.py/switch_language",
+   "scores": {
+    "bm25": 3.467554361370589,
+    "dense": 0.06437727063894272,
+    "rrf": 0.050031269543464665,
+    "direct": 0.050031269543464665,
+    "graph": 0.050031269543464665,
+    "rewired": 0.050031269543464665,
+    "dense_dot": 37.79356384277344
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 31,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 30,
+    "rewired": 30,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "src/i18n/__init__.py/set_string_provider",
+   "scores": {
+    "bm25": 5.197059445785926,
+    "dense": -0.04029972106218338,
+    "rrf": 0.05587301587301587,
+    "direct": 0.05587301587301587,
+    "graph": 0.05587301587301587,
+    "rewired": 0.05587301587301587,
+    "dense_dot": -23.726016998291016
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 53,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 23,
+    "rewired": 23,
+    "dense_dot": 53
+   }
+  },
+  {
+   "id": "src/mesh/hex_mesh.py/HexMesh/__init__",
+   "scores": {
+    "bm25": 13.10746435549482,
+    "dense": 0.2794780433177948,
+    "rrf": 0.1388888888888889,
+    "direct": 0.1388888888888889,
+    "graph": 0.1388888888888889,
+    "rewired": 0.1388888888888889,
+    "dense_dot": 162.94039916992188
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 8,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "src/mesh/hex_mesh.py/HexMesh/update",
+   "scores": {
+    "bm25": 0.19276857117352542,
+    "dense": 0.12398209422826767,
+    "rrf": 0.05343047965998786,
+    "direct": 0.05343047965998786,
+    "graph": 0.05343047965998786,
+    "rewired": 0.05343047965998786,
+    "dense_dot": 72.70760345458984
+   },
+   "ranks": {
+    "bm25": 51,
+    "dense": 17,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 28,
+    "rewired": 28,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "src/renderers/base.py/Renderable/points",
+   "scores": {
+    "bm25": 4.162009949506715,
+    "dense": 0.006386039778590202,
+    "rrf": 0.045545545545545546,
+    "direct": 0.045545545545545546,
+    "graph": 0.045545545545545546,
+    "rewired": 0.045545545545545546,
+    "dense_dot": 3.788621425628662
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 44,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 38,
+    "rewired": 38,
+    "dense_dot": 44
+   }
+  },
+  {
+   "id": "src/renderers/base.py/Renderable/color",
+   "scores": {
+    "bm25": 1.7113851713833546,
+    "dense": 0.022248471155762672,
+    "rrf": 0.04134697357203751,
+    "direct": 0.04134697357203751,
+    "graph": 0.04134697357203751,
+    "rewired": 0.04134697357203751,
+    "dense_dot": 13.167001724243164
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 41,
+    "rrf": 45,
+    "direct": 45,
+    "graph": 45,
+    "rewired": 45,
+    "dense_dot": 41
+   }
+  },
+  {
+   "id": "src/renderers/base.py/BaseRenderer/setup",
+   "scores": {
+    "bm25": 1.878494382653359,
+    "dense": 0.07460508495569229,
+    "rrf": 0.04904306220095694,
+    "direct": 0.04904306220095694,
+    "graph": 0.04904306220095694,
+    "rewired": 0.04904306220095694,
+    "dense_dot": 44.169944763183594
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 28,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 31,
+    "rewired": 31,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "src/renderers/base.py/BaseRenderer/begin_frame",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.07618898898363113,
+    "rrf": 0.04217854217854218,
+    "direct": 0.04217854217854218,
+    "graph": 0.04217854217854218,
+    "rewired": 0.04217854217854218,
+    "dense_dot": 45.09161376953125
+   },
+   "ranks": {
+    "bm25": 56,
+    "dense": 27,
+    "rrf": 43,
+    "direct": 43,
+    "graph": 43,
+    "rewired": 43,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "src/renderers/base.py/BaseRenderer/end_frame",
+   "scores": {
+    "bm25": 4.893867604183855,
+    "dense": 0.08043693751096725,
+    "rrf": 0.06274509803921569,
+    "direct": 0.06274509803921569,
+    "graph": 0.06274509803921569,
+    "rewired": 0.06274509803921569,
+    "dense_dot": 47.65384292602539
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 24,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 19,
+    "rewired": 19,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "src/renderers/base.py/BaseRenderer/draw_hexagon",
+   "scores": {
+    "bm25": 2.171945451557164,
+    "dense": 0.09018077701330185,
+    "rrf": 0.0555138784696174,
+    "direct": 0.0555138784696174,
+    "graph": 0.0555138784696174,
+    "rewired": 0.0555138784696174,
+    "dense_dot": 53.020111083984375
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 21,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 24,
+    "rewired": 24,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "src/renderers/base.py/BaseRenderer/draw_text",
+   "scores": {
+    "bm25": 6.761879422878237,
+    "dense": 0.06614840775728226,
+    "rrf": 0.08055555555555555,
+    "direct": 0.08055555555555555,
+    "graph": 0.08055555555555555,
+    "rewired": 0.08055555555555555,
+    "dense_dot": 39.017738342285156
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 30,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 16,
+    "rewired": 16,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "src/renderers/base.py/BaseRenderer/draw_overlay",
+   "scores": {
+    "bm25": 1.417013151475723,
+    "dense": 0.10944628715515137,
+    "rrf": 0.054090601757944556,
+    "direct": 0.054090601757944556,
+    "graph": 0.054090601757944556,
+    "rewired": 0.054090601757944556,
+    "dense_dot": 64.7313003540039
+   },
+   "ranks": {
+    "bm25": 41,
+    "dense": 19,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 26,
+    "rewired": 26,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "src/renderers/base.py/BaseRenderer/cleanup",
+   "scores": {
+    "bm25": 0.21441197915214344,
+    "dense": 0.08292770385742188,
+    "rrf": 0.04754440961337513,
+    "direct": 0.04754440961337513,
+    "graph": 0.04754440961337513,
+    "rewired": 0.04754440961337513,
+    "dense_dot": 49.11098098754883
+   },
+   "ranks": {
+    "bm25": 48,
+    "dense": 23,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 33,
+    "rewired": 33,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/__init__",
+   "scores": {
+    "bm25": 0.19997799881058498,
+    "dense": -0.0007327270577661693,
+    "rrf": 0.034523809523809526,
+    "direct": 0.034523809523809526,
+    "graph": 0.034523809523809526,
+    "rewired": 0.034523809523809526,
+    "dense_dot": -0.4353370666503906
+   },
+   "ranks": {
+    "bm25": 50,
+    "dense": 46,
+    "rrf": 55,
+    "direct": 55,
+    "graph": 55,
+    "rewired": 55,
+    "dense_dot": 46
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/setup",
+   "scores": {
+    "bm25": 1.6725900855807614,
+    "dense": 0.007304091937839985,
+    "rrf": 0.04014452027298274,
+    "direct": 0.04014452027298274,
+    "graph": 0.04014452027298274,
+    "rewired": 0.04014452027298274,
+    "dense_dot": 4.324395179748535
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 43,
+    "rrf": 47,
+    "direct": 47,
+    "graph": 47,
+    "rewired": 47,
+    "dense_dot": 43
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/begin_frame",
+   "scores": {
+    "bm25": 0.20301505477404838,
+    "dense": 0.0773216113448143,
+    "rrf": 0.044726930320150654,
+    "direct": 0.044726930320150654,
+    "graph": 0.044726930320150654,
+    "rewired": 0.044726930320150654,
+    "dense_dot": 45.52198791503906
+   },
+   "ranks": {
+    "bm25": 49,
+    "dense": 26,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/end_frame",
+   "scores": {
+    "bm25": 4.844727233334302,
+    "dense": 0.04382377490401268,
+    "rrf": 0.053534660260809885,
+    "direct": 0.053534660260809885,
+    "graph": 0.053534660260809885,
+    "rewired": 0.053534660260809885,
+    "dense_dot": 25.743911743164062
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 37,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 27,
+    "rewired": 27,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/draw_hexagon",
+   "scores": {
+    "bm25": 3.4615213367778983,
+    "dense": 0.08413085341453552,
+    "rrf": 0.05625,
+    "direct": 0.05625,
+    "graph": 0.05625,
+    "rewired": 0.05625,
+    "dense_dot": 49.331787109375
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 22,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 22,
+    "rewired": 22,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/draw_text",
+   "scores": {
+    "bm25": 4.356169864540379,
+    "dense": 0.030841965228319168,
+    "rrf": 0.04857142857142857,
+    "direct": 0.04857142857142857,
+    "graph": 0.04857142857142857,
+    "rewired": 0.04857142857142857,
+    "dense_dot": 18.109737396240234
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 40,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 32,
+    "rewired": 32,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/draw_overlay",
+   "scores": {
+    "bm25": 1.19861310739868,
+    "dense": 0.05820859968662262,
+    "rrf": 0.04267744833782569,
+    "direct": 0.04267744833782569,
+    "graph": 0.04267744833782569,
+    "rewired": 0.04267744833782569,
+    "dense_dot": 34.2900276184082
+   },
+   "ranks": {
+    "bm25": 43,
+    "dense": 32,
+    "rrf": 42,
+    "direct": 42,
+    "graph": 42,
+    "rewired": 42,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "src/renderers/pygame_renderer.py/PygameRenderer/cleanup",
+   "scores": {
+    "bm25": 0,
+    "dense": 0.03718310967087746,
+    "rrf": 0.03533353639963448,
+    "direct": 0.03533353639963448,
+    "graph": 0.03533353639963448,
+    "rewired": 0.03533353639963448,
+    "dense_dot": 21.951622009277344
+   },
+   "ranks": {
+    "bm25": 57,
+    "dense": 39,
+    "rrf": 54,
+    "direct": 54,
+    "graph": 54,
+    "rewired": 54,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "src/hexagons/ground.py/GroundHexagon/update",
+   "scores": {
+    "bm25": 4.688388002377749,
+    "dense": 0.21574415266513824,
+    "rrf": 0.08125,
+    "direct": 0.08125,
+    "graph": 0.08125,
+    "rewired": 0.08125,
+    "dense_dot": 126.90829467773438
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 10,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 14,
+    "rewired": 14,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "src/hexagons/ground.py/GroundHexagon/base_color",
+   "scores": {
+    "bm25": 5.738204769959223,
+    "dense": 0.13489727675914764,
+    "rrf": 0.08712121212121213,
+    "direct": 0.08712121212121213,
+    "graph": 0.08712121212121213,
+    "rewired": 0.08712121212121213,
+    "dense_dot": 79.35133361816406
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 14,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 13,
+    "rewired": 13,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "src/hexagons/ground.py/GroundHexagon/detail_color",
+   "scores": {
+    "bm25": 6.647279891064716,
+    "dense": 0.12458457052707672,
+    "rrf": 0.08846153846153847,
+    "direct": 0.08846153846153847,
+    "graph": 0.08846153846153847,
+    "rewired": 0.08846153846153847,
+    "dense_dot": 73.13349914550781
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 16,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 12,
+    "rewired": 12,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "src/hexagons/ground.py/GroundHexagon/detail_radius",
+   "scores": {
+    "bm25": 6.909729076768171,
+    "dense": 0.12864282727241516,
+    "rrf": 0.0988235294117647,
+    "direct": 0.0988235294117647,
+    "graph": 0.0988235294117647,
+    "rewired": 0.0988235294117647,
+    "dense_dot": 75.50932312011719
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 15,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 9,
+    "rewired": 9,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "src/hexagons/base.py/Hexagon/__init__",
+   "scores": {
+    "bm25": 1.8433762164772416,
+    "dense": 0.0774756669998169,
+    "rrf": 0.050793650793650794,
+    "direct": 0.050793650793650794,
+    "graph": 0.050793650793650794,
+    "rewired": 0.050793650793650794,
+    "dense_dot": 45.60038757324219
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 25,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 29,
+    "rewired": 29,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "src/hexagons/base.py/Hexagon/update",
+   "scores": {
+    "bm25": 0.25784257311510383,
+    "dense": 0.1631810963153839,
+    "rrf": 0.06363636363636363,
+    "direct": 0.06363636363636363,
+    "graph": 0.06363636363636363,
+    "rewired": 0.06363636363636363,
+    "dense_dot": 96.17826843261719
+   },
+   "ranks": {
+    "bm25": 45,
+    "dense": 12,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 18,
+    "rewired": 18,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "src/hexagons/base.py/Hexagon/points",
+   "scores": {
+    "bm25": 5.109679856389583,
+    "dense": 0.0033072480000555515,
+    "rrf": 0.055218855218855216,
+    "direct": 0.055218855218855216,
+    "graph": 0.055218855218855216,
+    "rewired": 0.055218855218855216,
+    "dense_dot": 1.9545249938964844
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 45,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 25,
+    "rewired": 25,
+    "dense_dot": 45
+   }
+  },
+  {
+   "id": "src/hexagons/base.py/Hexagon/color",
+   "scores": {
+    "bm25": 1.5665926599671756,
+    "dense": 0.04755065590143204,
+    "rrf": 0.04173913043478261,
+    "direct": 0.04173913043478261,
+    "graph": 0.04173913043478261,
+    "rewired": 0.04173913043478261,
+    "dense_dot": 28.04694366455078
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 36,
+    "rrf": 44,
+    "direct": 44,
+    "graph": 44,
+    "rewired": 44,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "src/hexagons/plant.py/PlantHexagon/__init__",
+   "scores": {
+    "bm25": 5.196256667794595,
+    "dense": 0.2666887640953064,
+    "rrf": 0.09109311740890688,
+    "direct": 0.09109311740890688,
+    "graph": 0.09109311740890688,
+    "rewired": 0.09109311740890688,
+    "dense_dot": 156.60903930664062
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 9,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 11,
+    "rewired": 11,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "src/hexagons/plant.py/PlantHexagon/update",
+   "scores": {
+    "bm25": 4.993405179266979,
+    "dense": 0.29061049222946167,
+    "rrf": 0.09330628803245436,
+    "direct": 0.09330628803245436,
+    "graph": 0.09330628803245436,
+    "rewired": 0.09330628803245436,
+    "dense_dot": 170.89956665039062
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 7,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 10,
+    "rewired": 10,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "src/hexagons/plant.py/PlantHexagon/base_color",
+   "scores": {
+    "bm25": 5.6397977320374535,
+    "dense": 0.32329222559928894,
+    "rrf": 0.11014492753623188,
+    "direct": 0.11014492753623188,
+    "graph": 0.11014492753623188,
+    "rewired": 0.11014492753623188,
+    "dense_dot": 190.4929962158203
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 5,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 7,
+    "rewired": 7,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "src/hexagons/plant.py/PlantHexagon/detail_color",
+   "scores": {
+    "bm25": 12.872257988533201,
+    "dense": 0.32481324672698975,
+    "rrf": 0.14835164835164835,
+    "direct": 0.14835164835164835,
+    "graph": 0.14835164835164835,
+    "rewired": 0.14835164835164835,
+    "dense_dot": 190.1585693359375
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 4,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "src/hexagons/plant.py/PlantHexagon/detail_radius",
+   "scores": {
+    "bm25": 12.471334786434497,
+    "dense": 0.2936727702617645,
+    "rrf": 0.13392857142857142,
+    "direct": 0.13392857142857142,
+    "graph": 0.13392857142857142,
+    "rewired": 0.13392857142857142,
+    "dense_dot": 172.15695190429688
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 6,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 6,
+    "rewired": 6,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "src/hexagons/plant_states.py/PlantStateManager/__init__",
+   "scores": {
+    "bm25": 6.6662454105042315,
+    "dense": 0.4174213409423828,
+    "rrf": 0.13596491228070173,
+    "direct": 0.13596491228070173,
+    "graph": 0.13596491228070173,
+    "rewired": 0.13596491228070173,
+    "dense_dot": 245.39312744140625
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 2,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "src/hexagons/plant_states.py/PlantStateManager/update",
+   "scores": {
+    "bm25": 13.806382976834,
+    "dense": 0.5366540551185608,
+    "rrf": 0.18181818181818182,
+    "direct": 0.18181818181818182,
+    "graph": 0.18181818181818182,
+    "rewired": 0.18181818181818182,
+    "dense_dot": 314.02337646484375
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "src/hexagons/plant_states.py/PlantStateManager/color_factor",
+   "scores": {
+    "bm25": 8.182429630290947,
+    "dense": 0.333315372467041,
+    "rrf": 0.14358974358974358,
+    "direct": 0.14358974358974358,
+    "graph": 0.14358974358974358,
+    "rewired": 0.14358974358974358,
+    "dense_dot": 195.9755096435547
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 3,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 3
+   }
+  }
+ ]
+}

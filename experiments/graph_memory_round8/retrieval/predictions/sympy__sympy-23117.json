@@ -1,0 +1,959 @@
+{
+ "task": "sympy__sympy-23117",
+ "repo": "sympy__sympy",
+ "corpus_sha256": "3bde7679db92b7ee0000f77448bcda486ade059fe54e19ebe59dce131efafa1f",
+ "query_sha256": "a206a744e832c09d34d98df2206f9e221de8d90f38956b98f053ddcc65f70463",
+ "n_corpus": 29116,
+ "anchors": [
+  "sympy/tensor/array/dense_ndim_array.py/MutableDenseNDimArray/_new",
+  "sympy/tensor/array/ndim_array.py/NDimArray/_scan_iterable_shape",
+  "sympy/tensor/array/dense_ndim_array.py/ImmutableDenseNDimArray/_new",
+  "sympy/tensor/array/ndim_array.py/NDimArray/_handle_ndarray_creation_inputs",
+  "sympy/matrices/immutable.py/ImmutableDenseMatrix/_new",
+  "sympy/matrices/repmatrix.py/MutableRepMatrix/_new",
+  "sympy/tensor/array/sparse_ndim_array.py/MutableSparseNDimArray/__new__",
+  "sympy/tensor/array/sparse_ndim_array.py/ImmutableSparseNDimArray/__new__"
+ ],
+ "edges": [
+  [
+   "sympy/tensor/array/dense_ndim_array.py/MutableDenseNDimArray/_new",
+   "sympy/tensor/array/ndim_array.py/NDimArray/_handle_ndarray_creation_inputs"
+  ],
+  [
+   "sympy/tensor/array/ndim_array.py/NDimArray/_scan_iterable_shape",
+   "sympy/tensor/array/ndim_array.py/NDimArray/_handle_ndarray_creation_inputs"
+  ],
+  [
+   "sympy/tensor/array/dense_ndim_array.py/ImmutableDenseNDimArray/_new",
+   "sympy/tensor/array/ndim_array.py/NDimArray/_handle_ndarray_creation_inputs"
+  ],
+  [
+   "sympy/tensor/array/dense_ndim_array.py/ImmutableDenseNDimArray/_new",
+   "sympy/tensor/array/ndim_array.py/NDimArray/_check_special_bounds"
+  ],
+  [
+   "sympy/tensor/array/ndim_array.py/NDimArray/_handle_ndarray_creation_inputs",
+   "sympy/tensor/array/sparse_ndim_array.py/MutableSparseNDimArray/__new__"
+  ],
+  [
+   "sympy/tensor/array/ndim_array.py/NDimArray/_handle_ndarray_creation_inputs",
+   "sympy/tensor/array/sparse_ndim_array.py/ImmutableSparseNDimArray/__new__"
+  ],
+  [
+   "sympy/tensor/array/sparse_ndim_array.py/MutableSparseNDimArray/__new__",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/tensor/array/sparse_ndim_array.py/ImmutableSparseNDimArray/__new__",
+   "sympy/tensor/array/ndim_array.py/NDimArray/_check_special_bounds"
+  ],
+  [
+   "sympy/tensor/array/sparse_ndim_array.py/ImmutableSparseNDimArray/__new__",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_ndarray",
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_ndarray",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "sympy/tensor/array/dense_ndim_array.py/DenseNDimArray/reshape"
+  ],
+  [
+   "sympy/matrices/immutable.py/ImmutableDenseMatrix/_new",
+   "sympy/matrices/immutable.py/ImmutableDenseMatrix/_fromrep"
+  ],
+  [
+   "sympy/matrices/sparse.py/SparseRepMatrix/_handle_creation_inputs",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/matrices/repmatrix.py/MutableRepMatrix/_new",
+   "sympy/matrices/immutable.py/ImmutableDenseMatrix/_fromrep"
+  ],
+  [
+   "sympy/tensor/array/expressions/array_expressions.py/ArrayAdd/__new__",
+   "sympy/core/sympify.py/_sympify"
+  ],
+  [
+   "sympy/core/sympify.py/_sympify",
+   "sympy/tensor/array/expressions/array_expressions.py/ArrayTensorProduct/__new__"
+  ],
+  [
+   "sympy/core/sympify.py/_sympify",
+   "sympy/tensor/indexed.py/IndexedBase/__new__"
+  ],
+  [
+   "sympy/matrices/sparsetools.py/banded",
+   "sympy/core/containers.py/Tuple/index"
+  ]
+ ],
+ "explicit_identifiers": {
+  "Array": 4,
+  "Matrix": 1,
+  "SymPy": 1,
+  "KeyboardInterrupt": 1,
+  "__version__": 1,
+  "Traceback": 1,
+  "dense_ndim_array": 2,
+  "__new__": 1,
+  "_new": 2,
+  "flat_list": 1,
+  "_handle_ndarray_creation_inputs": 2,
+  "ndim_array": 3,
+  "_scan_iterable_shape": 2,
+  "zip": 1,
+  "ValueError": 1,
+  "unpack": 1
+ },
+ "candidates": [
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/MutableDenseNDimArray/_new",
+   "scores": {
+    "bm25": 123.82271123817605,
+    "dense": 0.6134139895439148,
+    "rrf": 0.16783216783216784,
+    "direct": 0.25874125874125875,
+    "graph": 0.25874125874125875,
+    "rewired": 0.25874125874125875,
+    "dense_dot": 362.76953125
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 3,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/_scan_iterable_shape",
+   "scores": {
+    "bm25": 121.29371337602136,
+    "dense": 0.6537551283836365,
+    "rrf": 0.16666666666666666,
+    "direct": 0.25,
+    "graph": 0.25,
+    "rewired": 0.25,
+    "dense_dot": 386.53778076171875
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 2,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/ImmutableDenseNDimArray/_new",
+   "scores": {
+    "bm25": 120.18018666268577,
+    "dense": 0.602632999420166,
+    "rrf": 0.14835164835164835,
+    "direct": 0.22527472527472528,
+    "graph": 0.22527472527472528,
+    "rewired": 0.22527472527472528,
+    "dense_dot": 355.55987548828125
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 4,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 4,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/_handle_ndarray_creation_inputs",
+   "scores": {
+    "bm25": 106.09812090425316,
+    "dense": 0.6908736824989319,
+    "rrf": 0.16233766233766234,
+    "direct": 0.23376623376623376,
+    "graph": 0.23376623376623376,
+    "rewired": 0.23376623376623376,
+    "dense_dot": 408.1278991699219
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 1,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 3,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "sympy/tensor/array/sparse_ndim_array.py/MutableSparseNDimArray/__new__",
+   "scores": {
+    "bm25": 105.48827350391082,
+    "dense": 0.5521942973136902,
+    "rrf": 0.11929824561403508,
+    "direct": 0.1781217750257998,
+    "graph": 0.1781217750257998,
+    "rewired": 0.1781217750257998,
+    "dense_dot": 325.9048156738281
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 9,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 5,
+    "rewired": 5,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "sympy/tensor/array/sparse_ndim_array.py/ImmutableSparseNDimArray/__new__",
+   "scores": {
+    "bm25": 99.46682613282717,
+    "dense": 0.5415979027748108,
+    "rrf": 0.1125,
+    "direct": 0.16805555555555557,
+    "graph": 0.16805555555555557,
+    "rewired": 0.16805555555555557,
+    "dense_dot": 319.3960266113281
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 10,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 6,
+    "rewired": 6,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "sympy/matrices/matrices.py/MatrixBase/_handle_ndarray",
+   "scores": {
+    "bm25": 79.18862431950794,
+    "dense": 0.5168148279190063,
+    "rrf": 0.10427807486631016,
+    "direct": 0.10427807486631016,
+    "graph": 0.10427807486631016,
+    "rewired": 0.10427807486631016,
+    "dense_dot": 305.48388671875
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 12,
+    "rrf": 9,
+    "direct": 11,
+    "graph": 12,
+    "rewired": 14,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "sympy/matrices/matrices.py/MatrixBase/_handle_creation_inputs",
+   "scores": {
+    "bm25": 77.82720792464191,
+    "dense": 0.500605046749115,
+    "rrf": 0.09722222222222221,
+    "direct": 0.09722222222222221,
+    "graph": 0.09722222222222221,
+    "rewired": 0.09722222222222221,
+    "dense_dot": 296.07672119140625
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 14,
+    "rrf": 11,
+    "direct": 13,
+    "graph": 14,
+    "rewired": 16,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/_check_special_bounds",
+   "scores": {
+    "bm25": 75.06230260966375,
+    "dense": 0.49333372712135315,
+    "rrf": 0.09109311740890688,
+    "direct": 0.09109311740890688,
+    "graph": 0.12955465587044535,
+    "rewired": 0.09109311740890688,
+    "dense_dot": 292.9418029785156
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 16,
+    "rrf": 12,
+    "direct": 14,
+    "graph": 9,
+    "rewired": 18,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "sympy/matrices/immutable.py/ImmutableDenseMatrix/_new",
+   "scores": {
+    "bm25": 73.86811931048268,
+    "dense": 0.4459439218044281,
+    "rrf": 0.08125,
+    "direct": 0.14791666666666667,
+    "graph": 0.14791666666666667,
+    "rewired": 0.14791666666666667,
+    "dense_dot": 263.5548095703125
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 22,
+    "rrf": 14,
+    "direct": 7,
+    "graph": 7,
+    "rewired": 7,
+    "dense_dot": 22
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/ImmutableDenseNDimArray/__new__",
+   "scores": {
+    "bm25": 73.28460939936069,
+    "dense": 0.555243730545044,
+    "rrf": 0.11011904761904762,
+    "direct": 0.11011904761904762,
+    "graph": 0.11011904761904762,
+    "rewired": 0.11011904761904762,
+    "dense_dot": 329.61859130859375
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 6,
+    "rrf": 8,
+    "direct": 10,
+    "graph": 11,
+    "rewired": 11,
+    "dense_dot": 6
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/__new__",
+   "scores": {
+    "bm25": 73.27593659474478,
+    "dense": 0.5957962274551392,
+    "rrf": 0.11212121212121212,
+    "direct": 0.11212121212121212,
+    "graph": 0.11212121212121212,
+    "rewired": 0.11212121212121212,
+    "dense_dot": 353.92205810546875
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 5,
+    "rrf": 7,
+    "direct": 9,
+    "graph": 10,
+    "rewired": 10,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/MutableDenseNDimArray/__new__",
+   "scores": {
+    "bm25": 72.95724999922955,
+    "dense": 0.552200436592102,
+    "rrf": 0.09903381642512077,
+    "direct": 0.09903381642512077,
+    "graph": 0.09903381642512077,
+    "rewired": 0.12681159420289856,
+    "dense_dot": 327.60003662109375
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 8,
+    "rrf": 10,
+    "direct": 12,
+    "graph": 13,
+    "rewired": 9,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "sympy/matrices/sparse.py/SparseRepMatrix/_handle_creation_inputs",
+   "scores": {
+    "bm25": 72.17663141679186,
+    "dense": 0.4387229382991791,
+    "rrf": 0.07107843137254902,
+    "direct": 0.07107843137254902,
+    "graph": 0.07107843137254902,
+    "rewired": 0.10679271708683473,
+    "dense_dot": 258.6983947753906
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 24,
+    "rrf": 17,
+    "direct": 18,
+    "graph": 20,
+    "rewired": 13,
+    "dense_dot": 24
+   }
+  },
+  {
+   "id": "sympy/matrices/repmatrix.py/MutableRepMatrix/_new",
+   "scores": {
+    "bm25": 68.2347455272587,
+    "dense": 0.4394742250442505,
+    "rrf": 0.07030303030303031,
+    "direct": 0.1328030303030303,
+    "graph": 0.1328030303030303,
+    "rewired": 0.1328030303030303,
+    "dense_dot": 260.4823303222656
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 23,
+    "rrf": 18,
+    "direct": 8,
+    "graph": 8,
+    "rewired": 8,
+    "dense_dot": 23
+   }
+  },
+  {
+   "id": "sympy/tensor/array/expressions/array_expressions.py/ArrayAdd/__new__",
+   "scores": {
+    "bm25": 65.49356186582735,
+    "dense": 0.4059617221355438,
+    "rrf": 0.06548856548856549,
+    "direct": 0.06548856548856549,
+    "graph": 0.06548856548856549,
+    "rewired": 0.06548856548856549,
+    "dense_dot": 240.24569702148438
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 27,
+    "rrf": 21,
+    "direct": 21,
+    "graph": 23,
+    "rewired": 23,
+    "dense_dot": 27
+   }
+  },
+  {
+   "id": "sympy/core/sympify.py/_sympify",
+   "scores": {
+    "bm25": 64.25722392605172,
+    "dense": 0.17544157803058624,
+    "rrf": 0.057870370370370364,
+    "direct": 0.057870370370370364,
+    "graph": 0.08728213507625271,
+    "rewired": 0.057870370370370364,
+    "dense_dot": 104.46841430664062
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 38,
+    "rrf": 26,
+    "direct": 26,
+    "graph": 15,
+    "rewired": 28,
+    "dense_dot": 38
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/DenseNDimArray/reshape",
+   "scores": {
+    "bm25": 63.141933752677765,
+    "dense": 0.43316805362701416,
+    "rrf": 0.06428571428571428,
+    "direct": 0.06428571428571428,
+    "graph": 0.06428571428571428,
+    "rewired": 0.06428571428571428,
+    "dense_dot": 255.40057373046875
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 25,
+    "rrf": 22,
+    "direct": 22,
+    "graph": 24,
+    "rewired": 24,
+    "dense_dot": 25
+   }
+  },
+  {
+   "id": "sympy/matrices/sparsetools.py/banded",
+   "scores": {
+    "bm25": 61.52743885623596,
+    "dense": 0.3252298831939697,
+    "rrf": 0.05887300252312868,
+    "direct": 0.05887300252312868,
+    "graph": 0.05887300252312868,
+    "rewired": 0.05887300252312868,
+    "dense_dot": 192.36965942382812
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 31,
+    "rrf": 25,
+    "direct": 25,
+    "graph": 27,
+    "rewired": 27,
+    "dense_dot": 31
+   }
+  },
+  {
+   "id": "sympy/core/containers.py/Tuple/index",
+   "scores": {
+    "bm25": 61.26319681499887,
+    "dense": 0.21922476589679718,
+    "rrf": 0.05507246376811594,
+    "direct": 0.05507246376811594,
+    "graph": 0.05507246376811594,
+    "rewired": 0.05507246376811594,
+    "dense_dot": 130.3638153076172
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 36,
+    "rrf": 28,
+    "direct": 28,
+    "graph": 29,
+    "rewired": 29,
+    "dense_dot": 36
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/__mul__",
+   "scores": {
+    "bm25": 60.36225084849071,
+    "dense": 0.5249407291412354,
+    "rrf": 0.07987711213517665,
+    "direct": 0.07987711213517665,
+    "graph": 0.07987711213517665,
+    "rewired": 0.07987711213517665,
+    "dense_dot": 311.3465576171875
+   },
+   "ranks": {
+    "bm25": 21,
+    "dense": 11,
+    "rrf": 15,
+    "direct": 16,
+    "graph": 18,
+    "rewired": 20,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/__rmul__",
+   "scores": {
+    "bm25": 60.36225084849071,
+    "dense": 0.5109017491340637,
+    "rrf": 0.07472826086956522,
+    "direct": 0.07472826086956522,
+    "graph": 0.07472826086956522,
+    "rewired": 0.07472826086956522,
+    "dense_dot": 302.8818359375
+   },
+   "ranks": {
+    "bm25": 22,
+    "dense": 13,
+    "rrf": 16,
+    "direct": 17,
+    "graph": 19,
+    "rewired": 21,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/__truediv__",
+   "scores": {
+    "bm25": 60.3234524132664,
+    "dense": 0.48525670170783997,
+    "rrf": 0.06601731601731602,
+    "direct": 0.06601731601731602,
+    "graph": 0.06601731601731602,
+    "rewired": 0.10768398268398269,
+    "dense_dot": 287.0057373046875
+   },
+   "ranks": {
+    "bm25": 23,
+    "dense": 18,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 22,
+    "rewired": 12,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/DenseNDimArray/tomatrix",
+   "scores": {
+    "bm25": 59.711876103122904,
+    "dense": 0.4663872718811035,
+    "rrf": 0.061669829222011384,
+    "direct": 0.061669829222011384,
+    "graph": 0.061669829222011384,
+    "rewired": 0.061669829222011384,
+    "dense_dot": 276.43212890625
+   },
+   "ranks": {
+    "bm25": 24,
+    "dense": 21,
+    "rrf": 23,
+    "direct": 23,
+    "graph": 25,
+    "rewired": 25,
+    "dense_dot": 21
+   }
+  },
+  {
+   "id": "sympy/solvers/solvers.py/nsolve",
+   "scores": {
+    "bm25": 59.2742037496555,
+    "dense": 0.23873375356197357,
+    "rrf": 0.0512987012987013,
+    "direct": 0.0512987012987013,
+    "graph": 0.0512987012987013,
+    "rewired": 0.09675324675324676,
+    "dense_dot": 141.03103637695312
+   },
+   "ranks": {
+    "bm25": 25,
+    "dense": 34,
+    "rrf": 31,
+    "direct": 31,
+    "graph": 32,
+    "rewired": 17,
+    "dense_dot": 34
+   }
+  },
+  {
+   "id": "sympy/matrices/matrices.py/MatrixBase/D",
+   "scores": {
+    "bm25": 59.219060395343185,
+    "dense": 0.34231799840927124,
+    "rrf": 0.05277777777777778,
+    "direct": 0.05277777777777778,
+    "graph": 0.05277777777777778,
+    "rewired": 0.05277777777777778,
+    "dense_dot": 202.23150634765625
+   },
+   "ranks": {
+    "bm25": 26,
+    "dense": 30,
+    "rrf": 30,
+    "direct": 30,
+    "graph": 31,
+    "rewired": 31,
+    "dense_dot": 30
+   }
+  },
+  {
+   "id": "sympy/external/importtools.py/import_module",
+   "scores": {
+    "bm25": 58.2648525718168,
+    "dense": 0.19339561462402344,
+    "rrf": 0.04830362277170788,
+    "direct": 0.04830362277170788,
+    "graph": 0.04830362277170788,
+    "rewired": 0.04830362277170788,
+    "dense_dot": 114.88397216796875
+   },
+   "ranks": {
+    "bm25": 27,
+    "dense": 37,
+    "rrf": 34,
+    "direct": 34,
+    "graph": 35,
+    "rewired": 34,
+    "dense_dot": 37
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/__add__",
+   "scores": {
+    "bm25": 57.790121000013905,
+    "dense": 0.4970540404319763,
+    "rrf": 0.06631578947368422,
+    "direct": 0.06631578947368422,
+    "graph": 0.06631578947368422,
+    "rewired": 0.06631578947368422,
+    "dense_dot": 295.14794921875
+   },
+   "ranks": {
+    "bm25": 28,
+    "dense": 15,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 21,
+    "rewired": 22,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "sympy/tensor/array/ndim_array.py/NDimArray/__sub__",
+   "scores": {
+    "bm25": 57.790121000013905,
+    "dense": 0.4744209051132202,
+    "rrf": 0.05897435897435897,
+    "direct": 0.05897435897435897,
+    "graph": 0.05897435897435897,
+    "rewired": 0.05897435897435897,
+    "dense_dot": 281.28857421875
+   },
+   "ranks": {
+    "bm25": 29,
+    "dense": 20,
+    "rrf": 24,
+    "direct": 24,
+    "graph": 26,
+    "rewired": 26,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "sympy/matrices/common.py/MatrixSpecial/diag",
+   "scores": {
+    "bm25": 57.37308263082846,
+    "dense": 0.37578821182250977,
+    "rrf": 0.05064102564102564,
+    "direct": 0.05064102564102564,
+    "graph": 0.05064102564102564,
+    "rewired": 0.05064102564102564,
+    "dense_dot": 223.3809356689453
+   },
+   "ranks": {
+    "bm25": 30,
+    "dense": 29,
+    "rrf": 32,
+    "direct": 32,
+    "graph": 33,
+    "rewired": 32,
+    "dense_dot": 29
+   }
+  },
+  {
+   "id": "sympy/codegen/ast.py/Token/__new__",
+   "scores": {
+    "bm25": 57.271314623540256,
+    "dense": 0.3058854937553406,
+    "rrf": 0.04819976771196283,
+    "direct": 0.04819976771196283,
+    "graph": 0.04819976771196283,
+    "rewired": 0.04819976771196283,
+    "dense_dot": 179.67074584960938
+   },
+   "ranks": {
+    "bm25": 31,
+    "dense": 32,
+    "rrf": 35,
+    "direct": 35,
+    "graph": 36,
+    "rewired": 35,
+    "dense_dot": 33
+   }
+  },
+  {
+   "id": "sympy/codegen/ast.py/Type/cast_check",
+   "scores": {
+    "bm25": 57.21588201901673,
+    "dense": 0.11855997145175934,
+    "rrf": 0.04380952380952381,
+    "direct": 0.04380952380952381,
+    "graph": 0.04380952380952381,
+    "rewired": 0.04380952380952381,
+    "dense_dot": 69.8739242553711
+   },
+   "ranks": {
+    "bm25": 32,
+    "dense": 40,
+    "rrf": 38,
+    "direct": 38,
+    "graph": 38,
+    "rewired": 38,
+    "dense_dot": 40
+   }
+  },
+  {
+   "id": "sympy/combinatorics/permutations.py/Permutation/__new__",
+   "scores": {
+    "bm25": 56.98629198728083,
+    "dense": 0.30543509125709534,
+    "rrf": 0.046511627906976744,
+    "direct": 0.046511627906976744,
+    "graph": 0.046511627906976744,
+    "rewired": 0.046511627906976744,
+    "dense_dot": 180.07211303710938
+   },
+   "ranks": {
+    "bm25": 33,
+    "dense": 33,
+    "rrf": 37,
+    "direct": 37,
+    "graph": 37,
+    "rewired": 37,
+    "dense_dot": 32
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/DenseNDimArray/zeros",
+   "scores": {
+    "bm25": 55.93790699564491,
+    "dense": 0.5545253157615662,
+    "rrf": 0.08155080213903743,
+    "direct": 0.08155080213903743,
+    "graph": 0.08155080213903743,
+    "rewired": 0.08155080213903743,
+    "dense_dot": 328.53460693359375
+   },
+   "ranks": {
+    "bm25": 34,
+    "dense": 7,
+    "rrf": 13,
+    "direct": 15,
+    "graph": 16,
+    "rewired": 19,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "sympy/combinatorics/partitions.py/IntegerPartition/__new__",
+   "scores": {
+    "bm25": 55.76109103090763,
+    "dense": 0.13504205644130707,
+    "rrf": 0.042630385487528344,
+    "direct": 0.042630385487528344,
+    "graph": 0.042630385487528344,
+    "rewired": 0.042630385487528344,
+    "dense_dot": 79.64694213867188
+   },
+   "ranks": {
+    "bm25": 35,
+    "dense": 39,
+    "rrf": 40,
+    "direct": 40,
+    "graph": 40,
+    "rewired": 40,
+    "dense_dot": 39
+   }
+  },
+  {
+   "id": "sympy/matrices/immutable.py/ImmutableDenseMatrix/_fromrep",
+   "scores": {
+    "bm25": 55.651473988440024,
+    "dense": 0.38099154829978943,
+    "rrf": 0.04805491990846682,
+    "direct": 0.04805491990846682,
+    "graph": 0.08138825324180016,
+    "rewired": 0.04805491990846682,
+    "dense_dot": 226.1945037841797
+   },
+   "ranks": {
+    "bm25": 36,
+    "dense": 28,
+    "rrf": 36,
+    "direct": 36,
+    "graph": 17,
+    "rewired": 36,
+    "dense_dot": 28
+   }
+  },
+  {
+   "id": "sympy/tensor/array/expressions/array_expressions.py/ArrayTensorProduct/__new__",
+   "scores": {
+    "bm25": 55.553634082363,
+    "dense": 0.419447660446167,
+    "rrf": 0.04905437352245863,
+    "direct": 0.04905437352245863,
+    "graph": 0.04905437352245863,
+    "rewired": 0.04905437352245863,
+    "dense_dot": 247.9635009765625
+   },
+   "ranks": {
+    "bm25": 37,
+    "dense": 26,
+    "rrf": 33,
+    "direct": 33,
+    "graph": 34,
+    "rewired": 33,
+    "dense_dot": 26
+   }
+  },
+  {
+   "id": "sympy/utilities/autowrap.py/ufuncify",
+   "scores": {
+    "bm25": 54.8225530449663,
+    "dense": 0.22893454134464264,
+    "rrf": 0.043055555555555555,
+    "direct": 0.043055555555555555,
+    "graph": 0.043055555555555555,
+    "rewired": 0.043055555555555555,
+    "dense_dot": 135.34088134765625
+   },
+   "ranks": {
+    "bm25": 38,
+    "dense": 35,
+    "rrf": 39,
+    "direct": 39,
+    "graph": 39,
+    "rewired": 39,
+    "dense_dot": 35
+   }
+  },
+  {
+   "id": "sympy/tensor/indexed.py/IndexedBase/__new__",
+   "scores": {
+    "bm25": 54.643006909585885,
+    "dense": 0.49093329906463623,
+    "rrf": 0.05744520030234315,
+    "direct": 0.05744520030234315,
+    "graph": 0.05744520030234315,
+    "rewired": 0.10289974575688861,
+    "dense_dot": 289.5338134765625
+   },
+   "ranks": {
+    "bm25": 39,
+    "dense": 17,
+    "rrf": 27,
+    "direct": 27,
+    "graph": 28,
+    "rewired": 15,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "sympy/tensor/array/dense_ndim_array.py/DenseNDimArray/__new__",
+   "scores": {
+    "bm25": 54.565670599763685,
+    "dense": 0.47933927178382874,
+    "rrf": 0.05448275862068966,
+    "direct": 0.05448275862068966,
+    "graph": 0.05448275862068966,
+    "rewired": 0.05448275862068966,
+    "dense_dot": 284.89508056640625
+   },
+   "ranks": {
+    "bm25": 40,
+    "dense": 19,
+    "rrf": 29,
+    "direct": 29,
+    "graph": 30,
+    "rewired": 30,
+    "dense_dot": 19
+   }
+  }
+ ]
+}

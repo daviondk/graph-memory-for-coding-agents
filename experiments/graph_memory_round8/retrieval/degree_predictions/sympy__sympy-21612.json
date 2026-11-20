@@ -1,0 +1,1254 @@
+{
+ "task": "sympy__sympy-21612",
+ "repo": "sympy__sympy",
+ "query_sha256": "657b0dc782c25c6b54593dac7ccb7c4aaa95bd6da6e1a87b2e4b778f86d29b99",
+ "corpus_sha256": "e46b5a825d8a356b152873f879ef031aa403837f94fd87be1364f3f0b2ce97f3",
+ "n_corpus": 28415,
+ "n_scanned_for_graph": 28415,
+ "n_propagated": 3,
+ "anchors": [
+  "sympy/parsing/latex/_antlr/latexparser.py/CompContext/frac",
+  "sympy/parsing/latex/_antlr/latexparser.py/FuncContext/frac",
+  "sympy/parsing/latex/_antlr/latexparser.py/Comp_nofuncContext/frac",
+  "sympy/parsing/latex/_antlr/latexparser.py/LaTeXParser/frac",
+  "sympy/parsing/latex/__init__.py/parse_latex",
+  "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex"
+ ],
+ "degrees": {
+  "sympy/parsing/latex/_antlr/latexparser.py/CompContext/frac": 0,
+  "sympy/parsing/latex/_antlr/latexparser.py/FuncContext/frac": 0,
+  "sympy/parsing/latex/_antlr/latexparser.py/Comp_nofuncContext/frac": 0,
+  "sympy/parsing/latex/_antlr/latexparser.py/LaTeXParser/frac": 0,
+  "sympy/parsing/latex/__init__.py/parse_latex": 1,
+  "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex": 3
+ },
+ "top40": {
+  "body": [
+   {
+    "id": "sympy/parsing/latex/__init__.py/parse_latex",
+    "score": 58.93787287807172,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+    "score": 49.603685884931046,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/latex",
+    "score": 43.00732146696821,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/guess.py/rationalize",
+    "score": 41.752273335577776,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/pycode.py/pycode",
+    "score": 41.45569770894428,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sympy_parser.py/parse_expr",
+    "score": 39.44025615781376,
+    "supports": []
+   },
+   {
+    "id": "sympy/isympy.py/main",
+    "score": 39.21844135093051,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/generate_sympy_from_parsed",
+    "score": 37.935821926262015,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_expr",
+    "score": 36.58189044837518,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_function_brackets",
+    "score": 35.23476743893555,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 34.6639881763459,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/downvalues_rules",
+    "score": 34.33983110995226,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/egyptian_fraction.py/egyptian_fraction",
+    "score": 34.022405865013326,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/init_printing",
+    "score": 33.97108081345755,
+    "supports": []
+   },
+   {
+    "id": "release/fabfile.py/prepare_apt",
+    "score": 33.90320060262905,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/_init_ipython_printing",
+    "score": 33.79961400261142,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 33.21255751317881,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/make_routine",
+    "score": 33.19738173331666,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/pde.py/pdsolve",
+    "score": 33.18125499850688,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/pythonmpq.py/PythonMPQ/__new__",
+    "score": 32.96221043266766,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/atoms",
+    "score": 32.88159710160434,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_brackets",
+    "score": 32.72450231410609,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_add_brackets",
+    "score": 32.55932494160466,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/autowrap.py/autowrap",
+    "score": 32.480893420331874,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_print_Mul",
+    "score": 32.460097303719685,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+    "score": 32.21183246461364,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/get_default_values",
+    "score": 32.0648619889601,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sympy_parser.py/convert_equals_signs",
+    "score": 32.029970949346364,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/iterables.py/postorder_traversal",
+    "score": 32.002768529793045,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_build_latex_antlr.py/check_antlr_version",
+    "score": 31.904984803668473,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/symbol.py/symbols",
+    "score": 31.79671445678714,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/MathErrorListener/syntaxError",
+    "score": 31.51891001150731,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/simplify.py/hypersimp",
+    "score": 31.336735647403653,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/lambdify.py/lambdify",
+    "score": 31.199243742548408,
+    "supports": []
+   },
+   {
+    "id": "sympy/stats/rv_interface.py/entropy",
+    "score": 31.124690900399028,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/pretty/pretty.py/pretty_print",
+    "score": 31.06483414017102,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/session.py/init_session",
+    "score": 31.05942743492755,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/bivariate.py/bivariate_type",
+    "score": 31.01959081047891,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/miscellaneous.py/root",
+    "score": 31.014595208505455,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_frac",
+    "score": 30.824238388369796,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "sympy/parsing/latex/__init__.py/parse_latex",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+    "score": 0.17424242424242425,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/generate_sympy_from_parsed",
+    "score": 0.12698412698412698,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_frac",
+    "score": 0.08666666666666667,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/latex",
+    "score": 0.07796800900249176,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/integers.py/frac/_value_one_or_more",
+    "score": 0.07769408694620723,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_python",
+    "score": 0.07606490872210953,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/guess.py/rationalize",
+    "score": 0.07169709989258861,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_function_brackets",
+    "score": 0.07,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sympy_parser.py/parse_expr",
+    "score": 0.0681497175141243,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/pycode.py/pycode",
+    "score": 0.06690647482014389,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_expr",
+    "score": 0.06482670089858793,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/handle_sum_or_prod",
+    "score": 0.06300581689428426,
+    "supports": []
+   },
+   {
+    "id": "sympy/isympy.py/main",
+    "score": 0.05909946760161018,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_python",
+    "score": 0.056623931623931624,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_brackets",
+    "score": 0.055640243902439025,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ZZ_python",
+    "score": 0.053698814806493286,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_print_ComplexRootOf",
+    "score": 0.05096618357487923,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_add_brackets",
+    "score": 0.05071119356833642,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FracContext/CMD_FRAC",
+    "score": 0.04821076359537898,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.0478499945012647,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+    "score": 0.04738562091503268,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/downvalues_rules",
+    "score": 0.046583213626103015,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/polyoptions.py/Frac/default",
+    "score": 0.045768714477479794,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_add",
+    "score": 0.043837843753419946,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/egyptian_fraction.py/egyptian_fraction",
+    "score": 0.04353898469759534,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_atom",
+    "score": 0.04188722246728422,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/init_printing",
+    "score": 0.041819338422391855,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_binom",
+    "score": 0.04060168471720818,
+    "supports": []
+   },
+   {
+    "id": "release/fabfile.py/prepare_apt",
+    "score": 0.04,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_ceil",
+    "score": 0.03917889857631608,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/get_default_values",
+    "score": 0.03879173290937997,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/_init_ipython_printing",
+    "score": 0.03855411391052939,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_comp",
+    "score": 0.03782755087102913,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/parse_expression",
+    "score": 0.037500000000000006,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 0.03725414515688072,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/MathErrorListener/syntaxError",
+    "score": 0.036155202821869487,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_exp",
+    "score": 0.036150966936993136,
+    "supports": []
+   },
+   {
+    "id": "sympy/utilities/codegen.py/make_routine",
+    "score": 0.03584106056215589,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_expr",
+    "score": 0.035310573190226076,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "sympy/parsing/latex/__init__.py/parse_latex",
+    "score": 0.2409090909090909,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+    "score": 0.23674242424242425,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/generate_sympy_from_parsed",
+    "score": 0.12698412698412698,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/CompContext/frac",
+    "score": 0.11030030167496475,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FuncContext/frac",
+    "score": 0.10203816406745277,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/Comp_nofuncContext/frac",
+    "score": 0.09076197142931218,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_frac",
+    "score": 0.08666666666666667,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/LaTeXParser/frac",
+    "score": 0.08432309417270294,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/latex",
+    "score": 0.07796800900249176,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/integers.py/frac/_value_one_or_more",
+    "score": 0.07769408694620723,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_python",
+    "score": 0.07606490872210953,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/guess.py/rationalize",
+    "score": 0.07169709989258861,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_function_brackets",
+    "score": 0.07,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sympy_parser.py/parse_expr",
+    "score": 0.0681497175141243,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/pycode.py/pycode",
+    "score": 0.06690647482014389,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_expr",
+    "score": 0.06482670089858793,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/handle_sum_or_prod",
+    "score": 0.06300581689428426,
+    "supports": []
+   },
+   {
+    "id": "sympy/isympy.py/main",
+    "score": 0.05909946760161018,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_python",
+    "score": 0.056623931623931624,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_brackets",
+    "score": 0.055640243902439025,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ZZ_python",
+    "score": 0.053698814806493286,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_print_ComplexRootOf",
+    "score": 0.05096618357487923,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_add_brackets",
+    "score": 0.05071119356833642,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FracContext/CMD_FRAC",
+    "score": 0.04821076359537898,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.0478499945012647,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+    "score": 0.04738562091503268,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/downvalues_rules",
+    "score": 0.046583213626103015,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/polyoptions.py/Frac/default",
+    "score": 0.045768714477479794,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_add",
+    "score": 0.043837843753419946,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/egyptian_fraction.py/egyptian_fraction",
+    "score": 0.04353898469759534,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_atom",
+    "score": 0.04188722246728422,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/init_printing",
+    "score": 0.041819338422391855,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_binom",
+    "score": 0.04060168471720818,
+    "supports": []
+   },
+   {
+    "id": "release/fabfile.py/prepare_apt",
+    "score": 0.04,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_ceil",
+    "score": 0.03917889857631608,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/get_default_values",
+    "score": 0.03879173290937997,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/_init_ipython_printing",
+    "score": 0.03855411391052939,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_comp",
+    "score": 0.03782755087102913,
+    "supports": []
+   },
+   {
+    "id": "sympy/simplify/radsimp.py/parse_expression",
+    "score": 0.037500000000000006,
+    "supports": []
+   },
+   {
+    "id": "sympy/core/basic.py/Basic/replace",
+    "score": 0.03725414515688072,
+    "supports": []
+   }
+  ],
+  "uniform": [
+   {
+    "id": "sympy/parsing/latex/__init__.py/parse_latex",
+    "score": 0.2409090909090909,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+    "score": 0.23674242424242425,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/generate_sympy_from_parsed",
+    "score": 0.12698412698412698,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/CompContext/frac",
+    "score": 0.11030030167496475,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FuncContext/frac",
+    "score": 0.10203816406745277,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/Comp_nofuncContext/frac",
+    "score": 0.09076197142931218,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_frac",
+    "score": 0.08666666666666667,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/LaTeXParser/frac",
+    "score": 0.08432309417270294,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/latex",
+    "score": 0.07796800900249176,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/integers.py/frac/_value_one_or_more",
+    "score": 0.07769408694620723,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_python",
+    "score": 0.07606490872210953,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/guess.py/rationalize",
+    "score": 0.07169709989258861,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_function_brackets",
+    "score": 0.07,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sympy_parser.py/parse_expr",
+    "score": 0.0681497175141243,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/pycode.py/pycode",
+    "score": 0.06690647482014389,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_expr",
+    "score": 0.06482670089858793,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/handle_sum_or_prod",
+    "score": 0.06300581689428426,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_relation",
+    "score": 0.060944490179447516,
+    "supports": [
+     "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex"
+    ]
+   },
+   {
+    "id": "sympy/isympy.py/main",
+    "score": 0.05909946760161018,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_python",
+    "score": 0.056623931623931624,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_brackets",
+    "score": 0.055640243902439025,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ZZ_python",
+    "score": 0.053698814806493286,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_print_ComplexRootOf",
+    "score": 0.05096618357487923,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_add_brackets",
+    "score": 0.05071119356833642,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FracContext/CMD_FRAC",
+    "score": 0.04821076359537898,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.0478499945012647,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+    "score": 0.04738562091503268,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/downvalues_rules",
+    "score": 0.046583213626103015,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/polyoptions.py/Frac/default",
+    "score": 0.045768714477479794,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_add",
+    "score": 0.043837843753419946,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/egyptian_fraction.py/egyptian_fraction",
+    "score": 0.04353898469759534,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_atom",
+    "score": 0.04188722246728422,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/init_printing",
+    "score": 0.041819338422391855,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/importtools.py/import_module",
+    "score": 0.04129614287029366,
+    "supports": [
+     "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+     "sympy/parsing/latex/__init__.py/parse_latex"
+    ]
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_binom",
+    "score": 0.04060168471720818,
+    "supports": []
+   },
+   {
+    "id": "release/fabfile.py/prepare_apt",
+    "score": 0.04,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_ceil",
+    "score": 0.03917889857631608,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/get_default_values",
+    "score": 0.03879173290937997,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/_init_ipython_printing",
+    "score": 0.03855411391052939,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_comp",
+    "score": 0.03782755087102913,
+    "supports": []
+   }
+  ],
+  "gate": [
+   {
+    "id": "sympy/parsing/latex/__init__.py/parse_latex",
+    "score": 0.2409090909090909,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+    "score": 0.23674242424242425,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/generate_sympy_from_parsed",
+    "score": 0.12698412698412698,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/CompContext/frac",
+    "score": 0.11030030167496475,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FuncContext/frac",
+    "score": 0.10203816406745277,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/Comp_nofuncContext/frac",
+    "score": 0.09076197142931218,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_frac",
+    "score": 0.08666666666666667,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/LaTeXParser/frac",
+    "score": 0.08432309417270294,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/latex",
+    "score": 0.07796800900249176,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/integers.py/frac/_value_one_or_more",
+    "score": 0.07769408694620723,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_python",
+    "score": 0.07606490872210953,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/guess.py/rationalize",
+    "score": 0.07169709989258861,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_function_brackets",
+    "score": 0.07,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sympy_parser.py/parse_expr",
+    "score": 0.0681497175141243,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/pycode.py/pycode",
+    "score": 0.06690647482014389,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_expr",
+    "score": 0.06482670089858793,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/handle_sum_or_prod",
+    "score": 0.06300581689428426,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_relation",
+    "score": 0.060944490179447516,
+    "supports": [
+     "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex"
+    ]
+   },
+   {
+    "id": "sympy/isympy.py/main",
+    "score": 0.05909946760161018,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_python",
+    "score": 0.056623931623931624,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_brackets",
+    "score": 0.055640243902439025,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ZZ_python",
+    "score": 0.053698814806493286,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_print_ComplexRootOf",
+    "score": 0.05096618357487923,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_add_brackets",
+    "score": 0.05071119356833642,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FracContext/CMD_FRAC",
+    "score": 0.04821076359537898,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.0478499945012647,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+    "score": 0.04738562091503268,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/downvalues_rules",
+    "score": 0.046583213626103015,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/polyoptions.py/Frac/default",
+    "score": 0.045768714477479794,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_add",
+    "score": 0.043837843753419946,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/egyptian_fraction.py/egyptian_fraction",
+    "score": 0.04353898469759534,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_atom",
+    "score": 0.04188722246728422,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/init_printing",
+    "score": 0.041819338422391855,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/importtools.py/import_module",
+    "score": 0.04129614287029366,
+    "supports": [
+     "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+     "sympy/parsing/latex/__init__.py/parse_latex"
+    ]
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_binom",
+    "score": 0.04060168471720818,
+    "supports": []
+   },
+   {
+    "id": "release/fabfile.py/prepare_apt",
+    "score": 0.04,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_ceil",
+    "score": 0.03917889857631608,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/get_default_values",
+    "score": 0.03879173290937997,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/_init_ipython_printing",
+    "score": 0.03855411391052939,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_comp",
+    "score": 0.03782755087102913,
+    "supports": []
+   }
+  ],
+  "allocation": [
+   {
+    "id": "sympy/parsing/latex/__init__.py/parse_latex",
+    "score": 0.2409090909090909,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+    "score": 0.23674242424242425,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/generate_sympy_from_parsed",
+    "score": 0.12698412698412698,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/CompContext/frac",
+    "score": 0.11030030167496475,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FuncContext/frac",
+    "score": 0.10203816406745277,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/Comp_nofuncContext/frac",
+    "score": 0.09076197142931218,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_frac",
+    "score": 0.08666666666666667,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/LaTeXParser/frac",
+    "score": 0.08432309417270294,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/latex",
+    "score": 0.07796800900249176,
+    "supports": []
+   },
+   {
+    "id": "sympy/functions/elementary/integers.py/frac/_value_one_or_more",
+    "score": 0.07769408694620723,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_python",
+    "score": 0.07606490872210953,
+    "supports": []
+   },
+   {
+    "id": "sympy/concrete/guess.py/rationalize",
+    "score": 0.07169709989258861,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_function_brackets",
+    "score": 0.07,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sympy_parser.py/parse_expr",
+    "score": 0.0681497175141243,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/pycode.py/pycode",
+    "score": 0.06690647482014389,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/sym_expr.py/SymPyExpression/convert_to_expr",
+    "score": 0.06482670089858793,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/handle_sum_or_prod",
+    "score": 0.06300581689428426,
+    "supports": []
+   },
+   {
+    "id": "sympy/isympy.py/main",
+    "score": 0.05909946760161018,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_QQ_python",
+    "score": 0.056623931623931624,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_brackets",
+    "score": 0.055640243902439025,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/domains/expressiondomain.py/ExpressionDomain/from_ZZ_python",
+    "score": 0.053698814806493286,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_print_ComplexRootOf",
+    "score": 0.05096618357487923,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_add_brackets",
+    "score": 0.05071119356833642,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_antlr/latexparser.py/FracContext/CMD_FRAC",
+    "score": 0.04821076359537898,
+    "supports": []
+   },
+   {
+    "id": "sympy/solvers/solvers.py/nsolve",
+    "score": 0.0478499945012647,
+    "supports": []
+   },
+   {
+    "id": "sympy/printing/latex.py/LatexPrinter/_needs_mul_brackets",
+    "score": 0.04738562091503268,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/downvalues_rules",
+    "score": 0.046583213626103015,
+    "supports": []
+   },
+   {
+    "id": "sympy/polys/polyoptions.py/Frac/default",
+    "score": 0.045768714477479794,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_add",
+    "score": 0.043837843753419946,
+    "supports": []
+   },
+   {
+    "id": "sympy/ntheory/egyptian_fraction.py/egyptian_fraction",
+    "score": 0.04353898469759534,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_atom",
+    "score": 0.04188722246728422,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/init_printing",
+    "score": 0.041819338422391855,
+    "supports": []
+   },
+   {
+    "id": "sympy/external/importtools.py/import_module",
+    "score": 0.04129614287029366,
+    "supports": [
+     "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex",
+     "sympy/parsing/latex/__init__.py/parse_latex"
+    ]
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_binom",
+    "score": 0.04060168471720818,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_relation",
+    "score": 0.04011115684611419,
+    "supports": [
+     "sympy/parsing/latex/_parse_latex_antlr.py/parse_latex"
+    ]
+   },
+   {
+    "id": "release/fabfile.py/prepare_apt",
+    "score": 0.04,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_ceil",
+    "score": 0.03917889857631608,
+    "supports": []
+   },
+   {
+    "id": "sympy/integrals/rubi/parsetools/parse.py/get_default_values",
+    "score": 0.03879173290937997,
+    "supports": []
+   },
+   {
+    "id": "sympy/interactive/printing.py/_init_ipython_printing",
+    "score": 0.03855411391052939,
+    "supports": []
+   },
+   {
+    "id": "sympy/parsing/latex/_parse_latex_antlr.py/convert_comp",
+    "score": 0.03782755087102913,
+    "supports": []
+   }
+  ]
+ }
+}

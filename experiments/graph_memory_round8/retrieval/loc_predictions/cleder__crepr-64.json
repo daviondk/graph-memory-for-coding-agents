@@ -1,0 +1,526 @@
+{
+ "task": "cleder__crepr-64",
+ "repo": "cleder__crepr",
+ "n_corpus": 20,
+ "corpus_sha256": "4d34e489431a3b21a6873cddf6d9a2612de0595dd71bf4ffa47bcd38ff103ae5",
+ "query_sha256": "e30a5a01484041384fc58792dc32497bcd6a5d4f57bfbbea845b8d579276a772",
+ "anchors": [
+  "crepr/crepr.py/remove",
+  "crepr/crepr.py/add"
+ ],
+ "edges": [
+  [
+   "crepr/crepr.py/get_method_source",
+   "crepr/crepr.py/get_init_source"
+  ],
+  [
+   "crepr/crepr.py/get_method_source",
+   "crepr/crepr.py/get_repr_source"
+  ],
+  [
+   "crepr/crepr.py/get_init_source",
+   "crepr/crepr.py/get_init_args"
+  ],
+  [
+   "crepr/crepr.py/get_repr_source",
+   "crepr/crepr.py/remove_repr"
+  ],
+  [
+   "crepr/crepr.py/get_init_args",
+   "crepr/crepr.py/get_all_init_args"
+  ],
+  [
+   "crepr/crepr.py/has_only_kwargs",
+   "crepr/crepr.py/get_all_init_args"
+  ],
+  [
+   "crepr/crepr.py/is_class_in_module",
+   "crepr/crepr.py/get_all_init_args"
+  ],
+  [
+   "crepr/crepr.py/repr_exists",
+   "crepr/crepr.py/create_repr"
+  ],
+  [
+   "crepr/crepr.py/create_repr_lines",
+   "crepr/crepr.py/create_repr"
+  ],
+  [
+   "crepr/crepr.py/get_module",
+   "crepr/crepr.py/get_modules"
+  ],
+  [
+   "crepr/crepr.py/insert_changes",
+   "crepr/crepr.py/add"
+  ],
+  [
+   "crepr/crepr.py/remove_changes",
+   "crepr/crepr.py/remove"
+  ],
+  [
+   "crepr/crepr.py/get_all_init_args",
+   "crepr/crepr.py/create_repr"
+  ],
+  [
+   "crepr/crepr.py/get_all_init_args",
+   "crepr/crepr.py/remove_repr"
+  ],
+  [
+   "crepr/crepr.py/get_all_init_args",
+   "crepr/crepr.py/report_missing_classes"
+  ],
+  [
+   "crepr/crepr.py/create_repr",
+   "crepr/crepr.py/add"
+  ],
+  [
+   "crepr/crepr.py/remove_repr",
+   "crepr/crepr.py/remove"
+  ],
+  [
+   "crepr/crepr.py/get_modules",
+   "crepr/crepr.py/add"
+  ],
+  [
+   "crepr/crepr.py/get_modules",
+   "crepr/crepr.py/remove"
+  ],
+  [
+   "crepr/crepr.py/get_modules",
+   "crepr/crepr.py/report_missing"
+  ],
+  [
+   "crepr/crepr.py/report_missing",
+   "crepr/crepr.py/report_missing_classes"
+  ]
+ ],
+ "explicit_identifiers": {
+  "add": 1,
+  "remove": 1,
+  "diff": 1,
+  "inline": 1,
+  "__repr__": 1
+ },
+ "candidates": [
+  {
+   "id": "crepr/crepr.py/CreprError/__init__",
+   "scores": {
+    "bm25": 3.6170017899736813,
+    "dense": 0.09597664326429367,
+    "rrf": 0.07151979565772669,
+    "direct": 0.07151979565772669,
+    "graph": 0.07151979565772669,
+    "rewired": 0.07151979565772669,
+    "dense_dot": 56.789554595947266
+   },
+   "ranks": {
+    "bm25": 17,
+    "dense": 19,
+    "rrf": 19,
+    "direct": 19,
+    "graph": 20,
+    "rewired": 20,
+    "dense_dot": 19
+   }
+  },
+  {
+   "id": "crepr/crepr.py/get_method_source",
+   "scores": {
+    "bm25": 6.407060961743449,
+    "dense": 0.14550893008708954,
+    "rrf": 0.09166666666666667,
+    "direct": 0.09166666666666667,
+    "graph": 0.09166666666666667,
+    "rewired": 0.09166666666666667,
+    "dense_dot": 85.2120132446289
+   },
+   "ranks": {
+    "bm25": 10,
+    "dense": 14,
+    "rrf": 13,
+    "direct": 13,
+    "graph": 14,
+    "rewired": 15,
+    "dense_dot": 14
+   }
+  },
+  {
+   "id": "crepr/crepr.py/get_init_source",
+   "scores": {
+    "bm25": 4.567301643817818,
+    "dense": 0.1336086094379425,
+    "rrf": 0.08166666666666667,
+    "direct": 0.08166666666666667,
+    "graph": 0.08166666666666667,
+    "rewired": 0.08166666666666667,
+    "dense_dot": 78.30108642578125
+   },
+   "ranks": {
+    "bm25": 14,
+    "dense": 15,
+    "rrf": 15,
+    "direct": 15,
+    "graph": 16,
+    "rewired": 17,
+    "dense_dot": 15
+   }
+  },
+  {
+   "id": "crepr/crepr.py/get_repr_source",
+   "scores": {
+    "bm25": 7.408600129317309,
+    "dense": 0.2588792145252228,
+    "rrf": 0.1125,
+    "direct": 0.1125,
+    "graph": 0.1125,
+    "rewired": 0.1125,
+    "dense_dot": 152.34654235839844
+   },
+   "ranks": {
+    "bm25": 6,
+    "dense": 10,
+    "rrf": 7,
+    "direct": 7,
+    "graph": 9,
+    "rewired": 10,
+    "dense_dot": 10
+   }
+  },
+  {
+   "id": "crepr/crepr.py/get_init_args",
+   "scores": {
+    "bm25": 3.5576943661472655,
+    "dense": 0.12713585793972015,
+    "rrf": 0.07275132275132275,
+    "direct": 0.07275132275132275,
+    "graph": 0.07275132275132275,
+    "rewired": 0.07275132275132275,
+    "dense_dot": 74.4053955078125
+   },
+   "ranks": {
+    "bm25": 18,
+    "dense": 17,
+    "rrf": 18,
+    "direct": 18,
+    "graph": 19,
+    "rewired": 19,
+    "dense_dot": 17
+   }
+  },
+  {
+   "id": "crepr/crepr.py/has_only_kwargs",
+   "scores": {
+    "bm25": 4.650774777289025,
+    "dense": 0.09168679267168045,
+    "rrf": 0.07681159420289854,
+    "direct": 0.07681159420289854,
+    "graph": 0.07681159420289854,
+    "rewired": 0.122266139657444,
+    "dense_dot": 54.008121490478516
+   },
+   "ranks": {
+    "bm25": 13,
+    "dense": 20,
+    "rrf": 17,
+    "direct": 17,
+    "graph": 18,
+    "rewired": 8,
+    "dense_dot": 20
+   }
+  },
+  {
+   "id": "crepr/crepr.py/is_class_in_module",
+   "scores": {
+    "bm25": 3.519402548299304,
+    "dense": 0.19434338808059692,
+    "rrf": 0.07993730407523511,
+    "direct": 0.07993730407523511,
+    "graph": 0.07993730407523511,
+    "rewired": 0.07993730407523511,
+    "dense_dot": 114.0685806274414
+   },
+   "ranks": {
+    "bm25": 19,
+    "dense": 12,
+    "rrf": 16,
+    "direct": 16,
+    "graph": 17,
+    "rewired": 18,
+    "dense_dot": 12
+   }
+  },
+  {
+   "id": "crepr/crepr.py/repr_exists",
+   "scores": {
+    "bm25": 3.829099801860212,
+    "dense": 0.28564515709877014,
+    "rrf": 0.09728506787330317,
+    "direct": 0.09728506787330317,
+    "graph": 0.09728506787330317,
+    "rewired": 0.09728506787330317,
+    "dense_dot": 168.9937744140625
+   },
+   "ranks": {
+    "bm25": 16,
+    "dense": 7,
+    "rrf": 11,
+    "direct": 11,
+    "graph": 13,
+    "rewired": 13,
+    "dense_dot": 7
+   }
+  },
+  {
+   "id": "crepr/crepr.py/create_repr_lines",
+   "scores": {
+    "bm25": 6.516239742840615,
+    "dense": 0.2361333966255188,
+    "rrf": 0.10025062656641603,
+    "direct": 0.10025062656641603,
+    "graph": 0.10025062656641603,
+    "rewired": 0.1419172932330827,
+    "dense_dot": 139.10812377929688
+   },
+   "ranks": {
+    "bm25": 9,
+    "dense": 11,
+    "rrf": 9,
+    "direct": 9,
+    "graph": 11,
+    "rewired": 7,
+    "dense_dot": 11
+   }
+  },
+  {
+   "id": "crepr/crepr.py/get_module",
+   "scores": {
+    "bm25": 6.087096819463955,
+    "dense": 0.15516114234924316,
+    "rrf": 0.09109730848861283,
+    "direct": 0.09109730848861283,
+    "graph": 0.09109730848861283,
+    "rewired": 0.09109730848861283,
+    "dense_dot": 91.44391632080078
+   },
+   "ranks": {
+    "bm25": 11,
+    "dense": 13,
+    "rrf": 14,
+    "direct": 14,
+    "graph": 15,
+    "rewired": 16,
+    "dense_dot": 13
+   }
+  },
+  {
+   "id": "crepr/crepr.py/insert_changes",
+   "scores": {
+    "bm25": 3.9967965748505967,
+    "dense": 0.2733404040336609,
+    "rrf": 0.09263157894736843,
+    "direct": 0.09263157894736843,
+    "graph": 0.13429824561403508,
+    "rewired": 0.09263157894736843,
+    "dense_dot": 160.14419555664062
+   },
+   "ranks": {
+    "bm25": 15,
+    "dense": 9,
+    "rrf": 12,
+    "direct": 12,
+    "graph": 6,
+    "rewired": 14,
+    "dense_dot": 9
+   }
+  },
+  {
+   "id": "crepr/crepr.py/remove_changes",
+   "scores": {
+    "bm25": 6.523267808307736,
+    "dense": 0.3064725697040558,
+    "rrf": 0.12222222222222222,
+    "direct": 0.12222222222222222,
+    "graph": 0.16767676767676767,
+    "rewired": 0.12222222222222222,
+    "dense_dot": 179.42654418945312
+   },
+   "ranks": {
+    "bm25": 8,
+    "dense": 5,
+    "rrf": 6,
+    "direct": 6,
+    "graph": 5,
+    "rewired": 9,
+    "dense_dot": 5
+   }
+  },
+  {
+   "id": "crepr/crepr.py/get_all_init_args",
+   "scores": {
+    "bm25": 7.03475050751892,
+    "dense": 0.12851111590862274,
+    "rrf": 0.09728506787330317,
+    "direct": 0.09728506787330317,
+    "graph": 0.09728506787330317,
+    "rewired": 0.09728506787330317,
+    "dense_dot": 75.24826049804688
+   },
+   "ranks": {
+    "bm25": 7,
+    "dense": 16,
+    "rrf": 10,
+    "direct": 10,
+    "graph": 12,
+    "rewired": 12,
+    "dense_dot": 16
+   }
+  },
+  {
+   "id": "crepr/crepr.py/create_repr",
+   "scores": {
+    "bm25": 8.70668800946812,
+    "dense": 0.34022462368011475,
+    "rrf": 0.14285714285714285,
+    "direct": 0.14285714285714285,
+    "graph": 0.1845238095238095,
+    "rewired": 0.14285714285714285,
+    "dense_dot": 199.27841186523438
+   },
+   "ranks": {
+    "bm25": 4,
+    "dense": 4,
+    "rrf": 4,
+    "direct": 4,
+    "graph": 4,
+    "rewired": 6,
+    "dense_dot": 4
+   }
+  },
+  {
+   "id": "crepr/crepr.py/remove_repr",
+   "scores": {
+    "bm25": 11.935155759549875,
+    "dense": 0.3767577111721039,
+    "rrf": 0.15384615384615385,
+    "direct": 0.15384615384615385,
+    "graph": 0.19930069930069932,
+    "rewired": 0.15384615384615385,
+    "dense_dot": 220.35226440429688
+   },
+   "ranks": {
+    "bm25": 3,
+    "dense": 3,
+    "rrf": 3,
+    "direct": 3,
+    "graph": 3,
+    "rewired": 4,
+    "dense_dot": 3
+   }
+  },
+  {
+   "id": "crepr/crepr.py/get_modules",
+   "scores": {
+    "bm25": 1.665101848356925,
+    "dense": 0.11587933450937271,
+    "rrf": 0.06904761904761905,
+    "direct": 0.06904761904761905,
+    "graph": 0.11450216450216451,
+    "rewired": 0.11071428571428571,
+    "dense_dot": 68.2287826538086
+   },
+   "ranks": {
+    "bm25": 20,
+    "dense": 18,
+    "rrf": 20,
+    "direct": 20,
+    "graph": 8,
+    "rewired": 11,
+    "dense_dot": 18
+   }
+  },
+  {
+   "id": "crepr/crepr.py/add",
+   "scores": {
+    "bm25": 15.946992150572287,
+    "dense": 0.43077942728996277,
+    "rrf": 0.16666666666666666,
+    "direct": 0.25,
+    "graph": 0.25,
+    "rewired": 0.25,
+    "dense_dot": 252.50079345703125
+   },
+   "ranks": {
+    "bm25": 2,
+    "dense": 2,
+    "rrf": 2,
+    "direct": 2,
+    "graph": 2,
+    "rewired": 2,
+    "dense_dot": 2
+   }
+  },
+  {
+   "id": "crepr/crepr.py/remove",
+   "scores": {
+    "bm25": 18.190287152267203,
+    "dense": 0.4515712857246399,
+    "rrf": 0.18181818181818182,
+    "direct": 0.2727272727272727,
+    "graph": 0.2727272727272727,
+    "rewired": 0.2727272727272727,
+    "dense_dot": 265.6044006347656
+   },
+   "ranks": {
+    "bm25": 1,
+    "dense": 1,
+    "rrf": 1,
+    "direct": 1,
+    "graph": 1,
+    "rewired": 1,
+    "dense_dot": 1
+   }
+  },
+  {
+   "id": "crepr/crepr.py/report_missing",
+   "scores": {
+    "bm25": 6.079612899258209,
+    "dense": 0.28057438135147095,
+    "rrf": 0.10101010101010101,
+    "direct": 0.10101010101010101,
+    "graph": 0.10101010101010101,
+    "rewired": 0.14646464646464646,
+    "dense_dot": 165.54324340820312
+   },
+   "ranks": {
+    "bm25": 12,
+    "dense": 8,
+    "rrf": 8,
+    "direct": 8,
+    "graph": 10,
+    "rewired": 5,
+    "dense_dot": 8
+   }
+  },
+  {
+   "id": "crepr/crepr.py/report_missing_classes",
+   "scores": {
+    "bm25": 8.406259552264839,
+    "dense": 0.294852614402771,
+    "rrf": 0.12916666666666665,
+    "direct": 0.12916666666666665,
+    "graph": 0.12916666666666665,
+    "rewired": 0.1708333333333333,
+    "dense_dot": 173.68533325195312
+   },
+   "ranks": {
+    "bm25": 5,
+    "dense": 6,
+    "rrf": 5,
+    "direct": 5,
+    "graph": 7,
+    "rewired": 3,
+    "dense_dot": 6
+   }
+  }
+ ]
+}

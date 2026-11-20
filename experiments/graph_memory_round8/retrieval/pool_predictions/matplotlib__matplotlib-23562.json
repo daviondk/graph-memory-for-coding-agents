@@ -1,0 +1,879 @@
+{
+ "task": "matplotlib__matplotlib-23562",
+ "repo": "matplotlib__matplotlib",
+ "corpus_sha256": "261613af37a360fe63b4ad82c105efa1f28c0eebce8d5bb0dee3f1244743d519",
+ "query_sha256": "68263cc1318505f1c918734a4f7a07788f0da1b83cb25123054b7e031ed08cab",
+ "n_corpus": 6718,
+ "n_scanned_for_graph": 6718,
+ "n_propagated": 62,
+ "anchors": [
+  "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_facecolor",
+  "lib/matplotlib/figure.py/FigureBase/add_subplot",
+  "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_surface",
+  "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/get_facecolor",
+  "lib/mpl_toolkits/mplot3d/art3d.py/Path3DCollection/get_facecolor",
+  "lib/matplotlib/pyplot.py/figure",
+  "lib/matplotlib/collections.py/Collection/get_facecolor",
+  "lib/matplotlib/figure.py/FigureBase/get_facecolor"
+ ],
+ "top40": {
+  "body": [
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_facecolor",
+    "score": 92.1437203517419,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_trisurf",
+    "score": 82.22036380525986,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 80.39417678279746,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_subplot",
+    "score": 77.9658061539031,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_facecolor",
+    "score": 68.81833127341194,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/do_3d_projection",
+    "score": 67.29586937093394,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_3d_properties",
+    "score": 66.76388178066811,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/voxels",
+    "score": 66.64980853905436,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 65.96389027805463,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/tricontourf",
+    "score": 65.77366471800646,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_surface",
+    "score": 64.90563237399779,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_alpha",
+    "score": 64.85041936883107,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/bar3d",
+    "score": 64.12994618872973,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 63.91904263696474,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/tricontour",
+    "score": 63.28960413328234,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/add_collection3d",
+    "score": 63.17310651356007,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/axes",
+    "score": 62.82917663874024,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/_add_contourf_set",
+    "score": 61.15947588737099,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/__init__",
+    "score": 61.028424728335814,
+    "supports": []
+   },
+   {
+    "id": "examples/specialty_plots/advanced_hillshading.py/shade_other_data",
+    "score": 60.35858372152005,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/subplots",
+    "score": 58.950615851962034,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_axes",
+    "score": 58.27231113053798,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_vector",
+    "score": 58.22391057426092,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_edgecolor",
+    "score": 57.886419288075274,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/poly_collection_2d_to_3d",
+    "score": 57.85995155419659,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/axes_grid1/parasite_axes.py/host_subplot",
+    "score": 57.38340355471728,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/tri/tripcolor.py/tripcolor",
+    "score": 57.01487917293272,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/get_facecolor",
+    "score": 56.896472922548604,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Path3DCollection/get_facecolor",
+    "score": 56.896472922548604,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/align_ylabels",
+    "score": 56.37389972202603,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/Figure/show",
+    "score": 56.313885754258386,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/legend",
+    "score": 55.851577085545394,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts_and_codes",
+    "score": 55.43675720577638,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/axes/_axes.py/Axes/step",
+    "score": 55.40360811215467,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/_3d_extend_contour",
+    "score": 55.057054609315635,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts",
+    "score": 55.00649791238727,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/contourf",
+    "score": 54.92570341455509,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/cbook/__init__.py/index_of",
+    "score": 54.73750361171622,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/subplot_mosaic",
+    "score": 54.656666320500364,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/stem",
+    "score": 54.55401412142487,
+    "supports": []
+   }
+  ],
+  "field": [
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_facecolor",
+    "score": 0.18181818181818182,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_facecolor",
+    "score": 0.14358974358974358,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/do_3d_projection",
+    "score": 0.13392857142857142,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_surface",
+    "score": 0.13095238095238093,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_3d_properties",
+    "score": 0.10644257703081232,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_trisurf",
+    "score": 0.10460992907801418,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/get_facecolor",
+    "score": 0.09298245614035087,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_alpha",
+    "score": 0.09090909090909091,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_edgecolor",
+    "score": 0.08823529411764705,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Path3DCollection/get_facecolor",
+    "score": 0.08814102564102563,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/__init__",
+    "score": 0.08711433756805807,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_vector",
+    "score": 0.08585858585858586,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 0.08039529914529915,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_subplot",
+    "score": 0.07990314769975787,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts_and_codes",
+    "score": 0.07325581395348837,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/add_collection3d",
+    "score": 0.07179487179487179,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/voxels",
+    "score": 0.06456456456456457,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/poly_collection_2d_to_3d",
+    "score": 0.06428571428571428,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_edgecolor",
+    "score": 0.06308610400682012,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/tricontourf",
+    "score": 0.0590909090909091,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_sort_zpos",
+    "score": 0.057692307692307696,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_zsort",
+    "score": 0.05666666666666667,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.053319810193066974,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/bar3d",
+    "score": 0.05181159420289855,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/_add_contourf_set",
+    "score": 0.05133928571428571,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/tricontour",
+    "score": 0.049174311926605506,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Line3DCollection/do_3d_projection",
+    "score": 0.04790660225442834,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot",
+    "score": 0.043402777777777776,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/line_collection_2d_to_3d",
+    "score": 0.042612839921502665,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.04223776889396535,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/do_3d_projection",
+    "score": 0.039776861508610234,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/axes",
+    "score": 0.03842207858828357,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Path3DCollection/do_3d_projection",
+    "score": 0.038392857142857145,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/can_pan",
+    "score": 0.03601731601731602,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_wireframe",
+    "score": 0.03553921568627451,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/can_zoom",
+    "score": 0.035093582887700536,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Line3DCollection/set_segments",
+    "score": 0.034523809523809526,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_axes",
+    "score": 0.034173976608187134,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/get_edgecolor",
+    "score": 0.03408450704225352,
+    "supports": []
+   }
+  ],
+  "direct": [
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_facecolor",
+    "score": 0.2727272727272727,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_surface",
+    "score": 0.20787545787545786,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/get_facecolor",
+    "score": 0.16441102756892229,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_subplot",
+    "score": 0.16323648103309119,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Path3DCollection/get_facecolor",
+    "score": 0.1548076923076923,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_facecolor",
+    "score": 0.14358974358974358,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/do_3d_projection",
+    "score": 0.13392857142857142,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_3d_properties",
+    "score": 0.10644257703081232,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_trisurf",
+    "score": 0.10460992907801418,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_alpha",
+    "score": 0.09090909090909091,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_edgecolor",
+    "score": 0.08823529411764705,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/__init__",
+    "score": 0.08711433756805807,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_vector",
+    "score": 0.08585858585858586,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 0.08039529914529915,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts_and_codes",
+    "score": 0.07325581395348837,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/add_collection3d",
+    "score": 0.07179487179487179,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 0.06937579134488801,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/collections.py/Collection/get_facecolor",
+    "score": 0.06775136001530596,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/voxels",
+    "score": 0.06456456456456457,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/poly_collection_2d_to_3d",
+    "score": 0.06428571428571428,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_edgecolor",
+    "score": 0.06308610400682012,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/get_facecolor",
+    "score": 0.0624218180818453,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/tricontourf",
+    "score": 0.0590909090909091,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_sort_zpos",
+    "score": 0.057692307692307696,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_zsort",
+    "score": 0.05666666666666667,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.053319810193066974,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/bar3d",
+    "score": 0.05181159420289855,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/_add_contourf_set",
+    "score": 0.05133928571428571,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/tricontour",
+    "score": 0.049174311926605506,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Line3DCollection/do_3d_projection",
+    "score": 0.04790660225442834,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot",
+    "score": 0.043402777777777776,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/line_collection_2d_to_3d",
+    "score": 0.042612839921502665,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.04223776889396535,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/do_3d_projection",
+    "score": 0.039776861508610234,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/axes",
+    "score": 0.03842207858828357,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Path3DCollection/do_3d_projection",
+    "score": 0.038392857142857145,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/can_pan",
+    "score": 0.03601731601731602,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_wireframe",
+    "score": 0.03553921568627451,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/can_zoom",
+    "score": 0.035093582887700536,
+    "supports": []
+   }
+  ],
+  "graph": [
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_facecolor",
+    "score": 0.2727272727272727,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_surface",
+    "score": 0.20787545787545786,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Patch3DCollection/get_facecolor",
+    "score": 0.16441102756892229,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_subplot",
+    "score": 0.16323648103309119,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Path3DCollection/get_facecolor",
+    "score": 0.1548076923076923,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_facecolor",
+    "score": 0.14358974358974358,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/do_3d_projection",
+    "score": 0.13392857142857142,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot",
+    "score": 0.12206196581196582,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_3d_properties",
+    "score": 0.10644257703081232,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_trisurf",
+    "score": 0.10460992907801418,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_alpha",
+    "score": 0.09090909090909091,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_edgecolor",
+    "score": 0.08823529411764705,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/__init__",
+    "score": 0.08711433756805807,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/get_vector",
+    "score": 0.08585858585858586,
+    "supports": []
+   },
+   {
+    "id": "tools/memleak.py/MemleakTest/__call__",
+    "score": 0.08390443556063201,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/axes",
+    "score": 0.08008874525495024,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/axes_grid1/parasite_axes.py/host_subplot",
+    "score": 0.0740316004077472,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts_and_codes",
+    "score": 0.07325581395348837,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/add_collection3d",
+    "score": 0.07179487179487179,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/figure",
+    "score": 0.06937579134488801,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/collections.py/Collection/get_facecolor",
+    "score": 0.06775136001530596,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/voxels",
+    "score": 0.06456456456456457,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/poly_collection_2d_to_3d",
+    "score": 0.06428571428571428,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/subplot_mosaic",
+    "score": 0.06387016206841803,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_verts",
+    "score": 0.06340579710144928,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_edgecolor",
+    "score": 0.06308610400682012,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/get_facecolor",
+    "score": 0.0624218180818453,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/_generate_normals",
+    "score": 0.060380840533512295,
+    "supports": [
+     "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/plot_surface"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplot2grid",
+    "score": 0.05984457814066753,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "examples/axes_grid1/demo_axes_divider.py/demo",
+    "score": 0.059631047762383246,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/axes3d.py/Axes3D/tricontourf",
+    "score": 0.0590909090909091,
+    "supports": []
+   },
+   {
+    "id": "tutorials/intermediate/imshow_extent.py/generate_imshow_demo_grid",
+    "score": 0.05806010928961748,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_sort_zpos",
+    "score": 0.057692307692307696,
+    "supports": []
+   },
+   {
+    "id": "lib/mpl_toolkits/mplot3d/art3d.py/Poly3DCollection/set_zsort",
+    "score": 0.05666666666666667,
+    "supports": []
+   },
+   {
+    "id": "lib/matplotlib/figure.py/_do_layout",
+    "score": 0.055451059990978796,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/add_gridspec",
+    "score": 0.05540025015634772,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/gridspec.py/SubplotSpec/subgridspec",
+    "score": 0.05397326722503898,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/pyplot.py/subplots",
+    "score": 0.053319810193066974,
+    "supports": []
+   },
+   {
+    "id": "examples/user_interfaces/embedding_webagg_sgskip.py/create_figure",
+    "score": 0.05327898604350884,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   },
+   {
+    "id": "lib/matplotlib/figure.py/FigureBase/_process_projection_requirements",
+    "score": 0.053090670396953595,
+    "supports": [
+     "lib/matplotlib/figure.py/FigureBase/add_subplot"
+    ]
+   }
+  ]
+ }
+}
