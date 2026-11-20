@@ -1,0 +1,209 @@
+{
+  "summary": {
+    "gold_file_in_pool": 4,
+    "arms": {
+      "bm25": {
+        "gold_line_in_context": 3,
+        "gold_file_proposed": 5,
+        "tokens": 14200
+      },
+      "doclink": {
+        "gold_line_in_context": 2,
+        "gold_file_proposed": 4,
+        "tokens": 14213
+      }
+    }
+  },
+  "rows": [
+    {
+      "id": "sympy__sympy-24539",
+      "gold_file_in_pool": true,
+      "arms": {
+        "bm25": {
+          "tokens": 1775,
+          "gold_line_in_context": true,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/polys/rings.py"
+          ],
+          "application_reason": ""
+        },
+        "doclink": {
+          "tokens": 1782,
+          "gold_line_in_context": false,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/polys/rings.py"
+          ],
+          "application_reason": "substring is missing, ambiguous, or unchanged"
+        }
+      }
+    },
+    {
+      "id": "sympy__sympy-22914",
+      "gold_file_in_pool": false,
+      "arms": {
+        "bm25": {
+          "tokens": 1777,
+          "gold_line_in_context": false,
+          "gold_file_proposed": false,
+          "paths_proposed": [
+            "sympy/printing/codeprinter.py"
+          ],
+          "application_reason": "invalid path or edit"
+        },
+        "doclink": {
+          "tokens": 1775,
+          "gold_line_in_context": false,
+          "gold_file_proposed": false,
+          "paths_proposed": [
+            "sympy/printing/codeprinter.py"
+          ],
+          "application_reason": "invalid path or edit"
+        }
+      }
+    },
+    {
+      "id": "sympy__sympy-19040",
+      "gold_file_in_pool": false,
+      "arms": {
+        "bm25": {
+          "tokens": 1779,
+          "gold_line_in_context": false,
+          "gold_file_proposed": false,
+          "paths_proposed": [
+            "sympy/polys/polyoptions.py"
+          ],
+          "application_reason": ""
+        },
+        "doclink": {
+          "tokens": 1781,
+          "gold_line_in_context": false,
+          "gold_file_proposed": false,
+          "paths_proposed": [],
+          "application_reason": "bad edit count"
+        }
+      }
+    },
+    {
+      "id": "sympy__sympy-21596",
+      "gold_file_in_pool": false,
+      "arms": {
+        "bm25": {
+          "tokens": 1760,
+          "gold_line_in_context": false,
+          "gold_file_proposed": false,
+          "paths_proposed": [
+            "sympy/sets/sets.py"
+          ],
+          "application_reason": ""
+        },
+        "doclink": {
+          "tokens": 1770,
+          "gold_line_in_context": false,
+          "gold_file_proposed": false,
+          "paths_proposed": [
+            "sympy/sets/sets.py"
+          ],
+          "application_reason": ""
+        }
+      }
+    },
+    {
+      "id": "sympy__sympy-23534",
+      "gold_file_in_pool": true,
+      "arms": {
+        "bm25": {
+          "tokens": 1781,
+          "gold_line_in_context": true,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/core/symbol.py"
+          ],
+          "application_reason": ""
+        },
+        "doclink": {
+          "tokens": 1758,
+          "gold_line_in_context": true,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/core/symbol.py"
+          ],
+          "application_reason": ""
+        }
+      }
+    },
+    {
+      "id": "sympy__sympy-20801",
+      "gold_file_in_pool": false,
+      "arms": {
+        "bm25": {
+          "tokens": 1783,
+          "gold_line_in_context": false,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/core/numbers.py"
+          ],
+          "application_reason": "invalid path or edit"
+        },
+        "doclink": {
+          "tokens": 1786,
+          "gold_line_in_context": false,
+          "gold_file_proposed": false,
+          "paths_proposed": [
+            "sympy/series/order.py"
+          ],
+          "application_reason": ""
+        }
+      }
+    },
+    {
+      "id": "sympy__sympy-19637",
+      "gold_file_in_pool": true,
+      "arms": {
+        "bm25": {
+          "tokens": 1771,
+          "gold_line_in_context": true,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/core/sympify.py"
+          ],
+          "application_reason": ""
+        },
+        "doclink": {
+          "tokens": 1785,
+          "gold_line_in_context": true,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/core/sympify.py"
+          ],
+          "application_reason": ""
+        }
+      }
+    },
+    {
+      "id": "sympy__sympy-18698",
+      "gold_file_in_pool": true,
+      "arms": {
+        "bm25": {
+          "tokens": 1774,
+          "gold_line_in_context": false,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/polys/polytools.py"
+          ],
+          "application_reason": ""
+        },
+        "doclink": {
+          "tokens": 1776,
+          "gold_line_in_context": false,
+          "gold_file_proposed": true,
+          "paths_proposed": [
+            "sympy/polys/polytools.py"
+          ],
+          "application_reason": "substring is missing, ambiguous, or unchanged"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,142 @@
+{
+  "n": 20,
+  "target_old_lines": 96,
+  "with_target_lines": 20,
+  "file_sets_changed_by_import": 20,
+  "arms": {
+    "old": {
+      "file": 10,
+      "block": 10,
+      "packet": 9,
+      "lines_in_files": 50,
+      "lines_in_packet": 17,
+      "files_shown": 160,
+      "tokens": 35474
+    },
+    "init": {
+      "file": 12,
+      "block": 12,
+      "packet": 10,
+      "lines_in_files": 68,
+      "lines_in_packet": 18,
+      "files_shown": 160,
+      "tokens": 35426
+    },
+    "rare": {
+      "file": 13,
+      "block": 13,
+      "packet": 10,
+      "lines_in_files": 71,
+      "lines_in_packet": 18,
+      "files_shown": 160,
+      "tokens": 35441
+    },
+    "import": {
+      "file": 12,
+      "block": 12,
+      "packet": 10,
+      "lines_in_files": 70,
+      "lines_in_packet": 18,
+      "files_shown": 160,
+      "tokens": 35531
+    }
+  },
+  "comparisons": {
+    "import-rare": {
+      "file": {
+        "wins": 0,
+        "losses": 1,
+        "ties": 19,
+        "delta_pp": -5.0,
+        "ci95_pp": [
+          -15.0,
+          0.0
+        ],
+        "mcnemar_exact_p": 1.0
+      },
+      "packet": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 20,
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_exact_p": 1.0
+      }
+    },
+    "init-old": {
+      "file": {
+        "wins": 2,
+        "losses": 0,
+        "ties": 18,
+        "delta_pp": 10.0,
+        "ci95_pp": [
+          0.0,
+          25.0
+        ],
+        "mcnemar_exact_p": 0.5
+      },
+      "packet": {
+        "wins": 1,
+        "losses": 0,
+        "ties": 19,
+        "delta_pp": 5.0,
+        "ci95_pp": [
+          0.0,
+          15.0
+        ],
+        "mcnemar_exact_p": 1.0
+      }
+    },
+    "rare-init": {
+      "file": {
+        "wins": 1,
+        "losses": 0,
+        "ties": 19,
+        "delta_pp": 5.0,
+        "ci95_pp": [
+          0.0,
+          15.0
+        ],
+        "mcnemar_exact_p": 1.0
+      },
+      "packet": {
+        "wins": 0,
+        "losses": 0,
+        "ties": 20,
+        "delta_pp": 0.0,
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "mcnemar_exact_p": 1.0
+      }
+    },
+    "import-old": {
+      "file": {
+        "wins": 2,
+        "losses": 0,
+        "ties": 18,
+        "delta_pp": 10.0,
+        "ci95_pp": [
+          0.0,
+          25.0
+        ],
+        "mcnemar_exact_p": 0.5
+      },
+      "packet": {
+        "wins": 1,
+        "losses": 0,
+        "ties": 19,
+        "delta_pp": 5.0,
+        "ci95_pp": [
+          0.0,
+          15.0
+        ],
+        "mcnemar_exact_p": 1.0
+      }
+    }
+  }
+}

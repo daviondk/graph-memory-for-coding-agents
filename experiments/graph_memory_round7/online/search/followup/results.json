@@ -1,0 +1,415 @@
+{
+  "claude": {
+    "comparisons": {
+      "baseline": {
+        "ci95_task": [
+          1.8041,
+          6.6667
+        ],
+        "delta_pp": 4.022988505747127,
+        "losses": 0,
+        "wins": 14
+      },
+      "path_only": {
+        "ci95_task": [
+          1.8041,
+          6.6667
+        ],
+        "delta_pp": 4.022988505747127,
+        "losses": 0,
+        "wins": 14
+      },
+      "unlimited_first": {
+        "ci95_task": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "unlimited_median": {
+        "ci95_task": [
+          -0.8798,
+          0.8333
+        ],
+        "delta_pp": 0.0,
+        "losses": 1,
+        "wins": 1
+      }
+    },
+    "cost": {
+      "attempts": 42,
+      "eligible_reads": 25,
+      "path_only": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 1,
+        "misses": 41,
+        "new": 2,
+        "new_rows_per_attempt": 0.047619047619047616,
+        "unconsumed_capacity": 670,
+        "used": 2
+      },
+      "reasons": {
+        "edit": 2,
+        "expired": 6,
+        "read": 25,
+        "replaced": 9
+      },
+      "search": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 14,
+        "misses": 28,
+        "new": 131,
+        "new_rows_per_attempt": 3.119047619047619,
+        "unconsumed_capacity": 525,
+        "used": 147
+      },
+      "target_rows": 1052
+    },
+    "cost_short16": {
+      "attempts": 5,
+      "eligible_reads": 5,
+      "path_only": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 1,
+        "misses": 4,
+        "new": 2,
+        "new_rows_per_attempt": 0.4,
+        "unconsumed_capacity": 78,
+        "used": 2
+      },
+      "reasons": {
+        "read": 5
+      },
+      "search": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 1,
+        "misses": 4,
+        "new": 7,
+        "new_rows_per_attempt": 1.4,
+        "unconsumed_capacity": 72,
+        "used": 8
+      },
+      "target_rows": 49
+    },
+    "cost_short64": {
+      "attempts": 20,
+      "eligible_reads": 20,
+      "path_only": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 1,
+        "misses": 19,
+        "new": 2,
+        "new_rows_per_attempt": 0.1,
+        "unconsumed_capacity": 318,
+        "used": 2
+      },
+      "reasons": {
+        "read": 20
+      },
+      "search": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 10,
+        "misses": 10,
+        "new": 90,
+        "new_rows_per_attempt": 4.5,
+        "unconsumed_capacity": 219,
+        "used": 101
+      },
+      "target_rows": 620
+    },
+    "hit": [
+      18,
+      32,
+      18,
+      32,
+      32
+    ],
+    "reads": 348,
+    "repos": 9,
+    "target_rows": 25723,
+    "tasks": 37
+  },
+  "kimi": {
+    "comparisons": {
+      "baseline": {
+        "ci95_task": [
+          2.9851,
+          17.8571
+        ],
+        "delta_pp": 10.952380952380953,
+        "losses": 0,
+        "wins": 23
+      },
+      "path_only": {
+        "ci95_task": [
+          2.9851,
+          15.8228
+        ],
+        "delta_pp": 10.0,
+        "losses": 0,
+        "wins": 21
+      },
+      "unlimited_first": {
+        "ci95_task": [
+          -9.2486,
+          -2.0067
+        ],
+        "delta_pp": -4.761904761904762,
+        "losses": 10,
+        "wins": 0
+      },
+      "unlimited_median": {
+        "ci95_task": [
+          -9.7015,
+          -1.476
+        ],
+        "delta_pp": -4.761904761904762,
+        "losses": 13,
+        "wins": 3
+      }
+    },
+    "cost": {
+      "attempts": 57,
+      "eligible_reads": 30,
+      "path_only": {
+        "full": 2,
+        "full_share": 0.03508771929824561,
+        "hits": 2,
+        "misses": 55,
+        "new": 14,
+        "new_rows_per_attempt": 0.24561403508771928,
+        "unconsumed_capacity": 894,
+        "used": 18
+      },
+      "reasons": {
+        "edit": 1,
+        "expired": 26,
+        "read": 30
+      },
+      "search": {
+        "full": 5,
+        "full_share": 0.08771929824561403,
+        "hits": 23,
+        "misses": 34,
+        "new": 225,
+        "new_rows_per_attempt": 3.9473684210526314,
+        "unconsumed_capacity": 662,
+        "used": 250
+      },
+      "target_rows": 1472
+    },
+    "cost_short16": {
+      "attempts": 8,
+      "eligible_reads": 8,
+      "path_only": {
+        "full": 2,
+        "full_share": 0.25,
+        "hits": 2,
+        "misses": 6,
+        "new": 14,
+        "new_rows_per_attempt": 1.75,
+        "unconsumed_capacity": 110,
+        "used": 18
+      },
+      "reasons": {
+        "read": 8
+      },
+      "search": {
+        "full": 5,
+        "full_share": 0.625,
+        "hits": 7,
+        "misses": 1,
+        "new": 37,
+        "new_rows_per_attempt": 4.625,
+        "unconsumed_capacity": 82,
+        "used": 46
+      },
+      "target_rows": 66
+    },
+    "cost_short64": {
+      "attempts": 26,
+      "eligible_reads": 26,
+      "path_only": {
+        "full": 2,
+        "full_share": 0.07692307692307693,
+        "hits": 2,
+        "misses": 24,
+        "new": 14,
+        "new_rows_per_attempt": 0.5384615384615384,
+        "unconsumed_capacity": 398,
+        "used": 18
+      },
+      "reasons": {
+        "read": 26
+      },
+      "search": {
+        "full": 5,
+        "full_share": 0.19230769230769232,
+        "hits": 21,
+        "misses": 5,
+        "new": 209,
+        "new_rows_per_attempt": 8.038461538461538,
+        "unconsumed_capacity": 184,
+        "used": 232
+      },
+      "target_rows": 868
+    },
+    "hit": [
+      10,
+      33,
+      12,
+      43,
+      43
+    ],
+    "reads": 210,
+    "repos": 4,
+    "target_rows": 15757,
+    "tasks": 59
+  },
+  "kimi_replication": {
+    "comparisons": {
+      "baseline": {
+        "ci95_task": [
+          2.3923,
+          9.5238
+        ],
+        "delta_pp": 5.777777777777778,
+        "losses": 1,
+        "wins": 14
+      },
+      "path_only": {
+        "ci95_task": [
+          2.3923,
+          9.5238
+        ],
+        "delta_pp": 5.777777777777778,
+        "losses": 1,
+        "wins": 14
+      },
+      "unlimited_first": {
+        "ci95_task": [
+          -11.3402,
+          -4.3689
+        ],
+        "delta_pp": -7.555555555555555,
+        "losses": 17,
+        "wins": 0
+      },
+      "unlimited_median": {
+        "ci95_task": [
+          -12.7551,
+          -4.0
+        ],
+        "delta_pp": -8.0,
+        "losses": 22,
+        "wins": 4
+      }
+    },
+    "cost": {
+      "attempts": 63,
+      "eligible_reads": 21,
+      "path_only": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 1,
+        "misses": 62,
+        "new": 16,
+        "new_rows_per_attempt": 0.25396825396825395,
+        "unconsumed_capacity": 992,
+        "used": 16
+      },
+      "reasons": {
+        "edit": 3,
+        "expired": 35,
+        "read": 21,
+        "replaced": 4
+      },
+      "search": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 14,
+        "misses": 49,
+        "new": 87,
+        "new_rows_per_attempt": 1.380952380952381,
+        "unconsumed_capacity": 905,
+        "used": 103
+      },
+      "target_rows": 915
+    },
+    "cost_short16": {
+      "attempts": 5,
+      "eligible_reads": 5,
+      "path_only": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 0,
+        "misses": 5,
+        "new": 0,
+        "new_rows_per_attempt": 0.0,
+        "unconsumed_capacity": 80,
+        "used": 0
+      },
+      "reasons": {
+        "read": 5
+      },
+      "search": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 2,
+        "misses": 3,
+        "new": 11,
+        "new_rows_per_attempt": 2.2,
+        "unconsumed_capacity": 67,
+        "used": 13
+      },
+      "target_rows": 60
+    },
+    "cost_short64": {
+      "attempts": 16,
+      "eligible_reads": 16,
+      "path_only": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 1,
+        "misses": 15,
+        "new": 16,
+        "new_rows_per_attempt": 1.0,
+        "unconsumed_capacity": 240,
+        "used": 16
+      },
+      "reasons": {
+        "read": 16
+      },
+      "search": {
+        "full": 0,
+        "full_share": 0.0,
+        "hits": 11,
+        "misses": 5,
+        "new": 76,
+        "new_rows_per_attempt": 4.75,
+        "unconsumed_capacity": 169,
+        "used": 87
+      },
+      "target_rows": 415
+    },
+    "hit": [
+      21,
+      34,
+      21,
+      51,
+      52
+    ],
+    "reads": 225,
+    "repos": 7,
+    "target_rows": 18947,
+    "tasks": 88
+  }
+}

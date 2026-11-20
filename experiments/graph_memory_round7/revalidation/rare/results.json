@@ -1,0 +1,80 @@
+{
+  "n": {
+    "transfer_strong_control": 717,
+    "earlier": 2404
+  },
+  "totals": {
+    "transfer_strong_control": {
+      "headers": {
+        "correct_reuse": 473,
+        "reread": 244,
+        "distinct_files_to_open": 84
+      },
+      "global_guard": {
+        "correct_reuse": 396,
+        "reread": 321,
+        "distinct_files_to_open": 88
+      },
+      "positive": {
+        "correct_reuse": 473,
+        "reread": 244,
+        "distinct_files_to_open": 84
+      },
+      "selective": {
+        "correct_reuse": 473,
+        "reread": 244,
+        "distinct_files_to_open": 84
+      },
+      "full": {
+        "correct_reuse": 419,
+        "reread": 298,
+        "distinct_files_to_open": 96
+      }
+    },
+    "earlier": {
+      "headers": {
+        "correct_reuse": 1826,
+        "reread": 578,
+        "distinct_files_to_open": 258
+      },
+      "global_guard": {
+        "reread": 1273,
+        "correct_reuse": 1131,
+        "distinct_files_to_open": 309
+      },
+      "positive": {
+        "correct_reuse": 1826,
+        "reread": 578,
+        "distinct_files_to_open": 258
+      },
+      "selective": {
+        "correct_reuse": 1825,
+        "reread": 579,
+        "distinct_files_to_open": 259
+      },
+      "full": {
+        "correct_reuse": 1678,
+        "reread": 726,
+        "distinct_files_to_open": 297
+      }
+    }
+  },
+  "selective_disagreements": {
+    "earlier": {
+      "mizani": {
+        "false_alarm": 1
+      }
+    }
+  },
+  "examples": [
+    {
+      "panel": "earlier",
+      "project": "mizani",
+      "old": "0.11.0",
+      "new": "0.11.1",
+      "path": "mizani/_core/dates.py",
+      "caller": "microsecondly_breaks",
+      "stale_prevented": false
+    }
+  ]
+}

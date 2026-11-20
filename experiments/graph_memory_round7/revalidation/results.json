@@ -1,0 +1,254 @@
+{
+  "n": 707,
+  "n_projects": 8,
+  "projects": {
+    "more-itertools": 107,
+    "boltons": 183,
+    "fonttools": 173,
+    "pint": 73,
+    "svgwrite": 9,
+    "plotnine": 85,
+    "humanize": 68,
+    "wcwidth": 9
+  },
+  "changed_answers": 44,
+  "source_status": {
+    "parsed": 707
+  },
+  "policies": {
+    "file": {
+      "correct_reuse": 0,
+      "stale": 0,
+      "reread": 707,
+      "distinct_files_to_open": 136
+    },
+    "always_reuse": {
+      "correct_reuse": 663,
+      "stale": 44,
+      "reread": 0,
+      "distinct_files_to_open": 0
+    },
+    "caller": {
+      "correct_reuse": 562,
+      "stale": 4,
+      "reread": 141,
+      "distinct_files_to_open": 70
+    },
+    "dependencies": {
+      "correct_reuse": 504,
+      "stale": 0,
+      "reread": 203,
+      "distinct_files_to_open": 82
+    },
+    "headers": {
+      "correct_reuse": 560,
+      "stale": 1,
+      "reread": 146,
+      "distinct_files_to_open": 71
+    }
+  },
+  "by_project": {
+    "more-itertools": {
+      "file": {
+        "reread": 107
+      },
+      "always_reuse": {
+        "correct_reuse": 101,
+        "stale": 6
+      },
+      "caller": {
+        "correct_reuse": 96,
+        "reread": 11
+      },
+      "dependencies": {
+        "correct_reuse": 90,
+        "reread": 17
+      },
+      "headers": {
+        "correct_reuse": 96,
+        "reread": 11
+      }
+    },
+    "boltons": {
+      "file": {
+        "reread": 183
+      },
+      "always_reuse": {
+        "correct_reuse": 176,
+        "stale": 7
+      },
+      "caller": {
+        "correct_reuse": 140,
+        "reread": 42,
+        "stale": 1
+      },
+      "dependencies": {
+        "correct_reuse": 112,
+        "reread": 71
+      },
+      "headers": {
+        "correct_reuse": 139,
+        "reread": 43,
+        "stale": 1
+      }
+    },
+    "fonttools": {
+      "file": {
+        "reread": 173
+      },
+      "always_reuse": {
+        "correct_reuse": 172,
+        "stale": 1
+      },
+      "caller": {
+        "correct_reuse": 160,
+        "reread": 13
+      },
+      "dependencies": {
+        "correct_reuse": 148,
+        "reread": 25
+      },
+      "headers": {
+        "correct_reuse": 160,
+        "reread": 13
+      }
+    },
+    "pint": {
+      "file": {
+        "reread": 73
+      },
+      "always_reuse": {
+        "correct_reuse": 58,
+        "stale": 15
+      },
+      "caller": {
+        "correct_reuse": 46,
+        "reread": 27
+      },
+      "dependencies": {
+        "correct_reuse": 42,
+        "reread": 31
+      },
+      "headers": {
+        "correct_reuse": 45,
+        "reread": 28
+      }
+    },
+    "svgwrite": {
+      "file": {
+        "reread": 9
+      },
+      "always_reuse": {
+        "stale": 1,
+        "correct_reuse": 8
+      },
+      "caller": {
+        "reread": 3,
+        "correct_reuse": 6
+      },
+      "dependencies": {
+        "reread": 6,
+        "correct_reuse": 3
+      },
+      "headers": {
+        "reread": 3,
+        "correct_reuse": 6
+      }
+    },
+    "plotnine": {
+      "file": {
+        "reread": 85
+      },
+      "always_reuse": {
+        "correct_reuse": 74,
+        "stale": 11
+      },
+      "caller": {
+        "correct_reuse": 58,
+        "reread": 24,
+        "stale": 3
+      },
+      "dependencies": {
+        "reread": 31,
+        "correct_reuse": 54
+      },
+      "headers": {
+        "correct_reuse": 58,
+        "reread": 27
+      }
+    },
+    "humanize": {
+      "file": {
+        "reread": 68
+      },
+      "always_reuse": {
+        "correct_reuse": 66,
+        "stale": 2
+      },
+      "caller": {
+        "correct_reuse": 52,
+        "reread": 16
+      },
+      "dependencies": {
+        "correct_reuse": 51,
+        "reread": 17
+      },
+      "headers": {
+        "correct_reuse": 52,
+        "reread": 16
+      }
+    },
+    "wcwidth": {
+      "file": {
+        "reread": 9
+      },
+      "always_reuse": {
+        "correct_reuse": 8,
+        "stale": 1
+      },
+      "caller": {
+        "reread": 5,
+        "correct_reuse": 4
+      },
+      "dependencies": {
+        "reread": 5,
+        "correct_reuse": 4
+      },
+      "headers": {
+        "reread": 5,
+        "correct_reuse": 4
+      }
+    }
+  },
+  "primary_gain_project_macro": 0.08864673017975672,
+  "ci": [
+    0.03146854451069906,
+    0.16684307721172018
+  ],
+  "extra_by_project": {
+    "more-itertools": {
+      "valid": 6
+    },
+    "boltons": {
+      "valid": 27,
+      "stale": 1
+    },
+    "fonttools": {
+      "valid": 12
+    },
+    "pint": {
+      "valid": 3
+    },
+    "svgwrite": {
+      "valid": 3
+    },
+    "plotnine": {
+      "valid": 4
+    },
+    "humanize": {
+      "valid": 1
+    },
+    "wcwidth": {}
+  },
+  "rows_sha256": "8962536b804e537443e55a4469a99e3ce104ef64ee88a36382452ce2bae214ac"
+}
