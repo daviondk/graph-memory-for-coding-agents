@@ -1,0 +1,125 @@
+"""Run the three fixed interventions against native Colorama tests in separate copies."""
+import collections
+import hashlib
+import json
+import os
+import shutil
+import subprocess
+import sys
+import time
+from pathlib import Path
+
+from experiment import ROOT, PY, positive, provenance, save, sha
+
+UPSTREAM = Path("D:/CodexResearch/x20-r17-real-bindings")
+COMMIT = "3de9f013df4b470069d03d250224062e8cf15c49"
+FILES = ["colorama/tests/ansi_test.py","colorama/tests/ansitowin32_test.py"]
+MODULE = "colorama/ansi.py"
+MUTATIONS = {
+    "code_to_chars":("return CSI + str(code) + 'm'","return CSI + str(code) + 'x'"),
+    "AnsiFore":("RED             = 31","RED             = 32"),
+    "clear_screen":("return CSI + str(mode) + 'J'","return CSI + str(mode) + 'H'")
+}
+
+
+def source(name):
+    return subprocess.check_output(["git","-C",str(UPSTREAM),"show",COMMIT+":"+name])
+
+
+def checkout(dest):
+    dest.mkdir(parents=True,exist_ok=False)
+    files=subprocess.check_output(["git","-C",str(UPSTREAM),"ls-tree","-r","--name-only",COMMIT,"colorama"]).decode().splitlines()
+    for path in files:
+        if path.endswith(".py"):
+            file=dest/path
+            file.parent.mkdir(parents=True,exist_ok=True)
+            file.write_bytes(source(path))
+
+
+def run(cwd, label, tests, trace=False, testmon=False):
+    out=cwd/(label+".json")
+    plugins=["-p","testmon.pytest_testmon","--testmon"] if testmon else []
+    env=dict(os.environ,PYTHONPATH=str(cwd),PYTEST_DISABLE_PLUGIN_AUTOLOAD="1",PYTHONDONTWRITEBYTECODE="1",
+             PYTHONUTF8="1",COLOR_OUT=str(out),COLOR_TRACE=str(int(trace)))
+    t=time.perf_counter()
+    result=subprocess.run([str(PY),str(ROOT/"color_boot.py"),"-q",*plugins,*tests],cwd=cwd,env=env,
+                          capture_output=True,timeout=90)
+    if not out.is_file():
+        raise RuntimeError((result.stdout+result.stderr).decode(errors="replace")[-1800:])
+    assert result.returncode in (0,1,5)
+    return {"seconds":time.perf_counter()-t,"rc":result.returncode,
+            "stdout":result.stdout.decode(errors="replace"),"stderr":result.stderr.decode(errors="replace"),
+            "obs":json.loads(out.read_bytes())}
+
+
+def main():
+    target=source(MODULE)
+    temp=Path("D:/CodexResearch/x20-r17-import-binding-runs")/("colorama-"+sha(Path(__file__).read_bytes())[:16])
+    temp.mkdir(exist_ok=False)
+    base=temp/"baseline"
+    checkout(base)
+    warm=run(base,"warm",FILES,True)
+    receipt=warm["obs"]
+    eligible={key for key,v in receipt["outcomes"].items() if positive(v)}
+    assert eligible and receipt["import_calls"]
+    binds,opaque,imported=provenance(target,receipt)
+    plan={}
+    for producer in MUTATIONS:
+        arms={"all":sorted(eligible),"function":[],"import_file":[],"bindings":[]}
+        for key in sorted(eligible):
+            meta=receipt["tests"][key]
+            fn=set(meta["functions"])
+            names=fn|set(meta["names"])
+            if producer in fn:arms["function"].append(key)
+            if producer in fn or producer in imported:arms["import_file"].append(key)
+            if producer in fn or producer in opaque or bool(names&{"globals","locals"}) or any(producer in binds[name] for name in names):
+                arms["bindings"].append(key)
+        plan[producer]=arms
+    save("colorama-warm.gz",warm)
+    save("colorama-plan.json",plan)
+    save("colorama-lock.json",{"inputs":{k:sha(source(k)) for k in [*FILES,MODULE]},
+                              "files":{k:sha((ROOT/k).read_bytes()) for k in [
+                                  "experiment.py","colorama.py.experiment","color_boot.py","colorama-warm.gz",
+                                  "colorama-plan.json","COLORAMA_PROTOCOL_RU.md"]}})
+    sums=collections.defaultdict(collections.Counter)
+    rows={}
+    for kind,(old,new) in MUTATIONS.items():
+        cwd=temp/kind
+        checkout(cwd)
+        pre=run(cwd,"warm",FILES,testmon=True)
+        stable=run(cwd,"stable",FILES,testmon=True)
+        assert {k for k,v in pre["obs"]["outcomes"].items() if positive(v)} == eligible
+        assert not (set(stable["obs"]["outcomes"])&eligible)
+        p=cwd/MODULE
+        assert target.count(old.encode())==1
+        previous=p.stat().st_mtime
+        changed=target.replace(old.encode(),new.encode())
+        p.write_bytes(changed)
+        os.utime(p,(previous+8,previous+8))
+        mon=run(cwd,"testmon",FILES,testmon=True)
+        full=run(cwd,"full",FILES)
+        actual={k for k,v in full["obs"]["outcomes"].items() if k in eligible and not positive(v)}
+        assert eligible <= set(full["obs"]["outcomes"])
+        arms=dict(plan[kind],testmon=sorted(set(mon["obs"]["outcomes"]) & eligible))
+        nodeids=arms["bindings"]
+        execution=run(cwd,"selected",nodeids) if nodeids else {}
+        if nodeids:
+            assert set(execution["obs"]["outcomes"])==set(nodeids)
+            assert actual & set(nodeids)=={k for k,v in execution["obs"]["outcomes"].items() if not positive(v)}
+        for label,ns in arms.items():
+            selected=set(ns)
+            sums[label].update(dict(rerun=len(selected),reuse=len(eligible)-len(selected),caught=len(selected&actual),
+                                    false_reuse=len(actual-selected),opportunities=len(eligible)))
+        rows[kind]=dict(failed=sorted(actual),methods=arms,full=full,testmon=mon,unchanged=stable,warm=pre,
+                        actual_selected=execution,changed_digest=sha(changed))
+        save("colorama-runs.gz",rows)
+    summary=dict(commit=COMMIT,observed=len(receipt["outcomes"]),eligible=len(eligible),arms=sums,
+                 cases={k:{"failed":len(v["failed"]),"reruns":{a:len(x) for a,x in v["methods"].items()}}
+                        for k,v in rows.items()})
+    save("colorama-results.json",summary)
+    print(summary)
+
+
+if __name__=="__main__":
+    main()
+

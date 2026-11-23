@@ -4,6 +4,8 @@
 
 **Отчёт** · [PDF, 4 страницы](docs/report.pdf) · [редактируемый Word](docs/report.docx) · [читать на GitHub](docs/report.md).
 
+[Семнадцатая серия](experiments/graph_memory_round17/REPORT_RU.md) — десять проверок отбора строк и тестов по памяти агента, новые действия Qwen, сравнения с pytest-testmon и NameRTS на общих задачах и аудит зависимостей, возникающих при импорте Python.
+
 [Шестнадцатая серия](experiments/graph_memory_round16/REPORT_RU.md) — 128 решений локального агента о записи результатов тестов, сравнение четырёх представлений наблюдения и независимая слепая разметка.
 
 [Репликация выбора первых строк](experiments/graph_memory_round16/anchor_transfer/REPORT_RU.md) — 54 новые задачи SWE-Explore, два архивных исполнителя SWE-agent и пять правил сохранения ранее увиденного кода при бюджете 60 строк.

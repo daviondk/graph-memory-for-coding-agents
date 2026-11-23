@@ -1,0 +1,402 @@
+{
+  "first": {
+    "multiple_calls": {
+      "arms": {
+        "prefix": {
+          "n": 25,
+          "full": 6,
+          "coverage": 0.5214475183718178,
+          "density": 0.024184805685553142,
+          "f1": 0.04585094481121825,
+          "tokens": 1879.4,
+          "nodes": 6.12,
+          "filled_fraction": 0.91767578125
+        },
+        "related": {
+          "n": 25,
+          "full": 10,
+          "coverage": 0.5906087898403576,
+          "density": 0.02565571954979111,
+          "f1": 0.048791699218252396,
+          "tokens": 2040.28,
+          "nodes": 10.44,
+          "filled_fraction": 0.99623046875
+        },
+        "skip": {
+          "n": 25,
+          "full": 7,
+          "coverage": 0.5497446958707876,
+          "density": 0.023716062531048007,
+          "f1": 0.04508858657619467,
+          "tokens": 2042.48,
+          "nodes": 9.28,
+          "filled_fraction": 0.9973046875
+        },
+        "value": {
+          "n": 25,
+          "full": 8,
+          "coverage": 0.5761927833024816,
+          "density": 0.024890168663221034,
+          "f1": 0.047336197309874394,
+          "tokens": 2042.2,
+          "nodes": 10.32,
+          "filled_fraction": 0.99716796875
+        }
+      },
+      "related_minus_skip": {
+        "delta": 0.12,
+        "wins": 3,
+        "losses": 0,
+        "trajectories": 25,
+        "exact_mcnemar_query_p": 0.25,
+        "trajectory_bootstrap_ci": [
+          0.0,
+          0.28
+        ]
+      },
+      "related_minus_value": {
+        "delta": 0.08,
+        "wins": 2,
+        "losses": 0,
+        "trajectories": 25,
+        "exact_mcnemar_query_p": 0.5,
+        "trajectory_bootstrap_ci": [
+          0.0,
+          0.2
+        ]
+      }
+    },
+    "one_event": {
+      "arms": {
+        "prefix": {
+          "n": 73,
+          "full": 40,
+          "coverage": 0.5550968495235712,
+          "density": 0.02210204982445583,
+          "f1": 0.04166562069608399,
+          "tokens": 1860.6712328767123,
+          "nodes": 6.315068493150685,
+          "filled_fraction": 0.9085308754280822
+        },
+        "related": {
+          "n": 73,
+          "full": 45,
+          "coverage": 0.6235900002085027,
+          "density": 0.02088174646899815,
+          "f1": 0.03961188443941622,
+          "tokens": 2041.3287671232877,
+          "nodes": 10.876712328767123,
+          "filled_fraction": 0.9967425620719178
+        },
+        "skip": {
+          "n": 73,
+          "full": 44,
+          "coverage": 0.6098913700715164,
+          "density": 0.020631826906911767,
+          "f1": 0.03912888760951498,
+          "tokens": 2042.986301369863,
+          "nodes": 10.150684931506849,
+          "filled_fraction": 0.9975519049657534
+        },
+        "value": {
+          "n": 73,
+          "full": 47,
+          "coverage": 0.6509872604824753,
+          "density": 0.021282044818578604,
+          "f1": 0.040411262157535675,
+          "tokens": 2042.3287671232877,
+          "nodes": 11.561643835616438,
+          "filled_fraction": 0.9972308433219178
+        }
+      },
+      "related_minus_skip": {
+        "delta": 0.0136986301369863,
+        "wins": 2,
+        "losses": 1,
+        "trajectories": 56,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          -0.0410958904109589,
+          0.0821917808219178
+        ]
+      },
+      "related_minus_value": {
+        "delta": -0.0273972602739726,
+        "wins": 0,
+        "losses": 2,
+        "trajectories": 56,
+        "exact_mcnemar_query_p": 0.5,
+        "trajectory_bootstrap_ci": [
+          -0.06944444444444445,
+          0.0
+        ]
+      }
+    },
+    "two_events_one_call": {
+      "arms": {
+        "prefix": {
+          "n": 6,
+          "full": 1,
+          "coverage": 0.4993141840011168,
+          "density": 0.026565704355482476,
+          "f1": 0.05040105962374346,
+          "tokens": 1883.6666666666667,
+          "nodes": 5.833333333333333,
+          "filled_fraction": 0.9197591145833334
+        },
+        "related": {
+          "n": 6,
+          "full": 3,
+          "coverage": 0.6171529619805481,
+          "density": 0.030927176359335326,
+          "f1": 0.058856057556258605,
+          "tokens": 2043.8333333333333,
+          "nodes": 10.5,
+          "filled_fraction": 0.9979654947916666
+        },
+        "skip": {
+          "n": 6,
+          "full": 2,
+          "coverage": 0.7212504149152104,
+          "density": 0.035131130847257344,
+          "f1": 0.06693245846385543,
+          "tokens": 2043.6666666666667,
+          "nodes": 9.5,
+          "filled_fraction": 0.9978841145833334
+        },
+        "value": {
+          "n": 6,
+          "full": 3,
+          "coverage": 0.675342617152962,
+          "density": 0.03348076650354777,
+          "f1": 0.06374414250261438,
+          "tokens": 2043.8333333333333,
+          "nodes": 10.833333333333334,
+          "filled_fraction": 0.9979654947916666
+        }
+      },
+      "related_minus_skip": {
+        "delta": 0.16666666666666666,
+        "wins": 1,
+        "losses": 0,
+        "trajectories": 5,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          0.0,
+          0.375
+        ]
+      },
+      "related_minus_value": {
+        "delta": 0.0,
+        "wins": 0,
+        "losses": 0,
+        "trajectories": 5,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "repeat": {
+    "multiple_calls": {
+      "arms": {
+        "prefix": {
+          "n": 23,
+          "full": 5,
+          "coverage": 0.4781044234135765,
+          "density": 0.017379131533054305,
+          "f1": 0.03324285958477209,
+          "tokens": 1803.2608695652175,
+          "nodes": 6.3478260869565215,
+          "filled_fraction": 0.8804984714673914
+        },
+        "related": {
+          "n": 23,
+          "full": 6,
+          "coverage": 0.5201225934330443,
+          "density": 0.016405067684708813,
+          "f1": 0.03156071870308783,
+          "tokens": 2044.8695652173913,
+          "nodes": 11.521739130434783,
+          "filled_fraction": 0.9984714673913043
+        },
+        "skip": {
+          "n": 23,
+          "full": 7,
+          "coverage": 0.5420174966603324,
+          "density": 0.017574576433903956,
+          "f1": 0.03375181562904245,
+          "tokens": 2044.695652173913,
+          "nodes": 10.73913043478261,
+          "filled_fraction": 0.9983865489130435
+        },
+        "value": {
+          "n": 23,
+          "full": 7,
+          "coverage": 0.5504583979414641,
+          "density": 0.01745222600204496,
+          "f1": 0.033623495580284046,
+          "tokens": 2045.0869565217392,
+          "nodes": 12.869565217391305,
+          "filled_fraction": 0.9985776154891305
+        }
+      },
+      "related_minus_skip": {
+        "delta": -0.043478260869565216,
+        "wins": 1,
+        "losses": 2,
+        "trajectories": 22,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          -0.18181818181818182,
+          0.09090909090909091
+        ]
+      },
+      "related_minus_value": {
+        "delta": -0.043478260869565216,
+        "wins": 1,
+        "losses": 2,
+        "trajectories": 22,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          -0.18181818181818182,
+          0.09090909090909091
+        ]
+      }
+    },
+    "one_event": {
+      "arms": {
+        "prefix": {
+          "n": 76,
+          "full": 32,
+          "coverage": 0.45799935699799377,
+          "density": 0.012618389048451159,
+          "f1": 0.024249720558337653,
+          "tokens": 1868.4605263157894,
+          "nodes": 6.5,
+          "filled_fraction": 0.9123342413651315
+        },
+        "related": {
+          "n": 76,
+          "full": 35,
+          "coverage": 0.4974730412085201,
+          "density": 0.012095922886447215,
+          "f1": 0.023352891591032963,
+          "tokens": 2042.592105263158,
+          "nodes": 10.986842105263158,
+          "filled_fraction": 0.9973594263980263
+        },
+        "skip": {
+          "n": 76,
+          "full": 35,
+          "coverage": 0.4974730412085201,
+          "density": 0.012047926150052424,
+          "f1": 0.023258936276362493,
+          "tokens": 2042.5263157894738,
+          "nodes": 10.078947368421053,
+          "filled_fraction": 0.997327302631579
+        },
+        "value": {
+          "n": 76,
+          "full": 36,
+          "coverage": 0.5106309359453621,
+          "density": 0.012319987491215349,
+          "f1": 0.023795254925896323,
+          "tokens": 2041.907894736842,
+          "nodes": 11.263157894736842,
+          "filled_fraction": 0.9970253392269737
+        }
+      },
+      "related_minus_skip": {
+        "delta": 0.0,
+        "wins": 1,
+        "losses": 1,
+        "trajectories": 55,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          -0.039473684210526314,
+          0.039473684210526314
+        ]
+      },
+      "related_minus_value": {
+        "delta": -0.013157894736842105,
+        "wins": 1,
+        "losses": 2,
+        "trajectories": 55,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          -0.058823529411764705,
+          0.027777777777777776
+        ]
+      }
+    },
+    "two_events_one_call": {
+      "arms": {
+        "prefix": {
+          "n": 1,
+          "full": 0,
+          "coverage": 0.6419753086419753,
+          "density": 0.031489705288655634,
+          "f1": 0.06003463536655764,
+          "tokens": 2016,
+          "nodes": 4,
+          "filled_fraction": 0.984375
+        },
+        "related": {
+          "n": 1,
+          "full": 1,
+          "coverage": 1.0,
+          "density": 0.047976307996051334,
+          "f1": 0.09155990957045969,
+          "tokens": 2048,
+          "nodes": 6,
+          "filled_fraction": 1.0
+        },
+        "skip": {
+          "n": 1,
+          "full": 0,
+          "coverage": 0.6419753086419753,
+          "density": 0.030799605133267523,
+          "f1": 0.05877920120572721,
+          "tokens": 2048,
+          "nodes": 6,
+          "filled_fraction": 1.0
+        },
+        "value": {
+          "n": 1,
+          "full": 0,
+          "coverage": 0.6419753086419753,
+          "density": 0.030872748862062142,
+          "f1": 0.05891238670694864,
+          "tokens": 2045,
+          "nodes": 6,
+          "filled_fraction": 0.99853515625
+        }
+      },
+      "related_minus_skip": {
+        "delta": 1.0,
+        "wins": 1,
+        "losses": 0,
+        "trajectories": 1,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          1.0,
+          1.0
+        ]
+      },
+      "related_minus_value": {
+        "delta": 1.0,
+        "wins": 1,
+        "losses": 0,
+        "trajectories": 1,
+        "exact_mcnemar_query_p": 1.0,
+        "trajectory_bootstrap_ci": [
+          1.0,
+          1.0
+        ]
+      }
+    }
+  }
+}
