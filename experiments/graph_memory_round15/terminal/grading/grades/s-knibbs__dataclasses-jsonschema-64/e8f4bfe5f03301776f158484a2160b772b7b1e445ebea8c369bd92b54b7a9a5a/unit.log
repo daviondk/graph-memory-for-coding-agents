@@ -1,0 +1,44 @@
+HEAD is now at dad240e Support type annotations with the 'Final' qualifier (e.g `Final[str]`) (#62)
+============================= test session starts ==============================
+collected 21 items
+
+tests/test_all.py ....................F                                  [100%]
+
+=================================== FAILURES ===================================
+/dataclasses-jsonschema/tests/test_all.py:456: AssertionError: assert {'$schema': '..._pixel'], ...} == {'$schema': '..._pixel'], ...}
+=============================== warnings summary ===============================
+tests/test_all.py::test_literal_types
+  /dataclasses-jsonschema/dataclasses_jsonschema/__init__.py:466: UserWarning: Unable to create schema for 'typing_extensions.Literal[8, 16, 24, 'true-color', None]'
+    warnings.warn(f"Unable to create schema for '{field_type_name}'")
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_all.py::test_field_with_default_factory
+PASSED tests/test_all.py::test_field_with_default_dataclass
+PASSED tests/test_all.py::test_embeddable_json_schema
+PASSED tests/test_all.py::test_json_schema
+PASSED tests/test_all.py::test_serialise_deserialise
+PASSED tests/test_all.py::test_invalid_data
+PASSED tests/test_all.py::test_newtype_field_validation
+PASSED tests/test_all.py::test_recursive_data
+PASSED tests/test_all.py::test_recursive_validation
+PASSED tests/test_all.py::test_non_string_keys
+PASSED tests/test_all.py::test_type_union_schema
+PASSED tests/test_all.py::test_type_union_serialise
+PASSED tests/test_all.py::test_type_union_deserialise
+PASSED tests/test_all.py::test_default_values
+PASSED tests/test_all.py::test_default_factory
+PASSED tests/test_all.py::test_read_only_field
+PASSED tests/test_all.py::test_read_only_field_no_default
+PASSED tests/test_all.py::test_field_types
+PASSED tests/test_all.py::test_field_metadata
+PASSED tests/test_all.py::test_final_field
+FAILED tests/test_all.py::test_literal_types - AssertionError: assert {'$sche...
+=================== 1 failed, 20 passed, 1 warning in 0.12s ====================
+Checking patch .vibe-calibration-marker...
+Falling back to direct application...
+Applied patch .vibe-calibration-marker cleanly.
+Checking patch tests/test_all.py...
+Applied patch to 'tests/test_all.py' cleanly.
+Applied patch tests/test_all.py cleanly.

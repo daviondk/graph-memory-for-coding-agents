@@ -1,0 +1,2693 @@
+{
+  "audit": {
+    "pipe": {
+      "exit_only": {
+        "abstain": 0,
+        "fail_without_evidence": 0,
+        "issued_fail": 0,
+        "issued_pass": 24,
+        "known_false_fail": 0,
+        "known_false_pass": 7,
+        "known_true_fail": 0,
+        "known_true_pass": 14,
+        "matrix": {
+          "fail": {
+            "pass": 7
+          },
+          "no_evidence": {
+            "pass": 1
+          },
+          "pass": {
+            "pass": 14
+          },
+          "skip_or_empty": {
+            "pass": 2
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 1,
+        "pass_without_positive_test": 2
+      },
+      "strict": {
+        "abstain": 17,
+        "fail_without_evidence": 0,
+        "issued_fail": 7,
+        "issued_pass": 0,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 7,
+        "known_true_pass": 0,
+        "matrix": {
+          "fail": {
+            "fail": 7
+          },
+          "no_evidence": {
+            "abstain": 1
+          },
+          "pass": {
+            "abstain": 14
+          },
+          "skip_or_empty": {
+            "abstain": 2
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      },
+      "summary": {
+        "abstain": 3,
+        "fail_without_evidence": 0,
+        "issued_fail": 7,
+        "issued_pass": 14,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 7,
+        "known_true_pass": 14,
+        "matrix": {
+          "fail": {
+            "fail": 7
+          },
+          "no_evidence": {
+            "abstain": 1
+          },
+          "pass": {
+            "pass": 14
+          },
+          "skip_or_empty": {
+            "abstain": 2
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      },
+      "summary_rc": {
+        "abstain": 3,
+        "fail_without_evidence": 0,
+        "issued_fail": 7,
+        "issued_pass": 14,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 7,
+        "known_true_pass": 14,
+        "matrix": {
+          "fail": {
+            "fail": 7
+          },
+          "no_evidence": {
+            "abstain": 1
+          },
+          "pass": {
+            "pass": 14
+          },
+          "skip_or_empty": {
+            "abstain": 2
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      }
+    },
+    "uniform": {
+      "exit_only": {
+        "abstain": 0,
+        "fail_without_evidence": 0,
+        "issued_fail": 1,
+        "issued_pass": 23,
+        "known_false_fail": 0,
+        "known_false_pass": 6,
+        "known_true_fail": 1,
+        "known_true_pass": 12,
+        "matrix": {
+          "fail": {
+            "fail": 1,
+            "pass": 6
+          },
+          "no_evidence": {
+            "pass": 5
+          },
+          "pass": {
+            "pass": 12
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 5,
+        "pass_without_positive_test": 0
+      },
+      "strict": {
+        "abstain": 17,
+        "fail_without_evidence": 0,
+        "issued_fail": 7,
+        "issued_pass": 0,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 7,
+        "known_true_pass": 0,
+        "matrix": {
+          "fail": {
+            "fail": 7
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "abstain": 12
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      },
+      "summary": {
+        "abstain": 5,
+        "fail_without_evidence": 0,
+        "issued_fail": 7,
+        "issued_pass": 12,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 7,
+        "known_true_pass": 12,
+        "matrix": {
+          "fail": {
+            "fail": 7
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "pass": 12
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      },
+      "summary_rc": {
+        "abstain": 5,
+        "fail_without_evidence": 0,
+        "issued_fail": 7,
+        "issued_pass": 12,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 7,
+        "known_true_pass": 12,
+        "matrix": {
+          "fail": {
+            "fail": 7
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "pass": 12
+          }
+        },
+        "n": 24,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      }
+    }
+  },
+  "controlled": {
+    "grid": {
+      "exit_only": {
+        "abstain": 0,
+        "fail_without_evidence": 6,
+        "issued_fail": 15,
+        "issued_pass": 25,
+        "known_false_fail": 0,
+        "known_false_pass": 6,
+        "known_true_fail": 9,
+        "known_true_pass": 10,
+        "matrix": {
+          "fail": {
+            "fail": 9,
+            "pass": 6
+          },
+          "no_evidence": {
+            "fail": 3,
+            "pass": 2
+          },
+          "pass": {
+            "pass": 10
+          },
+          "skip_or_empty": {
+            "fail": 3,
+            "pass": 7
+          }
+        },
+        "n": 40,
+        "pass_without_evidence": 2,
+        "pass_without_positive_test": 7
+      },
+      "pytest_status": {
+        "abstain": 15,
+        "fail_without_evidence": 0,
+        "issued_fail": 10,
+        "issued_pass": 15,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 10,
+        "known_true_pass": 10,
+        "matrix": {
+          "fail": {
+            "abstain": 5,
+            "fail": 10
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "pass": 10
+          },
+          "skip_or_empty": {
+            "abstain": 5,
+            "pass": 5
+          }
+        },
+        "n": 40,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 5
+      },
+      "runner_xml": {
+        "abstain": 15,
+        "fail_without_evidence": 0,
+        "issued_fail": 15,
+        "issued_pass": 10,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 15,
+        "known_true_pass": 10,
+        "matrix": {
+          "fail": {
+            "fail": 15
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "pass": 10
+          },
+          "skip_or_empty": {
+            "abstain": 10
+          }
+        },
+        "n": 40,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      },
+      "strict": {
+        "abstain": 27,
+        "fail_without_evidence": 0,
+        "issued_fail": 9,
+        "issued_pass": 4,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 9,
+        "known_true_pass": 4,
+        "matrix": {
+          "fail": {
+            "abstain": 6,
+            "fail": 9
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "abstain": 6,
+            "pass": 4
+          },
+          "skip_or_empty": {
+            "abstain": 10
+          }
+        },
+        "n": 40,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      },
+      "summary": {
+        "abstain": 25,
+        "fail_without_evidence": 0,
+        "issued_fail": 9,
+        "issued_pass": 6,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 9,
+        "known_true_pass": 6,
+        "matrix": {
+          "fail": {
+            "abstain": 6,
+            "fail": 9
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "abstain": 4,
+            "pass": 6
+          },
+          "skip_or_empty": {
+            "abstain": 10
+          }
+        },
+        "n": 40,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      },
+      "summary_rc": {
+        "abstain": 25,
+        "fail_without_evidence": 0,
+        "issued_fail": 9,
+        "issued_pass": 6,
+        "known_false_fail": 0,
+        "known_false_pass": 0,
+        "known_true_fail": 9,
+        "known_true_pass": 6,
+        "matrix": {
+          "fail": {
+            "abstain": 6,
+            "fail": 9
+          },
+          "no_evidence": {
+            "abstain": 5
+          },
+          "pass": {
+            "abstain": 4,
+            "pass": 6
+          },
+          "skip_or_empty": {
+            "abstain": 10
+          }
+        },
+        "n": 40,
+        "pass_without_evidence": 0,
+        "pass_without_positive_test": 0
+      }
+    },
+    "placebo": [
+      {
+        "policies": {
+          "exit_only": "pass",
+          "pytest_status": "abstain",
+          "runner_xml": "abstain",
+          "strict": "abstain",
+          "summary": "pass",
+          "summary_rc": "pass"
+        },
+        "shape": "imitation",
+        "truth": "no_evidence"
+      },
+      {
+        "policies": {
+          "exit_only": "pass",
+          "pytest_status": "fail",
+          "runner_xml": "fail",
+          "strict": "abstain",
+          "summary": "pass",
+          "summary_rc": "pass"
+        },
+        "shape": "appended",
+        "truth": "fail"
+      }
+    ],
+    "shapes": {
+      "direct": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 2,
+          "issued_fail": 5,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "fail": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "fail": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "pytest_status": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 2,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 2,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "abstain": 1,
+              "fail": 2
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "runner_xml": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "strict": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "first": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 8,
+          "known_false_fail": 0,
+          "known_false_pass": 3,
+          "known_true_fail": 0,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "pass": 3
+            },
+            "no_evidence": {
+              "pass": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "pass": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 1,
+          "pass_without_positive_test": 2
+        },
+        "pytest_status": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 2,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 2,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "abstain": 1,
+              "fail": 2
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "runner_xml": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "strict": {
+          "abstain": 8,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "abstain": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "abstain": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 8,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "abstain": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "abstain": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 8,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "abstain": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "abstain": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "first_pipefail": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 2,
+          "issued_fail": 5,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "fail": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "fail": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "pytest_status": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 2,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 2,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "abstain": 1,
+              "fail": 2
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "runner_xml": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "strict": {
+          "abstain": 8,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "abstain": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "abstain": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 8,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "abstain": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "abstain": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 8,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "abstain": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "abstain": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "tail": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 8,
+          "known_false_fail": 0,
+          "known_false_pass": 3,
+          "known_true_fail": 0,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "pass": 3
+            },
+            "no_evidence": {
+              "pass": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "pass": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 1,
+          "pass_without_positive_test": 2
+        },
+        "pytest_status": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 2,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 2,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "abstain": 1,
+              "fail": 2
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "runner_xml": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "strict": {
+          "abstain": 5,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "abstain": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "tail_pipefail": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 2,
+          "issued_fail": 5,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "fail": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "fail": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "pytest_status": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 2,
+          "issued_pass": 3,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 2,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "abstain": 1,
+              "fail": 2
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 1,
+              "pass": 1
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "runner_xml": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "strict": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 3,
+          "fail_without_evidence": 0,
+          "issued_fail": 3,
+          "issued_pass": 2,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 3,
+          "known_true_pass": 2,
+          "matrix": {
+            "fail": {
+              "fail": 3
+            },
+            "no_evidence": {
+              "abstain": 1
+            },
+            "pass": {
+              "pass": 2
+            },
+            "skip_or_empty": {
+              "abstain": 2
+            }
+          },
+          "n": 8,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      }
+    },
+    "size_median": {
+      "line": 17.0,
+      "pytest_rc": 1.0,
+      "shell_rc": 1.0,
+      "stdout": 152.0,
+      "xml": 395.0
+    }
+  },
+  "extras": {
+    "conflicting_issues": 349,
+    "conflicting_repos": [
+      "CS-SI/eodag",
+      "HypothesisWorks/hypothesis",
+      "NeurodataWithoutBorders/pynwb",
+      "PennyLaneAI/pennylane",
+      "Qiskit/qiskit-terra",
+      "alteryx/woodwork",
+      "codezonediitj/pydatastructs",
+      "fatiando/harmonica",
+      "hdmf-dev/hdmf",
+      "ipython/traitlets",
+      "pallets/click",
+      "pandas-dev/pandas",
+      "pybamm-team/PyBaMM",
+      "pyccel/pyccel",
+      "pypa/setuptools",
+      "pyqtgraph/pyqtgraph",
+      "python-attrs/attrs",
+      "scikit-build/scikit-build-core",
+      "sdv-dev/RDT",
+      "stac-utils/pystac",
+      "theacodes/nox",
+      "xgcm/xgcm"
+    ],
+    "raw_visible_matrix": {
+      "fail|fail": 954,
+      "no_evidence|no_evidence": 434,
+      "pass|pass": 1681,
+      "skip_or_empty|skip_or_empty": 186
+    },
+    "sizes_median": {
+      "positive_summary_line": 80,
+      "shell_rc": 1,
+      "visible_stdout": 1841
+    }
+  },
+  "group": {
+    "all": {
+      "issues": 710,
+      "known": 2635,
+      "n": 3255,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 12,
+          "issued_fail": 123,
+          "issued_pass": 3132,
+          "known_false_fail": 0,
+          "known_false_pass": 843,
+          "known_true_fail": 111,
+          "known_true_pass": 1681,
+          "matrix": {
+            "fail": {
+              "fail": 111,
+              "pass": 843
+            },
+            "no_evidence": {
+              "fail": 7,
+              "pass": 427
+            },
+            "pass": {
+              "pass": 1681
+            },
+            "skip_or_empty": {
+              "fail": 5,
+              "pass": 181
+            }
+          },
+          "n": 3255,
+          "pass_without_evidence": 427,
+          "pass_without_positive_test": 181
+        },
+        "strict": {
+          "abstain": 2050,
+          "fail_without_evidence": 0,
+          "issued_fail": 954,
+          "issued_pass": 251,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 954,
+          "known_true_pass": 251,
+          "matrix": {
+            "fail": {
+              "fail": 954
+            },
+            "no_evidence": {
+              "abstain": 434
+            },
+            "pass": {
+              "abstain": 1430,
+              "pass": 251
+            },
+            "skip_or_empty": {
+              "abstain": 186
+            }
+          },
+          "n": 3255,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 620,
+          "fail_without_evidence": 0,
+          "issued_fail": 954,
+          "issued_pass": 1681,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 954,
+          "known_true_pass": 1681,
+          "matrix": {
+            "fail": {
+              "fail": 954
+            },
+            "no_evidence": {
+              "abstain": 434
+            },
+            "pass": {
+              "pass": 1681
+            },
+            "skip_or_empty": {
+              "abstain": 186
+            }
+          },
+          "n": 3255,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 620,
+          "fail_without_evidence": 0,
+          "issued_fail": 954,
+          "issued_pass": 1681,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 954,
+          "known_true_pass": 1681,
+          "matrix": {
+            "fail": {
+              "fail": 954
+            },
+            "no_evidence": {
+              "abstain": 434
+            },
+            "pass": {
+              "pass": 1681
+            },
+            "skip_or_empty": {
+              "abstain": 186
+            }
+          },
+          "n": 3255,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 24,
+      "zero": 3132,
+      "zero_contradiction_rate": [
+        0.26915708812260536,
+        0.24593898707792744,
+        0.2922041480680468
+      ],
+      "zero_known": 2524,
+      "zero_known_contradiction_rate": [
+        0.33399366085578447,
+        0.30632464560518435,
+        0.3607500508459803
+      ],
+      "zero_no_evidence": 427,
+      "zero_no_tests": 181,
+      "zero_visible_fail": 843
+    },
+    "compound": {
+      "issues": 1,
+      "known": 0,
+      "n": 1,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 1,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "pass": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 1,
+          "pass_without_positive_test": 0
+        },
+        "strict": {
+          "abstain": 1,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "abstain": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 1,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "abstain": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 1,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "abstain": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 1,
+      "zero": 1,
+      "zero_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_known": 0,
+      "zero_known_contradiction_rate": [
+        null,
+        null,
+        null
+      ],
+      "zero_no_evidence": 1,
+      "zero_no_tests": 0,
+      "zero_visible_fail": 0
+    },
+    "direct": {
+      "issues": 192,
+      "known": 362,
+      "n": 374,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 10,
+          "issued_fail": 121,
+          "issued_pass": 253,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 111,
+          "known_true_pass": 251,
+          "matrix": {
+            "fail": {
+              "fail": 111
+            },
+            "no_evidence": {
+              "fail": 5
+            },
+            "pass": {
+              "pass": 251
+            },
+            "skip_or_empty": {
+              "fail": 5,
+              "pass": 2
+            }
+          },
+          "n": 374,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 2
+        },
+        "strict": {
+          "abstain": 12,
+          "fail_without_evidence": 0,
+          "issued_fail": 111,
+          "issued_pass": 251,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 111,
+          "known_true_pass": 251,
+          "matrix": {
+            "fail": {
+              "fail": 111
+            },
+            "no_evidence": {
+              "abstain": 5
+            },
+            "pass": {
+              "pass": 251
+            },
+            "skip_or_empty": {
+              "abstain": 7
+            }
+          },
+          "n": 374,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 12,
+          "fail_without_evidence": 0,
+          "issued_fail": 111,
+          "issued_pass": 251,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 111,
+          "known_true_pass": 251,
+          "matrix": {
+            "fail": {
+              "fail": 111
+            },
+            "no_evidence": {
+              "abstain": 5
+            },
+            "pass": {
+              "pass": 251
+            },
+            "skip_or_empty": {
+              "abstain": 7
+            }
+          },
+          "n": 374,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 12,
+          "fail_without_evidence": 0,
+          "issued_fail": 111,
+          "issued_pass": 251,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 111,
+          "known_true_pass": 251,
+          "matrix": {
+            "fail": {
+              "fail": 111
+            },
+            "no_evidence": {
+              "abstain": 5
+            },
+            "pass": {
+              "pass": 251
+            },
+            "skip_or_empty": {
+              "abstain": 7
+            }
+          },
+          "n": 374,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 22,
+      "zero": 253,
+      "zero_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_known": 251,
+      "zero_known_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_no_evidence": 0,
+      "zero_no_tests": 2,
+      "zero_visible_fail": 0
+    },
+    "other": {
+      "issues": 204,
+      "known": 674,
+      "n": 850,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 5,
+          "issued_fail": 43,
+          "issued_pass": 807,
+          "known_false_fail": 0,
+          "known_false_pass": 186,
+          "known_true_fail": 38,
+          "known_true_pass": 450,
+          "matrix": {
+            "fail": {
+              "fail": 38,
+              "pass": 186
+            },
+            "no_evidence": {
+              "fail": 2,
+              "pass": 120
+            },
+            "pass": {
+              "pass": 450
+            },
+            "skip_or_empty": {
+              "fail": 3,
+              "pass": 51
+            }
+          },
+          "n": 850,
+          "pass_without_evidence": 120,
+          "pass_without_positive_test": 51
+        },
+        "strict": {
+          "abstain": 541,
+          "fail_without_evidence": 0,
+          "issued_fail": 224,
+          "issued_pass": 85,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 224,
+          "known_true_pass": 85,
+          "matrix": {
+            "fail": {
+              "fail": 224
+            },
+            "no_evidence": {
+              "abstain": 122
+            },
+            "pass": {
+              "abstain": 365,
+              "pass": 85
+            },
+            "skip_or_empty": {
+              "abstain": 54
+            }
+          },
+          "n": 850,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 176,
+          "fail_without_evidence": 0,
+          "issued_fail": 224,
+          "issued_pass": 450,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 224,
+          "known_true_pass": 450,
+          "matrix": {
+            "fail": {
+              "fail": 224
+            },
+            "no_evidence": {
+              "abstain": 122
+            },
+            "pass": {
+              "pass": 450
+            },
+            "skip_or_empty": {
+              "abstain": 54
+            }
+          },
+          "n": 850,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 176,
+          "fail_without_evidence": 0,
+          "issued_fail": 224,
+          "issued_pass": 450,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 224,
+          "known_true_pass": 450,
+          "matrix": {
+            "fail": {
+              "fail": 224
+            },
+            "no_evidence": {
+              "abstain": 122
+            },
+            "pass": {
+              "pass": 450
+            },
+            "skip_or_empty": {
+              "abstain": 54
+            }
+          },
+          "n": 850,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 8,
+      "zero": 807,
+      "zero_contradiction_rate": [
+        0.23048327137546468,
+        0.19395427829936646,
+        0.2678852459964908
+      ],
+      "zero_known": 636,
+      "zero_known_contradiction_rate": [
+        0.29245283018867924,
+        0.24780211420926998,
+        0.3372522285977765
+      ],
+      "zero_no_evidence": 120,
+      "zero_no_tests": 51,
+      "zero_visible_fail": 186
+    },
+    "other_compound": {
+      "n": 0
+    },
+    "other_direct": {
+      "issues": 68,
+      "known": 123,
+      "n": 129,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 5,
+          "issued_fail": 43,
+          "issued_pass": 86,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 38,
+          "known_true_pass": 85,
+          "matrix": {
+            "fail": {
+              "fail": 38
+            },
+            "no_evidence": {
+              "fail": 2
+            },
+            "pass": {
+              "pass": 85
+            },
+            "skip_or_empty": {
+              "fail": 3,
+              "pass": 1
+            }
+          },
+          "n": 129,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "strict": {
+          "abstain": 6,
+          "fail_without_evidence": 0,
+          "issued_fail": 38,
+          "issued_pass": 85,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 38,
+          "known_true_pass": 85,
+          "matrix": {
+            "fail": {
+              "fail": 38
+            },
+            "no_evidence": {
+              "abstain": 2
+            },
+            "pass": {
+              "pass": 85
+            },
+            "skip_or_empty": {
+              "abstain": 4
+            }
+          },
+          "n": 129,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 6,
+          "fail_without_evidence": 0,
+          "issued_fail": 38,
+          "issued_pass": 85,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 38,
+          "known_true_pass": 85,
+          "matrix": {
+            "fail": {
+              "fail": 38
+            },
+            "no_evidence": {
+              "abstain": 2
+            },
+            "pass": {
+              "pass": 85
+            },
+            "skip_or_empty": {
+              "abstain": 4
+            }
+          },
+          "n": 129,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 6,
+          "fail_without_evidence": 0,
+          "issued_fail": 38,
+          "issued_pass": 85,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 38,
+          "known_true_pass": 85,
+          "matrix": {
+            "fail": {
+              "fail": 38
+            },
+            "no_evidence": {
+              "abstain": 2
+            },
+            "pass": {
+              "pass": 85
+            },
+            "skip_or_empty": {
+              "abstain": 4
+            }
+          },
+          "n": 129,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 7,
+      "zero": 86,
+      "zero_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_known": 85,
+      "zero_known_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_no_evidence": 0,
+      "zero_no_tests": 1,
+      "zero_visible_fail": 0
+    },
+    "other_pipefail": {
+      "n": 0
+    },
+    "other_pipeline": {
+      "issues": 198,
+      "known": 551,
+      "n": 721,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 721,
+          "known_false_fail": 0,
+          "known_false_pass": 186,
+          "known_true_fail": 0,
+          "known_true_pass": 365,
+          "matrix": {
+            "fail": {
+              "pass": 186
+            },
+            "no_evidence": {
+              "pass": 120
+            },
+            "pass": {
+              "pass": 365
+            },
+            "skip_or_empty": {
+              "pass": 50
+            }
+          },
+          "n": 721,
+          "pass_without_evidence": 120,
+          "pass_without_positive_test": 50
+        },
+        "strict": {
+          "abstain": 535,
+          "fail_without_evidence": 0,
+          "issued_fail": 186,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 186,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "fail": 186
+            },
+            "no_evidence": {
+              "abstain": 120
+            },
+            "pass": {
+              "abstain": 365
+            },
+            "skip_or_empty": {
+              "abstain": 50
+            }
+          },
+          "n": 721,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 170,
+          "fail_without_evidence": 0,
+          "issued_fail": 186,
+          "issued_pass": 365,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 186,
+          "known_true_pass": 365,
+          "matrix": {
+            "fail": {
+              "fail": 186
+            },
+            "no_evidence": {
+              "abstain": 120
+            },
+            "pass": {
+              "pass": 365
+            },
+            "skip_or_empty": {
+              "abstain": 50
+            }
+          },
+          "n": 721,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 170,
+          "fail_without_evidence": 0,
+          "issued_fail": 186,
+          "issued_pass": 365,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 186,
+          "known_true_pass": 365,
+          "matrix": {
+            "fail": {
+              "fail": 186
+            },
+            "no_evidence": {
+              "abstain": 120
+            },
+            "pass": {
+              "pass": 365
+            },
+            "skip_or_empty": {
+              "abstain": 50
+            }
+          },
+          "n": 721,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 8,
+      "zero": 721,
+      "zero_contradiction_rate": [
+        0.2579750346740638,
+        0.21769480093307933,
+        0.29870176054386577
+      ],
+      "zero_known": 551,
+      "zero_known_contradiction_rate": [
+        0.33756805807622503,
+        0.2872923154193872,
+        0.38869748723989
+      ],
+      "zero_no_evidence": 120,
+      "zero_no_tests": 50,
+      "zero_visible_fail": 186
+    },
+    "pipeline": {
+      "issues": 691,
+      "known": 2273,
+      "n": 2880,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 2,
+          "issued_fail": 2,
+          "issued_pass": 2878,
+          "known_false_fail": 0,
+          "known_false_pass": 843,
+          "known_true_fail": 0,
+          "known_true_pass": 1430,
+          "matrix": {
+            "fail": {
+              "pass": 843
+            },
+            "no_evidence": {
+              "fail": 2,
+              "pass": 426
+            },
+            "pass": {
+              "pass": 1430
+            },
+            "skip_or_empty": {
+              "pass": 179
+            }
+          },
+          "n": 2880,
+          "pass_without_evidence": 426,
+          "pass_without_positive_test": 179
+        },
+        "strict": {
+          "abstain": 2037,
+          "fail_without_evidence": 0,
+          "issued_fail": 843,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 843,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "fail": 843
+            },
+            "no_evidence": {
+              "abstain": 428
+            },
+            "pass": {
+              "abstain": 1430
+            },
+            "skip_or_empty": {
+              "abstain": 179
+            }
+          },
+          "n": 2880,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 607,
+          "fail_without_evidence": 0,
+          "issued_fail": 843,
+          "issued_pass": 1430,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 843,
+          "known_true_pass": 1430,
+          "matrix": {
+            "fail": {
+              "fail": 843
+            },
+            "no_evidence": {
+              "abstain": 428
+            },
+            "pass": {
+              "pass": 1430
+            },
+            "skip_or_empty": {
+              "abstain": 179
+            }
+          },
+          "n": 2880,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 607,
+          "fail_without_evidence": 0,
+          "issued_fail": 843,
+          "issued_pass": 1430,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 843,
+          "known_true_pass": 1430,
+          "matrix": {
+            "fail": {
+              "fail": 843
+            },
+            "no_evidence": {
+              "abstain": 428
+            },
+            "pass": {
+              "pass": 1430
+            },
+            "skip_or_empty": {
+              "abstain": 179
+            }
+          },
+          "n": 2880,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 24,
+      "zero": 2878,
+      "zero_contradiction_rate": [
+        0.29291174426685196,
+        0.26828127424209514,
+        0.31732163642405437
+      ],
+      "zero_known": 2273,
+      "zero_known_contradiction_rate": [
+        0.3708754949406071,
+        0.3419685711884388,
+        0.39983489508948444
+      ],
+      "zero_no_evidence": 426,
+      "zero_no_tests": 179,
+      "zero_visible_fail": 843
+    },
+    "science": {
+      "issues": 506,
+      "known": 1961,
+      "n": 2405,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 7,
+          "issued_fail": 80,
+          "issued_pass": 2325,
+          "known_false_fail": 0,
+          "known_false_pass": 657,
+          "known_true_fail": 73,
+          "known_true_pass": 1231,
+          "matrix": {
+            "fail": {
+              "fail": 73,
+              "pass": 657
+            },
+            "no_evidence": {
+              "fail": 5,
+              "pass": 307
+            },
+            "pass": {
+              "pass": 1231
+            },
+            "skip_or_empty": {
+              "fail": 2,
+              "pass": 130
+            }
+          },
+          "n": 2405,
+          "pass_without_evidence": 307,
+          "pass_without_positive_test": 130
+        },
+        "strict": {
+          "abstain": 1509,
+          "fail_without_evidence": 0,
+          "issued_fail": 730,
+          "issued_pass": 166,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 730,
+          "known_true_pass": 166,
+          "matrix": {
+            "fail": {
+              "fail": 730
+            },
+            "no_evidence": {
+              "abstain": 312
+            },
+            "pass": {
+              "abstain": 1065,
+              "pass": 166
+            },
+            "skip_or_empty": {
+              "abstain": 132
+            }
+          },
+          "n": 2405,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 444,
+          "fail_without_evidence": 0,
+          "issued_fail": 730,
+          "issued_pass": 1231,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 730,
+          "known_true_pass": 1231,
+          "matrix": {
+            "fail": {
+              "fail": 730
+            },
+            "no_evidence": {
+              "abstain": 312
+            },
+            "pass": {
+              "pass": 1231
+            },
+            "skip_or_empty": {
+              "abstain": 132
+            }
+          },
+          "n": 2405,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 444,
+          "fail_without_evidence": 0,
+          "issued_fail": 730,
+          "issued_pass": 1231,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 730,
+          "known_true_pass": 1231,
+          "matrix": {
+            "fail": {
+              "fail": 730
+            },
+            "no_evidence": {
+              "abstain": 312
+            },
+            "pass": {
+              "pass": 1231
+            },
+            "skip_or_empty": {
+              "abstain": 132
+            }
+          },
+          "n": 2405,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 16,
+      "zero": 2325,
+      "zero_contradiction_rate": [
+        0.28258064516129033,
+        0.2551414180759784,
+        0.3102958780250984
+      ],
+      "zero_known": 1888,
+      "zero_known_contradiction_rate": [
+        0.3479872881355932,
+        0.31602395309882747,
+        0.3794597802061198
+      ],
+      "zero_no_evidence": 307,
+      "zero_no_tests": 130,
+      "zero_visible_fail": 657
+    },
+    "science_compound": {
+      "issues": 1,
+      "known": 0,
+      "n": 1,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 1,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "pass": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 1,
+          "pass_without_positive_test": 0
+        },
+        "strict": {
+          "abstain": 1,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "abstain": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 1,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "abstain": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 1,
+          "fail_without_evidence": 0,
+          "issued_fail": 0,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 0,
+          "known_true_pass": 0,
+          "matrix": {
+            "no_evidence": {
+              "abstain": 1
+            }
+          },
+          "n": 1,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 1,
+      "zero": 1,
+      "zero_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_known": 0,
+      "zero_known_contradiction_rate": [
+        null,
+        null,
+        null
+      ],
+      "zero_no_evidence": 1,
+      "zero_no_tests": 0,
+      "zero_visible_fail": 0
+    },
+    "science_direct": {
+      "issues": 124,
+      "known": 239,
+      "n": 245,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 5,
+          "issued_fail": 78,
+          "issued_pass": 167,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 73,
+          "known_true_pass": 166,
+          "matrix": {
+            "fail": {
+              "fail": 73
+            },
+            "no_evidence": {
+              "fail": 3
+            },
+            "pass": {
+              "pass": 166
+            },
+            "skip_or_empty": {
+              "fail": 2,
+              "pass": 1
+            }
+          },
+          "n": 245,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 1
+        },
+        "strict": {
+          "abstain": 6,
+          "fail_without_evidence": 0,
+          "issued_fail": 73,
+          "issued_pass": 166,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 73,
+          "known_true_pass": 166,
+          "matrix": {
+            "fail": {
+              "fail": 73
+            },
+            "no_evidence": {
+              "abstain": 3
+            },
+            "pass": {
+              "pass": 166
+            },
+            "skip_or_empty": {
+              "abstain": 3
+            }
+          },
+          "n": 245,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 6,
+          "fail_without_evidence": 0,
+          "issued_fail": 73,
+          "issued_pass": 166,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 73,
+          "known_true_pass": 166,
+          "matrix": {
+            "fail": {
+              "fail": 73
+            },
+            "no_evidence": {
+              "abstain": 3
+            },
+            "pass": {
+              "pass": 166
+            },
+            "skip_or_empty": {
+              "abstain": 3
+            }
+          },
+          "n": 245,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 6,
+          "fail_without_evidence": 0,
+          "issued_fail": 73,
+          "issued_pass": 166,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 73,
+          "known_true_pass": 166,
+          "matrix": {
+            "fail": {
+              "fail": 73
+            },
+            "no_evidence": {
+              "abstain": 3
+            },
+            "pass": {
+              "pass": 166
+            },
+            "skip_or_empty": {
+              "abstain": 3
+            }
+          },
+          "n": 245,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 15,
+      "zero": 167,
+      "zero_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_known": 166,
+      "zero_known_contradiction_rate": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "zero_no_evidence": 0,
+      "zero_no_tests": 1,
+      "zero_visible_fail": 0
+    },
+    "science_pipefail": {
+      "n": 0
+    },
+    "science_pipeline": {
+      "issues": 493,
+      "known": 1722,
+      "n": 2159,
+      "policies": {
+        "exit_only": {
+          "abstain": 0,
+          "fail_without_evidence": 2,
+          "issued_fail": 2,
+          "issued_pass": 2157,
+          "known_false_fail": 0,
+          "known_false_pass": 657,
+          "known_true_fail": 0,
+          "known_true_pass": 1065,
+          "matrix": {
+            "fail": {
+              "pass": 657
+            },
+            "no_evidence": {
+              "fail": 2,
+              "pass": 306
+            },
+            "pass": {
+              "pass": 1065
+            },
+            "skip_or_empty": {
+              "pass": 129
+            }
+          },
+          "n": 2159,
+          "pass_without_evidence": 306,
+          "pass_without_positive_test": 129
+        },
+        "strict": {
+          "abstain": 1502,
+          "fail_without_evidence": 0,
+          "issued_fail": 657,
+          "issued_pass": 0,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 657,
+          "known_true_pass": 0,
+          "matrix": {
+            "fail": {
+              "fail": 657
+            },
+            "no_evidence": {
+              "abstain": 308
+            },
+            "pass": {
+              "abstain": 1065
+            },
+            "skip_or_empty": {
+              "abstain": 129
+            }
+          },
+          "n": 2159,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary": {
+          "abstain": 437,
+          "fail_without_evidence": 0,
+          "issued_fail": 657,
+          "issued_pass": 1065,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 657,
+          "known_true_pass": 1065,
+          "matrix": {
+            "fail": {
+              "fail": 657
+            },
+            "no_evidence": {
+              "abstain": 308
+            },
+            "pass": {
+              "pass": 1065
+            },
+            "skip_or_empty": {
+              "abstain": 129
+            }
+          },
+          "n": 2159,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        },
+        "summary_rc": {
+          "abstain": 437,
+          "fail_without_evidence": 0,
+          "issued_fail": 657,
+          "issued_pass": 1065,
+          "known_false_fail": 0,
+          "known_false_pass": 0,
+          "known_true_fail": 657,
+          "known_true_pass": 1065,
+          "matrix": {
+            "fail": {
+              "fail": 657
+            },
+            "no_evidence": {
+              "abstain": 308
+            },
+            "pass": {
+              "pass": 1065
+            },
+            "skip_or_empty": {
+              "abstain": 129
+            }
+          },
+          "n": 2159,
+          "pass_without_evidence": 0,
+          "pass_without_positive_test": 0
+        }
+      },
+      "repos": 16,
+      "zero": 2157,
+      "zero_contradiction_rate": [
+        0.3045897079276773,
+        0.2771314698134893,
+        0.33421212475384987
+      ],
+      "zero_known": 1722,
+      "zero_known_contradiction_rate": [
+        0.38153310104529614,
+        0.3490673429950692,
+        0.4159436243641845
+      ],
+      "zero_no_evidence": 306,
+      "zero_no_tests": 129,
+      "zero_visible_fail": 657
+    }
+  }
+}

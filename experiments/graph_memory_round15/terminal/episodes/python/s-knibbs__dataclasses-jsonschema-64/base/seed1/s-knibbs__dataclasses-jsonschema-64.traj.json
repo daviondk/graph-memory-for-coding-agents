@@ -1,0 +1,1962 @@
+{
+  "info": {
+    "model_stats": {
+      "instance_cost": 0.0,
+      "api_calls": 22
+    },
+    "config": {
+      "agent": {
+        "system_template": "You are a helpful assistant that can interact with a computer shell to solve programming tasks.\n",
+        "instance_template": "<pr_description>\nConsider the following PR description:\n{{task}}\n</pr_description>\n\n<instructions>\n# Task Instructions\n\n## Overview\n\nYou're a software engineer interacting continuously with a computer by submitting commands.\nYou'll be helping implement necessary changes to meet requirements in the PR description.\nYour task is specifically to make changes to non-test files in the current directory in order to fix the issue described in the PR description in a way that is general and consistent with the codebase.\n<IMPORTANT>This is an interactive process where you will think and issue AT LEAST ONE command, see the result, then think and issue your next command(s).</important>\n\nFor each response:\n\n1. Include a THOUGHT section explaining your reasoning and what you're trying to accomplish\n2. Provide one or more bash tool calls to execute\n\n## Important Boundaries\n\n- MODIFY: Regular source code files in /testbed (this is the working directory for all your subsequent commands)\n- DO NOT MODIFY: Tests, configuration files (pyproject.toml, setup.cfg, etc.)\n\n## Recommended Workflow\n\n1. Analyze the codebase by finding and reading relevant files\n2. Create a script to reproduce the issue\n3. Edit the source code to resolve the issue\n4. Verify your fix works by running your script again\n5. Test edge cases to ensure your fix is robust\n\n## Command Execution Rules\n\nYou are operating in an environment where\n\n1. You issue at least one command\n2. The system executes the command(s) in a subshell\n3. You see the result(s)\n4. You write your next command(s)\n\nEach response should include:\n\n1. **Reasoning text** where you explain your analysis and plan\n2. At least one tool call with your command\n\n**CRITICAL REQUIREMENTS:**\n\n- Your response SHOULD include reasoning text explaining what you're doing\n- Your response MUST include AT LEAST ONE bash tool call. You can make MULTIPLE tool calls in a single response when the commands are independent (e.g., searching multiple files, reading different parts of the codebase).\n- Directory or environment variable changes are not persistent. Every action is executed in a new subshell.\n- However, you can prefix any action with `MY_ENV_VAR=MY_VALUE cd /path/to/working/dir && ...` or write/load environment variables from files\n\nExample of a CORRECT response:\n<example_response>\nI need to understand the Builder-related code. Let me find relevant files and check the project structure.\n\n[Makes multiple bash tool calls: {\"command\": \"ls -la\"}, {\"command\": \"find src -name '*.java' | grep -i builder\"}, {\"command\": \"cat README.md | head -50\"}]\n</example_response>\n\n## Environment Details\n\n- You have a full Linux shell environment\n- Always use non-interactive flags (-y, -f) for commands\n- Avoid interactive tools like vi, nano, or any that require user input\n- You can use bash commands or invoke any tool that is available in the environment\n- You can also create new tools or scripts to help you with the task\n- If a tool isn't available, you can also install it\n\n## Submission\n\nWhen you've completed your work, you MUST submit your changes as a git patch.\nFollow these steps IN ORDER, with SEPARATE commands:\n\nStep 1: Create the patch file\nRun `git diff -- path/to/file1 path/to/file2 > patch.txt` listing only the source files you modified.\nDo NOT commit your changes.\n\n<IMPORTANT>\nThe patch must only contain changes to the specific source files you modified to fix the issue.\nDo not submit file creations or changes to any of the following files:\n\n- test and reproduction files\n- helper scripts, tests, or tools that you created\n- installation, build, packaging, configuration, or setup scripts unless they are directly part of the issue you were fixing (you can assume that the environment is already set up for your client)\n- binary or compiled files\n</IMPORTANT>\n\nStep 2: Verify your patch\nInspect patch.txt to confirm it only contains your intended changes and headers show `--- a/` and `+++ b/` paths.\n\nStep 3: Submit (EXACT command required)\nYou MUST use this EXACT command to submit:\n\n```bash\necho COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT && cat patch.txt\n```\n\nIf the command fails (nonzero exit status), it will not submit.\n\n<CRITICAL>\n- Creating/viewing the patch and submitting it MUST be separate commands (not combined with &&).\n- If you modify patch.txt after verifying, you SHOULD verify again before submitting.\n- You CANNOT continue working (reading, editing, testing) in any way on this task after submitting.\n</CRITICAL>\n</instructions>\n",
+        "step_limit": 24,
+        "cost_limit": 3.0,
+        "output_path": "D:\\CodexResearch\\x20-bench-workspace\\work\\graph_memory_round15\\terminal\\episodes\\python\\s-knibbs__dataclasses-jsonschema-64\\base\\seed1\\s-knibbs__dataclasses-jsonschema-64.traj.json"
+      },
+      "agent_type": "minisweagent.agents.default.DefaultAgent",
+      "model": {
+        "model_name": "openai/qwen38-27b-ud-q4km",
+        "model_kwargs": {
+          "drop_params": true,
+          "temperature": 0.5,
+          "parallel_tool_calls": true,
+          "api_base": "http://127.0.0.1:18955/replicate/1/v1",
+          "api_key": "local"
+        },
+        "litellm_model_registry": null,
+        "set_cache_control": null,
+        "cost_tracking": "ignore_errors",
+        "format_error_template": "Tool call error:\n\n<error>\n{{error}}\n</error>\n\nHere is general guidance on how to submit correct toolcalls:\n\nEvery response needs to use the 'bash' tool at least once to execute commands.\n\nCall the bash tool with your command as the argument:\n- Tool: bash\n- Arguments: {\"command\": \"your_command_here\"}\n\nIf you have completed your assignment, please consult the first message about how to\nsubmit your solution (you will not be able to continue working on this task after that).\n",
+        "observation_template": "{% if output.exception_info -%}\n<exception>{{output.exception_info}}</exception>\n{% endif -%}\n<returncode>{{output.returncode}}</returncode>\n{% if output.output | length < 10000 -%}\n<output>\n{{ output.output -}}\n</output>\n{%- else -%}\n<warning>\nThe output of your last command was too long.\nPlease try a different command that produces less output.\nIf you're looking at a file you can try use head, tail or sed to view a smaller number of lines selectively.\nIf you're using grep or find and it produced too much output, you can use a more selective search pattern.\nIf you really need to see something from the full command's output, you can redirect output to a file and then search in that file.\n</warning>\n{%- set elided_chars = output.output | length - 10000 -%}\n<output_head>\n{{ output.output[:5000] }}\n</output_head>\n<elided_chars>\n{{ elided_chars }} characters elided\n</elided_chars>\n<output_tail>\n{{ output.output[-5000:] }}\n</output_tail>\n{%- endif -%}\n",
+        "multimodal_regex": ""
+      },
+      "model_type": "minisweagent.models.litellm_model.LitellmModel",
+      "environment": {
+        "image": "docker.io/swerebenchv2/s-knibbs-dataclasses-jsonschema:64-dad240e",
+        "cwd": "/testbed",
+        "env": {
+          "PAGER": "cat",
+          "MANPAGER": "cat",
+          "LESS": "-R",
+          "PIP_PROGRESS_BAR": "off",
+          "TQDM_DISABLE": "1"
+        },
+        "forward_env": [],
+        "timeout": 60,
+        "executable": "D:\\CodexResearch\\x20-official-vibe\\solver-runtime\\agent-venv\\Scripts\\vibe-local-docker.exe",
+        "run_args": [
+          "--rm"
+        ],
+        "container_timeout": "2h",
+        "pull_timeout": 300,
+        "interpreter": [
+          "bash",
+          "-c"
+        ]
+      },
+      "environment_type": "minisweagent.environments.docker.DockerEnvironment"
+    },
+    "mini_version": "2.2.8",
+    "exit_status": "Submitted",
+    "submission": "diff --git a/dataclasses_jsonschema/__init__.py b/dataclasses_jsonschema/__init__.py\nindex 2ce5d65..d4176f3 100644\n--- a/dataclasses_jsonschema/__init__.py\n+++ b/dataclasses_jsonschema/__init__.py\n@@ -10,7 +10,7 @@ from uuid import UUID\n from enum import Enum\n import warnings\n \n-from typing_extensions import Final\n+from typing_extensions import Final, Literal\n \n try:\n     # Supported in future python versions\n@@ -72,6 +72,13 @@ def final_wrapped_type(final_type: Any) -> Any:\n     return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n \n \n+def is_literal(field: Any) -> bool:\n+    try:\n+        return field.__origin__ == Literal\n+    except AttributeError:\n+        return False\n+\n+\n class SchemaType(Enum):\n     DRAFT_06 = \"Draft6\"\n     DRAFT_04 = \"Draft4\"\n@@ -415,6 +422,16 @@ class JsonSchemaMixin:\n                 required = False\n             elif is_final(field_type):\n                 field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n+            elif is_literal(field_type):\n+                literal_args = field_type.__args__\n+                literal_types = set(type(arg) for arg in literal_args)\n+                if len(literal_types) == 1:\n+                    literal_type = literal_types.pop()\n+                    if literal_type in JSON_ENCODABLE_TYPES:\n+                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\n+                    elif literal_type in cls._field_encoders:\n+                        field_schema.update(cls._field_encoders[literal_type].json_schema)\n+                field_schema['enum'] = list(literal_args)\n             elif is_enum(field_type):\n                 member_types = set()\n                 values = []\n"
+  },
+  "messages": [
+    {
+      "role": "system",
+      "content": "You are a helpful assistant that can interact with a computer shell to solve programming tasks."
+    },
+    {
+      "role": "user",
+      "content": "<pr_description>\nConsider the following PR description:\nSupport literal types\nSupport for the [literal type annotation](https://www.python.org/dev/peps/pep-0586/) should be added. Example:\r\n\r\n```python\r\n\r\n@dataclass\r\nclass ImageMetadata(JsonSchemaMixin):\r\n    width: int\r\n    height: int\r\n    bits_per_pixel: Literal[8, 16, 24]\r\n```\r\n\r\nGenerates the following schema:\r\n```json\r\n{\r\n  \"type\": \"object\",\r\n  \"required\": [\r\n    \"width\",\r\n    \"height\",\r\n    \"bits_per_pixel\"\r\n  ],\r\n  \"properties\": {\r\n    \"width\": {\r\n      \"type\": \"integer\"\r\n    },\r\n    \"height\": {\r\n      \"type\": \"integer\"\r\n    },\r\n    \"bits_per_pixel\": {\r\n      \"type\": \"integer\",\r\n      \"enum\": [8, 16, 24]\r\n    }\r\n  },\r\n}\r\n```\n</pr_description>\n\n<instructions>\n# Task Instructions\n\n## Overview\n\nYou're a software engineer interacting continuously with a computer by submitting commands.\nYou'll be helping implement necessary changes to meet requirements in the PR description.\nYour task is specifically to make changes to non-test files in the current directory in order to fix the issue described in the PR description in a way that is general and consistent with the codebase.\n<IMPORTANT>This is an interactive process where you will think and issue AT LEAST ONE command, see the result, then think and issue your next command(s).</important>\n\nFor each response:\n\n1. Include a THOUGHT section explaining your reasoning and what you're trying to accomplish\n2. Provide one or more bash tool calls to execute\n\n## Important Boundaries\n\n- MODIFY: Regular source code files in /testbed (this is the working directory for all your subsequent commands)\n- DO NOT MODIFY: Tests, configuration files (pyproject.toml, setup.cfg, etc.)\n\n## Recommended Workflow\n\n1. Analyze the codebase by finding and reading relevant files\n2. Create a script to reproduce the issue\n3. Edit the source code to resolve the issue\n4. Verify your fix works by running your script again\n5. Test edge cases to ensure your fix is robust\n\n## Command Execution Rules\n\nYou are operating in an environment where\n\n1. You issue at least one command\n2. The system executes the command(s) in a subshell\n3. You see the result(s)\n4. You write your next command(s)\n\nEach response should include:\n\n1. **Reasoning text** where you explain your analysis and plan\n2. At least one tool call with your command\n\n**CRITICAL REQUIREMENTS:**\n\n- Your response SHOULD include reasoning text explaining what you're doing\n- Your response MUST include AT LEAST ONE bash tool call. You can make MULTIPLE tool calls in a single response when the commands are independent (e.g., searching multiple files, reading different parts of the codebase).\n- Directory or environment variable changes are not persistent. Every action is executed in a new subshell.\n- However, you can prefix any action with `MY_ENV_VAR=MY_VALUE cd /path/to/working/dir && ...` or write/load environment variables from files\n\nExample of a CORRECT response:\n<example_response>\nI need to understand the Builder-related code. Let me find relevant files and check the project structure.\n\n[Makes multiple bash tool calls: {\"command\": \"ls -la\"}, {\"command\": \"find src -name '*.java' | grep -i builder\"}, {\"command\": \"cat README.md | head -50\"}]\n</example_response>\n\n## Environment Details\n\n- You have a full Linux shell environment\n- Always use non-interactive flags (-y, -f) for commands\n- Avoid interactive tools like vi, nano, or any that require user input\n- You can use bash commands or invoke any tool that is available in the environment\n- You can also create new tools or scripts to help you with the task\n- If a tool isn't available, you can also install it\n\n## Submission\n\nWhen you've completed your work, you MUST submit your changes as a git patch.\nFollow these steps IN ORDER, with SEPARATE commands:\n\nStep 1: Create the patch file\nRun `git diff -- path/to/file1 path/to/file2 > patch.txt` listing only the source files you modified.\nDo NOT commit your changes.\n\n<IMPORTANT>\nThe patch must only contain changes to the specific source files you modified to fix the issue.\nDo not submit file creations or changes to any of the following files:\n\n- test and reproduction files\n- helper scripts, tests, or tools that you created\n- installation, build, packaging, configuration, or setup scripts unless they are directly part of the issue you were fixing (you can assume that the environment is already set up for your client)\n- binary or compiled files\n</IMPORTANT>\n\nStep 2: Verify your patch\nInspect patch.txt to confirm it only contains your intended changes and headers show `--- a/` and `+++ b/` paths.\n\nStep 3: Submit (EXACT command required)\nYou MUST use this EXACT command to submit:\n\n```bash\necho COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT && cat patch.txt\n```\n\nIf the command fails (nonzero exit status), it will not submit.\n\n<CRITICAL>\n- Creating/viewing the patch and submitting it MUST be separate commands (not combined with &&).\n- If you modify patch.txt after verifying, you SHOULD verify again before submitting.\n- You CANNOT continue working (reading, editing, testing) in any way on this task after submitting.\n</CRITICAL>\n</instructions>"
+    },
+    {
+      "content": "I'll start by exploring the codebase to understand the project structure and how types are handled.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && ls -la && echo \\\"---\\\" && cat README.md 2>/dev/null | head -50\"}",
+            "name": "bash"
+          },
+          "id": "l4DG8bRFi9Xw88ob2Mi4xGxgCeHCdQ9O",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && ls -la && echo \"---\" && cat README.md 2>/dev/null | head -50",
+            "tool_call_id": "l4DG8bRFi9Xw88ob2Mi4xGxgCeHCdQ9O"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-5TDp63gg5eyzQ9RNIn0uPmWpiGn4XGA8",
+          "created": 1795214557,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "I'll start by exploring the codebase to understand the project structure and how types are handled.",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && ls -la && echo \\\"---\\\" && cat README.md 2>/dev/null | head -50\"}",
+                      "name": "bash"
+                    },
+                    "id": "l4DG8bRFi9Xw88ob2Mi4xGxgCeHCdQ9O",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 71,
+            "prompt_tokens": 1521,
+            "total_tokens": 1592,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 1521,
+            "prompt_ms": 1512.644,
+            "prompt_per_token_ms": 0.9945062458908612,
+            "prompt_per_second": 1005.5241021681242,
+            "predicted_n": 71,
+            "predicted_ms": 1821.865,
+            "predicted_per_token_ms": 26.026642857142857,
+            "predicted_per_second": 38.42216629662461
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214557.3921876
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ntotal 60\ndrwxrwxrwx 7 root root 4096 Feb 22  2026 .\ndrwxr-xr-x 1 root root 4096 Nov 20 22:42 ..\ndrwxr-xr-x 4 root root 4096 Feb 22  2026 .eggs\ndrwxrwxrwx 8 root root 4096 Feb 22  2026 .git\n-rw-r--r-- 1 root root 1251 Feb 22  2026 .gitignore\n-rw-r--r-- 1 root root  117 Feb 22  2026 .travis.yml\n-rw-r--r-- 1 root root 1071 Feb 22  2026 LICENSE\n-rw-r--r-- 1 root root 4512 Feb 22  2026 README.rst\ndrwxrwxrwx 2 root root 4096 Feb 22  2026 dataclasses_jsonschema\ndrwxr-xr-x 2 root root 4096 Feb 22  2026 dataclasses_jsonschema.egg-info\n-rw-r--r-- 1 root root   93 Feb 22  2026 setup.cfg\n-rw-r--r-- 1 root root 1217 Feb 22  2026 setup.py\ndrwxrwxrwx 2 root root 4096 Feb 22  2026 tests\n-rw-r--r-- 1 root root  225 Feb 22  2026 tox.ini\n---\n</output>",
+      "extra": {
+        "raw_output": "total 60\ndrwxrwxrwx 7 root root 4096 Feb 22  2026 .\ndrwxr-xr-x 1 root root 4096 Nov 20 22:42 ..\ndrwxr-xr-x 4 root root 4096 Feb 22  2026 .eggs\ndrwxrwxrwx 8 root root 4096 Feb 22  2026 .git\n-rw-r--r-- 1 root root 1251 Feb 22  2026 .gitignore\n-rw-r--r-- 1 root root  117 Feb 22  2026 .travis.yml\n-rw-r--r-- 1 root root 1071 Feb 22  2026 LICENSE\n-rw-r--r-- 1 root root 4512 Feb 22  2026 README.rst\ndrwxrwxrwx 2 root root 4096 Feb 22  2026 dataclasses_jsonschema\ndrwxr-xr-x 2 root root 4096 Feb 22  2026 dataclasses_jsonschema.egg-info\n-rw-r--r-- 1 root root   93 Feb 22  2026 setup.cfg\n-rw-r--r-- 1 root root 1217 Feb 22  2026 setup.py\ndrwxrwxrwx 2 root root 4096 Feb 22  2026 tests\n-rw-r--r-- 1 root root  225 Feb 22  2026 tox.ini\n---\n",
+        "returncode": 0,
+        "timestamp": 1795214557.760266,
+        "exception_info": ""
+      },
+      "tool_call_id": "l4DG8bRFi9Xw88ob2Mi4xGxgCeHCdQ9O",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && ls -la dataclasses_jsonschema/ tests/ && echo \\\"---README---\\\" && cat README.rst\"}",
+            "name": "bash"
+          },
+          "id": "VMB6AfBG5iXDCzEKJVP4JU8ApTvuQEnG",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && ls -la dataclasses_jsonschema/ tests/ && echo \"---README---\" && cat README.rst",
+            "tool_call_id": "VMB6AfBG5iXDCzEKJVP4JU8ApTvuQEnG"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-OMHAJI9NO44a8Ev9K5BWJzSLOPUrPr5w",
+          "created": 1795214560,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && ls -la dataclasses_jsonschema/ tests/ && echo \\\"---README---\\\" && cat README.rst\"}",
+                      "name": "bash"
+                    },
+                    "id": "VMB6AfBG5iXDCzEKJVP4JU8ApTvuQEnG",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 51,
+            "prompt_tokens": 2032,
+            "total_tokens": 2083,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 2032,
+            "prompt_ms": 1752.355,
+            "prompt_per_token_ms": 0.8623794291338582,
+            "prompt_per_second": 1159.5823905544253,
+            "predicted_n": 51,
+            "predicted_ms": 1327.153,
+            "predicted_per_token_ms": 26.54306,
+            "predicted_per_second": 37.67463133489507
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214560.853221
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ndataclasses_jsonschema/:\ntotal 48\ndrwxrwxrwx 2 root root  4096 Feb 22  2026 .\ndrwxrwxrwx 7 root root  4096 Feb 22  2026 ..\n-rw-r--r-- 1 root root 25124 Feb 22  2026 __init__.py\n-rw-r--r-- 1 root root  2984 Feb 22  2026 field_types.py\n-rw-r--r-- 1 root root    59 Feb 22  2026 py.typed\n-rw-r--r-- 1 root root   108 Feb 22  2026 type_defs.py\n\ntests/:\ntotal 28\ndrwxrwxrwx 2 root root  4096 Feb 22  2026 .\ndrwxrwxrwx 7 root root  4096 Feb 22  2026 ..\n-rw-r--r-- 1 root root     0 Feb 22  2026 __init__.py\n-rw-r--r-- 1 root root  2616 Feb 22  2026 conftest.py\n-rw-r--r-- 1 root root 14404 Feb 22  2026 test_all.py\n---README---\nDataclasses JSON Schema\n=======================\n\n.. image:: https://travis-ci.org/s-knibbs/dataclasses-jsonschema.svg?branch=master\n    :target: https://travis-ci.org/s-knibbs/dataclasses-jsonschema\n\n.. image:: https://badge.fury.io/py/dataclasses-jsonschema.svg\n    :target: https://badge.fury.io/py/dataclasses-jsonschema\n\n.. image:: https://img.shields.io/lgtm/grade/python/g/s-knibbs/dataclasses-jsonschema.svg?logo=lgtm&logoWidth=18\n    :target: https://lgtm.com/projects/g/s-knibbs/dataclasses-jsonschema/context:python\n    :alt:    Language grade: Python\n\nA lightweight library to generate JSON Schema from python 3.7 dataclasses. Python 3.6 is supported through the `dataclasses backport <https://github.com/ericvsmith/dataclasses>`_. Also supports the following features:\n\n* Generate schemas that can be embedded into Swagger / OpenAPI 2.0 and 3.0 specs\n* Serialisation and deserialisation\n* Data validation against the generated schema\n\nInstallation\n------------\n\n.. code:: bash\n\n    ~$ pip install dataclasses-jsonschema\n\nFor improved validation performance using `PyValico <https://github.com/s-knibbs/pyvalico>`_, install with:\n\n.. code:: bash\n\n    ~$ pip install dataclasses-jsonschema[fast-validation]\n\nExamples\n--------\n\n.. code:: python\n\n    from dataclasses import dataclass\n\n    from dataclasses_jsonschema import JsonSchemaMixin\n\n\n    @dataclass\n    class Point(JsonSchemaMixin):\n        \"A 2D point\"\n        x: float\n        y: float\n\n\nGenerate the schema:\n\n.. code:: python\n\n    >>> pprint(Point.json_schema())\n    {\n        'description': 'A 2D point',\n        'type': 'object',\n        'properties': {\n            'x': {'format': 'float', 'type': 'number'},\n            'y': {'format': 'float', 'type': 'number'}\n        },\n        'required': ['x', 'y']\n    }\n\nSerialise data:\n\n.. code:: python\n\n    >>> Point(x=3.5, y=10.1).to_dict()\n    {'x': 3.5, 'y': 10.1}\n\nDeserialise data:\n\n.. code:: python\n\n    >>> Point.from_dict({'x': 3.14, 'y': 1.5})\n    Point(x=3.14, y=1.5)\n    >>> Point.from_dict({'x': 3.14, y: 'wrong'})\n    dataclasses_jsonschema.ValidationError: 'wrong' is not of type 'number'\n\nGenerate a schema for embedding into an API spec:\n\n.. code:: python\n\n    from dataclasses_jsonschema import JsonSchemaMixin, SchemaType\n    \n    @dataclass\n    class Address(JsonSchemaMixin):\n        \"\"\"Postal Address\"\"\"\n        building: str\n        street: str\n        city: str\n    \n    @dataclass\n    class Company(JsonSchemaMixin):\n        \"\"\"Company Details\"\"\"\n        name: str\n        address: Address\n    \n    >>> pprint(JsonSchemaMixin.all_json_schemas(schema_type=SchemaType.SWAGGER_V3))\n    {'Address': {'description': 'Postal Address',\n                 'properties': {'building': {'type': 'string'},\n                                'city': {'type': 'string'},\n                                'street': {'type': 'string'}},\n                 'required': ['building', 'street', 'city'],\n                 'type': 'object'},\n     'Company': {'description': 'Company Details',\n                 'properties': {'address': {'$ref': '#/components/schemas/Address'},\n                                'name': {'type': 'string'}},\n                 'required': ['name', 'address'],\n                 'type': 'object'}}\n        \n\nCustom validation rules can be added using `NewType <https://docs.python.org/3/library/typing.html#newtype>`_:\n\n.. code:: python\n\n    from dataclasses_jsonschema import JsonSchemaMixin, FieldEncoder\n\n    PhoneNumber = NewType('PhoneNumber', str)\n    \n    class PhoneNumberField(FieldEncoder):\n    \n        @property\n        def json_schema(self):\n            return {'type': 'string', 'pattern': r'^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$'}\n    \n    JsonSchemaMixin.register_field_encoders({PhoneNumber: PhoneNumberField()})\n    \n    @dataclass\n    class Person(JsonSchemaMixin):\n        name: str\n        phone_number: PhoneNumber\n\nFor more examples `see the tests <https://github.com/s-knibbs/dataclasses-jsonschema/blob/master/tests/conftest.py>`_\n\nTODO\n----\n\n* Add benchmarks against alternatives such as `pydantic <https://github.com/samuelcolvin/pydantic>`_ and `marshmallow <https://github.com/marshmallow-code/marshmallow>`_\n\n\nKNOWN ISSUES\n------------\n\nThe following will currently fail when installed alongside ``pyvalico==0.0.2``\n\n.. code:: python\n\n    @dataclass\n    class Baz(JsonSchemaMixin):\n        \"\"\"Type with nested default value\"\"\"\n        a: Point = field(default=Point(0.0, 0.0))\n\n    Baz.from_dict({})\n\nThe workaround is to pin pyvalico to v0.0.1\n</output>",
+      "extra": {
+        "raw_output": "dataclasses_jsonschema/:\ntotal 48\ndrwxrwxrwx 2 root root  4096 Feb 22  2026 .\ndrwxrwxrwx 7 root root  4096 Feb 22  2026 ..\n-rw-r--r-- 1 root root 25124 Feb 22  2026 __init__.py\n-rw-r--r-- 1 root root  2984 Feb 22  2026 field_types.py\n-rw-r--r-- 1 root root    59 Feb 22  2026 py.typed\n-rw-r--r-- 1 root root   108 Feb 22  2026 type_defs.py\n\ntests/:\ntotal 28\ndrwxrwxrwx 2 root root  4096 Feb 22  2026 .\ndrwxrwxrwx 7 root root  4096 Feb 22  2026 ..\n-rw-r--r-- 1 root root     0 Feb 22  2026 __init__.py\n-rw-r--r-- 1 root root  2616 Feb 22  2026 conftest.py\n-rw-r--r-- 1 root root 14404 Feb 22  2026 test_all.py\n---README---\nDataclasses JSON Schema\n=======================\n\n.. image:: https://travis-ci.org/s-knibbs/dataclasses-jsonschema.svg?branch=master\n    :target: https://travis-ci.org/s-knibbs/dataclasses-jsonschema\n\n.. image:: https://badge.fury.io/py/dataclasses-jsonschema.svg\n    :target: https://badge.fury.io/py/dataclasses-jsonschema\n\n.. image:: https://img.shields.io/lgtm/grade/python/g/s-knibbs/dataclasses-jsonschema.svg?logo=lgtm&logoWidth=18\n    :target: https://lgtm.com/projects/g/s-knibbs/dataclasses-jsonschema/context:python\n    :alt:    Language grade: Python\n\nA lightweight library to generate JSON Schema from python 3.7 dataclasses. Python 3.6 is supported through the `dataclasses backport <https://github.com/ericvsmith/dataclasses>`_. Also supports the following features:\n\n* Generate schemas that can be embedded into Swagger / OpenAPI 2.0 and 3.0 specs\n* Serialisation and deserialisation\n* Data validation against the generated schema\n\nInstallation\n------------\n\n.. code:: bash\n\n    ~$ pip install dataclasses-jsonschema\n\nFor improved validation performance using `PyValico <https://github.com/s-knibbs/pyvalico>`_, install with:\n\n.. code:: bash\n\n    ~$ pip install dataclasses-jsonschema[fast-validation]\n\nExamples\n--------\n\n.. code:: python\n\n    from dataclasses import dataclass\n\n    from dataclasses_jsonschema import JsonSchemaMixin\n\n\n    @dataclass\n    class Point(JsonSchemaMixin):\n        \"A 2D point\"\n        x: float\n        y: float\n\n\nGenerate the schema:\n\n.. code:: python\n\n    >>> pprint(Point.json_schema())\n    {\n        'description': 'A 2D point',\n        'type': 'object',\n        'properties': {\n            'x': {'format': 'float', 'type': 'number'},\n            'y': {'format': 'float', 'type': 'number'}\n        },\n        'required': ['x', 'y']\n    }\n\nSerialise data:\n\n.. code:: python\n\n    >>> Point(x=3.5, y=10.1).to_dict()\n    {'x': 3.5, 'y': 10.1}\n\nDeserialise data:\n\n.. code:: python\n\n    >>> Point.from_dict({'x': 3.14, 'y': 1.5})\n    Point(x=3.14, y=1.5)\n    >>> Point.from_dict({'x': 3.14, y: 'wrong'})\n    dataclasses_jsonschema.ValidationError: 'wrong' is not of type 'number'\n\nGenerate a schema for embedding into an API spec:\n\n.. code:: python\n\n    from dataclasses_jsonschema import JsonSchemaMixin, SchemaType\n    \n    @dataclass\n    class Address(JsonSchemaMixin):\n        \"\"\"Postal Address\"\"\"\n        building: str\n        street: str\n        city: str\n    \n    @dataclass\n    class Company(JsonSchemaMixin):\n        \"\"\"Company Details\"\"\"\n        name: str\n        address: Address\n    \n    >>> pprint(JsonSchemaMixin.all_json_schemas(schema_type=SchemaType.SWAGGER_V3))\n    {'Address': {'description': 'Postal Address',\n                 'properties': {'building': {'type': 'string'},\n                                'city': {'type': 'string'},\n                                'street': {'type': 'string'}},\n                 'required': ['building', 'street', 'city'],\n                 'type': 'object'},\n     'Company': {'description': 'Company Details',\n                 'properties': {'address': {'$ref': '#/components/schemas/Address'},\n                                'name': {'type': 'string'}},\n                 'required': ['name', 'address'],\n                 'type': 'object'}}\n        \n\nCustom validation rules can be added using `NewType <https://docs.python.org/3/library/typing.html#newtype>`_:\n\n.. code:: python\n\n    from dataclasses_jsonschema import JsonSchemaMixin, FieldEncoder\n\n    PhoneNumber = NewType('PhoneNumber', str)\n    \n    class PhoneNumberField(FieldEncoder):\n    \n        @property\n        def json_schema(self):\n            return {'type': 'string', 'pattern': r'^(\\([0-9]{3}\\))?[0-9]{3}-[0-9]{4}$'}\n    \n    JsonSchemaMixin.register_field_encoders({PhoneNumber: PhoneNumberField()})\n    \n    @dataclass\n    class Person(JsonSchemaMixin):\n        name: str\n        phone_number: PhoneNumber\n\nFor more examples `see the tests <https://github.com/s-knibbs/dataclasses-jsonschema/blob/master/tests/conftest.py>`_\n\nTODO\n----\n\n* Add benchmarks against alternatives such as `pydantic <https://github.com/samuelcolvin/pydantic>`_ and `marshmallow <https://github.com/marshmallow-code/marshmallow>`_\n\n\nKNOWN ISSUES\n------------\n\nThe following will currently fail when installed alongside ``pyvalico==0.0.2``\n\n.. code:: python\n\n    @dataclass\n    class Baz(JsonSchemaMixin):\n        \"\"\"Type with nested default value\"\"\"\n        a: Point = field(default=Point(0.0, 0.0))\n\n    Baz.from_dict({})\n\nThe workaround is to pin pyvalico to v0.0.1\n",
+        "returncode": 0,
+        "timestamp": 1795214561.2151508,
+        "exception_info": ""
+      },
+      "tool_call_id": "VMB6AfBG5iXDCzEKJVP4JU8ApTvuQEnG",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && cat dataclasses_jsonschema/field_types.py && echo \\\"---TYPE_DEFS---\\\" && cat dataclasses_jsonschema/type_defs.py\"}",
+            "name": "bash"
+          },
+          "id": "4WPCi5XjXaamhFmd3BP8My6yDRthVfVf",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && cat dataclasses_jsonschema/field_types.py && echo \"---TYPE_DEFS---\" && cat dataclasses_jsonschema/type_defs.py",
+            "tool_call_id": "4WPCi5XjXaamhFmd3BP8My6yDRthVfVf"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-mxzmKakuwkxnvHwfeVPHe77HoMDHAW0A",
+          "created": 1795214565,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && cat dataclasses_jsonschema/field_types.py && echo \\\"---TYPE_DEFS---\\\" && cat dataclasses_jsonschema/type_defs.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "4WPCi5XjXaamhFmd3BP8My6yDRthVfVf",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 56,
+            "prompt_tokens": 3654,
+            "total_tokens": 3710,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 3654,
+            "prompt_ms": 3077.748,
+            "prompt_per_token_ms": 0.8422955665024631,
+            "prompt_per_second": 1187.2317031803773,
+            "predicted_n": 56,
+            "predicted_ms": 1440.377,
+            "predicted_per_token_ms": 26.188672727272728,
+            "predicted_per_second": 38.18444754394162
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214565.76533
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\nimport warnings\nfrom datetime import datetime\nfrom decimal import Decimal\nfrom ipaddress import IPv4Address, IPv6Address\nfrom typing import cast, TypeVar, Generic, Optional\nfrom uuid import UUID\n\nfrom dateutil.parser import parse\n\nfrom .type_defs import JsonEncodable, JsonDict\n\nT = TypeVar('T')\nOutType = TypeVar('OutType', bound=JsonEncodable)\n\n\nclass FieldEncoder(Generic[T, OutType]):\n    \"\"\"Base class for encoding fields to and from JSON encodable values\"\"\"\n\n    def to_wire(self, value: T) -> OutType:\n        return cast(OutType, value)\n\n    def to_python(self, value: OutType) -> T:\n        return cast(T, value)\n\n    @property\n    def json_schema(self) -> JsonDict:\n        raise NotImplementedError()\n\n\nclass DateTimeFieldEncoder(FieldEncoder[datetime, str]):\n    \"\"\"Encodes datetimes to RFC3339 format\"\"\"\n\n    def to_wire(self, value: datetime) -> str:\n        out = value.isoformat()\n\n        # Assume UTC if timezone is missing\n        if value.tzinfo is None:\n            warnings.warn(\"Naive datetime used, assuming utc\")\n            return out + \"Z\"\n        return out\n\n    def to_python(self, value: str) -> datetime:\n        return value if isinstance(value, datetime) else parse(cast(str, value))\n\n    @property\n    def json_schema(self) -> JsonDict:\n        return {\"type\": \"string\", \"format\": \"date-time\"}\n\n\n# Alias for backwards compat\nDateTimeField = DateTimeFieldEncoder\n\n\nclass UuidField(FieldEncoder[UUID, str]):\n\n    def to_wire(self, value: UUID) -> str:\n        return str(value)\n\n    def to_python(self, value: str) -> UUID:\n        return UUID(value)\n\n    @property\n    def json_schema(self):\n        return {\n            'type': 'string',\n            'format': 'uuid',\n            'pattern': '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'\n        }\n\n\nclass DecimalField(FieldEncoder[Decimal, float]):\n\n    def __init__(self, precision: Optional[int] = None):\n        self.precision = precision\n\n    def to_wire(self, value: Decimal) -> float:\n        return float(value)\n\n    def to_python(self, value: float) -> Decimal:\n        return Decimal(str(value))\n\n    @property\n    def json_schema(self):\n        schema = {'type': 'number'}\n        if self.precision is not None and self.precision > 0:\n            schema['multipleOf'] = float('0.' + '0' * (self.precision - 1) + '1')\n        return schema\n\n\nclass IPv4AddressField(FieldEncoder[IPv4Address, str]):\n\n    def to_wire(self, value: IPv4Address) -> str:\n        return str(value)\n\n    def to_python(self, value: str) -> IPv4Address:\n        return IPv4Address(value)\n\n    @property\n    def json_schema(self):\n        return {'type': 'string', 'format': 'ipv4'}\n\n\nclass IPv6AddressField(FieldEncoder[IPv6Address, str]):\n\n    def to_wire(self, value: IPv6Address) -> str:\n        return str(value)\n\n    def to_python(self, value: str) -> IPv6Address:\n        return IPv6Address(value)\n\n    @property\n    def json_schema(self):\n        return {'type': 'string', 'format': 'ipv6'}\n---TYPE_DEFS---\nfrom typing import Union, Dict, Any\n\nJsonEncodable = Union[int, float, str, bool]\nJsonDict = Dict[str, Any]\n</output>",
+      "extra": {
+        "raw_output": "import warnings\nfrom datetime import datetime\nfrom decimal import Decimal\nfrom ipaddress import IPv4Address, IPv6Address\nfrom typing import cast, TypeVar, Generic, Optional\nfrom uuid import UUID\n\nfrom dateutil.parser import parse\n\nfrom .type_defs import JsonEncodable, JsonDict\n\nT = TypeVar('T')\nOutType = TypeVar('OutType', bound=JsonEncodable)\n\n\nclass FieldEncoder(Generic[T, OutType]):\n    \"\"\"Base class for encoding fields to and from JSON encodable values\"\"\"\n\n    def to_wire(self, value: T) -> OutType:\n        return cast(OutType, value)\n\n    def to_python(self, value: OutType) -> T:\n        return cast(T, value)\n\n    @property\n    def json_schema(self) -> JsonDict:\n        raise NotImplementedError()\n\n\nclass DateTimeFieldEncoder(FieldEncoder[datetime, str]):\n    \"\"\"Encodes datetimes to RFC3339 format\"\"\"\n\n    def to_wire(self, value: datetime) -> str:\n        out = value.isoformat()\n\n        # Assume UTC if timezone is missing\n        if value.tzinfo is None:\n            warnings.warn(\"Naive datetime used, assuming utc\")\n            return out + \"Z\"\n        return out\n\n    def to_python(self, value: str) -> datetime:\n        return value if isinstance(value, datetime) else parse(cast(str, value))\n\n    @property\n    def json_schema(self) -> JsonDict:\n        return {\"type\": \"string\", \"format\": \"date-time\"}\n\n\n# Alias for backwards compat\nDateTimeField = DateTimeFieldEncoder\n\n\nclass UuidField(FieldEncoder[UUID, str]):\n\n    def to_wire(self, value: UUID) -> str:\n        return str(value)\n\n    def to_python(self, value: str) -> UUID:\n        return UUID(value)\n\n    @property\n    def json_schema(self):\n        return {\n            'type': 'string',\n            'format': 'uuid',\n            'pattern': '^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$'\n        }\n\n\nclass DecimalField(FieldEncoder[Decimal, float]):\n\n    def __init__(self, precision: Optional[int] = None):\n        self.precision = precision\n\n    def to_wire(self, value: Decimal) -> float:\n        return float(value)\n\n    def to_python(self, value: float) -> Decimal:\n        return Decimal(str(value))\n\n    @property\n    def json_schema(self):\n        schema = {'type': 'number'}\n        if self.precision is not None and self.precision > 0:\n            schema['multipleOf'] = float('0.' + '0' * (self.precision - 1) + '1')\n        return schema\n\n\nclass IPv4AddressField(FieldEncoder[IPv4Address, str]):\n\n    def to_wire(self, value: IPv4Address) -> str:\n        return str(value)\n\n    def to_python(self, value: str) -> IPv4Address:\n        return IPv4Address(value)\n\n    @property\n    def json_schema(self):\n        return {'type': 'string', 'format': 'ipv4'}\n\n\nclass IPv6AddressField(FieldEncoder[IPv6Address, str]):\n\n    def to_wire(self, value: IPv6Address) -> str:\n        return str(value)\n\n    def to_python(self, value: str) -> IPv6Address:\n        return IPv6Address(value)\n\n    @property\n    def json_schema(self):\n        return {'type': 'string', 'format': 'ipv6'}\n---TYPE_DEFS---\nfrom typing import Union, Dict, Any\n\nJsonEncodable = Union[int, float, str, bool]\nJsonDict = Dict[str, Any]\n",
+        "returncode": 0,
+        "timestamp": 1795214566.124927,
+        "exception_info": ""
+      },
+      "tool_call_id": "4WPCi5XjXaamhFmd3BP8My6yDRthVfVf",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && cat dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "7nEWBGnCpvdgWfS3vT3A7vtq1gNoXDlU",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && cat dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "7nEWBGnCpvdgWfS3vT3A7vtq1gNoXDlU"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-092qB8E409K6vIvzqW2VP2Am7CORVH7d",
+          "created": 1795214571,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && cat dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "7nEWBGnCpvdgWfS3vT3A7vtq1gNoXDlU",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 39,
+            "prompt_tokens": 4588,
+            "total_tokens": 4627,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 4588,
+            "prompt_ms": 3873.324,
+            "prompt_per_token_ms": 0.8442292938099389,
+            "prompt_per_second": 1184.512320683733,
+            "predicted_n": 39,
+            "predicted_ms": 967.616,
+            "predicted_per_token_ms": 25.463578947368422,
+            "predicted_per_second": 39.27177723394404
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214571.0084598
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<warning>\nThe output of your last command was too long.\nPlease try a different command that produces less output.\nIf you're looking at a file you can try use head, tail or sed to view a smaller number of lines selectively.\nIf you're using grep or find and it produced too much output, you can use a more selective search pattern.\nIf you really need to see something from the full command's output, you can redirect output to a file and then search in that file.\n</warning><output_head>\nimport sys\nimport functools\nfrom _decimal import Decimal\nfrom ipaddress import IPv4Address, IPv6Address\nfrom typing import Optional, Type, Union, Any, Dict, Tuple, List, TypeVar, get_type_hints, Callable\nimport re\nfrom datetime import datetime\nfrom dataclasses import fields, is_dataclass, Field, MISSING, dataclass, asdict\nfrom uuid import UUID\nfrom enum import Enum\nimport warnings\n\nfrom typing_extensions import Final\n\ntry:\n    # Supported in future python versions\n    from typing import TypedDict  # type: ignore\nexcept ImportError:\n    from mypy_extensions import TypedDict\n\nfrom dataclasses_jsonschema.field_types import (  # noqa: F401\n    FieldEncoder, DateTimeFieldEncoder, UuidField, DecimalField,\n    IPv4AddressField, IPv6AddressField, DateTimeField\n)\nfrom dataclasses_jsonschema.type_defs import JsonDict\n\ntry:\n    import valico as validator\nexcept ImportError:\n    import jsonschema as validator\n\nJSON_ENCODABLE_TYPES = {\n    str: {'type': 'string'},\n    int: {'type': 'integer'},\n    bool: {'type': 'boolean'},\n    float: {'type': 'number'}\n}\n\n\nclass ValidationError(Exception):\n    pass\n\n\ndef is_enum(field_type: Any):\n    return issubclass_safe(field_type, Enum)\n\n\ndef issubclass_safe(klass: Any, base: Type):\n    try:\n        return issubclass(klass, base)\n    except TypeError:\n        return False\n\n\ndef is_optional(field: Any) -> bool:\n    try:\n        return field.__origin__ == Union and issubclass(field.__args__[1], type(None))\n    except AttributeError:\n        return False\n\n\ndef is_final(field: Any) -> bool:\n    try:\n        return field.__origin__ == Final\n    except AttributeError:\n        if sys.version_info[:2] == (3, 6):\n            return type(field).__qualname__ == \"_Final\"\n        return False\n\n\ndef final_wrapped_type(final_type: Any) -> Any:\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n\n\nclass SchemaType(Enum):\n    DRAFT_06 = \"Draft6\"\n    DRAFT_04 = \"Draft4\"\n    SWAGGER_V2 = \"2.0\"\n    SWAGGER_V3 = \"3.0\"\n    # Alias of SWAGGER_V2\n    V2 = \"2.0\"\n    # Alias of SWAGGER_V3\n    V3 = \"3.0\"\n    OPENAPI_3 = \"3.0\"\n\n\n# Retained for backwards compatibility\nSwaggerSpecVersion = SchemaType\n\n\n_ValueEncoder = Callable[[Any, Any, bool], Any]\n_ValueDecoder = Callable[[str, Any, Any], Any]\n\nT = TypeVar(\"T\", bound='JsonSchemaMixin')\n\n\n@functools.lru_cache()\ndef _to_camel_case(value: str) -> str:\n    if \"_\" in value:\n        parts = value.split(\"_\")\n        return \"\".join([parts[0]] + [part[0].upper() + part[1:] for part in parts[1:]])\n    else:\n        return value\n\n\nclass JsonSchemaMeta(TypedDict):\n    \"\"\"JSON schema field definitions. Example usage:\n\n    >>> foo = field(metadata=JsonSchemaMeta(description=\"A foo that foos\"))\n    \"\"\"\n    description: str\n    title: str\n    examples: List\n    read_only: bool\n    write_only: bool\n    # Additional extension properties that will be output prefixed with 'x-' when generating OpenAPI / Swagger schemas\n    extensions: Dict[str, Any]\n\n\n@dataclass\nclass FieldMeta:\n    schema_type: SchemaType\n    default: Any = None\n    examples: Optional[List] = None\n    description: Optional[str] = None\n    title: Optional[str] = None\n    # OpenAPI 3 only properties\n    read_only: Optional[bool] = None\n    write_only: Optional[bool] = None\n    extensions: Optional[Dict[str, Any]] = None\n\n    @property\n    def as_dict(self) -> Dict:\n        schema_dict = {\n            _to_camel_case(k): v\n            for k, v in asdict(self).items()\n            if v is not None and k not in [\"schema_type\", \"extensions\"]\n        }\n        if (self.schema_type in [SchemaType.SWAGGER_V2, SchemaType.OPENAPI_3]) and self.extensions is not None:\n            schema_dict.update({'x-' + k: v for k, v in self.extensions.items()})\n        # Swagger 2 only supports a single example value per property\n        if \"examples\" in schema_dict and len(schema_dict[\"examples\"]) > 0 and self.schema_type == SchemaType.SWAGGER_V2:\n            schema_dict[\"example\"] = schema_dict[\"examples\"][0]\n            del schema_dict[\"examples\"]\n        return schema_dict\n\n\nclass JsonSchemaMixin:\n    \"\"\"Mixin which adds methods to generate a JSON schema and\n    convert to and from JSON encodable dicts with validation against the schema\n    \"\"\"\n    _field_encoders: Dict[Type, FieldEncoder] = {\n        datetime: DateTimeFieldEncoder(),\n        UUID: UuidField(),\n        Decimal: DecimalField(),\n        IPv4Address: IPv4AddressField(),\n        IPv6Address: IPv6AddressField()\n    }\n\n    # Cache of the generated schema\n    _schema: Optional[Dict[SchemaType, JsonDict]] = None\n    _definitions: Optional[Dict[SchemaType, JsonDict]] = None\n    # Cache of field encode / decode functions\n    _encode_cache: Optional[Dict[Any, _ValueEncoder]] = None\n    _decode_cache: Optional[Dict[Any, _ValueDecoder]] = None\n    _mapped_fields: Optional[List[Tuple[Field, str]]] = None\n\n    @classmethod\n    def field_mapping(cls) -> Dict[str, str]:\n        \"\"\"Defines the mapping of python field names to JSON field names.\n\n \n</output_head>\n<elided_chars>\n15124 characters elided\n</elided_chars>\n<output_tail>\nct)\n\n        return field_schema, required\n\n    @classmethod\n    def _get_field_definitions(cls, field_type: Any, definitions: JsonDict,\n                               schema_type: SchemaType):\n        field_type_name = cls._get_field_type_name(field_type)\n        if is_optional(field_type) or field_type_name in ('Sequence', 'List', 'Tuple'):\n            cls._get_field_definitions(field_type.__args__[0], definitions, schema_type)\n        elif field_type_name in ('Dict', 'Mapping'):\n            cls._get_field_definitions(field_type.__args__[1], definitions, schema_type)\n        elif field_type_name == 'Union':\n            for variant in field_type.__args__:\n                cls._get_field_definitions(variant, definitions, schema_type)\n        elif cls._is_json_schema_subclass(field_type):\n            # Prevent recursion from forward refs & circular type dependencies\n            if field_type.__name__ not in definitions:\n                definitions[field_type.__name__] = None\n                definitions.update(field_type.json_schema(embeddable=True, schema_type=schema_type))\n\n    @classmethod\n    def all_json_schemas(cls, schema_type: SchemaType = SchemaType.DRAFT_06) -> JsonDict:\n        \"\"\"Returns JSON schemas for all subclasses\"\"\"\n        definitions = {}\n        for subclass in cls.__subclasses__():\n            if is_dataclass(subclass):\n                definitions.update(subclass.json_schema(embeddable=True, schema_type=schema_type))\n            else:\n                definitions.update(subclass.all_json_schemas(schema_type=schema_type))\n        return definitions\n\n    @classmethod\n    def json_schema(cls, embeddable: bool = False, schema_type: SchemaType = SchemaType.DRAFT_06, **kwargs) -> JsonDict:\n        \"\"\"Returns the JSON schema for the dataclass, along with the schema of any nested dataclasses\n        within the 'definitions' field.\n\n        Enable the embeddable flag to generate the schema in a format for embedding into other schemas\n        or documents supporting JSON schema such as Swagger specs.\n\n        If embedding the schema into a swagger api, specify 'swagger_version' to generate a spec compatible with that\n        version.\n        \"\"\"\n        if 'swagger_version' in kwargs and kwargs['swagger_version'] is not None:\n            schema_type = kwargs['swagger_version']\n\n        if cls is JsonSchemaMixin:\n            warnings.warn(\n                \"Calling 'JsonSchemaMixin.json_schema' is deprecated. Use 'JsonSchemaMixin.all_json_schemas' instead\",\n                DeprecationWarning\n            )\n            return cls.all_json_schemas(schema_type)\n\n        definitions: JsonDict = {}\n        if cls._definitions is None:\n            cls._definitions = {schema_type: definitions}\n        elif schema_type not in cls._definitions:\n            cls._definitions[schema_type] = definitions\n        else:\n            definitions = cls._definitions[schema_type]\n\n        if schema_type in (SchemaType.SWAGGER_V3, SchemaType.SWAGGER_V2) and not embeddable:\n            schema_type = SchemaType.DRAFT_06\n            warnings.warn(\"'Swagger schema types unsupported when 'embeddable=False', using 'SchemaType.DRAFT_06'\")\n\n        if cls._schema is not None and schema_type in cls._schema:\n            schema = cls._schema[schema_type]\n        else:\n            properties = {}\n            required = []\n            for field, target_field in cls._get_fields():\n                properties[target_field], is_required = cls._get_field_schema(field, schema_type)\n                cls._get_field_definitions(field.type, definitions, schema_type)\n                if is_required:\n                    required.append(target_field)\n            schema = {\n                'type': 'object',\n                'required': required,\n                'properties': properties\n            }\n\n            # Needed for Draft 04 backwards compatibility\n            if len(required) == 0:\n                del schema[\"required\"]\n            if cls.__doc__:\n                schema['description'] = cls.__doc__\n\n            if cls._schema is None:\n                cls._schema = {}\n\n            cls._schema[schema_type] = schema\n\n        if embeddable:\n            return {**definitions, cls.__name__: schema}\n        else:\n            schema_uri = 'http://json-schema.org/draft-06/schema#'\n            if schema_type == SchemaType.DRAFT_04:\n                schema_uri = 'http://json-shema.org/draft-04/schema#'\n\n            full_schema = {**schema, **{'$schema': schema_uri}}\n            if len(definitions) > 0:\n                full_schema['definitions'] = definitions\n            return full_schema\n\n    @staticmethod\n    def _get_field_type_name(field_type: Any) -> str:\n        try:\n            return field_type.__name__\n        except AttributeError:\n            # The types in the 'typing' module lack the __name__ attribute\n            match = re.match(r'typing\\.([A-Za-z]+)', str(field_type))\n            return str(field_type) if match is None else match.group(1)\n\n</output_tail>",
+      "extra": {
+        "raw_output": "import sys\nimport functools\nfrom _decimal import Decimal\nfrom ipaddress import IPv4Address, IPv6Address\nfrom typing import Optional, Type, Union, Any, Dict, Tuple, List, TypeVar, get_type_hints, Callable\nimport re\nfrom datetime import datetime\nfrom dataclasses import fields, is_dataclass, Field, MISSING, dataclass, asdict\nfrom uuid import UUID\nfrom enum import Enum\nimport warnings\n\nfrom typing_extensions import Final\n\ntry:\n    # Supported in future python versions\n    from typing import TypedDict  # type: ignore\nexcept ImportError:\n    from mypy_extensions import TypedDict\n\nfrom dataclasses_jsonschema.field_types import (  # noqa: F401\n    FieldEncoder, DateTimeFieldEncoder, UuidField, DecimalField,\n    IPv4AddressField, IPv6AddressField, DateTimeField\n)\nfrom dataclasses_jsonschema.type_defs import JsonDict\n\ntry:\n    import valico as validator\nexcept ImportError:\n    import jsonschema as validator\n\nJSON_ENCODABLE_TYPES = {\n    str: {'type': 'string'},\n    int: {'type': 'integer'},\n    bool: {'type': 'boolean'},\n    float: {'type': 'number'}\n}\n\n\nclass ValidationError(Exception):\n    pass\n\n\ndef is_enum(field_type: Any):\n    return issubclass_safe(field_type, Enum)\n\n\ndef issubclass_safe(klass: Any, base: Type):\n    try:\n        return issubclass(klass, base)\n    except TypeError:\n        return False\n\n\ndef is_optional(field: Any) -> bool:\n    try:\n        return field.__origin__ == Union and issubclass(field.__args__[1], type(None))\n    except AttributeError:\n        return False\n\n\ndef is_final(field: Any) -> bool:\n    try:\n        return field.__origin__ == Final\n    except AttributeError:\n        if sys.version_info[:2] == (3, 6):\n            return type(field).__qualname__ == \"_Final\"\n        return False\n\n\ndef final_wrapped_type(final_type: Any) -> Any:\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n\n\nclass SchemaType(Enum):\n    DRAFT_06 = \"Draft6\"\n    DRAFT_04 = \"Draft4\"\n    SWAGGER_V2 = \"2.0\"\n    SWAGGER_V3 = \"3.0\"\n    # Alias of SWAGGER_V2\n    V2 = \"2.0\"\n    # Alias of SWAGGER_V3\n    V3 = \"3.0\"\n    OPENAPI_3 = \"3.0\"\n\n\n# Retained for backwards compatibility\nSwaggerSpecVersion = SchemaType\n\n\n_ValueEncoder = Callable[[Any, Any, bool], Any]\n_ValueDecoder = Callable[[str, Any, Any], Any]\n\nT = TypeVar(\"T\", bound='JsonSchemaMixin')\n\n\n@functools.lru_cache()\ndef _to_camel_case(value: str) -> str:\n    if \"_\" in value:\n        parts = value.split(\"_\")\n        return \"\".join([parts[0]] + [part[0].upper() + part[1:] for part in parts[1:]])\n    else:\n        return value\n\n\nclass JsonSchemaMeta(TypedDict):\n    \"\"\"JSON schema field definitions. Example usage:\n\n    >>> foo = field(metadata=JsonSchemaMeta(description=\"A foo that foos\"))\n    \"\"\"\n    description: str\n    title: str\n    examples: List\n    read_only: bool\n    write_only: bool\n    # Additional extension properties that will be output prefixed with 'x-' when generating OpenAPI / Swagger schemas\n    extensions: Dict[str, Any]\n\n\n@dataclass\nclass FieldMeta:\n    schema_type: SchemaType\n    default: Any = None\n    examples: Optional[List] = None\n    description: Optional[str] = None\n    title: Optional[str] = None\n    # OpenAPI 3 only properties\n    read_only: Optional[bool] = None\n    write_only: Optional[bool] = None\n    extensions: Optional[Dict[str, Any]] = None\n\n    @property\n    def as_dict(self) -> Dict:\n        schema_dict = {\n            _to_camel_case(k): v\n            for k, v in asdict(self).items()\n            if v is not None and k not in [\"schema_type\", \"extensions\"]\n        }\n        if (self.schema_type in [SchemaType.SWAGGER_V2, SchemaType.OPENAPI_3]) and self.extensions is not None:\n            schema_dict.update({'x-' + k: v for k, v in self.extensions.items()})\n        # Swagger 2 only supports a single example value per property\n        if \"examples\" in schema_dict and len(schema_dict[\"examples\"]) > 0 and self.schema_type == SchemaType.SWAGGER_V2:\n            schema_dict[\"example\"] = schema_dict[\"examples\"][0]\n            del schema_dict[\"examples\"]\n        return schema_dict\n\n\nclass JsonSchemaMixin:\n    \"\"\"Mixin which adds methods to generate a JSON schema and\n    convert to and from JSON encodable dicts with validation against the schema\n    \"\"\"\n    _field_encoders: Dict[Type, FieldEncoder] = {\n        datetime: DateTimeFieldEncoder(),\n        UUID: UuidField(),\n        Decimal: DecimalField(),\n        IPv4Address: IPv4AddressField(),\n        IPv6Address: IPv6AddressField()\n    }\n\n    # Cache of the generated schema\n    _schema: Optional[Dict[SchemaType, JsonDict]] = None\n    _definitions: Optional[Dict[SchemaType, JsonDict]] = None\n    # Cache of field encode / decode functions\n    _encode_cache: Optional[Dict[Any, _ValueEncoder]] = None\n    _decode_cache: Optional[Dict[Any, _ValueDecoder]] = None\n    _mapped_fields: Optional[List[Tuple[Field, str]]] = None\n\n    @classmethod\n    def field_mapping(cls) -> Dict[str, str]:\n        \"\"\"Defines the mapping of python field names to JSON field names.\n\n        The main use-case is to allow JSON field names which are Python keywords\n        \"\"\"\n        return {}\n\n    @classmethod\n    def register_field_encoders(cls, field_encoders: Dict[Type, FieldEncoder]):\n        \"\"\"Registers additional custom field encoders. If called on the base, these are added globally.\n\n        The DateTimeFieldEncoder is included by default.\n        \"\"\"\n        if cls is not JsonSchemaMixin:\n            cls._field_encoders = {**cls._field_encoders, **field_encoders}\n        else:\n            cls._field_encoders.update(field_encoders)\n\n    @classmethod\n    def _encode_field(cls, field_type: Any, value: Any, omit_none: bool) -> Any:\n        if value is None:\n            return value\n        try:\n            encoder = cls._encode_cache[field_type]  # type: ignore\n        except (KeyError, TypeError):\n            if cls._encode_cache is None:\n                cls._encode_cache = {}\n\n            field_type_name = cls._get_field_type_name(field_type)\n            if field_type in cls._field_encoders:\n                def encoder(ft, v, __): return cls._field_encoders[ft].to_wire(v)\n            elif is_optional(field_type):\n                def encoder(ft, val, o): return cls._encode_field(ft.__args__[0], val, o)\n            elif is_final(field_type):\n                def encoder(ft, val, o): return cls._encode_field(final_wrapped_type(ft), val, o)\n            elif is_enum(field_type):\n                def encoder(_, v, __): return v.value\n            elif field_type_name == 'Union':\n                # Attempt to encode the field with each union variant.\n                # TODO: Find a more reliable method than this since in the case 'Union[List[str], Dict[str, int]]' this\n                # will just output the dict keys as a list\n                encoded = None\n                for variant in field_type.__args__:\n                    try:\n                        encoded = cls._encode_field(variant, value, omit_none)\n                        break\n                    except (TypeError, AttributeError):\n                        continue\n                if encoded is None:\n                    raise TypeError(\"No variant of '{}' matched the type '{}'\".format(field_type, type(value)))\n                return encoded\n            elif field_type_name in ('Mapping', 'Dict'):\n                def encoder(ft, val, o):\n                    return {\n                        cls._encode_field(ft.__args__[0], k, o): cls._encode_field(ft.__args__[1], v, o)\n                        for k, v in val.items()\n                    }\n            elif field_type_name in ('Sequence', 'List') or (field_type_name == \"Tuple\" and ... in field_type.__args__):\n                def encoder(ft, val, o): return [cls._encode_field(ft.__args__[0], v, o) for v in val]\n            elif field_type_name == 'Tuple':\n                def encoder(ft, val, o):\n                    return [cls._encode_field(ft.__args__[idx], v, o) for idx, v in enumerate(val)]\n            elif cls._is_json_schema_subclass(field_type):\n                # Only need to validate at the top level\n                def encoder(_, v, o): return v.to_dict(omit_none=o, validate=False)\n            elif hasattr(field_type, \"__supertype__\"):  # NewType field\n                def encoder(ft, v, o):\n                    return cls._encode_field(ft.__supertype__, v, o)\n            else:\n                def encoder(_, v, __): return v\n            cls._encode_cache[field_type] = encoder  # type: ignore\n        return encoder(field_type, value, omit_none)\n\n    @classmethod\n    def _get_fields(cls) -> List[Tuple[Field, str]]:\n        if cls._mapped_fields is None:\n            mapped_fields = []\n            type_hints = get_type_hints(cls)\n            for f in fields(cls):\n                # Skip internal fields\n                if f.name.startswith(\"_\"):\n                    continue\n                # Note fields() doesn't resolve forward refs\n                f.type = type_hints[f.name]\n                mapped_fields.append((f, cls.field_mapping().get(f.name, f.name)))\n            cls._mapped_fields = mapped_fields  # type: ignore\n        return cls._mapped_fields  # type: ignore\n\n    def to_dict(self, omit_none: bool = True, validate: bool = False) -> JsonDict:\n        \"\"\"Converts the dataclass instance to a JSON encodable dict, with optional JSON schema validation.\n\n        If omit_none (default True) is specified, any items with value None are removed\n        \"\"\"\n        data = {}\n        for field, target_field in self._get_fields():\n            value = self._encode_field(field.type, getattr(self, field.name), omit_none)\n            if omit_none and value is None:\n                continue\n            data[target_field] = value\n        if validate:\n            try:\n                validator.validate(data, self.json_schema())\n            except validator.ValidationError as e:\n                raise ValidationError(str(e)) from e\n        return data\n\n    @classmethod\n    def _decode_field(cls, field: str, field_type: Any, value: Any) -> Any:\n        if value is None:\n            return None\n        decoder = None\n        try:\n            decoder = cls._decode_cache[field_type]  # type: ignore\n        except (KeyError, TypeError):\n            if type(value) in JSON_ENCODABLE_TYPES and field_type in JSON_ENCODABLE_TYPES:\n                return value\n            if cls._decode_cache is None:\n                cls._decode_cache = {}\n            # Replace any nested dictionaries with their targets\n            field_type_name = cls._get_field_type_name(field_type)\n            if cls._is_json_schema_subclass(field_type):\n                def decoder(_, ft, val): return ft.from_dict(val, validate=False)\n            elif is_optional(field_type):\n                def decoder(f, ft, val): return cls._decode_field(f, ft.__args__[0], val)\n            elif is_final(field_type):\n                def decoder(f, ft, val): return cls._decode_field(f, final_wrapped_type(ft), val)\n            elif field_type_name == 'Union':\n                # Attempt to decode the value using each decoder in turn\n                decoded = None\n                for variant in field_type.__args__:\n                    try:\n                        decoded = cls._decode_field(field, variant, value)\n                        break\n                    except (AttributeError, TypeError, ValueError):\n                        continue\n                if decoded is not None:\n                    return decoded\n            elif field_type_name in ('Mapping', 'Dict'):\n                def decoder(f, ft, val):\n                    return {\n                        cls._decode_field(f, ft.__args__[0], k): cls._decode_field(f, ft.__args__[1], v)\n                        for k, v in val.items()\n                    }\n            elif field_type_name in ('Sequence', 'List') or (field_type_name == \"Tuple\" and ... in field_type.__args__):\n                seq_type = tuple if field_type_name == \"Tuple\" else list\n\n                def decoder(f, ft, val):\n                    return seq_type(cls._decode_field(f, ft.__args__[0], v) for v in val)\n            elif field_type_name == \"Tuple\":\n                def decoder(f, ft, val):\n                    return tuple(cls._decode_field(f, ft.__args__[idx], v) for idx, v in enumerate(val))\n            elif hasattr(field_type, \"__supertype__\"):  # NewType field\n                def decoder(f, ft, val):\n                    return cls._decode_field(f, ft.__supertype__, val)\n            elif is_enum(field_type):\n                def decoder(_, ft, val): return ft(val)\n            elif field_type in cls._field_encoders:\n                def decoder(_, ft, val): return cls._field_encoders[ft].to_python(val)\n            if decoder is None:\n                warnings.warn(f\"Unable to decode value for '{field}: {field_type_name}'\")\n                return value\n            cls._decode_cache[field_type] = decoder\n        return decoder(field, field_type, value)\n\n    @classmethod\n    def from_dict(cls: Type[T], data: JsonDict, validate=True) -> T:\n        \"\"\"Returns a dataclass instance with all nested classes converted from the dict given\"\"\"\n        if cls is JsonSchemaMixin:\n            raise NotImplementedError\n\n        init_values: Dict[str, Any] = {}\n        non_init_values: Dict[str, Any] = {}\n        if validate:\n            try:\n                validator.validate(data, cls.json_schema())\n            except validator.ValidationError as e:\n                raise ValidationError(str(e)) from e\n\n        for field, target_field in cls._get_fields():\n            values = init_values if field.init else non_init_values\n            if target_field in data or (field.default == MISSING and field.default_factory == MISSING):  # type: ignore\n                values[field.name] = cls._decode_field(field.name, field.type, data.get(target_field))\n\n        # Need to ignore the type error here, since mypy doesn't know that subclasses are dataclasses\n        instance = cls(**init_values)  # type: ignore\n        for field_name, value in non_init_values.items():\n            setattr(instance, field_name, value)\n        return instance\n\n    @staticmethod\n    def _is_json_schema_subclass(field_type) -> bool:\n        return issubclass_safe(field_type, JsonSchemaMixin)\n\n    @classmethod\n    def _get_field_meta(cls, field: Field, schema_type: SchemaType) -> Tuple[FieldMeta, bool]:\n        required = True\n        field_meta = FieldMeta(schema_type=schema_type)\n        default_value = None\n        if field.default is not MISSING and field.default is not None:\n            # In case of default value given\n            default_value = field.default\n        elif field.default_factory is not MISSING and field.default_factory is not None:  # type: ignore\n            # In case of a default factory given, we call it\n            default_value = field.default_factory()  # type: ignore\n\n        if default_value is not None:\n            field_meta.default = cls._encode_field(field.type, default_value, omit_none=False)\n            required = False\n        if field.metadata is not None:\n            if \"examples\" in field.metadata:\n                field_meta.examples = [\n                    cls._encode_field(field.type, example, omit_none=False) for example in field.metadata[\"examples\"]\n                ]\n            if \"extensions\" in field.metadata:\n                field_meta.extensions = field.metadata[\"extensions\"]\n            if \"description\" in field.metadata:\n                field_meta.description = field.metadata[\"description\"]\n            if \"title\" in field.metadata:\n                field_meta.title = field.metadata[\"title\"]\n            if schema_type == SchemaType.OPENAPI_3:\n                field_meta.read_only = field.metadata.get(\"read_only\")\n                if field_meta.read_only and default_value is None:\n                    warnings.warn(f\"Read-only fields should have a default value\")\n                field_meta.write_only = field.metadata.get(\"write_only\")\n        return field_meta, required\n\n    @classmethod\n    def _get_field_schema(cls, field: Union[Field, Type], schema_type: SchemaType) -> Tuple[JsonDict, bool]:\n        field_schema: JsonDict = {'type': 'object'}\n        required = True\n\n        if isinstance(field, Field):\n            field_type = field.type\n            field_meta, required = cls._get_field_meta(field, schema_type)\n        else:\n            field_type = field\n            field_meta = FieldMeta(schema_type=schema_type)\n\n        field_type_name = cls._get_field_type_name(field_type)\n        ref_path = '#/components/schemas' if schema_type == SchemaType.SWAGGER_V3 else '#/definitions'\n        if cls._is_json_schema_subclass(field_type):\n            field_schema = {'$ref': '{}/{}'.format(ref_path, field_type_name)}\n        else:\n            # If is optional[...]\n            if is_optional(field_type):\n                field_schema = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n                required = False\n            elif is_final(field_type):\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n            elif is_enum(field_type):\n                member_types = set()\n                values = []\n                for member in field_type:\n                    member_types.add(type(member.value))\n                    values.append(member.value)\n                if len(member_types) == 1:\n                    member_type = member_types.pop()\n                    if member_type in JSON_ENCODABLE_TYPES:\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\n                    else:\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\n                field_schema['enum'] = values\n\n                # If embedding into a swagger spec add the enum name as an extension.\n                # Note: Unlike swagger, JSON schema does not support extensions\n                if schema_type in (SchemaType.SWAGGER_V2, SchemaType.SWAGGER_V3):\n                    field_schema['x-enum-name'] = field_type_name\n            elif field_type_name == 'Union':\n                if schema_type == SchemaType.SWAGGER_V2:\n                    raise TypeError('Type unions unsupported in Swagger 2.0')\n                field_schema = {\n                    'oneOf': [cls._get_field_schema(variant, schema_type)[0] for variant in field_type.__args__]\n                }\n            elif field_type_name in ('Dict', 'Mapping'):\n                field_schema = {'type': 'object'}\n                if field_type.__args__[1] is not Any:\n                    field_schema['additionalProperties'] = cls._get_field_schema(\n                        field_type.__args__[1], schema_type\n                    )[0]\n            elif field_type_name in ('Sequence', 'List') or (field_type_name == \"Tuple\" and ... in field_type.__args__):\n                field_schema = {'type': 'array'}\n                if field_type.__args__[0] is not Any:\n                    field_schema['items'] = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n            elif field_type_name == \"Tuple\":\n                tuple_len = len(field_type.__args__)\n                # TODO: How do we handle Optional type within lists / tuples\n                field_schema = {\n                    'type': 'array', 'minItems': tuple_len, 'maxItems': tuple_len,\n                    'items': [cls._get_field_schema(type_arg, schema_type)[0] for type_arg in field_type.__args__]\n                }\n            elif field_type in JSON_ENCODABLE_TYPES:\n                field_schema.update(JSON_ENCODABLE_TYPES[field_type])\n            elif field_type in cls._field_encoders:\n                field_schema.update(cls._field_encoders[field_type].json_schema)\n            elif hasattr(field_type, '__supertype__'):  # NewType fields\n                field_schema, _ = cls._get_field_schema(field_type.__supertype__, schema_type)\n            else:\n                warnings.warn(f\"Unable to create schema for '{field_type_name}'\")\n\n        field_schema.update(field_meta.as_dict)\n\n        return field_schema, required\n\n    @classmethod\n    def _get_field_definitions(cls, field_type: Any, definitions: JsonDict,\n                               schema_type: SchemaType):\n        field_type_name = cls._get_field_type_name(field_type)\n        if is_optional(field_type) or field_type_name in ('Sequence', 'List', 'Tuple'):\n            cls._get_field_definitions(field_type.__args__[0], definitions, schema_type)\n        elif field_type_name in ('Dict', 'Mapping'):\n            cls._get_field_definitions(field_type.__args__[1], definitions, schema_type)\n        elif field_type_name == 'Union':\n            for variant in field_type.__args__:\n                cls._get_field_definitions(variant, definitions, schema_type)\n        elif cls._is_json_schema_subclass(field_type):\n            # Prevent recursion from forward refs & circular type dependencies\n            if field_type.__name__ not in definitions:\n                definitions[field_type.__name__] = None\n                definitions.update(field_type.json_schema(embeddable=True, schema_type=schema_type))\n\n    @classmethod\n    def all_json_schemas(cls, schema_type: SchemaType = SchemaType.DRAFT_06) -> JsonDict:\n        \"\"\"Returns JSON schemas for all subclasses\"\"\"\n        definitions = {}\n        for subclass in cls.__subclasses__():\n            if is_dataclass(subclass):\n                definitions.update(subclass.json_schema(embeddable=True, schema_type=schema_type))\n            else:\n                definitions.update(subclass.all_json_schemas(schema_type=schema_type))\n        return definitions\n\n    @classmethod\n    def json_schema(cls, embeddable: bool = False, schema_type: SchemaType = SchemaType.DRAFT_06, **kwargs) -> JsonDict:\n        \"\"\"Returns the JSON schema for the dataclass, along with the schema of any nested dataclasses\n        within the 'definitions' field.\n\n        Enable the embeddable flag to generate the schema in a format for embedding into other schemas\n        or documents supporting JSON schema such as Swagger specs.\n\n        If embedding the schema into a swagger api, specify 'swagger_version' to generate a spec compatible with that\n        version.\n        \"\"\"\n        if 'swagger_version' in kwargs and kwargs['swagger_version'] is not None:\n            schema_type = kwargs['swagger_version']\n\n        if cls is JsonSchemaMixin:\n            warnings.warn(\n                \"Calling 'JsonSchemaMixin.json_schema' is deprecated. Use 'JsonSchemaMixin.all_json_schemas' instead\",\n                DeprecationWarning\n            )\n            return cls.all_json_schemas(schema_type)\n\n        definitions: JsonDict = {}\n        if cls._definitions is None:\n            cls._definitions = {schema_type: definitions}\n        elif schema_type not in cls._definitions:\n            cls._definitions[schema_type] = definitions\n        else:\n            definitions = cls._definitions[schema_type]\n\n        if schema_type in (SchemaType.SWAGGER_V3, SchemaType.SWAGGER_V2) and not embeddable:\n            schema_type = SchemaType.DRAFT_06\n            warnings.warn(\"'Swagger schema types unsupported when 'embeddable=False', using 'SchemaType.DRAFT_06'\")\n\n        if cls._schema is not None and schema_type in cls._schema:\n            schema = cls._schema[schema_type]\n        else:\n            properties = {}\n            required = []\n            for field, target_field in cls._get_fields():\n                properties[target_field], is_required = cls._get_field_schema(field, schema_type)\n                cls._get_field_definitions(field.type, definitions, schema_type)\n                if is_required:\n                    required.append(target_field)\n            schema = {\n                'type': 'object',\n                'required': required,\n                'properties': properties\n            }\n\n            # Needed for Draft 04 backwards compatibility\n            if len(required) == 0:\n                del schema[\"required\"]\n            if cls.__doc__:\n                schema['description'] = cls.__doc__\n\n            if cls._schema is None:\n                cls._schema = {}\n\n            cls._schema[schema_type] = schema\n\n        if embeddable:\n            return {**definitions, cls.__name__: schema}\n        else:\n            schema_uri = 'http://json-schema.org/draft-06/schema#'\n            if schema_type == SchemaType.DRAFT_04:\n                schema_uri = 'http://json-shema.org/draft-04/schema#'\n\n            full_schema = {**schema, **{'$schema': schema_uri}}\n            if len(definitions) > 0:\n                full_schema['definitions'] = definitions\n            return full_schema\n\n    @staticmethod\n    def _get_field_type_name(field_type: Any) -> str:\n        try:\n            return field_type.__name__\n        except AttributeError:\n            # The types in the 'typing' module lack the __name__ attribute\n            match = re.match(r'typing\\.([A-Za-z]+)', str(field_type))\n            return str(field_type) if match is None else match.group(1)\n",
+        "returncode": 0,
+        "timestamp": 1795214571.3689294,
+        "exception_info": ""
+      },
+      "tool_call_id": "7nEWBGnCpvdgWfS3vT3A7vtq1gNoXDlU",
+      "role": "tool"
+    },
+    {
+      "content": "Let me see the middle part of the file, especially the `_get_field_schema` method.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && grep -n \\\"_get_field_schema\\\\|def _get_field\\\\|is_final\\\\|is_optional\\\\|is_literal\\\\|Literal\\\\|_get_field_type_name\\\\|JSON_ENCODABLE\\\" dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "nmAWdAhahGa069nzhgsKqSyYBTTPrHSF",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && grep -n \"_get_field_schema\\|def _get_field\\|is_final\\|is_optional\\|is_literal\\|Literal\\|_get_field_type_name\\|JSON_ENCODABLE\" dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "nmAWdAhahGa069nzhgsKqSyYBTTPrHSF"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-2IN0I0lZi3aJLtsFENSoMARxenVuP2PF",
+          "created": 1795214580,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Let me see the middle part of the file, especially the `_get_field_schema` method.",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && grep -n \\\"_get_field_schema\\\\|def _get_field\\\\|is_final\\\\|is_optional\\\\|is_literal\\\\|Literal\\\\|_get_field_type_name\\\\|JSON_ENCODABLE\\\" dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "nmAWdAhahGa069nzhgsKqSyYBTTPrHSF",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 99,
+            "prompt_tokens": 7256,
+            "total_tokens": 7355,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 7256,
+            "prompt_ms": 6217.549,
+            "prompt_per_token_ms": 0.8568838202866593,
+            "prompt_per_second": 1167.019351194498,
+            "predicted_n": 99,
+            "predicted_ms": 2557.687,
+            "predicted_per_token_ms": 26.09884693877551,
+            "predicted_per_second": 38.315868986314584
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214580.1857774
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n32:JSON_ENCODABLE_TYPES = {\n55:def is_optional(field: Any) -> bool:\n62:def is_final(field: Any) -> bool:\n197:            field_type_name = cls._get_field_type_name(field_type)\n200:            elif is_optional(field_type):\n202:            elif is_final(field_type):\n243:    def _get_fields(cls) -> List[Tuple[Field, str]]:\n283:            if type(value) in JSON_ENCODABLE_TYPES and field_type in JSON_ENCODABLE_TYPES:\n288:            field_type_name = cls._get_field_type_name(field_type)\n291:            elif is_optional(field_type):\n293:            elif is_final(field_type):\n363:    def _get_field_meta(cls, field: Field, schema_type: SchemaType) -> Tuple[FieldMeta, bool]:\n396:    def _get_field_schema(cls, field: Union[Field, Type], schema_type: SchemaType) -> Tuple[JsonDict, bool]:\n407:        field_type_name = cls._get_field_type_name(field_type)\n413:            if is_optional(field_type):\n414:                field_schema = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n416:            elif is_final(field_type):\n417:                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n426:                    if member_type in JSON_ENCODABLE_TYPES:\n427:                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\n440:                    'oneOf': [cls._get_field_schema(variant, schema_type)[0] for variant in field_type.__args__]\n445:                    field_schema['additionalProperties'] = cls._get_field_schema(\n451:                    field_schema['items'] = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n457:                    'items': [cls._get_field_schema(type_arg, schema_type)[0] for type_arg in field_type.__args__]\n459:            elif field_type in JSON_ENCODABLE_TYPES:\n460:                field_schema.update(JSON_ENCODABLE_TYPES[field_type])\n464:                field_schema, _ = cls._get_field_schema(field_type.__supertype__, schema_type)\n473:    def _get_field_definitions(cls, field_type: Any, definitions: JsonDict,\n475:        field_type_name = cls._get_field_type_name(field_type)\n476:        if is_optional(field_type) or field_type_name in ('Sequence', 'List', 'Tuple'):\n539:                properties[target_field], is_required = cls._get_field_schema(field, schema_type)\n573:    def _get_field_type_name(field_type: Any) -> str:\n</output>",
+      "extra": {
+        "raw_output": "32:JSON_ENCODABLE_TYPES = {\n55:def is_optional(field: Any) -> bool:\n62:def is_final(field: Any) -> bool:\n197:            field_type_name = cls._get_field_type_name(field_type)\n200:            elif is_optional(field_type):\n202:            elif is_final(field_type):\n243:    def _get_fields(cls) -> List[Tuple[Field, str]]:\n283:            if type(value) in JSON_ENCODABLE_TYPES and field_type in JSON_ENCODABLE_TYPES:\n288:            field_type_name = cls._get_field_type_name(field_type)\n291:            elif is_optional(field_type):\n293:            elif is_final(field_type):\n363:    def _get_field_meta(cls, field: Field, schema_type: SchemaType) -> Tuple[FieldMeta, bool]:\n396:    def _get_field_schema(cls, field: Union[Field, Type], schema_type: SchemaType) -> Tuple[JsonDict, bool]:\n407:        field_type_name = cls._get_field_type_name(field_type)\n413:            if is_optional(field_type):\n414:                field_schema = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n416:            elif is_final(field_type):\n417:                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n426:                    if member_type in JSON_ENCODABLE_TYPES:\n427:                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\n440:                    'oneOf': [cls._get_field_schema(variant, schema_type)[0] for variant in field_type.__args__]\n445:                    field_schema['additionalProperties'] = cls._get_field_schema(\n451:                    field_schema['items'] = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n457:                    'items': [cls._get_field_schema(type_arg, schema_type)[0] for type_arg in field_type.__args__]\n459:            elif field_type in JSON_ENCODABLE_TYPES:\n460:                field_schema.update(JSON_ENCODABLE_TYPES[field_type])\n464:                field_schema, _ = cls._get_field_schema(field_type.__supertype__, schema_type)\n473:    def _get_field_definitions(cls, field_type: Any, definitions: JsonDict,\n475:        field_type_name = cls._get_field_type_name(field_type)\n476:        if is_optional(field_type) or field_type_name in ('Sequence', 'List', 'Tuple'):\n539:                properties[target_field], is_required = cls._get_field_schema(field, schema_type)\n573:    def _get_field_type_name(field_type: Any) -> str:\n",
+        "returncode": 0,
+        "timestamp": 1795214580.566278,
+        "exception_info": ""
+      },
+      "tool_call_id": "nmAWdAhahGa069nzhgsKqSyYBTTPrHSF",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && sed -n '396,472p' dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "qYIGoN1ANlF8LyQPubgGOEf1cEqx9C1U",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && sed -n '396,472p' dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "qYIGoN1ANlF8LyQPubgGOEf1cEqx9C1U"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-s49KunwazG3QZOcA5aRM2NrPUtkxvXRu",
+          "created": 1795214588,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && sed -n '396,472p' dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "qYIGoN1ANlF8LyQPubgGOEf1cEqx9C1U",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 51,
+            "prompt_tokens": 8031,
+            "total_tokens": 8082,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 8031,
+            "prompt_ms": 6878.412,
+            "prompt_per_token_ms": 0.8564826298094883,
+            "prompt_per_second": 1167.5660021528224,
+            "predicted_n": 51,
+            "predicted_ms": 1378.526,
+            "predicted_per_token_ms": 27.570520000000002,
+            "predicted_per_second": 36.27062529107177
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214588.859808
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n    def _get_field_schema(cls, field: Union[Field, Type], schema_type: SchemaType) -> Tuple[JsonDict, bool]:\n        field_schema: JsonDict = {'type': 'object'}\n        required = True\n\n        if isinstance(field, Field):\n            field_type = field.type\n            field_meta, required = cls._get_field_meta(field, schema_type)\n        else:\n            field_type = field\n            field_meta = FieldMeta(schema_type=schema_type)\n\n        field_type_name = cls._get_field_type_name(field_type)\n        ref_path = '#/components/schemas' if schema_type == SchemaType.SWAGGER_V3 else '#/definitions'\n        if cls._is_json_schema_subclass(field_type):\n            field_schema = {'$ref': '{}/{}'.format(ref_path, field_type_name)}\n        else:\n            # If is optional[...]\n            if is_optional(field_type):\n                field_schema = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n                required = False\n            elif is_final(field_type):\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n            elif is_enum(field_type):\n                member_types = set()\n                values = []\n                for member in field_type:\n                    member_types.add(type(member.value))\n                    values.append(member.value)\n                if len(member_types) == 1:\n                    member_type = member_types.pop()\n                    if member_type in JSON_ENCODABLE_TYPES:\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\n                    else:\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\n                field_schema['enum'] = values\n\n                # If embedding into a swagger spec add the enum name as an extension.\n                # Note: Unlike swagger, JSON schema does not support extensions\n                if schema_type in (SchemaType.SWAGGER_V2, SchemaType.SWAGGER_V3):\n                    field_schema['x-enum-name'] = field_type_name\n            elif field_type_name == 'Union':\n                if schema_type == SchemaType.SWAGGER_V2:\n                    raise TypeError('Type unions unsupported in Swagger 2.0')\n                field_schema = {\n                    'oneOf': [cls._get_field_schema(variant, schema_type)[0] for variant in field_type.__args__]\n                }\n            elif field_type_name in ('Dict', 'Mapping'):\n                field_schema = {'type': 'object'}\n                if field_type.__args__[1] is not Any:\n                    field_schema['additionalProperties'] = cls._get_field_schema(\n                        field_type.__args__[1], schema_type\n                    )[0]\n            elif field_type_name in ('Sequence', 'List') or (field_type_name == \"Tuple\" and ... in field_type.__args__):\n                field_schema = {'type': 'array'}\n                if field_type.__args__[0] is not Any:\n                    field_schema['items'] = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n            elif field_type_name == \"Tuple\":\n                tuple_len = len(field_type.__args__)\n                # TODO: How do we handle Optional type within lists / tuples\n                field_schema = {\n                    'type': 'array', 'minItems': tuple_len, 'maxItems': tuple_len,\n                    'items': [cls._get_field_schema(type_arg, schema_type)[0] for type_arg in field_type.__args__]\n                }\n            elif field_type in JSON_ENCODABLE_TYPES:\n                field_schema.update(JSON_ENCODABLE_TYPES[field_type])\n            elif field_type in cls._field_encoders:\n                field_schema.update(cls._field_encoders[field_type].json_schema)\n            elif hasattr(field_type, '__supertype__'):  # NewType fields\n                field_schema, _ = cls._get_field_schema(field_type.__supertype__, schema_type)\n            else:\n                warnings.warn(f\"Unable to create schema for '{field_type_name}'\")\n\n        field_schema.update(field_meta.as_dict)\n\n        return field_schema, required\n\n    @classmethod\n</output>",
+      "extra": {
+        "raw_output": "    def _get_field_schema(cls, field: Union[Field, Type], schema_type: SchemaType) -> Tuple[JsonDict, bool]:\n        field_schema: JsonDict = {'type': 'object'}\n        required = True\n\n        if isinstance(field, Field):\n            field_type = field.type\n            field_meta, required = cls._get_field_meta(field, schema_type)\n        else:\n            field_type = field\n            field_meta = FieldMeta(schema_type=schema_type)\n\n        field_type_name = cls._get_field_type_name(field_type)\n        ref_path = '#/components/schemas' if schema_type == SchemaType.SWAGGER_V3 else '#/definitions'\n        if cls._is_json_schema_subclass(field_type):\n            field_schema = {'$ref': '{}/{}'.format(ref_path, field_type_name)}\n        else:\n            # If is optional[...]\n            if is_optional(field_type):\n                field_schema = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n                required = False\n            elif is_final(field_type):\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n            elif is_enum(field_type):\n                member_types = set()\n                values = []\n                for member in field_type:\n                    member_types.add(type(member.value))\n                    values.append(member.value)\n                if len(member_types) == 1:\n                    member_type = member_types.pop()\n                    if member_type in JSON_ENCODABLE_TYPES:\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\n                    else:\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\n                field_schema['enum'] = values\n\n                # If embedding into a swagger spec add the enum name as an extension.\n                # Note: Unlike swagger, JSON schema does not support extensions\n                if schema_type in (SchemaType.SWAGGER_V2, SchemaType.SWAGGER_V3):\n                    field_schema['x-enum-name'] = field_type_name\n            elif field_type_name == 'Union':\n                if schema_type == SchemaType.SWAGGER_V2:\n                    raise TypeError('Type unions unsupported in Swagger 2.0')\n                field_schema = {\n                    'oneOf': [cls._get_field_schema(variant, schema_type)[0] for variant in field_type.__args__]\n                }\n            elif field_type_name in ('Dict', 'Mapping'):\n                field_schema = {'type': 'object'}\n                if field_type.__args__[1] is not Any:\n                    field_schema['additionalProperties'] = cls._get_field_schema(\n                        field_type.__args__[1], schema_type\n                    )[0]\n            elif field_type_name in ('Sequence', 'List') or (field_type_name == \"Tuple\" and ... in field_type.__args__):\n                field_schema = {'type': 'array'}\n                if field_type.__args__[0] is not Any:\n                    field_schema['items'] = cls._get_field_schema(field_type.__args__[0], schema_type)[0]\n            elif field_type_name == \"Tuple\":\n                tuple_len = len(field_type.__args__)\n                # TODO: How do we handle Optional type within lists / tuples\n                field_schema = {\n                    'type': 'array', 'minItems': tuple_len, 'maxItems': tuple_len,\n                    'items': [cls._get_field_schema(type_arg, schema_type)[0] for type_arg in field_type.__args__]\n                }\n            elif field_type in JSON_ENCODABLE_TYPES:\n                field_schema.update(JSON_ENCODABLE_TYPES[field_type])\n            elif field_type in cls._field_encoders:\n                field_schema.update(cls._field_encoders[field_type].json_schema)\n            elif hasattr(field_type, '__supertype__'):  # NewType fields\n                field_schema, _ = cls._get_field_schema(field_type.__supertype__, schema_type)\n            else:\n                warnings.warn(f\"Unable to create schema for '{field_type_name}'\")\n\n        field_schema.update(field_meta.as_dict)\n\n        return field_schema, required\n\n    @classmethod\n",
+        "returncode": 0,
+        "timestamp": 1795214589.2258403,
+        "exception_info": ""
+      },
+      "tool_call_id": "qYIGoN1ANlF8LyQPubgGOEf1cEqx9C1U",
+      "role": "tool"
+    },
+    {
+      "content": "Now let me check the Python version and how Literal is available.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && python --version && python -c \\\"import typing; print(hasattr(typing, 'Literal'))\\\" && python -c \\\"from typing_extensions import Literal; print('ext ok')\\\"\"}",
+            "name": "bash"
+          },
+          "id": "79Re5MfdnNt4mAotfwjQU5VtXYYDQrm4",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && python --version && python -c \"import typing; print(hasattr(typing, 'Literal'))\" && python -c \"from typing_extensions import Literal; print('ext ok')\"",
+            "tool_call_id": "79Re5MfdnNt4mAotfwjQU5VtXYYDQrm4"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-Jaw5ifHtNE3BLuzP2IfUMaZQv9nFqf9r",
+          "created": 1795214599,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Now let me check the Python version and how Literal is available.",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && python --version && python -c \\\"import typing; print(hasattr(typing, 'Literal'))\\\" && python -c \\\"from typing_extensions import Literal; print('ext ok')\\\"\"}",
+                      "name": "bash"
+                    },
+                    "id": "79Re5MfdnNt4mAotfwjQU5VtXYYDQrm4",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 81,
+            "prompt_tokens": 9017,
+            "total_tokens": 9098,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 9017,
+            "prompt_ms": 7855.654,
+            "prompt_per_token_ms": 0.8712048353110792,
+            "prompt_per_second": 1147.8356862458556,
+            "predicted_n": 81,
+            "predicted_ms": 2122.905,
+            "predicted_per_token_ms": 26.5363125,
+            "predicted_per_second": 37.68421102216067
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214599.2263103
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\nPython 3.7.17\nFalse\next ok\n</output>",
+      "extra": {
+        "raw_output": "Python 3.7.17\nFalse\next ok\n",
+        "returncode": 0,
+        "timestamp": 1795214599.6694236,
+        "exception_info": ""
+      },
+      "tool_call_id": "79Re5MfdnNt4mAotfwjQU5VtXYYDQrm4",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && python -c \\\"\\nfrom typing_extensions import Literal\\nx = Literal[8, 16, 24]\\nprint(repr(x))\\nprint(str(x))\\nprint(getattr(x, '__name__', 'NO NAME'))\\nprint(getattr(x, '__args__', 'NO ARGS'))\\nimport re\\nprint(re.match(r'typing\\\\.([A-Za-z]+)', str(x)))\\nprint(re.match(r'typing_extensions\\\\.([A-Za-z]+)', str(x)))\\n\\\"\"}",
+            "name": "bash"
+          },
+          "id": "MCFcbfBfdvrlcoqRuZDTjTZ0jevBIE9n",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && python -c \"\nfrom typing_extensions import Literal\nx = Literal[8, 16, 24]\nprint(repr(x))\nprint(str(x))\nprint(getattr(x, '__name__', 'NO NAME'))\nprint(getattr(x, '__args__', 'NO ARGS'))\nimport re\nprint(re.match(r'typing\\.([A-Za-z]+)', str(x)))\nprint(re.match(r'typing_extensions\\.([A-Za-z]+)', str(x)))\n\"",
+            "tool_call_id": "MCFcbfBfdvrlcoqRuZDTjTZ0jevBIE9n"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-XXYaxjRAgxJzdnJreasnmFhZ7fq7d6iN",
+          "created": 1795214611,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && python -c \\\"\\nfrom typing_extensions import Literal\\nx = Literal[8, 16, 24]\\nprint(repr(x))\\nprint(str(x))\\nprint(getattr(x, '__name__', 'NO NAME'))\\nprint(getattr(x, '__args__', 'NO ARGS'))\\nimport re\\nprint(re.match(r'typing\\\\.([A-Za-z]+)', str(x)))\\nprint(re.match(r'typing_extensions\\\\.([A-Za-z]+)', str(x)))\\n\\\"\"}",
+                      "name": "bash"
+                    },
+                    "id": "MCFcbfBfdvrlcoqRuZDTjTZ0jevBIE9n",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 134,
+            "prompt_tokens": 9146,
+            "total_tokens": 9280,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 9146,
+            "prompt_ms": 7939.351,
+            "prompt_per_token_ms": 0.8680681172097091,
+            "prompt_per_second": 1151.9833296197637,
+            "predicted_n": 134,
+            "predicted_ms": 3521.319,
+            "predicted_per_token_ms": 26.476082706766917,
+            "predicted_per_second": 37.76993791246973
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214611.1687024
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ntyping_extensions.Literal[8, 16, 24]\ntyping_extensions.Literal[8, 16, 24]\nNO NAME\n(8, 16, 24)\nNone\n<re.Match object; span=(0, 25), match='typing_extensions.Literal'>\n</output>",
+      "extra": {
+        "raw_output": "typing_extensions.Literal[8, 16, 24]\ntyping_extensions.Literal[8, 16, 24]\nNO NAME\n(8, 16, 24)\nNone\n<re.Match object; span=(0, 25), match='typing_extensions.Literal'>\n",
+        "returncode": 0,
+        "timestamp": 1795214611.5553303,
+        "exception_info": ""
+      },
+      "tool_call_id": "MCFcbfBfdvrlcoqRuZDTjTZ0jevBIE9n",
+      "role": "tool"
+    },
+    {
+      "content": "Let me check the test file for any existing Literal tests and how the codebase handles similar cases.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && grep -n \\\"Literal\\\\|is_final\\\\|Final\\\\|is_optional\\\" tests/test_all.py tests/conftest.py\"}",
+            "name": "bash"
+          },
+          "id": "m1JyMQlit7taMZ3aLDeGytjk8uV7FQlB",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && grep -n \"Literal\\|is_final\\|Final\\|is_optional\" tests/test_all.py tests/conftest.py",
+            "tool_call_id": "m1JyMQlit7taMZ3aLDeGytjk8uV7FQlB"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-WwDEALech8sDONZKVhWfDiE1wwnnB1DG",
+          "created": 1795214621,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Let me check the test file for any existing Literal tests and how the codebase handles similar cases.",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && grep -n \\\"Literal\\\\|is_final\\\\|Final\\\\|is_optional\\\" tests/test_all.py tests/conftest.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "m1JyMQlit7taMZ3aLDeGytjk8uV7FQlB",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 77,
+            "prompt_tokens": 9384,
+            "total_tokens": 9461,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 9384,
+            "prompt_ms": 8189.153,
+            "prompt_per_token_ms": 0.8726718883205457,
+            "prompt_per_second": 1145.906054020483,
+            "predicted_n": 77,
+            "predicted_ms": 2004.629,
+            "predicted_per_token_ms": 26.376697368421052,
+            "predicted_per_second": 37.91225209253184
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214621.8033462
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ntests/test_all.py:5:from typing_extensions import Final\ntests/test_all.py:423:    class TestWithFinal(JsonSchemaMixin):\ntests/test_all.py:425:        name: Final[str]\ntests/test_all.py:436:    assert TestWithFinal.json_schema() == compose_schema(expected_schema)\ntests/test_all.py:437:    assert TestWithFinal.from_dict({'name': 'foo'}) == TestWithFinal(name='foo')\ntests/test_all.py:438:    assert TestWithFinal(name='foo').to_dict() == {'name': 'foo'}\ntests/conftest.py:115:    class TestWithFinal(JsonSchemaMixin):\ntests/conftest.py:116:        name: Final[str]\ntests/conftest.py:120:        'description': 'TestWithFinal(name: str)',\ntests/conftest.py:127:    assert TestWithFinal.json_schema() == compose_schema(expected_schema)\n</output>",
+      "extra": {
+        "raw_output": "tests/test_all.py:5:from typing_extensions import Final\ntests/test_all.py:423:    class TestWithFinal(JsonSchemaMixin):\ntests/test_all.py:425:        name: Final[str]\ntests/test_all.py:436:    assert TestWithFinal.json_schema() == compose_schema(expected_schema)\ntests/test_all.py:437:    assert TestWithFinal.from_dict({'name': 'foo'}) == TestWithFinal(name='foo')\ntests/test_all.py:438:    assert TestWithFinal(name='foo').to_dict() == {'name': 'foo'}\ntests/conftest.py:115:    class TestWithFinal(JsonSchemaMixin):\ntests/conftest.py:116:        name: Final[str]\ntests/conftest.py:120:        'description': 'TestWithFinal(name: str)',\ntests/conftest.py:127:    assert TestWithFinal.json_schema() == compose_schema(expected_schema)\n",
+        "returncode": 0,
+        "timestamp": 1795214622.1787195,
+        "exception_info": ""
+      },
+      "tool_call_id": "m1JyMQlit7taMZ3aLDeGytjk8uV7FQlB",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && sed -n '415,440p' tests/test_all.py\"}",
+            "name": "bash"
+          },
+          "id": "Q5cz64CSUP5KFlsQRj2qumTNljSpxaY8",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && sed -n '415,440p' tests/test_all.py",
+            "tool_call_id": "Q5cz64CSUP5KFlsQRj2qumTNljSpxaY8"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-wG1FpRzf3e7zZQEVairAXwLQmWQZXUnL",
+          "created": 1795214632,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && sed -n '415,440p' tests/test_all.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "Q5cz64CSUP5KFlsQRj2qumTNljSpxaY8",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 47,
+            "prompt_tokens": 9712,
+            "total_tokens": 9759,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 9712,
+            "prompt_ms": 8608.798,
+            "prompt_per_token_ms": 0.8864083607907743,
+            "prompt_per_second": 1128.1482037329718,
+            "predicted_n": 47,
+            "predicted_ms": 1217.344,
+            "predicted_per_token_ms": 26.464000000000002,
+            "predicted_per_second": 37.787182587666265
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214632.0549543
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n    expected_schema['properties']['name']['example'] = 'foo'\n    del expected_schema['properties']['name']['examples']\n    assert Test.json_schema(schema_type=SchemaType.SWAGGER_V2, embeddable=True) == {'Test': expected_schema}\n\n\ndef test_final_field():\n\n    @dataclass\n    class TestWithFinal(JsonSchemaMixin):\n        \"\"\"Dataclass with final field\"\"\"\n        name: Final[str]\n\n    expected_schema = {\n        'type': 'object',\n        'description': 'Dataclass with final field',\n        'properties': {\n            'name': {'type': 'string'}\n        },\n        'required': ['name']\n    }\n\n    assert TestWithFinal.json_schema() == compose_schema(expected_schema)\n    assert TestWithFinal.from_dict({'name': 'foo'}) == TestWithFinal(name='foo')\n    assert TestWithFinal(name='foo').to_dict() == {'name': 'foo'}\n</output>",
+      "extra": {
+        "raw_output": "    expected_schema['properties']['name']['example'] = 'foo'\n    del expected_schema['properties']['name']['examples']\n    assert Test.json_schema(schema_type=SchemaType.SWAGGER_V2, embeddable=True) == {'Test': expected_schema}\n\n\ndef test_final_field():\n\n    @dataclass\n    class TestWithFinal(JsonSchemaMixin):\n        \"\"\"Dataclass with final field\"\"\"\n        name: Final[str]\n\n    expected_schema = {\n        'type': 'object',\n        'description': 'Dataclass with final field',\n        'properties': {\n            'name': {'type': 'string'}\n        },\n        'required': ['name']\n    }\n\n    assert TestWithFinal.json_schema() == compose_schema(expected_schema)\n    assert TestWithFinal.from_dict({'name': 'foo'}) == TestWithFinal(name='foo')\n    assert TestWithFinal(name='foo').to_dict() == {'name': 'foo'}\n",
+        "returncode": 0,
+        "timestamp": 1795214632.4381006,
+        "exception_info": ""
+      },
+      "tool_call_id": "Q5cz64CSUP5KFlsQRj2qumTNljSpxaY8",
+      "role": "tool"
+    },
+    {
+      "content": "Now I understand the structure. Let me look at the imports section and the `is_final` function area to add my changes.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && sed -n '1,30p' dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "gYeiWSOfuTwWu5wYDIYIssODhmFIVq2W",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && sed -n '1,30p' dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "gYeiWSOfuTwWu5wYDIYIssODhmFIVq2W"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-4QI3f2AKFm0AnLBqjxLjWutZetldcbif",
+          "created": 1795214643,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Now I understand the structure. Let me look at the imports section and the `is_final` function area to add my changes.",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && sed -n '1,30p' dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "gYeiWSOfuTwWu5wYDIYIssODhmFIVq2W",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 75,
+            "prompt_tokens": 10001,
+            "total_tokens": 10076,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 10001,
+            "prompt_ms": 8853.011,
+            "prompt_per_token_ms": 0.8852125787421258,
+            "prompt_per_second": 1129.6721533498603,
+            "predicted_n": 75,
+            "predicted_ms": 2030.125,
+            "predicted_per_token_ms": 27.43412162162162,
+            "predicted_per_second": 36.45095745335878
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214643.3465106
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\nimport sys\nimport functools\nfrom _decimal import Decimal\nfrom ipaddress import IPv4Address, IPv6Address\nfrom typing import Optional, Type, Union, Any, Dict, Tuple, List, TypeVar, get_type_hints, Callable\nimport re\nfrom datetime import datetime\nfrom dataclasses import fields, is_dataclass, Field, MISSING, dataclass, asdict\nfrom uuid import UUID\nfrom enum import Enum\nimport warnings\n\nfrom typing_extensions import Final\n\ntry:\n    # Supported in future python versions\n    from typing import TypedDict  # type: ignore\nexcept ImportError:\n    from mypy_extensions import TypedDict\n\nfrom dataclasses_jsonschema.field_types import (  # noqa: F401\n    FieldEncoder, DateTimeFieldEncoder, UuidField, DecimalField,\n    IPv4AddressField, IPv6AddressField, DateTimeField\n)\nfrom dataclasses_jsonschema.type_defs import JsonDict\n\ntry:\n    import valico as validator\nexcept ImportError:\n    import jsonschema as validator\n</output>",
+      "extra": {
+        "raw_output": "import sys\nimport functools\nfrom _decimal import Decimal\nfrom ipaddress import IPv4Address, IPv6Address\nfrom typing import Optional, Type, Union, Any, Dict, Tuple, List, TypeVar, get_type_hints, Callable\nimport re\nfrom datetime import datetime\nfrom dataclasses import fields, is_dataclass, Field, MISSING, dataclass, asdict\nfrom uuid import UUID\nfrom enum import Enum\nimport warnings\n\nfrom typing_extensions import Final\n\ntry:\n    # Supported in future python versions\n    from typing import TypedDict  # type: ignore\nexcept ImportError:\n    from mypy_extensions import TypedDict\n\nfrom dataclasses_jsonschema.field_types import (  # noqa: F401\n    FieldEncoder, DateTimeFieldEncoder, UuidField, DecimalField,\n    IPv4AddressField, IPv6AddressField, DateTimeField\n)\nfrom dataclasses_jsonschema.type_defs import JsonDict\n\ntry:\n    import valico as validator\nexcept ImportError:\n    import jsonschema as validator\n",
+        "returncode": 0,
+        "timestamp": 1795214643.7252004,
+        "exception_info": ""
+      },
+      "tool_call_id": "gYeiWSOfuTwWu5wYDIYIssODhmFIVq2W",
+      "role": "tool"
+    },
+    {
+      "content": "Now I'll make the changes. First, add the Literal import:",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && sed -i 's/^from typing_extensions import Final$/from typing_extensions import Final, Literal/' dataclasses_jsonschema/__init__.py && sed -n '13,14p' dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "7fv4cFsSDinxrMSaiZb55HyMf5bJCsax",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && sed -i 's/^from typing_extensions import Final$/from typing_extensions import Final, Literal/' dataclasses_jsonschema/__init__.py && sed -n '13,14p' dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "7fv4cFsSDinxrMSaiZb55HyMf5bJCsax"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-cFJZW9YDYa4bhkrCzAolsxiRxjknA5FG",
+          "created": 1795214655,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Now I'll make the changes. First, add the Literal import:",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && sed -i 's/^from typing_extensions import Final$/from typing_extensions import Final, Literal/' dataclasses_jsonschema/__init__.py && sed -n '13,14p' dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "7fv4cFsSDinxrMSaiZb55HyMf5bJCsax",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 93,
+            "prompt_tokens": 10326,
+            "total_tokens": 10419,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 10326,
+            "prompt_ms": 9175.214,
+            "prompt_per_token_ms": 0.8885545225644005,
+            "prompt_per_second": 1125.4233416245115,
+            "predicted_n": 93,
+            "predicted_ms": 2509.048,
+            "predicted_per_token_ms": 27.272260869565216,
+            "predicted_per_second": 36.66729373053047
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214655.4492831
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\nfrom typing_extensions import Final, Literal\n\n</output>",
+      "extra": {
+        "raw_output": "from typing_extensions import Final, Literal\n\n",
+        "returncode": 0,
+        "timestamp": 1795214655.8209372,
+        "exception_info": ""
+      },
+      "tool_call_id": "7fv4cFsSDinxrMSaiZb55HyMf5bJCsax",
+      "role": "tool"
+    },
+    {
+      "content": "Now add the `is_literal` helper function after `is_final`:",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && sed -n '62,73p' dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "hxPURK7t5GAto0mVKVz2OAuJ7qfHEkuW",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && sed -n '62,73p' dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "hxPURK7t5GAto0mVKVz2OAuJ7qfHEkuW"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-LJ12qmoxgUWXEqeH4ujmITDaOGYNV9bF",
+          "created": 1795214666,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Now add the `is_literal` helper function after `is_final`:",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && sed -n '62,73p' dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "hxPURK7t5GAto0mVKVz2OAuJ7qfHEkuW",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 64,
+            "prompt_tokens": 10461,
+            "total_tokens": 10525,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 10461,
+            "prompt_ms": 9321.423,
+            "prompt_per_token_ms": 0.8910642386005163,
+            "prompt_per_second": 1122.2535443354516,
+            "predicted_n": 64,
+            "predicted_ms": 1750.29,
+            "predicted_per_token_ms": 27.78238095238095,
+            "predicted_per_second": 35.99403527415457
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214666.9451082
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ndef is_final(field: Any) -> bool:\n    try:\n        return field.__origin__ == Final\n    except AttributeError:\n        if sys.version_info[:2] == (3, 6):\n            return type(field).__qualname__ == \"_Final\"\n        return False\n\n\ndef final_wrapped_type(final_type: Any) -> Any:\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n\n</output>",
+      "extra": {
+        "raw_output": "def is_final(field: Any) -> bool:\n    try:\n        return field.__origin__ == Final\n    except AttributeError:\n        if sys.version_info[:2] == (3, 6):\n            return type(field).__qualname__ == \"_Final\"\n        return False\n\n\ndef final_wrapped_type(final_type: Any) -> Any:\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n\n",
+        "returncode": 0,
+        "timestamp": 1795214667.3303924,
+        "exception_info": ""
+      },
+      "tool_call_id": "hxPURK7t5GAto0mVKVz2OAuJ7qfHEkuW",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\nimport re\\npath = 'dataclasses_jsonschema/__init__.py'\\nsrc = open(path).read()\\nold = '''def final_wrapped_type(final_type: Any) -> Any:\\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\\n'''\\nnew = '''def final_wrapped_type(final_type: Any) -> Any:\\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\\n\\n\\ndef is_literal(field: Any) -> bool:\\n    try:\\n        return field.__origin__ == Literal\\n    except AttributeError:\\n        return False\\n'''\\nassert old in src\\nsrc = src.replace(old, new)\\nopen(path, 'w').write(src)\\nprint(\\\"done\\\")\\nEOF\"}",
+            "name": "bash"
+          },
+          "id": "K7H1Zmw8wbRqcmDWyJziwaOjTaAXuFhS",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && python - <<'EOF'\nimport re\npath = 'dataclasses_jsonschema/__init__.py'\nsrc = open(path).read()\nold = '''def final_wrapped_type(final_type: Any) -> Any:\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n'''\nnew = '''def final_wrapped_type(final_type: Any) -> Any:\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n\n\ndef is_literal(field: Any) -> bool:\n    try:\n        return field.__origin__ == Literal\n    except AttributeError:\n        return False\n'''\nassert old in src\nsrc = src.replace(old, new)\nopen(path, 'w').write(src)\nprint(\"done\")\nEOF",
+            "tool_call_id": "K7H1Zmw8wbRqcmDWyJziwaOjTaAXuFhS"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-beVW2Q8ZkPoFufBCFbfEdo0dhc1EnpZi",
+          "created": 1795214682,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\nimport re\\npath = 'dataclasses_jsonschema/__init__.py'\\nsrc = open(path).read()\\nold = '''def final_wrapped_type(final_type: Any) -> Any:\\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\\n'''\\nnew = '''def final_wrapped_type(final_type: Any) -> Any:\\n    return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\\n\\n\\ndef is_literal(field: Any) -> bool:\\n    try:\\n        return field.__origin__ == Literal\\n    except AttributeError:\\n        return False\\n'''\\nassert old in src\\nsrc = src.replace(old, new)\\nopen(path, 'w').write(src)\\nprint(\\\"done\\\")\\nEOF\"}",
+                      "name": "bash"
+                    },
+                    "id": "K7H1Zmw8wbRqcmDWyJziwaOjTaAXuFhS",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 222,
+            "prompt_tokens": 10665,
+            "total_tokens": 10887,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 10665,
+            "prompt_ms": 9579.47,
+            "prompt_per_token_ms": 0.8982156586966713,
+            "prompt_per_second": 1113.318377739061,
+            "predicted_n": 222,
+            "predicted_ms": 6027.3,
+            "predicted_per_token_ms": 27.272850678733032,
+            "predicted_per_second": 36.66650075489854
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214682.9760342
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ndone\n</output>",
+      "extra": {
+        "raw_output": "done\n",
+        "returncode": 0,
+        "timestamp": 1795214683.4034688,
+        "exception_info": ""
+      },
+      "tool_call_id": "K7H1Zmw8wbRqcmDWyJziwaOjTaAXuFhS",
+      "role": "tool"
+    },
+    {
+      "content": "Now add the Literal handling in `_get_field_schema`. Let me add it after the `is_final` branch:",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && grep -n \\\"is_final(field_type):\\\" dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "dTI8K7Gb5jcCWqFhoMEYdLXtHxwkBluN",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && grep -n \"is_final(field_type):\" dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "dTI8K7Gb5jcCWqFhoMEYdLXtHxwkBluN"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-aGUGHtBvx2XgRXTVZrxM7mnFxBT9VXsE",
+          "created": 1795214695,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Now add the Literal handling in `_get_field_schema`. Let me add it after the `is_final` branch:",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && grep -n \\\"is_final(field_type):\\\" dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "dTI8K7Gb5jcCWqFhoMEYdLXtHxwkBluN",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 72,
+            "prompt_tokens": 10923,
+            "total_tokens": 10995,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 10923,
+            "prompt_ms": 9919.448,
+            "prompt_per_token_ms": 0.9081248741188318,
+            "prompt_per_second": 1101.1701457581107,
+            "predicted_n": 72,
+            "predicted_ms": 1884.194,
+            "predicted_per_token_ms": 26.53794366197183,
+            "predicted_per_second": 37.681894751814305
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214695.2496662
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n209:            elif is_final(field_type):\n300:            elif is_final(field_type):\n423:            elif is_final(field_type):\n</output>",
+      "extra": {
+        "raw_output": "209:            elif is_final(field_type):\n300:            elif is_final(field_type):\n423:            elif is_final(field_type):\n",
+        "returncode": 0,
+        "timestamp": 1795214695.6176896,
+        "exception_info": ""
+      },
+      "tool_call_id": "dTI8K7Gb5jcCWqFhoMEYdLXtHxwkBluN",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && sed -n '423,432p' dataclasses_jsonschema/__init__.py\"}",
+            "name": "bash"
+          },
+          "id": "V8hPElpluENaT3WRPJpIFoiQXMYxJkA4",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && sed -n '423,432p' dataclasses_jsonschema/__init__.py",
+            "tool_call_id": "V8hPElpluENaT3WRPJpIFoiQXMYxJkA4"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-tBPubRziusokfFqt6pY8MXSwl8zEpRsx",
+          "created": 1795214706,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && sed -n '423,432p' dataclasses_jsonschema/__init__.py\"}",
+                      "name": "bash"
+                    },
+                    "id": "V8hPElpluENaT3WRPJpIFoiQXMYxJkA4",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 51,
+            "prompt_tokens": 11065,
+            "total_tokens": 11116,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 11065,
+            "prompt_ms": 10003.04,
+            "prompt_per_token_ms": 0.9040253050158157,
+            "prompt_per_second": 1106.1637262272268,
+            "predicted_n": 51,
+            "predicted_ms": 1338.595,
+            "predicted_per_token_ms": 26.771900000000002,
+            "predicted_per_second": 37.352597312854144
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214707.0037067
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n            elif is_final(field_type):\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n            elif is_enum(field_type):\n                member_types = set()\n                values = []\n                for member in field_type:\n                    member_types.add(type(member.value))\n                    values.append(member.value)\n                if len(member_types) == 1:\n                    member_type = member_types.pop()\n</output>",
+      "extra": {
+        "raw_output": "            elif is_final(field_type):\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n            elif is_enum(field_type):\n                member_types = set()\n                values = []\n                for member in field_type:\n                    member_types.add(type(member.value))\n                    values.append(member.value)\n                if len(member_types) == 1:\n                    member_type = member_types.pop()\n",
+        "returncode": 0,
+        "timestamp": 1795214707.364258,
+        "exception_info": ""
+      },
+      "tool_call_id": "V8hPElpluENaT3WRPJpIFoiQXMYxJkA4",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\npath = 'dataclasses_jsonschema/__init__.py'\\nsrc = open(path).read()\\nold = '''            elif is_final(field_type):\\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\\n            elif is_enum(field_type):\\n                member_types = set()\\n                values = []\\n                for member in field_type:\\n                    member_types.add(type(member.value))\\n                    values.append(member.value)\\n                if len(member_types) == 1:\\n                    member_type = member_types.pop()\\n                    if member_type in JSON_ENCODABLE_TYPES:\\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\\n                    else:\\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\\n                field_schema['enum'] = values\\n'''\\nnew = '''            elif is_final(field_type):\\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\\n            elif is_literal(field_type):\\n                literal_args = field_type.__args__\\n                literal_types = set(type(arg) for arg in literal_args)\\n                if len(literal_types) == 1:\\n                    literal_type = literal_types.pop()\\n                    if literal_type in JSON_ENCODABLE_TYPES:\\n                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\\n                    elif literal_type in cls._field_encoders:\\n                        field_schema.update(cls._field_encoders[literal_type].json_schema)\\n                field_schema['enum'] = list(literal_args)\\n            elif is_enum(field_type):\\n                member_types = set()\\n                values = []\\n                for member in field_type:\\n                    member_types.add(type(member.value))\\n                    values.append(member.value)\\n                if len(member_types) == 1:\\n                    member_type = member_types.pop()\\n                    if member_type in JSON_ENCODABLE_TYPES:\\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\\n                    else:\\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\\n                field_schema['enum'] = values\\n'''\\nassert old in src\\nsrc = src.replace(old, new)\\nopen(path, 'w').write(src)\\nprint(\\\"done\\\")\\nEOF\"}",
+            "name": "bash"
+          },
+          "id": "1rfvvsWFf7oGMaCDU0b4QPWWwuHQ3riT",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && python - <<'EOF'\npath = 'dataclasses_jsonschema/__init__.py'\nsrc = open(path).read()\nold = '''            elif is_final(field_type):\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n            elif is_enum(field_type):\n                member_types = set()\n                values = []\n                for member in field_type:\n                    member_types.add(type(member.value))\n                    values.append(member.value)\n                if len(member_types) == 1:\n                    member_type = member_types.pop()\n                    if member_type in JSON_ENCODABLE_TYPES:\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\n                    else:\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\n                field_schema['enum'] = values\n'''\nnew = '''            elif is_final(field_type):\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n            elif is_literal(field_type):\n                literal_args = field_type.__args__\n                literal_types = set(type(arg) for arg in literal_args)\n                if len(literal_types) == 1:\n                    literal_type = literal_types.pop()\n                    if literal_type in JSON_ENCODABLE_TYPES:\n                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\n                    elif literal_type in cls._field_encoders:\n                        field_schema.update(cls._field_encoders[literal_type].json_schema)\n                field_schema['enum'] = list(literal_args)\n            elif is_enum(field_type):\n                member_types = set()\n                values = []\n                for member in field_type:\n                    member_types.add(type(member.value))\n                    values.append(member.value)\n                if len(member_types) == 1:\n                    member_type = member_types.pop()\n                    if member_type in JSON_ENCODABLE_TYPES:\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\n                    else:\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\n                field_schema['enum'] = values\n'''\nassert old in src\nsrc = src.replace(old, new)\nopen(path, 'w').write(src)\nprint(\"done\")\nEOF",
+            "tool_call_id": "1rfvvsWFf7oGMaCDU0b4QPWWwuHQ3riT"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-VrRjdVLy0w8GTFFtQPGANeHV536V0kwT",
+          "created": 1795214731,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\npath = 'dataclasses_jsonschema/__init__.py'\\nsrc = open(path).read()\\nold = '''            elif is_final(field_type):\\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\\n            elif is_enum(field_type):\\n                member_types = set()\\n                values = []\\n                for member in field_type:\\n                    member_types.add(type(member.value))\\n                    values.append(member.value)\\n                if len(member_types) == 1:\\n                    member_type = member_types.pop()\\n                    if member_type in JSON_ENCODABLE_TYPES:\\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\\n                    else:\\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\\n                field_schema['enum'] = values\\n'''\\nnew = '''            elif is_final(field_type):\\n                field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\\n            elif is_literal(field_type):\\n                literal_args = field_type.__args__\\n                literal_types = set(type(arg) for arg in literal_args)\\n                if len(literal_types) == 1:\\n                    literal_type = literal_types.pop()\\n                    if literal_type in JSON_ENCODABLE_TYPES:\\n                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\\n                    elif literal_type in cls._field_encoders:\\n                        field_schema.update(cls._field_encoders[literal_type].json_schema)\\n                field_schema['enum'] = list(literal_args)\\n            elif is_enum(field_type):\\n                member_types = set()\\n                values = []\\n                for member in field_type:\\n                    member_types.add(type(member.value))\\n                    values.append(member.value)\\n                if len(member_types) == 1:\\n                    member_type = member_types.pop()\\n                    if member_type in JSON_ENCODABLE_TYPES:\\n                        field_schema.update(JSON_ENCODABLE_TYPES[member_type])\\n                    else:\\n                        field_schema.update(cls._field_encoders[member_types.pop()].json_schema)\\n                field_schema['enum'] = values\\n'''\\nassert old in src\\nsrc = src.replace(old, new)\\nopen(path, 'w').write(src)\\nprint(\\\"done\\\")\\nEOF\"}",
+                      "name": "bash"
+                    },
+                    "id": "1rfvvsWFf7oGMaCDU0b4QPWWwuHQ3riT",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 516,
+            "prompt_tokens": 11244,
+            "total_tokens": 11760,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 11244,
+            "prompt_ms": 10150.293,
+            "prompt_per_token_ms": 0.9027297225186766,
+            "prompt_per_second": 1107.7512737809639,
+            "predicted_n": 516,
+            "predicted_ms": 13958.054,
+            "predicted_per_token_ms": 27.103017475728155,
+            "predicted_per_second": 36.89626075382715
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214731.5231187
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ndone\n</output>",
+      "extra": {
+        "raw_output": "done\n",
+        "returncode": 0,
+        "timestamp": 1795214731.9012682,
+        "exception_info": ""
+      },
+      "tool_call_id": "1rfvvsWFf7oGMaCDU0b4QPWWwuHQ3riT",
+      "role": "tool"
+    },
+    {
+      "content": "Now let me test with the example from the PR:",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\nimport json\\nfrom dataclasses import dataclass\\nfrom typing_extensions import Literal\\nfrom dataclasses_jsonschema import JsonSchemaMixin\\n\\n@dataclass\\nclass ImageMetadata(JsonSchemaMixin):\\n    width: int\\n    height: int\\n    bits_per_pixel: Literal[8, 16, 24]\\n\\nprint(json.dumps(ImageMetadata.json_schema(), indent=2))\\nEOF\"}",
+            "name": "bash"
+          },
+          "id": "WrB79ABPjwgvmQR4QaDtN8fpPITqDPIN",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && python - <<'EOF'\nimport json\nfrom dataclasses import dataclass\nfrom typing_extensions import Literal\nfrom dataclasses_jsonschema import JsonSchemaMixin\n\n@dataclass\nclass ImageMetadata(JsonSchemaMixin):\n    width: int\n    height: int\n    bits_per_pixel: Literal[8, 16, 24]\n\nprint(json.dumps(ImageMetadata.json_schema(), indent=2))\nEOF",
+            "tool_call_id": "WrB79ABPjwgvmQR4QaDtN8fpPITqDPIN"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-fj2C4IgAQpwvZS0mcEjlAyRyXHJEw9pC",
+          "created": 1795214746,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "Now let me test with the example from the PR:",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\nimport json\\nfrom dataclasses import dataclass\\nfrom typing_extensions import Literal\\nfrom dataclasses_jsonschema import JsonSchemaMixin\\n\\n@dataclass\\nclass ImageMetadata(JsonSchemaMixin):\\n    width: int\\n    height: int\\n    bits_per_pixel: Literal[8, 16, 24]\\n\\nprint(json.dumps(ImageMetadata.json_schema(), indent=2))\\nEOF\"}",
+                      "name": "bash"
+                    },
+                    "id": "WrB79ABPjwgvmQR4QaDtN8fpPITqDPIN",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 129,
+            "prompt_tokens": 11796,
+            "total_tokens": 11925,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 11796,
+            "prompt_ms": 10809.715,
+            "prompt_per_token_ms": 0.9163881824347236,
+            "prompt_per_second": 1091.2406108764199,
+            "predicted_n": 129,
+            "predicted_ms": 3502.442,
+            "predicted_per_token_ms": 27.362828125,
+            "predicted_per_second": 36.545929954014944
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214746.2646787
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n{\n  \"type\": \"object\",\n  \"required\": [\n    \"width\",\n    \"height\",\n    \"bits_per_pixel\"\n  ],\n  \"properties\": {\n    \"width\": {\n      \"type\": \"integer\"\n    },\n    \"height\": {\n      \"type\": \"integer\"\n    },\n    \"bits_per_pixel\": {\n      \"type\": \"integer\",\n      \"enum\": [\n        8,\n        16,\n        24\n      ]\n    }\n  },\n  \"description\": \"ImageMetadata(width: int, height: int, bits_per_pixel: typing_extensions.Literal[8, 16, 24])\",\n  \"$schema\": \"http://json-schema.org/draft-06/schema#\"\n}\n</output>",
+      "extra": {
+        "raw_output": "{\n  \"type\": \"object\",\n  \"required\": [\n    \"width\",\n    \"height\",\n    \"bits_per_pixel\"\n  ],\n  \"properties\": {\n    \"width\": {\n      \"type\": \"integer\"\n    },\n    \"height\": {\n      \"type\": \"integer\"\n    },\n    \"bits_per_pixel\": {\n      \"type\": \"integer\",\n      \"enum\": [\n        8,\n        16,\n        24\n      ]\n    }\n  },\n  \"description\": \"ImageMetadata(width: int, height: int, bits_per_pixel: typing_extensions.Literal[8, 16, 24])\",\n  \"$schema\": \"http://json-schema.org/draft-06/schema#\"\n}\n",
+        "returncode": 0,
+        "timestamp": 1795214746.726584,
+        "exception_info": ""
+      },
+      "tool_call_id": "WrB79ABPjwgvmQR4QaDtN8fpPITqDPIN",
+      "role": "tool"
+    },
+    {
+      "content": "The output matches the expected schema. Let me test edge cases: string literals, mixed types, and validation.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\nimport json\\nfrom dataclasses import dataclass\\nfrom typing import Optional, Union\\nfrom typing_extensions import Literal\\nfrom dataclasses_jsonschema import JsonSchemaMixin\\n\\n@dataclass\\nclass A(JsonSchemaMixin):\\n    s: Literal['a', 'b', 'c']\\n    m: Literal[1, 'two', True]\\n    o: Optional[Literal[8, 16]]\\n\\nprint(json.dumps(A.json_schema(), indent=2))\\nprint(\\\"---validation---\\\")\\nprint(A(s='a', m=1, o=8).to_dict())\\ntry:\\n    A(s='z', m=1, o=8)\\nexcept Exception as e:\\n    print(\\\"err:\\\", e)\\nEOF\"}",
+            "name": "bash"
+          },
+          "id": "JSnjhjOdbZVoXmIHmTcoahiLMuHtl1pd",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && python - <<'EOF'\nimport json\nfrom dataclasses import dataclass\nfrom typing import Optional, Union\nfrom typing_extensions import Literal\nfrom dataclasses_jsonschema import JsonSchemaMixin\n\n@dataclass\nclass A(JsonSchemaMixin):\n    s: Literal['a', 'b', 'c']\n    m: Literal[1, 'two', True]\n    o: Optional[Literal[8, 16]]\n\nprint(json.dumps(A.json_schema(), indent=2))\nprint(\"---validation---\")\nprint(A(s='a', m=1, o=8).to_dict())\ntry:\n    A(s='z', m=1, o=8)\nexcept Exception as e:\n    print(\"err:\", e)\nEOF",
+            "tool_call_id": "JSnjhjOdbZVoXmIHmTcoahiLMuHtl1pd"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-194AlU0al0aBPerLFibIP9MbWRbV6f5X",
+          "created": 1795214763,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "The output matches the expected schema. Let me test edge cases: string literals, mixed types, and validation.",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && python - <<'EOF'\\nimport json\\nfrom dataclasses import dataclass\\nfrom typing import Optional, Union\\nfrom typing_extensions import Literal\\nfrom dataclasses_jsonschema import JsonSchemaMixin\\n\\n@dataclass\\nclass A(JsonSchemaMixin):\\n    s: Literal['a', 'b', 'c']\\n    m: Literal[1, 'two', True]\\n    o: Optional[Literal[8, 16]]\\n\\nprint(json.dumps(A.json_schema(), indent=2))\\nprint(\\\"---validation---\\\")\\nprint(A(s='a', m=1, o=8).to_dict())\\ntry:\\n    A(s='z', m=1, o=8)\\nexcept Exception as e:\\n    print(\\\"err:\\\", e)\\nEOF\"}",
+                      "name": "bash"
+                    },
+                    "id": "JSnjhjOdbZVoXmIHmTcoahiLMuHtl1pd",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 214,
+            "prompt_tokens": 12138,
+            "total_tokens": 12352,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 12138,
+            "prompt_ms": 11045.942,
+            "prompt_per_token_ms": 0.9100298236941835,
+            "prompt_per_second": 1098.8650854766395,
+            "predicted_n": 214,
+            "predicted_ms": 5777.283,
+            "predicted_per_token_ms": 27.123394366197186,
+            "predicted_per_second": 36.86854183878477
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214763.5976906
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n{\n  \"type\": \"object\",\n  \"required\": [\n    \"s\",\n    \"m\"\n  ],\n  \"properties\": {\n    \"s\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"m\": {\n      \"type\": \"object\",\n      \"enum\": [\n        1,\n        \"two\",\n        true\n      ]\n    },\n    \"o\": {\n      \"type\": \"integer\",\n      \"enum\": [\n        8,\n        16\n      ]\n    }\n  },\n  \"description\": \"A(s: typing_extensions.Literal['a', 'b', 'c'], m: typing_extensions.Literal[1, 'two', True], o: Union[typing_extensions.Literal[8, 16], NoneType])\",\n  \"$schema\": \"http://json-schema.org/draft-06/schema#\"\n}\n---validation---\n{'s': 'a', 'm': 1, 'o': 8}\n</output>",
+      "extra": {
+        "raw_output": "{\n  \"type\": \"object\",\n  \"required\": [\n    \"s\",\n    \"m\"\n  ],\n  \"properties\": {\n    \"s\": {\n      \"type\": \"string\",\n      \"enum\": [\n        \"a\",\n        \"b\",\n        \"c\"\n      ]\n    },\n    \"m\": {\n      \"type\": \"object\",\n      \"enum\": [\n        1,\n        \"two\",\n        true\n      ]\n    },\n    \"o\": {\n      \"type\": \"integer\",\n      \"enum\": [\n        8,\n        16\n      ]\n    }\n  },\n  \"description\": \"A(s: typing_extensions.Literal['a', 'b', 'c'], m: typing_extensions.Literal[1, 'two', True], o: Union[typing_extensions.Literal[8, 16], NoneType])\",\n  \"$schema\": \"http://json-schema.org/draft-06/schema#\"\n}\n---validation---\n{'s': 'a', 'm': 1, 'o': 8}\n",
+        "returncode": 0,
+        "timestamp": 1795214764.0384052,
+        "exception_info": ""
+      },
+      "tool_call_id": "JSnjhjOdbZVoXmIHmTcoahiLMuHtl1pd",
+      "role": "tool"
+    },
+    {
+      "content": "",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && python -m pytest tests/ -q 2>&1 | tail -20\"}",
+            "name": "bash"
+          },
+          "id": "tWm8pvYODMtzqfVmty0uAb9UhFpASF7W",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && python -m pytest tests/ -q 2>&1 | tail -20",
+            "tool_call_id": "tWm8pvYODMtzqfVmty0uAb9UhFpASF7W"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-sNx8jmfA68ZcV7cl8ACME8WbioZ6QVne",
+          "created": 1795214776,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && python -m pytest tests/ -q 2>&1 | tail -20\"}",
+                      "name": "bash"
+                    },
+                    "id": "tWm8pvYODMtzqfVmty0uAb9UhFpASF7W",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 47,
+            "prompt_tokens": 12638,
+            "total_tokens": 12685,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 12638,
+            "prompt_ms": 11482.771,
+            "prompt_per_token_ms": 0.9085908371577782,
+            "prompt_per_second": 1100.6054200680305,
+            "predicted_n": 47,
+            "predicted_ms": 1313.805,
+            "predicted_per_token_ms": 28.560978260869568,
+            "predicted_per_second": 35.012806314483505
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214776.881237
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\n....................                                                     [100%]\n20 passed in 0.05s\n</output>",
+      "extra": {
+        "raw_output": "....................                                                     [100%]\n20 passed in 0.05s\n",
+        "returncode": 0,
+        "timestamp": 1795214777.5116668,
+        "exception_info": ""
+      },
+      "tool_call_id": "tWm8pvYODMtzqfVmty0uAb9UhFpASF7W",
+      "role": "tool"
+    },
+    {
+      "content": "All tests pass. Let me verify the patch:",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && git diff dataclasses_jsonschema/__init__.py > patch.txt && cat patch.txt\"}",
+            "name": "bash"
+          },
+          "id": "JwcWB8SJ1lAmy8Guj64UNi5wy9LrEoi4",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && git diff dataclasses_jsonschema/__init__.py > patch.txt && cat patch.txt",
+            "tool_call_id": "JwcWB8SJ1lAmy8Guj64UNi5wy9LrEoi4"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-W3InrOxHZec77HKMYUMIRvE6GyexJpD0",
+          "created": 1795214790,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "All tests pass. Let me verify the patch:",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && git diff dataclasses_jsonschema/__init__.py > patch.txt && cat patch.txt\"}",
+                      "name": "bash"
+                    },
+                    "id": "JwcWB8SJ1lAmy8Guj64UNi5wy9LrEoi4",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 58,
+            "prompt_tokens": 12740,
+            "total_tokens": 12798,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 12740,
+            "prompt_ms": 11663.701,
+            "prompt_per_token_ms": 0.9155181318681318,
+            "prompt_per_second": 1092.2776569804046,
+            "predicted_n": 58,
+            "predicted_ms": 1534.225,
+            "predicted_per_token_ms": 26.916228070175436,
+            "predicted_per_second": 37.152308168619335
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214790.7410119
+      }
+    },
+    {
+      "content": "<returncode>0</returncode>\n<output>\ndiff --git a/dataclasses_jsonschema/__init__.py b/dataclasses_jsonschema/__init__.py\nindex 2ce5d65..d4176f3 100644\n--- a/dataclasses_jsonschema/__init__.py\n+++ b/dataclasses_jsonschema/__init__.py\n@@ -10,7 +10,7 @@ from uuid import UUID\n from enum import Enum\n import warnings\n \n-from typing_extensions import Final\n+from typing_extensions import Final, Literal\n \n try:\n     # Supported in future python versions\n@@ -72,6 +72,13 @@ def final_wrapped_type(final_type: Any) -> Any:\n     return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n \n \n+def is_literal(field: Any) -> bool:\n+    try:\n+        return field.__origin__ == Literal\n+    except AttributeError:\n+        return False\n+\n+\n class SchemaType(Enum):\n     DRAFT_06 = \"Draft6\"\n     DRAFT_04 = \"Draft4\"\n@@ -415,6 +422,16 @@ class JsonSchemaMixin:\n                 required = False\n             elif is_final(field_type):\n                 field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n+            elif is_literal(field_type):\n+                literal_args = field_type.__args__\n+                literal_types = set(type(arg) for arg in literal_args)\n+                if len(literal_types) == 1:\n+                    literal_type = literal_types.pop()\n+                    if literal_type in JSON_ENCODABLE_TYPES:\n+                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\n+                    elif literal_type in cls._field_encoders:\n+                        field_schema.update(cls._field_encoders[literal_type].json_schema)\n+                field_schema['enum'] = list(literal_args)\n             elif is_enum(field_type):\n                 member_types = set()\n                 values = []\n</output>",
+      "extra": {
+        "raw_output": "diff --git a/dataclasses_jsonschema/__init__.py b/dataclasses_jsonschema/__init__.py\nindex 2ce5d65..d4176f3 100644\n--- a/dataclasses_jsonschema/__init__.py\n+++ b/dataclasses_jsonschema/__init__.py\n@@ -10,7 +10,7 @@ from uuid import UUID\n from enum import Enum\n import warnings\n \n-from typing_extensions import Final\n+from typing_extensions import Final, Literal\n \n try:\n     # Supported in future python versions\n@@ -72,6 +72,13 @@ def final_wrapped_type(final_type: Any) -> Any:\n     return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n \n \n+def is_literal(field: Any) -> bool:\n+    try:\n+        return field.__origin__ == Literal\n+    except AttributeError:\n+        return False\n+\n+\n class SchemaType(Enum):\n     DRAFT_06 = \"Draft6\"\n     DRAFT_04 = \"Draft4\"\n@@ -415,6 +422,16 @@ class JsonSchemaMixin:\n                 required = False\n             elif is_final(field_type):\n                 field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n+            elif is_literal(field_type):\n+                literal_args = field_type.__args__\n+                literal_types = set(type(arg) for arg in literal_args)\n+                if len(literal_types) == 1:\n+                    literal_type = literal_types.pop()\n+                    if literal_type in JSON_ENCODABLE_TYPES:\n+                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\n+                    elif literal_type in cls._field_encoders:\n+                        field_schema.update(cls._field_encoders[literal_type].json_schema)\n+                field_schema['enum'] = list(literal_args)\n             elif is_enum(field_type):\n                 member_types = set()\n                 values = []\n",
+        "returncode": 0,
+        "timestamp": 1795214791.1192372,
+        "exception_info": ""
+      },
+      "tool_call_id": "JwcWB8SJ1lAmy8Guj64UNi5wy9LrEoi4",
+      "role": "tool"
+    },
+    {
+      "content": "The patch looks clean and complete. It:\n1. Imports `Literal` from `typing_extensions`\n2. Adds an `is_literal` helper function\n3. Adds handling in `_get_field_schema` that generates the appropriate `type` (when all literals share a single type) and an `enum` list\n\nThe implementation matches the PR's expected output exactly. Let me submit.",
+      "role": "assistant",
+      "tool_calls": [
+        {
+          "function": {
+            "arguments": "{\"command\":\"cd /testbed && echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT && cat patch.txt\"}",
+            "name": "bash"
+          },
+          "id": "9woL3AwmNwos8l8Nzjx8gbjWfhiWXqsB",
+          "type": "function"
+        }
+      ],
+      "function_call": null,
+      "provider_specific_fields": null,
+      "extra": {
+        "actions": [
+          {
+            "command": "cd /testbed && echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT && cat patch.txt",
+            "tool_call_id": "9woL3AwmNwos8l8Nzjx8gbjWfhiWXqsB"
+          }
+        ],
+        "response": {
+          "id": "chatcmpl-wgZ6YoHcnTCL3MWzjBMOuF2Ud38g7tvO",
+          "created": 1795214806,
+          "model": "qwen38-27b-ud-q4km",
+          "object": "chat.completion",
+          "system_fingerprint": "b12441-164ab018f",
+          "choices": [
+            {
+              "finish_reason": "tool_calls",
+              "index": 0,
+              "message": {
+                "content": "The patch looks clean and complete. It:\n1. Imports `Literal` from `typing_extensions`\n2. Adds an `is_literal` helper function\n3. Adds handling in `_get_field_schema` that generates the appropriate `type` (when all literals share a single type) and an `enum` list\n\nThe implementation matches the PR's expected output exactly. Let me submit.",
+                "role": "assistant",
+                "tool_calls": [
+                  {
+                    "function": {
+                      "arguments": "{\"command\":\"cd /testbed && echo COMPLETE_TASK_AND_SUBMIT_FINAL_OUTPUT && cat patch.txt\"}",
+                      "name": "bash"
+                    },
+                    "id": "9woL3AwmNwos8l8Nzjx8gbjWfhiWXqsB",
+                    "type": "function"
+                  }
+                ],
+                "function_call": null
+              },
+              "provider_specific_fields": {}
+            }
+          ],
+          "usage": {
+            "completion_tokens": 123,
+            "prompt_tokens": 13287,
+            "total_tokens": 13410,
+            "completion_tokens_details": null,
+            "prompt_tokens_details": {
+              "cached_tokens": 0
+            }
+          },
+          "timings": {
+            "cache_n": 0,
+            "prompt_n": 13287,
+            "prompt_ms": 12319.401,
+            "prompt_per_token_ms": 0.9271770151275683,
+            "prompt_per_second": 1078.5426986263374,
+            "predicted_n": 123,
+            "predicted_ms": 3335.682,
+            "predicted_per_token_ms": 27.341655737704915,
+            "predicted_per_second": 36.57422979768455
+          }
+        },
+        "cost": 0.0,
+        "timestamp": 1795214806.8275394
+      }
+    },
+    {
+      "role": "exit",
+      "content": "diff --git a/dataclasses_jsonschema/__init__.py b/dataclasses_jsonschema/__init__.py\nindex 2ce5d65..d4176f3 100644\n--- a/dataclasses_jsonschema/__init__.py\n+++ b/dataclasses_jsonschema/__init__.py\n@@ -10,7 +10,7 @@ from uuid import UUID\n from enum import Enum\n import warnings\n \n-from typing_extensions import Final\n+from typing_extensions import Final, Literal\n \n try:\n     # Supported in future python versions\n@@ -72,6 +72,13 @@ def final_wrapped_type(final_type: Any) -> Any:\n     return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n \n \n+def is_literal(field: Any) -> bool:\n+    try:\n+        return field.__origin__ == Literal\n+    except AttributeError:\n+        return False\n+\n+\n class SchemaType(Enum):\n     DRAFT_06 = \"Draft6\"\n     DRAFT_04 = \"Draft4\"\n@@ -415,6 +422,16 @@ class JsonSchemaMixin:\n                 required = False\n             elif is_final(field_type):\n                 field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n+            elif is_literal(field_type):\n+                literal_args = field_type.__args__\n+                literal_types = set(type(arg) for arg in literal_args)\n+                if len(literal_types) == 1:\n+                    literal_type = literal_types.pop()\n+                    if literal_type in JSON_ENCODABLE_TYPES:\n+                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\n+                    elif literal_type in cls._field_encoders:\n+                        field_schema.update(cls._field_encoders[literal_type].json_schema)\n+                field_schema['enum'] = list(literal_args)\n             elif is_enum(field_type):\n                 member_types = set()\n                 values = []\n",
+      "extra": {
+        "exit_status": "Submitted",
+        "submission": "diff --git a/dataclasses_jsonschema/__init__.py b/dataclasses_jsonschema/__init__.py\nindex 2ce5d65..d4176f3 100644\n--- a/dataclasses_jsonschema/__init__.py\n+++ b/dataclasses_jsonschema/__init__.py\n@@ -10,7 +10,7 @@ from uuid import UUID\n from enum import Enum\n import warnings\n \n-from typing_extensions import Final\n+from typing_extensions import Final, Literal\n \n try:\n     # Supported in future python versions\n@@ -72,6 +72,13 @@ def final_wrapped_type(final_type: Any) -> Any:\n     return final_type.__args__[0] if sys.version_info[:2] >= (3, 7) else final_type.__type__\n \n \n+def is_literal(field: Any) -> bool:\n+    try:\n+        return field.__origin__ == Literal\n+    except AttributeError:\n+        return False\n+\n+\n class SchemaType(Enum):\n     DRAFT_06 = \"Draft6\"\n     DRAFT_04 = \"Draft4\"\n@@ -415,6 +422,16 @@ class JsonSchemaMixin:\n                 required = False\n             elif is_final(field_type):\n                 field_schema, required = cls._get_field_schema(final_wrapped_type(field_type), schema_type)\n+            elif is_literal(field_type):\n+                literal_args = field_type.__args__\n+                literal_types = set(type(arg) for arg in literal_args)\n+                if len(literal_types) == 1:\n+                    literal_type = literal_types.pop()\n+                    if literal_type in JSON_ENCODABLE_TYPES:\n+                        field_schema.update(JSON_ENCODABLE_TYPES[literal_type])\n+                    elif literal_type in cls._field_encoders:\n+                        field_schema.update(cls._field_encoders[literal_type].json_schema)\n+                field_schema['enum'] = list(literal_args)\n             elif is_enum(field_type):\n                 member_types = set()\n                 values = []\n"
+      }
+    }
+  ],
+  "trajectory_format": "mini-swe-agent-1.1"
+}

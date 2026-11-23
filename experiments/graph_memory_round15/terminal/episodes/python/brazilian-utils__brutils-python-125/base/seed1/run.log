@@ -1,0 +1,52 @@
+CMD: D:\CodexResearch\x20-official-vibe\solver-runtime\agent-venv\Scripts\python.exe -m minisweagent.run.utilities.mini_extra swebench-single --subset D:\CodexResearch\x20-bench-workspace\work\graph_memory_round15\terminal\subset --split test -i brazilian-utils__brutils-python-125 -m openai/qwen38-27b-ud-q4km -o D:\CodexResearch\x20-bench-workspace\work\graph_memory_round15\terminal\episodes\python\brazilian-utils__brutils-python-125\base\seed1\brazilian-utils__brutils-python-125.traj.json -y --exit-immediately --agent-class default -c D:\CodexResearch\x20-official-vibe\VibeMemBench\mini-swe-agent\src\minisweagent\config\benchmarks\swebench.yaml -c model.model_kwargs.api_base=http://127.0.0.1:18955/replicate/1/v1 -c model.model_kwargs.api_key=local -c model.model_kwargs.temperature=0.5 -c agent.cost_limit=3.0 -c agent.step_limit=24 -c environment.pull_timeout=300
+
+minisweagent: INFO: Loading dataset from                                       
+D:\CodexResearch\x20-bench-workspace\work\graph_memory_round15\terminal\subset,
+split test...                                                                  
+Generating test split: 0 examples [00:00, ? examples/s]Generating test split: 2 examples [00:00, 205.05 examples/s]
+minisweagent: INFO: Building agent config from specs:                          
+['D:\\CodexResearch\\x20-official-vibe\\VibeMemBench\\mini-swe-agent\\src\\mini
+sweagent\\config\\benchmarks\\swebench.yaml',                                  
+'model.model_kwargs.api_base=http://127.0.0.1:18955/replicate/1/v1',           
+'model.model_kwargs.api_key=local', 'model.model_kwargs.temperature=0.5',      
+'agent.cost_limit=3.0', 'agent.step_limit=24', 'environment.pull_timeout=300'] 
+minisweagent.environment: DEBUG: Starting container with command:              
+'D:\CodexResearch\x20-official-vibe\solver-runtime\agent-venv\Scripts\vibe-loca
+l-docker.exe' run -d --name minisweagent-1a2fc649 -w /testbed --rm             
+docker.io/swerebenchv2/brazilian-utils-brutils-python:125-9046eed sleep 2h     
+minisweagent.environment: INFO: Started container minisweagent-1a2fc649 with ID
+625fd84dc7eae4b2939cca8cf0a69c2ab4e0e7f4032d563df086ce3f5d6c3588               
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+
+[1;31mProvider List: https://docs.litellm.ai/docs/providers[0m
+
+The system cannot find the path specified.

@@ -1,0 +1,39 @@
+HEAD is now at dad240e Support type annotations with the 'Final' qualifier (e.g `Final[str]`) (#62)
+============================= test session starts ==============================
+collected 21 items
+
+tests/test_all.py .....................                                  [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_all.py::test_field_with_default_factory
+PASSED tests/test_all.py::test_field_with_default_dataclass
+PASSED tests/test_all.py::test_embeddable_json_schema
+PASSED tests/test_all.py::test_json_schema
+PASSED tests/test_all.py::test_serialise_deserialise
+PASSED tests/test_all.py::test_invalid_data
+PASSED tests/test_all.py::test_newtype_field_validation
+PASSED tests/test_all.py::test_recursive_data
+PASSED tests/test_all.py::test_recursive_validation
+PASSED tests/test_all.py::test_non_string_keys
+PASSED tests/test_all.py::test_type_union_schema
+PASSED tests/test_all.py::test_type_union_serialise
+PASSED tests/test_all.py::test_type_union_deserialise
+PASSED tests/test_all.py::test_default_values
+PASSED tests/test_all.py::test_default_factory
+PASSED tests/test_all.py::test_read_only_field
+PASSED tests/test_all.py::test_read_only_field_no_default
+PASSED tests/test_all.py::test_field_types
+PASSED tests/test_all.py::test_field_metadata
+PASSED tests/test_all.py::test_final_field
+PASSED tests/test_all.py::test_literal_types
+============================== 21 passed in 0.11s ==============================
+Checking patch dataclasses_jsonschema/__init__.py...
+Applied patch to 'dataclasses_jsonschema/__init__.py' cleanly.
+Checking patch dataclasses_jsonschema/type_defs.py...
+Applied patch to 'dataclasses_jsonschema/type_defs.py' cleanly.
+Applied patch dataclasses_jsonschema/__init__.py cleanly.
+Applied patch dataclasses_jsonschema/type_defs.py cleanly.
+Checking patch tests/test_all.py...
+Applied patch to 'tests/test_all.py' cleanly.
+Applied patch tests/test_all.py cleanly.

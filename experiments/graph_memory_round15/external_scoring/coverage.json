@@ -1,0 +1,75 @@
+{
+ "unique_preexisting_tasks": 245,
+ "panels": {
+  "IssueLoc-test": {
+   "source": "https://raw.githubusercontent.com/mohammad-nour-alawad/IssueLoc-bench/bd546b8ec1067eb4690cc0677a05320e88e35ff4/issueloc_bench_manifest/tasks/test.jsonl",
+   "bytes": 1649445,
+   "sha": "1430f7ed37f7c68048a03d9688f4fa1ef2da6f08cac7ffbf24dc63702a605d05",
+   "n": 500,
+   "safe_fields": [
+    "instance_id",
+    "repo",
+    "pr_number"
+   ],
+   "intersect": [],
+   "structure": [
+    "instance_id",
+    "repo",
+    "pr_number",
+    "split",
+    "issue_title",
+    "issue_body",
+    "issue_text",
+    "issue_comments",
+    "tree_paths_path",
+    "snapshot_path",
+    "candidate_scope"
+   ]
+  },
+  "IssueLoc-transformed_swe_bench": {
+   "source": "https://raw.githubusercontent.com/mohammad-nour-alawad/IssueLoc-bench/bd546b8ec1067eb4690cc0677a05320e88e35ff4/issueloc_bench_manifest/tasks/transformed_swe_bench.jsonl",
+   "bytes": 2123393,
+   "sha": "32c9d891062562b37f14ee50b40d8eb548020cb730de6298a89e68d0691dc81d",
+   "n": 499,
+   "safe_fields": [
+    "instance_id",
+    "repo",
+    "pr_number"
+   ],
+   "intersect": [],
+   "structure": [
+    "instance_id",
+    "repo",
+    "pr_number",
+    "split",
+    "issue_title",
+    "issue_body",
+    "issue_text",
+    "issue_comments",
+    "tree_paths_path",
+    "snapshot_path",
+    "candidate_scope"
+   ]
+  },
+  "SWE-Explore": {
+   "source": "https://huggingface.co/datasets/SWE-Explore-Bench/SWE-Explore-Bench/resolve/bdb0ae45d7c337d9e1dc3ebfe2a0af6bc7c1fbd9/bench.final.public.jsonl",
+   "bytes": 13683678,
+   "sha": "dc4f114ececd0bfb987361c26ae5e2440456e2cccb36adfccb09ea5385aec202",
+   "n": 848,
+   "safe_fields": [
+    "instance_id",
+    "repo_dir"
+   ],
+   "intersect": [],
+   "structure": [
+    "instance_id",
+    "repo_path",
+    "repo_dir",
+    "ground_truth",
+    "read_step_info",
+    "meta",
+    "dataset"
+   ]
+  }
+ }
+}

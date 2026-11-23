@@ -1,0 +1,29 @@
+HEAD is now at 9046eed Feature: `generate_cep` (#124)
+============================= test session starts ==============================
+collected 3 items
+
+tests/test_cep.py F..                                                    [100%]
+
+=================================== FAILURES ===================================
+E   AssertionError: assert '01310.200' == '01310-200'
+      
+      - 01310-200
+      ?      ^
+      + 01310.200
+      ?      ^
+/brutils-python/tests/test_cep.py:24: AssertionError: assert '01310.200' == '01310-200'
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_cep.py::CEP::test_generate
+PASSED tests/test_cep.py::CEP::test_is_valid
+FAILED tests/test_cep.py::CEP::test_format_cep - AssertionError: assert '0131...
+========================= 1 failed, 2 passed in 0.17s ==========================
+Checking patch brutils/__init__.py...
+Applied patch to 'brutils/__init__.py' cleanly.
+Checking patch brutils/cep.py...
+Applied patch to 'brutils/cep.py' cleanly.
+Applied patch brutils/__init__.py cleanly.
+Applied patch brutils/cep.py cleanly.
+Checking patch tests/test_cep.py...
+Applied patch to 'tests/test_cep.py' cleanly.
+Applied patch tests/test_cep.py cleanly.

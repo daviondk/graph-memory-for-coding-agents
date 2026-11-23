@@ -1,0 +1,150 @@
+{
+  "canonical_edge_bytes": [
+    275,
+    286
+  ],
+  "edges": [
+    {
+      "evidence_sha256": "c8437e8749430ced6d530fdea41dd65a0c0128c1a84276c3319f5fc7611b04ab",
+      "nodes": [
+        "test_good"
+      ],
+      "runner": "pytest 8.4.2",
+      "selection": "test_local.py",
+      "source_sha256": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1",
+      "status": "pass",
+      "xml_bytes": 316
+    },
+    {
+      "evidence_sha256": "00667f2eb6d67e476c2761a6ea26e3d083caa87cf03d4c7d8f779013e0cbafea",
+      "nodes": [
+        "test_good"
+      ],
+      "runner": "pytest 8.4.2",
+      "selection": "test_local.py::test_good",
+      "source_sha256": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae",
+      "status": "pass",
+      "xml_bytes": 316
+    }
+  ],
+  "n_eligible_rc_zero_by_text_tail": 2147,
+  "n_visible_fail_with_tail": 744,
+  "natural_failed_counts": {
+    "errors_only": 98,
+    "has_failed": 745
+  },
+  "pairwise_scopes": [
+    {
+      "covered": true,
+      "measured_full_invocation": "pass",
+      "query_fixture": "green",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "fail",
+      "query_fixture": "red",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "fail",
+      "query_fixture": "mixed",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "fail",
+      "query_fixture": "collection",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "skip_or_empty",
+      "query_fixture": "empty",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "skip_or_empty",
+      "query_fixture": "skip",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "pass",
+      "query_fixture": "subset_green",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "no_evidence",
+      "query_fixture": "timeout",
+      "source": "test_local.py",
+      "stored_version": "96c7c9b7e3fafd226ec033cff45df38d9f1cb4fa1f7ba7423c5fb4bbbe7bb2f1"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "pass",
+      "query_fixture": "green",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "fail",
+      "query_fixture": "red",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "fail",
+      "query_fixture": "mixed",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "fail",
+      "query_fixture": "collection",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "skip_or_empty",
+      "query_fixture": "empty",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "skip_or_empty",
+      "query_fixture": "skip",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    },
+    {
+      "covered": true,
+      "measured_full_invocation": "pass",
+      "query_fixture": "subset_green",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    },
+    {
+      "covered": false,
+      "measured_full_invocation": "no_evidence",
+      "query_fixture": "timeout",
+      "source": "test_local.py::test_good",
+      "stored_version": "25da75ba58e8f12886cad1eacae3952375c89d136bb50188a8946f2605042dae"
+    }
+  ]
+}
