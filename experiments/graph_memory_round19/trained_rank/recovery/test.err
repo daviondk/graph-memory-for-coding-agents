@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round19\trained_rank/test_retrieval.py", line 57, in <module>
+    if __name__=='__main__':{'lock':lock,'embed':embed,'predict':predict}[sys.argv[1]]()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round19\trained_rank/test_retrieval.py", line 26, in embed
+    orig=(CACHE/'vectors.sqlite3').resolve().as_uri()+'?mode=ro';con.execute('attach database ? as frozen',[orig])
+                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: unable to open database: file:///D:/CodexResearch/x20-isetrace-e5-gpu/cache/vectors.sqlite3?mode=ro
+Exception: D:\CodexResearch\x20-bench-workspace\work\graph_memory_round19\trained_rank\remaining.ps1:18
+Line |
+  18 |      if ($LASTEXITCODE -ne 0){throw "Failed stage $stage"}
+     |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     | Failed stage embed

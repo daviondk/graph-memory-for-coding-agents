@@ -1,0 +1,11 @@
+{
+  "whole_gold_bearing_raw_file_parsed": true,
+  "preprocessor": "prepare.py shard -> N._read_queries(pilot.Q) before filtering",
+  "gold_test_values_used_for_optimization": false,
+  "selection_filter": "explicit train/dev IDs",
+  "train_loss": "native MNRL over 5330 train triples",
+  "dev_selection": "500 dev only",
+  "test_rank_seal_precedes_test_scoring": true,
+  "access_boundary": "logical data-flow isolation, no filesystem ACL isolation",
+  "known_test_aggregates": "R18 prior frozen work"
+}

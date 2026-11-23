@@ -1,0 +1,122 @@
+{
+  "test": {
+    "n": 2000,
+    "clusters": 1207,
+    "net": 106,
+    "strata": {
+      "both": {
+        "queries": 1331,
+        "full_read": 844,
+        "rule_read": 841,
+        "read_win": 26,
+        "read_loss": 23,
+        "net": 3,
+        "contribution_query_mean": 0.0015,
+        "contribution_ci95": [
+          -0.0055110911045147945,
+          0.008538637544162403
+        ]
+      },
+      "full_only": {
+        "queries": 264,
+        "full_read": 135,
+        "rule_read": 0,
+        "read_win": 135,
+        "read_loss": 0,
+        "net": 135,
+        "contribution_query_mean": 0.0675,
+        "contribution_ci95": [
+          0.056435449236778436,
+          0.07939717196403856
+        ]
+      },
+      "rule_only": {
+        "queries": 72,
+        "full_read": 0,
+        "rule_read": 32,
+        "read_win": 0,
+        "read_loss": 32,
+        "net": -32,
+        "contribution_query_mean": -0.016,
+        "contribution_ci95": [
+          -0.02197279039320055,
+          -0.010579211914129387
+        ]
+      },
+      "neither": {
+        "queries": 333,
+        "full_read": 0,
+        "rule_read": 0,
+        "read_win": 0,
+        "read_loss": 0,
+        "net": 0,
+        "contribution_query_mean": 0.0,
+        "contribution_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "source_sha256": "5f1af5e3b251d363d4e3d0a07e2405505d60bd4abf50ba081457ce7d5ed7cb52"
+  },
+  "dev": {
+    "n": 580,
+    "clusters": 352,
+    "net": 37,
+    "strata": {
+      "both": {
+        "queries": 385,
+        "full_read": 246,
+        "rule_read": 240,
+        "read_win": 14,
+        "read_loss": 8,
+        "net": 6,
+        "contribution_query_mean": 0.010344827586206896,
+        "contribution_ci95": [
+          -0.005309734513274336,
+          0.02735042735042735
+        ]
+      },
+      "full_only": {
+        "queries": 84,
+        "full_read": 46,
+        "rule_read": 0,
+        "read_win": 46,
+        "read_loss": 0,
+        "net": 46,
+        "contribution_query_mean": 0.07931034482758621,
+        "contribution_ci95": [
+          0.05714285714285714,
+          0.10278745644599303
+        ]
+      },
+      "rule_only": {
+        "queries": 23,
+        "full_read": 0,
+        "rule_read": 15,
+        "read_win": 0,
+        "read_loss": 15,
+        "net": -15,
+        "contribution_query_mean": -0.02586206896551724,
+        "contribution_ci95": [
+          -0.04280821917808219,
+          -0.011985789134761744
+        ]
+      },
+      "neither": {
+        "queries": 88,
+        "full_read": 0,
+        "rule_read": 0,
+        "read_win": 0,
+        "read_loss": 0,
+        "net": 0,
+        "contribution_query_mean": 0.0,
+        "contribution_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "source_sha256": "88887985b72142aa7ed4ff8d5b1dfd47b7c84ffbcbdc58d350fa8f4a213c1437"
+  }
+}
