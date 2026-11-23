@@ -1,0 +1,33 @@
+{
+  "settings": [
+    "-m",
+    "D:/CodexResearch/x20-qwen38-27b/Qwen3.8-27B-UD-Q4_K_M.gguf",
+    "--alias",
+    "qwen38-27b-ud-q4km",
+    "--host",
+    "127.0.0.1",
+    "--port",
+    "18952",
+    "--jinja",
+    "--parallel",
+    "1",
+    "--ctx-size",
+    "16384",
+    "--n-gpu-layers",
+    "all",
+    "--flash-attn",
+    "on",
+    "--cache-type-k",
+    "q8_0",
+    "--cache-type-v",
+    "q8_0",
+    "--batch-size",
+    "512",
+    "--ubatch-size",
+    "256",
+    "--cache-ram",
+    "0"
+  ],
+  "gpu": "NVIDIA GeForce RTX 3090, 24576 MiB, 610.88",
+  "server": "D:/CodexResearch/x20-qwen38-27b/bin/llama-server.exe"
+}

@@ -1,0 +1,9 @@
+main 2000
+forecasts.py run 39,724 s
+placebo_e5.py predict 5,403 s
+budget_grid.py predict 3,871 s
+cpu_check.py 1,218 s
+{'main': {'clip': {'full_support': 0.5185, 'coverage': 0.5984137481417549, 'density': 0.020170943912922887, 'f1': 0.03833390544389327, 'tokens': 2046.3745, 'nodes': 8.5745, 'n': 2000, 'fs_hits': 1037}, 'prefix': {'full_support': 0.5055, 'coverage': 0.582966617270897, 'density': 0.02169201327243721, 'f1': 0.04100195018869161, 'tokens': 1847.712, 'nodes': 7.581, 'n': 2000, 'fs_hits': 1011}, 'related': {'full_support': 0.581, 'coverage': 0.6481970151573804, 'density': 0.02113446181029595, 'f1': 0.04020818090016315, 'tokens': 2039.689, 'nodes': 12.075, 'n': 2000, 'fs_hits': 1162}, 'skip': {'full_support': 0.561, 'coverage': 0.6318858815050752, 'density': 0.020761297104453357, 'f1': 0.03949216002839404, 'tokens': 2039.601, 'nodes': 11.636, 'n': 2000, 'fs_hits': 1122}, 'value': {'full_support': 0.5565, 'coverage': 0.6273311879307694, 'density': 0.020420633695057994, 'f1': 0.03884482392675154, 'tokens': 2029.898, 'nodes': 16.267, 'n': 2000, 'fs_hits': 1113}}}
+evaluate.py 6,148 s
+placebo_e5.py score 2,084 s
+budget_grid.py score 2,512 s
