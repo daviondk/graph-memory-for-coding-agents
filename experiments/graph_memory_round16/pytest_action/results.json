@@ -1,0 +1,790 @@
+{
+  "audited": {
+    "all": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 31,
+          "correct_rechecks": 23,
+          "false_writes": 1,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 23,
+          "true_writes": 8
+        },
+        "raw": {
+          "accuracy_count": 27,
+          "correct_rechecks": 19,
+          "false_writes": 5,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 19,
+          "true_writes": 8
+        },
+        "shell": {
+          "accuracy_count": 21,
+          "correct_rechecks": 21,
+          "false_writes": 3,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 29,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 32,
+          "correct_rechecks": 24,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 24,
+          "true_writes": 8
+        },
+        "static_shell": {
+          "accuracy_count": 16,
+          "correct_rechecks": 8,
+          "false_writes": 16,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 8,
+          "true_writes": 8
+        },
+        "structured": {
+          "accuracy_count": 29,
+          "correct_rechecks": 21,
+          "false_writes": 3,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 21,
+          "true_writes": 8
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 0.7265625,
+        "raw_only_correct": 3,
+        "structured_only_correct": 5
+      }
+    },
+    "negative": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "raw": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "shell": {
+          "accuracy_count": 6,
+          "correct_rechecks": 6,
+          "false_writes": 2,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 6,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_shell": {
+          "accuracy_count": 0,
+          "correct_rechecks": 0,
+          "false_writes": 8,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 0,
+          "true_writes": 0
+        },
+        "structured": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 1.0,
+        "raw_only_correct": 0,
+        "structured_only_correct": 0
+      }
+    },
+    "positive": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "raw": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "shell": {
+          "accuracy_count": 0,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "static_shell": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "structured": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 1.0,
+        "raw_only_correct": 0,
+        "structured_only_correct": 0
+      }
+    },
+    "unverified": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 7,
+          "correct_rechecks": 7,
+          "false_writes": 1,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 7,
+          "true_writes": 0
+        },
+        "raw": {
+          "accuracy_count": 3,
+          "correct_rechecks": 3,
+          "false_writes": 5,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 3,
+          "true_writes": 0
+        },
+        "shell": {
+          "accuracy_count": 7,
+          "correct_rechecks": 7,
+          "false_writes": 1,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 7,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_shell": {
+          "accuracy_count": 0,
+          "correct_rechecks": 0,
+          "false_writes": 8,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 0,
+          "true_writes": 0
+        },
+        "structured": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 0.0625,
+        "raw_only_correct": 0,
+        "structured_only_correct": 5
+      }
+    },
+    "wrong_scope": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "raw": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "shell": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_shell": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "structured": {
+          "accuracy_count": 5,
+          "correct_rechecks": 5,
+          "false_writes": 3,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 5,
+          "true_writes": 0
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 0.25,
+        "raw_only_correct": 3,
+        "structured_only_correct": 0
+      }
+    }
+  },
+  "cost": {
+    "parser": {
+      "calls": 32,
+      "elapsed_sum": 30.476324499992188,
+      "input_tokens": 15124,
+      "median_elapsed": 0.9458607000124175,
+      "median_payload_bytes": 80.0,
+      "output_tokens": 498
+    },
+    "raw": {
+      "calls": 32,
+      "elapsed_sum": 35.39670000015758,
+      "input_tokens": 21382,
+      "median_elapsed": 1.1036936000164133,
+      "median_payload_bytes": 768.0,
+      "output_tokens": 506
+    },
+    "shell": {
+      "calls": 32,
+      "elapsed_sum": 30.125656599877402,
+      "input_tokens": 14644,
+      "median_elapsed": 0.9423933500074781,
+      "median_payload_bytes": 0.0,
+      "output_tokens": 486
+    },
+    "structured": {
+      "calls": 32,
+      "elapsed_sum": 31.774794299795758,
+      "input_tokens": 16152,
+      "median_elapsed": 0.9805703999882098,
+      "median_payload_bytes": 109.5,
+      "output_tokens": 502
+    }
+  },
+  "silver": {
+    "all": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 31,
+          "correct_rechecks": 23,
+          "false_writes": 1,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 23,
+          "true_writes": 8
+        },
+        "raw": {
+          "accuracy_count": 27,
+          "correct_rechecks": 19,
+          "false_writes": 5,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 19,
+          "true_writes": 8
+        },
+        "shell": {
+          "accuracy_count": 21,
+          "correct_rechecks": 21,
+          "false_writes": 3,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 29,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 32,
+          "correct_rechecks": 24,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 24,
+          "true_writes": 8
+        },
+        "static_shell": {
+          "accuracy_count": 16,
+          "correct_rechecks": 8,
+          "false_writes": 16,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 8,
+          "true_writes": 8
+        },
+        "structured": {
+          "accuracy_count": 29,
+          "correct_rechecks": 21,
+          "false_writes": 3,
+          "invalid": 0,
+          "n": 32,
+          "negative": 24,
+          "positive": 8,
+          "rechecks": 21,
+          "true_writes": 8
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 0.7265625,
+        "raw_only_correct": 3,
+        "structured_only_correct": 5
+      }
+    },
+    "negative": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "raw": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "shell": {
+          "accuracy_count": 6,
+          "correct_rechecks": 6,
+          "false_writes": 2,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 6,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_shell": {
+          "accuracy_count": 0,
+          "correct_rechecks": 0,
+          "false_writes": 8,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 0,
+          "true_writes": 0
+        },
+        "structured": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 1.0,
+        "raw_only_correct": 0,
+        "structured_only_correct": 0
+      }
+    },
+    "positive": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "raw": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "shell": {
+          "accuracy_count": 0,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "static_shell": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        },
+        "structured": {
+          "accuracy_count": 8,
+          "correct_rechecks": 0,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 0,
+          "positive": 8,
+          "rechecks": 0,
+          "true_writes": 8
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 1.0,
+        "raw_only_correct": 0,
+        "structured_only_correct": 0
+      }
+    },
+    "unverified": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 7,
+          "correct_rechecks": 7,
+          "false_writes": 1,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 7,
+          "true_writes": 0
+        },
+        "raw": {
+          "accuracy_count": 3,
+          "correct_rechecks": 3,
+          "false_writes": 5,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 3,
+          "true_writes": 0
+        },
+        "shell": {
+          "accuracy_count": 7,
+          "correct_rechecks": 7,
+          "false_writes": 1,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 7,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_shell": {
+          "accuracy_count": 0,
+          "correct_rechecks": 0,
+          "false_writes": 8,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 0,
+          "true_writes": 0
+        },
+        "structured": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 0.0625,
+        "raw_only_correct": 0,
+        "structured_only_correct": 5
+      }
+    },
+    "wrong_scope": {
+      "arms": {
+        "parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "raw": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "shell": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_parser": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "static_shell": {
+          "accuracy_count": 8,
+          "correct_rechecks": 8,
+          "false_writes": 0,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 8,
+          "true_writes": 0
+        },
+        "structured": {
+          "accuracy_count": 5,
+          "correct_rechecks": 5,
+          "false_writes": 3,
+          "invalid": 0,
+          "n": 8,
+          "negative": 8,
+          "positive": 0,
+          "rechecks": 5,
+          "true_writes": 0
+        }
+      },
+      "paired_structured_vs_raw": {
+        "exact_two_sided_p": 0.25,
+        "raw_only_correct": 3,
+        "structured_only_correct": 0
+      }
+    }
+  }
+}
