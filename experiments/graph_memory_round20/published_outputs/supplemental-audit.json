@@ -1,0 +1,53 @@
+{
+  "zenodo_unquoted": {
+    "url": "https://zenodo.org/api/records?q=ISETrace",
+    "status": 200,
+    "bytes": 434,
+    "sha256": "d8fe628f4b55cd147bef96d05b1131ddcaf88136f75a96fcd8998db802653e65",
+    "hits": 0,
+    "record_ids": []
+  },
+  "unrelated_SFT_model": {
+    "url": "https://huggingface.co/api/models/valiere/ISETrace-SFT-8B",
+    "status": 200,
+    "bytes": 6563,
+    "sha256": "86f924c4ee54bbd23816bac57c0daf55a2f368916183d11f48f0c6d4b97abe97",
+    "pipeline": "text-generation",
+    "architectures": [
+      "Qwen3ForCausalLM"
+    ],
+    "revision": "bcd32f9180add15d4a6990ec03061fc6d130d087",
+    "files": [
+      ".gitattributes",
+      "README.md",
+      "README_zh.md",
+      "added_tokens.json",
+      "chat_template.jinja",
+      "config.json",
+      "generation_config.json",
+      "merges.txt",
+      "model-00001-of-00004.safetensors",
+      "model-00002-of-00004.safetensors",
+      "model-00003-of-00004.safetensors",
+      "model-00004-of-00004.safetensors",
+      "model.safetensors.index.json",
+      "special_tokens_map.json",
+      "tokenizer.json",
+      "tokenizer_config.json",
+      "vocab.json"
+    ]
+  },
+  "LongMemEval2": {
+    "url": "https://api.github.com/repos/xiaowu0162/LongMemEval-V2/commits/main",
+    "status": 200,
+    "bytes": 5579,
+    "sha256": "0ca91b78cb9325f87a58feeb2cbf15d61883133d42d2a981bf32d476262b046d",
+    "revision": "2cc8c540bdb87fe6761629b585e727e1c4704520"
+  },
+  "v3_BM25_native": {
+    "n": 2000,
+    "hits": 759,
+    "cov": 0.4562427492995803,
+    "rounded_matches": true
+  }
+}

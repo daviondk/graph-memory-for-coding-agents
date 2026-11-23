@@ -1,0 +1,211 @@
+{
+  "code": "687b7c88e4c4012211ae40e3ac3b13c509680c00d6a965524eb35e9fe3d8321f",
+  "inference_binary": "d6ee4c17db5b9bbbacb523c5fa1e8b6103fa25adbf8cf10a67a96e681da659de",
+  "model": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "protocol": "bbaccf085d436ed74667eee00c84ff735f09cb342ae617c41bba7397177b7723",
+  "revision": "c1b15726f1153b02dda0490ca1936bb86a809514",
+  "sources": {
+    "oracles/ts-casefold-sort/attendees.txt": "8a1c983ce17619db27d77d2ffcf53819ef0ae74e905a2537caf34ee01e668610",
+    "oracles/ts-casefold-sort/expected_roster.txt": "47129138125ac3759a917d5f2f8e2d1816237a82e93d24df43afc5251f776f06",
+    "oracles/ts-crlf-export/orders.json": "377c5347a1b2d970bc3e9d7eebc129949977af6263abe85f3d4636a5fe79b87d",
+    "oracles/ts-csv-quote/records.json": "9136acae73a4787e0c2ad81fdf8b4bfa26a73d346618458d4b03e385e961d2bb",
+    "oracles/ts-dedup-order/events.jsonl": "f419c26f73d5f8b787b92b5f696ea0ee99968e45efdff2e44f6ead5e8bc61b66",
+    "oracles/ts-dedup-order/expected_deduped.jsonl": "b3d08940c618b91d2f970ed34855b54c0272e214637a8e76bdaefc0d87020ebd",
+    "tasks/ts-casefold-sort/checker.py": "1e0b85e6d68264e0572f009bc28a8383b67fa24b612a531d96f5ecd0e023de9d",
+    "tasks/ts-casefold-sort/precursors/p01/followup.txt": "d174c0282cfcf9474b97c2ad736f228dd35910bd490221ad7426a4519ed3976b",
+    "tasks/ts-casefold-sort/reference/informed.py": "dd7987783436740fa2b8b82df8fb4578590d954c81027b747fe8d7b9bc607167",
+    "tasks/ts-casefold-sort/reference/naive.py": "69322ea232df81a001dd306a9d33e17741f2088875d6c8f42cfb514375c7b3c0",
+    "tasks/ts-casefold-sort/task.json": "4da5ed7d34531f76c0f9c79a153befb63782c05e9935e0f975116d65c5258225",
+    "tasks/ts-crlf-export/checker.py": "062a23648aa4c958ff6e00655e0d4d57b7f450b99fdb529e9bc5ee108c0184b2",
+    "tasks/ts-crlf-export/precursors/p01/followup.txt": "9a85b57d4d3b6efbb192ec19a1e34a668d719ebeeca80b41c441878368628a99",
+    "tasks/ts-crlf-export/reference/informed.py": "b27c981138a15d800f456dbbfb233d94ebc60ae5b41b560e37fe1594e1272158",
+    "tasks/ts-crlf-export/reference/naive.py": "a603df644a612c5763067b56b0a3647baefe7c3a8c133c0984fed34bddca285b",
+    "tasks/ts-crlf-export/task.json": "3bdd5a8dd5b530164f7f6e15994641f8f3f98c180c852f72631ab87ef8de557c",
+    "tasks/ts-csv-quote/checker.py": "8e351e7b874167b19462ed5902583de8db3d8d2b08b4d52e2572194e9fc05b4f",
+    "tasks/ts-csv-quote/precursors/p01/followup.txt": "bc7870cca8ae50654eb3db63fab550e25df42f82781927302c79f4fca7c89c2d",
+    "tasks/ts-csv-quote/reference/damaged_adjacent.py": "f0ae6c07b7e8c06a2dcd8092ab4177b71ee7a6d2caf46f99f14b8d3570a33d0f",
+    "tasks/ts-csv-quote/reference/damaged_contradictory.py": "23af230ca1b7d0b6771aa69a8bf06c80d31334bea16717400286a20546db4734",
+    "tasks/ts-csv-quote/reference/damaged_contradictory__pipe.py": "256af85af74a5b7039ada85512753ec24eb38437b5987a05ceb354fdc8b540c2",
+    "tasks/ts-csv-quote/reference/damaged_superseded.py": "9577efca67080cf339cdb1189a938d65f4859377e2d5f0e7228d21694cb200b7",
+    "tasks/ts-csv-quote/reference/informed.py": "bdb4b36b6852e385350e37c4f84429ffcb4c54317a9cb506dec666d5904cddd1",
+    "tasks/ts-csv-quote/reference/naive.py": "095f4bf5db91c6eac2bc763b90805a360b3729677da007952cc85cca43ac053b",
+    "tasks/ts-csv-quote/task.json": "19342d0eb790d8d101b6aa5d13e68a174be79761198d062693b9c4ffb5b422cc",
+    "tasks/ts-dedup-order/checker.py": "8737ce571073e3f9a1ce48c59edebfef0fb2593524d2172e41980239ed0d7de1",
+    "tasks/ts-dedup-order/precursors/p01/followup.txt": "9ba5b41768b14c141c1051fa186b2037b6cb5489635f315ddb167d3ea0f40b85",
+    "tasks/ts-dedup-order/reference/damaged_adjacent.py": "b74626a4e42cd77391710cfc8630bc4594f4bf41b148b3e1690ec8fb12fbbf46",
+    "tasks/ts-dedup-order/reference/damaged_contradictory.py": "07b35429ade06ffe7935ddd5220ffc0ee24eaed4e3756706be63ab19086a3d36",
+    "tasks/ts-dedup-order/reference/informed.py": "973052684c34e56cfd1e6110db9bb00adab9ee9aa90724dea5a9919469e2ddf3",
+    "tasks/ts-dedup-order/reference/naive.py": "89a0cee383db684938b133d76b084e591f94793428f142bd9a6150c310cfacbb",
+    "tasks/ts-dedup-order/task.json": "b376c24e354e3a9872bb78a05f65f2a3095b4e702e1512086b5e54f6099b4189"
+  },
+  "tasks": [
+    {
+      "arm": "matched",
+      "key": "073cc6517d9fe0964b4cfffec48b1ebcabb99aa93408d1019b09936f203bb2da",
+      "request": "17c81e906a6081b3a24b9c6c5cc9a8637b94b967ccc2559e0f487adf0230126c",
+      "swap": 0,
+      "t": "ts-csv-quote"
+    },
+    {
+      "arm": "none",
+      "key": "147bb4a06705fe53d3660dfd2026c1ed253f2fbe54754167749bcaee12c9d452",
+      "request": "624eafb894002f2078f02dad008a8a97f5e0432a9e13170e72b1514a1963ec4e",
+      "swap": 0,
+      "t": "ts-casefold-sort"
+    },
+    {
+      "arm": "none",
+      "key": "17d9c9054c98429ac8d9a7ed31cf8d856dc1177124e8bc05a95073cc7ad1d08f",
+      "request": "5c325a187a133624a9ced3d70d95d1f3d9f097ebaff94b9840828237fd22244a",
+      "swap": 0,
+      "t": "ts-crlf-export"
+    },
+    {
+      "arm": "matched",
+      "key": "267d0c3e3b0224b7aeddce8fc11a07e73935eef5a1aac845dca52ac46b6ad6e8",
+      "request": "97eab64ff4a19137a865adb7ab54dfaf0a8967baf5e3362016a57a4e608eff18",
+      "swap": 1,
+      "t": "ts-dedup-order"
+    },
+    {
+      "arm": "mismatched",
+      "key": "27e1f3a5e150edd01f53b1c97c950a2e7246736c2562e472ddb39ce17607cfdb",
+      "request": "1e241732514f161b784ae63dc685ac4a0299ee157dae8e711374af6c6fd8f792",
+      "swap": 1,
+      "t": "ts-dedup-order"
+    },
+    {
+      "arm": "mismatched",
+      "key": "408a7f07d8da6396e15533e4b7ab659734500c04f804838e7ee8904996333cce",
+      "request": "e4268a956a5616ab21d59d90148f21e9cf38cfd133e6037862f0e4ec30685d1a",
+      "swap": 0,
+      "t": "ts-csv-quote"
+    },
+    {
+      "arm": "matched",
+      "key": "49e0dd2a8b51e57ee82937c0af3b992aa48b437cff1b18653f92029269aad5df",
+      "request": "af22d1d3342c2cd4857b86e11e6cf3ed9eca6feb6b835a3bfa2acb6692da7cfa",
+      "swap": 0,
+      "t": "ts-casefold-sort"
+    },
+    {
+      "arm": "mismatched",
+      "key": "4eeb47011798a0929388ec6eddb78234fac6cd9d45fb3c3fe6b217786a82f96c",
+      "request": "1c525a2563792f2cd8eb040d2d5e6165af83545f02e52413b67c2e3157b0c885",
+      "swap": 1,
+      "t": "ts-crlf-export"
+    },
+    {
+      "arm": "mismatched",
+      "key": "59e8a80b89c5e573adad872a091c6bf231293ee0621419816f96f4b887bbc754",
+      "request": "09e5e4d3df5ca96a6e79d249e985e32006f53a717f45e3b45c02a1b1184b015c",
+      "swap": 0,
+      "t": "ts-dedup-order"
+    },
+    {
+      "arm": "matched",
+      "key": "636b0301c3ef68b69a5dd6fb2bd6929ca75a4b82676e5e983e4966703874119b",
+      "request": "78c8bcd46217a8b3366913b92d52eef96c90a15a7bd1a316469907e628c9f5e2",
+      "swap": 1,
+      "t": "ts-casefold-sort"
+    },
+    {
+      "arm": "none",
+      "key": "781c728311a93efb0c808fe92bb2995bd86873eb827461971ccc71d243f9bdac",
+      "request": "a4b7648c32a95ada13c105938fc4ba1a3b4db4fc57b1aa7bd0cd4e1bfe27c9bd",
+      "swap": 0,
+      "t": "ts-dedup-order"
+    },
+    {
+      "arm": "none",
+      "key": "812ef94396fc2b1dd9cb083d2f1da80e3c9dbb87a99c99f3afd27b40f3113a33",
+      "request": "c928ecebae6fa61d4ca9d1ea4cbef05cd622d164d51eb3350113a70aca8bb969",
+      "swap": 1,
+      "t": "ts-casefold-sort"
+    },
+    {
+      "arm": "mismatched",
+      "key": "81596b936502d981611eab3076a20802aa5ec26b057a712c8cda0008034925b3",
+      "request": "eb22a53247734e1a9cec338465a54e991837175c1b10bece8abaa0fdce9ded26",
+      "swap": 1,
+      "t": "ts-csv-quote"
+    },
+    {
+      "arm": "matched",
+      "key": "82441590dc49ff656e6d78b634b9e42ce7a252fd5b5f7436ab7b8eaa0b0e6e98",
+      "request": "b5f5b3a567d3c81bddf0d9213ba4034734caf8ce9fabd6bfc249674731898378",
+      "swap": 1,
+      "t": "ts-crlf-export"
+    },
+    {
+      "arm": "none",
+      "key": "97dc75bf78f7ebff39e67d18b635c0b786c6220c4c0506abbe50b5ce7cdad373",
+      "request": "cd8100c6307a4dad1f66cacb8c29e6308222f14f75376a9f3fb3df9a1762c0a2",
+      "swap": 1,
+      "t": "ts-crlf-export"
+    },
+    {
+      "arm": "mismatched",
+      "key": "9b45132434e791632645c855bbbbb01c7820911c97c9935711d9869fa3c6c8f3",
+      "request": "525fa6a8a6431371abc69a5e8e71f566c654f14d6bd70b4579f50040e0b3a863",
+      "swap": 1,
+      "t": "ts-casefold-sort"
+    },
+    {
+      "arm": "matched",
+      "key": "9ecc8eb902e586416020feab50ba6d1805aa41810d6306f8d53c1ca63a9c5780",
+      "request": "5e10be340bd88b9a020c5f5aa36c0a4aca241bf9c75332330719ef8f09a27fb2",
+      "swap": 0,
+      "t": "ts-crlf-export"
+    },
+    {
+      "arm": "none",
+      "key": "a014cb1b1d7a6220dba16a9de2f5bcd508c71f9e720328f3270a637401e59f37",
+      "request": "d23786eeafe620197d38feebcf166351eed913ec1b4e84e177d1b55116ba1e75",
+      "swap": 1,
+      "t": "ts-csv-quote"
+    },
+    {
+      "arm": "matched",
+      "key": "ab3f0a0734bc7ebe3d951627032e1f579035f80c3cc9c2d32f6cabb03204ad5d",
+      "request": "05d2750ec8f2c0d0d650354a90414530d34b6dbe315934fc26f4cd99ec459d07",
+      "swap": 1,
+      "t": "ts-csv-quote"
+    },
+    {
+      "arm": "none",
+      "key": "b4d2ada7766a83eadcd11e85dbcdea4006f166c77c199586a47c60cf040bb208",
+      "request": "97cd96cec1be2efe6bb860e44a6c0916d2683a1c5c1054216cc204a7885b5a4d",
+      "swap": 0,
+      "t": "ts-csv-quote"
+    },
+    {
+      "arm": "mismatched",
+      "key": "b4ea7002abd72ed23b3300cd915acf27e8411ec519bf12ed8cd7bd36e4b9c500",
+      "request": "ccae890031833db15786d0123eeb37870e0dd3eeb453185fb8a12824936a10d5",
+      "swap": 0,
+      "t": "ts-casefold-sort"
+    },
+    {
+      "arm": "mismatched",
+      "key": "b72ecc755029a8ce4a49fefd28bdb8bfe536e812e47a70effd2ce3b0c04e3c94",
+      "request": "1701595023d12c8cc7abb530528a57ae493368c452f7a1d519b500640e7264d8",
+      "swap": 0,
+      "t": "ts-crlf-export"
+    },
+    {
+      "arm": "none",
+      "key": "d19dc0a95122fd0269c610fa8eb792fe63c52ee5bcfcc599341ba7d92fa1e83a",
+      "request": "fb8e688f9d05863d6f78d23d5601e12951df26947262994eab1aa622a11fbdfa",
+      "swap": 1,
+      "t": "ts-dedup-order"
+    },
+    {
+      "arm": "matched",
+      "key": "d428ff00e6a7333386081b8779401d7c82b451cab79e06ffc7cc80d13822a8c8",
+      "request": "08cd48ff30c48d078988237902c0f04c30170bc1985110df935993a2f9ee3947",
+      "swap": 0,
+      "t": "ts-dedup-order"
+    }
+  ]
+}
