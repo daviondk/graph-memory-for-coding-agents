@@ -1,0 +1,157 @@
+{
+  "code": "84a292c3aee66cb22630ed0b26cb1a01154a87c18e3cfe3a0b8f26cf33baec18",
+  "corpus_sizes": {
+    "ISETrace": 96,
+    "SQuAD": 528
+  },
+  "receipts_sha": {
+    "promotion-times.json.gz": "98c4c189002eae0c9ec2af91c637cc96b973e77bfb01ecf045e41d87758cdb2c",
+    "responses.json.gz": "d4cb788d6f089501e12409629632f2c00e1e70bc256f1e023b086b40eaaec79b",
+    "schedule.json": "789e800f85f760900dcb3fe2524330b64f5df7915223bb92a0e35e270976428f",
+    "times.json.gz": "59ca49316eb8afb52868ec7a9bcbb7bd103aaa7478194b152342f399a45fdb0d"
+  },
+  "source_sha": {
+    "query-views.sqlite": "ba097e10069dcd64a3e8843f3b78d218f4f246db0975c528a2617317284d4b9e",
+    "terms.sqlite": "7b8b66bc209d4c1a14c2df04a27c40607a4ff68983248373bc58686de9c25646"
+  },
+  "temporal_witness": {
+    "active_articles_per_group": 8,
+    "affine_misses": 48,
+    "capacity": 4,
+    "clock_not_input_to_routing_or_cache": true,
+    "four_workers_each_questions": 132,
+    "groups": 6,
+    "rotate_misses": 528,
+    "rounds_per_group": 11,
+    "same_ordered_episode_question_stream": 528
+  },
+  "timing_panels": {
+    "main": {
+      "answers_checked": 11232,
+      "observed_stable_crossings": {
+        "5": 11,
+        "6": 22,
+        "7": 12,
+        "8": 2,
+        "9": 1
+      },
+      "squad_articles_eager_faster_by_query_count": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 11,
+        "6": 33,
+        "7": 45,
+        "8": 47,
+        "9": 48,
+        "10": 48,
+        "11": 48
+      },
+      "timing_cells": 42
+    },
+    "promotion-": {
+      "answers_checked": 11232,
+      "observed_stable_crossings": {
+        "5": 7,
+        "6": 22,
+        "7": 15,
+        "8": 2,
+        "9": 1,
+        "10": 1
+      },
+      "squad_articles_eager_faster_by_query_count": {
+        "0": 0,
+        "1": 0,
+        "2": 0,
+        "3": 0,
+        "4": 0,
+        "5": 7,
+        "6": 29,
+        "7": 44,
+        "8": 46,
+        "9": 47,
+        "10": 48,
+        "11": 48
+      },
+      "timing_cells": 42
+    }
+  },
+  "total_exact_queries": 624,
+  "worker_decisions_checked": 22176,
+  "worker_lru_decisions_checked": 22176,
+  "worker_wire_bytes_checked": 22176,
+  "workers": {
+    "raw_cache/1/affine": {
+      "mean_payload": 9140.520833333334,
+      "mean_sql_bytes": 9358.8125,
+      "misses": 528
+    },
+    "raw_cache/1/rotate": {
+      "mean_payload": 9140.520833333334,
+      "mean_sql_bytes": 9358.8125,
+      "misses": 528
+    },
+    "raw_cache/4/affine": {
+      "mean_payload": 830.9564393939394,
+      "mean_sql_bytes": 850.8011363636364,
+      "misses": 48
+    },
+    "raw_cache/4/rotate": {
+      "mean_payload": 9140.520833333334,
+      "mean_sql_bytes": 9358.8125,
+      "misses": 528
+    },
+    "raw_cache/8/affine": {
+      "mean_payload": 830.9564393939394,
+      "mean_sql_bytes": 850.8011363636364,
+      "misses": 48
+    },
+    "raw_cache/8/rotate": {
+      "mean_payload": 3323.8257575757575,
+      "mean_sql_bytes": 3403.2045454545455,
+      "misses": 192
+    },
+    "shared_sql/4/affine": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 365.85795454545456,
+      "misses": 528
+    },
+    "shared_sql/4/rotate": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 365.85795454545456,
+      "misses": 528
+    },
+    "term_cache/1/affine": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 365.85795454545456,
+      "misses": 528
+    },
+    "term_cache/1/rotate": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 365.85795454545456,
+      "misses": 528
+    },
+    "term_cache/4/affine": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 86.60037878787878,
+      "misses": 48
+    },
+    "term_cache/4/rotate": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 365.85795454545456,
+      "misses": 528
+    },
+    "term_cache/8/affine": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 86.60037878787878,
+      "misses": 48
+    },
+    "term_cache/8/rotate": {
+      "mean_payload": 0,
+      "mean_sql_bytes": 193.06628787878788,
+      "misses": 192
+    }
+  }
+}
