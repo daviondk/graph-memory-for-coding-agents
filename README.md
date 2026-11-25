@@ -4,6 +4,8 @@
 
 **Отчёт** · [PDF, 4 страницы](docs/report.pdf) · [редактируемый Word](docs/report.docx) · [читать на GitHub](docs/report.md).
 
+[Двадцатая серия](experiments/graph_memory_round20/REPORT_RU.md). Типизированные степени узлов повысили Full Support@2048 с 72,90% до 78,75% при обучении добавленного компонента на исходном train и одном Dense-FT seed. Перенос тех же признаков на необратимое вытеснение ухудшил качество. [Нативные сравнения](experiments/graph_memory_round20/residual_graph/REPORT_RU.md) · [Эксперименты и контроли](experiments/graph_memory_round20/factor_reader/REPORT_RU.md).
+
 [Девятнадцатая серия](experiments/graph_memory_round19/REPORT_RU.md). На ISETrace обучаемая запись инструментальных наблюдений повысила долю полных выдач BM25 с 43,65% до 48,95% на тесте и с 43,97% до 50,34% на отложенных траекториях. Проверены цена памяти в байтах, перенос на обученный E5, действия читателя и исходный LRE на LoCoMo. [График](experiments/graph_memory_round19/write-read.png) · [Воспроизведение](experiments/graph_memory_round19/REPRODUCE_RU.md).
 
 [Восемнадцатая серия](experiments/graph_memory_round18/REPORT_RU.md) — семь исследований чтения графовой памяти. На 2 000 запросах ISETrace проверены выбор пар «аргумент — результат», перестановка рёбер и шесть бюджетов контекста. В серию также входят прогоны читателя Qwen и анализ переноса на исторических изменениях кода. [Воспроизведение](experiments/graph_memory_round18/REPRODUCE_RU.md).

@@ -1,0 +1,51 @@
+"""Render the final Russian report directly from sealed results and topology measurements."""
+from pathlib import Path
+import json
+ROOT=Path(__file__).resolve().parent
+def read(n):return json.loads((ROOT/n).read_bytes())
+def fmt(x,n=2):return f'{x:.{n}f}'.replace('.',',')
+def pp(v):
+    d=v['differences']['full_support'];a,b=d['cluster_ci95']
+    return f"{fmt(d['estimate']*100)} п.п., 95% ДИ [{fmt(a*100)}; {fmt(b*100)}]"
+def main():
+    main=read('results.json');m=main['metrics'];paired=main['contrasts'];ck=read('checkpoint.json');se=read('forecast-seal.json')
+    t=read('topology/results.json');es=read('topology/edge-invariants.json');ts=read('topology/forecast-seal.json');groups=read('topology/strata-results.json')
+    a,b='rgcn/related','rgcn/skip';c=paired[a+' - '+b];d=paired['rgcn/prefix - seed/prefix']
+    def judgment(diff):
+        lo,hi=diff['differences']['full_support']['cluster_ci95']
+        return ('Нижняя граница интервала выше нуля.' if lo>0 else 'Верхняя граница интервала ниже нуля.' if hi<0 else 'Интервал включает ноль.')
+    L=['# Обученный графовый читатель и комплектование контекста в ISETrace','',
+       f"На всех 2 000 тестовых запросах при 2 048 токенах нативный residual R-GCN с обычным последовательным чтением полностью покрыл исходные свидетельства в **{m['rgcn/prefix']['hits']}/2 000 ({fmt(100*m['rgcn/prefix']['full_support'])}%)**. Его точный Dense-FT seed на тех же входных тензорах дал {m['seed/prefix']['hits']}/2 000 ({fmt(100*m['seed/prefix']['full_support'])}%). Парный вклад дообученного графового ранжировщика — **{pp(d)}**. В исходной статье сообщено 77,33 ± 0,53% для R-GCN по пяти семенам обучения. Здесь воспроизведён один seed 13. [Калибровка](results.json) · [Статья авторов, таблица 2](https://arxiv.org/html/2609.25913v3#S7.T2)",'',
+       f"Гипотеза этой серии: при равном лимите чтения стоит предпочитать сопряжённый аргумент или результат ранее выбранного вызова. После R-GCN правило related дало **{m[a]['hits']}/2 000**, пропуск непомещающихся кандидатов с сохранением порядка skip — **{m[b]['hits']}/2 000**. Первичный контраст related − skip составляет **{pp(c)}**, с {c['fs_wins']} выигрышами, {c['fs_losses']} потерями и {c['fs_ties']} совпадениями. {judgment(c)} Средний расход различается на {fmt(c['differences']['tokens']['estimate'])} исходного токена. [Протокол](PROTOCOL_RU.md) · [Поштучные исходы](outcomes.json.gz)",'',
+       '## Сравнение под одинаковым бюджетом','',
+       '| Ранжировщик | Чтение | Полная опора, случаев | FS, % | Coverage, % | Density, % | F1, % | Токенов |',
+       '|---|---|---:|---:|---:|---:|---:|---:|']
+    for method,label in [('seed','Dense-FT seed passthrough'),('rgcn','Residual R-GCN')]:
+        for arm in ('prefix','skip','related'):
+            x=m[method+'/'+arm];L.append('| '+' | '.join([label,arm,str(x['hits']),*[fmt(100*x[k]) for k in ('full_support','coverage','density','f1')],fmt(x['tokens'],1)])+' |')
+    L+=['','prefix завершает чтение при первом переполнении. skip продолжает просматривать список и добавляет всё, что ещё помещается. related после неизменного начального prefix сначала рассматривает комплементарные стороны тех вызовов, которые уже представлены в этом prefix. Все три политики получают идентичные исходные PU, их точные длины и связанные идентификаторы. [Координаты связей](candidate-call-map.json.gz)','',
+        '## Калибровка по опубликованной таблице','',
+        '| Метрика, % | Seed, этот прогон | Seed, статья | R-GCN, этот прогон | R-GCN, статья |','|---|---:|---:|---:|---:|']
+    for met in ('coverage_512','coverage_1024','coverage_2048','full_support_2048','recall_5','mrr'):
+        cells=[]
+        for meth in ('seed','rgcn'):
+            x=main['table2'][meth][met];cells.extend([fmt(100*x['local']),fmt(100*x['pub_mean'])+' ± '+fmt(100*x['pub_sd'])])
+        L.append('| '+' | '.join([met,*cells])+' |')
+    L+=['','В статье ± обозначает выборочное стандартное отклонение между пятью seed. 95% интервалы выше — парный кластерный бутстреп тестовых траекторий внутри одного seed, 10 000 повторов. Число seed и число тестовых траекторий отвечают на разные вопросы об устойчивости. На test измеряется извлечение размеченных участков, отдельно от генерации ответа. [Измерения по запросам](table2-rows.json.gz)','',
+        '## Что происходит при изменении только связей','',
+        f"Заморозили все обученные веса, seed-сигналы, узлы и текст. В одном проходе заменили концы рёбер нативной перестановкой со случайным seed 13, сохранив степень каждого узла по каждому типу и направлению. Из {es['directed_msg_edges']} направленных сообщений в {es['trajectories']} траекториях {es['replaced']} (по мультимножеству) получили иную связь. Изменились {es['changed']} графов. Во втором проходе графовые слои получили ноль сообщений, сохранив обученное преобразование собственного состояния. Нативный контроль был вычислен повторно, число совпадающих prefix-списков с главным прогоном — {ts['native_prefix_agree']}/2 000. [Протокол интервенции](topology/PROTOCOL_RU.md) · [Инварианты](topology/edge-invariants.json)",'',
+        '| Рёбра при фиксированных весах | FS, случаев | Coverage, % | Смена top-1 относительно исходных, % | Среднее абсолютное смещение позиции |','|---|---:|---:|---:|---:|']
+    for key,label in [('native','Исходные'),('random','Переставленные'),('empty','Без сообщений')]:
+        v=t['metrics'][key];L.append(f"| {label} | {v['hits']} | {fmt(100*v['coverage'])} | {fmt(100*v['top1_changed'])} | {fmt(v['mean_abs_rank_delta'])} |")
+    L+=['',f"Исходная топология минус переставленная: **{pp(t['paired_native_minus']['random'])}**. Исходная минус отсутствие сообщений: **{pp(t['paired_native_minus']['empty'])}**. Это чувствительность одной обученной функции при смене её входа. В опубликованном контроле альтернативные модели обучались на соответствующей иной топологии. [Все сравнения](topology/results.json)",'',
+        '| Число событий с gold | Вопросов | R-GCN prefix | Точный seed | Исходные рёбра в повторе | Перестановка | Пустые рёбра |','|---|---:|---:|---:|---:|---:|---:|']
+    for name,lab in [('single','Одно'),('multiple','Два и более')]:
+        x=groups[name];z=x['fs_hits'];L.append('| '+' | '.join([lab,str(x['n']),*[str(z[k]) for k in ('rgcn','seed','native','random','empty')]])+' |')
+    L+=['','Группы назначены до новых исходов. Число событий отличается от смысловых категорий Direct/Linked/Multi-fact из статьи. [Парные интервалы внутри групп](topology/strata-results.json)','',
+        '## Обучение, входы и расходы','',
+        f"Обучены все 15 эпох, {ck['global_steps']} обновлений AdamW, {read('pair-inventory.json')['total']} нативных пар. Выбрана эпоха {ck['epoch']} по dev node Recall@5 = {fmt(100*ck['metric'])}%. Для выбора использованы стандартные 500 из 580 dev-вопросов. Train содержит 3 894 вопроса на 2 410 траекториях; test — 2 000 вопросов на 1 207 траекториях. Каждый из {se['candidate_occurrences']} экземпляров PU-кандидата был доступен обоим сравниваемым ранжировщикам. На каждом из {se['queries']} test-запросов нулевая инициализация точно воспроизвела входной cosine в native FP32. У автономного Dense-FT из R19 сравнение top-1 совпало в {se['standalone_dense_top1_equal']}/2 000, весь порядок — в {se['standalone_dense_complete_order_equal']}/2 000. [Checkpoint](best.pt) · [Метрики обучения](checkpoint.json) · [Фиксация прогнозов](forecast-seal.json)",'',
+        f"Графовый fit с нативным dev-loop занял {fmt(ck['fit_seconds']/60,1)} мин, материализация train/dev-тензоров — {fmt(ck['materialize_seconds']/60,1)} мин. Два разделённых E5 закодировали {sum(read('cost-'+k+'.json')['encoded'] for k in ('dev','ft','base'))} новых ключей «исходная строка, веса энкодера». По сохранённым записям нижняя граница объёма составляет {sum(read('cost-'+k+'.json')['tokens'] for k in ('dev','ft','base'))} токенов без паддинга. Бюджеты считают потоки CPU и GPU отдельно, часть времени которых пересекается. Сумма зарегистрированных длительностей трёх стадий кодирования не менее — {fmt(sum(read('cost-'+k+'.json')['seconds'] for k in ('dev','ft','base'))/60,1)} мин. Полные счётчики отсутствуют у части операций перед перезапуском. Учтённые длительности включают подготовку батчей и запись в дисковый кэш. Артефакт обученного графового слоя занимает {fmt(ck['bytes']/2**20)} МиБ. [План векторов](vectors-plan.json) · [Аудит повторно использованных данных](source-cache-audit.json) · [Проверка на CPU](direct-embedding-audit.json)",'',
+        'Промежуточная проекция скачанного файла запросов физически разбирает общие записи, включая строки, где рядом с текстом лежит разметка. Для test выбираются только ID и текст вопроса. Обучающие пары строятся только из train, выбор эпохи — только из dev. Test-спаны подключаются после SHA прогнозов. Агрегаты предшествующей работы на этом же benchmark были известны. Один seed, выполненные траектории ISETrace и один бюджет ограничивают выводы о генерации ответов и переносе на другие задачи. [Устройство модели](METHOD_RU.md) · [Проверка и воспроизведение](REPRODUCE_RU.md)']
+    (ROOT/'REPORT_RU.md').write_text('\n'.join(L)+'\n',encoding='utf8')
+if __name__=='__main__':main()
+
