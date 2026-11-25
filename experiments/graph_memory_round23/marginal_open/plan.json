@@ -1,0 +1,23 @@
+{
+  "inputs": {
+    "novelty.py": "b2a4d6a4d87ef609e93f1f0625a2fbdfb732f0f28dc56c52c18de8d8f9e8bbdc",
+    "PROTOCOL_RU.md": "7a799172058f87815a073b12d82f6467b97201b601bd3deca340614ee7102101",
+    "../read_causes/receipt-lock.json": "453f4280002ff3afecb15fb36f942294eccf6ececa3c80d5777974a756119504",
+    "../read_causes/inputs.json": "d12e3139cc8b8814a5a4532f4fd0193b3a6d68c37dbedcae666f2d1f01bd8ad2",
+    "../address_open/read-lock.json": "224e4a586bf297a8aac7fa354f75eb1366441e2d0c4de142f9cb905d2e7de707"
+  },
+  "arms": [
+    "first",
+    "bm25",
+    "first_positive",
+    "max_novelty",
+    "rank_novelty"
+  ],
+  "primary": "union of visible+open: rank_novelty minus bm25",
+  "strong": "rank_novelty minus first_positive",
+  "n": 2000,
+  "clusters": 1207,
+  "read_cap": 256,
+  "visible_cap": 2048,
+  "before_forecast": true
+}
