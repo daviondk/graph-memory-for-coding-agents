@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Execution memory · Provenance explorer</title>
+<style>
+:root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#21322e;background:#f5f5ef;line-height:1.45}*{box-sizing:border-box}body{margin:0}.top{border-bottom:1px solid #c8d2c6;background:#e7eee5}.wrap{max-width:1100px;margin:auto;padding:22px 30px}.top .wrap{display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;letter-spacing:.03em}.mark{display:inline-block;width:13px;height:13px;background:#366a50;border-radius:3px;margin-right:10px}.meta,small{color:#536359}.header{margin:24px 0 20px}h1{font:normal clamp(30px,5vw,51px)/1.08 Georgia,serif;letter-spacing:-.04em;margin:0 0 10px}h2{font-size:18px;margin:0 0 9px}.header p{max-width:760px;font-size:16px;margin:0}.panel{background:#fffefa;border:1px solid #ced4c8;border-radius:7px;padding:18px 20px;margin-bottom:14px}.form{display:grid;grid-template-columns:1fr 2fr;gap:28px}.form label,.sub{display:block;color:#485c4f;font-size:13px;font-weight:600;margin-bottom:5px}select,button{font:inherit;color:inherit}select{max-width:100%;padding:6px;border:1px solid #b4c4b6;border-radius:4px;background:white}.seek{display:flex;align-items:center;gap:12px}.seek input{flex:1;min-width:50px;accent-color:#366a50}button{background:white;border:1px solid #b4c4b6;border-radius:4px;cursor:pointer;padding:4px 9px}button:hover,button:focus-visible{background:#e4ede2}button:disabled{opacity:.4;cursor:default}.checkpoints{display:flex;gap:6px;flex-wrap:wrap;margin-top:6px}.checkpoints button{font-size:12px}.metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 14px}.metric{border-top:3px solid #4c805e;margin:0;padding:12px 15px}.metric:nth-child(2){border-top-color:#ab7246}.metric:nth-child(3){border-top-color:#557f92}.num{font-weight:600;font-size:29px}.grid{display:grid;grid-template-columns:1.35fr 1fr;gap:14px}.grid .panel{min-width:0}.scroller{max-height:370px;overflow:auto}.list{width:100%;border-collapse:collapse;font-size:14px}.list th,.list td{border-bottom:1px solid #e1e6df;padding:6px 5px;text-align:left}.list th{font-weight:600;color:#4d5e52}.list tr.chosen{background:#e9efe7}.current{color:#275538}.stale{color:#804c23}.empty{color:#5d675e}.ledger{font-family:"Courier New",monospace;font-size:13px;line-height:1.7}.footer{font-size:13px;padding:2px 0 18px}.footer a{color:#38624a}.status{min-height:22px;font-size:13px;color:#485c4f}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #598c96;outline-offset:2px}@media(max-width:700px){.wrap{padding:15px}.form,.grid{grid-template-columns:1fr;gap:9px}.metrics{gap:4px}.metric{padding:9px}.metric .sub{font-size:11px}.header{margin:12px 0}.top .meta{font-size:12px}.panel{padding:12px}}
+</style></head><body>
+<header class="top"><div class="wrap"><span class="brand"><span class="mark"></span>Execution memory</span><span class="meta">SQLite provenance explorer</span></div></header>
+<main class="wrap">
+<div class="header"><h1>When does a source stop being unique?</h1><p>Replay a tool history and inspect the evidence connecting one tool output to a later call. A second producer can invalidate a binding that was justified earlier.</p></div>
+<section class="panel form"><div><label for="trace">History</label><select id="trace"></select><button id="example" type="button">Inspect a revoked link</button><div class="status" id="position" aria-live="polite"></div></div>
+<div><label for="step">Event</label><div class="seek"><button id="back" aria-label="Previous event">←</button><input id="step" type="range" min="0" value="0"><button id="forward" aria-label="Next event">→</button></div><div id="stops" class="checkpoints" aria-label="Verified checkpoints"></div></div></section>
+<section class="metrics"><div class="metric panel"><span class="sub">Current provenance</span><span class="num" id="exact">–</span></div><div class="metric panel"><span class="sub">Append-only history</span><span class="num" id="append">–</span></div><div class="metric panel"><span class="sub">Final graph, restricted to this event</span><span class="num" id="final">–</span></div></section>
+<div class="grid"><section class="panel"><h2>Source–consumer links</h2><label for="filter" class="sub">Show</label><select id="filter"><option value="all">All observed links</option><option value="stale">Retained only by append-only memory</option><option value="missing">Current links absent from the final graph</option></select><div class="scroller"><table class="list"><thead><tr><th>Output → call</th><th>At this event</th><th>Final view</th></tr></thead><tbody id="rows"></tbody></table></div><p id="empty" class="empty"></p></section>
+<section class="panel"><h2 id="detailTitle">Link history</h2><p id="detailText"></p><div class="ledger" id="ledger"></div></section></div>
+<div class="footer">96 held-out ISETrace histories. Tool calls are numbered within each history. Counts show distinct links. The ledger shows how many matching values had a single producer at each event. Checkpoint buttons correspond to independent prefix rebuilds. <a href="https://arxiv.org/html/2609.25913v3">Benchmark</a></div>
+</main><script>
+const el=id=>document.getElementById(id);let snap=null;let request=0;let detailRequest=0;let selected="";let cases=[];
+async function fetchJSON(path){const r=await fetch(path);if(!r.ok)throw Error("Data unavailable ("+r.status+")");return r.json()}
+const params=obj=>new URLSearchParams(obj).toString();
+function button(text,click,label){const b=document.createElement("button");b.textContent=text;b.onclick=click;if(label)b.setAttribute("aria-label",label);return b}
+function showError(e){el("position").textContent=e.message}
+async function loadTrace(){
+const id=++request;const t=el("trace").value,step=Number(el("step").value);
+const s=await fetchJSON("/api/view?"+params({t,step}));if(id!==request)return;snap=s;
+el("position").textContent="Event "+(s.step+1)+" / "+s.steps+" · "+s.kind.replaceAll("_"," ")+(s.call===null?"":" "+s.call);
+for(const k of ["exact","append","final"])el(k).textContent=s.edges.filter(e=>e[k]).length;
+el("back").disabled=s.step===0;el("forward").disabled=s.step===s.steps-1;el("stops").replaceChildren();
+for(const c of s.checkpoints)el("stops").append(button("Check "+(c.step+1),()=>jump(c.step),"Go to verified checkpoint "+(c.step+1)));
+renderLinks()}
+function jump(index){el("step").value=index;loadTrace().catch(showError)}
+async function detail(e){
+const id=++detailRequest;selected=e.a+"-"+e.b;for(const tr of el("rows").children)tr.classList.toggle("chosen",tr.dataset.key===selected);
+el("detailTitle").textContent="Output "+e.a+" → call "+e.b;
+el("detailText").textContent=e.exact?e.witnesses+" distinct matching value"+(e.witnesses===1?" currently supports":"s currently support")+" this link.":"This link has lost its last uniquely attributable value.";
+const t=snap.t,step=snap.step;const hist=await fetchJSON("/api/edge?"+params({t,a:e.a,b:e.b,step}));
+if(id!==detailRequest||t!==snap.t||step!==snap.step)return;
+el("ledger").replaceChildren();for(const r of hist.evidence){const line=document.createElement("div");line.textContent="Event "+(r.step+1)+" · value V"+r.value+(r.cause==="match"?" matched in call "+e.b+" after output "+e.a:" also produced by output "+r.other);el("ledger").append(line)}for(const r of hist.windows){const line=document.createElement("div");line.textContent="Event "+(r.start+1)+"–"+(r.end===null||r.end>step?"now":r.end)+" · "+r.count+" witness"+(r.count===1?"":"es");el("ledger").append(line)}
+}
+function renderLinks(){if(!snap)return;const mode=el("filter").value;const keep=snap.edges.filter(e=>mode==="all"||mode==="stale"&&!e.exact&&e.append||mode==="missing"&&e.exact&&!e.final);
+const body=el("rows");body.replaceChildren();for(const e of keep){const tr=document.createElement("tr");tr.dataset.key=e.a+"-"+e.b;
+const td=document.createElement("td");td.append(button(e.a+" → "+e.b,()=>detail(e).catch(showError)));tr.append(td);
+const st=document.createElement("td");st.className=e.exact?"current":"stale";st.textContent=e.exact?"Supported":"Revoked";tr.append(st);
+const f=document.createElement("td");f.textContent=e.final?"Visible":"Absent";tr.append(f);body.append(tr)}
+el("empty").textContent=keep.length?"":"No links match this view at this event.";
+if(keep.length){const e=keep.find(x=>x.a+"-"+x.b===selected)||keep.find(x=>!x.exact)||keep[0];detail(e).catch(showError)}else{++detailRequest;selected="";el("detailTitle").textContent="Link history";el("detailText").textContent="Choose an event with an observed link.";el("ledger").replaceChildren()}}
+function changeTrace(){const c=cases.find(x=>x.t===el("trace").value);el("step").max=c.steps-1;selected="";jump(c.steps-1)}
+async function init(){cases=await fetchJSON("/api/cases");for(const c of cases){const o=document.createElement("option");o.value=c.t;o.textContent=c.t.slice(5)+" · "+c.steps+" events";el("trace").append(o)}el("example").onclick=()=>{const c=cases[0];el("trace").value=c.t;el("step").max=c.steps-1;el("filter").value="stale";selected="14-19";jump(59)};el("trace").onchange=changeTrace;el("step").oninput=()=>loadTrace().catch(showError);el("back").onclick=()=>jump(+el("step").value-1);el("forward").onclick=()=>jump(+el("step").value+1);el("filter").onchange=renderLinks;changeTrace()}
+init().catch(showError);
+</script></body></html>

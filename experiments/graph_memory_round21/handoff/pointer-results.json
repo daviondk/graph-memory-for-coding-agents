@@ -1,0 +1,1458 @@
+{
+  "rag|1024|fill": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 0,
+        "mean_bytes": 514.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      },
+      "paired": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 10,
+        "mean_bytes": 578.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      },
+      "schema_e5": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 0,
+        "mean_bytes": 578.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      },
+      "shuffled": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 23,
+        "mean_bytes": 578.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      }
+    },
+    "n": 49
+  },
+  "rag|1024|one": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -2.2222222222222223,
+          19.565217391304348
+        ],
+        "delta_pp": 8.16326530612245,
+        "losses": 2,
+        "wins": 6
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -2.2222222222222223,
+          19.565217391304348
+        ],
+        "delta_pp": 8.16326530612245,
+        "losses": 2,
+        "wins": 6
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          24.489795918367346
+        ],
+        "delta_pp": 12.244897959183673,
+        "losses": 3,
+        "wins": 9
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 23,
+        "canonical_pair": 15,
+        "changed_nominee": 0,
+        "mean_bytes": 318.734693877551,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 206.73469387755102
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "paired": {
+        "any_pair": 27,
+        "canonical_pair": 16,
+        "changed_nominee": 10,
+        "mean_bytes": 379.7142857142857,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 203.71428571428572
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "schema_e5": {
+        "any_pair": 23,
+        "canonical_pair": 15,
+        "changed_nominee": 0,
+        "mean_bytes": 382.734693877551,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 206.73469387755102
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "shuffled": {
+        "any_pair": 21,
+        "canonical_pair": 14,
+        "changed_nominee": 23,
+        "mean_bytes": 370.0204081632653,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 194.0204081632653
+        },
+        "mean_sql_body_fetches": 2.0
+      }
+    },
+    "n": 49
+  },
+  "rag|1536|fill": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 0,
+        "mean_bytes": 514.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      },
+      "paired": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 10,
+        "mean_bytes": 578.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      },
+      "schema_e5": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 0,
+        "mean_bytes": 578.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      },
+      "shuffled": {
+        "any_pair": 49,
+        "canonical_pair": 49,
+        "changed_nominee": 23,
+        "mean_bytes": 578.5918367346939,
+        "mean_bytes_by_opcode": {
+          "G": 44.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 380.59183673469386
+        },
+        "mean_sql_body_fetches": 4.0
+      }
+    },
+    "n": 49
+  },
+  "rag|1536|one": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -2.2222222222222223,
+          19.565217391304348
+        ],
+        "delta_pp": 8.16326530612245,
+        "losses": 2,
+        "wins": 6
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -2.2222222222222223,
+          19.565217391304348
+        ],
+        "delta_pp": 8.16326530612245,
+        "losses": 2,
+        "wins": 6
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          24.489795918367346
+        ],
+        "delta_pp": 12.244897959183673,
+        "losses": 3,
+        "wins": 9
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 23,
+        "canonical_pair": 15,
+        "changed_nominee": 0,
+        "mean_bytes": 318.734693877551,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 206.73469387755102
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "paired": {
+        "any_pair": 27,
+        "canonical_pair": 16,
+        "changed_nominee": 10,
+        "mean_bytes": 379.7142857142857,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 203.71428571428572
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "schema_e5": {
+        "any_pair": 23,
+        "canonical_pair": 15,
+        "changed_nominee": 0,
+        "mean_bytes": 382.734693877551,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 206.73469387755102
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "shuffled": {
+        "any_pair": 21,
+        "canonical_pair": 14,
+        "changed_nominee": 23,
+        "mean_bytes": 370.0204081632653,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 194.0204081632653
+        },
+        "mean_sql_body_fetches": 2.0
+      }
+    },
+    "n": 49
+  },
+  "rag|256|fill": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -19.230769230769234,
+          -2.127659574468085
+        ],
+        "delta_pp": -10.204081632653061,
+        "losses": 5,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          -19.230769230769234,
+          -2.127659574468085
+        ],
+        "delta_pp": -10.204081632653061,
+        "losses": 5,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 5,
+        "canonical_pair": 1,
+        "changed_nominee": 0,
+        "mean_bytes": 224.91836734693877,
+        "mean_bytes_by_opcode": {
+          "G": 16.387755102040817,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 118.53061224489795
+        },
+        "mean_sql_body_fetches": 1.489795918367347
+      },
+      "paired": {
+        "any_pair": 0,
+        "canonical_pair": 0,
+        "changed_nominee": 10,
+        "mean_bytes": 226.79591836734693,
+        "mean_bytes_by_opcode": {
+          "G": 10.551020408163266,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 62.244897959183675
+        },
+        "mean_sql_body_fetches": 0.9591836734693877
+      },
+      "schema_e5": {
+        "any_pair": 0,
+        "canonical_pair": 0,
+        "changed_nominee": 0,
+        "mean_bytes": 226.22448979591837,
+        "mean_bytes_by_opcode": {
+          "G": 10.551020408163266,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 61.673469387755105
+        },
+        "mean_sql_body_fetches": 0.9591836734693877
+      },
+      "shuffled": {
+        "any_pair": 0,
+        "canonical_pair": 0,
+        "changed_nominee": 23,
+        "mean_bytes": 226.57142857142858,
+        "mean_bytes_by_opcode": {
+          "G": 10.551020408163266,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 62.02040816326531
+        },
+        "mean_sql_body_fetches": 0.9591836734693877
+      }
+    },
+    "n": 49
+  },
+  "rag|256|one": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -16.666666666666664,
+          -1.9221698113207681
+        ],
+        "delta_pp": -8.16326530612245,
+        "losses": 4,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          -16.666666666666664,
+          -1.9221698113207681
+        ],
+        "delta_pp": -8.16326530612245,
+        "losses": 4,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 4,
+        "canonical_pair": 0,
+        "changed_nominee": 0,
+        "mean_bytes": 218.75510204081633,
+        "mean_bytes_by_opcode": {
+          "G": 15.26530612244898,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 113.48979591836735
+        },
+        "mean_sql_body_fetches": 1.3877551020408163
+      },
+      "paired": {
+        "any_pair": 0,
+        "canonical_pair": 0,
+        "changed_nominee": 10,
+        "mean_bytes": 226.79591836734693,
+        "mean_bytes_by_opcode": {
+          "G": 10.551020408163266,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 62.244897959183675
+        },
+        "mean_sql_body_fetches": 0.9591836734693877
+      },
+      "schema_e5": {
+        "any_pair": 0,
+        "canonical_pair": 0,
+        "changed_nominee": 0,
+        "mean_bytes": 226.22448979591837,
+        "mean_bytes_by_opcode": {
+          "G": 10.551020408163266,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 61.673469387755105
+        },
+        "mean_sql_body_fetches": 0.9591836734693877
+      },
+      "shuffled": {
+        "any_pair": 0,
+        "canonical_pair": 0,
+        "changed_nominee": 23,
+        "mean_bytes": 226.57142857142858,
+        "mean_bytes_by_opcode": {
+          "G": 10.551020408163266,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 62.02040816326531
+        },
+        "mean_sql_body_fetches": 0.9591836734693877
+      }
+    },
+    "n": 49
+  },
+  "rag|512|fill": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -23.91304347826087,
+          4.0020408163265015
+        ],
+        "delta_pp": -10.204081632653061,
+        "losses": 8,
+        "wins": 3
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -4.25531914893617,
+          16.666666666666664
+        ],
+        "delta_pp": 6.122448979591836,
+        "losses": 2,
+        "wins": 5
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          21.153846153846153
+        ],
+        "delta_pp": 10.204081632653061,
+        "losses": 1,
+        "wins": 6
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          -26.923076923076923,
+          -6.382978723404255
+        ],
+        "delta_pp": -16.3265306122449,
+        "losses": 8,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 40,
+        "canonical_pair": 40,
+        "changed_nominee": 0,
+        "mean_bytes": 446.6734693877551,
+        "mean_bytes_by_opcode": {
+          "G": 38.83673469387755,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 317.83673469387753
+        },
+        "mean_sql_body_fetches": 3.5306122448979593
+      },
+      "paired": {
+        "any_pair": 35,
+        "canonical_pair": 31,
+        "changed_nominee": 10,
+        "mean_bytes": 462.2040816326531,
+        "mean_bytes_by_opcode": {
+          "G": 33.89795918367347,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 274.3061224489796
+        },
+        "mean_sql_body_fetches": 3.0816326530612246
+      },
+      "schema_e5": {
+        "any_pair": 32,
+        "canonical_pair": 30,
+        "changed_nominee": 0,
+        "mean_bytes": 462.53061224489795,
+        "mean_bytes_by_opcode": {
+          "G": 33.89795918367347,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 274.6326530612245
+        },
+        "mean_sql_body_fetches": 3.0816326530612246
+      },
+      "shuffled": {
+        "any_pair": 30,
+        "canonical_pair": 27,
+        "changed_nominee": 23,
+        "mean_bytes": 460.46938775510205,
+        "mean_bytes_by_opcode": {
+          "G": 34.12244897959184,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 272.3469387755102
+        },
+        "mean_sql_body_fetches": 3.1020408163265305
+      }
+    },
+    "n": 49
+  },
+  "rag|512|one": {
+    "clusters": 42,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -2.2222222222222223,
+          19.565217391304348
+        ],
+        "delta_pp": 8.16326530612245,
+        "losses": 2,
+        "wins": 6
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -2.2222222222222223,
+          19.565217391304348
+        ],
+        "delta_pp": 8.16326530612245,
+        "losses": 2,
+        "wins": 6
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          6.518270120259022,
+          27.083333333333332
+        ],
+        "delta_pp": 16.3265306122449,
+        "losses": 1,
+        "wins": 9
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 21,
+        "canonical_pair": 14,
+        "changed_nominee": 0,
+        "mean_bytes": 310.46938775510205,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 198.46938775510205
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "paired": {
+        "any_pair": 25,
+        "canonical_pair": 15,
+        "changed_nominee": 10,
+        "mean_bytes": 363.8979591836735,
+        "mean_bytes_by_opcode": {
+          "G": 21.551020408163264,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 188.3469387755102
+        },
+        "mean_sql_body_fetches": 1.9591836734693877
+      },
+      "schema_e5": {
+        "any_pair": 21,
+        "canonical_pair": 14,
+        "changed_nominee": 0,
+        "mean_bytes": 366.9183673469388,
+        "mean_bytes_by_opcode": {
+          "G": 21.551020408163264,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 191.3673469387755
+        },
+        "mean_sql_body_fetches": 1.9591836734693877
+      },
+      "shuffled": {
+        "any_pair": 17,
+        "canonical_pair": 11,
+        "changed_nominee": 23,
+        "mean_bytes": 352.18367346938777,
+        "mean_bytes_by_opcode": {
+          "G": 21.551020408163264,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 176.6326530612245
+        },
+        "mean_sql_body_fetches": 1.9591836734693877
+      }
+    },
+    "n": 49
+  },
+  "wiki|1536|fill": {
+    "clusters": 98,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -4.500112612612613,
+          0.0
+        ],
+        "delta_pp": -2.1052631578947367,
+        "losses": 4,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -4.500112612612613,
+          0.0
+        ],
+        "delta_pp": -2.1052631578947367,
+        "losses": 4,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          -0.4878048780487805,
+          5.405405405405405
+        ],
+        "delta_pp": 2.1052631578947367,
+        "losses": 2,
+        "wins": 6
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 183,
+        "canonical_pair": 183,
+        "changed_nominee": 0,
+        "mean_bytes": 1101.278947368421,
+        "mean_bytes_by_opcode": {
+          "G": 40.00526315789474,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 971.2736842105263
+        },
+        "mean_sql_body_fetches": 3.636842105263158
+      },
+      "paired": {
+        "any_pair": 179,
+        "canonical_pair": 179,
+        "changed_nominee": 15,
+        "mean_bytes": 1124.6105263157895,
+        "mean_bytes_by_opcode": {
+          "G": 39.252631578947366,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 931.3578947368421
+        },
+        "mean_sql_body_fetches": 3.568421052631579
+      },
+      "schema_e5": {
+        "any_pair": 183,
+        "canonical_pair": 183,
+        "changed_nominee": 0,
+        "mean_bytes": 1126.5631578947368,
+        "mean_bytes_by_opcode": {
+          "G": 39.310526315789474,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 933.2526315789473
+        },
+        "mean_sql_body_fetches": 3.5736842105263156
+      },
+      "shuffled": {
+        "any_pair": 175,
+        "canonical_pair": 175,
+        "changed_nominee": 73,
+        "mean_bytes": 1130.2842105263157,
+        "mean_bytes_by_opcode": {
+          "G": 39.310526315789474,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 936.9736842105264
+        },
+        "mean_sql_body_fetches": 3.5736842105263156
+      }
+    },
+    "n": 190
+  },
+  "wiki|1536|one": {
+    "clusters": 98,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -14.285714285714285,
+          -2.6455026455026456
+        ],
+        "delta_pp": -7.894736842105263,
+        "losses": 15,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -14.285714285714285,
+          -2.6455026455026456
+        ],
+        "delta_pp": -7.894736842105263,
+        "losses": 15,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          19.607337780473014,
+          36.7816091954023
+        ],
+        "delta_pp": 27.894736842105264,
+        "losses": 8,
+        "wins": 61
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 183,
+        "canonical_pair": 183,
+        "changed_nominee": 0,
+        "mean_bytes": 612.7578947368421,
+        "mean_bytes_by_opcode": {
+          "G": 21.88421052631579,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 500.87368421052633
+        },
+        "mean_sql_body_fetches": 1.9894736842105263
+      },
+      "paired": {
+        "any_pair": 168,
+        "canonical_pair": 168,
+        "changed_nominee": 15,
+        "mean_bytes": 664.3578947368421,
+        "mean_bytes_by_opcode": {
+          "G": 21.768421052631577,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 488.58947368421053
+        },
+        "mean_sql_body_fetches": 1.9789473684210526
+      },
+      "schema_e5": {
+        "any_pair": 183,
+        "canonical_pair": 183,
+        "changed_nominee": 0,
+        "mean_bytes": 673.9473684210526,
+        "mean_bytes_by_opcode": {
+          "G": 21.768421052631577,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 498.17894736842106
+        },
+        "mean_sql_body_fetches": 1.9789473684210526
+      },
+      "shuffled": {
+        "any_pair": 115,
+        "canonical_pair": 115,
+        "changed_nominee": 73,
+        "mean_bytes": 676.978947368421,
+        "mean_bytes_by_opcode": {
+          "G": 21.826315789473686,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 501.15263157894736
+        },
+        "mean_sql_body_fetches": 1.9842105263157894
+      }
+    },
+    "n": 190
+  },
+  "wiki|3072|fill": {
+    "clusters": 98,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          0.0,
+          1.7546439628482933
+        ],
+        "delta_pp": 0.5263157894736842,
+        "losses": 0,
+        "wins": 1
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 190,
+        "canonical_pair": 190,
+        "changed_nominee": 0,
+        "mean_bytes": 1316.6105263157895,
+        "mean_bytes_by_opcode": {
+          "G": 43.76842105263158,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 1182.842105263158
+        },
+        "mean_sql_body_fetches": 3.9789473684210526
+      },
+      "paired": {
+        "any_pair": 190,
+        "canonical_pair": 190,
+        "changed_nominee": 15,
+        "mean_bytes": 1380.6105263157895,
+        "mean_bytes_by_opcode": {
+          "G": 43.76842105263158,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 1182.842105263158
+        },
+        "mean_sql_body_fetches": 3.9789473684210526
+      },
+      "schema_e5": {
+        "any_pair": 190,
+        "canonical_pair": 190,
+        "changed_nominee": 0,
+        "mean_bytes": 1380.6105263157895,
+        "mean_bytes_by_opcode": {
+          "G": 43.76842105263158,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 1182.842105263158
+        },
+        "mean_sql_body_fetches": 3.9789473684210526
+      },
+      "shuffled": {
+        "any_pair": 189,
+        "canonical_pair": 189,
+        "changed_nominee": 73,
+        "mean_bytes": 1380.621052631579,
+        "mean_bytes_by_opcode": {
+          "G": 43.76842105263158,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 1182.8526315789475
+        },
+        "mean_sql_body_fetches": 3.9789473684210526
+      }
+    },
+    "n": 190
+  },
+  "wiki|3072|one": {
+    "clusters": 98,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -14.285714285714285,
+          -2.6455026455026456
+        ],
+        "delta_pp": -7.894736842105263,
+        "losses": 15,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -14.285714285714285,
+          -2.6455026455026456
+        ],
+        "delta_pp": -7.894736842105263,
+        "losses": 15,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          21.92513368983957,
+          39.68445209409062
+        ],
+        "delta_pp": 30.526315789473685,
+        "losses": 8,
+        "wins": 66
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 190,
+        "canonical_pair": 190,
+        "changed_nominee": 0,
+        "mean_bytes": 636.6842105263158,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 524.6842105263158
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "paired": {
+        "any_pair": 175,
+        "canonical_pair": 175,
+        "changed_nominee": 15,
+        "mean_bytes": 691.0947368421052,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 515.0947368421052
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "schema_e5": {
+        "any_pair": 190,
+        "canonical_pair": 190,
+        "changed_nominee": 0,
+        "mean_bytes": 700.6842105263158,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 524.6842105263158
+        },
+        "mean_sql_body_fetches": 2.0
+      },
+      "shuffled": {
+        "any_pair": 117,
+        "canonical_pair": 117,
+        "changed_nominee": 73,
+        "mean_bytes": 707.8,
+        "mean_bytes_by_opcode": {
+          "G": 22.0,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 531.8
+        },
+        "mean_sql_body_fetches": 2.0
+      }
+    },
+    "n": 190
+  },
+  "wiki|768|fill": {
+    "clusters": 98,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -5.714285714285714,
+          -0.4853782655597776
+        ],
+        "delta_pp": -2.6315789473684212,
+        "losses": 5,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -3.6458333333333335,
+          0.0
+        ],
+        "delta_pp": -1.5789473684210527,
+        "losses": 3,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          7.65544136314813,
+          19.444819819819813
+        ],
+        "delta_pp": 13.157894736842104,
+        "losses": 2,
+        "wins": 27
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          -3.4482758620689653,
+          0.0
+        ],
+        "delta_pp": -1.0526315789473684,
+        "losses": 2,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 137,
+        "canonical_pair": 137,
+        "changed_nominee": 0,
+        "mean_bytes": 615.2368421052631,
+        "mean_bytes_by_opcode": {
+          "G": 28.021052631578947,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 497.2157894736842
+        },
+        "mean_sql_body_fetches": 2.5473684210526315
+      },
+      "paired": {
+        "any_pair": 132,
+        "canonical_pair": 132,
+        "changed_nominee": 15,
+        "mean_bytes": 616.2473684210527,
+        "mean_bytes_by_opcode": {
+          "G": 25.3,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 436.94736842105266
+        },
+        "mean_sql_body_fetches": 2.3
+      },
+      "schema_e5": {
+        "any_pair": 135,
+        "canonical_pair": 135,
+        "changed_nominee": 0,
+        "mean_bytes": 618.0894736842105,
+        "mean_bytes_by_opcode": {
+          "G": 25.357894736842105,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 438.7315789473684
+        },
+        "mean_sql_body_fetches": 2.305263157894737
+      },
+      "shuffled": {
+        "any_pair": 107,
+        "canonical_pair": 107,
+        "changed_nominee": 73,
+        "mean_bytes": 627.3789473684211,
+        "mean_bytes_by_opcode": {
+          "G": 25.647368421052633,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 447.7315789473684
+        },
+        "mean_sql_body_fetches": 2.331578947368421
+      }
+    },
+    "n": 190
+  },
+  "wiki|768|one": {
+    "clusters": 98,
+    "contrasts": {
+      "paired minus length_e5": {
+        "ci95_pp": [
+          -7.568436857910542,
+          -0.8580069176581426
+        ],
+        "delta_pp": -3.6842105263157894,
+        "losses": 7,
+        "wins": 0
+      },
+      "paired minus schema_e5": {
+        "ci95_pp": [
+          -5.780346820809249,
+          -0.4878048780487805
+        ],
+        "delta_pp": -2.6315789473684212,
+        "losses": 5,
+        "wins": 0
+      },
+      "paired minus shuffled": {
+        "ci95_pp": [
+          12.790374677002585,
+          27.84090909090909
+        ],
+        "delta_pp": 20.0,
+        "losses": 3,
+        "wins": 41
+      },
+      "schema_e5 minus length_e5": {
+        "ci95_pp": [
+          -3.4482758620689653,
+          0.0
+        ],
+        "delta_pp": -1.0526315789473684,
+        "losses": 2,
+        "wins": 0
+      }
+    },
+    "methods": {
+      "length_e5": {
+        "any_pair": 137,
+        "canonical_pair": 137,
+        "changed_nominee": 0,
+        "mean_bytes": 493.53684210526313,
+        "mean_bytes_by_opcode": {
+          "G": 20.66842105263158,
+          "I": 38.0,
+          "L": 35.0,
+          "M": 11.0,
+          "R": 6.0,
+          "V": 382.86842105263156
+        },
+        "mean_sql_body_fetches": 1.8789473684210527
+      },
+      "paired": {
+        "any_pair": 130,
+        "canonical_pair": 130,
+        "changed_nominee": 15,
+        "mean_bytes": 539.9526315789474,
+        "mean_bytes_by_opcode": {
+          "G": 20.089473684210525,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 365.86315789473684
+        },
+        "mean_sql_body_fetches": 1.8263157894736841
+      },
+      "schema_e5": {
+        "any_pair": 135,
+        "canonical_pair": 135,
+        "changed_nominee": 0,
+        "mean_bytes": 539.6105263157895,
+        "mean_bytes_by_opcode": {
+          "G": 20.089473684210525,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 365.5210526315789
+        },
+        "mean_sql_body_fetches": 1.8263157894736841
+      },
+      "shuffled": {
+        "any_pair": 92,
+        "canonical_pair": 92,
+        "changed_nominee": 73,
+        "mean_bytes": 546.4,
+        "mean_bytes_by_opcode": {
+          "G": 20.205263157894738,
+          "I": 38.0,
+          "M": 75.0,
+          "R": 6.0,
+          "S": 35.0,
+          "V": 372.19473684210527
+        },
+        "mean_sql_body_fetches": 1.8368421052631578
+      }
+    },
+    "n": 190
+  }
+}
