@@ -53,5 +53,15 @@ def verify():
     assert len(rows)==661 and sum(r["base"][0] for r in rows.values())==v["basehits"]
     for k,s in v["summaries"].items():assert sum(r["values"][k][0] for r in rows.values())==s["hits"]
     assert all(x["unequal_final"]==0 for x in load(d/"cost-results.json")["pairs"].values())
+    d=ROOT/"published_reader"
+    for mode in ("test","test-equal-spend"):
+        out=load(d/(mode+"-results.json"));rows=load(d/(mode+"-outcomes.json.gz"))
+        check(d,mode+"-outcomes.json.gz",out["per_query"])
+        assert len(rows)==len({r["t"] for r in rows})==192
+        for method,metrics in out["measures"].items():
+            assert abs(sum(r["scores"][method]["full"] for r in rows)/len(rows)-metrics["full"])<1e-10
+        if mode.endswith("equal-spend"):
+            assert all(r["scores"]["verbatim_core"]["tokens"]==r["cap"] for r in rows)
+            assert all(x["tokens"]<=r["cap"] for r in rows for x in r["scores"].values())
     return len(studies)
 if __name__=="__main__": print("verified completed studies:",verify())
