@@ -1,0 +1,270 @@
+{
+  "candidate_audit": {
+    "every_rank_is_permutation": true,
+    "gold_sha256": "ff409b993352ea55505345776c4877ec578d57b0b85deb6a77cca28a384240e8",
+    "independently_recomputed_scalars": 48000,
+    "matched_candidate_occurrences": 249089,
+    "max_abs_discrepancy": 2.220446049250313e-16,
+    "node_id_token_cost_source_intervals_exact": true,
+    "queries": 2000,
+    "split_sha256": "d27dc88e8d43f4561cdb81d57040e1dc1f232ae95984d75fcbb6559d8c392e58",
+    "trajectories": 1207
+  },
+  "code_sha256": "487c1da2482da2e4a79e041fbb1261eedfab6d41f24942ecbc38bc9b9ac9d59d",
+  "input_sha256": {
+    "metrics-full-rows.json.gz": "9960d583afe394d5ce569b8fdae09421fffd932c49b7f024a6ed62672afc4ba1",
+    "metrics-test-rows.json.gz": "84921adc71915c7231156eaf85055c469a8cee39956767c25b158a13a65aa1d8"
+  },
+  "limits": "One matched R-GCN seed on a previously examined benchmark; adjusts for the specified 16 comparisons only. No model-seed, corpus or earlier analysis selection uncertainty.",
+  "method": "Two-sided Gaussian approximation with paired cluster sandwich SE using G/(G-1); Holm step-down across all 16 contrasts. Optional simultaneous conservative Bonferroni CIs from the same SE. Clusters are 1207 trajectories, estimand is query-weighted.",
+  "r_gcn": {
+    "checkpoint_epoch": 11,
+    "checkpoint_weight_sha": "d496d2adb2c9aee305f3c7f6066b4d744e6985e1e9e3e1cc75f633aa409bc015",
+    "dev_queries": 500,
+    "seed": 13,
+    "train_queries": 3894
+  },
+  "rejected": 1,
+  "rows": [
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -0.5761116898196557,
+        5.283205412252061
+      ],
+      "cluster_SE_pp": 0.9913682381475096,
+      "holm_adjusted_p": 0.2463256870791729,
+      "holm_position": 3,
+      "mean_difference_pp": 2.3535468612162025,
+      "metric": "coverage_512",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.017594691934226636,
+      "z": 2.3740390004970173
+    },
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        0.15694092210201482,
+        5.95581301963764
+      ],
+      "cluster_SE_pp": 0.9811412344527317,
+      "holm_adjusted_p": 0.029418778583111205,
+      "holm_position": 1,
+      "mean_difference_pp": 3.0563769708698274,
+      "metric": "coverage_1024",
+      "reject_FWER_05": true,
+      "two_sided_p": 0.0018386736614444503,
+      "z": 3.115124371033734
+    },
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -1.2747313734278956,
+        3.4737114239409976
+      ],
+      "cluster_SE_pp": 0.8034136552035026,
+      "holm_adjusted_p": 1,
+      "holm_position": 10,
+      "mean_difference_pp": 1.0994900252565512,
+      "metric": "coverage_2048",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.17114844341630192,
+      "z": 1.3685229497102003
+    },
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -2.014410716591026,
+        3.3144107165910257
+      ],
+      "cluster_SE_pp": 0.9016109255715986,
+      "holm_adjusted_p": 1,
+      "holm_position": 14,
+      "mean_difference_pp": 0.65,
+      "metric": "full_support_2048",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.4709514678903256,
+      "z": 0.7209318138951304
+    },
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -4.564545273788375,
+        0.587431776034637
+      ],
+      "cluster_SE_pp": 0.8716897075008195,
+      "holm_adjusted_p": 0.2929246684549637,
+      "holm_position": 4,
+      "mean_difference_pp": -1.988556748876869,
+      "metric": "recall_5",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.022532666804227976,
+      "z": -2.281266753255773
+    },
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -4.109033883872385,
+        0.5902290883534453
+      ],
+      "cluster_SE_pp": 0.7950926656145891,
+      "holm_adjusted_p": 0.32291502589459886,
+      "holm_position": 5,
+      "mean_difference_pp": -1.75940239775947,
+      "metric": "mrr",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.026909585491216574,
+      "z": -2.2128268488044607
+    },
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -0.5525980473142074,
+        2.564305419384908
+      ],
+      "cluster_SE_pp": 0.5273650571266771,
+      "holm_adjusted_p": 0.6212714139866591,
+      "holm_position": 6,
+      "mean_difference_pp": 1.0058536860353504,
+      "metric": "coverage_auc",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.05647921945333264,
+      "z": 1.9073195549126734
+    },
+    {
+      "arm": "degree",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -0.8241174584812511,
+        2.4141174584812513
+      ],
+      "cluster_SE_pp": 0.5478937542400261,
+      "holm_adjusted_p": 1,
+      "holm_position": 9,
+      "mean_difference_pp": 0.795,
+      "metric": "full_support_auc",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.14677672820791896,
+      "z": 1.4510112477969945
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -1.132459065587196,
+        4.71985525894033
+      ],
+      "cluster_SE_pp": 0.9901834019088858,
+      "holm_adjusted_p": 0.7006647792144423,
+      "holm_position": 7,
+      "mean_difference_pp": 1.7936980966765672,
+      "metric": "coverage_512",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.07006647792144423,
+      "z": 1.8114806744070417
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -0.28122251528310205,
+        5.539836155021238
+      ],
+      "cluster_SE_pp": 0.984895095725827,
+      "holm_adjusted_p": 0.11390185122880174,
+      "holm_position": 2,
+      "mean_difference_pp": 2.629306819869068,
+      "metric": "coverage_1024",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.007593456748586783,
+      "z": 2.6696313457946275
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -1.5538149894088782,
+        3.119217493395248
+      ],
+      "cluster_SE_pp": 0.7906545931172759,
+      "holm_adjusted_p": 1,
+      "holm_position": 11,
+      "mean_difference_pp": 0.7827012519931851,
+      "metric": "coverage_2048",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.32220304854098375,
+      "z": 0.9899408146195248
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -2.411091285155759,
+        2.8110912851557592
+      ],
+      "cluster_SE_pp": 0.8835681434930122,
+      "holm_adjusted_p": 1,
+      "holm_position": 16,
+      "mean_difference_pp": 0.2,
+      "metric": "full_support_2048",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.8209253834974994,
+      "z": 0.2263549240348792
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -3.257430167015204,
+        1.7715350068289681
+      ],
+      "cluster_SE_pp": 0.8508766904485006,
+      "holm_adjusted_p": 1,
+      "holm_position": 12,
+      "mean_difference_pp": -0.7429475800931179,
+      "metric": "recall_5",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.38257837885993357,
+      "z": -0.87315540363611
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -2.558596611729357,
+        2.0029544725667887
+      ],
+      "cluster_SE_pp": 0.7717924773280486,
+      "holm_adjusted_p": 1,
+      "holm_position": 15,
+      "mean_difference_pp": -0.277821069581284,
+      "metric": "mrr",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.7188706036291915,
+      "z": -0.3599686155831716
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -0.7509828474849756,
+        2.2889228382931655
+      ],
+      "cluster_SE_pp": 0.5143374033774194,
+      "holm_adjusted_p": 1,
+      "holm_position": 8,
+      "mean_difference_pp": 0.7689699954040949,
+      "metric": "coverage_auc",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.13489639062793357,
+      "z": 1.495069171237828
+    },
+    {
+      "arm": "factor",
+      "bonferroni_simultaneous_95_ci_pp": [
+        -1.1789294461615767,
+        1.9689294461615767
+      ],
+      "cluster_SE_pp": 0.5326025660765099,
+      "holm_adjusted_p": 1,
+      "holm_position": 13,
+      "mean_difference_pp": 0.395,
+      "metric": "full_support_auc",
+      "reject_FWER_05": false,
+      "two_sided_p": 0.4583047613542155,
+      "z": 0.741641188306361
+    }
+  ]
+}

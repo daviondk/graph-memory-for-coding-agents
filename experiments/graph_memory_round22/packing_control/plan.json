@@ -1,0 +1,24 @@
+{
+  "stage": "before 8-shard no-next forecast seal",
+  "protocol": "1b78143c915fb73221bd79b34583cc0145dddd6e3e12f544869a1cbe7ede1a39",
+  "parents": {
+    "fine_train/model.json": "b54f0dbf1cdf0da44773e94ebc93c33dea1ae4a0522b303498afc03d914aebb2",
+    "fine_train/PROTOCOL_RU.md": "e66ae5e0d01f932d895842a6d708b30c911bb519f4c69044caaa0ca3d7469e51",
+    "fine_train/apply.py": "85d5bb527d1dfc415aad45d923f068416a5b3777b800b376214700411004ab2f",
+    "fine_read/reader.py": "89dbb10c323a7740e881382d9abd81480affde2709fd3028e7835db0155f87e9",
+    "render_audit.py": "0acd53ac14ae480eae58fa5fa137a026c8b991c8f826066c99b7219ed2b92b8f",
+    "assess.py": "cd5b6a08e211ac05fe5adc1bd9aba8ca63c78f25b7cee71cca19f2203534ed99",
+    "RENDER_PROTOCOL_RU.md": "15dc674a6fec4917ede248879a5c1a4db1e73732674ec842b05424dc46695ea6",
+    "residual_graph/adjacency_control/plan.json": "f8c93b30c1ab674e13de079a0fff786beba11838b65086daebb4d776121dd5ef",
+    "residual_graph/adjacency_control/full/model-lock.json": "4fef78b768e4de719eb53693def4ba0a23d6dfb5aea84107908cc4100f0eb01f",
+    "residual_graph/adjacency_control/full/train-pairs.json.gz": "1abe62b0906a186777d12b25b7dec3c361e641b4e0497f84ab0ac8b48ff9fd47"
+  },
+  "test": 2000,
+  "clusters": 1207,
+  "seed": 13,
+  "dev": 500,
+  "primary": "strict full_support:ratio-minus-skip",
+  "bootstrap": 10000,
+  "before_forecast": true,
+  "rank_files_present": 0
+}

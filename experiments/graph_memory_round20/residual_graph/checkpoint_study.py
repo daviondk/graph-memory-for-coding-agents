@@ -15,7 +15,7 @@ def h(p):
 def main():
     assert not (ROOT/'results.json').exists(),'Use seal.py for the complete full experiment.'
     panels=ROOT/'cpu_fallback'
-    input_mans=[panels/'MANIFEST_SHA256.json',ROOT/'evidence_flow/MANIFEST_SHA256.json',ROOT/'adjacency_control/MANIFEST_SHA256.json']
+    input_mans=[panels/'MANIFEST_SHA256.json',ROOT/'evidence_flow/MANIFEST_SHA256.json',ROOT/'adjacency_control/MANIFEST_SHA256.json',ROOT/'official_modes/MANIFEST_SHA256.json',ROOT/'serving_cost/MANIFEST_SHA256.json']
     nested={}
     for f in input_mans:
         data=read(f)
@@ -42,7 +42,10 @@ def main():
        '', '## Статус полноразмерного сопоставления',
        '', f"Источник FP32-эмбеддингов полного E5-FT имеет {f['complete']:,} подтверждённых ключей, отсутствующих 0. После восстановления CUDA вычислены {before['new']:,} дополнительных векторов за {before['seconds']:.1f} с. Базовый E5 используется для авторского выбора сложных отрицательных примеров. Этот снимок содержит завершённые прогнозы двух уменьшенных train-панелей и входы полного расчёта. Основная строка статьи составляет 77,33 ± 0,53% Full Support@2048 по пяти семенам, наиболее сильная из опубликованных структурных абляций даёт ещё 1,26 п.п. Полный локальный seed 13 и пятисеменное сравнение остаются отдельными этапами. [Проверка полноты FT](cost-ft.json) · [Процедура восстановления](RECOVERY_RU.md) · [Статья, §7.2](https://arxiv.org/html/2609.25913v3#S7.SS2)",
        '', 'Проверка данного снимка на Python 3.11+ без исходного корпуса: `python -B verify_checkpoint.py`. У каждого включённого вложенного эксперимента сохранены файлы для повторного подсчёта. Полная процедура обучения и бюджетный контроль описаны в отдельном протоколе. [Воспроизведение](REPRODUCE_RU.md)']
+    L.insert(L.index('## Статус полноразмерного сопоставления'), 'По исходным классам ISETrace выигрыш Full Support у rank + degree относительно Dense-FT составил +2,50 п.п. на Direct, +4,86 на Linked и +12,58 на Multi-fact. Разность эффектов Multi-fact и Direct равна +10,09 п.п. [5,86;14,37]. [По классам и двум бюджетам](official_modes/REPORT_RU.md)')
+    L.insert(L.index('## Статус полноразмерного сопоставления'), '')
     L[2]=L[2].replace('101 равновероятно отобранном по хешу train-вопросу внутри 64 траекторий','101 train-вопросе из 64 траекторий, выбранных по SHA-256')
+    L.extend(['', 'На 96 запросах оба читателя получают один вектор cosine. Медианное время тёплого CPU-ранжирования и формирования prefix составило 0,062 мс у ранга со степенями и 7,538 мс у малого нативного R-GCN. Интервал начинается после получения результата Dense-FT. [Раздельный учёт обслуживания и памяти](serving_cost/REPORT_RU.md)'])
     (ROOT/'REPORT_RU.md').write_text('\n'.join(L)+'\n',encoding='utf8')
     exclude={'MANIFEST_SHA256.json','MANIFEST_FULL_SHA256.json'}
     included={p.name:h(p) for p in sorted(ROOT.iterdir()) if p.is_file() and p.suffix in {'.py','.md','.ps1'} and p.name not in exclude}

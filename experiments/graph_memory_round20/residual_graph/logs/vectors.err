@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round20\residual_graph/vectors.py", line 58, in <module>
+    else:encode(sys.argv[1])
+         ^^^^^^^^^^^^^^^^^^^
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round20\residual_graph/vectors.py", line 47, in encode
+    ss=[s for _,s in batch];v=m.encode(ss,batch_size=64,normalize_embeddings=True,show_progress_bar=False)
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\CodexResearch\x20-isetrace-runtime\dense-venv\Lib\site-packages\sentence_transformers\SentenceTransformer.py", line 397, in encode
+    embeddings = embeddings.cpu()
+                 ^^^^^^^^^^^^^^^^
+RuntimeError: CUDA error: an illegal memory access was encountered
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+encoder failed at ft
+D:\CodexResearch\x20-bench-workspace\work\graph_memory_round20\residual_graph\run_vectors.ps1:17 знак:23
++     if($LASTEXITCODE){throw "encoder failed at $mode"}
++                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : OperationStopped: (encoder failed at ft:String) [], RuntimeException
+    + FullyQualifiedErrorId : encoder failed at ft
+ 

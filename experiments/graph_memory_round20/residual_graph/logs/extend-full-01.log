@@ -1,0 +1,39 @@
+canonical {'rate': 0.494, 'lower': -0.039460705796423606, 'meets_rate': True, 'meets_margin': False, 'met': False} {'gate25': (487, 1528), 'gate50': (988, 1559), 'gate75': (1457, 1573), 'margin25': (562, 1545), 'margin50': (1022, 1576), 'margin75': (1557, 1595), 'random25': (487, 1523), 'random50': (988, 1539), 'random75': (1457, 1579), 'always_graph': (2000, 1611), 'always_dense': (0, 1503), 'oracle25': (487, 1735), 'oracle50': (988, 1735), 'oracle75': (1457, 1735)}
+canonical {'always_dense': {'rate': 0.0, 'fs': {'delta': np.float64(-0.054), 'ci': [-0.0726917093363556, -0.0352806579621096]}, 'met': False}, 'random50': {'rate': 0.494, 'fs': {'delta': np.float64(-0.036), 'ci': [-0.049426339804118244, -0.022533800701051578]}, 'met': False}, 'margin50': {'rate': 0.511, 'fs': {'delta': np.float64(-0.0175), 'ci': [-0.029073046206288037, -0.006069649376112308]}, 'met': False}}
+canonical 96 queries, 48 calls, median fraction 0.625, score delta 6.32e-06, top10 match 95
+availability 2000 out-of-split routing decisions and all marginal totals verified
+canonical 2000 out-of-split routing decisions and all marginal totals verified
+hash64 2000 out-of-split routing decisions and all marginal totals verified
+rgcn 1 235 10.6
+rgcn 0 256 11.1
+rgcn 2 235 12.4
+rgcn 3 255 9.8
+rgcn 4 249 9.4
+rgcn 5 267 10.9
+rgcn 7 183 8.7
+rgcn 6 320 14.6
+rgcn {'skip': 1611, 'U': 1611, 'W': 1623, 'F': 1623, 'W0': 1611, 'F0': 1611} {'chars_added': 1856, 'event_added': 1605, 'whole_added': 1325, 'window_added': 1656, 'intrinsic_overlap': 1338, 'render_overflow': 13, 'rerender_diff': 115, 'mean_true_saved': 64.7335, 'true_saved_quantiles': [0.0, 0.0, 64.0, 128.0, 192.0, 193.0], 'mean_native_minus_U': 64.7445, 'mean_raw_render': 2040.0895, 'base_fallback': 2, 'base_infeasible': 2, 'dup_infeasible': 13} {'F-skip': (12, 0, {'mean': np.float64(0.006), 'ci': [0.002976190476190476, 0.009533366783743101]}), 'W-skip': (12, 0, {'mean': np.float64(0.006), 'ci': [0.002976190476190476, 0.009533366783743101]}), 'F-W': (0, 0, {'mean': np.float64(0.0), 'ci': [0.0, 0.0]}), 'F-F0': (12, 0, {'mean': np.float64(0.006), 'ci': [0.002976190476190476, 0.009533366783743101]}), 'W-W0': (12, 0, {'mean': np.float64(0.006), 'ci': [0.002976190476190476, 0.009533366783743101]}), 'F0-skip': (0, 0, {'mean': np.float64(0.0), 'ci': [0.0, 0.0]}), 'U-skip': (0, 0, {'mean': np.float64(0.0), 'ci': [0.0, 0.0]})}
+rgcn {'F': (1623, 2048, 2), 'F0': (1611, 2048, 13), 'U': (1611, 2048, 2), 'W': (1623, 2048, 2), 'W0': (1611, 2048, 13), 'skip': (1611, 2048, 13)} {'skip-in-U': 0, 'U-in-W': 0, 'W-in-F': 0, 'skip-in-W0': 0, 'W0-in-F0': 0, 'skip-in-F': 0}
+rgcn 12000 literal documents verified 353e3e09adfd1bfac0f391caa74996bed6d16fe10b103ac4239336adcd8605f8
+rgcn {'n': 1875, 'tr': 1162, 'win': 12, 'lose': 0, 'full_support': {'mean': np.float64(0.0064), 'ci': [0.0031746031746031746, 0.010215191136407016]}, 'coverage': {'mean': np.float64(0.007448747984777833), 'ci': [0.00447628780510266, 0.010871717726221983]}, 'full_support_counts': {'F': 1509, 'skip': 1497}}
+dense 2000 questions; both 12,000-cell panels, literal-render hashes and means verified
+hash64 2000 questions; both 12,000-cell panels, literal-render hashes and means verified
+availability 2000 questions; both 12,000-cell panels, literal-render hashes and means verified
+rgcn 2000 questions; both 12,000-cell panels, literal-render hashes and means verified
+full 516 {'rgcn/prefix minus seed/prefix': {'event': {'difference': 0.08042635658914743, 'ci95': [0.05159466643244303, 0.10855804303542423]}, 'pair': {'difference': 0.12467700258397918, 'ci95': [0.08234935207223527, 0.16571449705264255]}, 'all': {'difference': 0.12596899224806202, 'ci95': [0.08349514563106797, 0.16764132553606237]}, 'marginal_square': {'difference': 0.11814569436932904, 'ci95': [0.07574973621030127, 0.15931207587405583]}, 'covariance': {'difference': 0.0065313082146501444, 'ci95': [-0.01577027508665063, 0.02854052961706336]}, 'partner_given_first': {'difference': 0.0837066548774884, 'ci95': [0.04817189417344607, 0.1190698661081258]}}, 'rgcn/related minus rgcn/skip': {'event': {'difference': -0.0001614987080102992, 'ci95': [-0.006310986551320266, 0.006043319363368845]}, 'pair': {'difference': -0.0009689922480621282, 'ci95': [-0.012021286846181862, 0.010051880674448625]}, 'all': {'difference': -0.0019379844961240345, 'ci95': [-0.013566550011289251, 0.009633911368015394]}, 'marginal_square': {'difference': -0.00025938382609214106, 'ci95': [-0.010162835668765788, 0.009769456997115842]}, 'covariance': {'difference': -0.0007096084219699872, 'ci95': [-0.005748509565363235, 0.004289957104855074]}, 'partner_given_first': {'difference': -0.0010364900470587468, 'ci95': [-0.00954702765150708, 0.007405892881979325]}}}
+full {'full_support': {'difference': -0.008499999999999952, 'ci95': [-0.01604030135519346, -0.00099998750624688]}, 'coverage': {'difference': -0.008640008615063977, 'ci95': [-0.015055597519629408, -0.002497209081379308]}, 'tokens': {'difference': -0.24749999999994543, 'ci95': [-0.7287080459615424, 0.3305239926204249]}, 'events': {'difference': 0.6875, 'ci95': [0.5939204705911747, 0.7863305979487762]}}
+availability 516 point estimates and nonlinear decomposition verified
+full 516 point estimates and nonlinear decomposition verified
+hash64 516 point estimates and nonlinear decomposition verified
+train_structural 516 point estimates and nonlinear decomposition verified
+availability 2000 selection and score rows verified
+degree_availability 2000 selection and score rows verified
+degree_hash64 2000 selection and score rows verified
+dense 2000 selection and score rows verified
+full 2000 selection and score rows verified
+hash64 2000 selection and score rows verified
+full {'direct_recall': {'1': 633, '2': 8}, 'linked_recall': {'1': 850, '2': 56}, 'multi_fact_recall': {'1': 1, '2': 420, '3+': 32}} [('direct_recall', {'a': 0.8549141965678627, 'b': 0.8424336973478939, 'estimate': 0.012480499219968855, 'ci95': [-0.015723889466646854, 0.04020194115136032]}), ('linked_recall', {'a': 0.8057395143487859, 'b': 0.7671081677704195, 'estimate': 0.03863134657836642, 'ci95': [0.010340462051834254, 0.06762853641865194]}), ('multi_fact_recall', {'a': 0.6269315673289183, 'b': 0.4922737306843267, 'estimate': 0.13465783664459158, 'ci95': [0.08924199084668186, 0.182648401826484]})] {'estimate': 0.12217733742462272, 'ci95': [0.07110296618769164, 0.1750971461187086]}
+no_next_full {'direct_recall': {'1': 633, '2': 8}, 'linked_recall': {'1': 850, '2': 56}, 'multi_fact_recall': {'1': 1, '2': 420, '3+': 32}} [('direct_recall', {'a': 0.8611544461778471, 'b': 0.8549141965678627, 'estimate': 0.006240249609984372, 'ci95': [-0.014195583596214534, 0.027071022945284358]}), ('linked_recall', {'a': 0.8465783664459161, 'b': 0.8057395143487859, 'estimate': 0.04083885209713023, 'ci95': [0.02008412467209232, 0.0620916782130411]}), ('multi_fact_recall', {'a': 0.6335540838852097, 'b': 0.6269315673289183, 'estimate': 0.0066225165562914245, 'ci95': [-0.026129821287184787, 0.037657831504142376]})] {'estimate': 0.0003822669463070527, 'ci95': [-0.0376762075890534, 0.03730855092766586]}
+17 files and every grouped estimate verified
+files 434 sha256 c5ccad216b3106503d9c95964131e3d8b71979da887d464b4583c55abdd13fb1
+Verified 434 file hashes, 2000 matched test candidate universes, 12000 primary and 6000 topology readings, 4000 Table 2 rows, and the released native checkpoint.

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round22\native_multiseed\qualify.py", line 36, in <module>
+    if __name__=='__main__':replay()
+                            ^^^^^^^^
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round22\native_multiseed\qualify.py", line 27, in replay
+    metrics.measure(13,arm)
+  File "D:\CodexResearch\x20-bench-workspace\work\graph_memory_round22\native_multiseed\metrics.py", line 34, in measure
+    assert len(gold_check)==2000 and all(gold_check[q]==z['full_support_2048'] for q,z in outcomes['graph'].items())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

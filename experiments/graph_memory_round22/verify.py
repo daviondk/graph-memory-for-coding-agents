@@ -15,8 +15,9 @@ def sha(path):
     return hashlib.sha256((ROOT / path).read_bytes()).hexdigest()
 
 def verify():
-    for study in ("observed_flow", "threshold_read", "conditional_lookup/adaptive"):
-        for name, digest in read(f"{study}/MANIFEST_SHA256.json").items():
+    for study in ("observed_flow", "threshold_read", "conditional_lookup/adaptive", "packing_control", "native_readout/no_next"):
+        manifest = read(f"{study}/MANIFEST_SHA256.json")
+        for name, digest in manifest.get("files", manifest).items():
             assert sha(f"{study}/{name}") == digest, (study, name)
 
     lock = read("prefix_read/forecast-lock.json")
@@ -77,6 +78,18 @@ def verify():
         assert both["local"] == both["official"] and both["local"]["n"] == expected
     dev = split["splits"]["dev"]
     assert (dev["local"]["n"],dev["official"]["n"]) == (500,580)
+    graph = read("native_readout/results.json")
+    assert graph["questions"] == 2000 and graph["trajectories"] == 1207 and graph["comparisons"] == 16
+    assert graph["source"] == sha("native_readout/by-query.json.gz")
+    supported = [k for k,v in graph["family"].items() if min(v["simul95_pp"]) > 0 or max(v["simul95_pp"]) < 0]
+    assert supported == ["degree/coverage_1024"]
+    packing = read("packing_control/results.json")
+    assert (packing["n"], packing["clusters"], packing["wins"], packing["losses"]) == (2000,1207,114,70)
+    assert [(packing["summary"][a]["hits"],packing["summary"][a]["max_actual"]) for a in ("ratio","skip")] == [(1682,2048),(1638,2048)]
+    assert packing["summary"]["ratio"]["lost_hits"] == packing["summary"]["skip"]["lost_hits"] == 0
+    comparisons = read("native_readout/no_next/contrasts.json")
+    assert comparisons["N"] == 2000 and comparisons["G"] == 1207
+    assert comparisons["per_query_sha256"] == sha("native_readout/no_next/per-query.json.gz")
     return {"prefix_forecasts": len(prefixes), "main_prefix_panel": len(panel),
             "conditional_lookup_panel": len(active), "source_lookups": stats["executed_indexed_lookups"], "physical_comparisons": native["real_comparisons"]}
 
