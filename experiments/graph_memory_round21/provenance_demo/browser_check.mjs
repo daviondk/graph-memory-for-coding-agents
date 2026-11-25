@@ -44,7 +44,7 @@ try{
     await js("document.querySelector('#stops button:nth-child(2)').click()");
     await poll(checkTotals);
     await js("document.querySelector('#filter').value='stale';document.querySelector('#filter').dispatchEvent(new Event('change'))");
-    await poll(()=>js("document.querySelectorAll('#rows tr').length>0 && [...document.querySelectorAll('#rows tr td:nth-child(2)')].every(x=>x.textContent==='Revoked') && document.querySelector('#ledger').children.length>0"));
+    await poll(()=>js("document.querySelectorAll('#rows tr').length>0 && [...document.querySelectorAll('#rows tr td:nth-child(2)')].every(x=>x.textContent==='No longer unique') && document.querySelector('#ledger').children.length>0"));
     const stale=await js("document.querySelectorAll('#rows tr').length");
     await js("document.querySelector('#rows tr:last-child button').click()");
     await poll(()=>js("document.querySelector('#detailTitle').textContent.includes('→')&&document.querySelector('#ledger').children.length>0"));

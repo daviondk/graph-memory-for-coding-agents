@@ -1,0 +1,214 @@
+{
+  "actions": {
+    "acquisition_selected_max": 4,
+    "cases": 77,
+    "directed_requests": 308,
+    "families": 21,
+    "overlap_counts": {
+      "0": 4,
+      "1": 4,
+      "2": 16,
+      "3": 19,
+      "4": 34
+    },
+    "prompt_keys_used_in_several_cases": 2,
+    "prompt_keys_used_in_several_families": 0,
+    "typed_scalars_by_generator_count": {
+      "0": 4,
+      "1": 871
+    },
+    "unique_prompts": 238
+  },
+  "demo": {
+    "embedded_histories": 96,
+    "exposed_string_fields": {
+      "checkpoint.t": 96,
+      "endpoint.t": 96,
+      "event.kind": 3,
+      "event.t": 96,
+      "reason.cause": 2,
+      "reason.t": 96,
+      "trace.t": 96,
+      "witness.t": 96
+    },
+    "json_values_text_whitelist": {
+      "ambiguous": 553,
+      "match": 1224
+    }
+  },
+  "dp_exhaustive_checks": 189,
+  "overlap": {
+    "normalized_question": {
+      "dev": 500,
+      "test": 2000,
+      "test_seen_in_train_or_dev": 0,
+      "train": 3894
+    },
+    "official_task_key": {
+      "dev": 500,
+      "test": 2000,
+      "test_seen_in_train_or_dev": 0,
+      "train": 3894
+    },
+    "question_id": {
+      "dev": 500,
+      "test": 2000,
+      "test_seen_in_train_or_dev": 0,
+      "train": 3894
+    },
+    "trajectory": {
+      "dev": 331,
+      "test": 1207,
+      "test_seen_in_train_or_dev": 0,
+      "train": 2410
+    }
+  },
+  "prefix": {
+    "100/all": {
+      "fit_2048": 2000,
+      "min_cost_max": 1736,
+      "min_cost_median": 455.0,
+      "n": 2000,
+      "observed_hits_on_budget_feasible": {
+        "append": 1489,
+        "dense": 1458,
+        "exact": 1573,
+        "final": 1573
+      },
+      "visible": 2000
+    },
+    "100/outside_pilot": {
+      "fit_2048": 1845,
+      "min_cost_max": 1736,
+      "min_cost_median": 456,
+      "n": 1845,
+      "observed_hits_on_budget_feasible": {
+        "append": 1376,
+        "dense": 1353,
+        "exact": 1456,
+        "final": 1456
+      },
+      "visible": 1845
+    },
+    "25/all": {
+      "fit_2048": 456,
+      "min_cost_max": 1512,
+      "min_cost_median": 494.0,
+      "n": 2000,
+      "observed_hits_on_budget_feasible": {
+        "append": 359,
+        "dense": 349,
+        "exact": 366,
+        "final": 368
+      },
+      "visible": 456
+    },
+    "25/outside_pilot": {
+      "fit_2048": 431,
+      "min_cost_max": 1512,
+      "min_cost_median": 494,
+      "n": 1845,
+      "observed_hits_on_budget_feasible": {
+        "append": 339,
+        "dense": 332,
+        "exact": 346,
+        "final": 348
+      },
+      "visible": 431
+    },
+    "50/all": {
+      "fit_2048": 960,
+      "min_cost_max": 1545,
+      "min_cost_median": 487.0,
+      "n": 2000,
+      "observed_hits_on_budget_feasible": {
+        "append": 766,
+        "dense": 725,
+        "exact": 780,
+        "final": 785
+      },
+      "visible": 960
+    },
+    "50/outside_pilot": {
+      "fit_2048": 901,
+      "min_cost_max": 1545,
+      "min_cost_median": 493,
+      "n": 1845,
+      "observed_hits_on_budget_feasible": {
+        "append": 719,
+        "dense": 682,
+        "exact": 732,
+        "final": 737
+      },
+      "visible": 901
+    },
+    "75/all": {
+      "fit_2048": 1415,
+      "min_cost_max": 1545,
+      "min_cost_median": 469,
+      "n": 2000,
+      "observed_hits_on_budget_feasible": {
+        "append": 1085,
+        "dense": 1051,
+        "exact": 1122,
+        "final": 1128
+      },
+      "visible": 1415
+    },
+    "75/outside_pilot": {
+      "fit_2048": 1308,
+      "min_cost_max": 1545,
+      "min_cost_median": 471.0,
+      "n": 1845,
+      "observed_hits_on_budget_feasible": {
+        "append": 1003,
+        "dense": 972,
+        "exact": 1038,
+        "final": 1044
+      },
+      "visible": 1308
+    }
+  },
+  "sql": {
+    "family_signed_differences_sorted": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      1,
+      1,
+      1,
+      2
+    ],
+    "mean_return_bytes": {
+      "fifo/normal": 86.24675324675324,
+      "fifo/reverse": 86.24675324675324,
+      "name_index/normal": 86.81818181818181,
+      "name_index/reverse": 86.81818181818181
+    },
+    "paired_family_flip_p_two_sided": 0.125,
+    "positive_hits": {
+      "fifo/normal": 36,
+      "fifo/reverse": 36,
+      "name_index/normal": 41,
+      "name_index/reverse": 39
+    },
+    "positive_primary": {
+      "-1": 1,
+      "0": 38,
+      "1": 6
+    },
+    "token_check": "187 in all normal arms",
+    "verified_lookups": 308
+  }
+}

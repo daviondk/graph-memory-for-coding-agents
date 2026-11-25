@@ -4,6 +4,8 @@
 
 **Отчёт** · [PDF, 4 страницы](docs/report.pdf) · [редактируемый Word](docs/report.docx) · [читать на GitHub](docs/report.md).
 
+[Двадцать вторая серия](experiments/graph_memory_round22/REPORT_RU.md). На 901 вопросе в середине истории текущий граф полностью вернул размеченные свидетельства в 732 случаях, накопление связей без отзыва — в 719. На инструментированных программах поздний отзыв потерял 155 исторических источников. На ContraDoc проверен поиск второй стороны конфликта при двух чтениях. Воспроизведение опубликованной модели ISETrace требует выбора по полному dev из 580 вопросов. [Исходы ContraDoc](experiments/graph_memory_round22/conditional_lookup/REPORT_RU.md) · [Сопоставление с CodeNib и StateFuse](experiments/graph_memory_round22/RELATED_SYSTEMS_RU.md).
+
 [Двадцать первая серия](experiments/graph_memory_round21/REPORT_RU.md). В графе памяти проверены отзыв утративших обоснование связей, запросы к историческому состоянию и стоимость хранения. На 1 845 вопросах точный отзыв выиграл 2,82 п.п. у отдельно обученного append-only читателя; на 27 дополнительных вопросах преимущество не воспроизвелось. [Интерактивное демо](experiments/graph_memory_round21/provenance_demo/explorer.html) · [Исходники SQLite-версии](experiments/graph_memory_round21/provenance_demo/REPORT_RU.md).
 
 [Двадцатая серия](experiments/graph_memory_round20/REPORT_RU.md). Типизированные степени узлов повысили Full Support@2048 с 72,90% до 78,75% при обучении добавленного компонента на исходном train и одном Dense-FT seed. Перенос тех же признаков на необратимое вытеснение ухудшил качество. [Нативные сравнения](experiments/graph_memory_round20/residual_graph/REPORT_RU.md) · [Эксперименты и контроли](experiments/graph_memory_round20/factor_reader/REPORT_RU.md).
