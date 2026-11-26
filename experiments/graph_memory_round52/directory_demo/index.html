@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Second-document retrieval</title><style>
+:root{color-scheme:light;--ink:#1b2d30;--sea:#006d69;--line:#cad7d2;--bg:#f5f7f4}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.48 "Segoe UI",system-ui,sans-serif}
+main{max-width:1180px;margin:auto;padding:32px clamp(12px,4vw,50px) 52px}h1{font-size:clamp(27px,3.8vw,44px);letter-spacing:-.045em;line-height:1.07;margin:0}h2,h3,p{margin:0}h2{font-size:20px}h3{font-size:15px}header p{margin:10px 0 20px;color:#465b58;max-width:85ch}.controls,.panel{background:white;border:1px solid var(--line);border-radius:8px;padding:17px}.controls{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:12px}select,button{font:inherit;color:inherit}label{display:grid;gap:4px;font-size:14px;font-weight:600;min-width:0}select{width:100%;min-width:0;padding:6px;background:white;border:1px solid #94a9a0;border-radius:3px}button{background:var(--sea);color:white;padding:6px 12px;border:0;border-radius:4px;cursor:pointer}select:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #edb44d;outline-offset:2px}.grid{display:grid;grid-template-columns:1.12fr 1fr;gap:14px;margin:14px 0}.panel{min-width:0}.question{font-size:19px;margin:6px 0 13px;line-height:1.35}.name{font-size:clamp(22px,3vw,32px);color:var(--sea);line-height:1.22;margin:5px 0 12px}.prefix{margin-top:5px;color:#485c56}.route{font-weight:650}.small{font-size:14px}.metric{margin:10px 0;color:#425b55}.witness{border-left:3px solid #4e9e91;padding-left:10px;margin-top:7px}.panel,.question,td{overflow-wrap:anywhere}#audit{margin-top:10px}summary{cursor:pointer;font-weight:650}details.panel{margin-top:12px}.scroll{overflow-x:auto;max-width:100%;margin-top:10px}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;border-bottom:1px solid var(--line);padding:6px 8px;vertical-align:top}th{white-space:nowrap}tr.selected{background:#e7f3ed}.foot{margin-top:12px;font-size:14px;color:#485c56}#error{color:#813e20;margin:10px 0}
+@media(max-width:780px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.grid{grid-template-columns:1fr}}@media(max-width:500px){main{padding:20px 10px 35px}.controls,.panel{padding:12px}.controls{grid-template-columns:1fr}.grid{gap:10px}.prefix{font-size:15px}}
+</style></head><body><main>
+<header><h1>Second-document retrieval</h1><p>Compare a question span with links observed in the first passage. Eight selected traces preserve the original choices from BM25 search over 5,989,847 Wikipedia titles.</p></header>
+<section class="controls" aria-label="Retrieval controls">
+<label>Example<select id="example"></select></label>
+<label>Question-span gate<select id="gate"><option value="off">Off</option><option value="0">At least two terms</option><option value="59" selected>Two terms or DF ≤ 59</option><option value="5989">Two terms or DF ≤ 5,989</option></select></label>
+<label>Passage evidence<select id="mode"><option value="href">Verified hyperlinks</option><option value="literal">Literal title mentions</option><option value="none">Ignore passage edges</option></select></label>
+<label>Suppress one edge<select id="suppress"><option value="">Keep every edge</option></select></label>
+</section>
+<p id="error" role="alert" hidden></p>
+<div class="grid">
+<section class="panel"><h2>Question and first read</h2><p id="question" class="question"></p><h3 id="seed"></h3><p id="prefix" class="prefix"></p></section>
+<section class="panel" aria-live="polite"><h2>Selected second document</h2><p class="name" id="selected"></p><p id="route" class="route"></p><p id="evidence" class="witness"></p><p id="counts" class="metric small"></p><button id="reveal" type="button">Audit against annotated titles</button><p id="audit" hidden></p></section>
+</div>
+<details class="panel"><summary>Inspect candidate order</summary><div class="scroll"><table><thead><tr><th>Document</th><th>Route</th><th>BM25</th><th>Page ID</th><th>Link anchor</th><th>Span terms</th><th>Single-term DF</th></tr></thead><tbody id="ranking"></tbody></table></div></details>
+<p class="foot">Direct matches use a title span outside the first title’s occurrence in the question. DF counts directory titles containing the single term. Eligible documents share the same BM25 score function and ties use Wikipedia page ID. The fallback prefers an exact question title when available, otherwise it takes the directory-wide BM25 leader. Suppressing an edge leaves direct question evidence and this fallback intact. These traces replay document retrieval. The audit measures supporting-title coverage.</p>
+</main><script>
+const by=id=>document.getElementById(id), opts=(id,items)=>by(id).replaceChildren(...items.map(([value,label])=>new Option(label,value)));
+const routes={question:"Direct question span",href:"Verified hyperlink",literal:"Literal passage mention",directory:"Baseline title lookup"};
+let state=null, epoch=0;
+function query(){const u=new URLSearchParams({q:by("example").value,gate:by("gate").value,mode:by("mode").value});if(by("suppress").value)u.set("suppress",by("suppress").value);return u}
+async function api(path){const r=await fetch(path);const j=await r.json();if(!r.ok)throw Error(j.error||"Could not read the trace");return j}
+function error(e){by("error").hidden=false;by("error").textContent=e.message}
+async function replay(){
+ const ticket=++epoch;state=null;by("audit").hidden=true;by("audit").textContent="";by("reveal").disabled=true;by("error").hidden=true;
+ try{const r=await api("/api/select?"+query());if(ticket!==epoch)return;
+ const old=r.suppress===null?"":String(r.suppress);opts("suppress",[["","Keep every edge"],...r.edges.map(e=>[String(e.id),e.title])]);by("suppress").value=old;by("suppress").disabled=!r.edges.length;
+ for(const key of ["question","seed","prefix"])by(key).textContent=r[key];
+ by("selected").textContent=r.selected.title;by("route").textContent=routes[r.route];
+ let span="";if("start" in r.witness)span=" · words "+(r.witness.start+1)+"–"+r.witness.end+" in the normalized text";
+ by("evidence").textContent=r.witness.kind+" · "+r.witness.text+span;
+ by("counts").textContent=r.eligible_counts.question+" qualifying question titles · "+r.eligible_counts.links+" eligible passage edges · "+r.eligible_counts.projected+" stored candidates";
+ by("ranking").replaceChildren(...r.ranked.map((c,i)=>{const tr=document.createElement("tr");if(i===0)tr.className="selected";const tier=["Question span","Passage edge","Baseline leader","Other"][c.tier];
+ for(const v of [c.title,tier,c.score.toFixed(3),c.page,c.anchor||"—",c.direct_words||"—",c.direct_words===1?c.df:"—"]){const td=tr.insertCell();td.textContent=v}return tr}));
+ state=r;by("reveal").disabled=false;
+ }catch(e){if(ticket===epoch)error(e)}
+}
+by("reveal").onclick=async()=>{if(!state)return;const ticket=epoch;try{const j=await api("/api/audit?"+query());if(ticket!==epoch)return;
+ by("audit").textContent="Annotated titles: "+j.support.join(" · ")+". Covered "+j.matching_titles.length+" of "+j.support.length+" using the first and selected documents.";by("audit").hidden=false}catch(e){if(ticket===epoch)error(e)}};
+for(const id of ["example","mode","gate","suppress"])by(id).onchange=()=>{if(id==="mode"||id==="example")by("suppress").value="";replay()};
+(async()=>{try{const c=await api("/api/cases");opts("example",c.examples.map(e=>[e.q,e.seed]));by("example").value=c.default_q;await replay()}catch(e){error(e)}})();
+</script></body></html>

@@ -2,7 +2,7 @@
 
 [Краткий отчёт, 4 страницы](report.pdf). Ниже каждому этапу соответствует подробный первичный документ и каталог с кодом и данными. Номера серий — идентификаторы сохранённых комплектов. Часть наборов использовалась повторно для разработки и последующих сравнений.
 
-[Актуальная серия и рукопись ICDE](../experiments/graph_memory_round51/REPORT_RU.md) включают перенос между корпусами, абляцию видимой связи при фиксированных весах, проверяемую SQL-адресацию и стоимость передачи кодовой памяти на SERBench. [Рукопись](../experiments/graph_memory_round51/submission/paper.pdf) · [Сравнения](../experiments/graph_memory_round51/ranker-comparisons.pdf) · [Предыдущая серия](../experiments/graph_memory_round50/REPORT_RU.md).
+[Текущая серия и рукопись ICDE](../experiments/graph_memory_round52/REPORT_RU.md) охватывают поиск в полном каталоге 2Wiki, перенос на HotpotQA, контроль языковых шаблонов, действительные ответы Qwen и минимальную историю адресов SQLite. [Рукопись](../experiments/graph_memory_round52/submission/paper.pdf) · [Демопакет](../experiments/graph_memory_round52/submission/candidate.zip) · [Сравнения](../experiments/graph_memory_round52/graph-read-effects.pdf) · [Предыдущая серия](../experiments/graph_memory_round51/REPORT_RU.md).
 
 | Этап | Вопрос и исход | Первичные материалы |
 | --- | --- | --- |

@@ -2,7 +2,9 @@
 
 Исследование того, какие наблюдения из работы с кодом стоит сохранять, как обновлять их после правок и когда показывать агенту.
 
-**Текущая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round51/submission/paper.pdf) · [LaTeX](experiments/graph_memory_round51/submission/paper.tex) · [Восемь SQLite-консолей и видео](experiments/graph_memory_round51/submission/candidate.zip) · [Предыдущая версия](experiments/graph_memory_round50/submission/paper.pdf).
+**Текущая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round52/submission/paper.pdf) · [LaTeX](experiments/graph_memory_round52/submission/paper.tex) · [Десять SQLite-консолей и видео](experiments/graph_memory_round52/submission/candidate.zip) · [Предыдущая версия](experiments/graph_memory_round51/submission/paper.pdf).
+
+[Поиск и обслуживание следующего чтения](experiments/graph_memory_round52/REPORT_RU.md). На 512 новых вопросах 2Wiki при одинаковом числе входных токенов проверенная ссылка из уже прочитанного источника дала 37,30 Answer F1 против 34,74 у буквального совпадения (+2,57 п.п. [1,00; 4,26]). На 12 000 других вопросах обученная и простая синтаксическая схемы выбрали одинаковые адреса во всех случаях. Компактная история SQLite уменьшила число строк с 5 822 до 4 592, сохранив ID и битовую оценку на всех 80 314 исторических чтениях. [График](experiments/graph_memory_round52/graph-read-effects.pdf) · [Отложенная проверка](experiments/graph_memory_round52/global_confirm/large/RESULTS_RU.md) · [Оператор базы данных](experiments/graph_memory_round52/address_history/REPORT_RU.md).
 
 [Результаты серии о выборе следующего источника](experiments/graph_memory_round51/REPORT_RU.md). На 1 280 новых вопросах HotpotQA ранжирование с наблюдаемой связью подняло Answer F1 с 55,72 до 57,62 относительно обученного гибрида. При неизменных весах вклад признака составил +1,87 п.п. [График сравнений](experiments/graph_memory_round51/ranker-comparisons.pdf) · [Независимая проверка](experiments/graph_memory_round51/baseline/confirm/REPORT_RU.md).
 
