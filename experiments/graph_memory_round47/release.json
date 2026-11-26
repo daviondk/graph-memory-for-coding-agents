@@ -1,0 +1,191 @@
+{
+  "completed": [
+    "coding_memory",
+    "coding_trial",
+    "cold_queries",
+    "edge_placebo",
+    "facet_ablation",
+    "facet_confirmation",
+    "facet_reader",
+    "joint_certificate",
+    "joint_packets",
+    "observed_updates",
+    "paper_demo"
+  ],
+  "manifests": {
+    "coding_memory": "6a488b575eef315f22f25c59748f78fa5f62975fbeeb67cc6e449a41661c8bef",
+    "coding_trial": "428e5f688df11739ed145437fb1c4dcd635b55c00566910fe278ca7191c08bcc",
+    "cold_queries": "1c0e86fa343d0f74a206d8cd30b62b5e6f0a62f39eadd994bf6167e47cc871a1",
+    "edge_placebo": "44152ec1f6c6140f1cdf5959b5fef55ef43d5f3747eaa0dcbdfdcc0e2bb94291",
+    "facet_ablation": "11961a19bd28b6b692db76e1ea2770234ed98bff02e9449cf5d2c434e950d743",
+    "facet_confirmation": "8f25d0dfd0a2fd88ba0beda8a90ad23cbed980f31c290cd304e8b3670614cca2",
+    "facet_reader": "bc49b664345dcb30c91ef75378d19d995c0361e8c66ff6bb920322688418ad5d",
+    "joint_certificate": "81b2311aeeef8c33f3ab01d64123ed265425c12268679c19bbdbba112cd08f80",
+    "joint_packets": "a98fad0a101caabe6653111cf63906de8b719b9dde91d8763050c8281b2760af",
+    "observed_updates": "92febb584e4525f4bb0de34eb2a513b1585483d3540f543234564158ba380588",
+    "paper_demo": "abdb83626413ad9a32cfce393f59d6b15adf3ea57bc71abc76254f9552bf6bc5"
+  },
+  "outcome_checks": [
+    {
+      "equals": 106134,
+      "file": "joint_packets/results.json",
+      "path": [
+        "distinct_checks"
+      ]
+    },
+    {
+      "equals": 1862,
+      "file": "joint_packets/results.json",
+      "path": [
+        "distinct_pairs"
+      ]
+    },
+    {
+      "equals": 17014,
+      "file": "joint_certificate/results.json",
+      "path": [
+        "panels",
+        "primary_main",
+        "methods",
+        "hull_full",
+        "tp"
+      ]
+    },
+    {
+      "equals": 104,
+      "file": "joint_certificate/results.json",
+      "path": [
+        "panels",
+        "primary_main",
+        "methods",
+        "box",
+        "fp"
+      ]
+    },
+    {
+      "equals": true,
+      "file": "coding_trial/grading/scores.json",
+      "path": [
+        "outcomes",
+        "actor_1",
+        "official_exact"
+      ]
+    },
+    {
+      "equals": 485,
+      "file": "coding_trial/suite/summary.json",
+      "path": [
+        "base",
+        "status",
+        "PASSED"
+      ]
+    },
+    {
+      "equals": 486,
+      "file": "coding_trial/suite/summary.json",
+      "path": [
+        "reference",
+        "status",
+        "PASSED"
+      ]
+    },
+    {
+      "equals": 14408,
+      "file": "facet_reader/results.json",
+      "path": [
+        "checks"
+      ]
+    },
+    {
+      "equals": 10000,
+      "file": "edge_placebo/results.json",
+      "path": [
+        "bootstrap"
+      ]
+    },
+    {
+      "equals": 2415,
+      "file": "observed_updates/results.json",
+      "path": [
+        "net_count",
+        "totals",
+        "joint"
+      ]
+    },
+    {
+      "equals": 1862,
+      "file": "demo-isolation.json",
+      "path": [
+        "joint",
+        "pairs"
+      ]
+    },
+    {
+      "equals": 320,
+      "file": "demo-isolation.json",
+      "path": [
+        "weights",
+        "live_boundary_checks"
+      ]
+    },
+    {
+      "equals": 808,
+      "file": "facet_confirmation/results.json",
+      "path": [
+        "native_prefixes"
+      ]
+    },
+    {
+      "equals": 5040,
+      "file": "facet_ablation/results.json",
+      "path": [
+        "native_prefixes"
+      ]
+    },
+    {
+      "equals": 1238,
+      "file": "cold_queries/results.json",
+      "path": [
+        "4",
+        "pairs_faster"
+      ]
+    },
+    {
+      "equals": 5663,
+      "file": "coding_memory/profiles.json",
+      "path": [
+        "actors",
+        0,
+        "source_with_memory"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round39/author_baseline",
+    "graph_memory_round39/provenance_packet_demo/REPORT_RU.md",
+    "graph_memory_round44/sql_flow/REPORT_RU.md",
+    "graph_memory_round45/qwen_panel214",
+    "graph_memory_round45/qwen_panel214/MATCHED_INPUT_RU.md",
+    "graph_memory_round45/qwen_panel214/REPORT_RU.md",
+    "graph_memory_round46/reader_length/REPORT_RU.md",
+    "graph_memory_round46/reader_transfer/REPORT_RU.md",
+    "graph_memory_round46/set_reader/REFERENCES_RU.md",
+    "graph_memory_round46/set_reader/REPORT_RU.md",
+    "graph_memory_round46/set_reader/public-audit.json",
+    "graph_memory_round46/source_sensitivity/REPORT_RU.md",
+    "graph_memory_round46/trust_view/REPORT_RU.md"
+  ],
+  "round": 47,
+  "top_documents": [
+    "check_studies.py",
+    "studies-isolation.json",
+    "portable_inputs/graph_memory_round46/reader_transfer/grading-view.json.gz",
+    "portable_inputs/graph_memory_round46/reader_transfer/manifest.json",
+    "portable_inputs/graph_memory_round46/reader_length/answers.json.gz",
+    "portable_inputs/graph_memory_round46/reader_length/manifest.json",
+    "check_demo_isolation.py",
+    "check_joint_demo.py",
+    "check_weights_isolation.py",
+    "demo-isolation.json"
+  ]
+}

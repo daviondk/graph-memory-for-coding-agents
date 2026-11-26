@@ -1,0 +1,40 @@
+HEAD is now at 329b100 Merge pull request #1914 from pallets/custom-type-value
+Checking patch CHANGES.rst...
+Applied patch to 'CHANGES.rst' cleanly.
+Checking patch docs/advanced.rst...
+Applied patch to 'docs/advanced.rst' cleanly.
+Checking patch examples/aliases/aliases.py...
+Applied patch to 'examples/aliases/aliases.py' cleanly.
+Checking patch src/click/core.py...
+Applied patch to 'src/click/core.py' cleanly.
+Applied patch CHANGES.rst cleanly.
+Applied patch docs/advanced.rst cleanly.
+Applied patch examples/aliases/aliases.py cleanly.
+Applied patch src/click/core.py cleanly.
+Checking patch tests/test_commands.py...
+Applied patch to 'tests/test_commands.py' cleanly.
+Applied patch tests/test_commands.py cleanly.
+============================= test session starts ==============================
+collected 16 items
+
+tests/test_commands.py ................                                  [100%]
+
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_commands.py::test_other_command_invoke
+PASSED tests/test_commands.py::test_other_command_forward
+PASSED tests/test_commands.py::test_forwarded_params_consistency
+PASSED tests/test_commands.py::test_auto_shorthelp
+PASSED tests/test_commands.py::test_no_args_is_help
+PASSED tests/test_commands.py::test_default_maps
+PASSED tests/test_commands.py::test_group_with_args
+PASSED tests/test_commands.py::test_base_command
+PASSED tests/test_commands.py::test_object_propagation
+PASSED tests/test_commands.py::test_other_command_invoke_with_defaults
+PASSED tests/test_commands.py::test_invoked_subcommand
+PASSED tests/test_commands.py::test_aliased_command_canonical_name
+PASSED tests/test_commands.py::test_group_add_command_name
+PASSED tests/test_commands.py::test_unprocessed_options
+PASSED tests/test_commands.py::test_deprecated_in_help_messages
+PASSED tests/test_commands.py::test_deprecated_in_invocation
+============================== 16 passed in 0.04s ==============================

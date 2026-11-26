@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Source weight · Evidence views</title>
+<style>
+:root{color-scheme:light;--ink:#15332e;--muted:#4c665d;--green:#216448;--line:#c7d4c9;--paper:#f2f4ee;--mono:ui-monospace,Consolas,monospace}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.45 Inter,Arial,sans-serif}
+header{background:#183733;color:#fff;padding:22px max(24px,calc((100vw - 1060px)/2));display:flex;align-items:center;justify-content:space-between;gap:16px}
+h1,h2,h3,p{margin:0}h1{font-size:clamp(26px,4vw,36px);line-height:1.05;letter-spacing:-.04em}
+header a{color:#d8ece0;font-size:14px;text-decoration:underline;text-underline-offset:3px}
+main{width:min(100%,1108px);margin:auto;padding:22px 24px 38px}
+.lede{color:var(--muted);max-width:80ch;margin:0 0 16px}.filters{display:grid;grid-template-columns:minmax(100px,1fr) minmax(220px,3fr);gap:14px;margin-bottom:16px}
+label{display:grid;gap:4px;font-weight:650;font-size:13px}select,input,button{min-width:0;color:inherit;font:inherit}
+select,input[type=number]{border:1px solid #a7b9ae;background:white;border-radius:5px;padding:8px 10px;font-size:15px;min-height:40px;width:100%}
+button{cursor:pointer;border:1px solid #a2b9ab;background:white;border-radius:5px;padding:8px 12px;font-weight:600}
+button:hover:not(:disabled){background:#eaf2e9;border-color:var(--green)}button:disabled{opacity:.5;cursor:default}
+:focus-visible{outline:3px solid #ce8931;outline-offset:2px}.card{background:white;border:1px solid var(--line);border-radius:8px;padding:17px 20px;margin-bottom:14px}
+h2{font-size:20px;letter-spacing:-.025em}h3{font-size:15px}.shift{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:start}
+.numrow{display:flex;gap:8px;align-items:flex-end}.numrow label{max-width:210px;width:100%}.scale{margin-top:14px}.scale input{display:block;width:100%;margin:0;accent-color:var(--green)}
+.labels,.row{display:flex;justify-content:space-between;gap:10px}.labels{font:12px var(--mono);color:var(--muted);margin-top:5px}
+.limits{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:8px 0}.limit{border-left:2px solid #afc2b4;padding-left:8px}
+.small{font-size:12px;color:var(--muted)}.value{display:block;font:600 15px/1.5 var(--mono);overflow-wrap:anywhere}
+.buttons{display:flex;gap:7px;flex-wrap:wrap}.buttons button{font-size:13px}.comparison{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.packet{padding:12px;border:1px solid var(--line);border-radius:6px;min-width:0}.packet h3{margin-bottom:1px}
+.ids{display:flex;flex-wrap:wrap;gap:5px;list-style:none;padding:0;margin:10px 0 0}
+.ids li{font:13px var(--mono);padding:3px 6px;background:#eff2ed;border:1px solid #d4ddd4;border-radius:4px}
+.ids li.plus{background:#d7efdf;border-color:#72aa85}.ids li.minus{background:#f5e5db;border-color:#c79c83;text-decoration:line-through}
+.status{font-weight:650;color:var(--green);margin:3px 0 10px}.diff{font-size:14px;color:var(--muted);margin-top:10px}
+.audit{display:flex;align-items:center;flex-wrap:wrap;gap:12px;margin-top:14px}.audit button{background:#245e48;color:#fff;border-color:#245e48}.audit button:hover:not(:disabled){color:var(--ink)}
+.numrow button{white-space:nowrap}.jump{display:block;font:12px var(--mono);margin-top:3px}
+#proof{font-size:14px;max-width:65ch}.error{color:#8d3329}
+@media(max-width:680px){header{padding:18px 14px}header a{font-size:12px}main{padding:14px 12px 30px}.filters{grid-template-columns:1fr 2fr;gap:8px}.card{padding:13px}.shift,.comparison{grid-template-columns:1fr;gap:12px}.shift>div+div{border-top:1px solid var(--line);padding-top:12px}.packet{padding:10px}.numrow label{max-width:none}.labels{font-size:10px}}
+@media(max-width:440px){.filters{grid-template-columns:1fr}.filters select{min-height:38px}}
+</style>
+</head>
+<body>
+<header><h1>Source weight</h1><a href="/">Back to trace console</a></header>
+<main>
+<p class="lede">Adjust the utility of candidates linked to one source. Compare the indexed packet with the original at zero shift, under a 2,048-token budget.</p>
+<div class="filters">
+  <label>Projection<select id="q"></select></label>
+  <label>Source<select id="source"></select></label>
+</div>
+<section class="card shift" aria-label="Source weight controls">
+ <div>
+  <div class="numrow"><label>Signed Q32 shift<input id="amount" type="number" step="1" min="-1073741824" max="1073741824" value="0"></label><button id="zero" type="button">Reset to zero</button></div>
+  <div class="scale"><input aria-label="Signed Q32 weight slider" id="slider" type="range" min="-1073741824" max="1073741824" step="1" value="0"><div class="labels"><span>−1,073,741,824</span><span>0</span><span>+1,073,741,824</span></div></div>
+  <p class="small" style="margin-top:7px">One Q32 step adds 2⁻³² utility to each linked candidate. Ranks and token costs stay fixed.</p>
+ </div>
+ <div><h2>Current interval</h2><div class="limits"><div class="limit"><span class="small">First included</span><output class="value" id="lo">…</output></div><div class="limit"><span class="small">Last included</span><output class="value" id="hi">…</output></div></div><div class="buttons"><button id="prev" type="button" disabled>← Previous interval<span class="jump" id="prev-value"></span></button><button id="next" type="button" disabled>Next interval →<span class="jump" id="next-value"></span></button></div></div>
+</section>
+<section class="card" aria-labelledby="packet-title"><h2 id="packet-title">Ordered packets</h2>
+ <p id="status" class="status" aria-live="polite">Loading projection…</p>
+ <div class="comparison"><div class="packet"><h3>Original · zero shift</h3><div id="before-info" class="small"></div><ol class="ids" id="before"></ol></div><div class="packet"><h3>At selected weight</h3><div id="after-info" class="small"></div><ol class="ids" id="after"></ol></div></div>
+ <p class="diff" id="diff"></p>
+ <div class="audit"><button type="button" id="verify" disabled>Recompute with exact Q32 DP</button><output id="proof" aria-live="polite"></output></div>
+</section>
+</main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id),fmt=n=>n.toLocaleString('en-US'),low=-1073741824,high=1073741824;
+let state=null,version=0,timer;
+async function api(path,values={}){const res=await fetch('/api/weights/'+path+'?'+new URLSearchParams(values));const data=await res.json();if(!res.ok)throw Error(data.error);return data}
+function fail(e){$('status').textContent=e.message;$('status').classList.add('error');$('verify').disabled=true}
+function packet(name,data,changes,klass){$(name+'-info').textContent=data.members.length+' units · '+fmt(data.tokens)+' / 2,048 tokens';
+ const list=$(name);list.replaceChildren();for(const v of data.members){const li=document.createElement('li');li.textContent='#'+v;if(changes.includes(v))li.className=klass;list.append(li)}}
+function render(v){state=v;$('amount').value=v.delta;$('slider').value=v.delta;$('lo').textContent=fmt(v.lo);$('hi').textContent=fmt(v.hi);
+ $('prev').disabled=v.previous===null;$('next').disabled=v.next===null;$('prev').title=v.previous===null?'':String(v.previous);$('next').title=v.next===null?'':String(v.next);
+ $('prev-value').textContent=v.previous===null?'—':fmt(v.previous);$('next-value').textContent=v.next===null?'—':fmt(v.next);
+ $('status').classList.remove('error');$('status').textContent=(v.unchanged?'Original packet retained':'Packet changed')+' · interval '+(v.current+1)+' of '+v.intervals.length;
+ packet('before',v.before,v.removed,'minus');packet('after',v.after,v.added,'plus');
+ const ids=xs=>xs.map(i=>'#'+i).join(', ')||'none';$('diff').textContent='Added '+ids(v.added)+' · Removed '+ids(v.removed);
+ $('verify').disabled=false;$('proof').textContent='';document.documentElement.dataset.ready=v.query+'|'+v.source+'|'+v.delta}
+async function requestPacket(delta,openExample=false){
+ clearTimeout(timer);const n=++version;$('verify').disabled=true;$('proof').textContent='';const q=$('q').value,s=$('source').value;
+ try{if(!Number.isInteger(delta)||delta<low||delta>high)throw Error('Enter an integer between −1,073,741,824 and 1,073,741,824.');
+ let v=await api('packet',{q,s,delta});if(n!==version)return;
+ if(openExample&&v.intervals.length>1){const d=v.next??v.previous;v=await api('packet',{q,s,delta:d})}
+ if(n===version)render(v)}catch(e){if(n===version)fail(e)}}
+async function sources(example=false){const n=++version;clearTimeout(timer);$('verify').disabled=true;const q=$('q').value;
+ try{const r=await api('sources',{q});if(n!==version)return;$('source').replaceChildren();
+ for(const s of r.sources){const opt=new Option(s.id.slice(0,9)+' · '+s.role.replaceAll('_',' ')+' '+s.position+' · '+s.intervals+(s.intervals===1?' interval':' intervals'),s.id);opt.title=s.id;$('source').add(opt)}await requestPacket(0,example)}catch(e){if(n===version)fail(e)}}
+$('q').onchange=()=>sources(true);$('source').onchange=()=>requestPacket(0);$('zero').onclick=()=>requestPacket(0);
+$('prev').onclick=()=>state&&state.previous!==null&&requestPacket(state.previous);$('next').onclick=()=>state&&state.next!==null&&requestPacket(state.next);
+$('amount').onchange=()=>requestPacket($('amount').valueAsNumber);
+$('slider').oninput=()=>{clearTimeout(timer);$('verify').disabled=true;const d=Number($('slider').value);$('amount').value=d;timer=setTimeout(()=>requestPacket(d),60)};
+$('verify').onclick=async()=>{const n=version,v=state;$('verify').disabled=true;$('proof').textContent='Computing from node utilities and source spans…';
+ try{const answer=await api('verify',{q:v.query,s:v.source,delta:v.delta});if(n!==version)return;const x=answer.verification;
+ $('proof').textContent=(x.equal?'Exact match':'Mismatch')+' · '+x.members.length+' ordered units · '+fmt(x.tokens)+' tokens · '+fmt(x.microseconds)+' μs';$('verify').disabled=false}
+ catch(e){if(n===version)fail(e)}};
+(async()=>{try{const a=await api('catalog');for(const q of a.queries)$('q').add(new Option(q,q));await sources(true)}catch(e){fail(e)}})();
+</script>
+</body></html>

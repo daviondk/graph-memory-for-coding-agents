@@ -1,0 +1,32 @@
+HEAD is now at 329b100 Merge pull request #1914 from pallets/custom-type-value
+Checking patch tests/test_commands.py...
+Applied patch to 'tests/test_commands.py' cleanly.
+Applied patch tests/test_commands.py cleanly.
+============================= test session starts ==============================
+collected 16 items
+
+tests/test_commands.py ............F...                                  [100%]
+
+=================================== FAILURES ===================================
+E   assert 2 == 0
+     +  where 2 = <Result SystemExit(2)>.exit_code
+/click/tests/test_commands.py:310: assert 2 == 0
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED tests/test_commands.py::test_other_command_invoke
+PASSED tests/test_commands.py::test_other_command_forward
+PASSED tests/test_commands.py::test_forwarded_params_consistency
+PASSED tests/test_commands.py::test_auto_shorthelp
+PASSED tests/test_commands.py::test_no_args_is_help
+PASSED tests/test_commands.py::test_default_maps
+PASSED tests/test_commands.py::test_group_with_args
+PASSED tests/test_commands.py::test_base_command
+PASSED tests/test_commands.py::test_object_propagation
+PASSED tests/test_commands.py::test_other_command_invoke_with_defaults
+PASSED tests/test_commands.py::test_invoked_subcommand
+PASSED tests/test_commands.py::test_aliased_command_canonical_name
+PASSED tests/test_commands.py::test_unprocessed_options
+PASSED tests/test_commands.py::test_deprecated_in_help_messages
+PASSED tests/test_commands.py::test_deprecated_in_invocation
+FAILED tests/test_commands.py::test_group_add_command_name - assert 2 == 0
+========================= 1 failed, 15 passed in 0.05s =========================

@@ -1,0 +1,100 @@
+{
+  "candidate_sha256": "efbc0afc86ac103ab712e5a81c25d786d3505cf4729476238d935e81e9827ad8",
+  "code_packet_bytes": [
+    507,
+    74
+  ],
+  "context_selected": [
+    [],
+    [],
+    [
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "flow_groups": {
+    "accumulating": 11,
+    "overlap": 31,
+    "withdrawn": 42
+  },
+  "invalid_request_codes": [
+    404,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400
+  ],
+  "isolated_imports": true,
+  "joint": {
+    "independent_rank_checks": 80,
+    "pairs": 1862,
+    "queries": 40,
+    "witness_axes_unchanged": true,
+    "witness_base": 352,
+    "witness_joint": 355
+  },
+  "real_consoles": 4,
+  "stale_selected_lines": 3,
+  "trace_coverage": [
+    60,
+    60
+  ],
+  "trace_removed_added": [
+    11,
+    19
+  ],
+  "unavailable_runtime": [
+    [
+      "apps/trace/runtime/reader.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/code/witness.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/context/reader.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/flow/flow.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/trace/runtime/view.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/trace/runtime/planes.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ]
+  ],
+  "video": {
+    "bytes": 3005233,
+    "codec": "h264",
+    "decoded_all": true,
+    "duration_seconds": 148.8,
+    "frames": 3720,
+    "resolution": [
+      1440,
+      810
+    ],
+    "sha256": "1e59d964eff499b6da65645613a17073f693a967d6babb39f96345ce98c30ff9"
+  },
+  "weights": {
+    "live_boundary_checks": 320,
+    "queries": 40,
+    "source_choices": 2528
+  }
+}
