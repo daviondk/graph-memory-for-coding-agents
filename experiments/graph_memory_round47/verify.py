@@ -95,6 +95,11 @@ def expected(release,load):
         movie=audit['video']
         require(movie['decoded_all'] and movie['sha256']==files[inside+'walkthrough.mp4'] and
                 0 < movie['duration_seconds'] <= 300 and movie['bytes']==len(load(inside+'walkthrough.mp4')),'decode receipt')
+    historical=load('portable_inputs/facet-confirmation-at-evaluation.json')
+    require(digest(historical)=='8f25d0dfd0a2fd88ba0beda8a90ad23cbed980f31c290cd304e8b3670614cca2','confirmation at evaluation')
+    require(json.loads(load('facet_ablation/results.json'))['primary_confirmation']==digest(historical),'ablation input lineage')
+    left=entries(json.loads(historical));right=entries(json.loads(load('facet_confirmation/manifest.json')))
+    require(set(left)==set(right) and {n for n in left if left[n]!=right[n]}=={'REPRODUCE_RU.md'},'documentation-only manifest revision')
     audits=json.loads(load('studies-isolation.json'))
     require(set(audits)==set(studies) and all(v['exit']==0 for v in audits.values()),'isolated study receipts')
     return dict(sorted(files.items()))
