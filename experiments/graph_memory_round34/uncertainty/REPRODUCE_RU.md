@@ -1,0 +1,3 @@
+# Воспроизведение
+
+Для повторного расчёта выполните `python uncertainty.py` из этого каталога с NumPy. Требуются входные файлы R32 и [пообъектные результаты R34](../strong_reader_controls/REPORT_RU.md). Скрипт фиксирует генератор, входные хеши, парные разности и число вопросов в каждой траектории. В той же папке команда `python figure.py` с Matplotlib строит PDF и PNG. Интерпретация единиц анализа и способов перевыборки опирается на [Owen и Eckles](https://doi.org/10.1214/12-AOAS547). В подготовке протокола применены процедуры Literature Review и Statistical Analysis из [Scientific Agent Skills](https://arxiv.org/abs/2609.00065).

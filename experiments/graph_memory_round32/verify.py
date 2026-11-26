@@ -38,6 +38,11 @@ def verify():
             for m in ("cert16","cert32","cert64"):
                 assert full[0]==row[m][0] and row[m][1]<=full[1]
     assert read("code_handoff_demo/verified.json")["native_queries"]==342
+    beam=read("beam_replication/outcomes.json.gz")
+    assert len(beam)==64
+    assert all(r["k"]["2"]["n"]==45 and r["memory_rows"]["pool4_matched"]==r["memory_rows"]["lazy"] for r in beam.values())
+    assert [sum(r["k"]["2"]["exact"][m] for r in beam.values()) for m in ("lazy","pool4_matched","star_union")]==[2880,2710,2880]
+    assert sum(r["memory_rows"]["lazy"] for r in beam.values()) < sum(r["memory_rows"]["star_union"] for r in beam.values())
     assert set(release["completed"])==set(release["manifests"])
     return len(release["completed"])
 if __name__=="__main__":print("Verified studies",verify())

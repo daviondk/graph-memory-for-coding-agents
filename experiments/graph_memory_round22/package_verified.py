@@ -10,7 +10,7 @@ from verify import verify
 
 ROOT=Path(__file__).resolve().parent
 STUDIES=("observed_flow","prefix_read","threshold_read","action_reader","conditional_lookup","native_readout","packing_control")
-TOP=("REPORT_RU.md","AUDIT_RU.md","audit_readers.py","audit-readers.json","RELATED_SYSTEMS_RU.md","native_multiseed/official580/split-audit.json","native_multiseed/official580/split.json.gz","verify.py","package_verified.py")
+TOP=("native_multiseed/official580/PROTOCOL_RU.md","native_multiseed/official580/input-inventory.json","REPORT_RU.md","AUDIT_RU.md","audit_readers.py","audit-readers.json","RELATED_SYSTEMS_RU.md","native_multiseed/official580/split-audit.json","native_multiseed/official580/split.json.gz","verify.py","package_verified.py")
 ALLOWED={".ps1",".cpp",".py",".mjs",".md",".json",".gz",".sqlite",".html",".png"}
 def digest(b):return hashlib.sha256(b).hexdigest()
 def snapshot():
