@@ -1,0 +1,34 @@
+{
+  "seconds": 99.6,
+  "bytes": 2058223,
+  "scenes": [
+    [
+      "Inspect the stored view",
+      "Original packet"
+    ],
+    [
+      "Exclude an unrelated source",
+      "Reuse cached packet"
+    ],
+    [
+      "Exclude a selected source",
+      "Recompute packet"
+    ],
+    [
+      "Follow a recorded code edit",
+      "The original packet survives and its selected lines match both snapshots."
+    ],
+    [
+      "Compare invalidation granularity",
+      "The packet changes. Surviving observations can still have valid source bytes."
+    ],
+    [
+      "Verify the original display",
+      "The same IDs survive, but selected source bytes were already stale."
+    ],
+    [
+      "Use the editor\u2019s own evidence",
+      "Before [0,1] \u2192 After [0,1]; 15 selected lines on the edited path checked against both versions \u00b7 0 mismatches"
+    ]
+  ]
+}

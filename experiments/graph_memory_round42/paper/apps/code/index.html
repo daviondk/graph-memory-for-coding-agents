@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Code memory after an edit</title>
+<style>
+:root{--ink:#162e33;--teal:#17644f;--muted:#51656b;--rule:#cbd6d2;--paper:#fff;--bg:#f2f4f1}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.4 Inter,Arial,sans-serif}header{background:#193c37;color:#fff;padding:18px max(20px,calc((100% - 1190px)/2))}h1{font-size:clamp(24px,3.2vw,36px);letter-spacing:-.035em;margin:0}header p{color:#d1e4da;margin:3px 0 0}main{max-width:1230px;margin:auto;padding:18px 20px 35px}nav,.actions,.flex{display:flex;gap:11px;align-items:center;flex-wrap:wrap}nav{margin:0 0 14px}button,select{font:inherit;border:1px solid #9cafaa;border-radius:4px;background:#fff;padding:5px 10px;color:var(--ink)}button{cursor:pointer}button:hover,button:focus-visible{border-color:#00664d;color:#005c45}button:disabled{opacity:.52}button.primary{background:#265b47;color:white;font-weight:650}.grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}.panel{background:white;border:1px solid var(--rule);border-radius:6px;padding:12px 16px;margin-bottom:14px}.grid .panel{margin:0}.panel h2{font-size:18px;margin:0 0 5px}.panel p{margin:5px 0}.prom{font-size:22px;font-weight:700}.muted,small{color:var(--muted)}.ok{color:var(--teal)}.bad{color:#8a362c}.packet{font-family:Consolas,monospace;overflow-wrap:anywhere}.meta{font-size:14px}.tbl{max-height:320px;overflow:auto;border-block:1px solid var(--rule);margin-top:8px}table{border-collapse:collapse;width:100%;font-size:14px}th,td{padding:5px 8px;border-bottom:1px solid #dee4e0;text-align:left;vertical-align:top}th{font-size:12px;background:#f2f5f2;position:sticky;top:0}td button{border:0;background:transparent;padding:0;color:#075940;text-decoration:underline;font:inherit}.audit{margin:8px 0}code{overflow-wrap:anywhere}details{margin-top:10px}summary{cursor:pointer}#detail table{font-family:Consolas,monospace}#detail td{font-size:12px;overflow-wrap:anywhere}#detail .hash{max-width:220px}.ident{font-family:Consolas,monospace}.stamp{display:inline-block;padding:2px 6px;border-radius:3px;background:#e7eee9}#result{font-weight:650}button[hidden],[hidden]{display:none!important}body.busy{cursor:progress}@media(max-width:760px){main{padding:12px}.grid{grid-template-columns:1fr}.panel{padding:10px}th,td{padding:3px}#detail td{max-width:11ch}.prom{font-size:19px}}
+</style></head><body>
+<header><h1>Code memory after an edit</h1><p>One pre-edit packet, two invalidation policies, independently checked source addresses.</p></header>
+<main>
+<nav><label>Recorded edit <select id="case"><option value="relocated">Relocated observations</option><option value="changed">Overlapping edit</option><option value="stale">Stale observation</option></select></label><small>Three deliberately selected Handoff Debt cases. All paths are anonymous.</small></nav>
+<section class="panel"><h2>Original packet</h2><p id="base" class="packet"></p><p id="receipt" class="meta"></p></section>
+<div class="grid"><section class="panel"><h2>Invalidate the file</h2><div id="fileDecision" class="prom"></div><p class="packet" id="fileIds"></p><p class="muted meta">Remove every block of the edited file, then solve again.</p></section>
+<section class="panel"><h2>Invalidate the edited range</h2><div id="spanDecision" class="prom"></div><p class="packet" id="spanIds"></p><p class="muted meta">Drop blocks touching the edited lines. Relocate surviving blocks below the edit.</p></section></div>
+<section class="panel"><h2>Observation addresses</h2><div class="actions"><label>Show <select id="filter"><option value="selected">Originally selected</option><option value="all">All observed blocks</option><option value="intersect">Blocks touching the edit</option></select></label><span id="rowCount" class="muted meta"></span></div><div class="tbl"><table><thead><tr><th>Block</th><th>Original lines</th><th>New lines</th><th>Original → new bytes</th><th>Observed bytes</th><th>Original → new packet</th></tr></thead><tbody id="blocks"></tbody></table></div><small>Lines are 1-based and inclusive. Source bytes use half-open UTF-8 offsets. Byte coordinates come from the separate snapshot audit.</small></section>
+<section class="panel"><h2>Full-snapshot audit</h2><div class="actions audit"><button id="audit" class="primary">Verify line hashes and byte addresses</button><button id="stale" hidden>Inspect a stale selected line</button></div><p id="result" aria-live="polite">Snapshot witnesses have not been opened.</p><p class="meta" id="counts"></p><p class="meta" id="byteReceipt"></p><details hidden id="versions"><summary>File versions and SHA-256</summary><div id="digests"></div></details><div id="detail" hidden></div></section>
+<div class="muted meta" id="status" aria-live="polite"></div>
+</main><script>
+const by=id=>document.getElementById(id);let current=null,witness=null,active=null,revision=0;
+const ids=a=>a.length?a.map(x=>'#'+x).join(' · '):'Empty packet';
+const line=(a,b)=>a===null?'Withdrawn':a===b?String(a):a+'–'+b;
+const bytes=(a,b)=>a===null?'withdrawn':'['+a+', '+b+')';
+function set(id,s){by(id).textContent=s}
+function txt(tag,s){const e=document.createElement(tag);e.textContent=s;return e}
+function paintRows(){
+ const filter=by('filter').value;const rows=current.blocks.filter(b=>filter==='all'||(filter==='intersect'?!b.kept:current.baseline.ids.includes(b.unit)));
+ const tbody=by('blocks');tbody.replaceChildren();for(const b of rows){const tr=document.createElement('tr'),td=document.createElement('td'),bt=txt('button','#'+b.unit);
+ bt.onclick=()=>{active=b.unit;if(witness)showDetail();else set('status','Open the full-snapshot audit to inspect block #'+b.unit+'.')};td.append(bt);tr.append(td);
+ const coord=witness?.blocks[String(b.unit)];const address=coord?bytes(coord.old_start,coord.old_end)+' → '+bytes(coord.new_start,coord.new_end):'Open audit';
+ const old=current.baseline.ids.includes(b.unit),after=current.span.ids.includes(b.unit);
+ for(const v of [line(b.low,b.high),line(b.new_low,b.new_high),address,b.cost, (old?'in':'out')+' → '+(after?'in':'out')])tr.append(txt('td',v));tbody.append(tr);}
+ set('rowCount',rows.length+' of '+current.blocks.length+' blocks');}
+function showDetail(firstBad=false){
+ const c=witness.blocks[String(active)],d=by('detail');d.hidden=false;d.replaceChildren(txt('h3','Block #'+active+' · line witnesses'));
+ if(!c.lines){d.append(txt('p','This block intersects the edit and has no surviving address.'));return;}
+ const tab=document.createElement('table'),head=document.createElement('tr');for(const h of ['Lines, old → new','Observed SHA-256','Before edit','After edit'])head.append(txt('th',h));tab.append(head);
+ const lines=firstBad?[...c.lines].sort((a,b)=>Number(b.seen!==b.after_sha)-Number(a.seen!==a.after_sha)):c.lines;
+ for(const l of lines){const row=document.createElement('tr');row.append(txt('td',l.n+' → '+l.new_n));for(const h of [l.seen,l.before_sha,l.after_sha]){const t=txt('td',h);t.className='hash '+(h!==l.seen?'bad':'');row.append(t);}tab.append(row);}d.append(tab);}
+function display(){
+ const s=current,e=s.receipt;set('base',s.baseline.bytes+' of 2,048 bytes · '+ids(s.baseline.ids));
+ set('receipt','File F1 · confirmed write, events '+e.event+' → '+e.ack+' · prior edited lines '+line(e.low,e.high)+' · line-count change '+(e.line_delta>=0?'+':'')+e.line_delta);
+ set('fileDecision',s.file_reuse?'Reuse original IDs':'Packet changes');set('spanDecision',s.range_reuse?'Reuse original IDs':'Packet changes');by('spanDecision').className='prom '+(s.range_reuse?'ok':'');
+ set('fileIds',s.file.bytes+' bytes · '+ids(s.file.ids));set('spanIds',s.span.bytes+' bytes · '+ids(s.span.ids));
+ by('audit').disabled=false;by('stale').hidden=true;by('versions').hidden=true;by('versions').open=false;by('detail').hidden=true;set('result','Snapshot witnesses have not been opened.');set('counts','');set('byteReceipt','');set('status','');paintRows();}
+async function fetchJson(path,c){const r=await fetch('/api/'+path+'?case='+encodeURIComponent(c));if(!r.ok)throw Error('Failed to load the local projection.');return r.json()}
+async function load(){
+ const v=++revision;const c=by('case').value;by('audit').disabled=true;by('status').textContent='Opening receipt…';const result=await fetchJson('packet',c);if(v!==revision)return;
+ current=result;witness=null;active=null;by('filter').value='selected';display();document.body.dataset.ready=c;}
+async function inspect(){
+ const v=revision;by('audit').disabled=true;const data=await fetchJson('audit',current.case);if(v!==revision)return;witness=data;paintRows();
+ const pass=data.verified_reuse;set('result',pass?'The original packet survives and its selected lines match both snapshots.':current.range_reuse?'The same IDs survive, but selected source bytes were already stale.':'The packet changes. Surviving observations can still have valid source bytes.');
+ by('result').className=pass?'ok':data.selected_mismatch.length?'bad':'';
+ set('counts',data.checked+' surviving lines checked · '+data.prior_mismatch+' mismatched before · '+data.post_mismatch+' mismatched after · '+data.new_mismatch.length+' newly mismatched. '+data.selected_mismatch.length+' of '+data.selected_lines+' surviving originally selected lines mismatch after the edit.');
+ const s=data.snapshot;set('byteReceipt','Affected whole-line envelope in the pre-edit file: '+bytes(s.change_begin,s.change_end)+' bytes. The policy withdraws an entire block on overlap.');
+ by('versions').hidden=false;by('digests').replaceChildren(txt('p','Before · '+s.old_size+' bytes · '+s.old_sha),txt('p','After · '+s.new_size+' bytes · '+s.new_sha));by('stale').hidden=!data.selected_mismatch.length;active=active??current.span.ids[0];showDetail();}
+function err(e){set('status',e.message)}
+by('case').onchange=()=>load().catch(err);by('filter').onchange=()=>{if(current)paintRows()};by('audit').onclick=()=>inspect().catch(err);by('stale').onclick=()=>{active=witness.selected_mismatch[0][0];showDetail(true);by('detail').scrollIntoView({block:'nearest'})};load().catch(err);
+</script></body></html>

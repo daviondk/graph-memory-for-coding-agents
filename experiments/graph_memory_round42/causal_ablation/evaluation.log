@@ -1,0 +1,27 @@
+{'train': {'candidate_rows': 257598, 'queries': 3894, 'rows_nonzero_intercall_degree': 43889, 'rows_changed_by_sham': 174183, 'local_decoded_exactly': 257598}, 'test': {'candidate_rows': 136892, 'queries': 2000, 'rows_nonzero_intercall_degree': 24481, 'rows_changed_by_sham': 95550, 'local_decoded_exactly': 136892}}
+Counter({'orders': 10000, 'top1': 9989, 'firstfit_set': 9971, 'firstfit_list': 9855, 'identical': 9744}) largest inverted similarity gap 1.7881393432617188e-07
+fitted semantic (138768, 4)
+fitted role_cost (138768, 6)
+fitted shape (138768, 11)
+fitted rich (138768, 19)
+fitted local (138768, 27)
+fitted cross (138768, 27)
+fitted full (138768, 35)
+fitted sham (138768, 35)
+forecast 0 256
+forecast 1 235
+forecast 2 235
+forecast 3 255
+forecast 4 249
+forecast 5 267
+forecast 6 320
+forecast 7 183
+graded 0 20547
+graded 1 40107
+graded 2 59061
+graded 3 79014
+graded 4 98448
+graded 5 119324
+graded 6 144971
+graded 7 159816
+primary {'left': 'hgb/full', 'right': 'hgb/rich', 'mean': [0.044173140954495003, 0.04467543802592254, -0.8017758046614872], 'ci': [[0.027937791871570312, 0.02955828207296235, -2.3508016997343777], [0.06094970962898139, 0.05993124329248151, 0.6316309914541096]], 'wins': 278, 'losses': 79}

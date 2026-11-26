@@ -1,0 +1,203 @@
+{
+  "completed": [
+    "causal_ablation",
+    "context_demo",
+    "context_edits",
+    "future_reads",
+    "lazy_validation",
+    "paper",
+    "prefix_fusion",
+    "swe_transfer"
+  ],
+  "manifests": {
+    "causal_ablation": "8b25a974d199d58609244ddb7154df7d4121c07c1a94d23678be407375094f3e",
+    "context_demo": "aa407488d65ab83a48dfc2187481c6da35bc085ba23a2f2ce052cabe0ca4f314",
+    "context_edits": "cc06cfd74a11e3871ad77e8bd2c5d7df1690b14dcc7b5e03456dedfa1e77bfe3",
+    "future_reads": "0784d9ed9b10c14c359e53915b79aa72db740dbe6ceb0fd9bebbe47d56a5e1a1",
+    "lazy_validation": "602991e05b675fad7d4aa8c8915cb9aa4819f29837078297777536adab43adbb",
+    "paper": "6f8e7fa45d468b17c3fe57516ff8555ddcc15858ae07a2daaeebef1f7e8661b6",
+    "prefix_fusion": "c7d1433b2b8869269e03be7ea6ac0f89247645b6c76cc8b4c7db916e2eeff9c9",
+    "swe_transfer": "6e9c7a12590328174b3bf220029b07befed87c842675e4c6d9bf5162b936ae03"
+  },
+  "outcome_checks": [
+    {
+      "equals": 323,
+      "file": "context_edits/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "local",
+        "strict"
+      ]
+    },
+    {
+      "equals": 29713,
+      "file": "context_edits/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "local",
+        "mapped_lines"
+      ]
+    },
+    {
+      "equals": 889,
+      "file": "future_reads/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "demand",
+        "censored"
+      ]
+    },
+    {
+      "equals": 13,
+      "file": "future_reads/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "local",
+        "hit"
+      ]
+    },
+    {
+      "equals": 79,
+      "file": "future_reads/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "range",
+        "novel_lines"
+      ]
+    },
+    {
+      "equals": 117612,
+      "file": "lazy_validation/theorem-check.json",
+      "path": [
+        "completion_comparisons"
+      ]
+    },
+    {
+      "equals": 0,
+      "file": "lazy_validation/physical-check.json",
+      "path": [
+        "mismatches"
+      ]
+    },
+    {
+      "equals": 341,
+      "file": "lazy_validation/results.json",
+      "path": [
+        "held",
+        "counts",
+        "union_same"
+      ]
+    },
+    {
+      "equals": [
+        0,
+        1
+      ],
+      "file": "context_demo/reference.json",
+      "path": [
+        "interior",
+        "local"
+      ]
+    },
+    {
+      "equals": 265,
+      "file": "swe_transfer/results.json",
+      "path": [
+        "all",
+        "events"
+      ]
+    },
+    {
+      "equals": 7,
+      "file": "swe_transfer/results.json",
+      "path": [
+        "all",
+        "methods",
+        "local",
+        "same"
+      ]
+    },
+    {
+      "equals": 5,
+      "file": "swe_transfer/results.json",
+      "path": [
+        "all",
+        "methods",
+        "range",
+        "same"
+      ]
+    },
+    {
+      "equals": 162705,
+      "file": "prefix_fusion/results.json",
+      "path": [
+        "unique_official_scores"
+      ]
+    },
+    {
+      "equals": 901,
+      "file": "prefix_fusion/results.json",
+      "path": [
+        "groups",
+        "eligible",
+        "n"
+      ]
+    },
+    {
+      "equals": 901,
+      "file": "causal_ablation/results.json",
+      "path": [
+        "groups",
+        "primary",
+        "n"
+      ]
+    },
+    {
+      "equals": 657,
+      "file": "causal_ablation/results.json",
+      "path": [
+        "groups",
+        "primary",
+        "trajectories"
+      ]
+    },
+    {
+      "equals": 2490,
+      "file": "demo-isolation.json",
+      "path": [
+        "video",
+        "frames"
+      ]
+    },
+    {
+      "equals": 3,
+      "file": "demo-isolation.json",
+      "path": [
+        "real_consoles"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round33/graph_ablation/REPORT_RU.md",
+    "graph_memory_round37/edit_demand/REPORT_RU.md",
+    "graph_memory_round39/exact_certificate/REPORT_RU.md",
+    "graph_memory_round40/guarded_updates/REPORT_RU.md",
+    "graph_memory_round41/prefix_native/REPORT_RU.md",
+    "graph_memory_round41/structural_invalidation/REPORT_RU.md",
+    "graph_memory_round41/structural_invalidation/REPRODUCE_RU.md"
+  ],
+  "round": 42,
+  "top_documents": [
+    "check_demo_isolation.py",
+    "demo-isolation.json"
+  ]
+}
