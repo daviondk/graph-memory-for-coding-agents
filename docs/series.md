@@ -2,7 +2,7 @@
 
 [Краткий отчёт, 4 страницы](report.pdf). Ниже каждому этапу соответствует подробный первичный документ и каталог с кодом и данными. Номера серий — идентификаторы сохранённых комплектов. Часть наборов использовалась повторно для разработки и последующих сравнений.
 
-[Текущая серия и рукопись ICDE](../experiments/graph_memory_round52/REPORT_RU.md) охватывают поиск в полном каталоге 2Wiki, перенос на HotpotQA, контроль языковых шаблонов, действительные ответы Qwen и минимальную историю адресов SQLite. [Рукопись](../experiments/graph_memory_round52/submission/paper.pdf) · [Демопакет](../experiments/graph_memory_round52/submission/candidate.zip) · [Сравнения](../experiments/graph_memory_round52/graph-read-effects.pdf) · [Предыдущая серия](../experiments/graph_memory_round51/REPORT_RU.md).
+[Текущая серия и рукопись ICDE](../experiments/graph_memory_round53/REPORT_RU.md) включают контроль числа кандидатов, замену тела выбранного документа при неизменных заголовках и исторические запросы после отзыва связей. [Рукопись](../experiments/graph_memory_round53/submission/paper.pdf) · [Демопакет](../experiments/graph_memory_round53/submission/candidate.zip) · [График](../experiments/graph_memory_round53/evidence-effects.pdf) · [Предыдущая серия](../experiments/graph_memory_round52/REPORT_RU.md).
 
 | Этап | Вопрос и исход | Первичные материалы |
 | --- | --- | --- |

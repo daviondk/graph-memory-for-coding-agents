@@ -1,0 +1,175 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,graphicx,xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{balance}
+\usepackage{iftex}
+\ifXeTeX
+\usepackage{fontspec}
+\setmainfont{texgyretermes-regular.otf}[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]
+\setsansfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf]
+\setmonofont{texgyrecursor-regular.otf}[BoldFont=texgyrecursor-bold.otf]
+\fi
+\definecolor{forest}{RGB}{32,75,64}
+\title{Maintaining Source-Linked Evidence Views for Agent Memory}
+\author{\IEEEauthorblockN{Anonymous authors}}
+\begin{document}
+\maketitle
+\begin{abstract}
+How much of an agent's evidence must change when one source changes? Our SQLite demo maintains token-budgeted evidence packets and the address of a second source read. A prefix-dependency criterion identified all 73,261 reusable packets in 108,204 simulated exclusions. Storing only address transitions reduced history from 5,822 to 4,592 rows while reproducing the address and score on all 80,314 historical reads. For source quality, a two-read policy switches between an independently named document and a verified hyperlink. In a supplementary test on 512 questions, replacing literal matches with links raised Answer F1 from 34.74 to 37.30 at matched input lengths. A learned switch and a simple syntax rule gave identical addresses on 12,000 further questions. On 1,071 observed code edits, local alignment preserved 323 complete packets versus 302 with range invalidation. Visitors alter a source, rewind its version, and independently verify the resulting read.
+
+\end{abstract}
+
+\section{Why maintain the evidence packet?}
+
+A memory query may require an invocation and a later result in the same context. If a source disappears, must we rerun retrieval? In the demo, excluding one call replaces unit 11 with unit 19 at identical cost and coverage. Another exclusion needs no optimization. Even removal of an unselected candidate can affect the answer.
+
+Prior work models execution provenance~\cite{wang}, context sufficiency for coding agents~\cite{feng}, validity of trace anchors at restore time~\cite{memtrace}, and temporal graph memory~\cite{tape}. Incremental top-$k$ views reduce expensive refills by retaining extra ranked tuples~\cite{topk}. Our cumulative-cost prefix imposes a second optimization. The visitor inspects which dependencies preserve its optimum after an exclusion and which source changes affect a later read.
+
+\begin{figure}[t]
+\centering
+\setlength{\fboxsep}{4pt}
+\begin{tabular}{@{}c@{}}
+\fcolorbox{forest}{white}{\parbox{.88\columnwidth}{\centering \textbf{Public execution trace}\\Events, argument/output fields and character offsets}}\\
+$\downarrow$\\
+\fcolorbox{forest}{white}{\parbox{.88\columnwidth}{\centering \textbf{Read-only SQLite projection}\\Unit, source span, directed relation, cost, rank, utility}}\\
+$\downarrow$\\
+\fcolorbox{forest}{white}{\parbox{.88\columnwidth}{\centering \textbf{Materialized view and source dependencies}\\Protected prefix, packed suffix and prefix boundary}}\\
+$\downarrow$\\
+\fcolorbox{forest}{white}{\parbox{.88\columnwidth}{\centering \textbf{Live visitor controls}\\Exclude a source, inspect a unit, compare maintenance plans}}\\
+\end{tabular}
+\caption{Serving architecture. A separate evaluator receives the resulting unit IDs and compares their source intervals with a private annotation table on demand. The selection path has no access to that table or to the bodies of tool calls.}
+\label{fig:system}
+\end{figure}
+
+\section{Selection and source dependencies}
+
+\subsection{Materializing a view}
+Candidate $i$ has cost $c_i\geq0$, utility $u_i$ and source intervals (event, field, half-open character offsets). Costs add across selected candidates. Evaluation merges overlapping intervals in source coordinates.
+
+Let $B$ be the token budget and $T\leq B$ the prefix threshold. Protect the longest consecutive prefix $H$ costing at most $T$; the first candidate outside $H$ is its boundary. Native first-fit scans the entire ranking. Utility-sorted first-fit protects $H$, then scans the suffix by decreasing utility. Both admit any candidate that fits.
+
+A gradient-boosted tree estimates candidate membership in the annotated evidence from graph and dense rank, type, cost, graph score and gap to the leader, and pool size. We fit it on 3,894 training queries weighted equally and transform its log-odds into positive utility with softplus. Joint sufficiency is measured separately on held-out queries.
+
+Write $C=B-\sum_{i\in H} c_i$. On the remaining candidates the selector maximizes $\sum_i u_i x_i$ subject to $\sum_i c_i x_i\leq C$ and $x_i\in\{0,1\}$. A standard exact dynamic program updates the value at each integer capacity. Ties keep the existing solution. We return selected IDs in their original rank order. Threshold selection on 580 validation queries gave $T=1,024$ at $B=2,048$. Other thresholds trade a larger fixed prefix against additional freedom for the optimizer. 
+
+\subsection{When can an exclusion change a packet?}
+Let $P$ denote the stored packet and $D$ the set of candidate IDs removed by one or more source exclusions. Surviving candidates retain their order, costs and utilities. Fix the budget, threshold, and one total order on tied complete packets, including when a suffix item becomes mandatory. Let $H'$ be the protected prefix recomputed on the remaining candidates.
+
+\textbf{Reuse criterion.} The ordered packet is unchanged exactly when
+\[
+           D\cap P=\varnothing \quad\text{and}\quad H'\subseteq P.
+\]
+If a selected unit is removed, its ID cannot survive. If the new prefix contains a previously unselected unit, the new packet must contain that unit. For sufficiency, the first condition implies that all members of $H$ survive. Deletions can extend this prefix, so $H\subseteq H'$. By the second condition the old optimum contains every newly mandatory unit and remains feasible. Every packet feasible under the new requirement was already feasible before deletion. On these nested feasible families a previous optimum remains optimal, and the stable tie rule preserves its identity. Rank order of the surviving units is unchanged, giving equality of the ordered packets. With exact comparisons, strict-update dynamic programming preserves this order by preferring absence at the last differing rank. A signed 64-bit implementation with fixed-point Q32 utilities reproduced all 10,000 original packets and all 108,204 deletion outcomes. The maximum tested utility sum was 13,789,213,370. Arbitrary floating-point summation orders do not inherit this guarantee.
+
+A faster sufficient certificate indexes all sources of selected units and of the boundary. If an exclusion touches none of them, the old prefix survives and the suffix loses only unselected candidates. An index hit triggers recomputation, including some cases where the exact criterion would allow reuse.
+
+For $(B,T)=(8,4)$, costs $(3,3,1,5)$ and utilities $(1,1,3,10)$, the packet is $(0,3)$. Removing unselected unit 1 forces prefix $(0,2)$; unit 3 no longer fits.
+
+\section{Implementation and visitor interaction}
+
+SQLite stores query-local units, costs, utilities, source spans and typed edges. A parameterized anti-join excludes units attached to a removed source.
+
+The trace projection contains 5,009 units and 10,789 typed edges for 40 hash-sampled queries from separate trajectories. ISETrace contains real tool executions for synthetic OS-agent tasks \cite{ise,wang}; we simulate source exclusions. A streaming projection replays arrivals and support updates from SQLite. A separate projection uses actual edits from Handoff Debt \cite{handoff}. Anonymized serving tuples and independent audit witnesses ship with the local consoles.
+
+\begin{figure*}[t]
+\centering
+\begin{minipage}[t]{.48\textwidth}\vspace{0pt}\includegraphics[width=\linewidth]{core.png}\end{minipage}\hfill
+\begin{minipage}[t]{.48\textwidth}\vspace{0pt}\includegraphics[width=\linewidth]{edit.png}\end{minipage}
+\caption{Two running consoles. Left, bounds on learned utility force 2 candidates and exclude 107 in a recorded graph state. Right, a coding-agent edit retains the selected block IDs, yet the snapshot check detects incorrect line addresses in the original display. The audit operates separately from selection.}
+\label{fig:ui}
+\end{figure*}
+
+\subsection{Visitor scenarios}
+\textit{Change a packet.} Exclude one q02 source: unit 19 replaces unit 11 and the audit still covers all 60 annotated characters. In q07 the indexed boundary disappears; the exact criterion certifies reuse. In q25, six producer changes each preserve 19 fragments alone, but together select 15 under the count policy.
+
+\textit{Follow a code edit.} One line shift preserves a 315-byte packet. Another edit overlaps two blocks and only 74 of 507 bytes survive. In a third case all 14 IDs survive, yet the snapshot audit detects three incorrect line addresses. For an interior-lines edit, range invalidation drops both blocks; local alignment restores both.
+
+\textit{Advance an execution.} Move the Long trace to its final quarter. Bounds force two candidates, exclude 107 and leave 61 for exact optimization. Change the lower bound and audit the ordered result.
+
+\textit{Choose or rewind a source.} Suppress a title mention and rerank the remaining titles in SQLite. A separate audit displays recorded answers for identical reader inputs. Reveal more words, rewind the requested version, and compare an indexed lookup in the change journal with a fresh ranked query. Visitors see which exact mention changed the selected address.
+
+\section{Measurements and interpretation}
+\subsection{Budgeted evidence recovery}
+ISETrace supplies 2,000 held-out queries from 1,207 execution-grounded synthetic OS-agent trajectories. Full Support is one if the selected intervals jointly cover every annotated source span. At the terminal snapshot, we timed and graded the same packets across five seeds. Both checkpoint protocols use the native R-GCN ablation without chunk adjacency, the same candidate units and a 2,048-token budget. Each comparison fixes the trained weights and rank. The second protocol retrains the ranker and chooses its epoch by development Full Support. The first hybrid was identified after inspecting earlier budget curves.
+
+\begin{table}[t]
+\caption{Terminal packets on five seeds. FS is Full Support in percent. Median CPU latency in $\mu$s starts with ranks and utilities (select), or with the numeric pool and native rank (pool).}
+\centering\small
+\begin{tabular}{@{}lrrr@{}}\toprule
+Selector & FS & Select & Pool\\\midrule
+\multicolumn{4}{l}{\textit{Checkpoint chosen by development Recall@5}}\\
+First-fit in native rank & 81.19 & 3.5 & 3.5\\
+First-fit by learned utility & 83.00 & 7.0 & 112.2\\
+Full binary64 DP & 83.07 & 43.1 & 148.9\\
+Guarded binary64 DP & 83.07 & 25.7 & 130.8\\\midrule
+\multicolumn{4}{l}{\textit{Checkpoint chosen by development Full Support}}\\
+First-fit in native rank & 80.90 & 3.5 & 3.5\\
+First-fit by learned utility & 82.98 & 6.1 & 110.4\\
+Full binary64 DP & 82.94 & 42.8 & 149.6\\
+Guarded binary64 DP & 82.94 & 25.6 & 131.2\\
+\bottomrule\end{tabular}
+\label{tab:retrieval}
+\end{table}
+
+Exact packing gained 1.88 percentage points over native first-fit (paired 95\% interval $[0.77,3.06]$) on the first checkpoint protocol and 2.04 points $[0.78,3.41]$ on the second. Relative to utility-sorted first-fit the differences were $+0.07$ $[-0.24,0.40]$ and $-0.04$ $[-0.37,0.28]$. Greedy selection remains attractive when complete packet identity is optional. The primary trace console uses a separate graph-ranked configuration with 82.60\% Full Support.
+
+At a retrospective midpoint, 901 evidence-available questions remained after pilot exclusion. Rebuilding the graph from visible events gave 84.73\% Full Support for our reader, 81.38\% for native no-adjacency and 85.50\% for rank fusion. Across terminal questions, adding typed degrees to the same learner and first-fit selector raised Full Support from 79.16\% to 83.57\% ($+4.42$ points, $[2.79,6.09]$). Permuting these features within roles yielded 78.89\%.
+
+\subsection{Choosing a source for a second read}
+A fixed BM25 passage is the first read. A linear pairwise ranker uses lexical ranks, a Qwen3-Embedding-8B score and rank, and a bit for a title visible in the passage. We fit on 640 2Wiki questions and refit the same loss without the bit. All arms deliver two sources and match the token count per question for Qwen3-4B-Instruct-2507. In the bounded catalog, the bit raised Answer F1 by 1.21 points on 1,280 other 2Wiki questions~\cite{ho2wiki} and 1.91 points on 1,280 HotpotQA questions~\cite{hotpot}. Always following the best dense mention matched the latter within uncertainty.
+
+We then scored 28,715 candidate pairs with Qwen3-Reranker-0.6B. Adding the visible relation to a refitted lexical--dense--reranker control raised HotpotQA complete title coverage from 63.13\% to 65.55\% (paired difference $+2.42$ points, 95\% interval $[1.17,3.75]$). Answer F1 changed from 57.37 to 57.90 ($+0.53$, $[-0.23,1.30]$); on 2Wiki it changed by $-0.12$ points $[-0.62,0.38]$. These comparisons reuse the two evaluation panels. The gap between finding all sources and composing the answer persists with the stronger model.
+
+We also removed the supplied candidate lists on all 12,576 public 2Wiki development questions. We index 5,989,847 titles and expose 192 tokens from one common first paragraph. Our rule reads an informative title in a disjoint question span if one exists; otherwise it chooses a visible hyperlink. It recovered all annotated titles on 4,995 questions, versus 3,655 when replacing hyperlinks with literal mentions ($+10.66$ points, cluster interval $[10.03,11.29]$). Following hyperlinks unconditionally recovered 2,479. Four-title questions cannot reach complete coverage in two reads. The console exposes both source choices and their textual witnesses. Min et al.\ decompose questions into spans~\cite{decomp}; Asai et al.\ learn Wikipedia paths~\cite{asai}. Our comparisons fix both read addresses' access conditions and the first passage.
+
+We trained a logistic switch on dev questions where the alternatives differed in Full Support. On 2,400 questions with unseen first addresses it beat an \emph{and/or} control by 11 cases, all sharing a nationality template. On a further 12,000, adding ordered \emph{same \ldots\ as} made all addresses identical to those of both the learned switch and a depth-three tree. On 1,280 HotpotQA development questions in the same open directory, the original direct-read rule lost to the conjunction control (271 versus 305), but links beat literal matches with the rule fixed (271 versus 220). On 512 new 2Wiki questions, a supplementary comparison fixing the learned switch and token lengths gave 37.30 versus 34.74 Answer F1 for linked versus literal fallback ($+2.57$, $[1.00,4.26]$; exact cluster sign-flip $p=.00165$).
+
+We next admitted the same number of candidates from the hyperlink and literal pools, using the smaller pool size per question. Relative to a literal selector trained to imitate links on earlier data, real links improved complete title coverage by 5.13 points on 12,000 2Wiki questions and 2.50 points on 1,280 HotpotQA questions. This controls the number of admitted candidates; the cost of enumerating either pool remains. In 210 of 702 favorable 2Wiki cases the required title was absent from the entire literal pool. On 512 2Wiki questions, the href advantage in Answer F1 was 2.67 points larger with genuine second-passage bodies than with token-matched donor bodies ($[1.11,4.35]$). The donor-only gap was $-0.11$.
+
+\textit{Historical source selection.} Candidate $i$ has fixed base score $s_i$ and receives a common positive bonus once its mention becomes visible. After each atomic reveal the new maximum lies among the previous leader and the newly credited rows. This follows because every other score and the tie order are unchanged. We append the winning score and address when that pair changes. A predecessor search gives the exact winner at an earlier prefix. This specialization of incremental top-$k$ maintenance~\cite{topk} assumes monotone visibility and fixed base features.
+
+For an address lookup, repeated wins by the same candidate require only one history entry, even when its score increases. Store the winner ID at version zero and each committed ID change. Recover its historical score by joining the candidate's activation receipt with the requested version. Every ID change needs a boundary in this predecessor representation. We suppress transient switches within one transaction. Across 3,840 questions the compact operator retained 4,592 rows versus 5,822 and reproduced every historical ID and score bit. After checkpoint the complete databases occupied 1,265,664 and 1,343,488 bytes respectively. Warm ID-only reads took 2.59 versus 2.60 $\mu$s; returning the score took 3.08 versus 2.71 $\mu$s. The visitor can reveal a mention of the incumbent and inspect both histories.
+
+The 3,840 questions used real title matches and simulated reveals every 16 words; all 18,006 reveals were atomic. At eight reads per reveal including construction and checkpoint, a partial covering index took $1.12\times$ the journal time on 1,024 questions, $1.02\times$ on a disjoint replication (95\% interval $[0.96,1.07]$).
+
+\textit{Retracting evidence.} Tool traces also contain signed revisions of producer--consumer edges. The current score is the sum of active edge weights. We transactionally update each affected producer and query the index of current scores, appending the winning ID and score if either changed. An indexed historical read then finds the last such record at or before the requested version. All 1,112 states of 40 recorded traces matched a recomputation from edge intervals. On q11 a single retraction lowered producer 14 from 2 to 1; producer 3 won the tie. Visitors rewind that actual transition. At eight historical reads per update the candidate-version covering index took $1.34\times$ the journal time ($[1.29,1.39]$); with no reads, raw intervals were faster.
+
+\subsection{View maintenance on a live projection}
+On 40 projections the portable reader reproduced every ordered packet; 36 had complete support. The conservative certificate reused packets for 2,041 of 2,528 independent source exclusions (80.74\%) and recomputed 487. All results matched fresh selection. Three recomputations returned the old packet.
+
+Across 7,584 executions per plan, full recomputation took $5.16\times$ as long as certificate-based serving (trajectory-bootstrap 95\% interval $[4.36,6.17]$). These warm SQLite timings used precomputed features. Setup averaged 116 $\mu$s per query. 
+
+\balance
+\begin{table}[t]
+\caption{Exact reuse under independent hypothetical source exclusions. The final column counts additional reuse approvals beyond the fast boundary certificate.}
+\centering\small
+\begin{tabular}{rrrr}\toprule
+Sources removed & Cases & Unchanged & Additional\\\midrule
+1 & 2,528 & 2,044 & 3\\
+2 & 97,676 & 68,336 & 232\\
+3 & 4,000 & 1,991 & 12\\
+8 & 4,000 & 890 & 17\\
+\bottomrule\end{tabular}
+\label{tab:exclusions}
+\end{table}
+
+Across 108,204 deletion sets (Table~\ref{tab:exclusions}), the criterion found all 73,261 unchanged packets with costs, scores, rank and budget fixed.
+
+A separate console changes two source weights. Keeping the best intercept and canonical packet per linked-count pair reproduced all 106,134 selections on 1,862 pairs. Lookups from a prebuilt index took 3.90 versus 54.84 $\mu$s. For eight recurring weight settings, exact-key caching was faster (0.47 versus 4.26 $\mu$s). On the budgeted reader we also apply reduced-cost pruning~\cite{coreknap} and preserve the order of floating-point additions. This reproduced all 20,000 terminal packets across both checkpoint protocols (Table~\ref{tab:retrieval}).
+
+\section{Serving memory during code edits}
+We analyzed 3,525 write attempts from Handoff Debt~\cite{handoff} across 37 issues in five Python repositories. Our 2,048-byte view tracks previously read lines. Range invalidation drops overlapping blocks and shifts surviving addresses. A guard calibrated on 24 issues rejects clipped suffixes and discontinuous coordinates. On 1,071 edits in the remaining 13 issues, ranges preserved 302 complete packets, versus 2 for file invalidation, 92 for syntax-tree symbols and 287 for unique content matching. Content matching retained more individual bytes. All 25,912 surviving lines checked against later snapshots matched.
+
+For editor replacements we anchor common ends of the provided strings and align equal lines inside the edit window. Common ends alone preserved 322 packets. Interior alignment preserved 323 ($+1.97$ issue-macro points over range invalidation, $[1.02,3.03]$). All 29,713 mapped lines matched their snapshots. Edit literals totalled 1.22 MB versus 141.18 MB for complete version pairs. With access to those versions, combining range and unique-content validation preserved 341 packets.
+
+With edit receipts, range and local alignment fully covered four and six of 69 informative subsequent reads (889 windows censored). On 265 eligible edits in 159 SWE-bench Verified issues~\cite{swe-run}, local alignment preserved seven packets versus five for ranges. Task completion remains unmeasured.
+
+
+
+\section*{Acknowledgments}
+OpenAI Codex assisted in drafting Sections I--V, designing and implementing the methods in Sections II--III, and running and analyzing the experiments and creating the figures in Sections IV--V and the demonstration. Reported measurements were checked against persisted per-query and per-edit records.
+
+\bibliographystyle{IEEEtran}
+\bibliography{sources}
+\end{document}

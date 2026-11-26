@@ -1,0 +1,191 @@
+{
+  "seconds": 292.92,
+  "bytes": 5403129,
+  "scenes": [
+    [
+      "Inspect the stored view",
+      "Original packet"
+    ],
+    [
+      "Exclude an unrelated source",
+      "Reuse cached packet"
+    ],
+    [
+      "Exclude a selected source",
+      "Recompute packet"
+    ],
+    [
+      "Follow a recorded code edit",
+      "The original packet survives and its selected lines match both snapshots."
+    ],
+    [
+      "Compare invalidation granularity",
+      "The packet changes. Surviving observations can still have valid source bytes."
+    ],
+    [
+      "Verify the original display",
+      "The same IDs survive, but selected source bytes were already stale."
+    ],
+    [
+      "Use the editor\u2019s own evidence",
+      "Before [0,1] \u2192 After [0,1]; 15 selected lines on the edited path checked against both versions \u00b7 0 mismatches"
+    ],
+    [
+      "Trace a value through tool calls",
+      "Keeping every past flag would add 3 stale flags. Verified \u00b7 6 active outputs checked against the reference."
+    ],
+    [
+      "Change a source weight",
+      "Packet changed \u00b7 interval 2 of 4; Exact match \u00b7 13 ordered units \u00b7 2,048 tokens \u00b7 10,969 \u03bcs"
+    ],
+    [
+      "Change two source weights",
+      "Each source alone preserves the original packet. Together they change it. Exact match against full integer optimization."
+    ],
+    [
+      "Replay an observed source update",
+      "The packet changes from 19 to 15 fragments. Exact match against independent optimization."
+    ],
+    [
+      "Maintain a growing evidence packet",
+      "31 rows computed, compared with 79 for a fresh calculation. Exact match. Every fragment ID and its order agree."
+    ],
+    [
+      "Reduce a learned evidence packet",
+      "22,812 residual DP cell updates All ordered packet IDs match. Full DP: 189,290 cell updates."
+    ],
+    [
+      "An address change",
+      "A recorded 2Wiki loss"
+    ],
+    [
+      "Which calls are needed?",
+      "The fixed mention bonus on 2Wiki"
+    ],
+    [
+      "A stronger simple alternative",
+      "Always-linked vs fixed bonus on HotpotQA"
+    ],
+    [
+      "The learned SQL ranker",
+      "Suppress a mention and verify the revised top title"
+    ],
+    [
+      "Read as of version one",
+      "Journal and eligible-index lookup return Dance Girl Dance."
+    ],
+    [
+      "Read as of version two",
+      "The verified mention selects Robert Dinesen. Suppressing it restores the prior winner."
+    ]
+  ],
+  "source_video_sha256": "15b6e0f4f8e5e6e5e9eea44309019da494613bb384adb13e78b556e6fa69c973",
+  "video_sha256": "d9113b25e4b72c260146f973e28f337cf72bfec368390b0e8220521dab1969b4",
+  "extension_sha256": "67a0c8dee6b14a9b8631c2c19d63776e670c73e8e3bd9d18a2d47b1a7ace9332",
+  "prior_seconds": 276.88,
+  "extension_seconds": 16.04,
+  "capture_controls": [
+    {
+      "query": "case=change&received=2&asof=1&mention=1",
+      "asof": 1,
+      "received": 2,
+      "mention": 1,
+      "asof_words": 16,
+      "journal_winner": "Dance Girl Dance",
+      "eligible_winner": "Dance Girl Dance",
+      "counterfactual_winner": "Dance Girl Dance",
+      "quote_target": "Robert Dinesen",
+      "mention_span": [
+        20,
+        21
+      ],
+      "image_sha256": "4a684cdbb1b09426da264690e40f36a24780804a7444dff0f67b21b634aa08b8",
+      "narration": "Both versions have arrived. Read as of version one. The journal and a fresh lookup agree on Dance Girl Dance.",
+      "start_seconds": 276.88,
+      "duration_seconds": 7.32,
+      "voice": "Microsoft Zira Desktop"
+    },
+    {
+      "query": "case=change&received=2&asof=2&mention=1",
+      "asof": 2,
+      "received": 2,
+      "mention": 1,
+      "asof_words": 31,
+      "journal_winner": "Robert Dinesen",
+      "eligible_winner": "Robert Dinesen",
+      "counterfactual_winner": "Dance Girl Dance",
+      "quote_target": "Robert Dinesen",
+      "mention_span": [
+        20,
+        21
+      ],
+      "image_sha256": "019ce3807d2aa2ac7cbad988177d16e112bc1dbf15c4edfc25805eb00f3a10be",
+      "narration": "At version two, the observed mention selects Robert Dinesen. Both queries agree. Omitting this mention restores the earlier choice.",
+      "start_seconds": 284.2,
+      "duration_seconds": 8.72,
+      "voice": "Microsoft Zira Desktop"
+    }
+  ],
+  "suppression_verified": {
+    "asof": 2,
+    "received": 2,
+    "mention": 0,
+    "journal_winner": "Dance Girl Dance",
+    "eligible_winner": "Dance Girl Dance"
+  },
+  "streams": [
+    {
+      "index": 0,
+      "codec_name": "h264",
+      "profile": "High",
+      "codec_type": "video",
+      "width": 1440,
+      "height": 810,
+      "pix_fmt": "yuv420p",
+      "level": 32,
+      "r_frame_rate": "25/1",
+      "time_base": "1/12800",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration": "292.920000",
+      "nb_frames": "7323",
+      "extradata_hash": "SHA256:5146bfa5e6934bf6bd8f52c14922b84e67a681ab6b3ef590a15410996efeee1d"
+    },
+    {
+      "index": 1,
+      "codec_name": "aac",
+      "profile": "LC",
+      "codec_type": "audio",
+      "sample_rate": "22050",
+      "channels": 1,
+      "channel_layout": "mono",
+      "r_frame_rate": "0/0",
+      "time_base": "1/22050",
+      "start_pts": 0,
+      "start_time": "0.000000",
+      "duration": "292.920000",
+      "nb_frames": "6191",
+      "extradata_hash": "SHA256:63a960168bf4b0a41f53e260d166bfee4a244604843fa81115262c856ecbc4a3"
+    }
+  ],
+  "source_preservation": {
+    "video": {
+      "prior_packets": 6922,
+      "prefix_payload_sha256": "d153b1214dff61831f3a58df25df44d32b66e883913a7735d4a8080d4523ec06",
+      "extra_packets": 401,
+      "extension_payload_sha256": "489b2972b84f94a7fef754f4226442ff55863d2ad6a0a64690768da45a1e8cac",
+      "prior_pts_shift_seconds": 0.0
+    },
+    "audio": {
+      "prior_packets": 5844,
+      "prefix_payload_sha256": "f5ce3cca9567f2eb10c9b21740e4560b9aa9df8f07e2c996ccc0dd57186b1ff7",
+      "extra_packets": 347,
+      "extension_payload_sha256": "8c3dc324638b8478e95f43a667c9a6e91693fe30cf4a90cdacc3ebea3d120e03",
+      "prior_pts_shift_seconds": 0.0
+    }
+  },
+  "decoded_full_file": true,
+  "live_source": "experiments/graph_memory_round52/maintenance/demo/serve.py",
+  "server_source_sha256": "506d12cb2547324543539febee0db90b3fe6d00ee1674b67b1bc12c78168d22f",
+  "scenario_sha256": "291507010fbeff11f9a6936744dfa70e22c48b14d88b34d747df4b5d212f7cb4"
+}
