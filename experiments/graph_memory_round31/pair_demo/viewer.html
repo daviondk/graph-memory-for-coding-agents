@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Evidence after withdrawal</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f6f4ee;color:#152d32;font:16px/1.45 "Inter","Segoe UI",Arial,sans-serif}main{max-width:1100px;margin:auto;padding:26px 32px 40px}h1{font:500 clamp(32px,5vw,54px)/1.04 "Source Serif 4",Georgia,serif;letter-spacing:-.04em;margin:0 0 10px}p{margin:6px 0 14px}header{border-bottom:2px solid #34595c;padding-bottom:9px}label,summary,button,select{cursor:pointer}select{display:block;width:100%;padding:8px;border:1px solid #9aa9a5;border-radius:5px;background:white;color:inherit;font:inherit}h2{font:500 24px/1.2 "Source Serif 4",Georgia,serif;margin:0 0 12px}.picker{margin:17px 0 15px}.picker label{display:block;font-weight:600;margin-bottom:5px}.grid{display:grid;grid-template-columns:minmax(270px,1fr) minmax(310px,1fr);gap:22px}.panel{background:#fffefa;border:1px solid #c7ceca;border-radius:8px;padding:18px;min-width:0}.toolbar{display:flex;gap:6px;flex-wrap:wrap;margin:0 0 12px}button{padding:5px 8px;color:#234448;border:1px solid #a9b9b4;background:#fff;border-radius:4px}.docs label{display:flex;align-items:baseline;gap:7px;border-top:1px solid #e3e6dd;padding:3px 0;overflow-wrap:anywhere}.docs input{accent-color:#9e4b31}.lost{color:#835549;text-decoration:line-through}.winner{border-left:4px solid #27806a;background:#e9f3eb;padding:10px 12px;font-weight:650}.row{display:grid;grid-template-columns:1fr auto;gap:6px;border-bottom:1px solid #dce0d8;padding:6px 0}.note{font-size:14px;color:#425956}.foot{margin-top:18px;border-top:1px solid #b9c7c0;padding-top:10px;font-size:13px;color:#4c6260}a{color:#225953}details{margin:12px 0 0}.err{color:#802a18}button:focus-visible,select:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #367568;outline-offset:2px}@media(max-width:680px){main{padding:18px 14px}.grid{grid-template-columns:1fr}.panel{padding:14px}.picker{margin:12px 0}}
+</style></head><body><main>
+<header><h1>Evidence after withdrawal</h1><p>Withdraw source documents and inspect the best surviving pair for a fixed retrieval model.</p></header>
+<div class="picker"><label for="cases">HotpotQA question</label><select id="cases"></select></div>
+<div class="grid"><section class="panel"><h2>Source availability</h2><p class="note">Select a source to withdraw it.</p>
+<div class="toolbar"><button id="reset">Restore all</button><button id="two">Withdraw current pair</button><button id="third">Withdraw next source</button></div><div id="docs" class="docs"></div></section>
+<section class="panel" aria-live="polite"><h2>Highest-ranked surviving pair</h2><div id="winner" class="winner"></div>
+<div class="row"><span>Unavailable sources</span><strong id="count"></strong></div><div class="row"><span>All ranked pairs</span><strong id="fullCount"></strong></div><div class="row"><span>Ordinary top six saved</span><strong id="rawCount"></strong></div><div class="row"><span>Reachable winners saved</span><strong id="treeCount"></strong></div>
+<p id="proof" class="note"></p><p id="cost" class="note"></p><p id="mode" class="note"></p>
+<details id="lists"><summary>Inspect saved pairs</summary><div id="entries"></div></details>
+<details id="annotation"><summary>Compare with annotated support</summary><p id="gold"></p></details></section></div>
+<footer class="foot">Question text and source titles from <a href="https://hotpotqa.github.io/">HotpotQA</a> (<a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>). This 24-question sample uses a fixed lexical pair ranking. Recovery measures agreement with that ranking. Annotated support measures document selection.</footer>
+</main><script>
+const panel=/*__CASES__*/null;const cases=panel.questions,$=id=>document.getElementById(id);
+let row,removed=new Set(),version=0;const live=!Array.isArray(cases[0].full);
+function survives(e,s){return !s.has(e>>4)&&!s.has(e&15)}
+function first(edges,s){return edges.find(e=>survives(e,s))??null}
+function offline(){let ids=[...removed].sort((a,b)=>a-b),certificate=null,winner=null,tree_fallback=false,raw_fallback=false;
+ const empty=row.titles.length-ids.length<2;
+ if(!empty){
+   if(ids.length<=2){certificate=ids;winner=first(row.tree,removed)}
+   else {let subsets=[[],...ids.map(i=>[i])];ids.forEach((i,k)=>ids.slice(k+1).forEach(j=>subsets.push([i,j])));
+     for(const t of subsets){let e=first(row.tree,new Set(t));if(e===null||survives(e,removed)){certificate=t;winner=e;break}}
+     if(certificate===null){tree_fallback=true;winner=first(row.full,removed)}}
+   raw_fallback=first(row.raw,removed)===null;
+ }return {winner,certificate,tree_fallback,raw_fallback,empty}}
+function display(s){const both=e=>[row.titles[e>>4],row.titles[e&15]].join(" + ");
+ $("winner").textContent=s.empty?"Fewer than two documents remain.":both(s.winner);
+ $("count").textContent=removed.size+" / "+row.titles.length;$("fullCount").textContent=(row.full_count??row.full.length);$("rawCount").textContent=(row.raw_count??row.raw.length);$("treeCount").textContent=(row.tree_count??row.tree.length);
+ const subset=(s.certificate??[]).map(i=>row.titles[i]).join(" + ");$("proof").textContent=s.empty?"Document count certifies an empty result.":s.tree_fallback?"The two-withdrawal certificate is insufficient. The full ranking supplied the result.":removed.size<=2?"This pair is the highest-ranked survivor. The stored set covers every combination of up to two withdrawals.":"Certificate: the same pair wins with "+(subset?"only "+subset+" withdrawn":"all sources available")+". Both documents still survive.";
+ $("cost").textContent=s.empty?"No ranked list is needed.":"Full ranking lookup · ordinary top six: "+(s.raw_fallback?"required":"avoided")+" · reachable winners: "+(s.tree_fallback?"required":"avoided")+".";
+ $("mode").textContent=live?"Serving decisions from local SQLite.":"Offline replay from the exported lists.";
+ $("gold").textContent=row.gold.map(i=>row.titles[i]).join(" + ")+(s.winner===null?"":row.gold.every(i=>i===(s.winner>>4)||i===(s.winner&15))?" · matches the selected pair.":" · differs from the selected pair.");
+ $("two").disabled=s.winner===null;$("third").disabled=removed.size===row.titles.length;window.viewState={...s,q:row.q,removed:[...removed].sort((a,b)=>a-b),live};document.body.dataset.ready="yes";if($("lists").open)showLists();}
+const saved=new Map();
+async function showLists(){
+ const requested=row;
+ if(live && !saved.has(row.q)){
+  try{const res=await fetch("/api/lists?"+new URLSearchParams({q:row.q}));if(!res.ok)throw Error(res.status);saved.set(requested.q,await res.json())}
+  catch(e){if(row===requested)$("entries").textContent="Unable to load saved pairs.";return}
+ }
+ if(row!==requested || !$("lists").open)return;
+ const v=live?saved.get(row.q):row, target=$("entries");target.replaceChildren();
+ for(const [key,label] of [["raw","Ordinary top six"],["tree","Reachable winners"]]){
+  const title=document.createElement("strong"),list=document.createElement("ol");title.textContent=label;
+  for(const e of v[key]){const item=document.createElement("li");item.textContent=[row.titles[e>>4],row.titles[e&15]].join(" + ");if(!survives(e,removed))item.className="lost";list.append(item)}
+  target.append(title,list);
+ }
+}
+$("lists").ontoggle=()=>{if($("lists").open)showLists()};
+async function refresh(){const seq=++version;document.body.dataset.ready="pending";let s;$("two").disabled=true;$("third").disabled=true;
+ if(live){try{const res=await fetch("/api/query?"+new URLSearchParams({q:row.q,lost:[...removed].join(",")}));if(!res.ok)throw Error(res.status);s=await res.json()}catch(e){if(seq===version){$("winner").textContent="Unable to read the SQLite store: "+e;document.body.dataset.ready="error"}return}}
+ if(!live)s=offline();if(seq===version)display(s);}
+function draw(){const box=$("docs");box.replaceChildren();row.titles.forEach((t,i)=>{let l=document.createElement("label"),cb=document.createElement("input"),name=document.createElement("span");
+ cb.type="checkbox";cb.checked=removed.has(i);name.textContent=t;if(cb.checked)name.className="lost";cb.onchange=()=>{if(cb.checked)removed.add(i);else removed.delete(i);name.className=cb.checked?"lost":"";refresh()};l.append(cb,name);box.append(l)});refresh()}
+cases.forEach((r,i)=>{const o=document.createElement("option");o.value=i;o.textContent=r.question;$("cases").append(o)});
+$("cases").onchange=()=>{row=cases[+$("cases").value];$("lists").open=false;$("entries").replaceChildren();removed.clear();draw()};$("reset").onclick=()=>{removed.clear();draw()};
+$("two").onclick=()=>{const e=window.viewState.winner;if(e!==null){removed.add(e>>4);removed.add(e&15);draw()}};
+$("third").onclick=()=>{const e=window.viewState.winner,i=e===null?row.titles.findIndex((_,j)=>!removed.has(j)):e>>4;if(i>=0){removed.add(i);draw()}};
+$("cases").onchange();
+</script></body></html>
