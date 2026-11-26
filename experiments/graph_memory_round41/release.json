@@ -1,0 +1,190 @@
+{
+  "completed": [
+    "causal_budget",
+    "memtrace_publish",
+    "paper_candidate",
+    "prefix_native",
+    "structural_invalidation",
+    "tail_locator"
+  ],
+  "manifests": {
+    "causal_budget": "070db3dc17bf8a194e901b68c886f67377b29147b0d7add177292e2d0060e571",
+    "memtrace_publish": "fc708e451480b989edb93592ab8193186565f3a67237bdfb7476b5ab2bcd6836",
+    "paper_candidate": "3ffbb91b718d5aa209ae7d26383ba1c1979e0dfc1050ac7daa5f022e000619bc",
+    "prefix_native": "4ae5cbc0066581d7307033387ca9161de64e469214ee3ddcf519776f2c8b675b",
+    "structural_invalidation": "83985ee220a3c0f0022df909a983e89860a873ec4b93d2fc6be6112cabff7322",
+    "tail_locator": "6aee452938345b8fca13f1c79783f49c989127672d04e9f00279873a9d2f2fc7"
+  },
+  "outcome_checks": [
+    {
+      "equals": 901,
+      "file": "causal_budget/results.json",
+      "path": [
+        "groups",
+        "50/eligible",
+        "n"
+      ]
+    },
+    {
+      "equals": [
+        13,
+        17,
+        29,
+        37,
+        41
+      ],
+      "file": "causal_budget/results.json",
+      "path": [
+        "seeds"
+      ]
+    },
+    {
+      "equals": 10,
+      "file": "memtrace_publish/results.json",
+      "path": [
+        "summary",
+        "asserted_certified",
+        "accepted_positive"
+      ]
+    },
+    {
+      "equals": 20,
+      "file": "memtrace_publish/results.json",
+      "path": [
+        "summary",
+        "asserted_certified",
+        "refused_negative"
+      ]
+    },
+    {
+      "equals": 1421,
+      "file": "tail_locator/results.json",
+      "path": [
+        "groups",
+        "novel",
+        "views"
+      ]
+    },
+    {
+      "equals": 59,
+      "file": "tail_locator/results.json",
+      "path": [
+        "groups",
+        "novel",
+        "accepted"
+      ]
+    },
+    {
+      "equals": 477474,
+      "file": "tail_locator/results.json",
+      "path": [
+        "groups",
+        "novel",
+        "read_bytes"
+      ]
+    },
+    {
+      "equals": 2521994,
+      "file": "tail_locator/results.json",
+      "path": [
+        "groups",
+        "novel",
+        "full_bytes_on_same_attempts"
+      ]
+    },
+    {
+      "equals": 705,
+      "file": "tail_locator/literal-audit.json",
+      "path": [
+        "counts",
+        "literal_scans"
+      ]
+    },
+    {
+      "equals": 302,
+      "file": "structural_invalidation/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "range",
+        "strict"
+      ]
+    },
+    {
+      "equals": 92,
+      "file": "structural_invalidation/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "ast",
+        "strict"
+      ]
+    },
+    {
+      "equals": 287,
+      "file": "structural_invalidation/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "content",
+        "strict"
+      ]
+    },
+    {
+      "equals": 2,
+      "file": "structural_invalidation/results.json",
+      "path": [
+        "panels",
+        "held1071",
+        "methods",
+        "file",
+        "strict"
+      ]
+    },
+    {
+      "equals": "dd34ffb86b41d4862f38adaf957c63de1a0441bb84c3877dd5bf9ceb42d22bb9",
+      "file": "demo-isolation.json",
+      "path": [
+        "candidate_sha256"
+      ]
+    },
+    {
+      "equals": 2,
+      "file": "demo-isolation.json",
+      "path": [
+        "real_consoles"
+      ]
+    },
+    {
+      "equals": 901,
+      "file": "prefix_native/results.json",
+      "path": [
+        "panels",
+        "eligible",
+        "questions"
+      ]
+    },
+    {
+      "equals": 657,
+      "file": "prefix_native/results.json",
+      "path": [
+        "panels",
+        "eligible",
+        "trajectories"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round22/prefix_read/REPORT_RU.md",
+    "graph_memory_round39/native_five/REPORT_RU.md",
+    "graph_memory_round40/guarded_updates/REPORT_RU.md",
+    "graph_memory_round40/memtrace_reference/REPORT_RU.md",
+    "graph_memory_round40/memtrace_reference/REPRODUCE_RU.md",
+    "graph_memory_round40/span_updates/REPORT_RU.md"
+  ],
+  "round": 41,
+  "top_documents": []
+}

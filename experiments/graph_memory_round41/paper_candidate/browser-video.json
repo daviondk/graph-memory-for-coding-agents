@@ -1,0 +1,30 @@
+{
+  "seconds": 81.36,
+  "bytes": 1764593,
+  "scenes": [
+    [
+      "Inspect the stored view",
+      "Original packet"
+    ],
+    [
+      "Exclude an unrelated source",
+      "Reuse cached packet"
+    ],
+    [
+      "Exclude a selected source",
+      "Recompute packet"
+    ],
+    [
+      "Follow a recorded code edit",
+      "The original packet survives and its selected lines match both snapshots."
+    ],
+    [
+      "Compare invalidation granularity",
+      "The packet changes. Surviving observations can still have valid source bytes."
+    ],
+    [
+      "Verify the original display",
+      "The same IDs survive, but selected source bytes were already stale."
+    ]
+  ]
+}

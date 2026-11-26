@@ -1,0 +1,35 @@
+{
+  "candidate_sha256": "dd34ffb86b41d4862f38adaf957c63de1a0441bb84c3877dd5bf9ceb42d22bb9",
+  "code_packet_bytes": [
+    507,
+    74
+  ],
+  "invalid_request_codes": [
+    404,
+    400,
+    400
+  ],
+  "isolated_imports": true,
+  "real_consoles": 2,
+  "stale_selected_lines": 3,
+  "trace_coverage": [
+    60,
+    60
+  ],
+  "trace_removed_added": [
+    11,
+    19
+  ],
+  "unavailable_runtime": [
+    [
+      "apps/trace/runtime/reader.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/code/witness.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ]
+  ]
+}
