@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graph memory · Reader agreement</title>
+<style>
+:root{--ink:#142722;--green:#215c49;--paper:#fafbf6;--line:#cdd8cd;--dim:#465e52;color:var(--ink);background:var(--paper);font:16px/1.5 "Segoe UI",Arial,sans-serif}
+*{box-sizing:border-box}body{max-width:990px;margin:0 auto;padding:32px 24px}h1{font:normal clamp(36px,6vw,64px)/1.04 Georgia,serif;letter-spacing:-.045em;margin:0 0 12px}h2{font:normal 27px Georgia,serif;margin:0}p{max-width:720px}header{margin:0 0 27px}.controls{border-block:1px solid var(--line);padding:18px 0;display:flex;flex-wrap:wrap;align-items:end;gap:14px 22px}label,legend{font-size:.86rem;font-weight:600}label select,label input[type=number]{display:block;margin-top:4px}button,select,input[type=number]{font:inherit;color:var(--ink);background:white;border:1px solid #92a69a;border-radius:4px;padding:6px 9px}input[type=number]{width:100px}button{cursor:pointer}button:hover{background:#e9f2eb}input[type=checkbox]{accent-color:var(--green)}fieldset{border:0;padding:0;margin:0}fieldset label{display:inline-block;margin-right:7px;font-weight:400}section{margin:24px 0}.stats{display:flex;flex-wrap:wrap;align-items:center;gap:8px 28px;background:#e9f1e7;padding:14px 18px;border-left:4px solid var(--green)}#archive,#gold,#source{color:var(--dim)}#archive,#gold{min-height:24px}#source{overflow-wrap:anywhere;font-size:.9rem}.packet{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0 20px}.token{border-radius:4px;background:#e5efe5;padding:4px 8px;color:var(--green);font:14px/1.4 ui-monospace,monospace}.protected{font-weight:bold;border-bottom:2px solid var(--green)}table{width:100%;border-collapse:collapse;font-size:.92rem}td,th{text-align:left;padding:6px 7px;border-bottom:1px solid var(--line)}th{color:var(--dim)}.on{color:var(--green);font-weight:bold}#error{color:#922}button:focus-visible,select:focus-visible,input:focus-visible{outline:3px solid #e29814} @media(max-width:520px){body{padding:20px 12px}td,th{padding:4px}.votes span{display:none}}
+</style>
+<header><h1>Reader agreement</h1><p>Compare the evidence packets proposed by five graph readers on the same execution trace. Change the readers or token budget to recompute a packet from the SQLite snapshot.</p></header>
+<main>
+<form id="controls" class="controls">
+<label>Trace <select id="case"></select></label>
+<label>Selection <select id="method"><option value="votes_greedy">Greedy vote</option><option value="hamming_dp">Minimum disagreement</option><option value="mean_dp">Maximum mean utility</option><option value="votes_dp">Maximum vote count</option></select></label>
+<label>Token budget <input type="number" value="2048" min="128" max="4096" id="budget"></label>
+<fieldset><legend>Reader seeds</legend><div id="seeds"></div></fieldset>
+</form><p id="error" role="alert"></p>
+<section><div class="stats" aria-live="polite"><strong id="used"></strong><span id="size"></span><span id="head"></span></div><p id="source"></p><h2>Selected evidence</h2><div class="packet" id="packet"></div><p id="archive"></p><button type="button" id="evaluate">Check annotated source spans</button><p id="gold" aria-live="polite"></p></section>
+<section><h2>Candidate fragments</h2><p>Ranked by reciprocal-rank fusion. Underlined IDs belong to the protected prefix. A vote means the original reader included that unit at its recorded 2,048-token budget.</p><table><thead><tr><th>Unit</th><th>Source</th><th>Tokens</th><th>Votes</th><th>Selected</th></tr></thead><tbody id="rows"></tbody></table></section>
+</main>
+<script>
+const el=s=>document.getElementById(s),seeds=[13,17,29,37,41];
+for(let i=1;i<=32;i++)el('case').add(new Option('Trace '+String(i).padStart(2,'0'),i));
+for(const s of seeds){const label=document.createElement('label'),b=document.createElement('input');b.type='checkbox';b.value=s;b.checked=true;label.append(b,' '+s);el('seeds').append(label);}
+let serial=0;
+function part(tag,text,cls=''){const n=document.createElement(tag);n.textContent=text;n.className=cls;return n}
+async function update(evaluate){
+ const id=++serial, inputs=[...document.querySelectorAll('#seeds input')],on=inputs.filter(x=>x.checked);
+ for(const x of inputs)x.disabled=x.checked&&on.length===1;
+ if(!el('budget').reportValidity())return;
+ const p=new URLSearchParams({case:el('case').value,budget:el('budget').value,method:el('method').value,gold:evaluate?'1':'0'});
+ for(const x of on)p.append('seed',x.value);
+ try{const r=await fetch('/packet?'+p);if(!r.ok)throw Error('Request failed');const v=await r.json();if(id!==serial)return;
+ el('error').textContent='';el('used').textContent=v.used.toLocaleString()+' / '+v.budget.toLocaleString()+' tokens';el('size').textContent=v.packet.length+' of '+v.total+' fragments';el('head').textContent=v.head+' protected';
+ el('source').textContent=v.question+' · '+v.trajectory;
+ el('packet').replaceChildren(...v.packet.map((i,k)=>part('span','#'+i,'token'+(k<v.head?' protected':''))));
+ el('archive').textContent='archive_matches' in v?(v.archive_matches?'Ordered packet matches the archived experiment.':'Archived packet differs.'):'Interactive configuration. The archived comparison uses five readers and 2,048 tokens.';
+ el('gold').textContent=v.evaluation?((v.evaluation.full?'Full':'Partial')+' support · '+v.evaluation.covered+' / '+v.evaluation.total+' annotated characters covered.'):'';
+ el('rows').replaceChildren(...v.units.map(u=>{const tr=document.createElement('tr');tr.append(part('td','#'+u.id),part('td',u.role),part('td',u.cost),part('td',u.votes+' / '+v.readers),part('td',u.selected?'Yes':'—',u.selected?'on':''));return tr}));
+ document.body.dataset.ready=v.method+'/'+v.budget+'/'+v.readers;
+ }catch(err){if(id===serial)el('error').textContent=String(err)}
+}
+el('controls').addEventListener('change',()=>update(false));el('controls').addEventListener('submit',e=>{e.preventDefault();update(false)});el('evaluate').onclick=()=>update(true);update(false);
+</script></html>
+
