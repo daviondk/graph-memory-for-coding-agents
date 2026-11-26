@@ -1,0 +1,806 @@
+{
+  "bootstrap_seed": 7015,
+  "comparisons": {
+    "last8anchor-accumulated-all_anchors": {
+      "equal_project_mean_difference": -0.006226519612668374,
+      "exploratory_project_bootstrap_95": [
+        -0.020156205538553768,
+        0.007790261494708304
+      ],
+      "project_differences": {
+        "encode/httpx": -0.03489788452694509,
+        "pallets/flask": 0.006188033382382718,
+        "pypa/pip": -0.002003773910710216,
+        "pytest-dev/pytest": -0.011177069383306537,
+        "python-attrs/attrs": -0.016379230088907404,
+        "python-jsonschema/jsonschema": 0.020910806851476282
+      }
+    },
+    "last8anchor-accumulated-one_anchor": {
+      "equal_project_mean_difference": -0.003891525825543742,
+      "exploratory_project_bootstrap_95": [
+        -0.021889690051297362,
+        0.01537163756234409
+      ],
+      "project_differences": {
+        "encode/httpx": -0.03997792216075802,
+        "pallets/flask": 0.003105657273947182,
+        "pypa/pip": -0.0016068052930056642,
+        "pytest-dev/pytest": -0.008963985403775965,
+        "python-attrs/attrs": -0.012903225806451646,
+        "python-jsonschema/jsonschema": 0.03699712643678166
+      }
+    },
+    "last8anchor-sample8anchor-all_anchors": {
+      "equal_project_mean_difference": -0.00021502003362595482,
+      "exploratory_project_bootstrap_95": [
+        -0.00829704350162333,
+        0.009225768216658825
+      ],
+      "project_differences": {
+        "encode/httpx": -0.013586589125438975,
+        "pallets/flask": 0.007256370647488741,
+        "pypa/pip": -0.0013162556965926053,
+        "pytest-dev/pytest": -0.005820127718602519,
+        "python-attrs/attrs": -0.0077363496718334535,
+        "python-jsonschema/jsonschema": 0.019912831363223082
+      }
+    },
+    "last8anchor-sample8anchor-one_anchor": {
+      "equal_project_mean_difference": 0.0009828030298054957,
+      "exploratory_project_bootstrap_95": [
+        -0.00970913666521081,
+        0.013482573229514294
+      ],
+      "project_differences": {
+        "encode/httpx": -0.011305537331656734,
+        "pallets/flask": 0.003599099684023721,
+        "pypa/pip": -0.0016763378465505796,
+        "pytest-dev/pytest": 0.003926701570680646,
+        "python-attrs/attrs": -0.01774193548387104,
+        "python-jsonschema/jsonschema": 0.02909482758620696
+      }
+    },
+    "local32-accumulated-all_anchors": {
+      "equal_project_mean_difference": -0.12552519821288083,
+      "exploratory_project_bootstrap_95": [
+        -0.19803394007896044,
+        -0.05514707737425942
+      ],
+      "project_differences": {
+        "encode/httpx": -0.16081249255085955,
+        "pallets/flask": -0.005510301327146694,
+        "pypa/pip": -0.11775436540585749,
+        "pytest-dev/pytest": -0.28205579419442384,
+        "python-attrs/attrs": -0.15123353349159796,
+        "python-jsonschema/jsonschema": -0.035784702307399385
+      }
+    },
+    "local32-accumulated-one_anchor": {
+      "equal_project_mean_difference": -0.12401432988803714,
+      "exploratory_project_bootstrap_95": [
+        -0.19917205841359215,
+        -0.049638928019224045
+      ],
+      "project_differences": {
+        "encode/httpx": -0.17910679701724486,
+        "pallets/flask": 0.0006911594659939624,
+        "pypa/pip": -0.1280603261948859,
+        "pytest-dev/pytest": -0.27916997197101906,
+        "python-attrs/attrs": -0.1457245263696877,
+        "python-jsonschema/jsonschema": -0.012715517241379315
+      }
+    },
+    "local32-frequency-all_anchors": {
+      "equal_project_mean_difference": 0.04670178779666056,
+      "exploratory_project_bootstrap_95": [
+        0.027256433084067815,
+        0.06407257179223116
+      ],
+      "project_differences": {
+        "encode/httpx": 0.0656573943810555,
+        "pallets/flask": 0.00781902682595692,
+        "pypa/pip": 0.0564101947709387,
+        "pytest-dev/pytest": 0.07589998715653162,
+        "python-attrs/attrs": 0.049998836289158854,
+        "python-jsonschema/jsonschema": 0.024425287356321768
+      }
+    },
+    "local32-frequency-one_anchor": {
+      "equal_project_mean_difference": 0.0467970990904505,
+      "exploratory_project_bootstrap_95": [
+        0.022680379014668028,
+        0.06843513080562715
+      ],
+      "project_differences": {
+        "encode/httpx": 0.0741693319118692,
+        "pallets/flask": -0.0016092936535598845,
+        "pypa/pip": 0.059806340477417994,
+        "pytest-dev/pytest": 0.08167539267015708,
+        "python-attrs/attrs": 0.032258064516129004,
+        "python-jsonschema/jsonschema": 0.03448275862068961
+      }
+    }
+  },
+  "pooled": {
+    "anchor_queries": 4171,
+    "methods": {
+      "accumulated": {
+        "all_anchors": {
+          "hit_rate": 0.6921125309563781,
+          "incident_events": 9.78794456444341,
+          "recall": 0.480221750145298
+        },
+        "one_anchor": {
+          "hit_count": 616,
+          "hit_rate": 0.7,
+          "incident_events": 9.55340909090909,
+          "recall": 0.48826152468427647
+        }
+      },
+      "degree32": {
+        "all_anchors": {
+          "hit_rate": 0.41890584793993885,
+          "incident_events": 0.0,
+          "recall": 0.24925063622235252
+        },
+        "one_anchor": {
+          "hit_count": 374,
+          "hit_rate": 0.425,
+          "incident_events": 0,
+          "recall": 0.24867855743272757
+        }
+      },
+      "frequency": {
+        "all_anchors": {
+          "hit_rate": 0.4844220205299751,
+          "incident_events": 0.0,
+          "recall": 0.2904493965624987
+        },
+        "one_anchor": {
+          "hit_count": 431,
+          "hit_rate": 0.48977272727272725,
+          "incident_events": 0,
+          "recall": 0.29583738249974567
+        }
+      },
+      "last8anchor": {
+        "all_anchors": {
+          "hit_rate": 0.6842875150631804,
+          "incident_events": 4.885446314242046,
+          "recall": 0.4726147727153266
+        },
+        "one_anchor": {
+          "hit_count": 609,
+          "hit_rate": 0.6920454545454545,
+          "incident_events": 4.9,
+          "recall": 0.48137414179894256
+        }
+      },
+      "local16": {
+        "all_anchors": {
+          "hit_rate": 0.5143585750049305,
+          "incident_events": 0.6825377003343528,
+          "recall": 0.3246076892277722
+        },
+        "one_anchor": {
+          "hit_count": 458,
+          "hit_rate": 0.5204545454545455,
+          "incident_events": 0.6556818181818181,
+          "recall": 0.33028656784133387
+        }
+      },
+      "local32": {
+        "all_anchors": {
+          "hit_rate": 0.5309116325593598,
+          "incident_events": 1.2717695631756938,
+          "recall": 0.3413743956116855
+        },
+        "one_anchor": {
+          "hit_count": 470,
+          "hit_rate": 0.5340909090909091,
+          "incident_events": 1.2738636363636364,
+          "recall": 0.34745862258530213
+        }
+      },
+      "sample8anchor": {
+        "all_anchors": {
+          "hit_rate": 0.6872287415002203,
+          "incident_events": 4.885446314242046,
+          "recall": 0.4745853231254886
+        },
+        "one_anchor": {
+          "hit_count": 606,
+          "hit_rate": 0.6886363636363636,
+          "incident_events": 4.9,
+          "recall": 0.4820651547822741
+        }
+      }
+    },
+    "n": 880
+  },
+  "projects": {
+    "encode/httpx": {
+      "anchor_queries": 577,
+      "methods": {
+        "accumulated": {
+          "all_anchors": {
+            "hit_rate": 0.7671290980992473,
+            "incident_events": 12.785451840131383,
+            "recall": 0.5506533879251175
+          },
+          "one_anchor": {
+            "hit_count": 109,
+            "hit_rate": 0.8134328358208955,
+            "incident_events": 12.761194029850746,
+            "recall": 0.5862749812376679
+          }
+        },
+        "degree32": {
+          "all_anchors": {
+            "hit_rate": 0.5295013030087657,
+            "incident_events": 0.0,
+            "recall": 0.3061951447245565
+          },
+          "one_anchor": {
+            "hit_count": 73,
+            "hit_rate": 0.5447761194029851,
+            "incident_events": 0,
+            "recall": 0.30231178440133666
+          }
+        },
+        "frequency": {
+          "all_anchors": {
+            "hit_rate": 0.5598258706467661,
+            "incident_events": 0.0,
+            "recall": 0.3241835009932025
+          },
+          "one_anchor": {
+            "hit_count": 78,
+            "hit_rate": 0.582089552238806,
+            "incident_events": 0,
+            "recall": 0.3329988523085538
+          }
+        },
+        "last8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7296853643868569,
+            "incident_events": 6.262473323428108,
+            "recall": 0.5157555033981724
+          },
+          "one_anchor": {
+            "hit_count": 103,
+            "hit_rate": 0.7686567164179104,
+            "incident_events": 6.2388059701492535,
+            "recall": 0.5462970590769098
+          }
+        },
+        "local16": {
+          "all_anchors": {
+            "hit_rate": 0.5893804785595831,
+            "incident_events": 0.7560998444536636,
+            "recall": 0.36384368363077757
+          },
+          "one_anchor": {
+            "hit_count": 84,
+            "hit_rate": 0.6268656716417911,
+            "incident_events": 0.7910447761194029,
+            "recall": 0.3837229105885822
+          }
+        },
+        "local32": {
+          "all_anchors": {
+            "hit_rate": 0.6183605780620706,
+            "incident_events": 1.4737019652866887,
+            "recall": 0.389840895374258
+          },
+          "one_anchor": {
+            "hit_count": 87,
+            "hit_rate": 0.6492537313432836,
+            "incident_events": 1.492537313432836,
+            "recall": 0.407168184220423
+          }
+        },
+        "sample8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7350010478741822,
+            "incident_events": 6.262473323428108,
+            "recall": 0.5293420925236114
+          },
+          "one_anchor": {
+            "hit_count": 103,
+            "hit_rate": 0.7686567164179104,
+            "incident_events": 6.2388059701492535,
+            "recall": 0.5576025964085666
+          }
+        }
+      },
+      "n": 134
+    },
+    "pallets/flask": {
+      "anchor_queries": 690,
+      "methods": {
+        "accumulated": {
+          "all_anchors": {
+            "hit_rate": 0.7863134657836645,
+            "incident_events": 17.05542527707532,
+            "recall": 0.5144500399044409
+          },
+          "one_anchor": {
+            "hit_count": 124,
+            "hit_rate": 0.8211920529801324,
+            "incident_events": 16,
+            "recall": 0.5280609131492304
+          }
+        },
+        "degree32": {
+          "all_anchors": {
+            "hit_rate": 0.7453642384105961,
+            "incident_events": 0.0,
+            "recall": 0.45763253438401574
+          },
+          "one_anchor": {
+            "hit_count": 117,
+            "hit_rate": 0.7748344370860927,
+            "incident_events": 0,
+            "recall": 0.46892639492925514
+          }
+        },
+        "frequency": {
+          "all_anchors": {
+            "hit_rate": 0.7887417218543047,
+            "incident_events": 0.0,
+            "recall": 0.5011207117513373
+          },
+          "one_anchor": {
+            "hit_count": 124,
+            "hit_rate": 0.8211920529801324,
+            "incident_events": 0,
+            "recall": 0.5303613662687843
+          }
+        },
+        "last8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7896247240618102,
+            "incident_events": 5.938204216453452,
+            "recall": 0.5206380732868237
+          },
+          "one_anchor": {
+            "hit_count": 124,
+            "hit_rate": 0.8211920529801324,
+            "incident_events": 5.9072847682119205,
+            "recall": 0.5311665704231776
+          }
+        },
+        "local16": {
+          "all_anchors": {
+            "hit_rate": 0.7659413434247871,
+            "incident_events": 1.2897129971487198,
+            "recall": 0.49527177624895624
+          },
+          "one_anchor": {
+            "hit_count": 119,
+            "hit_rate": 0.7880794701986755,
+            "incident_events": 1.1788079470198676,
+            "recall": 0.5201621651755435
+          }
+        },
+        "local32": {
+          "all_anchors": {
+            "hit_rate": 0.7780353200883002,
+            "incident_events": 2.4361273966785726,
+            "recall": 0.5089397385772942
+          },
+          "one_anchor": {
+            "hit_count": 120,
+            "hit_rate": 0.7947019867549668,
+            "incident_events": 2.3046357615894038,
+            "recall": 0.5287520726152244
+          }
+        },
+        "sample8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7881635656470094,
+            "incident_events": 5.938204216453452,
+            "recall": 0.5133817026393349
+          },
+          "one_anchor": {
+            "hit_count": 122,
+            "hit_rate": 0.8079470198675497,
+            "incident_events": 5.9072847682119205,
+            "recall": 0.5275674707391539
+          }
+        }
+      },
+      "n": 151
+    },
+    "pypa/pip": {
+      "anchor_queries": 1708,
+      "methods": {
+        "accumulated": {
+          "all_anchors": {
+            "hit_rate": 0.5112864304863735,
+            "incident_events": 4.125288796105522,
+            "recall": 0.28416207865826576
+          },
+          "one_anchor": {
+            "hit_count": 127,
+            "hit_rate": 0.5019762845849802,
+            "incident_events": 4.478260869565218,
+            "recall": 0.28859787051461977
+          }
+        },
+        "degree32": {
+          "all_anchors": {
+            "hit_rate": 0.15903696654684796,
+            "incident_events": 0.0,
+            "recall": 0.05335126497753916
+          },
+          "one_anchor": {
+            "hit_count": 41,
+            "hit_rate": 0.16205533596837945,
+            "incident_events": 0,
+            "recall": 0.04996857659304182
+          }
+        },
+        "frequency": {
+          "all_anchors": {
+            "hit_rate": 0.2742163304416269,
+            "incident_events": 0.0,
+            "recall": 0.10999751848146958
+          },
+          "one_anchor": {
+            "hit_count": 65,
+            "hit_rate": 0.25691699604743085,
+            "incident_events": 0,
+            "recall": 0.10073120384231589
+          }
+        },
+        "last8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.5086675956540998,
+            "incident_events": 3.342832541970328,
+            "recall": 0.28215830474755554
+          },
+          "one_anchor": {
+            "hit_count": 128,
+            "hit_rate": 0.5059288537549407,
+            "incident_events": 3.466403162055336,
+            "recall": 0.2869910652216141
+          }
+        },
+        "local16": {
+          "all_anchors": {
+            "hit_rate": 0.31461688491800827,
+            "incident_events": 0.3361036619798452,
+            "recall": 0.1484745603840905
+          },
+          "one_anchor": {
+            "hit_count": 77,
+            "hit_rate": 0.30434782608695654,
+            "incident_events": 0.34782608695652173,
+            "recall": 0.14109683752935087
+          }
+        },
+        "local32": {
+          "all_anchors": {
+            "hit_rate": 0.33522905509071516,
+            "incident_events": 0.5997989184114194,
+            "recall": 0.16640771325240827
+          },
+          "one_anchor": {
+            "hit_count": 82,
+            "hit_rate": 0.3241106719367589,
+            "incident_events": 0.6561264822134387,
+            "recall": 0.16053754431973388
+          }
+        },
+        "sample8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.5100202100553932,
+            "incident_events": 3.342832541970328,
+            "recall": 0.28347456044414815
+          },
+          "one_anchor": {
+            "hit_count": 127,
+            "hit_rate": 0.5019762845849802,
+            "incident_events": 3.466403162055336,
+            "recall": 0.2886674030681647
+          }
+        }
+      },
+      "n": 253
+    },
+    "pytest-dev/pytest": {
+      "anchor_queries": 666,
+      "methods": {
+        "accumulated": {
+          "all_anchors": {
+            "hit_rate": 0.7128206145221851,
+            "incident_events": 7.188057988752275,
+            "recall": 0.5373772274466561
+          },
+          "one_anchor": {
+            "hit_count": 139,
+            "hit_rate": 0.7277486910994765,
+            "incident_events": 6.403141361256544,
+            "recall": 0.5545955884164397
+          }
+        },
+        "degree32": {
+          "all_anchors": {
+            "hit_rate": 0.26787584143605087,
+            "incident_events": 0.0,
+            "recall": 0.14474597032074837
+          },
+          "one_anchor": {
+            "hit_count": 53,
+            "hit_rate": 0.2774869109947644,
+            "incident_events": 0,
+            "recall": 0.15344118726203862
+          }
+        },
+        "frequency": {
+          "all_anchors": {
+            "hit_rate": 0.33048283885980223,
+            "incident_events": 0.0,
+            "recall": 0.1794214460957006
+          },
+          "one_anchor": {
+            "hit_count": 67,
+            "hit_rate": 0.3507853403141361,
+            "incident_events": 0,
+            "recall": 0.1937502237752636
+          }
+        },
+        "last8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7026195009179302,
+            "incident_events": 4.579014322930781,
+            "recall": 0.5262001580633495
+          },
+          "one_anchor": {
+            "hit_count": 136,
+            "hit_rate": 0.7120418848167539,
+            "incident_events": 4.392670157068062,
+            "recall": 0.5456316030126638
+          }
+        },
+        "local16": {
+          "all_anchors": {
+            "hit_rate": 0.3840489378845855,
+            "incident_events": 0.3842765070627579,
+            "recall": 0.23317557382547138
+          },
+          "one_anchor": {
+            "hit_count": 77,
+            "hit_rate": 0.4031413612565445,
+            "incident_events": 0.32460732984293195,
+            "recall": 0.25020746635816066
+          }
+        },
+        "local32": {
+          "all_anchors": {
+            "hit_rate": 0.40276946729826313,
+            "incident_events": 0.7402113555311826,
+            "recall": 0.2553214332522322
+          },
+          "one_anchor": {
+            "hit_count": 80,
+            "hit_rate": 0.418848167539267,
+            "incident_events": 0.6649214659685864,
+            "recall": 0.2754256164454207
+          }
+        },
+        "sample8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7108489532573302,
+            "incident_events": 4.579014322930781,
+            "recall": 0.532020285781952
+          },
+          "one_anchor": {
+            "hit_count": 136,
+            "hit_rate": 0.7120418848167539,
+            "incident_events": 4.392670157068062,
+            "recall": 0.5417049014419831
+          }
+        }
+      },
+      "n": 191
+    },
+    "python-attrs/attrs": {
+      "anchor_queries": 308,
+      "methods": {
+        "accumulated": {
+          "all_anchors": {
+            "hit_rate": 0.7834357398873528,
+            "incident_events": 12.778150941054166,
+            "recall": 0.613496718335428
+          },
+          "one_anchor": {
+            "hit_count": 71,
+            "hit_rate": 0.7634408602150538,
+            "incident_events": 12.494623655913978,
+            "recall": 0.5951484895033282
+          }
+        },
+        "degree32": {
+          "all_anchors": {
+            "hit_rate": 0.5482078853046595,
+            "incident_events": 0.0,
+            "recall": 0.36438113857468696
+          },
+          "one_anchor": {
+            "hit_count": 48,
+            "hit_rate": 0.5161290322580645,
+            "incident_events": 0,
+            "recall": 0.34115463389656936
+          }
+        },
+        "frequency": {
+          "all_anchors": {
+            "hit_rate": 0.5905995438253503,
+            "incident_events": 0.0,
+            "recall": 0.41226434855467115
+          },
+          "one_anchor": {
+            "hit_count": 54,
+            "hit_rate": 0.5806451612903226,
+            "incident_events": 0,
+            "recall": 0.4171658986175115
+          }
+        },
+        "last8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7761858213471117,
+            "incident_events": 5.245315288057223,
+            "recall": 0.5971174882465206
+          },
+          "one_anchor": {
+            "hit_count": 70,
+            "hit_rate": 0.7526881720430108,
+            "incident_events": 5.290322580645161,
+            "recall": 0.5822452636968766
+          }
+        },
+        "local16": {
+          "all_anchors": {
+            "hit_rate": 0.6430107526881721,
+            "incident_events": 0.8961085509472606,
+            "recall": 0.46551459293394776
+          },
+          "one_anchor": {
+            "hit_count": 58,
+            "hit_rate": 0.6236559139784946,
+            "incident_events": 0.8494623655913979,
+            "recall": 0.4548003072196621
+          }
+        },
+        "local32": {
+          "all_anchors": {
+            "hit_rate": 0.6383512544802867,
+            "incident_events": 1.6143722167915717,
+            "recall": 0.46226318484383
+          },
+          "one_anchor": {
+            "hit_count": 57,
+            "hit_rate": 0.6129032258064516,
+            "incident_events": 1.7311827956989247,
+            "recall": 0.4494239631336405
+          }
+        },
+        "sample8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.7808371735791091,
+            "incident_events": 5.245315288057223,
+            "recall": 0.604853837918354
+          },
+          "one_anchor": {
+            "hit_count": 71,
+            "hit_rate": 0.7634408602150538,
+            "incident_events": 5.290322580645161,
+            "recall": 0.5999871991807476
+          }
+        }
+      },
+      "n": 93
+    },
+    "python-jsonschema/jsonschema": {
+      "anchor_queries": 222,
+      "methods": {
+        "accumulated": {
+          "all_anchors": {
+            "hit_rate": 0.8477011494252874,
+            "incident_events": 12.410108181203515,
+            "recall": 0.6816961891772166
+          },
+          "one_anchor": {
+            "hit_count": 46,
+            "hit_rate": 0.7931034482758621,
+            "incident_events": 13.155172413793103,
+            "recall": 0.6393149689523054
+          }
+        },
+        "degree32": {
+          "all_anchors": {
+            "hit_rate": 0.7370689655172413,
+            "incident_events": 0.0,
+            "recall": 0.5892431298718457
+          },
+          "one_anchor": {
+            "hit_count": 42,
+            "hit_rate": 0.7241379310344828,
+            "incident_events": 0,
+            "recall": 0.583496003435064
+          }
+        },
+        "frequency": {
+          "all_anchors": {
+            "hit_rate": 0.771551724137931,
+            "incident_events": 0.0,
+            "recall": 0.6214861995134955
+          },
+          "one_anchor": {
+            "hit_count": 43,
+            "hit_rate": 0.7413793103448276,
+            "incident_events": 0,
+            "recall": 0.5921166930902365
+          }
+        },
+        "last8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.8635057471264368,
+            "incident_events": 6.124306964164976,
+            "recall": 0.7026069960286929
+          },
+          "one_anchor": {
+            "hit_count": 48,
+            "hit_rate": 0.8275862068965517,
+            "incident_events": 6.482758620689655,
+            "recall": 0.6763120953890871
+          }
+        },
+        "local16": {
+          "all_anchors": {
+            "hit_rate": 0.7801724137931034,
+            "incident_events": 1.0827586206896551,
+            "recall": 0.6331072272349288
+          },
+          "one_anchor": {
+            "hit_count": 43,
+            "hit_rate": 0.7413793103448276,
+            "incident_events": 1.103448275862069,
+            "recall": 0.6018149689523055
+          }
+        },
+        "local32": {
+          "all_anchors": {
+            "hit_rate": 0.7887931034482759,
+            "incident_events": 1.9062035158891142,
+            "recall": 0.6459114868698173
+          },
+          "one_anchor": {
+            "hit_count": 44,
+            "hit_rate": 0.7586206896551724,
+            "incident_events": 2.0517241379310347,
+            "recall": 0.6265994517109261
+          }
+        },
+        "sample8anchor": {
+          "all_anchors": {
+            "hit_rate": 0.8591954022988506,
+            "incident_events": 6.124306964164976,
+            "recall": 0.6826941646654698
+          },
+          "one_anchor": {
+            "hit_count": 47,
+            "hit_rate": 0.8103448275862069,
+            "incident_events": 6.482758620689655,
+            "recall": 0.6472172678028801
+          }
+        }
+      },
+      "n": 58
+    }
+  }
+}

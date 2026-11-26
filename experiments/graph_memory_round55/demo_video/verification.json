@@ -1,0 +1,558 @@
+{
+  "source_commit": "9d2a7a280ee0a084f382762a52547b4b47d0ce56",
+  "source_archive_sha256": "735c0cddb063a5c407a44fd573738687b5e291e6b04325d77317deb0d9f3e087",
+  "states": {
+    "home": {
+      "links": 17
+    },
+    "seed": {
+      "selected": "Taschereau",
+      "question": "Who is Antoine-Charles Taschereau's paternal grandfather?"
+    },
+    "literal_grade": {
+      "selected": "Taschereau",
+      "witness": {
+        "kind": "literal passage span",
+        "text": "taschereau",
+        "start": 2,
+        "end": 3
+      },
+      "covered": 1,
+      "required": 2
+    },
+    "href": {
+      "selected": "Gabriel-Elzéar Taschereau",
+      "evidence": "anchor · Gabriel-Elzéar Taschereau"
+    },
+    "href_grade": {
+      "selected": "Gabriel-Elzéar Taschereau",
+      "witness": {
+        "kind": "anchor",
+        "text": "Gabriel-Elzéar Taschereau"
+      },
+      "covered": 2,
+      "required": 2
+    },
+    "omit": {
+      "selected": "Antoine Juchereau Duchesnay (seigneur)",
+      "witness": {
+        "kind": "anchor",
+        "text": "Antoine Juchereau Duchesnay"
+      },
+      "covered": 1,
+      "required": 2
+    },
+    "context": {
+      "file": "doc/en/deprecations.rst",
+      "receipt": null,
+      "method": "static_four",
+      "context": 3
+    },
+    "static_read": {
+      "file": "doc/en/deprecations.rst",
+      "receipt": {
+        "first_line": 1,
+        "last_line": 1491,
+        "text_sha256": "019eac07562fe9f708d486bfc160d1fee72845f5b99abde1c0505338bc03d334"
+      },
+      "method": "static_four",
+      "context": 4
+    },
+    "static_grade": {
+      "file": "doc/en/deprecations.rst",
+      "receipt": {
+        "first_line": 1,
+        "last_line": 1491,
+        "text_sha256": "019eac07562fe9f708d486bfc160d1fee72845f5b99abde1c0505338bc03d334"
+      },
+      "method": "static_four",
+      "context": 4,
+      "new_hit": false
+    },
+    "memory_read": {
+      "file": "testing/acceptance_test.py",
+      "receipt": {
+        "first_line": 1,
+        "last_line": 1653,
+        "text_sha256": "cf5ae6d64e252ff134776b681cae34cfce14527affdfce89f8ca4516e9c764fa"
+      },
+      "method": "memory_rrf",
+      "context": 4
+    },
+    "memory_grade": {
+      "file": "testing/acceptance_test.py",
+      "receipt": {
+        "first_line": 1,
+        "last_line": 1653,
+        "text_sha256": "cf5ae6d64e252ff134776b681cae34cfce14527affdfce89f8ca4516e9c764fa"
+      },
+      "method": "memory_rrf",
+      "context": 4,
+      "new_hit": true
+    },
+    "past": {
+      "version": 16,
+      "committed": 17,
+      "winner": [
+        14,
+        2
+      ],
+      "receipt": "3ca23a6deceea8ea0f501c83621910a254801b4d2b7d6acdd45783be22209cf3",
+      "plans": {
+        "interval": [
+          "SEARCH s USING PRIMARY KEY (q=?)",
+          "SEARCH e USING PRIMARY KEY (q=? AND src=?) LEFT-JOIN",
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        "journal": [
+          "SEARCH winner USING PRIMARY KEY (q=? AND rev<?)"
+        ],
+        "current": [
+          "SEARCH source USING COVERING INDEX source_best (q=?)"
+        ]
+      }
+    },
+    "change": {
+      "version": 17,
+      "committed": 17,
+      "winner": [
+        3,
+        1
+      ],
+      "receipt": "3ca23a6deceea8ea0f501c83621910a254801b4d2b7d6acdd45783be22209cf3",
+      "plans": {
+        "interval": [
+          "SEARCH s USING PRIMARY KEY (q=?)",
+          "SEARCH e USING PRIMARY KEY (q=? AND src=?) LEFT-JOIN",
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        "journal": [
+          "SEARCH winner USING PRIMARY KEY (q=? AND rev<?)"
+        ],
+        "current": [
+          "SEARCH source USING COVERING INDEX source_best (q=?)"
+        ]
+      }
+    },
+    "rewind": {
+      "version": 16,
+      "committed": 17,
+      "winner": [
+        14,
+        2
+      ],
+      "receipt": "3ca23a6deceea8ea0f501c83621910a254801b4d2b7d6acdd45783be22209cf3",
+      "plans": {
+        "interval": [
+          "SEARCH s USING PRIMARY KEY (q=?)",
+          "SEARCH e USING PRIMARY KEY (q=? AND src=?) LEFT-JOIN",
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        "journal": [
+          "SEARCH winner USING PRIMARY KEY (q=? AND rev<?)"
+        ],
+        "current": [
+          "SEARCH source USING COVERING INDEX source_best (q=?)"
+        ]
+      }
+    },
+    "plans": {
+      "version": 16,
+      "committed": 17,
+      "winner": [
+        14,
+        2
+      ],
+      "receipt": "3ca23a6deceea8ea0f501c83621910a254801b4d2b7d6acdd45783be22209cf3",
+      "plans": {
+        "interval": [
+          "SEARCH s USING PRIMARY KEY (q=?)",
+          "SEARCH e USING PRIMARY KEY (q=? AND src=?) LEFT-JOIN",
+          "USE TEMP B-TREE FOR ORDER BY"
+        ],
+        "journal": [
+          "SEARCH winner USING PRIMARY KEY (q=? AND rev<?)"
+        ],
+        "current": [
+          "SEARCH source USING COVERING INDEX source_best (q=?)"
+        ]
+      }
+    },
+    "git_parent": {
+      "commit": "6c728a9cd8c28f3fc2c97f1a9439afea78e03629",
+      "capacity": 8,
+      "score": 30,
+      "classic_warm_rows": 0,
+      "bounded_warm_rows": 0,
+      "outside_bound_score": 29,
+      "ranking_receipt": "292 candidate IDs ranked · matches the archived top 8"
+    },
+    "git_change": {
+      "commit": "62bd8cf9bfd5e8e5f3e8426b04645e6aa4ba5f0e",
+      "capacity": 8,
+      "score": 29,
+      "classic_warm_rows": 1,
+      "bounded_warm_rows": 0,
+      "outside_bound_score": 29,
+      "ranking_receipt": "293 candidate IDs ranked · matches the archived top 8"
+    },
+    "git_detail": {
+      "commit": "62bd8cf9bfd5e8e5f3e8426b04645e6aa4ba5f0e",
+      "capacity": 8,
+      "score": 29,
+      "classic_warm_rows": 1,
+      "bounded_warm_rows": 0,
+      "outside_bound_score": 29,
+      "ranking_receipt": "293 candidate IDs ranked · matches the archived top 8"
+    },
+    "git_more": {
+      "commit": "62bd8cf9bfd5e8e5f3e8426b04645e6aa4ba5f0e",
+      "capacity": 12,
+      "score": 29,
+      "classic_warm_rows": 0,
+      "bounded_warm_rows": 0,
+      "outside_bound_score": 26,
+      "ranking_receipt": "293 candidate IDs ranked · matches the archived top 8"
+    },
+    "close": {
+      "links": 17
+    }
+  },
+  "browser": "147.0.7727.15",
+  "page_errors": [],
+  "external_browser_requests": 0,
+  "voice": "Microsoft Zira Desktop",
+  "file_sha256": "ea9157d84bd3fd30c87552f8cddd61edb7e6ac20e54d8a33b5d2f6b032972a1c",
+  "captions_sha256": "af94e5de8dd93fc8dfd94cd87d4cd18a30e82d09c2e10f742d584ddaba692e19",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 816,
+        "pix_fmt": "yuv420p",
+        "nb_frames": "4829"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "22050",
+        "channels": 1,
+        "nb_frames": "4161"
+      }
+    ],
+    "format": {
+      "duration": "193.160000",
+      "size": "5661457"
+    }
+  },
+  "decoded_full_file": true,
+  "verified_scenes": [
+    {
+      "id": "home",
+      "rgb_mean_absolute_error": 1.768,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2883.6
+    },
+    {
+      "id": "seed",
+      "rgb_mean_absolute_error": 2.622,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2958.8
+    },
+    {
+      "id": "literal_grade",
+      "rgb_mean_absolute_error": 2.082,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3069.0
+    },
+    {
+      "id": "href",
+      "rgb_mean_absolute_error": 2.615,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3228.3
+    },
+    {
+      "id": "href_grade",
+      "rgb_mean_absolute_error": 2.081,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2982.1
+    },
+    {
+      "id": "omit",
+      "rgb_mean_absolute_error": 2.133,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2812.1
+    },
+    {
+      "id": "context",
+      "rgb_mean_absolute_error": 2.126,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3141.2
+    },
+    {
+      "id": "static_read",
+      "rgb_mean_absolute_error": 2.183,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2996.2
+    },
+    {
+      "id": "static_grade",
+      "rgb_mean_absolute_error": 2.114,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3139.7
+    },
+    {
+      "id": "memory_read",
+      "rgb_mean_absolute_error": 2.161,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2984.6
+    },
+    {
+      "id": "memory_grade",
+      "rgb_mean_absolute_error": 2.045,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3262.6
+    },
+    {
+      "id": "past",
+      "rgb_mean_absolute_error": 1.499,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3074.5
+    },
+    {
+      "id": "change",
+      "rgb_mean_absolute_error": 1.536,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3134.9
+    },
+    {
+      "id": "rewind",
+      "rgb_mean_absolute_error": 1.53,
+      "decoded_to_speech_pcm_correlation": 0.99999,
+      "decoded_audio_rms_s16": 3119.3
+    },
+    {
+      "id": "plans",
+      "rgb_mean_absolute_error": 1.88,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3066.2
+    },
+    {
+      "id": "git_parent",
+      "rgb_mean_absolute_error": 2.152,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2991.6
+    },
+    {
+      "id": "git_change",
+      "rgb_mean_absolute_error": 2.187,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3007.2
+    },
+    {
+      "id": "git_detail",
+      "rgb_mean_absolute_error": 2.193,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3218.3
+    },
+    {
+      "id": "git_more",
+      "rgb_mean_absolute_error": 2.14,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3026.3
+    },
+    {
+      "id": "close",
+      "rgb_mean_absolute_error": 1.705,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2943.2
+    }
+  ],
+  "timeline": [
+    {
+      "id": "home",
+      "chapter": "Source-linked evidence views",
+      "text": "An agent has one read left. Which source should it open, and what happens if the evidence behind that choice changes?",
+      "start_frame": 0,
+      "frames": 214,
+      "steady_frames": 214,
+      "render_sha256": "9aafbb7bf642418feccca7e2f1e5e2ebd1a026a4500e36b55026d171ee89e296"
+    },
+    {
+      "id": "seed",
+      "chapter": "Following a source",
+      "text": "This archived question asks for a paternal grandfather. Matching words in the first passage selects a page for the surname.",
+      "start_frame": 214,
+      "frames": 218,
+      "steady_frames": 209,
+      "render_sha256": "55b737f9759595c3ceb05a691c80da7e7648c4ae8b9a1e4417ebea6a4a0154f1"
+    },
+    {
+      "id": "literal_grade",
+      "chapter": "Following a source",
+      "text": "We reveal the reference titles after the choice. The first read and the literal match cover one of the two required pages.",
+      "start_frame": 432,
+      "frames": 210,
+      "steady_frames": 195,
+      "render_sha256": "e1ee68b938d7c9f8d7567e77852cba00edc8ba7cb40917091847fc681aa70885"
+    },
+    {
+      "id": "href",
+      "chapter": "Following a source",
+      "text": "Change only the passage evidence to verified hyperlinks. The stored anchor now leads to the page for Gabriel-Elzéar Taschereau.",
+      "start_frame": 642,
+      "frames": 228,
+      "steady_frames": 219,
+      "render_sha256": "2d0ef9a217ee408c2ab32db29f357b69edff0644324f2c786d9ae0af6a895934"
+    },
+    {
+      "id": "href_grade",
+      "chapter": "Following a source",
+      "text": "Reveal the reference again. Both supporting pages are now covered, with the same budget of two reads.",
+      "start_frame": 870,
+      "frames": 192,
+      "steady_frames": 177,
+      "render_sha256": "4541361006e6bb9168a7687a98a47c757a00b59bc047808a0473cd41c41c57ac"
+    },
+    {
+      "id": "omit",
+      "chapter": "Following a source",
+      "text": "Suppress just that link. A different person takes the second slot. The audit shows that only one supporting page remains.",
+      "start_frame": 1062,
+      "frames": 240,
+      "steady_frames": 216,
+      "render_sha256": "508c10edad2b75f2b10f6bca0533e150c3bd470eabe0ef8ed44a519abe1a8eac"
+    },
+    {
+      "id": "context",
+      "chapter": "Spending one file read",
+      "text": "Now open an archived coding session from pytest. The three files on the right are the agent’s original final context.",
+      "start_frame": 1302,
+      "frames": 216,
+      "steady_frames": 216,
+      "render_sha256": "738e31c1298dc5f4fc5905fcc7be6aec23d139e0c3a58ab27d8e6f560c3ce582"
+    },
+    {
+      "id": "static_read",
+      "chapter": "Spending one file read",
+      "text": "With four static rankings, the next read opens the deprecations document. The receipt gives a pinned line range and content digest.",
+      "start_frame": 1518,
+      "frames": 237,
+      "steady_frames": 228,
+      "render_sha256": "642ddad4b834b17585efca0aa8dad340decdc014384a838ce78af8ceb9c6c739"
+    },
+    {
+      "id": "static_grade",
+      "chapter": "Spending one file read",
+      "text": "The evaluator opens a separate annotation database. This read adds no required file.",
+      "start_frame": 1755,
+      "frames": 181,
+      "steady_frames": 166,
+      "render_sha256": "c41c4eb71616ede0496f30d27adb7b8c0edf82d696474c8637e7e82ff1b216cc"
+    },
+    {
+      "id": "memory_read",
+      "chapter": "Spending one file read",
+      "text": "Replace the fourth ranking with the agent’s suggestions. The same one-read budget now opens the acceptance tests.",
+      "start_frame": 1936,
+      "frames": 206,
+      "steady_frames": 197,
+      "render_sha256": "2de35b0de86a71e78d03b14dfd83dca41785ceb60992f445ee2cdd6fdf56f985"
+    },
+    {
+      "id": "memory_grade",
+      "chapter": "Spending one file read",
+      "text": "The evaluator confirms a hit here. Across 283 sessions, the suggestion-first rule yielded 20 new hits, compared with 26 for the four-billion-parameter embedding model.",
+      "start_frame": 2142,
+      "frames": 337,
+      "steady_frames": 322,
+      "render_sha256": "4e79ecb920b17f0ae532306b67834c25cec74d5083cabcf55ed47a2fc9c50dad"
+    },
+    {
+      "id": "past",
+      "chapter": "Withdrawing evidence",
+      "text": "In this tool trace, each producer scores one point per unit of outgoing support. Two SQLite queries reconstruct revision sixteen.",
+      "start_frame": 2479,
+      "frames": 256,
+      "steady_frames": 256,
+      "render_sha256": "2a9580e03cd3f2080a6e8e7237d66847208f39bf2cfff538dce7624f309b1c6c"
+    },
+    {
+      "id": "change",
+      "chapter": "Withdrawing evidence",
+      "text": "Advance to revision seventeen. Producer fourteen loses an edge to nineteen. Its score falls to one, and producer three wins the tie.",
+      "start_frame": 2735,
+      "frames": 270,
+      "steady_frames": 261,
+      "render_sha256": "d24318701fedce7dcfc252f3d832391a681e005df70f2ad0f46190469f751321"
+    },
+    {
+      "id": "rewind",
+      "chapter": "Withdrawing evidence",
+      "text": "Read revision sixteen again. Both queries restore producer fourteen, even though the committed history still includes the withdrawal.",
+      "start_frame": 3005,
+      "frames": 232,
+      "steady_frames": 223,
+      "render_sha256": "2be870f508bdbbbb6b673644ea736fe28dc33f47591dc1de9977fa2c85d8f09d"
+    },
+    {
+      "id": "plans",
+      "chapter": "Withdrawing evidence",
+      "text": "The interval query rebuilds support from historical edges. The journal reads its last winner entry at or before the requested version.",
+      "start_frame": 3237,
+      "frames": 226,
+      "steady_frames": 211,
+      "render_sha256": "449aee8242e81852a8337d26c3ed1823e866dee94906eb510259b18630a8a506"
+    },
+    {
+      "id": "git_parent",
+      "chapter": "Keeping an exact top eight",
+      "text": "This replay uses two real tox commits. Before the change, thirty distinct Python files import the parser, which ranks eighth.",
+      "start_frame": 3463,
+      "frames": 255,
+      "steady_frames": 246,
+      "render_sha256": "6f8d5e688200304801dd855b7db497ace618917ae3b4cac4b3b0d894978659a4"
+    },
+    {
+      "id": "git_change",
+      "chapter": "Keeping an exact top eight",
+      "text": "Advance the commit. Its score falls to twenty-nine. The cached bound certifies that no omitted file can overtake it under the tie rule.",
+      "start_frame": 3718,
+      "frames": 256,
+      "steady_frames": 247,
+      "render_sha256": "b3e3bcec1cbf35f47f7785ddfe6fa24e984821784cab17b5da54a85e4db0bc1a"
+    },
+    {
+      "id": "git_detail",
+      "chapter": "Keeping an exact top eight",
+      "text": "The recorded SQLite counters show one row fetched by the variable-prefix baseline and zero by the bound. Both return the exact same eight files.",
+      "start_frame": 3974,
+      "frames": 261,
+      "steady_frames": 255,
+      "render_sha256": "266ff552a7dca5553ece24787aae08ad9eca6becb2eb7da92f5b7907bfc28b0c"
+    },
+    {
+      "id": "git_more",
+      "chapter": "Keeping an exact top eight",
+      "text": "Increase the cache to twelve. Both methods avoid the lookup. Only one of 714 Git transitions across six projects separated the two at capacity eight.",
+      "start_frame": 4235,
+      "frames": 310,
+      "steady_frames": 301,
+      "render_sha256": "166b7ea287db005bfd4df76018cac1b51d48591e4e0f3a79c218888f32b299a2"
+    },
+    {
+      "id": "close",
+      "chapter": "Source-linked evidence views",
+      "text": "Each view lets a visitor change the evidence, repeat a read, and inspect the result. The local artifact includes the database projections and replay scripts.",
+      "start_frame": 4545,
+      "frames": 284,
+      "steady_frames": 284,
+      "render_sha256": "fa7787f00c5bc003ccfd8027af84a33e20047d16939abecc31b90f7222f1a1c5"
+    }
+  ],
+  "ffmpeg": "ffmpeg version 8.1.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers"
+}

@@ -1,0 +1,130 @@
+\documentclass[conference]{IEEEtran}
+\usepackage{amsmath,amssymb,booktabs,graphicx,xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{url}
+\usepackage{balance}
+\usepackage{iftex}
+\ifXeTeX
+\usepackage{fontspec}
+\setmainfont{texgyretermes-regular.otf}[BoldFont=texgyretermes-bold.otf,ItalicFont=texgyretermes-italic.otf,BoldItalicFont=texgyretermes-bolditalic.otf]
+\setsansfont{texgyreheros-regular.otf}[BoldFont=texgyreheros-bold.otf,ItalicFont=texgyreheros-italic.otf]
+\setmonofont{texgyrecursor-regular.otf}[BoldFont=texgyrecursor-bold.otf]
+\fi
+\title{Maintaining Source-Linked Evidence Views for Agent Memory}
+\author{\IEEEauthorblockN{Anonymous authors}}
+\begin{document}
+\maketitle
+\begin{abstract}
+A coding agent can use a source only after reading it, and an update may invalidate the evidence for that choice. We demonstrate a local SQLite system that maintains ranked sources, token-budgeted packets and observed code spans. Visitors can follow or suppress a link, commit a file read, withdraw a dependency and rewind to an earlier version. Historical ranks matched reconstruction at all 1,112 tool-trace states. On 3,023 Git transitions, a stored bound maintained the same top eight as our fixed-capacity prefix baseline. At equal 72-byte payloads it fetched fewer rows (848 versus 888) but issued more ordered queries (308 versus 214). Visitors can change what the comparison holds fixed. Separate annotation and execution checks show when a valid address helps the agent.
+\end{abstract}
+
+\section{What survives a change?}
+A coding agent finishes searching a repository with several open files and one suggested path. Crediting it with the path's contents before the read confuses intention with observation. Even previously read evidence can change: a tool retracts a dependency or an edit moves source lines. Can a database return the evidence that fresh computation would select at a given revision? Does that evidence help given a fixed read budget?
+
+A prior ICDE demonstration, TAPE~\cite{tape}, organizes personal memory as a temporal graph. MemTrace~\cite{memtrace} studies the validity of source anchors at restore time. In repository context retrieval, Agent Retrieval Bench~\cite{arb} distinguishes the files returned by a retriever from those a logged agent actually inspects. Incremental top-$k$ maintenance~\cite{topk} offers algorithms for updating ranked views as data change. Our demonstration brings these questions together in a database interface: each selected item identifies its source, the visitor can alter its availability at one revision, and an independent query can reconstruct the result. We isolate the maintenance question from relevance with separate audit tables and equal-budget retrieval experiments.
+
+\begin{table}[t]
+\centering\small
+\caption{Source identities retained by the serving database. Each row identifies the observation that can be checked at read time.}
+\begin{tabular}{@{}p{.21\columnwidth}p{.32\columnwidth}p{.36\columnwidth}@{}}\toprule
+Object & Identity & Receipt or witness\\\midrule
+Proposed path & Session, base commit, path & Chunk line range and digest after a read\\
+Support edge & Trace, producer, consumer & Before/after weights at a revision\\
+Evidence unit & Event, field, character interval & Source IDs, selection rank, utility, cost\\
+Code block & File revision, line coordinates & Line content at the new address\\\bottomrule
+\end{tabular}
+\label{tab:objects}
+\end{table}
+
+\section{Three views and their maintenance}
+Each local projection serves typed edges, unit IDs and source coordinates over loopback (Table~\ref{tab:objects}). The selector uses observed edges, names and ranks. A separate auditor checks the returned IDs against reference data. Each workload has its own source chronology.
+
+\subsection{Historical ranked sources}
+At trace revision $t$, producer $i$ has score $s_i(t)=\sum_j w_{ij}(t)$, where $w_{ij}$ is the active weight of its relation to consumer $j$. The total order is decreasing score, then increasing producer ID. Source additions and withdrawals enter the same transaction. We update the affected scores, obtain the new leader through a covering index and append a receipt only if the pair (address, score) changed. A historical read finds its most recent receipt at or before $t$. This returns the fresh answer because the winning pair is constant between adjacent boundaries. A historical verifier reconstructs the score from active edge intervals and applies the same total order. An incumbent may survive an update with a different score, so this representation compares both fields.
+
+For a top-$k$ read, define $V_t$ as the first eight eligible (ID, score) pairs in total order and return the requested prefix, $k\in\{2,4,8\}$. A packed history writes one snapshot exactly when $V_t$ changes. Another scheme opens and closes validity intervals for (ID, score) pairs entering or leaving the set of eight. A rank change of a continuing pair requires no interval write. Sorting active pairs at read time reconstructs $V_t$, since every stored pair belongs to this set and the total order is fixed. We also implement ranked positions, rank blocks and a candidate-version covering index. These representations trade history written per change against lookups, filtering and decoding at read time.
+
+A write-side certificate can avoid an indexed top-eight query even when the result changes. Re-rank the previous top eight and the rows touched by the transaction, using their new values and the fixed tie order. If this local result supplies eight rows and its eighth key ranks at least as high as the old eighth key, return it. Every untouched outsider was below the old cutoff and retained its key, so none can displace a returned row. If the old view already held the entire candidate pool, all eligible rows are known locally. When the bound fails, use the covering index. The certificate changes the update path and preserves the packed historical representation.
+
+\begin{table}[t]
+\caption{SQLite top-eight histories on 1,072 source commits. Time in ms includes schema creation, updates, reads and checkpoint. Eight reads mix current and historical versions equally.}
+\centering\small
+\begin{tabular}{@{}lrrr@{}}\toprule
+Representation & Opens & 0 reads & 8 reads\\\midrule
+Changed packed snapshots & 533 & 92.32 & 175.42\\
+Individual rank positions & 1,669 & 92.58 & 188.32\\
+Three rank blocks & 883 & 94.52 & 179.57\\
+Top-eight membership intervals & 717 & 100.20 & 218.11\\
+All candidate versions & 1,669 & 110.06 & 215.65\\\bottomrule
+\end{tabular}
+\label{tab:top}
+\end{table}
+
+\subsection{A budgeted evidence packet}
+The reader protects the longest consecutive ranked prefix $H$ costing at most $T$, then maximizes additive utility under the remaining token budget by 0--1 knapsack. Costs, utilities, order and a deterministic tie rule remain fixed during a source exclusion.
+
+Let $P$ be the original packet, $D$ the removed candidate IDs, and $H'$ the protected prefix after deletion. The ordered packet can be reused exactly when
+\[
+                 D\cap P=\varnothing \quad\text{and}\quad H'\subseteq P.
+\]
+Deleting a chosen unit or forcing an unchosen unit into the new prefix changes the packet. Otherwise the original prefix survives and can only extend. The old optimum stays feasible, every packet feasible after exclusion was feasible before it, and the fixed tie preference preserves identity. For exact utility arithmetic strict-update dynamic programming prefers absence at the last differing rank.
+
+An inexpensive sufficient certificate indexes the selected units and the first unit beyond the prefix. Touching neither preserves the packet. The boundary matters: with costs $(3,3,1,5)$, utilities $(1,1,3,10)$, budget 8 and prefix threshold 4, removing unselected unit 1 forces unit 2 into the prefix and displaces selected unit 3.
+
+\subsection{Versioned code spans}
+To reconstruct an agent's recent observations, we store file, revision, line coordinates and their content witnesses. An editor replacement provides its old and new text and the affected range. Range invalidation shifts unaffected addresses and drops overlapping blocks. Our local procedure first aligns common ends of the supplied strings, then maps equal runs inside the replacement. A calibrated guard rejects clipped or discontinuous coordinates. The verifier compares preserved lines with the two file snapshots. This design permits a small write-side working set: the evidence consists of the editor arguments and the retained block, independently of repository size. A method that can read both complete file versions has a different access budget.
+
+\section{What a visitor can do}
+
+\begin{figure*}[t]
+\centering
+\begin{minipage}[c]{.33\textwidth}\centering\includegraphics[width=.94\linewidth]{session-read.png}\end{minipage}
+\hfill
+\begin{minipage}[c]{.62\textwidth}\centering\includegraphics[width=\linewidth]{withdrawal.png}\end{minipage}
+\caption{Live SQLite consoles. Left, the committed file read in the pytest session exposes its first-chunk receipt and the result of a separately requested evaluation. Right, the q11 witness table displays the withdrawn support for producer 14. Both historical read plans identify producer 3 at revision 17.}
+\label{fig:main}
+\end{figure*}
+
+\textit{Cross an import-graph commit.} Open the tox replay and step to commit \texttt{62bd8cf9}. Inspect the eighth-ranked file before and after its score changes. Compare the upper bound on omitted rows with the guaranteed prefix under the prefix baseline. Switch the reserve from 8 to 12 and inspect each policy's indexed reads and returned rows. Then open \emph{Index reads across Git changes}. Select a repository and switch between equal slots and equal payload bytes. A live SQL query aggregates archived per-commit index counters. The maintenance runs and their timing measurements took place offline.
+
+\textit{Spend one extra file read.} Choose an archived strict-context session. The first version contains files the agent actually opened, accompanied by a separate list of paths suggested in its final action. Compare the next address proposed from this memory with the address obtained by fusing path-aware lexical, RepoMap and embedding ranks. Commit the selected read (Fig.~\ref{fig:main}) and inspect its line range and digest. The evaluation control now reports whether it added an uncovered relevant file. Return to the earlier version, change the policy, and repeat with the identical one-read budget. Serving and evaluation use distinct SQLite files. For example, on one pytest session the three static rankings plus the ordered proposal list select the previously unopened \texttt{testing/acceptance\_test.py}. The receipt identifies lines 1--1653 of the released first chunk. With evaluation enabled, this read covers the single required file. On that session the first proposal alone loses to three-way static fusion. Two Tokio sessions expose opposite outcomes for suggestion versus static fusion.
+
+\textit{Withdraw support and rewind.} In trace q11 commit through revision 17, then set the read revision to 16. Producer 14 leads with score 2 over producer 3 with score 1. Advance the read revision by one. The witness for edge $14\to19$ records a change from 1 to 0. Producer 14 now also scores 1 and producer 3 wins the tie. Both the interval plan and the winner journal display their SQL plan and result. Rewinding the requested version restores producer 14 without changing the committed horizon.
+
+\textit{Follow a code edit.} Select a line shift and replay the next version. The 315-byte packet survives. An overlapping replacement leaves only 74 of 507 bytes. On a third edit all 14 block IDs survive, yet a snapshot audit exposes three incorrect line addresses in the original display. In the interior-lines example, changing from range invalidation to local alignment restores both blocks. Visitors can examine the addresses and invoke the verifier after each policy change (Fig.~\ref{fig:edit}).
+
+\begin{figure}[t]
+\centering\includegraphics[width=.97\columnwidth]{edit.png}
+\caption{The code-edit console displays a packet before and after an edit. Its verifier compares address and content in the recorded snapshots even when selected IDs coincide.}
+\label{fig:edit}
+\end{figure}
+
+\textit{Inspect a packet dependency.} With 2,048 tokens in q02, removing a selected source replaces unit 11 with unit 19 and still covers all 60 annotated characters. In q07, loss of the prefix boundary permits exact reuse. Other controls replay streaming updates, adjust two weights jointly and address Wikipedia documents. All run offline.
+
+\section{Measurements and limits}
+\subsection{Maintenance under observed changes}
+We replayed 1,072 atomic revisions from 40 ISETrace trajectories. The benchmark executes tools for synthetic OS-agent tasks~\cite{ise,wang}. From changes in their recorded dependencies we obtained 464 net nonzero edge operations, including 118 negative deltas. The single-winner journal matched fresh reconstruction at all 1,112 states, including initial states. It stored 227 records. At eight historical reads per update, the all-candidate version index took $1.34\times$ the time of the journal (paired 95\% interval $[1.29,1.39]$). Raw edge intervals were faster when no historical reads were requested.
+
+For top-$k$, each of five physical plans returned identical IDs and scores for three values of $k$ at all 1,112 states after reopening the database. Membership intervals avoided recording 952 within-list rank moves but still required 717 opens and 398 closes. Packed snapshots had the lowest mean elapsed time at eight reads per update (Table~\ref{tab:top}). The ratio for membership intervals versus snapshots was $1.24$ ($[1.11,1.40]$ over seven paired timing blocks). Rank blocks reduced stored payload from 6,784 to 4,244 bytes, yet both complete checkpointed databases occupied 180\,KiB. These warm local measurements bound the result to small $k$, this change distribution and one machine.
+
+For the same packed history the cutoff certificate issued 39 full-index queries across 1,072 updates, versus 533 with unchanged-result detection and 1,072 with unconditional reads. Forty initial reads were common. The certificate retained 539 unchanged lists and reconstructed 494 changed lists locally. Warm mixed-workload times were 167.09 and 165.11\,ms for certificate and unchanged-result control. A refinement retains an upper bound on the best omitted (score, tie key). If the certified prefix is shorter than eight, we fetch its missing suffix. At eight file slots this took 36 warm probes and 38 returned rows. Our baseline adapts the variable-length exact prefix and suffix refill of Yi et al.~\cite{topk} to atomic batches of signed updates. We fix the maximum capacity for each run and omit adaptive sizing. This baseline used 39 probes and returned 41 rows. Three of 40 streams differed. At twelve slots both needed zero warm probes, averaging 10.08 and 9.94 resident pairs, respectively.
+
+Across 714 static import-graph transitions in six Python repositories, the bound saved one warm query at eight slots. The tox console exposes that commit. To examine more frequent changes we maintained file co-edit degrees as commits entered and left a 32-commit window. On 3,023 updates after warm-up, the prefix with eight slots used 338 probes to return 904 rows. The bounded cache used 308 probes and 848 rows, storing an extra pair for its bound. At equal 72-byte payloads (two 32-bit integers per pair, excluding flags), the nine-slot prefix used 214 probes and 888 rows. The bounded policy thus returned 40 fewer rows but issued 94 more queries. SQLite counted 14,482 virtual-machine steps for its warm ordered lookups, versus 12,253 for the equal-byte prefix. Both returned identical top-eight files and scores. Across six cold starts, eight-slot caches retrieved 48 rows and the nine-slot cache retrieved 54. These are logical index costs.
+
+On 108,204 hypothetical source exclusions with fixed costs, scores and rank, the packet criterion identified all 73,261 unchanged packets. On 2,528 single exclusions, the sufficient index approved 2,041 reuses and missed only three. Full recomputation took $5.16\times$ certificate-based serving time ($[4.36,6.17]$ by trajectory) with precomputed features. On 2,000 held-out ISETrace queries under two checkpoint protocols, optimal suffix packing gained 1.88 and 2.04 points in complete annotated support over native first-fit, and $+0.07$ and $-0.04$ against utility-sorted first-fit.
+
+\subsection{How far does this transfer to code?}
+On Handoff Debt~\cite{handoff} we calibrated the coordinate guard on 24 issues and evaluated 1,071 observed edits on 13 other issues. Local alignment preserved 323 complete packets versus 302 for range invalidation, an issue-macro difference of 1.97 points ($[1.02,3.03]$). All 29,713 mapped lines matched the snapshots. Common ends alone preserved 322 packets. The supplied edit strings totaled 1.22\,MB, compared with 141.18\,MB for the complete version pairs. Given both whole versions, range plus unique-content validation preserved 341 packets. Only 69 subsequent reads had an informative uncensored window: local alignment covered six completely versus four for ranges. Preserving a larger packet need not change a future action.
+
+\balance
+For 283 archived GPT-5.4-mini sessions in 25 repositories, all arms retain the strict context, exclude previously read paths and may add one verified file. A first eligible suggestion with static fallback yielded 20 hits, versus 16 when fusing three released rankings and 26 with Qwen3-Embedding-4B alone. The difference against fusion was $+1.41$ points (15 wins and 11 losses, repository bootstrap interval $[-2.06,3.80]$). The benchmark supplies precomputed ranks. We measure an additional read after an archived session. In a separate leave-one-repository-out comparison, a batch policy could allocate up to two reads per session while keeping 283 reads in total. A model using the last proposal record found 28 additional required files. Giving it prior proposal history yielded 26 (difference per 100 reads $-0.71$, interval $[-3.94,2.30]$).
+
+History also predicts which files change together~\cite{zimmermann}. On 880 multi-file commits from six other repositories, we revealed one touched path and ranked eight others from prior commits. Mean Recall@8 was 34.75\% using 32 commits of co-edit history and 48.83\% using all observed past co-edits of that path. Frequency in the recent window yielded 29.58\%. This setting assumes one correct starting path. On 54 \emph{edit2ripple} tasks, scope-filtered symbol matches gave 33.49\% mean file Recall@5 versus 48.92\% for the released path-aware lexical rank. Adding previously co-edited paths outside its top 20 gave 50.46\%. Only two tasks improved (paired difference $+1.54$ points, interval $[0,4.17]$). This comparison grants five new paths. Counting the known anchor against the original top-five slots reversed the result: 41.20\% against lexical 43.36\% (difference $-2.16$ points, interval $[-6.55,1.67]$). Visitors can inspect the fifth address and its dated evidence in the co-edit replay.
+
+For an executable control, Qwen3-4B-Instruct-2507 (Q4\_K\_M, greedy) completed a masked ClassEval method~\cite{classeval} given a caller, an equally long BM25 snippet or no neighbor. With a 384-token output cap, 41/61 methods passed the released tests with caller context, 42/61 with BM25 and 41/61 without a neighbor. Raising the cap after observing truncation gave 43/61 for every arm. The clearest evidence for these views is exact historical maintenance. A gain in end-to-end issue resolution remains open.
+
+\section*{Acknowledgments}
+OpenAI Codex drafted Sections I--IV, implemented the views in Section II, generated the interactive demonstration and figures in Section III, and ran and analyzed the experiments in Section IV. Measurements were checked against saved per-query, per-edit and timing records.
+\bibliographystyle{IEEEtran}
+\bibliography{sources}
+\end{document}

@@ -1,0 +1,48 @@
+{
+  "all_projection_diffs": {
+    "encode/httpx": 576,
+    "pallets/click": 576,
+    "pallets/flask": 576,
+    "psf/requests": 576,
+    "pypa/packaging": 576,
+    "pypa/pip": 576,
+    "pytest-dev/pluggy": 527,
+    "pytest-dev/pytest": 576,
+    "python-attrs/attrs": 576,
+    "python-jsonschema/jsonschema": 576,
+    "tox-dev/tox": 576,
+    "urllib3/urllib3": 576
+  },
+  "files_sha256": {
+    "PROTOCOL_RU.md": "ee8be2645379489c89cdc67041e8a892f340dda70bb5d6d6b5a6d2fabae37c3d",
+    "REPORT_RU.md": "086fc244717f334366edc8492627475be359f8272a4fd476c987947aa9bdec6c",
+    "commits.json.gz": "8618f9bfc1736345e55ea3e9e6cd1df251915631b89c9f29ae33395ecc70e9aa",
+    "continuation/PROTOCOL_RU.md": "87a37cc6992c0da767729da853b3ba035e1adcb24dd2654a6547034cdffcfa25",
+    "continuation/REPORT_RU.md": "dc50d81f36840e32674f87983e4fdf6ae9b1d4d9f51d6f980de6f02d8e6dc795",
+    "continuation/commits.json.gz": "cf45c7b6cf8876de287abb24fd50a669a8c6e2c394de627a256ad3a945b94d28",
+    "continuation/evaluate.py": "39a5aa1ecc35d40dd99377069b38d730fc8557d220f60d4ca6ea64ccfdb1d6b4",
+    "continuation/events.json.gz": "644763d02a022bb378d6827b181591dcb53294ec73078c9ec514339230580422",
+    "continuation/extract_panel.py": "83bc7ec5d23c9ee0f814bcaba81bcf09f00594f567aea8cbcc4097007797286f",
+    "continuation/pins.json": "a6929e8e350c70b15eb37fd3804761c7a7ab3ff0e1e7c50e8ca02f27b7228b69",
+    "continuation/results.json": "894fff4aea4c8e839a8aed971d7cc906471d27b4002fd8c47f5603790bcf1a13",
+    "events.json.gz": "74595501d61112d376e6f69db19f49885405d4112021a79cebbd20909e692588",
+    "extract.py": "074eef28675bc66ddc680363859282785bf57046a50534a990cb23a6867d7233",
+    "replay.py": "ec3d71ead2a027599307d292aa2c6354125e9f2cba04834ad2b5b7aca63b6445",
+    "results.json": "3463470e6354f3aa1bf469aafe84ce4bcdd101d91554534014ef2f132f93e723",
+    "summarize.py": "2f2c2e4b180ea60ac53ab69fb804f86abf56aaf69c448a38b3a02aa35bcb3d6a",
+    "verify.py": "f90777c0780d8e6642c486d90a0e2328a23327a3b2ae0e735c1b342435cd7e07"
+  },
+  "independent_anchor_checks": {
+    "encode/httpx": 577,
+    "pallets/flask": 690,
+    "pypa/pip": 1708,
+    "pytest-dev/pytest": 666,
+    "python-attrs/attrs": 308,
+    "python-jsonschema/jsonschema": 222
+  },
+  "metric_replays_verified": 3,
+  "ordered_index_plans": [
+    "SEARCH source USING COVERING INDEX ix_rank (q=?)",
+    "SEARCH source USING COVERING INDEX ix_rank (q=? AND score<?)"
+  ]
+}

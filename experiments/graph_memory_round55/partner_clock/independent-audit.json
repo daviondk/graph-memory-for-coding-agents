@@ -1,0 +1,396 @@
+{
+  "g1": {
+    "exposure": {
+      "max_difference": 0.0,
+      "metrics_compared": 54,
+      "repositories": 9
+    },
+    "transfer": {
+      "max_difference": 0.0,
+      "metrics_compared": 40,
+      "repositories": 10
+    }
+  },
+  "git_trees_checked": true,
+  "panels": {
+    "development": {
+      "checked_ranks_by_method": {
+        "anchor_8": 887,
+        "candidate_16": 887,
+        "exposure": 887,
+        "global_128": 887,
+        "jaccard": 887,
+        "ochiai": 887,
+        "prior": 887,
+        "unit": 887,
+        "xor_16": 887
+      },
+      "counts": {
+        "changed_top5_set_near_tie": 1,
+        "historical_support_events_per_query_summed": 7655,
+        "queries": 887,
+        "queries_exposed_to_pre_delete_support": 6,
+        "rank_lists": 7983,
+        "rank_lists_reordered_near_tie": 1,
+        "raw_scores": 119104
+      },
+      "examples": [
+        [
+          "python-trio/trio",
+          168,
+          "unit",
+          [
+            "docs/source/conf.py",
+            "src/trio/testing/_fake_net.py",
+            "src/trio/_core/_tests/test_run.py",
+            "src/trio/_core/_ki.py",
+            "src/trio/_tests/test_util.py"
+          ],
+          [
+            "docs/source/conf.py",
+            "src/trio/testing/_fake_net.py",
+            "src/trio/_core/_tests/test_run.py",
+            "src/trio/_core/_ki.py",
+            "src/trio/_tests/test_exports.py"
+          ]
+        ]
+      ],
+      "git": {
+        "aio-libs/aiohttp": {
+          "commits": 239,
+          "removed": 0,
+          "touched": 200,
+          "unique_tree_objects": 658
+        },
+        "celery/kombu": {
+          "commits": 239,
+          "removed": 0,
+          "touched": 251,
+          "unique_tree_objects": 1023
+        },
+        "django/asgiref": {
+          "commits": 239,
+          "removed": 2,
+          "touched": 244,
+          "unique_tree_objects": 549
+        },
+        "encode/httpx": {
+          "commits": 239,
+          "removed": 2,
+          "touched": 302,
+          "unique_tree_objects": 561
+        },
+        "jazzband/pip-tools": {
+          "commits": 286,
+          "removed": 3,
+          "touched": 362,
+          "unique_tree_objects": 832
+        },
+        "mkdocs/mkdocs": {
+          "commits": 273,
+          "removed": 5,
+          "touched": 715,
+          "unique_tree_objects": 1594
+        },
+        "psf/black": {
+          "commits": 239,
+          "removed": 5,
+          "touched": 505,
+          "unique_tree_objects": 1226
+        },
+        "psf/requests": {
+          "commits": 342,
+          "removed": 18,
+          "touched": 333,
+          "unique_tree_objects": 969
+        },
+        "pypa/build": {
+          "commits": 239,
+          "removed": 3,
+          "touched": 331,
+          "unique_tree_objects": 956
+        },
+        "pypa/packaging": {
+          "commits": 239,
+          "removed": 1,
+          "touched": 477,
+          "unique_tree_objects": 847
+        },
+        "pypa/wheel": {
+          "commits": 239,
+          "removed": 47,
+          "touched": 249,
+          "unique_tree_objects": 710
+        },
+        "pytest-dev/pluggy": {
+          "commits": 335,
+          "removed": 1,
+          "touched": 291,
+          "unique_tree_objects": 768
+        },
+        "python-hyper/h11": {
+          "commits": 259,
+          "removed": 12,
+          "touched": 427,
+          "unique_tree_objects": 733
+        },
+        "python-trio/trio": {
+          "commits": 316,
+          "removed": 35,
+          "touched": 767,
+          "unique_tree_objects": 1208
+        },
+        "redis/redis-py": {
+          "commits": 239,
+          "removed": 0,
+          "touched": 916,
+          "unique_tree_objects": 1253
+        },
+        "scrapy/scrapy": {
+          "commits": 239,
+          "removed": 2,
+          "touched": 1145,
+          "unique_tree_objects": 1448
+        },
+        "sphinx-doc/sphinx": {
+          "commits": 239,
+          "removed": 16,
+          "touched": 926,
+          "unique_tree_objects": 1616
+        },
+        "tox-dev/tox": {
+          "commits": 239,
+          "removed": 20,
+          "touched": 994,
+          "unique_tree_objects": 2263
+        },
+        "urllib3/urllib3": {
+          "commits": 239,
+          "removed": 0,
+          "touched": 309,
+          "unique_tree_objects": 975
+        }
+      },
+      "macro_and_primary_verified": true,
+      "maximum_raw_score_disagreement": 5.329070518200751e-15,
+      "near_ties_by_method": {
+        "unit": 1
+      }
+    },
+    "external": {
+      "checked_ranks_by_method": {
+        "anchor_8": 538,
+        "candidate_16": 538,
+        "exposure": 538,
+        "global_128": 538,
+        "jaccard": 538,
+        "ochiai": 538,
+        "prior": 538,
+        "unit": 538,
+        "xor_16": 538
+      },
+      "counts": {
+        "changed_metric_vector_near_tie": 1,
+        "changed_top5_set_near_tie": 1,
+        "historical_support_events_per_query_summed": 9536,
+        "queries": 538,
+        "queries_exposed_to_pre_delete_support": 0,
+        "rank_lists": 4842,
+        "rank_lists_reordered_near_tie": 2,
+        "raw_scores": 79432
+      },
+      "examples": [
+        [
+          "facelessuser/soupsieve",
+          375,
+          "unit",
+          [
+            "soupsieve/css_parser.py",
+            "soupsieve/__meta__.py",
+            "soupsieve/__init__.py",
+            "soupsieve/css_types.py",
+            "tests/test_level4/test_lang.py"
+          ],
+          [
+            "soupsieve/css_parser.py",
+            "soupsieve/__meta__.py",
+            "soupsieve/__init__.py",
+            "soupsieve/css_types.py",
+            "tests/test_level4/test_in_range.py"
+          ]
+        ],
+        [
+          "python-semver/python-semver",
+          315,
+          "exposure",
+          [
+            "tests/test_bump.py",
+            "tests/test_parsing.py",
+            "tests/test_subclass.py",
+            "tests/test_issue484.py",
+            "tests/test_match.py"
+          ],
+          [
+            "tests/test_bump.py",
+            "tests/test_parsing.py",
+            "tests/test_issue484.py",
+            "tests/test_subclass.py",
+            "tests/test_match.py"
+          ]
+        ]
+      ],
+      "git": {
+        "agronholm/anyio": {
+          "commits": 400,
+          "removed": 1,
+          "touched": 749,
+          "unique_tree_objects": 1528
+        },
+        "dateutil/dateutil": {
+          "commits": 400,
+          "removed": 39,
+          "touched": 546,
+          "unique_tree_objects": 1297
+        },
+        "facelessuser/soupsieve": {
+          "commits": 400,
+          "removed": 13,
+          "touched": 974,
+          "unique_tree_objects": 2178
+        },
+        "marshmallow-code/apispec": {
+          "commits": 400,
+          "removed": 4,
+          "touched": 331,
+          "unique_tree_objects": 929
+        },
+        "pallets/itsdangerous": {
+          "commits": 368,
+          "removed": 17,
+          "touched": 305,
+          "unique_tree_objects": 791
+        },
+        "pyca/bcrypt": {
+          "commits": 400,
+          "removed": 1,
+          "touched": 6,
+          "unique_tree_objects": 1223
+        },
+        "pytest-dev/iniconfig": {
+          "commits": 94,
+          "removed": 4,
+          "touched": 98,
+          "unique_tree_objects": 172
+        },
+        "python-hyper/h2": {
+          "commits": 400,
+          "removed": 39,
+          "touched": 592,
+          "unique_tree_objects": 903
+        },
+        "python-semver/python-semver": {
+          "commits": 329,
+          "removed": 11,
+          "touched": 385,
+          "unique_tree_objects": 808
+        },
+        "tqdm/tqdm": {
+          "commits": 400,
+          "removed": 19,
+          "touched": 1187,
+          "unique_tree_objects": 1117
+        }
+      },
+      "macro_and_primary_verified": true,
+      "maximum_raw_score_disagreement": 7.105427357601002e-15,
+      "near_ties_by_method": {
+        "exposure": 1,
+        "unit": 1
+      }
+    },
+    "replication": {
+      "checked_ranks_by_method": {
+        "anchor_8": 721,
+        "exposure": 721,
+        "global_128": 721,
+        "prior": 721,
+        "unit": 721,
+        "xor_16": 721
+      },
+      "counts": {
+        "historical_support_events_per_query_summed": 10367,
+        "queries": 721,
+        "queries_exposed_to_pre_delete_support": 1,
+        "rank_lists": 4326,
+        "raw_scores": 94695
+      },
+      "examples": [],
+      "git": {
+        "aio-libs/yarl": {
+          "commits": 400,
+          "removed": 0,
+          "touched": 328,
+          "unique_tree_objects": 1300
+        },
+        "beartype/beartype": {
+          "commits": 400,
+          "removed": 484,
+          "touched": 4465,
+          "unique_tree_objects": 6922
+        },
+        "hukkin/tomli-w": {
+          "commits": 82,
+          "removed": 4,
+          "touched": 88,
+          "unique_tree_objects": 209
+        },
+        "jaraco/path": {
+          "commits": 400,
+          "removed": 7,
+          "touched": 320,
+          "unique_tree_objects": 643
+        },
+        "jcrist/msgspec": {
+          "commits": 400,
+          "removed": 49,
+          "touched": 526,
+          "unique_tree_objects": 1466
+        },
+        "pallets/werkzeug": {
+          "commits": 400,
+          "removed": 7,
+          "touched": 1302,
+          "unique_tree_objects": 1798
+        },
+        "pydantic/pydantic-settings": {
+          "commits": 400,
+          "removed": 2,
+          "touched": 857,
+          "unique_tree_objects": 1432
+        },
+        "python-attrs/cattrs": {
+          "commits": 400,
+          "removed": 5,
+          "touched": 958,
+          "unique_tree_objects": 1396
+        },
+        "python-rapidjson/python-rapidjson": {
+          "commits": 400,
+          "removed": 0,
+          "touched": 131,
+          "unique_tree_objects": 724
+        },
+        "tox-dev/filelock": {
+          "commits": 400,
+          "removed": 74,
+          "touched": 1736,
+          "unique_tree_objects": 1890
+        }
+      },
+      "macro_and_primary_verified": true,
+      "maximum_raw_score_disagreement": 1.7763568394002505e-14,
+      "near_ties_by_method": {}
+    }
+  },
+  "tolerance": 1e-12
+}

@@ -1,0 +1,3006 @@
+{
+  "results": {
+    "16": {
+      "pooled": {
+        "costs": {
+          "classic12": {
+            "cold": [
+              6,
+              72
+            ],
+            "warm": [
+              143,
+              1230
+            ]
+          },
+          "classic13": {
+            "cold": [
+              6,
+              78
+            ],
+            "warm": [
+              129,
+              1226
+            ]
+          },
+          "classic8": {
+            "cold": [
+              6,
+              48
+            ],
+            "warm": [
+              423,
+              1272
+            ]
+          },
+          "classic9": {
+            "cold": [
+              6,
+              54
+            ],
+            "warm": [
+              274,
+              1240
+            ]
+          },
+          "partial12": {
+            "cold": [
+              6,
+              72
+            ],
+            "warm": [
+              132,
+              1135
+            ]
+          },
+          "partial13": {
+            "cold": [
+              6,
+              78
+            ],
+            "warm": [
+              115,
+              1088
+            ]
+          },
+          "partial8": {
+            "cold": [
+              6,
+              48
+            ],
+            "warm": [
+              403,
+              1226
+            ]
+          },
+          "partial9": {
+            "cold": [
+              6,
+              54
+            ],
+            "warm": [
+              262,
+              1201
+            ]
+          }
+        },
+        "evaluated_commits": 3023,
+        "prediction": {
+          "conditional": {
+            "mean_availability": 0.9477049952756248,
+            "mean_target_size": 2.984186046511628,
+            "metrics": {
+              "anchored": {
+                "hit": 622,
+                "recall": 0.4266269927723365
+              },
+              "degree": {
+                "hit": 508,
+                "recall": 0.3188651925584527
+              },
+              "frequency": {
+                "hit": 577,
+                "recall": 0.3861637295573633
+              },
+              "recency": {
+                "hit": 541,
+                "recall": 0.3569285229009339
+              }
+            },
+            "n": 1075
+          },
+          "unconditional": {
+            "mean_availability": 0.9568308645108835,
+            "mean_target_size": 2.9680981595092026,
+            "metrics": {
+              "anchored": {
+                "hit": 938,
+                "recall": 0.3946224600139629
+              },
+              "degree": {
+                "hit": 792,
+                "recall": 0.30758200544804726
+              },
+              "frequency": {
+                "hit": 938,
+                "recall": 0.3946224600139629
+              },
+              "recency": {
+                "hit": 902,
+                "recall": 0.3844461980297843
+              }
+            },
+            "n": 1630
+          }
+        },
+        "update": [
+          16825,
+          16276,
+          8230,
+          382,
+          1302
+        ]
+      },
+      "projects": {
+        "pallets/click": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                23,
+                203
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                22,
+                206
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                82,
+                227
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                49,
+                220
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                23,
+                195
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                19,
+                173
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                79,
+                220
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                46,
+                210
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9678027990527991,
+              "mean_target_size": 3.230392156862745,
+              "metrics": {
+                "anchored": {
+                  "hit": 151,
+                  "recall": 0.5181262745168455
+                },
+                "degree": {
+                  "hit": 130,
+                  "recall": 0.4164126374874645
+                },
+                "frequency": {
+                  "hit": 145,
+                  "recall": 0.4969947916206567
+                },
+                "recency": {
+                  "hit": 130,
+                  "recall": 0.43320836498820925
+                }
+              },
+              "n": 204
+            },
+            "unconditional": {
+              "mean_availability": 0.9709084925777487,
+              "mean_target_size": 3.4317343173431736,
+              "metrics": {
+                "anchored": {
+                  "hit": 204,
+                  "recall": 0.4839580582226213
+                },
+                "degree": {
+                  "hit": 185,
+                  "recall": 0.40728041356090205
+                },
+                "frequency": {
+                  "hit": 204,
+                  "recall": 0.4839580582226213
+                },
+                "recency": {
+                  "hit": 192,
+                  "recall": 0.444579595255626
+                }
+              },
+              "n": 271
+            }
+          },
+          "update": [
+            2844,
+            2159,
+            1552,
+            68,
+            282
+          ]
+        },
+        "psf/requests": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                12,
+                106
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                11,
+                100
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                44,
+                125
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                32,
+                127
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                12,
+                101
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                10,
+                95
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                42,
+                122
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                31,
+                125
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9483915239350021,
+              "mean_target_size": 3.1159420289855073,
+              "metrics": {
+                "anchored": {
+                  "hit": 52,
+                  "recall": 0.6100330426417383
+                },
+                "degree": {
+                  "hit": 49,
+                  "recall": 0.5402717652717652
+                },
+                "frequency": {
+                  "hit": 51,
+                  "recall": 0.5955402890185499
+                },
+                "recency": {
+                  "hit": 52,
+                  "recall": 0.6143894953677562
+                }
+              },
+              "n": 69
+            },
+            "unconditional": {
+              "mean_availability": 0.9771678738938917,
+              "mean_target_size": 2.1139896373056994,
+              "metrics": {
+                "anchored": {
+                  "hit": 126,
+                  "recall": 0.5354763052224487
+                },
+                "degree": {
+                  "hit": 106,
+                  "recall": 0.4267899291176026
+                },
+                "frequency": {
+                  "hit": 126,
+                  "recall": 0.5354763052224487
+                },
+                "recency": {
+                  "hit": 135,
+                  "recall": 0.5838812630605063
+                }
+              },
+              "n": 193
+            }
+          },
+          "update": [
+            1635,
+            1658,
+            565,
+            33,
+            125
+          ]
+        },
+        "pypa/packaging": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                21,
+                168
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                19,
+                165
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                78,
+                200
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                45,
+                182
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                19,
+                151
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                16,
+                142
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                76,
+                191
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                43,
+                174
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9613205467372135,
+              "mean_target_size": 1.9801587301587302,
+              "metrics": {
+                "anchored": {
+                  "hit": 145,
+                  "recall": 0.48005723333104283
+                },
+                "degree": {
+                  "hit": 96,
+                  "recall": 0.2974935723447628
+                },
+                "frequency": {
+                  "hit": 125,
+                  "recall": 0.4078730903135665
+                },
+                "recency": {
+                  "hit": 125,
+                  "recall": 0.39469489395084634
+                }
+              },
+              "n": 252
+            },
+            "unconditional": {
+              "mean_availability": 0.9621071035674996,
+              "mean_target_size": 2.235148514851485,
+              "metrics": {
+                "anchored": {
+                  "hit": 226,
+                  "recall": 0.40813967066764173
+                },
+                "degree": {
+                  "hit": 164,
+                  "recall": 0.27220699292397177
+                },
+                "frequency": {
+                  "hit": 226,
+                  "recall": 0.40813967066764173
+                },
+                "recency": {
+                  "hit": 226,
+                  "recall": 0.43214246485462343
+                }
+              },
+              "n": 404
+            }
+          },
+          "update": [
+            1343,
+            1329,
+            1433,
+            57,
+            274
+          ]
+        },
+        "pytest-dev/pluggy": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                24,
+                207
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                19,
+                191
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                60,
+                213
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                41,
+                208
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                22,
+                184
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                17,
+                159
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                58,
+                209
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                40,
+                202
+              ]
+            }
+          },
+          "evaluated_commits": 463,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9531365052393089,
+              "mean_target_size": 3.5233644859813085,
+              "metrics": {
+                "anchored": {
+                  "hit": 87,
+                  "recall": 0.629695875256623
+                },
+                "degree": {
+                  "hit": 88,
+                  "recall": 0.6234992940600417
+                },
+                "frequency": {
+                  "hit": 88,
+                  "recall": 0.6458464692109552
+                },
+                "recency": {
+                  "hit": 89,
+                  "recall": 0.6423669528809716
+                }
+              },
+              "n": 107
+            },
+            "unconditional": {
+              "mean_availability": 0.9579251388342297,
+              "mean_target_size": 3.2848484848484847,
+              "metrics": {
+                "anchored": {
+                  "hit": 135,
+                  "recall": 0.6335974530519985
+                },
+                "degree": {
+                  "hit": 127,
+                  "recall": 0.5667330733239824
+                },
+                "frequency": {
+                  "hit": 135,
+                  "recall": 0.6335974530519985
+                },
+                "recency": {
+                  "hit": 133,
+                  "recall": 0.5883327514236605
+                }
+              },
+              "n": 165
+            }
+          },
+          "update": [
+            1677,
+            1787,
+            965,
+            35,
+            185
+          ]
+        },
+        "tox-dev/tox": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                38,
+                328
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                35,
+                344
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                75,
+                272
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                51,
+                271
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                33,
+                295
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                32,
+                312
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                71,
+                262
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                49,
+                269
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9299895310536783,
+              "mean_target_size": 3.6492537313432836,
+              "metrics": {
+                "anchored": {
+                  "hit": 95,
+                  "recall": 0.22312730450376553
+                },
+                "degree": {
+                  "hit": 66,
+                  "recall": 0.12800184234596643
+                },
+                "frequency": {
+                  "hit": 80,
+                  "recall": 0.16036339296900237
+                },
+                "recency": {
+                  "hit": 63,
+                  "recall": 0.11870654752367035
+                }
+              },
+              "n": 268
+            },
+            "unconditional": {
+              "mean_availability": 0.9264370810375068,
+              "mean_target_size": 4.217105263157895,
+              "metrics": {
+                "anchored": {
+                  "hit": 95,
+                  "recall": 0.13815884209895432
+                },
+                "degree": {
+                  "hit": 79,
+                  "recall": 0.10969359846101331
+                },
+                "frequency": {
+                  "hit": 95,
+                  "recall": 0.13815884209895432
+                },
+                "recency": {
+                  "hit": 80,
+                  "recall": 0.1175989788992885
+                }
+              },
+              "n": 304
+            }
+          },
+          "update": [
+            7416,
+            7444,
+            2447,
+            131,
+            208
+          ]
+        },
+        "urllib3/urllib3": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                25,
+                218
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                23,
+                220
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                84,
+                235
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                56,
+                232
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                23,
+                209
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                21,
+                207
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                77,
+                222
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                53,
+                221
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9282086034413766,
+              "mean_target_size": 2.742857142857143,
+              "metrics": {
+                "anchored": {
+                  "hit": 92,
+                  "recall": 0.358194161300884
+                },
+                "degree": {
+                  "hit": 79,
+                  "recall": 0.2546620211721052
+                },
+                "frequency": {
+                  "hit": 88,
+                  "recall": 0.3301703517770745
+                },
+                "recency": {
+                  "hit": 82,
+                  "recall": 0.3024059914875041
+                }
+              },
+              "n": 175
+            },
+            "unconditional": {
+              "mean_availability": 0.9540577393117043,
+              "mean_target_size": 2.638225255972696,
+              "metrics": {
+                "anchored": {
+                  "hit": 152,
+                  "recall": 0.33209131206521286
+                },
+                "degree": {
+                  "hit": 131,
+                  "recall": 0.24500267683865354
+                },
+                "frequency": {
+                  "hit": 152,
+                  "recall": 0.33209131206521286
+                },
+                "recency": {
+                  "hit": 136,
+                  "recall": 0.2937426598363157
+                }
+              },
+              "n": 293
+            }
+          },
+          "update": [
+            1910,
+            1899,
+            1268,
+            58,
+            228
+          ]
+        }
+      }
+    },
+    "32": {
+      "pooled": {
+        "costs": {
+          "classic12": {
+            "cold": [
+              6,
+              72
+            ],
+            "warm": [
+              105,
+              832
+            ]
+          },
+          "classic13": {
+            "cold": [
+              6,
+              78
+            ],
+            "warm": [
+              87,
+              789
+            ]
+          },
+          "classic8": {
+            "cold": [
+              6,
+              48
+            ],
+            "warm": [
+              338,
+              904
+            ]
+          },
+          "classic9": {
+            "cold": [
+              6,
+              54
+            ],
+            "warm": [
+              214,
+              888
+            ]
+          },
+          "partial12": {
+            "cold": [
+              6,
+              72
+            ],
+            "warm": [
+              97,
+              769
+            ]
+          },
+          "partial13": {
+            "cold": [
+              6,
+              78
+            ],
+            "warm": [
+              81,
+              748
+            ]
+          },
+          "partial8": {
+            "cold": [
+              6,
+              48
+            ],
+            "warm": [
+              308,
+              848
+            ]
+          },
+          "partial9": {
+            "cold": [
+              6,
+              54
+            ],
+            "warm": [
+              199,
+              834
+            ]
+          }
+        },
+        "evaluated_commits": 3023,
+        "prediction": {
+          "conditional": {
+            "mean_availability": 0.9477049952756248,
+            "mean_target_size": 2.984186046511628,
+            "metrics": {
+              "anchored": {
+                "hit": 675,
+                "recall": 0.4646333209967467
+              },
+              "degree": {
+                "hit": 526,
+                "recall": 0.33703330246287655
+              },
+              "frequency": {
+                "hit": 599,
+                "recall": 0.3955233729598681
+              },
+              "recency": {
+                "hit": 541,
+                "recall": 0.3569285229009339
+              }
+            },
+            "n": 1075
+          },
+          "unconditional": {
+            "mean_availability": 0.9568308645108835,
+            "mean_target_size": 2.9680981595092026,
+            "metrics": {
+              "anchored": {
+                "hit": 971,
+                "recall": 0.40967577401413247
+              },
+              "degree": {
+                "hit": 829,
+                "recall": 0.3263922542765253
+              },
+              "frequency": {
+                "hit": 971,
+                "recall": 0.40967577401413247
+              },
+              "recency": {
+                "hit": 902,
+                "recall": 0.3844461980297843
+              }
+            },
+            "n": 1630
+          }
+        },
+        "update": [
+          16838,
+          14107,
+          8137,
+          382,
+          1290
+        ]
+      },
+      "projects": {
+        "pallets/click": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                22,
+                165
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                16,
+                144
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                67,
+                173
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                41,
+                172
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                19,
+                145
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                15,
+                136
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                57,
+                156
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                36,
+                156
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9678027990527991,
+              "mean_target_size": 3.230392156862745,
+              "metrics": {
+                "anchored": {
+                  "hit": 154,
+                  "recall": 0.5465290196475318
+                },
+                "degree": {
+                  "hit": 138,
+                  "recall": 0.4633377915817362
+                },
+                "frequency": {
+                  "hit": 148,
+                  "recall": 0.5104086041153515
+                },
+                "recency": {
+                  "hit": 130,
+                  "recall": 0.43320836498820925
+                }
+              },
+              "n": 204
+            },
+            "unconditional": {
+              "mean_availability": 0.9709084925777487,
+              "mean_target_size": 3.4317343173431736,
+              "metrics": {
+                "anchored": {
+                  "hit": 209,
+                  "recall": 0.4971168415132406
+                },
+                "degree": {
+                  "hit": 193,
+                  "recall": 0.43683767828204784
+                },
+                "frequency": {
+                  "hit": 209,
+                  "recall": 0.4971168415132406
+                },
+                "recency": {
+                  "hit": 192,
+                  "recall": 0.444579595255626
+                }
+              },
+              "n": 271
+            }
+          },
+          "update": [
+            2880,
+            2211,
+            1573,
+            68,
+            288
+          ]
+        },
+        "psf/requests": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                10,
+                88
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                10,
+                96
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                32,
+                98
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                21,
+                95
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                10,
+                86
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                9,
+                86
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                28,
+                91
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                20,
+                90
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9483915239350021,
+              "mean_target_size": 3.1159420289855073,
+              "metrics": {
+                "anchored": {
+                  "hit": 53,
+                  "recall": 0.6441600267687224
+                },
+                "degree": {
+                  "hit": 48,
+                  "recall": 0.5557910889432629
+                },
+                "frequency": {
+                  "hit": 53,
+                  "recall": 0.6338943262856306
+                },
+                "recency": {
+                  "hit": 52,
+                  "recall": 0.6143894953677562
+                }
+              },
+              "n": 69
+            },
+            "unconditional": {
+              "mean_availability": 0.9771678738938917,
+              "mean_target_size": 2.1139896373056994,
+              "metrics": {
+                "anchored": {
+                  "hit": 143,
+                  "recall": 0.6316309328766192
+                },
+                "degree": {
+                  "hit": 112,
+                  "recall": 0.48259777902786033
+                },
+                "frequency": {
+                  "hit": 143,
+                  "recall": 0.6316309328766192
+                },
+                "recency": {
+                  "hit": 135,
+                  "recall": 0.5838812630605063
+                }
+              },
+              "n": 193
+            }
+          },
+          "update": [
+            1635,
+            1614,
+            551,
+            33,
+            124
+          ]
+        },
+        "pypa/packaging": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                16,
+                135
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                12,
+                119
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                66,
+                155
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                37,
+                143
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                14,
+                121
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                11,
+                114
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                61,
+                147
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                36,
+                137
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9613205467372135,
+              "mean_target_size": 1.9801587301587302,
+              "metrics": {
+                "anchored": {
+                  "hit": 165,
+                  "recall": 0.5451347373966422
+                },
+                "degree": {
+                  "hit": 105,
+                  "recall": 0.31635788153645295
+                },
+                "frequency": {
+                  "hit": 133,
+                  "recall": 0.4247789688265879
+                },
+                "recency": {
+                  "hit": 125,
+                  "recall": 0.39469489395084634
+                }
+              },
+              "n": 252
+            },
+            "unconditional": {
+              "mean_availability": 0.9621071035674996,
+              "mean_target_size": 2.235148514851485,
+              "metrics": {
+                "anchored": {
+                  "hit": 229,
+                  "recall": 0.4144078710170884
+                },
+                "degree": {
+                  "hit": 179,
+                  "recall": 0.28052965236815586
+                },
+                "frequency": {
+                  "hit": 229,
+                  "recall": 0.4144078710170884
+                },
+                "recency": {
+                  "hit": 226,
+                  "recall": 0.43214246485462343
+                }
+              },
+              "n": 404
+            }
+          },
+          "update": [
+            1352,
+            1408,
+            1456,
+            57,
+            284
+          ]
+        },
+        "pytest-dev/pluggy": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                15,
+                129
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                14,
+                128
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                50,
+                169
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                32,
+                160
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                14,
+                119
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                13,
+                121
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                45,
+                157
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                30,
+                150
+              ]
+            }
+          },
+          "evaluated_commits": 463,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9531365052393089,
+              "mean_target_size": 3.5233644859813085,
+              "metrics": {
+                "anchored": {
+                  "hit": 89,
+                  "recall": 0.6304909524535692
+                },
+                "degree": {
+                  "hit": 87,
+                  "recall": 0.6060492985726631
+                },
+                "frequency": {
+                  "hit": 91,
+                  "recall": 0.6508254725544446
+                },
+                "recency": {
+                  "hit": 89,
+                  "recall": 0.6423669528809716
+                }
+              },
+              "n": 107
+            },
+            "unconditional": {
+              "mean_availability": 0.9579251388342297,
+              "mean_target_size": 3.2848484848484847,
+              "metrics": {
+                "anchored": {
+                  "hit": 134,
+                  "recall": 0.6119321890230981
+                },
+                "degree": {
+                  "hit": 127,
+                  "recall": 0.5535976531885622
+                },
+                "frequency": {
+                  "hit": 134,
+                  "recall": 0.6119321890230981
+                },
+                "recency": {
+                  "hit": 133,
+                  "recall": 0.5883327514236605
+                }
+              },
+              "n": 165
+            }
+          },
+          "update": [
+            1659,
+            1766,
+            958,
+            35,
+            181
+          ]
+        },
+        "tox-dev/tox": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                19,
+                149
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                15,
+                143
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                57,
+                146
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                39,
+                150
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                18,
+                145
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                14,
+                136
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                55,
+                140
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                37,
+                145
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9299895310536783,
+              "mean_target_size": 3.6492537313432836,
+              "metrics": {
+                "anchored": {
+                  "hit": 113,
+                  "recall": 0.26307239131736593
+                },
+                "degree": {
+                  "hit": 76,
+                  "recall": 0.1539584721444833
+                },
+                "frequency": {
+                  "hit": 79,
+                  "recall": 0.14878913684213269
+                },
+                "recency": {
+                  "hit": 63,
+                  "recall": 0.11870654752367035
+                }
+              },
+              "n": 268
+            },
+            "unconditional": {
+              "mean_availability": 0.9264370810375068,
+              "mean_target_size": 4.217105263157895,
+              "metrics": {
+                "anchored": {
+                  "hit": 92,
+                  "recall": 0.13124390907382394
+                },
+                "degree": {
+                  "hit": 94,
+                  "recall": 0.14130392140260561
+                },
+                "frequency": {
+                  "hit": 92,
+                  "recall": 0.13124390907382394
+                },
+                "recency": {
+                  "hit": 80,
+                  "recall": 0.1175989788992885
+                }
+              },
+              "n": 304
+            }
+          },
+          "update": [
+            7406,
+            5214,
+            2330,
+            131,
+            200
+          ]
+        },
+        "urllib3/urllib3": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                23,
+                166
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                20,
+                159
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                66,
+                163
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                44,
+                168
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                22,
+                153
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                19,
+                155
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                62,
+                157
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                40,
+                156
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9282086034413766,
+              "mean_target_size": 2.742857142857143,
+              "metrics": {
+                "anchored": {
+                  "hit": 101,
+                  "recall": 0.3897255520389974
+                },
+                "degree": {
+                  "hit": 72,
+                  "recall": 0.2491998508494307
+                },
+                "frequency": {
+                  "hit": 95,
+                  "recall": 0.3472425588417185
+                },
+                "recency": {
+                  "hit": 82,
+                  "recall": 0.3024059914875041
+                }
+              },
+              "n": 175
+            },
+            "unconditional": {
+              "mean_availability": 0.9540577393117043,
+              "mean_target_size": 2.638225255972696,
+              "metrics": {
+                "anchored": {
+                  "hit": 164,
+                  "recall": 0.3510591744355045
+                },
+                "degree": {
+                  "hit": 124,
+                  "recall": 0.2486723817907315
+                },
+                "frequency": {
+                  "hit": 164,
+                  "recall": 0.3510591744355045
+                },
+                "recency": {
+                  "hit": 136,
+                  "recall": 0.2937426598363157
+                }
+              },
+              "n": 293
+            }
+          },
+          "update": [
+            1906,
+            1894,
+            1269,
+            58,
+            213
+          ]
+        }
+      }
+    },
+    "64": {
+      "pooled": {
+        "costs": {
+          "classic12": {
+            "cold": [
+              6,
+              72
+            ],
+            "warm": [
+              65,
+              498
+            ]
+          },
+          "classic13": {
+            "cold": [
+              6,
+              78
+            ],
+            "warm": [
+              57,
+              496
+            ]
+          },
+          "classic8": {
+            "cold": [
+              6,
+              48
+            ],
+            "warm": [
+              261,
+              590
+            ]
+          },
+          "classic9": {
+            "cold": [
+              6,
+              54
+            ],
+            "warm": [
+              143,
+              539
+            ]
+          },
+          "partial12": {
+            "cold": [
+              6,
+              72
+            ],
+            "warm": [
+              58,
+              435
+            ]
+          },
+          "partial13": {
+            "cold": [
+              6,
+              78
+            ],
+            "warm": [
+              49,
+              417
+            ]
+          },
+          "partial8": {
+            "cold": [
+              6,
+              48
+            ],
+            "warm": [
+              229,
+              537
+            ]
+          },
+          "partial9": {
+            "cold": [
+              6,
+              54
+            ],
+            "warm": [
+              122,
+              482
+            ]
+          }
+        },
+        "evaluated_commits": 3023,
+        "prediction": {
+          "conditional": {
+            "mean_availability": 0.9477049952756248,
+            "mean_target_size": 2.984186046511628,
+            "metrics": {
+              "anchored": {
+                "hit": 725,
+                "recall": 0.5101922040738862
+              },
+              "degree": {
+                "hit": 526,
+                "recall": 0.3333111604329247
+              },
+              "frequency": {
+                "hit": 589,
+                "recall": 0.3861046494059127
+              },
+              "recency": {
+                "hit": 541,
+                "recall": 0.3569285229009339
+              }
+            },
+            "n": 1075
+          },
+          "unconditional": {
+            "mean_availability": 0.9568308645108835,
+            "mean_target_size": 2.9680981595092026,
+            "metrics": {
+              "anchored": {
+                "hit": 983,
+                "recall": 0.41940859824235543
+              },
+              "degree": {
+                "hit": 839,
+                "recall": 0.32570220242705444
+              },
+              "frequency": {
+                "hit": 983,
+                "recall": 0.41940859824235543
+              },
+              "recency": {
+                "hit": 902,
+                "recall": 0.3844461980297843
+              }
+            },
+            "n": 1630
+          }
+        },
+        "update": [
+          16689,
+          13516,
+          8052,
+          382,
+          1243
+        ]
+      },
+      "projects": {
+        "pallets/click": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                13,
+                98
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                12,
+                90
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                51,
+                111
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                26,
+                99
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                12,
+                76
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                11,
+                78
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                37,
+                91
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                22,
+                86
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9678027990527991,
+              "mean_target_size": 3.230392156862745,
+              "metrics": {
+                "anchored": {
+                  "hit": 161,
+                  "recall": 0.5804648910617769
+                },
+                "degree": {
+                  "hit": 146,
+                  "recall": 0.49920433516886803
+                },
+                "frequency": {
+                  "hit": 152,
+                  "recall": 0.5319505105621023
+                },
+                "recency": {
+                  "hit": 130,
+                  "recall": 0.43320836498820925
+                }
+              },
+              "n": 204
+            },
+            "unconditional": {
+              "mean_availability": 0.9709084925777487,
+              "mean_target_size": 3.4317343173431736,
+              "metrics": {
+                "anchored": {
+                  "hit": 207,
+                  "recall": 0.5012734402867267
+                },
+                "degree": {
+                  "hit": 203,
+                  "recall": 0.4604660926528108
+                },
+                "frequency": {
+                  "hit": 207,
+                  "recall": 0.5012734402867267
+                },
+                "recency": {
+                  "hit": 192,
+                  "recall": 0.444579595255626
+                }
+              },
+              "n": 271
+            }
+          },
+          "update": [
+            2896,
+            1937,
+            1519,
+            68,
+            278
+          ]
+        },
+        "psf/requests": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                7,
+                59
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                5,
+                53
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                24,
+                69
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                16,
+                71
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                6,
+                54
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                5,
+                53
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                20,
+                65
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                13,
+                65
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9483915239350021,
+              "mean_target_size": 3.1159420289855073,
+              "metrics": {
+                "anchored": {
+                  "hit": 55,
+                  "recall": 0.673510205575423
+                },
+                "degree": {
+                  "hit": 45,
+                  "recall": 0.5251607691825083
+                },
+                "frequency": {
+                  "hit": 52,
+                  "recall": 0.6270126210343602
+                },
+                "recency": {
+                  "hit": 52,
+                  "recall": 0.6143894953677562
+                }
+              },
+              "n": 69
+            },
+            "unconditional": {
+              "mean_availability": 0.9771678738938917,
+              "mean_target_size": 2.1139896373056994,
+              "metrics": {
+                "anchored": {
+                  "hit": 151,
+                  "recall": 0.6658159713134101
+                },
+                "degree": {
+                  "hit": 108,
+                  "recall": 0.4643230275924871
+                },
+                "frequency": {
+                  "hit": 151,
+                  "recall": 0.6658159713134101
+                },
+                "recency": {
+                  "hit": 135,
+                  "recall": 0.5838812630605063
+                }
+              },
+              "n": 193
+            }
+          },
+          "update": [
+            1610,
+            1584,
+            539,
+            33,
+            111
+          ]
+        },
+        "pypa/packaging": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                11,
+                88
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                10,
+                88
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                37,
+                90
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                23,
+                88
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                10,
+                79
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                8,
+                70
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                35,
+                88
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                19,
+                77
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9613205467372135,
+              "mean_target_size": 1.9801587301587302,
+              "metrics": {
+                "anchored": {
+                  "hit": 184,
+                  "recall": 0.6301120616596807
+                },
+                "degree": {
+                  "hit": 115,
+                  "recall": 0.3392839964268536
+                },
+                "frequency": {
+                  "hit": 128,
+                  "recall": 0.39972700359605123
+                },
+                "recency": {
+                  "hit": 125,
+                  "recall": 0.39469489395084634
+                }
+              },
+              "n": 252
+            },
+            "unconditional": {
+              "mean_availability": 0.9621071035674996,
+              "mean_target_size": 2.235148514851485,
+              "metrics": {
+                "anchored": {
+                  "hit": 237,
+                  "recall": 0.4360333528930071
+                },
+                "degree": {
+                  "hit": 193,
+                  "recall": 0.3032567465061411
+                },
+                "frequency": {
+                  "hit": 237,
+                  "recall": 0.4360333528930071
+                },
+                "recency": {
+                  "hit": 226,
+                  "recall": 0.43214246485462343
+                }
+              },
+              "n": 404
+            }
+          },
+          "update": [
+            1345,
+            1220,
+            1402,
+            57,
+            274
+          ]
+        },
+        "pytest-dev/pluggy": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                8,
+                58
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                7,
+                61
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                44,
+                97
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                22,
+                77
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                7,
+                49
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                6,
+                50
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                39,
+                82
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                20,
+                71
+              ]
+            }
+          },
+          "evaluated_commits": 463,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9531365052393089,
+              "mean_target_size": 3.5233644859813085,
+              "metrics": {
+                "anchored": {
+                  "hit": 89,
+                  "recall": 0.6113839950288549
+                },
+                "degree": {
+                  "hit": 77,
+                  "recall": 0.5207127244510422
+                },
+                "frequency": {
+                  "hit": 87,
+                  "recall": 0.5810150130243588
+                },
+                "recency": {
+                  "hit": 89,
+                  "recall": 0.6423669528809716
+                }
+              },
+              "n": 107
+            },
+            "unconditional": {
+              "mean_availability": 0.9579251388342297,
+              "mean_target_size": 3.2848484848484847,
+              "metrics": {
+                "anchored": {
+                  "hit": 129,
+                  "recall": 0.5676960396505851
+                },
+                "degree": {
+                  "hit": 117,
+                  "recall": 0.49728224637315543
+                },
+                "frequency": {
+                  "hit": 129,
+                  "recall": 0.5676960396505851
+                },
+                "recency": {
+                  "hit": 133,
+                  "recall": 0.5883327514236605
+                }
+              },
+              "n": 165
+            }
+          },
+          "update": [
+            1683,
+            1689,
+            971,
+            35,
+            182
+          ]
+        },
+        "tox-dev/tox": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                14,
+                99
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                12,
+                103
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                59,
+                112
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                32,
+                106
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                12,
+                89
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                9,
+                82
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                56,
+                107
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                27,
+                94
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9299895310536783,
+              "mean_target_size": 3.6492537313432836,
+              "metrics": {
+                "anchored": {
+                  "hit": 131,
+                  "recall": 0.32195045291791163
+                },
+                "degree": {
+                  "hit": 67,
+                  "recall": 0.1203946496830039
+                },
+                "frequency": {
+                  "hit": 81,
+                  "recall": 0.16361311819456828
+                },
+                "recency": {
+                  "hit": 63,
+                  "recall": 0.11870654752367035
+                }
+              },
+              "n": 268
+            },
+            "unconditional": {
+              "mean_availability": 0.9264370810375068,
+              "mean_target_size": 4.217105263157895,
+              "metrics": {
+                "anchored": {
+                  "hit": 98,
+                  "recall": 0.1503404028752326
+                },
+                "degree": {
+                  "hit": 83,
+                  "recall": 0.11587853194857839
+                },
+                "frequency": {
+                  "hit": 98,
+                  "recall": 0.1503404028752326
+                },
+                "recency": {
+                  "hit": 80,
+                  "recall": 0.1175989788992885
+                }
+              },
+              "n": 304
+            }
+          },
+          "update": [
+            7246,
+            5252,
+            2375,
+            131,
+            191
+          ]
+        },
+        "urllib3/urllib3": {
+          "costs": {
+            "classic12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                12,
+                96
+              ]
+            },
+            "classic13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                11,
+                101
+              ]
+            },
+            "classic8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                46,
+                111
+              ]
+            },
+            "classic9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                24,
+                98
+              ]
+            },
+            "partial12": {
+              "cold": [
+                1,
+                12
+              ],
+              "warm": [
+                11,
+                88
+              ]
+            },
+            "partial13": {
+              "cold": [
+                1,
+                13
+              ],
+              "warm": [
+                10,
+                84
+              ]
+            },
+            "partial8": {
+              "cold": [
+                1,
+                8
+              ],
+              "warm": [
+                42,
+                104
+              ]
+            },
+            "partial9": {
+              "cold": [
+                1,
+                9
+              ],
+              "warm": [
+                21,
+                89
+              ]
+            }
+          },
+          "evaluated_commits": 512,
+          "prediction": {
+            "conditional": {
+              "mean_availability": 0.9282086034413766,
+              "mean_target_size": 2.742857142857143,
+              "metrics": {
+                "anchored": {
+                  "hit": 105,
+                  "recall": 0.4176030230273928
+                },
+                "degree": {
+                  "hit": 76,
+                  "recall": 0.267166430208447
+                },
+                "frequency": {
+                  "hit": 89,
+                  "recall": 0.3230434064534905
+                },
+                "recency": {
+                  "hit": 82,
+                  "recall": 0.3024059914875041
+                }
+              },
+              "n": 175
+            },
+            "unconditional": {
+              "mean_availability": 0.9540577393117043,
+              "mean_target_size": 2.638225255972696,
+              "metrics": {
+                "anchored": {
+                  "hit": 161,
+                  "recall": 0.35412159306708596
+                },
+                "degree": {
+                  "hit": 135,
+                  "recall": 0.26177325791610073
+                },
+                "frequency": {
+                  "hit": 161,
+                  "recall": 0.35412159306708596
+                },
+                "recency": {
+                  "hit": 136,
+                  "recall": 0.2937426598363157
+                }
+              },
+              "n": 293
+            }
+          },
+          "update": [
+            1909,
+            1834,
+            1246,
+            58,
+            207
+          ]
+        }
+      }
+    }
+  },
+  "workload": {
+    "pallets/click": {
+      "commits": 576,
+      "giant_after_warmup": 0,
+      "giant_all": 0,
+      "max_paths": 22,
+      "scored": 512,
+      "zero_after_warmup": 241
+    },
+    "psf/requests": {
+      "commits": 576,
+      "giant_after_warmup": 0,
+      "giant_all": 0,
+      "max_paths": 37,
+      "scored": 512,
+      "zero_after_warmup": 319
+    },
+    "pypa/packaging": {
+      "commits": 576,
+      "giant_after_warmup": 0,
+      "giant_all": 0,
+      "max_paths": 19,
+      "scored": 512,
+      "zero_after_warmup": 108
+    },
+    "pytest-dev/pluggy": {
+      "commits": 527,
+      "giant_after_warmup": 0,
+      "giant_all": 0,
+      "max_paths": 25,
+      "scored": 463,
+      "zero_after_warmup": 298
+    },
+    "tox-dev/tox": {
+      "commits": 576,
+      "giant_after_warmup": 4,
+      "giant_all": 4,
+      "max_paths": 237,
+      "scored": 512,
+      "zero_after_warmup": 204
+    },
+    "urllib3/urllib3": {
+      "commits": 576,
+      "giant_after_warmup": 0,
+      "giant_all": 0,
+      "max_paths": 26,
+      "scored": 512,
+      "zero_after_warmup": 219
+    }
+  }
+}

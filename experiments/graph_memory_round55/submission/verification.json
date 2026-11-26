@@ -1,0 +1,129 @@
+{
+  "checks": {
+    "apps/churn/demo/verify_http.py": "PASS 33 commit horizons, historical witness, 2 real SQLite plans, invalid-input HTTP codes",
+    "apps/directory/test_console.py": "Verified 96 frozen choices and 1572 single-edge counterfactuals (33 changed choices).",
+    "apps/history/test_console.py": "Passed 88 historical/counterfactual HTTP comparisons, three scenarios and 4 error cases.",
+    "apps/history/test_extension.py": "Passed original console and 88 full-vs-compact historical HTTP comparisons.",
+    "apps/session/test_console.py": "Verified 670 SQL session states and 670 explicit audits against frozen receipts across 67 archived traces in four repositories.",
+    "capture.py": "Captured one ranked-file receipt and the two q11 SQL plans' winners.",
+    "replay_topk.py": "es  warm rows  initial probes  initial rows\n       8  PartialStore             36         38              40             0\n       8  ClassicStore             39         41              40             0\n       9  PartialStore              6         12              40             0\n       9  ClassicStore              6         12              40             0\n      12  PartialStore              0          0              40             0\n      12  ClassicStore              0          0              40             0\nVerified k=2,4,8 at 1,112 states for six plans against signed-edge reconstruction.",
+    "verify_candidate.py": "Verified 84 co-edit SQL views against published per-project totals.\nVerified 125 files and all thirteen live SQLite consoles."
+  },
+  "coedit": {
+    "retrieval_tasks": 54,
+    "sql_browser_states": [
+      {
+        "basis": "bytes",
+        "cap": 8,
+        "vm_steps": "12253",
+        "warm_probes": 214,
+        "warm_rows": 888,
+        "window": 32
+      },
+      {
+        "basis": "slots",
+        "cap": 8,
+        "vm_steps": "15664",
+        "warm_probes": 338,
+        "warm_rows": 904,
+        "window": 32
+      },
+      {
+        "basis": "bytes",
+        "cap": 8,
+        "vm_steps": "\u2014",
+        "warm_probes": 274,
+        "warm_rows": 1240,
+        "window": 16
+      }
+    ]
+  },
+  "files": 126,
+  "git_scene": [
+    {
+      "cap": 8,
+      "classicRows": 1,
+      "classicWarm": 1,
+      "coldProbes": 1,
+      "coldRows": 8,
+      "eighthScore": 29,
+      "partialRows": 0,
+      "partialWarm": 0,
+      "version": "after"
+    },
+    {
+      "cap": 8,
+      "classicRows": 0,
+      "classicWarm": 0,
+      "coldProbes": 1,
+      "coldRows": 8,
+      "eighthScore": 30,
+      "partialRows": 0,
+      "partialWarm": 0,
+      "version": "before"
+    },
+    {
+      "cap": 12,
+      "classicRows": 0,
+      "classicWarm": 0,
+      "coldProbes": 1,
+      "coldRows": 12,
+      "eighthScore": 29,
+      "partialRows": 0,
+      "partialWarm": 0,
+      "version": "after"
+    }
+  ],
+  "output_pdf": "Letter 612 x 792 pt, each page",
+  "pages": 4,
+  "paper_sha256": "d37a7acaadc79170e394d5ee0b1486ae47b36f1b996b3358eae570b31b23ce84",
+  "pdf": {
+    "external_pdf_targets": [
+      "http://dx.doi.org/10.1109/icde.2003.1260792",
+      "http://dx.doi.org/10.1109/icde65706.2026.00318",
+      "https://aclanthology.org/2026.emnlp-main.738/",
+      "https://arxiv.org/abs/2308.01861",
+      "https://arxiv.org/abs/2606.11520",
+      "https://arxiv.org/abs/2607.24882",
+      "https://arxiv.org/abs/2609.25913",
+      "https://arxiv.org/abs/2610.04838v3",
+      "https://thomas-zimmermann.com/publications/files/zimmermann-icse-2004.pdf"
+    ],
+    "figure_replay": {
+      "session-read.png": {
+        "same_pixels": true,
+        "size": [
+          535,
+          532
+        ]
+      },
+      "withdrawal.png": {
+        "same_pixels": true,
+        "size": [
+          1022,
+          451
+        ]
+      }
+    },
+    "internal_pdf_links": 14,
+    "raster_dpi": 90,
+    "raster_rgb_sha256": [
+      "e09f858616f489717034cf73edd19cdf3a7db6f57f01c9265529e6cc97e82178",
+      "2dda10d67e3d044fac737e87b76f49d44d9494b37dc2569d6290be27b0326d95",
+      "690a0c5998db02f58a7b2a1d433847e8bfe400cb87acb0687305ee354241dae9",
+      "9618137a414bf2425155c8f752e4da275ee2d81a7d3cc21b21cbd68491b52594"
+    ],
+    "updated_markdown_checked": 3
+  },
+  "previous_archive": "735c0cddb063a5c407a44fd573738687b5e291e6b04325d77317deb0d9f3e087",
+  "previous_payload_files_unchanged": 101,
+  "seconds": 193.16,
+  "session_databases": {
+    "audit.sqlite": "18172ad97ddbeeecc831da535eb81a19a3f8b2fa345c2416b3459f8119cb484a",
+    "trace.sqlite": "d1a6cf8100c605c7c40f86a59fea7f7f23ba9e2f6ca28d14bd79b5efd9bf9cea"
+  },
+  "sha256": "e6fed4b63a1baf46404e7e9ec981f654b6bc80694db3e0152408bb58180315d2",
+  "video_bytes": 5661457,
+  "video_sha256": "ea9157d84bd3fd30c87552f8cddd61edb7e6ac20e54d8a33b5d2f6b032972a1c",
+  "zip_bytes": 13023683
+}

@@ -1,0 +1,27 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Index reads across Git changes</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f5f5ef;color:#183531;font:16px/1.5 "Segoe UI",Arial,sans-serif}main{max-width:1060px;margin:auto;padding:42px 26px}h1,h2,p{margin:0}h1{font:500 clamp(2.15rem,5vw,3.6rem)/1.05 Georgia,serif;letter-spacing:-.045em}header p{max-width:76ch;margin:13px 0 24px;color:#435c55}.controls{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}label{font-size:.86rem;font-weight:600}select{display:block;font:inherit;width:100%;margin-top:6px;padding:8px;color:inherit;background:white;border:1px solid #8da098;border-radius:4px}section{margin-top:24px;background:#fffefa;border:1px solid #c6d4ca;border-radius:8px;padding:21px 24px}h2{font-size:1.36rem}.tab{overflow:auto}table{border-collapse:collapse;width:100%;margin:15px 0;text-align:right}th,td{padding:8px 9px;border-bottom:1px solid #d7dfd9;white-space:nowrap}th:first-child,td:first-child{text-align:left}td{font-variant-numeric:tabular-nums}thead{font-size:.82rem}tbody tr:nth-child(2){background:#edf4eb}.result{font-weight:600;color:#23584d;margin-top:9px}.muted{font-size:.88rem;color:#4a5c54}details{margin-top:20px}summary{cursor:pointer}pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.84rem}#error{color:#8a2936}button:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid #2e7364}@media(max-width:750px){.controls{grid-template-columns:1fr 1fr}main{padding:25px 14px}section{padding:13px}}
+</style>
+<main><header><h1>Index reads across Git changes</h1><p>When a commit enters or leaves a moving window, a file’s score changes with its co-edited neighbors. Compare two caches that return the same top eight files.</p></header>
+<div class="controls">
+<label>Repository<select id="repo"><option value="all">All six projects</option></select></label>
+<label>History window<select id="w"><option>16</option><option selected>32</option><option>64</option></select> commits</label>
+<label>Bounded cache<select id="cap"><option value="8">8 file slots</option><option value="12">12 file slots</option></select></label>
+<label>Match policies by<select id="basis"><option value="bytes">Equal payload bytes</option><option value="slots">Equal file slots</option></select></label>
+</div>
+<section aria-live="polite"><h2 id="summary">Loading measured counters…</h2><div class="tab"><table><thead><tr><th>Cache policy</th><th>File slots</th><th>Payload bytes</th><th>Warm queries</th><th>Warm rows</th><th>Warm VM steps</th><th>Cold queries</th><th>Cold rows</th></tr></thead><tbody id="costs"></tbody></table></div><p class="result" id="diff"></p><p class="muted">Each file pair holds two 32-bit integers. The bounded policy stores one additional pair for its upper bound. The calculation excludes implementation flags. Warm rows count rows returned by an ordered SQL query. VM steps come from SQLite’s statement counters for the original rank lookups. A dash marks settings without a VM measurement.</p></section>
+<details><summary>Inspect the aggregation query</summary><pre id="sql"></pre><p class="muted">The live console executes this query against a local SQLite projection of the archived per-commit counters. We measured index work offline, with the maximum file capacity fixed across each replay of atomic update batches. Each row represents one policy at one revision. Wall time and disk traffic require separate measurements.</p></details><p id="error" role="alert"></p></main>
+<script>
+const el=id=>document.getElementById(id);
+let epoch=0;const params=()=>new URLSearchParams(["repo","w","cap","basis"].map(id=>[id,el(id).value]));
+function diff(value,unit){return value===0?"the same number of "+unit:Math.abs(value)+" "+(value<0?"fewer":"more")+" "+unit}
+async function update(){const version=++epoch;try{const res=await fetch("/api/compare?"+params());if(!res.ok)throw Error(await res.text());const r=await res.json();if(version!==epoch)return;
+if(el("repo").options.length===1){for(const repo of r.repos)el("repo").add(new Option(repo,repo))}
+const [prefix,bound]=r.plans;el("costs").replaceChildren();
+for(const [i,p] of r.plans.entries()){const tr=el("costs").insertRow();for(const val of [i?"Stored upper bound + suffix":"Fixed-capacity prefix (after Yi et al.)",p.slots,p.payload,p.probes,p.rows,p.warm_vm_steps??'—',...p.cold])tr.insertCell().textContent=val}
+el("summary").textContent=prefix.commits.toLocaleString("en-US")+" Git transitions";
+el("diff").textContent="The bounded policy used "+diff(bound.probes-prefix.probes,"warm queries")+" and returned "+diff(bound.rows-prefix.rows,"warm rows")+".";
+el("sql").textContent=r.query;el("error").textContent=""}catch(e){if(version===epoch)el("error").textContent=e.message}}
+for(const id of ["repo","w","cap","basis"])el(id).onchange=update;update();
+</script></html>
