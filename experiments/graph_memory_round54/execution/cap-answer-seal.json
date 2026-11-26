@@ -1,0 +1,33 @@
+{
+  "answers": "0c9fe7352eebe94714b5db18297755ab4cb66a5985a2c495374fb519feb2fc54",
+  "checks": "03c8b147b575ae7bc0ffd451ea614d7703ca6ed8f82fb8620739dfea252c7b61",
+  "hardware": {
+    "build": "b12441-164ab018f",
+    "cmd": [
+      "D:\\CodexResearch\\x20-qwen38-27b\\bin\\llama-server.exe",
+      "-m",
+      "D:\\CodexResearch\\x20-published-output-audit\\Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "--n-gpu-layers",
+      "all",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18954",
+      "--no-warmup",
+      "--parallel",
+      "1",
+      "--ctx-size",
+      "4096",
+      "--flash-attn",
+      "on",
+      "--threads",
+      "4"
+    ],
+    "device": "NVIDIA GeForce RTX 3090, 610.88, 24576 MiB",
+    "pid": 33484,
+    "slots": 1,
+    "template_sha": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18"
+  },
+  "registration": "5d7bc62ec086726f9c85dfbb0a7173cb31a88769c8887db84a9c324eb64f2135",
+  "remaining_limits": 1
+}

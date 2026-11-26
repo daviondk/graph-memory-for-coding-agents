@@ -1,0 +1,149 @@
+{
+  "classes": 32,
+  "contrasts": {
+    "bm25 vs contract": {
+      "fraction": {
+        "ci95_pp": [
+          -5.7407407407407405,
+          9.677908113391977
+        ],
+        "delta_pp": 1.4754098360655736,
+        "losses": 4,
+        "signflip": {
+          "draws": 256,
+          "kind": "exact",
+          "nonzero": 8,
+          "p": 0.765625
+        },
+        "wins": 6
+      },
+      "pass1": {
+        "ci95_pp": [
+          -7.9380952380952365,
+          11.864406779661017
+        ],
+        "delta_pp": 1.639344262295082,
+        "losses": 3,
+        "signflip": {
+          "draws": 64,
+          "kind": "exact",
+          "nonzero": 6,
+          "p": 1.0
+        },
+        "wins": 4
+      }
+    },
+    "caller_bm25 vs bm25": {
+      "fraction": {
+        "ci95_pp": [
+          -6.0,
+          0.0
+        ],
+        "delta_pp": -2.2950819672131146,
+        "losses": 2,
+        "signflip": {
+          "draws": 4,
+          "kind": "exact",
+          "nonzero": 2,
+          "p": 0.5
+        },
+        "wins": 0
+      },
+      "pass1": {
+        "ci95_pp": [
+          -5.357142857142857,
+          0.0
+        ],
+        "delta_pp": -1.639344262295082,
+        "losses": 1,
+        "signflip": {
+          "draws": 2,
+          "kind": "exact",
+          "nonzero": 1,
+          "p": 1.0
+        },
+        "wins": 0
+      }
+    },
+    "caller_bm25 vs contract": {
+      "fraction": {
+        "ci95_pp": [
+          -8.181818181818182,
+          7.037037037037037
+        ],
+        "delta_pp": -0.819672131147541,
+        "losses": 4,
+        "signflip": {
+          "draws": 128,
+          "kind": "exact",
+          "nonzero": 7,
+          "p": 0.859375
+        },
+        "wins": 5
+      },
+      "pass1": {
+        "ci95_pp": [
+          -9.23076923076923,
+          9.526098901098868
+        ],
+        "delta_pp": 0.0,
+        "losses": 3,
+        "signflip": {
+          "n": 5,
+          "p": 1.0
+        },
+        "wins": 3
+      }
+    }
+  },
+  "different": 11,
+  "different_addresses": 11,
+  "mean_evidence": 73.88524590163935,
+  "n": 61,
+  "summaries": {
+    "bm25": {
+      "mean_test_fraction": 0.7945355191256831,
+      "n": 61,
+      "passed": 42,
+      "passed_tests": 244,
+      "status": {
+        "assertion_failure": 13,
+        "parse": 2,
+        "pass": 42,
+        "runtime_error": 2,
+        "timeout": 2
+      },
+      "total_tests": 308
+    },
+    "caller_bm25": {
+      "mean_test_fraction": 0.7715846994535519,
+      "n": 61,
+      "passed": 41,
+      "passed_tests": 237,
+      "status": {
+        "assertion_failure": 12,
+        "parse": 4,
+        "pass": 41,
+        "runtime_error": 2,
+        "timeout": 2
+      },
+      "total_tests": 308
+    },
+    "contract": {
+      "mean_test_fraction": 0.7797814207650273,
+      "n": 61,
+      "passed": 41,
+      "passed_tests": 238,
+      "status": {
+        "assertion_failure": 13,
+        "parse": 3,
+        "pass": 41,
+        "runtime_error": 3,
+        "timeout": 1
+      },
+      "total_tests": 308
+    }
+  },
+  "tested": 126,
+  "unique_generated": 133
+}

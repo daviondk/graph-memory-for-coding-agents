@@ -1,0 +1,137 @@
+{
+  "contrasts": {
+    "bm25 vs contract": {
+      "fraction": {
+        "ci95_pp": [
+          -5.0,
+          5.555555555555555
+        ],
+        "delta_pp": -0.16393442622950816,
+        "losses": 3,
+        "signflip": {
+          "draws": 32,
+          "kind": "exact",
+          "nonzero": 5,
+          "p": 1.0
+        },
+        "wins": 4
+      },
+      "pass1": {
+        "ci95_pp": [
+          -7.813265931372548,
+          7.6953124999999565
+        ],
+        "delta_pp": 0.0,
+        "losses": 2,
+        "signflip": {
+          "n": 3,
+          "p": 1.0
+        },
+        "wins": 2
+      }
+    },
+    "caller_bm25 vs bm25": {
+      "fraction": {
+        "ci95_pp": [
+          -2.0000000000000004,
+          0.0
+        ],
+        "delta_pp": -0.6557377049180327,
+        "losses": 1,
+        "signflip": {
+          "draws": 2,
+          "kind": "exact",
+          "nonzero": 1,
+          "p": 1.0
+        },
+        "wins": 0
+      },
+      "pass1": {
+        "ci95_pp": [
+          0.0,
+          0.0
+        ],
+        "delta_pp": 0.0,
+        "losses": 0,
+        "signflip": {
+          "n": 0,
+          "p": 1.0
+        },
+        "wins": 0
+      }
+    },
+    "caller_bm25 vs contract": {
+      "fraction": {
+        "ci95_pp": [
+          -6.721382136800451,
+          5.3339285714285625
+        ],
+        "delta_pp": -0.819672131147541,
+        "losses": 3,
+        "signflip": {
+          "draws": 32,
+          "kind": "exact",
+          "nonzero": 5,
+          "p": 0.8125
+        },
+        "wins": 4
+      },
+      "pass1": {
+        "ci95_pp": [
+          -7.813265931372548,
+          7.6953124999999565
+        ],
+        "delta_pp": 0.0,
+        "losses": 2,
+        "signflip": {
+          "n": 3,
+          "p": 1.0
+        },
+        "wins": 2
+      }
+    }
+  },
+  "methods": 61,
+  "new_tests": 6,
+  "remaining_limits": 1,
+  "rerun": 7,
+  "summaries": {
+    "bm25": {
+      "mean_test_fraction": 0.8109289617486339,
+      "passed": 43,
+      "passed_tests": 250,
+      "status": {
+        "assertion_failure": 13,
+        "pass": 43,
+        "runtime_error": 3,
+        "timeout": 2
+      },
+      "total_tests": 308
+    },
+    "caller_bm25": {
+      "mean_test_fraction": 0.8043715846994535,
+      "passed": 43,
+      "passed_tests": 248,
+      "status": {
+        "assertion_failure": 12,
+        "parse": 1,
+        "pass": 43,
+        "runtime_error": 3,
+        "timeout": 2
+      },
+      "total_tests": 308
+    },
+    "contract": {
+      "mean_test_fraction": 0.8125683060109289,
+      "passed": 43,
+      "passed_tests": 248,
+      "status": {
+        "assertion_failure": 14,
+        "pass": 43,
+        "runtime_error": 3,
+        "timeout": 1
+      },
+      "total_tests": 308
+    }
+  }
+}

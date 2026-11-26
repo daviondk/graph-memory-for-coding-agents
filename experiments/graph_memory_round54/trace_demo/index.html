@@ -1,0 +1,50 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>One more code read</title><style>
+:root{font:16px/1.45 "Segoe UI",Arial,sans-serif;color:#192c34;background:#f6f7f2;--rule:#cdd5cf;--accent:#126653;--muted:#4d625c;--paper:white}
+*{box-sizing:border-box}main{max-width:1140px;margin:0 auto;padding:32px clamp(15px,3vw,42px) 60px}h1,h2,h3,p{margin:0}h1{font:500 clamp(32px,4.3vw,48px)/1.14 Georgia,serif;letter-spacing:-.035em}
+.intro{max-width:83ch;margin:8px 0 22px;color:var(--muted)}h2{font-size:19px}h3{font-size:14px;margin-bottom:5px}
+.controls,article,details{border:1px solid var(--rule);border-radius:6px;background:var(--paper);padding:16px;min-width:0}.controls{display:grid;grid-template-columns:1.2fr 1.1fr 1fr;gap:12px}label{display:grid;gap:5px;font-size:14px;font-weight:600;min-width:0}
+select,button{font:inherit}select{min-width:0;padding:7px;color:inherit;background:white;border:1px solid #8b9d95;border-radius:3px;width:100%}
+button{padding:7px 12px;border:0;border-radius:3px;background:var(--accent);color:white;cursor:pointer}button:disabled{opacity:.55}select:focus-visible,button:focus-visible,summary:focus-visible{outline:3px solid #deaa42;outline-offset:2px}
+.meta{margin:12px 0;color:var(--muted);font-size:14px;overflow-wrap:anywhere}.grid{display:grid;grid-template-columns:1.18fr 1fr;gap:14px}.path,code{font-family:Consolas,monospace;font-size:.94em;overflow-wrap:anywhere}.selected{margin:9px 0;font-weight:650;font-size:20px;color:var(--accent)}.receipt{background:#f1f6f1;padding:10px;margin:12px 0;overflow-wrap:anywhere}.muted{color:var(--muted)}.small{font-size:14px}
+ul,ol{margin:8px 0;padding-left:22px}li{padding:2px 0;overflow-wrap:anywhere}.pair{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:14px}#audit{margin-top:10px}details{margin-top:12px}summary{cursor:pointer;font-weight:600}.scroll{max-width:100%;overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:14px;margin-top:10px}th,td{text-align:left;border-bottom:1px solid var(--rule);padding:5px;vertical-align:top}th{white-space:nowrap}td:first-child{min-width:13rem;overflow-wrap:anywhere}.leader{background:#e9f2eb}.foot{margin-top:12px;font-size:14px;color:var(--muted)}#err{color:#853c1e}
+@media(max-width:760px){.controls,.grid{grid-template-columns:1fr}.controls{gap:10px}.pair{grid-template-columns:1fr}.grid{gap:10px}}
+</style></head><body><main>
+<header><h1>One more code read</h1><p class="intro">An archived coding agent finished with verified files and a list of paths it still wanted to open. Choose a rule for one additional read. Compare the source it would add with the context the agent actually returned.</p></header>
+<section class="controls" aria-label="Read replay controls"><label>Archived trace<select id="case"></select></label><label>Selection rule<select id="method"></select></label><label>Session version<select id="version"><option value="0">0 · Archived context</option><option value="1">1 · Replay one new read</option></select></label></section>
+<p id="meta" class="meta"></p><p id="err" role="alert"></p>
+<div class="grid"><article><h2>Selected next source</h2><p id="selected" class="selected path"></p><p id="why"></p><div id="receipt" class="receipt small"></div>
+<button type="button" id="evaluate">Evaluate this version</button><p id="audit" aria-live="polite" hidden></p></article>
+<article><h2>Visible session context</h2><ul id="context"></ul><p class="small muted" id="context-note"></p></article></div>
+<div class="pair"><article><h2>Agent’s suggested unread paths</h2><ol id="proposals"></ol><p id="proposals-note" class="small muted"></p></article>
+<article><h2>Recorded file reads</h2><ul id="opened"></ul><p class="small muted">Files are listed alphabetically. A recorded read can be absent from the agent’s final context. Previously opened files are excluded from the new-read candidates.</p></article></div>
+<details><summary>Inspect eligible paths and original ranks</summary><div class="scroll"><table><thead><tr><th>Eligible path</th><th>Lexical</th><th>Repo map</th><th>Embedding 4B</th><th>Embedding 8B</th><th>Agent</th><th>RRF score</th></tr></thead><tbody id="ranks"></tbody></table></div></details>
+<p class="foot">RRF assigns a vote of 1/(60 + original rank) to each eligible path. The three static lists are lexical, repository map and Qwen3-Embedding-4B. The two four-list rules add either the agent’s suggested paths or Qwen3-Embedding-8B. The menu contains the 36 original readable traces and the entire 31-trace Tokio cohort, added to illustrate both gains and losses. Archive hashes identify the verified first chunk. Version 1 is an offline replay. No agent or language model runs in this console.</p></main>
+<script>
+const el=id=>document.getElementById(id), op=(id,x)=>el(id).replaceChildren(...x.map(([v,t])=>new Option(t,v)));
+const describe={rrf:"Highest combined vote from the three static lists.",suggested:"First eligible path in the agent’s explicit list, with static RRF as fallback.",confirmed:"First eligible suggestion present in a baseline list, with static RRF as fallback.",memory_rrf:"Highest combined vote from the three static lists and the ordered suggestions.",static_four:"Highest combined vote from the three static lists and the static 8B list."};
+let ticket=0,current=null;
+function query(){return new URLSearchParams({q:el("case").value,method:el("method").value,version:el("version").value})}
+async function req(path,opt){const r=await fetch(path,opt),j=await r.json();if(!r.ok)throw Error(j.error||"Unable to load trace");return j}
+function pathList(id,items,label){el(id).replaceChildren(...items.map(x=>{const li=document.createElement("li"),p=document.createElement("span");p.className="path";p.textContent=x.path;li.append(p);if(label){const v=document.createElement("span");v.className="small muted";v.textContent=label(x);li.append(v)}return li}))}
+async function replay(){
+ const i=++ticket;current=null;el("err").textContent="";el("evaluate").disabled=true;el("audit").hidden=true;el("audit").textContent="";
+ try{const s=await req("/api/state?"+query());if(i!==ticket)return;
+ el("meta").textContent=s.repo+" · "+s.task+" · commit "+s.revision;
+ el("selected").textContent=s.selected.path;el("why").textContent=describe[s.method];
+ const r=el("receipt");r.replaceChildren();
+ if(s.receipt){const title=document.createElement("h3"),body=document.createElement("code");
+ title.textContent="First-chunk receipt · lines "+s.receipt.first_line+"–"+s.receipt.last_line;body.textContent="SHA-256 "+s.receipt.text_sha256;r.append(title,body)}
+ else r.textContent="Switch to version 1 to add this path and inspect its pinned chunk receipt.";
+ pathList("context",s.context,x=>x.entered?" · one-read replay":"");el("context-note").textContent=s.version?"Archived final context plus the selected unread source.":"Final context returned by the archived agent.";
+ pathList("proposals",s.proposals,x=>x.eligible?" · eligible":x.previously_read?" · already opened":" · ineligible");
+ el("proposals-note").textContent=s.proposals.length?"Order from the explicit suggested_unread_files field.":"No explicit suggestions were archived.";
+ pathList("opened",s.archived_reads,x=>x.strict?" · in final context":"");
+ el("ranks").replaceChildren(...s.ranking.map((c,j)=>{let tr=document.createElement("tr");if(!j)tr.className="leader";for(const a of [c.path,c.lexical,c.repomap,c.embed4,c.embed8,c.suggestion_rank,c.score.toFixed(5)]){const td=tr.insertCell();td.textContent=a??"—"}return tr}));
+ current=s;el("evaluate").disabled=false
+ }catch(e){if(i===ticket)el("err").textContent=e.message}
+}
+el("evaluate").onclick=async()=>{if(!current)return;const i=ticket;try{const a=await req("/api/evaluate?"+query(),{method:"POST"});if(i!==ticket)return;
+ el("audit").textContent="Required files covered: "+a.covered+" of "+a.total_gold+" ("+(a.recall*100).toFixed(1)+"%)."+(a.version?" New read matches a required file: "+(a.new_hit?"yes.":"no."):"");el("audit").hidden=false}catch(e){if(ticket===i)el("err").textContent=e.message}};
+for(const id of ["case","method","version"])el(id).onchange=replay;
+(async()=>{try{const x=await req("/api/cases");op("case",x.examples.map(e=>[e.q,e.repo+" · "+e.task+" · "+e.q.slice(0,6)]));el("case").value=x.default_q;op("method",Object.entries(x.methods));await replay()}catch(e){el("err").textContent=e.message}})();
+</script></body></html>

@@ -1,0 +1,99 @@
+{
+  "checks": {
+    "apps/churn/demo/verify_http.py": "PASS 33 commit horizons, historical witness, 2 real SQLite plans, invalid-input HTTP codes",
+    "apps/directory/test_console.py": "Verified 96 frozen choices and 1572 single-edge counterfactuals (33 changed choices).",
+    "apps/history/test_console.py": "Passed 88 historical/counterfactual HTTP comparisons, three scenarios and 4 error cases.",
+    "apps/history/test_extension.py": "Passed original console and 88 full-vs-compact historical HTTP comparisons.",
+    "apps/session/test_console.py": "Verified 670 SQL session states and 670 explicit audits against frozen receipts across 67 archived traces in four repositories.",
+    "capture.py": "Captured one ranked-file receipt and the two q11 SQL plans' winners.",
+    "replay_topk.py": "es  warm rows  initial probes  initial rows\n       8  PartialStore             36         38              40             0\n       8  ClassicStore             39         41              40             0\n       9  PartialStore              6         12              40             0\n       9  ClassicStore              6         12              40             0\n      12  PartialStore              0          0              40             0\n      12  ClassicStore              0          0              40             0\nVerified k=2,4,8 at 1,112 states for six plans against signed-edge reconstruction.",
+    "verify_candidate.py": "Verified 112 files and all twelve live SQLite consoles."
+  },
+  "files": 113,
+  "git_scene": [
+    {
+      "cap": 8,
+      "classicRows": 1,
+      "classicWarm": 1,
+      "coldProbes": 1,
+      "coldRows": 8,
+      "eighthScore": 29,
+      "partialRows": 0,
+      "partialWarm": 0,
+      "version": "after"
+    },
+    {
+      "cap": 8,
+      "classicRows": 0,
+      "classicWarm": 0,
+      "coldProbes": 1,
+      "coldRows": 8,
+      "eighthScore": 30,
+      "partialRows": 0,
+      "partialWarm": 0,
+      "version": "before"
+    },
+    {
+      "cap": 12,
+      "classicRows": 0,
+      "classicWarm": 0,
+      "coldProbes": 1,
+      "coldRows": 12,
+      "eighthScore": 29,
+      "partialRows": 0,
+      "partialWarm": 0,
+      "version": "after"
+    }
+  ],
+  "output_pdf": "Letter 612 x 792 pt, each page",
+  "pages": 4,
+  "paper_sha256": "c5740a80c29a17d54f3b264afb53cbceb110e201a15da919ef564b5b5233e3f9",
+  "pdf": {
+    "external_pdf_targets": [
+      "http://dx.doi.org/10.1109/icde.2003.1260792",
+      "http://dx.doi.org/10.1109/icde65706.2026.00318",
+      "https://aclanthology.org/2026.emnlp-main.738/",
+      "https://arxiv.org/abs/2308.01861",
+      "https://arxiv.org/abs/2606.11520",
+      "https://arxiv.org/abs/2607.24882",
+      "https://arxiv.org/abs/2609.25913",
+      "https://arxiv.org/abs/2610.04838v3"
+    ],
+    "figure_replay": {
+      "session-read.png": {
+        "same_pixels": true,
+        "size": [
+          535,
+          532
+        ]
+      },
+      "withdrawal.png": {
+        "same_pixels": true,
+        "size": [
+          1022,
+          451
+        ]
+      }
+    },
+    "internal_pdf_links": 15,
+    "raster_dpi": 90,
+    "raster_rgb_sha256": [
+      "a9774e434c751b44638614a15d9a887cfd4299b6453483c50d9bcf1fce15e3d9",
+      "cfa5b5a9c7f8ac4f286841523ddccbed1ba8b04c8b8e4712f976dadfe415a751",
+      "48fd9fb7857d4f7194288d21d2bb637634d841e940598bd1da761efd6307664d",
+      "1e2b5a3794476f2d67bfc329d3a7ce9398629e76fd147b148ba1854e0ab0496e"
+    ],
+    "updated_markdown_checked": 3
+  },
+  "previous_archive": "b37e68ae564c51513f0523015752f3ed271ae008a7647602a1bcd247a0caabaa",
+  "previous_payload_files_unchanged": 71,
+  "seconds": 292.92,
+  "session_databases": {
+    "audit.sqlite": "18172ad97ddbeeecc831da535eb81a19a3f8b2fa345c2416b3459f8119cb484a",
+    "trace.sqlite": "d1a6cf8100c605c7c40f86a59fea7f7f23ba9e2f6ca28d14bd79b5efd9bf9cea"
+  },
+  "sha256": "735c0cddb063a5c407a44fd573738687b5e291e6b04325d77317deb0d9f3e087",
+  "video_bytes": 5403129,
+  "video_sha256": "d9113b25e4b72c260146f973e28f337cf72bfec368390b0e8220521dab1969b4",
+  "zip_bytes": 12257057
+}

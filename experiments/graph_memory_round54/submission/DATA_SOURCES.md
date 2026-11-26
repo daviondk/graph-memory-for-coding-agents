@@ -1,0 +1,23 @@
+# Data used in the demonstration
+
+**HotpotQA.** The two HotpotQA panels use records by Zhilin Yang, Peng Qi, Saizheng Zhang, Yoshua Bengio, William W. Cohen, Ruslan Salakhutdinov, and Christopher D. Manning. The authors distribute the questions and processed Wikipedia corpus under Creative Commons Attribution–ShareAlike 4.0. We selected questions, shortened visible passages, and projected titles and questions into SQLite. The adapted HotpotQA data is made available here under the same license. Original question IDs are retained. [Dataset and license information](https://hotpotqa.github.io/) · [Paper](https://aclanthology.org/D18-1259/) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+**2WikiMultiHopQA.** Questions and titles come from the work of Xanh Ho, Anh-Khoa Duong Nguyen, Saku Sugawara, and Akiko Aizawa. The authors’ dataset card lists Apache-2.0; the included file reproduces the upstream Apache license. This distribution selects benchmark IDs and renders shortened source excerpts, rank features and answer comparisons. [Authors’ dataset card](https://huggingface.co/datasets/xanhho/2WikiMultihopQA) · [Dataset project](https://github.com/Alab-NII/2wikimultihop) · [Paper](https://aclanthology.org/2020.coling-main.580/) · [Apache license](LICENSE-2Wiki.txt)
+
+**Wikipedia contributors.** Encyclopedia text excerpts in both panels are attributed to contributors of the source articles. The first passage in the learned-ranking console identifies the source article and links to its revision history. Excerpts are shortened and rendered as plain text. Source titles and benchmark question IDs identify the corresponding record in each original distribution. The adapted Wikipedia passages are offered under CC BY-SA 4.0, subject to applicable source attribution and license history. [Wikipedia terms of use](https://foundation.wikimedia.org/wiki/Policy:Terms_of_Use) · [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+
+**Existing trace and edit projections.** Earlier data attributions and citations for ISETrace, Handoff Debt and SWE-bench remain in the included manuscript, bibliography and original applications. Computed rankings, timing measurements and reader outputs are identified separately in the experiment reports.
+
+The historical-read console ships three small projections of public benchmark episodes with source titles, normalized offsets and fixed scores. The full Wikipedia article directory used in the reported open-directory experiment is available from the dataset authors. [2Wiki corpus and licenses](https://github.com/Alab-NII/2wikimultihop)
+
+## Support additions and withdrawals
+
+The additional SQLite view replays q11 from the same ISETrace execution-trace source described above. It includes compact numeric event receipts, derived graph changes and expected top addresses. The candidate archive retains the original license and source notices.
+
+## Coding-agent sessions and execution checks
+
+**Agent Retrieval Bench.** The code-session console adapts paths, pinned repository revisions, file-read receipts and ranks from Bowen Qin and Yi Xie's archived GPT-5.4-mini sessions. The projection includes file paths, line intervals and content digests. The version-one added read is a computed continuation of the archived version-zero context. The current case menu covers four repositories. The aggregate edit2ripple and session experiments are stored separately. [Benchmark paper](https://arxiv.org/abs/2607.24882) · [Pinned public release](https://huggingface.co/datasets/eyuansu71/agent_retrieval_bench/tree/5901e1ee3aff048290db72edf9c63bc498b79ea3/releases)
+
+**ClassEval.** The artifact reports aggregate execution outcomes on a method-masking adaptation of Xueying Du and colleagues' class-level Python generation benchmark. The new generator outputs and original class source bodies are outside the shipped runtime. [Benchmark paper](https://arxiv.org/abs/2308.01861) · [Official source and tests](https://github.com/FudanSELab/ClassEval)
+
+**Import-graph transfer.** The six Git histories used for the aggregate check are the pinned first-parent histories of Click, urllib3, tox, Requests, Packaging and pluggy. The package ships summary metrics for the derived import graph. The offline tool-trace replay separately includes the numeric ISETrace source births and signed edge changes needed to reconstruct its ranked views. [Click](https://github.com/pallets/click) · [urllib3](https://github.com/urllib3/urllib3) · [tox](https://github.com/tox-dev/tox) · [Requests](https://github.com/psf/requests) · [Packaging](https://github.com/pypa/packaging) · [pluggy](https://github.com/pytest-dev/pluggy)
