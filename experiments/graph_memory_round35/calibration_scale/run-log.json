@@ -1,0 +1,37 @@
+[
+  {
+    "script": "fit_scale.py",
+    "argument": "fit",
+    "returncode": 0,
+    "wall_seconds": 12.994638900010614,
+    "log": "second stage 196 13877\nsecond stage 1024 117382\nsecond stage 3894 460128\n"
+  },
+  {
+    "script": "fit_scale.py",
+    "argument": "dev",
+    "returncode": 0,
+    "wall_seconds": 4.925197099990328,
+    "log": ""
+  },
+  {
+    "script": "score_scale.py",
+    "argument": "dev",
+    "returncode": 0,
+    "wall_seconds": 5.604427199999918,
+    "log": "dev [('full_1024', 80.52), ('full_196', 79.66), ('full_3894', 80.17), ('oof_1024', 80.52), ('oof_196', 79.66), ('oof_3894', 80.17), ('original_R33', 79.66), ('original_recomputed', 79.66), ('rotated_1024', 80.52), ('rotated_196', 79.66), ('rotated_3894', 80.17)]\n"
+  },
+  {
+    "script": "fit_scale.py",
+    "argument": "test",
+    "returncode": 0,
+    "wall_seconds": 5.882032800000161,
+    "log": ""
+  },
+  {
+    "script": "score_scale.py",
+    "argument": "test",
+    "returncode": 0,
+    "wall_seconds": 9.537435299993376,
+    "log": "test [('full_1024', 81.2), ('full_196', 80.55), ('full_3894', 81.15), ('oof_1024', 81.25), ('oof_196', 80.55), ('oof_3894', 81.15), ('original_R33', 80.6), ('original_recomputed', 80.6), ('rotated_1024', 81.2), ('rotated_196', 80.55), ('rotated_3894', 81.15)]\n"
+  }
+]

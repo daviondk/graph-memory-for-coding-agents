@@ -10,7 +10,7 @@ from verify import verify
 
 ROOT=Path(__file__).resolve().parent
 STUDIES=tuple(json.loads((ROOT/"release.json").read_bytes())["completed"])
-TOP=("dev_metric/PROTOCOL_RU.md","native_comparison/PROTOCOL_RU.md","native_comparison/outcomes-13.json.gz","REPORT_RU.md","release.json","verify.py","package_verified.py")
+TOP=("native_comparison/report-2.md","native_comparison/interim-2.json","native_comparison/REPRODUCE_RU.md","dev_metric/PROTOCOL_RU.md","native_comparison/PROTOCOL_RU.md","native_comparison/outcomes-13.json.gz","REPORT_RU.md","release.json","verify.py","package_verified.py")
 ALLOWED={".pdf",".cpp",".ps1",".mjs",".html",".png",".py",".md",".json",".gz",".sqlite"}
 
 def digest(b):return hashlib.sha256(b).hexdigest()
