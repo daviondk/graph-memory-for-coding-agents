@@ -9,9 +9,9 @@ import zipfile
 from verify import verify
 
 ROOT=Path(__file__).resolve().parent
-STUDIES=("handoff","binding_refit","factorized_provenance","incremental_binding","provenance_demo")
+STUDIES=("handoff","binding_refit","factorized_provenance","incremental_binding","provenance_demo","five_seed")
 TOP=("REPORT_RU.md","RELATED_WORK_RU.md","REVIEW_RU.md","verify.py","package_verified.py")
-ALLOWED={".py",".mjs",".md",".json",".gz",".sqlite",".html",".png"}
+ALLOWED={".ps1",".py",".mjs",".md",".json",".gz",".sqlite",".html",".png"}
 def digest(b):return hashlib.sha256(b).hexdigest()
 def snapshot():
     verify()
@@ -19,7 +19,7 @@ def snapshot():
     for study in STUDIES:
         base=ROOT/study
         for p in sorted(base.rglob("*")):
-            if not p.is_file() or "__pycache__" in p.parts:continue
+            if not p.is_file() or "__pycache__" in p.parts or "device_recovery" in p.parts:continue
             assert p.suffix in ALLOWED and not p.name.startswith(".")
             assert p.stat().st_size<48*1024**2
             files[p.relative_to(ROOT).as_posix()]=digest(p.read_bytes())

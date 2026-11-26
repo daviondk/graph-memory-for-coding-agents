@@ -42,6 +42,19 @@ def verify():
     for s in ("binding_refit","handoff"):
         m=read(s+"/MANIFEST_SHA256.json")
         for name,h in m.items():assert hashlib.sha256((D/s/name).read_bytes()).hexdigest()==h,(s,name)
+    sums={"dense":0,"factor":0}
+    five=read("five_seed/five-seed-results.json")
+    assert five["completed"] and len(five["seeds"])==5
+    population=None
+    for seed in five["seeds"]:
+        name=f"five_seed/seed-{seed}/metrics.json.gz"
+        m=read(name); receipt=read(f"five_seed/dev580/seed-{seed}/test-link.json")
+        assert receipt["metrics_sha"]==hashlib.sha256((D/name).read_bytes()).hexdigest()
+        assert set(m["dense"])==set(m["factor"]) and len(m["dense"])==2000
+        if population is None:population=set(m["dense"])
+        assert set(m["dense"])==population
+        for arm in sums:sums[arm]+=sum(r["full_support_2048"] for r in m[arm].values())
+    assert sums=={"dense":7297,"factor":7844}
     return {"prefixes":383,"exact_vs_append_frozen_n":len(other),"reader_queries":len(dyn),"demo_scene":scene,
             "submanifests":["binding_refit","handoff"]}
 

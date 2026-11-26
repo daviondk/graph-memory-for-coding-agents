@@ -1,0 +1,127 @@
+{
+  "base_weights_pinned": "d0d559c47d5f71b1d280b13b62a2657f3e3bc70c0786f9ab91a36545e6a8f693",
+  "bytes_estimated_per_seed": {
+    "basis": "Observed byte size of seed-13 SQLite for 138671 test strings, scaled by new distinct inputs. Excludes transient training and WAL overhead.",
+    "embedding_db": 680300221,
+    "encoder_checkpoint": 437955512
+  },
+  "counts": {
+    "13": {
+      "negative": 20804,
+      "positive": 5330,
+      "repeat_rows": 516,
+      "rows": 26650,
+      "types": {
+        "easy_random": 10660,
+        "hard_bm25": 10660,
+        "positive": 5330
+      }
+    },
+    "17": {
+      "negative": 20784,
+      "positive": 5330,
+      "repeat_rows": 536,
+      "rows": 26650,
+      "types": {
+        "easy_random": 10660,
+        "hard_bm25": 10660,
+        "positive": 5330
+      }
+    },
+    "29": {
+      "negative": 20801,
+      "positive": 5330,
+      "repeat_rows": 519,
+      "rows": 26650,
+      "types": {
+        "easy_random": 10660,
+        "hard_bm25": 10660,
+        "positive": 5330
+      }
+    },
+    "37": {
+      "negative": 20794,
+      "positive": 5330,
+      "repeat_rows": 526,
+      "rows": 26650,
+      "types": {
+        "easy_random": 10660,
+        "hard_bm25": 10660,
+        "positive": 5330
+      }
+    },
+    "41": {
+      "negative": 20789,
+      "positive": 5330,
+      "repeat_rows": 531,
+      "rows": 26650,
+      "types": {
+        "easy_random": 10660,
+        "hard_bm25": 10660,
+        "positive": 5330
+      }
+    }
+  },
+  "free_D_last_audit": 44281364480,
+  "identical_positive_sets": true,
+  "initial_encoder": {
+    "1_Pooling/config.json": "f586ab6c734af7b8d14d898bfa7faa886f23b46f86dd1730514309893af13d75",
+    "config.json": "01cc39aa39538a8179aa131c8a16adc03b506c92009f091502e4eb0c702f5f78",
+    "model.safetensors": "d0d559c47d5f71b1d280b13b62a2657f3e3bc70c0786f9ab91a36545e6a8f693",
+    "modules.json": "c6e29747481e8b5dd2b58401966aeac910de39092f90cda9a704b1545f902b04",
+    "sentence_bert_config.json": "948201d8329907aae938fa62f9ceeed53f5694dacc2b87b9f3b78b37ee986529",
+    "special_tokens_map.json": "b6d346be366a7d1d48332dbc9fdf3bf8960b5d879522b7799ddba59e76237ee3",
+    "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66",
+    "tokenizer_config.json": "ae83fa6ca0333117ff12606020af925d648667ef70d92ff7f27d781ba0ca4544",
+    "vocab.txt": "07eced375cec144d27c900241f3e339478dec958f92fddbc551f295c992038a3"
+  },
+  "negative_intersection_union": {
+    "13-17": [
+      11158,
+      30430
+    ],
+    "13-29": [
+      11167,
+      30438
+    ],
+    "13-37": [
+      11097,
+      30501
+    ],
+    "13-41": [
+      11140,
+      30453
+    ],
+    "17-29": [
+      11139,
+      30446
+    ],
+    "17-37": [
+      11170,
+      30408
+    ],
+    "17-41": [
+      11140,
+      30433
+    ],
+    "29-37": [
+      11108,
+      30487
+    ],
+    "29-41": [
+      11145,
+      30445
+    ],
+    "37-41": [
+      11120,
+      30463
+    ]
+  },
+  "training_pair_shas": {
+    "13": "50c3b14ec909e3fb82c885aad2301359afcddfc7dadda86197e14939af1fd359",
+    "17": "125b4052d028ce63105d50402d6a3daed74af4fa40a533bd78c24d86613dd5a5",
+    "29": "1a0b8f20b5340de64743a612c668f8edb2a90c25221a5a0bf0c1df0c7db674e7",
+    "37": "627605018687dcefbd042c2bd063ecc5c65cd80ce17da151e8f917e640780904",
+    "41": "eb88f868029b0cf413ebae200a69f46afc3cf1ba832ab15516968501db2f7c7d"
+  }
+}
