@@ -1,0 +1,24 @@
+--- a/woodwork/table_accessor.py
++++ b/woodwork/table_accessor.py
+@@ -433,6 +433,21 @@
+ 
+         return new_df
+ 
++    def drop(self, columns):
++        """Return a new DataFrame with the specified columns removed.
++
++        Args:
++            columns (str or list[str]): Column name or names to drop.
++
++        Returns:
++            DataFrame: A DataFrame with Woodwork initialized using the original
++            typing information for the remaining columns.
++        """
++        if self._schema is None:
++            _raise_init_error()
++        remaining_columns = self._dataframe.columns.drop(columns)
++        return self._get_subset_df_with_schema(remaining_columns)
++
+     def pop(self, column_name):
+         """Return a Series with Woodwork typing information and remove it from the DataFrame.
+ 

@@ -1,0 +1,145 @@
+{
+  "bytes_by_repo": {
+    "HypothesisWorks/hypothesis": 1265811333,
+    "alteryx/woodwork": 1544339724,
+    "sdv-dev/RDT": 1720792447
+  },
+  "data_sha256": "22238743ca143276e3ff4616f569b3921c42945bfee1a6aa8fa376a02feebb98",
+  "free_bytes_at_screen": 6749372416,
+  "rows": [
+    {
+      "base_commit": "5ac90a788d92769243f3003852b60d2a9ac33591",
+      "created_at": "2022-10-28 22:02:10",
+      "image": "swerebenchv2/alteryx-woodwork@sha256:538126f4a6af91369fd72ad6c5cba9a265df63dcc733c2467810eaff454f7d3f",
+      "image_name": "docker.io/swerebenchv2/alteryx-woodwork:1557-5ac90a7",
+      "instance_id": "alteryx__woodwork-1557",
+      "layers": {
+        "sha256:0c50884009e0b5d7f25cf40f6fd28e68ce92cfe4c3540664585121dd39b92ecc": 15454873,
+        "sha256:3fcc21bafff82db4cd542272021ecf101d7b264e87010fef803d8ecb277f5d65": 1329600,
+        "sha256:4327a07450af57d5ecc5b3edb6058d720fdec306f3d9d99aebd779a3d5fb4785": 14332773,
+        "sha256:54e51d853664f4a99e07200ad6ace97e1b9ec91a8277fd97293d62c158819556": 3473,
+        "sha256:883542cf6392ed2631a581efcf8edaeb35d95e29f1a89366c297ccab89ab266f": 31799494,
+        "sha256:89d793cc6c0d83de6031cfc622c81081412af4b10fe416c76479ebf2375e0df4": 401308445,
+        "sha256:95d9ce69972c16230a11e315b0075c56e0107ebb08fdd83b2062dc02e01733eb": 164743912,
+        "sha256:a2425a068702a5f06588d51fdc57bdf6738614609a42e2f0102ed200e88bff9d": 523834501,
+        "sha256:b839ef35b4c1aa5d38ee6216ebc97d852d86acd11582dbc7bfa3ef1e3e6d3dfe": 267,
+        "sha256:b9f81b775b1674849cf519b19d58a5c725639f9e484b2901398a91011a0a25f9": 106,
+        "sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d": 34
+      },
+      "problem_statement": "Incorrect Error Message When Woodwork-initializing Series\nI ran into this error:\r\n```\r\n>>> x = pd.Series([pd.NA, 5, 4, 3, 2])\r\n>>> x.ww.init()\r\nTraceback (most recent call last):\r\n  File \"<stdin>\", line 1, in <module>\r\n  File \"/Users/shripad.badithe/woodwork/woodwork/column_accessor.py\", line 112, in init\r\n    raise TypeValidationError(\r\nwoodwork.exceptions.TypeValidationError: Cannot initialize Woodwork. Series dtype 'object' is incompatible with IntegerNullable dtype. Try converting series dtype to 'Int64' before initializing or use the woodwork.init_series function to initialize.\r\n>>>> pd.DataFrame({\"a\" : pd.Series([pd.NA, 5, 4, 3, 2])}).ww.init() # This works fine! \r\n```\r\n\r\nI believe in the `TypeValidationError`, the message should refer to the IntegerNullable LogicalType. ",
+      "repo": "alteryx/woodwork"
+    },
+    {
+      "base_commit": "7bde24e9c9b5c5a0e228b4c62c094fced9901c3b",
+      "created_at": "2021-02-26 19:59:55",
+      "image": "swerebenchv2/alteryx-woodwork@sha256:c272baa5aa5925f73af651a9feb3505314a03a5b22f4f625a74d853be9f2868b",
+      "image_name": "docker.io/swerebenchv2/alteryx-woodwork:640-7bde24e",
+      "instance_id": "alteryx__woodwork-640",
+      "layers": {
+        "sha256:0c50884009e0b5d7f25cf40f6fd28e68ce92cfe4c3540664585121dd39b92ecc": 15454873,
+        "sha256:3fcc21bafff82db4cd542272021ecf101d7b264e87010fef803d8ecb277f5d65": 1329600,
+        "sha256:4327a07450af57d5ecc5b3edb6058d720fdec306f3d9d99aebd779a3d5fb4785": 14332773,
+        "sha256:47bd196f2bea82264117248ffc041849a52a4e0ecc8782ecf1adfe8088866046": 175577521,
+        "sha256:54e51d853664f4a99e07200ad6ace97e1b9ec91a8277fd97293d62c158819556": 3473,
+        "sha256:883542cf6392ed2631a581efcf8edaeb35d95e29f1a89366c297ccab89ab266f": 31799494,
+        "sha256:95d9ce69972c16230a11e315b0075c56e0107ebb08fdd83b2062dc02e01733eb": 164743912,
+        "sha256:a5527c2fe33f9f0eb2b9d4683202e2ab842306509f6abf26f60bdc32fd4b5d43": 215954680,
+        "sha256:b839ef35b4c1aa5d38ee6216ebc97d852d86acd11582dbc7bfa3ef1e3e6d3dfe": 267,
+        "sha256:b94b4d079a0a84bdf416bc4a472ccff4775bb999858da78e854446f0d5221b84": 45,
+        "sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d": 34
+      },
+      "problem_statement": "Add WoodworkTableAccessor.drop\n- Creates a new DataFrame without the specified columns that has Woodwork initialized using the typing information from the original DataFrame\r\n",
+      "repo": "alteryx/woodwork"
+    },
+    {
+      "base_commit": "a5d11a227a6d7828ed641464e78ffe71996511fc",
+      "created_at": "2020-10-29 12:06:27",
+      "image": "swerebenchv2/hypothesisworks-hypothesis@sha256:5fd37af510a6291efa10aa3c805b2c3312374ba852d7bcadf4a16c5315ad443f",
+      "image_name": "docker.io/swerebenchv2/hypothesisworks-hypothesis:2653-a5d11a2",
+      "instance_id": "hypothesisworks__hypothesis-2653",
+      "layers": {
+        "sha256:080c1c5e7dd3ae9f91b98e9becd1b8db76b4f8b92ddadaf06bce3ad7fea74404": 244260334,
+        "sha256:0c50884009e0b5d7f25cf40f6fd28e68ce92cfe4c3540664585121dd39b92ecc": 15454873,
+        "sha256:3791bdefd72a6365650692ffb914a3d8a6f10d409503254f0950aaca656e5862": 215954796,
+        "sha256:3fcc21bafff82db4cd542272021ecf101d7b264e87010fef803d8ecb277f5d65": 1329600,
+        "sha256:4327a07450af57d5ecc5b3edb6058d720fdec306f3d9d99aebd779a3d5fb4785": 14332773,
+        "sha256:54e51d853664f4a99e07200ad6ace97e1b9ec91a8277fd97293d62c158819556": 3473,
+        "sha256:883542cf6392ed2631a581efcf8edaeb35d95e29f1a89366c297ccab89ab266f": 31799494,
+        "sha256:95d9ce69972c16230a11e315b0075c56e0107ebb08fdd83b2062dc02e01733eb": 164743912,
+        "sha256:b839ef35b4c1aa5d38ee6216ebc97d852d86acd11582dbc7bfa3ef1e3e6d3dfe": 267,
+        "sha256:b94b4d079a0a84bdf416bc4a472ccff4775bb999858da78e854446f0d5221b84": 45,
+        "sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d": 34
+      },
+      "problem_statement": "Test `st.from_type()` on builtin generics from Python 3.9\nPython 3.9 is coming out soon!  Happily, we're already running it in our CI - so anything that worked before still works on the new Python.  There are however also *new features*, like [PEP 585](https://www.python.org/dev/peps/pep-0585/) (type annotations using builtins as generics).\r\n\r\nAs [Guido highlights](https://twitter.com/gvanrossum/status/1313216099429695489), we should also check that everything works with `from __future__ import annotations` - that's not new in 3.9 but will become the default behaviour in 3.10!\r\n\r\nI don't think we actually need any new logic to handle this, but we should really add some py39-only tests to make sure it keeps working :grin: ",
+      "repo": "HypothesisWorks/hypothesis"
+    },
+    {
+      "base_commit": "5401530075b680cbc8f9e92b83ab603003854063",
+      "created_at": "2023-11-05 01:07:38",
+      "image": "swerebenchv2/hypothesisworks-hypothesis@sha256:5f5145f8908e2f7671fb2a6ab5f2052d7494fcd1e926f76a64855cdd2f369f67",
+      "image_name": "docker.io/swerebenchv2/hypothesisworks-hypothesis:3785-5401530",
+      "instance_id": "hypothesisworks__hypothesis-3785",
+      "layers": {
+        "sha256:0c50884009e0b5d7f25cf40f6fd28e68ce92cfe4c3540664585121dd39b92ecc": 15454873,
+        "sha256:142cc73498259103d153be8b86c15963588532a0dfd761ed1949d636543f2f52": 54097678,
+        "sha256:29b07f1b9f3f89452a7a2fce8ed90153f53c77afc0da5fbbb2a6156d390e7b87": 523833948,
+        "sha256:3fcc21bafff82db4cd542272021ecf101d7b264e87010fef803d8ecb277f5d65": 1329600,
+        "sha256:4327a07450af57d5ecc5b3edb6058d720fdec306f3d9d99aebd779a3d5fb4785": 14332773,
+        "sha256:54e51d853664f4a99e07200ad6ace97e1b9ec91a8277fd97293d62c158819556": 3473,
+        "sha256:883542cf6392ed2631a581efcf8edaeb35d95e29f1a89366c297ccab89ab266f": 31799494,
+        "sha256:91ee6a17684962bdad139222ba283835ef2fb64e6d3bf22c0b8afbd09bf7d986": 106,
+        "sha256:95d9ce69972c16230a11e315b0075c56e0107ebb08fdd83b2062dc02e01733eb": 164743912,
+        "sha256:b839ef35b4c1aa5d38ee6216ebc97d852d86acd11582dbc7bfa3ef1e3e6d3dfe": 267,
+        "sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d": 34
+      },
+      "problem_statement": "`register_type_strategy` doesn't seem to work on parameterized generic types\nThe docs for `register_type_strategy` say that instead of registering `tuple[int]`, I can register `tuple` with a function that takes the type and return the strategy. I may be misunderstanding, but I take this to mean that I can register\r\n`st.register_type_strategy(tuple, lambda typ: foo)`\r\nand then `foo` should be the default strategy for _any_ param of type tuple, or `tuple[int]`, or `tuple[....]`, etc.\r\n\r\nHowever, the code below results in a test failure, and from my investigation it is clear that the registration is not effective, and that `test` is getting any old `tuple[int]` rather than using the strategy that was registered.\r\n\r\n```python\r\nfrom hypothesis import given, strategies as st\r\n\r\n# Note that I'm not actually using the typ param here, but I do use it in my actual code\r\nst.register_type_strategy(tuple, lambda typ: st.tuples(st.integers(min_value=0)))\r\n\r\n@given(x=...)\r\ndef test(x: tuple[int]):\r\n    assert x[0] >= 0\r\n\r\ntest()\r\n```\r\n\r\nI'm not sure if I'm using this correctly or if I understand the correct behavior. Is it simply impossible to register a default strategy for tuples that will work on parameterized tuples? If so, the documentation seems to suggest otherwise to me. Also, this seems like a useful feature to have. Or, is it that I am doing something wrong?\r\n\r\nThanks!",
+      "repo": "HypothesisWorks/hypothesis"
+    },
+    {
+      "base_commit": "bb3262e2fa88264dbc8b4d9f497dddd87adee0f2",
+      "created_at": "2024-08-27 08:02:30",
+      "image": "swerebenchv2/sdv-dev-rdt@sha256:11d2a09f5b665696aa2b1700224ce394f3405d877b2b5c7bf28f42cb3e5fe09e",
+      "image_name": "docker.io/swerebenchv2/sdv-dev-rdt:875-bb3262e",
+      "instance_id": "sdv-dev__rdt-875",
+      "layers": {
+        "sha256:0c50884009e0b5d7f25cf40f6fd28e68ce92cfe4c3540664585121dd39b92ecc": 15454873,
+        "sha256:3fcc21bafff82db4cd542272021ecf101d7b264e87010fef803d8ecb277f5d65": 1329600,
+        "sha256:4327a07450af57d5ecc5b3edb6058d720fdec306f3d9d99aebd779a3d5fb4785": 14332773,
+        "sha256:54e51d853664f4a99e07200ad6ace97e1b9ec91a8277fd97293d62c158819556": 3473,
+        "sha256:883542cf6392ed2631a581efcf8edaeb35d95e29f1a89366c297ccab89ab266f": 31799494,
+        "sha256:95d9ce69972c16230a11e315b0075c56e0107ebb08fdd83b2062dc02e01733eb": 164743912,
+        "sha256:b839ef35b4c1aa5d38ee6216ebc97d852d86acd11582dbc7bfa3ef1e3e6d3dfe": 267,
+        "sha256:b94b4d079a0a84bdf416bc4a472ccff4775bb999858da78e854446f0d5221b84": 45,
+        "sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d": 34,
+        "sha256:dd84866f2878504217b3782640744fa62163cdbae29842f493b3029875a17d52": 215954613,
+        "sha256:fada1e469095b3e78a0d606147ef5f1494f7fa0d934b10b1e2ec09acd27dba7b": 322382690
+      },
+      "problem_statement": "FloatFormatter does not round the data correctly for integer columns when using _set_fitted_parameters\n### Environment Details\r\n\r\n* RDT version: 1.12.3\r\n\r\n### Error Description\r\n\r\nWe can't currently set the `rounding_digits` attribute of the `FloatFormatter` to 0 with `_set_fitted_parameters`. It seems to be because of the following line:\r\nhttps://github.com/sdv-dev/RDT/blob/bb3262e2fa88264dbc8b4d9f497dddd87adee0f2/rdt/transformers/numerical.py#L239\r\n\r\n\r\n### Steps to reproduce\r\nIn the code below the `reverse_transformed_data` will not be rounded while `rounding_digits=0`\r\n```python\r\nimport pandas as pd\r\nimport numpy as np\r\nfrom rdt.transformers import FloatFormatter, NullTransformer\r\n\r\ndata = pd.DataFrame({\r\n    'col 1': 100 * np.random.random(10),\r\n})\r\ntransformer = FloatFormatter()\r\ntransformer._set_fitted_parameters(\r\n    column_name='col 1',\r\n    null_transformer=NullTransformer(),\r\n    rounding_digits=0,\r\n    dtype='float',\r\n)\r\n\r\nreverse_transformed_data = transformer.reverse_transform(data)\r\nreverse_transformed_data\r\n```\r\n",
+      "repo": "sdv-dev/RDT"
+    },
+    {
+      "base_commit": "cdbd596f3a5ea6f63c4b366d0b1c726bbe3558b2",
+      "created_at": "2025-03-24 16:23:28",
+      "image": "swerebenchv2/sdv-dev-rdt@sha256:deeee8419a09ed6500712542c5dcfb12ea21c387b30f691a4b01b681347fe450",
+      "image_name": "docker.io/swerebenchv2/sdv-dev-rdt:963-cdbd596",
+      "instance_id": "sdv-dev__rdt-963",
+      "layers": {
+        "sha256:0c50884009e0b5d7f25cf40f6fd28e68ce92cfe4c3540664585121dd39b92ecc": 15454873,
+        "sha256:3fcc21bafff82db4cd542272021ecf101d7b264e87010fef803d8ecb277f5d65": 1329600,
+        "sha256:4327a07450af57d5ecc5b3edb6058d720fdec306f3d9d99aebd779a3d5fb4785": 14332773,
+        "sha256:54e51d853664f4a99e07200ad6ace97e1b9ec91a8277fd97293d62c158819556": 3473,
+        "sha256:883542cf6392ed2631a581efcf8edaeb35d95e29f1a89366c297ccab89ab266f": 31799494,
+        "sha256:95d9ce69972c16230a11e315b0075c56e0107ebb08fdd83b2062dc02e01733eb": 164743912,
+        "sha256:b839ef35b4c1aa5d38ee6216ebc97d852d86acd11582dbc7bfa3ef1e3e6d3dfe": 267,
+        "sha256:bd9ddc54bea929a22b334e73e026d4136e5b73f5cc29942896c72e4ece69b13d": 34,
+        "sha256:e114e6838a37585428e9edb686c252a303bf87435304f21992764c6a08c21bba": 523834435,
+        "sha256:f485f177ecdc022a5f55ba340d5856cca2f9a831c12b03cebdcb4a212d35cb36": 106,
+        "sha256:fdebf928dd4e962c80dd2415efe1c8a4ea3438ceee031e70e60c4ce04071c168": 430956132
+      },
+      "problem_statement": "`BaseTransformer.__repr__` errors if transformer has positional arguments\n### Environment Details\n\nPlease indicate the following details about the environment in which you found the bug:\n\n* RDT version:\n* Python version:\n* Operating System:\n\n### Error Description\nThe `__repr__` method on the base transformer tries to pretty print each transformer with the arguments it was called with. However, this method expects all arguments to be keyword arguments, so transformers that have positional arguments will cause an error.\n\nWe should update the `__repr__` method so it works as expected with required and keyword arguments.\n\n### Steps to reproduce\n```python\nfrom rdt.transformers.categorical import DPResponseRandomizer\n\ntransformer = DPResponseRandomizer(1)\nprint(transformer)\n```\n",
+      "repo": "sdv-dev/RDT"
+    }
+  ],
+  "selection_sha256": "8fcdb4c2e35c7ea97ead5276d568db359c1c86e697fa9aabd70d0b3fedda95f9",
+  "total_rows": 111
+}

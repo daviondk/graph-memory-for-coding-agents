@@ -1,0 +1,233 @@
+HEAD is now at 7bde24e Bump Koalas min version and fix release notes (#638)
+Checking patch woodwork/table_accessor.py...
+error: repository lacks the necessary blob to perform 3-way merge.
+Falling back to direct application...
+Applied patch woodwork/table_accessor.py cleanly.
+Checking patch woodwork/tests/accessor/test_table_accessor.py...
+Applied patch to 'woodwork/tests/accessor/test_table_accessor.py' cleanly.
+Applied patch woodwork/tests/accessor/test_table_accessor.py cleanly.
+============================= test session starts ==============================
+collected 173 items
+
+woodwork/tests/accessor/test_table_accessor.py .ss.ss.ss.ss.ss.ss.ss.ss. [ 14%]
+ss.ss.ss.ss.ss.ss.ss.ss.ss........ss......FssFss.ss.ss.ss.ss..ss.ss.ss.s [ 56%]
+s.ss.ss.ss.ss.ssFssFssFssFssFssFssFssFssFssFss.ss.ss.ss.ss.ss.ss.ss.ss.s [ 97%]
+sFss                                                                     [100%]
+
+=================================== FAILURES ===================================
+E   AttributeError: 'Series' object has no attribute 'is_monotonic'
+/usr/local/lib/python3.10/site-packages/pandas/core/generic.py:6321: AttributeError: 'Series' object has no attribute 'is_monotonic'
+E   AttributeError: module 'pandas' has no attribute 'Int64Index'
+/woodwork/woodwork/tests/accessor/test_table_accessor.py:684: AttributeError: module 'pandas' has no attribute 'Int64Index'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   AttributeError: module 'collections' has no attribute 'Hashable'
+/woodwork/woodwork/schema.py:387: AttributeError: module 'collections' has no attribute 'Hashable'
+E   KeyError: "['not_present'] not found in axis"
+/usr/local/lib/python3.10/site-packages/pandas/core/indexes/base.py:7136: KeyError: "['not_present'] not found in axis"
+=============================== warnings summary ===============================
+woodwork/tests/accessor/test_table_accessor.py: 242 warnings
+  /woodwork/woodwork/type_sys/utils.py:29: UserWarning: Could not infer format, so each element will be parsed individually, falling back to `dateutil`. To ensure parsing is consistent and as-expected, please specify a format.
+    pd.to_datetime(dropped_na, errors='raise', format=datetime_format)
+
+woodwork/tests/accessor/test_table_accessor.py::test_accessor_already_sorted[sample_unsorted_df_pandas]
+  /woodwork/woodwork/tests/accessor/test_table_accessor.py:741: FutureWarning: Mismatched null-like values nan and <NA> found. In a future version, pandas equality-testing functions (e.g. assert_frame_equal) will consider these not-matching and raise.
+    pd.testing.assert_frame_equal(sorted_df,
+
+woodwork/tests/accessor/test_table_accessor.py::test_accessor_already_sorted[sample_unsorted_df_pandas]
+  /woodwork/woodwork/tests/accessor/test_table_accessor.py:755: FutureWarning: Mismatched null-like values nan and <NA> found. In a future version, pandas equality-testing functions (e.g. assert_frame_equal) will consider these not-matching and raise.
+    pd.testing.assert_frame_equal(unsorted_df, to_pandas(schema_df), check_index_type=False, check_dtype=False)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+=========================== short test summary info ============================
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_check_index_errors[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_check_logical_types_errors[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_check_time_index_errors[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_check_unique_column_names_errors[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_init[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_schema_property[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_separation_of_params[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_init_accessor_with_schema[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_init_accessor_with_schema_errors[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_with_schema_parameter_warning[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_getattr[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_equality_with_schema[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_init_with_valid_string_time_index[time_index_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_init_with_numeric_datetime_time_index[time_index_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_with_numeric_time_index[time_index_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_init_with_invalid_string_time_index[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_init_with_string_logical_types[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_int_dtype_inference_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_bool_dtype_inference_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_str_dtype_inference_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_float_dtype_inference_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_datetime_dtype_inference_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_timedelta_dtype_inference_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_sets_category_dtype_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_sets_object_dtype_on_init[latlong_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_sets_string_dtype_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_sets_boolean_dtype_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_sets_int64_dtype_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_sets_float64_dtype_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_sets_datetime64_dtype_on_init
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_invalid_dtype_casting
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_underlying_index[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_already_sorted[sample_unsorted_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_ordinal_with_order[sample_series_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_ordinal_with_incomplete_ranking[sample_series_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_ordinal_with_nan_values
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_with_falsy_column_names[falsy_names_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_repr[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_get_invalid_schema_message[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_dataframe_methods_on_accessor[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_dataframe_methods_on_accessor_new_schema_object[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_dataframe_methods_on_accessor_inplace[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_dataframe_methods_on_accessor_returning_series[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_dataframe_methods_on_accessor_other_returns[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_get_subset_df_with_schema[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_set_index[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_set_index_errors[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_set_types[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_set_types_errors[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_pop[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_pop_index[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_pop_error[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_drop[sample_df_pandas]
+PASSED woodwork/tests/accessor/test_table_accessor.py::test_accessor_drop_indices[sample_df_pandas]
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:51: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:51: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:71: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:71: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:87: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:87: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:93: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:93: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:105: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:105: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:113: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:113: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:122: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:122: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:134: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:134: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:160: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:160: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:180: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:180: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:200: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:200: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:226: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:226: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:261: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:261: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:274: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:274: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:287: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:287: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:332: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:332: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:339: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:339: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:489: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:489: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:657: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:657: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:671: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:671: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:689: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:689: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:725: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:725: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:758: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:758: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:779: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:779: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:807: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:807: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:839: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:839: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:848: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:848: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:881: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:881: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:905: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:905: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:937: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:937: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:959: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:959: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:975: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:975: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:989: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:989: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1031: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1031: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1052: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1052: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1072: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1072: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1092: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1092: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1108: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1108: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1138: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1138: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1181: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1181: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1218: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1218: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1260: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1260: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1288: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1288: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1315: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1315: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1333: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1333: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1347: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1347: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1368: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1368: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1389: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1389: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1423: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1423: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1433: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1433: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1446: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1446: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1479: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1479: Koalas not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1497: Dask not installed, skipping
+SKIPPED [1] woodwork/tests/accessor/test_table_accessor.py:1497: Koalas not installed, skipping
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_make_index[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_underlying_index_no_index[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_ltypes_no_match_and_all[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_ltypes_strings[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_ltypes_objects[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_ltypes_mixed[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_ltypes_table[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_semantic_tags[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_single_inputs[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_list_inputs[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_semantic_tags_no_match[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_select_repetitive[sample_df_pandas]
+FAILED woodwork/tests/accessor/test_table_accessor.py::test_accessor_drop_errors[sample_df_pandas]
+=========== 13 failed, 54 passed, 106 skipped, 244 warnings in 0.81s ===========

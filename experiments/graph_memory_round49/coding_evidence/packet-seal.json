@@ -1,0 +1,86 @@
+{
+  "builder": "e6033eb3a7f4a6390154e224ac12e4939439f2c6a7925f8a109144499522a489",
+  "chosen": {
+    "flat": [
+      [
+        "woodwork/table_accessor.py",
+        355,
+        "_set_underlying_index"
+      ],
+      [
+        "woodwork/table_accessor.py",
+        205,
+        "schema"
+      ],
+      [
+        "woodwork/schema.py",
+        403,
+        "_get_subset_schema"
+      ],
+      [
+        "woodwork/schema.py",
+        546,
+        "_validate_not_setting_index_tags"
+      ]
+    ],
+    "graph": [
+      [
+        "woodwork/schema.py",
+        403,
+        "_get_subset_schema"
+      ],
+      [
+        "woodwork/schema.py",
+        141,
+        "index"
+      ],
+      [
+        "woodwork/table_accessor.py",
+        355,
+        "_set_underlying_index"
+      ],
+      [
+        "woodwork/table_accessor.py",
+        205,
+        "schema"
+      ]
+    ]
+  },
+  "digest": {
+    "flat": "d3095646f66ce0881fb8e52910c831ea476dd2beb4b701c53d85d4518877ff88",
+    "graph": "c84e237206819c3071cc998b98708ceecef70db33e94f6e12b2f69b4910c8eec",
+    "none": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "graph_size": [
+    45,
+    56
+  ],
+  "history": "bc3e9094b1a6d95c1aa843378d6861b59d9b76f6b9a772b6a1ad17b471b18e22",
+  "memory_bytes": 1509,
+  "successful_actions": [
+    [
+      "initialize",
+      "ok"
+    ],
+    [
+      "one-column",
+      "TypeError"
+    ],
+    [
+      "two-columns",
+      "TypeError"
+    ],
+    [
+      "schema",
+      "ok"
+    ],
+    [
+      "copy",
+      "ok"
+    ],
+    [
+      "logical-types",
+      "ok"
+    ]
+  ]
+}

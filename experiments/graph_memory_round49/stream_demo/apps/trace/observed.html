@@ -1,0 +1,28 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Observed source updates</title>
+<style>
+:root{font-family:Inter,"Segoe UI",sans-serif;color:#1b382d;background:#f5f7f3}*{box-sizing:border-box}main{max-width:1050px;margin:3rem auto;padding:0 1.4rem 2rem}h1{font:500 clamp(2.3rem,5vw,3.5rem)/1.05 Georgia,serif;letter-spacing:-.035em;margin:0}header>p,p{line-height:1.45}header>p{color:#415b4f;margin:.7rem 0 1.4rem}.controls,.panel{background:#fff;border:1px solid #c4d3c9;padding:1.1rem}.controls{display:flex;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}label{font-size:.85rem;display:grid;gap:.35rem}select,button{font:inherit;color:inherit;border:1px solid #8b9f93;background:white;padding:.5rem .75rem;border-radius:.2rem}button{cursor:pointer}button:hover,button:focus-visible{background:#eef5ef}h2{font-size:1.1rem;margin:0 0 .8rem}table{width:100%;border-collapse:collapse}td,th{padding:.42rem .3rem;text-align:left;border-bottom:1px solid #dbe3dd;font-size:.88rem}.packet{font:500 1.1rem/1.5 Georgia,serif;color:#1b5940}.units{font:.85rem/1.5 Consolas,monospace;overflow-wrap:anywhere}#proof{font-weight:600;color:#21523d}@media(max-width:650px){main{margin:1.25rem auto}.grid{grid-template-columns:1fr}}
+</style></head><body><main><header><h1>Observed source updates</h1><p>Replay recorded changes in outgoing value-transfer evidence. The policy converts each count into a score bonus for visible fragments.</p></header>
+<section class="controls" aria-label="Replay controls"><label>Trace and tool group<select id="group"></select></label><label>Bonus policy<select id="policy"><option value="4">Count up to four</option><option value="1">Any support</option></select></label><label>Updates to apply<select id="subset"></select></label><button id="reset">Restore example</button></section>
+<div class="grid"><section class="panel"><h2>Recorded changes</h2><table><thead><tr><th>Producer</th><th>Before</th><th>After</th><th>Alone</th></tr></thead><tbody id="rows"></tbody></table><p id="note"></p></section>
+<section class="panel"><h2>Evidence packet</h2><p class="packet" id="delta"></p><p id="counts"></p><p class="units" id="ids"></p><button id="verify">Verify from candidate scores</button><p id="proof" aria-live="polite"></p></section></div></main>
+<script>
+const $=s=>document.getElementById(s);let serial=0,oldGroup='',defaultCase;
+async function refresh(check=false){
+ const no=++serial;const g=$('group').value,[q,step]=g.split('/'),cap=$('policy').value, requested=g===oldGroup?$('subset').value:'all';
+ const params=new URLSearchParams({q,step,cap,set:requested});
+ const resp=await fetch('/api/observed/'+(check?'check':'show')+'?'+params);const d=await resp.json();if(no!==serial)return;if(!resp.ok){$('proof').textContent=d.error;return}
+ if(g!==oldGroup){const select=$('subset');select.replaceChildren();select.add(new Option('All recorded changes','all'));select.add(new Option('Before the update',''));const labels=d.updates.map(e=>e.id).sort((a,b)=>a-b);for(const n of labels)select.add(new Option('Producer '+n,String(n)));for(const [i,a] of labels.entries())for(const b of labels.slice(i+1))select.add(new Option(a+' and '+b,a+','+b));select.value='all';oldGroup=g}
+ const body=$('rows');body.replaceChildren();for(const u of d.updates){const tr=body.insertRow();for(const k of [u.id,u.before,u.after,u.preserves?'Same packet':'Changes packet'])tr.insertCell().textContent=k}
+ $('note').textContent='Each additional confirmation contributes 1/16 up to the selected limit. Both packets use the same '+d.count+' visible fragments.';
+ const equal=JSON.stringify(d.base)===JSON.stringify(d.after);
+ $('delta').textContent=equal?'The packet stays the same.':'The packet changes from '+d.base.length+' to '+d.after.length+' fragments.';
+ const gone=d.base.filter(i=>!d.after.includes(i)),added=d.after.filter(i=>!d.base.includes(i));
+ $('counts').textContent=d.old_tokens+' → '+d.new_tokens+' of 2,048 tokens';
+ $('ids').textContent=equal?'Selected units · '+d.after.join(', '):'Added · '+(added.join(', ')||'none')+'  |  Removed · '+(gone.join(', ')||'none');
+ $('proof').textContent=d.checked===undefined?'':d.checked?'Exact match against independent optimization.':'Packet mismatch.';
+ document.body.dataset.ready=q+'/'+step+'/'+cap+'/'+requested;
+}
+async function open(){const ds=await(await fetch('/api/observed/catalog')).json();defaultCase=ds.example.join('/');for(const pair of ds.groups)$('group').add(new Option(pair.join(' · '),pair.join('/')));$('group').value=defaultCase;
+ for(const k of ['group','policy','subset'])$(k).onchange=()=>refresh();$('verify').onclick=()=>refresh(true);$('reset').onclick=()=>{$('group').value=defaultCase;$('policy').value='4';oldGroup='';refresh()};await refresh()}
+open().catch(e=>$('proof').textContent=e.message);
+</script></body></html>

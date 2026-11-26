@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Streaming evidence packets</title>
+<style>
+:root{font:16px/1.5 Inter,Segoe UI,Arial,sans-serif;color:#163e36;background:#f6f8f5}*{box-sizing:border-box}main{max-width:960px;margin:2.4rem auto;padding:0 1.25rem}h1{font:normal clamp(2.2rem,5vw,3.3rem)/1.08 Georgia,serif;margin:.5rem 0}h2{font:600 1.05rem/1.3 inherit;font-size:1.15rem;margin:.4rem 0 1rem}p{margin:.7rem 0 1.3rem}.controls,.actions{display:flex;flex-wrap:wrap;gap:.65rem;align-items:end}label{display:grid;gap:.2rem}button,select{padding:.5rem .8rem;font:inherit;color:inherit;background:white;border:1px solid #72988a;border-radius:4px}button{cursor:pointer}button:focus-visible,select:focus-visible{outline:3px solid #167254}button.primary{background:#1e5e4b;color:white}button:disabled{opacity:.55;cursor:auto}article{padding:1.2rem 1.35rem;margin-top:1rem;border:1px solid #c6d1ca;background:white;border-radius:5px}dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:.75rem}dd{margin:0;font:normal 1.7rem Georgia,serif}dt{color:#49665a;font-size:.88rem}output{overflow-wrap:anywhere}.bar{height:11px;background:#d8e2d9;margin:.5rem 0}.bar span{display:block;height:100%;background:#367c63}.mono{font-family:ui-monospace,monospace;font-size:.94rem}#status{display:block;min-height:1.5em;margin:.5rem 0}@media(max-width:550px){dl{grid-template-columns:1fr 1fr}main{margin:1.25rem auto}}
+</style></head><body><main><h1>Streaming evidence packets</h1><p>Advance through recorded tool groups. Each read builds a 2,048-token packet from the evidence available at that point.</p>
+<div class="controls"><label>Trace<select id="history"><option>Short</option><option selected>Medium</option><option>Long</option></select></label><label>Save DP rows<select id="space"><option value="0">Terminal row only</option><option value="4">Every 4 rows</option><option selected value="16">Every 16 rows</option><option value="64">Every 64 rows</option></select></label><button id="reset">Restart</button></div>
+<article><h2 id="position">Loading recorded history…</h2><div class="actions"><button class="primary" data-distance="1">Next group</button><button data-distance="4">Advance four, read once</button><button data-distance="1000">Read at the end</button></div><dl><div><dt>Visible fragments</dt><dd id="visible"></dd></div><div><dt>New fragments</dt><dd id="new"></dd></div><div><dt>Source updates</dt><dd id="changes"></dd></div></dl></article>
+<article><h2>Work at this read</h2><output id="work"></output><div class="bar" aria-hidden="true"><span id="fill"></span></div><output id="restore"></output><p id="cumulative"></p></article>
+<article><h2>Evidence returned to the agent</h2><p id="budget"></p><p class="mono" id="ids"></p><button id="audit">Verify from all visible evidence</button><output id="status" role="status"></output></article></main>
+<script>
+const el=id=>document.getElementById(id);let session='',busy=false,done=false;
+function lock(){document.querySelectorAll('button,select').forEach(x=>{x.disabled=busy||(done&&x.dataset.distance!==undefined)})}
+async function request(action,args={}){
+ if(busy)return;busy=true;lock();el('status').textContent='';
+ try{
+  const res=await fetch('/api',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({action,session,...args})});
+  const v=await res.json();if(!res.ok)throw Error(v.error);session=v.session;done=v.step===v.total;
+  el('position').textContent='Group '+v.step+' of '+v.total;
+  for(const key of ['visible','new','changes'])el(key).textContent=v[key];
+  el('work').textContent=v.rows+' rows computed, compared with '+v.full_rows+' for a fresh calculation.';
+  el('fill').style.width=(v.full_rows?100*v.rows/v.full_rows:0)+'%';
+  el('restore').textContent=v.rewound?'Resumed from row '+v.restored+' after a source revision. '+v.rewound+' previously processed rows needed recomputation.':'Continued from row '+v.restored+'. All earlier rows remained valid.';
+  el('cumulative').textContent='Since restart: '+v.cumulative+' computed rows; full recalculation would process '+v.full_cumulative+'.';
+  el('budget').textContent=v.ids.length+' fragments · '+v.tokens+' of 2,048 tokens';
+  el('ids').textContent=v.ids.join(', ')||'No fragments yet.';
+  if(v.verified!==undefined)el('status').textContent=v.verified?'Exact match. Every fragment ID and its order agree.':'Disagreement with the independent calculation.';
+  document.body.dataset.ready=[el('history').value,el('space').value,v.step].join('/');
+ }catch(err){el('status').textContent=err.message}finally{busy=false;lock()}
+}
+function openRead(){return request('open',{trace:el('history').value,spacing:+el('space').value})}
+el('history').onchange=openRead;el('space').onchange=openRead;el('reset').onclick=openRead;
+document.querySelectorAll('[data-distance]').forEach(b=>b.onclick=()=>request('advance',{distance:+b.dataset.distance}));
+el('audit').onclick=()=>request('audit');openRead();
+</script></body></html>
