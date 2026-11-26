@@ -1,0 +1,21 @@
+{
+  "arms": {
+    "linux-empty": {
+      "expected": 62,
+      "log_sha": "3e68fa9d9c3bb0d34a33f1009960494365f750bf081afa9ecab7783ab416cf5d",
+      "observed_fail": 2,
+      "observed_pass": 60,
+      "resolved": false
+    },
+    "linux-gold-final": {
+      "expected": 62,
+      "log_sha": "442d7c92d41f3a187a8571492e2a082dda47dbef6c748d4595658ea87bd953bf",
+      "observed_fail": 0,
+      "observed_pass": 62,
+      "resolved": true
+    }
+  },
+  "scope": "release evaluate_instance reads captured full Linux outputs for both controls; the container is run separately by grade_patch.py",
+  "scorer_sha": "e580d953b75e5182a66ffd2fecfbf9c756dadd89db767cfd42bd251f956a7108",
+  "test_diff_rejected": true
+}

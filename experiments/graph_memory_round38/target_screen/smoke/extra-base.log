@@ -1,0 +1,45 @@
+============================= test session starts =============================
+collecting ... 
+----------------------------- live log collection -----------------------------
+2026-11-26 18:59:10 - jax._src.xla_bridge - INFO - Unable to initialize backend 'cuda': 
+2026-11-26 18:59:10 - jax._src.xla_bridge - INFO - Unable to initialize backend 'rocm': module 'jaxlib.xla_extension' has no attribute 'GpuAllocatorConfig'
+2026-11-26 18:59:10 - jax._src.xla_bridge - INFO - Unable to initialize backend 'tpu': UNIMPLEMENTED: LoadPjrtPlugin is not implemented on windows yet.
+collected 9 items
+
+tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate PASSED [ 11%]
+tests/unit/test_util.py::TestUtil::test_fuzzy_dict FAILED                [ 22%]
+tests/unit/test_util.py::TestUtil::test_get_parameters_filepath PASSED   [ 33%]
+tests/unit/test_util.py::TestUtil::test_is_jax_compatible SKIPPED (T...) [ 44%]
+tests/unit/test_util.py::TestUtil::test_git_commit_info PASSED           [ 55%]
+tests/unit/test_util.py::TestUtil::test_import_optional_dependency PASSED [ 66%]
+tests/unit/test_util.py::TestUtil::test_pybamm_import 
+-------------------------------- live log call --------------------------------
+2026-11-26 18:59:12 - pybamm.logger - WARNING - Citations could not be read because the 'pybtex' library is not installed. Install 'pybamm[cite]' to enable citation reading.
+PASSED                                                                   [ 77%]
+tests/unit/test_util.py::TestUtil::test_optional_dependencies PASSED     [ 88%]
+tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout PASSED      [100%]
+
+================================== FAILURES ===================================
+D:\CodexResearch\x20-r38-pybamm-grade-temp\p-kgem9_j3\repository\pybamm\util.py:102: KeyError: "'Positive electrode diffusivity [m2.s-1]' not found. Best matches are ['Positive particle diffusivity [m2.s-1]']"
+=================================== PASSES ====================================
+________________________ TestUtil.test_git_commit_info ________________________
+---------------------------- Captured stderr call -----------------------------
+fatal: No names found, cannot describe anything.
+_________________________ TestUtil.test_pybamm_import _________________________
+---------------------------- Captured stderr call -----------------------------
+2026-11-26 18:59:12.535 - [WARNING] citations.read_citations(76): Citations could not be read because the 'pybtex' library is not installed. Install 'pybamm[cite]' to enable citation reading.
+2026-11-26 18:59:12.535 - [WARNING] citations.read_citations(76): Citations could not be read because the 'pybtex' library is not installed. Install 'pybamm[cite]' to enable citation reading.
+------------------------------ Captured log call ------------------------------
+2026-11-26 18:59:12 - pybamm.logger - WARNING - Citations could not be read because the 'pybtex' library is not installed. Install 'pybamm[cite]' to enable citation reading.
+- generated xml file: D:\CodexResearch\x20-r38-pybamm-grade-temp\p-kgem9_j3\report.xml -
+=========================== short test summary info ===========================
+PASSED tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate
+PASSED tests/unit/test_util.py::TestUtil::test_get_parameters_filepath
+PASSED tests/unit/test_util.py::TestUtil::test_git_commit_info
+PASSED tests/unit/test_util.py::TestUtil::test_import_optional_dependency
+PASSED tests/unit/test_util.py::TestUtil::test_pybamm_import
+PASSED tests/unit/test_util.py::TestUtil::test_optional_dependencies
+PASSED tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout
+SKIPPED [1] tests\unit\test_util.py:91: The JAX solver is not installed
+FAILED tests/unit/test_util.py::TestUtil::test_fuzzy_dict - KeyError: "'Posit...
+=================== 1 failed, 7 passed, 1 skipped in 5.34s ====================

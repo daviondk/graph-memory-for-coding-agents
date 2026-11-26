@@ -1,0 +1,513 @@
+{
+  "round": 38,
+  "completed": [
+    "edit_ready",
+    "end_to_end_audit",
+    "native_checkpoint4",
+    "plan_runtime",
+    "pybamm_pilot",
+    "receipt_conflict",
+    "solver_overlap",
+    "solver_pilot",
+    "target_screen"
+  ],
+  "manifests": {
+    "edit_ready": "7457e98c7665d2083d5d6b5912cb5771fdfac8138294b1a08493edc016705c61",
+    "end_to_end_audit": "6d4935c7e64495287a55feed1aebf512d997467102638327c9dab9d90c09f1ed",
+    "native_checkpoint4": "38db34847f2fa82a7116e33883b06f2016f631c0ac38b45494d10a30b43cc15d",
+    "plan_runtime": "afe513023c56ffa0522fdc619ea3768879567c1f0f943d23f643b2e4ff380399",
+    "pybamm_pilot": "c5d927d79df8446c2d3ff5880a8c7d33c7f7337484d2a978534d9a3fa4f025bc",
+    "receipt_conflict": "31b92405eee2726d963a2a4d61fc679fdd7a8bcedb26ac23df1da7c2616ef779",
+    "solver_overlap": "6cc921d99c8f2e9f816f14c128df64f7a8c777e74ab10acf44c75b6431f99f39",
+    "solver_pilot": "a270a2cfc7d41ddc5a0dc96761e10a3e685591cc7b8ba6a6543e462da7fa39d1",
+    "target_screen": "0a2fdd5088ec5fb2ea45474d739f57554f51640bf3de75d84544c41560c45ab3"
+  },
+  "prior_series_links": [
+    "graph_memory_round36/native_three_seeds/REPORT_RU.md",
+    "graph_memory_round37/code_store/REPORT_RU.md",
+    "graph_memory_round37/code_visibility/residual-errors.json",
+    "graph_memory_round37/editor_baseline/REPORT_RU.md",
+    "graph_memory_round37/native_registration/PROTOCOL_RU.md",
+    "graph_memory_round37/observed_sql_demo/REPRODUCE_RU.md",
+    "graph_memory_round37/plan_choice/REPORT_RU.md"
+  ],
+  "outcome_checks": [
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "empty",
+        "fail_to_pass"
+      ],
+      "equals": [
+        2,
+        2
+      ]
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "empty",
+        "pass_to_pass"
+      ],
+      "equals": [
+        60,
+        60
+      ]
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "empty",
+        "all_pass"
+      ],
+      "equals": true
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "empty",
+        "official_exact"
+      ],
+      "equals": true
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "empty",
+        "f2p"
+      ],
+      "equals": [
+        1,
+        1
+      ]
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "empty",
+        "p2p"
+      ],
+      "equals": [
+        7,
+        7
+      ]
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "empty",
+        "actions"
+      ],
+      "equals": 18
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "empty",
+        "first_edit"
+      ],
+      "equals": 15
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "empty",
+        "memory_bytes"
+      ],
+      "equals": 0
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "recency",
+        "fail_to_pass"
+      ],
+      "equals": [
+        2,
+        2
+      ]
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "recency",
+        "pass_to_pass"
+      ],
+      "equals": [
+        60,
+        60
+      ]
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "recency",
+        "all_pass"
+      ],
+      "equals": true
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "recency",
+        "official_exact"
+      ],
+      "equals": true
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "recency",
+        "f2p"
+      ],
+      "equals": [
+        1,
+        1
+      ]
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "recency",
+        "p2p"
+      ],
+      "equals": [
+        7,
+        7
+      ]
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "recency",
+        "actions"
+      ],
+      "equals": 18
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "recency",
+        "first_edit"
+      ],
+      "equals": 15
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "recency",
+        "memory_bytes"
+      ],
+      "equals": 1597
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "cards",
+        "fail_to_pass"
+      ],
+      "equals": [
+        2,
+        2
+      ]
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "cards",
+        "pass_to_pass"
+      ],
+      "equals": [
+        60,
+        60
+      ]
+    },
+    {
+      "file": "solver_pilot/results.json",
+      "path": [
+        "outcomes",
+        "cards",
+        "all_pass"
+      ],
+      "equals": true
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "cards",
+        "official_exact"
+      ],
+      "equals": true
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "cards",
+        "f2p"
+      ],
+      "equals": [
+        1,
+        1
+      ]
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "cards",
+        "p2p"
+      ],
+      "equals": [
+        7,
+        7
+      ]
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "cards",
+        "actions"
+      ],
+      "equals": 18
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "cards",
+        "first_edit"
+      ],
+      "equals": 15
+    },
+    {
+      "file": "pybamm_pilot/results.json",
+      "path": [
+        "arms",
+        "cards",
+        "memory_bytes"
+      ],
+      "equals": 1597
+    },
+    {
+      "file": "receipt_conflict/results.json",
+      "path": [
+        "total",
+        "counts",
+        "episodes"
+      ],
+      "equals": 1282
+    },
+    {
+      "file": "receipt_conflict/results.json",
+      "path": [
+        "total",
+        "counts",
+        "overlaps"
+      ],
+      "equals": 2151
+    },
+    {
+      "file": "receipt_conflict/results.json",
+      "path": [
+        "total",
+        "counts",
+        "wrong"
+      ],
+      "equals": 83
+    },
+    {
+      "file": "receipt_conflict/results.json",
+      "path": [
+        "total",
+        "counts",
+        "mismatches"
+      ],
+      "equals": 1
+    },
+    {
+      "file": "receipt_conflict/results.json",
+      "path": [
+        "total",
+        "counts",
+        "alert_and_wrong"
+      ],
+      "equals": 0
+    },
+    {
+      "file": "solver_overlap/results.json",
+      "path": [
+        "arms",
+        "empty",
+        "repeat_displays"
+      ],
+      "equals": 31
+    },
+    {
+      "file": "solver_overlap/results.json",
+      "path": [
+        "arms",
+        "recency",
+        "repeat_displays"
+      ],
+      "equals": 48
+    },
+    {
+      "file": "solver_overlap/results.json",
+      "path": [
+        "arms",
+        "cards",
+        "repeat_displays"
+      ],
+      "equals": 10
+    },
+    {
+      "file": "native_checkpoint4/canonical-just-37.json",
+      "path": [
+        "means",
+        "R35_oof_3894",
+        0
+      ],
+      "equals": 0.8045
+    },
+    {
+      "file": "native_checkpoint4/canonical-just-37.json",
+      "path": [
+        "means",
+        "full_rgcn",
+        0
+      ],
+      "equals": 0.79
+    },
+    {
+      "file": "native_checkpoint4/canonical-just-37.json",
+      "path": [
+        "means",
+        "wo_chunk_adjacency",
+        0
+      ],
+      "equals": 0.7985
+    },
+    {
+      "file": "plan_runtime/results.json",
+      "path": [
+        "packed",
+        "resident",
+        "costs",
+        "ns",
+        "lifecycle",
+        "H/L",
+        "repo",
+        "ratio"
+      ],
+      "equals": 1.0210325020079973
+    },
+    {
+      "file": "target_screen/smoke/native-base.json",
+      "path": [
+        "official_exact_passed_match"
+      ],
+      "equals": false
+    },
+    {
+      "file": "target_screen/smoke/native-reference.json",
+      "path": [
+        "official_exact_passed_match"
+      ],
+      "equals": true
+    },
+    {
+      "file": "end_to_end_audit/results.json",
+      "path": [
+        "arms",
+        "reference",
+        "exact_pass_set"
+      ],
+      "equals": true
+    },
+    {
+      "file": "end_to_end_audit/results.json",
+      "path": [
+        "arms",
+        "base",
+        "exact_pass_set"
+      ],
+      "equals": false
+    },
+    {
+      "file": "edit_ready/results.json",
+      "path": [
+        "strata",
+        "main_first",
+        "methods",
+        "focus-64",
+        "complete"
+      ],
+      "equals": 252
+    },
+    {
+      "file": "edit_ready/results.json",
+      "path": [
+        "strata",
+        "main_first",
+        "methods",
+        "tail-64",
+        "complete"
+      ],
+      "equals": 246
+    },
+    {
+      "file": "edit_ready/results.json",
+      "path": [
+        "strata",
+        "main_first",
+        "methods",
+        "center-64",
+        "complete"
+      ],
+      "equals": 252
+    },
+    {
+      "file": "edit_ready/results.json",
+      "path": [
+        "strata",
+        "main_first",
+        "methods",
+        "full",
+        "complete"
+      ],
+      "equals": 286
+    },
+    {
+      "file": "edit_ready/results.json",
+      "path": [
+        "strata",
+        "main_first",
+        "operations"
+      ],
+      "equals": 358
+    }
+  ]
+}

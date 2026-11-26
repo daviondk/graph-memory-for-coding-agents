@@ -1,0 +1,8 @@
+FROM python:3.10.20-slim-bookworm@sha256:6dafe336b64dbf76f7ec872d07e58b5c7de0e2ea5d4c0853a05c3b6be3278b00
+ENV PYTHONDONTWRITEBYTECODE=1 PYTEST_DISABLE_PLUGIN_AUTOLOAD=1
+RUN apt-get -o Acquire::Retries=1 update && apt-get install -y --no-install-recommends git && rm -rf /var/lib/apt/lists/*
+RUN python -m pip install --no-cache-dir pytest==7.4.4 ipython-genutils==0.2.0
+WORKDIR /traitlets
+COPY repo/ /traitlets/
+RUN git init -q && git -c user.name=fixture -c user.email=fixture@invalid add . && git -c user.name=fixture -c user.email=fixture@invalid commit -q -m "Frozen source snapshot"
+ENV PYTHONPATH=/traitlets

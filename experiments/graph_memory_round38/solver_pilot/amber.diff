@@ -1,0 +1,31 @@
+diff --git a/traitlets/config/loader.py b/traitlets/config/loader.py
+--- a/traitlets/config/loader.py
++++ b/traitlets/config/loader.py
+@@ -396,23 +396,14 @@
+     This class is only used for values that are not listed
+     in the configurable classes.
+ 
+-    When config is loaded, `trait.from_string` will be used.
+-
+-    If an error is raised in `.from_string`,
+-    the original string is returned.
++    When config is loaded, container traits parse the string as a
++    single CLI item. Scalar traits parse it with `trait.from_string`.
+ 
+     .. versionadded:: 5.0
+     """
+     def get_value(self, trait):
+-        """Get the value stored in this string"""
+-        s = str(self)
+-        try:
+-            return trait.from_string(s)
+-        except Exception:
+-            # exception casting from string,
+-            # let the original string lie.
+-            # this will raise a more informative error when config is loaded.
+-            return s
++        """Interpret this single CLI argument using the target trait."""
++        return DeferredConfigList([str(self)]).get_value(trait)
+ 
+     def __repr__(self):
+         return '%s(%s)' % (self.__class__.__name__, self._super_repr())

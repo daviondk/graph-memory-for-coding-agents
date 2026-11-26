@@ -1,0 +1,33 @@
+diff --git a/src/pynwb/file.py b/src/pynwb/file.py
+index 5511439e..3fdca7b1 100644
+--- a/src/pynwb/file.py
++++ b/src/pynwb/file.py
+@@ -239,6 +239,8 @@ class NWBFile(MultiContainerInterface):
+             {'name': 'lab', 'type': str, 'doc': 'lab where experiment was performed', 'default': None},
+             {'name': 'acquisition', 'type': (list, tuple),
+              'doc': 'Raw TimeSeries objects belonging to this NWBFile', 'default': None},
++            {'name': 'analysis', 'type': (list, tuple),
++             'doc': 'result of analysis', 'default': None},
+             {'name': 'stimulus', 'type': (list, tuple),
+              'doc': 'Stimulus TimeSeries objects belonging to this NWBFile', 'default': None},
+             {'name': 'stimulus_template', 'type': (list, tuple),
+@@ -298,6 +300,7 @@ class NWBFile(MultiContainerInterface):
+         self.__file_create_date = list(map(_add_missing_timezone, self.__file_create_date))
+ 
+         self.acquisition = getargs('acquisition', kwargs)
++        self.analysis = getargs('analysis', kwargs)
+         self.stimulus = getargs('stimulus', kwargs)
+         self.stimulus_template = getargs('stimulus_template', kwargs)
+         self.keywords = getargs('keywords', kwargs)
+diff --git a/src/pynwb/io/file.py b/src/pynwb/io/file.py
+index 4b43b002..a58705af 100644
+--- a/src/pynwb/io/file.py
++++ b/src/pynwb/io/file.py
+@@ -11,6 +11,7 @@ class NWBFileMap(ObjectMapper):
+         super(NWBFileMap, self).__init__(spec)
+         raw_ts_spec = self.spec.get_group('acquisition').get_neurodata_type('NWBDataInterface')
+         self.map_spec('acquisition', raw_ts_spec)
++        self.map_spec('analysis', self.spec.get_group('analysis').get_neurodata_type('NWBContainer'))
+ 
+         stimulus_spec = self.spec.get_group('stimulus')
+         self.unmap(stimulus_spec)

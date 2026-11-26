@@ -1,0 +1,27 @@
+diff --git a/traitlets/config/loader.py b/traitlets/config/loader.py
+--- a/traitlets/config/loader.py
++++ b/traitlets/config/loader.py
+@@ -396,10 +396,10 @@
+     This class is only used for values that are not listed
+     in the configurable classes.
+ 
+-    When config is loaded, `trait.from_string` will be used.
+-
+-    If an error is raised in `.from_string`,
+-    the original string is returned.
++    When config is loaded, traits with `from_string_list` receive a
++    one-item list. Other traits receive the string via `from_string`.
++
++    If conversion raises an error, the original string is returned.
+ 
+     .. versionadded:: 5.0
+     """
+@@ -407,6 +407,8 @@
+         """Get the value stored in this string"""
+         s = str(self)
+         try:
++            if hasattr(trait, "from_string_list"):
++                return trait.from_string_list([s])
+             return trait.from_string(s)
+         except Exception:
+             # exception casting from string,

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "traitlets/config/loader.py",
+    "lo": 667,
+    "hi": 671,
+    "note": "When no trait is available, the loader converts a one-item DeferredConfigList to a DeferredConfigString after expanding the path."
+  },
+  {
+    "path": "traitlets/config/loader.py",
+    "lo": 438,
+    "hi": 440,
+    "note": "DeferredConfigList selects trait.from_string_list whenever the trait supplies it, passing the items as a list."
+  },
+  {
+    "path": "traitlets/config/loader.py",
+    "lo": 406,
+    "hi": 410,
+    "note": "DeferredConfigString.get_value passes a plain string to trait.from_string."
+  },
+  {
+    "path": "traitlets/traitlets.py",
+    "lo": 2537,
+    "hi": 2541,
+    "note": "The container’s scalar parser tries literal_eval and passes None to validation if evaluation raises an exception."
+  }
+]

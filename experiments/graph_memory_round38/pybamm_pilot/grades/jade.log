@@ -1,0 +1,49 @@
+============================= test session starts =============================
+created: 1/1 worker
+1 worker [9 items]
+
+scheduling tests via LoadScheduling
+
+tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate 
+[gw0] [ 11%] PASSED tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate 
+tests/unit/test_util.py::TestUtil::test_fuzzy_dict 
+[gw0] [ 22%] PASSED tests/unit/test_util.py::TestUtil::test_fuzzy_dict 
+tests/unit/test_util.py::TestUtil::test_get_parameters_filepath 
+[gw0] [ 33%] PASSED tests/unit/test_util.py::TestUtil::test_get_parameters_filepath 
+tests/unit/test_util.py::TestUtil::test_is_jax_compatible 
+[gw0] [ 44%] SKIPPED tests/unit/test_util.py::TestUtil::test_is_jax_compatible 
+tests/unit/test_util.py::TestUtil::test_git_commit_info 
+[gw0] [ 55%] PASSED tests/unit/test_util.py::TestUtil::test_git_commit_info 
+tests/unit/test_util.py::TestUtil::test_import_optional_dependency 
+[gw0] [ 66%] PASSED tests/unit/test_util.py::TestUtil::test_import_optional_dependency 
+tests/unit/test_util.py::TestUtil::test_pybamm_import 
+[gw0] [ 77%] PASSED tests/unit/test_util.py::TestUtil::test_pybamm_import 
+tests/unit/test_util.py::TestUtil::test_optional_dependencies 
+[gw0] [ 88%] PASSED tests/unit/test_util.py::TestUtil::test_optional_dependencies 
+tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout 
+[gw0] [100%] PASSED tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout 
+
+=================================== PASSES ====================================
+________________________ TestUtil.test_git_commit_info ________________________
+[gw0] win32 -- Python 3.10.20 D:\CodexResearch\x20-bench-workspace\work\graph_memory_round38\target_screen\evaluator\venv\Scripts\python.exe
+---------------------------- Captured stderr call -----------------------------
+fatal: No names found, cannot describe anything.
+_________________________ TestUtil.test_pybamm_import _________________________
+[gw0] win32 -- Python 3.10.20 D:\CodexResearch\x20-bench-workspace\work\graph_memory_round38\target_screen\evaluator\venv\Scripts\python.exe
+---------------------------- Captured stderr call -----------------------------
+2026-11-26 19:03:22.138 - [WARNING] citations.read_citations(76): Citations could not be read because the 'pybtex' library is not installed. Install 'pybamm[cite]' to enable citation reading.
+2026-11-26 19:03:22.138 - [WARNING] citations.read_citations(76): Citations could not be read because the 'pybtex' library is not installed. Install 'pybamm[cite]' to enable citation reading.
+------------------------------ Captured log call ------------------------------
+2026-11-26 19:03:22 - pybamm.logger - WARNING - Citations could not be read because the 'pybtex' library is not installed. Install 'pybamm[cite]' to enable citation reading.
+- generated xml file: D:\CodexResearch\x20-r38-pybamm-grade-temp\p-d8mpwbwm\report.xml -
+=========================== short test summary info ===========================
+PASSED tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate
+PASSED tests/unit/test_util.py::TestUtil::test_fuzzy_dict
+PASSED tests/unit/test_util.py::TestUtil::test_get_parameters_filepath
+PASSED tests/unit/test_util.py::TestUtil::test_git_commit_info
+PASSED tests/unit/test_util.py::TestUtil::test_import_optional_dependency
+PASSED tests/unit/test_util.py::TestUtil::test_pybamm_import
+PASSED tests/unit/test_util.py::TestUtil::test_optional_dependencies
+PASSED tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout
+SKIPPED [1] tests\unit\test_util.py:91: The JAX solver is not installed
+======================== 8 passed, 1 skipped in 6.05s =========================

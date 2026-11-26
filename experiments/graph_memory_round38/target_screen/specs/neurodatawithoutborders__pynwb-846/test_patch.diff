@@ -1,0 +1,38 @@
+diff --git a/tests/integration/ui_write/test_nwbfile.py b/tests/integration/ui_write/test_nwbfile.py
+index c669df66..5e446359 100644
+--- a/tests/integration/ui_write/test_nwbfile.py
++++ b/tests/integration/ui_write/test_nwbfile.py
+@@ -133,6 +133,9 @@ class TestNWBFileIO(base.TestMapNWBContainer):
+         self.ts = TimeSeries('test_timeseries', list(range(100, 200, 10)),
+                              'SIunit', timestamps=list(range(10)), resolution=0.1)
+         container.add_acquisition(self.ts)
++        self.ts2 = TimeSeries('test_timeseries2', list(range(200, 300, 10)),
++                              'SIunit', timestamps=list(range(10)), resolution=0.1)
++        container.add_analysis(self.ts2)
+         self.mod = container.create_processing_module('test_module',
+                                                       'a test module')
+         self.clustering = Clustering("A fake Clustering interface", [0, 1, 2, 0, 1, 2], [100., 101., 102.],
+@@ -164,6 +167,7 @@ class TestNWBFileIO(base.TestMapNWBContainer):
+         self.assertIsInstance(container, NWBFile)
+         raw_ts = container.acquisition
+         self.assertEqual(len(raw_ts), 1)
++        self.assertEqual(len(container.analysis), 1)
+         for v in raw_ts.values():
+             self.assertIsInstance(v, TimeSeries)
+         hdf5io.close()
+diff --git a/tests/unit/pynwb_tests/test_file.py b/tests/unit/pynwb_tests/test_file.py
+index 16ce6314..9537cbf8 100644
+--- a/tests/unit/pynwb_tests/test_file.py
++++ b/tests/unit/pynwb_tests/test_file.py
+@@ -139,6 +139,11 @@ class NWBFileTest(unittest.TestCase):
+                                                       'grams', timestamps=[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]))
+         self.assertEqual(len(self.nwbfile.stimulus_template), 1)
+ 
++    def test_add_analysis(self):
++        self.nwbfile.add_analysis(TimeSeries('test_ts', [0, 1, 2, 3, 4, 5],
++                                             'grams', timestamps=[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]))
++        self.assertEqual(len(self.nwbfile.analysis), 1)
++
+     def test_add_acquisition_check_dups(self):
+         self.nwbfile.add_acquisition(TimeSeries('test_ts', [0, 1, 2, 3, 4, 5],
+                                                 'grams', timestamps=[0.0, 0.1, 0.2, 0.3, 0.4, 0.5]))

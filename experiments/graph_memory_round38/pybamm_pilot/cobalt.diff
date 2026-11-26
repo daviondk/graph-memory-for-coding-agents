@@ -1,0 +1,62 @@
+diff --git a/pybamm/parameters/parameter_values.py b/pybamm/parameters/parameter_values.py
+--- a/pybamm/parameters/parameter_values.py
++++ b/pybamm/parameters/parameter_values.py
+@@ -394,7 +394,8 @@
+ 
+     @staticmethod
+     def check_parameter_values(values):
+-        for param in list(values.keys()):
++        checked_values = values.copy()
++        for param in values:
+             if "propotional term" in param:
+                 raise ValueError(
+                     f"The parameter '{param}' has been renamed to "
+@@ -407,15 +408,15 @@
+                     f"parameter '{param}' has been renamed to " "'Thermodynamic factor'"
+                 )
+             if "electrode diffusivity" in param:
+-                new_param = param.replace("electrode", "particle")
++                new_param = param.replace("electrode diffusivity", "particle diffusivity")
+                 warn(
+                     f"The parameter '{param}' has been renamed to '{new_param}'",
+                     DeprecationWarning,
+                     stacklevel=2,
+                 )
+-                values[new_param] = values.get(param)
+-
+-        return values
++                checked_values.setdefault(new_param, values[param])
++
++        return checked_values
+ 
+     def process_model(self, unprocessed_model, inplace=True):
+         """Assign parameter values to a model.
+diff --git a/pybamm/util.py b/pybamm/util.py
+--- a/pybamm/util.py
++++ b/pybamm/util.py
+@@ -57,14 +57,17 @@
+         try:
+             return super().__getitem__(key)
+         except KeyError as error:
+-            if "particle diffusivity" in key:
+-                warn(
+-                    f"The parameter '{key.replace('particle', 'electrode')}' "
+-                    f"has been renamed to '{key}'",
+-                    DeprecationWarning,
+-                    stacklevel=2,
+-                )
+-                return super().__getitem__(key.replace("particle", "electrode"))
++            if "particle diffusivity" in key or "electrode diffusivity" in key:
++                old_key = key.replace("particle diffusivity", "electrode diffusivity")
++                new_key = key.replace("electrode diffusivity", "particle diffusivity")
++                alternate_key = old_key if key == new_key else new_key
++                if alternate_key in self:
++                    warn(
++                        f"The parameter '{old_key}' has been renamed to '{new_key}'",
++                        DeprecationWarning,
++                        stacklevel=2,
++                    )
++                    return super().__getitem__(alternate_key)
+             if key in ["Negative electrode SOC", "Positive electrode SOC"]:
+                 domain = key.split(" ")[0]
+                 raise KeyError(

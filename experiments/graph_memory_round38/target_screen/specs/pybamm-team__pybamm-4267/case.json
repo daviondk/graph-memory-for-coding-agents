@@ -1,0 +1,59 @@
+{
+  "instance_id": "pybamm-team__pybamm-4267",
+  "repo": "pybamm-team/PyBaMM",
+  "base_commit": "668e563b01749bcbb55a017e39b0cf94d8256619",
+  "license": "BSD-3-Clause",
+  "image_name": "docker.io/swerebenchv2/pybamm-team-pybamm:4267-668e563",
+  "install_config": {
+    "base_image_name": "python_base_310",
+    "docker_specs": {
+      "_variant": null,
+      "bazel_version": null,
+      "bun_version": null,
+      "cargo_version": null,
+      "deno_version": null,
+      "docker_version": null,
+      "erlang_version": null,
+      "gcc_version": null,
+      "go_version": null,
+      "helm_version": null,
+      "java_version": null,
+      "jdk_version": null,
+      "llvm_version": null,
+      "lua_version": null,
+      "luajit_version": null,
+      "neovim_version": null,
+      "node_version": null,
+      "npm_version": null,
+      "nvim_version": null,
+      "pnpm_version": null,
+      "python_image": "python_base_310",
+      "python_version": null,
+      "redis_version": null,
+      "ruby_version": null,
+      "rust_version": null,
+      "rustc_version": null,
+      "solana_version": null,
+      "sqlite_version": null
+    },
+    "install": [
+      "pip install -q -e .[all,dev,jax]",
+      "pip uninstall -y pytest-subtests",
+      "sed -i '/pytest-subtests/d' pyproject.toml"
+    ],
+    "log_parser": "parse_log_pytest",
+    "test_cmd": "pytest --no-header -rA --tb=line --color=no -p no:cacheprovider -W ignore::DeprecationWarning tests/unit/test_util.py"
+  },
+  "FAIL_TO_PASS": [
+    "tests/unit/test_util.py::TestUtil::test_fuzzy_dict"
+  ],
+  "PASS_TO_PASS": [
+    "tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate",
+    "tests/unit/test_util.py::TestUtil::test_get_parameters_filepath",
+    "tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout",
+    "tests/unit/test_util.py::TestUtil::test_git_commit_info",
+    "tests/unit/test_util.py::TestUtil::test_optional_dependencies",
+    "tests/unit/test_util.py::TestUtil::test_import_optional_dependency",
+    "tests/unit/test_util.py::TestUtil::test_pybamm_import"
+  ]
+}

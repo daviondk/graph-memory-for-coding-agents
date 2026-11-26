@@ -1,0 +1,20 @@
+{
+  "amber": {
+    "arm": "cards",
+    "sha256": "a1042243a8f261d9bbf23ab695cad002968ededb45791c63c3d5433444133ba9",
+    "size": 1597,
+    "text": "pybamm/util.py:63-67 | The lookup warns that the electrode name was renamed, then retries the lookup with 'particle' replaced by 'electrode'.\npybamm/parameters/parameter_values.py:414-418 | The rename branch copies the legacy value into the new key and returns the mapping with the legacy entry still present.\npybamm/parameters/parameter_values.py:249-253 | When check_already_exists is enabled, the update looks up each incoming name in _dict_items and raises if the lookup fails.\ntests/unit/test_util.py:59-63 | The FuzzyDict test expects a DeprecationWarning and equal values for the positive electrode and particle diffusivity lookups.\npybamm/util.py:63 |                     f\"has been renamed to '{key}'\",\npybamm/util.py:64 |                     DeprecationWarning,\npybamm/util.py:65 |                     stacklevel=2,\npybamm/util.py:66 |                 )\npybamm/util.py:67 |                 return super().__getitem__(key.replace(\"particle\", \"electrode\"))\npybamm/parameters/parameter_values.py:414 |                     stacklevel=2,\npybamm/parameters/parameter_values.py:415 |                 )\npybamm/parameters/parameter_values.py:416 |                 values[new_param] = values.get(param)\npybamm/parameters/parameter_values.py:417 | \npybamm/parameters/parameter_values.py:418 |         return values\npybamm/parameters/parameter_values.py:249 |             if check_already_exists is True:\npybamm/parameters/parameter_values.py:250 |                 try:\npybamm/parameters/parameter_values.py:251 |                     self._dict_items[name]\ntests/unit/test_util.py:63 |             )"
+  },
+  "cobalt": {
+    "arm": "empty",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0,
+    "text": ""
+  },
+  "jade": {
+    "arm": "recency",
+    "sha256": "378cc2cef2aef98956240cdd63df3b84381167ab54d46613f49b577fde28535f",
+    "size": 1597,
+    "text": "    if (\npybamm/parameters/parameter_values.py:261 |                     value.startswith(\"[function]\")\npybamm/parameters/parameter_values.py:262 |                     or value.startswith(\"[current data]\")\npybamm/parameters/parameter_values.py:263 |                     or value.startswith(\"[data]\")\npybamm/parameters/parameter_values.py:264 |                     or value.startswith(\"[2D data]\")\npybamm/parameters/parameter_values.py:265 |                 ):\npybamm/parameters/parameter_values.py:266 |                     raise ValueError(\npybamm/parameters/parameter_values.py:267 |                         \"Specifying parameters via [function], [current data], [data] \"\npybamm/parameters/parameter_values.py:268 |                         \"or [2D data] is no longer supported. For functions, pass in a \"\npybamm/parameters/parameter_values.py:269 |                         \"python function object. For data, pass in a python function \"\npybamm/parameters/parameter_values.py:270 |                         \"that returns a pybamm Interpolant object. \"\npybamm/parameters/parameter_values.py:271 |                         \"See the Ai2020 parameter set for an example with both.\"\npybamm/parameters/parameter_values.py:272 |                     )\npybamm/parameters/parameter_values.py:273 | \npybamm/parameters/parameter_values.py:274 |                 elif value == \"[input]\":\npybamm/parameters/parameter_values.py:275 |                     self._dict_items[name] = pybamm.InputParameter(name)\npybamm/parameters/parameter_values.py:276 |                 # Anything else should be a converted to a float"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "backend": "Windows CPU, private temporary source tree, pytest single worker",
+  "base_commit": "668e563b01749bcbb55a017e39b0cf94d8256619",
+  "complete_observation": true,
+  "evaluator_sha256": "45e91ba1fc47660a9f9cdfb35fdc329e7816f457be10060d720649e185b2e0cc",
+  "exit_code": 1,
+  "fail_to_pass": [
+    0,
+    1
+  ],
+  "instance": "pybamm-team__pybamm-4267",
+  "junit_only_outside_registered": [
+    "tests/unit/test_util.py::TestUtil::test_is_jax_compatible"
+  ],
+  "junit_sha256": "2ef624f7592e0fe870448ff75cffb3d579dd4755f54b9d434e48ecd656ed136f",
+  "junit_statuses": {
+    "tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_fuzzy_dict": "FAILED",
+    "tests/unit/test_util.py::TestUtil::test_get_parameters_filepath": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_git_commit_info": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_import_optional_dependency": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_is_jax_compatible": "SKIPPED",
+    "tests/unit/test_util.py::TestUtil::test_optional_dependencies": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_pybamm_import": "PASSED"
+  },
+  "log_sha256": "569d476dae34c5e19cb5c09faddf933f5c55b99d2bded0ee4633a0381b435d80",
+  "native_statuses": {
+    "[1]": "SKIPPED",
+    "tests/unit/test_util.py::TestSearch::test_url_gets_to_stdout": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_fuzzy_dict": "FAILED",
+    "tests/unit/test_util.py::TestUtil::test_get_parameters_filepath": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_git_commit_info": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_import_optional_dependency": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_is_constant_and_can_evaluate": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_optional_dependencies": "PASSED",
+    "tests/unit/test_util.py::TestUtil::test_pybamm_import": "PASSED"
+  },
+  "official_exact_passed_match": false,
+  "official_exact_scorer_sha256": "e580d953b75e5182a66ffd2fecfbf9c756dadd89db767cfd42bd251f956a7108",
+  "official_parser_sha256": "818560dab8da86cecc31cd9484a0f2b770359e59c51613316a391b58a73885e1",
+  "official_test_patch_sha256": "7fd5c5778fbaa8649e2be6b118ce4b2fa6c52df9218918d88dd3d40f91452982",
+  "package_import_in_private_checkout": true,
+  "paper_optional_packages": true,
+  "pass_to_pass": [
+    7,
+    7
+  ],
+  "patch_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "production_files": [],
+  "published_image": false,
+  "registered_success": false,
+  "source_archive_sha256": "d5c15cf5f503e0b893e6a1e41ba1e146aed2c20875d4ca33e09d68236f900976",
+  "unexpected_passed": []
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "path": "pybamm/util.py",
+    "lo": 63,
+    "hi": 67,
+    "note": "The lookup warns that the electrode name was renamed, then retries the lookup with 'particle' replaced by 'electrode'."
+  },
+  {
+    "path": "pybamm/parameters/parameter_values.py",
+    "lo": 414,
+    "hi": 418,
+    "note": "The rename branch copies the legacy value into the new key and returns the mapping with the legacy entry still present."
+  },
+  {
+    "path": "pybamm/parameters/parameter_values.py",
+    "lo": 249,
+    "hi": 253,
+    "note": "When check_already_exists is enabled, the update looks up each incoming name in _dict_items and raises if the lookup fails."
+  },
+  {
+    "path": "tests/unit/test_util.py",
+    "lo": 59,
+    "hi": 63,
+    "note": "The FuzzyDict test expects a DeprecationWarning and equal values for the positive electrode and particle diffusivity lookups."
+  }
+]

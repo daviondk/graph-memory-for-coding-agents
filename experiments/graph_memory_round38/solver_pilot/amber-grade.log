@@ -1,0 +1,146 @@
+warning: traitlets/config/tests/test_loader.py has type 100755, expected 100644
+============================= test session starts ==============================
+collected 62 items
+
+traitlets/config/tests/test_loader.py .................................. [ 54%]
+............................                                             [100%]
+
+=============================== warnings summary ===============================
+traitlets/config/tests/test_loader.py::TestKeyValueCL::test_basic
+traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_basic
+  /tmp/work/traitlets/traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use 'hi there' instead of DeferredConfigString("'hi there'") if you require traitlets >=5.
+    warn(
+
+traitlets/config/tests/test_loader.py::TestKeyValueCL::test_eval
+  /tmp/work/traitlets/traitlets.py:2562: FutureWarning: --C.list_trait=["hello",5] for containers is deprecated in traitlets 5.0. You can pass `--C.list_trait item` ... multiple times to add items to a list.
+    warn(
+
+traitlets/config/tests/test_loader.py::TestKeyValueCL::test_expanduser
+traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_expanduser
+  /tmp/work/traitlets/traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use '~/' instead of DeferredConfigString('"~/"') if you require traitlets >=5.
+    warn(
+
+traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_expanduser2
+  /tmp/work/traitlets/traitlets.py:2202: FutureWarning: Supporting extra quotes around strings is deprecated in traitlets 5.0. You can use '~/1/2/3' instead of "'~/1/2/3'" if you require traitlets >=5.
+    warn(
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+==================================== PASSES ====================================
+__________________________ TestKeyValueCL.test_basic ___________________________
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'b', it will have no effect.
+________________________ TestKeyValueCL.test_expanduser ________________________
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'b', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'c', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'd', it will have no effect.
+________________________ TestKeyValueCL.test_extra_args ________________________
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'c', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'c', it will have no effect.
+_______________________ TestKeyValueCL.test_unicode_args _______________________
+----------------------------- Captured stdout call -----------------------------
+{'a': DeferredConfigString('épsîlön')} []
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+_________________________ TestArgParseKVCL.test_basic __________________________
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'b', it will have no effect.
+_______________________ TestArgParseKVCL.test_expanduser _______________________
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'b', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'c', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'd', it will have no effect.
+_______________________ TestArgParseKVCL.test_extra_args _______________________
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'c', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'c', it will have no effect.
+____________________ TestArgParseKVCL.test_split_positional ____________________
+----------------------------- Captured stderr call -----------------------------
+usage: __main__.py [-h] [extra_args ...]
+__main__.py: error: unrecognized arguments: b
+_____________________ TestArgParseKVCL.test_unicode_alias ______________________
+----------------------------- Captured stdout call -----------------------------
+{'A': {'a': DeferredConfigString('épsîlön')}}
+[]
+{'a': 'A.a'}
+______________________ TestArgParseKVCL.test_unicode_args ______________________
+----------------------------- Captured stdout call -----------------------------
+{'a': DeferredConfigString('épsîlön')} []
+------------------------------ Captured log call -------------------------------
+WARNING  devnull:loader.py:1021 Unrecognized alias: 'a', it will have no effect.
+============================= slowest 10 durations =============================
+
+(10 durations < 0.005s hidden.  Use -vv to show these durations.)
+=========================== short test summary info ============================
+PASSED traitlets/config/tests/test_loader.py::TestFileCL::test_collision
+PASSED traitlets/config/tests/test_loader.py::TestFileCL::test_context_manager
+PASSED traitlets/config/tests/test_loader.py::TestFileCL::test_json
+PASSED traitlets/config/tests/test_loader.py::TestFileCL::test_json_context_bad_write
+PASSED traitlets/config/tests/test_loader.py::TestFileCL::test_python
+PASSED traitlets/config/tests/test_loader.py::TestFileCL::test_v2raise
+PASSED traitlets/config/tests/test_loader.py::TestArgParseCL::test_add_arguments
+PASSED traitlets/config/tests/test_loader.py::TestArgParseCL::test_argv
+PASSED traitlets/config/tests/test_loader.py::TestArgParseCL::test_basic
+PASSED traitlets/config/tests/test_loader.py::TestArgParseCL::test_list_args
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_basic
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_dict
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_dict_key_traits
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_eval
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_expanduser
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_extra_args
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_list_append
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_list_single_item
+PASSED traitlets/config/tests/test_loader.py::TestKeyValueCL::test_unicode_args
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_basic
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_dict
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_dict_key_traits
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_dict_traits
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_eval
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_expanduser
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_expanduser2
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_extra_args
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_int_literals
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_list_append
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_list_single_item
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_mixed_seq_positional
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_no_cast_literals
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_seq_traits
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_seq_traits_single_empty_string
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_split_positional
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_unicode_alias
+PASSED traitlets/config/tests/test_loader.py::TestArgParseKVCL::test_unicode_args
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_auto_section
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_builtin
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_contains
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_deepcopy
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_fromdict
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_fromdictmerge
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_fromdictmerge2
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_getattr_not_section
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_getattr_private_missing
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_getattr_section
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_getitem_not_section
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_getitem_section
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_lazy_config_repr
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_doesnt_exist
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_exists
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_multi_lazy
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_multi_lazyII
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_multi_lazy_III
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_multi_lazy_IV
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_multi_lazy_update_I
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_multi_lazy_update_II
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_multi_lazy_update_III
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_merge_no_copies
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_pickle_config
+PASSED traitlets/config/tests/test_loader.py::TestConfig::test_setget
+======================== 62 passed, 6 warnings in 0.14s ========================

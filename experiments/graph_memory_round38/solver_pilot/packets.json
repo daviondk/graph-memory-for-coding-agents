@@ -1,0 +1,20 @@
+{
+  "amber": {
+    "arm": "empty",
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "size": 0,
+    "text": ""
+  },
+  "cobalt": {
+    "arm": "recency",
+    "sha256": "0d3123657809902289bcb8a18d02549fd5a5d53518ce357f0851b1352ad9cff7",
+    "size": 1587,
+    "text": "    If an error is raised in `.from_string_list`,\ntraitlets/config/loader.py:432 |     the original string list is returned.\ntraitlets/config/loader.py:433 | \ntraitlets/config/loader.py:434 |     .. versionadded:: 5.0\ntraitlets/config/loader.py:435 |     \"\"\"\ntraitlets/config/loader.py:436 |     def get_value(self, trait):\ntraitlets/config/loader.py:437 |         \"\"\"Get the value stored in this string\"\"\"\ntraitlets/config/loader.py:438 |         if hasattr(trait, \"from_string_list\"):\ntraitlets/config/loader.py:439 |             src = list(self)\ntraitlets/config/loader.py:440 |             cast = trait.from_string_list\ntraitlets/config/loader.py:441 |         else:\ntraitlets/config/loader.py:442 |             # only allow one item\ntraitlets/config/loader.py:443 |             if len(self) > 1:\ntraitlets/config/loader.py:444 |                 raise ValueError(f\"{trait.name} only accepts one value, got {len(self)}: {list(self)}\")\ntraitlets/config/loader.py:445 |             src = self[0]\ntraitlets/config/loader.py:446 |             cast = trait.from_string\ntraitlets/config/loader.py:447 | \ntraitlets/config/loader.py:448 |         try:\ntraitlets/config/loader.py:449 |             return cast(src)\ntraitlets/config/loader.py:450 |         except Exception:\ntraitlets/config/loader.py:451 |             # exception casting from string,\ntraitlets/config/loader.py:452 |             # let the original value lie.\ntraitlets/config/loader.py:453 |             # this will raise a more informative error when config is loaded.\ntraitlets/config/loader.py:454 |             return src"
+  },
+  "jade": {
+    "arm": "cards",
+    "sha256": "53dbf44f3fe4ffdfbf842e58c3fc53e1d283273028f3d2e9ec3aa1efe99c2e08",
+    "size": 1587,
+    "text": "traitlets/config/loader.py:667-671 | When no trait is available, the loader converts a one-item DeferredConfigList to a DeferredConfigString after expanding the path.\ntraitlets/config/loader.py:438-440 | DeferredConfigList selects trait.from_string_list whenever the trait supplies it, passing the items as a list.\ntraitlets/config/loader.py:406-410 | DeferredConfigString.get_value passes a plain string to trait.from_string.\ntraitlets/traitlets.py:2537-2541 | The container’s scalar parser tries literal_eval and passes None to validation if evaluation raises an exception.\ntraitlets/config/loader.py:667 |                 # trait available, reify config immediately\ntraitlets/config/loader.py:668 |                 value = value.get_value(trait)\ntraitlets/config/loader.py:669 |             elif isinstance(rhs, DeferredConfigList) and len(rhs) == 1:\ntraitlets/config/loader.py:670 |                 # single item, make it a deferred str\ntraitlets/config/loader.py:671 |                 value = DeferredConfigString(os.path.expanduser(rhs[0]))\ntraitlets/config/loader.py:438 |         if hasattr(trait, \"from_string_list\"):\ntraitlets/config/loader.py:439 |             src = list(self)\ntraitlets/config/loader.py:440 |             cast = trait.from_string_list\ntraitlets/config/loader.py:406 |     def get_value(self, trait):\ntraitlets/config/loader.py:407 |         \"\"\"Get the value stored in this string\"\"\"\ntraitlets/config/loader.py:408 |         s = str(self)\ntraitlets/config/loader.py:409 |         try:\ntraitlets/config/loader.py:410 |             return trait.from_string(s)"
+  }
+}
