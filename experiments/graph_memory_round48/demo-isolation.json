@@ -1,0 +1,114 @@
+{
+  "candidate_sha256": "e614ceeed58739adc33cbc1193ab4d0d51cf069b8ac369c618278250bbcc4523",
+  "code_packet_bytes": [
+    507,
+    74
+  ],
+  "context_selected": [
+    [],
+    [],
+    [
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "flow_groups": {
+    "accumulating": 11,
+    "overlap": 31,
+    "withdrawn": 42
+  },
+  "invalid_request_codes": [
+    404,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400,
+    400
+  ],
+  "isolated_imports": true,
+  "joint": {
+    "independent_rank_checks": 80,
+    "pairs": 1862,
+    "queries": 40,
+    "witness_axes_unchanged": true,
+    "witness_base": 352,
+    "witness_joint": 355
+  },
+  "observed": {
+    "changed_only_when_both": [
+      5,
+      18
+    ],
+    "groups": 54,
+    "independent_subset_checks": 46
+  },
+  "real_consoles": 4,
+  "stale_selected_lines": 3,
+  "trace_coverage": [
+    60,
+    60
+  ],
+  "trace_removed_added": [
+    11,
+    19
+  ],
+  "unavailable_runtime": [
+    [
+      "apps/trace/runtime/reader.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/code/witness.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/context/reader.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/flow/flow.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/trace/runtime/view.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/trace/runtime/planes.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/trace/runtime/observed.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ]
+  ],
+  "video": {
+    "bytes": 3389757,
+    "codec": "h264",
+    "decoded_all": true,
+    "duration_seconds": 169.76,
+    "frames": 4244,
+    "resolution": [
+      1440,
+      810
+    ],
+    "sha256": "18565c9c939224c0bc4c57c77df8b589f2fbb0879eca71c2cf1d0d6c52843114"
+  },
+  "weights": {
+    "live_boundary_checks": 320,
+    "queries": 40,
+    "source_choices": 2528
+  }
+}

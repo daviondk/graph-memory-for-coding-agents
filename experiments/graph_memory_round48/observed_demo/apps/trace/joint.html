@@ -1,0 +1,55 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Two source weights · Evidence views</title>
+<style>
+:root{color-scheme:light;font-family:Inter,"Segoe UI",Arial,sans-serif;color:#19382f;background:#f5f7f3}*{box-sizing:border-box}body{margin:0}main{max-width:1010px;margin:3rem auto;padding:0 1.4rem 2rem}h1,h2,p{margin:0}h1{font:500 clamp(2.3rem,5vw,3.5rem)/1.05 Georgia,serif;letter-spacing:-.035em}header p{margin:.65rem 0 1.4rem;color:#41584d;line-height:1.5}section{background:white;padding:1.1rem;border:1px solid #cad6ce}h2{font-size:1.05rem;margin-bottom:.75rem}.grid{display:grid;grid-template-columns:1fr 1fr;gap:1rem}.controls{display:flex;align-items:end;gap:1rem;flex-wrap:wrap;margin-bottom:1rem}.field{display:grid;gap:.3rem;font-size:.85rem}.field input{accent-color:#276b53}select,button{font:inherit;padding:.5rem .7rem;border:1px solid #8ba096;background:white;color:#163b2e;border-radius:3px}button{cursor:pointer}button:hover,button:focus-visible{background:#edf4ef}figure{margin:0}canvas{width:100%;max-width:320px;aspect-ratio:1;display:block;cursor:crosshair;margin:auto}figcaption{margin:.55rem auto 0;font-size:.82rem;line-height:1.45;max-width:320px}table{border-collapse:collapse;width:100%;font-size:.92rem}th,td{text-align:left;padding:.45rem .25rem;border-bottom:1px solid #dae3dc}#change,#proof,#members{margin-top:.8rem;line-height:1.45}#members{font: .83rem/1.45 Consolas,monospace;color:#50645a}#audit{margin-top:.85rem}small{color:#4b6156}@media(max-width:650px){main{margin:1.5rem auto}.grid{grid-template-columns:1fr}.controls{align-items:center}}
+</style></head><body><main>
+<header><h1>Two source weights</h1><p>Adjust two sources in a recorded trace and inspect which evidence fits a 2,048-token budget.</p></header>
+<section class="controls" aria-label="Weight controls"><label class="field">Source pair<select id="pair"></select></label>
+<label class="field">First shift <output id="vx"></output><input aria-label="First shift" id="x" type="range" min="-1073741824" max="1073741824" step="1"></label>
+<label class="field">Second shift <output id="vy"></output><input aria-label="Second shift" id="y" type="range" min="-1073741824" max="1073741824" step="1"></label>
+<button id="example">Show interaction example</button></section>
+<div class="grid"><section><h2>Winning packet by weight</h2><figure><canvas id="map" width="320" height="320" aria-label="Packet regions by first and second source weights"></canvas><figcaption>Colors show the winning packets on a sampled grid. The first shift increases to the right, the second upwards, from −0.25 to +0.25. Click the map to inspect a point.</figcaption></figure></section>
+<section><h2>Selected evidence</h2><table><thead><tr><th>Shift applied</th><th>Packet</th><th>Tokens</th></tr></thead><tbody id="rows"></tbody></table>
+<p id="change" aria-live="polite"></p><p id="members"></p><button id="audit">Verify from original scores</button><p id="proof" aria-live="polite"></p></section></div></main>
+<script>
+const el=id=>document.getElementById(id), limit=2**30, scale=2**32;
+const colors=['#b7d9c0','#e5c3aa','#aac7de','#d6bad4','#e3dba7','#9ccfc8','#c4c5e0','#d8cdbd'];
+let initial,revision=0,knownPairs;
+function map(data){
+ const canvas=el('map'), c=canvas.getContext('2d'), n=80, step=320/n;
+ const ids=[...new Set(data.planes.map(p=>p[3]))];
+ for(let j=0;j<n;j++)for(let i=0;i<n;i++){
+  const dx=Math.round(((i+.5)/n*2-1)*limit),dy=Math.round((1-(j+.5)/n*2)*limit);
+  let best=-Infinity, win=0;
+  for(const [a,b,v,k] of data.planes){const z=v+a*dx+b*dy;if(z>best){best=z;win=k}}
+  c.fillStyle=colors[ids.indexOf(win)%colors.length];c.fillRect(i*step,j*step,step,step);
+ }
+ c.strokeStyle='#62796d';c.lineWidth=1;c.beginPath();c.moveTo(160,0);c.lineTo(160,320);c.moveTo(0,160);c.lineTo(320,160);c.stroke();
+ const px=(data.x/limit+1)*160,py=(1-data.y/limit)*160;c.beginPath();c.arc(px,py,6.5,0,Math.PI*2);c.fillStyle='white';c.fill();c.lineWidth=3;c.strokeStyle='#14392e';c.stroke();
+}
+async function refresh(verify=false){
+ const serial=++revision,x=Number(el('x').value),y=Number(el('y').value),pair=el('pair').value;
+ el('vx').value=(x/scale).toFixed(5);el('vy').value=(y/scale).toFixed(5);el('proof').textContent='';
+ const args=new URLSearchParams({pair,x,y});
+ const resp=await fetch('/api/joint/'+(verify?'audit':'state')+'?'+args);const d=await resp.json();
+ if(serial!==revision)return;if(!resp.ok){el('proof').textContent=d.error;return}
+ const p=d.packets,tbody=el('rows');tbody.replaceChildren();
+ for(const [k,label] of [['base','Neither'],['first','First only'],['second','Second only'],['joint','Both together']]){
+  const tr=tbody.insertRow();for(const v of [label,p[k].id,p[k].tokens])tr.insertCell().textContent=v;
+ }
+ const same=p.base.id===p.joint.id, axes=p.base.id===p.first.id&&p.base.id===p.second.id;
+ el('change').textContent=axes&&!same?'Each source alone preserves the original packet. Together they change it.':same?'The simultaneous shifts preserve the original packet.':'The simultaneous shifts select a different packet.';
+ el('members').textContent='Selected units · '+p.joint.members.join(', ');
+ if(d.audit)el('proof').textContent=d.audit.equal?'Exact match against full integer optimization.':'Audit mismatch.';
+ map(d);document.body.dataset.ready=pair+'|'+x+'|'+y;
+}
+function restore(){el('pair').value=initial.pair;el('x').value=initial.x;el('y').value=initial.y;return refresh()}
+async function start(){
+ const catalog=await(await fetch('/api/joint/catalog')).json();initial=catalog.example;knownPairs=catalog.pairs;
+ for(const [id,q] of knownPairs)el('pair').add(new Option(q+' · '+id,id));
+ el('pair').onchange=()=>refresh();for(const a of ['x','y'])el(a).oninput=()=>refresh();
+ el('audit').onclick=()=>refresh(true);el('example').onclick=restore;
+ el('map').onclick=e=>{const r=e.target.getBoundingClientRect();el('x').value=Math.round(((e.clientX-r.left)/r.width*2-1)*limit);el('y').value=Math.round((1-(e.clientY-r.top)/r.height*2)*limit);refresh()};
+ await restore();
+} start().catch(e=>el('proof').textContent=e.message);
+</script></body></html>

@@ -1,0 +1,248 @@
+{
+  "completed": [
+    "cache_admission",
+    "embedding_reuse",
+    "observed_demo",
+    "observed_join",
+    "support_updates"
+  ],
+  "manifests": {
+    "cache_admission": "6a9487fae711411a882330fe591a54b6d7d6fa985ae4eef4b3d3df39c90311fc",
+    "embedding_reuse": "47680b8433bd3392d874734cc2ffbac1bb9f15062f84b70e293669390671bbc6",
+    "observed_demo": "90e00ebf4db25f7c0ca2c8f22a39e47093ab584859d359b74b9fd3f971373010",
+    "observed_join": "fa7284d7433bcd96cf7e46808b8347dd41c3205b3fc79a8a80b0672417b363d6",
+    "support_updates": "7f76fcce48eebaa872e86dd064b52bd80b4b6a5a627fe0f6fe8b330e38125a31"
+  },
+  "outcome_checks": [
+    {
+      "equals": 54,
+      "file": "observed_join/results.json",
+      "path": [
+        "ratios",
+        "joint/groups",
+        "n"
+      ]
+    },
+    {
+      "equals": 1072,
+      "file": "observed_join/results.json",
+      "path": [
+        "ratios",
+        "joint/groups",
+        "den"
+      ]
+    },
+    {
+      "equals": 54,
+      "file": "observed_join/results.json",
+      "path": [
+        "ratios",
+        "exact_before/joint",
+        "n"
+      ]
+    },
+    {
+      "equals": 0,
+      "file": "support_updates/results.json",
+      "path": [
+        "policies",
+        "1",
+        "joint_only"
+      ]
+    },
+    {
+      "equals": 1,
+      "file": "support_updates/results.json",
+      "path": [
+        "policies",
+        "4",
+        "joint_only"
+      ]
+    },
+    {
+      "equals": 0,
+      "file": "support_updates/group-results.json",
+      "path": [
+        "1",
+        "joint",
+        "only_joint"
+      ]
+    },
+    {
+      "equals": 1,
+      "file": "support_updates/group-results.json",
+      "path": [
+        "4",
+        "joint",
+        "only_joint"
+      ]
+    },
+    {
+      "equals": 8,
+      "file": "support_updates/group-results.json",
+      "path": [
+        "1",
+        "joint",
+        "changed"
+      ]
+    },
+    {
+      "equals": 17,
+      "file": "support_updates/group-results.json",
+      "path": [
+        "4",
+        "joint",
+        "changed"
+      ]
+    },
+    {
+      "equals": 3862038,
+      "file": "embedding_reuse/reuse.json",
+      "path": [
+        "table",
+        "causal",
+        "both",
+        "totals",
+        "prior_tokens"
+      ]
+    },
+    {
+      "equals": 10537511,
+      "file": "embedding_reuse/reuse.json",
+      "path": [
+        "table",
+        "causal",
+        "both",
+        "totals",
+        "input_tokens"
+      ]
+    },
+    {
+      "equals": 143,
+      "file": "embedding_reuse/reuse.json",
+      "path": [
+        "shape",
+        "strict_sources"
+      ]
+    },
+    {
+      "equals": [
+        5,
+        18
+      ],
+      "file": "independent_control/comparison.json",
+      "path": [
+        "example_change_requires_producers"
+      ]
+    },
+    {
+      "equals": 4,
+      "file": "observed_demo/build-check.json",
+      "path": [
+        "pages"
+      ]
+    },
+    {
+      "equals": "6ea6093d920462855142047200770de1c6b15bca34c7fe428e82af7ca189b99f",
+      "file": "observed_demo/build-check.json",
+      "path": [
+        "pdf_sha256"
+      ]
+    },
+    {
+      "equals": 46,
+      "file": "demo-isolation.json",
+      "path": [
+        "observed",
+        "independent_subset_checks"
+      ]
+    },
+    {
+      "equals": 1814048,
+      "file": "cache_admission/results.json",
+      "path": [
+        "panels",
+        "512",
+        "both",
+        "methods",
+        "proposed",
+        "tokens"
+      ]
+    },
+    {
+      "equals": 1351635,
+      "file": "cache_admission/results.json",
+      "path": [
+        "panels",
+        "512",
+        "both",
+        "methods",
+        "hot_lru",
+        "tokens"
+      ]
+    },
+    {
+      "equals": 1707643,
+      "file": "cache_admission/gdsf-results.json",
+      "path": [
+        "panels",
+        "512",
+        "both",
+        "batch",
+        "tokens"
+      ]
+    },
+    {
+      "equals": 1746158,
+      "file": "cache_admission/order-results.json",
+      "path": [
+        "summary",
+        "cost_hot_last",
+        "tokens",
+        "hot_lru"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round39/provenance_packet_demo/DATA_SOURCE.md",
+    "graph_memory_round39/qwen_reference/QWEN_REPRODUCE_RU.md",
+    "graph_memory_round45/qwen_panel214/MATCHED_INPUT_RU.md",
+    "graph_memory_round45/qwen_panel214/REPRODUCE_RU.md",
+    "graph_memory_round47/REPORT_RU.md",
+    "graph_memory_round47/facet_confirmation/REPRODUCE_RU.md",
+    "graph_memory_round47/joint_packets/REPORT_RU.md",
+    "graph_memory_round47/paper_demo/paper.pdf"
+  ],
+  "round": 48,
+  "top_documents": [
+    "check_demo_isolation.py",
+    "check_joint_demo.py",
+    "check_observed_demo.py",
+    "check_studies.py",
+    "check_weights_isolation.py",
+    "demo-isolation.json",
+    "independent_control/PROTOCOL_RU.md",
+    "independent_control/REPORT_RU.md",
+    "independent_control/check.py",
+    "independent_control/compare.py",
+    "independent_control/comparison.json",
+    "independent_control/forecast-seal.json",
+    "independent_control/input-seal.json",
+    "independent_control/reader-columns.json.gz",
+    "independent_control/results.json.gz",
+    "portable_inputs/graph_memory_round39/provenance_packet_demo/panel.json",
+    "portable_inputs/graph_memory_round39/provenance_packet_demo/provenance.json",
+    "portable_inputs/graph_memory_round44/flow_view/trace-0.json.gz",
+    "portable_inputs/graph_memory_round44/flow_view/trace-1.json.gz",
+    "portable_inputs/graph_memory_round44/flow_view/trace-2.json.gz",
+    "portable_inputs/graph_memory_round44/flow_view/trace-3.json.gz",
+    "portable_inputs/graph_memory_round44/flow_view/trace-4.json.gz",
+    "portable_inputs/graph_memory_round44/flow_view/trace-5.json.gz",
+    "portable_inputs/graph_memory_round44/flow_view/trace-6.json.gz",
+    "portable_inputs/graph_memory_round44/flow_view/trace-7.json.gz",
+    "portable_inputs/graph_memory_round44/sql_flow/normalized.json.gz",
+    "portable_inputs/graph_memory_round46/source_sensitivity/experiment.py",
+    "portable_inputs/graph_memory_round46/source_sensitivity/kernel.cpp",
+    "studies-isolation.json"
+  ]
+}
