@@ -1,0 +1,343 @@
+{
+  "build_ns": 1308450200,
+  "bytes": 757760,
+  "calls": 12592,
+  "changes": 5426,
+  "compiler": "g++.EXE (MinGW-W64 x86_64-ucrt-posix-seh, built by Brecht Sanders, r2) 16.1.0",
+  "interval_bytes": 262144,
+  "items": 2528,
+  "max_intervals": 4,
+  "plan": [
+    "SEARCH e USING PRIMARY KEY (q=? AND source=? AND start<?)",
+    "SEARCH p USING INTEGER PRIMARY KEY (rowid=?)"
+  ],
+  "primary_scenarios": 80896,
+  "protocol_hash": "da82e11e47e9302888e77cc43fc2bc7686cadfa03e077fc309bf523e98000373",
+  "queries": {
+    "q01": {
+      "boundary_probes": 408,
+      "build_ns": 78456200,
+      "calls": 506,
+      "sources": 82,
+      "spans": 204,
+      "tr": "e26a37c5adc18f9a21047f97eae8af453e63510ac59b5c132a767aa42fc01d16"
+    },
+    "q02": {
+      "boundary_probes": 330,
+      "build_ns": 61311400,
+      "calls": 412,
+      "sources": 72,
+      "spans": 165,
+      "tr": "070238015a60957efb0db1b18c1bd6f6bf316186aa6e7073ce942dc629e446c9"
+    },
+    "q03": {
+      "boundary_probes": 418,
+      "build_ns": 57906300,
+      "calls": 472,
+      "sources": 92,
+      "spans": 209,
+      "tr": "f61f4cb9fcc3dea077fdfe81c75b6b01b1470c673815c079a5e4c85f225dc309"
+    },
+    "q04": {
+      "boundary_probes": 210,
+      "build_ns": 24030200,
+      "calls": 212,
+      "sources": 88,
+      "spans": 105,
+      "tr": "294069ba62ae82e9a5ac02e5b7924a86c3109f8aea042053d2f50e5a882a23fa"
+    },
+    "q05": {
+      "boundary_probes": 192,
+      "build_ns": 9699600,
+      "calls": 217,
+      "sources": 50,
+      "spans": 96,
+      "tr": "42a8b37927851ec235cf2b2199e33f7aecd6e7a85afce8b467556c3c00424109"
+    },
+    "q06": {
+      "boundary_probes": 70,
+      "build_ns": 2238700,
+      "calls": 95,
+      "sources": 14,
+      "spans": 35,
+      "tr": "a718e9e72aa810323804b0e6a2e60b63bb17a3f587ae13782558b1e82e153bde"
+    },
+    "q07": {
+      "boundary_probes": 590,
+      "build_ns": 76143800,
+      "calls": 638,
+      "sources": 140,
+      "spans": 295,
+      "tr": "592597aa5ea4d39c942cfc73f6561c8e5b9419c94fe368e6da5598ba527c53b0"
+    },
+    "q08": {
+      "boundary_probes": 470,
+      "build_ns": 69050600,
+      "calls": 573,
+      "sources": 116,
+      "spans": 235,
+      "tr": "f2142fea10254ea6e686077f5a6ef3f87bc3cc7ba901858a74bded5a2d3b00ea"
+    },
+    "q09": {
+      "boundary_probes": 148,
+      "build_ns": 5819400,
+      "calls": 170,
+      "sources": 36,
+      "spans": 74,
+      "tr": "645bccc86bff652941cf265b2fa35e7ffddd00a21b6d2697faf36717b9d1c5e4"
+    },
+    "q10": {
+      "boundary_probes": 112,
+      "build_ns": 6645700,
+      "calls": 127,
+      "sources": 26,
+      "spans": 56,
+      "tr": "6954ccd0326fb0078a379a7ebfd7c7020a75b7b5419a6fd8a1ffd66b3f01b1f9"
+    },
+    "q11": {
+      "boundary_probes": 368,
+      "build_ns": 44038300,
+      "calls": 426,
+      "sources": 84,
+      "spans": 184,
+      "tr": "99214d43008e4357901ac554261a818c617055af19e188da579c4afb3f717f77"
+    },
+    "q12": {
+      "boundary_probes": 198,
+      "build_ns": 13166500,
+      "calls": 231,
+      "sources": 42,
+      "spans": 99,
+      "tr": "d75f9390499886a5c56d89f1b49525b4bfc7f63a0ed2e0e9adba5ea77af195c1"
+    },
+    "q13": {
+      "boundary_probes": 512,
+      "build_ns": 70519600,
+      "calls": 564,
+      "sources": 122,
+      "spans": 256,
+      "tr": "8040b6b555bf43099c960abfd441ac136371289aa6c6f256db97791818c747df"
+    },
+    "q14": {
+      "boundary_probes": 140,
+      "build_ns": 5424000,
+      "calls": 173,
+      "sources": 34,
+      "spans": 70,
+      "tr": "d8fc4818ff69887e3cacfc04b04cb62dc7c0665431a8fd0cec49fb1d01ef657d"
+    },
+    "q15": {
+      "boundary_probes": 240,
+      "build_ns": 34306700,
+      "calls": 288,
+      "sources": 52,
+      "spans": 120,
+      "tr": "1662af205c587f3206e224f865d26b5889ee423205ec3066393427245e0bf0da"
+    },
+    "q16": {
+      "boundary_probes": 218,
+      "build_ns": 24919900,
+      "calls": 258,
+      "sources": 46,
+      "spans": 109,
+      "tr": "0e4c319c4678f0d08b781ce131d196e43c6429954e4b2bcfa714a94617deee3b"
+    },
+    "q17": {
+      "boundary_probes": 334,
+      "build_ns": 43534500,
+      "calls": 415,
+      "sources": 76,
+      "spans": 167,
+      "tr": "28408c8a4deaf084845fa00a8f58c4f8df61449c60287b835d6b43dec748466f"
+    },
+    "q18": {
+      "boundary_probes": 330,
+      "build_ns": 27616100,
+      "calls": 385,
+      "sources": 78,
+      "spans": 165,
+      "tr": "52e1952d96c5c584292e0984809fda0efedc1caa284f664dc41aed8cc0cf3335"
+    },
+    "q19": {
+      "boundary_probes": 404,
+      "build_ns": 50479100,
+      "calls": 445,
+      "sources": 96,
+      "spans": 202,
+      "tr": "a39e6d0b6e2f947755be9a3f8cc204ea66c90f49068a6a9128d8c06691682333"
+    },
+    "q20": {
+      "boundary_probes": 176,
+      "build_ns": 20605400,
+      "calls": 178,
+      "sources": 44,
+      "spans": 88,
+      "tr": "5686d6d1a56659703cdba57540730f126206ba9329abfa4869db9c5c11e25725"
+    },
+    "q21": {
+      "boundary_probes": 218,
+      "build_ns": 31687900,
+      "calls": 271,
+      "sources": 44,
+      "spans": 109,
+      "tr": "360183b021aa6b80a39e11bf8b40e968156f1d3b4fc0c7b342abc424a799b8f7"
+    },
+    "q22": {
+      "boundary_probes": 390,
+      "build_ns": 54185000,
+      "calls": 486,
+      "sources": 92,
+      "spans": 195,
+      "tr": "4b53d65d8b7186acb7f9a8a9b12b7f87ce2d42d6c2348dd42f64cfc1c6ed8b57"
+    },
+    "q23": {
+      "boundary_probes": 188,
+      "build_ns": 15106900,
+      "calls": 205,
+      "sources": 46,
+      "spans": 94,
+      "tr": "26e9c92c386088a5fbf6a9a01b39798e53591f8c45886d0397f54d26de26acb7"
+    },
+    "q24": {
+      "boundary_probes": 266,
+      "build_ns": 26783600,
+      "calls": 311,
+      "sources": 62,
+      "spans": 133,
+      "tr": "557f0cecbe0430567a5645d5b7f45680ee7f62252cd04c439952ea118fc18c68"
+    },
+    "q25": {
+      "boundary_probes": 288,
+      "build_ns": 25062800,
+      "calls": 336,
+      "sources": 62,
+      "spans": 144,
+      "tr": "52011ce8f55311ec34167344c843ebec67546c8242437808567ee7bae328ad13"
+    },
+    "q26": {
+      "boundary_probes": 522,
+      "build_ns": 84238400,
+      "calls": 596,
+      "sources": 118,
+      "spans": 261,
+      "tr": "5fb1f036f96f233deb6febbffc28be6adb1b3bfe8e77e2f31ff6481eff0fdd68"
+    },
+    "q27": {
+      "boundary_probes": 380,
+      "build_ns": 58350500,
+      "calls": 426,
+      "sources": 88,
+      "spans": 190,
+      "tr": "2973a50e3331a9953253741c52668fbb7ddb7b4a5b9c9708c299835c01fd4e9c"
+    },
+    "q28": {
+      "boundary_probes": 128,
+      "build_ns": 7764000,
+      "calls": 171,
+      "sources": 28,
+      "spans": 64,
+      "tr": "4baeaccd4579ab984d400eac600d63f00e48f61571e5757bc33e45ba816032f2"
+    },
+    "q29": {
+      "boundary_probes": 192,
+      "build_ns": 9150000,
+      "calls": 215,
+      "sources": 48,
+      "spans": 96,
+      "tr": "1a36c2ddbaa7d1e74900226d4e2ebf08a1ba95ae713ad82dcbd737c3474b8f25"
+    },
+    "q30": {
+      "boundary_probes": 484,
+      "build_ns": 87036700,
+      "calls": 576,
+      "sources": 104,
+      "spans": 242,
+      "tr": "c0b7f45ae16a85cfff499e6f5bdf1a49e4d92ee94774d60d479668d1ca5b5525"
+    },
+    "q31": {
+      "boundary_probes": 298,
+      "build_ns": 27303500,
+      "calls": 307,
+      "sources": 74,
+      "spans": 149,
+      "tr": "27a66d6cfdcab24dd988b4d236efd3860135ee163dce9ecffb990096eac19f6f"
+    },
+    "q32": {
+      "boundary_probes": 122,
+      "build_ns": 5237200,
+      "calls": 148,
+      "sources": 26,
+      "spans": 61,
+      "tr": "6ddabdf1a78ba2ff4aaed8487f243422d4bb7b48c97900ef4d40449da67bebdc"
+    },
+    "q33": {
+      "boundary_probes": 156,
+      "build_ns": 10129700,
+      "calls": 175,
+      "sources": 36,
+      "spans": 78,
+      "tr": "a464ea4b638e30a37d713859fe9a87fdfde0426783322b5ef72cec81cff4a5a3"
+    },
+    "q34": {
+      "boundary_probes": 110,
+      "build_ns": 3674300,
+      "calls": 125,
+      "sources": 28,
+      "spans": 55,
+      "tr": "ba5a7180fc1069604cb53f6fe7f988beb7f3f9e968a3a018fae15b6bbae8831e"
+    },
+    "q35": {
+      "boundary_probes": 164,
+      "build_ns": 11126000,
+      "calls": 183,
+      "sources": 38,
+      "spans": 82,
+      "tr": "1535ddb3edead71375d78fcc3559b4c83a753536743230a57800dec0eebb716b"
+    },
+    "q36": {
+      "boundary_probes": 228,
+      "build_ns": 13306400,
+      "calls": 263,
+      "sources": 52,
+      "spans": 114,
+      "tr": "9f9e3364d46669fd9ef1a3a3742d0bf474a2aea772c3c0d89ea810039265b045"
+    },
+    "q37": {
+      "boundary_probes": 170,
+      "build_ns": 9093500,
+      "calls": 193,
+      "sources": 46,
+      "spans": 85,
+      "tr": "80316039bdeab2b2e719048837d577f6af4587355bcfa6acc93d5b8aabb0d33c"
+    },
+    "q38": {
+      "boundary_probes": 122,
+      "build_ns": 9462200,
+      "calls": 158,
+      "sources": 24,
+      "spans": 61,
+      "tr": "51c546956df7b4e575d8ec3abc5693ca14d2c08a0f91ffaf6fb1323fdcca52e5"
+    },
+    "q39": {
+      "boundary_probes": 402,
+      "build_ns": 76913900,
+      "calls": 489,
+      "sources": 84,
+      "spans": 201,
+      "tr": "f8a99362c794baa391076cfadf086d30cd1cd304abd481d967a178421f6e4488"
+    },
+    "q40": {
+      "boundary_probes": 156,
+      "build_ns": 6650900,
+      "calls": 173,
+      "sources": 38,
+      "spans": 78,
+      "tr": "544574717eb11e43dd5ee2d53c0f40f93ec4cb7b9b7e95aa83f8942dd4b5781e"
+    }
+  },
+  "query": "select p.members from edge e join packet p on p.id=e.packet_id where e.q=? and e.source=? and e.start<=? order by e.start desc limit 1",
+  "records": 2763,
+  "run_hash": "d825f829a7d0c4ab007a24eb71453e1eb281386492bc612e12dd08a39cd06383",
+  "source_hash": "9f207faeaf5429c2a081e18af52b4dbdc9250e15970498567127be11119fa2e4",
+  "validated": 91748
+}

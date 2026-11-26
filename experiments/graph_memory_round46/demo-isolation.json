@@ -1,0 +1,86 @@
+{
+  "candidate_sha256": "ad14ef1b66df17d0d4bf1ea095526581368b2afb921366817b7c98fe7ce7ad39",
+  "code_packet_bytes": [
+    507,
+    74
+  ],
+  "context_selected": [
+    [],
+    [],
+    [
+      0
+    ],
+    [
+      0,
+      1
+    ]
+  ],
+  "flow_groups": {
+    "accumulating": 11,
+    "overlap": 31,
+    "withdrawn": 42
+  },
+  "invalid_request_codes": [
+    404,
+    400,
+    400,
+    400,
+    400,
+    400
+  ],
+  "isolated_imports": true,
+  "real_consoles": 4,
+  "stale_selected_lines": 3,
+  "trace_coverage": [
+    60,
+    60
+  ],
+  "trace_removed_added": [
+    11,
+    19
+  ],
+  "unavailable_runtime": [
+    [
+      "apps/trace/runtime/reader.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/code/witness.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/context/reader.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/flow/flow.sqlite",
+      "altered",
+      "rejected_before_serving"
+    ],
+    [
+      "apps/trace/runtime/view.sqlite",
+      "missing",
+      "rejected_before_serving"
+    ]
+  ],
+  "video": {
+    "bytes": 2728773,
+    "codec": "h264",
+    "decoded_all": true,
+    "duration_seconds": 134.32,
+    "frames": 3358,
+    "resolution": [
+      1440,
+      810
+    ],
+    "sha256": "dec52f170a43a14e1eda4a2359b049ef6eb5c92b4cf040c8e8f23ce7cbf85e7d"
+  },
+  "weights": {
+    "live_boundary_checks": 320,
+    "queries": 40,
+    "source_choices": 2528
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "completed": [
+    "axis_audit",
+    "bounded_physical",
+    "paper_demo",
+    "reader_length",
+    "reader_transfer",
+    "set_reader",
+    "source_sensitivity",
+    "trust_console",
+    "trust_view"
+  ],
+  "manifests": {
+    "axis_audit": "b65d3379fa97696b1e4fa535a32964052f9d5f3037b0702e6a3a796b0f0c819e",
+    "bounded_physical": "2f5c8991cae2af3bae63bec1112e55ba3c358f664d98c87099529f7b43daffcf",
+    "paper_demo": "b665abaa0e032dcd9afb97fa7535180f3e10eaf73fc552ea7c346641ebc8d306",
+    "reader_length": "d8fc861932c4093fa07fb784b2a21a95fd4cf22f0a82a323416d5d056a874aac",
+    "reader_transfer": "e32e13f911d363952407977a1024ae59632cfa9bec5bf787fcd0fee8928b8653",
+    "set_reader": "89d8782097b81a648753cd2ccbcd262dfeab5d8ad15fbf5da49aadc37e3910d0",
+    "source_sensitivity": "ea0583a14b722189692ead2cb31aa04e21144a8b65fcad237b3d3ee86bd55cfa",
+    "trust_console": "7e329d85075eb23bf6bcdf84b95eb11158cc7ed3b169982a77cb9d9f8d29b55f",
+    "trust_view": "213f79e85b50147735fea081abb3a9560d8824de07422f7f2db9a8ec6f795827"
+  },
+  "outcome_checks": [
+    {
+      "equals": 4691850,
+      "file": "bounded_physical/results.json",
+      "path": [
+        "full_map_checks"
+      ]
+    },
+    {
+      "equals": 72420,
+      "file": "bounded_physical/results.json",
+      "path": [
+        "final_reopened_maps"
+      ]
+    },
+    {
+      "equals": 331776,
+      "file": "bounded_physical/compact-results.json",
+      "path": [
+        "pages_bytes",
+        "dense_sql"
+      ]
+    },
+    {
+      "equals": true,
+      "file": "physical-replay.json",
+      "path": [
+        "identical_compact_pages"
+      ]
+    },
+    {
+      "equals": 15168,
+      "file": "source_sensitivity/results.json",
+      "path": [
+        "groups",
+        "all",
+        "updates"
+      ]
+    },
+    {
+      "equals": 9129,
+      "file": "source_sensitivity/results.json",
+      "path": [
+        "groups",
+        "all",
+        "same"
+      ]
+    },
+    {
+      "equals": 91748,
+      "file": "trust_view/view-log.json",
+      "path": [
+        "validated"
+      ]
+    },
+    {
+      "equals": 5426,
+      "file": "trust_view/view-log.json",
+      "path": [
+        "changes"
+      ]
+    },
+    {
+      "equals": 1024,
+      "file": "reader_transfer/results.json",
+      "path": [
+        "n"
+      ]
+    },
+    {
+      "equals": 70,
+      "file": "reader_transfer/results.json",
+      "path": [
+        "contrasts",
+        "mention_expanded-expanded",
+        "F1",
+        "wins"
+      ]
+    },
+    {
+      "equals": 4756,
+      "file": "set_reader/results.json",
+      "path": [
+        "native_checks"
+      ]
+    },
+    {
+      "equals": 320,
+      "file": "trust_console/checks.json",
+      "path": [
+        "probes"
+      ]
+    },
+    {
+      "equals": 5760,
+      "file": "axis_audit/results.json",
+      "path": [
+        "axis_points"
+      ]
+    },
+    {
+      "equals": 577,
+      "file": "axis_audit/results.json",
+      "path": [
+        "counts",
+        "box_false"
+      ]
+    },
+    {
+      "equals": 0,
+      "file": "axis_audit/results.json",
+      "path": [
+        "counts",
+        "hull_false"
+      ]
+    },
+    {
+      "equals": 320,
+      "file": "demo-isolation.json",
+      "path": [
+        "weights",
+        "live_boundary_checks"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round32/musique_links/REPORT_RU.md",
+    "graph_memory_round37/serbench_reference",
+    "graph_memory_round44/sql_flow/REPORT_RU.md",
+    "graph_memory_round45/bounded_counts/REPORT_RU.md",
+    "graph_memory_round45/qwen_panel214",
+    "graph_memory_round45/qwen_panel214/REPORT_RU.md",
+    "graph_memory_round45/qwen_panel214/REPRODUCE_RU.md",
+    "graph_memory_round45/tie_order/REPORT_RU.md"
+  ],
+  "round": 46,
+  "top_documents": [
+    "check_physical_replay.py",
+    "physical-replay.json",
+    "check_weights_isolation.py",
+    "check_demo_isolation.py",
+    "demo-isolation.json"
+  ]
+}
