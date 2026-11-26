@@ -1,0 +1,126 @@
+{
+  "completed": [
+    "flow_support",
+    "flow_view",
+    "history_writer",
+    "paper_final",
+    "receipt_history",
+    "sql_flow"
+  ],
+  "manifests": {
+    "flow_support": "4ca4c07154bf87c30e9a64abc24430f6a62d7f6ec782a4e5371b8b9415c8512a",
+    "flow_view": "22a8c1955df376f2b91c8b0b3b737c373b1861d29f9113ccef3a04f69fc936fb",
+    "history_writer": "f9c3a42eee9f92346fa53c1df5933385c8924fc76c1c325dbfa8e3d9d8cb925f",
+    "paper_final": "2d9526ffd4f33425418c22d7d4fe6e2e0392d8aa640e8a9530e22becba5ca5d5",
+    "receipt_history": "5ca17b7bd9f70c6b046da37af40664845bca4ff10398251f9331b0080f63997c",
+    "sql_flow": "3e5ca76f5add0c96ec242ed6ba24f4cc747e36b0dd09ef0914c7423d330f5a61"
+  },
+  "outcome_checks": [
+    {
+      "equals": 65,
+      "file": "history_writer/summary.json",
+      "path": [
+        "all",
+        "arms",
+        "lru_8192",
+        "read",
+        "hit"
+      ]
+    },
+    {
+      "equals": 44,
+      "file": "history_writer/summary.json",
+      "path": [
+        "all",
+        "arms",
+        "latest_8192",
+        "read",
+        "hit"
+      ]
+    },
+    {
+      "equals": 415,
+      "file": "receipt_history/summary.json",
+      "path": [
+        "all",
+        "arms",
+        "joint_8192",
+        "read",
+        "novel_lines"
+      ]
+    },
+    {
+      "equals": 0.6231423295038827,
+      "file": "flow_view/results.json",
+      "path": [
+        "ratios",
+        2
+      ]
+    },
+    {
+      "equals": 901,
+      "file": "flow_support/results.json",
+      "path": [
+        "groups",
+        "all",
+        "n"
+      ]
+    },
+    {
+      "equals": 42,
+      "file": "final-demo-isolation.json",
+      "path": [
+        "flow_groups",
+        "withdrawn"
+      ]
+    },
+    {
+      "equals": 2954,
+      "file": "final-demo-isolation.json",
+      "path": [
+        "video",
+        "frames"
+      ]
+    },
+    {
+      "equals": 4,
+      "file": "final-demo-isolation.json",
+      "path": [
+        "real_consoles"
+      ]
+    },
+    {
+      "equals": 31279,
+      "file": "sql_flow/results.json",
+      "path": [
+        "counts",
+        "boundaries"
+      ]
+    },
+    {
+      "equals": 1207,
+      "file": "sql_flow/results.json",
+      "path": [
+        "counts",
+        "traces"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round37/code_visibility",
+    "graph_memory_round40/guarded_updates",
+    "graph_memory_round42/future_reads",
+    "graph_memory_round42/future_reads/REPORT_RU.md",
+    "graph_memory_round42/swe_transfer/REPORT_RU.md",
+    "graph_memory_round43/action_writes/REPORT_RU.md",
+    "graph_memory_round43/fixed_trigger/REPORT_RU.md",
+    "graph_memory_round43/metric_matched/REPORT_RU.md",
+    "graph_memory_round43/prospective_read/REPORT_RU.md",
+    "graph_memory_round43/relation_budget/REPORT_RU.md"
+  ],
+  "round": 44,
+  "top_documents": [
+    "check_demo_isolation.py",
+    "final-demo-isolation.json"
+  ]
+}

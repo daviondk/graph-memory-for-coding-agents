@@ -1,0 +1,73 @@
+{
+  "baselines": [
+    "PairTable",
+    "EndpointSums"
+  ],
+  "intervals": [
+    [
+      0.5099223748745885,
+      0.5354540082570264
+    ],
+    [
+      0.6646868097066571,
+      0.700061247836925
+    ],
+    [
+      0.6109187354097811,
+      0.6356089991698957
+    ]
+  ],
+  "metrics": [
+    "write",
+    "read-all",
+    "combined"
+  ],
+  "ratios": [
+    0.5218385232394976,
+    0.6820330113554098,
+    0.6231423295038827
+  ],
+  "replicates": 10000,
+  "rng": 440011,
+  "shards": {
+    "0": "118152d5bb2acaf6536142a44901ffbce4cdffceb790851feef4f01c5fe8dc94",
+    "1": "c8592d04492f55d084177c4c07ee5cff329fc9c65239a690cfe5b2b97204a258",
+    "2": "6abb2b7beccf42390b73a846b84e0cba4146110a95461fe35c0a6408174579ff",
+    "3": "fec6cfed85f5809d7c06580fd9e80209eaddea4bb9c7c1e3c64626d2102794f3",
+    "4": "64e5f55b9bb6872a7948255b507cb1b46ac59108f751cbac91625358b213af37",
+    "5": "b34edddafeeecb8c493309ed010d83224897313447a6112ec6ea7fe3a31562fb",
+    "6": "f2ae49ac8abefed248d044a44da7a33f3da34998d2caa6da06621f4007e1b7c1",
+    "7": "fcaab598b8e858e3ab98c2e02219e6df1c1e9aa72f487cd28dc49a3adb4dd2f9"
+  },
+  "time_ns_sums": [
+    [
+      23466400.0,
+      52758800.0
+    ],
+    [
+      44968700.0,
+      77355200.0
+    ]
+  ],
+  "totals": {
+    "adds": 17838,
+    "boundaries": 31279,
+    "counter_bytes_across_states": 498032,
+    "counter_rows_across_states": 165739,
+    "final_counter_bytes": 29441,
+    "final_pair_bytes": 23203,
+    "live_flags": 174297,
+    "official_candidate_rows": 136892,
+    "official_questions": 2000,
+    "pair_bytes_across_states": 395865,
+    "pair_rows_across_states": 131578,
+    "peak_counter_bytes": 33679,
+    "peak_pair_bytes": 27207,
+    "retracts": 9227,
+    "stale_flags_monotone": 68480,
+    "states_with_false_flags": 13661,
+    "unavailable_witness_ops": 4
+  },
+  "traces_with_stale": 838,
+  "trajectories": 1207
+}
