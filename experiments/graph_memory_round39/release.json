@@ -1,0 +1,112 @@
+{
+  "round": 39,
+  "completed": [
+    "blind_export",
+    "budget_curve",
+    "demo_paper",
+    "exact_certificate",
+    "fixed_point",
+    "global_packet",
+    "hybrid_controls",
+    "native_five",
+    "packet_invalidation",
+    "provenance_packet_demo",
+    "query_types",
+    "qwen_reference",
+    "remaining_budget",
+    "repo_crossfit",
+    "set_reader",
+    "state_sql_demo"
+  ],
+  "manifests": {
+    "blind_export": "c75725d57a0d7bba9d85e505a44e9a127b17a7acfd413772e7d2b5698adda674",
+    "budget_curve": "c5a71976344b83806589a6bf42e9cbb8314a344d3c13286418229505634eb614",
+    "demo_paper": "eeff95e3a8c70bd3fc3064d81b6620288d1135913b4c6124aeeeaacb9b782c17",
+    "exact_certificate": "92601da135005b6ec2deb27799b8b758bb5ffe81feb6e0a9f651faef002b1aa7",
+    "fixed_point": "f56944895c64e81bf36a3c2481e2f6d37c81e80d1a6b9c85f13b2c74abdcf2ed",
+    "global_packet": "625a08eceb3b5561dbc179c34319c2450f0aab7f17cfd15aa303087640b3d5ae",
+    "hybrid_controls": "4147ff2b5042aa5204ddf973a868cc975b57cdf439ff2136d7586b40658f1e34",
+    "native_five": "5bcddc77f09537b72de51ff9fb2910cf5fffceae4025ad2560c07b644c9c2a07",
+    "packet_invalidation": "5be92e39b07a2bacd3c7527094c81de665ab4029d62b45fdfbd761945c3d96f7",
+    "provenance_packet_demo": "6ef876635b0bee7ce48cdaa02eb5b1979a9e36350292c689fd74562e86bbbd49",
+    "query_types": "73a6f575e06e6205803543a5668699df48fd2107601fb1aa4111e11c0f0883cd",
+    "qwen_reference": "e90f5d8380b56da7bdb39d5c520b9dabc6789c2faa6b532f9485fdd7c1b9dff2",
+    "remaining_budget": "3e898084e1d9c035fe50f5859a2fc80350e9c8853375cd9c05b09725a85ec642",
+    "repo_crossfit": "0ed5dea775f3e46c44b4a0b9960cd5d3762ed49fa5b91a5a1c3d8d8bb0732c15",
+    "set_reader": "ee2ace0fb94c405e3178711b7840444a680b26cffc70e50ee5bb6a8710fdc1e3",
+    "state_sql_demo": "643c77b2a54d95224c24efce82bbe4b1977585c8dcdfc64cd471a2d56271f1e9"
+  },
+  "prior_series_links": [
+    "graph_memory_round34/dev_metric/PROTOCOL_RU.md",
+    "graph_memory_round36/native_three_seeds/REPORT_RU.md",
+    "graph_memory_round37/serbench_reference/availability.json",
+    "graph_memory_round38/REPORT_RU.md"
+  ],
+  "outcome_checks": [
+    {
+      "file": "budget_curve/results.json",
+      "path": [
+        "n"
+      ],
+      "equals": 2000
+    },
+    {
+      "file": "budget_curve/results.json",
+      "path": [
+        "trajectories"
+      ],
+      "equals": 1207
+    },
+    {
+      "file": "budget_curve/results.json",
+      "path": [
+        "means",
+        "wo_chunk_adjacency/graph_dp",
+        14
+      ],
+      "equals": 0.8307
+    },
+    {
+      "file": "fixed_point/withdrawals.json",
+      "path": [
+        "total"
+      ],
+      "equals": 108204
+    },
+    {
+      "file": "fixed_point/withdrawals.json",
+      "path": [
+        "certified_unchanged"
+      ],
+      "equals": 73261
+    },
+    {
+      "file": "fixed_point/benchmark.json",
+      "path": [
+        "rows"
+      ],
+      "equals": 10000
+    },
+    {
+      "file": "packet_invalidation/results.json",
+      "path": [
+        "exact_cached"
+      ],
+      "equals": 2041
+    },
+    {
+      "file": "repo_crossfit/results.json",
+      "path": [
+        "repos"
+      ],
+      "equals": 171
+    },
+    {
+      "file": "set_reader/results.json",
+      "path": [
+        "states"
+      ],
+      "equals": 214
+    }
+  ]
+}

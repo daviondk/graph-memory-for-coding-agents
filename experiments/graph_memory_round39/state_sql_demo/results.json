@@ -1,0 +1,79 @@
+{
+  "baseline_mss": {
+    "bge_mss": [
+      73,
+      96
+    ],
+    "mss": [
+      90,
+      113
+    ]
+  },
+  "baseline_sha": "9b833ef686b8956e28d28f6edfb76985c0a3ee4dc04b3f134a690460550df5b8",
+  "calls": {
+    "fresh": 150165,
+    "indexed": 1705
+  },
+  "checks": {
+    "frozen_rank_lists": 428,
+    "indexed_full_flip_replica_pairs": 2046,
+    "native_metric_comparisons": 1538
+  },
+  "differences": {
+    "mss_gain_5": 0,
+    "mss_gain_8": 0,
+    "mss_loss_5": 1,
+    "mss_loss_8": 0,
+    "order_5": 52,
+    "order_8": 75,
+    "set_5": 52,
+    "set_8": 75
+  },
+  "flips": 341,
+  "load_ms": 81.3627,
+  "median_speedup": 46.67966573816156,
+  "native_sha": "9eee4777a8d0cf4edf7d8b34a4aeb06abadb58a4f1160fbe0ef5f478c7abbe33",
+  "os": "Windows-10-10.0.19045-SP0",
+  "python": "3.14.4",
+  "replicas_sha": "0d77c605257024d472ead40327a7efa82deef868aaade8928664486ffcbdc7c2",
+  "repo_count": 69,
+  "sql_plans": {
+    "full": [
+      [
+        4,
+        0,
+        56,
+        "SEARCH unit USING PRIMARY KEY (state=?)"
+      ],
+      [
+        22,
+        0,
+        0,
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    ],
+    "indexed": [
+      [
+        4,
+        0,
+        54,
+        "SEARCH unit USING COVERING INDEX top_score (state=?)"
+      ]
+    ]
+  },
+  "sqlite": "3.50.4",
+  "states": 214,
+  "timings": {
+    "fresh": {
+      "median_us": 1675.8,
+      "n": 1705,
+      "p95_us": 2284.9
+    },
+    "indexed": {
+      "median_us": 35.9,
+      "n": 1705,
+      "p95_us": 57.2
+    }
+  },
+  "units": 18598
+}

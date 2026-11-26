@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Состояние читателя · SERBench</title>
+<style>
+:root{color-scheme:light;--paper:#f6f5ef;--ink:#182b28;--line:#c9d3c9;--teal:#115c50;--quiet:#4d635b;--white:#fffefa}
+*{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.45 "Inter","Segoe UI",sans-serif}main{max-width:1170px;margin:auto;padding:30px 28px 60px}header{border-bottom:2px solid var(--ink);display:flex;align-items:end;justify-content:space-between;gap:20px;padding:18px 0 20px}
+h1,h2,h3,p{margin:0}h1{font:clamp(35px,5vw,64px)/1.04 Georgia,serif;letter-spacing:-.05em}h2{font:30px/1.1 Georgia,serif;letter-spacing:-.03em}h3{font-size:17px}p{color:var(--quiet)}label{display:flex;align-items:center;gap:9px;font-weight:600}select,button{font:inherit;background:var(--white);color:var(--ink);border:1px solid #94a39a;border-radius:5px;padding:7px 10px}button{cursor:pointer}button:hover,button:focus-visible{border-color:var(--teal);outline:1px solid var(--teal)}select:focus-visible,a:focus-visible{outline:2px solid var(--teal)}button.primary{background:var(--teal);color:white}
+.actions{display:flex;flex-wrap:wrap;gap:9px;align-items:center;margin:17px 0}.block{background:var(--white);border:1px solid var(--line);border-radius:9px;padding:18px}.grid{display:grid;grid-template-columns:1.25fr 1fr;gap:16px;margin:16px 0}.rows{width:100%;border-collapse:collapse;font-size:14px;margin:8px 0}.rows td,.rows th{text-align:left;padding:5px 6px;border-bottom:1px solid var(--line)}.rows th{color:var(--quiet);font-weight:500}.rows button{font-family:monospace;border:0;background:transparent;padding:0 3px;text-decoration:underline;color:var(--teal)}.mono{font:14px/1.35 "IBM Plex Mono",Consolas,monospace}.status{min-height:25px;color:var(--teal);font-size:14px}.path{display:flex;align-items:center;flex-wrap:wrap;gap:9px;margin-top:10px}.node{padding:7px 11px;background:#ecf2ed;border-left:3px solid var(--teal)}.arrow{color:var(--quiet);font-size:13px}.muted{font-size:14px;color:var(--quiet)}.grade{font-size:18px;font-weight:650}.result{display:flex;gap:18px;flex-wrap:wrap;margin:10px 0}.result>div{border-left:2px solid var(--line);padding-left:10px}.good{color:var(--teal)}.miss{color:#8a382a}.divider{margin:14px 0;border:0;border-top:1px solid var(--line)}[hidden]{display:none}details summary{cursor:pointer;color:var(--teal)}
+@media(max-width:740px){main{padding:15px}.grid{grid-template-columns:1fr}header{align-items:start;flex-direction:column}.rows td,.rows th{padding-left:0}.block{padding:12px}}
+</style>
+<main><header><div><p>SERBench Cal500</p><h1>Состояние читателя</h1></div><label>Состояние <select id="states"></select></label></header>
+<div class="actions"><label>Фрагмент <select id="units"></select></label><button class="primary" id="flip"></button><button id="reset">Вернуть исходное состояние</button></div>
+<p class="status" id="status" role="status"></p>
+<section class="block"><h2>Происхождение фрагмента</h2><div id="graph" class="path"></div><p class="muted" id="facts"></p></section>
+<div class="grid"><section class="block"><h2>Одноместный читатель</h2><p class="muted">65 деревьев · индекс по баллу</p><div id="learned"></div></section>
+<section class="block"><h2>Контроль BGE</h2><p class="muted">Исходный ранг плотного поиска</p><div id="control"></div></section></div>
+<section class="block"><h2>Оценка достаточности</h2><p class="muted">Оценщик сверяет выданные фрагменты с квотами групп и допустимыми альтернативами.</p><div class="result" id="scores"></div><hr class="divider"><details open><summary>Свидетельство для текущего top-5</summary><div id="cert"></div></details></section></main>
+<script>
+const el=id=>document.getElementById(id);
+let data, active=19, busy=false;
+function elem(tag,cls,txt){const x=document.createElement(tag);x.className=cls;if(txt!==undefined)x.textContent=txt;return x}
+function options(target,values){target.replaceChildren(...values.map(([v,label])=>{const o=elem('option','',label);o.value=v;return o}))}
+async function get(url,options){const r=await fetch(url,options);const x=await r.json();if(!r.ok)throw Error(x.error||r.status);return x}
+function unit(n){return data.rows.find(x=>x.unit===n)}
+function choose(n){active=+n;el('units').value=active;const u=unit(active);el('flip').textContent=u.seen?'Снять наблюдение':'Добавить наблюдение';
+  el('graph').replaceChildren(elem('span','node mono',data.state),elem('span','arrow',u.seen?'наблюдал →':'кандидат →'),elem('span','node mono','u'+active),elem('span','arrow','источник →'),elem('span','node mono','f·'+u.file.slice(0,12)+' · '+(u.start??'?')+'–'+(u.end??'?')));
+  el('facts').textContent='Стоимость '+u.tokens+' Qwen-токенов. Балл до изменения '+u.base_score.toFixed(4)+', сейчас '+u.score.toFixed(4)+'.'}
+function table(id,list,learned){const t=elem('table','rows');const header=t.createTHead().insertRow();
+  for(const h of ['Ранг','Фрагмент','Виден',learned?'Балл':'Ранг BGE'])header.append(elem('th','',h));
+  const b=t.createTBody();list.forEach((n,i)=>{const u=unit(n),r=b.insertRow();r.insertCell().textContent=i+1;const a=elem('button','mono','u'+n);a.onclick=()=>choose(n);r.insertCell().append(a);r.insertCell().textContent=u.seen?'да':'нет';r.insertCell().textContent=learned?u.score.toFixed(4):u.bge_rank});el(id).replaceChildren(t)}
+function render(d,preferred,msg){data=d;options(el('units'),d.rows.map(u=>[u.unit,'u'+u.unit+(u.seen?' · виден':'')]));choose(unit(preferred)?preferred:d.rows[0].unit);table('learned',d.top,true);table('control',d.bge,false);
+  const box=el('scores');box.replaceChildren();for(const [arm,label] of [['original','Исходный читатель'],['reader','Текущий читатель'],['bge','BGE']]){const b=elem('div','');b.append(elem('p','muted',label));for(const k of [5,8]){const success=d.grades[arm][k].complete;b.append(elem('div','grade '+(success?'good':'miss'),'@'+k+' · '+(success?'полон':'неполон')))}box.append(b)}
+  const cg=d.grades.reader[5];el('cert').replaceChildren(...cg.groups.map(g=>elem('p','muted','Группа '+g.group+' · '+g.have+' из '+g.need+' · '+(g.hits.map(n=>'u'+n).join(', ')||'совпадений нет'))),elem('p','muted','Полные альтернативы · '+(cg.complete_alternatives.join(', ')||'нет')));
+  el('status').textContent=msg||('Кандидатов '+d.rows.length+', наблюдалось '+d.rows.filter(x=>x.seen).length+'.')}
+async function run(f){if(busy)return;busy=true;for(const id of ['flip','reset','states','units'])el(id).disabled=true;try{await f()}catch(e){el('status').textContent=e.message}finally{busy=false;for(const id of ['flip','reset','states','units'])el(id).disabled=false}}
+function loadState(id,pref){return run(async()=>render(await get('/api/state?id='+encodeURIComponent(id)),pref))}
+function change(op){return run(async()=>{const prev=data.top.slice(0,5);const next=await get('/api/change',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({state:data.state,unit:active,op})});render(next,active,'Top-5 до изменения: '+prev.map(x=>'u'+x).join(', ')+'. Сейчас: '+next.top.slice(0,5).map(x=>'u'+x).join(', ')+'.')})}
+el('states').onchange=e=>loadState(e.target.value,1);el('units').onchange=e=>choose(e.target.value);el('flip').onclick=()=>change(unit(active).seen?'remove':'add');el('reset').onclick=()=>change('reset');
+run(async()=>{const states=await get('/api/states');options(el('states'),states.map(s=>[s,s]));el('states').value='s075';render(await get('/api/state?id=s075'),19)});
+</script></html>
