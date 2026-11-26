@@ -1,0 +1,3 @@
+# Воспроизведение
+
+Сохраните структуру graph_memory_round29, graph_memory_round31 и graph_memory_round32 и используйте tokenizer.json E5 из пути соседнего исследования observed_links. Зависимости — NumPy, PyArrow, tokenizers и зависимости импорта retrieve29.py. В новой рабочей копии выполните `python transfer.py`, затем `python evaluate.py`. Первая команда использует только колонки ID, вопрос и контекст авторского Parquet и автоматически скачивает его в D:/CodexResearch/x20-r32-2wiki при отсутствии. Вторая отдельно открывает размеченные колонки после проверки SHA прогнозов. Значения контрольных сумм записаны в plan.json и seal.json.

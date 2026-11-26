@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Code handoff inspector</title><style>
+*{box-sizing:border-box}body{margin:0;background:#f4f6f4;color:#16332d;font:16px/1.45 Inter,"Segoe UI",sans-serif}main{max-width:1150px;margin:auto;padding:26px 30px 35px}h1,h2{font-family:"Source Serif 4",Georgia,serif;font-weight:500}h1{font-size:clamp(32px,5vw,48px);line-height:1.1;margin:0}h2{margin:0 0 10px;font-size:24px}header{border-bottom:2px solid #476b59;margin-bottom:15px}header p{margin:7px 0 15px}.layout{display:grid;grid-template-columns:1fr 1fr;gap:16px}.box{background:#fffefa;border:1px solid #ccd7ce;border-radius:7px;padding:16px;min-width:0}label{display:block;margin:7px 0 0;font-weight:600;font-size:14px}input,button,select{font:inherit;color:inherit;border:1px solid #a2b9aa;background:#fff;border-radius:4px;padding:6px;max-width:100%}select{display:block;width:100%}input{width:100%}button{cursor:pointer}.fields{display:grid;grid-template-columns:repeat(3,minmax(70px,1fr));gap:8px}.examples{display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin:0 0 14px}.examples span{font-weight:600}.note,footer{font-size:13px;color:#496052}.metric{display:flex;justify-content:space-between;border-bottom:1px solid #dce5de;padding:6px 0;gap:12px}.state{font-weight:650}table{border-collapse:collapse;width:100%;font-size:14px}td,th{text-align:left;padding:5px 4px;border-bottom:1px solid #dce5de}th{font-size:12px}.yes{color:#116e41}.no{color:#894826}.rev{text-overflow:ellipsis;overflow:hidden;overflow-wrap:anywhere}.results{max-height:270px;overflow:auto;margin-top:6px}code{font-family:"IBM Plex Mono",Consolas,monospace;font-size:13px}summary{cursor:pointer;margin-top:12px}footer{margin-top:15px}a{color:#286348}button:focus-visible,input:focus-visible,summary:focus-visible,select:focus-visible{outline:3px solid #487959;outline-offset:2px}@media(max-width:760px){.layout{grid-template-columns:minmax(0,1fr)}main{padding:16px 12px}.examples button{font-size:13px}.box{padding:12px}}
+</style></head><body><main><header><h1>Code handoff inspector</h1><p>Reopen a predecessor’s file observation under a token limit. Inspect which lines from the successor’s first file read are recovered.</p></header>
+<div class="examples" id="examples"><span>Examples</span></div>
+<div class="layout"><section class="box"><h2>Historical observation</h2>
+<label>Issue and handoff<select id="cases"></select></label><p class="note" id="path"></p>
+<label>Archive address<select id="address"></select></label><p id="version" class="note rev"></p>
+<label>Read order<select id="order"><option value="boundary">Alternate beginning and end</option><option value="forward">Start at the beginning</option></select></label>
+<div class="fields"><label>Token limit<input id="budget" type="number" value="512" min="0" max="512"></label><label>First line<input id="lo" type="number" placeholder="any" min="1"></label><label>Last line<input id="hi" type="number" placeholder="any" min="1"></label></div>
+<p class="note">Line bounds apply to the selected observation. The directory cost covers addresses chosen by the replayed handoff policy.</p></section>
+<section class="box" aria-live="polite"><h2>Delivered evidence</h2><p id="route" class="note"></p>
+<div class="metric"><span>Handoff directory</span><strong id="directory"></strong></div><div class="metric"><span>Opened evidence</span><strong id="cost"></strong></div>
+<table><thead><tr><th>Successor’s line</th><th>Number</th><th>Content match</th></tr></thead><tbody id="targets"></tbody></table>
+<details id="inspect"><summary>Inspect delivered line fingerprints</summary><div class="results"><table><thead><tr><th>Line</th><th>SHA-256 prefix</th><th>Tokens</th></tr></thead><tbody id="lines"></tbody></table></div></details><p class="note" id="status"></p></section></div>
+<footer>Public Handoff Debt trajectories · 171 held-out handoffs across 25 issues. WP counts WordPiece tokens in the addressed source text. Matching uses the file path, line number and full SHA-256 fingerprint. Versions identify observed excerpts. <a href="https://aclanthology.org/2026.emnlp-main.738/">Paper</a> · <a href="https://huggingface.co/datasets/kc-academy/handoff-debt/tree/79244eedc9d58349da0fcf1a2e05916e0ac5af00">Data</a></footer></main>
+<script>
+const $=id=>document.getElementById(id);const offlinePayload=/*__SNAPSHOT__*/null;
+let bundle,record,items,seq=0,presets,caseVersion=0;
+function option(parent,value,label){const o=document.createElement("option");o.value=value;o.textContent=label;parent.append(o)}
+async function api(name,values={}){const res=await fetch("/api/"+name+"?"+new URLSearchParams(values));if(!res.ok)throw Error("Request failed ("+res.status+")");return res.json()}
+function row(target,cells,cls){const tr=target.insertRow();for(const [i,v] of cells.entries()){const td=tr.insertCell();td.textContent=v;if(i===2 && cls)td.className=cls}}
+function offlineOpen(a,order,budget,lo,hi){
+ const rows=[];let cost=0;if(a){const pool=bundle.lines[record.cp+"/"+a.idx].filter(x=>(lo===null||x[0]>=lo)&&(hi===null||x[0]<=hi));const steps=pool.map((_,i)=>i);
+   if(order==="boundary")steps.sort((i,j)=>Math.min(i,pool.length-1-i)-Math.min(j,pool.length-1-j)||i-j);
+   for(const i of steps){const [line_no,fp,wp]=pool[i];if(cost+wp<=budget){rows.push({line_no,fp,wp});cost+=wp}}}
+ const hits=record.targets.map(([ln,h])=>a?.path===record.target_path&&rows.some(r=>r.line_no===ln&&r.fp===h));
+ return {rows,read_wp:cost,address_wp:record.address_wp,hits,target_lines:record.targets,observation:a,published_route:(a?.idx??null)===record.routed};
+}
+async function refresh(){const cur=++seq;document.body.dataset.ready="pending";
+ const a=record.addresses.find(x=>String(x.idx)===$("address").value),args={q:record.g,read:$("order").value,budget:$("budget").value};
+ if(a)args.idx=a.idx;if($("lo").value)args.start=$("lo").value;if($("hi").value)args.end=$("hi").value;
+ if(!Number.isInteger(+args.budget)||args.budget===""||+args.budget<0||+args.budget>512||[args.start,args.end].some(n=>n!==undefined&&(!Number.isInteger(+n)||+n<1))||args.start&&args.end&&+args.start>+args.end){document.body.dataset.ready="invalid";$("status").textContent="Choose a valid token budget and line interval.";$("cost").textContent="—";$("targets").replaceChildren();$("lines").replaceChildren();return}
+ try{
+ const r=bundle?offlineOpen(a,args.read,+args.budget,args.start?+args.start:null,args.end?+args.end:null):await api("open",args);
+ if(cur!==seq)return;
+ $("directory").textContent=r.address_wp+" WP";$("cost").textContent=r.read_wp+" WP · "+r.rows.length+" lines";
+ $("route").textContent=r.published_route?(a?"This is the address selected from the handoff directory.":"The requested path is absent from the replayed directory."):a?.sent?"Exploring a different address present in the handoff directory.":"Manual archive lookup outside the replayed directory.";
+ $("version").textContent=a?"Event "+a.idx+" · observed extent "+a.first+"–"+a.last+" · version "+a.revision.slice(0,16):"No observation selected.";
+ $("targets").replaceChildren();$("lines").replaceChildren();r.target_lines.forEach(([ln],i)=>row($("targets"),[["First","Last","First interior","Second interior"][i],ln,r.hits[i]?"Recovered":"Missing"],r.hits[i]?"yes":"no"));
+ r.rows.forEach(x=>row($("lines"),[x.line_no,x.fp.slice(0,16),x.wp]));$("status").textContent=bundle?"Offline copy of the SQLite projection.":"Live read-only SQLite query.";
+ window.view={g:record.g,idx:a?.idx??null,method:args.read,budget:+args.budget,hits:r.hits,cost:r.read_wp};document.body.dataset.ready="yes";
+ }catch(e){if(cur===seq){$("status").textContent=String(e);document.body.dataset.ready="error"}}
+}
+async function loadCase(g,order="boundary"){const cv=++caseVersion;++seq;document.body.dataset.ready="pending";
+ const rec=bundle?bundle.details[g]:await api("case",{q:g});if(cv!==caseVersion)return;record=rec;$("cases").value=g;$("address").replaceChildren();
+ option($("address"),"","No historical address");record.addresses.forEach(a=>option($("address"),a.idx,(a.sent?"Directory":"Archive")+" · "+a.path+" · event "+a.idx));
+ $("address").value=record.routed??"";$("order").value=order;$("lo").value=$("hi").value="";$("budget").value=512;$("path").textContent="Successor requested "+record.target_path;
+ await refresh();}
+async function start(){if(offlinePayload){const raw=Uint8Array.from(atob(offlinePayload),v=>v.charCodeAt(0));bundle=JSON.parse(await new Response(new Blob([raw]).stream().pipeThrough(new DecompressionStream("gzip"))).text())}
+ if(!bundle && location.protocol==="file:"){document.getElementById("status").textContent="Open handoff.html for offline use, or run python serve.py.";return}
+ items=bundle?bundle.cases:await api("cases");presets=bundle?bundle.presets:await api("presets");
+ const counts=new Map();items.forEach(r=>{const n=(counts.get(r.issue)||0)+1;counts.set(r.issue,n);option($("cases"),r.g,r.issue+" · handoff "+n+" · "+r.target_path)});
+ for(const [k,label] of [["boundary","Recover boundary lines"],["forward","Recover interior lines"],["unavailable","Missing path"],["versions","Browse versions"]])if(presets[k]){const b=document.createElement("button");b.textContent=label;b.dataset.preset=k;b.onclick=()=>loadCase(presets[k],k==="forward"?"forward":"boundary");$("examples").append(b)}
+ $("cases").onchange=()=>loadCase($("cases").value);for(const k of ["order","address","budget","lo","hi"])$(k).onchange=refresh;
+ await loadCase(presets.boundary)}
+start().catch(e=>{$("status").textContent=String(e);document.body.dataset.ready="error"});
+</script></body></html>
