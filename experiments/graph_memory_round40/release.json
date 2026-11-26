@@ -1,0 +1,258 @@
+{
+  "completed": [
+    "cost_quality",
+    "demo_revision",
+    "edit_demo",
+    "guarded_updates",
+    "memtrace_reference",
+    "natural_invalidations",
+    "source_arrival",
+    "span_updates",
+    "stream_view",
+    "view_fidelity"
+  ],
+  "demo_archives": {
+    "demo_revision/ICDE-demo-revision.zip": {
+      "sha256": "8248e2ff025c26d620520840059d6f9e716951bb05e9b7b33d70659c057a02a4",
+      "study": "demo_revision"
+    },
+    "edit_demo/code-edit-demo.zip": {
+      "sha256": "b5930d4173aae9952e39a94e85af205e2d1e0c8e91f87526bdfb59fb9d8c5407",
+      "study": "edit_demo"
+    }
+  },
+  "demo_runtime": {
+    "origin_manifest": "6ef876635b0bee7ce48cdaa02eb5b1979a9e36350292c689fd74562e86bbbd49"
+  },
+  "manifests": {
+    "cost_quality": "59f495aa610ea6d623a0eb60736b51851e6fe2b668c3c8053262b62567fdde4a",
+    "demo_revision": "e4ac93e900b87a60f4439a6856a1d7b812eacfb5efc52d398a2a5a52540d8cb5",
+    "edit_demo": "4f169e2fd3bcc9adcbd58d11d686669545c7a477f630ed097550d7730ecc604b",
+    "guarded_updates": "f1800e52d63a4a28ef82bbf10c751459179af940fa4c5c0671934d4a74bc52cd",
+    "memtrace_reference": "5549107af8551807fe82d6b1eb8c84a67bed87e85314fcd47648e81cf2a7f3e6",
+    "natural_invalidations": "eded16f43cf59a766ada08badfca6e158ddea891def0dfc49462dda082068567",
+    "source_arrival": "3057bfbd7c379c39592fbdfaa2e397a98edc0c653182402e6637af46218388eb",
+    "span_updates": "3dafaec58a6d1e6481ed629a1a5b37de2736023484be6c3274150f4fe4bec415",
+    "stream_view": "cf4bed93dd58d1fd303943281d3141b829db0d3f648b8382d54ee803f947329a",
+    "view_fidelity": "c0465464378b02a4e5abc4b63f005e75c4b6ab39c4baf646aca28af125fbdccd"
+  },
+  "outcome_checks": [
+    {
+      "equals": "raw",
+      "file": "cost_quality/results.json",
+      "path": [
+        "choice"
+      ]
+    },
+    {
+      "equals": 2000,
+      "file": "cost_quality/results.json",
+      "path": [
+        "n_questions"
+      ]
+    },
+    {
+      "equals": 6,
+      "file": "natural_invalidations/results.json",
+      "path": [
+        "groups",
+        "pooled",
+        "all_present",
+        "totals",
+        "actual_safe"
+      ]
+    },
+    {
+      "equals": 2820,
+      "file": "natural_invalidations/results.json",
+      "path": [
+        "groups",
+        "pooled",
+        "all_present",
+        "n"
+      ]
+    },
+    {
+      "equals": 175,
+      "file": "span_updates/strict_summary.json",
+      "path": [
+        "main",
+        "checked_reuse"
+      ]
+    },
+    {
+      "equals": 3,
+      "file": "span_updates/strict_summary.json",
+      "path": [
+        "main",
+        "old_file"
+      ]
+    },
+    {
+      "equals": 676,
+      "file": "span_updates/strict_summary.json",
+      "path": [
+        "main",
+        "n"
+      ]
+    },
+    {
+      "equals": 25912,
+      "file": "view_fidelity/results.json",
+      "path": [
+        "tables",
+        "holdout",
+        "all",
+        "reject_suffix",
+        "accepted_correct"
+      ]
+    },
+    {
+      "equals": 0,
+      "file": "view_fidelity/results.json",
+      "path": [
+        "tables",
+        "holdout",
+        "all",
+        "reject_suffix",
+        "accepted_bad"
+      ]
+    },
+    {
+      "equals": 1264,
+      "file": "source_arrival/results.json",
+      "path": [
+        "groups",
+        "50",
+        "events"
+      ]
+    },
+    {
+      "equals": 803,
+      "file": "source_arrival/results.json",
+      "path": [
+        "groups",
+        "50",
+        "modes",
+        "strict_certificate"
+      ]
+    },
+    {
+      "equals": 2336,
+      "file": "stream_view/results.json",
+      "path": [
+        "groups",
+        "chronological",
+        "steps"
+      ]
+    },
+    {
+      "equals": 564,
+      "file": "stream_view/results.json",
+      "path": [
+        "groups",
+        "chronological",
+        "rebuilds"
+      ]
+    },
+    {
+      "equals": 1.88,
+      "file": "demo_revision/evidence.json",
+      "path": [
+        "offline_hybrid",
+        "delta_pp"
+      ]
+    },
+    {
+      "equals": 4,
+      "file": "demo_revision/pdf-check.json",
+      "path": [
+        "pages"
+      ]
+    },
+    {
+      "equals": 3,
+      "file": "edit_demo/source-bindings.json",
+      "path": [
+        "cases",
+        "stale",
+        "selected_post_mismatch"
+      ]
+    },
+    {
+      "equals": 1071,
+      "file": "guarded_updates/results.json",
+      "path": [
+        "strata",
+        "holdout",
+        "counts",
+        "records"
+      ]
+    },
+    {
+      "equals": 302,
+      "file": "guarded_updates/results.json",
+      "path": [
+        "strata",
+        "holdout",
+        "counts",
+        "range_reuse"
+      ]
+    },
+    {
+      "equals": 2,
+      "file": "guarded_updates/results.json",
+      "path": [
+        "strata",
+        "holdout",
+        "counts",
+        "file_reuse"
+      ]
+    },
+    {
+      "equals": 300,
+      "file": "guarded_updates/results.json",
+      "path": [
+        "strata",
+        "holdout",
+        "counts",
+        "counted_reuse_with_target"
+      ]
+    },
+    {
+      "equals": 2696,
+      "file": "memtrace_reference/results.json",
+      "path": [
+        "groups",
+        "all",
+        "n"
+      ]
+    },
+    {
+      "equals": 6,
+      "file": "memtrace_reference/results.json",
+      "path": [
+        "groups",
+        "all",
+        "db_active_packets"
+      ]
+    },
+    {
+      "equals": 664,
+      "file": "memtrace_reference/results.json",
+      "path": [
+        "groups",
+        "all",
+        "strict_range_packets"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round10/provenance/README_RU.md",
+    "graph_memory_round39/provenance_packet_demo/DATA_SOURCE.md"
+  ],
+  "round": 40,
+  "top_documents": [
+    "related_work/PRIOR_ART_RU.md"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "cases": {
+    "changed": {
+      "blocks": 3,
+      "decision": "The packet changes. Surviving observations can still have valid source bytes.",
+      "overlapping": 2
+    },
+    "relocated": {
+      "blocks": 2,
+      "decision": "The original packet survives and its selected lines match both snapshots.",
+      "overlapping": 0
+    },
+    "stale": {
+      "blocks": 76,
+      "decision": "The same IDs survive, but selected source bytes were already stale.",
+      "overlapping": 0
+    }
+  },
+  "explicit_audits": 3,
+  "packet_requests": 3,
+  "page_errors": [],
+  "remote_requests": []
+}
