@@ -1,0 +1,189 @@
+{
+  "arxiv_members": [
+    "00README.json",
+    "fancyhdr.sty",
+    "figures",
+    "figures/figure1_missing_complement_overview.pdf",
+    "figures/figure2_serbench_pipeline.pdf",
+    "figures/figure3_mss_complement_pipeline_rev.pdf",
+    "iclr2027_conference.bst",
+    "iclr2027_conference.sty",
+    "macros.tex",
+    "main.bbl",
+    "main.tex",
+    "natbib.sty",
+    "references.bib",
+    "sections",
+    "sections/00_abstract.tex",
+    "sections/01_introduction.tex",
+    "sections/02_related_work.tex",
+    "sections/03_problem_formulation.tex",
+    "sections/04_serbench.tex",
+    "sections/05_mss_complement.tex",
+    "sections/06_experiments.tex",
+    "sections/09_conclusion.tex",
+    "sections/A1_benchmark_specification.tex",
+    "sections/A2_annotation_governance.tex",
+    "sections/A3_metrics_baselines.tex",
+    "sections/A3_observed_overlap.tex",
+    "sections/A4_mss_complement_details.tex",
+    "sections/A5_action52_results.tex",
+    "sections/A5_controller_family_results.tex",
+    "sections/A5_fresh23_e2e.tex",
+    "sections/A5_supporting_evidence.tex",
+    "sections/A6_artifact_scope.tex",
+    "sections/A_appendix.tex"
+  ],
+  "arxiv_sha": "eed96b60381ce1897d1e7c73ef5f3f7e23165d0603984e3d3377eabd22011d1c",
+  "branches": [
+    "main"
+  ],
+  "model_revision": "233902d25c440f23af6f7d6e94d2946bac0bee0a",
+  "models": {
+    "onnx/model_quint8_avx2.onnx": "c80a8b34256ea453093d612e3ac48d3d965a0c0a48c7906709af8b8e28461bf9",
+    "tokenizer.json": "d241a60d5e8f04cc1b2b3e9ef7a4921b27bf526d9f6050ab90f9267a1f9e5c66"
+  },
+  "openreview": {
+    "attachment": "/attachment/aef4393767396df923c65a83cae8ccac4a7f88d4.zip",
+    "error": "ChallengeRequiredError",
+    "note": "07qozKbnPm",
+    "status": 403,
+    "title": "The Missing Complement: State-Conditioned Minimal Sufficient Evidence for Coding Agents"
+  },
+  "reference": {
+    "agent_modern_colbert": {
+      "at5": 0.34,
+      "at8": 0.43,
+      "file": "reference_results/agent_modern_colbert.json",
+      "sha256": "c98a8a53373e29d3cede3983c54ccb796f74a9ff46cb67cb73af03f04f1b095c"
+    },
+    "agentir": {
+      "at5": 0.386,
+      "at8": 0.474,
+      "file": "reference_results/agentir.json",
+      "sha256": "38282b4fc7452b5275eb47d150b669d39e8984dd1f496bb9a85e2d48fe9ba671"
+    },
+    "bge": {
+      "at5": 0.31,
+      "at8": 0.408,
+      "file": "reference_results/bge.json",
+      "sha256": "3dee265791efa37322bc1c97060338bd53ba90fb9391417e8a4415850b42ad09"
+    },
+    "bm25": {
+      "at5": 0.09,
+      "at8": 0.13,
+      "file": "reference_results/bm25.json",
+      "sha256": "ecb15f789c1f70c2d40022f6be13cf8b598fee0b891447ef2c8a2112a832efb9"
+    },
+    "colbertv2": {
+      "at5": 0.168,
+      "at8": 0.24,
+      "file": "reference_results/colbertv2.json",
+      "sha256": "c8d89d12f9433a2124690592cea3e5f67bb44933c97717bbffc66abe89c5e3af"
+    },
+    "mss_complement_B8_QA": {
+      "at5": 0.73,
+      "at8": 0.806,
+      "file": "reference_results/mss_complement_B8_QA.json",
+      "sha256": "8dc498bdd04bf9d99b1487cceb5c910d0c437ee1679d85acc050f247bcf0a06d"
+    },
+    "qwen3_embedding_8b": {
+      "at5": 0.526,
+      "at8": 0.642,
+      "file": "reference_results/qwen3_embedding_8b.json",
+      "sha256": "d7df5c1257f05258625c49a31c2c5a01fbef04e65179a1303c77a67a1a40b79b"
+    },
+    "qwen3_reranker_8b": {
+      "at5": 0.614,
+      "at8": 0.724,
+      "file": "reference_results/qwen3_reranker_8b.json",
+      "sha256": "df05be0836f2c481d2e0ea188488277c14e41f443445a4ca5034fb28cfbe98eb"
+    },
+    "qwen3_reranker_mmr": {
+      "at5": 0.614,
+      "at8": 0.724,
+      "file": "reference_results/qwen3_reranker_mmr.json",
+      "sha256": "e6a8270095c3c2aa96239067671d66abd9b1ff46829fc083f439bb1ec3fcbfd2"
+    },
+    "reasonir_8b": {
+      "at5": 0.28,
+      "at8": 0.376,
+      "file": "reference_results/reasonir_8b.json",
+      "sha256": "971338da5855a68b5be79c501e1c8268dd56b8cd95887462aa1e5ebc8a2b968a"
+    },
+    "splade_pp": {
+      "at5": 0.236,
+      "at8": 0.334,
+      "file": "reference_results/splade_pp.json",
+      "sha256": "7fe68620b960f5769df91693ba17cc620d3f51feda2812697889b4994bb174b0"
+    },
+    "swerank_embed_large": {
+      "at5": 0.524,
+      "at8": 0.624,
+      "file": "reference_results/swerank_embed_large.json",
+      "sha256": "cfbb406cb6a2d962f1cf75471cbb323dd380c995e85553bc07387e6994e4ebc0"
+    }
+  },
+  "release_tags": [],
+  "revision": "8c27a88e48dcbcd4a5745573c95937a4740f4406",
+  "tree": {
+    ".gitattributes": "2a333f5e8eb15777482bda372156da750a816914",
+    ".github/ISSUE_TEMPLATE/bug_report.md": "bab8e0bea127300cbd2663dca2c6a4a715ffd729",
+    ".github/ISSUE_TEMPLATE/evaluation.yml": "b281311fadf5216ba3e1986740eaf3141466fbbc",
+    ".github/workflows/leaderboard.yml": "5cc2bdb6eae2a6496a3a16b0b45124a28f99d75a",
+    ".github/workflows/tests.yml": "ed403b5271b9950561fa6d99d0edf496d0e61138",
+    ".gitignore": "fd0f9a5b2f9dd6316346c8d10bb81c773ef29774",
+    "CHANGELOG.md": "f9c45c5de4a95b4d994ca0c768b4182086277398",
+    "CITATION.cff": "a4c3d1fa454c955bd90161fb45176b96a063e484",
+    "CONTRIBUTING.md": "ff5d18b23b2c2acdca400d7005b002bda712374e",
+    "DATA_LICENSE.md": "297f2f86ce1b696720b387f8be7d0f645c92ddb5",
+    "LICENSE": "5283b084a56cdc60da9394c8c50d132a8813389d",
+    "README.md": "91242a99a4ed66f86057a1d30b4c400d3df8d82b",
+    "README_zh.md": "e8e31ddf3e02236b6b5b429f781c02aa10f92de4",
+    "SECURITY.md": "1553c97378e0c28e4d1d19ca3f227b8fdbfe2519",
+    "THIRD_PARTY_NOTICES.md": "a14bd951f3432151875b1f658d33398c5054fb83",
+    "assets/benchmark.png": "abad289dc7a3885e08fbce208656ceba90638382",
+    "community_results.json": "17565434cb92acf85d355c2fb3f56645cc34ec33",
+    "data/cal500/id_mapping.jsonl.gz": "8d54c21579062ec978f50959621405daf47d2708",
+    "data/cal500/items.jsonl.gz": "a7fc2f91ebb410ede828ffb27e2159bb8973c459",
+    "data/cal500/labels.jsonl.gz": "286f786a83e57a01d15de339f887e125f5bd718f",
+    "data/example/items.jsonl": "5b136812a21eaf7eb37175db9ab783232e3e718e",
+    "data/example/labels.jsonl": "3343c539e84529464fe7fcecff7167fbeefb861b",
+    "data/manifest.json": "4bb1666782a701e35e4c67c196825d6b5ad37dcb",
+    "data/source_repositories.json": "4f4b522ee3f2f270d83bbe03c53daf8361a682c4",
+    "data/test500/items.jsonl.gz": "36c49b3a79ed328b2bde13909c3569ee7f742030",
+    "docs/DATASET.md": "96db6d7ce34dfb86675e1f119dde6ea92cf919a5",
+    "docs/EVALUATION.md": "b5f908c03a1ad5308f911e67ff653d802c53bc41",
+    "docs/QUICKSTART.md": "d476e056b6305c8a9150b780c56c723da82c8e25",
+    "docs/REPRODUCTION.md": "16e0c33fcab5d42bd29a0cc069d4f129341858b9",
+    "examples/custom_method.py": "5cc183a1573a2d9c57bcdfe79004057a11e2b067",
+    "examples/service_smoke.jsonl": "41fcd7ffa9d7ce59846ef9d0b3244c306981654c",
+    "pyproject.toml": "f73e235aa221442555126530aad575e46a716674",
+    "reference_results/agent_modern_colbert.json": "df3978b297c6cc36b2d6a923202cd26de9e4aaa9",
+    "reference_results/agentir.json": "29ca51e87e7d92a29eaf5d4051c28ef1750d3f40",
+    "reference_results/bge.json": "e5cde5bc0e85462045b36a8f8e9ff59affd4217e",
+    "reference_results/bm25.json": "a883550e8f9975dcae18d974e85340bda0ee771d",
+    "reference_results/colbertv2.json": "8f7956b0910c128336d7b4a6f4961a10759feb8f",
+    "reference_results/manifest.json": "32a9611318406a57349beb9ff33b4f174b5c4b2a",
+    "reference_results/mss_complement_B8_QA.json": "9b69771f2e0c83777cbcb47f78b38a03fe5935c8",
+    "reference_results/qwen3_embedding_8b.json": "ac06616321e2c06f318ff7405efa00864494ae69",
+    "reference_results/qwen3_reranker_8b.json": "19e6e7cbaf7ad90f13ceb5e62c593fb5275ad857",
+    "reference_results/qwen3_reranker_mmr.json": "24c0a7afd504a16c70c51f84a8630c97312d8b6c",
+    "reference_results/reasonir_8b.json": "a574f45b4d4626f2b6083594c12a47abb37f80de",
+    "reference_results/splade_pp.json": "07daf9bb3d5c705b9e70a649648e1a85ff0b4d60",
+    "reference_results/swerank_embed_large.json": "f666d1f7f0f1773b37b4787eaa2291c39ed9e4dc",
+    "schemas/prediction.schema.json": "1e0b168d2fae42cce56d8dea3198f051bdcab63f",
+    "src/serbench/__init__.py": "d9c4a27ab1d760e9c0b43f0d40c16312e2bc039e",
+    "src/serbench/__main__.py": "14b49e1c988d581135a80913035446c89a3bc3b8",
+    "src/serbench/_reference_scorer.py": "51b19d6254f73a921efb6a8d8158aef5083cf97a",
+    "src/serbench/baseline.py": "6e4c67281d9627a721c71898b93555fb18156193",
+    "src/serbench/cli.py": "d8e6252f43243b50871208a5b6afe5532bf4f546",
+    "src/serbench/data.py": "a354c9f8e66c3f1aae25a55f895d93d051ba8b3b",
+    "src/serbench/scoring.py": "5fc9695d03a6d5c4cd5ff186f499c3c715aec87f",
+    "tests/test_leaderboard.py": "017e659c7acb3774f0b6ccd2fd4cbd0308f00e46",
+    "tests/test_sdk.py": "73b4ef1dad4ff49554844250799f5af16cdc26dc",
+    "tools/make_service_smoke_submission.py": "f5e3d72bfae2c72e0de0649afb5f28f7b1de57df",
+    "tools/update_leaderboard.py": "7ba07cbf630d17190ae1b36378bb9aa4ef87f388",
+    "tools/verify_release.py": "a9d2304c75426e7697cd29b3bc1f6ba28c684553"
+  }
+}

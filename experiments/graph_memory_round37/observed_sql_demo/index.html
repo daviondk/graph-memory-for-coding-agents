@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Observation memory · SQLite range reader</title><link rel="stylesheet" href="/style.css"><script defer src="/app.js"></script></head>
+<body><main>
+<header><div class="product">Observation memory</div><span>Handoff Debt &nbsp; / &nbsp; SQLite</span></header>
+<h1>Read memory after an edit</h1><p class="lead">Request a line range from a file the agent has already inspected. Two live queries recover the same retained observations from different storage layouts.</p>
+<nav aria-label="Edit cases" id="cases"></nav>
+<section class="grid"><aside>
+<div class="card source"><div class="titleline"><h2>Recorded edit</h2><span id="zone"></span></div><p id="issue"></p>
+<dl class="facts"><div><dt>Old range replaced</dt><dd id="oldrange"></dd></div><div><dt>Line-count change</dt><dd id="delta"></dd></div><div><dt>File fingerprint</dt><dd id="file"></dd></div></dl>
+<details id="base-detail"><summary id="base-title">Previous view</summary><div class="observations" id="base"></div></details>
+<details id="receipt-detail" open><summary id="receipt-title">Editor receipt</summary><div class="observations" id="receipt"></div></details>
+</div>
+<div class="card controls"><h2>Client request</h2>
+<form id="range"><div class="fieldpair"><label>From line<input id="lo" type="number" min="1" max="100000" required></label><label>Through line<input id="hi" type="number" min="1" max="100000" required></label></div><button class="action" type="submit">Run range query <span aria-hidden="true">→</span></button></form>
+<div class="presets"><button id="actual">Next recorded view</button><button id="special">Edited region</button></div><p id="error" role="alert"></p></div>
+</aside><div class="output">
+<section class="card outcome"><div class="titleline"><h2>Query result</h2><span class="status" id="status" role="status">Opening database</span></div>
+<div class="outhead"><strong id="matched">—</strong><span>retained lines in <b id="window">—</b></span></div>
+<table class="comparison"><thead><tr><th>SQLite reader</th><th>Rows returned</th><th>Digest bytes</th></tr></thead><tbody id="comparison"></tbody></table>
+<details id="signature"><summary>Answer SHA-256</summary><div id="digests"></div></details>
+<p id="mode"></p>
+</section>
+<section class="card ledger"><div class="titleline"><h2>Returned observations</h2><span>current coordinates</span></div>
+<div class="ledger-scroll"><table><thead><tr><th>Line</th><th>Source</th><th>Text SHA-256</th></tr></thead><tbody id="rows"></tbody></table></div><p id="empty" hidden>Memory has no retained observation in this range.</p>
+<div class="missing"><h3>Missing lines</h3><div id="gaps"></div></div></section>
+</div></section>
+<footer><span>Local, read-only SQLite · 128 facts per file</span><details><summary>Measurement notes</summary><p>Counts cover result rows transferred by each reader from SQLite to Python. Each stored text digest is 32 bytes. Digest bytes exclude coordinates, headers, SQLite pages, and the separate explanatory queries used by this interface. Each answer signature hashes the ordered line and full text-digest pairs. Real issue IDs and line coordinates are retained; the text is shown only as a hash. A gap means the memory provides no retained fact for that line.</p></details></footer>
+</main></body></html>
