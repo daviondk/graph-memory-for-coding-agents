@@ -2,7 +2,11 @@
 
 Исследование того, какие наблюдения из работы с кодом стоит сохранять, как обновлять их после правок и когда показывать агенту.
 
-**Отчёт** · [PDF, 4 страницы](docs/report.pdf) · [редактируемый Word](docs/report.docx) · [читать на GitHub](docs/report.md).
+**Текущая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round45/paper_revision/paper.pdf) · [LaTeX](experiments/graph_memory_round45/paper_revision/paper.tex) · [автономный комплект с четырьмя SQLite-консолями и видео](experiments/graph_memory_round45/paper_revision/candidate.zip).
+
+[Результаты и ограничения сорок пятой серии](experiments/graph_memory_round45/REPORT_RU.md). На 649 вопросах ISETrace после восьмой группы инструментальных вызовов таблица из 40 ячеек для передачи значений прибавила 3,02 п.п. к полному покрытию замороженного семантического ранжировщика [1,70; 4,43]. При отборе эпох на одних и тех же траекториях обучения общий выигрыш двух нативных архитектур отсутствовал. На SERBench Qwen3-Embedding-8B нашла полный достаточный набор в первых пяти единицах в 95 из 204 состояний, собственная R39 — в 85. [Нативный контроль эпох](experiments/graph_memory_round45/within_replay/REPORT_RU.md) · [Результаты SERBench](experiments/graph_memory_round45/qwen_panel214/REPORT_RU.md).
+
+**Отчёт о первых экспериментах** · [PDF, 4 страницы](docs/report.pdf) · [редактируемый Word](docs/report.docx) · [читать на GitHub](docs/report.md).
 
 [Сорок четвёртая серия](experiments/graph_memory_round44/REPORT_RU.md). На 31 279 обновлениях графа SQLite-таблица счётчиков присутствия передачи значений заняла 128 КиБ против 208 КиБ для двунаправленно индексированных пар. Даже однопроходный запрос по парам потребовал в 1,184 раза больше времени при одной выдаче флагов после каждой записи [1,167; 1,202]. В траекториях кодовых агентов LRU по истории нескольких просмотров покрыл будущий спрос в 65 эпизодах против 44 у памяти последнего просмотра. [Черновик ICDE Demonstrations](experiments/graph_memory_round44/paper_final/paper.pdf) · [Четыре автономные SQLite-консоли и видео](experiments/graph_memory_round44/paper_final/candidate.zip).
 

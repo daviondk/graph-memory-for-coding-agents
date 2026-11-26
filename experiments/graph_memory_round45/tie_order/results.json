@@ -1,0 +1,75 @@
+{
+  "enumeration": {
+    "source_tasks": 73810,
+    "comparisons": 3334530,
+    "zero_cost_comparisons": 2655900,
+    "zero_budget_comparisons": 333453,
+    "multiple_optima_after_deletion": 203690,
+    "strict_dp_checks": 1185320,
+    "violations": 0
+  },
+  "counterexample": {
+    "costs": [
+      2,
+      1,
+      1,
+      1
+    ],
+    "gains": [
+      1,
+      2,
+      1,
+      1
+    ],
+    "budget": 2,
+    "threshold": 1,
+    "deleted": [
+      0
+    ],
+    "criterion": true,
+    "before": {
+      "head": [],
+      "equally_optimal": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "tail_tie_choice": [
+        1,
+        2
+      ],
+      "strict_dp_choice": [
+        1,
+        2
+      ]
+    },
+    "after": {
+      "head": [
+        1
+      ],
+      "equally_optimal": [
+        [
+          1,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "tail_tie_choice": [
+        1,
+        3
+      ],
+      "strict_dp_choice": [
+        1,
+        2
+      ]
+    }
+  }
+}

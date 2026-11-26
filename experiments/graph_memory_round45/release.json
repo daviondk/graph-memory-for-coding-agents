@@ -1,0 +1,109 @@
+{
+  "completed": [
+    "bounded_counts",
+    "flow_likelihood",
+    "lexical_control",
+    "paper_revision",
+    "qa_scope",
+    "qwen_panel214",
+    "research_position",
+    "tie_order",
+    "transaction_history",
+    "within_replay"
+  ],
+  "manifests": {
+    "bounded_counts": "c2942fa9f3d394d73bf7785e0474de61d574e02bcc97386f80159ed456222cd2",
+    "flow_likelihood": "b1ddbfe0b03e5e930e0834e4a35066fa17e4b3836ac68774066e1d0577a61bf3",
+    "lexical_control": "4e7b83ea47ab0747832ebef57bf9c55d7fb76a2090fe0d5a9048db88f6783189",
+    "paper_revision": "1486f166640225c02f6381204563cae7e4c38c679cb9ac5347df74d2cb319b26",
+    "qa_scope": "c2da4148108b32171623c65241de5cb5b725d5c6a3da559253772e04a5e1b2f4",
+    "qwen_panel214": "d164551b8e8b919ac3e6742b462cb1e51ecdcd0fa21885bacf46b6878d0d4f4f",
+    "research_position": "c702315569fcc8713b8a689283ac7b8d3c096f40dc99c6bf439987245dcc5d5f",
+    "tie_order": "6d8897c888ca22d1bafee1051e500fb8919a4cad3eaef9d3848a4501cc512cbb",
+    "transaction_history": "1e412e46bd7e6fe187189fed5da8d6e7d4b7bea7445e79f146d19118183a2dcf",
+    "within_replay": "3446c52690e17e479ed4807f412c03baecc32f4bdc9230f6dd63698b20007b78"
+  },
+  "outcome_checks": [
+    {
+      "equals": 204,
+      "file": "qwen_panel214/results.json",
+      "path": [
+        "panels",
+        "outside204",
+        "states"
+      ]
+    },
+    {
+      "equals": 896,
+      "file": "lexical_control/results.json",
+      "path": [
+        "groups",
+        "no_identifier",
+        "n"
+      ]
+    },
+    {
+      "equals": 10000,
+      "file": "flow_likelihood/trigger-results.json",
+      "path": [
+        "bootstrap"
+      ]
+    },
+    {
+      "equals": 2000,
+      "file": "within_replay/results.json",
+      "path": [
+        "n"
+      ]
+    },
+    {
+      "equals": false,
+      "file": "within_replay/results.json",
+      "path": [
+        "both_lower_bounds_positive"
+      ]
+    },
+    {
+      "equals": 20000,
+      "file": "within_replay/grade-seal.json",
+      "path": [
+        "qa",
+        "cpu_gpu_six_metric_matches"
+      ]
+    },
+    {
+      "equals": 4,
+      "file": "demo-isolation.json",
+      "path": [
+        "real_consoles"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round18/isetrace_official/REPORT_RU.md",
+    "graph_memory_round34/external_transfer",
+    "graph_memory_round38/end_to_end_audit/REPORT_RU.md",
+    "graph_memory_round39/blind_export/REPORT_RU.md",
+    "graph_memory_round39/exact_certificate/REPORT_RU.md",
+    "graph_memory_round39/fixed_point/REPORT_RU.md",
+    "graph_memory_round39/qwen_reference/QWEN_REPRODUCE_RU.md",
+    "graph_memory_round39/repo_crossfit",
+    "graph_memory_round42/lazy_validation/theorem-check.json",
+    "graph_memory_round42/swe_transfer/REPORT_RU.md",
+    "graph_memory_round43/checkpoint_selection/REPORT_RU.md",
+    "graph_memory_round43/fixed_trigger/REPORT_RU.md",
+    "graph_memory_round43/metric_matched/REPORT_RU.md",
+    "graph_memory_round43/relation_budget/REPORT_RU.md",
+    "graph_memory_round44/flow_support/REPORT_RU.md",
+    "graph_memory_round44/flow_view/REPORT_RU.md",
+    "graph_memory_round44/paper_final/REPORT_RU.md",
+    "graph_memory_round44/paper_final/paper.tex",
+    "graph_memory_round44/receipt_history/REPORT_RU.md",
+    "graph_memory_round44/sql_flow/REPORT_RU.md"
+  ],
+  "round": 45,
+  "top_documents": [
+    "check_demo_isolation.py",
+    "demo-isolation.json"
+  ]
+}
