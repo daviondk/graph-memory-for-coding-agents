@@ -1,0 +1,108 @@
+{
+  "completed": [
+    "action_writes",
+    "checkpoint_selection",
+    "fixed_trigger",
+    "metric_matched",
+    "prospective_read",
+    "relation_budget"
+  ],
+  "manifests": {
+    "action_writes": "42a1bca34f25649729c3ea918b8d263f9d8b16e1e703766556bede7cddb698d7",
+    "checkpoint_selection": "0ad809be3a8b624228be5a41a1820d6d3ed13e4b3ff73057d32128b2361a67a3",
+    "fixed_trigger": "673997446f4aef68572493c97abff068d5f495f4a1b2ea36545b48e39cc804ca",
+    "metric_matched": "f10daa99cf9250a5408472ceb4b61029d9520cbd005c25ffeb86ecefd0cbe3e8",
+    "prospective_read": "d684555b38c1140fb255b7063cc5a74b9e5212071a17b56d56af3de942360c61",
+    "relation_budget": "9bfd04e1a265952d840c39d72971fec1ee303df43f765c01883fc8497a5e82e5"
+  },
+  "outcome_checks": [
+    {
+      "equals": 92800,
+      "file": "checkpoint_selection/results.json",
+      "path": [
+        "dev_outcome_vectors"
+      ]
+    },
+    {
+      "equals": 1207,
+      "file": "checkpoint_selection/results.json",
+      "path": [
+        "test_traj"
+      ]
+    },
+    {
+      "equals": 0.8294,
+      "file": "metric_matched/results.json",
+      "path": [
+        "mu",
+        "wo_chunk_adjacency/dp",
+        0
+      ]
+    },
+    {
+      "equals": 0.809,
+      "file": "metric_matched/results.json",
+      "path": [
+        "mu",
+        "wo_chunk_adjacency/firstfit",
+        0
+      ]
+    },
+    {
+      "equals": 901,
+      "file": "relation_budget/results.json",
+      "path": [
+        "groups",
+        "available",
+        "questions"
+      ]
+    },
+    {
+      "equals": 2696,
+      "file": "action_writes/results.json",
+      "path": [
+        "panels",
+        "all2696",
+        "n"
+      ]
+    },
+    {
+      "equals": 293,
+      "file": "prospective_read/results.json",
+      "path": [
+        "panels",
+        "all2696",
+        "methods",
+        "oracle",
+        "lines"
+      ]
+    },
+    {
+      "equals": 649,
+      "file": "fixed_trigger/results.json",
+      "path": [
+        "groups",
+        "primary",
+        "n"
+      ]
+    },
+    {
+      "equals": 94,
+      "file": "fixed_trigger/results.json",
+      "path": [
+        "nonfired",
+        "questions"
+      ]
+    }
+  ],
+  "prior_series_links": [
+    "graph_memory_round37/edit_demand/REPORT_RU.md",
+    "graph_memory_round39/hybrid_controls/REPORT_RU.md",
+    "graph_memory_round42/causal_ablation/REPORT_RU.md",
+    "graph_memory_round42/context_edits/REPORT_RU.md",
+    "graph_memory_round42/future_reads/REPORT_RU.md",
+    "memory_session5/packets/common.py"
+  ],
+  "round": 43,
+  "top_documents": []
+}
