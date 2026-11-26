@@ -1,0 +1,75 @@
+{
+  "seconds": 276.88,
+  "bytes": 5095236,
+  "scenes": [
+    [
+      "Inspect the stored view",
+      "Original packet"
+    ],
+    [
+      "Exclude an unrelated source",
+      "Reuse cached packet"
+    ],
+    [
+      "Exclude a selected source",
+      "Recompute packet"
+    ],
+    [
+      "Follow a recorded code edit",
+      "The original packet survives and its selected lines match both snapshots."
+    ],
+    [
+      "Compare invalidation granularity",
+      "The packet changes. Surviving observations can still have valid source bytes."
+    ],
+    [
+      "Verify the original display",
+      "The same IDs survive, but selected source bytes were already stale."
+    ],
+    [
+      "Use the editor\u2019s own evidence",
+      "Before [0,1] \u2192 After [0,1]; 15 selected lines on the edited path checked against both versions \u00b7 0 mismatches"
+    ],
+    [
+      "Trace a value through tool calls",
+      "Keeping every past flag would add 3 stale flags. Verified \u00b7 6 active outputs checked against the reference."
+    ],
+    [
+      "Change a source weight",
+      "Packet changed \u00b7 interval 2 of 4; Exact match \u00b7 13 ordered units \u00b7 2,048 tokens \u00b7 10,969 \u03bcs"
+    ],
+    [
+      "Change two source weights",
+      "Each source alone preserves the original packet. Together they change it. Exact match against full integer optimization."
+    ],
+    [
+      "Replay an observed source update",
+      "The packet changes from 19 to 15 fragments. Exact match against independent optimization."
+    ],
+    [
+      "Maintain a growing evidence packet",
+      "31 rows computed, compared with 79 for a fresh calculation. Exact match. Every fragment ID and its order agree."
+    ],
+    [
+      "Reduce a learned evidence packet",
+      "22,812 residual DP cell updates All ordered packet IDs match. Full DP: 189,290 cell updates."
+    ],
+    [
+      "An address change",
+      "A recorded 2Wiki loss"
+    ],
+    [
+      "Which calls are needed?",
+      "The fixed mention bonus on 2Wiki"
+    ],
+    [
+      "A stronger simple alternative",
+      "Always-linked vs fixed bonus on HotpotQA"
+    ],
+    [
+      "The learned SQL ranker",
+      "Suppress a mention and verify the revised top title"
+    ]
+  ],
+  "source_video_sha256": "eb4c74ec96c969e762293266fa90a3029400c31ea52e0c8b1a5db8604b3f5c23"
+}

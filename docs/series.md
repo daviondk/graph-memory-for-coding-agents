@@ -2,7 +2,7 @@
 
 [Краткий отчёт, 4 страницы](report.pdf). Ниже каждому этапу соответствует подробный первичный документ и каталог с кодом и данными. Номера серий — идентификаторы сохранённых комплектов. Часть наборов использовалась повторно для разработки и последующих сравнений.
 
-[Актуальная серия и рукопись ICDE](../experiments/graph_memory_round50/REPORT_RU.md) включают проверку качества и времени одного графового читателя, сравнение способов выбора следующего документа и внешний тест межзапросной памяти. [Рукопись](../experiments/graph_memory_round50/submission/paper.pdf) · [Рисунок для отчёта](../experiments/graph_memory_round50/comparison_figure/comparisons.pdf).
+[Актуальная серия и рукопись ICDE](../experiments/graph_memory_round51/REPORT_RU.md) включают перенос между корпусами, абляцию видимой связи при фиксированных весах, проверяемую SQL-адресацию и стоимость передачи кодовой памяти на SERBench. [Рукопись](../experiments/graph_memory_round51/submission/paper.pdf) · [Сравнения](../experiments/graph_memory_round51/ranker-comparisons.pdf) · [Предыдущая серия](../experiments/graph_memory_round50/REPORT_RU.md).
 
 | Этап | Вопрос и исход | Первичные материалы |
 | --- | --- | --- |

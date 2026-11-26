@@ -1,0 +1,106 @@
+{
+  "amortization_read_count": 2560,
+  "ci95_saving_us": [
+    6.0968829752606215,
+    6.459974772135373
+  ],
+  "database_bytes_after": 7380992,
+  "database_bytes_before": 5840896,
+  "dbstat": [
+    [
+      "candidates",
+      1630208
+    ],
+    [
+      "dense_order",
+      1318912
+    ],
+    [
+      "graph_score",
+      1540096
+    ],
+    [
+      "sqlite_autoindex_candidates_1",
+      1441792
+    ],
+    [
+      "sqlite_autoindex_candidates_2",
+      1445888
+    ],
+    [
+      "sqlite_schema",
+      4096
+    ]
+  ],
+  "engine": "3.50.4",
+  "extra_bytes": 1540096,
+  "index": "CREATE INDEX graph_score ON candidates(qid,(10.802290175357829*cosine + 4.556833743383601/(1.0+question_rank) + 0.1611518309327988/(1.0+snippet_rank) + 1.7710807114717886/(1.0+dense_rank) + 4.01208129743561*mention) DESC,dense_rank,candidate)",
+  "index_build_ns": [
+    14933000,
+    18663000,
+    14706400
+  ],
+  "mean_us": {
+    "DENSE": 60.9612109375,
+    "GRAPH": 67.99321614583333,
+    "INDEXED_GRAPH": 61.70143229166666
+  },
+  "median_us": {
+    "DENSE": 59.0,
+    "GRAPH": 65.8,
+    "INDEXED_GRAPH": 59.8
+  },
+  "n_candidates": 22982,
+  "n_queries": 2560,
+  "n_timed": 46080,
+  "plans": {
+    "DENSE": [
+      [
+        4,
+        0,
+        55,
+        "SEARCH candidates USING COVERING INDEX dense_order (qid=?)"
+      ]
+    ],
+    "GRAPH": [
+      [
+        5,
+        0,
+        62,
+        "SEARCH candidates USING INDEX dense_order (qid=?)"
+      ],
+      [
+        40,
+        0,
+        0,
+        "USE TEMP B-TREE FOR ORDER BY"
+      ]
+    ],
+    "INDEXED_GRAPH": [
+      [
+        5,
+        0,
+        55,
+        "SEARCH candidates USING COVERING INDEX graph_score (qid=?)"
+      ]
+    ]
+  },
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.12.13 (main, Mar  3 2026, 15:01:35) [MSC v.1944 64 bit (AMD64)]",
+  "queries": {
+    "DENSE": "SELECT candidate FROM candidates INDEXED BY dense_order WHERE qid=:q ORDER BY dense_rank LIMIT 1",
+    "GRAPH": "SELECT candidate FROM candidates INDEXED BY dense_order WHERE qid=:q ORDER BY (:c0*cosine + :c1/(1.0+question_rank) + :c2/(1.0+snippet_rank) + :c3/(1.0+dense_rank) + :c4*mention) DESC,dense_rank LIMIT 1",
+    "INDEXED_GRAPH": "SELECT candidate FROM candidates INDEXED BY graph_score WHERE qid=:q ORDER BY (10.802290175357829*cosine + 4.556833743383601/(1.0+question_rank) + 0.1611518309327988/(1.0+snippet_rank) + 1.7710807114717886/(1.0+dense_rank) + 4.01208129743561*mention) DESC,dense_rank LIMIT 1"
+  },
+  "raw_weights": [
+    10.802290175357829,
+    4.556833743383601,
+    0.1611518309327988,
+    1.7710807114717886,
+    4.01208129743561
+  ],
+  "repetitions": 6,
+  "saving_per_read_us": 6.291783854166664,
+  "scores_additive_constant_omitted": -6.725466813014764,
+  "seed": 510927
+}

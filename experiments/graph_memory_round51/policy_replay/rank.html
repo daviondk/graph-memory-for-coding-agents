@@ -1,0 +1,42 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Which source should the agent read?</title><style>
+:root{font:16px/1.42 Inter,"Segoe UI",sans-serif;color:#183c32;background:#f6f8f3}*{box-sizing:border-box}body{max-width:1080px;margin:auto;padding:clamp(1rem,4vw,3rem)}h1,h2,h3{font-family:Georgia,serif;font-weight:500;line-height:1.1;margin:.45rem 0 .8rem}h1{font-size:clamp(2.1rem,5vw,3.5rem);letter-spacing:-.035em}h2{font-size:1.55rem}p{margin:.55rem 0}
+fieldset,.entry{border:1px solid #c9d2c9;padding:1rem;margin:.85rem 0;background:white}fieldset{display:flex;flex-wrap:wrap;gap:1rem}label{display:grid;gap:.3rem;font-weight:600;max-width:100%}select{min-width:0;max-width:100%;font:inherit;color:inherit;padding:.4rem}#case{max-width:min(100%,32rem)}.entry{background:#e5eee3}.note{color:#51665c;font-size:.9rem}section{margin:1.25rem 0}.tables{overflow:auto}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{padding:.35rem .48rem;border-bottom:1px solid #d3dccd;text-align:right}td:first-child,th:first-child{text-align:left}tr.chosen{background:#d5e9d6}.score{font-weight:650}details{margin:.5rem 0}summary{cursor:pointer}a{color:#1c5c41}
+</style>
+<h1>Which source should the agent read?</h1><p>The agent sees one passage and a list of titles. Inspect how a mention changes the ordering of the next sources.</p>
+<fieldset><label>Question panel<select id="panel"><option value="gate_confirmation">2Wiki confirmation · 1,280</option><option value="hotpot">HotpotQA transfer · 640</option><option value="confirm">HotpotQA confirmation · 1,280</option><option value="adaptive_address">2Wiki earlier panel · 640</option></select></label>
+<label>Graph vs. hybrid Answer F1<select id="effect"><option value="gain">Gains</option><option value="loss">Losses</option><option value="tie">Ties</option></select></label>
+<label>Question<select id="case"></select></label></fieldset>
+<div id="content" hidden><h2 id="question"></h2><details><summary>Read the visible first passage</summary><p id="fragment"></p><p class="note">Excerpt adapted from <a id="source" target="_blank" rel="noopener noreferrer"></a> by Wikipedia contributors. <a id="history" target="_blank" rel="noopener noreferrer">Article history</a> · <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener noreferrer">CC BY-SA 4.0</a>.</p></details>
+<fieldset><label>Ranking model<select id="method"><option value="graph">Hybrid with a mention feature</option><option value="hybrid">Hybrid trained without mentions</option></select></label>
+<label>Suppress one mention for ranking<select id="suppress"></select></label></fieldset>
+<div class="entry"><strong id="winner"></strong><p id="answer"></p><span class="note" id="trace"></span><p class="note" id="cert"></p></div>
+<div class="tables"><table><thead><tr><th>Candidate title</th><th>Cosine</th><th>Question rank</th><th>Passage rank</th><th>Mention</th><th>SQL score</th></tr></thead><tbody id="ranks"></tbody></table></div>
+<section><h2>Measured results on this panel</h2><p class="note">All methods receive the same per-question token budget. Ranks shown above are one-based. Suppressing a mention changes only its ranking feature. The reader still receives the same source text.</p><div class="tables"><table><thead><tr><th>Method</th><th>Answer F1</th><th>All supporting titles, %</th></tr></thead><tbody id="summary"></tbody></table></div></section></div>
+<p id="status" role="status"></p><p><a href="/">Compare the cost of changing mention thresholds</a></p>
+<script>
+const el=id=>document.getElementById(id),cell=(tag,t)=>{const e=document.createElement(tag);e.textContent=t;return e};
+const names={dense:"Dense",gate:"Fixed mention bonus",linked:"Always follow a mention",hybrid:"Learned hybrid",graph:"Learned hybrid with mentions"};
+let ticket=0;async function fetchData(path,params){const r=await fetch(path+"?"+new URLSearchParams(params));const v=await r.json();if(!r.ok)throw Error(v.error);return v}
+const fail=e=>{el("status").textContent=e.message;el("content").hidden=true};
+async function selectCase(reset=true){
+ const id=++ticket,panel=el("panel").value,q=el("case").value;if(!q)return;
+ const suppress=reset?"-1":el("suppress").value;const v=await fetchData("/api/rank/query",{panel,q,method:el("method").value,suppress});if(id!==ticket)return;
+ if(reset){el("suppress").replaceChildren(new Option("Keep all observed mentions","-1"));for(const t of v.ordered.filter(r=>r.edge).sort((a,b)=>a.dr-b.dr))el("suppress").add(new Option(t.title,String(t.cid)))}
+ el("content").hidden=false;el("status").textContent="";el("question").textContent=v.context.question;el("fragment").textContent=v.context.fragment;el("source").textContent=v.context.first_title;el("source").href="https://en.wikipedia.org/wiki/"+encodeURIComponent(v.context.first_title.replaceAll(" ","_"));el("history").href="https://en.wikipedia.org/w/index.php?"+new URLSearchParams({title:v.context.first_title,action:"history"});
+ el("winner").textContent="Read next · "+v.ordered[0].title;
+ el("answer").textContent=v.recorded?"Recorded answer · "+v.recorded.answer:"The selected input has no recorded answer.";
+ el("trace").textContent=v.recorded?"Answer F1 "+(100*v.recorded.f1).toFixed(2)+" · "+v.recorded.input_tokens+" input tokens":"Only the ranking can be evaluated for this selection.";
+ el("cert").textContent=v.certificate?"Winner verified against the two leading candidates before suppression.":"";
+ const target=el("ranks");target.replaceChildren();for(const t of v.ordered){const row=document.createElement("tr");if(t.cid===v.winner)row.className="chosen";for(const c of [t.title,t.cos.toFixed(4),t.qr+1,t.sr+1,t.cid===v.removed?"Suppressed":t.edge?"Yes":"—",t.score.toFixed(4)])row.append(cell("td",c));target.append(row)}
+}
+async function populate(){
+ const id=++ticket,panel=el("panel").value;const v=await fetchData("/api/rank/cases",{panel,category:el("effect").value});if(id!==ticket)return;
+ el("case").replaceChildren(...v.cases.map(r=>new Option(r.question,r.q)));const sum=el("summary");sum.replaceChildren();
+ for(const r of v.summary){const tr=document.createElement("tr");for(const x of [names[r.arm],r.f1.toFixed(2),r.full.toFixed(2)])tr.append(cell("td",x));sum.append(tr)}
+ if(v.cases.length)await selectCase();else{el("content").hidden=true;el("status").textContent="No cases in this category."}
+}
+for(const id of ["panel","effect"])el(id).onchange=()=>populate().catch(fail);
+for(const id of ["case","method","suppress"])el(id).onchange=()=>selectCase(id!=="suppress").catch(fail);
+populate().catch(fail)
+</script></html>

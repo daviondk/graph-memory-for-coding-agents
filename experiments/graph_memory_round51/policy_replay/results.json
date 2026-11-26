@@ -1,0 +1,406 @@
+{
+  "sqlite": "3.50.4",
+  "python": "3.12.13",
+  "panels": {
+    "adaptive_address": {
+      "dense-to-registered": {
+        "panel": "adaptive_address",
+        "start": "dense",
+        "end": "registered",
+        "n": 640,
+        "changed_input": 32,
+        "cold_memoized": {
+          "calls": 672,
+          "input_tokens": 148898,
+          "output_tokens": 7976
+        },
+        "cold_delta": {
+          "calls": 64,
+          "input_tokens": 14400,
+          "output_tokens": 637
+        },
+        "warm_new_calls": {
+          "calls": 32,
+          "input_tokens": 7200,
+          "output_tokens": 330
+        },
+        "absolute_start": {
+          "calls": 640,
+          "input_tokens": 141698,
+          "output_tokens": 7646
+        },
+        "zero_omitted": 608,
+        "delta_em_pp": 0.46875,
+        "delta_f1_pp": 0.6363038003663004,
+        "wins": 6,
+        "losses": 2
+      },
+      "dense-to-always": {
+        "panel": "adaptive_address",
+        "start": "dense",
+        "end": "always",
+        "n": 640,
+        "changed_input": 149,
+        "cold_memoized": {
+          "calls": 789,
+          "input_tokens": 174359,
+          "output_tokens": 10433
+        },
+        "cold_delta": {
+          "calls": 298,
+          "input_tokens": 65322,
+          "output_tokens": 5291
+        },
+        "warm_new_calls": {
+          "calls": 149,
+          "input_tokens": 32661,
+          "output_tokens": 2787
+        },
+        "absolute_start": {
+          "calls": 640,
+          "input_tokens": 141698,
+          "output_tokens": 7646
+        },
+        "zero_omitted": 491,
+        "delta_em_pp": 1.5625,
+        "delta_f1_pp": 1.350666023378462,
+        "wins": 28,
+        "losses": 21
+      },
+      "always-to-registered": {
+        "panel": "adaptive_address",
+        "start": "always",
+        "end": "registered",
+        "n": 640,
+        "changed_input": 117,
+        "cold_memoized": {
+          "calls": 757,
+          "input_tokens": 167159,
+          "output_tokens": 10126
+        },
+        "cold_delta": {
+          "calls": 234,
+          "input_tokens": 50922,
+          "output_tokens": 4654
+        },
+        "warm_new_calls": {
+          "calls": 117,
+          "input_tokens": 25461,
+          "output_tokens": 2197
+        },
+        "absolute_start": {
+          "calls": 640,
+          "input_tokens": 141698,
+          "output_tokens": 7929
+        },
+        "zero_omitted": 523,
+        "delta_em_pp": -1.09375,
+        "delta_f1_pp": -0.7143622230121618,
+        "wins": 19,
+        "losses": 22
+      }
+    },
+    "gate_confirmation": {
+      "dense-to-registered": {
+        "panel": "gate_confirmation",
+        "start": "dense",
+        "end": "registered",
+        "n": 1280,
+        "changed_input": 55,
+        "cold_memoized": {
+          "calls": 1335,
+          "input_tokens": 301406,
+          "output_tokens": 16736
+        },
+        "cold_delta": {
+          "calls": 110,
+          "input_tokens": 23744,
+          "output_tokens": 1242
+        },
+        "warm_new_calls": {
+          "calls": 55,
+          "input_tokens": 11872,
+          "output_tokens": 787
+        },
+        "absolute_start": {
+          "calls": 1280,
+          "input_tokens": 289534,
+          "output_tokens": 15949
+        },
+        "zero_omitted": 1225,
+        "delta_em_pp": 0.9375,
+        "delta_f1_pp": 1.0790298972347085,
+        "wins": 21,
+        "losses": 4
+      },
+      "dense-to-always": {
+        "panel": "gate_confirmation",
+        "start": "dense",
+        "end": "always",
+        "n": 1280,
+        "changed_input": 300,
+        "cold_memoized": {
+          "calls": 1580,
+          "input_tokens": 353966,
+          "output_tokens": 22365
+        },
+        "cold_delta": {
+          "calls": 600,
+          "input_tokens": 128864,
+          "output_tokens": 11221
+        },
+        "warm_new_calls": {
+          "calls": 300,
+          "input_tokens": 64432,
+          "output_tokens": 6416
+        },
+        "absolute_start": {
+          "calls": 1280,
+          "input_tokens": 289534,
+          "output_tokens": 15949
+        },
+        "zero_omitted": 980,
+        "delta_em_pp": 0.9375,
+        "delta_f1_pp": 0.9574902442620866,
+        "wins": 61,
+        "losses": 43
+      },
+      "always-to-registered": {
+        "panel": "gate_confirmation",
+        "start": "always",
+        "end": "registered",
+        "n": 1280,
+        "changed_input": 245,
+        "cold_memoized": {
+          "calls": 1525,
+          "input_tokens": 342094,
+          "output_tokens": 21910
+        },
+        "cold_delta": {
+          "calls": 490,
+          "input_tokens": 105120,
+          "output_tokens": 9979
+        },
+        "warm_new_calls": {
+          "calls": 245,
+          "input_tokens": 52560,
+          "output_tokens": 4350
+        },
+        "absolute_start": {
+          "calls": 1280,
+          "input_tokens": 289534,
+          "output_tokens": 17560
+        },
+        "zero_omitted": 1035,
+        "delta_em_pp": 0.0,
+        "delta_f1_pp": 0.12153965297262184,
+        "wins": 39,
+        "losses": 40
+      }
+    },
+    "transfer": {
+      "dense-to-registered": {
+        "panel": "transfer",
+        "start": "dense",
+        "end": "registered",
+        "n": 640,
+        "changed_input": 45,
+        "cold_memoized": {
+          "calls": 685,
+          "input_tokens": 193704,
+          "output_tokens": 5563
+        },
+        "cold_delta": {
+          "calls": 90,
+          "input_tokens": 25732,
+          "output_tokens": 571
+        },
+        "warm_new_calls": {
+          "calls": 45,
+          "input_tokens": 12866,
+          "output_tokens": 331
+        },
+        "absolute_start": {
+          "calls": 640,
+          "input_tokens": 180838,
+          "output_tokens": 5232
+        },
+        "zero_omitted": 595,
+        "delta_em_pp": 1.5625,
+        "delta_f1_pp": 1.6854300213675213,
+        "wins": 16,
+        "losses": 3
+      },
+      "dense-to-always": {
+        "panel": "transfer",
+        "start": "dense",
+        "end": "always",
+        "n": 640,
+        "changed_input": 105,
+        "cold_memoized": {
+          "calls": 745,
+          "input_tokens": 210245,
+          "output_tokens": 6061
+        },
+        "cold_delta": {
+          "calls": 210,
+          "input_tokens": 58814,
+          "output_tokens": 1649
+        },
+        "warm_new_calls": {
+          "calls": 105,
+          "input_tokens": 29407,
+          "output_tokens": 829
+        },
+        "absolute_start": {
+          "calls": 640,
+          "input_tokens": 180838,
+          "output_tokens": 5232
+        },
+        "zero_omitted": 535,
+        "delta_em_pp": 2.8125,
+        "delta_f1_pp": 3.1308005558750667,
+        "wins": 33,
+        "losses": 12
+      },
+      "always-to-registered": {
+        "panel": "transfer",
+        "start": "always",
+        "end": "registered",
+        "n": 640,
+        "changed_input": 60,
+        "cold_memoized": {
+          "calls": 700,
+          "input_tokens": 197379,
+          "output_tokens": 5821
+        },
+        "cold_delta": {
+          "calls": 120,
+          "input_tokens": 33082,
+          "output_tokens": 1078
+        },
+        "warm_new_calls": {
+          "calls": 60,
+          "input_tokens": 16541,
+          "output_tokens": 580
+        },
+        "absolute_start": {
+          "calls": 640,
+          "input_tokens": 180838,
+          "output_tokens": 5241
+        },
+        "zero_omitted": 580,
+        "delta_em_pp": -1.25,
+        "delta_f1_pp": -1.4453705345075458,
+        "wins": 9,
+        "losses": 17
+      }
+    },
+    "routing": {
+      "dense-to-registered": {
+        "panel": "routing",
+        "start": "dense",
+        "end": "registered",
+        "n": 1280,
+        "changed_input": 87,
+        "cold_memoized": {
+          "calls": 1367,
+          "input_tokens": 384437,
+          "output_tokens": 11437
+        },
+        "cold_delta": {
+          "calls": 174,
+          "input_tokens": 49112,
+          "output_tokens": 1535
+        },
+        "warm_new_calls": {
+          "calls": 87,
+          "input_tokens": 24556,
+          "output_tokens": 742
+        },
+        "absolute_start": {
+          "calls": 1280,
+          "input_tokens": 359881,
+          "output_tokens": 10695
+        },
+        "zero_omitted": 1193,
+        "delta_em_pp": 1.328125,
+        "delta_f1_pp": 1.3457749108662322,
+        "wins": 28,
+        "losses": 6
+      },
+      "dense-to-always": {
+        "panel": "routing",
+        "start": "dense",
+        "end": "always",
+        "n": 1280,
+        "changed_input": 225,
+        "cold_memoized": {
+          "calls": 1505,
+          "input_tokens": 422872,
+          "output_tokens": 12978
+        },
+        "cold_delta": {
+          "calls": 450,
+          "input_tokens": 125982,
+          "output_tokens": 4212
+        },
+        "warm_new_calls": {
+          "calls": 225,
+          "input_tokens": 62991,
+          "output_tokens": 2283
+        },
+        "absolute_start": {
+          "calls": 1280,
+          "input_tokens": 359881,
+          "output_tokens": 10695
+        },
+        "zero_omitted": 1055,
+        "delta_em_pp": 1.25,
+        "delta_f1_pp": 1.2266844747733292,
+        "wins": 57,
+        "losses": 35
+      },
+      "always-to-registered": {
+        "panel": "routing",
+        "start": "always",
+        "end": "registered",
+        "n": 1280,
+        "changed_input": 138,
+        "cold_memoized": {
+          "calls": 1418,
+          "input_tokens": 398316,
+          "output_tokens": 12185
+        },
+        "cold_delta": {
+          "calls": 276,
+          "input_tokens": 76870,
+          "output_tokens": 2677
+        },
+        "warm_new_calls": {
+          "calls": 138,
+          "input_tokens": 38435,
+          "output_tokens": 1136
+        },
+        "absolute_start": {
+          "calls": 1280,
+          "input_tokens": 359881,
+          "output_tokens": 11049
+        },
+        "zero_omitted": 1142,
+        "delta_em_pp": 0.078125,
+        "delta_f1_pp": 0.11909043609290322,
+        "wins": 29,
+        "losses": 29
+      }
+    }
+  },
+  "query_plan": [
+    [
+      3,
+      0,
+      48,
+      "SEARCH routes USING INDEX crossing (panel=? AND gap>? AND gap<?)"
+    ]
+  ]
+}

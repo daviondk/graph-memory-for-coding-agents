@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Replay a change in graph memory policy</title>
+<style>
+:root{font-family:Inter,"Segoe UI",Arial,sans-serif;color:#163a34;background:#f7f8f3;font-size:16px}
+*{box-sizing:border-box}body{max-width:1020px;margin:0 auto;padding:clamp(1rem,4vw,3rem)}h1,h2{font:normal 2rem/1.12 Georgia,serif;margin:0 0 .65rem}h1{font-size:clamp(2.2rem,4.8vw,3.8rem);letter-spacing:-.035em}h2{font-size:1.55rem}header{max-width:49rem;margin-bottom:1.7rem}p{margin:.3rem 0 .9rem;line-height:1.5}
+fieldset{margin:0;padding:1.15rem;background:white;border:1px solid #c7d2c9;display:flex;flex-wrap:wrap;gap:1.2rem}label{display:grid;gap:.35rem;font-weight:600}select,input{font:inherit;color:inherit;background:#fff;border:1px solid #7c948a;padding:.45rem}
+section{margin:1.45rem 0}.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,180px),1fr));gap:.8rem}
+.card{padding:1rem;background:#e5eee3}.card strong{display:block;font-size:1.85rem;color:#15513f}table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}th,td{text-align:right;padding:.55rem .35rem;border-bottom:1px solid #d0d7ce}td:first-child,th:first-child{text-align:left}th{font-weight:600}.muted{color:#4d635a;font-size:.9rem}.tablebox{overflow:auto}details{border-bottom:1px solid #d0d7ce;padding:.55rem .3rem}summary{cursor:pointer}code{overflow-wrap:anywhere}button{font:inherit;color:inherit;border:1px solid #768e80;background:#fff;padding:.4rem .8rem;cursor:pointer}
+</style><header><h1>Replay a change in graph memory policy</h1>
+<p>Compare two rules for choosing the second document. An identical input to the frozen reader contributes zero to the paired score difference.</p></header>
+<fieldset aria-label="Comparison settings"><label>Question panel<select id="panel"><option value="gate_confirmation">2Wiki confirmation · 1,280</option><option value="adaptive_address">2Wiki earlier panel · 640</option><option value="transfer">HotpotQA transfer · 640</option><option value="routing">HotpotQA confirmation · 1,280</option></select></label>
+<label>From<select id="start"></select><input aria-label="Custom starting bonus" id="snum" value="0.02" type="number" min="0" max="2" step="any" hidden></label>
+<label>To<select id="end"></select><input aria-label="Custom ending bonus" id="enum" value="0.08" type="number" min="0" max="2" step="any" hidden></label></fieldset>
+<p class="muted" id="status" role="status">Loading comparison…</p>
+<div id="output" hidden><div class="cards"><div class="card"><strong id="diff"></strong>Answer F1 difference</div>
+<div class="card"><strong id="calls"></strong>Reader calls for the difference</div><div class="card"><strong id="omitted"></strong>Identical inputs skipped</div></div>
+<section><h2>Reader work</h2><div class="tablebox"><table><thead><tr><th>Evaluation</th><th>Unique calls</th><th>Input tokens</th><th>Output tokens</th></tr></thead><tbody id="work"></tbody></table></div>
+<p class="muted">Counts use recorded responses on one model snapshot. Absolute scores also require the starting policy’s answers. Token counts describe workload, not elapsed time.</p></section>
+<section><h2>Changed inputs</h2><label>Show<select id="filter"><option value="all">All changed inputs</option><option value="gain">F1 gains</option><option value="loss">F1 losses</option><option value="tie">Unchanged F1</option></select></label><div id="cases"></div><button id="more" type="button">Show more</button></section></div>
+<script>
+const $=id=>document.getElementById(id), nf=new Intl.NumberFormat("en-US");let current=null,page=8,sequence=0;
+function node(tag,text){const e=document.createElement(tag);e.textContent=text;return e}
+function change(v){return (v>0?"+":"")+v.toFixed(2)+" pp"}
+const options=[["dense","Dense retrieval"],["registered","Fixed mention bonus"],["always","Always follow a mention"],["custom","Custom mention bonus"]];
+for(const id of ["start","end"]){for(const [v,text] of options) $(id).add(new Option(text,v))}
+$("end").value="registered";
+function renderRows(){
+ if(!current)return;const f=$("filter").value,list=current.examples.filter(r=>f==="all"||(f==="gain"&&r.f1_change>0)||(f==="loss"&&r.f1_change<0)||(f==="tie"&&r.f1_change===0));
+ const target=$("cases");target.replaceChildren();if(!list.length)target.append(node("p","No matching inputs."));
+ for(const row of list.slice(0,page)){const el=document.createElement("details");el.append(node("summary",row.title+" · "+change(100*row.f1_change)));for(const [label,value] of [["Starting prompt",row.prompt_before],["Ending prompt",row.prompt_after]]){const p=node("p",label+" ");p.append(node("code",value));el.append(p)}target.append(el)}$("more").hidden=list.length<=page
+}
+async function update(){
+ const token=++sequence;const params=new URLSearchParams({panel:$("panel").value});
+ for(const [id,num] of [["start","snum"],["end","enum"]]){let v=$(id).value;$(num).hidden=v!=="custom";if(v==="custom")v=$(num).value;params.set(id,v)}
+ try{const r=await fetch("/api/compare?"+params);const v=await r.json();if(token!==sequence)return;if(!r.ok)throw Error(v.error);current=v;page=8;$("output").hidden=false;
+ $("status").textContent=nf.format(v.n)+" questions · "+nf.format(v.changed_input)+" different inputs · "+v.wins+" F1 gains · "+v.losses+" F1 losses";
+ $("diff").textContent=change(v.delta_f1_pp);$("calls").textContent=nf.format(v.cold_delta.calls);$("omitted").textContent=nf.format(v.zero_omitted);
+ const tbody=$("work");tbody.replaceChildren();for(const [label,k] of [["Both policies with memoization","cold_memoized"],["Paired difference from an empty cache","cold_delta"],["Additional work with the starting policy cached","warm_new_calls"]]){const row=document.createElement("tr");row.append(node("td",label));for(const metric of ["calls","input_tokens","output_tokens"])row.append(node("td",nf.format(v[k][metric])));tbody.append(row)}renderRows()
+ }catch(e){if(token===sequence){current=null;$("output").hidden=true;$("status").textContent=e.message}}
+}
+for(const id of ["panel","start","end","snum","enum"])$(id).addEventListener("change",update);
+$("filter").onchange=()=>{page=8;renderRows()};$("more").onclick=()=>{page+=8;renderRows()};update()
+</script></html>
