@@ -59,17 +59,19 @@ class EpisodeState:
             return lo,hi
         def exact(i):
             c,z=cutoffs[i]
-            olda=self.all.get(a,())
-            oldb=self.all.get(i,())
             if rule=="aligned":
-                pa,pb=bisect_left(olda,c),bisect_left(oldb,c)
+                sb=self.recent.get(i,())
+                pa=na-len(sa)+bisect_left(sa,c)
+                pb=self.count[i]-len(sb)+bisect_left(sb,c)
             else:
-                pa,pb=len(olda),len(oldb)
+                pa,pb=na,self.count[i]
                 z=0
                 c=len(self.members)
             work["prefix_probes"]+=min(pa,pb)
             if sql:
                 return z+sql(a,i,c,pa<=pb)
+            olda=self.all.get(a,())
+            oldb=self.all.get(i,())
             return z+len(set(olda[:pa]).intersection(oldb[:pb]))
         ranks,stats=lookup(a,pool,freq,forward,None,self.count,exact,"forward")
         return ranks,dict(pairs=stats["pairs"],prefix=work["prefix_probes"])

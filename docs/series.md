@@ -2,7 +2,9 @@
 
 [Краткий отчёт, 4 страницы](report.pdf). Ниже каждому этапу соответствует подробный первичный документ и каталог с кодом и данными. Номера серий — идентификаторы сохранённых комплектов. Часть наборов использовалась повторно для разработки и последующих сравнений.
 
-[Текущая серия](../experiments/graph_memory_round55/REPORT_RU.md) охватывает исторические связи файлов, бюджет чтений агента, внешние системы поиска и равный объём памяти для точного top‑8 в SQLite. [Рукопись ICDE](../experiments/graph_memory_round55/submission/paper.pdf) · [Демопакет](../experiments/graph_memory_round55/submission/candidate.zip) · [Краткий отчёт](progress-report.md) · [Предыдущая серия](../experiments/graph_memory_round54/REPORT_RU.md).
+[Текущая серия](../experiments/graph_memory_round56/REPORT_RU.md) проверяет разделяемые события, стоимость точной выдачи из SQLite, поиск тестов на Agent Retrieval Bench и исполнимость кода Qwen3-4B. [Краткий отчёт](progress-report-r56.md) · [Демонстрация](../experiments/graph_memory_round56/demo/README.md).
+
+[Предыдущая серия](../experiments/graph_memory_round55/REPORT_RU.md) охватывает исторические связи файлов, бюджет чтений агента, внешние системы поиска и равный объём памяти для точного top‑8 в SQLite. [Рукопись ICDE](../experiments/graph_memory_round55/submission/paper.pdf) · [Демопакет](../experiments/graph_memory_round55/submission/candidate.zip) · [Краткий отчёт](progress-report.md) · [Предыдущая серия](../experiments/graph_memory_round54/REPORT_RU.md).
 
 | Этап | Вопрос и исход | Первичные материалы |
 | --- | --- | --- |
