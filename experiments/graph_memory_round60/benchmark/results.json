@@ -1,0 +1,2471 @@
+{
+  "R59_graph": {
+    "in_five": 50,
+    "in_library": 57,
+    "multiple": 2,
+    "n": 57,
+    "paired": {
+      "flat_three/flat": {
+        "different_top1": 7,
+        "losses": 1,
+        "macro_pp": -4.519230769230769,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 1.7543859649122806,
+        "repo_boot95_pp": [
+          -8.333333333333332,
+          6.0
+        ],
+        "ties": 54,
+        "wins": 2
+      },
+      "rotation_three/rotation": {
+        "different_top1": 6,
+        "losses": 1,
+        "macro_pp": -5.769230769230769,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 0.0,
+        "repo_boot95_pp": [
+          -9.67741935483871,
+          3.0534351145038165
+        ],
+        "ties": 55,
+        "wins": 1
+      },
+      "true_three/flat_three": {
+        "different_top1": 2,
+        "losses": 0,
+        "macro_pp": 0.0,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 0.0,
+        "repo_boot95_pp": [
+          0.0,
+          0.0
+        ],
+        "ties": 57,
+        "wins": 0
+      },
+      "true_three/rotation_three": {
+        "different_top1": 0,
+        "losses": 0,
+        "macro_pp": 0.0,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 0.0,
+        "repo_boot95_pp": [
+          0.0,
+          0.0
+        ],
+        "ties": 57,
+        "wins": 0
+      },
+      "true_three/true": {
+        "different_top1": 7,
+        "losses": 1,
+        "macro_pp": -4.519230769230769,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 1.7543859649122806,
+        "repo_boot95_pp": [
+          -8.333333333333332,
+          6.0
+        ],
+        "ties": 54,
+        "wins": 2
+      }
+    },
+    "per_project": {
+      "astropy/astropy": {
+        "hits": {
+          "bm25_flat": 2,
+          "bm25_outcome": 2,
+          "bm25_symptom": 2,
+          "dense_flat": 2,
+          "flat": 2,
+          "flat_three": 2,
+          "flat_two": 2,
+          "full": 2,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 2,
+          "mini_reader": 2,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 2,
+          "minilm6": 2,
+          "no_edits": 2,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 2,
+          "recall_hybrid": 2,
+          "recall_keyword": 2,
+          "rotation": 2,
+          "rotation_three": 2,
+          "rotation_two": 2,
+          "sparse_fields": 2,
+          "true": 2,
+          "true_three": 2,
+          "true_two": 2
+        },
+        "n": 2,
+        "skips": 2
+      },
+      "matplotlib/matplotlib": {
+        "hits": {
+          "bm25_flat": 6,
+          "bm25_outcome": 7,
+          "bm25_symptom": 5,
+          "dense_flat": 6,
+          "flat": 8,
+          "flat_three": 8,
+          "flat_two": 6,
+          "full": 8,
+          "full_three": 8,
+          "full_two": 6,
+          "fusion": 6,
+          "mini_reader": 5,
+          "mini_reader_three": 7,
+          "mini_reader_two": 6,
+          "minilm": 5,
+          "minilm6": 6,
+          "no_edits": 7,
+          "no_edits_three": 7,
+          "no_edits_two": 6,
+          "recall_five": 8,
+          "recall_hybrid": 7,
+          "recall_keyword": 6,
+          "rotation": 8,
+          "rotation_three": 8,
+          "rotation_two": 6,
+          "sparse_fields": 6,
+          "true": 8,
+          "true_three": 8,
+          "true_two": 6
+        },
+        "n": 12,
+        "skips": 7
+      },
+      "mwaskom/seaborn": {
+        "hits": {
+          "bm25_flat": 2,
+          "bm25_outcome": 2,
+          "bm25_symptom": 2,
+          "dense_flat": 1,
+          "flat": 2,
+          "flat_three": 2,
+          "flat_two": 2,
+          "full": 2,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 2,
+          "mini_reader": 0,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 0,
+          "minilm6": 0,
+          "no_edits": 2,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 2,
+          "recall_hybrid": 2,
+          "recall_keyword": 2,
+          "rotation": 2,
+          "rotation_three": 2,
+          "rotation_two": 2,
+          "sparse_fields": 2,
+          "true": 2,
+          "true_three": 2,
+          "true_two": 2
+        },
+        "n": 2,
+        "skips": 2
+      },
+      "pydata/xarray": {
+        "hits": {
+          "bm25_flat": 2,
+          "bm25_outcome": 2,
+          "bm25_symptom": 2,
+          "dense_flat": 2,
+          "flat": 2,
+          "flat_three": 2,
+          "flat_two": 2,
+          "full": 2,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 2,
+          "mini_reader": 1,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 1,
+          "minilm6": 2,
+          "no_edits": 2,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 2,
+          "recall_hybrid": 2,
+          "recall_keyword": 2,
+          "rotation": 2,
+          "rotation_three": 2,
+          "rotation_two": 2,
+          "sparse_fields": 2,
+          "true": 2,
+          "true_three": 2,
+          "true_two": 2
+        },
+        "n": 2,
+        "skips": 2
+      },
+      "pytest-dev/pytest": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 1,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "flat": 1,
+          "flat_three": 1,
+          "flat_two": 1,
+          "full": 1,
+          "full_three": 1,
+          "full_two": 1,
+          "fusion": 1,
+          "mini_reader": 0,
+          "mini_reader_three": 1,
+          "mini_reader_two": 1,
+          "minilm": 0,
+          "minilm6": 1,
+          "no_edits": 1,
+          "no_edits_three": 1,
+          "no_edits_two": 1,
+          "recall_five": 1,
+          "recall_hybrid": 0,
+          "recall_keyword": 0,
+          "rotation": 1,
+          "rotation_three": 1,
+          "rotation_two": 1,
+          "sparse_fields": 1,
+          "true": 1,
+          "true_three": 1,
+          "true_two": 1
+        },
+        "n": 1,
+        "skips": 1
+      },
+      "scikit-learn/scikit-learn": {
+        "hits": {
+          "bm25_flat": 9,
+          "bm25_outcome": 9,
+          "bm25_symptom": 8,
+          "dense_flat": 7,
+          "flat": 8,
+          "flat_three": 9,
+          "flat_two": 9,
+          "full": 10,
+          "full_three": 10,
+          "full_two": 10,
+          "fusion": 10,
+          "mini_reader": 5,
+          "mini_reader_three": 9,
+          "mini_reader_two": 9,
+          "minilm": 5,
+          "minilm6": 7,
+          "no_edits": 10,
+          "no_edits_three": 10,
+          "no_edits_two": 10,
+          "recall_five": 10,
+          "recall_hybrid": 9,
+          "recall_keyword": 9,
+          "rotation": 9,
+          "rotation_three": 9,
+          "rotation_two": 9,
+          "sparse_fields": 9,
+          "true": 8,
+          "true_three": 9,
+          "true_two": 9
+        },
+        "n": 10,
+        "skips": 9
+      },
+      "sphinx-doc/sphinx": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 1,
+          "flat": 1,
+          "flat_three": 0,
+          "flat_two": 0,
+          "full": 1,
+          "full_three": 0,
+          "full_two": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "no_edits": 1,
+          "no_edits_three": 0,
+          "no_edits_two": 0,
+          "recall_five": 1,
+          "recall_hybrid": 0,
+          "recall_keyword": 0,
+          "rotation": 1,
+          "rotation_three": 0,
+          "rotation_two": 0,
+          "sparse_fields": 0,
+          "true": 1,
+          "true_three": 0,
+          "true_two": 0
+        },
+        "n": 2,
+        "skips": 1
+      },
+      "sympy/sympy": {
+        "hits": {
+          "bm25_flat": 17,
+          "bm25_outcome": 17,
+          "bm25_symptom": 17,
+          "dense_flat": 14,
+          "flat": 20,
+          "flat_three": 21,
+          "flat_two": 21,
+          "full": 21,
+          "full_three": 21,
+          "full_two": 21,
+          "fusion": 20,
+          "mini_reader": 15,
+          "mini_reader_three": 20,
+          "mini_reader_two": 20,
+          "minilm": 15,
+          "minilm6": 17,
+          "no_edits": 21,
+          "no_edits_three": 21,
+          "no_edits_two": 21,
+          "recall_five": 19,
+          "recall_hybrid": 18,
+          "recall_keyword": 15,
+          "rotation": 20,
+          "rotation_three": 21,
+          "rotation_two": 21,
+          "sparse_fields": 19,
+          "true": 20,
+          "true_three": 21,
+          "true_two": 21
+        },
+        "n": 26,
+        "skips": 19
+      }
+    },
+    "repos": 8,
+    "results": {
+      "bm25_flat": {
+        "any": 38,
+        "calls": 0,
+        "first": 38,
+        "input": 0,
+        "last": 36,
+        "output": 0,
+        "worst_single": 36
+      },
+      "bm25_outcome": {
+        "any": 40,
+        "calls": 0,
+        "first": 40,
+        "input": 0,
+        "last": 38,
+        "output": 0,
+        "worst_single": 38
+      },
+      "bm25_symptom": {
+        "any": 36,
+        "calls": 0,
+        "first": 36,
+        "input": 0,
+        "last": 35,
+        "output": 0,
+        "worst_single": 35
+      },
+      "dense_flat": {
+        "any": 33,
+        "calls": 0,
+        "first": 33,
+        "input": 0,
+        "last": 32,
+        "output": 0,
+        "worst_single": 32
+      },
+      "flat": {
+        "any": 44,
+        "calls": 57,
+        "first": 44,
+        "input": 80371,
+        "last": 42,
+        "output": 114,
+        "worst_single": 42
+      },
+      "flat_three": {
+        "any": 45,
+        "calls": 14,
+        "first": 45,
+        "input": 18978,
+        "last": 43,
+        "output": 28,
+        "worst_single": 43
+      },
+      "flat_two": {
+        "any": 43,
+        "calls": 7,
+        "first": 43,
+        "input": 9065,
+        "last": 41,
+        "output": 14,
+        "worst_single": 41
+      },
+      "full": {
+        "any": 47,
+        "calls": 57,
+        "first": 47,
+        "input": 198433,
+        "last": 45,
+        "output": 114,
+        "worst_single": 45
+      },
+      "full_three": {
+        "any": 46,
+        "calls": 14,
+        "first": 46,
+        "input": 48073,
+        "last": 44,
+        "output": 28,
+        "worst_single": 44
+      },
+      "full_two": {
+        "any": 44,
+        "calls": 7,
+        "first": 44,
+        "input": 23849,
+        "last": 42,
+        "output": 14,
+        "worst_single": 42
+      },
+      "fusion": {
+        "any": 43,
+        "calls": 0,
+        "first": 43,
+        "input": 0,
+        "last": 41,
+        "output": 0,
+        "worst_single": 41
+      },
+      "mini_reader": {
+        "any": 28,
+        "calls": 0,
+        "first": 28,
+        "input": 0,
+        "last": 28,
+        "output": 0,
+        "worst_single": 28
+      },
+      "mini_reader_three": {
+        "any": 43,
+        "calls": 0,
+        "first": 43,
+        "input": 0,
+        "last": 41,
+        "output": 0,
+        "worst_single": 41
+      },
+      "mini_reader_two": {
+        "any": 42,
+        "calls": 0,
+        "first": 42,
+        "input": 0,
+        "last": 40,
+        "output": 0,
+        "worst_single": 40
+      },
+      "minilm": {
+        "any": 28,
+        "calls": 0,
+        "first": 28,
+        "input": 0,
+        "last": 28,
+        "output": 0,
+        "worst_single": 28
+      },
+      "minilm6": {
+        "any": 35,
+        "calls": 0,
+        "first": 35,
+        "input": 0,
+        "last": 33,
+        "output": 0,
+        "worst_single": 33
+      },
+      "no_edits": {
+        "any": 46,
+        "calls": 57,
+        "first": 46,
+        "input": 166176,
+        "last": 44,
+        "output": 114,
+        "worst_single": 44
+      },
+      "no_edits_three": {
+        "any": 45,
+        "calls": 14,
+        "first": 45,
+        "input": 39896,
+        "last": 43,
+        "output": 28,
+        "worst_single": 43
+      },
+      "no_edits_two": {
+        "any": 44,
+        "calls": 7,
+        "first": 44,
+        "input": 19761,
+        "last": 42,
+        "output": 14,
+        "worst_single": 42
+      },
+      "recall_five": {
+        "any": 45,
+        "calls": 57,
+        "first": 45,
+        "input": 205678,
+        "last": 43,
+        "output": 114,
+        "worst_single": 43
+      },
+      "recall_hybrid": {
+        "any": 40,
+        "calls": 0,
+        "first": 40,
+        "input": 0,
+        "last": 38,
+        "output": 0,
+        "worst_single": 38
+      },
+      "recall_keyword": {
+        "any": 36,
+        "calls": 0,
+        "first": 36,
+        "input": 0,
+        "last": 34,
+        "output": 0,
+        "worst_single": 34
+      },
+      "rotation": {
+        "any": 45,
+        "calls": 57,
+        "first": 45,
+        "input": 80371,
+        "last": 43,
+        "output": 114,
+        "worst_single": 43
+      },
+      "rotation_three": {
+        "any": 45,
+        "calls": 14,
+        "first": 45,
+        "input": 18978,
+        "last": 43,
+        "output": 28,
+        "worst_single": 43
+      },
+      "rotation_two": {
+        "any": 43,
+        "calls": 7,
+        "first": 43,
+        "input": 9065,
+        "last": 41,
+        "output": 14,
+        "worst_single": 41
+      },
+      "sparse_fields": {
+        "any": 41,
+        "calls": 0,
+        "first": 41,
+        "input": 0,
+        "last": 39,
+        "output": 0,
+        "worst_single": 39
+      },
+      "true": {
+        "any": 44,
+        "calls": 57,
+        "first": 44,
+        "input": 80371,
+        "last": 42,
+        "output": 114,
+        "worst_single": 42
+      },
+      "true_three": {
+        "any": 45,
+        "calls": 14,
+        "first": 45,
+        "input": 18978,
+        "last": 43,
+        "output": 28,
+        "worst_single": 43
+      },
+      "true_two": {
+        "any": 43,
+        "calls": 7,
+        "first": 43,
+        "input": 9065,
+        "last": 41,
+        "output": 14,
+        "worst_single": 41
+      }
+    },
+    "skip_three": 43,
+    "skip_two": 50
+  },
+  "REM_bounds": {
+    "66": {
+      "any": {
+        "feasible_p": [
+          0.015625,
+          0.4349928051221534
+        ],
+        "our": 73,
+        "paper": 66,
+        "win_loss_endpoints": [
+          [
+            33,
+            26
+          ],
+          [
+            7,
+            0
+          ]
+        ]
+      },
+      "first": {
+        "feasible_p": [
+          0.015625,
+          0.4349928051221534
+        ],
+        "our": 73,
+        "paper": 66,
+        "win_loss_endpoints": [
+          [
+            33,
+            26
+          ],
+          [
+            7,
+            0
+          ]
+        ]
+      },
+      "last": {
+        "feasible_p": [
+          0.0625,
+          0.6089207154048287
+        ],
+        "our": 71,
+        "paper": 66,
+        "win_loss_endpoints": [
+          [
+            33,
+            28
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      },
+      "worst_single": {
+        "feasible_p": [
+          0.0625,
+          0.6089207154048287
+        ],
+        "our": 71,
+        "paper": 66,
+        "win_loss_endpoints": [
+          [
+            33,
+            28
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      }
+    },
+    "68": {
+      "any": {
+        "feasible_p": [
+          0.0625,
+          0.5966417603730826
+        ],
+        "our": 73,
+        "paper": 68,
+        "win_loss_endpoints": [
+          [
+            31,
+            26
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      },
+      "first": {
+        "feasible_p": [
+          0.0625,
+          0.5966417603730826
+        ],
+        "our": 73,
+        "paper": 68,
+        "win_loss_endpoints": [
+          [
+            31,
+            26
+          ],
+          [
+            5,
+            0
+          ]
+        ]
+      },
+      "last": {
+        "feasible_p": [
+          0.25,
+          0.7948436539828609
+        ],
+        "our": 71,
+        "paper": 68,
+        "win_loss_endpoints": [
+          [
+            31,
+            28
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      },
+      "worst_single": {
+        "feasible_p": [
+          0.25,
+          0.7948436539828609
+        ],
+        "our": 71,
+        "paper": 68,
+        "win_loss_endpoints": [
+          [
+            31,
+            28
+          ],
+          [
+            3,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "extension": {
+    "in_five": 12,
+    "in_library": 13,
+    "multiple": 0,
+    "n": 258,
+    "paired": {
+      "mini_reader_three/fusion": {
+        "different_top1": 160,
+        "losses": 0,
+        "macro_pp": 0.053418803418803416,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 0.3875968992248062,
+        "repo_boot95_pp": [
+          0.0,
+          0.9554140127388535
+        ],
+        "ties": 257,
+        "wins": 1
+      },
+      "mini_reader_three/mini_reader": {
+        "different_top1": 30,
+        "losses": 0,
+        "macro_pp": 0.16025641025641024,
+        "mcnemar_exact": 0.25,
+        "micro_pp": 1.1627906976744187,
+        "repo_boot95_pp": [
+          0.0,
+          2.8662420382165608
+        ],
+        "ties": 255,
+        "wins": 3
+      }
+    },
+    "per_project": {
+      "BurntSushi/ripgrep": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 5,
+        "skips": 1
+      },
+      "PHP-CS-Fixer/PHP-CS-Fixer": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 5,
+        "skips": 0
+      },
+      "PHPOffice/PhpSpreadsheet": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 4,
+        "skips": 0
+      },
+      "apache/lucene": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 1,
+        "skips": 0
+      },
+      "astral-sh/ruff": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 5,
+        "skips": 0
+      },
+      "astropy/astropy": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 8,
+        "skips": 1
+      },
+      "axios/axios": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 6,
+        "skips": 2
+      },
+      "babel/babel": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 0
+      },
+      "briannesbitt/Carbon": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 1,
+        "skips": 0
+      },
+      "caddyserver/caddy": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 5,
+        "skips": 0
+      },
+      "django/django": {
+        "hits": {
+          "bm25_flat": 9,
+          "bm25_outcome": 9,
+          "bm25_symptom": 8,
+          "dense_flat": 4,
+          "fusion": 8,
+          "mini_reader": 6,
+          "mini_reader_three": 9,
+          "mini_reader_two": 8,
+          "minilm": 6,
+          "minilm6": 8,
+          "sparse_fields": 8
+        },
+        "n": 48,
+        "skips": 25
+      },
+      "fluent/fluentd": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 2,
+        "skips": 0
+      },
+      "gin-gonic/gin": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 6,
+        "skips": 0
+      },
+      "gohugoio/hugo": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 0
+      },
+      "google/gson": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 0
+      },
+      "hashicorp/terraform": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 2,
+        "skips": 0
+      },
+      "jqlang/jq": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 11,
+        "skips": 1
+      },
+      "laravel/framework": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 0
+      },
+      "matplotlib/matplotlib": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 11,
+        "skips": 1
+      },
+      "mwaskom/seaborn": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 1,
+        "skips": 0
+      },
+      "nushell/nushell": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 0
+      },
+      "preactjs/preact": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 0
+      },
+      "projectlombok/lombok": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 5,
+        "skips": 0
+      },
+      "prometheus/prometheus": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 5,
+        "skips": 1
+      },
+      "psf/requests": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 6,
+        "skips": 1
+      },
+      "pydata/xarray": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 10,
+        "skips": 5
+      },
+      "pylint-dev/pylint": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 4,
+        "skips": 2
+      },
+      "pytest-dev/pytest": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 6,
+        "skips": 1
+      },
+      "redis/redis": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 6,
+        "skips": 3
+      },
+      "rubocop/rubocop": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 4,
+        "skips": 0
+      },
+      "scikit-learn/scikit-learn": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 4,
+        "skips": 0
+      },
+      "sharkdp/bat": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 9,
+        "skips": 0
+      },
+      "sphinx-doc/sphinx": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 21,
+        "skips": 6
+      },
+      "sympy/sympy": {
+        "hits": {
+          "bm25_flat": 3,
+          "bm25_outcome": 3,
+          "bm25_symptom": 3,
+          "dense_flat": 3,
+          "fusion": 3,
+          "mini_reader": 3,
+          "mini_reader_three": 3,
+          "mini_reader_two": 3,
+          "minilm": 3,
+          "minilm6": 3,
+          "sparse_fields": 3
+        },
+        "n": 28,
+        "skips": 8
+      },
+      "tokio-rs/axum": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 1,
+        "skips": 0
+      },
+      "tokio-rs/tokio": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 1
+      },
+      "uutils/coreutils": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 2,
+        "skips": 1
+      },
+      "valkey-io/valkey": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 3,
+        "skips": 1
+      },
+      "vuejs/core": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "sparse_fields": 0
+        },
+        "n": 2,
+        "skips": 0
+      }
+    },
+    "repos": 39,
+    "results": {
+      "bm25_flat": {
+        "any": 12,
+        "calls": 0,
+        "first": 12,
+        "input": 0,
+        "last": 12,
+        "output": 0,
+        "worst_single": 12
+      },
+      "bm25_outcome": {
+        "any": 12,
+        "calls": 0,
+        "first": 12,
+        "input": 0,
+        "last": 12,
+        "output": 0,
+        "worst_single": 12
+      },
+      "bm25_symptom": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "dense_flat": {
+        "any": 7,
+        "calls": 0,
+        "first": 7,
+        "input": 0,
+        "last": 7,
+        "output": 0,
+        "worst_single": 7
+      },
+      "fusion": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "mini_reader": {
+        "any": 9,
+        "calls": 0,
+        "first": 9,
+        "input": 0,
+        "last": 9,
+        "output": 0,
+        "worst_single": 9
+      },
+      "mini_reader_three": {
+        "any": 12,
+        "calls": 0,
+        "first": 12,
+        "input": 0,
+        "last": 12,
+        "output": 0,
+        "worst_single": 12
+      },
+      "mini_reader_two": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "minilm": {
+        "any": 9,
+        "calls": 0,
+        "first": 9,
+        "input": 0,
+        "last": 9,
+        "output": 0,
+        "worst_single": 9
+      },
+      "minilm6": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "sparse_fields": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      }
+    },
+    "skip_three": 61,
+    "skip_two": 130
+  },
+  "extension_available": {
+    "in_five": 12,
+    "in_library": 13,
+    "multiple": 0,
+    "n": 13,
+    "paired": {
+      "mini_reader_three/fusion": {
+        "different_top1": 2,
+        "losses": 0,
+        "macro_pp": 5.555555555555555,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 7.6923076923076925,
+        "repo_boot95_pp": [
+          0.0,
+          11.11111111111111
+        ],
+        "ties": 12,
+        "wins": 1
+      },
+      "mini_reader_three/mini_reader": {
+        "different_top1": 3,
+        "losses": 0,
+        "macro_pp": 16.666666666666664,
+        "mcnemar_exact": 0.25,
+        "micro_pp": 23.076923076923077,
+        "repo_boot95_pp": [
+          0.0,
+          33.33333333333333
+        ],
+        "ties": 10,
+        "wins": 3
+      }
+    },
+    "per_project": {
+      "django/django": {
+        "hits": {
+          "bm25_flat": 9,
+          "bm25_outcome": 9,
+          "bm25_symptom": 8,
+          "dense_flat": 4,
+          "fusion": 8,
+          "mini_reader": 6,
+          "mini_reader_three": 9,
+          "mini_reader_two": 8,
+          "minilm": 6,
+          "minilm6": 8,
+          "sparse_fields": 8
+        },
+        "n": 9,
+        "skips": 8
+      },
+      "sympy/sympy": {
+        "hits": {
+          "bm25_flat": 3,
+          "bm25_outcome": 3,
+          "bm25_symptom": 3,
+          "dense_flat": 3,
+          "fusion": 3,
+          "mini_reader": 3,
+          "mini_reader_three": 3,
+          "mini_reader_two": 3,
+          "minilm": 3,
+          "minilm6": 3,
+          "sparse_fields": 3
+        },
+        "n": 4,
+        "skips": 3
+      }
+    },
+    "repos": 2,
+    "results": {
+      "bm25_flat": {
+        "any": 12,
+        "calls": 0,
+        "first": 12,
+        "input": 0,
+        "last": 12,
+        "output": 0,
+        "worst_single": 12
+      },
+      "bm25_outcome": {
+        "any": 12,
+        "calls": 0,
+        "first": 12,
+        "input": 0,
+        "last": 12,
+        "output": 0,
+        "worst_single": 12
+      },
+      "bm25_symptom": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "dense_flat": {
+        "any": 7,
+        "calls": 0,
+        "first": 7,
+        "input": 0,
+        "last": 7,
+        "output": 0,
+        "worst_single": 7
+      },
+      "fusion": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "mini_reader": {
+        "any": 9,
+        "calls": 0,
+        "first": 9,
+        "input": 0,
+        "last": 9,
+        "output": 0,
+        "worst_single": 9
+      },
+      "mini_reader_three": {
+        "any": 12,
+        "calls": 0,
+        "first": 12,
+        "input": 0,
+        "last": 12,
+        "output": 0,
+        "worst_single": 12
+      },
+      "mini_reader_two": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "minilm": {
+        "any": 9,
+        "calls": 0,
+        "first": 9,
+        "input": 0,
+        "last": 9,
+        "output": 0,
+        "worst_single": 9
+      },
+      "minilm6": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      },
+      "sparse_fields": {
+        "any": 11,
+        "calls": 0,
+        "first": 11,
+        "input": 0,
+        "last": 11,
+        "output": 0,
+        "worst_single": 11
+      }
+    },
+    "skip_three": 11,
+    "skip_two": 12
+  },
+  "lite": {
+    "in_five": 85,
+    "in_library": 99,
+    "multiple": 3,
+    "n": 99,
+    "paired": {
+      "full_three/full": {
+        "different_top1": 9,
+        "losses": 3,
+        "macro_pp": -15.046296296296296,
+        "mcnemar_exact": 0.625,
+        "micro_pp": -2.0202020202020203,
+        "repo_boot95_pp": [
+          -12.903225806451612,
+          1.183431952662722
+        ],
+        "ties": 95,
+        "wins": 1
+      },
+      "full_three/full_two": {
+        "different_top1": 9,
+        "losses": 0,
+        "macro_pp": 2.083333333333333,
+        "mcnemar_exact": 0.0625,
+        "micro_pp": 5.05050505050505,
+        "repo_boot95_pp": [
+          0.0,
+          9.523809523809524
+        ],
+        "ties": 94,
+        "wins": 5
+      },
+      "full_three/fusion": {
+        "different_top1": 15,
+        "losses": 0,
+        "macro_pp": 6.801994301994302,
+        "mcnemar_exact": 0.0078125,
+        "micro_pp": 8.080808080808081,
+        "repo_boot95_pp": [
+          2.4096385542168677,
+          12.871287128712872
+        ],
+        "ties": 91,
+        "wins": 8
+      },
+      "full_three/no_edits": {
+        "different_top1": 13,
+        "losses": 4,
+        "macro_pp": -14.351851851851851,
+        "mcnemar_exact": 1.0,
+        "micro_pp": -1.0101010101010102,
+        "repo_boot95_pp": [
+          -12.195121951219512,
+          2.5906735751295336
+        ],
+        "ties": 92,
+        "wins": 3
+      },
+      "full_three/recall_five": {
+        "different_top1": 24,
+        "losses": 6,
+        "macro_pp": -13.71082621082621,
+        "mcnemar_exact": 0.60723876953125,
+        "micro_pp": 3.0303030303030303,
+        "repo_boot95_pp": [
+          -12.727272727272727,
+          7.801418439716312
+        ],
+        "ties": 84,
+        "wins": 9
+      },
+      "full_three/recall_hybrid": {
+        "different_top1": 30,
+        "losses": 3,
+        "macro_pp": 15.220797720797721,
+        "mcnemar_exact": 0.0014896392822265625,
+        "micro_pp": 15.151515151515152,
+        "repo_boot95_pp": [
+          8.571428571428571,
+          22.058823529411764
+        ],
+        "ties": 78,
+        "wins": 18
+      },
+      "mini_reader_three/fusion": {
+        "different_top1": 19,
+        "losses": 4,
+        "macro_pp": 3.7962962962962963,
+        "mcnemar_exact": 1.0,
+        "micro_pp": 0.0,
+        "repo_boot95_pp": [
+          -3.508771929824561,
+          6.976744186046512
+        ],
+        "ties": 91,
+        "wins": 4
+      },
+      "mini_reader_three/mini_reader": {
+        "different_top1": 31,
+        "losses": 0,
+        "macro_pp": 33.40811965811966,
+        "mcnemar_exact": 5.960464477539063e-08,
+        "micro_pp": 25.252525252525253,
+        "repo_boot95_pp": [
+          19.101123595505616,
+          36.53846153846153
+        ],
+        "ties": 74,
+        "wins": 25
+      }
+    },
+    "per_project": {
+      "astropy/astropy": {
+        "hits": {
+          "bm25_flat": 2,
+          "bm25_outcome": 2,
+          "bm25_symptom": 2,
+          "dense_flat": 2,
+          "flat": 2,
+          "flat_three": 2,
+          "flat_two": 2,
+          "full": 2,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 2,
+          "mini_reader": 2,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 2,
+          "minilm6": 2,
+          "no_edits": 2,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 2,
+          "recall_hybrid": 2,
+          "recall_keyword": 2,
+          "rotation": 2,
+          "rotation_three": 2,
+          "rotation_two": 2,
+          "sparse_fields": 2,
+          "true": 2,
+          "true_three": 2,
+          "true_two": 2
+        },
+        "n": 2,
+        "skips": 2
+      },
+      "django/django": {
+        "hits": {
+          "bm25_flat": 19,
+          "bm25_outcome": 20,
+          "bm25_symptom": 15,
+          "dense_flat": 14,
+          "full": 22,
+          "full_three": 23,
+          "full_two": 20,
+          "fusion": 19,
+          "mini_reader": 9,
+          "mini_reader_three": 18,
+          "mini_reader_two": 18,
+          "minilm": 9,
+          "minilm6": 14,
+          "no_edits": 22,
+          "no_edits_three": 23,
+          "no_edits_two": 20,
+          "recall_five": 19,
+          "recall_hybrid": 16,
+          "recall_keyword": 14,
+          "sparse_fields": 19
+        },
+        "n": 36,
+        "skips": 21
+      },
+      "matplotlib/matplotlib": {
+        "hits": {
+          "bm25_flat": 6,
+          "bm25_outcome": 7,
+          "bm25_symptom": 5,
+          "dense_flat": 6,
+          "flat": 8,
+          "flat_three": 8,
+          "flat_two": 6,
+          "full": 8,
+          "full_three": 8,
+          "full_two": 6,
+          "fusion": 6,
+          "mini_reader": 5,
+          "mini_reader_three": 7,
+          "mini_reader_two": 6,
+          "minilm": 5,
+          "minilm6": 6,
+          "no_edits": 7,
+          "no_edits_three": 7,
+          "no_edits_two": 6,
+          "recall_five": 8,
+          "recall_hybrid": 7,
+          "recall_keyword": 6,
+          "rotation": 8,
+          "rotation_three": 8,
+          "rotation_two": 6,
+          "sparse_fields": 6,
+          "true": 8,
+          "true_three": 8,
+          "true_two": 6
+        },
+        "n": 12,
+        "skips": 7
+      },
+      "mwaskom/seaborn": {
+        "hits": {
+          "bm25_flat": 2,
+          "bm25_outcome": 2,
+          "bm25_symptom": 2,
+          "dense_flat": 1,
+          "flat": 2,
+          "flat_three": 2,
+          "flat_two": 2,
+          "full": 2,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 2,
+          "mini_reader": 0,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 0,
+          "minilm6": 0,
+          "no_edits": 2,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 2,
+          "recall_hybrid": 2,
+          "recall_keyword": 2,
+          "rotation": 2,
+          "rotation_three": 2,
+          "rotation_two": 2,
+          "sparse_fields": 2,
+          "true": 2,
+          "true_three": 2,
+          "true_two": 2
+        },
+        "n": 2,
+        "skips": 2
+      },
+      "pallets/flask": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 1,
+          "full": 1,
+          "full_three": 0,
+          "full_two": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 1,
+          "no_edits": 1,
+          "no_edits_three": 0,
+          "no_edits_two": 0,
+          "recall_five": 1,
+          "recall_hybrid": 0,
+          "recall_keyword": 0,
+          "sparse_fields": 0
+        },
+        "n": 1,
+        "skips": 1
+      },
+      "psf/requests": {
+        "hits": {
+          "bm25_flat": 1,
+          "bm25_outcome": 1,
+          "bm25_symptom": 2,
+          "dense_flat": 2,
+          "full": 3,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 2,
+          "mini_reader": 2,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 2,
+          "minilm6": 3,
+          "no_edits": 3,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 3,
+          "recall_hybrid": 1,
+          "recall_keyword": 1,
+          "sparse_fields": 2
+        },
+        "n": 3,
+        "skips": 2
+      },
+      "pydata/xarray": {
+        "hits": {
+          "bm25_flat": 2,
+          "bm25_outcome": 2,
+          "bm25_symptom": 2,
+          "dense_flat": 2,
+          "flat": 2,
+          "flat_three": 2,
+          "flat_two": 2,
+          "full": 2,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 2,
+          "mini_reader": 1,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 1,
+          "minilm6": 2,
+          "no_edits": 2,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 2,
+          "recall_hybrid": 2,
+          "recall_keyword": 2,
+          "rotation": 2,
+          "rotation_three": 2,
+          "rotation_two": 2,
+          "sparse_fields": 2,
+          "true": 2,
+          "true_three": 2,
+          "true_two": 2
+        },
+        "n": 2,
+        "skips": 2
+      },
+      "pylint-dev/pylint": {
+        "hits": {
+          "bm25_flat": 1,
+          "bm25_outcome": 1,
+          "bm25_symptom": 1,
+          "dense_flat": 1,
+          "full": 1,
+          "full_three": 1,
+          "full_two": 1,
+          "fusion": 1,
+          "mini_reader": 0,
+          "mini_reader_three": 1,
+          "mini_reader_two": 1,
+          "minilm": 0,
+          "minilm6": 1,
+          "no_edits": 1,
+          "no_edits_three": 1,
+          "no_edits_two": 1,
+          "recall_five": 1,
+          "recall_hybrid": 1,
+          "recall_keyword": 1,
+          "sparse_fields": 1
+        },
+        "n": 1,
+        "skips": 1
+      },
+      "pytest-dev/pytest": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 2,
+          "bm25_symptom": 0,
+          "dense_flat": 0,
+          "full": 2,
+          "full_three": 2,
+          "full_two": 2,
+          "fusion": 1,
+          "mini_reader": 1,
+          "mini_reader_three": 2,
+          "mini_reader_two": 2,
+          "minilm": 1,
+          "minilm6": 2,
+          "no_edits": 2,
+          "no_edits_three": 2,
+          "no_edits_two": 2,
+          "recall_five": 2,
+          "recall_hybrid": 0,
+          "recall_keyword": 1,
+          "sparse_fields": 2
+        },
+        "n": 2,
+        "skips": 1
+      },
+      "scikit-learn/scikit-learn": {
+        "hits": {
+          "bm25_flat": 9,
+          "bm25_outcome": 9,
+          "bm25_symptom": 8,
+          "dense_flat": 7,
+          "flat": 8,
+          "flat_three": 9,
+          "flat_two": 9,
+          "full": 10,
+          "full_three": 10,
+          "full_two": 10,
+          "fusion": 10,
+          "mini_reader": 5,
+          "mini_reader_three": 9,
+          "mini_reader_two": 9,
+          "minilm": 5,
+          "minilm6": 7,
+          "no_edits": 10,
+          "no_edits_three": 10,
+          "no_edits_two": 10,
+          "recall_five": 10,
+          "recall_hybrid": 9,
+          "recall_keyword": 9,
+          "rotation": 9,
+          "rotation_three": 9,
+          "rotation_two": 9,
+          "sparse_fields": 9,
+          "true": 8,
+          "true_three": 9,
+          "true_two": 9
+        },
+        "n": 10,
+        "skips": 9
+      },
+      "sphinx-doc/sphinx": {
+        "hits": {
+          "bm25_flat": 0,
+          "bm25_outcome": 0,
+          "bm25_symptom": 0,
+          "dense_flat": 1,
+          "flat": 1,
+          "flat_three": 0,
+          "flat_two": 0,
+          "full": 1,
+          "full_three": 0,
+          "full_two": 0,
+          "fusion": 0,
+          "mini_reader": 0,
+          "mini_reader_three": 0,
+          "mini_reader_two": 0,
+          "minilm": 0,
+          "minilm6": 0,
+          "no_edits": 1,
+          "no_edits_three": 0,
+          "no_edits_two": 0,
+          "recall_five": 1,
+          "recall_hybrid": 0,
+          "recall_keyword": 0,
+          "rotation": 1,
+          "rotation_three": 0,
+          "rotation_two": 0,
+          "sparse_fields": 0,
+          "true": 1,
+          "true_three": 0,
+          "true_two": 0
+        },
+        "n": 2,
+        "skips": 1
+      },
+      "sympy/sympy": {
+        "hits": {
+          "bm25_flat": 17,
+          "bm25_outcome": 17,
+          "bm25_symptom": 17,
+          "dense_flat": 14,
+          "flat": 20,
+          "flat_three": 21,
+          "flat_two": 21,
+          "full": 21,
+          "full_three": 21,
+          "full_two": 21,
+          "fusion": 20,
+          "mini_reader": 15,
+          "mini_reader_three": 20,
+          "mini_reader_two": 20,
+          "minilm": 15,
+          "minilm6": 17,
+          "no_edits": 21,
+          "no_edits_three": 21,
+          "no_edits_two": 21,
+          "recall_five": 19,
+          "recall_hybrid": 18,
+          "recall_keyword": 15,
+          "rotation": 20,
+          "rotation_three": 21,
+          "rotation_two": 21,
+          "sparse_fields": 19,
+          "true": 20,
+          "true_three": 21,
+          "true_two": 21
+        },
+        "n": 26,
+        "skips": 19
+      }
+    },
+    "repos": 12,
+    "results": {
+      "bm25_flat": {
+        "any": 59,
+        "calls": 0,
+        "first": 59,
+        "input": 0,
+        "last": 57,
+        "output": 0,
+        "worst_single": 57
+      },
+      "bm25_outcome": {
+        "any": 63,
+        "calls": 0,
+        "first": 63,
+        "input": 0,
+        "last": 61,
+        "output": 0,
+        "worst_single": 61
+      },
+      "bm25_symptom": {
+        "any": 54,
+        "calls": 0,
+        "first": 54,
+        "input": 0,
+        "last": 53,
+        "output": 0,
+        "worst_single": 53
+      },
+      "dense_flat": {
+        "any": 51,
+        "calls": 0,
+        "first": 51,
+        "input": 0,
+        "last": 50,
+        "output": 0,
+        "worst_single": 50
+      },
+      "full": {
+        "any": 75,
+        "calls": 99,
+        "first": 75,
+        "input": 336189,
+        "last": 73,
+        "output": 198,
+        "worst_single": 73
+      },
+      "full_three": {
+        "any": 73,
+        "calls": 31,
+        "first": 73,
+        "input": 104401,
+        "last": 71,
+        "output": 62,
+        "worst_single": 71
+      },
+      "full_two": {
+        "any": 68,
+        "calls": 12,
+        "first": 68,
+        "input": 40932,
+        "last": 66,
+        "output": 24,
+        "worst_single": 66
+      },
+      "fusion": {
+        "any": 65,
+        "calls": 0,
+        "first": 65,
+        "input": 0,
+        "last": 63,
+        "output": 0,
+        "worst_single": 63
+      },
+      "mini_reader": {
+        "any": 40,
+        "calls": 0,
+        "first": 40,
+        "input": 0,
+        "last": 40,
+        "output": 0,
+        "worst_single": 40
+      },
+      "mini_reader_three": {
+        "any": 65,
+        "calls": 0,
+        "first": 65,
+        "input": 0,
+        "last": 63,
+        "output": 0,
+        "worst_single": 63
+      },
+      "mini_reader_two": {
+        "any": 64,
+        "calls": 0,
+        "first": 64,
+        "input": 0,
+        "last": 62,
+        "output": 0,
+        "worst_single": 62
+      },
+      "minilm": {
+        "any": 40,
+        "calls": 0,
+        "first": 40,
+        "input": 0,
+        "last": 40,
+        "output": 0,
+        "worst_single": 40
+      },
+      "minilm6": {
+        "any": 55,
+        "calls": 0,
+        "first": 55,
+        "input": 0,
+        "last": 53,
+        "output": 0,
+        "worst_single": 53
+      },
+      "no_edits": {
+        "any": 74,
+        "calls": 99,
+        "first": 74,
+        "input": 282864,
+        "last": 72,
+        "output": 198,
+        "worst_single": 72
+      },
+      "no_edits_three": {
+        "any": 72,
+        "calls": 31,
+        "first": 72,
+        "input": 87743,
+        "last": 70,
+        "output": 62,
+        "worst_single": 70
+      },
+      "no_edits_two": {
+        "any": 68,
+        "calls": 12,
+        "first": 68,
+        "input": 34361,
+        "last": 66,
+        "output": 24,
+        "worst_single": 66
+      },
+      "recall_five": {
+        "any": 70,
+        "calls": 99,
+        "first": 70,
+        "input": 341876,
+        "last": 68,
+        "output": 198,
+        "worst_single": 68
+      },
+      "recall_hybrid": {
+        "any": 58,
+        "calls": 0,
+        "first": 58,
+        "input": 0,
+        "last": 56,
+        "output": 0,
+        "worst_single": 56
+      },
+      "recall_keyword": {
+        "any": 53,
+        "calls": 0,
+        "first": 53,
+        "input": 0,
+        "last": 51,
+        "output": 0,
+        "worst_single": 51
+      },
+      "sparse_fields": {
+        "any": 64,
+        "calls": 0,
+        "first": 64,
+        "input": 0,
+        "last": 62,
+        "output": 0,
+        "worst_single": 62
+      }
+    },
+    "skip_three": 68,
+    "skip_two": 87
+  },
+  "null": {
+    "three": {
+      "expected_hits": 68.68589743589743,
+      "expected_input_tokens": 103341.7217948718,
+      "outcomes": {
+        "64": "642465128428200000",
+        "65": "5640543259118460000",
+        "66": "22242049713082980000",
+        "67": "51876923973237000000",
+        "68": "79295125459255200000",
+        "69": "83142275839298280000",
+        "70": "60828670676810520000",
+        "71": "30964813517103840000",
+        "72": "10723648747921560000",
+        "73": "2402599615417980000",
+        "74": "313191039060900000",
+        "75": "17994560383800000"
+      },
+      "prob_hit_at_least_observed": 0.007853666714796394,
+      "schedules": "348090301529118720000"
+    },
+    "two": {
+      "expected_hits": 66.78205128205128,
+      "expected_input_tokens": 41212.33076923077,
+      "outcomes": {
+        "64": "4652325000",
+        "65": "46470550000",
+        "66": "117987395000",
+        "67": "131652460000",
+        "68": "75361833000",
+        "69": "23638281000",
+        "70": "4140222000",
+        "71": "400208000",
+        "72": "20182000",
+        "73": "461000",
+        "74": "3000"
+      },
+      "prob_hit_at_least_observed": 0.2561342153588143,
+      "schedules": "404323920000"
+    }
+  },
+  "r59_coverage": {
+    "candidate": 33,
+    "graph": 57,
+    "intersection": 0,
+    "union": 90
+  }
+}

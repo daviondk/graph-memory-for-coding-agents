@@ -1,0 +1,246 @@
+{
+  "file_sha256": "2d9d607d76956624a29878414d02cd1ab29d5db2d5a4b689f2cf6d0c62712be8",
+  "captions_sha256": "14cc9c8eb86e6368bbe5fcb1dcebd79a9249bace6483177b726570e10f3df285",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 816,
+        "pix_fmt": "yuv420p",
+        "nb_frames": "2742"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "22050",
+        "channels": 1,
+        "nb_frames": "2363"
+      }
+    ],
+    "format": {
+      "duration": "109.680000",
+      "size": "2840144"
+    }
+  },
+  "decoded_full_file": true,
+  "verified_scenes": [
+    {
+      "id": "first",
+      "rgb_mean_absolute_error": 2.643,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2987.3
+    },
+    {
+      "id": "last",
+      "rgb_mean_absolute_error": 2.543,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3097.7
+    },
+    {
+      "id": "two",
+      "rgb_mean_absolute_error": 2.659,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3255.0
+    },
+    {
+      "id": "answer",
+      "rgb_mean_absolute_error": 2.37,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3002.4
+    },
+    {
+      "id": "quiet",
+      "rgb_mean_absolute_error": 2.55,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3227.7
+    },
+    {
+      "id": "fallback",
+      "rgb_mean_absolute_error": 2.43,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3136.2
+    },
+    {
+      "id": "small",
+      "rgb_mean_absolute_error": 2.571,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3244.4
+    },
+    {
+      "id": "large",
+      "rgb_mean_absolute_error": 2.481,
+      "decoded_to_speech_pcm_correlation": 0.99999,
+      "decoded_audio_rms_s16": 3030.7
+    },
+    {
+      "id": "limit",
+      "rgb_mean_absolute_error": 2.566,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3002.1
+    }
+  ],
+  "inputs": {
+    "graph_memory_round60/demo/index.html": "c4e60cb5ffdad9dfa04b462f4757970be314b28296e18422866855f8871ab254",
+    "graph_memory_round60/walkthrough/scenes.json": "2d7fdc5cf4e580d6c4fa8f12f8f9f4a37142aa20c659c67a061fdcf82ca6bab8",
+    "graph_memory_round59/walkthrough/record_demo.py": "f7996981225bc195c1e968544807ae937b4bd663a48cb13c321b49c0252be9c5",
+    "graph_memory_round58/walkthrough/record_demo.py": "b6eb7a5f887ae5344377ad11c5db0004a88ed5953c4ed29d2bd5b3e8a5228ea4",
+    "graph_memory_round55/demo_video/record.py": "256eab83eb03db1a0488f8dd498b0e19a83cd7b58ef3447781b76c1a17971db7",
+    "graph_memory_round55/demo_video/capture.py": "5272571c3f57cb832cd3bf5280a93a66af74a46c1868a15b8782bc314b22419e",
+    "graph_memory_round55/demo_video/speak.ps1": "f910ffff395359605b1f122951d2372d430111396f024f42a488c974fb0f1349"
+  },
+  "ui": {
+    "actions": [
+      [
+        "#first",
+        null
+      ],
+      [
+        "#last",
+        null
+      ],
+      [
+        "#two",
+        null
+      ],
+      [
+        "#ask",
+        null
+      ],
+      [
+        "#rule",
+        "quiet"
+      ],
+      [
+        "#two",
+        null
+      ],
+      [
+        "#ask",
+        null
+      ],
+      [
+        "#goData",
+        null
+      ],
+      [
+        "#large",
+        null
+      ],
+      [
+        "#goLimits",
+        null
+      ],
+      [
+        "#span",
+        "4"
+      ]
+    ],
+    "receipts": {
+      "first": "Event 13 evicted from hot index. A copy remains available.\nCheckpoint opened. Both tiers hold each source event.",
+      "last": "R = {45, 88, 131, 173, 207, 239, 281} \u00b7 E = {13}",
+      "two": "R = {88, 131, 173, 207, 239, 281} \u00b7 E = {13, 45}",
+      "answer": "0 posting requests \u00b7 2 fresh bodies",
+      "quiet": "Fallback \u00b7 |R \u222a E| = 6 of 8. Read the authoritative posting to restore exactness.",
+      "fallback": "1 posting request \u00b7 2 fresh bodies",
+      "small": "Compressed full posting\t11,531\t6,245\t5,286\t412\t0\nCount + XOR\t10,465\t6,359\t4,106\t386\t0\nExceptions \u00b7 no notifications\t16,991\t12,949\t4,042\t459\t0\nExceptions \u00b7 maintained\t9,213\t5,085\t4,128\t374\t14",
+      "large": "Compressed full posting\t4,322\t1,822\t2,500\t281\t0\nCount + XOR\t5,678\t3,178\t2,500\t294\t0\nExceptions \u00b7 no notifications\t13,951\t11,451\t2,500\t383\t0\nExceptions \u00b7 maintained\t4,322\t1,822\t2,500\t281\t15",
+      "limit": "At 1 KiB, joint LRU, exact postings and XOR each transferred 5,468 B, including maintained exceptions (5,468 B). At 256 B the exact / XOR / maintained totals are 7,798 / 7,650 / 7,636 B."
+    },
+    "scores": [
+      "test_reader.py5",
+      "store.py4",
+      "test_cache.py4",
+      "schema.py4"
+    ],
+    "external_requests": [],
+    "errors": []
+  },
+  "scenes": [
+    {
+      "id": "first",
+      "chapter": "Two copies of the same event",
+      "text": "A coding agent is looking for files that changed with reader dot py. Eight past commits contain it. Evict one copy of event thirteen. The second copy still provides its address.",
+      "start_frame": 0,
+      "frames": 339,
+      "steady_frames": 336,
+      "render_sha256": "37e2d04ea4118e9cfba54a551c69c6b4a6583126ff36051d9209fa9f7a582057"
+    },
+    {
+      "id": "last",
+      "chapter": "When the last copy leaves",
+      "text": "Evict the last copy. The reader records thirteen as an exception. Seven resident addresses and one exception now identify all eight commits.",
+      "start_frame": 339,
+      "frames": 268,
+      "steady_frames": 265,
+      "render_sha256": "57a584d147d53a4d6adf22d05e53b7e9abec5be1523db20111acb1cdfbcd2853"
+    },
+    {
+      "id": "two",
+      "chapter": "Recover more than one missing address",
+      "text": "Drop event forty-five as well. The exception list now contains two addresses. Its union with the six remaining events still covers the complete history.",
+      "start_frame": 607,
+      "frames": 279,
+      "steady_frames": 276,
+      "render_sha256": "88d5c17048445cc043303790e04932f728dc27f20b8e81c49f25ee3ab5fc454e"
+    },
+    {
+      "id": "answer",
+      "chapter": "Read the two missing bodies",
+      "text": "Query the file. The reader fetches just the two missing commit bodies. It skips the posting request. The leading test file changed alongside the anchor five times.",
+      "start_frame": 886,
+      "frames": 322,
+      "steady_frames": 319,
+      "render_sha256": "a6a239f208e565d1ff7be86595887429e70163a7583dfc1203843168dca8e19d"
+    },
+    {
+      "id": "quiet",
+      "chapter": "Repeat with notifications off",
+      "text": "Switch off notifications and lose the same two events. Six addresses remain, and the reader can no longer identify the missing pair from its stored evidence.",
+      "start_frame": 1208,
+      "frames": 277,
+      "steady_frames": 274,
+      "render_sha256": "22c8a656965f32a659d6dc67cd7d490a0a0c352def9cd2678d30808ce0d46cf0"
+    },
+    {
+      "id": "fallback",
+      "chapter": "Verify the fallback ranking",
+      "text": "Ask again. The reader requests the complete posting and fetches two bodies. The four ranked files and their scores exactly match the previous answer.",
+      "start_frame": 1485,
+      "frames": 276,
+      "steady_frames": 273,
+      "render_sha256": "342048e0611a4110d5af15a9cd606a1a3b5f50052dfe78d49234d42265b29df1"
+    },
+    {
+      "id": "small",
+      "chapter": "Read the independent repository trials",
+      "text": "On six new repositories, four hundred eighty-five queries return identical rankings. At one kibibyte, maintaining exceptions transfers nine thousand two hundred thirteen bytes of SQLite payload.",
+      "start_frame": 1761,
+      "frames": 357,
+      "steady_frames": 354,
+      "render_sha256": "69e5a0222848b50d995b935250e2eca5857814794dc7cca627c16d57bceb09b7"
+    },
+    {
+      "id": "large",
+      "chapter": "Increase the budget",
+      "text": "At four kibibytes, the compressed complete list also fits often enough. It ties maintained exceptions at four thousand three hundred twenty-two bytes.",
+      "start_frame": 2118,
+      "frames": 267,
+      "steady_frames": 264,
+      "render_sha256": "a09b82f563f600948ece32626bd01c5493c39962aca7d061c390b82fe62cc6bd"
+    },
+    {
+      "id": "limit",
+      "chapter": "Check execution time and editor traces",
+      "text": "Fewer bytes can cost processor time. The append-efficient full list was faster here. On short editor traces the policies also tied at one kibibyte. Coding-task success was not measured.",
+      "start_frame": 2385,
+      "frames": 357,
+      "steady_frames": 354,
+      "render_sha256": "1d0e3a024f9e9a78c9d6de2fe647a94152e264cff32a11cc39f5ce65b7697858"
+    }
+  ],
+  "voice": "Microsoft Zira Desktop"
+}
