@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Graph memory for coding agents</title>
+<style>*{box-sizing:border-box}body{max-width:780px;margin:7vh auto;padding:0 22px;background:#f5f5f0;color:#243332;font:17px/1.55 "Source Sans 3","Segoe UI",sans-serif}h1{font:600 clamp(34px,5vw,50px)/1.12 Georgia,serif}h2{font-size:21px}a{color:#13584f}section{padding:8px 0;border-top:1px solid #b7c8c0}p{max-width:70ch}code{font-size:.9em}</style>
+<main><h1>Graph memory for coding agents</h1>
+<section><h2><a href="restart.html">Choose what survives a restart</a></h2><p>Change the checkpoint budget and event selector. Inspect snapshot writes, reloads and later reads, or replay the exact text available to a coding agent in an earlier editor window.</p></section>
+<section><h2><a href="one-file.html">Follow an event through the graph</a></h2><p>Open an earlier NetworkX commit to see which file kept the evidence and how it changes the next eight recommendations.</p></section>
+<section><h2><a href="two-files/demo.html">Query two known files</a></h2><p>Compare three predictions for Dask and Xarray. Change the underlying history to see why identical pair counts can hide different third files.</p></section>
+<section><h2>Paper and walkthrough</h2><p><a href="paper.pdf">Four-page paper</a> · <a href="walkthrough.mp4">English walkthrough</a> · <a href="captions.srt">Captions</a></p></section>
+<section><h2>Run a live query</h2><p>From the extracted <code>two-files</code> folder run <code>python -B demo.py open-snapshot</code> and open the local address printed by the server.</p></section></main></html>

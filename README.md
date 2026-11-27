@@ -2,7 +2,9 @@
 
 Исследование того, какие наблюдения из работы с кодом стоит сохранять, как обновлять их после правок и когда показывать агенту.
 
-**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round57/manuscript/paper.pdf) · [Автономная демонстрация с видео](experiments/graph_memory_round57/release/candidate.zip) · [Предыдущая рукопись](experiments/graph_memory_round56/manuscript/paper.pdf).
+**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round58/manuscript/paper.pdf) · [Автономная демонстрация с видео](experiments/graph_memory_round58/release/candidate.zip) · [Предыдущая рукопись](experiments/graph_memory_round57/manuscript/paper.pdf).
+
+[Что сохранять между сессиями](experiments/graph_memory_round58/REPORT_RU.md). На 196 запросах метод выбора событий по прошлой активности сохранил 30 078 из максимально возможных 33 439 байт чтения. На 12 внешних проектах соотношение изменилось с нагрузкой: на редких запросах выгоднее оказался холодный старт, на частых — полный снимок. [Краткий отчёт](docs/progress-report-r58.md) · [Интерактивный просмотр](experiments/graph_memory_round58/demo/index.html).
 
 [Когда помогает исходный состав правки](experiments/graph_memory_round57/REPORT_RU.md). На одинаковой долговременной SQLite-базе общий читатель снизил объём переданных данных со 123 058 до 21 142 байт на 196 запросах с точной выдачей. На 932 правках в шести новых проектах приоритет небольших событий сократил байты чтения на 33,1%; преимущество в Recall@8 остаётся неопределённым. [Краткий отчёт](docs/progress-report-r57.md) · [Сценарии с двумя известными файлами](experiments/graph_memory_round57/seed_pair/REPORT_RU.md) · [Видеопоказ](experiments/graph_memory_round57/walkthrough/walkthrough.mp4).
 

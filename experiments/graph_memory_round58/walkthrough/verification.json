@@ -1,0 +1,193 @@
+{
+  "file_sha256": "a83556d82fe432d1c33ddefe9648b3e1e6513436c1fe5a6e672d9b9f85615733",
+  "captions_sha256": "b8aea42e2a0642b0a7e0a5ced3f73847a8b3c0cd127e58a983af8224073c5d2f",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 816,
+        "pix_fmt": "yuv420p",
+        "nb_frames": "2771"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "22050",
+        "channels": 1,
+        "nb_frames": "2388"
+      }
+    ],
+    "format": {
+      "duration": "110.840000",
+      "size": "2546335"
+    }
+  },
+  "decoded_full_file": true,
+  "verified_scenes": [
+    {
+      "id": "owners",
+      "rgb_mean_absolute_error": 1.488,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3148.8
+    },
+    {
+      "id": "receipts",
+      "rgb_mean_absolute_error": 1.604,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3303.4
+    },
+    {
+      "id": "cold",
+      "rgb_mean_absolute_error": 2.384,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3106.0
+    },
+    {
+      "id": "recent",
+      "rgb_mean_absolute_error": 2.413,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3116.6
+    },
+    {
+      "id": "demand",
+      "rgb_mean_absolute_error": 2.484,
+      "decoded_to_speech_pcm_correlation": 0.99997,
+      "decoded_audio_rms_s16": 3035.2
+    },
+    {
+      "id": "negative",
+      "rgb_mean_absolute_error": 2.486,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3121.6
+    },
+    {
+      "id": "full",
+      "rgb_mean_absolute_error": 2.45,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3148.1
+    },
+    {
+      "id": "text",
+      "rgb_mean_absolute_error": 2.515,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3153.3
+    },
+    {
+      "id": "gold",
+      "rgb_mean_absolute_error": 2.217,
+      "decoded_to_speech_pcm_correlation": 0.99999,
+      "decoded_audio_rms_s16": 3240.4
+    },
+    {
+      "id": "shift",
+      "rgb_mean_absolute_error": 1.906,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2968.5
+    }
+  ],
+  "voice": "Microsoft Zira Desktop",
+  "scenes": [
+    {
+      "id": "owners",
+      "chapter": "One file, several owners",
+      "text": "A coding agent opens a NetworkX file. Earlier commits survive in memory if any participating file still retains them. The two columns show which reads change.",
+      "start_frame": 0,
+      "frames": 296,
+      "steady_frames": 296,
+      "render_sha256": "cc1988b13e69565872362b768c09381a06416d6085cd8a9156bbd4e4efa4ca84"
+    },
+    {
+      "id": "receipts",
+      "chapter": "Inspect a previous change",
+      "text": "Open a source event to see which file retained it. In this example the test for the directed generator moves into the eight recommendations.",
+      "start_frame": 296,
+      "frames": 230,
+      "steady_frames": 227,
+      "render_sha256": "65d0e2b74010ff23dba7d09771f4e649e91e39eacba8550c395e083a39788b14"
+    },
+    {
+      "id": "cold",
+      "chapter": "Restart without a snapshot",
+      "text": "The archive still returns the exact eight files after the process restarts. Start with an empty cache and inspect the traffic required for the next 196 queries.",
+      "start_frame": 526,
+      "frames": 300,
+      "steady_frames": 297,
+      "render_sha256": "3451b83d2d3d9ce0881e243ddf30925d7442e0b29126720c7e956d81372f5934"
+    },
+    {
+      "id": "recent",
+      "chapter": "Checkpoint the most recent events",
+      "text": "Give each repository one kibibyte for a snapshot. Choosing the most recent events produces about the same total traffic as the cold start.",
+      "start_frame": 826,
+      "frames": 246,
+      "steady_frames": 243,
+      "render_sha256": "a24b9671369c4ff74b47048f1fcd779be8572f37f33607b6e31a55d4441c6457"
+    },
+    {
+      "id": "demand",
+      "chapter": "Choose events from past file activity",
+      "text": "Keep the budget fixed and select events using past file activity. Total transfer falls to about eighty-three thousand bytes, including snapshot writes and reads.",
+      "start_frame": 1072,
+      "frames": 287,
+      "steady_frames": 284,
+      "render_sha256": "060f7bce7607e3b6f6429254a20718053824ce4e44df84cc9230d149e13adf0f"
+    },
+    {
+      "id": "negative",
+      "chapter": "Inspect a case with higher cost",
+      "text": "On shorter histories the four-kibibyte padded snapshot costs more than a cold start. The price of writing and loading it exceeds the savings from future reads.",
+      "start_frame": 1359,
+      "frames": 267,
+      "steady_frames": 264,
+      "render_sha256": "7340f4aa173c8c08fea0e0c350124c2a2c1feff0859fc32af667da742651490b"
+    },
+    {
+      "id": "full",
+      "chapter": "Remove the fixed-size padding",
+      "text": "On the same panel the whole snapshot is small. Choosing the full snapshot stores the actual contents and reduces total traffic to about twelve thousand bytes.",
+      "start_frame": 1626,
+      "frames": 269,
+      "steady_frames": 266,
+      "render_sha256": "5a78f9046562b7c1bafc04e6e8a4516657baecd40ae9809fd71a7665ba3e813b"
+    },
+    {
+      "id": "text",
+      "chapter": "Reuse a previous editor view",
+      "text": "Open the recorded agent reads. Compare storing each line separately with sharing its contents. The local cache must still match the path and line number.",
+      "start_frame": 1895,
+      "frames": 277,
+      "steady_frames": 274,
+      "render_sha256": "4ae441ca410dcb6583eff5741517716cf772328fdf7fe464c67708dc0ccc6299"
+    },
+    {
+      "id": "gold",
+      "chapter": "Check ranking quality separately",
+      "text": "In this real Dask query the two files are known. Reveal the held-out paths. A rule using joint evidence finds two, while a simpler control finds all three.",
+      "start_frame": 2172,
+      "frames": 302,
+      "steady_frames": 299,
+      "render_sha256": "ebd2966ebba2834207eb77e148735569b3bcbaeaf4dac61b7f881c56c6208911"
+    },
+    {
+      "id": "shift",
+      "chapter": "Change a history with identical pair counts",
+      "text": "Change the history. Its pair counts stay fixed, while the third file changes. The source events preserve information that pair frequencies alone cannot recover.",
+      "start_frame": 2474,
+      "frames": 297,
+      "steady_frames": 294,
+      "render_sha256": "061b9fe8200ecca3bea8ed8aa0a22b7ae69383a56cc0aa0f0b4b06e5dbfa22e2"
+    }
+  ],
+  "inputs": {
+    "graph_memory_round58\\demo\\index.html": "f1fc8e80fb2392f4e18f7dbfc9f4befcdd8d40ea13b5568b067fad3af30f7f9f",
+    "graph_memory_round58\\walkthrough\\scenes.json": "e627cf0a9eaa9180d184544e995a632b821762ce40e1a070888de5a3e0d98fa4",
+    "graph_memory_round57\\walkthrough\\record_current.py": "6965a6c7037326b7a0ba6ba33963cbc969b56a8298e269a610e375fa436afe3f",
+    "graph_memory_round56\\manuscript\\replay.html": "8978e24b7a98bc5c01239638e7d477b95989893c929eb85a4cea76b5fb099bca",
+    "graph_memory_round57\\seed_pair\\replay.sqlite": "15922af45411375253a28075ded7b8fc10aa078c056efb2f7c92243e2e437d4c",
+    "graph_memory_round57\\seed_pair\\view.html": "f8173e29a4374fca87b667e7d749c79e1da4cfc0a9d14fa5352311cd95dab54d"
+  }
+}

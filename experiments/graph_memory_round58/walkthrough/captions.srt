@@ -1,0 +1,39 @@
+1
+00:00:00,000 --> 00:00:11,840
+A coding agent opens a NetworkX file. Earlier commits survive in memory if any participating file still retains them. The two columns show which reads change.
+
+2
+00:00:11,840 --> 00:00:21,040
+Open a source event to see which file retained it. In this example the test for the directed generator moves into the eight recommendations.
+
+3
+00:00:21,040 --> 00:00:33,040
+The archive still returns the exact eight files after the process restarts. Start with an empty cache and inspect the traffic required for the next 196 queries.
+
+4
+00:00:33,040 --> 00:00:42,880
+Give each repository one kibibyte for a snapshot. Choosing the most recent events produces about the same total traffic as the cold start.
+
+5
+00:00:42,880 --> 00:00:54,360
+Keep the budget fixed and select events using past file activity. Total transfer falls to about eighty-three thousand bytes, including snapshot writes and reads.
+
+6
+00:00:54,360 --> 00:01:05,040
+On shorter histories the four-kibibyte padded snapshot costs more than a cold start. The price of writing and loading it exceeds the savings from future reads.
+
+7
+00:01:05,040 --> 00:01:15,800
+On the same panel the whole snapshot is small. Choosing the full snapshot stores the actual contents and reduces total traffic to about twelve thousand bytes.
+
+8
+00:01:15,800 --> 00:01:26,880
+Open the recorded agent reads. Compare storing each line separately with sharing its contents. The local cache must still match the path and line number.
+
+9
+00:01:26,880 --> 00:01:38,960
+In this real Dask query the two files are known. Reveal the held-out paths. A rule using joint evidence finds two, while a simpler control finds all three.
+
+10
+00:01:38,960 --> 00:01:50,840
+Change the history. Its pair counts stay fixed, while the third file changes. The source events preserve information that pair frequencies alone cannot recover.

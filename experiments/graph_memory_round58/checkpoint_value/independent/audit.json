@@ -1,0 +1,100 @@
+{
+  "commands": {
+    "generate": "python -B verify_value.py",
+    "verify": "python -B verify_value.py --verify"
+  },
+  "optional_brute_force": {
+    "closed": 134,
+    "instances": 250
+  },
+  "random_generator": "Python random.Random, shared sequential stream",
+  "real_witnesses": {
+    "groups": {
+      "original/B": {
+        "cases": 6,
+        "fixed_closed": 6,
+        "optional_closed": 2,
+        "rank_checks": 984,
+        "sqlite_runs": 12,
+        "verified_fixed_gross": 29552,
+        "verified_optional_net": 23270
+      },
+      "original/long": {
+        "cases": 3,
+        "fixed_closed": 3,
+        "optional_closed": 3,
+        "rank_checks": 392,
+        "sqlite_runs": 6,
+        "verified_fixed_gross": 33439,
+        "verified_optional_net": 27239
+      },
+      "replication/B": {
+        "cases": 6,
+        "fixed_closed": 5,
+        "optional_closed": 2,
+        "rank_checks": 1566,
+        "sqlite_runs": 12,
+        "verified_fixed_gross": 79891,
+        "verified_optional_net": 73497
+      },
+      "replication/long": {
+        "cases": 6,
+        "fixed_closed": 6,
+        "optional_closed": 6,
+        "rank_checks": 154,
+        "sqlite_runs": 12,
+        "verified_fixed_gross": 6610,
+        "verified_optional_net": 2867
+      },
+      "seed_pair/B": {
+        "cases": 6,
+        "fixed_closed": 1,
+        "optional_closed": 0,
+        "rank_checks": 2560,
+        "sqlite_runs": 12,
+        "verified_fixed_gross": 134757,
+        "verified_optional_net": 123036
+      },
+      "seed_pair/long": {
+        "cases": 6,
+        "fixed_closed": 5,
+        "optional_closed": 4,
+        "rank_checks": 224,
+        "sqlite_runs": 12,
+        "verified_fixed_gross": 12547,
+        "verified_optional_net": 4901
+      }
+    },
+    "total": {
+      "cases": 33,
+      "fixed_closed": 26,
+      "optional_closed": 17,
+      "rank_checks": 5880,
+      "sqlite_runs": 66,
+      "verified_fixed_gross": 296796,
+      "verified_optional_net": 254810
+    },
+    "unique_repositories": 21
+  },
+  "seed": 580047,
+  "subset_identity": {
+    "fixtures": {
+      "all_subsets": {
+        "post_queries": 2112,
+        "subsets": 64
+      },
+      "lost_after_repeat": {
+        "post_queries": 6688,
+        "subsets": 22
+      },
+      "mixed_varint_and_eviction": {
+        "post_queries": 12980,
+        "subsets": 22
+      }
+    },
+    "total": {
+      "post_queries": 21780,
+      "subsets": 108
+    }
+  }
+}

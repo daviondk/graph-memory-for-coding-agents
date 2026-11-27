@@ -1,0 +1,48 @@
+{
+  "hardware": {
+    "build": "b12441-164ab018f",
+    "cmd": [
+      "D:\\CodexResearch\\x20-qwen38-27b\\bin\\llama-server.exe",
+      "-m",
+      "D:\\CodexResearch\\x20-published-output-audit\\Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+      "--n-gpu-layers",
+      "all",
+      "--host",
+      "127.0.0.1",
+      "--port",
+      "18958",
+      "--no-warmup",
+      "--parallel",
+      "1",
+      "--ctx-size",
+      "4096",
+      "--flash-attn",
+      "on",
+      "--threads",
+      "4"
+    ],
+    "device": "NVIDIA GeForce RTX 3090, 610.88, 24576 MiB",
+    "pid": 31352,
+    "slots": 1,
+    "template_sha": "c979e0e71a3e21b8f208e6ab120d5cb29327885f29d2a8b18fda67a723798e18"
+  },
+  "hashes": {
+    "PROTOCOL_RU.md": "08e320c2170775e116acdd1020a90494a0b9f804d545bacfc8f4cde56f2b4aac",
+    "assignments.json.gz": "268b3f65a06811f139b085e9ea8a849439b5335dfc5fdd9b36b6c596ede9133e",
+    "draft-design.json.gz": "d363686123375b5bf6b6893b5c1a2664f80244f3f4a3cddf7da40f0d6978676b",
+    "inputs.json.gz": "0a566a1de6f36a8b2ba78aaf4e986ea922b124fc558419df0e664fb92dcb1193",
+    "probe-execution.json.gz": "757f13e43df8435a0ffe8567a0a3592c71ab7b775e00caa18778e635b311e583",
+    "selection-seal.json": "a61d03cda2578bd8f4dd3fff46074267433b34ec10d2e206ec7aee9f51786d0e",
+    "solve.py": "287296c0c3de277131875421948b2d680bfdebf704104a3c7beec70305217c99"
+  },
+  "model": "3605803b982cb64aead44f6c1b2ae36e3acdb41d8e46c8a94c6533bc4c67e597",
+  "server": "d6ee4c17db5b9bbbacb523c5fa1e8b6103fa25adbf8cf10a67a96e681da659de",
+  "settings": {
+    "cache_prompt": false,
+    "n_predict": 640,
+    "seed": 560271,
+    "stream": false,
+    "temperature": 0,
+    "top_k": 1
+  }
+}
