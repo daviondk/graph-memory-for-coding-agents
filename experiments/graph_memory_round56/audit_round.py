@@ -53,6 +53,17 @@ def metrics():
     passes = read("solver/results.json")["summaries"]
     assert [passes[mode]["pass1"] for mode in ("contract", "file8", "full_bm25")] == [13, 15, 15]
     assert passes["file8"]["examples"] == 178
+    size = read("size_control/results.json")
+    for panel, n in panels.items():
+        stats = size[panel]["all"]
+        assert len(stats) == 12 and all(v["n"] == n for v in stats.values())
+        reference = shared[panel + "8"]["pooled"]["methods"]
+        for mode, ref in (("own", "last_own"), ("small", "last_small")):
+            assert abs(stats[mode]["recall"] - reference[ref]["recall"]) < 1e-12
+            assert stats[mode]["events"] == reference[ref]["decoded_events"]
+    long_results = size["long"]["all"]
+    assert [round(100 * long_results[key]["recall"], 2)
+            for key in ("small", "cap8", "small_norm", "fill6_norm")] == [45.88, 47.32, 47.61, 48.90]
     assert read("code2test/results.json")["scope"]["eligible_n"] == 105
     print("Four panels agree on full-history retrieval. Exact read counters, bytes, task counts and published endpoint scores agree across artifacts.")
 
