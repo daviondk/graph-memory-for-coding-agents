@@ -1,0 +1,291 @@
+{
+  "file_sha256": "9843cab7994894910b4a6538d77a6aa3e1c1a41d10408a38e7fd7fb8bfb6a3bd",
+  "captions_sha256": "8a82d89256a7d89770c1d6b02dcd16309705b444dacb594d88659887076c4d13",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 816,
+        "pix_fmt": "yuv420p",
+        "nb_frames": "2885"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "22050",
+        "channels": 1,
+        "nb_frames": "2486"
+      }
+    ],
+    "format": {
+      "duration": "115.400000",
+      "size": "2894638"
+    }
+  },
+  "decoded_full_file": true,
+  "verified_scenes": [
+    {
+      "id": "ledger",
+      "rgb_mean_absolute_error": 2.34,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3158.1
+    },
+    {
+      "id": "query",
+      "rgb_mean_absolute_error": 2.049,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3221.3
+    },
+    {
+      "id": "evidence",
+      "rgb_mean_absolute_error": 2.07,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3101.8
+    },
+    {
+      "id": "rank",
+      "rgb_mean_absolute_error": 2.355,
+      "decoded_to_speech_pcm_correlation": 0.99991,
+      "decoded_audio_rms_s16": 3129.0
+    },
+    {
+      "id": "large",
+      "rgb_mean_absolute_error": 2.222,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2875.0
+    },
+    {
+      "id": "small",
+      "rgb_mean_absolute_error": 2.189,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3176.5
+    },
+    {
+      "id": "one",
+      "rgb_mean_absolute_error": 2.298,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3035.2
+    },
+    {
+      "id": "two",
+      "rgb_mean_absolute_error": 2.306,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3096.0
+    },
+    {
+      "id": "holdout",
+      "rgb_mean_absolute_error": 2.273,
+      "decoded_to_speech_pcm_correlation": 0.99999,
+      "decoded_audio_rms_s16": 3103.8
+    }
+  ],
+  "inputs": {
+    "graph_memory_round59/demo/index.html": "a2bd9746e2b241d8b64196739bd836f49c670b9a5d4c5037cd2e8c02c989bc7f",
+    "graph_memory_round59/walkthrough/scenes.json": "7be5af3fec7e810497ce297146aa347de56d0bca9b1a3cdf80a7f89b2c36df3b",
+    "graph_memory_round58/walkthrough/record_demo.py": "b6eb7a5f887ae5344377ad11c5db0004a88ed5953c4ed29d2bd5b3e8a5228ea4",
+    "graph_memory_round55/demo_video/record.py": "256eab83eb03db1a0488f8dd498b0e19a83cd7b58ef3447781b76c1a17971db7",
+    "graph_memory_round55/demo_video/capture.py": "5272571c3f57cb832cd3bf5280a93a66af74a46c1868a15b8782bc314b22419e",
+    "graph_memory_round55/demo_video/speak.ps1": "f910ffff395359605b1f122951d2372d430111396f024f42a488c974fb0f1349"
+  },
+  "scenes": [
+    {
+      "id": "ledger",
+      "chapter": "The restart ledger",
+      "text": "A coding agent can keep references to earlier changes. On three long histories, loading events on demand transfers about thirty-four thousand bytes. Copying compressed bodies transfers over sixty-five thousand.",
+      "start_frame": 0,
+      "frames": 380,
+      "steady_frames": 377,
+      "render_sha256": "e7c4228276038b96a0d0f9fbe1f60afd0ef6df4c390bc46c290679280a181b09"
+    },
+    {
+      "id": "query",
+      "chapter": "Open a Sphinx query",
+      "text": "Choose the second Sphinx request. The anchor is the C plus plus domain module. The index already knows where to find earlier commits involving this file.",
+      "start_frame": 380,
+      "frames": 287,
+      "steady_frames": 284,
+      "render_sha256": "7943fc35a8e6b99ac552d289e63b34c3d94b7155d5070cc403b0b345a1180f2a"
+    },
+    {
+      "id": "evidence",
+      "chapter": "Load the historical evidence",
+      "text": "Load the selected events. Ten commits bring six hundred and ninety-five bytes into memory on first access. Each row identifies the source commit and the number of files it changed.",
+      "start_frame": 667,
+      "frames": 319,
+      "steady_frames": 316,
+      "render_sha256": "6c041b8d0226c242a7ef3e9a5e1fcbf7f813408d5961c7150fc534e2eaf2daf3"
+    },
+    {
+      "id": "rank",
+      "chapter": "Inspect the exact ranking",
+      "text": "Reveal the eight ranked files. The C domain module leads with sixty-five past co-changes. The test for the C plus plus domain follows with sixty-one.",
+      "start_frame": 986,
+      "frames": 293,
+      "steady_frames": 290,
+      "render_sha256": "75b1dcced1c083249a65ed83f794fbe5a12454debf6576c52bce9c2995d8f4a7"
+    },
+    {
+      "id": "large",
+      "chapter": "Give the cache four kibibytes",
+      "text": "Switch to the twelve transfer repositories. With four kibibytes, storing address lists and event bodies together uses eleven thousand six hundred bytes across the sparse requests.",
+      "start_frame": 1279,
+      "frames": 319,
+      "steady_frames": 316,
+      "render_sha256": "b8348510634d413b830aeb71010cfc1f5e77789256c36208e7d91469129478f4"
+    },
+    {
+      "id": "small",
+      "chapter": "Reduce the cache budget",
+      "text": "Reduce the budget to one kibibyte. The joint cache now transfers nine hundred and twenty-one extra bytes compared with storing bodies alone. The address lists displace useful events.",
+      "start_frame": 1598,
+      "frames": 325,
+      "steady_frames": 322,
+      "render_sha256": "9c109307a479e0ee4796a4f62e3e145a40938ddbe48f72b01aa68f4e8a1e050f"
+    },
+    {
+      "id": "one",
+      "chapter": "Recover one missing ID",
+      "text": "The six-project holdout tests a compact posting. In the example, exactly one address is missing. Combining the stored exclusive OR with the three resident addresses recovers event eleven.",
+      "start_frame": 1923,
+      "frames": 340,
+      "steady_frames": 337,
+      "render_sha256": "c8f786b2dfa569df8bdbb432ce3dec1a141288df1e4de001ef281de7f8bdae20"
+    },
+    {
+      "id": "two",
+      "chapter": "Check an ambiguous gap",
+      "text": "Remove a second address. Two different pairs now produce the same exclusive OR. The reader fetches the complete posting list to preserve the exact ranking.",
+      "start_frame": 2263,
+      "frames": 279,
+      "steady_frames": 276,
+      "render_sha256": "0f601f25ce16c46735527da0c48f5489e0cf3acf1391034a1e51356523bc4cd8"
+    },
+    {
+      "id": "holdout",
+      "chapter": "Compare the holdout budgets",
+      "text": "Increase the holdout budget to four kibibytes. The compressed complete list now saves eighteen hundred and fourteen bytes over count plus exclusive OR. The budget changes which representation wins.",
+      "start_frame": 2542,
+      "frames": 343,
+      "steady_frames": 340,
+      "render_sha256": "a245de95edaf187ade98e653d0de3686282b9188b49cc905810c61f3371df9fc"
+    }
+  ],
+  "ui": {
+    "actions": [
+      [
+        "#goLedger",
+        null
+      ],
+      [
+        "#scope",
+        "Original \u00b7 sparse"
+      ],
+      [
+        "#repo",
+        "all"
+      ],
+      [
+        "#selection",
+        "full"
+      ],
+      [
+        "#goEvent",
+        null
+      ],
+      [
+        "#scope",
+        "Original \u00b7 sparse"
+      ],
+      [
+        "#repo",
+        "original/long/sphinx-doc/sphinx"
+      ],
+      [
+        "#query",
+        "1"
+      ],
+      [
+        "#step",
+        null
+      ],
+      [
+        "#step",
+        null
+      ],
+      [
+        "#goCache",
+        null
+      ],
+      [
+        "#scope",
+        "Transfer \u00b7 sparse"
+      ],
+      [
+        "#repo",
+        "all"
+      ],
+      [
+        "#h",
+        "full"
+      ],
+      [
+        "#quota",
+        "4096"
+      ],
+      [
+        "#quota",
+        "1024"
+      ],
+      [
+        "#goSketch",
+        null
+      ],
+      [
+        "#hs",
+        "B"
+      ],
+      [
+        "#hp",
+        "all"
+      ],
+      [
+        "#hb",
+        "1024"
+      ],
+      [
+        "#missing",
+        "1"
+      ],
+      [
+        "#missing",
+        "2"
+      ],
+      [
+        "#hb",
+        "4096"
+      ]
+    ],
+    "receipts": {
+      "ledger": "On-demand references\n34,222 B\nBoth transfers and SQLite reads\nSavings vs compressed copy\n31,041 B\nAt the selected horizon\nFirst-touch source bodies\n14,467 B\n196 recorded queries",
+      "query": "Request 2 \u00b7 sphinx/domains/cpp.py \u00b7 restart after 802 events.",
+      "evidence": "10 selected commit bodies first loaded (695 B), 0 previously pinned for this anchor. Other archived bodies can also contribute to the answer.",
+      "rank": "sphinx/domains/c.py\t65\ntests/test_domain_cpp.py\t61\nsphinx/domains/python.py\t47\nsphinx/ext/autodoc/__init__.py\t45\nsphinx/ext/autosummary/__init__.py\t37\nsphinx/writers/latex.py\t36\nsphinx/domains/std.py\t33\nsphinx/util/inspect.py\t27",
+      "large": "Joint LRU\n11,600 B\nLists and bodies share the quota\nSaved vs bodies only\n2,932 B\nSame byte limit\nChange in body reads\n0 B\nJoint LRU minus bodies only",
+      "small": "Joint LRU\n17,698 B\nLists and bodies share the quota\nExtra vs bodies only\n921 B\nSame byte limit\nChange in body reads\n+2,203 B\nJoint LRU minus bodies only",
+      "one": "Resident {3, 8, 14}. Count gap = 1. 14 XOR (3 XOR 8 XOR 14) = 11. Read immutable event 11 directly.",
+      "two": "Resident {3, 14}. Count gap = 2. A residual XOR of 3 allows both {8, 11} and {4, 7}. Fetch the exact posting list.",
+      "holdout": "Count + XOR adds 1,814 B against compressed exact postings."
+    },
+    "errors": [],
+    "network_requests": [],
+    "first_ranks": [
+      "sphinx/domains/c.py65",
+      "tests/test_domain_cpp.py61"
+    ]
+  },
+  "voice": "Microsoft Zira Desktop"
+}

@@ -2,7 +2,9 @@
 
 Исследование того, какие наблюдения из работы с кодом стоит сохранять, как обновлять их после правок и когда показывать агенту.
 
-**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round58/manuscript/paper.pdf) · [Автономная демонстрация с видео](experiments/graph_memory_round58/release/candidate.zip) · [Предыдущая рукопись](experiments/graph_memory_round57/manuscript/paper.pdf).
+**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round59/manuscript/paper.pdf) · [Автономная демонстрация с видео](experiments/graph_memory_round59/release/README.md) · [Предыдущая рукопись](experiments/graph_memory_round58/manuscript/paper.pdf).
+
+[Как точно восстановить пропущенное событие](experiments/graph_memory_round59/REPORT_RU.md). На 721 запросе к шести новым репозиториям при кеше 1 КиБ краткая сводка связей снизила двусторонний трафик с 36 582 до 33 180 байт и сохранила все ответы. При 4 КиБ экономнее оказался полный список. На 57 задачах SWE-ContextBench Lite истинные связи и одни вершины дали по 44 верных выбора прошлого эпизода. [Краткий отчёт](docs/progress-report-r59.md) · [Результаты по проектам](experiments/graph_memory_round59/holdout/REPORT_RU.md) · [Видео](experiments/graph_memory_round59/walkthrough/walkthrough.mp4).
 
 [Что сохранять между сессиями](experiments/graph_memory_round58/REPORT_RU.md). На 196 запросах метод выбора событий по прошлой активности сохранил 30 078 из максимально возможных 33 439 байт чтения. На 12 внешних проектах соотношение изменилось с нагрузкой: на редких запросах выгоднее оказался холодный старт, на частых — полный снимок. [Краткий отчёт](docs/progress-report-r58.md) · [Интерактивный просмотр](experiments/graph_memory_round58/demo/index.html).
 

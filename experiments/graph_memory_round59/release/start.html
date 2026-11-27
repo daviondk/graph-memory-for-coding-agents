@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Graph memory for coding agents</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#192b2f;background:#f6f6f1;font:16px/1.55 "Source Sans 3","Segoe UI",Arial,sans-serif}main{max-width:850px;margin:0 auto;padding:clamp(30px,6vw,78px) clamp(19px,4vw,42px)}h1,h2,p{margin:0}h1{font:normal clamp(36px,6vw,56px)/1.08 Georgia,serif;letter-spacing:-.035em}h2{font:normal clamp(23px,4vw,29px)/1.18 Georgia,serif}.lead{margin:14px 0 20px;max-width:65ch;color:#3b5658}.primary{display:inline-block;background:#135a50;color:white;border-radius:5px;padding:11px 18px;font-weight:650;text-decoration:none}.primary:hover{background:#08473f}.row{padding:23px 0;border-top:1px solid #c5d1ca}.row p{margin:7px 0 0;max-width:67ch}.top{margin-bottom:29px}.links{display:flex;align-items:center;gap:7px 18px;flex-wrap:wrap;margin-top:10px}.links a,a{color:#075a51}.links a:focus-visible,a:focus-visible{outline:3px solid #bb722f;outline-offset:3px}code{font:.91em "IBM Plex Mono",Consolas,monospace;overflow-wrap:anywhere}
+</style>
+</head><body><main>
+<div class="top"><h1>Graph memory for coding agents</h1><p class="lead">Which historical events should a coding agent keep, and which must it fetch again? Inspect a real Git query, compare restart costs and recover a missing event ID.</p><a class="primary" href="graph-memory.html">Open the graph memory demo</a></div>
+<section class="row"><h2>Paper and recorded walkthrough</h2><div class="links"><a href="paper.pdf">Four-page paper</a><a href="walkthrough.mp4">English walkthrough</a><a href="captions.srt">English captions</a></div></section>
+<section class="row"><h2>Explore earlier comparisons</h2><p>Change a snapshot budget, inspect a commit that survives in another file's memory, or compare predictions when two files are known.</p><div class="links"><a href="restart.html">Checkpoint budgets</a><a href="one-file.html">One-file NetworkX queries</a><a href="two-files/demo.html">Two-file Dask and xarray queries</a></div></section>
+<section class="row"><h2>Query SQLite directly</h2><p>In the extracted folder, run <code>python -B live_query.py</code> to recover an actual missing commit from the saved graph summary and compare the result with the full SQLite index.</p><p>For the two-file browser console, open the <code>two-files</code> folder, run <code>python -B demo.py open-snapshot</code> and visit the local address it prints.</p></section>
+</main></body></html>
