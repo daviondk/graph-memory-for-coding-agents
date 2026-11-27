@@ -1,0 +1,7 @@
+# Additional budget-matched controls
+
+Exploratory sensitivity after learning primary agreement 73/99. The next two routing controls are written before scoring either alternative. The primary study and its receipts remain fixed.
+
+For each of the 12 repositories retain its observed budget of full-reader calls, totaling 31; scores see no positive labels. Control A sends the queries with the smallest three-way intersection of the top five outcome-BM25, lexical field fusion, and dense+lexical field fusion lists. This generalizes voting from the leading candidate to shortlist consistency without an additional inference pass. Control B calls the reader when the fusion leader is most heavily demoted by the existing cross-encoder (MiniLM-L12 within the same five). This alternative has its own extra scoring cost. Both otherwise return the fusion leader and both invoke the archived full reader on exactly its original inputs when chosen.
+
+Ties at the budget threshold are uniformly randomized within repository. Enumerate the exact distribution over resulting counts and its corresponding expected prompt cost. Report the entire support and expected Match@1 for both controls and the fraction of schedules that match or exceed the actual 73, alongside the already-frozen random control. Neither control uses labels for selection. Primary comparison and certainty statements do not change. No alternative gates will be chosen after scoring these two.
