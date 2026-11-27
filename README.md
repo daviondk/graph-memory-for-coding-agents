@@ -2,7 +2,9 @@
 
 Исследование того, какие наблюдения из работы с кодом стоит сохранять, как обновлять их после правок и когда показывать агенту.
 
-**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round59/manuscript/paper.pdf) · [Автономная демонстрация с видео](experiments/graph_memory_round59/release/README.md) · [Предыдущая рукопись](experiments/graph_memory_round58/manuscript/paper.pdf).
+**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round60/manuscript/paper.pdf) · [Демонстрация с SQLite и видео](experiments/graph_memory_round60/release/README.md) · [Предыдущая рукопись](experiments/graph_memory_round59/manuscript/paper.pdf).
+
+[Память о вытесненных событиях](experiments/graph_memory_round60/REPORT_RU.md). На 485 запросах к шести новым проектам при 1 КиБ запись недостающих ID снизила объём чтения с 11 372 до 9 201 байта при одинаковом выборе кодеков. При 4 КиБ и на коротких редакторских сессиях преимущество исчезло. На всех 99 задачах SWE-ContextBench Lite выборочное перечитывание эпизодов дало 73 верных выбора при 31 обращении к 27B-модели, постоянное — 75 при 99 обращениях. [Краткий отчёт](docs/progress-report-r60.md) · [Ближайшие исследования](experiments/graph_memory_round60/PRIOR_ART_RU.md).
 
 [Как точно восстановить пропущенное событие](experiments/graph_memory_round59/REPORT_RU.md). На 721 запросе к шести новым репозиториям при кеше 1 КиБ краткая сводка связей снизила двусторонний трафик с 36 582 до 33 180 байт и сохранила все ответы. При 4 КиБ экономнее оказался полный список. На 57 задачах SWE-ContextBench Lite истинные связи и одни вершины дали по 44 верных выбора прошлого эпизода. [Краткий отчёт](docs/progress-report-r59.md) · [Результаты по проектам](experiments/graph_memory_round59/holdout/REPORT_RU.md) · [Видео](experiments/graph_memory_round59/walkthrough/walkthrough.mp4).
 

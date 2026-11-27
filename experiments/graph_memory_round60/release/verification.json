@@ -1,0 +1,184 @@
+{
+  "browser": {
+    "external_requests": 0,
+    "javascript_errors": 0,
+    "mobile_width": 390,
+    "observed_four_line_cost": 5468,
+    "panel_costs": [
+      9213,
+      4322
+    ],
+    "sqlite_console_modes": [
+      "notify",
+      "quiet"
+    ],
+    "workshop_ranks": [
+      "test_reader.py5",
+      "store.py4",
+      "test_cache.py4",
+      "schema.py4"
+    ]
+  },
+  "bytes": 2834220,
+  "links": [
+    "graph-memory.html",
+    "paper.pdf",
+    "walkthrough.mp4",
+    "captions.srt"
+  ],
+  "media": {
+    "audio": "AAC",
+    "caption_cues": 9,
+    "decoded": true,
+    "pages": 4,
+    "paper_title": "When the Last Copy Leaves",
+    "seconds": 109.68,
+    "video": "H.264",
+    "video_frames": 2742
+  },
+  "sha256": "5049fcb2809bbeabc23d588a7546f62235c5ce8b1db44ba7df4ed2cc808b2e7c",
+  "sources": {
+    "captions.srt": "14cc9c8eb86e6368bbe5fcb1dcebd79a9249bace6483177b726570e10f3df285",
+    "graph-memory.html": "c4e60cb5ffdad9dfa04b462f4757970be314b28296e18422866855f8871ab254",
+    "live_query.py": "3699481f5b268f04455e8d20a06f95b166519ff9444aae3176285885cf47d7fd",
+    "paper.pdf": "4cbf20acdcf7c95a53c94745ccd6ee9eded0c40f51a8f623ca5ec652d16a3708",
+    "query.json": "19a9418a700ac8a8ae1b6e816f133fd475d84f6c5e20c2979ed9ac9bd57360f1",
+    "snapshot.html": "0b753ad84654680c9369fc9ab5346d0998c83972071338a7976c720f4e2c0b94",
+    "source.sqlite": "ebe37c9b95c6594dc5d428aa106c0fcaca65973fe4dbdcbbf670e01319e973de",
+    "start.html": "2a6359b3cc904155d4ac389cf38866955f6ade93e4b8b64c4dfbe1a080e4c945",
+    "walkthrough.mp4": "2d9d607d76956624a29878414d02cd1ab29d5db2d5a4b689f2cf6d0c62712be8"
+  },
+  "sqlite": {
+    "notify": {
+      "certified": true,
+      "count": 40,
+      "exceptions": [
+        94,
+        116,
+        117
+      ],
+      "file": "tests/test_tablib.py",
+      "full_history_verified": true,
+      "missing": [
+        94,
+        117
+      ],
+      "mode": "notify",
+      "prefix": 137,
+      "project": "jazzband/tablib",
+      "ranking": [
+        [
+          "src/tablib/formats/_xlsx.py",
+          17
+        ],
+        [
+          "src/tablib/core.py",
+          16
+        ],
+        [
+          "src/tablib/formats/__init__.py",
+          11
+        ],
+        [
+          "src/tablib/formats/_xls.py",
+          11
+        ],
+        [
+          "setup.py",
+          9
+        ],
+        [
+          "src/tablib/formats/_rst.py",
+          9
+        ],
+        [
+          "src/tablib/formats/_ods.py",
+          7
+        ],
+        [
+          "src/tablib/formats/_csv.py",
+          7
+        ]
+      ],
+      "read": {
+        "body_bytes": 8,
+        "body_calls": 1,
+        "posting_bytes": 0,
+        "posting_calls": 0
+      },
+      "request": 50,
+      "resident": 38,
+      "source_commits": {
+        "117": "6d097c0214f9d581a2c41e4c701cfaca3796f874",
+        "94": "78b483d39e5d5e26814eeed5f4417c4bcbd15c97"
+      },
+      "statements": [
+        "SELECT members FROM event WHERE j IN (94,117) ORDER BY j"
+      ]
+    },
+    "quiet": {
+      "certified": false,
+      "count": 40,
+      "exceptions": [],
+      "file": "tests/test_tablib.py",
+      "full_history_verified": true,
+      "missing": [
+        94,
+        117
+      ],
+      "mode": "quiet",
+      "prefix": 137,
+      "project": "jazzband/tablib",
+      "ranking": [
+        [
+          "src/tablib/formats/_xlsx.py",
+          17
+        ],
+        [
+          "src/tablib/core.py",
+          16
+        ],
+        [
+          "src/tablib/formats/__init__.py",
+          11
+        ],
+        [
+          "src/tablib/formats/_xls.py",
+          11
+        ],
+        [
+          "setup.py",
+          9
+        ],
+        [
+          "src/tablib/formats/_rst.py",
+          9
+        ],
+        [
+          "src/tablib/formats/_ods.py",
+          7
+        ],
+        [
+          "src/tablib/formats/_csv.py",
+          7
+        ]
+      ],
+      "read": {
+        "body_bytes": 8,
+        "body_calls": 1,
+        "posting_bytes": 49,
+        "posting_calls": 1
+      },
+      "request": 50,
+      "resident": 38,
+      "source_commits": {
+        "117": "6d097c0214f9d581a2c41e4c701cfaca3796f874",
+        "94": "78b483d39e5d5e26814eeed5f4417c4bcbd15c97"
+      },
+      "statements": [
+        "SELECT js FROM posting WHERE f=310",
+        "SELECT members FROM event WHERE j IN (94,117) ORDER BY j"
+      ]
+    }
+  }
+}

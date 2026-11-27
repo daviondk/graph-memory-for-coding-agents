@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Query the Tablib prefix</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#172b3a;background:#f4f4ed;font:16px/1.5 "Segoe UI",Arial,sans-serif}main{max-width:910px;margin:auto;padding:36px 20px}h1,h2{font:normal 38px/1.08 Georgia,serif;margin:0 0 12px}h2{font-size:25px}section{padding:18px 0;border-top:1px solid #abbdb1;margin-top:16px}button{font:inherit;background:#07594c;color:white;border:0;border-radius:4px;padding:8px 15px;margin:4px 6px 4px 0;cursor:pointer}button[aria-pressed="false"]{background:#fff;color:#07594c;outline:1px solid #638176}button:focus-visible{outline:3px solid #ac7019}p{margin:8px 0}pre{padding:12px;background:#fffef9;border:1px solid #c7d0c7;white-space:pre-wrap;overflow-wrap:anywhere}table{width:100%;border-collapse:collapse}td,th{text-align:left;border-bottom:1px solid #cad1c9;padding:4px}td:first-child{overflow-wrap:anywhere}td:last-child,th:last-child{text-align:right}
+</style><main><h1>Query the Tablib prefix</h1><p>Request 50 for <code>tests/test_tablib.py</code> after reopening the graph. Compare the two recorded cache states against the same read-only SQLite database.</p>
+<button id="notify" aria-pressed="false">Maintain exceptions</button><button id="quiet" aria-pressed="false">Skip notifications</button>
+<p id="status" role="status">Choose a policy to execute its query.</p>
+<section hidden id="result"><h2>SQLite reads</h2><p id="evidence"></p><pre id="statements"></pre><p id="cost"></p>
+<h2>Verified ranking</h2><table><thead><tr><th>File</th><th>Historical co-changes</th></tr></thead><tbody id="scores"></tbody></table></section></main>
+<script>
+const el=id=>document.getElementById(id);
+async function run(mode){
+  const active=el(mode);document.querySelectorAll('button').forEach(b=>b.disabled=true);
+  try{
+    const response=await fetch('/query/'+mode,{cache:'no-store'});if(!response.ok)throw Error(response.status);
+    const q=await response.json();el('evidence').textContent=q.resident+' resident event bodies of '+q.count+'. Recorded exceptions {'+q.exceptions.join(', ')+'}. Missing body IDs '+q.missing.join(' and ')+'.';
+    el('statements').textContent=q.statements.join('\n');el('cost').textContent=q.read.posting_bytes+' posting bytes + '+q.read.body_bytes+' body bytes = '+(q.read.posting_bytes+q.read.body_bytes)+' SQLite payload bytes.';
+    el('scores').replaceChildren(...q.ranking.map(pair=>{const row=document.createElement('tr');for(const v of pair){const c=document.createElement('td');c.textContent=v;row.append(c)}return row}));
+    el('status').textContent=q.certified?'Certified from resident IDs and exceptions.':'Incomplete coverage. The database supplied the full posting.';
+    document.querySelectorAll('button').forEach(b=>b.setAttribute('aria-pressed',String(b===active)));el('result').hidden=false;
+  }catch(e){el('status').textContent='Open the local address printed by python -B live_query.py --serve.'}
+  finally{document.querySelectorAll('button').forEach(b=>b.disabled=false)}
+}
+for(const k of ['notify','quiet'])el(k).onclick=()=>run(k);
+</script></html>

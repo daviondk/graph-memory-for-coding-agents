@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>When the last copy leaves</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#f4f4ed;color:#172b3a;font:17px/1.52 "Segoe UI",Arial,sans-serif}main{max-width:940px;margin:auto;padding:clamp(28px,6vw,74px) 22px}h1,h2{font-family:Georgia,serif;font-weight:normal;line-height:1.08}h1{font-size:clamp(40px,7vw,76px);margin:0}h2{font-size:28px;margin:0 0 12px}p{max-width:69ch}a{color:#07594c;text-underline-offset:3px}a:focus-visible{outline:3px solid #af7016}.lead{font-size:21px;color:#3e565b;margin:16px 0 23px}.primary{display:inline-block;padding:10px 16px;border-radius:5px;background:#07594c;color:white;text-decoration:none;font-weight:600}section{margin-top:31px;border-top:1px solid #bac7bf;padding-top:22px}code{font:15px/1.5 Consolas,monospace;overflow-wrap:anywhere}pre{white-space:pre-wrap;padding:14px 18px;background:#fffefa;border:1px solid #bac7bf;border-radius:4px}ul{padding-left:22px}li{margin:7px 0}
+</style>
+<main>
+<h1>When the last copy leaves</h1>
+<p class="lead">How can a coding agent recover every past change involving a file when some of the event bodies have left memory?</p>
+<a class="primary" href="graph-memory.html">Open the eviction lab</a>
+<p>Drop a copy, compare the two recovery rules, then examine the measured repository trials and their runtime costs.</p>
+<section><h2>Run the real Tablib query</h2>
+<p>The offline browser lab uses eight constructed events. The accompanying SQLite snapshot holds a real prefix of 137 Tablib change events. Query <code>tests/test_tablib.py</code> in both modes and inspect the statements that executed. With Python 3, run these commands from the extracted folder.</p>
+<pre><code>python -B live_query.py
+python -B live_query.py --quiet</code></pre>
+<p>For a clickable SQLite console, run <code>python -B live_query.py --serve</code> and open the local address it prints. Each button executes a fresh read against the snapshot.</p>
+</section><section><h2>Paper and walkthrough</h2><ul>
+<li><a href="paper.pdf">Four-page working paper</a></li>
+<li><a href="walkthrough.mp4">Watch the English walkthrough</a> (1 min 50 s) · <a href="captions.srt">English captions</a></li>
+</ul></section></main></html>
