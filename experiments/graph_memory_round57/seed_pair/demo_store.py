@@ -9,9 +9,6 @@ import sys
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent / "anchor_risk"))
-from risk import History
-from evaluate_risk import read
-from ambiguity import triples
 
 CASES = {"gain": ("dask/dask", "06c1bb72be354a1629f6e958376420101fed4258"),
          "loss": ("pydata/xarray", "503b262d42877eb5de6c803d520983e364ebdfab")}
@@ -36,6 +33,10 @@ GROUP BY p.fid,m.m,m.has_a,m.has_b
 
 
 def build(path):
+    from risk import History
+    from evaluate_risk import read
+    from ambiguity import triples
+
     logs = read(HERE / "new-queries.json.gz")
     data = read(HERE / "events.json.gz")
     with closing(sqlite3.connect(path)) as db:

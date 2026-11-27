@@ -1,0 +1,176 @@
+{
+  "file_sha256": "60e52246dee7b0fd3ea4a75d4ea595fd4295c51db8411596a6508ced644c0bce",
+  "captions_sha256": "07d70fe28c8c93d4df3fe737ad631647a0ce7b85f3d97470c8ca5eec7f7e0e1f",
+  "ffprobe": {
+    "programs": [],
+    "stream_groups": [],
+    "streams": [
+      {
+        "codec_name": "h264",
+        "codec_type": "video",
+        "width": 1280,
+        "height": 816,
+        "pix_fmt": "yuv420p",
+        "nb_frames": "2936"
+      },
+      {
+        "codec_name": "aac",
+        "codec_type": "audio",
+        "sample_rate": "22050",
+        "channels": 1,
+        "nb_frames": "2530"
+      }
+    ],
+    "format": {
+      "duration": "117.440000",
+      "size": "2858772"
+    }
+  },
+  "decoded_full_file": true,
+  "verified_scenes": [
+    {
+      "id": "owners",
+      "rgb_mean_absolute_error": 1.486,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3183.5
+    },
+    {
+      "id": "receipts",
+      "rgb_mean_absolute_error": 1.615,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3084.5
+    },
+    {
+      "id": "dask",
+      "rgb_mean_absolute_error": 2.168,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3281.2
+    },
+    {
+      "id": "gold",
+      "rgb_mean_absolute_error": 2.245,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3223.7
+    },
+    {
+      "id": "witness",
+      "rgb_mean_absolute_error": 1.507,
+      "decoded_to_speech_pcm_correlation": 0.99997,
+      "decoded_audio_rms_s16": 3122.6
+    },
+    {
+      "id": "loss",
+      "rgb_mean_absolute_error": 2.171,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 2961.0
+    },
+    {
+      "id": "world",
+      "rgb_mean_absolute_error": 1.907,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3138.0
+    },
+    {
+      "id": "shift",
+      "rgb_mean_absolute_error": 1.82,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3051.3
+    },
+    {
+      "id": "return",
+      "rgb_mean_absolute_error": 2.136,
+      "decoded_to_speech_pcm_correlation": 0.99998,
+      "decoded_audio_rms_s16": 3218.2
+    }
+  ],
+  "voice": "Microsoft Zira Desktop",
+  "scenes": [
+    {
+      "id": "owners",
+      "chapter": "One known file",
+      "text": "This NetworkX change gives the agent one file. Each file retains its eight most recent co-edits. A commit can outlive one file's window because another participant still retains it.",
+      "start_frame": 0,
+      "frames": 331,
+      "steady_frames": 331,
+      "render_sha256": "d6b39947dfa2b7c902f14e6b6c46b2f8419f633ab6fcbb1e611ed0c062e25dcb"
+    },
+    {
+      "id": "receipts",
+      "chapter": "One commit, several owners",
+      "text": "Open the evidence list. The additional commits identify their retaining files. Here the test for the directed generator enters the top eight. These ranks use only earlier commits.",
+      "start_frame": 331,
+      "frames": 332,
+      "steady_frames": 329,
+      "render_sha256": "502832391846f325eba4d85644b8a1fcdaf1f646135e897df59452e1787a929c"
+    },
+    {
+      "id": "dask",
+      "chapter": "Two known files",
+      "text": "Now the agent knows two files from a Dask change. The local SQLite database computes three rankings from the same eight past events. The hidden files are used only to grade the result.",
+      "start_frame": 663,
+      "frames": 330,
+      "steady_frames": 330,
+      "render_sha256": "0e8e4e0ec1a0edd77ebc701f79f0e29629234498c03275d012825eed60be73d4"
+    },
+    {
+      "id": "gold",
+      "chapter": "Inspect the hidden files",
+      "text": "The sum of pair weights finds zero of three files. Giving extra weight to candidates present with both seeds finds two. A control using pair overlap alone finds all three.",
+      "start_frame": 993,
+      "frames": 316,
+      "steady_frames": 313,
+      "render_sha256": "67b50851ed770c3a74fbbc131129776c41092774eeb2506740cc05b902f5a224"
+    },
+    {
+      "id": "witness",
+      "chapter": "Inspect the evidence",
+      "text": "Expand a commit to see the actual participants and its source revision. The same files and the same storage budget can give different next reads under different scoring rules.",
+      "start_frame": 1309,
+      "frames": 277,
+      "steady_frames": 274,
+      "render_sha256": "39391efdb1444684ccf6b78af1ab362abc55fbbed5e4f02f35eab517cd2bdeb6"
+    },
+    {
+      "id": "loss",
+      "chapter": "Check a counterexample",
+      "text": "Switch to a change in Xarray. The simple pair ranking finds one of two hidden files. Giving extra weight to joint events displaces it. The effect varies across real changes.",
+      "start_frame": 1586,
+      "frames": 332,
+      "steady_frames": 329,
+      "render_sha256": "3b665f8b47e51239a409427371b707e0c23daecdbe0acb899df1d76c8d4f6708"
+    },
+    {
+      "id": "world",
+      "chapter": "Change the history",
+      "text": "In this controlled example every pair from different file groups occurs exactly once. Select an A file and a B file. The highlighted C file is the recorded third participant.",
+      "start_frame": 1918,
+      "frames": 320,
+      "steady_frames": 317,
+      "render_sha256": "1e17b69f9538398e613df8806cfe42c147fb593b1523fd6ab1f96d02854c7be8"
+    },
+    {
+      "id": "shift",
+      "chapter": "Same pair counts, different answer",
+      "text": "Change the history. The highlighted file moves while all pair counts stay fixed. Across sixteen equally likely histories, an eight-file answer from those counts can cover at most half.",
+      "start_frame": 2238,
+      "frames": 332,
+      "steady_frames": 329,
+      "render_sha256": "20835b963cd8b17c8bf2b19e8c898afc475f8f5491b24303ee525950cc4e75c6"
+    },
+    {
+      "id": "return",
+      "chapter": "What the demonstration establishes",
+      "text": "Stored events preserve information that pair counts can lose. On six new real repositories the additional information did not establish a consistent retrieval advantage. Both outcomes are available for inspection.",
+      "start_frame": 2570,
+      "frames": 366,
+      "steady_frames": 363,
+      "render_sha256": "d52b8c930b5704a5ea0f83a5d878e06f80ba654a35ab26178eb48b21365b33e5"
+    }
+  ],
+  "inputs": {
+    "graph_memory_round56\\manuscript\\replay.html": "8978e24b7a98bc5c01239638e7d477b95989893c929eb85a4cea76b5fb099bca",
+    "graph_memory_round57\\seed_pair\\replay.sqlite": "15922af45411375253a28075ded7b8fc10aa078c056efb2f7c92243e2e437d4c",
+    "graph_memory_round57\\seed_pair\\view.html": "f8173e29a4374fca87b667e7d749c79e1da4cfc0a9d14fa5352311cd95dab54d",
+    "graph_memory_round57\\walkthrough\\scenes.json": "0340b4794879651abdd5c6665ceb2b90534d08c40e7712fbb99978c66fd5068c"
+  }
+}

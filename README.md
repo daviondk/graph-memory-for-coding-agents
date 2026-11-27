@@ -2,7 +2,9 @@
 
 Исследование того, какие наблюдения из работы с кодом стоит сохранять, как обновлять их после правок и когда показывать агенту.
 
-**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round56/manuscript/paper.pdf) · [LaTeX](experiments/graph_memory_round56/manuscript/paper.tex) · [Новая демонстрация памяти на двух правках NetworkX](experiments/graph_memory_round56/demo/README.md) · [Предыдущая рукопись](experiments/graph_memory_round55/submission/paper.pdf) и [полный комплект с видео](experiments/graph_memory_round55/submission/candidate.zip).
+**Рабочая рукопись для ICDE Demonstrations** · [PDF, 4 страницы](experiments/graph_memory_round57/manuscript/paper.pdf) · [Автономная демонстрация с видео](experiments/graph_memory_round57/release/candidate.zip) · [Предыдущая рукопись](experiments/graph_memory_round56/manuscript/paper.pdf).
+
+[Когда помогает исходный состав правки](experiments/graph_memory_round57/REPORT_RU.md). На одинаковой долговременной SQLite-базе общий читатель снизил объём переданных данных со 123 058 до 21 142 байт на 196 запросах с точной выдачей. На 932 правках в шести новых проектах приоритет небольших событий сократил байты чтения на 33,1%; преимущество в Recall@8 остаётся неопределённым. [Краткий отчёт](docs/progress-report-r57.md) · [Сценарии с двумя известными файлами](experiments/graph_memory_round57/seed_pair/REPORT_RU.md) · [Видеопоказ](experiments/graph_memory_round57/walkthrough/walkthrough.mp4).
 
 [Графовая память с общими событиями](experiments/graph_memory_round56/REPORT_RU.md). На 880 точных запросах число переданных из архива SQLite байтов сократилось с 74 840 до 8 076. На 196 правках трёх длинных историй повторное чтение сохранённых связей изменило Recall@8 с 41,97% до 43,53%. На 36 функциях Qwen3-4B компактный и полный текстовый поиск дали по 15 полностью пройденных наборов примеров. [Краткий отчёт](docs/progress-report-r56.md) · [Два примера в NetworkX](experiments/graph_memory_round56/demo/README.md) · [Agent Retrieval Bench](experiments/graph_memory_round56/code2test/REPORT_RU.md).
 

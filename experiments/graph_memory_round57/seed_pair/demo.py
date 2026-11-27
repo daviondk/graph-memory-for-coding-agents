@@ -8,7 +8,7 @@ import sqlite3
 from tempfile import TemporaryDirectory
 from urllib.parse import urlsplit
 
-from demo_store import CASES, HERE, build, inspect, read, world
+from demo_store import CASES, HERE, build, inspect, world
 
 
 def connect(path):
@@ -31,6 +31,8 @@ def html(data):
 
 
 def checked(db, data):
+    from evaluate_risk import read
+
     logs = read(HERE / "new-queries.json.gz")
     streams = read(HERE / "events.json.gz")
     for case, (repo, rev) in CASES.items():
@@ -81,9 +83,21 @@ def handler(db_path, page):
 
 def main():
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument("mode", choices=("export","verify","serve"))
+    p.add_argument("mode", choices=("export","verify","serve","open-snapshot","check-snapshot"))
     p.add_argument("--port", type=int, default=8657)
     args = p.parse_args()
+    if args.mode in {"open-snapshot", "check-snapshot"}:
+        db_path = HERE / "replay.sqlite"
+        with closing(connect(db_path)) as db:
+            assert db.execute("PRAGMA integrity_check").fetchone() == ("ok",)
+            page = html(snapshot(db))
+        assert page == (HERE / "demo.html").read_bytes()
+        if args.mode == "open-snapshot":
+            with ThreadingHTTPServer(("127.0.0.1",args.port), handler(db_path,page)) as server:
+                print(f"Open http://127.0.0.1:{server.server_port}/?source=sqlite",flush=True)
+                server.serve_forever()
+        print("Packaged SQLite database matches the offline view.")
+        return
     with TemporaryDirectory(dir=HERE) as folder:
         db_path = Path(folder) / "memory.sqlite"
         build(db_path)
@@ -96,6 +110,9 @@ def main():
             dest.write_bytes(page)
         elif args.mode == "verify":
             assert dest.read_bytes() == page
+            with closing(connect(HERE / "replay.sqlite")) as saved:
+                assert saved.execute("PRAGMA integrity_check").fetchone() == ("ok",)
+                assert snapshot(saved) == data
         else:
             with ThreadingHTTPServer(("127.0.0.1",args.port), handler(db_path,page)) as server:
                 print(f"Open http://127.0.0.1:{server.server_port}/?source=sqlite",flush=True)
