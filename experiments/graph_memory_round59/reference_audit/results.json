@@ -1,0 +1,2783 @@
+{
+ "packets": {
+  "forced_frames": 1440,
+  "production_frames": 576
+ },
+ "panels": {
+  "original/B/encode/httpx": {
+   "arms": 9,
+   "queries": 81,
+   "ranking_sha": "ecdf5652fb111ecb1867f3510a231685aa9d4c45a78ff883f3e031dc6fb1d24e",
+   "selection": {
+    "demand1024": {
+     "bodies": 350,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 978,
+       "copy": 1006,
+       "eager": 350
+      },
+      "1": {
+       "compressed": 921,
+       "copy": 949,
+       "eager": 293
+      },
+      "16": {
+       "compressed": 746,
+       "copy": 774,
+       "eager": 118
+      },
+      "4": {
+       "compressed": 855,
+       "copy": 883,
+       "eager": 227
+      },
+      "81": {
+       "compressed": 628,
+       "copy": 656,
+       "eager": 0
+      }
+     },
+     "positive_raw_prefixes": 82,
+     "selected": 78,
+     "selected_touched": 78,
+     "sizes": {
+      "compressed": 532,
+      "copy": 546,
+      "eager": 43,
+      "lazy": 43
+     },
+     "touched_bytes": 350
+    },
+    "full": {
+     "bodies": 350,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 978,
+       "copy": 1006,
+       "eager": 350
+      },
+      "1": {
+       "compressed": 921,
+       "copy": 949,
+       "eager": 293
+      },
+      "16": {
+       "compressed": 746,
+       "copy": 774,
+       "eager": 118
+      },
+      "4": {
+       "compressed": 855,
+       "copy": 883,
+       "eager": 227
+      },
+      "81": {
+       "compressed": 628,
+       "copy": 656,
+       "eager": 0
+      }
+     },
+     "positive_raw_prefixes": 82,
+     "selected": 78,
+     "selected_touched": 78,
+     "sizes": {
+      "compressed": 532,
+      "copy": 546,
+      "eager": 43,
+      "lazy": 43
+     },
+     "touched_bytes": 350
+    }
+   }
+  },
+  "original/B/pallets/flask": {
+   "arms": 9,
+   "queries": 79,
+   "ranking_sha": "a63485904463e6ab8eb3462852e97370827f9a8e00d711240c858ef10242d704",
+   "selection": {
+    "demand1024": {
+     "bodies": 293,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 800,
+       "copy": 830,
+       "eager": 293
+      },
+      "1": {
+       "compressed": 595,
+       "copy": 625,
+       "eager": 88
+      },
+      "16": {
+       "compressed": 542,
+       "copy": 572,
+       "eager": 35
+      },
+      "4": {
+       "compressed": 552,
+       "copy": 582,
+       "eager": 45
+      },
+      "79": {
+       "compressed": 514,
+       "copy": 544,
+       "eager": 7
+      }
+     },
+     "positive_raw_prefixes": 80,
+     "selected": 66,
+     "selected_touched": 63,
+     "sizes": {
+      "compressed": 450,
+      "copy": 465,
+      "eager": 50,
+      "lazy": 50
+     },
+     "touched_bytes": 286
+    },
+    "full": {
+     "bodies": 293,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 800,
+       "copy": 830,
+       "eager": 293
+      },
+      "1": {
+       "compressed": 595,
+       "copy": 625,
+       "eager": 88
+      },
+      "16": {
+       "compressed": 542,
+       "copy": 572,
+       "eager": 35
+      },
+      "4": {
+       "compressed": 552,
+       "copy": 582,
+       "eager": 45
+      },
+      "79": {
+       "compressed": 514,
+       "copy": 544,
+       "eager": 7
+      }
+     },
+     "positive_raw_prefixes": 80,
+     "selected": 66,
+     "selected_touched": 63,
+     "sizes": {
+      "compressed": 450,
+      "copy": 465,
+      "eager": 50,
+      "lazy": 50
+     },
+     "touched_bytes": 286
+    }
+   }
+  },
+  "original/B/pypa/pip": {
+   "arms": 9,
+   "queries": 136,
+   "ranking_sha": "d32a65b5126746c3654a464261560a1b106d3d90c626de86eb4458ead521b033",
+   "selection": {
+    "demand1024": {
+     "bodies": 881,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1858,
+       "copy": 1928,
+       "eager": 881
+      },
+      "1": {
+       "compressed": 1823,
+       "copy": 1893,
+       "eager": 846
+      },
+      "136": {
+       "compressed": 1052,
+       "copy": 1122,
+       "eager": 75
+      },
+      "16": {
+       "compressed": 1312,
+       "copy": 1382,
+       "eager": 335
+      },
+      "4": {
+       "compressed": 1505,
+       "copy": 1575,
+       "eager": 528
+      }
+     },
+     "positive_raw_prefixes": 137,
+     "selected": 48,
+     "selected_touched": 43,
+     "sizes": {
+      "compressed": 986,
+      "copy": 1021,
+      "eager": 57,
+      "lazy": 57
+     },
+     "touched_bytes": 806
+    },
+    "full": {
+     "bodies": 1217,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 2924,
+       "copy": 2994,
+       "eager": 1217
+      },
+      "1": {
+       "compressed": 2889,
+       "copy": 2959,
+       "eager": 1182
+      },
+      "136": {
+       "compressed": 1879,
+       "copy": 1949,
+       "eager": 172
+      },
+      "16": {
+       "compressed": 2323,
+       "copy": 2393,
+       "eager": 616
+      },
+      "4": {
+       "compressed": 2550,
+       "copy": 2620,
+       "eager": 843
+      }
+     },
+     "positive_raw_prefixes": 137,
+     "selected": 136,
+     "selected_touched": 109,
+     "sizes": {
+      "compressed": 1502,
+      "copy": 1537,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 1045
+    }
+   }
+  },
+  "original/B/pytest-dev/pytest": {
+   "arms": 9,
+   "queries": 110,
+   "ranking_sha": "44ea56fbc74070cec227b205d4ce067b8812a8349e9517654139afcddf6ef673",
+   "selection": {
+    "demand1024": {
+     "bodies": 416,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1260,
+       "copy": 1260,
+       "eager": 416
+      },
+      "1": {
+       "compressed": 1239,
+       "copy": 1239,
+       "eager": 395
+      },
+      "110": {
+       "compressed": 854,
+       "copy": 854,
+       "eager": 10
+      },
+      "16": {
+       "compressed": 969,
+       "copy": 969,
+       "eager": 125
+      },
+      "4": {
+       "compressed": 1162,
+       "copy": 1162,
+       "eager": 318
+      }
+     },
+     "positive_raw_prefixes": 111,
+     "selected": 108,
+     "selected_touched": 103,
+     "sizes": {
+      "compressed": 672,
+      "copy": 672,
+      "eager": 42,
+      "lazy": 42
+     },
+     "touched_bytes": 406
+    },
+    "full": {
+     "bodies": 416,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1260,
+       "copy": 1260,
+       "eager": 416
+      },
+      "1": {
+       "compressed": 1239,
+       "copy": 1239,
+       "eager": 395
+      },
+      "110": {
+       "compressed": 854,
+       "copy": 854,
+       "eager": 10
+      },
+      "16": {
+       "compressed": 969,
+       "copy": 969,
+       "eager": 125
+      },
+      "4": {
+       "compressed": 1162,
+       "copy": 1162,
+       "eager": 318
+      }
+     },
+     "positive_raw_prefixes": 111,
+     "selected": 108,
+     "selected_touched": 103,
+     "sizes": {
+      "compressed": 672,
+      "copy": 672,
+      "eager": 42,
+      "lazy": 42
+     },
+     "touched_bytes": 406
+    }
+   }
+  },
+  "original/B/python-attrs/attrs": {
+   "arms": 9,
+   "queries": 49,
+   "ranking_sha": "f75551a59fc839a644c1f296a848e72f467e255956f8802a08e006e49ab3bc40",
+   "selection": {
+    "demand1024": {
+     "bodies": 185,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 554,
+       "copy": 554,
+       "eager": 185
+      },
+      "1": {
+       "compressed": 482,
+       "copy": 482,
+       "eager": 113
+      },
+      "16": {
+       "compressed": 386,
+       "copy": 386,
+       "eager": 17
+      },
+      "4": {
+       "compressed": 445,
+       "copy": 445,
+       "eager": 76
+      },
+      "49": {
+       "compressed": 377,
+       "copy": 377,
+       "eager": 8
+      }
+     },
+     "positive_raw_prefixes": 50,
+     "selected": 47,
+     "selected_touched": 43,
+     "sizes": {
+      "compressed": 319,
+      "copy": 319,
+      "eager": 42,
+      "lazy": 42
+     },
+     "touched_bytes": 177
+    },
+    "full": {
+     "bodies": 185,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 554,
+       "copy": 554,
+       "eager": 185
+      },
+      "1": {
+       "compressed": 482,
+       "copy": 482,
+       "eager": 113
+      },
+      "16": {
+       "compressed": 386,
+       "copy": 386,
+       "eager": 17
+      },
+      "4": {
+       "compressed": 445,
+       "copy": 445,
+       "eager": 76
+      },
+      "49": {
+       "compressed": 377,
+       "copy": 377,
+       "eager": 8
+      }
+     },
+     "positive_raw_prefixes": 50,
+     "selected": 47,
+     "selected_touched": 43,
+     "sizes": {
+      "compressed": 319,
+      "copy": 319,
+      "eager": 42,
+      "lazy": 42
+     },
+     "touched_bytes": 177
+    }
+   }
+  },
+  "original/B/python-jsonschema/jsonschema": {
+   "arms": 9,
+   "queries": 37,
+   "ranking_sha": "fdcea6776dbd3cfa575d00a3f7dedfd1cac242e5f428f6653b145cc5958809cc",
+   "selection": {
+    "demand1024": {
+     "bodies": 109,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 350,
+       "copy": 350,
+       "eager": 109
+      },
+      "1": {
+       "compressed": 277,
+       "copy": 277,
+       "eager": 36
+      },
+      "16": {
+       "compressed": 255,
+       "copy": 255,
+       "eager": 14
+      },
+      "37": {
+       "compressed": 245,
+       "copy": 245,
+       "eager": 4
+      },
+      "4": {
+       "compressed": 260,
+       "copy": 260,
+       "eager": 19
+      }
+     },
+     "positive_raw_prefixes": 38,
+     "selected": 34,
+     "selected_touched": 32,
+     "sizes": {
+      "compressed": 217,
+      "copy": 217,
+      "eager": 42,
+      "lazy": 42
+     },
+     "touched_bytes": 105
+    },
+    "full": {
+     "bodies": 109,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 350,
+       "copy": 350,
+       "eager": 109
+      },
+      "1": {
+       "compressed": 277,
+       "copy": 277,
+       "eager": 36
+      },
+      "16": {
+       "compressed": 255,
+       "copy": 255,
+       "eager": 14
+      },
+      "37": {
+       "compressed": 245,
+       "copy": 245,
+       "eager": 4
+      },
+      "4": {
+       "compressed": 260,
+       "copy": 260,
+       "eager": 19
+      }
+     },
+     "positive_raw_prefixes": 38,
+     "selected": 34,
+     "selected_touched": 32,
+     "sizes": {
+      "compressed": 217,
+      "copy": 217,
+      "eager": 42,
+      "lazy": 42
+     },
+     "touched_bytes": 105
+    }
+   }
+  },
+  "original/long/matplotlib/matplotlib": {
+   "arms": 9,
+   "queries": 63,
+   "ranking_sha": "e42b21d9c906b92f3c70d9fb7d937f43e963ab440ac776f9e62db981972a78f8",
+   "selection": {
+    "demand1024": {
+     "bodies": 878,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1894,
+       "copy": 1894,
+       "eager": 878
+      },
+      "1": {
+       "compressed": 1649,
+       "copy": 1649,
+       "eager": 633
+      },
+      "16": {
+       "compressed": 1114,
+       "copy": 1114,
+       "eager": 98
+      },
+      "4": {
+       "compressed": 1295,
+       "copy": 1295,
+       "eager": 279
+      },
+      "63": {
+       "compressed": 1016,
+       "copy": 1016,
+       "eager": 0
+      }
+     },
+     "positive_raw_prefixes": 64,
+     "selected": 37,
+     "selected_touched": 37,
+     "sizes": {
+      "compressed": 1024,
+      "copy": 1024,
+      "eager": 77,
+      "lazy": 77
+     },
+     "touched_bytes": 878
+    },
+    "full": {
+     "bodies": 4054,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 11150,
+       "copy": 11372,
+       "eager": 4054
+      },
+      "1": {
+       "compressed": 10686,
+       "copy": 10908,
+       "eager": 3590
+      },
+      "16": {
+       "compressed": 9573,
+       "copy": 9795,
+       "eager": 2477
+      },
+      "4": {
+       "compressed": 10030,
+       "copy": 10252,
+       "eager": 2934
+      },
+      "63": {
+       "compressed": 8775,
+       "copy": 8997,
+       "eager": 1679
+      }
+     },
+     "positive_raw_prefixes": 64,
+     "selected": 599,
+     "selected_touched": 291,
+     "sizes": {
+      "compressed": 5719,
+      "copy": 5830,
+      "eager": 144,
+      "lazy": 144
+     },
+     "touched_bytes": 2375
+    }
+   }
+  },
+  "original/long/networkx/networkx": {
+   "arms": 9,
+   "queries": 72,
+   "ranking_sha": "f149ea9de302503c04b6de3db5d2d54c684af614533944f1ca72f202d48968fc",
+   "selection": {
+    "demand1024": {
+     "bodies": 948,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1942,
+       "copy": 1942,
+       "eager": 948
+      },
+      "1": {
+       "compressed": 1942,
+       "copy": 1942,
+       "eager": 948
+      },
+      "16": {
+       "compressed": 1218,
+       "copy": 1218,
+       "eager": 224
+      },
+      "4": {
+       "compressed": 1865,
+       "copy": 1865,
+       "eager": 871
+      },
+      "72": {
+       "compressed": 994,
+       "copy": 994,
+       "eager": 0
+      }
+     },
+     "positive_raw_prefixes": 73,
+     "selected": 12,
+     "selected_touched": 12,
+     "sizes": {
+      "compressed": 1024,
+      "copy": 1024,
+      "eager": 53,
+      "lazy": 53
+     },
+     "touched_bytes": 948
+    },
+    "full": {
+     "bodies": 6696,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 15736,
+       "copy": 17494,
+       "eager": 6696
+      },
+      "1": {
+       "compressed": 15631,
+       "copy": 17389,
+       "eager": 6591
+      },
+      "16": {
+       "compressed": 13185,
+       "copy": 14943,
+       "eager": 4145
+      },
+      "4": {
+       "compressed": 15324,
+       "copy": 17082,
+       "eager": 6284
+      },
+      "72": {
+       "compressed": 11487,
+       "copy": 13245,
+       "eager": 2447
+      }
+     },
+     "positive_raw_prefixes": 73,
+     "selected": 745,
+     "selected_touched": 290,
+     "sizes": {
+      "compressed": 8016,
+      "copy": 8895,
+      "eager": 148,
+      "lazy": 148
+     },
+     "touched_bytes": 4249
+    }
+   }
+  },
+  "original/long/sphinx-doc/sphinx": {
+   "arms": 9,
+   "queries": 61,
+   "ranking_sha": "25749dae7bb6c9ac897bc93d86b70177727e36e860ca5c4aac9164364f23b4c2",
+   "selection": {
+    "demand1024": {
+     "bodies": 943,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1760,
+       "copy": 1938,
+       "eager": 943
+      },
+      "1": {
+       "compressed": 1760,
+       "copy": 1938,
+       "eager": 943
+      },
+      "16": {
+       "compressed": 826,
+       "copy": 1004,
+       "eager": 9
+      },
+      "4": {
+       "compressed": 906,
+       "copy": 1084,
+       "eager": 89
+      },
+      "61": {
+       "compressed": 826,
+       "copy": 1004,
+       "eager": 9
+      }
+     },
+     "positive_raw_prefixes": 62,
+     "selected": 14,
+     "selected_touched": 13,
+     "sizes": {
+      "compressed": 935,
+      "copy": 1024,
+      "eager": 55,
+      "lazy": 55
+     },
+     "touched_bytes": 934
+    },
+    "full": {
+     "bodies": 9038,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 18622,
+       "copy": 20986,
+       "eager": 9038
+      },
+      "1": {
+       "compressed": 18276,
+       "copy": 20640,
+       "eager": 8692
+      },
+      "16": {
+       "compressed": 12184,
+       "copy": 14548,
+       "eager": 2600
+      },
+      "4": {
+       "compressed": 14264,
+       "copy": 16628,
+       "eager": 4680
+      },
+      "61": {
+       "compressed": 10779,
+       "copy": 13143,
+       "eager": 1195
+      }
+     },
+     "positive_raw_prefixes": 62,
+     "selected": 539,
+     "selected_touched": 374,
+     "sizes": {
+      "compressed": 9452,
+      "copy": 10634,
+      "eager": 141,
+      "lazy": 141
+     },
+     "touched_bytes": 7843
+    }
+   }
+  },
+  "replication/B/Python-Markdown/markdown": {
+   "arms": 9,
+   "queries": 172,
+   "ranking_sha": "50ec112fbf6688d4e20f07d49b77667ece2c8928144600b8cafa5d761e7e9160",
+   "selection": {
+    "demand1024": {
+     "bodies": 621,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1396,
+       "copy": 1656,
+       "eager": 621
+      },
+      "1": {
+       "compressed": 1241,
+       "copy": 1501,
+       "eager": 466
+      },
+      "16": {
+       "compressed": 819,
+       "copy": 1079,
+       "eager": 44
+      },
+      "172": {
+       "compressed": 790,
+       "copy": 1050,
+       "eager": 15
+      },
+      "4": {
+       "compressed": 957,
+       "copy": 1217,
+       "eager": 182
+      }
+     },
+     "positive_raw_prefixes": 173,
+     "selected": 94,
+     "selected_touched": 87,
+     "sizes": {
+      "compressed": 760,
+      "copy": 890,
+      "eager": 62,
+      "lazy": 62
+     },
+     "touched_bytes": 606
+    },
+    "full": {
+     "bodies": 621,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1396,
+       "copy": 1656,
+       "eager": 621
+      },
+      "1": {
+       "compressed": 1241,
+       "copy": 1501,
+       "eager": 466
+      },
+      "16": {
+       "compressed": 819,
+       "copy": 1079,
+       "eager": 44
+      },
+      "172": {
+       "compressed": 790,
+       "copy": 1050,
+       "eager": 15
+      },
+      "4": {
+       "compressed": 957,
+       "copy": 1217,
+       "eager": 182
+      }
+     },
+     "positive_raw_prefixes": 173,
+     "selected": 94,
+     "selected_touched": 87,
+     "sizes": {
+      "compressed": 760,
+      "copy": 890,
+      "eager": 62,
+      "lazy": 62
+     },
+     "touched_bytes": 606
+    }
+   }
+  },
+  "replication/B/lepture/mistune": {
+   "arms": 9,
+   "queries": 153,
+   "ranking_sha": "4c7aa3bcc22776165d8418943bf87604ad7e419f2b0a5642f6a24a9a65045747",
+   "selection": {
+    "demand1024": {
+     "bodies": 567,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1686,
+       "copy": 1742,
+       "eager": 567
+      },
+      "1": {
+       "compressed": 1649,
+       "copy": 1705,
+       "eager": 530
+      },
+      "153": {
+       "compressed": 1219,
+       "copy": 1275,
+       "eager": 100
+      },
+      "16": {
+       "compressed": 1461,
+       "copy": 1517,
+       "eager": 342
+      },
+      "4": {
+       "compressed": 1636,
+       "copy": 1692,
+       "eager": 517
+      }
+     },
+     "positive_raw_prefixes": 154,
+     "selected": 144,
+     "selected_touched": 104,
+     "sizes": {
+      "compressed": 892,
+      "copy": 920,
+      "eager": 49,
+      "lazy": 49
+     },
+     "touched_bytes": 467
+    },
+    "full": {
+     "bodies": 567,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1686,
+       "copy": 1742,
+       "eager": 567
+      },
+      "1": {
+       "compressed": 1649,
+       "copy": 1705,
+       "eager": 530
+      },
+      "153": {
+       "compressed": 1219,
+       "copy": 1275,
+       "eager": 100
+      },
+      "16": {
+       "compressed": 1461,
+       "copy": 1517,
+       "eager": 342
+      },
+      "4": {
+       "compressed": 1636,
+       "copy": 1692,
+       "eager": 517
+      }
+     },
+     "positive_raw_prefixes": 154,
+     "selected": 144,
+     "selected_touched": 104,
+     "sizes": {
+      "compressed": 892,
+      "copy": 920,
+      "eager": 49,
+      "lazy": 49
+     },
+     "touched_bytes": 467
+    }
+   }
+  },
+  "replication/B/pallets-eco/blinker": {
+   "arms": 9,
+   "queries": 20,
+   "ranking_sha": "b090f04d4547460d07d0c6d3aa1ddae9f3625e8dd46411048e2387473443bc17",
+   "selection": {
+    "demand1024": {
+     "bodies": 63,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 200,
+       "copy": 200,
+       "eager": 63
+      },
+      "1": {
+       "compressed": 187,
+       "copy": 187,
+       "eager": 50
+      },
+      "16": {
+       "compressed": 154,
+       "copy": 154,
+       "eager": 17
+      },
+      "20": {
+       "compressed": 150,
+       "copy": 150,
+       "eager": 13
+      },
+      "4": {
+       "compressed": 154,
+       "copy": 154,
+       "eager": 17
+      }
+     },
+     "positive_raw_prefixes": 21,
+     "selected": 19,
+     "selected_touched": 13,
+     "sizes": {
+      "compressed": 141,
+      "copy": 141,
+      "eager": 41,
+      "lazy": 41
+     },
+     "touched_bytes": 50
+    },
+    "full": {
+     "bodies": 63,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 200,
+       "copy": 200,
+       "eager": 63
+      },
+      "1": {
+       "compressed": 187,
+       "copy": 187,
+       "eager": 50
+      },
+      "16": {
+       "compressed": 154,
+       "copy": 154,
+       "eager": 17
+      },
+      "20": {
+       "compressed": 150,
+       "copy": 150,
+       "eager": 13
+      },
+      "4": {
+       "compressed": 154,
+       "copy": 154,
+       "eager": 17
+      }
+     },
+     "positive_raw_prefixes": 21,
+     "selected": 19,
+     "selected_touched": 13,
+     "sizes": {
+      "compressed": 141,
+      "copy": 141,
+      "eager": 41,
+      "lazy": 41
+     },
+     "touched_bytes": 50
+    }
+   }
+  },
+  "replication/B/pypa/trove-classifiers": {
+   "arms": 9,
+   "queries": 2,
+   "ranking_sha": "559587a15f64a23268933e77c20baafc8d7f65a1fce01c7fcbf7d70fbeb0ef44",
+   "selection": {
+    "demand1024": {
+     "bodies": 33,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      },
+      "1": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      },
+      "2": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      }
+     },
+     "positive_raw_prefixes": 3,
+     "selected": 5,
+     "selected_touched": 0,
+     "sizes": {
+      "compressed": 83,
+      "copy": 83,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 0
+    },
+    "full": {
+     "bodies": 33,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      },
+      "1": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      },
+      "2": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      }
+     },
+     "positive_raw_prefixes": 3,
+     "selected": 5,
+     "selected_touched": 0,
+     "sizes": {
+      "compressed": 83,
+      "copy": 83,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 0
+    }
+   }
+  },
+  "replication/B/pyparsing/pyparsing": {
+   "arms": 9,
+   "queries": 183,
+   "ranking_sha": "8f87b80d3c14aa91f1db5ccd817bfd5b154c9eed11df7e56067bd0efd37d7736",
+   "selection": {
+    "demand1024": {
+     "bodies": 338,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1026,
+       "copy": 1086,
+       "eager": 338
+      },
+      "1": {
+       "compressed": 989,
+       "copy": 1049,
+       "eager": 301
+      },
+      "16": {
+       "compressed": 719,
+       "copy": 779,
+       "eager": 31
+      },
+      "183": {
+       "compressed": 692,
+       "copy": 752,
+       "eager": 4
+      },
+      "4": {
+       "compressed": 754,
+       "copy": 814,
+       "eager": 66
+      }
+     },
+     "positive_raw_prefixes": 184,
+     "selected": 90,
+     "selected_touched": 88,
+     "sizes": {
+      "compressed": 576,
+      "copy": 606,
+      "eager": 63,
+      "lazy": 63
+     },
+     "touched_bytes": 334
+    },
+    "full": {
+     "bodies": 338,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1026,
+       "copy": 1086,
+       "eager": 338
+      },
+      "1": {
+       "compressed": 989,
+       "copy": 1049,
+       "eager": 301
+      },
+      "16": {
+       "compressed": 719,
+       "copy": 779,
+       "eager": 31
+      },
+      "183": {
+       "compressed": 692,
+       "copy": 752,
+       "eager": 4
+      },
+      "4": {
+       "compressed": 754,
+       "copy": 814,
+       "eager": 66
+      }
+     },
+     "positive_raw_prefixes": 184,
+     "selected": 90,
+     "selected_touched": 88,
+     "sizes": {
+      "compressed": 576,
+      "copy": 606,
+      "eager": 63,
+      "lazy": 63
+     },
+     "touched_bytes": 334
+    }
+   }
+  },
+  "replication/B/python-babel/babel": {
+   "arms": 9,
+   "queries": 253,
+   "ranking_sha": "85d29b1a45530b95b3575e6b31bf0ce7a5df69ececc744656d958cec95f1bba5",
+   "selection": {
+    "demand1024": {
+     "bodies": 638,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1722,
+       "copy": 1900,
+       "eager": 638
+      },
+      "1": {
+       "compressed": 1496,
+       "copy": 1674,
+       "eager": 412
+      },
+      "16": {
+       "compressed": 1162,
+       "copy": 1340,
+       "eager": 78
+      },
+      "253": {
+       "compressed": 1084,
+       "copy": 1262,
+       "eager": 0
+      },
+      "4": {
+       "compressed": 1321,
+       "copy": 1499,
+       "eager": 237
+      }
+     },
+     "positive_raw_prefixes": 254,
+     "selected": 129,
+     "selected_touched": 129,
+     "sizes": {
+      "compressed": 933,
+      "copy": 1022,
+      "eager": 72,
+      "lazy": 72
+     },
+     "touched_bytes": 638
+    },
+    "full": {
+     "bodies": 689,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1934,
+       "copy": 2132,
+       "eager": 689
+      },
+      "1": {
+       "compressed": 1708,
+       "copy": 1906,
+       "eager": 463
+      },
+      "16": {
+       "compressed": 1354,
+       "copy": 1552,
+       "eager": 109
+      },
+      "253": {
+       "compressed": 1250,
+       "copy": 1448,
+       "eager": 5
+      },
+      "4": {
+       "compressed": 1529,
+       "copy": 1727,
+       "eager": 284
+      }
+     },
+     "positive_raw_prefixes": 254,
+     "selected": 154,
+     "selected_touched": 152,
+     "sizes": {
+      "compressed": 1039,
+      "copy": 1138,
+      "eager": 72,
+      "lazy": 72
+     },
+     "touched_bytes": 684
+    }
+   }
+  },
+  "replication/long/Python-Markdown/markdown": {
+   "arms": 9,
+   "queries": 12,
+   "ranking_sha": "457aa0c2cf0b9eb3f4fa4c1a19ab4a4f2c4b2a87f26944ea9c2b78ac12e7fcce",
+   "selection": {
+    "demand1024": {
+     "bodies": 621,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1396,
+       "copy": 1656,
+       "eager": 621
+      },
+      "1": {
+       "compressed": 1299,
+       "copy": 1559,
+       "eager": 524
+      },
+      "12": {
+       "compressed": 897,
+       "copy": 1157,
+       "eager": 122
+      },
+      "4": {
+       "compressed": 1044,
+       "copy": 1304,
+       "eager": 269
+      }
+     },
+     "positive_raw_prefixes": 13,
+     "selected": 94,
+     "selected_touched": 56,
+     "sizes": {
+      "compressed": 760,
+      "copy": 890,
+      "eager": 62,
+      "lazy": 62
+     },
+     "touched_bytes": 499
+    },
+    "full": {
+     "bodies": 621,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1396,
+       "copy": 1656,
+       "eager": 621
+      },
+      "1": {
+       "compressed": 1299,
+       "copy": 1559,
+       "eager": 524
+      },
+      "12": {
+       "compressed": 897,
+       "copy": 1157,
+       "eager": 122
+      },
+      "4": {
+       "compressed": 1044,
+       "copy": 1304,
+       "eager": 269
+      }
+     },
+     "positive_raw_prefixes": 13,
+     "selected": 94,
+     "selected_touched": 56,
+     "sizes": {
+      "compressed": 760,
+      "copy": 890,
+      "eager": 62,
+      "lazy": 62
+     },
+     "touched_bytes": 499
+    }
+   }
+  },
+  "replication/long/lepture/mistune": {
+   "arms": 9,
+   "queries": 23,
+   "ranking_sha": "4de9fc08bc3ce46209ead917945d1b61befd8edadcafc87754d246503f0102a5",
+   "selection": {
+    "demand1024": {
+     "bodies": 567,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1686,
+       "copy": 1742,
+       "eager": 567
+      },
+      "1": {
+       "compressed": 1649,
+       "copy": 1705,
+       "eager": 530
+      },
+      "16": {
+       "compressed": 1478,
+       "copy": 1534,
+       "eager": 359
+      },
+      "23": {
+       "compressed": 1478,
+       "copy": 1534,
+       "eager": 359
+      },
+      "4": {
+       "compressed": 1495,
+       "copy": 1551,
+       "eager": 376
+      }
+     },
+     "positive_raw_prefixes": 24,
+     "selected": 144,
+     "selected_touched": 34,
+     "sizes": {
+      "compressed": 892,
+      "copy": 920,
+      "eager": 49,
+      "lazy": 49
+     },
+     "touched_bytes": 208
+    },
+    "full": {
+     "bodies": 567,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1686,
+       "copy": 1742,
+       "eager": 567
+      },
+      "1": {
+       "compressed": 1649,
+       "copy": 1705,
+       "eager": 530
+      },
+      "16": {
+       "compressed": 1478,
+       "copy": 1534,
+       "eager": 359
+      },
+      "23": {
+       "compressed": 1478,
+       "copy": 1534,
+       "eager": 359
+      },
+      "4": {
+       "compressed": 1495,
+       "copy": 1551,
+       "eager": 376
+      }
+     },
+     "positive_raw_prefixes": 24,
+     "selected": 144,
+     "selected_touched": 34,
+     "sizes": {
+      "compressed": 892,
+      "copy": 920,
+      "eager": 49,
+      "lazy": 49
+     },
+     "touched_bytes": 208
+    }
+   }
+  },
+  "replication/long/pallets-eco/blinker": {
+   "arms": 9,
+   "queries": 2,
+   "ranking_sha": "8dc04fc22c4db4a04c8fc259e1705ce7d3adb0c340d1d18143f06b6566c8735d",
+   "selection": {
+    "demand1024": {
+     "bodies": 63,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 200,
+       "copy": 200,
+       "eager": 63
+      },
+      "1": {
+       "compressed": 192,
+       "copy": 192,
+       "eager": 55
+      },
+      "2": {
+       "compressed": 192,
+       "copy": 192,
+       "eager": 55
+      }
+     },
+     "positive_raw_prefixes": 3,
+     "selected": 19,
+     "selected_touched": 1,
+     "sizes": {
+      "compressed": 141,
+      "copy": 141,
+      "eager": 41,
+      "lazy": 41
+     },
+     "touched_bytes": 8
+    },
+    "full": {
+     "bodies": 63,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 200,
+       "copy": 200,
+       "eager": 63
+      },
+      "1": {
+       "compressed": 192,
+       "copy": 192,
+       "eager": 55
+      },
+      "2": {
+       "compressed": 192,
+       "copy": 192,
+       "eager": 55
+      }
+     },
+     "positive_raw_prefixes": 3,
+     "selected": 19,
+     "selected_touched": 1,
+     "sizes": {
+      "compressed": 141,
+      "copy": 141,
+      "eager": 41,
+      "lazy": 41
+     },
+     "touched_bytes": 8
+    }
+   }
+  },
+  "replication/long/pypa/trove-classifiers": {
+   "arms": 9,
+   "queries": 0,
+   "ranking_sha": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+   "selection": {
+    "demand1024": {
+     "bodies": 33,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      }
+     },
+     "positive_raw_prefixes": 1,
+     "selected": 5,
+     "selected_touched": 0,
+     "sizes": {
+      "compressed": 83,
+      "copy": 83,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 0
+    },
+    "full": {
+     "bodies": 33,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 86,
+       "copy": 86,
+       "eager": 33
+      }
+     },
+     "positive_raw_prefixes": 1,
+     "selected": 5,
+     "selected_touched": 0,
+     "sizes": {
+      "compressed": 83,
+      "copy": 83,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 0
+    }
+   }
+  },
+  "replication/long/pyparsing/pyparsing": {
+   "arms": 9,
+   "queries": 16,
+   "ranking_sha": "519e4d3e50412f2f30d71290d7abacd58345bc3906c4a7a157a9933146030c25",
+   "selection": {
+    "demand1024": {
+     "bodies": 338,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1026,
+       "copy": 1086,
+       "eager": 338
+      },
+      "1": {
+       "compressed": 946,
+       "copy": 1006,
+       "eager": 258
+      },
+      "16": {
+       "compressed": 729,
+       "copy": 789,
+       "eager": 41
+      },
+      "4": {
+       "compressed": 764,
+       "copy": 824,
+       "eager": 76
+      }
+     },
+     "positive_raw_prefixes": 17,
+     "selected": 90,
+     "selected_touched": 76,
+     "sizes": {
+      "compressed": 576,
+      "copy": 606,
+      "eager": 63,
+      "lazy": 63
+     },
+     "touched_bytes": 297
+    },
+    "full": {
+     "bodies": 338,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1026,
+       "copy": 1086,
+       "eager": 338
+      },
+      "1": {
+       "compressed": 946,
+       "copy": 1006,
+       "eager": 258
+      },
+      "16": {
+       "compressed": 729,
+       "copy": 789,
+       "eager": 41
+      },
+      "4": {
+       "compressed": 764,
+       "copy": 824,
+       "eager": 76
+      }
+     },
+     "positive_raw_prefixes": 17,
+     "selected": 90,
+     "selected_touched": 76,
+     "sizes": {
+      "compressed": 576,
+      "copy": 606,
+      "eager": 63,
+      "lazy": 63
+     },
+     "touched_bytes": 297
+    }
+   }
+  },
+  "replication/long/python-babel/babel": {
+   "arms": 9,
+   "queries": 24,
+   "ranking_sha": "e9e6109239a3030c934052065d3a68240fda691d2a7902d96f6519b7a0f6e9e5",
+   "selection": {
+    "demand1024": {
+     "bodies": 638,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1722,
+       "copy": 1900,
+       "eager": 638
+      },
+      "1": {
+       "compressed": 1544,
+       "copy": 1722,
+       "eager": 460
+      },
+      "16": {
+       "compressed": 1172,
+       "copy": 1350,
+       "eager": 88
+      },
+      "24": {
+       "compressed": 1148,
+       "copy": 1326,
+       "eager": 64
+      },
+      "4": {
+       "compressed": 1402,
+       "copy": 1580,
+       "eager": 318
+      }
+     },
+     "positive_raw_prefixes": 25,
+     "selected": 129,
+     "selected_touched": 104,
+     "sizes": {
+      "compressed": 933,
+      "copy": 1022,
+      "eager": 72,
+      "lazy": 72
+     },
+     "touched_bytes": 574
+    },
+    "full": {
+     "bodies": 689,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1934,
+       "copy": 2132,
+       "eager": 689
+      },
+      "1": {
+       "compressed": 1752,
+       "copy": 1950,
+       "eager": 507
+      },
+      "16": {
+       "compressed": 1372,
+       "copy": 1570,
+       "eager": 127
+      },
+      "24": {
+       "compressed": 1344,
+       "copy": 1542,
+       "eager": 99
+      },
+      "4": {
+       "compressed": 1610,
+       "copy": 1808,
+       "eager": 365
+      }
+     },
+     "positive_raw_prefixes": 25,
+     "selected": 154,
+     "selected_touched": 112,
+     "sizes": {
+      "compressed": 1039,
+      "copy": 1138,
+      "eager": 72,
+      "lazy": 72
+     },
+     "touched_bytes": 590
+    }
+   }
+  },
+  "seed_pair/B/astropy/astropy": {
+   "arms": 9,
+   "queries": 228,
+   "ranking_sha": "4041380a2e9e1cc29d21069eddf2375c8fd6ce7287b200ddda2f450da4892133",
+   "selection": {
+    "demand1024": {
+     "bodies": 853,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1780,
+       "copy": 1910,
+       "eager": 853
+      },
+      "1": {
+       "compressed": 1780,
+       "copy": 1910,
+       "eager": 853
+      },
+      "16": {
+       "compressed": 1506,
+       "copy": 1636,
+       "eager": 579
+      },
+      "228": {
+       "compressed": 1077,
+       "copy": 1207,
+       "eager": 150
+      },
+      "4": {
+       "compressed": 1707,
+       "copy": 1837,
+       "eager": 780
+      }
+     },
+     "positive_raw_prefixes": 229,
+     "selected": 55,
+     "selected_touched": 41,
+     "sizes": {
+      "compressed": 959,
+      "copy": 1024,
+      "eager": 69,
+      "lazy": 69
+     },
+     "touched_bytes": 703
+    },
+    "full": {
+     "bodies": 1648,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 4138,
+       "copy": 4408,
+       "eager": 1648
+      },
+      "1": {
+       "compressed": 4131,
+       "copy": 4401,
+       "eager": 1641
+      },
+      "16": {
+       "compressed": 3762,
+       "copy": 4032,
+       "eager": 1272
+      },
+      "228": {
+       "compressed": 2904,
+       "copy": 3174,
+       "eager": 414
+      },
+      "4": {
+       "compressed": 4026,
+       "copy": 4296,
+       "eager": 1536
+      }
+     },
+     "positive_raw_prefixes": 229,
+     "selected": 228,
+     "selected_touched": 155,
+     "sizes": {
+      "compressed": 2109,
+      "copy": 2244,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 1234
+    }
+   }
+  },
+  "seed_pair/B/dask/dask": {
+   "arms": 9,
+   "queries": 249,
+   "ranking_sha": "6c74db23ce49097dce6ed3181b6c788eb76e294958e03210615fc264f7297b0b",
+   "selection": {
+    "demand1024": {
+     "bodies": 777,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1840,
+       "copy": 1906,
+       "eager": 777
+      },
+      "1": {
+       "compressed": 1840,
+       "copy": 1906,
+       "eager": 777
+      },
+      "16": {
+       "compressed": 1141,
+       "copy": 1207,
+       "eager": 78
+      },
+      "249": {
+       "compressed": 1068,
+       "copy": 1134,
+       "eager": 5
+      },
+      "4": {
+       "compressed": 1832,
+       "copy": 1898,
+       "eager": 769
+      }
+     },
+     "positive_raw_prefixes": 250,
+     "selected": 79,
+     "selected_touched": 78,
+     "sizes": {
+      "compressed": 991,
+      "copy": 1024,
+      "eager": 71,
+      "lazy": 71
+     },
+     "touched_bytes": 772
+    },
+    "full": {
+     "bodies": 1142,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 3112,
+       "copy": 3252,
+       "eager": 1142
+      },
+      "1": {
+       "compressed": 3090,
+       "copy": 3230,
+       "eager": 1120
+      },
+      "16": {
+       "compressed": 2318,
+       "copy": 2458,
+       "eager": 348
+      },
+      "249": {
+       "compressed": 2023,
+       "copy": 2163,
+       "eager": 53
+      },
+      "4": {
+       "compressed": 3074,
+       "copy": 3214,
+       "eager": 1104
+      }
+     },
+     "positive_raw_prefixes": 250,
+     "selected": 205,
+     "selected_touched": 185,
+     "sizes": {
+      "compressed": 1627,
+      "copy": 1697,
+      "eager": 71,
+      "lazy": 71
+     },
+     "touched_bytes": 1089
+    }
+   }
+  },
+  "seed_pair/B/pydata/xarray": {
+   "arms": 9,
+   "queries": 271,
+   "ranking_sha": "5f8dfd25aebedf873a2b3ea74536c7b8c03c06c8421af71e54e200b044ca57dd",
+   "selection": {
+    "demand1024": {
+     "bodies": 871,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1782,
+       "copy": 1900,
+       "eager": 871
+      },
+      "1": {
+       "compressed": 1351,
+       "copy": 1469,
+       "eager": 440
+      },
+      "16": {
+       "compressed": 1039,
+       "copy": 1157,
+       "eager": 128
+      },
+      "271": {
+       "compressed": 911,
+       "copy": 1029,
+       "eager": 0
+      },
+      "4": {
+       "compressed": 1223,
+       "copy": 1341,
+       "eager": 312
+      }
+     },
+     "positive_raw_prefixes": 272,
+     "selected": 44,
+     "selected_touched": 44,
+     "sizes": {
+      "compressed": 965,
+      "copy": 1024,
+      "eager": 74,
+      "lazy": 74
+     },
+     "touched_bytes": 871
+    },
+    "full": {
+     "bodies": 1586,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 4094,
+       "copy": 4238,
+       "eager": 1586
+      },
+      "1": {
+       "compressed": 3558,
+       "copy": 3702,
+       "eager": 1050
+      },
+      "16": {
+       "compressed": 2965,
+       "copy": 3109,
+       "eager": 457
+      },
+      "271": {
+       "compressed": 2543,
+       "copy": 2687,
+       "eager": 35
+      },
+      "4": {
+       "compressed": 3340,
+       "copy": 3484,
+       "eager": 832
+      }
+     },
+     "positive_raw_prefixes": 272,
+     "selected": 216,
+     "selected_touched": 202,
+     "sizes": {
+      "compressed": 2121,
+      "copy": 2193,
+      "eager": 74,
+      "lazy": 74
+     },
+     "touched_bytes": 1551
+    }
+   }
+  },
+  "seed_pair/B/pygments/pygments": {
+   "arms": 9,
+   "queries": 114,
+   "ranking_sha": "d89d1cf2c4f0ffb51bcb59b163e7843d703958a9eca862c49ef87e46b3570506",
+   "selection": {
+    "demand1024": {
+     "bodies": 706,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1742,
+       "copy": 1868,
+       "eager": 706
+      },
+      "1": {
+       "compressed": 1536,
+       "copy": 1662,
+       "eager": 500
+      },
+      "114": {
+       "compressed": 1246,
+       "copy": 1372,
+       "eager": 210
+      },
+      "16": {
+       "compressed": 1361,
+       "copy": 1487,
+       "eager": 325
+      },
+      "4": {
+       "compressed": 1418,
+       "copy": 1544,
+       "eager": 382
+      }
+     },
+     "positive_raw_prefixes": 115,
+     "selected": 114,
+     "selected_touched": 93,
+     "sizes": {
+      "compressed": 911,
+      "copy": 974,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 496
+    },
+    "full": {
+     "bodies": 706,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1742,
+       "copy": 1868,
+       "eager": 706
+      },
+      "1": {
+       "compressed": 1536,
+       "copy": 1662,
+       "eager": 500
+      },
+      "114": {
+       "compressed": 1246,
+       "copy": 1372,
+       "eager": 210
+      },
+      "16": {
+       "compressed": 1361,
+       "copy": 1487,
+       "eager": 325
+      },
+      "4": {
+       "compressed": 1418,
+       "copy": 1544,
+       "eager": 382
+      }
+     },
+     "positive_raw_prefixes": 115,
+     "selected": 114,
+     "selected_touched": 93,
+     "sizes": {
+      "compressed": 911,
+      "copy": 974,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 496
+    }
+   }
+  },
+  "seed_pair/B/pypa/hatch": {
+   "arms": 9,
+   "queries": 228,
+   "ranking_sha": "6fa945e1ab30b952964b4927a4e61a22258e4e35aa8886ebe6eaa4d22872d0ab",
+   "selection": {
+    "demand1024": {
+     "bodies": 889,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1376,
+       "copy": 1906,
+       "eager": 889
+      },
+      "1": {
+       "compressed": 1111,
+       "copy": 1641,
+       "eager": 624
+      },
+      "16": {
+       "compressed": 585,
+       "copy": 1115,
+       "eager": 98
+      },
+      "228": {
+       "compressed": 487,
+       "copy": 1017,
+       "eager": 0
+      },
+      "4": {
+       "compressed": 776,
+       "copy": 1306,
+       "eager": 289
+      }
+     },
+     "positive_raw_prefixes": 229,
+     "selected": 35,
+     "selected_touched": 35,
+     "sizes": {
+      "compressed": 757,
+      "copy": 1022,
+      "eager": 69,
+      "lazy": 69
+     },
+     "touched_bytes": 889
+    },
+    "full": {
+     "bodies": 1686,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 3714,
+       "copy": 4368,
+       "eager": 1686
+      },
+      "1": {
+       "compressed": 3449,
+       "copy": 4103,
+       "eager": 1421
+      },
+      "16": {
+       "compressed": 2603,
+       "copy": 3257,
+       "eager": 575
+      },
+      "228": {
+       "compressed": 2086,
+       "copy": 2740,
+       "eager": 58
+      },
+      "4": {
+       "compressed": 3004,
+       "copy": 3658,
+       "eager": 976
+      }
+     },
+     "positive_raw_prefixes": 229,
+     "selected": 209,
+     "selected_touched": 189,
+     "sizes": {
+      "compressed": 1915,
+      "copy": 2242,
+      "eager": 58,
+      "lazy": 58
+     },
+     "touched_bytes": 1628
+    }
+   }
+  },
+  "seed_pair/B/python-pillow/Pillow": {
+   "arms": 9,
+   "queries": 190,
+   "ranking_sha": "882c4e62ced447c7e00c169292cb85e4b5da3ae8a7f9a53c2a15342b9f89e836",
+   "selection": {
+    "demand1024": {
+     "bodies": 721,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1850,
+       "copy": 1914,
+       "eager": 721
+      },
+      "1": {
+       "compressed": 1713,
+       "copy": 1777,
+       "eager": 584
+      },
+      "16": {
+       "compressed": 1313,
+       "copy": 1377,
+       "eager": 184
+      },
+      "190": {
+       "compressed": 1150,
+       "copy": 1214,
+       "eager": 21
+      },
+      "4": {
+       "compressed": 1384,
+       "copy": 1448,
+       "eager": 255
+      }
+     },
+     "positive_raw_prefixes": 191,
+     "selected": 115,
+     "selected_touched": 111,
+     "sizes": {
+      "compressed": 989,
+      "copy": 1021,
+      "eager": 64,
+      "lazy": 64
+     },
+     "touched_bytes": 700
+    },
+    "full": {
+     "bodies": 912,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 2600,
+       "copy": 2684,
+       "eager": 912
+      },
+      "1": {
+       "compressed": 2461,
+       "copy": 2545,
+       "eager": 773
+      },
+      "16": {
+       "compressed": 2033,
+       "copy": 2117,
+       "eager": 345
+      },
+      "190": {
+       "compressed": 1763,
+       "copy": 1847,
+       "eager": 75
+      },
+      "4": {
+       "compressed": 2132,
+       "copy": 2216,
+       "eager": 444
+      }
+     },
+     "positive_raw_prefixes": 191,
+     "selected": 186,
+     "selected_touched": 165,
+     "sizes": {
+      "compressed": 1343,
+      "copy": 1385,
+      "eager": 43,
+      "lazy": 43
+     },
+     "touched_bytes": 837
+    }
+   }
+  },
+  "seed_pair/long/astropy/astropy": {
+   "arms": 9,
+   "queries": 21,
+   "ranking_sha": "7ef1f7d151db7a81ea644d8baa83e9fb1d63a692b05f1fdcf3746f467e5343ff",
+   "selection": {
+    "demand1024": {
+     "bodies": 853,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1780,
+       "copy": 1910,
+       "eager": 853
+      },
+      "1": {
+       "compressed": 1757,
+       "copy": 1887,
+       "eager": 830
+      },
+      "16": {
+       "compressed": 1510,
+       "copy": 1640,
+       "eager": 583
+      },
+      "21": {
+       "compressed": 1510,
+       "copy": 1640,
+       "eager": 583
+      },
+      "4": {
+       "compressed": 1673,
+       "copy": 1803,
+       "eager": 746
+      }
+     },
+     "positive_raw_prefixes": 22,
+     "selected": 55,
+     "selected_touched": 16,
+     "sizes": {
+      "compressed": 959,
+      "copy": 1024,
+      "eager": 69,
+      "lazy": 69
+     },
+     "touched_bytes": 270
+    },
+    "full": {
+     "bodies": 1648,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 4138,
+       "copy": 4408,
+       "eager": 1648
+      },
+      "1": {
+       "compressed": 4106,
+       "copy": 4376,
+       "eager": 1616
+      },
+      "16": {
+       "compressed": 3778,
+       "copy": 4048,
+       "eager": 1288
+      },
+      "21": {
+       "compressed": 3762,
+       "copy": 4032,
+       "eager": 1272
+      },
+      "4": {
+       "compressed": 4000,
+       "copy": 4270,
+       "eager": 1510
+      }
+     },
+     "positive_raw_prefixes": 22,
+     "selected": 228,
+     "selected_touched": 42,
+     "sizes": {
+      "compressed": 2109,
+      "copy": 2244,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 376
+    }
+   }
+  },
+  "seed_pair/long/dask/dask": {
+   "arms": 9,
+   "queries": 16,
+   "ranking_sha": "06e42cd783fd11368f532362c3c42a067fe34d16cdb2134c976058cb7ba46d91",
+   "selection": {
+    "demand1024": {
+     "bodies": 777,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1840,
+       "copy": 1906,
+       "eager": 777
+      },
+      "1": {
+       "compressed": 1840,
+       "copy": 1906,
+       "eager": 777
+      },
+      "16": {
+       "compressed": 1460,
+       "copy": 1526,
+       "eager": 397
+      },
+      "4": {
+       "compressed": 1711,
+       "copy": 1777,
+       "eager": 648
+      }
+     },
+     "positive_raw_prefixes": 17,
+     "selected": 79,
+     "selected_touched": 32,
+     "sizes": {
+      "compressed": 991,
+      "copy": 1024,
+      "eager": 71,
+      "lazy": 71
+     },
+     "touched_bytes": 380
+    },
+    "full": {
+     "bodies": 1142,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 3112,
+       "copy": 3252,
+       "eager": 1142
+      },
+      "1": {
+       "compressed": 3112,
+       "copy": 3252,
+       "eager": 1142
+      },
+      "16": {
+       "compressed": 2667,
+       "copy": 2807,
+       "eager": 697
+      },
+      "4": {
+       "compressed": 2967,
+       "copy": 3107,
+       "eager": 997
+      }
+     },
+     "positive_raw_prefixes": 17,
+     "selected": 205,
+     "selected_touched": 52,
+     "sizes": {
+      "compressed": 1627,
+      "copy": 1697,
+      "eager": 71,
+      "lazy": 71
+     },
+     "touched_bytes": 445
+    }
+   }
+  },
+  "seed_pair/long/pydata/xarray": {
+   "arms": 9,
+   "queries": 22,
+   "ranking_sha": "31a6d22320df06086ba98f2294c1b3b648112db611b2f832db7c7ff8f622060a",
+   "selection": {
+    "demand1024": {
+     "bodies": 871,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1782,
+       "copy": 1900,
+       "eager": 871
+      },
+      "1": {
+       "compressed": 1741,
+       "copy": 1859,
+       "eager": 830
+      },
+      "16": {
+       "compressed": 927,
+       "copy": 1045,
+       "eager": 16
+      },
+      "22": {
+       "compressed": 927,
+       "copy": 1045,
+       "eager": 16
+      },
+      "4": {
+       "compressed": 1314,
+       "copy": 1432,
+       "eager": 403
+      }
+     },
+     "positive_raw_prefixes": 23,
+     "selected": 44,
+     "selected_touched": 43,
+     "sizes": {
+      "compressed": 965,
+      "copy": 1024,
+      "eager": 74,
+      "lazy": 74
+     },
+     "touched_bytes": 855
+    },
+    "full": {
+     "bodies": 1586,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 4094,
+       "copy": 4238,
+       "eager": 1586
+      },
+      "1": {
+       "compressed": 4027,
+       "copy": 4171,
+       "eager": 1519
+      },
+      "16": {
+       "compressed": 2859,
+       "copy": 3003,
+       "eager": 351
+      },
+      "22": {
+       "compressed": 2852,
+       "copy": 2996,
+       "eager": 344
+      },
+      "4": {
+       "compressed": 3464,
+       "copy": 3608,
+       "eager": 956
+      }
+     },
+     "positive_raw_prefixes": 23,
+     "selected": 216,
+     "selected_touched": 124,
+     "sizes": {
+      "compressed": 2121,
+      "copy": 2193,
+      "eager": 74,
+      "lazy": 74
+     },
+     "touched_bytes": 1242
+    }
+   }
+  },
+  "seed_pair/long/pygments/pygments": {
+   "arms": 9,
+   "queries": 10,
+   "ranking_sha": "3997762f61ea703ee263514802f1738881001c22b891e0afc1147236aa2a9fbe",
+   "selection": {
+    "demand1024": {
+     "bodies": 706,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1742,
+       "copy": 1868,
+       "eager": 706
+      },
+      "1": {
+       "compressed": 1667,
+       "copy": 1793,
+       "eager": 631
+      },
+      "10": {
+       "compressed": 1447,
+       "copy": 1573,
+       "eager": 411
+      },
+      "4": {
+       "compressed": 1667,
+       "copy": 1793,
+       "eager": 631
+      }
+     },
+     "positive_raw_prefixes": 11,
+     "selected": 114,
+     "selected_touched": 69,
+     "sizes": {
+      "compressed": 911,
+      "copy": 974,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 295
+    },
+    "full": {
+     "bodies": 706,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1742,
+       "copy": 1868,
+       "eager": 706
+      },
+      "1": {
+       "compressed": 1667,
+       "copy": 1793,
+       "eager": 631
+      },
+      "10": {
+       "compressed": 1447,
+       "copy": 1573,
+       "eager": 411
+      },
+      "4": {
+       "compressed": 1667,
+       "copy": 1793,
+       "eager": 631
+      }
+     },
+     "positive_raw_prefixes": 11,
+     "selected": 114,
+     "selected_touched": 69,
+     "sizes": {
+      "compressed": 911,
+      "copy": 974,
+      "eager": 40,
+      "lazy": 40
+     },
+     "touched_bytes": 295
+    }
+   }
+  },
+  "seed_pair/long/pypa/hatch": {
+   "arms": 9,
+   "queries": 22,
+   "ranking_sha": "1964cd16cb81eeaae95080136ba5f9f10b2522237c13ff9cd450598f1977b6eb",
+   "selection": {
+    "demand1024": {
+     "bodies": 889,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1376,
+       "copy": 1906,
+       "eager": 889
+      },
+      "1": {
+       "compressed": 1111,
+       "copy": 1641,
+       "eager": 624
+      },
+      "16": {
+       "compressed": 554,
+       "copy": 1084,
+       "eager": 67
+      },
+      "22": {
+       "compressed": 543,
+       "copy": 1073,
+       "eager": 56
+      },
+      "4": {
+       "compressed": 939,
+       "copy": 1469,
+       "eager": 452
+      }
+     },
+     "positive_raw_prefixes": 23,
+     "selected": 35,
+     "selected_touched": 33,
+     "sizes": {
+      "compressed": 757,
+      "copy": 1022,
+      "eager": 69,
+      "lazy": 69
+     },
+     "touched_bytes": 833
+    },
+    "full": {
+     "bodies": 1686,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 3714,
+       "copy": 4368,
+       "eager": 1686
+      },
+      "1": {
+       "compressed": 3449,
+       "copy": 4103,
+       "eager": 1421
+      },
+      "16": {
+       "compressed": 2540,
+       "copy": 3194,
+       "eager": 512
+      },
+      "22": {
+       "compressed": 2433,
+       "copy": 3087,
+       "eager": 405
+      },
+      "4": {
+       "compressed": 3176,
+       "copy": 3830,
+       "eager": 1148
+      }
+     },
+     "positive_raw_prefixes": 23,
+     "selected": 209,
+     "selected_touched": 115,
+     "sizes": {
+      "compressed": 1915,
+      "copy": 2242,
+      "eager": 58,
+      "lazy": 58
+     },
+     "touched_bytes": 1281
+    }
+   }
+  },
+  "seed_pair/long/python-pillow/Pillow": {
+   "arms": 9,
+   "queries": 21,
+   "ranking_sha": "67b20b69d5766391af1d86fe675a570150e6739fbbdf6af31ab4b9279947c31c",
+   "selection": {
+    "demand1024": {
+     "bodies": 721,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 1850,
+       "copy": 1914,
+       "eager": 721
+      },
+      "1": {
+       "compressed": 1713,
+       "copy": 1777,
+       "eager": 584
+      },
+      "16": {
+       "compressed": 1300,
+       "copy": 1364,
+       "eager": 171
+      },
+      "21": {
+       "compressed": 1261,
+       "copy": 1325,
+       "eager": 132
+      },
+      "4": {
+       "compressed": 1511,
+       "copy": 1575,
+       "eager": 382
+      }
+     },
+     "positive_raw_prefixes": 22,
+     "selected": 115,
+     "selected_touched": 79,
+     "sizes": {
+      "compressed": 989,
+      "copy": 1021,
+      "eager": 64,
+      "lazy": 64
+     },
+     "touched_bytes": 589
+    },
+    "full": {
+     "bodies": 912,
+     "delta_at_horizon": {
+      "0": {
+       "compressed": 2600,
+       "copy": 2684,
+       "eager": 912
+      },
+      "1": {
+       "compressed": 2461,
+       "copy": 2545,
+       "eager": 773
+      },
+      "16": {
+       "compressed": 2027,
+       "copy": 2111,
+       "eager": 339
+      },
+      "21": {
+       "compressed": 1984,
+       "copy": 2068,
+       "eager": 296
+      },
+      "4": {
+       "compressed": 2251,
+       "copy": 2335,
+       "eager": 563
+      }
+     },
+     "positive_raw_prefixes": 22,
+     "selected": 186,
+     "selected_touched": 88,
+     "sizes": {
+      "compressed": 1343,
+      "copy": 1385,
+      "eager": 43,
+      "lazy": 43
+     },
+     "touched_bytes": 616
+    }
+   }
+  }
+ },
+ "source_sha": "ca814e97e22ed1445061a6df6d28310efa21276f9a191978324f4b2d174fa47b",
+ "sql": {
+  "counterexample": {
+   "charges": {
+    "compressed": 1464,
+    "copy": 9252,
+    "eager": 4484,
+    "lazy": 4484
+   },
+   "fence": 128,
+   "selected_bodies": 4256,
+   "sizes": {
+    "compressed": 658,
+    "copy": 4552,
+    "eager": 40,
+    "lazy": 40
+   }
+  },
+  "counts": {
+   "sqlite_ranks": 192,
+   "sqlite_reopens": 48
+  },
+  "obsolete_after_append": true
+ }
+}

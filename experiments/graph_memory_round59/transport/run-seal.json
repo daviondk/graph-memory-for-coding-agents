@@ -1,0 +1,31 @@
+{
+  "clock": "perf_counter_ns",
+  "columns": [
+    "prefix",
+    "anchor",
+    "query_ns",
+    "posting_sql_bytes",
+    "body_sql_bytes",
+    "posting_req_bytes",
+    "posting_resp_bytes",
+    "posting_calls",
+    "bodies_req_bytes",
+    "bodies_resp_bytes",
+    "bodies_calls"
+  ],
+  "driver": "TCP_NODELAY on both sockets, IPv4 loopback",
+  "inputs": {
+    "PROTOCOL_RU.md": "56be19bf38d164e8bf381fdd626a73ed7bd900ea05c90817c0805c0301d104f6",
+    "events.json.gz": "a55c3c961a982db643abdad27989b065a4dcbad10a553ee35b715d9a5c5f3c38",
+    "measure.py": "321cb69bba4ac682d2def839b28fad3b1301e00ea9b1583d58b9dfef9d76c567",
+    "queries.json.gz": "d8a7cabcc700474902461c08480fee2e582206125bbe762e8a1e3c3de46fd300",
+    "summary_cache.py": "d7d13720e3721568166efceaebfe2a22b013bab69182acd8b2a7bf313cf42437",
+    "wire.py": "72f61440dffda1dff363a9733aa9dbe61a606c767d9a5557a0732e807c34fe8c"
+  },
+  "os": "Windows-10-10.0.19045-SP0",
+  "outputs": "c533e54798cea7ff0f8b3d29e09015b1192e5bbcc555b5c322c88debc7f629a9",
+  "python": "3.14.4 (tags/v3.14.4:23116f9, Apr  7 2026, 14:10:54) [MSC v.1944 64 bit (AMD64)]",
+  "random_seed": 590711,
+  "raw": "bb6317192b2082e1ebe597544c83722669fee863eb2b38191e17a2dcf32ca61f",
+  "sqlite": "3.50.4"
+}

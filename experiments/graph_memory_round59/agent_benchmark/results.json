@@ -1,0 +1,583 @@
+{
+  "actual_input_tokens": 236590,
+  "actual_output_tokens": 334,
+  "available": 57,
+  "contrasts": {
+    "true_vs_bm25_flat": {
+      "delta_pp": 10.526315789473685,
+      "different_top1": 20,
+      "discordant_ids": [
+        "matplotlib__matplotlib-10050",
+        "matplotlib__matplotlib-27361",
+        "pytest-dev__pytest-10341",
+        "scikit-learn__scikit-learn-15093",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-12426",
+        "sympy__sympy-13039",
+        "sympy__sympy-15059",
+        "sympy__sympy-27868",
+        "sympy__sympy-9123"
+      ],
+      "losses": 2,
+      "mcnemar_p": 0.109375,
+      "repo_bootstrap95_pp": [
+        0.0,
+        23.076923076923077
+      ],
+      "ties": 47,
+      "wins": 8
+    },
+    "true_vs_bm25_outcome": {
+      "delta_pp": 7.017543859649122,
+      "different_top1": 18,
+      "discordant_ids": [
+        "matplotlib__matplotlib-27361",
+        "scikit-learn__scikit-learn-15093",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-12426",
+        "sympy__sympy-13039",
+        "sympy__sympy-15059",
+        "sympy__sympy-27868",
+        "sympy__sympy-9123"
+      ],
+      "losses": 2,
+      "mcnemar_p": 0.2890625,
+      "repo_bootstrap95_pp": [
+        -4.166666666666667,
+        14.0625
+      ],
+      "ties": 49,
+      "wins": 6
+    },
+    "true_vs_bm25_symptom": {
+      "delta_pp": 14.035087719298245,
+      "different_top1": 22,
+      "discordant_ids": [
+        "matplotlib__matplotlib-10050",
+        "matplotlib__matplotlib-26331",
+        "matplotlib__matplotlib-27361",
+        "pytest-dev__pytest-10341",
+        "scikit-learn__scikit-learn-12622",
+        "scikit-learn__scikit-learn-15093",
+        "scikit-learn__scikit-learn-25365",
+        "scikit-learn__scikit-learn-5970",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-12426",
+        "sympy__sympy-13039",
+        "sympy__sympy-15059",
+        "sympy__sympy-16342",
+        "sympy__sympy-27868"
+      ],
+      "losses": 3,
+      "mcnemar_p": 0.057373046875,
+      "repo_bootstrap95_pp": [
+        5.357142857142857,
+        28.0
+      ],
+      "ties": 43,
+      "wins": 11
+    },
+    "true_vs_dense_flat": {
+      "delta_pp": 19.29824561403509,
+      "different_top1": 24,
+      "discordant_ids": [
+        "matplotlib__matplotlib-23172",
+        "matplotlib__matplotlib-27361",
+        "mwaskom__seaborn-3091",
+        "pytest-dev__pytest-10341",
+        "scikit-learn__scikit-learn-15093",
+        "scikit-learn__scikit-learn-25365",
+        "scikit-learn__scikit-learn-5970",
+        "sympy__sympy-13039",
+        "sympy__sympy-15059",
+        "sympy__sympy-16689",
+        "sympy__sympy-18715",
+        "sympy__sympy-19006",
+        "sympy__sympy-23852"
+      ],
+      "losses": 1,
+      "mcnemar_p": 0.00341796875,
+      "repo_bootstrap95_pp": [
+        10.344827586206897,
+        27.027027027027028
+      ],
+      "ties": 44,
+      "wins": 12
+    },
+    "true_vs_flat": {
+      "delta_pp": 0.0,
+      "different_top1": 3,
+      "discordant_ids": [],
+      "losses": 0,
+      "mcnemar_p": 1,
+      "repo_bootstrap95_pp": [
+        0.0,
+        0.0
+      ],
+      "ties": 57,
+      "wins": 0
+    },
+    "true_vs_fusion": {
+      "delta_pp": 1.7543859649122806,
+      "different_top1": 17,
+      "discordant_ids": [
+        "matplotlib__matplotlib-10050",
+        "matplotlib__matplotlib-27361",
+        "scikit-learn__scikit-learn-12622",
+        "scikit-learn__scikit-learn-15093",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-12426",
+        "sympy__sympy-15059"
+      ],
+      "losses": 3,
+      "mcnemar_p": 1,
+      "repo_bootstrap95_pp": [
+        -10.0,
+        16.363636363636363
+      ],
+      "ties": 50,
+      "wins": 4
+    },
+    "true_vs_minilm": {
+      "delta_pp": 28.07017543859649,
+      "different_top1": 25,
+      "discordant_ids": [
+        "matplotlib__matplotlib-23172",
+        "matplotlib__matplotlib-23687",
+        "matplotlib__matplotlib-27361",
+        "mwaskom__seaborn-3091",
+        "mwaskom__seaborn-3203",
+        "pydata__xarray-4529",
+        "pytest-dev__pytest-10341",
+        "scikit-learn__scikit-learn-25365",
+        "scikit-learn__scikit-learn-25763",
+        "scikit-learn__scikit-learn-5970",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-15059",
+        "sympy__sympy-16946",
+        "sympy__sympy-19006",
+        "sympy__sympy-19484",
+        "sympy__sympy-23852"
+      ],
+      "losses": 0,
+      "mcnemar_p": 3.0517578125e-05,
+      "repo_bootstrap95_pp": [
+        21.62162162162162,
+        52.0
+      ],
+      "ties": 41,
+      "wins": 16
+    },
+    "true_vs_minilm6": {
+      "delta_pp": 15.789473684210526,
+      "different_top1": 18,
+      "discordant_ids": [
+        "matplotlib__matplotlib-23172",
+        "matplotlib__matplotlib-27361",
+        "mwaskom__seaborn-3091",
+        "mwaskom__seaborn-3203",
+        "scikit-learn__scikit-learn-5970",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-15059",
+        "sympy__sympy-18715",
+        "sympy__sympy-19006"
+      ],
+      "losses": 0,
+      "mcnemar_p": 0.00390625,
+      "repo_bootstrap95_pp": [
+        10.0,
+        33.333333333333336
+      ],
+      "ties": 48,
+      "wins": 9
+    },
+    "true_vs_qwen27_complete": {
+      "delta_pp": -5.2631578947368425,
+      "different_top1": 8,
+      "discordant_ids": [
+        "scikit-learn__scikit-learn-12622",
+        "scikit-learn__scikit-learn-15093",
+        "sympy__sympy-12426"
+      ],
+      "losses": 3,
+      "mcnemar_p": 0.25,
+      "repo_bootstrap95_pp": [
+        -12.903225806451612,
+        0.0
+      ],
+      "ties": 54,
+      "wins": 0
+    },
+    "true_vs_qwen27_no_edits": {
+      "delta_pp": -3.508771929824561,
+      "different_top1": 10,
+      "discordant_ids": [
+        "matplotlib__matplotlib-10050",
+        "scikit-learn__scikit-learn-12622",
+        "scikit-learn__scikit-learn-15093",
+        "sympy__sympy-12426"
+      ],
+      "losses": 3,
+      "mcnemar_p": 0.625,
+      "repo_bootstrap95_pp": [
+        -12.903225806451612,
+        5.714285714285714
+      ],
+      "ties": 53,
+      "wins": 1
+    },
+    "true_vs_qwen27_recall5": {
+      "delta_pp": -1.7543859649122806,
+      "different_top1": 15,
+      "discordant_ids": [
+        "matplotlib__matplotlib-25352",
+        "matplotlib__matplotlib-27361",
+        "scikit-learn__scikit-learn-12622",
+        "scikit-learn__scikit-learn-15093",
+        "sympy__sympy-15059",
+        "sympy__sympy-18715",
+        "sympy__sympy-21203",
+        "sympy__sympy-21309",
+        "sympy__sympy-8772"
+      ],
+      "losses": 5,
+      "mcnemar_p": 1,
+      "repo_bootstrap95_pp": [
+        -12.903225806451612,
+        3.1746031746031744
+      ],
+      "ties": 48,
+      "wins": 4
+    },
+    "true_vs_recall_hybrid": {
+      "delta_pp": 7.017543859649122,
+      "different_top1": 20,
+      "discordant_ids": [
+        "matplotlib__matplotlib-25352",
+        "matplotlib__matplotlib-26331",
+        "matplotlib__matplotlib-27361",
+        "pytest-dev__pytest-10341",
+        "scikit-learn__scikit-learn-15093",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-13039",
+        "sympy__sympy-15059",
+        "sympy__sympy-18715",
+        "sympy__sympy-21203",
+        "sympy__sympy-21309",
+        "sympy__sympy-8772"
+      ],
+      "losses": 4,
+      "mcnemar_p": 0.3876953125,
+      "repo_bootstrap95_pp": [
+        -2.0,
+        20.0
+      ],
+      "ties": 45,
+      "wins": 8
+    },
+    "true_vs_recall_keyword": {
+      "delta_pp": 14.035087719298245,
+      "different_top1": 21,
+      "discordant_ids": [
+        "matplotlib__matplotlib-26331",
+        "matplotlib__matplotlib-27361",
+        "pytest-dev__pytest-10341",
+        "scikit-learn__scikit-learn-15093",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-13039",
+        "sympy__sympy-15059",
+        "sympy__sympy-16946",
+        "sympy__sympy-18715",
+        "sympy__sympy-8772"
+      ],
+      "losses": 1,
+      "mcnemar_p": 0.021484375,
+      "repo_bootstrap95_pp": [
+        0.0,
+        25.0
+      ],
+      "ties": 47,
+      "wins": 9
+    },
+    "true_vs_rotation": {
+      "delta_pp": -1.7543859649122806,
+      "different_top1": 1,
+      "discordant_ids": [
+        "scikit-learn__scikit-learn-15093"
+      ],
+      "losses": 1,
+      "mcnemar_p": 1,
+      "repo_bootstrap95_pp": [
+        -6.451612903225806,
+        0.0
+      ],
+      "ties": 56,
+      "wins": 0
+    },
+    "true_vs_sparse_fields": {
+      "delta_pp": 5.2631578947368425,
+      "different_top1": 16,
+      "discordant_ids": [
+        "matplotlib__matplotlib-10050",
+        "matplotlib__matplotlib-27361",
+        "scikit-learn__scikit-learn-15093",
+        "sphinx-doc__sphinx-8588",
+        "sympy__sympy-12426",
+        "sympy__sympy-15059",
+        "sympy__sympy-16342"
+      ],
+      "losses": 2,
+      "mcnemar_p": 0.453125,
+      "repo_bootstrap95_pp": [
+        -4.166666666666667,
+        16.666666666666668
+      ],
+      "ties": 50,
+      "wins": 5
+    }
+  },
+  "costs": {
+    "flat": {
+      "input": 80371,
+      "output": 114
+    },
+    "rotation": {
+      "input": 80371,
+      "output": 114
+    },
+    "true": {
+      "input": 80371,
+      "output": 114
+    }
+  },
+  "distinct_prompts": 167,
+  "eligible_sources": 275,
+  "fallback": {
+    "flat": 0,
+    "rotation": 0,
+    "true": 0
+  },
+  "issued_cards": 285,
+  "match1": {
+    "bm25_flat": 38,
+    "bm25_outcome": 40,
+    "bm25_symptom": 36,
+    "dense_flat": 33,
+    "flat": 44,
+    "fusion": 43,
+    "minilm": 28,
+    "minilm6": 35,
+    "qwen27_complete": 47,
+    "qwen27_no_edits": 46,
+    "qwen27_recall5": 45,
+    "recall_hybrid": 40,
+    "recall_keyword": 36,
+    "rotation": 45,
+    "sparse_fields": 41,
+    "true": 44
+  },
+  "n": 57,
+  "n_sources": 170,
+  "older_reader_tokens": {
+    "qwen27_complete": {
+      "completion_tokens": 114,
+      "prompt_tokens": 198433
+    },
+    "qwen27_no_edits": {
+      "completion_tokens": 114,
+      "prompt_tokens": 166176
+    },
+    "qwen27_recall5": {
+      "completion_tokens": 114,
+      "prompt_tokens": 205678
+    }
+  },
+  "original_projection": {
+    "historical_library": "36b912b1c7b3821568961d9a0b5b525dfeedc99bed098b7e583cdcf3b9c523ad",
+    "prior_baselines": {
+      "blind_ranks.json": "c498a8f036d4a56b9f99ef182b4c6e88744854a423cfe5017ad9d4b802c894a9",
+      "matched_reader/calls.jsonl": "5595d52215c6882c9f889afe4d39b6a6e7510284bfad7e8adfaa61f099412d40",
+      "qwen_calls.jsonl": "9db6893dd394b77221bad808d6e2f2e5940db6ff4795b34d14841da9447f1a0f",
+      "recall_hybrid": "58b7f6051a0893ddeaf90b19610222bb6ad761eb5ab41d98abedf1b7e94727c9",
+      "recall_keyword": "bb6f4cf5bb3137343005c303a78381f5f7f15ff9151165ad91148fc305bb42b3"
+    },
+    "relationship_sha": "f59b1a0fd021c6608bd185f15113cbbd26f804c20494da6d4827adb9ea70edb5",
+    "source_dataset": "12c65bd15e2559bc808065565e941ee7bbbd008f",
+    "source_repo": "12ad6ab14e18e9378e1e293c9edbc3f7ce43d27b"
+  },
+  "per_repo": {
+    "astropy/astropy": {
+      "matches": {
+        "bm25_flat": 2,
+        "bm25_outcome": 2,
+        "bm25_symptom": 2,
+        "dense_flat": 2,
+        "flat": 2,
+        "fusion": 2,
+        "minilm": 2,
+        "minilm6": 2,
+        "qwen27_complete": 2,
+        "qwen27_no_edits": 2,
+        "qwen27_recall5": 2,
+        "recall_hybrid": 2,
+        "recall_keyword": 2,
+        "rotation": 2,
+        "sparse_fields": 2,
+        "true": 2
+      },
+      "n": 2
+    },
+    "matplotlib/matplotlib": {
+      "matches": {
+        "bm25_flat": 6,
+        "bm25_outcome": 7,
+        "bm25_symptom": 5,
+        "dense_flat": 6,
+        "flat": 8,
+        "fusion": 6,
+        "minilm": 5,
+        "minilm6": 6,
+        "qwen27_complete": 8,
+        "qwen27_no_edits": 7,
+        "qwen27_recall5": 8,
+        "recall_hybrid": 7,
+        "recall_keyword": 6,
+        "rotation": 8,
+        "sparse_fields": 6,
+        "true": 8
+      },
+      "n": 12
+    },
+    "mwaskom/seaborn": {
+      "matches": {
+        "bm25_flat": 2,
+        "bm25_outcome": 2,
+        "bm25_symptom": 2,
+        "dense_flat": 1,
+        "flat": 2,
+        "fusion": 2,
+        "minilm": 0,
+        "minilm6": 0,
+        "qwen27_complete": 2,
+        "qwen27_no_edits": 2,
+        "qwen27_recall5": 2,
+        "recall_hybrid": 2,
+        "recall_keyword": 2,
+        "rotation": 2,
+        "sparse_fields": 2,
+        "true": 2
+      },
+      "n": 2
+    },
+    "pydata/xarray": {
+      "matches": {
+        "bm25_flat": 2,
+        "bm25_outcome": 2,
+        "bm25_symptom": 2,
+        "dense_flat": 2,
+        "flat": 2,
+        "fusion": 2,
+        "minilm": 1,
+        "minilm6": 2,
+        "qwen27_complete": 2,
+        "qwen27_no_edits": 2,
+        "qwen27_recall5": 2,
+        "recall_hybrid": 2,
+        "recall_keyword": 2,
+        "rotation": 2,
+        "sparse_fields": 2,
+        "true": 2
+      },
+      "n": 2
+    },
+    "pytest-dev/pytest": {
+      "matches": {
+        "bm25_flat": 0,
+        "bm25_outcome": 1,
+        "bm25_symptom": 0,
+        "dense_flat": 0,
+        "flat": 1,
+        "fusion": 1,
+        "minilm": 0,
+        "minilm6": 1,
+        "qwen27_complete": 1,
+        "qwen27_no_edits": 1,
+        "qwen27_recall5": 1,
+        "recall_hybrid": 0,
+        "recall_keyword": 0,
+        "rotation": 1,
+        "sparse_fields": 1,
+        "true": 1
+      },
+      "n": 1
+    },
+    "scikit-learn/scikit-learn": {
+      "matches": {
+        "bm25_flat": 9,
+        "bm25_outcome": 9,
+        "bm25_symptom": 8,
+        "dense_flat": 7,
+        "flat": 8,
+        "fusion": 10,
+        "minilm": 5,
+        "minilm6": 7,
+        "qwen27_complete": 10,
+        "qwen27_no_edits": 10,
+        "qwen27_recall5": 10,
+        "recall_hybrid": 9,
+        "recall_keyword": 9,
+        "rotation": 9,
+        "sparse_fields": 9,
+        "true": 8
+      },
+      "n": 10
+    },
+    "sphinx-doc/sphinx": {
+      "matches": {
+        "bm25_flat": 0,
+        "bm25_outcome": 0,
+        "bm25_symptom": 0,
+        "dense_flat": 1,
+        "flat": 1,
+        "fusion": 0,
+        "minilm": 0,
+        "minilm6": 0,
+        "qwen27_complete": 1,
+        "qwen27_no_edits": 1,
+        "qwen27_recall5": 1,
+        "recall_hybrid": 0,
+        "recall_keyword": 0,
+        "rotation": 1,
+        "sparse_fields": 0,
+        "true": 1
+      },
+      "n": 2
+    },
+    "sympy/sympy": {
+      "matches": {
+        "bm25_flat": 17,
+        "bm25_outcome": 17,
+        "bm25_symptom": 17,
+        "dense_flat": 14,
+        "flat": 20,
+        "fusion": 20,
+        "minilm": 15,
+        "minilm6": 17,
+        "qwen27_complete": 21,
+        "qwen27_no_edits": 21,
+        "qwen27_recall5": 19,
+        "recall_hybrid": 18,
+        "recall_keyword": 15,
+        "rotation": 20,
+        "sparse_fields": 19,
+        "true": 20
+      },
+      "n": 26
+    }
+  },
+  "retained_edges": 416,
+  "slate5": 50,
+  "true_and_rotation_same_input": 4,
+  "with_edges": 252,
+  "zero_edge_source": 12
+}
