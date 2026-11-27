@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Two files in graph memory</title>
+<style>
+:root{color-scheme:light;--ink:#202c30;--mute:#52676c;--line:#c9d6d4;--accent:#16645a}*{box-sizing:border-box}body{margin:0;background:#f2f4ef;color:var(--ink);font:16px/1.45 "Source Sans 3","Segoe UI",sans-serif}main{max-width:1120px;margin:32px auto;padding:0 22px 40px}header{border-bottom:2px solid var(--accent);margin-bottom:22px}h1,h2,h3{line-height:1.15}h1{font:600 clamp(30px,5vw,48px)/1.1 Georgia,serif;margin:0 0 12px}h2{font-size:23px;margin:16px 0 8px}h3{font-size:17px}p{max-width:80ch;color:var(--mute)}nav,.controls{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin:14px 0}button,select{font:inherit;padding:6px 12px;border:1px solid #809b98;border-radius:4px;background:white;color:var(--ink)}button{cursor:pointer}button[aria-pressed=true]{background:var(--accent);color:white}.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.card,details,.board{background:#fff;border:1px solid var(--line);border-radius:5px;padding:12px}.card h3{margin:0}.card ol{padding-left:28px}.card li{font:13px/1.6 Consolas,monospace;overflow-wrap:anywhere;margin:6px 0}.hit{background:#dcefe5}.tag{font:600 12px "Segoe UI",sans-serif;color:#155444}.code{font-family:Consolas,monospace;overflow-wrap:anywhere}summary{cursor:pointer}details{margin:6px 0}.grid{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:5px}.cell{text-align:center;border:1px solid var(--line);border-radius:3px;padding:8px;font:14px/1.3 Consolas,monospace}.cell.found{box-shadow:inset 0 0 0 2px var(--accent);background:#dcefe5}.cell span{font-size:11px;color:var(--mute)}[hidden]{display:none!important}a{color:var(--accent)}footer{margin-top:22px;color:var(--mute);font-size:13px}@media(max-width:750px){main{margin:20px auto;padding:0 12px 24px}.cards{grid-template-columns:1fr}.grid{grid-template-columns:repeat(4,1fr)}}
+</style>
+<main><header><h1>Two files in graph memory</h1><p>Given two files in a change, which file should the agent read next?</p></header>
+<nav aria-label="Experiment"><button id="realButton" aria-pressed="true">Recorded Git changes</button><button id="worldButton" aria-pressed="false">Identical pair counts</button></nav>
+<section id="real"><div class="controls"><label>Change <select id="caseSelect"><option value="gain">Dask · additional files found</option><option value="loss">Xarray · a file missed</option></select></label><label><input type="checkbox" id="judgment" checked> Reveal held-out files</label></div><div id="caseInfo"></div><div id="cards" class="cards"></div><h2>Earlier commits read by all three methods</h2><div id="witnesses"></div></section>
+<section id="world" hidden><h2>Change the past while preserving every pair count</h2><p>Each synthetic event contains one A, one B and one C file. Across 16 equally likely histories, every file pair from different groups occurs exactly once. Choose the known files and switch histories.</p>
+<div class="controls"><label>File A <select id="a"></select></label><label>File B <select id="b"></select></label><label>History <select id="shift"></select></label></div><div class="board"><h3 id="third"></h3><div class="grid" id="cells"></div><p>Each cell shows the sum of its two pair counts. A list of eight C files based only on those counts can cover at most eight of the sixteen possible histories.</p></div></section>
+<footer id="mode"></footer></main>
+<script>
+const dataset=__DATA__;
+const live=location.protocol==="http:" && new URLSearchParams(location.search).get("source")==="sqlite";
+const el=id=>document.getElementById(id);
+const safe=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const methods=[["sum","Sum of pair weights"],["joint","Joint event evidence"],["placebo","Pair overlap control"]];
+let generation=0;
+async function renderReal(){
+ const ticket=++generation, key=el("caseSelect").value;
+ const data=live?await (await fetch("/case/"+key)).json():dataset[key];
+ if(ticket!==generation)return;
+ const show=el("judgment").checked;
+ const label=path=>safe(path);
+ el("caseInfo").innerHTML="<h2>"+safe(data.repo)+"</h2><p class='code'>"+data.seeds.map(label).join("<br>")+"</p><p>Two paths revealed from <a href='https://github.com/"+safe(data.repo)+"/commit/"+safe(data.rev)+"'>"+safe(data.rev.slice(0,10))+"</a>. "+(show?"The change contained "+data.gold.length+" other paths. Highlighted rows are held-out matches.":"Annotations hidden.")+"</p>";
+ el("cards").innerHTML=methods.map(([m,name])=>{const files=data.ranks[m],hits=files.filter(p=>data.gold.includes(p)).length;return "<div class='card'><h3>"+name+"</h3>"+(show?"<span class='tag'>"+hits+" of "+data.gold.length+" held-out files found</span>":"")+"<ol>"+files.map(p=>"<li class='"+(show&&data.gold.includes(p)?"hit":"")+"'>"+label(p)+"</li>").join("")+"</ol></div>"}).join("");
+ el("witnesses").innerHTML=data.witnesses.map(w=>"<details><summary>"+safe(w.sha.slice(0,10))+" · "+w.m+" paths · "+(w.joint?"both known files":"one known file")+"</summary><ul class='code'>"+w.files.map(f=>"<li>"+label(f)+"</li>").join("")+"</ul></details>").join("");
+}
+async function renderWorld(){
+ const ticket=++generation, a=Number(el("a").value),b=Number(el("b").value),s=Number(el("shift").value);
+ const out=live?await(await fetch("/world/"+s+"/"+a+"/"+b)).json():{third:dataset.worlds[s][a*16+b],projection:dataset.projection};
+ if(ticket!==generation)return;
+ el("third").textContent="The stored event links A"+a+" and B"+b+" to C"+out.third+".";
+ el("cells").innerHTML=out.projection.map((n,i)=>"<div class='cell "+(i===out.third?"found":"")+"'>C"+i+"<br><span>pair sum "+n+"</span></div>").join("");
+}
+function activate(world){el("real").hidden=world;el("world").hidden=!world;el("worldButton").setAttribute("aria-pressed",String(world));el("realButton").setAttribute("aria-pressed",String(!world));return world?renderWorld():renderReal()}
+for(const id of ["a","b","shift"]){for(let i=0;i<16;i++)el(id).add(new Option(i,i));el(id).onchange=renderWorld}
+el("caseSelect").onchange=el("judgment").onchange=renderReal;el("realButton").onclick=()=>activate(false);el("worldButton").onclick=()=>activate(true);
+el("mode").textContent=live?"Live read from a local SQLite database.":"Offline replay of verified SQLite answers.";
+renderReal();
+</script></html>
